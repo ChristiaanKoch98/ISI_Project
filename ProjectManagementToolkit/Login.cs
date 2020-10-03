@@ -42,7 +42,7 @@ namespace ProjectManagementToolkit
             }
 
             //Hash password
-            string hashedPassword = Hashing.HashPassword(txtPassword.Text);
+            string hashedPassword = Hashing.HashPassword(password);
 
             if(!Validation.CheckLoginCredentials(username, hashedPassword))
             {
