@@ -44,6 +44,7 @@ namespace ProjectManagementToolkit
             //Hash password
             string hashedPassword = Hashing.HashPassword(password);
 
+            //Check login credentials
             if(!Validation.CheckLoginCredentials(username, hashedPassword))
             {
                 lblLoginError.Text = "Incorrect password";
