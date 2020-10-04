@@ -72,5 +72,13 @@ namespace ProjectManagementToolkit
             SignUp signupForm = new SignUp();
             signupForm.Show();
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            txtUsername.Text = "Username";
+            txtPassword.Text = "Password";
+            txtUsername.BackColor = this.BackColor;
+            txtPassword.BackColor = this.BackColor;
+        }
     }
 }

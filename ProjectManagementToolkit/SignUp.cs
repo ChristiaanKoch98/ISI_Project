@@ -102,5 +102,15 @@ namespace ProjectManagementToolkit
                 }
             }
         }
+
+        private void SignUp_Load(object sender, EventArgs e)
+        {
+            txtUsername.Text = "Username";
+            txtPassword.Text = "Password";
+            txtConfirmPassword.Text = "Password";
+            txtUsername.BackColor = this.BackColor;
+            txtPassword.BackColor = this.BackColor;
+            txtConfirmPassword.BackColor = this.BackColor;
+        }
     }
 }
