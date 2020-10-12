@@ -108,6 +108,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
@@ -153,6 +154,10 @@
     <Content Include="ISI_DB_log.ldf">
       <DependentUpon>ISI_DB.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\Powerpoint.jpg" />
+    <None Include="Resources\excel.png" />
+    <None Include="Resources\word.png" />
+    <None Include="Resources\image-file-xxl.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
