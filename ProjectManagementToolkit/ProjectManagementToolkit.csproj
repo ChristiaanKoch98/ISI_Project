@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GeneralManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralManagement.Designer.cs">
+      <DependentUpon>GeneralManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Hashing.cs" />
     <Compile Include="ISI_DB.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -88,6 +94,9 @@
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Validation.cs" />
+    <EmbeddedResource Include="GeneralManagement.resx">
+      <DependentUpon>GeneralManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
