@@ -53,8 +53,9 @@ namespace ProjectManagementToolkit
             }
             else
             {
-                MainForm mf = new MainForm();
-                mf.Show();
+                ProjectSetup projectSetup = new ProjectSetup();
+                this.Visible = false;
+                projectSetup.Show();
             }
         }
 
