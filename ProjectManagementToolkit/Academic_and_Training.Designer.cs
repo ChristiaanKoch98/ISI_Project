@@ -64,10 +64,23 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnViewReports = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnNewStudent = new System.Windows.Forms.Button();
+            this.btnDesignModerationGuide = new System.Windows.Forms.Button();
+            this.btnAssessorGuides = new System.Windows.Forms.Button();
+            this.btnQALAProcess = new System.Windows.Forms.Button();
+            this.btnLearnerProcess = new System.Windows.Forms.Button();
+            this.btnDesignAssessorGuide = new System.Windows.Forms.Button();
+            this.btnCourseProcessFlowAdmin = new System.Windows.Forms.Button();
+            this.btnModerationGuides = new System.Windows.Forms.Button();
+            this.btnAccreditationChecklist = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panelAcademicAndTraining.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl3.SuspendLayout();
+            this.tabPage21.SuspendLayout();
+            this.tabPage19.SuspendLayout();
+            this.tabPage17.SuspendLayout();
             this.tabPage14.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -219,6 +232,14 @@
             // tabPage21
             // 
             this.tabPage21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage21.Controls.Add(this.btnAccreditationChecklist);
+            this.tabPage21.Controls.Add(this.btnModerationGuides);
+            this.tabPage21.Controls.Add(this.btnCourseProcessFlowAdmin);
+            this.tabPage21.Controls.Add(this.btnDesignAssessorGuide);
+            this.tabPage21.Controls.Add(this.btnLearnerProcess);
+            this.tabPage21.Controls.Add(this.btnQALAProcess);
+            this.tabPage21.Controls.Add(this.btnAssessorGuides);
+            this.tabPage21.Controls.Add(this.btnDesignModerationGuide);
             this.tabPage21.Location = new System.Drawing.Point(4, 21);
             this.tabPage21.Name = "tabPage21";
             this.tabPage21.Padding = new System.Windows.Forms.Padding(3);
@@ -239,6 +260,7 @@
             // tabPage19
             // 
             this.tabPage19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage19.Controls.Add(this.btnNewStudent);
             this.tabPage19.Location = new System.Drawing.Point(4, 21);
             this.tabPage19.Name = "tabPage19";
             this.tabPage19.Padding = new System.Windows.Forms.Padding(3);
@@ -259,6 +281,7 @@
             // tabPage17
             // 
             this.tabPage17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage17.Controls.Add(this.panel2);
             this.tabPage17.Location = new System.Drawing.Point(4, 21);
             this.tabPage17.Name = "tabPage17";
             this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
@@ -453,6 +476,95 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Reports";
             // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Location = new System.Drawing.Point(27, 33);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(671, 196);
+            this.panel2.TabIndex = 1;
+            // 
+            // btnNewStudent
+            // 
+            this.btnNewStudent.Location = new System.Drawing.Point(7, 27);
+            this.btnNewStudent.Name = "btnNewStudent";
+            this.btnNewStudent.Size = new System.Drawing.Size(142, 23);
+            this.btnNewStudent.TabIndex = 0;
+            this.btnNewStudent.Text = "New Student";
+            this.btnNewStudent.UseVisualStyleBackColor = true;
+            // 
+            // btnDesignModerationGuide
+            // 
+            this.btnDesignModerationGuide.Location = new System.Drawing.Point(100, 108);
+            this.btnDesignModerationGuide.Name = "btnDesignModerationGuide";
+            this.btnDesignModerationGuide.Size = new System.Drawing.Size(88, 45);
+            this.btnDesignModerationGuide.TabIndex = 0;
+            this.btnDesignModerationGuide.Text = "Design Moderation Guide";
+            this.btnDesignModerationGuide.UseVisualStyleBackColor = true;
+            // 
+            // btnAssessorGuides
+            // 
+            this.btnAssessorGuides.Location = new System.Drawing.Point(100, 6);
+            this.btnAssessorGuides.Name = "btnAssessorGuides";
+            this.btnAssessorGuides.Size = new System.Drawing.Size(88, 45);
+            this.btnAssessorGuides.TabIndex = 1;
+            this.btnAssessorGuides.Text = "Assessor Guides";
+            this.btnAssessorGuides.UseVisualStyleBackColor = true;
+            // 
+            // btnQALAProcess
+            // 
+            this.btnQALAProcess.Location = new System.Drawing.Point(194, 6);
+            this.btnQALAProcess.Name = "btnQALAProcess";
+            this.btnQALAProcess.Size = new System.Drawing.Size(88, 45);
+            this.btnQALAProcess.TabIndex = 2;
+            this.btnQALAProcess.Text = "QALA Process";
+            this.btnQALAProcess.UseVisualStyleBackColor = true;
+            // 
+            // btnLearnerProcess
+            // 
+            this.btnLearnerProcess.Location = new System.Drawing.Point(288, 6);
+            this.btnLearnerProcess.Name = "btnLearnerProcess";
+            this.btnLearnerProcess.Size = new System.Drawing.Size(88, 45);
+            this.btnLearnerProcess.TabIndex = 3;
+            this.btnLearnerProcess.Text = "Learner Process";
+            this.btnLearnerProcess.UseVisualStyleBackColor = true;
+            // 
+            // btnDesignAssessorGuide
+            // 
+            this.btnDesignAssessorGuide.Location = new System.Drawing.Point(100, 57);
+            this.btnDesignAssessorGuide.Name = "btnDesignAssessorGuide";
+            this.btnDesignAssessorGuide.Size = new System.Drawing.Size(88, 45);
+            this.btnDesignAssessorGuide.TabIndex = 4;
+            this.btnDesignAssessorGuide.Text = "Design Assessor Guide";
+            this.btnDesignAssessorGuide.UseVisualStyleBackColor = true;
+            // 
+            // btnCourseProcessFlowAdmin
+            // 
+            this.btnCourseProcessFlowAdmin.Location = new System.Drawing.Point(6, 57);
+            this.btnCourseProcessFlowAdmin.Name = "btnCourseProcessFlowAdmin";
+            this.btnCourseProcessFlowAdmin.Size = new System.Drawing.Size(88, 45);
+            this.btnCourseProcessFlowAdmin.TabIndex = 5;
+            this.btnCourseProcessFlowAdmin.Text = "Course Process Flow Admin";
+            this.btnCourseProcessFlowAdmin.UseVisualStyleBackColor = true;
+            // 
+            // btnModerationGuides
+            // 
+            this.btnModerationGuides.Location = new System.Drawing.Point(6, 108);
+            this.btnModerationGuides.Name = "btnModerationGuides";
+            this.btnModerationGuides.Size = new System.Drawing.Size(88, 45);
+            this.btnModerationGuides.TabIndex = 6;
+            this.btnModerationGuides.Text = "Moderation Guides";
+            this.btnModerationGuides.UseVisualStyleBackColor = true;
+            // 
+            // btnAccreditationChecklist
+            // 
+            this.btnAccreditationChecklist.Location = new System.Drawing.Point(6, 6);
+            this.btnAccreditationChecklist.Name = "btnAccreditationChecklist";
+            this.btnAccreditationChecklist.Size = new System.Drawing.Size(88, 45);
+            this.btnAccreditationChecklist.TabIndex = 7;
+            this.btnAccreditationChecklist.Text = "Accreditation Checklist";
+            this.btnAccreditationChecklist.UseVisualStyleBackColor = true;
+            // 
             // Academic_and_Training
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -469,6 +581,9 @@
             this.panelAcademicAndTraining.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
+            this.tabPage21.ResumeLayout(false);
+            this.tabPage19.ResumeLayout(false);
+            this.tabPage17.ResumeLayout(false);
             this.tabPage14.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
@@ -516,5 +631,15 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnViewReports;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnNewStudent;
+        private System.Windows.Forms.Button btnAccreditationChecklist;
+        private System.Windows.Forms.Button btnModerationGuides;
+        private System.Windows.Forms.Button btnCourseProcessFlowAdmin;
+        private System.Windows.Forms.Button btnDesignAssessorGuide;
+        private System.Windows.Forms.Button btnLearnerProcess;
+        private System.Windows.Forms.Button btnQALAProcess;
+        private System.Windows.Forms.Button btnAssessorGuides;
+        private System.Windows.Forms.Button btnDesignModerationGuide;
     }
 }
