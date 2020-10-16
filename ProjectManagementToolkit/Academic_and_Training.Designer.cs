@@ -94,6 +94,26 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.label21 = new System.Windows.Forms.Label();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.label22 = new System.Windows.Forms.Label();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button13 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panelAcademicAndTraining.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -102,6 +122,7 @@
             this.tabPage14.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabPage15.SuspendLayout();
+            this.tabPage16.SuspendLayout();
             this.tabPage17.SuspendLayout();
             this.tabPage19.SuspendLayout();
             this.tabPage21.SuspendLayout();
@@ -486,6 +507,26 @@
             // tabPage16
             // 
             this.tabPage16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage16.Controls.Add(this.button13);
+            this.tabPage16.Controls.Add(this.label10);
+            this.tabPage16.Controls.Add(this.label8);
+            this.tabPage16.Controls.Add(this.button14);
+            this.tabPage16.Controls.Add(this.button12);
+            this.tabPage16.Controls.Add(this.label9);
+            this.tabPage16.Controls.Add(this.label11);
+            this.tabPage16.Controls.Add(this.label12);
+            this.tabPage16.Controls.Add(this.button15);
+            this.tabPage16.Controls.Add(this.button16);
+            this.tabPage16.Controls.Add(this.label19);
+            this.tabPage16.Controls.Add(this.button17);
+            this.tabPage16.Controls.Add(this.button18);
+            this.tabPage16.Controls.Add(this.label20);
+            this.tabPage16.Controls.Add(this.button19);
+            this.tabPage16.Controls.Add(this.button20);
+            this.tabPage16.Controls.Add(this.label21);
+            this.tabPage16.Controls.Add(this.button21);
+            this.tabPage16.Controls.Add(this.button22);
+            this.tabPage16.Controls.Add(this.label22);
             this.tabPage16.Location = new System.Drawing.Point(4, 21);
             this.tabPage16.Name = "tabPage16";
             this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
@@ -817,6 +858,216 @@
             this.label18.TabIndex = 22;
             this.label18.Text = "⤴";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Cambria", 30F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(253, 99);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(46, 47);
+            this.label9.TabIndex = 42;
+            this.label9.Text = "⤴";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Cambria", 30F, System.Drawing.FontStyle.Bold);
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(376, 99);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(46, 47);
+            this.label11.TabIndex = 40;
+            this.label11.Text = "⤴";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Cambria", 30F, System.Drawing.FontStyle.Bold);
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(121, 99);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(46, 47);
+            this.label12.TabIndex = 39;
+            this.label12.Text = "⤴";
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.Cyan;
+            this.button15.Location = new System.Drawing.Point(428, 119);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(74, 68);
+            this.button15.TabIndex = 34;
+            this.button15.Text = "SETA Certification";
+            this.button15.UseVisualStyleBackColor = false;
+            // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(382, 28);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(74, 68);
+            this.button16.TabIndex = 33;
+            this.button16.Text = "Status Form Submission to SETA";
+            this.button16.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Cambria", 70F, System.Drawing.FontStyle.Bold);
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(419, 28);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(107, 110);
+            this.label19.TabIndex = 32;
+            this.label19.Text = "⤵";
+            // 
+            // button17
+            // 
+            this.button17.BackColor = System.Drawing.Color.Cyan;
+            this.button17.Location = new System.Drawing.Point(305, 119);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(74, 68);
+            this.button17.TabIndex = 31;
+            this.button17.Text = "Learning Process Approval (Learner Workbook and Guides)";
+            this.button17.UseVisualStyleBackColor = false;
+            // 
+            // button18
+            // 
+            this.button18.BackColor = System.Drawing.Color.Cyan;
+            this.button18.Location = new System.Drawing.Point(261, 28);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(74, 68);
+            this.button18.TabIndex = 30;
+            this.button18.Text = "Verification of Learning Material Alignment ";
+            this.button18.UseVisualStyleBackColor = false;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Cambria", 70F, System.Drawing.FontStyle.Bold);
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(306, 28);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(107, 110);
+            this.label20.TabIndex = 29;
+            this.label20.Text = "⤵";
+            // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.Cyan;
+            this.button19.Location = new System.Drawing.Point(173, 119);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(74, 68);
+            this.button19.TabIndex = 28;
+            this.button19.Text = "Approval of NQF Alignment Matrix";
+            this.button19.UseVisualStyleBackColor = false;
+            // 
+            // button20
+            // 
+            this.button20.BackColor = System.Drawing.Color.Cyan;
+            this.button20.Location = new System.Drawing.Point(133, 28);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(74, 68);
+            this.button20.TabIndex = 27;
+            this.button20.Text = "SME Approval of Facilitators";
+            this.button20.UseVisualStyleBackColor = false;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Cambria", 70F, System.Drawing.FontStyle.Bold);
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(173, 28);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(107, 110);
+            this.label21.TabIndex = 26;
+            this.label21.Text = "⤵";
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.Color.Cyan;
+            this.button21.Location = new System.Drawing.Point(41, 128);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(74, 68);
+            this.button21.TabIndex = 25;
+            this.button21.Text = "Enrollment Numbers";
+            this.button21.UseVisualStyleBackColor = false;
+            // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(15, 28);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(74, 68);
+            this.button22.TabIndex = 24;
+            this.button22.Text = "Enrollment Application";
+            this.button22.UseVisualStyleBackColor = true;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Font = new System.Drawing.Font("Cambria", 70F, System.Drawing.FontStyle.Bold);
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(50, 28);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(107, 110);
+            this.label22.TabIndex = 23;
+            this.label22.Text = "⤵";
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.Cyan;
+            this.button12.Location = new System.Drawing.Point(3, 213);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(75, 23);
+            this.button12.TabIndex = 43;
+            this.button12.UseVisualStyleBackColor = false;
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(15, 97);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(63, 39);
+            this.button14.TabIndex = 45;
+            this.button14.Text = "QALA Process";
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Cambria", 9F);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(94, 222);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(222, 14);
+            this.label8.TabIndex = 46;
+            this.label8.Text = "SETA Process Step and / or Responsibility";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Cambria", 9F);
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(94, 251);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(246, 14);
+            this.label10.TabIndex = 47;
+            this.label10.Text = "Training Provider Step and / or Responsibility";
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(3, 242);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(75, 23);
+            this.button13.TabIndex = 48;
+            this.button13.UseVisualStyleBackColor = true;
+            // 
             // Academic_and_Training
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -839,6 +1090,8 @@
             this.panel1.PerformLayout();
             this.tabPage15.ResumeLayout(false);
             this.tabPage15.PerformLayout();
+            this.tabPage16.ResumeLayout(false);
+            this.tabPage16.PerformLayout();
             this.tabPage17.ResumeLayout(false);
             this.tabPage19.ResumeLayout(false);
             this.tabPage21.ResumeLayout(false);
@@ -914,5 +1167,25 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Label label22;
     }
 }
