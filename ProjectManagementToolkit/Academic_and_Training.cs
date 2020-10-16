@@ -36,5 +36,15 @@ namespace ProjectManagementToolkit
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage15_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
