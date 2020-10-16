@@ -46,5 +46,20 @@ namespace ProjectManagementToolkit
         {
 
         }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tabPage22_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
