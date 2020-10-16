@@ -19,7 +19,7 @@ namespace ProjectManagementToolkit
         private void button2_Click(object sender, EventArgs e)
         {
             panelContacts.Visible = true;
-           
+            panelAcademicAndTraining.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -59,6 +59,11 @@ namespace ProjectManagementToolkit
         }
 
         private void tabPage22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Academic_and_Training_Load(object sender, EventArgs e)
         {
 
         }
