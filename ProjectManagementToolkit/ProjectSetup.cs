@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace ProjectManagementToolkit
 {
-    public partial class MainForm : Form
+    public partial class ProjectSetup : Form
     {
-        public MainForm()
+        public ProjectSetup()
         {
             InitializeComponent();
         }
 
-        private void governanceToolStripMenuItem_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            Governance governance = new Governance();
-            governance.Show();
-            governance.MdiParent = this;
+            MainForm mf = new MainForm();
+            this.Visible = false;
+            mf.Show();
         }
     }
 }

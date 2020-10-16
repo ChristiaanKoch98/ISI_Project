@@ -33,7 +33,9 @@
             this.btnGeneralManagement = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.btnOpenInNewTab = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnKingIVonPage = new System.Windows.Forms.Button();
@@ -56,7 +58,12 @@
             this.btnGoverningBodyResponsibiities = new System.Windows.Forms.Button();
             this.btnCompanyGoals = new System.Windows.Forms.Button();
             this.btnLEgislativeEnviroment = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -82,36 +89,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.btnCloseKingIVonPage = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
             this.pictureBox28 = new System.Windows.Forms.PictureBox();
@@ -136,9 +113,29 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.pictureBox33 = new System.Windows.Forms.PictureBox();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
             this.pictureBox48 = new System.Windows.Forms.PictureBox();
             this.pictureBox46 = new System.Windows.Forms.PictureBox();
             this.pictureBox47 = new System.Windows.Forms.PictureBox();
@@ -154,21 +151,21 @@
             this.pictureBox34 = new System.Windows.Forms.PictureBox();
             this.pictureBox35 = new System.Windows.Forms.PictureBox();
             this.pictureBox36 = new System.Windows.Forms.PictureBox();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.btnCloseKingIVonPage = new System.Windows.Forms.Button();
             this.pictureBox49 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
@@ -193,9 +190,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
+            this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
@@ -211,6 +210,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
+            this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).BeginInit();
             this.SuspendLayout();
             // 
@@ -258,12 +258,23 @@
             this.tabPage1.Controls.Add(this.btnOpenInNewTab);
             this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 21);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(788, 326);
+            this.tabPage1.Size = new System.Drawing.Size(788, 322);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Report Centre";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(594, 55);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(89, 16);
+            this.linkLabel1.TabIndex = 3;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Report Name";
             // 
             // btnOpenInNewTab
             // 
@@ -276,13 +287,21 @@
             this.btnOpenInNewTab.Text = "Open in new tab";
             this.btnOpenInNewTab.UseVisualStyleBackColor = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(6, 39);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(478, 270);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(592, 39);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 12);
+            this.label2.Size = new System.Drawing.Size(99, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "Select a Report";
             // 
@@ -310,10 +329,10 @@
             this.tabPage2.Controls.Add(this.btnCompanyGoals);
             this.tabPage2.Controls.Add(this.btnLEgislativeEnviroment);
             this.tabPage2.Controls.Add(this.pictureBox2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 21);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(788, 326);
+            this.tabPage2.Size = new System.Drawing.Size(788, 322);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Interactive Model";
             // 
@@ -537,6 +556,14 @@
             this.btnLEgislativeEnviroment.Text = "Legislative Environment";
             this.btnLEgislativeEnviroment.UseVisualStyleBackColor = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(242, 6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(301, 300);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -544,12 +571,44 @@
             this.tabPage3.Controls.Add(this.pictureBox5);
             this.tabPage3.Controls.Add(this.pictureBox4);
             this.tabPage3.Controls.Add(this.pictureBox3);
-            this.tabPage3.Location = new System.Drawing.Point(4, 21);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(788, 326);
+            this.tabPage3.Size = new System.Drawing.Size(788, 322);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Componenets";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Location = new System.Drawing.Point(322, 168);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(209, 152);
+            this.pictureBox6.TabIndex = 3;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(322, 6);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(209, 156);
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(537, 6);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(245, 314);
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(7, 6);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(309, 314);
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
             // 
             // tabPage4
             // 
@@ -603,10 +662,10 @@
             this.tabPage4.Controls.Add(this.pictureBox8);
             this.tabPage4.Controls.Add(this.pictureBox7);
             this.tabPage4.ForeColor = System.Drawing.Color.White;
-            this.tabPage4.Location = new System.Drawing.Point(4, 21);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(788, 326);
+            this.tabPage4.Size = new System.Drawing.Size(788, 322);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Legislation";
             // 
@@ -615,7 +674,7 @@
             this.label26.AutoSize = true;
             this.label26.Location = new System.Drawing.Point(623, 300);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(79, 12);
+            this.label26.Size = new System.Drawing.Size(103, 16);
             this.label26.TabIndex = 47;
             this.label26.Text = "Relevant Forms";
             // 
@@ -624,7 +683,7 @@
             this.label25.AutoSize = true;
             this.label25.Location = new System.Drawing.Point(623, 274);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(59, 12);
+            this.label25.Size = new System.Drawing.Size(77, 16);
             this.label25.TabIndex = 46;
             this.label25.Text = "Procedures";
             // 
@@ -633,7 +692,7 @@
             this.label24.AutoSize = true;
             this.label24.Location = new System.Drawing.Point(623, 248);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(37, 12);
+            this.label24.Size = new System.Drawing.Size(50, 16);
             this.label24.TabIndex = 45;
             this.label24.Text = "Guides";
             // 
@@ -642,7 +701,7 @@
             this.label23.AutoSize = true;
             this.label23.Location = new System.Drawing.Point(504, 274);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(21, 12);
+            this.label23.Size = new System.Drawing.Size(28, 16);
             this.label23.TabIndex = 44;
             this.label23.Text = "Act";
             // 
@@ -651,7 +710,7 @@
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(417, 213);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(271, 12);
+            this.label22.Size = new System.Drawing.Size(354, 16);
             this.label22.TabIndex = 43;
             this.label22.Text = "Unemployment Insurance Contributions Act no 4 of 2002";
             // 
@@ -660,7 +719,7 @@
             this.label21.AutoSize = true;
             this.label21.Location = new System.Drawing.Point(417, 187);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(212, 12);
+            this.label21.Size = new System.Drawing.Size(280, 16);
             this.label21.TabIndex = 42;
             this.label21.Text = "Unemployment Insurance Act No. 63 of 2001";
             // 
@@ -669,7 +728,7 @@
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(417, 162);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(195, 12);
+            this.label20.Size = new System.Drawing.Size(256, 16);
             this.label20.TabIndex = 41;
             this.label20.Text = "Skills Development Levies Act no of 1999";
             // 
@@ -678,7 +737,7 @@
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(417, 136);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(177, 12);
+            this.label19.Size = new System.Drawing.Size(233, 16);
             this.label19.TabIndex = 40;
             this.label19.Text = "Skills Development Act no 97 of 1998";
             // 
@@ -687,7 +746,7 @@
             this.label18.AutoSize = true;
             this.label18.Location = new System.Drawing.Point(417, 110);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(231, 12);
+            this.label18.Size = new System.Drawing.Size(306, 16);
             this.label18.TabIndex = 39;
             this.label18.Text = "Occupational Health and Safety Act no 85 of 1993";
             // 
@@ -696,7 +755,7 @@
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(417, 84);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(313, 12);
+            this.label17.Size = new System.Drawing.Size(410, 16);
             this.label17.TabIndex = 38;
             this.label17.Text = "Occupational Diseases in mines and works act 78 of 1973 ODIMWA";
             // 
@@ -705,7 +764,7 @@
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(417, 58);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(144, 12);
+            this.label16.Size = new System.Drawing.Size(191, 16);
             this.label16.TabIndex = 37;
             this.label16.Text = "National Water Act 36 of 1998";
             // 
@@ -714,7 +773,7 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(417, 32);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(195, 12);
+            this.label15.Size = new System.Drawing.Size(259, 16);
             this.label15.TabIndex = 36;
             this.label15.Text = "National Environmental Management Act";
             // 
@@ -723,7 +782,7 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(417, 6);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(55, 12);
+            this.label14.Size = new System.Drawing.Size(73, 16);
             this.label14.TabIndex = 35;
             this.label14.Text = "Mining Act";
             // 
@@ -732,7 +791,7 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(39, 265);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(298, 12);
+            this.label13.Size = new System.Drawing.Size(393, 16);
             this.label13.TabIndex = 34;
             this.label13.Text = "Minerals and Petroleum Resource Development ACt, 28 of 2002";
             // 
@@ -741,7 +800,7 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(39, 239);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(109, 12);
+            this.label12.Size = new System.Drawing.Size(144, 16);
             this.label12.TabIndex = 33;
             this.label12.Text = "Minerals Act 50 of 991";
             // 
@@ -750,7 +809,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(39, 213);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(154, 12);
+            this.label11.Size = new System.Drawing.Size(206, 16);
             this.label11.TabIndex = 32;
             this.label11.Text = "Mine Health and Safety Act 1996";
             // 
@@ -759,7 +818,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(39, 187);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(181, 12);
+            this.label10.Size = new System.Drawing.Size(237, 16);
             this.label10.TabIndex = 31;
             this.label10.Text = "Manpower Training Act no 56 of 1981";
             // 
@@ -768,7 +827,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(39, 162);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(166, 12);
+            this.label9.Size = new System.Drawing.Size(219, 16);
             this.label9.TabIndex = 30;
             this.label9.Text = "Labour Relations act no 66 of 1995";
             // 
@@ -777,7 +836,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(39, 136);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(183, 12);
+            this.label8.Size = new System.Drawing.Size(240, 16);
             this.label8.TabIndex = 29;
             this.label8.Text = "Employment Services Act no 4 of 2014";
             // 
@@ -786,7 +845,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(39, 110);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(169, 12);
+            this.label7.Size = new System.Drawing.Size(223, 16);
             this.label7.TabIndex = 28;
             this.label7.Text = "Employment Equity Act, 55 of 1998";
             // 
@@ -795,7 +854,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(39, 84);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(134, 12);
+            this.label6.Size = new System.Drawing.Size(174, 16);
             this.label6.TabIndex = 27;
             this.label6.Text = "Constitution of South Africa";
             // 
@@ -804,7 +863,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(39, 58);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(269, 12);
+            this.label5.Size = new System.Drawing.Size(352, 16);
             this.label5.TabIndex = 26;
             this.label5.Text = "Compensation for Occupational Injuries and Diseases Act";
             // 
@@ -813,7 +872,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(39, 32);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 12);
+            this.label4.Size = new System.Drawing.Size(166, 16);
             this.label4.TabIndex = 25;
             this.label4.Text = "Companies Act 71 of 2008";
             // 
@@ -822,321 +881,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(40, 6);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(225, 12);
+            this.label3.Size = new System.Drawing.Size(294, 16);
             this.label3.TabIndex = 24;
             this.label3.Text = "Basic Conditions of Employment Act 75 of 1997";
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage5.Controls.Add(this.label27);
-            this.tabPage5.Controls.Add(this.label28);
-            this.tabPage5.Controls.Add(this.label29);
-            this.tabPage5.Controls.Add(this.pictureBox31);
-            this.tabPage5.Controls.Add(this.pictureBox32);
-            this.tabPage5.Controls.Add(this.pictureBox33);
-            this.tabPage5.ForeColor = System.Drawing.Color.White;
-            this.tabPage5.Location = new System.Drawing.Point(4, 21);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(788, 326);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Policies";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(44, 81);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(42, 12);
-            this.label27.TabIndex = 32;
-            this.label27.Text = "Policy 3";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(44, 43);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(42, 12);
-            this.label28.TabIndex = 31;
-            this.label28.Text = "Policy 2";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(44, 6);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(42, 12);
-            this.label29.TabIndex = 30;
-            this.label29.Text = "Policy 1";
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage6.Controls.Add(this.label44);
-            this.tabPage6.Controls.Add(this.label42);
-            this.tabPage6.Controls.Add(this.label43);
-            this.tabPage6.Controls.Add(this.label36);
-            this.tabPage6.Controls.Add(this.label37);
-            this.tabPage6.Controls.Add(this.label38);
-            this.tabPage6.Controls.Add(this.label39);
-            this.tabPage6.Controls.Add(this.label40);
-            this.tabPage6.Controls.Add(this.label41);
-            this.tabPage6.Controls.Add(this.label33);
-            this.tabPage6.Controls.Add(this.label34);
-            this.tabPage6.Controls.Add(this.label35);
-            this.tabPage6.Controls.Add(this.label30);
-            this.tabPage6.Controls.Add(this.label31);
-            this.tabPage6.Controls.Add(this.label32);
-            this.tabPage6.Controls.Add(this.pictureBox48);
-            this.tabPage6.Controls.Add(this.pictureBox46);
-            this.tabPage6.Controls.Add(this.pictureBox47);
-            this.tabPage6.Controls.Add(this.pictureBox40);
-            this.tabPage6.Controls.Add(this.pictureBox41);
-            this.tabPage6.Controls.Add(this.pictureBox42);
-            this.tabPage6.Controls.Add(this.pictureBox43);
-            this.tabPage6.Controls.Add(this.pictureBox44);
-            this.tabPage6.Controls.Add(this.pictureBox45);
-            this.tabPage6.Controls.Add(this.pictureBox37);
-            this.tabPage6.Controls.Add(this.pictureBox38);
-            this.tabPage6.Controls.Add(this.pictureBox39);
-            this.tabPage6.Controls.Add(this.pictureBox34);
-            this.tabPage6.Controls.Add(this.pictureBox35);
-            this.tabPage6.Controls.Add(this.pictureBox36);
-            this.tabPage6.ForeColor = System.Drawing.Color.White;
-            this.tabPage6.Location = new System.Drawing.Point(4, 21);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(788, 326);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Documentation";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(44, 233);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(225, 12);
-            this.label44.TabIndex = 62;
-            this.label44.Text = "International Integrated Reporting Framework";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(322, 270);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(374, 12);
-            this.label42.TabIndex = 60;
-            this.label42.Text = "GO 8 Terms of Reference Environment Health and Safety committee of the board";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(322, 233);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(361, 12);
-            this.label43.TabIndex = 59;
-            this.label43.Text = "GO 7 Terms of Reference Risk, Capital and compliance committee of the board";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(322, 195);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(240, 12);
-            this.label36.TabIndex = 56;
-            this.label36.Text = "GO 6 Terms of Reference Remuneration Committee";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(322, 157);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(246, 12);
-            this.label37.TabIndex = 55;
-            this.label37.Text = "Go 5 Terms of Reference ITC committee of the board";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(322, 119);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(198, 12);
-            this.label38.TabIndex = 54;
-            this.label38.Text = "Go 4 Terms of Reference Audit Committee";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(322, 81);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(294, 12);
-            this.label39.TabIndex = 50;
-            this.label39.Text = "GO 3 Terms of Reference Fair practices committee of the board";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(322, 43);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(285, 12);
-            this.label40.TabIndex = 49;
-            this.label40.Text = "GO 2 Terms of Reference Nomination committee of the board";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(322, 6);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(289, 12);
-            this.label41.TabIndex = 48;
-            this.label41.Text = "GO 1 Terms of Reference Overarching Governance Committee";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(44, 195);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(75, 12);
-            this.label33.TabIndex = 44;
-            this.label33.Text = "Process Matrix";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(44, 157);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(75, 12);
-            this.label34.TabIndex = 43;
-            this.label34.Text = "Process Matrix";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(44, 119);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(129, 12);
-            this.label35.TabIndex = 42;
-            this.label35.Text = "Board Meeting Procedures";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(44, 81);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(115, 12);
-            this.label30.TabIndex = 38;
-            this.label30.Text = "Board Chairmans Guide";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(44, 43);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(118, 12);
-            this.label31.TabIndex = 37;
-            this.label31.Text = "Board Meetings Minutes";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(44, 6);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(108, 12);
-            this.label32.TabIndex = 36;
-            this.label32.Text = "Board Metting Agenda";
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage7.Controls.Add(this.btnCloseKingIVonPage);
-            this.tabPage7.Controls.Add(this.pictureBox49);
-            this.tabPage7.Location = new System.Drawing.Point(4, 21);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(788, 326);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "King IV on a page";
-            // 
-            // btnCloseKingIVonPage
-            // 
-            this.btnCloseKingIVonPage.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCloseKingIVonPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnCloseKingIVonPage.Location = new System.Drawing.Point(652, 213);
-            this.btnCloseKingIVonPage.Name = "btnCloseKingIVonPage";
-            this.btnCloseKingIVonPage.Size = new System.Drawing.Size(75, 21);
-            this.btnCloseKingIVonPage.TabIndex = 1;
-            this.btnCloseKingIVonPage.Text = "Close";
-            this.btnCloseKingIVonPage.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(13, 68);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 12);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Navigation Form: ";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(594, 55);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(66, 12);
-            this.linkLabel1.TabIndex = 3;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Report Name";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(6, 39);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(478, 270);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(242, 6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(301, 300);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Location = new System.Drawing.Point(322, 168);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(209, 152);
-            this.pictureBox6.TabIndex = 3;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(322, 6);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(209, 156);
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(537, 6);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(245, 314);
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(7, 6);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(309, 314);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
             // 
             // pictureBox30
             // 
@@ -1378,6 +1125,50 @@
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
             // 
+            // tabPage5
+            // 
+            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage5.Controls.Add(this.label27);
+            this.tabPage5.Controls.Add(this.label28);
+            this.tabPage5.Controls.Add(this.label29);
+            this.tabPage5.Controls.Add(this.pictureBox31);
+            this.tabPage5.Controls.Add(this.pictureBox32);
+            this.tabPage5.Controls.Add(this.pictureBox33);
+            this.tabPage5.ForeColor = System.Drawing.Color.White;
+            this.tabPage5.Location = new System.Drawing.Point(4, 25);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(788, 322);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Policies";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(44, 81);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(55, 16);
+            this.label27.TabIndex = 32;
+            this.label27.Text = "Policy 3";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(44, 43);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(55, 16);
+            this.label28.TabIndex = 31;
+            this.label28.Text = "Policy 2";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(44, 6);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(55, 16);
+            this.label29.TabIndex = 30;
+            this.label29.Text = "Policy 1";
+            // 
             // pictureBox31
             // 
             this.pictureBox31.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox31.Image")));
@@ -1407,6 +1198,182 @@
             this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox33.TabIndex = 27;
             this.pictureBox33.TabStop = false;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage6.Controls.Add(this.label44);
+            this.tabPage6.Controls.Add(this.label42);
+            this.tabPage6.Controls.Add(this.label43);
+            this.tabPage6.Controls.Add(this.label36);
+            this.tabPage6.Controls.Add(this.label37);
+            this.tabPage6.Controls.Add(this.label38);
+            this.tabPage6.Controls.Add(this.label39);
+            this.tabPage6.Controls.Add(this.label40);
+            this.tabPage6.Controls.Add(this.label41);
+            this.tabPage6.Controls.Add(this.label33);
+            this.tabPage6.Controls.Add(this.label34);
+            this.tabPage6.Controls.Add(this.label35);
+            this.tabPage6.Controls.Add(this.label30);
+            this.tabPage6.Controls.Add(this.label31);
+            this.tabPage6.Controls.Add(this.label32);
+            this.tabPage6.Controls.Add(this.pictureBox48);
+            this.tabPage6.Controls.Add(this.pictureBox46);
+            this.tabPage6.Controls.Add(this.pictureBox47);
+            this.tabPage6.Controls.Add(this.pictureBox40);
+            this.tabPage6.Controls.Add(this.pictureBox41);
+            this.tabPage6.Controls.Add(this.pictureBox42);
+            this.tabPage6.Controls.Add(this.pictureBox43);
+            this.tabPage6.Controls.Add(this.pictureBox44);
+            this.tabPage6.Controls.Add(this.pictureBox45);
+            this.tabPage6.Controls.Add(this.pictureBox37);
+            this.tabPage6.Controls.Add(this.pictureBox38);
+            this.tabPage6.Controls.Add(this.pictureBox39);
+            this.tabPage6.Controls.Add(this.pictureBox34);
+            this.tabPage6.Controls.Add(this.pictureBox35);
+            this.tabPage6.Controls.Add(this.pictureBox36);
+            this.tabPage6.ForeColor = System.Drawing.Color.White;
+            this.tabPage6.Location = new System.Drawing.Point(4, 25);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(788, 322);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Documentation";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(44, 233);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(295, 16);
+            this.label44.TabIndex = 62;
+            this.label44.Text = "International Integrated Reporting Framework";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(322, 270);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(493, 16);
+            this.label42.TabIndex = 60;
+            this.label42.Text = "GO 8 Terms of Reference Environment Health and Safety committee of the board";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(322, 233);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(476, 16);
+            this.label43.TabIndex = 59;
+            this.label43.Text = "GO 7 Terms of Reference Risk, Capital and compliance committee of the board";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(322, 195);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(317, 16);
+            this.label36.TabIndex = 56;
+            this.label36.Text = "GO 6 Terms of Reference Remuneration Committee";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(322, 157);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(322, 16);
+            this.label37.TabIndex = 55;
+            this.label37.Text = "Go 5 Terms of Reference ITC committee of the board";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(322, 119);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(261, 16);
+            this.label38.TabIndex = 54;
+            this.label38.Text = "Go 4 Terms of Reference Audit Committee";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(322, 81);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(386, 16);
+            this.label39.TabIndex = 50;
+            this.label39.Text = "GO 3 Terms of Reference Fair practices committee of the board";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(322, 43);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(375, 16);
+            this.label40.TabIndex = 49;
+            this.label40.Text = "GO 2 Terms of Reference Nomination committee of the board";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(322, 6);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(379, 16);
+            this.label41.TabIndex = 48;
+            this.label41.Text = "GO 1 Terms of Reference Overarching Governance Committee";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(44, 195);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(97, 16);
+            this.label33.TabIndex = 44;
+            this.label33.Text = "Process Matrix";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(44, 157);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(97, 16);
+            this.label34.TabIndex = 43;
+            this.label34.Text = "Process Matrix";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(44, 119);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(169, 16);
+            this.label35.TabIndex = 42;
+            this.label35.Text = "Board Meeting Procedures";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(44, 81);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(153, 16);
+            this.label30.TabIndex = 38;
+            this.label30.Text = "Board Chairmans Guide";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(44, 43);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(155, 16);
+            this.label31.TabIndex = 37;
+            this.label31.Text = "Board Meetings Minutes";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(44, 6);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(144, 16);
+            this.label32.TabIndex = 36;
+            this.label32.Text = "Board Metting Agenda";
             // 
             // pictureBox48
             // 
@@ -1558,6 +1525,29 @@
             this.pictureBox36.TabIndex = 33;
             this.pictureBox36.TabStop = false;
             // 
+            // tabPage7
+            // 
+            this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage7.Controls.Add(this.btnCloseKingIVonPage);
+            this.tabPage7.Controls.Add(this.pictureBox49);
+            this.tabPage7.Location = new System.Drawing.Point(4, 25);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(788, 322);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "King IV on a page";
+            // 
+            // btnCloseKingIVonPage
+            // 
+            this.btnCloseKingIVonPage.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCloseKingIVonPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnCloseKingIVonPage.Location = new System.Drawing.Point(652, 213);
+            this.btnCloseKingIVonPage.Name = "btnCloseKingIVonPage";
+            this.btnCloseKingIVonPage.Size = new System.Drawing.Size(75, 21);
+            this.btnCloseKingIVonPage.TabIndex = 1;
+            this.btnCloseKingIVonPage.Text = "Close";
+            this.btnCloseKingIVonPage.UseVisualStyleBackColor = false;
+            // 
             // pictureBox49
             // 
             this.pictureBox49.Location = new System.Drawing.Point(6, 6);
@@ -1566,12 +1556,22 @@
             this.pictureBox49.TabIndex = 0;
             this.pictureBox49.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(13, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 16);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Navigation Form: ";
+            // 
             // Governance
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(820, 435);
+            this.ClientSize = new System.Drawing.Size(843, 469);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.btnGeneralManagement);
@@ -1582,21 +1582,16 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
-            this.tabPage7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
@@ -1621,9 +1616,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
@@ -1639,6 +1638,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
+            this.tabPage7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
