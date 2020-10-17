@@ -73,6 +73,12 @@
     <Compile Include="Asset and Inventory.Designer.cs">
       <DependentUpon>Asset and Inventory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Finances.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finances.Designer.cs">
+      <DependentUpon>Finances.cs</DependentUpon>
+    </Compile>
     <Compile Include="GeneralManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,12 @@
     </Compile>
     <Compile Include="Human_Resources.Designer.cs">
       <DependentUpon>Human_Resources.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryAndSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryAndSales.Designer.cs">
+      <DependentUpon>InventoryAndSales.cs</DependentUpon>
     </Compile>
     <Compile Include="ISI_DB.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -154,6 +166,9 @@
     <EmbeddedResource Include="Asset and Inventory.resx">
       <DependentUpon>Asset and Inventory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Finances.resx">
+      <DependentUpon>Finances.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GeneralManagement.resx">
       <DependentUpon>GeneralManagement.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Human_Resources.resx">
       <DependentUpon>Human_Resources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryAndSales.resx">
+      <DependentUpon>InventoryAndSales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IT Management.resx">
       <DependentUpon>IT Management.cs</DependentUpon>

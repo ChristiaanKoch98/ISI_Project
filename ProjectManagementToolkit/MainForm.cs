@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectManagementToolKit;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -82,6 +83,21 @@ namespace ProjectManagementToolkit
             GeneralManagement genManForm = new GeneralManagement();
             genManForm.Show();
             genManForm.MdiParent = this;
+        }
+
+        private void inventoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InventoryAndSales invForm = new InventoryAndSales();
+            invForm.Show();
+            invForm.MdiParent = this;
+        }
+
+        private void financesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Finances financesForm = new Finances();
+            financesForm.Show();
+            financesForm.MdiParent = this;
+
         }
     }
 }

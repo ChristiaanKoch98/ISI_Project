@@ -36,12 +36,14 @@
             this.assetAndInventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.assetAndInventoryToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.informationTechnologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.generalManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.academicAndTrainingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.humanResourcesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.marketingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.processesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.policiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.generalManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.financesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,7 +82,9 @@
             this.humanResourcesToolStripMenuItem,
             this.marketingToolStripMenuItem,
             this.processesToolStripMenuItem,
-            this.policiesToolStripMenuItem});
+            this.policiesToolStripMenuItem,
+            this.inventoryToolStripMenuItem,
+            this.financesToolStripMenuItem});
             this.mPMMToolStripMenuItem.Name = "mPMMToolStripMenuItem";
             this.mPMMToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.mPMMToolStripMenuItem.Text = "MPMM";
@@ -115,6 +119,13 @@
             this.informationTechnologyToolStripMenuItem.Size = new System.Drawing.Size(250, 26);
             this.informationTechnologyToolStripMenuItem.Text = "Information Technology";
             this.informationTechnologyToolStripMenuItem.Click += new System.EventHandler(this.informationTechnologyToolStripMenuItem_Click);
+            // 
+            // generalManagementToolStripMenuItem
+            // 
+            this.generalManagementToolStripMenuItem.Name = "generalManagementToolStripMenuItem";
+            this.generalManagementToolStripMenuItem.Size = new System.Drawing.Size(250, 26);
+            this.generalManagementToolStripMenuItem.Text = "General Management";
+            this.generalManagementToolStripMenuItem.Click += new System.EventHandler(this.generalManagementToolStripMenuItem_Click);
             // 
             // academicAndTrainingToolStripMenuItem
             // 
@@ -151,12 +162,19 @@
             this.policiesToolStripMenuItem.Text = "Policies and Procedures";
             this.policiesToolStripMenuItem.Click += new System.EventHandler(this.policiesToolStripMenuItem_Click);
             // 
-            // generalManagementToolStripMenuItem
+            // inventoryToolStripMenuItem
             // 
-            this.generalManagementToolStripMenuItem.Name = "generalManagementToolStripMenuItem";
-            this.generalManagementToolStripMenuItem.Size = new System.Drawing.Size(250, 26);
-            this.generalManagementToolStripMenuItem.Text = "General Management";
-            this.generalManagementToolStripMenuItem.Click += new System.EventHandler(this.generalManagementToolStripMenuItem_Click);
+            this.inventoryToolStripMenuItem.Name = "inventoryToolStripMenuItem";
+            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+            this.inventoryToolStripMenuItem.Text = "Inventory";
+            this.inventoryToolStripMenuItem.Click += new System.EventHandler(this.inventoryToolStripMenuItem_Click);
+            // 
+            // financesToolStripMenuItem
+            // 
+            this.financesToolStripMenuItem.Name = "financesToolStripMenuItem";
+            this.financesToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+            this.financesToolStripMenuItem.Text = "Finances";
+            this.financesToolStripMenuItem.Click += new System.EventHandler(this.financesToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -191,5 +209,7 @@
         private System.Windows.Forms.ToolStripMenuItem processesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem policiesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generalManagementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inventoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem financesToolStripMenuItem;
     }
 }
