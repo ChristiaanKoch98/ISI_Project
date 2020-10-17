@@ -30,9 +30,12 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mPMMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mPMMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.governanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.assetAndInventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.assetAndInventoryToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.informationTechnologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,19 +59,20 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
-            // mPMMToolStripMenuItem
-            // 
-            this.mPMMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.governanceToolStripMenuItem});
-            this.mPMMToolStripMenuItem.Name = "mPMMToolStripMenuItem";
-            this.mPMMToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
-            this.mPMMToolStripMenuItem.Text = "MPMM";
-            // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(116, 26);
             this.exitToolStripMenuItem.Text = "Exit";
+            // 
+            // mPMMToolStripMenuItem
+            // 
+            this.mPMMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.governanceToolStripMenuItem,
+            this.assetAndInventoryToolStripMenuItem});
+            this.mPMMToolStripMenuItem.Name = "mPMMToolStripMenuItem";
+            this.mPMMToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
+            this.mPMMToolStripMenuItem.Text = "MPMM";
             // 
             // governanceToolStripMenuItem
             // 
@@ -76,6 +80,29 @@
             this.governanceToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.governanceToolStripMenuItem.Text = "Governance";
             this.governanceToolStripMenuItem.Click += new System.EventHandler(this.governanceToolStripMenuItem_Click);
+            // 
+            // assetAndInventoryToolStripMenuItem
+            // 
+            this.assetAndInventoryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.assetAndInventoryToolStripMenuItem1,
+            this.informationTechnologyToolStripMenuItem});
+            this.assetAndInventoryToolStripMenuItem.Name = "assetAndInventoryToolStripMenuItem";
+            this.assetAndInventoryToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.assetAndInventoryToolStripMenuItem.Text = "Management";
+            // 
+            // assetAndInventoryToolStripMenuItem1
+            // 
+            this.assetAndInventoryToolStripMenuItem1.Name = "assetAndInventoryToolStripMenuItem1";
+            this.assetAndInventoryToolStripMenuItem1.Size = new System.Drawing.Size(250, 26);
+            this.assetAndInventoryToolStripMenuItem1.Text = "Asset and Inventory";
+            this.assetAndInventoryToolStripMenuItem1.Click += new System.EventHandler(this.assetAndInventoryToolStripMenuItem1_Click);
+            // 
+            // informationTechnologyToolStripMenuItem
+            // 
+            this.informationTechnologyToolStripMenuItem.Name = "informationTechnologyToolStripMenuItem";
+            this.informationTechnologyToolStripMenuItem.Size = new System.Drawing.Size(250, 26);
+            this.informationTechnologyToolStripMenuItem.Text = "Information Technology";
+            this.informationTechnologyToolStripMenuItem.Click += new System.EventHandler(this.informationTechnologyToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -101,5 +128,8 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mPMMToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem governanceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem assetAndInventoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem assetAndInventoryToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem informationTechnologyToolStripMenuItem;
     }
 }

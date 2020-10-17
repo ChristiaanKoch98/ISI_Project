@@ -23,5 +23,21 @@ namespace ProjectManagementToolkit
             governance.Show();
             governance.MdiParent = this;
         }
+
+      
+
+        private void assetAndInventoryToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Asset_and_Inventory assInv = new Asset_and_Inventory();
+            assInv.Show();
+            assInv.MdiParent = this;
+        }
+
+        private void informationTechnologyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IT_Management itMan = new IT_Management();
+            itMan.Show();
+            itMan.MdiParent = this;
+        }
     }
 }
