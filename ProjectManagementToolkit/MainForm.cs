@@ -69,5 +69,12 @@ namespace ProjectManagementToolkit
             processesForm.Show();
             processesForm.MdiParent = this;
         }
+
+        private void policiesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Policies_and_Procedures polProForm = new Policies_and_Procedures();
+            polProForm.Show();
+            polProForm.MdiParent = this;
+        }
     }
 }

@@ -40,6 +40,7 @@
             this.humanResourcesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.marketingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.processesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.policiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,7 +78,8 @@
             this.academicAndTrainingToolStripMenuItem,
             this.humanResourcesToolStripMenuItem,
             this.marketingToolStripMenuItem,
-            this.processesToolStripMenuItem});
+            this.processesToolStripMenuItem,
+            this.policiesToolStripMenuItem});
             this.mPMMToolStripMenuItem.Name = "mPMMToolStripMenuItem";
             this.mPMMToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.mPMMToolStripMenuItem.Text = "MPMM";
@@ -140,6 +142,13 @@
             this.processesToolStripMenuItem.Text = "Processes";
             this.processesToolStripMenuItem.Click += new System.EventHandler(this.processesToolStripMenuItem_Click);
             // 
+            // policiesToolStripMenuItem
+            // 
+            this.policiesToolStripMenuItem.Name = "policiesToolStripMenuItem";
+            this.policiesToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+            this.policiesToolStripMenuItem.Text = "Policies and Procedures";
+            this.policiesToolStripMenuItem.Click += new System.EventHandler(this.policiesToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -171,5 +180,6 @@
         private System.Windows.Forms.ToolStripMenuItem humanResourcesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem marketingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem processesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem policiesToolStripMenuItem;
     }
 }
