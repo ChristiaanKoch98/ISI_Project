@@ -76,5 +76,12 @@ namespace ProjectManagementToolkit
             polProForm.Show();
             polProForm.MdiParent = this;
         }
+
+        private void generalManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GeneralManagement genManForm = new GeneralManagement();
+            genManForm.Show();
+            genManForm.MdiParent = this;
+        }
     }
 }

@@ -73,6 +73,12 @@
     <Compile Include="Asset and Inventory.Designer.cs">
       <DependentUpon>Asset and Inventory.cs</DependentUpon>
     </Compile>
+    <Compile Include="GeneralManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralManagement.Designer.cs">
+      <DependentUpon>GeneralManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Governance.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Asset and Inventory.resx">
       <DependentUpon>Asset and Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralManagement.resx">
+      <DependentUpon>GeneralManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Governance.resx">
       <DependentUpon>Governance.cs</DependentUpon>
