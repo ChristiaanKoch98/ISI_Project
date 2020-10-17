@@ -48,5 +48,19 @@ namespace ProjectManagementToolkit
             acTran.Show();
             acTran.MdiParent = this;
         }
+
+        private void humanResourcesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Human_Resources hr = new Human_Resources();
+            hr.Show();
+            hr.MdiParent = this;
+        }
+
+        private void marketingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Marketing marketing = new Marketing();
+            marketing.Show();
+            marketing.MdiParent = this;
+        }
     }
 }

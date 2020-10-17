@@ -37,6 +37,8 @@
             this.assetAndInventoryToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.informationTechnologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.academicAndTrainingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.humanResourcesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.marketingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,7 +73,9 @@
             this.mPMMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.governanceToolStripMenuItem,
             this.assetAndInventoryToolStripMenuItem,
-            this.academicAndTrainingToolStripMenuItem});
+            this.academicAndTrainingToolStripMenuItem,
+            this.humanResourcesToolStripMenuItem,
+            this.marketingToolStripMenuItem});
             this.mPMMToolStripMenuItem.Name = "mPMMToolStripMenuItem";
             this.mPMMToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.mPMMToolStripMenuItem.Text = "MPMM";
@@ -79,7 +83,7 @@
             // governanceToolStripMenuItem
             // 
             this.governanceToolStripMenuItem.Name = "governanceToolStripMenuItem";
-            this.governanceToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.governanceToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
             this.governanceToolStripMenuItem.Text = "Governance";
             this.governanceToolStripMenuItem.Click += new System.EventHandler(this.governanceToolStripMenuItem_Click);
             // 
@@ -89,7 +93,7 @@
             this.assetAndInventoryToolStripMenuItem1,
             this.informationTechnologyToolStripMenuItem});
             this.assetAndInventoryToolStripMenuItem.Name = "assetAndInventoryToolStripMenuItem";
-            this.assetAndInventoryToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.assetAndInventoryToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
             this.assetAndInventoryToolStripMenuItem.Text = "Management";
             // 
             // assetAndInventoryToolStripMenuItem1
@@ -112,6 +116,20 @@
             this.academicAndTrainingToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
             this.academicAndTrainingToolStripMenuItem.Text = "Academic and Training";
             this.academicAndTrainingToolStripMenuItem.Click += new System.EventHandler(this.academicAndTrainingToolStripMenuItem_Click);
+            // 
+            // humanResourcesToolStripMenuItem
+            // 
+            this.humanResourcesToolStripMenuItem.Name = "humanResourcesToolStripMenuItem";
+            this.humanResourcesToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.humanResourcesToolStripMenuItem.Text = "Human Resources";
+            this.humanResourcesToolStripMenuItem.Click += new System.EventHandler(this.humanResourcesToolStripMenuItem_Click);
+            // 
+            // marketingToolStripMenuItem
+            // 
+            this.marketingToolStripMenuItem.Name = "marketingToolStripMenuItem";
+            this.marketingToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.marketingToolStripMenuItem.Text = "Marketing";
+            this.marketingToolStripMenuItem.Click += new System.EventHandler(this.marketingToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -141,5 +159,7 @@
         private System.Windows.Forms.ToolStripMenuItem assetAndInventoryToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem informationTechnologyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem academicAndTrainingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem humanResourcesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem marketingToolStripMenuItem;
     }
 }
