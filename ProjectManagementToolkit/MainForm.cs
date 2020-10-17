@@ -12,6 +12,8 @@ namespace ProjectManagementToolkit
 {
     public partial class MainForm : Form
     {
+        private const FormWindowState MAXIMIZED = FormWindowState.Maximized;
+
         public MainForm()
         {
             InitializeComponent();
@@ -38,6 +40,13 @@ namespace ProjectManagementToolkit
             IT_Management itMan = new IT_Management();
             itMan.Show();
             itMan.MdiParent = this;
+        }
+
+        private void academicAndTrainingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Academic_and_Training acTran = new Academic_and_Training();
+            acTran.Show();
+            acTran.MdiParent = this;
         }
     }
 }

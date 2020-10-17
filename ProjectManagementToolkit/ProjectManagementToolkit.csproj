@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Academic_and_Training.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Academic_and_Training.Designer.cs">
+      <DependentUpon>Academic_and_Training.cs</DependentUpon>
+    </Compile>
     <Compile Include="Asset and Inventory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Validation.cs" />
+    <EmbeddedResource Include="Academic_and_Training.resx">
+      <DependentUpon>Academic_and_Training.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Asset and Inventory.resx">
       <DependentUpon>Asset and Inventory.cs</DependentUpon>
     </EmbeddedResource>

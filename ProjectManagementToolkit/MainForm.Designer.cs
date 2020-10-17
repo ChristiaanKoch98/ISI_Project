@@ -36,6 +36,7 @@
             this.assetAndInventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.assetAndInventoryToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.informationTechnologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.academicAndTrainingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,7 +70,8 @@
             // 
             this.mPMMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.governanceToolStripMenuItem,
-            this.assetAndInventoryToolStripMenuItem});
+            this.assetAndInventoryToolStripMenuItem,
+            this.academicAndTrainingToolStripMenuItem});
             this.mPMMToolStripMenuItem.Name = "mPMMToolStripMenuItem";
             this.mPMMToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.mPMMToolStripMenuItem.Text = "MPMM";
@@ -104,6 +106,13 @@
             this.informationTechnologyToolStripMenuItem.Text = "Information Technology";
             this.informationTechnologyToolStripMenuItem.Click += new System.EventHandler(this.informationTechnologyToolStripMenuItem_Click);
             // 
+            // academicAndTrainingToolStripMenuItem
+            // 
+            this.academicAndTrainingToolStripMenuItem.Name = "academicAndTrainingToolStripMenuItem";
+            this.academicAndTrainingToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.academicAndTrainingToolStripMenuItem.Text = "Academic and Training";
+            this.academicAndTrainingToolStripMenuItem.Click += new System.EventHandler(this.academicAndTrainingToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -131,5 +140,6 @@
         private System.Windows.Forms.ToolStripMenuItem assetAndInventoryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem assetAndInventoryToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem informationTechnologyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem academicAndTrainingToolStripMenuItem;
     }
 }
