@@ -115,6 +115,12 @@
     <Compile Include="Marketing.designer.cs">
       <DependentUpon>Marketing.cs</DependentUpon>
     </Compile>
+    <Compile Include="Processes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processes.Designer.cs">
+      <DependentUpon>Processes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="ProjectSetup.cs">
       <SubType>Form</SubType>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Marketing.resx">
       <DependentUpon>Marketing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processes.resx">
+      <DependentUpon>Processes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProjectSetup.resx">
       <DependentUpon>ProjectSetup.cs</DependentUpon>

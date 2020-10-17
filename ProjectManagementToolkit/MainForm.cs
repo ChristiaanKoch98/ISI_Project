@@ -21,46 +21,53 @@ namespace ProjectManagementToolkit
 
         private void governanceToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Governance governance = new Governance();
-            governance.Show();
-            governance.MdiParent = this;
+            Governance governanceForm = new Governance();
+            governanceForm.Show();
+            governanceForm.MdiParent = this;
         }
 
       
 
         private void assetAndInventoryToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Asset_and_Inventory assInv = new Asset_and_Inventory();
-            assInv.Show();
-            assInv.MdiParent = this;
+            Asset_and_Inventory assInvForm = new Asset_and_Inventory();
+            assInvForm.Show();
+            assInvForm.MdiParent = this;
         }
 
         private void informationTechnologyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            IT_Management itMan = new IT_Management();
-            itMan.Show();
-            itMan.MdiParent = this;
+            IT_Management itManForm = new IT_Management();
+            itManForm.Show();
+            itManForm.MdiParent = this;
         }
 
         private void academicAndTrainingToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Academic_and_Training acTran = new Academic_and_Training();
-            acTran.Show();
-            acTran.MdiParent = this;
+            Academic_and_Training acTranForm = new Academic_and_Training();
+            acTranForm.Show();
+            acTranForm.MdiParent = this;
         }
 
         private void humanResourcesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Human_Resources hr = new Human_Resources();
-            hr.Show();
-            hr.MdiParent = this;
+            Human_Resources hrForm = new Human_Resources();
+            hrForm.Show();
+            hrForm.MdiParent = this;
         }
 
         private void marketingToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Marketing marketing = new Marketing();
-            marketing.Show();
-            marketing.MdiParent = this;
+            Marketing marketingForm = new Marketing();
+            marketingForm.Show();
+            marketingForm.MdiParent = this;
+        }
+
+        private void processesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Processes processesForm = new Processes();
+            processesForm.Show();
+            processesForm.MdiParent = this;
         }
     }
 }

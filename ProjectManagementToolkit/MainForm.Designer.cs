@@ -39,6 +39,7 @@
             this.academicAndTrainingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.humanResourcesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.marketingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.processesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,7 +76,8 @@
             this.assetAndInventoryToolStripMenuItem,
             this.academicAndTrainingToolStripMenuItem,
             this.humanResourcesToolStripMenuItem,
-            this.marketingToolStripMenuItem});
+            this.marketingToolStripMenuItem,
+            this.processesToolStripMenuItem});
             this.mPMMToolStripMenuItem.Name = "mPMMToolStripMenuItem";
             this.mPMMToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.mPMMToolStripMenuItem.Text = "MPMM";
@@ -131,6 +133,13 @@
             this.marketingToolStripMenuItem.Text = "Marketing";
             this.marketingToolStripMenuItem.Click += new System.EventHandler(this.marketingToolStripMenuItem_Click);
             // 
+            // processesToolStripMenuItem
+            // 
+            this.processesToolStripMenuItem.Name = "processesToolStripMenuItem";
+            this.processesToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.processesToolStripMenuItem.Text = "Processes";
+            this.processesToolStripMenuItem.Click += new System.EventHandler(this.processesToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -161,5 +170,6 @@
         private System.Windows.Forms.ToolStripMenuItem academicAndTrainingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem humanResourcesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem marketingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem processesToolStripMenuItem;
     }
 }
