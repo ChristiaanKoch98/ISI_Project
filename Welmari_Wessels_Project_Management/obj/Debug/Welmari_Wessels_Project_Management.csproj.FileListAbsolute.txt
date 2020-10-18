@@ -1,0 +1,9 @@
+C:\Users\welma\source\repos\Welmari_Wessels_Project_Management\bin\Debug\Welmari_Wessels_Project_Management.exe.config
+C:\Users\welma\source\repos\Welmari_Wessels_Project_Management\bin\Debug\Welmari_Wessels_Project_Management.exe
+C:\Users\welma\source\repos\Welmari_Wessels_Project_Management\bin\Debug\Welmari_Wessels_Project_Management.pdb
+C:\Users\welma\source\repos\Welmari_Wessels_Project_Management\obj\Debug\Welmari_Wessels_Project_Management.csprojAssemblyReference.cache
+C:\Users\welma\source\repos\Welmari_Wessels_Project_Management\obj\Debug\Welmari_Wessels_Project_Management.frmProjectManagement.resources
+C:\Users\welma\source\repos\Welmari_Wessels_Project_Management\obj\Debug\Welmari_Wessels_Project_Management.Properties.Resources.resources
+C:\Users\welma\source\repos\Welmari_Wessels_Project_Management\obj\Debug\Welmari_Wessels_Project_Management.csproj.GenerateResource.cache
+C:\Users\welma\source\repos\Welmari_Wessels_Project_Management\obj\Debug\Welmari_Wessels_Project_Management.exe
+C:\Users\welma\source\repos\Welmari_Wessels_Project_Management\obj\Debug\Welmari_Wessels_Project_Management.pdb
