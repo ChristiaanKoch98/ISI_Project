@@ -73,6 +73,12 @@
     <Compile Include="Asset and Inventory.Designer.cs">
       <DependentUpon>Asset and Inventory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Events.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Events.Designer.cs">
+      <DependentUpon>Events.cs</DependentUpon>
+    </Compile>
     <Compile Include="Finances.cs">
       <SubType>Form</SubType>
     </Compile>

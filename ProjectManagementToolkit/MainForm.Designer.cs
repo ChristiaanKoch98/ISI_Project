@@ -44,6 +44,7 @@
             this.policiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.financesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eventsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,7 +85,8 @@
             this.processesToolStripMenuItem,
             this.policiesToolStripMenuItem,
             this.inventoryToolStripMenuItem,
-            this.financesToolStripMenuItem});
+            this.financesToolStripMenuItem,
+            this.eventsToolStripMenuItem});
             this.mPMMToolStripMenuItem.Name = "mPMMToolStripMenuItem";
             this.mPMMToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.mPMMToolStripMenuItem.Text = "MPMM";
@@ -176,6 +178,13 @@
             this.financesToolStripMenuItem.Text = "Finances";
             this.financesToolStripMenuItem.Click += new System.EventHandler(this.financesToolStripMenuItem_Click);
             // 
+            // eventsToolStripMenuItem
+            // 
+            this.eventsToolStripMenuItem.Name = "eventsToolStripMenuItem";
+            this.eventsToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+            this.eventsToolStripMenuItem.Text = "Events";
+            this.eventsToolStripMenuItem.Click += new System.EventHandler(this.eventsToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -211,5 +220,6 @@
         private System.Windows.Forms.ToolStripMenuItem generalManagementToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inventoryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem financesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eventsToolStripMenuItem;
     }
 }

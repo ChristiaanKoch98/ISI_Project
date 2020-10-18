@@ -99,5 +99,12 @@ namespace ProjectManagementToolkit
             financesForm.MdiParent = this;
 
         }
+
+        private void eventsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Events eventsForm = new Events();
+            eventsForm.Show();
+            eventsForm.MdiParent = this;
+        }
     }
 }
