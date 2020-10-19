@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Welmari_Wessels_Project_Management
+namespace ProjectManagementToolkit
 {
     public partial class PLSM_ProcessGroupingGovernance_Interfaces : Form
     {

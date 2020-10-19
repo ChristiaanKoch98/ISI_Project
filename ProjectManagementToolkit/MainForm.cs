@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Welmari_Wessels_Project_Management;
 
 namespace ProjectManagementToolkit
 {

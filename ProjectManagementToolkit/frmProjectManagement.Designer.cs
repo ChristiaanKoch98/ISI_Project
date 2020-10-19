@@ -1,4 +1,4 @@
-﻿namespace Welmari_Wessels_Project_Management
+﻿namespace ProjectManagementToolkit
 {
     partial class frmProjectManagement
     {
