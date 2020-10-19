@@ -120,5 +120,12 @@ namespace ProjectManagementToolkit
             projMan.Show();
             projMan.MdiParent = this;
         }
+
+        private void contactsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Contacts contacts = new Contacts();
+            contacts.Show();
+            contacts.MdiParent = this;
+        }
     }
 }

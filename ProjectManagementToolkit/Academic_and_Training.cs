@@ -18,14 +18,12 @@ namespace ProjectManagementToolkit
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            panelContacts.Visible = true;
-            panelAcademicAndTraining.Visible = false;
+     
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            panelAcademicAndTraining.Visible = true;
-            panelContacts.Visible = false;
+            
         }
 
         private void panelAcademicAndTraining_Paint(object sender, PaintEventArgs e)
