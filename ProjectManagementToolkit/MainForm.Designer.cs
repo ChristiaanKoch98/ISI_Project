@@ -47,6 +47,7 @@
             this.eventsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.projectManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pLSMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contactsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,7 +91,8 @@
             this.financesToolStripMenuItem,
             this.eventsToolStripMenuItem,
             this.projectManagementToolStripMenuItem,
-            this.pLSMToolStripMenuItem});
+            this.pLSMToolStripMenuItem,
+            this.contactsToolStripMenuItem});
             this.mPMMToolStripMenuItem.Name = "mPMMToolStripMenuItem";
             this.mPMMToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.mPMMToolStripMenuItem.Text = "MPMM";
@@ -203,6 +205,13 @@
             this.pLSMToolStripMenuItem.Text = "PLSM";
             this.pLSMToolStripMenuItem.Click += new System.EventHandler(this.pLSMToolStripMenuItem_Click);
             // 
+            // contactsToolStripMenuItem
+            // 
+            this.contactsToolStripMenuItem.Name = "contactsToolStripMenuItem";
+            this.contactsToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+            this.contactsToolStripMenuItem.Text = "Contacts";
+            this.contactsToolStripMenuItem.Click += new System.EventHandler(this.contactsToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -241,5 +250,6 @@
         private System.Windows.Forms.ToolStripMenuItem eventsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem projectManagementToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pLSMToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem contactsToolStripMenuItem;
     }
 }
