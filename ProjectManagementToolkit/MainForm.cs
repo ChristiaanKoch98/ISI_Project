@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Welmari_Wessels_Project_Management;
 
 namespace ProjectManagementToolkit
 {
@@ -105,6 +106,20 @@ namespace ProjectManagementToolkit
             Events eventsForm = new Events();
             eventsForm.Show();
             eventsForm.MdiParent = this;
+        }
+
+        private void projectManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PLSM_ProcessGroupingGovernance_Interfaces plsm = new PLSM_ProcessGroupingGovernance_Interfaces();
+            plsm.Show();
+            plsm.MdiParent = this;
+        }
+
+        private void pLSMToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmProjectManagement projMan = new frmProjectManagement();
+            projMan.Show();
+            projMan.MdiParent = this;
         }
     }
 }

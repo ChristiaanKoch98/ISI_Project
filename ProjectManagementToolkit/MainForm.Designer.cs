@@ -45,6 +45,8 @@
             this.inventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.financesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eventsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.projectManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pLSMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,7 +88,9 @@
             this.policiesToolStripMenuItem,
             this.inventoryToolStripMenuItem,
             this.financesToolStripMenuItem,
-            this.eventsToolStripMenuItem});
+            this.eventsToolStripMenuItem,
+            this.projectManagementToolStripMenuItem,
+            this.pLSMToolStripMenuItem});
             this.mPMMToolStripMenuItem.Name = "mPMMToolStripMenuItem";
             this.mPMMToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.mPMMToolStripMenuItem.Text = "MPMM";
@@ -185,6 +189,20 @@
             this.eventsToolStripMenuItem.Text = "Events";
             this.eventsToolStripMenuItem.Click += new System.EventHandler(this.eventsToolStripMenuItem_Click);
             // 
+            // projectManagementToolStripMenuItem
+            // 
+            this.projectManagementToolStripMenuItem.Name = "projectManagementToolStripMenuItem";
+            this.projectManagementToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+            this.projectManagementToolStripMenuItem.Text = "Project Management";
+            this.projectManagementToolStripMenuItem.Click += new System.EventHandler(this.projectManagementToolStripMenuItem_Click);
+            // 
+            // pLSMToolStripMenuItem
+            // 
+            this.pLSMToolStripMenuItem.Name = "pLSMToolStripMenuItem";
+            this.pLSMToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+            this.pLSMToolStripMenuItem.Text = "PLSM";
+            this.pLSMToolStripMenuItem.Click += new System.EventHandler(this.pLSMToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -221,5 +239,7 @@
         private System.Windows.Forms.ToolStripMenuItem inventoryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem financesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eventsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem projectManagementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pLSMToolStripMenuItem;
     }
 }
