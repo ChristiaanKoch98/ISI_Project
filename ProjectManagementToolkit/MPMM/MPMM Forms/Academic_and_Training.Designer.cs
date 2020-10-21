@@ -300,7 +300,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(11, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 12);
+            this.label1.Size = new System.Drawing.Size(256, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Navigation Form: Academic and Training";
             // 
@@ -315,7 +315,7 @@
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Font = new System.Drawing.Font("Cambria", 8.25F);
-            this.tabControl1.Location = new System.Drawing.Point(3, 45);
+            this.tabControl1.Location = new System.Drawing.Point(3, 46);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(884, 424);
@@ -326,10 +326,10 @@
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabPage1.Controls.Add(this.tabControl3);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Location = new System.Drawing.Point(4, 28);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(876, 396);
+            this.tabPage1.Size = new System.Drawing.Size(876, 392);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "ACA 1";
             // 
@@ -362,10 +362,10 @@
             this.tabPage14.Controls.Add(this.btnPolicies);
             this.tabPage14.Controls.Add(this.btnLegislation);
             this.tabPage14.Controls.Add(this.btnDashBoards);
-            this.tabPage14.Location = new System.Drawing.Point(4, 21);
+            this.tabPage14.Location = new System.Drawing.Point(4, 25);
             this.tabPage14.Name = "tabPage14";
             this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage14.Size = new System.Drawing.Size(858, 361);
+            this.tabPage14.Size = new System.Drawing.Size(858, 357);
             this.tabPage14.TabIndex = 0;
             this.tabPage14.Text = "General";
             this.tabPage14.Click += new System.EventHandler(this.tabPage14_Click);
@@ -387,7 +387,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(76, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 12);
+            this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Reports";
             // 
@@ -405,7 +405,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(13, 49);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(168, 20);
+            this.comboBox1.Size = new System.Drawing.Size(168, 24);
             this.comboBox1.TabIndex = 0;
             // 
             // btnForms
@@ -504,10 +504,10 @@
             this.tabPage15.Controls.Add(this.button4);
             this.tabPage15.Controls.Add(this.button1);
             this.tabPage15.Controls.Add(this.label3);
-            this.tabPage15.Location = new System.Drawing.Point(4, 21);
+            this.tabPage15.Location = new System.Drawing.Point(4, 25);
             this.tabPage15.Name = "tabPage15";
             this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage15.Size = new System.Drawing.Size(858, 361);
+            this.tabPage15.Size = new System.Drawing.Size(858, 357);
             this.tabPage15.TabIndex = 1;
             this.tabPage15.Text = "Learner Process";
             this.tabPage15.Click += new System.EventHandler(this.tabPage15_Click);
@@ -520,7 +520,7 @@
             this.label18.ForeColor = System.Drawing.Color.White;
             this.label18.Location = new System.Drawing.Point(644, 103);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(46, 47);
+            this.label18.Size = new System.Drawing.Size(58, 59);
             this.label18.TabIndex = 22;
             this.label18.Text = "⤴";
             // 
@@ -532,7 +532,7 @@
             this.label17.ForeColor = System.Drawing.Color.White;
             this.label17.Location = new System.Drawing.Point(244, 103);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(46, 47);
+            this.label17.Size = new System.Drawing.Size(58, 59);
             this.label17.TabIndex = 21;
             this.label17.Text = "⤴";
             // 
@@ -544,7 +544,7 @@
             this.label16.ForeColor = System.Drawing.Color.White;
             this.label16.Location = new System.Drawing.Point(493, 103);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(46, 47);
+            this.label16.Size = new System.Drawing.Size(58, 59);
             this.label16.TabIndex = 20;
             this.label16.Text = "⤴";
             // 
@@ -556,7 +556,7 @@
             this.label15.ForeColor = System.Drawing.Color.White;
             this.label15.Location = new System.Drawing.Point(367, 103);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(46, 47);
+            this.label15.Size = new System.Drawing.Size(58, 59);
             this.label15.TabIndex = 19;
             this.label15.Text = "⤴";
             // 
@@ -568,7 +568,7 @@
             this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Location = new System.Drawing.Point(112, 103);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(46, 47);
+            this.label14.Size = new System.Drawing.Size(58, 59);
             this.label14.TabIndex = 18;
             this.label14.Text = "⤴";
             // 
@@ -607,7 +607,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(545, 32);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(107, 110);
+            this.label7.Size = new System.Drawing.Size(134, 137);
             this.label7.TabIndex = 14;
             this.label7.Text = "⤵";
             // 
@@ -637,7 +637,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(410, 32);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 110);
+            this.label6.Size = new System.Drawing.Size(134, 137);
             this.label6.TabIndex = 11;
             this.label6.Text = "⤵";
             // 
@@ -667,7 +667,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(297, 32);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 110);
+            this.label5.Size = new System.Drawing.Size(134, 137);
             this.label5.TabIndex = 8;
             this.label5.Text = "⤵";
             // 
@@ -697,7 +697,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(164, 32);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 110);
+            this.label4.Size = new System.Drawing.Size(134, 137);
             this.label4.TabIndex = 5;
             this.label4.Text = "⤵";
             // 
@@ -727,7 +727,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(41, 32);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 110);
+            this.label3.Size = new System.Drawing.Size(134, 137);
             this.label3.TabIndex = 0;
             this.label3.Text = "⤵";
             // 
@@ -755,10 +755,10 @@
             this.tabPage16.Controls.Add(this.button21);
             this.tabPage16.Controls.Add(this.button22);
             this.tabPage16.Controls.Add(this.label22);
-            this.tabPage16.Location = new System.Drawing.Point(4, 21);
+            this.tabPage16.Location = new System.Drawing.Point(4, 25);
             this.tabPage16.Name = "tabPage16";
             this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage16.Size = new System.Drawing.Size(858, 361);
+            this.tabPage16.Size = new System.Drawing.Size(858, 357);
             this.tabPage16.TabIndex = 2;
             this.tabPage16.Text = "QALA Process";
             // 
@@ -769,7 +769,7 @@
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(12, 11);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(601, 14);
+            this.label13.Size = new System.Drawing.Size(716, 17);
             this.label13.TabIndex = 49;
             this.label13.Text = "\"The new source of power is not money in the hands of a few, but information in t" +
     "he hands of  many\" John Naisbitt";
@@ -789,7 +789,7 @@
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(94, 251);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(246, 14);
+            this.label10.Size = new System.Drawing.Size(294, 17);
             this.label10.TabIndex = 47;
             this.label10.Text = "Training Provider Step and / or Responsibility";
             // 
@@ -800,7 +800,7 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(94, 222);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(222, 14);
+            this.label8.Size = new System.Drawing.Size(268, 17);
             this.label8.TabIndex = 46;
             this.label8.Text = "SETA Process Step and / or Responsibility";
             // 
@@ -830,7 +830,7 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(253, 99);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 47);
+            this.label9.Size = new System.Drawing.Size(58, 59);
             this.label9.TabIndex = 42;
             this.label9.Text = "⤴";
             // 
@@ -842,7 +842,7 @@
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(376, 99);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(46, 47);
+            this.label11.Size = new System.Drawing.Size(58, 59);
             this.label11.TabIndex = 40;
             this.label11.Text = "⤴";
             // 
@@ -854,7 +854,7 @@
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(121, 99);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(46, 47);
+            this.label12.Size = new System.Drawing.Size(58, 59);
             this.label12.TabIndex = 39;
             this.label12.Text = "⤴";
             // 
@@ -885,7 +885,7 @@
             this.label19.ForeColor = System.Drawing.Color.White;
             this.label19.Location = new System.Drawing.Point(419, 28);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(107, 110);
+            this.label19.Size = new System.Drawing.Size(134, 137);
             this.label19.TabIndex = 32;
             this.label19.Text = "⤵";
             // 
@@ -917,7 +917,7 @@
             this.label20.ForeColor = System.Drawing.Color.White;
             this.label20.Location = new System.Drawing.Point(306, 28);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(107, 110);
+            this.label20.Size = new System.Drawing.Size(134, 137);
             this.label20.TabIndex = 29;
             this.label20.Text = "⤵";
             // 
@@ -949,7 +949,7 @@
             this.label21.ForeColor = System.Drawing.Color.White;
             this.label21.Location = new System.Drawing.Point(173, 28);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(107, 110);
+            this.label21.Size = new System.Drawing.Size(134, 137);
             this.label21.TabIndex = 26;
             this.label21.Text = "⤵";
             // 
@@ -980,7 +980,7 @@
             this.label22.ForeColor = System.Drawing.Color.White;
             this.label22.Location = new System.Drawing.Point(50, 28);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(107, 110);
+            this.label22.Size = new System.Drawing.Size(134, 137);
             this.label22.TabIndex = 23;
             this.label22.Text = "⤵";
             // 
@@ -988,10 +988,10 @@
             // 
             this.tabPage17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tabPage17.Controls.Add(this.panel2);
-            this.tabPage17.Location = new System.Drawing.Point(4, 21);
+            this.tabPage17.Location = new System.Drawing.Point(4, 25);
             this.tabPage17.Name = "tabPage17";
             this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage17.Size = new System.Drawing.Size(858, 361);
+            this.tabPage17.Size = new System.Drawing.Size(858, 357);
             this.tabPage17.TabIndex = 3;
             this.tabPage17.Text = "Faculty";
             // 
@@ -1007,10 +1007,10 @@
             // 
             this.tabPage18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tabPage18.Controls.Add(this.panel18);
-            this.tabPage18.Location = new System.Drawing.Point(4, 21);
+            this.tabPage18.Location = new System.Drawing.Point(4, 25);
             this.tabPage18.Name = "tabPage18";
             this.tabPage18.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage18.Size = new System.Drawing.Size(858, 361);
+            this.tabPage18.Size = new System.Drawing.Size(858, 357);
             this.tabPage18.TabIndex = 4;
             this.tabPage18.Text = "Students";
             // 
@@ -1051,7 +1051,7 @@
             this.linkLabel14.AutoSize = true;
             this.linkLabel14.Location = new System.Drawing.Point(245, 166);
             this.linkLabel14.Name = "linkLabel14";
-            this.linkLabel14.Size = new System.Drawing.Size(75, 12);
+            this.linkLabel14.Size = new System.Drawing.Size(99, 16);
             this.linkLabel14.TabIndex = 33;
             this.linkLabel14.TabStop = true;
             this.linkLabel14.Text = "State/Province";
@@ -1061,7 +1061,7 @@
             this.linkLabel13.AutoSize = true;
             this.linkLabel13.Location = new System.Drawing.Point(245, 76);
             this.linkLabel13.Name = "linkLabel13";
-            this.linkLabel13.Size = new System.Drawing.Size(74, 12);
+            this.linkLabel13.Size = new System.Drawing.Size(100, 16);
             this.linkLabel13.TabIndex = 32;
             this.linkLabel13.TabStop = true;
             this.linkLabel13.Text = "Phone Number";
@@ -1071,7 +1071,7 @@
             this.linkLabel12.AutoSize = true;
             this.linkLabel12.Location = new System.Drawing.Point(245, 106);
             this.linkLabel12.Name = "linkLabel12";
-            this.linkLabel12.Size = new System.Drawing.Size(44, 12);
+            this.linkLabel12.Size = new System.Drawing.Size(58, 16);
             this.linkLabel12.TabIndex = 31;
             this.linkLabel12.TabStop = true;
             this.linkLabel12.Text = "Address";
@@ -1081,7 +1081,7 @@
             this.linkLabel11.AutoSize = true;
             this.linkLabel11.Location = new System.Drawing.Point(9, 140);
             this.linkLabel11.Name = "linkLabel11";
-            this.linkLabel11.Size = new System.Drawing.Size(53, 12);
+            this.linkLabel11.Size = new System.Drawing.Size(73, 16);
             this.linkLabel11.TabIndex = 30;
             this.linkLabel11.TabStop = true;
             this.linkLabel11.Text = "Last Name";
@@ -1091,7 +1091,7 @@
             this.linkLabel10.AutoSize = true;
             this.linkLabel10.Location = new System.Drawing.Point(245, 136);
             this.linkLabel10.Name = "linkLabel10";
-            this.linkLabel10.Size = new System.Drawing.Size(24, 12);
+            this.linkLabel10.Size = new System.Drawing.Size(32, 16);
             this.linkLabel10.TabIndex = 29;
             this.linkLabel10.TabStop = true;
             this.linkLabel10.Text = "City";
@@ -1101,7 +1101,7 @@
             this.linkLabel9.AutoSize = true;
             this.linkLabel9.Location = new System.Drawing.Point(9, 166);
             this.linkLabel9.Name = "linkLabel9";
-            this.linkLabel9.Size = new System.Drawing.Size(33, 12);
+            this.linkLabel9.Size = new System.Drawing.Size(43, 16);
             this.linkLabel9.TabIndex = 28;
             this.linkLabel9.TabStop = true;
             this.linkLabel9.Text = "Major";
@@ -1111,7 +1111,7 @@
             this.linkLabel8.AutoSize = true;
             this.linkLabel8.Location = new System.Drawing.Point(8, 193);
             this.linkLabel8.Name = "linkLabel8";
-            this.linkLabel8.Size = new System.Drawing.Size(29, 12);
+            this.linkLabel8.Size = new System.Drawing.Size(39, 16);
             this.linkLabel8.TabIndex = 27;
             this.linkLabel8.TabStop = true;
             this.linkLabel8.Text = "Class";
@@ -1121,7 +1121,7 @@
             this.linkLabel7.AutoSize = true;
             this.linkLabel7.Location = new System.Drawing.Point(245, 193);
             this.linkLabel7.Name = "linkLabel7";
-            this.linkLabel7.Size = new System.Drawing.Size(59, 12);
+            this.linkLabel7.Size = new System.Drawing.Size(78, 16);
             this.linkLabel7.TabIndex = 26;
             this.linkLabel7.TabStop = true;
             this.linkLabel7.Text = "Postal Code";
@@ -1131,7 +1131,7 @@
             this.linkLabel6.AutoSize = true;
             this.linkLabel6.Location = new System.Drawing.Point(9, 106);
             this.linkLabel6.Name = "linkLabel6";
-            this.linkLabel6.Size = new System.Drawing.Size(56, 12);
+            this.linkLabel6.Size = new System.Drawing.Size(76, 16);
             this.linkLabel6.TabIndex = 25;
             this.linkLabel6.TabStop = true;
             this.linkLabel6.Text = "First Name";
@@ -1141,7 +1141,7 @@
             this.linkLabel5.AutoSize = true;
             this.linkLabel5.Location = new System.Drawing.Point(8, 76);
             this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(54, 12);
+            this.linkLabel5.Size = new System.Drawing.Size(73, 16);
             this.linkLabel5.TabIndex = 24;
             this.linkLabel5.TabStop = true;
             this.linkLabel5.Text = "Student ID";
@@ -1150,70 +1150,70 @@
             // 
             this.textBox11.Location = new System.Drawing.Point(340, 185);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
+            this.textBox11.Size = new System.Drawing.Size(100, 24);
             this.textBox11.TabIndex = 23;
             // 
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(340, 132);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
+            this.textBox10.Size = new System.Drawing.Size(100, 24);
             this.textBox10.TabIndex = 22;
             // 
             // textBox9
             // 
             this.textBox9.Location = new System.Drawing.Point(340, 158);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.Size = new System.Drawing.Size(100, 24);
             this.textBox9.TabIndex = 21;
             // 
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(340, 103);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.Size = new System.Drawing.Size(100, 24);
             this.textBox8.TabIndex = 20;
             // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(340, 68);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.Size = new System.Drawing.Size(100, 24);
             this.textBox7.TabIndex = 19;
             // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(79, 185);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(116, 20);
+            this.textBox6.Size = new System.Drawing.Size(116, 24);
             this.textBox6.TabIndex = 13;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(79, 159);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(116, 20);
+            this.textBox5.Size = new System.Drawing.Size(116, 24);
             this.textBox5.TabIndex = 12;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(79, 133);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(116, 20);
+            this.textBox4.Size = new System.Drawing.Size(116, 24);
             this.textBox4.TabIndex = 11;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(79, 100);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(116, 20);
+            this.textBox3.Size = new System.Drawing.Size(116, 24);
             this.textBox3.TabIndex = 10;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(79, 69);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(116, 20);
+            this.textBox2.Size = new System.Drawing.Size(116, 24);
             this.textBox2.TabIndex = 9;
             // 
             // pictureBox2
@@ -1231,7 +1231,7 @@
             this.textBox1.Font = new System.Drawing.Font("Cambria", 14F, System.Drawing.FontStyle.Bold);
             this.textBox1.Location = new System.Drawing.Point(71, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(325, 29);
+            this.textBox1.Size = new System.Drawing.Size(325, 35);
             this.textBox1.TabIndex = 6;
             this.textBox1.Text = " Student:";
             // 
@@ -1251,7 +1251,7 @@
             this.textBox12.Font = new System.Drawing.Font("Cambria", 8.25F);
             this.textBox12.Location = new System.Drawing.Point(300, 3);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
+            this.textBox12.Size = new System.Drawing.Size(100, 24);
             this.textBox12.TabIndex = 24;
             this.textBox12.Text = " Search...";
             // 
@@ -1260,7 +1260,7 @@
             this.label38.AutoSize = true;
             this.label38.Location = new System.Drawing.Point(13, 7);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(44, 12);
+            this.label38.Size = new System.Drawing.Size(58, 16);
             this.label38.TabIndex = 2;
             this.label38.Text = "Record: ";
             // 
@@ -1269,17 +1269,17 @@
             this.numericUpDown1.BackColor = System.Drawing.Color.White;
             this.numericUpDown1.Location = new System.Drawing.Point(63, 3);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 24);
             this.numericUpDown1.TabIndex = 1;
             // 
             // tabPage19
             // 
             this.tabPage19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tabPage19.Controls.Add(this.btnNewStudent);
-            this.tabPage19.Location = new System.Drawing.Point(4, 21);
+            this.tabPage19.Location = new System.Drawing.Point(4, 25);
             this.tabPage19.Name = "tabPage19";
             this.tabPage19.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage19.Size = new System.Drawing.Size(858, 361);
+            this.tabPage19.Size = new System.Drawing.Size(858, 357);
             this.tabPage19.TabIndex = 5;
             this.tabPage19.Text = "Student Administration";
             // 
@@ -1298,10 +1298,10 @@
             this.tabPage20.Controls.Add(this.button36);
             this.tabPage20.Controls.Add(this.button31);
             this.tabPage20.Controls.Add(this.panel20);
-            this.tabPage20.Location = new System.Drawing.Point(4, 21);
+            this.tabPage20.Location = new System.Drawing.Point(4, 25);
             this.tabPage20.Name = "tabPage20";
             this.tabPage20.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage20.Size = new System.Drawing.Size(858, 361);
+            this.tabPage20.Size = new System.Drawing.Size(858, 357);
             this.tabPage20.TabIndex = 6;
             this.tabPage20.Text = "Courses";
             // 
@@ -1374,10 +1374,10 @@
             // 
             this.tabPage23.Controls.Add(this.panel23);
             this.tabPage23.Controls.Add(this.button38);
-            this.tabPage23.Location = new System.Drawing.Point(4, 21);
+            this.tabPage23.Location = new System.Drawing.Point(4, 25);
             this.tabPage23.Name = "tabPage23";
             this.tabPage23.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage23.Size = new System.Drawing.Size(685, 119);
+            this.tabPage23.Size = new System.Drawing.Size(685, 115);
             this.tabPage23.TabIndex = 0;
             this.tabPage23.Text = "Students";
             this.tabPage23.UseVisualStyleBackColor = true;
@@ -1403,10 +1403,10 @@
             // 
             this.tabPage24.Controls.Add(this.panel22);
             this.tabPage24.Controls.Add(this.button39);
-            this.tabPage24.Location = new System.Drawing.Point(4, 21);
+            this.tabPage24.Location = new System.Drawing.Point(4, 25);
             this.tabPage24.Name = "tabPage24";
             this.tabPage24.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage24.Size = new System.Drawing.Size(685, 119);
+            this.tabPage24.Size = new System.Drawing.Size(685, 115);
             this.tabPage24.TabIndex = 1;
             this.tabPage24.Text = "Assignments";
             this.tabPage24.UseVisualStyleBackColor = true;
@@ -1430,10 +1430,10 @@
             // 
             // tabPage25
             // 
-            this.tabPage25.Location = new System.Drawing.Point(4, 21);
+            this.tabPage25.Location = new System.Drawing.Point(4, 25);
             this.tabPage25.Name = "tabPage25";
             this.tabPage25.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage25.Size = new System.Drawing.Size(685, 119);
+            this.tabPage25.Size = new System.Drawing.Size(685, 115);
             this.tabPage25.TabIndex = 2;
             this.tabPage25.Text = "Class Notes";
             this.tabPage25.UseVisualStyleBackColor = true;
@@ -1444,7 +1444,7 @@
             this.linkLabel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.linkLabel26.Location = new System.Drawing.Point(613, 89);
             this.linkLabel26.Name = "linkLabel26";
-            this.linkLabel26.Size = new System.Drawing.Size(78, 14);
+            this.linkLabel26.Size = new System.Drawing.Size(100, 18);
             this.linkLabel26.TabIndex = 31;
             this.linkLabel26.TabStop = true;
             this.linkLabel26.Text = "* View Reports";
@@ -1455,7 +1455,7 @@
             this.linkLabel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.linkLabel25.Location = new System.Drawing.Point(613, 64);
             this.linkLabel25.Name = "linkLabel25";
-            this.linkLabel25.Size = new System.Drawing.Size(91, 14);
+            this.linkLabel25.Size = new System.Drawing.Size(120, 18);
             this.linkLabel25.TabIndex = 30;
             this.linkLabel25.TabStop = true;
             this.linkLabel25.Text = "* Create new class";
@@ -1465,7 +1465,7 @@
             this.linkLabel24.AutoSize = true;
             this.linkLabel24.Location = new System.Drawing.Point(470, 102);
             this.linkLabel24.Name = "linkLabel24";
-            this.linkLabel24.Size = new System.Drawing.Size(30, 12);
+            this.linkLabel24.Size = new System.Drawing.Size(40, 16);
             this.linkLabel24.TabIndex = 29;
             this.linkLabel24.TabStop = true;
             this.linkLabel24.Text = "Units";
@@ -1475,7 +1475,7 @@
             this.linkLabel23.AutoSize = true;
             this.linkLabel23.Location = new System.Drawing.Point(470, 72);
             this.linkLabel23.Name = "linkLabel23";
-            this.linkLabel23.Size = new System.Drawing.Size(25, 12);
+            this.linkLabel23.Size = new System.Drawing.Size(35, 16);
             this.linkLabel23.TabIndex = 28;
             this.linkLabel23.TabStop = true;
             this.linkLabel23.Text = "Year";
@@ -1485,7 +1485,7 @@
             this.linkLabel22.AutoSize = true;
             this.linkLabel22.Location = new System.Drawing.Point(322, 97);
             this.linkLabel22.Name = "linkLabel22";
-            this.linkLabel22.Size = new System.Drawing.Size(46, 12);
+            this.linkLabel22.Size = new System.Drawing.Size(60, 16);
             this.linkLabel22.TabIndex = 27;
             this.linkLabel22.TabStop = true;
             this.linkLabel22.Text = "Location";
@@ -1494,70 +1494,70 @@
             // 
             this.textBox24.Location = new System.Drawing.Point(506, 97);
             this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(65, 20);
+            this.textBox24.Size = new System.Drawing.Size(65, 24);
             this.textBox24.TabIndex = 26;
             // 
             // textBox22
             // 
             this.textBox22.Location = new System.Drawing.Point(506, 64);
             this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(65, 20);
+            this.textBox22.Size = new System.Drawing.Size(65, 24);
             this.textBox22.TabIndex = 24;
             // 
             // textBox21
             // 
             this.textBox21.Location = new System.Drawing.Point(263, 115);
             this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(52, 20);
+            this.textBox21.Size = new System.Drawing.Size(52, 24);
             this.textBox21.TabIndex = 23;
             // 
             // textBox20
             // 
             this.textBox20.Location = new System.Drawing.Point(395, 94);
             this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(69, 20);
+            this.textBox20.Size = new System.Drawing.Size(69, 24);
             this.textBox20.TabIndex = 22;
             // 
             // textBox19
             // 
             this.textBox19.Location = new System.Drawing.Point(395, 64);
             this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(69, 20);
+            this.textBox19.Size = new System.Drawing.Size(69, 24);
             this.textBox19.TabIndex = 21;
             // 
             // textBox18
             // 
             this.textBox18.Location = new System.Drawing.Point(263, 89);
             this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(52, 20);
+            this.textBox18.Size = new System.Drawing.Size(52, 24);
             this.textBox18.TabIndex = 20;
             // 
             // textBox17
             // 
             this.textBox17.Location = new System.Drawing.Point(79, 89);
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(100, 20);
+            this.textBox17.Size = new System.Drawing.Size(100, 24);
             this.textBox17.TabIndex = 19;
             // 
             // textBox16
             // 
             this.textBox16.Location = new System.Drawing.Point(79, 115);
             this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 20);
+            this.textBox16.Size = new System.Drawing.Size(100, 24);
             this.textBox16.TabIndex = 18;
             // 
             // textBox15
             // 
             this.textBox15.Location = new System.Drawing.Point(263, 59);
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(52, 20);
+            this.textBox15.Size = new System.Drawing.Size(52, 24);
             this.textBox15.TabIndex = 17;
             // 
             // textBox14
             // 
             this.textBox14.Location = new System.Drawing.Point(79, 59);
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 20);
+            this.textBox14.Size = new System.Drawing.Size(100, 24);
             this.textBox14.TabIndex = 16;
             // 
             // linkLabel21
@@ -1565,7 +1565,7 @@
             this.linkLabel21.AutoSize = true;
             this.linkLabel21.Location = new System.Drawing.Point(11, 97);
             this.linkLabel21.Name = "linkLabel21";
-            this.linkLabel21.Size = new System.Drawing.Size(55, 12);
+            this.linkLabel21.Size = new System.Drawing.Size(70, 16);
             this.linkLabel21.TabIndex = 15;
             this.linkLabel21.TabStop = true;
             this.linkLabel21.Text = "Instructor";
@@ -1575,7 +1575,7 @@
             this.linkLabel20.AutoSize = true;
             this.linkLabel20.Location = new System.Drawing.Point(9, 123);
             this.linkLabel20.Name = "linkLabel20";
-            this.linkLabel20.Size = new System.Drawing.Size(61, 12);
+            this.linkLabel20.Size = new System.Drawing.Size(82, 16);
             this.linkLabel20.TabIndex = 14;
             this.linkLabel20.TabStop = true;
             this.linkLabel20.Text = "Department";
@@ -1585,7 +1585,7 @@
             this.linkLabel19.AutoSize = true;
             this.linkLabel19.Location = new System.Drawing.Point(322, 67);
             this.linkLabel19.Name = "linkLabel19";
-            this.linkLabel19.Size = new System.Drawing.Size(62, 12);
+            this.linkLabel19.Size = new System.Drawing.Size(81, 16);
             this.linkLabel19.TabIndex = 13;
             this.linkLabel19.TabStop = true;
             this.linkLabel19.Text = "Days/Times";
@@ -1595,7 +1595,7 @@
             this.linkLabel18.AutoSize = true;
             this.linkLabel18.Location = new System.Drawing.Point(203, 97);
             this.linkLabel18.Name = "linkLabel18";
-            this.linkLabel18.Size = new System.Drawing.Size(48, 12);
+            this.linkLabel18.Size = new System.Drawing.Size(64, 16);
             this.linkLabel18.TabIndex = 12;
             this.linkLabel18.TabStop = true;
             this.linkLabel18.Text = "Section #";
@@ -1605,7 +1605,7 @@
             this.linkLabel17.AutoSize = true;
             this.linkLabel17.Location = new System.Drawing.Point(205, 123);
             this.linkLabel17.Name = "linkLabel17";
-            this.linkLabel17.Size = new System.Drawing.Size(30, 12);
+            this.linkLabel17.Size = new System.Drawing.Size(40, 16);
             this.linkLabel17.TabIndex = 11;
             this.linkLabel17.TabStop = true;
             this.linkLabel17.Text = "Term";
@@ -1615,7 +1615,7 @@
             this.linkLabel16.AutoSize = true;
             this.linkLabel16.Location = new System.Drawing.Point(209, 67);
             this.linkLabel16.Name = "linkLabel16";
-            this.linkLabel16.Size = new System.Drawing.Size(42, 12);
+            this.linkLabel16.Size = new System.Drawing.Size(56, 16);
             this.linkLabel16.TabIndex = 10;
             this.linkLabel16.TabStop = true;
             this.linkLabel16.Text = "Class ID";
@@ -1625,7 +1625,7 @@
             this.linkLabel15.AutoSize = true;
             this.linkLabel15.Location = new System.Drawing.Point(11, 67);
             this.linkLabel15.Name = "linkLabel15";
-            this.linkLabel15.Size = new System.Drawing.Size(57, 12);
+            this.linkLabel15.Size = new System.Drawing.Size(78, 16);
             this.linkLabel15.TabIndex = 9;
             this.linkLabel15.TabStop = true;
             this.linkLabel15.Text = "Class Name";
@@ -1650,7 +1650,7 @@
             this.label50.Font = new System.Drawing.Font("Cambria", 14F);
             this.label50.Location = new System.Drawing.Point(9, 12);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(111, 22);
+            this.label50.Size = new System.Drawing.Size(141, 28);
             this.label50.TabIndex = 6;
             this.label50.Text = "Class Name: ";
             // 
@@ -1670,7 +1670,7 @@
             this.textBox13.Font = new System.Drawing.Font("Cambria", 8.25F);
             this.textBox13.Location = new System.Drawing.Point(215, 2);
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 20);
+            this.textBox13.Size = new System.Drawing.Size(100, 24);
             this.textBox13.TabIndex = 25;
             this.textBox13.Text = " Search...";
             // 
@@ -1679,7 +1679,7 @@
             this.label49.AutoSize = true;
             this.label49.Location = new System.Drawing.Point(13, 7);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(44, 12);
+            this.label49.Size = new System.Drawing.Size(58, 16);
             this.label49.TabIndex = 2;
             this.label49.Text = "Record: ";
             // 
@@ -1688,7 +1688,7 @@
             this.numericUpDown2.BackColor = System.Drawing.Color.White;
             this.numericUpDown2.Location = new System.Drawing.Point(63, 3);
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown2.Size = new System.Drawing.Size(120, 24);
             this.numericUpDown2.TabIndex = 1;
             // 
             // tabPage21
@@ -1702,10 +1702,10 @@
             this.tabPage21.Controls.Add(this.btnQALAProcess);
             this.tabPage21.Controls.Add(this.btnAssessorGuides);
             this.tabPage21.Controls.Add(this.btnDesignModerationGuide);
-            this.tabPage21.Location = new System.Drawing.Point(4, 21);
+            this.tabPage21.Location = new System.Drawing.Point(4, 25);
             this.tabPage21.Name = "tabPage21";
             this.tabPage21.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage21.Size = new System.Drawing.Size(858, 361);
+            this.tabPage21.Size = new System.Drawing.Size(858, 357);
             this.tabPage21.TabIndex = 7;
             this.tabPage21.Text = "Accreditation Admin";
             // 
@@ -1812,10 +1812,10 @@
             this.tabPage22.Controls.Add(this.label25);
             this.tabPage22.Controls.Add(this.label24);
             this.tabPage22.Controls.Add(this.label23);
-            this.tabPage22.Location = new System.Drawing.Point(4, 21);
+            this.tabPage22.Location = new System.Drawing.Point(4, 25);
             this.tabPage22.Name = "tabPage22";
             this.tabPage22.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage22.Size = new System.Drawing.Size(858, 361);
+            this.tabPage22.Size = new System.Drawing.Size(858, 357);
             this.tabPage22.TabIndex = 8;
             this.tabPage22.Text = "Accreditation Criteria";
             this.tabPage22.Click += new System.EventHandler(this.tabPage22_Click);
@@ -1838,7 +1838,7 @@
             this.label33.ForeColor = System.Drawing.Color.White;
             this.label33.Location = new System.Drawing.Point(146, 248);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(47, 30);
+            this.label33.Size = new System.Drawing.Size(59, 36);
             this.label33.TabIndex = 27;
             this.label33.Text = "Staff\r\nPolicies";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1923,7 +1923,7 @@
             this.label35.ForeColor = System.Drawing.Color.White;
             this.label35.Location = new System.Drawing.Point(519, 248);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(53, 30);
+            this.label35.Size = new System.Drawing.Size(61, 36);
             this.label35.TabIndex = 20;
             this.label35.Text = "Manage \r\nSystem";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1936,7 +1936,7 @@
             this.label36.ForeColor = System.Drawing.Color.White;
             this.label36.Location = new System.Drawing.Point(377, 248);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(72, 30);
+            this.label36.Size = new System.Drawing.Size(85, 36);
             this.label36.TabIndex = 19;
             this.label36.Text = "Assessment \r\nPolicies";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1949,7 +1949,7 @@
             this.label37.ForeColor = System.Drawing.Color.White;
             this.label37.Location = new System.Drawing.Point(257, 248);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(53, 30);
+            this.label37.Size = new System.Drawing.Size(62, 36);
             this.label37.TabIndex = 18;
             this.label37.Text = "Learner \r\nPolicies";
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1962,7 +1962,7 @@
             this.label32.ForeColor = System.Drawing.Color.White;
             this.label32.Location = new System.Drawing.Point(131, 156);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(78, 30);
+            this.label32.Size = new System.Drawing.Size(93, 36);
             this.label32.TabIndex = 17;
             this.label32.Text = "Organisation \r\nBackground";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2047,7 +2047,7 @@
             this.label29.ForeColor = System.Drawing.Color.White;
             this.label29.Location = new System.Drawing.Point(508, 156);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(73, 30);
+            this.label29.Size = new System.Drawing.Size(87, 36);
             this.label29.TabIndex = 10;
             this.label29.Text = "Programme \r\nDelivery";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2060,7 +2060,7 @@
             this.label30.ForeColor = System.Drawing.Color.White;
             this.label30.Location = new System.Drawing.Point(377, 156);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(73, 30);
+            this.label30.Size = new System.Drawing.Size(87, 36);
             this.label30.TabIndex = 9;
             this.label30.Text = "Review \r\nMechanisms";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2073,7 +2073,7 @@
             this.label31.ForeColor = System.Drawing.Color.White;
             this.label31.Location = new System.Drawing.Point(260, 156);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(78, 30);
+            this.label31.Size = new System.Drawing.Size(93, 36);
             this.label31.TabIndex = 8;
             this.label31.Text = "QMIS Outline\r\nProcedures";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2177,7 +2177,7 @@
             this.label27.ForeColor = System.Drawing.Color.White;
             this.label27.Location = new System.Drawing.Point(564, 14);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(44, 30);
+            this.label27.Size = new System.Drawing.Size(53, 36);
             this.label27.TabIndex = 4;
             this.label27.Text = "Staff\r\nDetails";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2190,7 +2190,7 @@
             this.label26.ForeColor = System.Drawing.Color.White;
             this.label26.Location = new System.Drawing.Point(389, 14);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(109, 30);
+            this.label26.Size = new System.Drawing.Size(129, 36);
             this.label26.TabIndex = 3;
             this.label26.Text = "Learning Materials \r\nSubmitted";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2203,7 +2203,7 @@
             this.label25.ForeColor = System.Drawing.Color.White;
             this.label25.Location = new System.Drawing.Point(248, 14);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(126, 30);
+            this.label25.Size = new System.Drawing.Size(153, 36);
             this.label25.TabIndex = 2;
             this.label25.Text = "Qualification/Learning\r\nprogramme Details";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2216,7 +2216,7 @@
             this.label24.ForeColor = System.Drawing.Color.White;
             this.label24.Location = new System.Drawing.Point(153, 16);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(68, 30);
+            this.label24.Size = new System.Drawing.Size(81, 36);
             this.label24.TabIndex = 1;
             this.label24.Text = "Type of \r\nSubmission";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2229,7 +2229,7 @@
             this.label23.ForeColor = System.Drawing.Color.White;
             this.label23.Location = new System.Drawing.Point(39, 16);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(51, 30);
+            this.label23.Size = new System.Drawing.Size(61, 36);
             this.label23.TabIndex = 0;
             this.label23.Text = "Contact \r\nDetails";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2237,66 +2237,66 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Location = new System.Drawing.Point(4, 28);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(876, 396);
+            this.tabPage2.Size = new System.Drawing.Size(876, 392);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Learner Process";
             // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
+            this.tabPage3.Location = new System.Drawing.Point(4, 28);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(876, 396);
+            this.tabPage3.Size = new System.Drawing.Size(876, 392);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "QALA Process";
             // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage4.Location = new System.Drawing.Point(4, 24);
+            this.tabPage4.Location = new System.Drawing.Point(4, 28);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(876, 396);
+            this.tabPage4.Size = new System.Drawing.Size(876, 392);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Accreditation Criteria";
             // 
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage5.Location = new System.Drawing.Point(4, 24);
+            this.tabPage5.Location = new System.Drawing.Point(4, 28);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(876, 396);
+            this.tabPage5.Size = new System.Drawing.Size(876, 392);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Faculty";
             // 
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage6.Location = new System.Drawing.Point(4, 24);
+            this.tabPage6.Location = new System.Drawing.Point(4, 28);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(876, 396);
+            this.tabPage6.Size = new System.Drawing.Size(876, 392);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Students";
             // 
             // tabPage7
             // 
             this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage7.Location = new System.Drawing.Point(4, 24);
+            this.tabPage7.Location = new System.Drawing.Point(4, 28);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(876, 396);
+            this.tabPage7.Size = new System.Drawing.Size(876, 392);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Courses";
             // 
             // Academic_and_Training
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(961, 664);
