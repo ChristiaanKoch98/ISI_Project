@@ -412,6 +412,9 @@
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Utility\Validation.cs" />
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\TimesheetFormDocumentForm.resx">
+      <DependentUpon>TimesheetFormDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Forms\Academic_and_Training.resx">
       <DependentUpon>Academic_and_Training.cs</DependentUpon>
     </EmbeddedResource>
