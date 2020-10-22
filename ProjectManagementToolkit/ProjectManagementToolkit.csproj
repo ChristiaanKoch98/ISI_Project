@@ -290,6 +290,8 @@
       <DependentUpon>TimesheetFormDocumentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MPMM\MPMM Document Models\CommunicationsManagementProcessModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\PhaseReviewFormInitiationModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\ProjectPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\RiskFormModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\SupplierContractModel.cs" />
     <Compile Include="MPMM\MPMM Forms\Academic_and_Training.cs">
