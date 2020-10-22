@@ -291,6 +291,11 @@
     <Compile Include="MPMM\MPMM Document Forms\TimesheetFormDocumentForm.Designer.cs">
       <DependentUpon>TimesheetFormDocumentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MPMM\MPMM Document Models\CommunicationsManagementProcessModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\PhaseReviewFormInitiationModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\ProjectPlanModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\RiskFormModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\SupplierContractModel.cs" />
     <Compile Include="MPMM\MPMM Forms\Academic_and_Training.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -414,6 +419,9 @@
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Utility\Validation.cs" />
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\FinacialPlanDocumentForm.resx">
+      <DependentUpon>FinacialPlanDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\TimesheetFormDocumentForm.resx">
       <DependentUpon>TimesheetFormDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -527,8 +535,6 @@
     <None Include="Resources\word.png" />
     <None Include="Resources\image-file-xxl.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MPMM\MPMM Document Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
