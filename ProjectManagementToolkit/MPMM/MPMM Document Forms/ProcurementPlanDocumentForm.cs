@@ -16,5 +16,30 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             InitializeComponent();
         }
+
+        private void label28_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label29_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void ProcurementPlanDocumentForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
