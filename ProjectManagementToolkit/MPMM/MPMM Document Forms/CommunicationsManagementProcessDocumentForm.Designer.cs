@@ -57,6 +57,8 @@
             this.communicationsTeam = new System.Windows.Forms.TextBox();
             this.projectManager = new System.Windows.Forms.TextBox();
             this.communicationsDocuments = new System.Windows.Forms.TabPage();
+            this.projectStatusReport = new System.Windows.Forms.TextBox();
+            this.communicationsRegister = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.documentControl.SuspendLayout();
             this.CommunicationsProcessIntro.SuspendLayout();
@@ -65,6 +67,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.documentInformation)).BeginInit();
             this.communicate.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.communicationsDocuments.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -373,12 +376,44 @@
             // communicationsDocuments
             // 
             this.communicationsDocuments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.communicationsDocuments.Controls.Add(this.communicationsRegister);
+            this.communicationsDocuments.Controls.Add(this.projectStatusReport);
             this.communicationsDocuments.Location = new System.Drawing.Point(4, 22);
             this.communicationsDocuments.Name = "communicationsDocuments";
             this.communicationsDocuments.Padding = new System.Windows.Forms.Padding(3);
             this.communicationsDocuments.Size = new System.Drawing.Size(959, 410);
             this.communicationsDocuments.TabIndex = 3;
             this.communicationsDocuments.Text = "Communications Documents";
+            // 
+            // projectStatusReport
+            // 
+            this.projectStatusReport.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.projectStatusReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.projectStatusReport.Font = new System.Drawing.Font("Cambria", 10F);
+            this.projectStatusReport.ForeColor = System.Drawing.Color.White;
+            this.projectStatusReport.Location = new System.Drawing.Point(18, 26);
+            this.projectStatusReport.Multiline = true;
+            this.projectStatusReport.Name = "projectStatusReport";
+            this.projectStatusReport.Size = new System.Drawing.Size(422, 348);
+            this.projectStatusReport.TabIndex = 6;
+            this.projectStatusReport.Text = "Project Status Report";
+            // 
+            // communicationsRegister
+            // 
+            this.communicationsRegister.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.communicationsRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.communicationsRegister.Font = new System.Drawing.Font("Cambria", 10F);
+            this.communicationsRegister.ForeColor = System.Drawing.Color.White;
+            this.communicationsRegister.Location = new System.Drawing.Point(478, 26);
+            this.communicationsRegister.Multiline = true;
+            this.communicationsRegister.Name = "communicationsRegister";
+            this.communicationsRegister.Size = new System.Drawing.Size(422, 348);
+            this.communicationsRegister.TabIndex = 7;
+            this.communicationsRegister.Text = "Communications Register";
             // 
             // CommunicationsManagementProcessDocumentForm
             // 
@@ -400,6 +435,8 @@
             this.communicate.ResumeLayout(false);
             this.communicate.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.communicationsDocuments.ResumeLayout(false);
+            this.communicationsDocuments.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -434,5 +471,7 @@
         private System.Windows.Forms.TextBox projectManager;
         private System.Windows.Forms.TextBox communicationsTeam;
         private System.Windows.Forms.TabPage communicationsDocuments;
+        private System.Windows.Forms.TextBox communicationsRegister;
+        private System.Windows.Forms.TextBox projectStatusReport;
     }
 }
