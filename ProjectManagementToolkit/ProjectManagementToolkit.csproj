@@ -422,6 +422,9 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\AcceptanceFormDocumentForm.resx">
       <DependentUpon>AcceptanceFormDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\CostManagementProcessDocumentForm.resx">
+      <DependentUpon>CostManagementProcessDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\FeasibiltyStudyDocumentForm.resx">
       <DependentUpon>FeasibiltyStudyDocumentForm.cs</DependentUpon>
     </EmbeddedResource>

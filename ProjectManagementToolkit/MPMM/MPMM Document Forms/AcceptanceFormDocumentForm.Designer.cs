@@ -55,9 +55,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.ACCEPTANCE_CRITERIA_btn = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.ACCEPTANCE_RESULTS_btn = new System.Windows.Forms.Button();
             this.ACCEPTANCE_RESULTS_dgv = new System.Windows.Forms.DataGridView();
+            this.ACCEPTANCE_RESULTS_btn = new System.Windows.Forms.Button();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.Supporting_Documentation_tbx = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.CUSTOMER_APPROVAL_btn = new System.Windows.Forms.Button();
@@ -66,8 +66,8 @@
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ACCEPTANCE_RESULTS_dgv)).BeginInit();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // Enter_btn
@@ -75,7 +75,7 @@
             this.Enter_btn.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Enter_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Enter_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.Enter_btn.Location = new System.Drawing.Point(479, 25);
+            this.Enter_btn.Location = new System.Drawing.Point(485, 27);
             this.Enter_btn.Name = "Enter_btn";
             this.Enter_btn.Size = new System.Drawing.Size(75, 23);
             this.Enter_btn.TabIndex = 6;
@@ -84,7 +84,7 @@
             // 
             // Acceptance_Form_Name_tbx
             // 
-            this.Acceptance_Form_Name_tbx.Location = new System.Drawing.Point(187, 24);
+            this.Acceptance_Form_Name_tbx.Location = new System.Drawing.Point(193, 26);
             this.Acceptance_Form_Name_tbx.Name = "Acceptance_Form_Name_tbx";
             this.Acceptance_Form_Name_tbx.Size = new System.Drawing.Size(237, 20);
             this.Acceptance_Form_Name_tbx.TabIndex = 5;
@@ -93,7 +93,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 25);
+            this.label1.Location = new System.Drawing.Point(34, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(160, 19);
             this.label1.TabIndex = 4;
@@ -351,18 +351,13 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "ACCEPTANCE RESULTS";
             // 
-            // tabPage5
+            // ACCEPTANCE_RESULTS_dgv
             // 
-            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage5.Controls.Add(this.Supporting_Documentation_tbx);
-            this.tabPage5.Controls.Add(this.label10);
-            this.tabPage5.Controls.Add(this.CUSTOMER_APPROVAL_btn);
-            this.tabPage5.Location = new System.Drawing.Point(4, 21);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(709, 279);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "CUSTOMER APPROVAL";
+            this.ACCEPTANCE_RESULTS_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ACCEPTANCE_RESULTS_dgv.Location = new System.Drawing.Point(19, 16);
+            this.ACCEPTANCE_RESULTS_dgv.Name = "ACCEPTANCE_RESULTS_dgv";
+            this.ACCEPTANCE_RESULTS_dgv.Size = new System.Drawing.Size(593, 202);
+            this.ACCEPTANCE_RESULTS_dgv.TabIndex = 9;
             // 
             // ACCEPTANCE_RESULTS_btn
             // 
@@ -376,13 +371,18 @@
             this.ACCEPTANCE_RESULTS_btn.Text = "Enter";
             this.ACCEPTANCE_RESULTS_btn.UseVisualStyleBackColor = false;
             // 
-            // ACCEPTANCE_RESULTS_dgv
+            // tabPage5
             // 
-            this.ACCEPTANCE_RESULTS_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ACCEPTANCE_RESULTS_dgv.Location = new System.Drawing.Point(19, 16);
-            this.ACCEPTANCE_RESULTS_dgv.Name = "ACCEPTANCE_RESULTS_dgv";
-            this.ACCEPTANCE_RESULTS_dgv.Size = new System.Drawing.Size(593, 202);
-            this.ACCEPTANCE_RESULTS_dgv.TabIndex = 9;
+            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage5.Controls.Add(this.Supporting_Documentation_tbx);
+            this.tabPage5.Controls.Add(this.label10);
+            this.tabPage5.Controls.Add(this.CUSTOMER_APPROVAL_btn);
+            this.tabPage5.Location = new System.Drawing.Point(4, 21);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(709, 279);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "CUSTOMER APPROVAL";
             // 
             // Supporting_Documentation_tbx
             // 
@@ -436,9 +436,9 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ACCEPTANCE_RESULTS_dgv)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ACCEPTANCE_RESULTS_dgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
