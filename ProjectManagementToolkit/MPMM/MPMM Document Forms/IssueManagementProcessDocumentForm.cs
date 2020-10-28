@@ -16,5 +16,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             InitializeComponent();
         }
+
+        private void overviewTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
