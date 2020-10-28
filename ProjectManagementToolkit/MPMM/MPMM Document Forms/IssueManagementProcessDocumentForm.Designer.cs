@@ -286,7 +286,7 @@
             this.overviewTextBox.Size = new System.Drawing.Size(294, 586);
             this.overviewTextBox.TabIndex = 0;
             this.overviewTextBox.Text = "Provide an overview of the IssueManagement Process, depicted as follows:";
-            this.overviewTextBox.TextChanged += new System.EventHandler(this.overviewTextBox_TextChanged);
+            
             // 
             // IssueRolesTab
             // 
