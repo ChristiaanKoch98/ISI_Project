@@ -16,5 +16,20 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             InitializeComponent();
         }
+
+        private void txtEnvirAnalysis_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBusinessOppurtunity_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBusinessProblemDescription_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
