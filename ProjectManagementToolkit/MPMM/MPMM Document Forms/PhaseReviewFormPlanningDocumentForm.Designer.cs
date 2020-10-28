@@ -150,7 +150,7 @@
             // 
             // Project_Manager_tbx
             // 
-            this.Project_Manager_tbx.Location = new System.Drawing.Point(238, 94);
+            this.Project_Manager_tbx.Location = new System.Drawing.Point(238, 89);
             this.Project_Manager_tbx.Name = "Project_Manager_tbx";
             this.Project_Manager_tbx.Size = new System.Drawing.Size(237, 20);
             this.Project_Manager_tbx.TabIndex = 15;
@@ -178,7 +178,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 95);
+            this.label3.Location = new System.Drawing.Point(30, 90);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(127, 19);
             this.label3.TabIndex = 14;
