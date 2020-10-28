@@ -34,7 +34,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Document_History_dgv = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Document_Information_dgv = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.Executive_Summary_btn = new System.Windows.Forms.Button();
@@ -101,27 +101,27 @@
             this.label29 = new System.Windows.Forms.Label();
             this.Solution_3_btn = new System.Windows.Forms.Button();
             this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Project_Name_tbx = new System.Windows.Forms.TextBox();
-            this.Enter_btn = new System.Windows.Forms.Button();
-            this.Feasibility_Result_btn = new System.Windows.Forms.Button();
-            this.Feasibility_Result_tbx = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.Appendix_btn = new System.Windows.Forms.Button();
-            this.Supporting_Documentation_btn = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
             this.Ranking_Scores_dgv = new System.Windows.Forms.DataGridView();
             this.label32 = new System.Windows.Forms.Label();
             this.Feasibility_Ranking_btn = new System.Windows.Forms.Button();
             this.Ranking_Criteria_tbx = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.Feasibility_Result_btn = new System.Windows.Forms.Button();
+            this.Feasibility_Result_tbx = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.Appendix_btn = new System.Windows.Forms.Button();
+            this.Supporting_Documentation_btn = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Project_Name_tbx = new System.Windows.Forms.TextBox();
+            this.Enter_btn = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Document_Approvals_dgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Document_History_dgv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Document_Information_dgv)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -140,9 +140,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.Risks3_dgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Results3_dgv)).BeginInit();
             this.tabPage9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Ranking_Scores_dgv)).BeginInit();
             this.tabPage10.SuspendLayout();
             this.tabPage11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Ranking_Scores_dgv)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -174,7 +174,7 @@
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.Document_History_dgv);
             this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Controls.Add(this.Document_Information_dgv);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Location = new System.Drawing.Point(4, 21);
             this.tabPage1.Name = "tabPage1";
@@ -219,13 +219,13 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Document History";
             // 
-            // dataGridView1
+            // Document_Information_dgv
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 31);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(323, 150);
-            this.dataGridView1.TabIndex = 1;
+            this.Document_Information_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Document_Information_dgv.Location = new System.Drawing.Point(34, 31);
+            this.Document_Information_dgv.Name = "Document_Information_dgv";
+            this.Document_Information_dgv.Size = new System.Drawing.Size(323, 150);
+            this.Document_Information_dgv.TabIndex = 1;
             // 
             // label2
             // 
@@ -915,122 +915,6 @@
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "Feasibility Ranking";
             // 
-            // tabPage10
-            // 
-            this.tabPage10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage10.Controls.Add(this.Feasibility_Result_btn);
-            this.tabPage10.Controls.Add(this.Feasibility_Result_tbx);
-            this.tabPage10.Controls.Add(this.label30);
-            this.tabPage10.Location = new System.Drawing.Point(4, 21);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(1183, 431);
-            this.tabPage10.TabIndex = 9;
-            this.tabPage10.Text = "Feasibility Result";
-            // 
-            // tabPage11
-            // 
-            this.tabPage11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage11.Controls.Add(this.Appendix_btn);
-            this.tabPage11.Controls.Add(this.Supporting_Documentation_btn);
-            this.tabPage11.Controls.Add(this.label31);
-            this.tabPage11.Location = new System.Drawing.Point(4, 21);
-            this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(1183, 431);
-            this.tabPage11.TabIndex = 10;
-            this.tabPage11.Text = "Appendix";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(53, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 19);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Feasibility Study For:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // Project_Name_tbx
-            // 
-            this.Project_Name_tbx.Location = new System.Drawing.Point(212, 47);
-            this.Project_Name_tbx.Name = "Project_Name_tbx";
-            this.Project_Name_tbx.Size = new System.Drawing.Size(237, 20);
-            this.Project_Name_tbx.TabIndex = 2;
-            // 
-            // Enter_btn
-            // 
-            this.Enter_btn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Enter_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Enter_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.Enter_btn.Location = new System.Drawing.Point(504, 48);
-            this.Enter_btn.Name = "Enter_btn";
-            this.Enter_btn.Size = new System.Drawing.Size(75, 23);
-            this.Enter_btn.TabIndex = 3;
-            this.Enter_btn.Text = "Enter";
-            this.Enter_btn.UseVisualStyleBackColor = false;
-            // 
-            // Feasibility_Result_btn
-            // 
-            this.Feasibility_Result_btn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Feasibility_Result_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Feasibility_Result_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.Feasibility_Result_btn.Location = new System.Drawing.Point(24, 303);
-            this.Feasibility_Result_btn.Name = "Feasibility_Result_btn";
-            this.Feasibility_Result_btn.Size = new System.Drawing.Size(75, 23);
-            this.Feasibility_Result_btn.TabIndex = 10;
-            this.Feasibility_Result_btn.Text = "Enter";
-            this.Feasibility_Result_btn.UseVisualStyleBackColor = false;
-            // 
-            // Feasibility_Result_tbx
-            // 
-            this.Feasibility_Result_tbx.Location = new System.Drawing.Point(24, 47);
-            this.Feasibility_Result_tbx.Multiline = true;
-            this.Feasibility_Result_tbx.Name = "Feasibility_Result_tbx";
-            this.Feasibility_Result_tbx.Size = new System.Drawing.Size(839, 232);
-            this.Feasibility_Result_tbx.TabIndex = 9;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(21, 19);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(103, 15);
-            this.label30.TabIndex = 8;
-            this.label30.Text = "Feasibility Result";
-            // 
-            // Appendix_btn
-            // 
-            this.Appendix_btn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Appendix_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Appendix_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.Appendix_btn.Location = new System.Drawing.Point(17, 303);
-            this.Appendix_btn.Name = "Appendix_btn";
-            this.Appendix_btn.Size = new System.Drawing.Size(75, 23);
-            this.Appendix_btn.TabIndex = 13;
-            this.Appendix_btn.Text = "Enter";
-            this.Appendix_btn.UseVisualStyleBackColor = false;
-            // 
-            // Supporting_Documentation_btn
-            // 
-            this.Supporting_Documentation_btn.Location = new System.Drawing.Point(17, 47);
-            this.Supporting_Documentation_btn.Multiline = true;
-            this.Supporting_Documentation_btn.Name = "Supporting_Documentation_btn";
-            this.Supporting_Documentation_btn.Size = new System.Drawing.Size(839, 232);
-            this.Supporting_Documentation_btn.TabIndex = 12;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(14, 19);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(155, 15);
-            this.label31.TabIndex = 11;
-            this.label31.Text = "Supporting Documentation";
-            // 
             // Ranking_Scores_dgv
             // 
             this.Ranking_Scores_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1079,6 +963,122 @@
             this.label33.TabIndex = 15;
             this.label33.Text = "Ranking Criteria";
             // 
+            // tabPage10
+            // 
+            this.tabPage10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage10.Controls.Add(this.Feasibility_Result_btn);
+            this.tabPage10.Controls.Add(this.Feasibility_Result_tbx);
+            this.tabPage10.Controls.Add(this.label30);
+            this.tabPage10.Location = new System.Drawing.Point(4, 21);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage10.Size = new System.Drawing.Size(1183, 431);
+            this.tabPage10.TabIndex = 9;
+            this.tabPage10.Text = "Feasibility Result";
+            // 
+            // Feasibility_Result_btn
+            // 
+            this.Feasibility_Result_btn.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Feasibility_Result_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Feasibility_Result_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Feasibility_Result_btn.Location = new System.Drawing.Point(24, 303);
+            this.Feasibility_Result_btn.Name = "Feasibility_Result_btn";
+            this.Feasibility_Result_btn.Size = new System.Drawing.Size(75, 23);
+            this.Feasibility_Result_btn.TabIndex = 10;
+            this.Feasibility_Result_btn.Text = "Enter";
+            this.Feasibility_Result_btn.UseVisualStyleBackColor = false;
+            // 
+            // Feasibility_Result_tbx
+            // 
+            this.Feasibility_Result_tbx.Location = new System.Drawing.Point(24, 47);
+            this.Feasibility_Result_tbx.Multiline = true;
+            this.Feasibility_Result_tbx.Name = "Feasibility_Result_tbx";
+            this.Feasibility_Result_tbx.Size = new System.Drawing.Size(839, 232);
+            this.Feasibility_Result_tbx.TabIndex = 9;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(21, 19);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(103, 15);
+            this.label30.TabIndex = 8;
+            this.label30.Text = "Feasibility Result";
+            // 
+            // tabPage11
+            // 
+            this.tabPage11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage11.Controls.Add(this.Appendix_btn);
+            this.tabPage11.Controls.Add(this.Supporting_Documentation_btn);
+            this.tabPage11.Controls.Add(this.label31);
+            this.tabPage11.Location = new System.Drawing.Point(4, 21);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage11.Size = new System.Drawing.Size(1183, 431);
+            this.tabPage11.TabIndex = 10;
+            this.tabPage11.Text = "Appendix";
+            // 
+            // Appendix_btn
+            // 
+            this.Appendix_btn.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Appendix_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Appendix_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Appendix_btn.Location = new System.Drawing.Point(17, 303);
+            this.Appendix_btn.Name = "Appendix_btn";
+            this.Appendix_btn.Size = new System.Drawing.Size(75, 23);
+            this.Appendix_btn.TabIndex = 13;
+            this.Appendix_btn.Text = "Enter";
+            this.Appendix_btn.UseVisualStyleBackColor = false;
+            // 
+            // Supporting_Documentation_btn
+            // 
+            this.Supporting_Documentation_btn.Location = new System.Drawing.Point(17, 47);
+            this.Supporting_Documentation_btn.Multiline = true;
+            this.Supporting_Documentation_btn.Name = "Supporting_Documentation_btn";
+            this.Supporting_Documentation_btn.Size = new System.Drawing.Size(839, 232);
+            this.Supporting_Documentation_btn.TabIndex = 12;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(14, 19);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(155, 15);
+            this.label31.TabIndex = 11;
+            this.label31.Text = "Supporting Documentation";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(53, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(153, 19);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Feasibility Study For:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // Project_Name_tbx
+            // 
+            this.Project_Name_tbx.Location = new System.Drawing.Point(212, 47);
+            this.Project_Name_tbx.Name = "Project_Name_tbx";
+            this.Project_Name_tbx.Size = new System.Drawing.Size(237, 20);
+            this.Project_Name_tbx.TabIndex = 2;
+            // 
+            // Enter_btn
+            // 
+            this.Enter_btn.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Enter_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Enter_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Enter_btn.Location = new System.Drawing.Point(504, 48);
+            this.Enter_btn.Name = "Enter_btn";
+            this.Enter_btn.Size = new System.Drawing.Size(75, 23);
+            this.Enter_btn.TabIndex = 3;
+            this.Enter_btn.Text = "Enter";
+            this.Enter_btn.UseVisualStyleBackColor = false;
+            // 
             // FeasibiltyStudyDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1098,7 +1098,7 @@
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Document_Approvals_dgv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Document_History_dgv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Document_Information_dgv)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -1125,11 +1125,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.Results3_dgv)).EndInit();
             this.tabPage9.ResumeLayout(false);
             this.tabPage9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Ranking_Scores_dgv)).EndInit();
             this.tabPage10.ResumeLayout(false);
             this.tabPage10.PerformLayout();
             this.tabPage11.ResumeLayout(false);
             this.tabPage11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Ranking_Scores_dgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1147,7 +1147,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView Document_History_dgv;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView Document_Information_dgv;
         private System.Windows.Forms.TextBox Executive_Summary_tbx;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TabPage tabPage3;

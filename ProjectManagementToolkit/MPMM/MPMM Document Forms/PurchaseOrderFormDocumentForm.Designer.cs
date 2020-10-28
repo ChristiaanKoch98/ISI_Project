@@ -697,7 +697,7 @@
             this.Terms_and_Conditions_tbx.Location = new System.Drawing.Point(182, 44);
             this.Terms_and_Conditions_tbx.Multiline = true;
             this.Terms_and_Conditions_tbx.Name = "Terms_and_Conditions_tbx";
-            this.Terms_and_Conditions_tbx.Size = new System.Drawing.Size(389, 349);
+            this.Terms_and_Conditions_tbx.Size = new System.Drawing.Size(611, 349);
             this.Terms_and_Conditions_tbx.TabIndex = 64;
             // 
             // label27
