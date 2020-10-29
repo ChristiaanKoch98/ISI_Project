@@ -254,26 +254,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             rows.Add(new string[] { "Issue Date", "" });
             rows.Add(new string[] { "Last Save Date", "" });
             rows.Add(new string[] { "File Name", "" });
-            //This is just for testing purposes to test the comit function of Github. I had some problems
-            //This is just for testing purposes to test the comit function of Github. I had some problems
-            //This is just for testing purposes to test the comit function of Github. I had some problems
-            //This is just for testing purposes to test the comit function of Github. I had some problems
-            //This is just for testing purposes to test the comit function of Github. I had some problems
-            //This is just for testing purposes to test the comit function of Github. I had some problems
-            //This is just for testing purposes to test the comit function of Github. I had some problems//This is just for testing purposes to test the comit function of Github. I had some problems
-            //This is just for testing purposes to test the comit function of Github. I had some problems
-            //This is just for testing purposes to test the comit function of Github. I had some problems
-            //This is just for testing purposes to test the comit function of Github. I had some problems
-            //This is just for testing purposes to test the comit function of Github. I had some problems
-            //This is just for testing purposes to test the comit function of Github. I had some problems
-            //This is just for testing purposes to test the comit function of Github. I had some problems
-            //This is just for testing purposes to test the comit function of Github. I had some problems
-            //This is just for testing purposes to test the comit function of Github. I had some problems
-            //This is just for testing purposes to test the comit function of Github. I had some problems
-            //This is just for testing purposes to test the comit function of Github. I had some problems
-            //This is just for testing purposes to test the comit function of Github. I had some problems
-            //This is just for testing purposes to test the comit function of Github. I had some problems
-            //This is just for testing purposes to test the comit function of Github. I had some problems
 
             foreach (var row in rows)
             {
