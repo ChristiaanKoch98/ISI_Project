@@ -16,5 +16,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             InitializeComponent();
         }
+
+        private void ProjectOfficeChecklistDocumentForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }

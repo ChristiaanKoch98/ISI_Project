@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBox5.Text" xml:space="preserve">
+    <value>
+Were the Project Office requirements documented?
+Have the Project Office premises been procured?
+Are the premises in a practical location?
+Do the premises meet the requirements documented?
+Is there a formal contract for the lease / purchase / use of the premises?
+Do the premises provide sufficient space for the project team?
+Will the premises continue to be available if the project is delayed?
+Do the premises require additional fit-out (e.g. partitions, cabling, air conditioning)?
+Are the on-site facilities sufficient (e.g. number of meeting rooms, bathrooms)? ©
+
+</value>
+  </data>
+  <data name="textBox6.Text" xml:space="preserve">
+    <value>Office Equipment
+
+Does the project team have the required office equipment and application software available to manage the project (e.g. computer hardware, project planning and financial software, projectors, fax machines, printers, scanners, copiers)?
+Are maintenance contracts in place to ensure that equipment remains operational throughout the project?
+Is spare equipment available in case of a shortage?
+Is office equipment functioning as required?
+
+Communications Equipment
+
+Are sufficient communications technologies available (e.g. computer networks, email, internet access, remote network dial-up software, mobile phones, laptops and hand-held devices)?
+Is video conferencing equipment available?
+Is the equipment functioning as required? ©
+
+</value>
+  </data>
+  <data name="textBox7.Text" xml:space="preserve">
+    <value>Have the following key roles been appointed?
+
+Project Sponsor
+Project Manager
+Project Office Manager
+Procurement Manager
+Communications Manager
+Quality Manager
+Risk Manager
+Team Leader(s)
+
+Have Job Descriptions been documented for all the project roles?
+Do all Job Descriptions describe the responsibilities and performance criteria?
+Were suitably skilled people appointed to all the project roles?
+</value>
+  </data>
+  <data name="textBox8.Text" xml:space="preserve">
+    <value>
+Have all required industry, business and project management standards been identified? For example:
+
+Industry standards (ISO)
+Health &amp; Safety Standards
+Project Planning &amp; Reporting Standards
+PMI® &amp; PMBOK® 
+
+Has a suitable Project Management methodology been implemented?
+
+
+Have the following processes been defined?
+
+Time Management Process
+Cost Management Process
+Quality Management Process
+Change Management Process
+Risk Management Process
+Issue Management Process
+Procurement Management Process
+Acceptance Management Process
+Communications Management Process
+
+
+</value>
+  </data>
+  <data name="textBox9.Text" xml:space="preserve">
+    <value>
+Are the following templates available?
+
+Initiation
+Business Case
+Feasibility Study
+Terms of Reference
+Job Description
+Stage Gate Review Form
+
+Planning
+Project Plan
+Resource Plan
+Financial Plan
+Quality Plan
+Risk Plan    
+Acceptance Plan     
+Communications Plan
+Procurement Plan
+Supplier Contract
+Tender Register©
+	
+
+
+Execution
+Timesheet Form, Timesheet Register
+Expense Form, Expense Register
+Quality Form, Deliverables Register
+Change Form, Change Register
+Risk Form, Risk Register
+Issue Form, Issue Register
+Purchase Order Form
+Procurement Register
+Project Status Report
+Communications Register
+Acceptance Form
+Acceptance Register
+
+Closure
+Project Closure Report
+Post Implementation Review©
+
+</value>
+  </data>
+  <data name="textBox10.Text" xml:space="preserve">
+    <value>Time Management
+Monitoring the project progress by identifying time and effort spent vs. budgeted
+Keeping the Project Plan up-to-date and identifying any delivery date slippage
+Keeping the Timesheet Register up-to-date at all times
+
+Cost Management
+Monitoring the project progress by identifying the budget spent vs. forecast
+Keeping the Project Plan up-to-date and identifying any overspending
+Keeping the Expense Register up-to-date at all times
+
+Quality Management
+Performing Quality Assurance to improve the chances of delivering quality
+Ensuring that Quality Control is implemented to measure the actual level of quality
+Keeping the Deliverables Register up-to-date at all times
+
+Change Management
+Receiving Change Requests and managing the change approval process
+Scheduling Change Requests and measuring the impact of changes implemented
+Keeping the Change Register up-to-date at all times
+
+Risk Management
+Receiving Risk Forms and managing the risk review process
+Scheduling actions to mitigate risks and measuring the impact of such actions
+Keeping the Risk Register up-to-date at all times
+
+Issue Management
+Receiving Issue Forms and managing the issue review process
+Scheduling actions to resolve issues and measuring the impact of such actions
+Keeping the Issue Register up-to-date at all times
+
+Procurement Management
+Issuing Purchase Orders for the provision of goods and services from suppliers
+Receiving and accepting goods and services ordered from suppliers
+Keeping the Procurement Register up-to-date at all times
+Making payment to suppliers for goods and services delivered
+Managing the overall performance of suppliers to ensure that they complete their responsibilities as contracted
+
+Acceptance Management
+Initiating Acceptance Reviews, as scheduled in the Acceptance Plan
+Documenting the results of each review by completing Acceptance Forms
+Gaining final acceptance from the customer for each deliverable produced
+Keeping the Acceptance Register up-to-date at all times
+
+Communications Management 
+Undertaking the communications tasks and events as listed in the Communications Plan
+Creating and releasing regular Project Status Reports
+Distributing press releases and managing Public Relations
+Keeping the Communications Register up-to-date at all times
+
+Stage Gate Reviews
+Identifying the point in time when a Stage Gate must be undertaken
+Organizing the Stage Gate and recording the results on a Stage Gate Form
+
+Auditing and Compliance
+Ensuring that the project conforms to appropriate industry and business policies, processes, standards and guidelines
+Informing the Project Manager of any deviations and monitoring the results of any actions taken to correct them
+
+Supporting Staff
+Assisting the Project Manager with the recruitment of new staff
+Supporting and advising staff, resolving staff issues and providing staff training
+Paying staff in accordance with their contracts and administering leave
+
+Providing Tools
+Procuring a suitable Project Management methodology
+Procuring tools for project planning, monitoring, controlling and reporting
+Training staff in the use of these tools and methodology
+
+Filing Documents
+Keeping a library of all project documents, reports, job descriptions, correspondence, standards, processes, registers, forms and templates
+Implementing an indexing method to ensure that project documentation may be easily sourced when required
+
+Performing Administration
+Providing administration services such as the organization of travel bookings, room bookings, photocopying, secretarial, mail and correspondence
+Purchasing all office equipment and materials needed by the project
+
+Undertaking Closure Reviews
+Organizing the completion of a Post Implementation Review after Project Closure
+Communicating the results of the review to the appropriate project stakeholders
+</value>
+  </data>
+</root>
