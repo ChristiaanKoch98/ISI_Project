@@ -428,6 +428,15 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\JobDescriptionDocumentForm.resx">
       <DependentUpon>JobDescriptionDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\PostImplementationReviewDocumentForm.resx">
+      <DependentUpon>PostImplementationReviewDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\QualityManagementProcessDocumentForm.resx">
+      <DependentUpon>QualityManagementProcessDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\TimeMangementProcessDocumentForm.resx">
+      <DependentUpon>TimeMangementProcessDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\TimesheetFormDocumentForm.resx">
       <DependentUpon>TimesheetFormDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
