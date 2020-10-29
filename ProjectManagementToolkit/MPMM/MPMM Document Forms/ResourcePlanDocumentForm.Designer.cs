@@ -263,7 +263,6 @@
             this.docInfoGridData.RowHeadersWidth = 51;
             this.docInfoGridData.Size = new System.Drawing.Size(659, 88);
             this.docInfoGridData.TabIndex = 2;
-            this.docInfoGridData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // docNameColumn
             // 
