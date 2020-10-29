@@ -31,21 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExpenseFormDocumentForm));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.txtapprovaldetails = new System.Windows.Forms.TextBox();
+            this.txtprojectdetailsContent = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.txtProjectName = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.Version = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.historyIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.historyChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.expensedetailsActivityID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.expensedetailsTaskID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.expensedetailsExpenseDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.expensedetailsExpenseType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.detailsExpenseDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.detailsExpenseAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.expensedetailsPayeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.expensedetailsInvoiceNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -57,7 +57,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(2, 19);
+            this.tabControl1.Location = new System.Drawing.Point(3, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(922, 476);
@@ -66,12 +66,12 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage1.Controls.Add(this.textBox8);
-            this.tabPage1.Controls.Add(this.textBox7);
-            this.tabPage1.Controls.Add(this.textBox6);
-            this.tabPage1.Controls.Add(this.txtProjectName);
-            this.tabPage1.Controls.Add(this.textBox5);
-            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.label27);
+            this.tabPage1.Controls.Add(this.txtapprovaldetails);
+            this.tabPage1.Controls.Add(this.txtprojectdetailsContent);
             this.tabPage1.Controls.Add(this.dataGridView2);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -80,139 +80,138 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "EXPENSE FORM";
             // 
-            // label3
+            // label4
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(400, 262);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Approved by";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(140, 234);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(154, 19);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "APPROVAL DETAILS";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(140, 117);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(140, 19);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "EXPENSE DETAILS";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(140, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(139, 19);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "PROJECT DETAILS";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.Location = new System.Drawing.Point(142, 282);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(0, 12);
+            this.label27.TabIndex = 12;
+            this.label27.Click += new System.EventHandler(this.label27_Click);
+            // 
+            // txtapprovaldetails
+            // 
+            this.txtapprovaldetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtapprovaldetails.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtapprovaldetails.ForeColor = System.Drawing.Color.White;
+            this.txtapprovaldetails.Location = new System.Drawing.Point(144, 256);
+            this.txtapprovaldetails.Multiline = true;
+            this.txtapprovaldetails.Name = "txtapprovaldetails";
+            this.txtapprovaldetails.Size = new System.Drawing.Size(719, 188);
+            this.txtapprovaldetails.TabIndex = 10;
+            this.txtapprovaldetails.Text = resources.GetString("txtapprovaldetails.Text");
+            this.txtapprovaldetails.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            // 
+            // txtprojectdetailsContent
+            // 
+            this.txtprojectdetailsContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtprojectdetailsContent.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtprojectdetailsContent.ForeColor = System.Drawing.Color.White;
+            this.txtprojectdetailsContent.Location = new System.Drawing.Point(144, 38);
+            this.txtprojectdetailsContent.Multiline = true;
+            this.txtprojectdetailsContent.Name = "txtprojectdetailsContent";
+            this.txtprojectdetailsContent.Size = new System.Drawing.Size(719, 76);
+            this.txtprojectdetailsContent.TabIndex = 6;
+            this.txtprojectdetailsContent.Text = "\r\nProject Name:\r\nProject Manager:\r\nTeam Member:";
             // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Version,
-            this.historyIssueDate,
-            this.historyChanges,
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
-            this.dataGridView2.Location = new System.Drawing.Point(132, 139);
+            this.expensedetailsActivityID,
+            this.expensedetailsTaskID,
+            this.expensedetailsExpenseDate,
+            this.expensedetailsExpenseType,
+            this.detailsExpenseDescription,
+            this.detailsExpenseAmount,
+            this.expensedetailsPayeeName,
+            this.expensedetailsInvoiceNumber});
+            this.dataGridView2.Location = new System.Drawing.Point(144, 134);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(743, 97);
+            this.dataGridView2.Size = new System.Drawing.Size(719, 97);
             this.dataGridView2.TabIndex = 1;
             // 
-            // textBox5
+            // expensedetailsActivityID
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox5.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(132, 30);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(743, 90);
-            this.textBox5.TabIndex = 6;
-            this.textBox5.Text = "\r\n\r\nProject Name:\r\nProject Manager:\r\nTeam Member:";
+            this.expensedetailsActivityID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.expensedetailsActivityID.HeaderText = "Activity ID";
+            this.expensedetailsActivityID.MinimumWidth = 6;
+            this.expensedetailsActivityID.Name = "expensedetailsActivityID";
             // 
-            // txtProjectName
+            // expensedetailsTaskID
             // 
-            this.txtProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProjectName.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProjectName.ForeColor = System.Drawing.Color.White;
-            this.txtProjectName.Location = new System.Drawing.Point(132, 8);
-            this.txtProjectName.Name = "txtProjectName";
-            this.txtProjectName.Size = new System.Drawing.Size(743, 26);
-            this.txtProjectName.TabIndex = 7;
-            this.txtProjectName.Text = "PROJECT DETAILS";
+            this.expensedetailsTaskID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.expensedetailsTaskID.HeaderText = "Task ID";
+            this.expensedetailsTaskID.MinimumWidth = 6;
+            this.expensedetailsTaskID.Name = "expensedetailsTaskID";
             // 
-            // textBox6
+            // expensedetailsExpenseDate
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.White;
-            this.textBox6.Location = new System.Drawing.Point(132, 115);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(743, 26);
-            this.textBox6.TabIndex = 8;
-            this.textBox6.Text = "EXPENSEDETAILS";
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.expensedetailsExpenseDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.expensedetailsExpenseDate.HeaderText = "Expense Date";
+            this.expensedetailsExpenseDate.MinimumWidth = 6;
+            this.expensedetailsExpenseDate.Name = "expensedetailsExpenseDate";
             // 
-            // Version
+            // expensedetailsExpenseType
             // 
-            this.Version.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Version.HeaderText = "Activity ID";
-            this.Version.MinimumWidth = 6;
-            this.Version.Name = "Version";
+            this.expensedetailsExpenseType.HeaderText = "Expense Type";
+            this.expensedetailsExpenseType.Name = "expensedetailsExpenseType";
             // 
-            // historyIssueDate
+            // detailsExpenseDescription
             // 
-            this.historyIssueDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.historyIssueDate.HeaderText = "Task ID";
-            this.historyIssueDate.MinimumWidth = 6;
-            this.historyIssueDate.Name = "historyIssueDate";
+            this.detailsExpenseDescription.HeaderText = "Expense Description";
+            this.detailsExpenseDescription.Name = "detailsExpenseDescription";
             // 
-            // historyChanges
+            // detailsExpenseAmount
             // 
-            this.historyChanges.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.historyChanges.HeaderText = "Expense Date";
-            this.historyChanges.MinimumWidth = 6;
-            this.historyChanges.Name = "historyChanges";
+            this.detailsExpenseAmount.HeaderText = "Expense Amount";
+            this.detailsExpenseAmount.Name = "detailsExpenseAmount";
             // 
-            // Column1
+            // expensedetailsPayeeName
             // 
-            this.Column1.HeaderText = "Expense Type1";
-            this.Column1.Name = "Column1";
+            this.expensedetailsPayeeName.HeaderText = "Payee Name";
+            this.expensedetailsPayeeName.Name = "expensedetailsPayeeName";
             // 
-            // Column2
+            // expensedetailsInvoiceNumber
             // 
-            this.Column2.HeaderText = "Expense Description";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Expense Amount";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Payee Name";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Invoice Number";
-            this.Column5.Name = "Column5";
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox7.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.Color.White;
-            this.textBox7.Location = new System.Drawing.Point(132, 233);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(743, 26);
-            this.textBox7.TabIndex = 9;
-            this.textBox7.Text = "APPROVAL DETAILS";
-            // 
-            // textBox8
-            // 
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox8.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.ForeColor = System.Drawing.Color.White;
-            this.textBox8.Location = new System.Drawing.Point(132, 256);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(743, 188);
-            this.textBox8.TabIndex = 10;
-            this.textBox8.Text = resources.GetString("textBox8.Text");
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            this.expensedetailsInvoiceNumber.HeaderText = "Invoice Number";
+            this.expensedetailsInvoiceNumber.Name = "expensedetailsInvoiceNumber";
             // 
             // ExpenseFormDocumentForm
             // 
@@ -234,20 +233,20 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox txtProjectName;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Version;
-        private System.Windows.Forms.DataGridViewTextBoxColumn historyIssueDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn historyChanges;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.TextBox txtprojectdetailsContent;
+        private System.Windows.Forms.TextBox txtapprovaldetails;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn expensedetailsActivityID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn expensedetailsTaskID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn expensedetailsExpenseDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn expensedetailsExpenseType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn detailsExpenseDescription;
+        private System.Windows.Forms.DataGridViewTextBoxColumn detailsExpenseAmount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn expensedetailsPayeeName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn expensedetailsInvoiceNumber;
     }
 }

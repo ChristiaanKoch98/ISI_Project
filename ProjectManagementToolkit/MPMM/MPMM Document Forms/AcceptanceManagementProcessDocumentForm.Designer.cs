@@ -39,41 +39,41 @@
             this.approvalSignature = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.approvalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Version = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.historyIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.historyChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.txtBusinessOppurtunity = new System.Windows.Forms.TextBox();
-            this.txtBusinessProblem = new System.Windows.Forms.TextBox();
-            this.txtProblemAnalysis = new System.Windows.Forms.TextBox();
-            this.txtEnvirAnalysis = new System.Windows.Forms.TextBox();
-            this.txtBusinessProblemDescription = new System.Windows.Forms.TextBox();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.txtIAProjectPlanning = new System.Windows.Forms.TextBox();
-            this.txtIAProjectInitiation = new System.Windows.Forms.TextBox();
-            this.txtIADescription = new System.Windows.Forms.TextBox();
+            this.txtacceptanceprocessOverview = new System.Windows.Forms.TextBox();
+            this.txtacceptanceprocessAcceptDeliverable = new System.Windows.Forms.TextBox();
+            this.txtacceptanceprocessCompleteAcceptanceTest = new System.Windows.Forms.TextBox();
+            this.txtacceptanceprocessCompleteDeliverable = new System.Windows.Forms.TextBox();
+            this.txtacceptanceprocessDescription = new System.Windows.Forms.TextBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.txtacceptancerolesCustomer = new System.Windows.Forms.TextBox();
+            this.txtacceptancerolesProjectManager = new System.Windows.Forms.TextBox();
+            this.txtacceptancerolesDescription = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.txtacceptancedocumentsAcceptanceRegister = new System.Windows.Forms.TextBox();
+            this.txtacceptancedocumentsAcceptanceForm = new System.Windows.Forms.TextBox();
+            this.txtacceptancedocumentsDescription = new System.Windows.Forms.TextBox();
             this.Solution3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Solution2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Solution1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AssessmentCriteria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label20 = new System.Windows.Forms.Label();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtProjectName = new System.Windows.Forms.TextBox();
+            this.historyVersion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.historyIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.historyChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InformationType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage2.SuspendLayout();
-            this.tabPage8.SuspendLayout();
-            this.tabPage7.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -83,12 +83,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage7);
-            this.tabControl1.Controls.Add(this.tabPage8);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(12, 72);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(880, 405);
+            this.tabControl1.Size = new System.Drawing.Size(880, 437);
             this.tabControl1.TabIndex = 3;
             // 
             // tabPage1
@@ -103,7 +103,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(872, 379);
+            this.tabPage1.Size = new System.Drawing.Size(872, 411);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Document Control";
             // 
@@ -188,7 +188,7 @@
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Version,
+            this.historyVersion,
             this.historyIssueDate,
             this.historyChanges});
             this.dataGridView2.Location = new System.Drawing.Point(168, 120);
@@ -197,32 +197,11 @@
             this.dataGridView2.Size = new System.Drawing.Size(691, 118);
             this.dataGridView2.TabIndex = 1;
             // 
-            // Version
-            // 
-            this.Version.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Version.HeaderText = "Version";
-            this.Version.MinimumWidth = 6;
-            this.Version.Name = "Version";
-            // 
-            // historyIssueDate
-            // 
-            this.historyIssueDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.historyIssueDate.HeaderText = "Issue Date";
-            this.historyIssueDate.MinimumWidth = 6;
-            this.historyIssueDate.Name = "historyIssueDate";
-            // 
-            // historyChanges
-            // 
-            this.historyChanges.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.historyChanges.HeaderText = "Changes";
-            this.historyChanges.MinimumWidth = 6;
-            this.historyChanges.Name = "historyChanges";
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Type,
+            this.InformationType,
             this.Information});
             this.dataGridView1.Location = new System.Drawing.Point(168, 6);
             this.dataGridView1.Name = "dataGridView1";
@@ -230,146 +209,192 @@
             this.dataGridView1.Size = new System.Drawing.Size(691, 108);
             this.dataGridView1.TabIndex = 0;
             // 
-            // Type
-            // 
-            this.Type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Type.HeaderText = "Type";
-            this.Type.MinimumWidth = 6;
-            this.Type.Name = "Type";
-            // 
-            // Information
-            // 
-            this.Information.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Information.HeaderText = "Information";
-            this.Information.MinimumWidth = 6;
-            this.Information.Name = "Information";
-            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage2.Controls.Add(this.txtBusinessOppurtunity);
-            this.tabPage2.Controls.Add(this.txtBusinessProblem);
-            this.tabPage2.Controls.Add(this.txtProblemAnalysis);
-            this.tabPage2.Controls.Add(this.txtEnvirAnalysis);
-            this.tabPage2.Controls.Add(this.txtBusinessProblemDescription);
+            this.tabPage2.Controls.Add(this.txtacceptanceprocessOverview);
+            this.tabPage2.Controls.Add(this.txtacceptanceprocessAcceptDeliverable);
+            this.tabPage2.Controls.Add(this.txtacceptanceprocessCompleteAcceptanceTest);
+            this.tabPage2.Controls.Add(this.txtacceptanceprocessCompleteDeliverable);
+            this.tabPage2.Controls.Add(this.txtacceptanceprocessDescription);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(872, 379);
+            this.tabPage2.Size = new System.Drawing.Size(872, 411);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Acceptance Process";
             // 
-            // txtBusinessOppurtunity
+            // txtacceptanceprocessOverview
             // 
-            this.txtBusinessOppurtunity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtBusinessOppurtunity.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBusinessOppurtunity.ForeColor = System.Drawing.Color.White;
-            this.txtBusinessOppurtunity.Location = new System.Drawing.Point(318, 25);
-            this.txtBusinessOppurtunity.Multiline = true;
-            this.txtBusinessOppurtunity.Name = "txtBusinessOppurtunity";
-            this.txtBusinessOppurtunity.Size = new System.Drawing.Size(410, 74);
-            this.txtBusinessOppurtunity.TabIndex = 5;
-            this.txtBusinessOppurtunity.Text = "Overview";
-            this.txtBusinessOppurtunity.TextChanged += new System.EventHandler(this.txtBusinessOppurtunity_TextChanged);
+            this.txtacceptanceprocessOverview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtacceptanceprocessOverview.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtacceptanceprocessOverview.ForeColor = System.Drawing.Color.White;
+            this.txtacceptanceprocessOverview.Location = new System.Drawing.Point(318, 25);
+            this.txtacceptanceprocessOverview.Multiline = true;
+            this.txtacceptanceprocessOverview.Name = "txtacceptanceprocessOverview";
+            this.txtacceptanceprocessOverview.Size = new System.Drawing.Size(410, 74);
+            this.txtacceptanceprocessOverview.TabIndex = 5;
+            this.txtacceptanceprocessOverview.Text = "Overview";
+            this.txtacceptanceprocessOverview.TextChanged += new System.EventHandler(this.txtBusinessOppurtunity_TextChanged);
             // 
-            // txtBusinessProblem
+            // txtacceptanceprocessAcceptDeliverable
             // 
-            this.txtBusinessProblem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtBusinessProblem.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBusinessProblem.ForeColor = System.Drawing.Color.White;
-            this.txtBusinessProblem.Location = new System.Drawing.Point(318, 204);
-            this.txtBusinessProblem.Multiline = true;
-            this.txtBusinessProblem.Name = "txtBusinessProblem";
-            this.txtBusinessProblem.Size = new System.Drawing.Size(410, 78);
-            this.txtBusinessProblem.TabIndex = 4;
-            this.txtBusinessProblem.Text = "Accept Deliverable";
+            this.txtacceptanceprocessAcceptDeliverable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtacceptanceprocessAcceptDeliverable.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtacceptanceprocessAcceptDeliverable.ForeColor = System.Drawing.Color.White;
+            this.txtacceptanceprocessAcceptDeliverable.Location = new System.Drawing.Point(318, 312);
+            this.txtacceptanceprocessAcceptDeliverable.Multiline = true;
+            this.txtacceptanceprocessAcceptDeliverable.Name = "txtacceptanceprocessAcceptDeliverable";
+            this.txtacceptanceprocessAcceptDeliverable.Size = new System.Drawing.Size(410, 78);
+            this.txtacceptanceprocessAcceptDeliverable.TabIndex = 4;
+            this.txtacceptanceprocessAcceptDeliverable.Text = "Accept Deliverable";
             // 
-            // txtProblemAnalysis
+            // txtacceptanceprocessCompleteAcceptanceTest
             // 
-            this.txtProblemAnalysis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProblemAnalysis.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProblemAnalysis.ForeColor = System.Drawing.Color.White;
-            this.txtProblemAnalysis.Location = new System.Drawing.Point(318, 114);
-            this.txtProblemAnalysis.Multiline = true;
-            this.txtProblemAnalysis.Name = "txtProblemAnalysis";
-            this.txtProblemAnalysis.Size = new System.Drawing.Size(410, 75);
-            this.txtProblemAnalysis.TabIndex = 3;
-            this.txtProblemAnalysis.Text = "Complete Acceptance Test\r\n";
+            this.txtacceptanceprocessCompleteAcceptanceTest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtacceptanceprocessCompleteAcceptanceTest.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtacceptanceprocessCompleteAcceptanceTest.ForeColor = System.Drawing.Color.White;
+            this.txtacceptanceprocessCompleteAcceptanceTest.Location = new System.Drawing.Point(318, 219);
+            this.txtacceptanceprocessCompleteAcceptanceTest.Multiline = true;
+            this.txtacceptanceprocessCompleteAcceptanceTest.Name = "txtacceptanceprocessCompleteAcceptanceTest";
+            this.txtacceptanceprocessCompleteAcceptanceTest.Size = new System.Drawing.Size(410, 75);
+            this.txtacceptanceprocessCompleteAcceptanceTest.TabIndex = 3;
+            this.txtacceptanceprocessCompleteAcceptanceTest.Text = "Complete Acceptance Test\r\n";
             // 
-            // txtEnvirAnalysis
+            // txtacceptanceprocessCompleteDeliverable
             // 
-            this.txtEnvirAnalysis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtEnvirAnalysis.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEnvirAnalysis.ForeColor = System.Drawing.Color.White;
-            this.txtEnvirAnalysis.Location = new System.Drawing.Point(318, 311);
-            this.txtEnvirAnalysis.Multiline = true;
-            this.txtEnvirAnalysis.Name = "txtEnvirAnalysis";
-            this.txtEnvirAnalysis.Size = new System.Drawing.Size(410, 79);
-            this.txtEnvirAnalysis.TabIndex = 2;
-            this.txtEnvirAnalysis.Text = "Complete Deliverable";
-            this.txtEnvirAnalysis.TextChanged += new System.EventHandler(this.txtEnvirAnalysis_TextChanged);
+            this.txtacceptanceprocessCompleteDeliverable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtacceptanceprocessCompleteDeliverable.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtacceptanceprocessCompleteDeliverable.ForeColor = System.Drawing.Color.White;
+            this.txtacceptanceprocessCompleteDeliverable.Location = new System.Drawing.Point(318, 119);
+            this.txtacceptanceprocessCompleteDeliverable.Multiline = true;
+            this.txtacceptanceprocessCompleteDeliverable.Name = "txtacceptanceprocessCompleteDeliverable";
+            this.txtacceptanceprocessCompleteDeliverable.Size = new System.Drawing.Size(410, 79);
+            this.txtacceptanceprocessCompleteDeliverable.TabIndex = 2;
+            this.txtacceptanceprocessCompleteDeliverable.Text = "Complete Deliverable";
+            this.txtacceptanceprocessCompleteDeliverable.TextChanged += new System.EventHandler(this.txtEnvirAnalysis_TextChanged);
             // 
-            // txtBusinessProblemDescription
+            // txtacceptanceprocessDescription
             // 
-            this.txtBusinessProblemDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtBusinessProblemDescription.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBusinessProblemDescription.ForeColor = System.Drawing.Color.White;
-            this.txtBusinessProblemDescription.Location = new System.Drawing.Point(6, 25);
-            this.txtBusinessProblemDescription.Multiline = true;
-            this.txtBusinessProblemDescription.Name = "txtBusinessProblemDescription";
-            this.txtBusinessProblemDescription.Size = new System.Drawing.Size(248, 365);
-            this.txtBusinessProblemDescription.TabIndex = 1;
-            this.txtBusinessProblemDescription.Text = "Desription";
-            this.txtBusinessProblemDescription.TextChanged += new System.EventHandler(this.txtBusinessProblemDescription_TextChanged);
+            this.txtacceptanceprocessDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtacceptanceprocessDescription.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtacceptanceprocessDescription.ForeColor = System.Drawing.Color.White;
+            this.txtacceptanceprocessDescription.Location = new System.Drawing.Point(6, 25);
+            this.txtacceptanceprocessDescription.Multiline = true;
+            this.txtacceptanceprocessDescription.Name = "txtacceptanceprocessDescription";
+            this.txtacceptanceprocessDescription.Size = new System.Drawing.Size(248, 365);
+            this.txtacceptanceprocessDescription.TabIndex = 1;
+            this.txtacceptanceprocessDescription.Text = "Desription";
+            this.txtacceptanceprocessDescription.TextChanged += new System.EventHandler(this.txtBusinessProblemDescription_TextChanged);
             // 
-            // tabPage8
+            // tabPage3
             // 
-            this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage8.Controls.Add(this.txtIAProjectPlanning);
-            this.tabPage8.Controls.Add(this.txtIAProjectInitiation);
-            this.tabPage8.Controls.Add(this.txtIADescription);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(872, 379);
-            this.tabPage8.TabIndex = 4;
-            this.tabPage8.Text = "Acceptance Documents";
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage3.Controls.Add(this.txtacceptancerolesCustomer);
+            this.tabPage3.Controls.Add(this.txtacceptancerolesProjectManager);
+            this.tabPage3.Controls.Add(this.txtacceptancerolesDescription);
+            this.tabPage3.Controls.Add(this.label20);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(872, 411);
+            this.tabPage3.TabIndex = 3;
+            this.tabPage3.Text = "Acceptance Roles";
             // 
-            // txtIAProjectPlanning
+            // txtacceptancerolesCustomer
             // 
-            this.txtIAProjectPlanning.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtIAProjectPlanning.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIAProjectPlanning.ForeColor = System.Drawing.Color.White;
-            this.txtIAProjectPlanning.Location = new System.Drawing.Point(330, 201);
-            this.txtIAProjectPlanning.Multiline = true;
-            this.txtIAProjectPlanning.Name = "txtIAProjectPlanning";
-            this.txtIAProjectPlanning.Size = new System.Drawing.Size(285, 152);
-            this.txtIAProjectPlanning.TabIndex = 11;
-            this.txtIAProjectPlanning.Text = "Acceptance Register";
+            this.txtacceptancerolesCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtacceptancerolesCustomer.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtacceptancerolesCustomer.ForeColor = System.Drawing.Color.White;
+            this.txtacceptancerolesCustomer.Location = new System.Drawing.Point(350, 204);
+            this.txtacceptancerolesCustomer.Multiline = true;
+            this.txtacceptancerolesCustomer.Name = "txtacceptancerolesCustomer";
+            this.txtacceptancerolesCustomer.Size = new System.Drawing.Size(285, 166);
+            this.txtacceptancerolesCustomer.TabIndex = 14;
+            this.txtacceptancerolesCustomer.Text = "Customer";
             // 
-            // txtIAProjectInitiation
+            // txtacceptancerolesProjectManager
             // 
-            this.txtIAProjectInitiation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtIAProjectInitiation.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIAProjectInitiation.ForeColor = System.Drawing.Color.White;
-            this.txtIAProjectInitiation.Location = new System.Drawing.Point(330, 35);
-            this.txtIAProjectInitiation.Multiline = true;
-            this.txtIAProjectInitiation.Name = "txtIAProjectInitiation";
-            this.txtIAProjectInitiation.Size = new System.Drawing.Size(285, 150);
-            this.txtIAProjectInitiation.TabIndex = 1;
-            this.txtIAProjectInitiation.Text = "Acceptance Form";
+            this.txtacceptancerolesProjectManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtacceptancerolesProjectManager.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtacceptancerolesProjectManager.ForeColor = System.Drawing.Color.White;
+            this.txtacceptancerolesProjectManager.Location = new System.Drawing.Point(350, 22);
+            this.txtacceptancerolesProjectManager.Multiline = true;
+            this.txtacceptancerolesProjectManager.Name = "txtacceptancerolesProjectManager";
+            this.txtacceptancerolesProjectManager.Size = new System.Drawing.Size(285, 150);
+            this.txtacceptancerolesProjectManager.TabIndex = 13;
+            this.txtacceptancerolesProjectManager.Text = "Project Manager";
             // 
-            // txtIADescription
+            // txtacceptancerolesDescription
             // 
-            this.txtIADescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtIADescription.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIADescription.ForeColor = System.Drawing.Color.White;
-            this.txtIADescription.Location = new System.Drawing.Point(6, 35);
-            this.txtIADescription.Multiline = true;
-            this.txtIADescription.Name = "txtIADescription";
-            this.txtIADescription.Size = new System.Drawing.Size(283, 318);
-            this.txtIADescription.TabIndex = 0;
-            this.txtIADescription.Text = "Description";
+            this.txtacceptancerolesDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtacceptancerolesDescription.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtacceptancerolesDescription.ForeColor = System.Drawing.Color.White;
+            this.txtacceptancerolesDescription.Location = new System.Drawing.Point(16, 22);
+            this.txtacceptancerolesDescription.Multiline = true;
+            this.txtacceptancerolesDescription.Name = "txtacceptancerolesDescription";
+            this.txtacceptancerolesDescription.Size = new System.Drawing.Size(283, 348);
+            this.txtacceptancerolesDescription.TabIndex = 12;
+            this.txtacceptancerolesDescription.Text = "Description";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Cambria", 9F);
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(474, 7);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(0, 14);
+            this.label20.TabIndex = 2;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage4.Controls.Add(this.txtacceptancedocumentsAcceptanceRegister);
+            this.tabPage4.Controls.Add(this.txtacceptancedocumentsAcceptanceForm);
+            this.tabPage4.Controls.Add(this.txtacceptancedocumentsDescription);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(872, 411);
+            this.tabPage4.TabIndex = 4;
+            this.tabPage4.Text = "Acceptance Documents";
+            // 
+            // txtacceptancedocumentsAcceptanceRegister
+            // 
+            this.txtacceptancedocumentsAcceptanceRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtacceptancedocumentsAcceptanceRegister.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtacceptancedocumentsAcceptanceRegister.ForeColor = System.Drawing.Color.White;
+            this.txtacceptancedocumentsAcceptanceRegister.Location = new System.Drawing.Point(330, 201);
+            this.txtacceptancedocumentsAcceptanceRegister.Multiline = true;
+            this.txtacceptancedocumentsAcceptanceRegister.Name = "txtacceptancedocumentsAcceptanceRegister";
+            this.txtacceptancedocumentsAcceptanceRegister.Size = new System.Drawing.Size(285, 152);
+            this.txtacceptancedocumentsAcceptanceRegister.TabIndex = 11;
+            this.txtacceptancedocumentsAcceptanceRegister.Text = "Acceptance Register";
+            // 
+            // txtacceptancedocumentsAcceptanceForm
+            // 
+            this.txtacceptancedocumentsAcceptanceForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtacceptancedocumentsAcceptanceForm.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtacceptancedocumentsAcceptanceForm.ForeColor = System.Drawing.Color.White;
+            this.txtacceptancedocumentsAcceptanceForm.Location = new System.Drawing.Point(330, 35);
+            this.txtacceptancedocumentsAcceptanceForm.Multiline = true;
+            this.txtacceptancedocumentsAcceptanceForm.Name = "txtacceptancedocumentsAcceptanceForm";
+            this.txtacceptancedocumentsAcceptanceForm.Size = new System.Drawing.Size(285, 150);
+            this.txtacceptancedocumentsAcceptanceForm.TabIndex = 1;
+            this.txtacceptancedocumentsAcceptanceForm.Text = "Acceptance Form";
+            // 
+            // txtacceptancedocumentsDescription
+            // 
+            this.txtacceptancedocumentsDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtacceptancedocumentsDescription.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtacceptancedocumentsDescription.ForeColor = System.Drawing.Color.White;
+            this.txtacceptancedocumentsDescription.Location = new System.Drawing.Point(6, 35);
+            this.txtacceptancedocumentsDescription.Multiline = true;
+            this.txtacceptancedocumentsDescription.Name = "txtacceptancedocumentsDescription";
+            this.txtacceptancedocumentsDescription.Size = new System.Drawing.Size(283, 318);
+            this.txtacceptancedocumentsDescription.TabIndex = 0;
+            this.txtacceptancedocumentsDescription.Text = "Description";
             // 
             // Solution3
             // 
@@ -399,76 +424,16 @@
             this.AssessmentCriteria.MinimumWidth = 6;
             this.AssessmentCriteria.Name = "AssessmentCriteria";
             // 
-            // label20
+            // label4
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Cambria", 9F);
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(474, 7);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(0, 14);
-            this.label20.TabIndex = 2;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage7.Controls.Add(this.textBox1);
-            this.tabPage7.Controls.Add(this.textBox2);
-            this.tabPage7.Controls.Add(this.textBox3);
-            this.tabPage7.Controls.Add(this.label20);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(872, 379);
-            this.tabPage7.TabIndex = 3;
-            this.tabPage7.Text = "Acceptance Roles";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox1.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(350, 204);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(285, 166);
-            this.textBox1.TabIndex = 14;
-            this.textBox1.Text = "Customer";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox2.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(350, 22);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(285, 150);
-            this.textBox2.TabIndex = 13;
-            this.textBox2.Text = "Project Manager";
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox3.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(16, 22);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(283, 348);
-            this.textBox3.TabIndex = 12;
-            this.textBox3.Text = "Description";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(20, 9);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(153, 12);
-            this.label27.TabIndex = 5;
-            this.label27.Text = "Please Enter Your Project Name:";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(20, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(153, 12);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Please Enter Your Project Name:";
             // 
             // txtProjectName
             // 
@@ -481,13 +446,48 @@
             this.txtProjectName.TabIndex = 4;
             this.txtProjectName.Text = "Project Name";
             // 
+            // historyVersion
+            // 
+            this.historyVersion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.historyVersion.HeaderText = "Version";
+            this.historyVersion.MinimumWidth = 6;
+            this.historyVersion.Name = "historyVersion";
+            // 
+            // historyIssueDate
+            // 
+            this.historyIssueDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.historyIssueDate.HeaderText = "Issue Date";
+            this.historyIssueDate.MinimumWidth = 6;
+            this.historyIssueDate.Name = "historyIssueDate";
+            // 
+            // historyChanges
+            // 
+            this.historyChanges.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.historyChanges.HeaderText = "Changes";
+            this.historyChanges.MinimumWidth = 6;
+            this.historyChanges.Name = "historyChanges";
+            // 
+            // InformationType
+            // 
+            this.InformationType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.InformationType.HeaderText = "Type";
+            this.InformationType.MinimumWidth = 6;
+            this.InformationType.Name = "InformationType";
+            // 
+            // Information
+            // 
+            this.Information.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Information.HeaderText = "Information";
+            this.Information.MinimumWidth = 6;
+            this.Information.Name = "Information";
+            // 
             // AcceptanceManagementProcessDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(900, 521);
-            this.Controls.Add(this.label27);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.tabControl1);
             this.Name = "AcceptanceManagementProcessDocumentForm";
@@ -500,10 +500,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            this.tabPage8.ResumeLayout(false);
-            this.tabPage8.PerformLayout();
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage7.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -522,32 +522,32 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn approvalSignature;
         private System.Windows.Forms.DataGridViewTextBoxColumn approvalDate;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Version;
-        private System.Windows.Forms.DataGridViewTextBoxColumn historyIssueDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn historyChanges;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Information;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox txtBusinessProblemDescription;
-        private System.Windows.Forms.TabPage tabPage8;
-        private System.Windows.Forms.TextBox txtIAProjectPlanning;
-        private System.Windows.Forms.TextBox txtIAProjectInitiation;
-        private System.Windows.Forms.TextBox txtIADescription;
-        private System.Windows.Forms.TextBox txtBusinessOppurtunity;
-        private System.Windows.Forms.TextBox txtBusinessProblem;
-        private System.Windows.Forms.TextBox txtProblemAnalysis;
-        private System.Windows.Forms.TextBox txtEnvirAnalysis;
-        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TextBox txtacceptanceprocessDescription;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TextBox txtacceptancedocumentsAcceptanceRegister;
+        private System.Windows.Forms.TextBox txtacceptancedocumentsAcceptanceForm;
+        private System.Windows.Forms.TextBox txtacceptancedocumentsDescription;
+        private System.Windows.Forms.TextBox txtacceptanceprocessOverview;
+        private System.Windows.Forms.TextBox txtacceptanceprocessAcceptDeliverable;
+        private System.Windows.Forms.TextBox txtacceptanceprocessCompleteAcceptanceTest;
+        private System.Windows.Forms.TextBox txtacceptanceprocessCompleteDeliverable;
+        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.DataGridViewTextBoxColumn Solution3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Solution2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Solution1;
         private System.Windows.Forms.DataGridViewTextBoxColumn AssessmentCriteria;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox txtacceptancerolesCustomer;
+        private System.Windows.Forms.TextBox txtacceptancerolesProjectManager;
+        private System.Windows.Forms.TextBox txtacceptancerolesDescription;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtProjectName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn historyVersion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn historyIssueDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn historyChanges;
+        private System.Windows.Forms.DataGridViewTextBoxColumn InformationType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Information;
     }
 }
