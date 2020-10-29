@@ -425,6 +425,9 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\AcceptanceManagementProcessDocumentForm.resx">
       <DependentUpon>AcceptanceManagementProcessDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\ExpenseFormDocumentForm.resx">
+      <DependentUpon>ExpenseFormDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\FinacialPlanDocumentForm.resx">
       <DependentUpon>FinacialPlanDocumentForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label27 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtProjectName = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -41,27 +41,27 @@
             this.approvalSignature = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.approvalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Version = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.txttimemanagementprocessUpdateProcessPlan = new System.Windows.Forms.TextBox();
+            this.txttimemanagementprocessApprovedTimesheet = new System.Windows.Forms.TextBox();
+            this.txttimemanagementprocessDocumentTimesheet = new System.Windows.Forms.TextBox();
+            this.txttimemanagementprocessOverview = new System.Windows.Forms.TextBox();
+            this.txttimemanagementprocessDescription = new System.Windows.Forms.TextBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.txttimemanagementrolesProjectAdminstratror = new System.Windows.Forms.TextBox();
+            this.txttimemanagementrolesProjectManager = new System.Windows.Forms.TextBox();
+            this.txttimemanagementrolesTeamMember = new System.Windows.Forms.TextBox();
+            this.txttimemanagementrolesDescription = new System.Windows.Forms.TextBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.txttimemanagementdocumentsTimeSheetRegister = new System.Windows.Forms.TextBox();
+            this.txttimemanagementdocumentsTimeSheet = new System.Windows.Forms.TextBox();
+            this.txttimemanagementdocumentsDescription = new System.Windows.Forms.TextBox();
+            this.InformationType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.historyVersion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.historyIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.historyChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.txtBusinessProblem = new System.Windows.Forms.TextBox();
-            this.txtProblemAnalysis = new System.Windows.Forms.TextBox();
-            this.txtEnvirAnalysis = new System.Windows.Forms.TextBox();
-            this.txtBusinessProblemDescription = new System.Windows.Forms.TextBox();
-            this.TimeManagement = new System.Windows.Forms.TextBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.txtRecommendedSolutionDescription = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -69,19 +69,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.tabPage7.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label27
+            // label4
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(6, 5);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(153, 12);
-            this.label27.TabIndex = 5;
-            this.label27.Text = "Please Enter Your Project Name:";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(6, 5);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(153, 12);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Please Enter Your Project Name:";
             // 
             // txtProjectName
             // 
@@ -102,7 +102,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage7);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(8, 57);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -206,7 +206,7 @@
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Version,
+            this.historyVersion,
             this.historyIssueDate,
             this.historyChanges});
             this.dataGridView2.Location = new System.Drawing.Point(168, 120);
@@ -215,12 +215,238 @@
             this.dataGridView2.Size = new System.Drawing.Size(638, 118);
             this.dataGridView2.TabIndex = 1;
             // 
-            // Version
+            // dataGridView1
             // 
-            this.Version.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Version.HeaderText = "Version";
-            this.Version.MinimumWidth = 6;
-            this.Version.Name = "Version";
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.InformationType,
+            this.Information});
+            this.dataGridView1.Location = new System.Drawing.Point(168, 6);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(638, 108);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage2.Controls.Add(this.txttimemanagementprocessUpdateProcessPlan);
+            this.tabPage2.Controls.Add(this.txttimemanagementprocessApprovedTimesheet);
+            this.tabPage2.Controls.Add(this.txttimemanagementprocessDocumentTimesheet);
+            this.tabPage2.Controls.Add(this.txttimemanagementprocessOverview);
+            this.tabPage2.Controls.Add(this.txttimemanagementprocessDescription);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(812, 392);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Time Management Process";
+            // 
+            // txttimemanagementprocessUpdateProcessPlan
+            // 
+            this.txttimemanagementprocessUpdateProcessPlan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txttimemanagementprocessUpdateProcessPlan.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttimemanagementprocessUpdateProcessPlan.ForeColor = System.Drawing.Color.White;
+            this.txttimemanagementprocessUpdateProcessPlan.Location = new System.Drawing.Point(281, 285);
+            this.txttimemanagementprocessUpdateProcessPlan.Multiline = true;
+            this.txttimemanagementprocessUpdateProcessPlan.Name = "txttimemanagementprocessUpdateProcessPlan";
+            this.txttimemanagementprocessUpdateProcessPlan.Size = new System.Drawing.Size(402, 85);
+            this.txttimemanagementprocessUpdateProcessPlan.TabIndex = 4;
+            this.txttimemanagementprocessUpdateProcessPlan.Text = "Update Project Plan";
+            // 
+            // txttimemanagementprocessApprovedTimesheet
+            // 
+            this.txttimemanagementprocessApprovedTimesheet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txttimemanagementprocessApprovedTimesheet.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttimemanagementprocessApprovedTimesheet.ForeColor = System.Drawing.Color.White;
+            this.txttimemanagementprocessApprovedTimesheet.Location = new System.Drawing.Point(281, 192);
+            this.txttimemanagementprocessApprovedTimesheet.Multiline = true;
+            this.txttimemanagementprocessApprovedTimesheet.Name = "txttimemanagementprocessApprovedTimesheet";
+            this.txttimemanagementprocessApprovedTimesheet.Size = new System.Drawing.Size(403, 78);
+            this.txttimemanagementprocessApprovedTimesheet.TabIndex = 3;
+            this.txttimemanagementprocessApprovedTimesheet.Text = "Approve Timesheet";
+            // 
+            // txttimemanagementprocessDocumentTimesheet
+            // 
+            this.txttimemanagementprocessDocumentTimesheet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txttimemanagementprocessDocumentTimesheet.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttimemanagementprocessDocumentTimesheet.ForeColor = System.Drawing.Color.White;
+            this.txttimemanagementprocessDocumentTimesheet.Location = new System.Drawing.Point(282, 98);
+            this.txttimemanagementprocessDocumentTimesheet.Multiline = true;
+            this.txttimemanagementprocessDocumentTimesheet.Name = "txttimemanagementprocessDocumentTimesheet";
+            this.txttimemanagementprocessDocumentTimesheet.Size = new System.Drawing.Size(402, 77);
+            this.txttimemanagementprocessDocumentTimesheet.TabIndex = 2;
+            this.txttimemanagementprocessDocumentTimesheet.Text = "Document Timesheet";
+            // 
+            // txttimemanagementprocessOverview
+            // 
+            this.txttimemanagementprocessOverview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txttimemanagementprocessOverview.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttimemanagementprocessOverview.ForeColor = System.Drawing.Color.White;
+            this.txttimemanagementprocessOverview.Location = new System.Drawing.Point(281, 6);
+            this.txttimemanagementprocessOverview.Multiline = true;
+            this.txttimemanagementprocessOverview.Name = "txttimemanagementprocessOverview";
+            this.txttimemanagementprocessOverview.Size = new System.Drawing.Size(403, 78);
+            this.txttimemanagementprocessOverview.TabIndex = 1;
+            this.txttimemanagementprocessOverview.Text = "Overview";
+            // 
+            // txttimemanagementprocessDescription
+            // 
+            this.txttimemanagementprocessDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txttimemanagementprocessDescription.Font = new System.Drawing.Font("Cambria", 10F);
+            this.txttimemanagementprocessDescription.ForeColor = System.Drawing.Color.White;
+            this.txttimemanagementprocessDescription.Location = new System.Drawing.Point(7, 7);
+            this.txttimemanagementprocessDescription.Multiline = true;
+            this.txttimemanagementprocessDescription.Name = "txttimemanagementprocessDescription";
+            this.txttimemanagementprocessDescription.Size = new System.Drawing.Size(246, 363);
+            this.txttimemanagementprocessDescription.TabIndex = 0;
+            this.txttimemanagementprocessDescription.Text = "Description";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage3.Controls.Add(this.txttimemanagementrolesProjectAdminstratror);
+            this.tabPage3.Controls.Add(this.txttimemanagementrolesProjectManager);
+            this.tabPage3.Controls.Add(this.txttimemanagementrolesTeamMember);
+            this.tabPage3.Controls.Add(this.txttimemanagementrolesDescription);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(812, 392);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Time Management Roles";
+            // 
+            // txttimemanagementrolesProjectAdminstratror
+            // 
+            this.txttimemanagementrolesProjectAdminstratror.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txttimemanagementrolesProjectAdminstratror.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txttimemanagementrolesProjectAdminstratror.Font = new System.Drawing.Font("Cambria", 10F);
+            this.txttimemanagementrolesProjectAdminstratror.ForeColor = System.Drawing.Color.White;
+            this.txttimemanagementrolesProjectAdminstratror.Location = new System.Drawing.Point(275, 246);
+            this.txttimemanagementrolesProjectAdminstratror.Multiline = true;
+            this.txttimemanagementrolesProjectAdminstratror.Name = "txttimemanagementrolesProjectAdminstratror";
+            this.txttimemanagementrolesProjectAdminstratror.Size = new System.Drawing.Size(308, 114);
+            this.txttimemanagementrolesProjectAdminstratror.TabIndex = 4;
+            this.txttimemanagementrolesProjectAdminstratror.Text = "Project Adminstrator";
+            // 
+            // txttimemanagementrolesProjectManager
+            // 
+            this.txttimemanagementrolesProjectManager.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txttimemanagementrolesProjectManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txttimemanagementrolesProjectManager.Font = new System.Drawing.Font("Cambria", 10F);
+            this.txttimemanagementrolesProjectManager.ForeColor = System.Drawing.Color.White;
+            this.txttimemanagementrolesProjectManager.Location = new System.Drawing.Point(275, 104);
+            this.txttimemanagementrolesProjectManager.Multiline = true;
+            this.txttimemanagementrolesProjectManager.Name = "txttimemanagementrolesProjectManager";
+            this.txttimemanagementrolesProjectManager.Size = new System.Drawing.Size(308, 114);
+            this.txttimemanagementrolesProjectManager.TabIndex = 3;
+            this.txttimemanagementrolesProjectManager.Text = "Project Manager";
+            // 
+            // txttimemanagementrolesTeamMember
+            // 
+            this.txttimemanagementrolesTeamMember.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txttimemanagementrolesTeamMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txttimemanagementrolesTeamMember.Font = new System.Drawing.Font("Cambria", 10F);
+            this.txttimemanagementrolesTeamMember.ForeColor = System.Drawing.Color.White;
+            this.txttimemanagementrolesTeamMember.Location = new System.Drawing.Point(275, 6);
+            this.txttimemanagementrolesTeamMember.Multiline = true;
+            this.txttimemanagementrolesTeamMember.Name = "txttimemanagementrolesTeamMember";
+            this.txttimemanagementrolesTeamMember.Size = new System.Drawing.Size(308, 83);
+            this.txttimemanagementrolesTeamMember.TabIndex = 2;
+            this.txttimemanagementrolesTeamMember.Text = "Team Member";
+            // 
+            // txttimemanagementrolesDescription
+            // 
+            this.txttimemanagementrolesDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txttimemanagementrolesDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txttimemanagementrolesDescription.Font = new System.Drawing.Font("Cambria", 10F);
+            this.txttimemanagementrolesDescription.ForeColor = System.Drawing.Color.White;
+            this.txttimemanagementrolesDescription.Location = new System.Drawing.Point(7, 6);
+            this.txttimemanagementrolesDescription.Multiline = true;
+            this.txttimemanagementrolesDescription.Name = "txttimemanagementrolesDescription";
+            this.txttimemanagementrolesDescription.Size = new System.Drawing.Size(246, 354);
+            this.txttimemanagementrolesDescription.TabIndex = 1;
+            this.txttimemanagementrolesDescription.Text = "Description";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage4.Controls.Add(this.txttimemanagementdocumentsTimeSheetRegister);
+            this.tabPage4.Controls.Add(this.txttimemanagementdocumentsTimeSheet);
+            this.tabPage4.Controls.Add(this.txttimemanagementdocumentsDescription);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(812, 392);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Time Management Documents";
+            // 
+            // txttimemanagementdocumentsTimeSheetRegister
+            // 
+            this.txttimemanagementdocumentsTimeSheetRegister.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txttimemanagementdocumentsTimeSheetRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txttimemanagementdocumentsTimeSheetRegister.Font = new System.Drawing.Font("Cambria", 10F);
+            this.txttimemanagementdocumentsTimeSheetRegister.ForeColor = System.Drawing.Color.White;
+            this.txttimemanagementdocumentsTimeSheetRegister.Location = new System.Drawing.Point(294, 207);
+            this.txttimemanagementdocumentsTimeSheetRegister.Multiline = true;
+            this.txttimemanagementdocumentsTimeSheetRegister.Name = "txttimemanagementdocumentsTimeSheetRegister";
+            this.txttimemanagementdocumentsTimeSheetRegister.Size = new System.Drawing.Size(246, 165);
+            this.txttimemanagementdocumentsTimeSheetRegister.TabIndex = 2;
+            this.txttimemanagementdocumentsTimeSheetRegister.Text = "TimeSheet Register";
+            // 
+            // txttimemanagementdocumentsTimeSheet
+            // 
+            this.txttimemanagementdocumentsTimeSheet.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txttimemanagementdocumentsTimeSheet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txttimemanagementdocumentsTimeSheet.Font = new System.Drawing.Font("Cambria", 10F);
+            this.txttimemanagementdocumentsTimeSheet.ForeColor = System.Drawing.Color.White;
+            this.txttimemanagementdocumentsTimeSheet.Location = new System.Drawing.Point(294, 7);
+            this.txttimemanagementdocumentsTimeSheet.Multiline = true;
+            this.txttimemanagementdocumentsTimeSheet.Name = "txttimemanagementdocumentsTimeSheet";
+            this.txttimemanagementdocumentsTimeSheet.Size = new System.Drawing.Size(246, 134);
+            this.txttimemanagementdocumentsTimeSheet.TabIndex = 1;
+            this.txttimemanagementdocumentsTimeSheet.Text = "Time Sheet";
+            // 
+            // txttimemanagementdocumentsDescription
+            // 
+            this.txttimemanagementdocumentsDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txttimemanagementdocumentsDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txttimemanagementdocumentsDescription.Font = new System.Drawing.Font("Cambria", 10F);
+            this.txttimemanagementdocumentsDescription.ForeColor = System.Drawing.Color.White;
+            this.txttimemanagementdocumentsDescription.Location = new System.Drawing.Point(7, 7);
+            this.txttimemanagementdocumentsDescription.Multiline = true;
+            this.txttimemanagementdocumentsDescription.Name = "txttimemanagementdocumentsDescription";
+            this.txttimemanagementdocumentsDescription.Size = new System.Drawing.Size(246, 365);
+            this.txttimemanagementdocumentsDescription.TabIndex = 0;
+            this.txttimemanagementdocumentsDescription.Text = "Description";
+            // 
+            // InformationType
+            // 
+            this.InformationType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.InformationType.HeaderText = "Type";
+            this.InformationType.MinimumWidth = 6;
+            this.InformationType.Name = "InformationType";
+            // 
+            // Information
+            // 
+            this.Information.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Information.HeaderText = "Information";
+            this.Information.MinimumWidth = 6;
+            this.Information.Name = "Information";
+            // 
+            // historyVersion
+            // 
+            this.historyVersion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.historyVersion.HeaderText = "Version";
+            this.historyVersion.MinimumWidth = 6;
+            this.historyVersion.Name = "historyVersion";
             // 
             // historyIssueDate
             // 
@@ -236,232 +462,6 @@
             this.historyChanges.MinimumWidth = 6;
             this.historyChanges.Name = "historyChanges";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Type,
-            this.Information});
-            this.dataGridView1.Location = new System.Drawing.Point(168, 6);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(638, 108);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // Type
-            // 
-            this.Type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Type.HeaderText = "Type";
-            this.Type.MinimumWidth = 6;
-            this.Type.Name = "Type";
-            // 
-            // Information
-            // 
-            this.Information.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Information.HeaderText = "Information";
-            this.Information.MinimumWidth = 6;
-            this.Information.Name = "Information";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage2.Controls.Add(this.txtBusinessProblem);
-            this.tabPage2.Controls.Add(this.txtProblemAnalysis);
-            this.tabPage2.Controls.Add(this.txtEnvirAnalysis);
-            this.tabPage2.Controls.Add(this.txtBusinessProblemDescription);
-            this.tabPage2.Controls.Add(this.TimeManagement);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(812, 392);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Time Management Process";
-            // 
-            // txtBusinessProblem
-            // 
-            this.txtBusinessProblem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtBusinessProblem.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBusinessProblem.ForeColor = System.Drawing.Color.White;
-            this.txtBusinessProblem.Location = new System.Drawing.Point(281, 285);
-            this.txtBusinessProblem.Multiline = true;
-            this.txtBusinessProblem.Name = "txtBusinessProblem";
-            this.txtBusinessProblem.Size = new System.Drawing.Size(402, 85);
-            this.txtBusinessProblem.TabIndex = 4;
-            this.txtBusinessProblem.Text = "Update Project Plan";
-            // 
-            // txtProblemAnalysis
-            // 
-            this.txtProblemAnalysis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProblemAnalysis.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProblemAnalysis.ForeColor = System.Drawing.Color.White;
-            this.txtProblemAnalysis.Location = new System.Drawing.Point(281, 192);
-            this.txtProblemAnalysis.Multiline = true;
-            this.txtProblemAnalysis.Name = "txtProblemAnalysis";
-            this.txtProblemAnalysis.Size = new System.Drawing.Size(403, 78);
-            this.txtProblemAnalysis.TabIndex = 3;
-            this.txtProblemAnalysis.Text = "Approved Timesheet";
-            // 
-            // txtEnvirAnalysis
-            // 
-            this.txtEnvirAnalysis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtEnvirAnalysis.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEnvirAnalysis.ForeColor = System.Drawing.Color.White;
-            this.txtEnvirAnalysis.Location = new System.Drawing.Point(282, 98);
-            this.txtEnvirAnalysis.Multiline = true;
-            this.txtEnvirAnalysis.Name = "txtEnvirAnalysis";
-            this.txtEnvirAnalysis.Size = new System.Drawing.Size(402, 77);
-            this.txtEnvirAnalysis.TabIndex = 2;
-            this.txtEnvirAnalysis.Text = "Document Timesheet";
-            // 
-            // txtBusinessProblemDescription
-            // 
-            this.txtBusinessProblemDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtBusinessProblemDescription.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBusinessProblemDescription.ForeColor = System.Drawing.Color.White;
-            this.txtBusinessProblemDescription.Location = new System.Drawing.Point(281, 6);
-            this.txtBusinessProblemDescription.Multiline = true;
-            this.txtBusinessProblemDescription.Name = "txtBusinessProblemDescription";
-            this.txtBusinessProblemDescription.Size = new System.Drawing.Size(403, 78);
-            this.txtBusinessProblemDescription.TabIndex = 1;
-            this.txtBusinessProblemDescription.Text = "Overview";
-            // 
-            // TimeManagement
-            // 
-            this.TimeManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.TimeManagement.Font = new System.Drawing.Font("Cambria", 10F);
-            this.TimeManagement.ForeColor = System.Drawing.Color.White;
-            this.TimeManagement.Location = new System.Drawing.Point(7, 7);
-            this.TimeManagement.Multiline = true;
-            this.TimeManagement.Name = "TimeManagement";
-            this.TimeManagement.Size = new System.Drawing.Size(246, 363);
-            this.TimeManagement.TabIndex = 0;
-            this.TimeManagement.Text = "Description";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage3.Controls.Add(this.textBox4);
-            this.tabPage3.Controls.Add(this.textBox3);
-            this.tabPage3.Controls.Add(this.textBox2);
-            this.tabPage3.Controls.Add(this.textBox1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(812, 392);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Time Management Roles";
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage7.Controls.Add(this.textBox6);
-            this.tabPage7.Controls.Add(this.textBox5);
-            this.tabPage7.Controls.Add(this.txtRecommendedSolutionDescription);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(812, 392);
-            this.tabPage7.TabIndex = 3;
-            this.tabPage7.Text = "Time Management Documents";
-            // 
-            // txtRecommendedSolutionDescription
-            // 
-            this.txtRecommendedSolutionDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtRecommendedSolutionDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtRecommendedSolutionDescription.Font = new System.Drawing.Font("Cambria", 10F);
-            this.txtRecommendedSolutionDescription.ForeColor = System.Drawing.Color.White;
-            this.txtRecommendedSolutionDescription.Location = new System.Drawing.Point(7, 7);
-            this.txtRecommendedSolutionDescription.Multiline = true;
-            this.txtRecommendedSolutionDescription.Name = "txtRecommendedSolutionDescription";
-            this.txtRecommendedSolutionDescription.Size = new System.Drawing.Size(246, 365);
-            this.txtRecommendedSolutionDescription.TabIndex = 0;
-            this.txtRecommendedSolutionDescription.Text = "Description";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox5.Font = new System.Drawing.Font("Cambria", 10F);
-            this.textBox5.ForeColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(294, 7);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(246, 134);
-            this.textBox5.TabIndex = 1;
-            this.textBox5.Text = "Time Sheet";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox6.Font = new System.Drawing.Font("Cambria", 10F);
-            this.textBox6.ForeColor = System.Drawing.Color.White;
-            this.textBox6.Location = new System.Drawing.Point(294, 207);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(246, 165);
-            this.textBox6.TabIndex = 2;
-            this.textBox6.Text = "TimeSheet Register";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox1.Font = new System.Drawing.Font("Cambria", 10F);
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(7, 6);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(246, 354);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Description";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox2.Font = new System.Drawing.Font("Cambria", 10F);
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(275, 6);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(308, 83);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "Team Member";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox3.Font = new System.Drawing.Font("Cambria", 10F);
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(275, 104);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(308, 114);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "Project Manager";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox4.Font = new System.Drawing.Font("Cambria", 10F);
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(275, 246);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(308, 114);
-            this.textBox4.TabIndex = 4;
-            this.textBox4.Text = "Project Adminstrator";
-            // 
             // TimeMangementProcessDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -469,7 +469,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(872, 487);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.label27);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtProjectName);
             this.Name = "TimeMangementProcessDocumentForm";
             this.Text = "TimeMangementProcessDocumentForm";
@@ -483,8 +483,8 @@
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage7.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -492,7 +492,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtProjectName;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
@@ -505,26 +505,26 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn approvalSignature;
         private System.Windows.Forms.DataGridViewTextBoxColumn approvalDate;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Version;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TextBox txttimemanagementprocessUpdateProcessPlan;
+        private System.Windows.Forms.TextBox txttimemanagementprocessApprovedTimesheet;
+        private System.Windows.Forms.TextBox txttimemanagementprocessDocumentTimesheet;
+        private System.Windows.Forms.TextBox txttimemanagementprocessOverview;
+        private System.Windows.Forms.TextBox txttimemanagementprocessDescription;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TextBox txttimemanagementrolesProjectAdminstratror;
+        private System.Windows.Forms.TextBox txttimemanagementrolesProjectManager;
+        private System.Windows.Forms.TextBox txttimemanagementrolesTeamMember;
+        private System.Windows.Forms.TextBox txttimemanagementrolesDescription;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TextBox txttimemanagementdocumentsTimeSheetRegister;
+        private System.Windows.Forms.TextBox txttimemanagementdocumentsTimeSheet;
+        private System.Windows.Forms.TextBox txttimemanagementdocumentsDescription;
+        private System.Windows.Forms.DataGridViewTextBoxColumn historyVersion;
         private System.Windows.Forms.DataGridViewTextBoxColumn historyIssueDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn historyChanges;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn InformationType;
         private System.Windows.Forms.DataGridViewTextBoxColumn Information;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox txtBusinessProblem;
-        private System.Windows.Forms.TextBox txtProblemAnalysis;
-        private System.Windows.Forms.TextBox txtEnvirAnalysis;
-        private System.Windows.Forms.TextBox txtBusinessProblemDescription;
-        private System.Windows.Forms.TextBox TimeManagement;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox txtRecommendedSolutionDescription;
     }
 }
