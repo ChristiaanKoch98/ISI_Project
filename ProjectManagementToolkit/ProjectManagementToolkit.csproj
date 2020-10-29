@@ -434,6 +434,9 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\QualityManagementProcessDocumentForm.resx">
       <DependentUpon>QualityManagementProcessDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\StatementOfWorkDocumentForm.resx">
+      <DependentUpon>StatementOfWorkDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\TimeMangementProcessDocumentForm.resx">
       <DependentUpon>TimeMangementProcessDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
