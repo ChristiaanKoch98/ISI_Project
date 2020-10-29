@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< Updated upstream
-            this.components = new System.ComponentModel.Container();
-=======
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
@@ -272,7 +269,7 @@
             this.txtBusinessOppurtunity.Name = "txtBusinessOppurtunity";
             this.txtBusinessOppurtunity.Size = new System.Drawing.Size(410, 74);
             this.txtBusinessOppurtunity.TabIndex = 5;
-            this.txtBusinessOppurtunity.Text = "Overview\r\n";
+            this.txtBusinessOppurtunity.Text = "Overview";
             this.txtBusinessOppurtunity.TextChanged += new System.EventHandler(this.txtBusinessOppurtunity_TextChanged);
             // 
             // txtBusinessProblem
@@ -487,12 +484,70 @@
             // AcceptanceManagementProcessDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
->>>>>>> Stashed changes
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(900, 521);
+            this.Controls.Add(this.label27);
+            this.Controls.Add(this.txtProjectName);
+            this.Controls.Add(this.tabControl1);
+            this.Name = "AcceptanceManagementProcessDocumentForm";
             this.Text = "AcceptanceManagementProcessDocumentForm";
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.tabPage8.ResumeLayout(false);
+            this.tabPage8.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn approvalRole;
+        private System.Windows.Forms.DataGridViewTextBoxColumn approvalName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn approvalSignature;
+        private System.Windows.Forms.DataGridViewTextBoxColumn approvalDate;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Version;
+        private System.Windows.Forms.DataGridViewTextBoxColumn historyIssueDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn historyChanges;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Information;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TextBox txtBusinessProblemDescription;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.TextBox txtIAProjectPlanning;
+        private System.Windows.Forms.TextBox txtIAProjectInitiation;
+        private System.Windows.Forms.TextBox txtIADescription;
+        private System.Windows.Forms.TextBox txtBusinessOppurtunity;
+        private System.Windows.Forms.TextBox txtBusinessProblem;
+        private System.Windows.Forms.TextBox txtProblemAnalysis;
+        private System.Windows.Forms.TextBox txtEnvirAnalysis;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Solution3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Solution2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Solution1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AssessmentCriteria;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox txtProjectName;
     }
 }
