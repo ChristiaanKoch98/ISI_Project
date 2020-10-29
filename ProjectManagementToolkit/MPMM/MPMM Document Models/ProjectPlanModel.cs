@@ -12,8 +12,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string ProjectName { get; set; }
         public string DocumentID { get; set; }
         public string DocumentOwner { get; set; }
-        public DateTime IssueDate { get; set; }
-        public DateTime LastSavedDate { get; set; }
+        public string IssueDate { get; set; }
+        public string LastSavedDate { get; set; }
         public string FileName { get; set; }
         public List<DocumentHistory> DocumentHistories { get; set; }
         public List<DocumentApproval> DocumentApprovals { get; set; }
@@ -30,7 +30,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public class DocumentHistory
         {
             public string Version { get; set; }
-            public DateTime IssueDate { get; set; }
+            public string IssueDate { get; set; }
             public string Changes { get; set; }
         }
         public class DocumentApproval
@@ -38,7 +38,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
             public string Role { get; set; }
             public string Name { get; set; }
             public string Signature { get; set; }
-            public DateTime DateApproved { get; set; }
+            public string DateApproved { get; set; }
         }
 
         public class Phase
@@ -57,7 +57,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public class Task
         {
             public string ActivityTitle { get; set; }
-            public string TaksTitle { get; set; }
+            public string TaskTitle { get; set; }
             public string TaskDescription { get; set; }
             public string TaskSequence { get; set; }
         }
@@ -65,14 +65,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public class Milestone
         {
             public string MilestoneTitle { get; set; }
-            public DateTime MilestoneDate { get; set; }
+            public string MilestoneDate { get; set; }
             public string MilestoneDescription { get; set; }
         }
 
         public class Effort
         {
             public string TaskTitle { get; set; }
-            public DateTime Resource { get; set; }
+            public string Resource { get; set; }
             public string EffortMade { get; set; }
         }
         public class Dependency
