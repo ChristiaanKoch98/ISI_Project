@@ -10,8 +10,11 @@ using System.Windows.Forms;
 
 namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
+    
     public partial class StatementOfWorkDocumentForm : Form
     {
+ 
+
         public StatementOfWorkDocumentForm()
         {
             InitializeComponent();
@@ -40,6 +43,22 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void StatementOfWorkDocumentForm_Load(object sender, EventArgs e)
+        {
+            List<string[]> rows = new List<string[]>();
+            rows.Add(new string[] { "Document ID", "" });
+            rows.Add(new string[] { "Document Owner", "" });
+            rows.Add(new string[] { "Issue Date", "" });
+            rows.Add(new string[] { "Last Save Date", "" });
+            rows.Add(new string[] { "File Name", "" });
+
+            foreach (var row in rows)
+            {
+                dataGridView1.Rows.Add(row);
+            }
+            dataGridView1.AllowUserToAddRows = false;
         }
     }
 }

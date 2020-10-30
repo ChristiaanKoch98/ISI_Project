@@ -127,5 +127,17 @@ namespace ProjectManagementToolkit
             contacts.Show();
             contacts.MdiParent = this;
         }
+
+        private void tEMPStatementOfWorkToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MPMM.MPMM_Document_Forms.StatementOfWorkDocumentForm stateOfWork = new MPMM.MPMM_Document_Forms.StatementOfWorkDocumentForm();
+            stateOfWork.Show();
+            stateOfWork.MdiParent = this;
+        }
+
+        private void tEMPChangeRequestFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
