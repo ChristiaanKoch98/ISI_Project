@@ -69,6 +69,7 @@
             this.gpbOverview = new System.Windows.Forms.GroupBox();
             this.txtOverview = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pixChangeManagementProcess = new System.Windows.Forms.PictureBox();
             this.tbpChangeRoles = new System.Windows.Forms.TabPage();
             this.gpbProjectBoard = new System.Windows.Forms.GroupBox();
             this.txtProjectBoard = new System.Windows.Forms.TextBox();
@@ -78,7 +79,6 @@
             this.txtTeamMember = new System.Windows.Forms.TextBox();
             this.gpbChangeRoles = new System.Windows.Forms.GroupBox();
             this.txtChangeRoles = new System.Windows.Forms.TextBox();
-            this.pixChangeManagementProcess = new System.Windows.Forms.PictureBox();
             this.tbpChangeDocument.SuspendLayout();
             this.gpbChangeRegister.SuspendLayout();
             this.gpbChangeRequestForm.SuspendLayout();
@@ -99,12 +99,12 @@
             this.gpbIdentifyChange.SuspendLayout();
             this.gpbOverview.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pixChangeManagementProcess)).BeginInit();
             this.tbpChangeRoles.SuspendLayout();
             this.gpbProjectBoard.SuspendLayout();
             this.gpbProjectManager.SuspendLayout();
             this.gpbTeamMember.SuspendLayout();
             this.gpbChangeRoles.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pixChangeManagementProcess)).BeginInit();
             this.SuspendLayout();
             // 
             // tbpChangeDocument
@@ -525,6 +525,16 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(510, 435);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
+            // pixChangeManagementProcess
+            // 
+            this.pixChangeManagementProcess.Image = ((System.Drawing.Image)(resources.GetObject("pixChangeManagementProcess.Image")));
+            this.pixChangeManagementProcess.InitialImage = ((System.Drawing.Image)(resources.GetObject("pixChangeManagementProcess.InitialImage")));
+            this.pixChangeManagementProcess.Location = new System.Drawing.Point(3, 3);
+            this.pixChangeManagementProcess.Name = "pixChangeManagementProcess";
+            this.pixChangeManagementProcess.Size = new System.Drawing.Size(507, 778);
+            this.pixChangeManagementProcess.TabIndex = 0;
+            this.pixChangeManagementProcess.TabStop = false;
+            // 
             // tbpChangeRoles
             // 
             this.tbpChangeRoles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -592,7 +602,7 @@
             // txtTeamMember
             // 
             this.txtTeamMember.BackColor = System.Drawing.SystemColors.Control;
-            this.txtTeamMember.Location = new System.Drawing.Point(0, 1);
+            this.txtTeamMember.Location = new System.Drawing.Point(11, 19);
             this.txtTeamMember.Multiline = true;
             this.txtTeamMember.Name = "txtTeamMember";
             this.txtTeamMember.Size = new System.Drawing.Size(450, 480);
@@ -619,16 +629,6 @@
             this.txtChangeRoles.TabIndex = 5;
             this.txtChangeRoles.Text = "In this section, describe the key roles and responsibilities involved in the Chan" +
     "ge Management Process.";
-            // 
-            // pixChangeManagementProcess
-            // 
-            this.pixChangeManagementProcess.Image = ((System.Drawing.Image)(resources.GetObject("pixChangeManagementProcess.Image")));
-            this.pixChangeManagementProcess.InitialImage = ((System.Drawing.Image)(resources.GetObject("pixChangeManagementProcess.InitialImage")));
-            this.pixChangeManagementProcess.Location = new System.Drawing.Point(3, 3);
-            this.pixChangeManagementProcess.Name = "pixChangeManagementProcess";
-            this.pixChangeManagementProcess.Size = new System.Drawing.Size(507, 778);
-            this.pixChangeManagementProcess.TabIndex = 0;
-            this.pixChangeManagementProcess.TabStop = false;
             // 
             // ChangeManagementProcessDocumentForm
             // 
@@ -675,6 +675,7 @@
             this.gpbOverview.ResumeLayout(false);
             this.gpbOverview.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pixChangeManagementProcess)).EndInit();
             this.tbpChangeRoles.ResumeLayout(false);
             this.gpbProjectBoard.ResumeLayout(false);
             this.gpbProjectBoard.PerformLayout();
@@ -684,7 +685,6 @@
             this.gpbTeamMember.PerformLayout();
             this.gpbChangeRoles.ResumeLayout(false);
             this.gpbChangeRoles.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pixChangeManagementProcess)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

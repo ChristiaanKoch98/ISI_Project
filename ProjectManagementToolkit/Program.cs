@@ -16,7 +16,7 @@ namespace ProjectManagementToolkit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MPMM.MPMM_Document_Forms.ProjectClosureReportDocumentForm());
+            Application.Run(new Login());
         }
     }
 }
