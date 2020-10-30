@@ -677,6 +677,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ResourcePlanDocumentForm";
             this.Text = "ResourcePlanDocumentForm";
+            this.Load += new System.EventHandler(this.ResourcePlanDocumentForm_Load_1);
             this.ResourcePlanTabControl.ResumeLayout(false);
             this.documentCtrlTabPG.ResumeLayout(false);
             this.documentCtrlTabPG.PerformLayout();

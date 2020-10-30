@@ -134,5 +134,10 @@ namespace ProjectManagementToolkit
             stateOfWork.Show();
             stateOfWork.MdiParent = this;
         }
+
+        private void tEMPChangeRequestFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProjectOfficeChecklistDocumentForm));
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -195,7 +194,6 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(360, 254);
             this.textBox5.TabIndex = 0;
-            this.textBox5.Text = resources.GetString("textBox5.Text");
             // 
             // tabPage3
             // 
@@ -216,7 +214,6 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(335, 330);
             this.textBox6.TabIndex = 0;
-            this.textBox6.Text = resources.GetString("textBox6.Text");
             // 
             // tabPage4
             // 
@@ -237,7 +234,6 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(279, 283);
             this.textBox7.TabIndex = 0;
-            this.textBox7.Text = resources.GetString("textBox7.Text");
             // 
             // tabPage5
             // 
@@ -258,7 +254,6 @@
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(316, 336);
             this.textBox8.TabIndex = 0;
-            this.textBox8.Text = resources.GetString("textBox8.Text");
             // 
             // tabPage6
             // 
@@ -279,7 +274,6 @@
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(335, 330);
             this.textBox9.TabIndex = 0;
-            this.textBox9.Text = resources.GetString("textBox9.Text");
             // 
             // tabPage7
             // 
@@ -300,7 +294,6 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(412, 383);
             this.textBox10.TabIndex = 0;
-            this.textBox10.Text = resources.GetString("textBox10.Text");
             // 
             // ProjectOfficeChecklistDocumentForm
             // 

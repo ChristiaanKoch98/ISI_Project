@@ -12,6 +12,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
     public partial class ChangeRequestFormDocumentForm : Form
     {
+        private string projectName;
+
+        public string ProjectName
+        {
+            get { return projectName; }
+            set { projectName = value; }
+        }
+
         public ChangeRequestFormDocumentForm()
         {
             InitializeComponent();
