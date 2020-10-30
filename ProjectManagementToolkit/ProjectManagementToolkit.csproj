@@ -419,8 +419,20 @@
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Utility\Validation.cs" />
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\CommunicationsPlanDocumentForm.resx">
+      <DependentUpon>CommunicationsPlanDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\FinacialPlanDocumentForm.resx">
       <DependentUpon>FinacialPlanDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\PhaseReviewFormExecutionDocumentForm.resx">
+      <DependentUpon>PhaseReviewFormExecutionDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\ProjectStatusReportDocumentForm.resx">
+      <DependentUpon>ProjectStatusReportDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\RiskManagementProcessDocumentForm.resx">
+      <DependentUpon>RiskManagementProcessDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\TermOfReferenceDocumentForm.resx">
       <DependentUpon>TermOfReferenceDocumentForm.cs</DependentUpon>
