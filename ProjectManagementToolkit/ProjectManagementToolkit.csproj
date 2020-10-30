@@ -293,9 +293,12 @@
     </Compile>
     <Compile Include="MPMM\MPMM Document Models\ChangeRequestModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\CommunicationsManagementProcessModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\IssueManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\PhaseReviewFormInitiationModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectPlanModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\ResourcePlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\RiskFormModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\StatementOfWorkModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\SupplierContractModel.cs" />
     <Compile Include="MPMM\MPMM Forms\Academic_and_Training.cs">
       <SubType>Form</SubType>
