@@ -295,6 +295,7 @@
     <Compile Include="MPMM\MPMM Document Models\CommunicationsManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\IssueManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\PhaseReviewFormInitiationModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\ProjectOfficeChecklistModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ResourcePlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\RiskFormModel.cs" />
