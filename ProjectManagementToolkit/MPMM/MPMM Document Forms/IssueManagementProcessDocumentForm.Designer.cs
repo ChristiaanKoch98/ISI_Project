@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IssueManagementProcessDocumentForm));
             this.issueMngmntLabel = new System.Windows.Forms.Label();
             this.projectNameLabel = new System.Windows.Forms.TextBox();
             this.i = new System.Windows.Forms.TabControl();
@@ -55,7 +54,6 @@
             this.assgnActTextBox = new System.Windows.Forms.TextBox();
             this.reviewTextBox = new System.Windows.Forms.TextBox();
             this.raiseTextBox = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.overviewLabel = new System.Windows.Forms.Label();
             this.overviewTextBox = new System.Windows.Forms.TextBox();
             this.IssueRolesTab = new System.Windows.Forms.TabPage();
@@ -70,15 +68,16 @@
             this.issueFormLabel = new System.Windows.Forms.Label();
             this.issueRegisterTextBox = new System.Windows.Forms.TextBox();
             this.issueFormTextBox = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.i.SuspendLayout();
             this.dcmntControlTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.docApprovalsDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.docHistDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DocumentInfoGrid)).BeginInit();
             this.issueProcessTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.IssueRolesTab.SuspendLayout();
             this.issueDocumentsTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // issueMngmntLabel
@@ -255,9 +254,9 @@
             this.issueProcessTab.Controls.Add(this.assgnActTextBox);
             this.issueProcessTab.Controls.Add(this.reviewTextBox);
             this.issueProcessTab.Controls.Add(this.raiseTextBox);
-            this.issueProcessTab.Controls.Add(this.pictureBox1);
             this.issueProcessTab.Controls.Add(this.overviewLabel);
             this.issueProcessTab.Controls.Add(this.overviewTextBox);
+            this.issueProcessTab.Controls.Add(this.pictureBox1);
             this.issueProcessTab.Location = new System.Drawing.Point(4, 22);
             this.issueProcessTab.Name = "issueProcessTab";
             this.issueProcessTab.Padding = new System.Windows.Forms.Padding(3);
@@ -304,7 +303,6 @@
             this.assgnActTextBox.Name = "assgnActTextBox";
             this.assgnActTextBox.Size = new System.Drawing.Size(472, 188);
             this.assgnActTextBox.TabIndex = 5;
-            this.assgnActTextBox.Text = resources.GetString("assgnActTextBox.Text");
             // 
             // reviewTextBox
             // 
@@ -314,7 +312,6 @@
             this.reviewTextBox.Name = "reviewTextBox";
             this.reviewTextBox.Size = new System.Drawing.Size(240, 223);
             this.reviewTextBox.TabIndex = 4;
-            this.reviewTextBox.Text = resources.GetString("reviewTextBox.Text");
             // 
             // raiseTextBox
             // 
@@ -326,15 +323,6 @@
             this.raiseTextBox.TabIndex = 3;
             this.raiseTextBox.Text = "List the steps needed to identify project issues and document their details on an" +
     " Issue Form. ";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(18, 70);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(225, 225);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // overviewLabel
             // 
@@ -490,6 +478,15 @@
             this.issueFormTextBox.TabIndex = 0;
             this.issueFormTextBox.Text = "Describe the purpose of the Issue Form and provide a template for its completion";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(18, 70);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(225, 225);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // IssueManagementProcessDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -500,6 +497,7 @@
             this.Controls.Add(this.issueMngmntLabel);
             this.Name = "IssueManagementProcessDocumentForm";
             this.Text = "IssueManagementProcessDocumentForm";
+            this.Load += new System.EventHandler(this.IssueManagementProcessDocumentForm_Load);
             this.i.ResumeLayout(false);
             this.dcmntControlTab.ResumeLayout(false);
             this.dcmntControlTab.PerformLayout();
@@ -508,11 +506,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.DocumentInfoGrid)).EndInit();
             this.issueProcessTab.ResumeLayout(false);
             this.issueProcessTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.IssueRolesTab.ResumeLayout(false);
             this.IssueRolesTab.PerformLayout();
             this.issueDocumentsTab.ResumeLayout(false);
             this.issueDocumentsTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
