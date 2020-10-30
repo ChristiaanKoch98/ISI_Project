@@ -291,6 +291,7 @@
     <Compile Include="MPMM\MPMM Document Forms\TimesheetFormDocumentForm.Designer.cs">
       <DependentUpon>TimesheetFormDocumentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MPMM\MPMM Document Models\ChangeRequestModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\CommunicationsManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\PhaseReviewFormInitiationModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectPlanModel.cs" />
