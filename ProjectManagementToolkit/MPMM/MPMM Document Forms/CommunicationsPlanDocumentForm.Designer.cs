@@ -375,16 +375,16 @@
             this.label27.ForeColor = System.Drawing.Color.White;
             this.label27.Location = new System.Drawing.Point(13, 9);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(154, 16);
+            this.label27.Size = new System.Drawing.Size(170, 16);
             this.label27.TabIndex = 14;
-            this.label27.Text = "Terms of Reference For: ";
+            this.label27.Text = "Communications Plan For: ";
             // 
             // txtProjectName
             // 
             this.txtProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.txtProjectName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProjectName.ForeColor = System.Drawing.Color.White;
-            this.txtProjectName.Location = new System.Drawing.Point(173, 6);
+            this.txtProjectName.Location = new System.Drawing.Point(189, 6);
             this.txtProjectName.Name = "txtProjectName";
             this.txtProjectName.Size = new System.Drawing.Size(100, 24);
             this.txtProjectName.TabIndex = 15;
