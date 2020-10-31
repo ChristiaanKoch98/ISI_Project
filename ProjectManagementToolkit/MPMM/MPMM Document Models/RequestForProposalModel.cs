@@ -68,7 +68,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         {
             private string solutionAndComponents { get; set; }
             private string quantity { get; set; }
-            private string price { get;set }
+            private string price { get; set; }
 
         }
         
