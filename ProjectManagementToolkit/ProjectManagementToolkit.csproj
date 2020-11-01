@@ -291,6 +291,11 @@
     <Compile Include="MPMM\MPMM Document Forms\TimesheetFormDocumentForm.Designer.cs">
       <DependentUpon>TimesheetFormDocumentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MPMM\MPMM Document Models\ProjectStatusReportModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\PhaseReviewFormExecutionModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\RiskManagmentProcessModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\TermsOfReferenceModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\CommunicationsPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\CommunicationsManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\PhaseReviewFormInitiationModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectPlanModel.cs" />
