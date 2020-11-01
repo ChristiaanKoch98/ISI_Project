@@ -41,24 +41,24 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.Project_Changes_tbx = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.Project_Issues_tbx = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.Project_Risks_tbx = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Project_Deliverables_tbx = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.Project_Expenses_tbx = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Project_Schedule_tbx = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.Summary_tbx = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.OVERALL_STATUS_btn = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.Project_Schedule_tbx = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.Project_Expenses_tbx = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.Project_Deliverables_tbx = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.Project_Risks_tbx = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.Project_Issues_tbx = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.Project_Changes_tbx = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.REVIEW_DETAILS_dgv = new System.Windows.Forms.DataGridView();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.Supporting_Documentation_tbx = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.CUSTOMER_APPROVAL_btn = new System.Windows.Forms.Button();
@@ -66,8 +66,8 @@
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.REVIEW_DETAILS_dgv)).BeginInit();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // Enter_btn
@@ -81,6 +81,7 @@
             this.Enter_btn.TabIndex = 9;
             this.Enter_btn.Text = "Enter";
             this.Enter_btn.UseVisualStyleBackColor = false;
+            this.Enter_btn.Click += new System.EventHandler(this.Enter_btn_Click);
             // 
             // Planning_Phase_tbx
             // 
@@ -173,6 +174,7 @@
             this.PROJECT_DETAILS_btn.TabIndex = 12;
             this.PROJECT_DETAILS_btn.Text = "Enter";
             this.PROJECT_DETAILS_btn.UseVisualStyleBackColor = false;
+            this.PROJECT_DETAILS_btn.Click += new System.EventHandler(this.PROJECT_DETAILS_btn_Click);
             // 
             // label3
             // 
@@ -219,6 +221,114 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "OVERALL STATUS";
             // 
+            // Project_Changes_tbx
+            // 
+            this.Project_Changes_tbx.Location = new System.Drawing.Point(577, 176);
+            this.Project_Changes_tbx.Multiline = true;
+            this.Project_Changes_tbx.Name = "Project_Changes_tbx";
+            this.Project_Changes_tbx.Size = new System.Drawing.Size(245, 49);
+            this.Project_Changes_tbx.TabIndex = 34;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(447, 174);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(124, 19);
+            this.label11.TabIndex = 33;
+            this.label11.Text = "Project Changes:";
+            // 
+            // Project_Issues_tbx
+            // 
+            this.Project_Issues_tbx.Location = new System.Drawing.Point(577, 101);
+            this.Project_Issues_tbx.Multiline = true;
+            this.Project_Issues_tbx.Name = "Project_Issues_tbx";
+            this.Project_Issues_tbx.Size = new System.Drawing.Size(245, 49);
+            this.Project_Issues_tbx.TabIndex = 32;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(462, 101);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(109, 19);
+            this.label10.TabIndex = 31;
+            this.label10.Text = "Project Issues:";
+            // 
+            // Project_Risks_tbx
+            // 
+            this.Project_Risks_tbx.Location = new System.Drawing.Point(577, 23);
+            this.Project_Risks_tbx.Multiline = true;
+            this.Project_Risks_tbx.Name = "Project_Risks_tbx";
+            this.Project_Risks_tbx.Size = new System.Drawing.Size(245, 49);
+            this.Project_Risks_tbx.TabIndex = 30;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(469, 23);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(102, 19);
+            this.label9.TabIndex = 29;
+            this.label9.Text = "Project Risks:";
+            // 
+            // Project_Deliverables_tbx
+            // 
+            this.Project_Deliverables_tbx.Location = new System.Drawing.Point(164, 258);
+            this.Project_Deliverables_tbx.Multiline = true;
+            this.Project_Deliverables_tbx.Name = "Project_Deliverables_tbx";
+            this.Project_Deliverables_tbx.Size = new System.Drawing.Size(245, 49);
+            this.Project_Deliverables_tbx.TabIndex = 28;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(6, 256);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(152, 19);
+            this.label8.TabIndex = 27;
+            this.label8.Text = "Project Deliverables:";
+            // 
+            // Project_Expenses_tbx
+            // 
+            this.Project_Expenses_tbx.Location = new System.Drawing.Point(164, 176);
+            this.Project_Expenses_tbx.Multiline = true;
+            this.Project_Expenses_tbx.Name = "Project_Expenses_tbx";
+            this.Project_Expenses_tbx.Size = new System.Drawing.Size(245, 49);
+            this.Project_Expenses_tbx.TabIndex = 26;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(27, 174);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(131, 19);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "Project Expenses:";
+            // 
+            // Project_Schedule_tbx
+            // 
+            this.Project_Schedule_tbx.Location = new System.Drawing.Point(164, 101);
+            this.Project_Schedule_tbx.Multiline = true;
+            this.Project_Schedule_tbx.Name = "Project_Schedule_tbx";
+            this.Project_Schedule_tbx.Size = new System.Drawing.Size(245, 49);
+            this.Project_Schedule_tbx.TabIndex = 24;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(30, 101);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(128, 19);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Project Schedule:";
+            // 
             // Summary_tbx
             // 
             this.Summary_tbx.Location = new System.Drawing.Point(164, 23);
@@ -248,6 +358,7 @@
             this.OVERALL_STATUS_btn.TabIndex = 20;
             this.OVERALL_STATUS_btn.Text = "Enter";
             this.OVERALL_STATUS_btn.UseVisualStyleBackColor = false;
+            this.OVERALL_STATUS_btn.Click += new System.EventHandler(this.OVERALL_STATUS_btn_Click);
             // 
             // tabPage3
             // 
@@ -259,6 +370,14 @@
             this.tabPage3.Size = new System.Drawing.Size(861, 406);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "REVIEW DETAILS";
+            // 
+            // REVIEW_DETAILS_dgv
+            // 
+            this.REVIEW_DETAILS_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.REVIEW_DETAILS_dgv.Location = new System.Drawing.Point(32, 31);
+            this.REVIEW_DETAILS_dgv.Name = "REVIEW_DETAILS_dgv";
+            this.REVIEW_DETAILS_dgv.Size = new System.Drawing.Size(793, 299);
+            this.REVIEW_DETAILS_dgv.TabIndex = 0;
             // 
             // tabPage4
             // 
@@ -272,122 +391,6 @@
             this.tabPage4.Size = new System.Drawing.Size(861, 406);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "APPROVAL DETAILS";
-            // 
-            // Project_Schedule_tbx
-            // 
-            this.Project_Schedule_tbx.Location = new System.Drawing.Point(164, 101);
-            this.Project_Schedule_tbx.Multiline = true;
-            this.Project_Schedule_tbx.Name = "Project_Schedule_tbx";
-            this.Project_Schedule_tbx.Size = new System.Drawing.Size(245, 49);
-            this.Project_Schedule_tbx.TabIndex = 24;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(30, 101);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(128, 19);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Project Schedule:";
-            // 
-            // Project_Expenses_tbx
-            // 
-            this.Project_Expenses_tbx.Location = new System.Drawing.Point(164, 176);
-            this.Project_Expenses_tbx.Multiline = true;
-            this.Project_Expenses_tbx.Name = "Project_Expenses_tbx";
-            this.Project_Expenses_tbx.Size = new System.Drawing.Size(245, 49);
-            this.Project_Expenses_tbx.TabIndex = 26;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(27, 174);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(131, 19);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "Project Expenses:";
-            // 
-            // Project_Deliverables_tbx
-            // 
-            this.Project_Deliverables_tbx.Location = new System.Drawing.Point(164, 258);
-            this.Project_Deliverables_tbx.Multiline = true;
-            this.Project_Deliverables_tbx.Name = "Project_Deliverables_tbx";
-            this.Project_Deliverables_tbx.Size = new System.Drawing.Size(245, 49);
-            this.Project_Deliverables_tbx.TabIndex = 28;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(6, 256);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(152, 19);
-            this.label8.TabIndex = 27;
-            this.label8.Text = "Project Deliverables:";
-            // 
-            // Project_Risks_tbx
-            // 
-            this.Project_Risks_tbx.Location = new System.Drawing.Point(577, 23);
-            this.Project_Risks_tbx.Multiline = true;
-            this.Project_Risks_tbx.Name = "Project_Risks_tbx";
-            this.Project_Risks_tbx.Size = new System.Drawing.Size(245, 49);
-            this.Project_Risks_tbx.TabIndex = 30;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(469, 23);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(102, 19);
-            this.label9.TabIndex = 29;
-            this.label9.Text = "Project Risks:";
-            // 
-            // Project_Issues_tbx
-            // 
-            this.Project_Issues_tbx.Location = new System.Drawing.Point(577, 101);
-            this.Project_Issues_tbx.Multiline = true;
-            this.Project_Issues_tbx.Name = "Project_Issues_tbx";
-            this.Project_Issues_tbx.Size = new System.Drawing.Size(245, 49);
-            this.Project_Issues_tbx.TabIndex = 32;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(462, 101);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(109, 19);
-            this.label10.TabIndex = 31;
-            this.label10.Text = "Project Issues:";
-            // 
-            // Project_Changes_tbx
-            // 
-            this.Project_Changes_tbx.Location = new System.Drawing.Point(577, 176);
-            this.Project_Changes_tbx.Multiline = true;
-            this.Project_Changes_tbx.Name = "Project_Changes_tbx";
-            this.Project_Changes_tbx.Size = new System.Drawing.Size(245, 49);
-            this.Project_Changes_tbx.TabIndex = 34;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(447, 174);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(124, 19);
-            this.label11.TabIndex = 33;
-            this.label11.Text = "Project Changes:";
-            // 
-            // REVIEW_DETAILS_dgv
-            // 
-            this.REVIEW_DETAILS_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.REVIEW_DETAILS_dgv.Location = new System.Drawing.Point(32, 31);
-            this.REVIEW_DETAILS_dgv.Name = "REVIEW_DETAILS_dgv";
-            this.REVIEW_DETAILS_dgv.Size = new System.Drawing.Size(793, 299);
-            this.REVIEW_DETAILS_dgv.TabIndex = 0;
             // 
             // Supporting_Documentation_tbx
             // 
@@ -418,6 +421,7 @@
             this.CUSTOMER_APPROVAL_btn.TabIndex = 23;
             this.CUSTOMER_APPROVAL_btn.Text = "Enter";
             this.CUSTOMER_APPROVAL_btn.UseVisualStyleBackColor = false;
+            this.CUSTOMER_APPROVAL_btn.Click += new System.EventHandler(this.CUSTOMER_APPROVAL_btn_Click);
             // 
             // PhaseReviewFormPlanningDocumentForm
             // 
@@ -440,9 +444,9 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.REVIEW_DETAILS_dgv)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.REVIEW_DETAILS_dgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

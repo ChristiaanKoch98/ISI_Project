@@ -294,24 +294,30 @@
     <Compile Include="MPMM\MPMM Document Forms\TimesheetFormDocumentForm.Designer.cs">
       <DependentUpon>TimesheetFormDocumentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MPMM\MPMM Document Models\AcceptanceFormModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\AcceptanceManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ChangeManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ChangeRequestModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\CommunicationsManagementProcessModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\CostManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ExpenseFormModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\FeasibilityStudyModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\IssueFormModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\IssueManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\JobDescriptionModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\PhaseReviewFormInitiationModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\PhaseReviewPlanningModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\PostImplementationReviewModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectClosureReportModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectOfficeChecklistModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectPlanModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\PurchaseOrderModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\QualityManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\QualityReviewPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\RequestForProposalModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ResourcePlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\RiskFormModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\RiskPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\StatementOfWorkModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\SupplierContractModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\TimeMangementProcess.cs" />
@@ -438,11 +444,20 @@
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Utility\Validation.cs" />
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\AcceptanceFormDocumentForm.resx">
+      <DependentUpon>AcceptanceFormDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\AcceptanceManagementProcessDocumentForm.resx">
       <DependentUpon>AcceptanceManagementProcessDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\CostManagementProcessDocumentForm.resx">
+      <DependentUpon>CostManagementProcessDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\ExpenseFormDocumentForm.resx">
       <DependentUpon>ExpenseFormDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\FeasibiltyStudyDocumentForm.resx">
+      <DependentUpon>FeasibiltyStudyDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\FinacialPlanDocumentForm.resx">
       <DependentUpon>FinacialPlanDocumentForm.cs</DependentUpon>
@@ -450,14 +465,23 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\JobDescriptionDocumentForm.resx">
       <DependentUpon>JobDescriptionDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\PhaseReviewFormPlanningDocumentForm.resx">
+      <DependentUpon>PhaseReviewFormPlanningDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\PostImplementationReviewDocumentForm.resx">
       <DependentUpon>PostImplementationReviewDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\ProjectPlanDocumentForm.resx">
       <DependentUpon>ProjectPlanDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\PurchaseOrderFormDocumentForm.resx">
+      <DependentUpon>PurchaseOrderFormDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\QualityManagementProcessDocumentForm.resx">
       <DependentUpon>QualityManagementProcessDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\RiskPlanDocumentForm.resx">
+      <DependentUpon>RiskPlanDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\TimeMangementProcessDocumentForm.resx">
       <DependentUpon>TimeMangementProcessDocumentForm.cs</DependentUpon>

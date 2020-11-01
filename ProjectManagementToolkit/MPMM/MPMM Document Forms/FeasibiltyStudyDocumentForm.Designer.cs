@@ -262,6 +262,7 @@
             this.Executive_Summary_btn.TabIndex = 4;
             this.Executive_Summary_btn.Text = "Enter";
             this.Executive_Summary_btn.UseVisualStyleBackColor = false;
+            this.Executive_Summary_btn.Click += new System.EventHandler(this.Executive_Summary_btn_Click);
             // 
             // Executive_Summary_tbx
             // 
@@ -345,6 +346,7 @@
             this.Problem_Statement_btn.TabIndex = 7;
             this.Problem_Statement_btn.Text = "Enter";
             this.Problem_Statement_btn.UseVisualStyleBackColor = false;
+            this.Problem_Statement_btn.Click += new System.EventHandler(this.Problem_Statement_btn_Click);
             // 
             // Business_Problem_tbx
             // 
@@ -408,6 +410,7 @@
             this.Requirements_Statement_btn.TabIndex = 12;
             this.Requirements_Statement_btn.Text = "Enter";
             this.Requirements_Statement_btn.UseVisualStyleBackColor = false;
+            this.Requirements_Statement_btn.Click += new System.EventHandler(this.Requirements_Statement_btn_Click);
             // 
             // Business_Drivers_tbx
             // 
@@ -452,6 +455,7 @@
             this.Feasibility_Assessment_btn.TabIndex = 7;
             this.Feasibility_Assessment_btn.Text = "Enter";
             this.Feasibility_Assessment_btn.UseVisualStyleBackColor = false;
+            this.Feasibility_Assessment_btn.Click += new System.EventHandler(this.Feasibility_Assessment_btn_Click);
             // 
             // Potential_Solutions_tbx
             // 
@@ -613,6 +617,7 @@
             this.Solution_1_btn.TabIndex = 10;
             this.Solution_1_btn.Text = "Enter";
             this.Solution_1_btn.UseVisualStyleBackColor = false;
+            this.Solution_1_btn.Click += new System.EventHandler(this.Solution_1_btn_Click);
             // 
             // tabPage7
             // 
@@ -756,6 +761,7 @@
             this.Solution_2_btn.TabIndex = 23;
             this.Solution_2_btn.Text = "Enter";
             this.Solution_2_btn.UseVisualStyleBackColor = false;
+            this.Solution_2_btn.Click += new System.EventHandler(this.Solution_2_btn_Click);
             // 
             // tabPage8
             // 
@@ -899,6 +905,7 @@
             this.Solution_3_btn.TabIndex = 36;
             this.Solution_3_btn.Text = "Enter";
             this.Solution_3_btn.UseVisualStyleBackColor = false;
+            this.Solution_3_btn.Click += new System.EventHandler(this.Solution_3_btn_Click);
             // 
             // tabPage9
             // 
@@ -944,6 +951,7 @@
             this.Feasibility_Ranking_btn.TabIndex = 17;
             this.Feasibility_Ranking_btn.Text = "Enter";
             this.Feasibility_Ranking_btn.UseVisualStyleBackColor = false;
+            this.Feasibility_Ranking_btn.Click += new System.EventHandler(this.Feasibility_Ranking_btn_Click);
             // 
             // Ranking_Criteria_tbx
             // 
@@ -987,6 +995,7 @@
             this.Feasibility_Result_btn.TabIndex = 10;
             this.Feasibility_Result_btn.Text = "Enter";
             this.Feasibility_Result_btn.UseVisualStyleBackColor = false;
+            this.Feasibility_Result_btn.Click += new System.EventHandler(this.Feasibility_Result_btn_Click);
             // 
             // Feasibility_Result_tbx
             // 
@@ -1030,6 +1039,7 @@
             this.Appendix_btn.TabIndex = 13;
             this.Appendix_btn.Text = "Enter";
             this.Appendix_btn.UseVisualStyleBackColor = false;
+            this.Appendix_btn.Click += new System.EventHandler(this.Appendix_btn_Click);
             // 
             // Supporting_Documentation_btn
             // 
@@ -1078,6 +1088,7 @@
             this.Enter_btn.TabIndex = 3;
             this.Enter_btn.Text = "Enter";
             this.Enter_btn.UseVisualStyleBackColor = false;
+            this.Enter_btn.Click += new System.EventHandler(this.Enter_btn_Click);
             // 
             // FeasibiltyStudyDocumentForm
             // 
