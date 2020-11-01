@@ -56,7 +56,16 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             if (Business_Drivers_tbx.Text.Length > 0)
             {
                 feasibility.BusinessDrivers = Business_Drivers_tbx.Text;
+
+                foreach (DataGridView row in Business_Requirements_dgv .Rows)
+                {
+                    foreach (var column in row.Columns)
+                    {
+                        feasibility.BusinessRequirements += column;
+                    }
+                }
             }
+
         }
 
         private void Feasibility_Assessment_btn_Click(object sender, EventArgs e)
@@ -74,6 +83,21 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 feasibility.Solution1Description = Description_tbx.Text;
                 feasibility.Solution1Assessment = Assessment_tbx.Text;
                 feasibility.Solution1Assumption = Assumptions_tbx.Text;
+
+                foreach (DataGridView row in Results_dgv.Rows)
+                {
+                    foreach (var column in row.Columns)
+                    {
+                        feasibility.Results += column;
+                    }
+                }
+                foreach (DataGridView row in Risks_dgv.Rows)
+                {
+                    foreach (var column in row.Columns)
+                    {
+                        feasibility.Risks += column;
+                    }
+                }
             }
         }
 
@@ -84,6 +108,21 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 feasibility.Solution2Description = Description2_tbx.Text;
                 feasibility.Solution2Assessment = Assessment2_tbx.Text;
                 feasibility.Solution2Assumption = Assumptions2_tbx.Text;
+
+                foreach (DataGridView row in Results2_dgv.Rows)
+                {
+                    foreach (var column in row.Columns)
+                    {
+                        feasibility.Results2 += column;
+                    }
+                }
+                foreach (DataGridView row in Risks2_dgv.Rows)
+                {
+                    foreach (var column in row.Columns)
+                    {
+                        feasibility.Risks2 += column;
+                    }
+                }
             }
         }
 
@@ -94,6 +133,21 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 feasibility.Solution3Description = Description3_tbx.Text;
                 feasibility.Solution3Assessment = Assessment3_tbx.Text;
                 feasibility.Solution3Assumption = Assumptions3_tbx.Text;
+
+                foreach (DataGridView row in Results3_dgv.Rows)
+                {
+                    foreach (var column in row.Columns)
+                    {
+                        feasibility.Results3 += column;
+                    }
+                }
+                foreach (DataGridView row in Risks3_dgv.Rows)
+                {
+                    foreach (var column in row.Columns)
+                    {
+                        feasibility.Risks3 += column;
+                    }
+                }
             }
         }
 
@@ -102,6 +156,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             if (Ranking_Criteria_tbx.Text.Length > 0)
             {
                 feasibility.RankingCriteria = Ranking_Criteria_tbx.Text;
+
+                foreach (DataGridView row in Ranking_Scores_dgv.Rows)
+                {
+                    foreach (var column in row.Columns)
+                    {
+                        feasibility.RankingScores += column;
+                    }
+                }
             }
         }
 

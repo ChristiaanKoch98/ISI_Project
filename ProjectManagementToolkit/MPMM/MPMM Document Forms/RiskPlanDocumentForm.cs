@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectManagementToolkit.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,6 +33,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             if (Categories_tbx.Text.Length > 0)
             {
                 riskPlanModel.Categories = Categories_tbx.Text;
+
+                foreach (DataGridView row in Risks_dgv.Rows)
+                {
+                    foreach (var column in row.Columns)
+                    {
+                        riskPlanModel.Risks  += column;
+                    }
+                }
             }
         }
 
@@ -41,6 +50,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             {
                 riskPlanModel.Assumptions = Assumptions_tbx.Text;
                 riskPlanModel.Constraints = Constraints_tbx.Text;
+
+                foreach (DataGridView row in Schedule_dgv.Rows)
+                {
+                    foreach (var column in row.Columns)
+                    {
+                        riskPlanModel.Schedule += column;
+                    }
+                }
             }
         }
 

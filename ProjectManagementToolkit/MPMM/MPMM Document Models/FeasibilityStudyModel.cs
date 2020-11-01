@@ -28,6 +28,13 @@ namespace ProjectManagementToolkit.Classes
         public string RankingCriteria { get; set; }
         public string FeasibilityResults { get; set; }
         public string SupportingDocumentation { get; set; }
+        public string RankingScores { get; internal set; }
 
+        public string Results { get; set; }
+        public string Risks { get; set; }
+        public string Results2 { get; set; }
+        public string Risks2 { get; set; }
+        public string Results3 { get; set; }
+        public string Risks3 { get; set; }
     }
 }
