@@ -296,6 +296,7 @@
     </Compile>
     <Compile Include="MPMM\MPMM Document Models\AcceptanceFormModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\AcceptanceManagementProcessModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\AcceptancePlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ChangeManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ChangeRequestModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\CommunicationsManagementProcessModel.cs" />
@@ -303,6 +304,7 @@
     <Compile Include="MPMM\MPMM Document Models\CostManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ExpenseFormModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\FeasibilityStudyModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\FinancialPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\IssueFormModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\IssueManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\JobDescriptionModel.cs" />
@@ -310,13 +312,16 @@
     <Compile Include="MPMM\MPMM Document Models\PhaseReviewFormInitiationModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\PhaseReviewPlanningModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\PostImplementationReviewModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\ProcurementPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectClosureReportModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectOfficeChecklistModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectStatusReportModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\PurchaseOrderModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\QualityManagementProcessModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\QualityPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\QualityReviewPlanModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\RequestForInformationModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\RequestForProposalModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ResourcePlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\RiskFormModel.cs" />
@@ -326,6 +331,7 @@
     <Compile Include="MPMM\MPMM Document Models\SupplierContractModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\TermsOfReferenceModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\TimeMangementProcess.cs" />
+    <Compile Include="MPMM\MPMM Document Models\TimeSheetModel.cs" />
     <Compile Include="MPMM\MPMM Forms\Academic_and_Training.cs">
       <SubType>Form</SubType>
     </Compile>
