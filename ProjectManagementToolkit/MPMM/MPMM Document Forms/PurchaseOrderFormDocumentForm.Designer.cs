@@ -41,6 +41,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.DELIVERY_DETAILS_btn = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.Contact_Address2_tbx = new System.Windows.Forms.TextBox();
+            this.Contact_Name2_tbx = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.Contact_Address1_tbx = new System.Windows.Forms.TextBox();
+            this.Contact_Name1_tbx = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             this.Supplier_Contact_Phone_tbx = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -60,20 +71,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.label16 = new System.Windows.Forms.Label();
-            this.Contact_Address2_tbx = new System.Windows.Forms.TextBox();
-            this.Contact_Name2_tbx = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.Contact_Address1_tbx = new System.Windows.Forms.TextBox();
-            this.Contact_Name1_tbx = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.DELIVERY_DETAILS_btn = new System.Windows.Forms.Button();
             this.ORDER_DETAILS_dgv = new System.Windows.Forms.DataGridView();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.PAYMENT_DETAILS_btn = new System.Windows.Forms.Button();
+            this.cmbxPaymentMethod = new System.Windows.Forms.ComboBox();
+            this.label26 = new System.Windows.Forms.Label();
             this.Name_on_Card_tbx = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -83,9 +85,7 @@
             this.Card_Type_tbx = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.PAYMENT_DETAILS_btn = new System.Windows.Forms.Button();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.TERMS_AND_CONDITIONS_btn = new System.Windows.Forms.Button();
             this.Terms_and_Conditions_tbx = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
@@ -93,9 +93,9 @@
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ORDER_DETAILS_dgv)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ORDER_DETAILS_dgv)).BeginInit();
             this.SuspendLayout();
             // 
             // Enter_btn
@@ -109,6 +109,7 @@
             this.Enter_btn.TabIndex = 12;
             this.Enter_btn.Text = "Enter";
             this.Enter_btn.UseVisualStyleBackColor = false;
+            this.Enter_btn.Click += new System.EventHandler(this.Enter_btn_Click);
             // 
             // Purchase_Order_Form_tbx
             // 
@@ -202,6 +203,7 @@
             this.PROJECT_DETAILS_btn.TabIndex = 19;
             this.PROJECT_DETAILS_btn.Text = "Enter";
             this.PROJECT_DETAILS_btn.UseVisualStyleBackColor = false;
+            this.PROJECT_DETAILS_btn.Click += new System.EventHandler(this.PROJECT_DETAILS_btn_Click);
             // 
             // label3
             // 
@@ -261,6 +263,107 @@
             this.tabPage2.Size = new System.Drawing.Size(920, 475);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "DELIVERY DETAILS";
+            // 
+            // DELIVERY_DETAILS_btn
+            // 
+            this.DELIVERY_DETAILS_btn.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.DELIVERY_DETAILS_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DELIVERY_DETAILS_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.DELIVERY_DETAILS_btn.Location = new System.Drawing.Point(25, 429);
+            this.DELIVERY_DETAILS_btn.Name = "DELIVERY_DETAILS_btn";
+            this.DELIVERY_DETAILS_btn.Size = new System.Drawing.Size(75, 23);
+            this.DELIVERY_DETAILS_btn.TabIndex = 61;
+            this.DELIVERY_DETAILS_btn.Text = "Enter";
+            this.DELIVERY_DETAILS_btn.UseVisualStyleBackColor = false;
+            this.DELIVERY_DETAILS_btn.Click += new System.EventHandler(this.DELIVERY_DETAILS_btn_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(625, 254);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(56, 19);
+            this.label16.TabIndex = 58;
+            this.label16.Text = "Bill To:";
+            // 
+            // Contact_Address2_tbx
+            // 
+            this.Contact_Address2_tbx.Location = new System.Drawing.Point(666, 335);
+            this.Contact_Address2_tbx.Name = "Contact_Address2_tbx";
+            this.Contact_Address2_tbx.Size = new System.Drawing.Size(125, 20);
+            this.Contact_Address2_tbx.TabIndex = 55;
+            // 
+            // Contact_Name2_tbx
+            // 
+            this.Contact_Name2_tbx.Location = new System.Drawing.Point(666, 298);
+            this.Contact_Name2_tbx.Name = "Contact_Name2_tbx";
+            this.Contact_Name2_tbx.Size = new System.Drawing.Size(125, 20);
+            this.Contact_Name2_tbx.TabIndex = 52;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(528, 336);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(126, 19);
+            this.label18.TabIndex = 54;
+            this.label18.Text = "Contact Address:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(545, 299);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(109, 19);
+            this.label19.TabIndex = 53;
+            this.label19.Text = "Contact Name:";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(149, 254);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(84, 19);
+            this.label21.TabIndex = 49;
+            this.label21.Text = "Deliver To:";
+            // 
+            // Contact_Address1_tbx
+            // 
+            this.Contact_Address1_tbx.Location = new System.Drawing.Point(191, 335);
+            this.Contact_Address1_tbx.Name = "Contact_Address1_tbx";
+            this.Contact_Address1_tbx.Size = new System.Drawing.Size(125, 20);
+            this.Contact_Address1_tbx.TabIndex = 46;
+            // 
+            // Contact_Name1_tbx
+            // 
+            this.Contact_Name1_tbx.Location = new System.Drawing.Point(192, 298);
+            this.Contact_Name1_tbx.Name = "Contact_Name1_tbx";
+            this.Contact_Name1_tbx.Size = new System.Drawing.Size(125, 20);
+            this.Contact_Name1_tbx.TabIndex = 43;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(57, 336);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(126, 19);
+            this.label23.TabIndex = 45;
+            this.label23.Text = "Contact Address:";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(77, 299);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(109, 19);
+            this.label24.TabIndex = 44;
+            this.label24.Text = "Contact Name:";
             // 
             // Supplier_Contact_Phone_tbx
             // 
@@ -429,11 +532,19 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "ORDER DETAILS";
             // 
+            // ORDER_DETAILS_dgv
+            // 
+            this.ORDER_DETAILS_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ORDER_DETAILS_dgv.Location = new System.Drawing.Point(33, 28);
+            this.ORDER_DETAILS_dgv.Name = "ORDER_DETAILS_dgv";
+            this.ORDER_DETAILS_dgv.Size = new System.Drawing.Size(834, 376);
+            this.ORDER_DETAILS_dgv.TabIndex = 0;
+            // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tabPage4.Controls.Add(this.PAYMENT_DETAILS_btn);
-            this.tabPage4.Controls.Add(this.comboBox1);
+            this.tabPage4.Controls.Add(this.cmbxPaymentMethod);
             this.tabPage4.Controls.Add(this.label26);
             this.tabPage4.Controls.Add(this.Name_on_Card_tbx);
             this.tabPage4.Controls.Add(this.label15);
@@ -451,126 +562,36 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "PAYMENT DETAILS";
             // 
-            // tabPage5
+            // PAYMENT_DETAILS_btn
             // 
-            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage5.Controls.Add(this.TERMS_AND_CONDITIONS_btn);
-            this.tabPage5.Controls.Add(this.Terms_and_Conditions_tbx);
-            this.tabPage5.Controls.Add(this.label27);
-            this.tabPage5.Location = new System.Drawing.Point(4, 21);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(920, 475);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "TERMS AND CONDITIONS";
+            this.PAYMENT_DETAILS_btn.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PAYMENT_DETAILS_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PAYMENT_DETAILS_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.PAYMENT_DETAILS_btn.Location = new System.Drawing.Point(66, 420);
+            this.PAYMENT_DETAILS_btn.Name = "PAYMENT_DETAILS_btn";
+            this.PAYMENT_DETAILS_btn.Size = new System.Drawing.Size(75, 23);
+            this.PAYMENT_DETAILS_btn.TabIndex = 62;
+            this.PAYMENT_DETAILS_btn.Text = "Enter";
+            this.PAYMENT_DETAILS_btn.UseVisualStyleBackColor = false;
+            this.PAYMENT_DETAILS_btn.Click += new System.EventHandler(this.PAYMENT_DETAILS_btn_Click);
             // 
-            // label16
+            // cmbxPaymentMethod
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(625, 254);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(56, 19);
-            this.label16.TabIndex = 58;
-            this.label16.Text = "Bill To:";
+            this.cmbxPaymentMethod.FormattingEnabled = true;
+            this.cmbxPaymentMethod.Location = new System.Drawing.Point(200, 31);
+            this.cmbxPaymentMethod.Name = "cmbxPaymentMethod";
+            this.cmbxPaymentMethod.Size = new System.Drawing.Size(228, 20);
+            this.cmbxPaymentMethod.TabIndex = 44;
             // 
-            // Contact_Address2_tbx
+            // label26
             // 
-            this.Contact_Address2_tbx.Location = new System.Drawing.Point(666, 335);
-            this.Contact_Address2_tbx.Name = "Contact_Address2_tbx";
-            this.Contact_Address2_tbx.Size = new System.Drawing.Size(125, 20);
-            this.Contact_Address2_tbx.TabIndex = 55;
-            // 
-            // Contact_Name2_tbx
-            // 
-            this.Contact_Name2_tbx.Location = new System.Drawing.Point(666, 298);
-            this.Contact_Name2_tbx.Name = "Contact_Name2_tbx";
-            this.Contact_Name2_tbx.Size = new System.Drawing.Size(125, 20);
-            this.Contact_Name2_tbx.TabIndex = 52;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(528, 336);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(126, 19);
-            this.label18.TabIndex = 54;
-            this.label18.Text = "Contact Address:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(545, 299);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(109, 19);
-            this.label19.TabIndex = 53;
-            this.label19.Text = "Contact Name:";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(149, 254);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(84, 19);
-            this.label21.TabIndex = 49;
-            this.label21.Text = "Deliver To:";
-            // 
-            // Contact_Address1_tbx
-            // 
-            this.Contact_Address1_tbx.Location = new System.Drawing.Point(191, 335);
-            this.Contact_Address1_tbx.Name = "Contact_Address1_tbx";
-            this.Contact_Address1_tbx.Size = new System.Drawing.Size(125, 20);
-            this.Contact_Address1_tbx.TabIndex = 46;
-            // 
-            // Contact_Name1_tbx
-            // 
-            this.Contact_Name1_tbx.Location = new System.Drawing.Point(192, 298);
-            this.Contact_Name1_tbx.Name = "Contact_Name1_tbx";
-            this.Contact_Name1_tbx.Size = new System.Drawing.Size(125, 20);
-            this.Contact_Name1_tbx.TabIndex = 43;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(57, 336);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(126, 19);
-            this.label23.TabIndex = 45;
-            this.label23.Text = "Contact Address:";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(77, 299);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(109, 19);
-            this.label24.TabIndex = 44;
-            this.label24.Text = "Contact Name:";
-            // 
-            // DELIVERY_DETAILS_btn
-            // 
-            this.DELIVERY_DETAILS_btn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.DELIVERY_DETAILS_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DELIVERY_DETAILS_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.DELIVERY_DETAILS_btn.Location = new System.Drawing.Point(25, 429);
-            this.DELIVERY_DETAILS_btn.Name = "DELIVERY_DETAILS_btn";
-            this.DELIVERY_DETAILS_btn.Size = new System.Drawing.Size(75, 23);
-            this.DELIVERY_DETAILS_btn.TabIndex = 61;
-            this.DELIVERY_DETAILS_btn.Text = "Enter";
-            this.DELIVERY_DETAILS_btn.UseVisualStyleBackColor = false;
-            // 
-            // ORDER_DETAILS_dgv
-            // 
-            this.ORDER_DETAILS_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ORDER_DETAILS_dgv.Location = new System.Drawing.Point(33, 28);
-            this.ORDER_DETAILS_dgv.Name = "ORDER_DETAILS_dgv";
-            this.ORDER_DETAILS_dgv.Size = new System.Drawing.Size(834, 376);
-            this.ORDER_DETAILS_dgv.TabIndex = 0;
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(62, 32);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(130, 19);
+            this.label26.TabIndex = 43;
+            this.label26.Text = "Payment Method:";
             // 
             // Name_on_Card_tbx
             // 
@@ -650,35 +671,18 @@
             this.label25.TabIndex = 35;
             this.label25.Text = "Card Type:";
             // 
-            // label26
+            // tabPage5
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(62, 32);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(130, 19);
-            this.label26.TabIndex = 43;
-            this.label26.Text = "Payment Method:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(200, 31);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(228, 20);
-            this.comboBox1.TabIndex = 44;
-            // 
-            // PAYMENT_DETAILS_btn
-            // 
-            this.PAYMENT_DETAILS_btn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.PAYMENT_DETAILS_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PAYMENT_DETAILS_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.PAYMENT_DETAILS_btn.Location = new System.Drawing.Point(66, 420);
-            this.PAYMENT_DETAILS_btn.Name = "PAYMENT_DETAILS_btn";
-            this.PAYMENT_DETAILS_btn.Size = new System.Drawing.Size(75, 23);
-            this.PAYMENT_DETAILS_btn.TabIndex = 62;
-            this.PAYMENT_DETAILS_btn.Text = "Enter";
-            this.PAYMENT_DETAILS_btn.UseVisualStyleBackColor = false;
+            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage5.Controls.Add(this.TERMS_AND_CONDITIONS_btn);
+            this.tabPage5.Controls.Add(this.Terms_and_Conditions_tbx);
+            this.tabPage5.Controls.Add(this.label27);
+            this.tabPage5.Location = new System.Drawing.Point(4, 21);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(920, 475);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "TERMS AND CONDITIONS";
             // 
             // TERMS_AND_CONDITIONS_btn
             // 
@@ -691,6 +695,7 @@
             this.TERMS_AND_CONDITIONS_btn.TabIndex = 65;
             this.TERMS_AND_CONDITIONS_btn.Text = "Enter";
             this.TERMS_AND_CONDITIONS_btn.UseVisualStyleBackColor = false;
+            this.TERMS_AND_CONDITIONS_btn.Click += new System.EventHandler(this.TERMS_AND_CONDITIONS_btn_Click);
             // 
             // Terms_and_Conditions_tbx
             // 
@@ -730,11 +735,11 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ORDER_DETAILS_dgv)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ORDER_DETAILS_dgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -789,7 +794,7 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.DataGridView ORDER_DETAILS_dgv;
         private System.Windows.Forms.Button PAYMENT_DETAILS_btn;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbxPaymentMethod;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox Name_on_Card_tbx;
         private System.Windows.Forms.Label label15;

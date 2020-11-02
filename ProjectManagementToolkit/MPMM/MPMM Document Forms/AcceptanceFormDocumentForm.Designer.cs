@@ -81,6 +81,7 @@
             this.Enter_btn.TabIndex = 6;
             this.Enter_btn.Text = "Enter";
             this.Enter_btn.UseVisualStyleBackColor = false;
+            this.Enter_btn.Click += new System.EventHandler(this.Enter_btn_Click);
             // 
             // Acceptance_Form_Name_tbx
             // 
@@ -155,6 +156,7 @@
             this.PROJECT_DETAILS_btn.TabIndex = 8;
             this.PROJECT_DETAILS_btn.Text = "Enter";
             this.PROJECT_DETAILS_btn.UseVisualStyleBackColor = false;
+            this.PROJECT_DETAILS_btn.Click += new System.EventHandler(this.PROJECT_DETAILS_btn_Click);
             // 
             // label3
             // 
@@ -255,6 +257,7 @@
             this.ACCEPTANCE_DETAILS_btn.TabIndex = 12;
             this.ACCEPTANCE_DETAILS_btn.Text = "Enter";
             this.ACCEPTANCE_DETAILS_btn.UseVisualStyleBackColor = false;
+            this.ACCEPTANCE_DETAILS_btn.Click += new System.EventHandler(this.ACCEPTANCE_DETAILS_btn_Click);
             // 
             // label4
             // 
@@ -338,6 +341,7 @@
             this.ACCEPTANCE_CRITERIA_btn.TabIndex = 20;
             this.ACCEPTANCE_CRITERIA_btn.Text = "Enter";
             this.ACCEPTANCE_CRITERIA_btn.UseVisualStyleBackColor = false;
+            this.ACCEPTANCE_CRITERIA_btn.Click += new System.EventHandler(this.ACCEPTANCE_CRITERIA_btn_Click);
             // 
             // tabPage4
             // 
@@ -370,6 +374,7 @@
             this.ACCEPTANCE_RESULTS_btn.TabIndex = 8;
             this.ACCEPTANCE_RESULTS_btn.Text = "Enter";
             this.ACCEPTANCE_RESULTS_btn.UseVisualStyleBackColor = false;
+            this.ACCEPTANCE_RESULTS_btn.Click += new System.EventHandler(this.ACCEPTANCE_RESULTS_btn_Click);
             // 
             // tabPage5
             // 
@@ -413,6 +418,7 @@
             this.CUSTOMER_APPROVAL_btn.TabIndex = 20;
             this.CUSTOMER_APPROVAL_btn.Text = "Enter";
             this.CUSTOMER_APPROVAL_btn.UseVisualStyleBackColor = false;
+            this.CUSTOMER_APPROVAL_btn.Click += new System.EventHandler(this.CUSTOMER_APPROVAL_btn_Click);
             // 
             // AcceptanceFormDocumentForm
             // 

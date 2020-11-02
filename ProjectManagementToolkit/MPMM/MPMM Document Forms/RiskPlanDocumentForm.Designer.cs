@@ -61,14 +61,14 @@
             this.Schedule_dgv = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.Activities_tbx = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.Roles_tbx = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.Risk_Process_btn = new System.Windows.Forms.Button();
             this.Documents_tbx = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.Risk_Process_btn = new System.Windows.Forms.Button();
+            this.Roles_tbx = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.Activities_tbx = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.Appendix_btn = new System.Windows.Forms.Button();
             this.Appendix_tbx = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
@@ -99,6 +99,7 @@
             this.Enter_btn.TabIndex = 6;
             this.Enter_btn.Text = "Enter";
             this.Enter_btn.UseVisualStyleBackColor = false;
+            this.Enter_btn.Click += new System.EventHandler(this.Enter_btn_Click);
             // 
             // Project_Name_tbx
             // 
@@ -248,6 +249,7 @@
             this.Risk_Identification_btn.TabIndex = 17;
             this.Risk_Identification_btn.Text = "Enter";
             this.Risk_Identification_btn.UseVisualStyleBackColor = false;
+            this.Risk_Identification_btn.Click += new System.EventHandler(this.Risk_Identification_btn_Click);
             // 
             // Categories_tbx
             // 
@@ -385,6 +387,7 @@
             this.Risk_Plan_btn.TabIndex = 26;
             this.Risk_Plan_btn.Text = "Enter";
             this.Risk_Plan_btn.UseVisualStyleBackColor = false;
+            this.Risk_Plan_btn.Click += new System.EventHandler(this.Risk_Plan_btn_Click);
             // 
             // Assumptions_tbx
             // 
@@ -440,55 +443,18 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Risk Process";
             // 
-            // tabPage6
+            // Risk_Process_btn
             // 
-            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage6.Controls.Add(this.Appendix_btn);
-            this.tabPage6.Controls.Add(this.Appendix_tbx);
-            this.tabPage6.Location = new System.Drawing.Point(4, 21);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1114, 442);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Appendix";
-            // 
-            // Activities_tbx
-            // 
-            this.Activities_tbx.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Activities_tbx.Location = new System.Drawing.Point(33, 51);
-            this.Activities_tbx.Multiline = true;
-            this.Activities_tbx.Name = "Activities_tbx";
-            this.Activities_tbx.Size = new System.Drawing.Size(318, 310);
-            this.Activities_tbx.TabIndex = 27;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(30, 24);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(60, 15);
-            this.label13.TabIndex = 26;
-            this.label13.Text = "Activities";
-            // 
-            // Roles_tbx
-            // 
-            this.Roles_tbx.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Roles_tbx.Location = new System.Drawing.Point(394, 51);
-            this.Roles_tbx.Multiline = true;
-            this.Roles_tbx.Name = "Roles_tbx";
-            this.Roles_tbx.Size = new System.Drawing.Size(318, 310);
-            this.Roles_tbx.TabIndex = 29;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(391, 24);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(38, 15);
-            this.label14.TabIndex = 28;
-            this.label14.Text = "Roles";
+            this.Risk_Process_btn.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Risk_Process_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Risk_Process_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Risk_Process_btn.Location = new System.Drawing.Point(33, 391);
+            this.Risk_Process_btn.Name = "Risk_Process_btn";
+            this.Risk_Process_btn.Size = new System.Drawing.Size(75, 23);
+            this.Risk_Process_btn.TabIndex = 32;
+            this.Risk_Process_btn.Text = "Enter";
+            this.Risk_Process_btn.UseVisualStyleBackColor = false;
+            this.Risk_Process_btn.Click += new System.EventHandler(this.Risk_Process_btn_Click);
             // 
             // Documents_tbx
             // 
@@ -509,17 +475,55 @@
             this.label15.TabIndex = 30;
             this.label15.Text = "Documents";
             // 
-            // Risk_Process_btn
+            // Roles_tbx
             // 
-            this.Risk_Process_btn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Risk_Process_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Risk_Process_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.Risk_Process_btn.Location = new System.Drawing.Point(33, 391);
-            this.Risk_Process_btn.Name = "Risk_Process_btn";
-            this.Risk_Process_btn.Size = new System.Drawing.Size(75, 23);
-            this.Risk_Process_btn.TabIndex = 32;
-            this.Risk_Process_btn.Text = "Enter";
-            this.Risk_Process_btn.UseVisualStyleBackColor = false;
+            this.Roles_tbx.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Roles_tbx.Location = new System.Drawing.Point(394, 51);
+            this.Roles_tbx.Multiline = true;
+            this.Roles_tbx.Name = "Roles_tbx";
+            this.Roles_tbx.Size = new System.Drawing.Size(318, 310);
+            this.Roles_tbx.TabIndex = 29;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(391, 24);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(38, 15);
+            this.label14.TabIndex = 28;
+            this.label14.Text = "Roles";
+            // 
+            // Activities_tbx
+            // 
+            this.Activities_tbx.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Activities_tbx.Location = new System.Drawing.Point(33, 51);
+            this.Activities_tbx.Multiline = true;
+            this.Activities_tbx.Name = "Activities_tbx";
+            this.Activities_tbx.Size = new System.Drawing.Size(318, 310);
+            this.Activities_tbx.TabIndex = 27;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(30, 24);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(60, 15);
+            this.label13.TabIndex = 26;
+            this.label13.Text = "Activities";
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage6.Controls.Add(this.Appendix_btn);
+            this.tabPage6.Controls.Add(this.Appendix_tbx);
+            this.tabPage6.Location = new System.Drawing.Point(4, 21);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1114, 442);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Appendix";
             // 
             // Appendix_btn
             // 
@@ -532,6 +536,7 @@
             this.Appendix_btn.TabIndex = 35;
             this.Appendix_btn.Text = "Enter";
             this.Appendix_btn.UseVisualStyleBackColor = false;
+            this.Appendix_btn.Click += new System.EventHandler(this.Appendix_btn_Click);
             // 
             // Appendix_tbx
             // 

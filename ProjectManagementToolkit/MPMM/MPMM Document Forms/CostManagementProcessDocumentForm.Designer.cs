@@ -51,7 +51,6 @@
             this.Overview_tbx = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.Project_Manager_tbx = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.Project_Administrator_tbx = new System.Windows.Forms.TextBox();
@@ -59,6 +58,7 @@
             this.Cost_Management_Roles_btn = new System.Windows.Forms.Button();
             this.Team_Member_tbx = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.Expense_Register_tbx = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.Cost_Management_Documents_btn = new System.Windows.Forms.Button();
@@ -86,6 +86,7 @@
             this.Enter_btn.TabIndex = 9;
             this.Enter_btn.Text = "Enter";
             this.Enter_btn.UseVisualStyleBackColor = false;
+            this.Enter_btn.Click += new System.EventHandler(this.Enter_btn_Click);
             // 
             // Cost_Management_Process_tbx
             // 
@@ -283,6 +284,7 @@
             this.Cost_Management_Roles.TabIndex = 7;
             this.Cost_Management_Roles.Text = "Enter";
             this.Cost_Management_Roles.UseVisualStyleBackColor = false;
+            this.Cost_Management_Roles.Click += new System.EventHandler(this.Cost_Management_Roles_Click);
             // 
             // Overview_tbx
             // 
@@ -318,21 +320,6 @@
             this.tabPage3.Size = new System.Drawing.Size(1087, 565);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Cost Management Roles";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage4.Controls.Add(this.Expense_Register_tbx);
-            this.tabPage4.Controls.Add(this.label9);
-            this.tabPage4.Controls.Add(this.Cost_Management_Documents_btn);
-            this.tabPage4.Controls.Add(this.Expense_Form_tbx);
-            this.tabPage4.Controls.Add(this.label13);
-            this.tabPage4.Location = new System.Drawing.Point(4, 21);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1087, 565);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Cost Management Documents";
             // 
             // Project_Manager_tbx
             // 
@@ -381,6 +368,7 @@
             this.Cost_Management_Roles_btn.TabIndex = 15;
             this.Cost_Management_Roles_btn.Text = "Enter";
             this.Cost_Management_Roles_btn.UseVisualStyleBackColor = false;
+            this.Cost_Management_Roles_btn.Click += new System.EventHandler(this.Cost_Management_Roles_btn_Click);
             // 
             // Team_Member_tbx
             // 
@@ -399,6 +387,21 @@
             this.label12.Size = new System.Drawing.Size(86, 15);
             this.label12.TabIndex = 13;
             this.label12.Text = "Team Member";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage4.Controls.Add(this.Expense_Register_tbx);
+            this.tabPage4.Controls.Add(this.label9);
+            this.tabPage4.Controls.Add(this.Cost_Management_Documents_btn);
+            this.tabPage4.Controls.Add(this.Expense_Form_tbx);
+            this.tabPage4.Controls.Add(this.label13);
+            this.tabPage4.Location = new System.Drawing.Point(4, 21);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1087, 565);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Cost Management Documents";
             // 
             // Expense_Register_tbx
             // 
@@ -429,6 +432,7 @@
             this.Cost_Management_Documents_btn.TabIndex = 20;
             this.Cost_Management_Documents_btn.Text = "Enter";
             this.Cost_Management_Documents_btn.UseVisualStyleBackColor = false;
+            this.Cost_Management_Documents_btn.Click += new System.EventHandler(this.Cost_Management_Documents_btn_Click);
             // 
             // Expense_Form_tbx
             // 
