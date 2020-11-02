@@ -41,7 +41,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 
         public class Stakeholder
         {
-            public List<string> StakeholderList { get; set; };
+            public List<string> StakeholderList { get; set; }
             public string StakeholderRequirements; 
         }
     }
