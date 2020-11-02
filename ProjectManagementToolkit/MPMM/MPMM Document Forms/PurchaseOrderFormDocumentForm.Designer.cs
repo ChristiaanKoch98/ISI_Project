@@ -74,7 +74,7 @@
             this.ORDER_DETAILS_dgv = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.PAYMENT_DETAILS_btn = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbxPaymentMethod = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
             this.Name_on_Card_tbx = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -544,7 +544,7 @@
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tabPage4.Controls.Add(this.PAYMENT_DETAILS_btn);
-            this.tabPage4.Controls.Add(this.comboBox1);
+            this.tabPage4.Controls.Add(this.cmbxPaymentMethod);
             this.tabPage4.Controls.Add(this.label26);
             this.tabPage4.Controls.Add(this.Name_on_Card_tbx);
             this.tabPage4.Controls.Add(this.label15);
@@ -575,13 +575,13 @@
             this.PAYMENT_DETAILS_btn.UseVisualStyleBackColor = false;
             this.PAYMENT_DETAILS_btn.Click += new System.EventHandler(this.PAYMENT_DETAILS_btn_Click);
             // 
-            // comboBox1
+            // cmbxPaymentMethod
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(200, 31);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(228, 20);
-            this.comboBox1.TabIndex = 44;
+            this.cmbxPaymentMethod.FormattingEnabled = true;
+            this.cmbxPaymentMethod.Location = new System.Drawing.Point(200, 31);
+            this.cmbxPaymentMethod.Name = "cmbxPaymentMethod";
+            this.cmbxPaymentMethod.Size = new System.Drawing.Size(228, 20);
+            this.cmbxPaymentMethod.TabIndex = 44;
             // 
             // label26
             // 
@@ -794,7 +794,7 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.DataGridView ORDER_DETAILS_dgv;
         private System.Windows.Forms.Button PAYMENT_DETAILS_btn;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbxPaymentMethod;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox Name_on_Card_tbx;
         private System.Windows.Forms.Label label15;
