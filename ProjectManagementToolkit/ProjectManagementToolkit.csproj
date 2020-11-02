@@ -198,6 +198,12 @@
     <Compile Include="MPMM\MPMM Document Forms\ProjectPlanDocumentForm.Designer.cs">
       <DependentUpon>ProjectPlanDocumentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\ProjectSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\ProjectSelection.Designer.cs">
+      <DependentUpon>ProjectSelection.cs</DependentUpon>
+    </Compile>
     <Compile Include="MPMM\MPMM Document Forms\ProjectStatusReportDocumentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -455,6 +461,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\ProjectPlanDocumentForm.resx">
       <DependentUpon>ProjectPlanDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\ProjectSelection.resx">
+      <DependentUpon>ProjectSelection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\QualityManagementProcessDocumentForm.resx">
       <DependentUpon>QualityManagementProcessDocumentForm.cs</DependentUpon>
