@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using System.Runtime.InteropServices;
+using ProjectManagementToolkit.Utility;
 
 namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
@@ -19,8 +20,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         public ProjectPlanDocumentForm()
         {
             InitializeComponent();
+            string json = JsonHelper.loadJson( "Example", "ProjectPlan");
+            projectPlanModel = JsonConvert.DeserializeObject<ProjectPlanModel>(json);
+            MessageBox.Show(json);
             List<string[]> rows = new List<string[]>();
-            rows.Add(new string[] { "Document ID", "" });
+            rows.Add(new string[] { "Document ID", ""});
             rows.Add(new string[] { "Document Owner", "" });
             rows.Add(new string[] { "Issue Date", "" });
             rows.Add(new string[] { "Last Save Date", "" });
@@ -211,7 +215,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             projectPlanModel.Constraints = constrainsTxt.Text;
 
             string json = JsonConvert.SerializeObject(projectPlanModel);
-            MessageBox.Show(json);
+            JsonHelper.saveJson(json, "Example", "ProjectPlan");
         }
     }
 }

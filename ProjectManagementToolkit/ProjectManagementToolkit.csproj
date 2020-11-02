@@ -437,6 +437,7 @@
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utility\JsonHelper.cs" />
     <Compile Include="Utility\Validation.cs" />
     <EmbeddedResource Include="MPMM\MPMM Document Forms\AcceptanceManagementProcessDocumentForm.resx">
       <DependentUpon>AcceptanceManagementProcessDocumentForm.cs</DependentUpon>
