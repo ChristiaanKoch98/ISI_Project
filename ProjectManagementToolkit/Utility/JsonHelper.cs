@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Security.AccessControl;
 using System.Security.Principal;
+using Newtonsoft.Json.Linq;
 
 namespace ProjectManagementToolkit.Utility
 {
@@ -46,8 +47,23 @@ namespace ProjectManagementToolkit.Utility
             return json;
         }
 
+        static public string mergeJson(string currentJson, string newJson)
+        {
+            JObject currentObject = JObject.Parse(currentJson);
+            JObject newObject = JObject.Parse(newJson);
 
+            currentObject.Merge(newObject, new JsonMergeSettings
+            {
+                // union array values together to avoid duplicates
+                MergeArrayHandling = MergeArrayHandling.Union
+            });
+
+            string mergedJson = currentObject.ToString();
+            return mergedJson;
+        }
 
    
     }
 }
+
+

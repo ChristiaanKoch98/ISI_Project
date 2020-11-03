@@ -439,6 +439,7 @@
     </Compile>
     <Compile Include="Utility\JsonHelper.cs" />
     <Compile Include="Utility\Validation.cs" />
+    <Compile Include="Utility\VersionControl.cs" />
     <EmbeddedResource Include="MPMM\MPMM Document Forms\AcceptanceManagementProcessDocumentForm.resx">
       <DependentUpon>AcceptanceManagementProcessDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
