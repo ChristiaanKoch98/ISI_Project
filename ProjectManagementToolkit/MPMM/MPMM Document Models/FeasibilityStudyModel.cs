@@ -61,7 +61,11 @@ namespace ProjectManagementToolkit.Classes
         public string IssuePriority { get; set; }
         public string ActionRequiredToResolveRisk { get; set; }
 
-       
+        public string Score1 { get; set; }
+        public string Weight1 { get; set; }
+        public string Total1 { get; set; }
+
+
     }
     class Solution2
     {
@@ -78,7 +82,10 @@ namespace ProjectManagementToolkit.Classes
         public string IssuePriority { get; set; }
         public string ActionRequiredToResolveRisk { get; set; }
 
-      
+        public string Score2 { get; set; }
+        public string Weight2 { get; set; }
+        public string Total2 { get; set; }
+
     }
     class Solution3
     {
@@ -95,6 +102,8 @@ namespace ProjectManagementToolkit.Classes
         public string IssuePriority { get; set; }
         public string ActionRequiredToResolveRisk { get; set; }
 
-        
+        public string Score3 { get; set; }
+        public string Weight3 { get; set; }
+        public string Total3 { get; set; }
     }
 }
