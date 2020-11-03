@@ -64,7 +64,25 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                     acceptanceFormModel.AcceptanceResults += column;
                 }
             }
-        }
+            List<ChildAcceptanceFormModel> list = new List<ChildAcceptanceFormModel>();
+            int ResultsrowCount = ACCEPTANCE_RESULTS_dgv.RowCount;
+            for (int i = 0; i < ResultsrowCount - 1; i++)
+            {
+                ChildAcceptanceFormModel acceptanceFormModel = new ChildAcceptanceFormModel();
+                var Acceptance = ACCEPTANCE_RESULTS_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var Method = ACCEPTANCE_RESULTS_dgv.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var Reviewer = ACCEPTANCE_RESULTS_dgv.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var Date = ACCEPTANCE_RESULTS_dgv.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var Result = ACCEPTANCE_RESULTS_dgv.Rows[i].Cells[4].Value?.ToString() ?? "";
+
+                acceptanceFormModel.Acceptance = Acceptance;
+                acceptanceFormModel.Method = Method;
+                acceptanceFormModel.Reviewer = Reviewer;
+                acceptanceFormModel.Date = Date;
+                acceptanceFormModel.Result = Result;
+                list.Add(acceptanceFormModel);
+            }
+    }
 
         private void CUSTOMER_APPROVAL_btn_Click(object sender, EventArgs e)
         {

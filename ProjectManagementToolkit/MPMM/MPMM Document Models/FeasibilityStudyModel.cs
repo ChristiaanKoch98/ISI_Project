@@ -37,4 +37,64 @@ namespace ProjectManagementToolkit.Classes
         public string Results3 { get; set; }
         public string Risks3 { get; set; }
     }
+
+    class BusinessRequirements
+    {
+        public string BusinessProblem { get; set; }
+        public string ProjectRequirement { get; set; }
+
+       
+    }
+
+    class Solution1
+    {
+        public string Solution { get; set; }
+        public string FeasibilityScore { get; set; }
+        public string AssessmentMethod { get; set; }
+
+        public string RiskDescription { get; set; }
+        public string RiskLikelihood { get; set; }
+        public string RiskImpact { get; set; }
+        public string ActionRequiredToMinRisk { get; set; }
+
+        public string IssueDescription { get; set; }
+        public string IssuePriority { get; set; }
+        public string ActionRequiredToResolveRisk { get; set; }
+
+       
+    }
+    class Solution2
+    {
+        public string Solution { get; set; }
+        public string FeasibilityScore { get; set; }
+        public string AssessmentMethod { get; set; }
+
+        public string RiskDescription { get; set; }
+        public string RiskLikelihood { get; set; }
+        public string RiskImpact { get; set; }
+        public string ActionRequiredToMinRisk { get; set; }
+
+        public string IssueDescription { get; set; }
+        public string IssuePriority { get; set; }
+        public string ActionRequiredToResolveRisk { get; set; }
+
+      
+    }
+    class Solution3
+    {
+        public string Solution { get; set; }
+        public string FeasibilityScore { get; set; }
+        public string AssessmentMethod { get; set; }
+
+        public string RiskDescription { get; set; }
+        public string RiskLikelihood { get; set; }
+        public string RiskImpact { get; set; }
+        public string ActionRequiredToMinRisk { get; set; }
+
+        public string IssueDescription { get; set; }
+        public string IssuePriority { get; set; }
+        public string ActionRequiredToResolveRisk { get; set; }
+
+        
+    }
 }
