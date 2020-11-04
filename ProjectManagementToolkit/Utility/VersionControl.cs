@@ -44,5 +44,12 @@ namespace ProjectManagementToolkit.Utility
             var uniqueDocuments = documentModels.DistinctBy(document => document.VersionID).ToList();
             return uniqueDocuments;
         }
+
+        static public string generateID()
+        {
+            Guid guid = Guid.NewGuid();
+            string id = guid.ToString();
+            return id;
+        }
     }
 }
