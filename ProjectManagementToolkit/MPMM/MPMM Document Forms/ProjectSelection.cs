@@ -16,5 +16,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             InitializeComponent();
         }
+
+        private void tabPageExistingProjects_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
