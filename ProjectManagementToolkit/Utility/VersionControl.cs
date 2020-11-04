@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MoreLinq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -36,6 +37,12 @@ namespace ProjectManagementToolkit.Utility
         {
             var sortedModels = documentModels.OrderBy(document => document.DateModified).ToList();
             return sortedModels;
+        }
+
+        static public List<DocumentModel> removeduplicates(List<DocumentModel> documentModels)
+        {
+            var uniqueDocuments = documentModels.DistinctBy(document => document.VersionID).ToList();
+            return uniqueDocuments;
         }
     }
 }
