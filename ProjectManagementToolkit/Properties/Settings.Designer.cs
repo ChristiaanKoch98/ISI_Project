@@ -33,5 +33,17 @@ namespace ProjectManagementToolkit.Properties {
                 return ((string)(this["ISI_DBConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ProjectID {
+            get {
+                return ((string)(this["ProjectID"]));
+            }
+            set {
+                this["ProjectID"] = value;
+            }
+        }
     }
 }

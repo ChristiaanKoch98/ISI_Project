@@ -15,11 +15,19 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         public ProjectSelection()
         {
             InitializeComponent();
+            Properties.Settings.Default.ProjectID = "test";
         }
 
         private void tabPageExistingProjects_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSelectProject_Click(object sender, EventArgs e)
+        {
+            MainForm mainForm = new MainForm();
+            this.Visible = false;
+            mainForm.Show();
         }
     }
 }

@@ -198,10 +198,10 @@
     <Compile Include="MPMM\MPMM Document Forms\ProjectPlanDocumentForm.Designer.cs">
       <DependentUpon>ProjectPlanDocumentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MPMM\MPMM Document Forms\ProjectSelection.cs">
+    <Compile Include="ProjectSelection.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MPMM\MPMM Document Forms\ProjectSelection.Designer.cs">
+    <Compile Include="ProjectSelection.Designer.cs">
       <DependentUpon>ProjectSelection.cs</DependentUpon>
     </Compile>
     <Compile Include="MPMM\MPMM Document Forms\ProjectStatusReportDocumentForm.cs">
@@ -430,12 +430,6 @@
       <DependentUpon>Processes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="ProjectSetup.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ProjectSetup.Designer.cs">
-      <DependentUpon>ProjectSetup.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
@@ -462,7 +456,7 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\ProjectPlanDocumentForm.resx">
       <DependentUpon>ProjectPlanDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MPMM\MPMM Document Forms\ProjectSelection.resx">
+    <EmbeddedResource Include="ProjectSelection.resx">
       <DependentUpon>ProjectSelection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\QualityManagementProcessDocumentForm.resx">
@@ -521,9 +515,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Forms\Processes.resx">
       <DependentUpon>Processes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ProjectSetup.resx">
-      <DependentUpon>ProjectSetup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -135,9 +135,45 @@ namespace ProjectManagementToolkit
             stateOfWork.MdiParent = this;
         }
 
-        private void tEMPChangeRequestFormToolStripMenuItem_Click(object sender, EventArgs e)
+     
+
+        private void MainForm_Load(object sender, EventArgs e)
         {
-            
+            foreach (Control control in this.Controls)
+            {
+                MdiClient client = control as MdiClient;
+                if (!(client == null))
+                {
+                    client.BackColor = Color.FromArgb(34, 36, 49);
+                    break;
+                }
+            }
+        }
+
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void generalManagementToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            GeneralManagement generalManagement = new GeneralManagement();
+            generalManagement.Show();
+            generalManagement.MdiParent = this;
+        }
+
+        private void assetAndInventoryToolStripMenuItem1_Click_1(object sender, EventArgs e)
+        {
+            Asset_and_Inventory asset_And_Inventory = new Asset_and_Inventory();
+            asset_And_Inventory.Show();
+            asset_And_Inventory.MdiParent = this;
+        }
+
+        private void informationTechnologyToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            IT_Management iT_Management = new IT_Management();
+            iT_Management.Show();
+            iT_Management.MdiParent = this;
         }
     }
 }
