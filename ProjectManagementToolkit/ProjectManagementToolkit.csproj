@@ -332,65 +332,65 @@
     <Compile Include="MPMM\MPMM Document Models\TermsOfReferenceModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\TimeMangementProcess.cs" />
     <Compile Include="MPMM\MPMM Document Models\TimeSheetModel.cs" />
-    <Compile Include="MPMM\MPMM Forms\Academic_and_Training.cs">
+    <Compile Include="MPMM\MPMM Forms\Academic and Training\Academic_and_Training.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\Academic_and_Training.Designer.cs">
+    <Compile Include="MPMM\MPMM Forms\Academic and Training\Academic_and_Training.Designer.cs">
       <DependentUpon>Academic_and_Training.cs</DependentUpon>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\Asset and Inventory.cs">
+    <Compile Include="MPMM\MPMM Forms\Assets and Inventory\Asset and Inventory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\Asset and Inventory.Designer.cs">
+    <Compile Include="MPMM\MPMM Forms\Assets and Inventory\Asset and Inventory.Designer.cs">
       <DependentUpon>Asset and Inventory.cs</DependentUpon>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\Contacts.cs">
+    <Compile Include="MPMM\MPMM Forms\Contacts\Contacts.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\Contacts.Designer.cs">
+    <Compile Include="MPMM\MPMM Forms\Contacts\Contacts.Designer.cs">
       <DependentUpon>Contacts.cs</DependentUpon>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\Events.cs">
+    <Compile Include="MPMM\MPMM Forms\Events\Events.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\Events.Designer.cs">
+    <Compile Include="MPMM\MPMM Forms\Events\Events.Designer.cs">
       <DependentUpon>Events.cs</DependentUpon>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\Finances.cs">
+    <Compile Include="MPMM\MPMM Forms\Finances\Finances.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\Finances.Designer.cs">
+    <Compile Include="MPMM\MPMM Forms\Finances\Finances.Designer.cs">
       <DependentUpon>Finances.cs</DependentUpon>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\frmProjectManagement.cs">
+    <Compile Include="MPMM\MPMM Forms\Project Management\frmProjectManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\frmProjectManagement.Designer.cs">
+    <Compile Include="MPMM\MPMM Forms\Project Management\frmProjectManagement.Designer.cs">
       <DependentUpon>frmProjectManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\GeneralManagement.cs">
+    <Compile Include="MPMM\MPMM Forms\General Management\GeneralManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\GeneralManagement.Designer.cs">
+    <Compile Include="MPMM\MPMM Forms\General Management\GeneralManagement.Designer.cs">
       <DependentUpon>GeneralManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\Governance.cs">
+    <Compile Include="MPMM\MPMM Forms\Governance\Governance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\Governance.Designer.cs">
+    <Compile Include="MPMM\MPMM Forms\Governance\Governance.Designer.cs">
       <DependentUpon>Governance.cs</DependentUpon>
     </Compile>
     <Compile Include="Utility\Hashing.cs" />
-    <Compile Include="MPMM\MPMM Forms\Human_Resources.cs">
+    <Compile Include="MPMM\MPMM Forms\Human Resources\Human_Resources.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\Human_Resources.Designer.cs">
+    <Compile Include="MPMM\MPMM Forms\Human Resources\Human_Resources.Designer.cs">
       <DependentUpon>Human_Resources.cs</DependentUpon>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\InventoryAndSales.cs">
+    <Compile Include="MPMM\MPMM Forms\Inventory and Sales\InventoryAndSales.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\InventoryAndSales.Designer.cs">
+    <Compile Include="MPMM\MPMM Forms\Inventory and Sales\InventoryAndSales.Designer.cs">
       <DependentUpon>InventoryAndSales.cs</DependentUpon>
     </Compile>
     <Compile Include="ISI_DB.Designer.cs">
@@ -398,10 +398,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ISI_DB.xsd</DependentUpon>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\IT Management.cs">
+    <Compile Include="MPMM\MPMM Forms\IT Management\IT Management.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\IT Management.Designer.cs">
+    <Compile Include="MPMM\MPMM Forms\IT Management\IT Management.Designer.cs">
       <DependentUpon>IT Management.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
@@ -416,28 +416,28 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\Marketing.cs">
+    <Compile Include="MPMM\MPMM Forms\Marketing\Marketing.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\Marketing.designer.cs">
+    <Compile Include="MPMM\MPMM Forms\Marketing\Marketing.designer.cs">
       <DependentUpon>Marketing.cs</DependentUpon>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\PLSM_ProcessGroupingGovernance_Interfaces.cs">
+    <Compile Include="MPMM\MPMM Forms\Processes\PLSM_ProcessGroupingGovernance_Interfaces.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\PLSM_ProcessGroupingGovernance_Interfaces.Designer.cs">
+    <Compile Include="MPMM\MPMM Forms\Processes\PLSM_ProcessGroupingGovernance_Interfaces.Designer.cs">
       <DependentUpon>PLSM_ProcessGroupingGovernance_Interfaces.cs</DependentUpon>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\Policies_and_Procedures.cs">
+    <Compile Include="MPMM\MPMM Forms\Policies and Procedures\Policies_and_Procedures.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\Policies_and_Procedures.Designer.cs">
+    <Compile Include="MPMM\MPMM Forms\Policies and Procedures\Policies_and_Procedures.Designer.cs">
       <DependentUpon>Policies_and_Procedures.cs</DependentUpon>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\Processes.cs">
+    <Compile Include="MPMM\MPMM Forms\Processes\Processes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MPMM\MPMM Forms\Processes.Designer.cs">
+    <Compile Include="MPMM\MPMM Forms\Processes\Processes.Designer.cs">
       <DependentUpon>Processes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -512,34 +512,34 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\TimesheetFormDocumentForm.resx">
       <DependentUpon>TimesheetFormDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MPMM\MPMM Forms\Academic_and_Training.resx">
+    <EmbeddedResource Include="MPMM\MPMM Forms\Academic and Training\Academic_and_Training.resx">
       <DependentUpon>Academic_and_Training.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MPMM\MPMM Forms\Asset and Inventory.resx">
+    <EmbeddedResource Include="MPMM\MPMM Forms\Assets and Inventory\Asset and Inventory.resx">
       <DependentUpon>Asset and Inventory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MPMM\MPMM Forms\Contacts.resx">
+    <EmbeddedResource Include="MPMM\MPMM Forms\Contacts\Contacts.resx">
       <DependentUpon>Contacts.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MPMM\MPMM Forms\Finances.resx">
+    <EmbeddedResource Include="MPMM\MPMM Forms\Finances\Finances.resx">
       <DependentUpon>Finances.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MPMM\MPMM Forms\frmProjectManagement.resx">
+    <EmbeddedResource Include="MPMM\MPMM Forms\Project Management\frmProjectManagement.resx">
       <DependentUpon>frmProjectManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MPMM\MPMM Forms\GeneralManagement.resx">
+    <EmbeddedResource Include="MPMM\MPMM Forms\General Management\GeneralManagement.resx">
       <DependentUpon>GeneralManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MPMM\MPMM Forms\Governance.resx">
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Governance.resx">
       <DependentUpon>Governance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MPMM\MPMM Forms\Human_Resources.resx">
+    <EmbeddedResource Include="MPMM\MPMM Forms\Human Resources\Human_Resources.resx">
       <DependentUpon>Human_Resources.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MPMM\MPMM Forms\InventoryAndSales.resx">
+    <EmbeddedResource Include="MPMM\MPMM Forms\Inventory and Sales\InventoryAndSales.resx">
       <DependentUpon>InventoryAndSales.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MPMM\MPMM Forms\IT Management.resx">
+    <EmbeddedResource Include="MPMM\MPMM Forms\IT Management\IT Management.resx">
       <DependentUpon>IT Management.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
@@ -548,16 +548,16 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MPMM\MPMM Forms\Marketing.resx">
+    <EmbeddedResource Include="MPMM\MPMM Forms\Marketing\Marketing.resx">
       <DependentUpon>Marketing.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MPMM\MPMM Forms\PLSM_ProcessGroupingGovernance_Interfaces.resx">
+    <EmbeddedResource Include="MPMM\MPMM Forms\Processes\PLSM_ProcessGroupingGovernance_Interfaces.resx">
       <DependentUpon>PLSM_ProcessGroupingGovernance_Interfaces.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MPMM\MPMM Forms\Policies_and_Procedures.resx">
+    <EmbeddedResource Include="MPMM\MPMM Forms\Policies and Procedures\Policies_and_Procedures.resx">
       <DependentUpon>Policies_and_Procedures.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MPMM\MPMM Forms\Processes.resx">
+    <EmbeddedResource Include="MPMM\MPMM Forms\Processes\Processes.resx">
       <DependentUpon>Processes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProjectSetup.resx">
