@@ -69,6 +69,7 @@
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.label27 = new System.Windows.Forms.Label();
             this.txtProjectName = new System.Windows.Forms.TextBox();
+            this.btnSaveProjectName = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentApprovals)).BeginInit();
@@ -89,10 +90,10 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage9);
-            this.tabControl1.Location = new System.Drawing.Point(13, 41);
+            this.tabControl1.Location = new System.Drawing.Point(13, 38);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(776, 400);
+            this.tabControl1.Size = new System.Drawing.Size(776, 369);
             this.tabControl1.TabIndex = 8;
             // 
             // tabPage1
@@ -104,10 +105,10 @@
             this.tabPage1.Controls.Add(this.dataGridViewDocumentApprovals);
             this.tabPage1.Controls.Add(this.dataGridViewDocumentHistory);
             this.tabPage1.Controls.Add(this.dataGridViewDocumentInformation);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 21);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(768, 374);
+            this.tabPage1.Size = new System.Drawing.Size(768, 344);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Document Control";
             // 
@@ -116,7 +117,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 11F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(7, 304);
+            this.label3.Location = new System.Drawing.Point(7, 281);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(140, 17);
             this.label3.TabIndex = 5;
@@ -127,7 +128,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 11F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(7, 177);
+            this.label2.Location = new System.Drawing.Point(7, 163);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(123, 17);
             this.label2.TabIndex = 4;
@@ -138,7 +139,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 11F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(7, 45);
+            this.label1.Location = new System.Drawing.Point(7, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(152, 17);
             this.label1.TabIndex = 3;
@@ -147,17 +148,17 @@
             // dataGridViewDocumentApprovals
             // 
             this.dataGridViewDocumentApprovals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDocumentApprovals.Location = new System.Drawing.Point(168, 244);
+            this.dataGridViewDocumentApprovals.Location = new System.Drawing.Point(168, 225);
             this.dataGridViewDocumentApprovals.Name = "dataGridViewDocumentApprovals";
-            this.dataGridViewDocumentApprovals.Size = new System.Drawing.Size(594, 124);
+            this.dataGridViewDocumentApprovals.Size = new System.Drawing.Size(594, 114);
             this.dataGridViewDocumentApprovals.TabIndex = 2;
             // 
             // dataGridViewDocumentHistory
             // 
             this.dataGridViewDocumentHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDocumentHistory.Location = new System.Drawing.Point(168, 120);
+            this.dataGridViewDocumentHistory.Location = new System.Drawing.Point(168, 111);
             this.dataGridViewDocumentHistory.Name = "dataGridViewDocumentHistory";
-            this.dataGridViewDocumentHistory.Size = new System.Drawing.Size(594, 118);
+            this.dataGridViewDocumentHistory.Size = new System.Drawing.Size(594, 109);
             this.dataGridViewDocumentHistory.TabIndex = 1;
             // 
             // dataGridViewDocumentInformation
@@ -165,7 +166,7 @@
             this.dataGridViewDocumentInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDocumentInformation.Location = new System.Drawing.Point(168, 6);
             this.dataGridViewDocumentInformation.Name = "dataGridViewDocumentInformation";
-            this.dataGridViewDocumentInformation.Size = new System.Drawing.Size(594, 108);
+            this.dataGridViewDocumentInformation.Size = new System.Drawing.Size(594, 100);
             this.dataGridViewDocumentInformation.TabIndex = 0;
             // 
             // tabPage2
@@ -173,10 +174,10 @@
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tabPage2.Controls.Add(this.label28);
             this.tabPage2.Controls.Add(this.dataGridViewQualityTargets);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 21);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(768, 374);
+            this.tabPage2.Size = new System.Drawing.Size(768, 344);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Quality Targets";
             // 
@@ -194,9 +195,9 @@
             // dataGridViewQualityTargets
             // 
             this.dataGridViewQualityTargets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewQualityTargets.Location = new System.Drawing.Point(7, 25);
+            this.dataGridViewQualityTargets.Location = new System.Drawing.Point(7, 23);
             this.dataGridViewQualityTargets.Name = "dataGridViewQualityTargets";
-            this.dataGridViewQualityTargets.Size = new System.Drawing.Size(755, 343);
+            this.dataGridViewQualityTargets.Size = new System.Drawing.Size(755, 317);
             this.dataGridViewQualityTargets.TabIndex = 0;
             // 
             // tabPage3
@@ -215,10 +216,10 @@
             this.tabPage3.Controls.Add(this.dataGridViewQAP);
             this.tabPage3.Controls.Add(this.label5);
             this.tabPage3.Controls.Add(this.label4);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Location = new System.Drawing.Point(4, 21);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(768, 374);
+            this.tabPage3.Size = new System.Drawing.Size(768, 344);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Quality Plans";
             // 
@@ -227,7 +228,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cambria", 9F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(241, 309);
+            this.label6.Location = new System.Drawing.Point(241, 285);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(244, 14);
             this.label6.TabIndex = 25;
@@ -239,7 +240,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cambria", 9F);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(241, 282);
+            this.label7.Location = new System.Drawing.Point(241, 260);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(184, 14);
             this.label7.TabIndex = 24;
@@ -251,7 +252,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Cambria", 9F);
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(241, 253);
+            this.label10.Location = new System.Drawing.Point(241, 234);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(288, 14);
             this.label10.TabIndex = 23;
@@ -265,30 +266,32 @@
             this.listBoxConstraints.ForeColor = System.Drawing.Color.White;
             this.listBoxConstraints.FormattingEnabled = true;
             this.listBoxConstraints.ItemHeight = 12;
-            this.listBoxConstraints.Location = new System.Drawing.Point(538, 268);
+            this.listBoxConstraints.Location = new System.Drawing.Point(538, 247);
             this.listBoxConstraints.Name = "listBoxConstraints";
-            this.listBoxConstraints.Size = new System.Drawing.Size(221, 100);
+            this.listBoxConstraints.Size = new System.Drawing.Size(221, 88);
             this.listBoxConstraints.TabIndex = 22;
             // 
             // btnAddConstraints
             // 
             this.btnAddConstraints.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddConstraints.Location = new System.Drawing.Point(644, 241);
+            this.btnAddConstraints.Location = new System.Drawing.Point(644, 222);
             this.btnAddConstraints.Name = "btnAddConstraints";
-            this.btnAddConstraints.Size = new System.Drawing.Size(115, 23);
+            this.btnAddConstraints.Size = new System.Drawing.Size(115, 21);
             this.btnAddConstraints.TabIndex = 21;
             this.btnAddConstraints.Text = "Add Constraints";
             this.btnAddConstraints.UseVisualStyleBackColor = true;
+            this.btnAddConstraints.Click += new System.EventHandler(this.btnAddConstraints_Click);
             // 
             // btnAddAssumptions
             // 
             this.btnAddAssumptions.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddAssumptions.Location = new System.Drawing.Point(113, 243);
+            this.btnAddAssumptions.Location = new System.Drawing.Point(113, 224);
             this.btnAddAssumptions.Name = "btnAddAssumptions";
-            this.btnAddAssumptions.Size = new System.Drawing.Size(115, 23);
+            this.btnAddAssumptions.Size = new System.Drawing.Size(115, 21);
             this.btnAddAssumptions.TabIndex = 20;
             this.btnAddAssumptions.Text = "Add Assumptions";
             this.btnAddAssumptions.UseVisualStyleBackColor = true;
+            this.btnAddAssumptions.Click += new System.EventHandler(this.btnAddAssumptions_Click);
             // 
             // listBoxAssumptions
             // 
@@ -297,9 +300,9 @@
             this.listBoxAssumptions.ForeColor = System.Drawing.Color.White;
             this.listBoxAssumptions.FormattingEnabled = true;
             this.listBoxAssumptions.ItemHeight = 12;
-            this.listBoxAssumptions.Location = new System.Drawing.Point(7, 268);
+            this.listBoxAssumptions.Location = new System.Drawing.Point(7, 247);
             this.listBoxAssumptions.Name = "listBoxAssumptions";
-            this.listBoxAssumptions.Size = new System.Drawing.Size(221, 100);
+            this.listBoxAssumptions.Size = new System.Drawing.Size(221, 88);
             this.listBoxAssumptions.TabIndex = 19;
             // 
             // txtConstraints
@@ -307,7 +310,7 @@
             this.txtConstraints.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.txtConstraints.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConstraints.ForeColor = System.Drawing.Color.White;
-            this.txtConstraints.Location = new System.Drawing.Point(538, 244);
+            this.txtConstraints.Location = new System.Drawing.Point(538, 225);
             this.txtConstraints.Name = "txtConstraints";
             this.txtConstraints.Size = new System.Drawing.Size(100, 20);
             this.txtConstraints.TabIndex = 18;
@@ -318,7 +321,7 @@
             this.txtAssumptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.txtAssumptions.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAssumptions.ForeColor = System.Drawing.Color.White;
-            this.txtAssumptions.Location = new System.Drawing.Point(7, 244);
+            this.txtAssumptions.Location = new System.Drawing.Point(7, 225);
             this.txtAssumptions.Name = "txtAssumptions";
             this.txtAssumptions.Size = new System.Drawing.Size(100, 20);
             this.txtAssumptions.TabIndex = 17;
@@ -327,17 +330,17 @@
             // dataGridViewQCP
             // 
             this.dataGridViewQCP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewQCP.Location = new System.Drawing.Point(3, 139);
+            this.dataGridViewQCP.Location = new System.Drawing.Point(3, 128);
             this.dataGridViewQCP.Name = "dataGridViewQCP";
-            this.dataGridViewQCP.Size = new System.Drawing.Size(756, 91);
+            this.dataGridViewQCP.Size = new System.Drawing.Size(756, 84);
             this.dataGridViewQCP.TabIndex = 5;
             // 
             // dataGridViewQAP
             // 
             this.dataGridViewQAP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewQAP.Location = new System.Drawing.Point(6, 25);
+            this.dataGridViewQAP.Location = new System.Drawing.Point(6, 23);
             this.dataGridViewQAP.Name = "dataGridViewQAP";
-            this.dataGridViewQAP.Size = new System.Drawing.Size(756, 89);
+            this.dataGridViewQAP.Size = new System.Drawing.Size(756, 82);
             this.dataGridViewQAP.TabIndex = 4;
             // 
             // label5
@@ -345,7 +348,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 12F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(314, 117);
+            this.label5.Location = new System.Drawing.Point(314, 108);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(154, 19);
             this.label5.TabIndex = 3;
@@ -377,10 +380,10 @@
             this.tabPage7.Controls.Add(this.listBoxQualityRoles);
             this.tabPage7.Controls.Add(this.btnQualityActivities);
             this.tabPage7.Controls.Add(this.listBoxQualityActivities);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Location = new System.Drawing.Point(4, 21);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(768, 374);
+            this.tabPage7.Size = new System.Drawing.Size(768, 344);
             this.tabPage7.TabIndex = 3;
             this.tabPage7.Text = "Quality Process";
             // 
@@ -389,7 +392,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Cambria", 12F);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(212, 241);
+            this.label8.Location = new System.Drawing.Point(212, 222);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(323, 19);
             this.label8.TabIndex = 33;
@@ -401,7 +404,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Cambria", 12F);
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(212, 214);
+            this.label9.Location = new System.Drawing.Point(212, 198);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(244, 19);
             this.label9.TabIndex = 32;
@@ -413,7 +416,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Cambria", 12F);
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(212, 185);
+            this.label11.Location = new System.Drawing.Point(212, 171);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(384, 19);
             this.label11.TabIndex = 31;
@@ -423,12 +426,13 @@
             // btnQualityDocuments
             // 
             this.btnQualityDocuments.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQualityDocuments.Location = new System.Drawing.Point(647, 7);
+            this.btnQualityDocuments.Location = new System.Drawing.Point(647, 6);
             this.btnQualityDocuments.Name = "btnQualityDocuments";
-            this.btnQualityDocuments.Size = new System.Drawing.Size(115, 23);
+            this.btnQualityDocuments.Size = new System.Drawing.Size(115, 21);
             this.btnQualityDocuments.TabIndex = 30;
             this.btnQualityDocuments.Text = "Add Documents";
             this.btnQualityDocuments.UseVisualStyleBackColor = true;
+            this.btnQualityDocuments.Click += new System.EventHandler(this.btnQualityDocuments_Click);
             // 
             // listBoxQualityDocuments
             // 
@@ -437,9 +441,9 @@
             this.listBoxQualityDocuments.ForeColor = System.Drawing.Color.White;
             this.listBoxQualityDocuments.FormattingEnabled = true;
             this.listBoxQualityDocuments.ItemHeight = 12;
-            this.listBoxQualityDocuments.Location = new System.Drawing.Point(541, 32);
+            this.listBoxQualityDocuments.Location = new System.Drawing.Point(541, 30);
             this.listBoxQualityDocuments.Name = "listBoxQualityDocuments";
-            this.listBoxQualityDocuments.Size = new System.Drawing.Size(221, 100);
+            this.listBoxQualityDocuments.Size = new System.Drawing.Size(221, 88);
             this.listBoxQualityDocuments.TabIndex = 29;
             // 
             // txtQualityDocuments
@@ -447,7 +451,7 @@
             this.txtQualityDocuments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.txtQualityDocuments.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQualityDocuments.ForeColor = System.Drawing.Color.White;
-            this.txtQualityDocuments.Location = new System.Drawing.Point(541, 8);
+            this.txtQualityDocuments.Location = new System.Drawing.Point(541, 7);
             this.txtQualityDocuments.Name = "txtQualityDocuments";
             this.txtQualityDocuments.Size = new System.Drawing.Size(100, 20);
             this.txtQualityDocuments.TabIndex = 28;
@@ -458,7 +462,7 @@
             this.txtQualityRoles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.txtQualityRoles.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQualityRoles.ForeColor = System.Drawing.Color.White;
-            this.txtQualityRoles.Location = new System.Drawing.Point(268, 8);
+            this.txtQualityRoles.Location = new System.Drawing.Point(268, 7);
             this.txtQualityRoles.Name = "txtQualityRoles";
             this.txtQualityRoles.Size = new System.Drawing.Size(100, 20);
             this.txtQualityRoles.TabIndex = 25;
@@ -469,7 +473,7 @@
             this.txtQualityActivities.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.txtQualityActivities.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQualityActivities.ForeColor = System.Drawing.Color.White;
-            this.txtQualityActivities.Location = new System.Drawing.Point(6, 8);
+            this.txtQualityActivities.Location = new System.Drawing.Point(6, 7);
             this.txtQualityActivities.Name = "txtQualityActivities";
             this.txtQualityActivities.Size = new System.Drawing.Size(100, 20);
             this.txtQualityActivities.TabIndex = 22;
@@ -478,12 +482,13 @@
             // btnQualityRoles
             // 
             this.btnQualityRoles.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQualityRoles.Location = new System.Drawing.Point(374, 7);
+            this.btnQualityRoles.Location = new System.Drawing.Point(374, 6);
             this.btnQualityRoles.Name = "btnQualityRoles";
-            this.btnQualityRoles.Size = new System.Drawing.Size(115, 23);
+            this.btnQualityRoles.Size = new System.Drawing.Size(115, 21);
             this.btnQualityRoles.TabIndex = 27;
             this.btnQualityRoles.Text = "Add Roles";
             this.btnQualityRoles.UseVisualStyleBackColor = true;
+            this.btnQualityRoles.Click += new System.EventHandler(this.btnQualityRoles_Click);
             // 
             // listBoxQualityRoles
             // 
@@ -492,20 +497,21 @@
             this.listBoxQualityRoles.ForeColor = System.Drawing.Color.White;
             this.listBoxQualityRoles.FormattingEnabled = true;
             this.listBoxQualityRoles.ItemHeight = 12;
-            this.listBoxQualityRoles.Location = new System.Drawing.Point(268, 32);
+            this.listBoxQualityRoles.Location = new System.Drawing.Point(268, 30);
             this.listBoxQualityRoles.Name = "listBoxQualityRoles";
-            this.listBoxQualityRoles.Size = new System.Drawing.Size(221, 100);
+            this.listBoxQualityRoles.Size = new System.Drawing.Size(221, 88);
             this.listBoxQualityRoles.TabIndex = 26;
             // 
             // btnQualityActivities
             // 
             this.btnQualityActivities.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQualityActivities.Location = new System.Drawing.Point(112, 7);
+            this.btnQualityActivities.Location = new System.Drawing.Point(112, 6);
             this.btnQualityActivities.Name = "btnQualityActivities";
-            this.btnQualityActivities.Size = new System.Drawing.Size(115, 23);
+            this.btnQualityActivities.Size = new System.Drawing.Size(115, 21);
             this.btnQualityActivities.TabIndex = 24;
             this.btnQualityActivities.Text = "Add Activities";
             this.btnQualityActivities.UseVisualStyleBackColor = true;
+            this.btnQualityActivities.Click += new System.EventHandler(this.btnQualityActivities_Click);
             // 
             // listBoxQualityActivities
             // 
@@ -514,18 +520,18 @@
             this.listBoxQualityActivities.ForeColor = System.Drawing.Color.White;
             this.listBoxQualityActivities.FormattingEnabled = true;
             this.listBoxQualityActivities.ItemHeight = 12;
-            this.listBoxQualityActivities.Location = new System.Drawing.Point(6, 32);
+            this.listBoxQualityActivities.Location = new System.Drawing.Point(6, 30);
             this.listBoxQualityActivities.Name = "listBoxQualityActivities";
-            this.listBoxQualityActivities.Size = new System.Drawing.Size(221, 100);
+            this.listBoxQualityActivities.Size = new System.Drawing.Size(221, 88);
             this.listBoxQualityActivities.TabIndex = 23;
             // 
             // tabPage9
             // 
             this.tabPage9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Location = new System.Drawing.Point(4, 21);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(768, 374);
+            this.tabPage9.Size = new System.Drawing.Size(768, 344);
             this.tabPage9.TabIndex = 5;
             this.tabPage9.Text = "Appendix";
             // 
@@ -534,7 +540,7 @@
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(11, 12);
+            this.label27.Location = new System.Drawing.Point(11, 11);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(153, 12);
             this.label27.TabIndex = 9;
@@ -545,21 +551,35 @@
             this.txtProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.txtProjectName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProjectName.ForeColor = System.Drawing.Color.White;
-            this.txtProjectName.Location = new System.Drawing.Point(170, 9);
+            this.txtProjectName.Location = new System.Drawing.Point(170, 8);
             this.txtProjectName.Name = "txtProjectName";
             this.txtProjectName.Size = new System.Drawing.Size(100, 20);
             this.txtProjectName.TabIndex = 7;
             this.txtProjectName.Text = "Project Name";
             // 
+            // btnSaveProjectName
+            // 
+            this.btnSaveProjectName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveProjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSaveProjectName.Location = new System.Drawing.Point(276, 8);
+            this.btnSaveProjectName.Name = "btnSaveProjectName";
+            this.btnSaveProjectName.Size = new System.Drawing.Size(112, 21);
+            this.btnSaveProjectName.TabIndex = 10;
+            this.btnSaveProjectName.Text = "Save Project Name";
+            this.btnSaveProjectName.UseVisualStyleBackColor = true;
+            this.btnSaveProjectName.Click += new System.EventHandler(this.btnSaveProjectName_Click);
+            // 
             // QualityPlanDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 415);
+            this.Controls.Add(this.btnSaveProjectName);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.txtProjectName);
+            this.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "QualityPlanDocumentForm";
             this.Text = "QualityPlanDocumentForm";
             this.tabControl1.ResumeLayout(false);
@@ -625,5 +645,6 @@
         private System.Windows.Forms.TabPage tabPage9;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox txtProjectName;
+        private System.Windows.Forms.Button btnSaveProjectName;
     }
 }

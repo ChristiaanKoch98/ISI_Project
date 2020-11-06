@@ -41,5 +41,53 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
 
         }
+
+        private void btnAddAssumptions_Click(object sender, EventArgs e)
+        {
+            string addAssumptions = txtAssumptions.Text;
+            listBoxAssumptions.Items.Add(addAssumptions);
+        }
+
+        private void btnAddConstraints_Click(object sender, EventArgs e)
+        {
+            string addConstraints = txtConstraints.Text;
+            listBoxConstraints.Items.Add(addConstraints);
+        }
+
+        private void btnTenderActivities_Click(object sender, EventArgs e)
+        {
+            string tenderActivities = txtTenderActivities.Text;
+            listBoxTenderActivities.Items.Add(tenderActivities);
+        }
+
+        private void btnTenderRoles_Click(object sender, EventArgs e)
+        {
+            string tenderRoles = txtTenderRoles.Text;
+            listBoxTenderRoles.Items.Add(tenderRoles);
+        }
+
+        private void btnTenderDocuments_Click(object sender, EventArgs e)
+        {
+            string tenderDocuments = txtTenderDocuments.Text;
+            listBoxTenderDocuments.Items.Add(tenderDocuments);
+        }
+
+        private void btnProcessActivities_Click(object sender, EventArgs e)
+        {
+            string processActivities = txtProcessActivities.Text;
+            listBoxProcessActivities.Items.Add(processActivities);
+        }
+
+        private void btnProcessRoles_Click(object sender, EventArgs e)
+        {
+            string processRoles = txtProcessRoles.Text;
+            listBoxProcessRoles.Items.Add(processRoles);
+        }
+
+        private void btnProcessDocuments_Click(object sender, EventArgs e)
+        {
+            string processDocuments = txtProcessDocuments.Text;
+            listBoxProcessDocuments.Items.Add(processDocuments);
+        }
     }
 }

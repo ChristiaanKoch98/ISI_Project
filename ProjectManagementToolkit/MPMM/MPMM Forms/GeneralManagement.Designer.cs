@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnGovernance = new System.Windows.Forms.Button();
-            this.btnGeneralManagement = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnOpeninNewTab = new System.Windows.Forms.Button();
@@ -103,7 +102,7 @@
             this.tabPage24 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.btnSaveOrganizationInfo = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -121,32 +120,11 @@
             this.tabControl4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnGovernance
-            // 
-            this.btnGovernance.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnGovernance.Font = new System.Drawing.Font("Cambria", 8.25F);
-            this.btnGovernance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnGovernance.Location = new System.Drawing.Point(12, 12);
-            this.btnGovernance.Name = "btnGovernance";
-            this.btnGovernance.Size = new System.Drawing.Size(87, 42);
-            this.btnGovernance.TabIndex = 0;
-            this.btnGovernance.Text = "Governance";
-            this.btnGovernance.UseVisualStyleBackColor = false;
-            // 
-            // btnGeneralManagement
-            // 
-            this.btnGeneralManagement.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnGeneralManagement.Font = new System.Drawing.Font("Cambria", 8.25F);
-            this.btnGeneralManagement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnGeneralManagement.Location = new System.Drawing.Point(105, 12);
-            this.btnGeneralManagement.Name = "btnGeneralManagement";
-            this.btnGeneralManagement.Size = new System.Drawing.Size(87, 42);
-            this.btnGeneralManagement.TabIndex = 1;
-            this.btnGeneralManagement.Text = "General Management";
-            this.btnGeneralManagement.UseVisualStyleBackColor = false;
-            // 
             // tabControl1
             // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
@@ -156,10 +134,10 @@
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(12, 89);
+            this.tabControl1.Location = new System.Drawing.Point(12, 24);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(776, 349);
+            this.tabControl1.Size = new System.Drawing.Size(776, 414);
             this.tabControl1.TabIndex = 2;
             // 
             // tabPage1
@@ -173,9 +151,20 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 21);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(768, 324);
+            this.tabPage1.Size = new System.Drawing.Size(768, 389);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Report Centre";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(581, 58);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(66, 12);
+            this.linkLabel1.TabIndex = 3;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Report Name";
             // 
             // label2
             // 
@@ -188,9 +177,12 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Location = new System.Drawing.Point(7, 36);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(473, 281);
+            this.pictureBox1.Size = new System.Drawing.Size(568, 347);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -205,6 +197,7 @@
             this.btnOpeninNewTab.TabIndex = 0;
             this.btnOpeninNewTab.Text = "Open in New Tab";
             this.btnOpeninNewTab.UseVisualStyleBackColor = false;
+            this.btnOpeninNewTab.Click += new System.EventHandler(this.btnOpeninNewTab_Click);
             // 
             // tabPage2
             // 
@@ -225,7 +218,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 21);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(768, 324);
+            this.tabPage2.Size = new System.Drawing.Size(768, 389);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Calender";
             // 
@@ -233,7 +226,7 @@
             // 
             this.btnNextMonth.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnNextMonth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnNextMonth.Location = new System.Drawing.Point(597, 294);
+            this.btnNextMonth.Location = new System.Drawing.Point(598, 353);
             this.btnNextMonth.Name = "btnNextMonth";
             this.btnNextMonth.Size = new System.Drawing.Size(75, 23);
             this.btnNextMonth.TabIndex = 12;
@@ -244,7 +237,7 @@
             // 
             this.btnPreviousMonth.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnPreviousMonth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnPreviousMonth.Location = new System.Drawing.Point(516, 294);
+            this.btnPreviousMonth.Location = new System.Drawing.Point(517, 353);
             this.btnPreviousMonth.Name = "btnPreviousMonth";
             this.btnPreviousMonth.Size = new System.Drawing.Size(75, 23);
             this.btnPreviousMonth.TabIndex = 11;
@@ -255,7 +248,7 @@
             // 
             this.btnToday.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnToday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnToday.Location = new System.Drawing.Point(435, 294);
+            this.btnToday.Location = new System.Drawing.Point(436, 353);
             this.btnToday.Name = "btnToday";
             this.btnToday.Size = new System.Drawing.Size(75, 23);
             this.btnToday.TabIndex = 10;
@@ -266,7 +259,7 @@
             // 
             this.btnPrintCalendar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnPrintCalendar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnPrintCalendar.Location = new System.Drawing.Point(346, 294);
+            this.btnPrintCalendar.Location = new System.Drawing.Point(347, 353);
             this.btnPrintCalendar.Name = "btnPrintCalendar";
             this.btnPrintCalendar.Size = new System.Drawing.Size(83, 23);
             this.btnPrintCalendar.TabIndex = 9;
@@ -277,7 +270,7 @@
             // 
             this.btnExportToOutlook.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnExportToOutlook.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnExportToOutlook.Location = new System.Drawing.Point(242, 294);
+            this.btnExportToOutlook.Location = new System.Drawing.Point(243, 353);
             this.btnExportToOutlook.Name = "btnExportToOutlook";
             this.btnExportToOutlook.Size = new System.Drawing.Size(98, 23);
             this.btnExportToOutlook.TabIndex = 8;
@@ -288,7 +281,7 @@
             // 
             this.btnImportFromOutlook.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnImportFromOutlook.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnImportFromOutlook.Location = new System.Drawing.Point(115, 294);
+            this.btnImportFromOutlook.Location = new System.Drawing.Point(116, 353);
             this.btnImportFromOutlook.Name = "btnImportFromOutlook";
             this.btnImportFromOutlook.Size = new System.Drawing.Size(121, 23);
             this.btnImportFromOutlook.TabIndex = 7;
@@ -299,7 +292,7 @@
             // 
             this.btnFindAppointment.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnFindAppointment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnFindAppointment.Location = new System.Drawing.Point(6, 294);
+            this.btnFindAppointment.Location = new System.Drawing.Point(7, 353);
             this.btnFindAppointment.Name = "btnFindAppointment";
             this.btnFindAppointment.Size = new System.Drawing.Size(103, 23);
             this.btnFindAppointment.TabIndex = 6;
@@ -319,7 +312,7 @@
             // 
             this.btnCalendarDaily.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnCalendarDaily.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnCalendarDaily.Location = new System.Drawing.Point(687, 7);
+            this.btnCalendarDaily.Location = new System.Drawing.Point(687, 3);
             this.btnCalendarDaily.Name = "btnCalendarDaily";
             this.btnCalendarDaily.Size = new System.Drawing.Size(75, 23);
             this.btnCalendarDaily.TabIndex = 4;
@@ -330,7 +323,7 @@
             // 
             this.btnCalendarWeekly.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnCalendarWeekly.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnCalendarWeekly.Location = new System.Drawing.Point(606, 7);
+            this.btnCalendarWeekly.Location = new System.Drawing.Point(606, 3);
             this.btnCalendarWeekly.Name = "btnCalendarWeekly";
             this.btnCalendarWeekly.Size = new System.Drawing.Size(75, 23);
             this.btnCalendarWeekly.TabIndex = 3;
@@ -341,7 +334,7 @@
             // 
             this.btnCalendarMonthly.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnCalendarMonthly.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnCalendarMonthly.Location = new System.Drawing.Point(525, 6);
+            this.btnCalendarMonthly.Location = new System.Drawing.Point(525, 3);
             this.btnCalendarMonthly.Name = "btnCalendarMonthly";
             this.btnCalendarMonthly.Size = new System.Drawing.Size(75, 23);
             this.btnCalendarMonthly.TabIndex = 2;
@@ -351,6 +344,7 @@
             // monthCalendar1
             // 
             this.monthCalendar1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(3, 2);
             this.monthCalendar1.Location = new System.Drawing.Point(9, 29);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 1;
@@ -362,7 +356,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 21);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(768, 324);
+            this.tabPage3.Size = new System.Drawing.Size(768, 389);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Buss LSM View";
             // 
@@ -383,7 +377,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 21);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(768, 324);
+            this.tabPage4.Size = new System.Drawing.Size(768, 389);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Business Planning";
             // 
@@ -487,7 +481,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 21);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(768, 324);
+            this.tabPage5.Size = new System.Drawing.Size(768, 389);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Decision Support";
             // 
@@ -578,6 +572,7 @@
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage6.Controls.Add(this.btnSaveOrganizationInfo);
             this.tabPage6.Controls.Add(this.label16);
             this.tabPage6.Controls.Add(this.label17);
             this.tabPage6.Controls.Add(this.label18);
@@ -605,7 +600,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 21);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(768, 324);
+            this.tabPage6.Size = new System.Drawing.Size(768, 389);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Company Information";
             // 
@@ -835,7 +830,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 21);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(768, 324);
+            this.tabPage7.Size = new System.Drawing.Size(768, 389);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "End of Procedures";
             // 
@@ -907,7 +902,7 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 21);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(768, 324);
+            this.tabPage8.Size = new System.Drawing.Size(768, 389);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Policies and Procedures";
             // 
@@ -916,22 +911,21 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(13, 73);
+            this.label1.Location = new System.Drawing.Point(10, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 12);
             this.label1.TabIndex = 3;
             this.label1.Text = "Navigation Form:";
             // 
-            // linkLabel1
+            // btnSaveOrganizationInfo
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(581, 58);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(66, 12);
-            this.linkLabel1.TabIndex = 3;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Report Name";
+            this.btnSaveOrganizationInfo.Location = new System.Drawing.Point(9, 279);
+            this.btnSaveOrganizationInfo.Name = "btnSaveOrganizationInfo";
+            this.btnSaveOrganizationInfo.Size = new System.Drawing.Size(186, 25);
+            this.btnSaveOrganizationInfo.TabIndex = 24;
+            this.btnSaveOrganizationInfo.Text = "Save Organization Information";
+            this.btnSaveOrganizationInfo.UseVisualStyleBackColor = true;
+            this.btnSaveOrganizationInfo.Click += new System.EventHandler(this.btnSaveOrganizationInfo_Click);
             // 
             // GeneralManagement
             // 
@@ -941,8 +935,6 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.btnGeneralManagement);
-            this.Controls.Add(this.btnGovernance);
             this.Name = "GeneralManagement";
             this.Text = "GeneralManagement";
             this.tabControl1.ResumeLayout(false);
@@ -972,9 +964,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnGovernance;
-        private System.Windows.Forms.Button btnGeneralManagement;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label label2;
@@ -1049,5 +1038,6 @@
         private System.Windows.Forms.TabPage tabPage23;
         private System.Windows.Forms.TabPage tabPage24;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Button btnSaveOrganizationInfo;
     }
 }

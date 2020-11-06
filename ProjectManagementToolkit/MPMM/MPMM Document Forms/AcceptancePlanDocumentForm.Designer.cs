@@ -38,12 +38,18 @@
             this.dataGridViewDocumentHistory = new System.Windows.Forms.DataGridView();
             this.dataGridViewDocumentInformation = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.dataGridViewCriteria = new System.Windows.Forms.DataGridView();
+            this.dataGridViewMilestones = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dataGridViewSchedule = new System.Windows.Forms.DataGridView();
             this.txtConstraints = new System.Windows.Forms.TextBox();
             this.btnConstraints = new System.Windows.Forms.Button();
             this.listBoxConstraints = new System.Windows.Forms.ListBox();
             this.txtAssumptions = new System.Windows.Forms.TextBox();
-            this.btnCompanyOverview = new System.Windows.Forms.Button();
+            this.btnAssumptions = new System.Windows.Forms.Button();
             this.listBoxAssumptions = new System.Windows.Forms.ListBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.label8 = new System.Windows.Forms.Label();
@@ -60,23 +66,18 @@
             this.listBoxActivities = new System.Windows.Forms.ListBox();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.txtProjectName = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.dataGridViewCriteria = new System.Windows.Forms.DataGridView();
-            this.dataGridViewMilestones = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dataGridViewSchedule = new System.Windows.Forms.DataGridView();
+            this.btnSaveProjectName = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentApprovals)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentHistory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentInformation)).BeginInit();
             this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCriteria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMilestones)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).BeginInit();
+            this.tabPage7.SuspendLayout();
             this.SuspendLayout();
             // 
             // label27
@@ -208,6 +209,56 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Acceptance Criteria";
             // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(6, 241);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(55, 17);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "Criteria";
+            // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(6, 79);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(75, 17);
+            this.label14.TabIndex = 7;
+            this.label14.Text = "Milestones";
+            // 
+            // dataGridViewCriteria
+            // 
+            this.dataGridViewCriteria.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewCriteria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCriteria.Location = new System.Drawing.Point(87, 172);
+            this.dataGridViewCriteria.Name = "dataGridViewCriteria";
+            this.dataGridViewCriteria.Size = new System.Drawing.Size(675, 166);
+            this.dataGridViewCriteria.TabIndex = 6;
+            // 
+            // dataGridViewMilestones
+            // 
+            this.dataGridViewMilestones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewMilestones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMilestones.Location = new System.Drawing.Point(87, 6);
+            this.dataGridViewMilestones.Name = "dataGridViewMilestones";
+            this.dataGridViewMilestones.Size = new System.Drawing.Size(675, 160);
+            this.dataGridViewMilestones.TabIndex = 5;
+            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -217,7 +268,7 @@
             this.tabPage3.Controls.Add(this.btnConstraints);
             this.tabPage3.Controls.Add(this.listBoxConstraints);
             this.tabPage3.Controls.Add(this.txtAssumptions);
-            this.tabPage3.Controls.Add(this.btnCompanyOverview);
+            this.tabPage3.Controls.Add(this.btnAssumptions);
             this.tabPage3.Controls.Add(this.listBoxAssumptions);
             this.tabPage3.Location = new System.Drawing.Point(4, 21);
             this.tabPage3.Name = "tabPage3";
@@ -225,6 +276,32 @@
             this.tabPage3.Size = new System.Drawing.Size(768, 344);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Acceptance Plan";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(339, 3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 17);
+            this.label4.TabIndex = 41;
+            this.label4.Text = "Schedule";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dataGridViewSchedule
+            // 
+            this.dataGridViewSchedule.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSchedule.Location = new System.Drawing.Point(6, 23);
+            this.dataGridViewSchedule.Name = "dataGridViewSchedule";
+            this.dataGridViewSchedule.Size = new System.Drawing.Size(756, 129);
+            this.dataGridViewSchedule.TabIndex = 40;
             // 
             // txtConstraints
             // 
@@ -255,6 +332,7 @@
             this.btnConstraints.TabIndex = 39;
             this.btnConstraints.Text = "Add Constraints";
             this.btnConstraints.UseVisualStyleBackColor = true;
+            this.btnConstraints.Click += new System.EventHandler(this.btnConstraints_Click);
             // 
             // listBoxConstraints
             // 
@@ -287,19 +365,20 @@
             this.txtAssumptions.Text = "Assumptions";
             this.txtAssumptions.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // btnCompanyOverview
+            // btnAssumptions
             // 
-            this.btnCompanyOverview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnAssumptions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCompanyOverview.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCompanyOverview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnCompanyOverview.Location = new System.Drawing.Point(153, 158);
-            this.btnCompanyOverview.Name = "btnCompanyOverview";
-            this.btnCompanyOverview.Size = new System.Drawing.Size(123, 46);
-            this.btnCompanyOverview.TabIndex = 36;
-            this.btnCompanyOverview.Text = "Add Assumptions";
-            this.btnCompanyOverview.UseVisualStyleBackColor = true;
+            this.btnAssumptions.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAssumptions.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnAssumptions.Location = new System.Drawing.Point(153, 158);
+            this.btnAssumptions.Name = "btnAssumptions";
+            this.btnAssumptions.Size = new System.Drawing.Size(123, 46);
+            this.btnAssumptions.TabIndex = 36;
+            this.btnAssumptions.Text = "Add Assumptions";
+            this.btnAssumptions.UseVisualStyleBackColor = true;
+            this.btnAssumptions.Click += new System.EventHandler(this.btnCompanyOverview_Click);
             // 
             // listBoxAssumptions
             // 
@@ -396,6 +475,7 @@
             this.btnDocuments.TabIndex = 30;
             this.btnDocuments.Text = "Add Documents";
             this.btnDocuments.UseVisualStyleBackColor = true;
+            this.btnDocuments.Click += new System.EventHandler(this.btnDocuments_Click);
             // 
             // listBoxDocuments
             // 
@@ -467,6 +547,7 @@
             this.btnRoles.TabIndex = 27;
             this.btnRoles.Text = "Add Roles";
             this.btnRoles.UseVisualStyleBackColor = true;
+            this.btnRoles.Click += new System.EventHandler(this.btnRoles_Click);
             // 
             // listBoxRoles
             // 
@@ -496,6 +577,7 @@
             this.btnActivities.TabIndex = 24;
             this.btnActivities.Text = "Add Activities";
             this.btnActivities.UseVisualStyleBackColor = true;
+            this.btnActivities.Click += new System.EventHandler(this.btnActivities_Click);
             // 
             // listBoxActivities
             // 
@@ -533,81 +615,16 @@
             this.txtProjectName.TabIndex = 10;
             this.txtProjectName.Text = "Project Name";
             // 
-            // label13
+            // btnSaveProjectName
             // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(6, 241);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(55, 17);
-            this.label13.TabIndex = 8;
-            this.label13.Text = "Criteria";
-            // 
-            // label14
-            // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(6, 79);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(75, 17);
-            this.label14.TabIndex = 7;
-            this.label14.Text = "Milestones";
-            // 
-            // dataGridViewCriteria
-            // 
-            this.dataGridViewCriteria.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewCriteria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCriteria.Location = new System.Drawing.Point(87, 172);
-            this.dataGridViewCriteria.Name = "dataGridViewCriteria";
-            this.dataGridViewCriteria.Size = new System.Drawing.Size(675, 166);
-            this.dataGridViewCriteria.TabIndex = 6;
-            // 
-            // dataGridViewMilestones
-            // 
-            this.dataGridViewMilestones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewMilestones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewMilestones.Location = new System.Drawing.Point(87, 6);
-            this.dataGridViewMilestones.Name = "dataGridViewMilestones";
-            this.dataGridViewMilestones.Size = new System.Drawing.Size(675, 160);
-            this.dataGridViewMilestones.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(339, 3);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 17);
-            this.label4.TabIndex = 41;
-            this.label4.Text = "Schedule";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dataGridViewSchedule
-            // 
-            this.dataGridViewSchedule.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSchedule.Location = new System.Drawing.Point(6, 23);
-            this.dataGridViewSchedule.Name = "dataGridViewSchedule";
-            this.dataGridViewSchedule.Size = new System.Drawing.Size(756, 129);
-            this.dataGridViewSchedule.TabIndex = 40;
+            this.btnSaveProjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSaveProjectName.Location = new System.Drawing.Point(276, 8);
+            this.btnSaveProjectName.Name = "btnSaveProjectName";
+            this.btnSaveProjectName.Size = new System.Drawing.Size(102, 20);
+            this.btnSaveProjectName.TabIndex = 13;
+            this.btnSaveProjectName.Text = "Save Project Name";
+            this.btnSaveProjectName.UseVisualStyleBackColor = true;
+            this.btnSaveProjectName.Click += new System.EventHandler(this.btnSaveProjectName_Click);
             // 
             // AcceptancePlanDocumentForm
             // 
@@ -615,6 +632,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(800, 415);
+            this.Controls.Add(this.btnSaveProjectName);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.txtProjectName);
@@ -631,13 +649,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentInformation)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCriteria)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMilestones)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).EndInit();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -660,7 +678,7 @@
         private System.Windows.Forms.Button btnConstraints;
         private System.Windows.Forms.ListBox listBoxConstraints;
         private System.Windows.Forms.TextBox txtAssumptions;
-        private System.Windows.Forms.Button btnCompanyOverview;
+        private System.Windows.Forms.Button btnAssumptions;
         private System.Windows.Forms.ListBox listBoxAssumptions;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Label label8;
@@ -683,5 +701,6 @@
         private System.Windows.Forms.DataGridView dataGridViewMilestones;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridViewSchedule;
+        private System.Windows.Forms.Button btnSaveProjectName;
     }
 }
