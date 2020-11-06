@@ -12,7 +12,7 @@ namespace ProjectManagementToolkit.Utility
 {
     class JsonHelper
     {
-        static public void saveJson(string json, string projectID, string documentName)
+        static public void saveDocument(string json, string projectID, string documentName)
         {
             string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),"ProjectManagementToolkit", projectID);
             
@@ -33,7 +33,7 @@ namespace ProjectManagementToolkit.Utility
             File.WriteAllText(filename, json);
         }
 
-        static public string loadJson(string projectID, string documentName)
+        static public string loadDocument(string projectID, string documentName)
         {
             string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "ProjectManagementToolkit", projectID);
             string filename = Path.Combine(path, documentName + ".json");
@@ -47,7 +47,31 @@ namespace ProjectManagementToolkit.Utility
             return json;
         }
 
-        static public string mergeJson(string currentJson, string newJson)
+        static public void saveProjectInfo(string json)
+        {
+            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "ProjectManagementToolkit", "Config");
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+
+            string filename = Path.Combine(path, "ProjectInfo.json");
+            File.WriteAllText(filename, json);
+        }
+
+        static public string loadProjectInfo()
+        {
+            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "ProjectManagementToolkit", "Config");
+            string filename = Path.Combine(path, "ProjectInfo.json");
+            string json = "";
+            if (File.Exists(filename))
+            {
+                json = File.ReadAllText(filename);
+            }
+            return json;
+        }
+
+        static public string mergeObjects(string currentJson, string newJson)
         {
             JObject currentObject = JObject.Parse(currentJson);
             JObject newObject = JObject.Parse(newJson);

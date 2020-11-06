@@ -20,7 +20,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         public ProjectPlanDocumentForm()
         {
             InitializeComponent();
-            string json = JsonHelper.loadJson( "Example", "ProjectPlan");
+            string json = JsonHelper.loadDocument( "Example", "ProjectPlan");
             projectPlanModel = JsonConvert.DeserializeObject<ProjectPlanModel>(json);
             MessageBox.Show(json);
             List<string[]> rows = new List<string[]>();
@@ -215,7 +215,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             projectPlanModel.Constraints = constrainsTxt.Text;
 
             string json = JsonConvert.SerializeObject(projectPlanModel);
-            JsonHelper.saveJson(json, "Example", "ProjectPlan");
+            JsonHelper.saveDocument(json, "Example", "ProjectPlan");
         }
     }
 }
