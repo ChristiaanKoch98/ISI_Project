@@ -16,5 +16,27 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             InitializeComponent();
         }
+
+        private void btnSaveAssumptions_Click(object sender, EventArgs e)
+        {
+            string assumptions = txtAssumptions.Text;
+        }
+
+        private void btnSaveConstraints_Click(object sender, EventArgs e)
+        {
+            string constraints = txtConstraints.Text;
+        }
+
+        private void btnSaveActivitiesRolesDocuments_Click(object sender, EventArgs e)
+        {
+            string activies = txtActivities.Text;
+            string roles = txtRoles.Text;
+            string documents = txtDocuments.Text;
+        }
+
+        private void btnSaveProjectName_Click(object sender, EventArgs e)
+        {
+            string projectName = txtProjectName.Text;
+        }
     }
 }

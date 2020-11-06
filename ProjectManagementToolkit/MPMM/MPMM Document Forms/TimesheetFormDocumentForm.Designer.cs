@@ -31,24 +31,26 @@
             this.lblProjectName = new System.Windows.Forms.Label();
             this.txtProjectName = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtTimesheetFormProjectName = new System.Windows.Forms.TextBox();
-            this.txtTimesheetFormProjectManager = new System.Windows.Forms.TextBox();
-            this.txtTimesheetFormTeamMember = new System.Windows.Forms.TextBox();
-            this.dataGridViewTimesheetForm = new System.Windows.Forms.DataGridView();
-            this.lblTimesheetProjectName = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblSubmittedBy = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.txtProjectRole = new System.Windows.Forms.TextBox();
-            this.txtSignature = new System.Windows.Forms.TextBox();
-            this.dateTimePickerSubmittedBy = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
             this.dateTimePickerApprovedBy = new System.Windows.Forms.DateTimePicker();
             this.txtApprovedBySignature = new System.Windows.Forms.TextBox();
             this.txtApprovedByProjectRole = new System.Windows.Forms.TextBox();
             this.txtApprovedByName = new System.Windows.Forms.TextBox();
             this.lblApprovedBy = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.dateTimePickerSubmittedBy = new System.Windows.Forms.DateTimePicker();
+            this.txtSignature = new System.Windows.Forms.TextBox();
+            this.txtProjectRole = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.lblSubmittedBy = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblTimesheetProjectName = new System.Windows.Forms.Label();
+            this.dataGridViewTimesheetForm = new System.Windows.Forms.DataGridView();
+            this.txtTimesheetFormTeamMember = new System.Windows.Forms.TextBox();
+            this.txtTimesheetFormProjectManager = new System.Windows.Forms.TextBox();
+            this.txtTimesheetFormProjectName = new System.Windows.Forms.TextBox();
+            this.btnSaveProjectName = new System.Windows.Forms.Button();
+            this.btnSaveTimesheetForm = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTimesheetForm)).BeginInit();
             this.SuspendLayout();
@@ -83,6 +85,7 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.btnSaveTimesheetForm);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.dateTimePickerApprovedBy);
             this.groupBox1.Controls.Add(this.txtApprovedBySignature);
@@ -109,152 +112,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "TIMESHEET FORM";
             // 
-            // txtTimesheetFormProjectName
+            // label3
             // 
-            this.txtTimesheetFormProjectName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTimesheetFormProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtTimesheetFormProjectName.ForeColor = System.Drawing.Color.White;
-            this.txtTimesheetFormProjectName.Location = new System.Drawing.Point(184, 19);
-            this.txtTimesheetFormProjectName.Name = "txtTimesheetFormProjectName";
-            this.txtTimesheetFormProjectName.Size = new System.Drawing.Size(100, 20);
-            this.txtTimesheetFormProjectName.TabIndex = 3;
-            this.txtTimesheetFormProjectName.Text = "Project Name";
-            // 
-            // txtTimesheetFormProjectManager
-            // 
-            this.txtTimesheetFormProjectManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTimesheetFormProjectManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtTimesheetFormProjectManager.ForeColor = System.Drawing.Color.White;
-            this.txtTimesheetFormProjectManager.Location = new System.Drawing.Point(184, 45);
-            this.txtTimesheetFormProjectManager.Name = "txtTimesheetFormProjectManager";
-            this.txtTimesheetFormProjectManager.Size = new System.Drawing.Size(100, 20);
-            this.txtTimesheetFormProjectManager.TabIndex = 4;
-            this.txtTimesheetFormProjectManager.Text = "Project Manager";
-            // 
-            // txtTimesheetFormTeamMember
-            // 
-            this.txtTimesheetFormTeamMember.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTimesheetFormTeamMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtTimesheetFormTeamMember.ForeColor = System.Drawing.Color.White;
-            this.txtTimesheetFormTeamMember.Location = new System.Drawing.Point(184, 71);
-            this.txtTimesheetFormTeamMember.Name = "txtTimesheetFormTeamMember";
-            this.txtTimesheetFormTeamMember.Size = new System.Drawing.Size(100, 20);
-            this.txtTimesheetFormTeamMember.TabIndex = 5;
-            this.txtTimesheetFormTeamMember.Text = "Team Member";
-            // 
-            // dataGridViewTimesheetForm
-            // 
-            this.dataGridViewTimesheetForm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewTimesheetForm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewTimesheetForm.Location = new System.Drawing.Point(6, 97);
-            this.dataGridViewTimesheetForm.Name = "dataGridViewTimesheetForm";
-            this.dataGridViewTimesheetForm.Size = new System.Drawing.Size(761, 168);
-            this.dataGridViewTimesheetForm.TabIndex = 6;
-            // 
-            // lblTimesheetProjectName
-            // 
-            this.lblTimesheetProjectName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTimesheetProjectName.AutoSize = true;
-            this.lblTimesheetProjectName.Location = new System.Drawing.Point(7, 22);
-            this.lblTimesheetProjectName.Name = "lblTimesheetProjectName";
-            this.lblTimesheetProjectName.Size = new System.Drawing.Size(124, 12);
-            this.lblTimesheetProjectName.TabIndex = 7;
-            this.lblTimesheetProjectName.Text = "Enter Your Project Name: ";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 12);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Enter Your Project Managers Name: ";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 74);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 12);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Enter Your Team Members Name: ";
-            // 
-            // lblSubmittedBy
-            // 
-            this.lblSubmittedBy.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSubmittedBy.AutoSize = true;
-            this.lblSubmittedBy.Location = new System.Drawing.Point(9, 272);
-            this.lblSubmittedBy.Name = "lblSubmittedBy";
-            this.lblSubmittedBy.Size = new System.Drawing.Size(73, 12);
-            this.lblSubmittedBy.TabIndex = 10;
-            this.lblSubmittedBy.Text = "Submitted By: ";
-            // 
-            // txtName
-            // 
-            this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtName.ForeColor = System.Drawing.Color.White;
-            this.txtName.Location = new System.Drawing.Point(88, 272);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(100, 20);
-            this.txtName.TabIndex = 11;
-            this.txtName.Text = "Name";
-            // 
-            // txtProjectRole
-            // 
-            this.txtProjectRole.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtProjectRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProjectRole.ForeColor = System.Drawing.Color.White;
-            this.txtProjectRole.Location = new System.Drawing.Point(88, 298);
-            this.txtProjectRole.Name = "txtProjectRole";
-            this.txtProjectRole.Size = new System.Drawing.Size(100, 20);
-            this.txtProjectRole.TabIndex = 12;
-            this.txtProjectRole.Text = "Project Role";
-            // 
-            // txtSignature
-            // 
-            this.txtSignature.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSignature.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtSignature.ForeColor = System.Drawing.Color.White;
-            this.txtSignature.Location = new System.Drawing.Point(88, 324);
-            this.txtSignature.Name = "txtSignature";
-            this.txtSignature.Size = new System.Drawing.Size(100, 20);
-            this.txtSignature.TabIndex = 13;
-            this.txtSignature.Text = "Signature";
-            // 
-            // dateTimePickerSubmittedBy
-            // 
-            this.dateTimePickerSubmittedBy.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePickerSubmittedBy.Location = new System.Drawing.Point(194, 324);
-            this.dateTimePickerSubmittedBy.Name = "dateTimePickerSubmittedBy";
-            this.dateTimePickerSubmittedBy.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerSubmittedBy.TabIndex = 14;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(314, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(453, 12);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "ONCE COMPLETED, PLEASE FORWARD THIS FORM TO THE PROJECT MANAGER FOR APPROVAL";
             // 
             // dateTimePickerApprovedBy
             // 
@@ -317,17 +185,174 @@
             this.lblApprovedBy.TabIndex = 15;
             this.lblApprovedBy.Text = "Approved By: ";
             // 
-            // label3
+            // dateTimePickerSubmittedBy
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dateTimePickerSubmittedBy.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(314, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(453, 12);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "ONCE COMPLETED, PLEASE FORWARD THIS FORM TO THE PROJECT MANAGER FOR APPROVAL";
+            this.dateTimePickerSubmittedBy.Location = new System.Drawing.Point(194, 324);
+            this.dateTimePickerSubmittedBy.Name = "dateTimePickerSubmittedBy";
+            this.dateTimePickerSubmittedBy.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerSubmittedBy.TabIndex = 14;
+            // 
+            // txtSignature
+            // 
+            this.txtSignature.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSignature.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtSignature.ForeColor = System.Drawing.Color.White;
+            this.txtSignature.Location = new System.Drawing.Point(88, 324);
+            this.txtSignature.Name = "txtSignature";
+            this.txtSignature.Size = new System.Drawing.Size(100, 20);
+            this.txtSignature.TabIndex = 13;
+            this.txtSignature.Text = "Signature";
+            // 
+            // txtProjectRole
+            // 
+            this.txtProjectRole.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtProjectRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtProjectRole.ForeColor = System.Drawing.Color.White;
+            this.txtProjectRole.Location = new System.Drawing.Point(88, 298);
+            this.txtProjectRole.Name = "txtProjectRole";
+            this.txtProjectRole.Size = new System.Drawing.Size(100, 20);
+            this.txtProjectRole.TabIndex = 12;
+            this.txtProjectRole.Text = "Project Role";
+            // 
+            // txtName
+            // 
+            this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtName.ForeColor = System.Drawing.Color.White;
+            this.txtName.Location = new System.Drawing.Point(88, 272);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(100, 20);
+            this.txtName.TabIndex = 11;
+            this.txtName.Text = "Name";
+            // 
+            // lblSubmittedBy
+            // 
+            this.lblSubmittedBy.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSubmittedBy.AutoSize = true;
+            this.lblSubmittedBy.Location = new System.Drawing.Point(9, 272);
+            this.lblSubmittedBy.Name = "lblSubmittedBy";
+            this.lblSubmittedBy.Size = new System.Drawing.Size(73, 12);
+            this.lblSubmittedBy.TabIndex = 10;
+            this.lblSubmittedBy.Text = "Submitted By: ";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(7, 74);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(161, 12);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Enter Your Team Members Name: ";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(171, 12);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Enter Your Project Managers Name: ";
+            // 
+            // lblTimesheetProjectName
+            // 
+            this.lblTimesheetProjectName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTimesheetProjectName.AutoSize = true;
+            this.lblTimesheetProjectName.Location = new System.Drawing.Point(7, 22);
+            this.lblTimesheetProjectName.Name = "lblTimesheetProjectName";
+            this.lblTimesheetProjectName.Size = new System.Drawing.Size(124, 12);
+            this.lblTimesheetProjectName.TabIndex = 7;
+            this.lblTimesheetProjectName.Text = "Enter Your Project Name: ";
+            // 
+            // dataGridViewTimesheetForm
+            // 
+            this.dataGridViewTimesheetForm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewTimesheetForm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTimesheetForm.Location = new System.Drawing.Point(6, 97);
+            this.dataGridViewTimesheetForm.Name = "dataGridViewTimesheetForm";
+            this.dataGridViewTimesheetForm.Size = new System.Drawing.Size(761, 168);
+            this.dataGridViewTimesheetForm.TabIndex = 6;
+            // 
+            // txtTimesheetFormTeamMember
+            // 
+            this.txtTimesheetFormTeamMember.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTimesheetFormTeamMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtTimesheetFormTeamMember.ForeColor = System.Drawing.Color.White;
+            this.txtTimesheetFormTeamMember.Location = new System.Drawing.Point(184, 71);
+            this.txtTimesheetFormTeamMember.Name = "txtTimesheetFormTeamMember";
+            this.txtTimesheetFormTeamMember.Size = new System.Drawing.Size(100, 20);
+            this.txtTimesheetFormTeamMember.TabIndex = 5;
+            this.txtTimesheetFormTeamMember.Text = "Team Member";
+            // 
+            // txtTimesheetFormProjectManager
+            // 
+            this.txtTimesheetFormProjectManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTimesheetFormProjectManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtTimesheetFormProjectManager.ForeColor = System.Drawing.Color.White;
+            this.txtTimesheetFormProjectManager.Location = new System.Drawing.Point(184, 45);
+            this.txtTimesheetFormProjectManager.Name = "txtTimesheetFormProjectManager";
+            this.txtTimesheetFormProjectManager.Size = new System.Drawing.Size(100, 20);
+            this.txtTimesheetFormProjectManager.TabIndex = 4;
+            this.txtTimesheetFormProjectManager.Text = "Project Manager";
+            // 
+            // txtTimesheetFormProjectName
+            // 
+            this.txtTimesheetFormProjectName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTimesheetFormProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtTimesheetFormProjectName.ForeColor = System.Drawing.Color.White;
+            this.txtTimesheetFormProjectName.Location = new System.Drawing.Point(184, 19);
+            this.txtTimesheetFormProjectName.Name = "txtTimesheetFormProjectName";
+            this.txtTimesheetFormProjectName.Size = new System.Drawing.Size(100, 20);
+            this.txtTimesheetFormProjectName.TabIndex = 3;
+            this.txtTimesheetFormProjectName.Text = "Project Name";
+            // 
+            // btnSaveProjectName
+            // 
+            this.btnSaveProjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSaveProjectName.Location = new System.Drawing.Point(280, 10);
+            this.btnSaveProjectName.Name = "btnSaveProjectName";
+            this.btnSaveProjectName.Size = new System.Drawing.Size(105, 20);
+            this.btnSaveProjectName.TabIndex = 3;
+            this.btnSaveProjectName.Text = "Save Project Name";
+            this.btnSaveProjectName.UseVisualStyleBackColor = true;
+            this.btnSaveProjectName.Click += new System.EventHandler(this.btnSaveProjectName_Click);
+            // 
+            // btnSaveTimesheetForm
+            // 
+            this.btnSaveTimesheetForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSaveTimesheetForm.Location = new System.Drawing.Point(642, 48);
+            this.btnSaveTimesheetForm.Name = "btnSaveTimesheetForm";
+            this.btnSaveTimesheetForm.Size = new System.Drawing.Size(125, 46);
+            this.btnSaveTimesheetForm.TabIndex = 21;
+            this.btnSaveTimesheetForm.Text = "Save Timesheet Form";
+            this.btnSaveTimesheetForm.UseVisualStyleBackColor = true;
+            this.btnSaveTimesheetForm.Click += new System.EventHandler(this.btnSaveTimesheetForm_Click);
             // 
             // TimesheetFormDocumentForm
             // 
@@ -335,6 +360,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(800, 415);
+            this.Controls.Add(this.btnSaveProjectName);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.lblProjectName);
@@ -373,5 +399,7 @@
         private System.Windows.Forms.TextBox txtTimesheetFormTeamMember;
         private System.Windows.Forms.TextBox txtTimesheetFormProjectManager;
         private System.Windows.Forms.TextBox txtTimesheetFormProjectName;
+        private System.Windows.Forms.Button btnSaveTimesheetForm;
+        private System.Windows.Forms.Button btnSaveProjectName;
     }
 }

@@ -38,7 +38,23 @@
             this.dataGridViewDocumentHistory = new System.Windows.Forms.DataGridView();
             this.dataGridViewDocumentInformation = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.txtOverview = new System.Windows.Forms.TextBox();
+            this.txtQuestions = new System.Windows.Forms.TextBox();
+            this.txtRules = new System.Windows.Forms.TextBox();
+            this.txtProcess = new System.Windows.Forms.TextBox();
+            this.txtAcknowledgement = new System.Windows.Forms.TextBox();
+            this.txtRecipiants = new System.Windows.Forms.TextBox();
+            this.txtPurpose = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtCompanyOffering = new System.Windows.Forms.TextBox();
+            this.btnCompanyOffering = new System.Windows.Forms.Button();
+            this.listBoxCompanyOffering = new System.Windows.Forms.ListBox();
+            this.txtCompanyOverview = new System.Windows.Forms.TextBox();
+            this.btnCompanyOverview = new System.Windows.Forms.Button();
+            this.listBoxCompanyOverview = new System.Windows.Forms.ListBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -53,23 +69,6 @@
             this.btnMethod = new System.Windows.Forms.Button();
             this.listBoxMethods = new System.Windows.Forms.ListBox();
             this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.txtProjectName = new System.Windows.Forms.TextBox();
-            this.txtPurpose = new System.Windows.Forms.TextBox();
-            this.txtRecipiants = new System.Windows.Forms.TextBox();
-            this.txtAcknowledgement = new System.Windows.Forms.TextBox();
-            this.txtProcess = new System.Windows.Forms.TextBox();
-            this.txtRules = new System.Windows.Forms.TextBox();
-            this.txtQuestions = new System.Windows.Forms.TextBox();
-            this.txtOverview = new System.Windows.Forms.TextBox();
-            this.txtCompanyOverview = new System.Windows.Forms.TextBox();
-            this.btnCompanyOverview = new System.Windows.Forms.Button();
-            this.listBoxCompanyOverview = new System.Windows.Forms.ListBox();
-            this.txtCompanyOffering = new System.Windows.Forms.TextBox();
-            this.btnCompanyOffering = new System.Windows.Forms.Button();
-            this.listBoxCompanyOffering = new System.Windows.Forms.ListBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -79,6 +78,9 @@
             this.txtConfidentiality = new System.Windows.Forms.TextBox();
             this.btnConfidentiality = new System.Windows.Forms.Button();
             this.listBoxConfidentiality = new System.Windows.Forms.ListBox();
+            this.txtProjectName = new System.Windows.Forms.TextBox();
+            this.btnSaveProjectNameRequestForInfo = new System.Windows.Forms.Button();
+            this.btnSaveIntroductionInfo = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentApprovals)).BeginInit();
@@ -208,6 +210,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage2.Controls.Add(this.btnSaveIntroductionInfo);
             this.tabPage2.Controls.Add(this.txtOverview);
             this.tabPage2.Controls.Add(this.txtQuestions);
             this.tabPage2.Controls.Add(this.txtRules);
@@ -221,6 +224,111 @@
             this.tabPage2.Size = new System.Drawing.Size(768, 344);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Introduction";
+            // 
+            // txtOverview
+            // 
+            this.txtOverview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtOverview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtOverview.ForeColor = System.Drawing.Color.White;
+            this.txtOverview.Location = new System.Drawing.Point(6, 6);
+            this.txtOverview.Multiline = true;
+            this.txtOverview.Name = "txtOverview";
+            this.txtOverview.Size = new System.Drawing.Size(755, 88);
+            this.txtOverview.TabIndex = 6;
+            this.txtOverview.Text = "Overview";
+            this.txtOverview.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtQuestions
+            // 
+            this.txtQuestions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtQuestions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtQuestions.ForeColor = System.Drawing.Color.White;
+            this.txtQuestions.Location = new System.Drawing.Point(381, 230);
+            this.txtQuestions.Multiline = true;
+            this.txtQuestions.Name = "txtQuestions";
+            this.txtQuestions.Size = new System.Drawing.Size(380, 59);
+            this.txtQuestions.TabIndex = 5;
+            this.txtQuestions.Text = "Questions";
+            this.txtQuestions.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtRules
+            // 
+            this.txtRules.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRules.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtRules.ForeColor = System.Drawing.Color.White;
+            this.txtRules.Location = new System.Drawing.Point(6, 230);
+            this.txtRules.Multiline = true;
+            this.txtRules.Name = "txtRules";
+            this.txtRules.Size = new System.Drawing.Size(370, 59);
+            this.txtRules.TabIndex = 4;
+            this.txtRules.Text = "Rules";
+            this.txtRules.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtProcess
+            // 
+            this.txtProcess.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtProcess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtProcess.ForeColor = System.Drawing.Color.White;
+            this.txtProcess.Location = new System.Drawing.Point(381, 165);
+            this.txtProcess.Multiline = true;
+            this.txtProcess.Name = "txtProcess";
+            this.txtProcess.Size = new System.Drawing.Size(380, 59);
+            this.txtProcess.TabIndex = 3;
+            this.txtProcess.Text = "Process";
+            this.txtProcess.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtAcknowledgement
+            // 
+            this.txtAcknowledgement.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtAcknowledgement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtAcknowledgement.ForeColor = System.Drawing.Color.White;
+            this.txtAcknowledgement.Location = new System.Drawing.Point(381, 100);
+            this.txtAcknowledgement.Multiline = true;
+            this.txtAcknowledgement.Name = "txtAcknowledgement";
+            this.txtAcknowledgement.Size = new System.Drawing.Size(380, 59);
+            this.txtAcknowledgement.TabIndex = 2;
+            this.txtAcknowledgement.Text = "Acknowledgement";
+            this.txtAcknowledgement.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtRecipiants
+            // 
+            this.txtRecipiants.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRecipiants.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtRecipiants.ForeColor = System.Drawing.Color.White;
+            this.txtRecipiants.Location = new System.Drawing.Point(5, 165);
+            this.txtRecipiants.Multiline = true;
+            this.txtRecipiants.Name = "txtRecipiants";
+            this.txtRecipiants.Size = new System.Drawing.Size(370, 59);
+            this.txtRecipiants.TabIndex = 1;
+            this.txtRecipiants.Text = "Recipiants";
+            this.txtRecipiants.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtPurpose
+            // 
+            this.txtPurpose.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPurpose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtPurpose.ForeColor = System.Drawing.Color.White;
+            this.txtPurpose.Location = new System.Drawing.Point(5, 100);
+            this.txtPurpose.Multiline = true;
+            this.txtPurpose.Name = "txtPurpose";
+            this.txtPurpose.Size = new System.Drawing.Size(370, 59);
+            this.txtPurpose.TabIndex = 0;
+            this.txtPurpose.Text = "Purpose";
+            this.txtPurpose.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tabPage3
             // 
@@ -240,6 +348,143 @@
             this.tabPage3.Size = new System.Drawing.Size(768, 344);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Company";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cambria", 9F);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(258, 318);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(244, 14);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "3. And your data will then be added to the list";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cambria", 9F);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(258, 294);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(184, 14);
+            this.label5.TabIndex = 41;
+            this.label5.Text = "2. Press the respective add button";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Cambria", 9F);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(258, 267);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(288, 14);
+            this.label6.TabIndex = 40;
+            this.label6.Text = "1. Please enter your data into the respective textboxes";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtCompanyOffering
+            // 
+            this.txtCompanyOffering.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCompanyOffering.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtCompanyOffering.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCompanyOffering.ForeColor = System.Drawing.Color.White;
+            this.txtCompanyOffering.Location = new System.Drawing.Point(493, 7);
+            this.txtCompanyOffering.Multiline = true;
+            this.txtCompanyOffering.Name = "txtCompanyOffering";
+            this.txtCompanyOffering.Size = new System.Drawing.Size(141, 46);
+            this.txtCompanyOffering.TabIndex = 37;
+            this.txtCompanyOffering.Text = "Offering";
+            this.txtCompanyOffering.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnCompanyOffering
+            // 
+            this.btnCompanyOffering.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCompanyOffering.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCompanyOffering.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnCompanyOffering.Location = new System.Drawing.Point(640, 6);
+            this.btnCompanyOffering.Name = "btnCompanyOffering";
+            this.btnCompanyOffering.Size = new System.Drawing.Size(123, 46);
+            this.btnCompanyOffering.TabIndex = 39;
+            this.btnCompanyOffering.Text = "Add Offering";
+            this.btnCompanyOffering.UseVisualStyleBackColor = true;
+            this.btnCompanyOffering.Click += new System.EventHandler(this.btnCompanyOffering_Click);
+            // 
+            // listBoxCompanyOffering
+            // 
+            this.listBoxCompanyOffering.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listBoxCompanyOffering.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.listBoxCompanyOffering.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxCompanyOffering.ForeColor = System.Drawing.Color.White;
+            this.listBoxCompanyOffering.FormattingEnabled = true;
+            this.listBoxCompanyOffering.ItemHeight = 12;
+            this.listBoxCompanyOffering.Location = new System.Drawing.Point(493, 59);
+            this.listBoxCompanyOffering.Name = "listBoxCompanyOffering";
+            this.listBoxCompanyOffering.Size = new System.Drawing.Size(270, 196);
+            this.listBoxCompanyOffering.TabIndex = 38;
+            // 
+            // txtCompanyOverview
+            // 
+            this.txtCompanyOverview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCompanyOverview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtCompanyOverview.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCompanyOverview.ForeColor = System.Drawing.Color.White;
+            this.txtCompanyOverview.Location = new System.Drawing.Point(6, 7);
+            this.txtCompanyOverview.Multiline = true;
+            this.txtCompanyOverview.Name = "txtCompanyOverview";
+            this.txtCompanyOverview.Size = new System.Drawing.Size(141, 46);
+            this.txtCompanyOverview.TabIndex = 34;
+            this.txtCompanyOverview.Text = "Overview";
+            this.txtCompanyOverview.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnCompanyOverview
+            // 
+            this.btnCompanyOverview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCompanyOverview.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCompanyOverview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnCompanyOverview.Location = new System.Drawing.Point(153, 6);
+            this.btnCompanyOverview.Name = "btnCompanyOverview";
+            this.btnCompanyOverview.Size = new System.Drawing.Size(123, 46);
+            this.btnCompanyOverview.TabIndex = 36;
+            this.btnCompanyOverview.Text = "Add Overview";
+            this.btnCompanyOverview.UseVisualStyleBackColor = true;
+            this.btnCompanyOverview.Click += new System.EventHandler(this.btnCompanyOverview_Click);
+            // 
+            // listBoxCompanyOverview
+            // 
+            this.listBoxCompanyOverview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listBoxCompanyOverview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.listBoxCompanyOverview.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxCompanyOverview.ForeColor = System.Drawing.Color.White;
+            this.listBoxCompanyOverview.FormattingEnabled = true;
+            this.listBoxCompanyOverview.ItemHeight = 12;
+            this.listBoxCompanyOverview.Location = new System.Drawing.Point(6, 59);
+            this.listBoxCompanyOverview.Name = "listBoxCompanyOverview";
+            this.listBoxCompanyOverview.Size = new System.Drawing.Size(270, 196);
+            this.listBoxCompanyOverview.TabIndex = 35;
             // 
             // tabPage7
             // 
@@ -321,6 +566,7 @@
             this.btnPricing.TabIndex = 30;
             this.btnPricing.Text = "Add Pricing";
             this.btnPricing.UseVisualStyleBackColor = true;
+            this.btnPricing.Click += new System.EventHandler(this.btnPricing_Click);
             // 
             // listBoxPricing
             // 
@@ -392,6 +638,7 @@
             this.btnTimeframes.TabIndex = 27;
             this.btnTimeframes.Text = "Add Timeframes";
             this.btnTimeframes.UseVisualStyleBackColor = true;
+            this.btnTimeframes.Click += new System.EventHandler(this.btnTimeframes_Click);
             // 
             // listBoxTimeframes
             // 
@@ -421,6 +668,7 @@
             this.btnMethod.TabIndex = 24;
             this.btnMethod.Text = "Add Methods";
             this.btnMethod.UseVisualStyleBackColor = true;
+            this.btnMethod.Click += new System.EventHandler(this.btnMethod_Click);
             // 
             // listBoxMethods
             // 
@@ -455,257 +703,6 @@
             this.tabPage9.Size = new System.Drawing.Size(768, 344);
             this.tabPage9.TabIndex = 5;
             this.tabPage9.Text = "Other";
-            // 
-            // txtProjectName
-            // 
-            this.txtProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProjectName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProjectName.ForeColor = System.Drawing.Color.White;
-            this.txtProjectName.Location = new System.Drawing.Point(170, 8);
-            this.txtProjectName.Name = "txtProjectName";
-            this.txtProjectName.Size = new System.Drawing.Size(100, 20);
-            this.txtProjectName.TabIndex = 7;
-            this.txtProjectName.Text = "Project Name";
-            // 
-            // txtPurpose
-            // 
-            this.txtPurpose.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPurpose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtPurpose.ForeColor = System.Drawing.Color.White;
-            this.txtPurpose.Location = new System.Drawing.Point(5, 100);
-            this.txtPurpose.Multiline = true;
-            this.txtPurpose.Name = "txtPurpose";
-            this.txtPurpose.Size = new System.Drawing.Size(359, 80);
-            this.txtPurpose.TabIndex = 0;
-            this.txtPurpose.Text = "Purpose";
-            this.txtPurpose.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtRecipiants
-            // 
-            this.txtRecipiants.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRecipiants.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtRecipiants.ForeColor = System.Drawing.Color.White;
-            this.txtRecipiants.Location = new System.Drawing.Point(6, 186);
-            this.txtRecipiants.Multiline = true;
-            this.txtRecipiants.Name = "txtRecipiants";
-            this.txtRecipiants.Size = new System.Drawing.Size(358, 73);
-            this.txtRecipiants.TabIndex = 1;
-            this.txtRecipiants.Text = "Recipiants";
-            this.txtRecipiants.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtAcknowledgement
-            // 
-            this.txtAcknowledgement.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAcknowledgement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtAcknowledgement.ForeColor = System.Drawing.Color.White;
-            this.txtAcknowledgement.Location = new System.Drawing.Point(371, 100);
-            this.txtAcknowledgement.Multiline = true;
-            this.txtAcknowledgement.Name = "txtAcknowledgement";
-            this.txtAcknowledgement.Size = new System.Drawing.Size(390, 80);
-            this.txtAcknowledgement.TabIndex = 2;
-            this.txtAcknowledgement.Text = "Acknowledgement";
-            this.txtAcknowledgement.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtProcess
-            // 
-            this.txtProcess.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtProcess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProcess.ForeColor = System.Drawing.Color.White;
-            this.txtProcess.Location = new System.Drawing.Point(371, 186);
-            this.txtProcess.Multiline = true;
-            this.txtProcess.Name = "txtProcess";
-            this.txtProcess.Size = new System.Drawing.Size(390, 73);
-            this.txtProcess.TabIndex = 3;
-            this.txtProcess.Text = "Process";
-            this.txtProcess.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtRules
-            // 
-            this.txtRules.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRules.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtRules.ForeColor = System.Drawing.Color.White;
-            this.txtRules.Location = new System.Drawing.Point(7, 265);
-            this.txtRules.Multiline = true;
-            this.txtRules.Name = "txtRules";
-            this.txtRules.Size = new System.Drawing.Size(359, 73);
-            this.txtRules.TabIndex = 4;
-            this.txtRules.Text = "Rules";
-            this.txtRules.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtQuestions
-            // 
-            this.txtQuestions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuestions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtQuestions.ForeColor = System.Drawing.Color.White;
-            this.txtQuestions.Location = new System.Drawing.Point(371, 265);
-            this.txtQuestions.Multiline = true;
-            this.txtQuestions.Name = "txtQuestions";
-            this.txtQuestions.Size = new System.Drawing.Size(390, 73);
-            this.txtQuestions.TabIndex = 5;
-            this.txtQuestions.Text = "Questions";
-            this.txtQuestions.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtOverview
-            // 
-            this.txtOverview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtOverview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtOverview.ForeColor = System.Drawing.Color.White;
-            this.txtOverview.Location = new System.Drawing.Point(6, 6);
-            this.txtOverview.Multiline = true;
-            this.txtOverview.Name = "txtOverview";
-            this.txtOverview.Size = new System.Drawing.Size(755, 88);
-            this.txtOverview.TabIndex = 6;
-            this.txtOverview.Text = "Overview";
-            this.txtOverview.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtCompanyOverview
-            // 
-            this.txtCompanyOverview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCompanyOverview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtCompanyOverview.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCompanyOverview.ForeColor = System.Drawing.Color.White;
-            this.txtCompanyOverview.Location = new System.Drawing.Point(6, 7);
-            this.txtCompanyOverview.Multiline = true;
-            this.txtCompanyOverview.Name = "txtCompanyOverview";
-            this.txtCompanyOverview.Size = new System.Drawing.Size(141, 46);
-            this.txtCompanyOverview.TabIndex = 34;
-            this.txtCompanyOverview.Text = "Overview";
-            this.txtCompanyOverview.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnCompanyOverview
-            // 
-            this.btnCompanyOverview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCompanyOverview.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCompanyOverview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnCompanyOverview.Location = new System.Drawing.Point(153, 6);
-            this.btnCompanyOverview.Name = "btnCompanyOverview";
-            this.btnCompanyOverview.Size = new System.Drawing.Size(123, 46);
-            this.btnCompanyOverview.TabIndex = 36;
-            this.btnCompanyOverview.Text = "Add Overview";
-            this.btnCompanyOverview.UseVisualStyleBackColor = true;
-            // 
-            // listBoxCompanyOverview
-            // 
-            this.listBoxCompanyOverview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.listBoxCompanyOverview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.listBoxCompanyOverview.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxCompanyOverview.ForeColor = System.Drawing.Color.White;
-            this.listBoxCompanyOverview.FormattingEnabled = true;
-            this.listBoxCompanyOverview.ItemHeight = 12;
-            this.listBoxCompanyOverview.Location = new System.Drawing.Point(6, 59);
-            this.listBoxCompanyOverview.Name = "listBoxCompanyOverview";
-            this.listBoxCompanyOverview.Size = new System.Drawing.Size(270, 196);
-            this.listBoxCompanyOverview.TabIndex = 35;
-            // 
-            // txtCompanyOffering
-            // 
-            this.txtCompanyOffering.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCompanyOffering.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtCompanyOffering.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCompanyOffering.ForeColor = System.Drawing.Color.White;
-            this.txtCompanyOffering.Location = new System.Drawing.Point(493, 7);
-            this.txtCompanyOffering.Multiline = true;
-            this.txtCompanyOffering.Name = "txtCompanyOffering";
-            this.txtCompanyOffering.Size = new System.Drawing.Size(141, 46);
-            this.txtCompanyOffering.TabIndex = 37;
-            this.txtCompanyOffering.Text = "Offering";
-            this.txtCompanyOffering.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnCompanyOffering
-            // 
-            this.btnCompanyOffering.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCompanyOffering.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCompanyOffering.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnCompanyOffering.Location = new System.Drawing.Point(640, 6);
-            this.btnCompanyOffering.Name = "btnCompanyOffering";
-            this.btnCompanyOffering.Size = new System.Drawing.Size(123, 46);
-            this.btnCompanyOffering.TabIndex = 39;
-            this.btnCompanyOffering.Text = "Add Offering";
-            this.btnCompanyOffering.UseVisualStyleBackColor = true;
-            // 
-            // listBoxCompanyOffering
-            // 
-            this.listBoxCompanyOffering.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.listBoxCompanyOffering.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.listBoxCompanyOffering.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxCompanyOffering.ForeColor = System.Drawing.Color.White;
-            this.listBoxCompanyOffering.FormattingEnabled = true;
-            this.listBoxCompanyOffering.ItemHeight = 12;
-            this.listBoxCompanyOffering.Location = new System.Drawing.Point(493, 59);
-            this.listBoxCompanyOffering.Name = "listBoxCompanyOffering";
-            this.listBoxCompanyOffering.Size = new System.Drawing.Size(270, 196);
-            this.listBoxCompanyOffering.TabIndex = 38;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cambria", 9F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(258, 318);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(244, 14);
-            this.label4.TabIndex = 42;
-            this.label4.Text = "3. And your data will then be added to the list";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 9F);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(258, 294);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(184, 14);
-            this.label5.TabIndex = 41;
-            this.label5.Text = "2. Press the respective add button";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 9F);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(258, 267);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(288, 14);
-            this.label6.TabIndex = 40;
-            this.label6.Text = "1. Please enter your data into the respective textboxes";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
@@ -781,6 +778,7 @@
             this.btnDocumentation.TabIndex = 48;
             this.btnDocumentation.Text = "Add Documentation";
             this.btnDocumentation.UseVisualStyleBackColor = true;
+            this.btnDocumentation.Click += new System.EventHandler(this.btnDocumentation_Click);
             // 
             // listBoxDocumentation
             // 
@@ -826,6 +824,7 @@
             this.btnConfidentiality.TabIndex = 45;
             this.btnConfidentiality.Text = "Add Confidentiality";
             this.btnConfidentiality.UseVisualStyleBackColor = true;
+            this.btnConfidentiality.Click += new System.EventHandler(this.btnConfidentiality_Click);
             // 
             // listBoxConfidentiality
             // 
@@ -842,12 +841,46 @@
             this.listBoxConfidentiality.Size = new System.Drawing.Size(270, 196);
             this.listBoxConfidentiality.TabIndex = 44;
             // 
+            // txtProjectName
+            // 
+            this.txtProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtProjectName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProjectName.ForeColor = System.Drawing.Color.White;
+            this.txtProjectName.Location = new System.Drawing.Point(170, 8);
+            this.txtProjectName.Name = "txtProjectName";
+            this.txtProjectName.Size = new System.Drawing.Size(100, 20);
+            this.txtProjectName.TabIndex = 7;
+            this.txtProjectName.Text = "Project Name";
+            // 
+            // btnSaveProjectNameRequestForInfo
+            // 
+            this.btnSaveProjectNameRequestForInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSaveProjectNameRequestForInfo.Location = new System.Drawing.Point(278, 8);
+            this.btnSaveProjectNameRequestForInfo.Name = "btnSaveProjectNameRequestForInfo";
+            this.btnSaveProjectNameRequestForInfo.Size = new System.Drawing.Size(115, 20);
+            this.btnSaveProjectNameRequestForInfo.TabIndex = 10;
+            this.btnSaveProjectNameRequestForInfo.Text = "Save Project Name";
+            this.btnSaveProjectNameRequestForInfo.UseVisualStyleBackColor = true;
+            this.btnSaveProjectNameRequestForInfo.Click += new System.EventHandler(this.btnSaveProjectNameRequestForInfo_Click);
+            // 
+            // btnSaveIntroductionInfo
+            // 
+            this.btnSaveIntroductionInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSaveIntroductionInfo.Location = new System.Drawing.Point(6, 295);
+            this.btnSaveIntroductionInfo.Name = "btnSaveIntroductionInfo";
+            this.btnSaveIntroductionInfo.Size = new System.Drawing.Size(755, 43);
+            this.btnSaveIntroductionInfo.TabIndex = 7;
+            this.btnSaveIntroductionInfo.Text = "Save Introduction Information";
+            this.btnSaveIntroductionInfo.UseVisualStyleBackColor = true;
+            this.btnSaveIntroductionInfo.Click += new System.EventHandler(this.btnSaveIntroductionInfo_Click);
+            // 
             // RequestForInformationDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(800, 415);
+            this.Controls.Add(this.btnSaveProjectNameRequestForInfo);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.txtProjectName);
@@ -927,5 +960,7 @@
         private System.Windows.Forms.TextBox txtConfidentiality;
         private System.Windows.Forms.Button btnConfidentiality;
         private System.Windows.Forms.ListBox listBoxConfidentiality;
+        private System.Windows.Forms.Button btnSaveIntroductionInfo;
+        private System.Windows.Forms.Button btnSaveProjectNameRequestForInfo;
     }
 }
