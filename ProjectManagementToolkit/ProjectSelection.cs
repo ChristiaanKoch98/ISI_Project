@@ -62,9 +62,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             Properties.Settings.Default.ProjectID = projectID;
             lstboxProject.Items.Clear();
             attemptHttpConnection();
-            //MainForm main = new MainForm();
-            //this.Visible = false;
-            //main.Show();
         }
 
         private string generateNewProjectID()
@@ -77,45 +74,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             try
             {
-                //Object newProjectJson = JObject.Parse(newProjectJsonString);
                 var content = new StringContent(newProjectJsonString, Encoding.UTF8, "application/json");
 
-                var response = client.PostAsync("http://localhost:3000/project", content).Result;
+                var response = client.PostAsync("http://137.117.194.119:3000/project", content).Result;
 
                 loadAllProjects(response.ToString());
-                /*JObject newProjectJson = JObject.Parse(newProjectJsonString);
-                
-                HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create("http://localhost:3000/project");
-                httpWebRequest.ContentType = "application/json";
-                httpWebRequest.Method = "POST";
-                
-                HttpWebResponse httpWebResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-
-                using (Stream stream = httpWebRequest.GetRequestStream() )
-                {
-                    stream.Write()
-                }*/
-
-                /*
-                Stream stream = httpWebRequest.GetRequestStream();
-
-                using (var streamWriter = new StreamWriter(stream))
-                {
-                    streamWriter.Write(newProjectJsonString);
-                }
-                */
-
-                /*Stream stream = httpWebResponse.GetResponseStream();
-                string projectsResponse = "";
-                using (var streamReader = new StreamReader(stream))
-                {
-                    var result = streamReader.ReadToEnd();
-                    System.Diagnostics.Debug.WriteLine("Stream reader result");
-                    System.Diagnostics.Debug.WriteLine(result);
-                    projectsResponse = result;
-                }
-
-                loadAllProjects(projectsResponse);*/
             }
             catch (Exception e)
             {
@@ -138,27 +101,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             try
             {
-                HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create("http://localhost:3000/project");
-                httpWebRequest.ContentType = "application/json";
-                //httpWebRequest.Method = "GET";
-                HttpWebResponse httpWebResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-
-                Stream stream = httpWebResponse.GetResponseStream();
-                string projectsResponse = "";
-                using (var streamReader = new StreamReader(stream))
-                {
-                    var result = streamReader.ReadToEnd();
-                    System.Diagnostics.Debug.WriteLine("Stream reader result");
-                    System.Diagnostics.Debug.WriteLine(result);
-                    projectsResponse = result;
-                }
+                string projectsResponse = client.GetStringAsync("http://137.117.194.119:3000/project").Result;
 
                 loadAllProjects(projectsResponse);
             }
             catch (Exception e)
             {
-
-                throw;
+                System.Diagnostics.Debug.WriteLine(e.StackTrace);
+                //throw;
             }
         }
 
@@ -171,25 +121,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             for (int i = 0; i < json.Count; i++)
             {
                 projects.Add(JsonConvert.DeserializeObject<ProjectModel>(json[i].ToString()));
+                lstboxProject.Items.Add(projects[i].ProjectID + " - " +projects[i].ProjectName);
             }
-
-            //foreach (var item in json)
-            //{
-            //    projects.Add(JsonConvert.DeserializeObject<ProjectModel>(projectsJSON));
-            //}
-
-            //ProjectModel loadedProject = JsonConvert.DeserializeObject<ProjectModel>(projectsJSON);
-
-            foreach (var item in projects)
-            {
-                string projectName = item.ProjectName;
-
-                System.Diagnostics.Debug.WriteLine(projectName);
-
-                lstboxProject.Items.Add(projectName);
-            }
-            
-            
         }
     }
 }
