@@ -44,7 +44,7 @@
             this.txtProcurementManager = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtQualityManager = new System.Windows.Forms.TextBox();
-            this.txtProjectSponser = new System.Windows.Forms.TextBox();
+            this.txtProjectSponsor = new System.Windows.Forms.TextBox();
             this.txtProjectManager = new System.Windows.Forms.TextBox();
             this.txtProjectReviewGroup = new System.Windows.Forms.TextBox();
             this.txtProjectName = new System.Windows.Forms.TextBox();
@@ -105,7 +105,7 @@
             this.groupBox1.Controls.Add(this.txtProcurementManager);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtQualityManager);
-            this.groupBox1.Controls.Add(this.txtProjectSponser);
+            this.groupBox1.Controls.Add(this.txtProjectSponsor);
             this.groupBox1.Controls.Add(this.txtProjectManager);
             this.groupBox1.Controls.Add(this.txtProjectReviewGroup);
             this.groupBox1.Controls.Add(this.txtProjectName);
@@ -127,6 +127,7 @@
             this.btnCreateProject.TabIndex = 21;
             this.btnCreateProject.Text = "Create New Project";
             this.btnCreateProject.UseVisualStyleBackColor = true;
+            this.btnCreateProject.Click += new System.EventHandler(this.btnCreateProject_Click);
             // 
             // txtProjectOfficeManager
             // 
@@ -147,7 +148,7 @@
             this.label10.Font = new System.Drawing.Font("Cambria", 8F);
             this.label10.Location = new System.Drawing.Point(11, 237);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(144, 16);
+            this.label10.Size = new System.Drawing.Size(109, 12);
             this.label10.TabIndex = 19;
             this.label10.Text = "Project Office Manager";
             // 
@@ -160,7 +161,7 @@
             this.label9.Font = new System.Drawing.Font("Cambria", 8F);
             this.label9.Location = new System.Drawing.Point(11, 205);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(166, 16);
+            this.label9.Size = new System.Drawing.Size(126, 12);
             this.label9.TabIndex = 17;
             this.label9.Text = "Communications Manager";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -174,7 +175,7 @@
             this.label8.Font = new System.Drawing.Font("Cambria", 8F);
             this.label8.Location = new System.Drawing.Point(11, 175);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(144, 16);
+            this.label8.Size = new System.Drawing.Size(109, 12);
             this.label8.TabIndex = 15;
             this.label8.Text = "Procurement Manager";
             // 
@@ -197,7 +198,7 @@
             this.label7.Font = new System.Drawing.Font("Cambria", 8F);
             this.label7.Location = new System.Drawing.Point(11, 144);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 16);
+            this.label7.Size = new System.Drawing.Size(81, 12);
             this.label7.TabIndex = 13;
             this.label7.Text = "Quality Manager";
             // 
@@ -210,7 +211,7 @@
             this.label6.Font = new System.Drawing.Font("Cambria", 8F);
             this.label6.Location = new System.Drawing.Point(11, 113);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 16);
+            this.label6.Size = new System.Drawing.Size(81, 12);
             this.label6.TabIndex = 11;
             this.label6.Text = "Project Manager";
             // 
@@ -223,7 +224,7 @@
             this.label5.Font = new System.Drawing.Font("Cambria", 8F);
             this.label5.Location = new System.Drawing.Point(11, 82);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(140, 16);
+            this.label5.Size = new System.Drawing.Size(108, 12);
             this.label5.TabIndex = 9;
             this.label5.Text = "Project Review Group";
             // 
@@ -246,9 +247,9 @@
             this.label4.Font = new System.Drawing.Font("Cambria", 8F);
             this.label4.Location = new System.Drawing.Point(11, 51);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 16);
+            this.label4.Size = new System.Drawing.Size(80, 12);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Project Sponser";
+            this.label4.Text = "Project Sponsor";
             // 
             // txtQualityManager
             // 
@@ -260,15 +261,15 @@
             this.txtQualityManager.Size = new System.Drawing.Size(150, 25);
             this.txtQualityManager.TabIndex = 14;
             // 
-            // txtProjectSponser
+            // txtProjectSponsor
             // 
-            this.txtProjectSponser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProjectSponser.ForeColor = System.Drawing.Color.White;
-            this.txtProjectSponser.Location = new System.Drawing.Point(183, 47);
-            this.txtProjectSponser.Multiline = true;
-            this.txtProjectSponser.Name = "txtProjectSponser";
-            this.txtProjectSponser.Size = new System.Drawing.Size(150, 25);
-            this.txtProjectSponser.TabIndex = 8;
+            this.txtProjectSponsor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtProjectSponsor.ForeColor = System.Drawing.Color.White;
+            this.txtProjectSponsor.Location = new System.Drawing.Point(183, 47);
+            this.txtProjectSponsor.Multiline = true;
+            this.txtProjectSponsor.Name = "txtProjectSponsor";
+            this.txtProjectSponsor.Size = new System.Drawing.Size(150, 25);
+            this.txtProjectSponsor.TabIndex = 8;
             // 
             // txtProjectManager
             // 
@@ -309,7 +310,7 @@
             this.label1.Font = new System.Drawing.Font("Cambria", 8F);
             this.label1.Location = new System.Drawing.Point(10, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 16);
+            this.label1.Size = new System.Drawing.Size(67, 12);
             this.label1.TabIndex = 0;
             this.label1.Text = "Project Name";
             // 
@@ -340,10 +341,10 @@
             // lstboxProject
             // 
             this.lstboxProject.FormattingEnabled = true;
-            this.lstboxProject.ItemHeight = 16;
+            this.lstboxProject.ItemHeight = 12;
             this.lstboxProject.Location = new System.Drawing.Point(19, 20);
             this.lstboxProject.Name = "lstboxProject";
-            this.lstboxProject.Size = new System.Drawing.Size(319, 356);
+            this.lstboxProject.Size = new System.Drawing.Size(319, 352);
             this.lstboxProject.TabIndex = 16;
             // 
             // groupBox4
@@ -361,7 +362,7 @@
             // 
             // ProjectSelection
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(787, 495);
@@ -373,6 +374,7 @@
             this.MinimizeBox = false;
             this.Name = "ProjectSelection";
             this.Text = "ProjectSelection";
+            this.Load += new System.EventHandler(this.ProjectSelection_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -400,7 +402,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtProjectReviewGroup;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtProjectSponser;
+        private System.Windows.Forms.TextBox txtProjectSponsor;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtProjectName;
         private System.Windows.Forms.Label label1;
