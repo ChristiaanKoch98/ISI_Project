@@ -17,7 +17,7 @@ namespace ProjectManagementToolkit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ProjectPlanDocumentForm());
+            Application.Run(new Login());
         }
     }
 }
