@@ -1,4 +1,8 @@
-﻿using ProjectManagementToolKit;
+﻿using Newtonsoft.Json;
+using ProjectManagementToolkit.MPMM.MPMM_Document_Forms;
+using ProjectManagementToolkit.Properties;
+using ProjectManagementToolkit.Utility;
+using ProjectManagementToolKit;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +22,42 @@ namespace ProjectManagementToolkit
         public MainForm()
         {
             InitializeComponent();
+
+            string json = JsonHelper.loadProjectInfo();
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            ProjectModel projectModel = new ProjectModel();
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            DialogResult result;
+            if (projectModel.LastDateTimeSynced.Year == 1)
+            {
+                result = MessageBox.Show("Do you want to sync with the server for the first time?", "Sync Now", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    MessageBox.Show("Sync With server is completed");
+                    //add sync method here
+                    projectModel.LastDateTimeSynced = DateTime.Now;
+                    projectListModel = projectModel.updateProjectList(projectListModel,projectModel);
+                    json = JsonConvert.SerializeObject(projectListModel);
+                    JsonHelper.saveProjectInfo(json);
+
+                }
+            }
+            else
+            {
+                if (projectModel.LastDateTimeSynced < DateTime.Today)
+                {
+                    result = MessageBox.Show("Do you want to sync with server now?", "Sync Now", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        MessageBox.Show("Sync With server is completed");
+                        //add sync method here
+                        projectModel.LastDateTimeSynced = DateTime.Now;
+                        projectListModel = projectModel.updateProjectList(projectListModel, projectModel);
+                        json = JsonConvert.SerializeObject(projectListModel);
+                        JsonHelper.saveProjectInfo(json);
+                    }
+                }
+            }
         }
 
         private void governanceToolStripMenuItem_Click(object sender, EventArgs e)
@@ -174,6 +214,19 @@ namespace ProjectManagementToolkit
             IT_Management iT_Management = new IT_Management();
             iT_Management.Show();
             iT_Management.MdiParent = this;
+        }
+
+        private void projectSelectionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProjectSelection projectSelection = new ProjectSelection();
+            Settings.Default.ProjectID = "";
+            projectSelection.Show();
+            this.Close();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

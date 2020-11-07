@@ -14,36 +14,45 @@ using System.Net;
 using System.IO;
 using Newtonsoft.Json.Linq;
 using System.Net.Http;
+using ProjectManagementToolkit.Properties;
 
 namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
     public partial class ProjectSelection : Form
     {
-        private static readonly HttpClient client = new HttpClient();
+        List<ProjectModel> projectListModel = new List<ProjectModel>();
+       
         public ProjectSelection()
         {
             InitializeComponent();
+            string json = JsonHelper.loadProjectInfo();
+            if (json != "")
+            {
+                projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            }
+
+            foreach (var project in projectListModel)
+            {
+                lstboxProject.Items.Add(project.ProjectName);
+            }
             
-        }
-
-        private void tabPageExistingProjects_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnSelectProject_Click(object sender, EventArgs e)
         {
-            string projectName = lstboxProject.SelectedItem.ToString();
-
+            int index = lstboxProject.SelectedIndex;
+            Settings.Default.ProjectID = projectListModel[index].ProjectID;
             MainForm mainForm = new MainForm();
-            this.Visible = false;
+            mainForm.WindowState = FormWindowState.Maximized;
             mainForm.Show();
+            this.Visible = false;
         }
 
         private void btnCreateProject_Click(object sender, EventArgs e)
         {
-            string projectID = generateNewProjectID();
             ProjectModel newProject = new ProjectModel();
+            string projectID = newProject.generateID();
+            Settings.Default.ProjectID = projectID;
 
             newProject.ProjectID = projectID;
             newProject.ProjectName = txtProjectName.Text;
@@ -54,75 +63,16 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newProject.ProcurementManager = txtProcurementManager.Text;
             newProject.CommunicationsManager = txtCommunicationsManager.Text;
             newProject.OfficeManager = txtProjectOfficeManager.Text;
-            
 
-            string projectJSON = projectJsonSerialize(newProject);
-            createNewProject(projectJSON);
-            System.Diagnostics.Debug.WriteLine(projectJSON);
-            Properties.Settings.Default.ProjectID = projectID;
-            lstboxProject.Items.Clear();
-            attemptHttpConnection();
-        }
+            projectListModel.Add(newProject);
+            Settings.Default.ProjectID = newProject.ProjectID;
+            string json = JsonConvert.SerializeObject(projectListModel);
+            JsonHelper.saveProjectInfo(json);
+            MainForm mainForm = new MainForm();
+            mainForm.WindowState = FormWindowState.Maximized;
+            mainForm.Show();
+            this.Visible = false;
 
-        private string generateNewProjectID()
-        {
-            System.Diagnostics.Debug.WriteLine("Generating new Project ID");
-            return "Project ID TEST 001";
-        }
-
-        private void createNewProject(string newProjectJsonString)
-        {
-            try
-            {
-                var content = new StringContent(newProjectJsonString, Encoding.UTF8, "application/json");
-
-                var response = client.PostAsync("http://137.117.194.119:3000/project", content).Result;
-
-                loadAllProjects(response.ToString());
-            }
-            catch (Exception e)
-            {
-                System.Diagnostics.Debug.WriteLine(e.StackTrace);
-                //throw;
-            }
-        }
-
-        private string projectJsonSerialize(ProjectModel project)
-        {
-            return JsonConvert.SerializeObject(project);
-        }
-
-        private void ProjectSelection_Load(object sender, EventArgs e)
-        {
-            attemptHttpConnection();
-        }
-
-        private void attemptHttpConnection()
-        {
-            try
-            {
-                string projectsResponse = client.GetStringAsync("http://137.117.194.119:3000/project").Result;
-
-                loadAllProjects(projectsResponse);
-            }
-            catch (Exception e)
-            {
-                System.Diagnostics.Debug.WriteLine(e.StackTrace);
-                //throw;
-            }
-        }
-
-        private void loadAllProjects(string projectsJSON)
-        {
-            System.Diagnostics.Debug.WriteLine(projectsJSON);
-            JArray json = JArray.Parse(projectsJSON);
-            List<ProjectModel> projects = new List<ProjectModel>();
-
-            for (int i = 0; i < json.Count; i++)
-            {
-                projects.Add(JsonConvert.DeserializeObject<ProjectModel>(json[i].ToString()));
-                lstboxProject.Items.Add(projects[i].ProjectID + " - " +projects[i].ProjectName);
-            }
         }
     }
 }

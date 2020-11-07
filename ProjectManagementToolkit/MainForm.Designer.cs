@@ -47,6 +47,7 @@
             this.pLSMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.assetAndInventoryToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.contactsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.projectSelectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +68,7 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.projectSelectionToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.MenuText;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
@@ -81,6 +83,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // mPMMToolStripMenuItem
             // 
@@ -241,6 +244,14 @@
             this.contactsToolStripMenuItem.Text = "Contacts";
             this.contactsToolStripMenuItem.Click += new System.EventHandler(this.contactsToolStripMenuItem_Click);
             // 
+            // projectSelectionToolStripMenuItem
+            // 
+            this.projectSelectionToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.projectSelectionToolStripMenuItem.Name = "projectSelectionToolStripMenuItem";
+            this.projectSelectionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.projectSelectionToolStripMenuItem.Text = "Project Selection";
+            this.projectSelectionToolStripMenuItem.Click += new System.EventHandler(this.projectSelectionToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -283,5 +294,6 @@
         private System.Windows.Forms.ToolStripMenuItem pLSMToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem assetAndInventoryToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem contactsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem projectSelectionToolStripMenuItem;
     }
 }
