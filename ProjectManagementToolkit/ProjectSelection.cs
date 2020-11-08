@@ -25,27 +25,19 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         public ProjectSelection()
         {
             InitializeComponent();
-            string json = JsonHelper.loadProjectInfo();
-            if (json != "")
-            {
-                projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
-            }
-
-            foreach (var project in projectListModel)
-            {
-                lstboxProject.Items.Add(project.ProjectName);
-            }
-            
         }
 
         private void btnSelectProject_Click(object sender, EventArgs e)
         {
-            int index = lstboxProject.SelectedIndex;
-            Settings.Default.ProjectID = projectListModel[index].ProjectID;
-            MainForm mainForm = new MainForm();
-            mainForm.WindowState = FormWindowState.Maximized;
-            mainForm.Show();
-            this.Visible = false;
+            if (lstboxProject.SelectedIndex != -1)
+            {
+                int index = lstboxProject.SelectedIndex;
+                Settings.Default.ProjectID = projectListModel[index].ProjectID;
+                MainForm mainForm = new MainForm();
+                mainForm.WindowState = FormWindowState.Maximized;
+                mainForm.Show();
+                this.Visible = false;
+            }
         }
 
         private void btnCreateProject_Click(object sender, EventArgs e)
@@ -67,12 +59,26 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             projectListModel.Add(newProject);
             Settings.Default.ProjectID = newProject.ProjectID;
             string json = JsonConvert.SerializeObject(projectListModel);
-            JsonHelper.saveProjectInfo(json);
+            JsonHelper.saveProjectInfo(json,Settings.Default.Username);
             MainForm mainForm = new MainForm();
             mainForm.WindowState = FormWindowState.Maximized;
             mainForm.Show();
             this.Visible = false;
 
+        }
+
+        private void ProjectSelection_Load(object sender, EventArgs e)
+        {
+            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            if (json != "")
+            {
+                projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            }
+
+            foreach (var project in projectListModel)
+            {
+                lstboxProject.Items.Add(project.ProjectName);
+            }
         }
     }
 }

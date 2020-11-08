@@ -11,20 +11,32 @@ using System.Windows.Forms;
 using Newtonsoft.Json;
 using System.Runtime.InteropServices;
 using ProjectManagementToolkit.Utility;
+using ProjectManagementToolkit.Properties;
 
 namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
     public partial class ProjectPlanDocumentForm : Form
     {
-        private ProjectPlanModel projectPlanModel = new ProjectPlanModel();
+        VersionControl<ProjectPlanModel> versionControl;
         public ProjectPlanDocumentForm()
         {
             InitializeComponent();
-            string json = JsonHelper.loadDocument( "Example", "ProjectPlan");
-            projectPlanModel = JsonConvert.DeserializeObject<ProjectPlanModel>(json);
-            MessageBox.Show(json);
+        }
+
+        private void ProjectPlanDocumentForm_Load(object sender, EventArgs e)
+        {
+            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "ProjectPlan");
+            if (json != "")
+            {
+                versionControl = JsonConvert.DeserializeObject<VersionControl<ProjectPlanModel>>(json);
+            }
+            else 
+            {
+                versionControl = new VersionControl<ProjectPlanModel>();
+                versionControl.DocumentModels = new List<VersionControl<ProjectPlanModel>.DocumentModel>();
+            }
             List<string[]> rows = new List<string[]>();
-            rows.Add(new string[] { "Document ID", ""});
+            rows.Add(new string[] { "Document ID", "" });
             rows.Add(new string[] { "Document Owner", "" });
             rows.Add(new string[] { "Issue Date", "" });
             rows.Add(new string[] { "Last Save Date", "" });
@@ -36,44 +48,25 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             documentInformation.AllowUserToAddRows = false;
         }
 
-        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tasks_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void constrains_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
-            projectPlanModel.DocumentID     = documentInformation.Rows[0].Cells[1].Value.ToString();
-            projectPlanModel.DocumentOwner  = documentInformation.Rows[1].Cells[1].Value.ToString();
-            projectPlanModel.IssueDate      = documentInformation.Rows[2].Cells[1].Value.ToString();
-            projectPlanModel.LastSavedDate  = documentInformation.Rows[3].Cells[1].Value.ToString();
-            projectPlanModel.FileName       = documentInformation.Rows[4].Cells[1].Value.ToString();
+            ProjectPlanModel projectPlanModel = new ProjectPlanModel();
+            projectPlanModel.DocumentID = documentInformation.Rows[0].Cells[1].Value.ToString();
+            projectPlanModel.DocumentOwner = documentInformation.Rows[1].Cells[1].Value.ToString();
+            projectPlanModel.IssueDate = documentInformation.Rows[2].Cells[1].Value.ToString();
+            projectPlanModel.LastSavedDate = documentInformation.Rows[3].Cells[1].Value.ToString();
+            projectPlanModel.FileName = documentInformation.Rows[4].Cells[1].Value.ToString();
 
-            List<ProjectPlanModel.DocumentHistory>  documentHistories = new List<ProjectPlanModel.DocumentHistory>();
+            List<ProjectPlanModel.DocumentHistory> documentHistories = new List<ProjectPlanModel.DocumentHistory>();
 
             int versionRowsCount = documentHistory.Rows.Count;
 
             for (int i = 0; i < versionRowsCount - 1; i++)
             {
                 ProjectPlanModel.DocumentHistory documentHistoryModel = new ProjectPlanModel.DocumentHistory();
-                var version     = documentHistory.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var issueDate   = documentHistory.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var changes     = documentHistory.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var version = documentHistory.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var issueDate = documentHistory.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var changes = documentHistory.Rows[i].Cells[2].Value?.ToString() ?? "";
                 documentHistoryModel.Version = version;
                 documentHistoryModel.IssueDate = issueDate;
                 documentHistoryModel.Changes = changes;
@@ -88,10 +81,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             for (int i = 0; i < approvalRowsCount - 1; i++)
             {
                 ProjectPlanModel.DocumentApproval documentApproval = new ProjectPlanModel.DocumentApproval();
-                var role        = documentApprovals.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var name        = documentApprovals.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var signature   = documentApprovals.Rows[i].Cells[2].Value?.ToString() ?? "";
-                var date        = documentApprovals.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var role = documentApprovals.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var name = documentApprovals.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var signature = documentApprovals.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var date = documentApprovals.Rows[i].Cells[3].Value?.ToString() ?? "";
                 documentApproval.Role = role;
                 documentApproval.Name = name;
                 documentApproval.Signature = signature;
@@ -129,7 +122,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 var phaseTitle = activitiesDataGridView.Rows[i].Cells[0].Value?.ToString() ?? "";
                 var activityTitle = activitiesDataGridView.Rows[i].Cells[1].Value?.ToString() ?? "";
                 var activityDescription = activitiesDataGridView.Rows[i].Cells[2].Value?.ToString() ?? "";
-                var activitySequence= activitiesDataGridView.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var activitySequence = activitiesDataGridView.Rows[i].Cells[3].Value?.ToString() ?? "";
 
                 activity.PhaseTitle = phaseTitle;
                 activity.ActivityTitle = activityTitle;
@@ -209,13 +202,30 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 dependencies.Add(dependency);
             }
 
+
             projectPlanModel.Dependencies = dependencies;
 
             projectPlanModel.Asssumptions = assumptionsTxt.Text;
             projectPlanModel.Constraints = constrainsTxt.Text;
 
-            string json = JsonConvert.SerializeObject(projectPlanModel);
-            JsonHelper.saveDocument(json, "Example", "ProjectPlan");
+            List<VersionControl<ProjectPlanModel>.DocumentModel> documentModels = versionControl.DocumentModels;
+
+            ProjectPlanModel lattest = versionControl.getLatest(documentModels);
+
+            if (!versionControl.isEqual(lattest, projectPlanModel))
+            {
+                VersionControl<ProjectPlanModel>.DocumentModel documentModel = new VersionControl<ProjectPlanModel>.DocumentModel(projectPlanModel, DateTime.Now, VersionControl<ProjectModel>.generateID());
+
+                documentModels.Add(documentModel);
+
+                versionControl.DocumentModels = documentModels;
+
+                string json = JsonConvert.SerializeObject(versionControl);
+                JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ProjectPlan");
+                MessageBox.Show("Project plan saved successfully", "save", MessageBoxButtons.OK);
+            }
         }
+
+       
     }
 }

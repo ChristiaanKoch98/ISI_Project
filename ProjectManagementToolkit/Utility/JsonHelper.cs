@@ -8,6 +8,7 @@ using System.Security.AccessControl;
 using System.Security.Principal;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
+using System.Windows.Forms;
 
 namespace ProjectManagementToolkit.Utility
 {
@@ -16,7 +17,6 @@ namespace ProjectManagementToolkit.Utility
         static public void saveDocument(string json, string projectID, string documentName)
         {
             string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),"ProjectManagementToolkit", projectID);
-            
             if (!Directory.Exists(path))
             {
                 Directory.CreateDirectory(path);
@@ -48,9 +48,10 @@ namespace ProjectManagementToolkit.Utility
             return json;
         }
 
-        static public void saveProjectInfo(string json)
+        static public void saveProjectInfo(string json, string username)
         {
             string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "ProjectManagementToolkit", "Config");
+            path = Path.Combine(path, username);
             if (!Directory.Exists(path))
             {
                 Directory.CreateDirectory(path);
@@ -60,10 +61,10 @@ namespace ProjectManagementToolkit.Utility
             File.WriteAllText(filename, json);
         }
 
-        static public string loadProjectInfo()
+        static public string loadProjectInfo(string username)
         {
             string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "ProjectManagementToolkit", "Config");
-            string filename = Path.Combine(path, "ProjectInfo.json");
+            string filename = Path.Combine(path, username, "ProjectInfo.json");
             string json = "";
             if (File.Exists(filename))
             {

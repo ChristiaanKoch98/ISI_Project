@@ -23,7 +23,7 @@ namespace ProjectManagementToolkit
         {
             InitializeComponent();
 
-            string json = JsonHelper.loadProjectInfo();
+            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
             ProjectModel projectModel = new ProjectModel();
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
@@ -38,7 +38,7 @@ namespace ProjectManagementToolkit
                     projectModel.LastDateTimeSynced = DateTime.Now;
                     projectListModel = projectModel.updateProjectList(projectListModel,projectModel);
                     json = JsonConvert.SerializeObject(projectListModel);
-                    JsonHelper.saveProjectInfo(json);
+                    JsonHelper.saveProjectInfo(json,Settings.Default.Username);
 
                 }
             }
@@ -54,7 +54,7 @@ namespace ProjectManagementToolkit
                         projectModel.LastDateTimeSynced = DateTime.Now;
                         projectListModel = projectModel.updateProjectList(projectListModel, projectModel);
                         json = JsonConvert.SerializeObject(projectListModel);
-                        JsonHelper.saveProjectInfo(json);
+                        JsonHelper.saveProjectInfo(json,Settings.Default.Username);
                     }
                 }
             }
@@ -170,7 +170,7 @@ namespace ProjectManagementToolkit
 
         private void tEMPStatementOfWorkToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MPMM.MPMM_Document_Forms.StatementOfWorkDocumentForm stateOfWork = new MPMM.MPMM_Document_Forms.StatementOfWorkDocumentForm();
+            StatementOfWorkDocumentForm stateOfWork = new StatementOfWorkDocumentForm();
             stateOfWork.Show();
             stateOfWork.MdiParent = this;
         }
@@ -188,11 +188,6 @@ namespace ProjectManagementToolkit
                     break;
                 }
             }
-        }
-
-        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void generalManagementToolStripMenuItem_Click_1(object sender, EventArgs e)
@@ -227,6 +222,13 @@ namespace ProjectManagementToolkit
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void projectPlanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProjectPlanDocumentForm projectPlanDocumentForm = new ProjectPlanDocumentForm();
+            projectPlanDocumentForm.Show();
+            projectPlanDocumentForm.MdiParent = this;
         }
     }
 }

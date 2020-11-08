@@ -30,6 +30,7 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.projectSelectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mPMMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.governanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,7 +48,8 @@
             this.pLSMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.assetAndInventoryToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.contactsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.projectSelectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.documentTemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.projectPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +59,8 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.mPMMToolStripMenuItem});
+            this.mPMMToolStripMenuItem,
+            this.documentTemToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
@@ -74,14 +77,21 @@
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
-            this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
+            // 
+            // projectSelectionToolStripMenuItem
+            // 
+            this.projectSelectionToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.projectSelectionToolStripMenuItem.Name = "projectSelectionToolStripMenuItem";
+            this.projectSelectionToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
+            this.projectSelectionToolStripMenuItem.Text = "Project Selection";
+            this.projectSelectionToolStripMenuItem.Click += new System.EventHandler(this.projectSelectionToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
             this.exitToolStripMenuItem.ForeColor = System.Drawing.SystemColors.MenuText;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -244,13 +254,21 @@
             this.contactsToolStripMenuItem.Text = "Contacts";
             this.contactsToolStripMenuItem.Click += new System.EventHandler(this.contactsToolStripMenuItem_Click);
             // 
-            // projectSelectionToolStripMenuItem
+            // documentTemToolStripMenuItem
             // 
-            this.projectSelectionToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
-            this.projectSelectionToolStripMenuItem.Name = "projectSelectionToolStripMenuItem";
-            this.projectSelectionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.projectSelectionToolStripMenuItem.Text = "Project Selection";
-            this.projectSelectionToolStripMenuItem.Click += new System.EventHandler(this.projectSelectionToolStripMenuItem_Click);
+            this.documentTemToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.projectPlanToolStripMenuItem});
+            this.documentTemToolStripMenuItem.Name = "documentTemToolStripMenuItem";
+            this.documentTemToolStripMenuItem.Size = new System.Drawing.Size(164, 24);
+            this.documentTemToolStripMenuItem.Text = "Document Templates";
+            // 
+            // projectPlanToolStripMenuItem
+            // 
+            this.projectPlanToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.projectPlanToolStripMenuItem.Name = "projectPlanToolStripMenuItem";
+            this.projectPlanToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.projectPlanToolStripMenuItem.Text = "Project Plan";
+            this.projectPlanToolStripMenuItem.Click += new System.EventHandler(this.projectPlanToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -295,5 +313,7 @@
         private System.Windows.Forms.ToolStripMenuItem assetAndInventoryToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem contactsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem projectSelectionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem documentTemToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem projectPlanToolStripMenuItem;
     }
 }
