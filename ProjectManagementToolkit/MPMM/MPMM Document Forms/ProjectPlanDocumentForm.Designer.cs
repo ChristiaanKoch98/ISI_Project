@@ -33,12 +33,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.documentApprovals = new System.Windows.Forms.DataGridView();
+            this.documentApprovalsDataGridView = new System.Windows.Forms.DataGridView();
             this.approvalRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.approvalName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.approvalSignature = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.approvalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.documentHistory = new System.Windows.Forms.DataGridView();
+            this.documentHistoryDataGridView = new System.Windows.Forms.DataGridView();
             this.Version = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.historyIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.historyChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -86,8 +86,8 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.documentControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.documentApprovals)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentHistory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentApprovalsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentHistoryDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentInformation)).BeginInit();
             this.workBreakStructure.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.effortDataGridView)).BeginInit();
@@ -122,8 +122,8 @@
             this.documentControl.Controls.Add(this.label3);
             this.documentControl.Controls.Add(this.label2);
             this.documentControl.Controls.Add(this.label1);
-            this.documentControl.Controls.Add(this.documentApprovals);
-            this.documentControl.Controls.Add(this.documentHistory);
+            this.documentControl.Controls.Add(this.documentApprovalsDataGridView);
+            this.documentControl.Controls.Add(this.documentHistoryDataGridView);
             this.documentControl.Controls.Add(this.documentInformation);
             this.documentControl.Location = new System.Drawing.Point(4, 25);
             this.documentControl.Margin = new System.Windows.Forms.Padding(4);
@@ -178,23 +178,23 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Document Information";
             // 
-            // documentApprovals
+            // documentApprovalsDataGridView
             // 
-            this.documentApprovals.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.documentApprovalsDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.documentApprovals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.documentApprovals.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.documentApprovalsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.documentApprovalsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.approvalRole,
             this.approvalName,
             this.approvalSignature,
             this.approvalDate});
-            this.documentApprovals.Location = new System.Drawing.Point(221, 315);
-            this.documentApprovals.Margin = new System.Windows.Forms.Padding(4);
-            this.documentApprovals.Name = "documentApprovals";
-            this.documentApprovals.RowHeadersWidth = 51;
-            this.documentApprovals.Size = new System.Drawing.Size(921, 153);
-            this.documentApprovals.TabIndex = 8;
+            this.documentApprovalsDataGridView.Location = new System.Drawing.Point(221, 315);
+            this.documentApprovalsDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.documentApprovalsDataGridView.Name = "documentApprovalsDataGridView";
+            this.documentApprovalsDataGridView.RowHeadersWidth = 51;
+            this.documentApprovalsDataGridView.Size = new System.Drawing.Size(921, 153);
+            this.documentApprovalsDataGridView.TabIndex = 8;
             // 
             // approvalRole
             // 
@@ -226,22 +226,22 @@
             this.approvalDate.MinimumWidth = 6;
             this.approvalDate.Name = "approvalDate";
             // 
-            // documentHistory
+            // documentHistoryDataGridView
             // 
-            this.documentHistory.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.documentHistoryDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.documentHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.documentHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.documentHistoryDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.documentHistoryDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Version,
             this.historyIssueDate,
             this.historyChanges});
-            this.documentHistory.Location = new System.Drawing.Point(221, 162);
-            this.documentHistory.Margin = new System.Windows.Forms.Padding(4);
-            this.documentHistory.Name = "documentHistory";
-            this.documentHistory.RowHeadersWidth = 51;
-            this.documentHistory.Size = new System.Drawing.Size(921, 145);
-            this.documentHistory.TabIndex = 7;
+            this.documentHistoryDataGridView.Location = new System.Drawing.Point(221, 162);
+            this.documentHistoryDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.documentHistoryDataGridView.Name = "documentHistoryDataGridView";
+            this.documentHistoryDataGridView.RowHeadersWidth = 51;
+            this.documentHistoryDataGridView.Size = new System.Drawing.Size(921, 145);
+            this.documentHistoryDataGridView.TabIndex = 7;
             // 
             // Version
             // 
@@ -744,8 +744,8 @@
             this.tabControl1.ResumeLayout(false);
             this.documentControl.ResumeLayout(false);
             this.documentControl.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.documentApprovals)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentHistory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentApprovalsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentHistoryDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentInformation)).EndInit();
             this.workBreakStructure.ResumeLayout(false);
             this.workBreakStructure.PerformLayout();
@@ -768,12 +768,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView documentApprovals;
+        private System.Windows.Forms.DataGridView documentApprovalsDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn approvalRole;
         private System.Windows.Forms.DataGridViewTextBoxColumn approvalName;
         private System.Windows.Forms.DataGridViewTextBoxColumn approvalSignature;
         private System.Windows.Forms.DataGridViewTextBoxColumn approvalDate;
-        private System.Windows.Forms.DataGridView documentHistory;
+        private System.Windows.Forms.DataGridView documentHistoryDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn Version;
         private System.Windows.Forms.DataGridViewTextBoxColumn historyIssueDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn historyChanges;

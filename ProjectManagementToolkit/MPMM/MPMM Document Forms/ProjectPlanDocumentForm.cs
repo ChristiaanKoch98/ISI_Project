@@ -18,6 +18,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
     public partial class ProjectPlanDocumentForm : Form
     {
         VersionControl<ProjectPlanModel> versionControl;
+        ProjectPlanModel newProjectPlanModel;
+        ProjectPlanModel currentProjectPlanModel;
         public ProjectPlanDocumentForm()
         {
             InitializeComponent();
@@ -25,66 +27,50 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void ProjectPlanDocumentForm_Load(object sender, EventArgs e)
         {
-            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "ProjectPlan");
-            if (json != "")
-            {
-                versionControl = JsonConvert.DeserializeObject<VersionControl<ProjectPlanModel>>(json);
-            }
-            else 
-            {
-                versionControl = new VersionControl<ProjectPlanModel>();
-                versionControl.DocumentModels = new List<VersionControl<ProjectPlanModel>.DocumentModel>();
-            }
-            List<string[]> rows = new List<string[]>();
-            rows.Add(new string[] { "Document ID", "" });
-            rows.Add(new string[] { "Document Owner", "" });
-            rows.Add(new string[] { "Issue Date", "" });
-            rows.Add(new string[] { "Last Save Date", "" });
-            rows.Add(new string[] { "File Name", "" });
-            foreach (var row in rows)
-            {
-                documentInformation.Rows.Add(row);
-            }
-            documentInformation.AllowUserToAddRows = false;
+            loadDocument();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            ProjectPlanModel projectPlanModel = new ProjectPlanModel();
-            projectPlanModel.DocumentID = documentInformation.Rows[0].Cells[1].Value.ToString();
-            projectPlanModel.DocumentOwner = documentInformation.Rows[1].Cells[1].Value.ToString();
-            projectPlanModel.IssueDate = documentInformation.Rows[2].Cells[1].Value.ToString();
-            projectPlanModel.LastSavedDate = documentInformation.Rows[3].Cells[1].Value.ToString();
-            projectPlanModel.FileName = documentInformation.Rows[4].Cells[1].Value.ToString();
+            saveDocument();
+        }
+
+        public void saveDocument()
+        {
+            newProjectPlanModel.DocumentID = documentInformation.Rows[0].Cells[1].Value.ToString();
+            newProjectPlanModel.DocumentOwner = documentInformation.Rows[1].Cells[1].Value.ToString();
+            newProjectPlanModel.IssueDate = documentInformation.Rows[2].Cells[1].Value.ToString();
+            newProjectPlanModel.LastSavedDate = documentInformation.Rows[3].Cells[1].Value.ToString();
+            newProjectPlanModel.FileName = documentInformation.Rows[4].Cells[1].Value.ToString();
 
             List<ProjectPlanModel.DocumentHistory> documentHistories = new List<ProjectPlanModel.DocumentHistory>();
 
-            int versionRowsCount = documentHistory.Rows.Count;
+            int versionRowsCount = documentHistoryDataGridView.Rows.Count;
 
             for (int i = 0; i < versionRowsCount - 1; i++)
             {
                 ProjectPlanModel.DocumentHistory documentHistoryModel = new ProjectPlanModel.DocumentHistory();
-                var version = documentHistory.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var issueDate = documentHistory.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var changes = documentHistory.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var version = documentHistoryDataGridView.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var issueDate = documentHistoryDataGridView.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var changes = documentHistoryDataGridView.Rows[i].Cells[2].Value?.ToString() ?? "";
                 documentHistoryModel.Version = version;
                 documentHistoryModel.IssueDate = issueDate;
                 documentHistoryModel.Changes = changes;
                 documentHistories.Add(documentHistoryModel);
             }
-            projectPlanModel.DocumentHistories = documentHistories;
+            newProjectPlanModel.DocumentHistories = documentHistories;
 
             List<ProjectPlanModel.DocumentApproval> documentApprovalsModel = new List<ProjectPlanModel.DocumentApproval>();
 
-            int approvalRowsCount = documentApprovals.Rows.Count;
+            int approvalRowsCount = documentApprovalsDataGridView.Rows.Count;
 
             for (int i = 0; i < approvalRowsCount - 1; i++)
             {
                 ProjectPlanModel.DocumentApproval documentApproval = new ProjectPlanModel.DocumentApproval();
-                var role = documentApprovals.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var name = documentApprovals.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var signature = documentApprovals.Rows[i].Cells[2].Value?.ToString() ?? "";
-                var date = documentApprovals.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var role = documentApprovalsDataGridView.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var name = documentApprovalsDataGridView.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var signature = documentApprovalsDataGridView.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var date = documentApprovalsDataGridView.Rows[i].Cells[3].Value?.ToString() ?? "";
                 documentApproval.Role = role;
                 documentApproval.Name = name;
                 documentApproval.Signature = signature;
@@ -92,7 +78,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 documentApprovalsModel.Add(documentApproval);
             }
-            projectPlanModel.DocumentApprovals = documentApprovalsModel;
+            newProjectPlanModel.DocumentApprovals = documentApprovalsModel;
 
             List<ProjectPlanModel.Phase> phases = new List<ProjectPlanModel.Phase>();
 
@@ -111,7 +97,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 phases.Add(phase);
             }
-            projectPlanModel.Phases = phases;
+            newProjectPlanModel.Phases = phases;
 
             List<ProjectPlanModel.Activity> activities = new List<ProjectPlanModel.Activity>();
             int activityRowsCount = activitiesDataGridView.Rows.Count;
@@ -131,7 +117,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 activities.Add(activity);
             }
-            projectPlanModel.Activities = activities;
+            newProjectPlanModel.Activities = activities;
 
             List<ProjectPlanModel.Task> tasks = new List<ProjectPlanModel.Task>();
             int tasksRowsCount = tasksDataGridView.Rows.Count;
@@ -150,7 +136,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 tasks.Add(task);
             }
-            projectPlanModel.Tasks = tasks;
+            newProjectPlanModel.Tasks = tasks;
 
             List<ProjectPlanModel.Milestone> milestones = new List<ProjectPlanModel.Milestone>();
             int milestoneRowsCount = milestonesDataGridView.Rows.Count;
@@ -167,7 +153,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 milestones.Add(milestone);
             }
-            projectPlanModel.Milestones = milestones;
+            newProjectPlanModel.Milestones = milestones;
 
             List<ProjectPlanModel.Effort> efforts = new List<ProjectPlanModel.Effort>();
             int effortRowsCount = effortDataGridView.Rows.Count;
@@ -184,7 +170,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 efforts.Add(effort);
             }
-            projectPlanModel.Efforts = efforts;
+            newProjectPlanModel.Efforts = efforts;
 
             List<ProjectPlanModel.Dependency> dependencies = new List<ProjectPlanModel.Dependency>();
             int dependenciesRowsCount = dependenciesDataGridView.Rows.Count;
@@ -203,18 +189,17 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
 
 
-            projectPlanModel.Dependencies = dependencies;
+            newProjectPlanModel.Dependencies = dependencies;
 
-            projectPlanModel.Asssumptions = assumptionsTxt.Text;
-            projectPlanModel.Constraints = constrainsTxt.Text;
+            newProjectPlanModel.Asssumptions = assumptionsTxt.Text;
+            newProjectPlanModel.Constraints = constrainsTxt.Text;
 
             List<VersionControl<ProjectPlanModel>.DocumentModel> documentModels = versionControl.DocumentModels;
 
-            ProjectPlanModel lattest = versionControl.getLatest(documentModels);
 
-            if (!versionControl.isEqual(lattest, projectPlanModel))
+            if (!versionControl.isEqual(currentProjectPlanModel, newProjectPlanModel))
             {
-                VersionControl<ProjectPlanModel>.DocumentModel documentModel = new VersionControl<ProjectPlanModel>.DocumentModel(projectPlanModel, DateTime.Now, VersionControl<ProjectModel>.generateID());
+                VersionControl<ProjectPlanModel>.DocumentModel documentModel = new VersionControl<ProjectPlanModel>.DocumentModel(newProjectPlanModel, DateTime.Now, VersionControl<ProjectModel>.generateID());
 
                 documentModels.Add(documentModel);
 
@@ -226,6 +211,90 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
         }
 
+        private void loadDocument()
+        {
+            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "ProjectPlan");
+            List<string[]> documentInfo = new List<string[]>();
+            newProjectPlanModel = new ProjectPlanModel();
+            currentProjectPlanModel = new ProjectPlanModel();
+            if (json != "")
+            {
+                versionControl = JsonConvert.DeserializeObject<VersionControl<ProjectPlanModel>>(json);
+                newProjectPlanModel = JsonConvert.DeserializeObject<ProjectPlanModel>(versionControl.getLatest(versionControl.DocumentModels));
+                currentProjectPlanModel = JsonConvert.DeserializeObject<ProjectPlanModel>(versionControl.getLatest(versionControl.DocumentModels));
+
+                documentInfo.Add(new string[] { "Document ID", currentProjectPlanModel.DocumentID });
+                documentInfo.Add(new string[] { "Document Owner", currentProjectPlanModel.DocumentOwner });
+                documentInfo.Add(new string[] { "Issue Date", currentProjectPlanModel.IssueDate });
+                documentInfo.Add(new string[] { "Last Save Date", currentProjectPlanModel.LastSavedDate });
+                documentInfo.Add(new string[] { "File Name", currentProjectPlanModel.FileName });
+
+                foreach (var row in documentInfo)
+                {
+                    documentInformation.Rows.Add(row);
+                }
+                documentInformation.AllowUserToAddRows = false;
+
+                foreach (var row in currentProjectPlanModel.DocumentHistories)
+                {
+                    documentHistoryDataGridView.Rows.Add(new string[] { row.Version, row.IssueDate, row.Changes });
+                }
+
+                foreach (var row in currentProjectPlanModel.DocumentApprovals)
+                {
+                    documentApprovalsDataGridView.Rows.Add(new string[] { row.Role, row.Name, "", row.DateApproved });
+                }
+
+                foreach (var row in currentProjectPlanModel.Phases)
+                {
+                    phasesDataGridView.Rows.Add(new string[] { row.PhaseTitle, row.PhaseDescription, row.PhaseSequence });
+                }
+
+                foreach (var row in currentProjectPlanModel.Activities)
+                {
+                    activitiesDataGridView.Rows.Add(new string[] { row.PhaseTitle, row.ActivityTitle, row.ActivityDescription, row.ActivitySequence });
+                }
+
+                foreach (var row in currentProjectPlanModel.Tasks)
+                {
+                    tasksDataGridView.Rows.Add(new string[] { row.ActivityTitle, row.TaskTitle, row.TaskDescription, row.TaskSequence });
+                }
+
+                foreach (var row in currentProjectPlanModel.Milestones)
+                {
+                    milestonesDataGridView.Rows.Add(new string[] { row.MilestoneTitle, row.MilestoneDescription, row.MilestoneDate });
+                }
+
+                foreach (var row in currentProjectPlanModel.Efforts)
+                {
+                    effortDataGridView.Rows.Add(new string[] { row.TaskTitle, row.Resource, row.EffortMade });
+                }
+
+                foreach (var row in currentProjectPlanModel.Dependencies)
+                {
+                    dependenciesDataGridView.Rows.Add(new string[] { row.ActivityTitle, row.DependsOn, row.DependencyType });
+                }
+
+                assumptionsTxt.Text = currentProjectPlanModel.Asssumptions;
+                constrainsTxt.Text = currentProjectPlanModel.Constraints;
+            }
+            else
+            {
+                versionControl = new VersionControl<ProjectPlanModel>();
+                versionControl.DocumentModels = new List<VersionControl<ProjectPlanModel>.DocumentModel>();
+                documentInfo.Add(new string[] { "Document ID", "" });
+                documentInfo.Add(new string[] { "Document Owner", "" });
+                documentInfo.Add(new string[] { "Issue Date", "" });
+                documentInfo.Add(new string[] { "Last Save Date", "" });
+                documentInfo.Add(new string[] { "File Name", "" });
+                newProjectPlanModel = new ProjectPlanModel();
+                foreach (var row in documentInfo)
+                {
+                    documentInformation.Rows.Add(row);
+                }
+                documentInformation.AllowUserToAddRows = false;
+            }
+        }
        
     }
 }

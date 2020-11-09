@@ -21,19 +21,20 @@ namespace ProjectManagementToolkit.Utility
 
         }
 
-        public T getLatest(List<DocumentModel> documentModels)
+        public string getLatest(List<DocumentModel> documentModels)
         {
-            T latestObject;
-            if (documentModels.Count > 1)
+            string lastestJSON;
+            if (documentModels.Count >= 1)
             {
                 documentModels = sortVersionByDate(documentModels);
                 DocumentModel documentModel = documentModels.Last();
-                latestObject = documentModel.DocumentObject;
-                return latestObject;
+                T latestObject = documentModel.DocumentObject;
+                lastestJSON = JsonConvert.SerializeObject(latestObject);
+                return lastestJSON;
             }
             else
             {
-                return default(T);
+                return "";
             }
             
         }
