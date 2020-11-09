@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using ProjectManagementToolkit.MPMM;
 using ProjectManagementToolkit.MPMM.MPMM_Document_Forms;
 using ProjectManagementToolkit.Properties;
 using ProjectManagementToolkit.Utility;
@@ -22,42 +23,6 @@ namespace ProjectManagementToolkit
         public MainForm()
         {
             InitializeComponent();
-
-            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
-            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
-            ProjectModel projectModel = new ProjectModel();
-            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
-            DialogResult result;
-            if (projectModel.LastDateTimeSynced.Year == 1)
-            {
-                result = MessageBox.Show("Do you want to sync with the server for the first time?", "Sync Now", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (result == DialogResult.Yes)
-                {
-                    MessageBox.Show("Sync With server is completed");
-                    //add sync method here
-                    projectModel.LastDateTimeSynced = DateTime.Now;
-                    projectListModel = projectModel.updateProjectList(projectListModel,projectModel);
-                    json = JsonConvert.SerializeObject(projectListModel);
-                    JsonHelper.saveProjectInfo(json,Settings.Default.Username);
-
-                }
-            }
-            else
-            {
-                if (projectModel.LastDateTimeSynced < DateTime.Today)
-                {
-                    result = MessageBox.Show("Do you want to sync with server now?", "Sync Now", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
-                    if (result == DialogResult.Yes)
-                    {
-                        MessageBox.Show("Sync With server is completed");
-                        //add sync method here
-                        projectModel.LastDateTimeSynced = DateTime.Now;
-                        projectListModel = projectModel.updateProjectList(projectListModel, projectModel);
-                        json = JsonConvert.SerializeObject(projectListModel);
-                        JsonHelper.saveProjectInfo(json,Settings.Default.Username);
-                    }
-                }
-            }
         }
 
         private void governanceToolStripMenuItem_Click(object sender, EventArgs e)
@@ -186,6 +151,46 @@ namespace ProjectManagementToolkit
                 {
                     client.BackColor = Color.FromArgb(34, 36, 49);
                     break;
+                }
+            }
+
+            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            ProjectModel projectModel = new ProjectModel();
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            DialogResult result;
+            if (projectModel.LastDateTimeSynced.Year == 1)
+            {
+                result = MessageBox.Show("Do you want to sync with the server for the first time?", "Sync Now", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    //add sync method here
+                    SyncForm syncForm = new SyncForm();
+                    syncForm.Show();
+                    syncForm.MdiParent = this;
+                    projectModel.LastDateTimeSynced = DateTime.Now;
+                    projectListModel = projectModel.updateProjectList(projectListModel, projectModel);
+                    json = JsonConvert.SerializeObject(projectListModel);
+                    JsonHelper.saveProjectInfo(json, Settings.Default.Username);
+
+                }
+            }
+            else
+            {
+                if (projectModel.LastDateTimeSynced < DateTime.Today)
+                {
+                    result = MessageBox.Show("Do you want to sync with server now?", "Sync Now", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        //add sync method here
+                        SyncForm syncForm = new SyncForm();
+                        syncForm.Show();
+                        syncForm.MdiParent = this;
+                        projectModel.LastDateTimeSynced = DateTime.Now;
+                        projectListModel = projectModel.updateProjectList(projectListModel, projectModel);
+                        json = JsonConvert.SerializeObject(projectListModel);
+                        JsonHelper.saveProjectInfo(json, Settings.Default.Username);
+                    }
                 }
             }
         }

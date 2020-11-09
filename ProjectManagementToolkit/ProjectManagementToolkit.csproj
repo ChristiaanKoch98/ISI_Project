@@ -201,6 +201,12 @@
     <Compile Include="MPMM\MPMM Document Forms\ProjectPlanDocumentForm.Designer.cs">
       <DependentUpon>ProjectPlanDocumentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MPMM\SyncForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\SyncForm.Designer.cs">
+      <DependentUpon>SyncForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProjectSelection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -461,6 +467,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\ProjectPlanDocumentForm.resx">
       <DependentUpon>ProjectPlanDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\SyncForm.resx">
+      <DependentUpon>SyncForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProjectSelection.resx">
       <DependentUpon>ProjectSelection.cs</DependentUpon>
