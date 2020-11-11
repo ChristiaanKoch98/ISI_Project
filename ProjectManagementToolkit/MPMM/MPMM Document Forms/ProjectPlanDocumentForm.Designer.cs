@@ -33,16 +33,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.documentApprovals = new System.Windows.Forms.DataGridView();
+            this.documentApprovalsDataGridView = new System.Windows.Forms.DataGridView();
             this.approvalRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.approvalName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.approvalSignature = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.approvalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.documentHistory = new System.Windows.Forms.DataGridView();
+            this.documentHistoryDataGridView = new System.Windows.Forms.DataGridView();
             this.Version = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.historyIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.historyChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.documentInformation = new System.Windows.Forms.DataGridView();
+            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.workBreakStructure = new System.Windows.Forms.TabPage();
             this.label8 = new System.Windows.Forms.Label();
             this.effortDataGridView = new System.Windows.Forms.DataGridView();
@@ -82,12 +84,10 @@
             this.appendix = new System.Windows.Forms.TabPage();
             this.schedule = new System.Windows.Forms.TabPage();
             this.btnSave = new System.Windows.Forms.Button();
-            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.documentControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.documentApprovals)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentHistory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentApprovalsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentHistoryDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentInformation)).BeginInit();
             this.workBreakStructure.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.effortDataGridView)).BeginInit();
@@ -110,12 +110,11 @@
             this.tabControl1.Controls.Add(this.appendix);
             this.tabControl1.Controls.Add(this.schedule);
             this.tabControl1.Location = new System.Drawing.Point(16, 15);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1229, 607);
             this.tabControl1.TabIndex = 0;
-            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // documentControl
             // 
@@ -123,13 +122,13 @@
             this.documentControl.Controls.Add(this.label3);
             this.documentControl.Controls.Add(this.label2);
             this.documentControl.Controls.Add(this.label1);
-            this.documentControl.Controls.Add(this.documentApprovals);
-            this.documentControl.Controls.Add(this.documentHistory);
+            this.documentControl.Controls.Add(this.documentApprovalsDataGridView);
+            this.documentControl.Controls.Add(this.documentHistoryDataGridView);
             this.documentControl.Controls.Add(this.documentInformation);
             this.documentControl.Location = new System.Drawing.Point(4, 25);
-            this.documentControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.documentControl.Margin = new System.Windows.Forms.Padding(4);
             this.documentControl.Name = "documentControl";
-            this.documentControl.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.documentControl.Padding = new System.Windows.Forms.Padding(4);
             this.documentControl.Size = new System.Drawing.Size(1221, 578);
             this.documentControl.TabIndex = 0;
             this.documentControl.Text = "Document Control";
@@ -179,23 +178,23 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Document Information";
             // 
-            // documentApprovals
+            // documentApprovalsDataGridView
             // 
-            this.documentApprovals.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.documentApprovalsDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.documentApprovals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.documentApprovals.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.documentApprovalsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.documentApprovalsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.approvalRole,
             this.approvalName,
             this.approvalSignature,
             this.approvalDate});
-            this.documentApprovals.Location = new System.Drawing.Point(221, 315);
-            this.documentApprovals.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.documentApprovals.Name = "documentApprovals";
-            this.documentApprovals.RowHeadersWidth = 51;
-            this.documentApprovals.Size = new System.Drawing.Size(921, 153);
-            this.documentApprovals.TabIndex = 8;
+            this.documentApprovalsDataGridView.Location = new System.Drawing.Point(221, 315);
+            this.documentApprovalsDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.documentApprovalsDataGridView.Name = "documentApprovalsDataGridView";
+            this.documentApprovalsDataGridView.RowHeadersWidth = 51;
+            this.documentApprovalsDataGridView.Size = new System.Drawing.Size(921, 153);
+            this.documentApprovalsDataGridView.TabIndex = 8;
             // 
             // approvalRole
             // 
@@ -227,22 +226,22 @@
             this.approvalDate.MinimumWidth = 6;
             this.approvalDate.Name = "approvalDate";
             // 
-            // documentHistory
+            // documentHistoryDataGridView
             // 
-            this.documentHistory.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.documentHistoryDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.documentHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.documentHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.documentHistoryDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.documentHistoryDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Version,
             this.historyIssueDate,
             this.historyChanges});
-            this.documentHistory.Location = new System.Drawing.Point(221, 162);
-            this.documentHistory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.documentHistory.Name = "documentHistory";
-            this.documentHistory.RowHeadersWidth = 51;
-            this.documentHistory.Size = new System.Drawing.Size(921, 145);
-            this.documentHistory.TabIndex = 7;
+            this.documentHistoryDataGridView.Location = new System.Drawing.Point(221, 162);
+            this.documentHistoryDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.documentHistoryDataGridView.Name = "documentHistoryDataGridView";
+            this.documentHistoryDataGridView.RowHeadersWidth = 51;
+            this.documentHistoryDataGridView.Size = new System.Drawing.Size(921, 145);
+            this.documentHistoryDataGridView.TabIndex = 7;
             // 
             // Version
             // 
@@ -275,11 +274,26 @@
             this.Type,
             this.Information});
             this.documentInformation.Location = new System.Drawing.Point(221, 22);
-            this.documentInformation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.documentInformation.Margin = new System.Windows.Forms.Padding(4);
             this.documentInformation.Name = "documentInformation";
             this.documentInformation.RowHeadersWidth = 51;
             this.documentInformation.Size = new System.Drawing.Size(921, 133);
             this.documentInformation.TabIndex = 6;
+            // 
+            // Type
+            // 
+            this.Type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Type.HeaderText = "Type";
+            this.Type.MinimumWidth = 6;
+            this.Type.Name = "Type";
+            this.Type.ReadOnly = true;
+            // 
+            // Information
+            // 
+            this.Information.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Information.HeaderText = "Information";
+            this.Information.MinimumWidth = 6;
+            this.Information.Name = "Information";
             // 
             // workBreakStructure
             // 
@@ -295,9 +309,9 @@
             this.workBreakStructure.Controls.Add(this.label4);
             this.workBreakStructure.Controls.Add(this.phasesDataGridView);
             this.workBreakStructure.Location = new System.Drawing.Point(4, 25);
-            this.workBreakStructure.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.workBreakStructure.Margin = new System.Windows.Forms.Padding(4);
             this.workBreakStructure.Name = "workBreakStructure";
-            this.workBreakStructure.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.workBreakStructure.Padding = new System.Windows.Forms.Padding(4);
             this.workBreakStructure.Size = new System.Drawing.Size(1221, 578);
             this.workBreakStructure.TabIndex = 1;
             this.workBreakStructure.Text = "Work Breakdown Structure";
@@ -328,7 +342,7 @@
             this.resource,
             this.effortMade});
             this.effortDataGridView.Location = new System.Drawing.Point(224, 469);
-            this.effortDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.effortDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.effortDataGridView.Name = "effortDataGridView";
             this.effortDataGridView.RowHeadersWidth = 51;
             this.effortDataGridView.Size = new System.Drawing.Size(959, 103);
@@ -381,7 +395,7 @@
             this.milestoneDescription,
             this.milestoneDate});
             this.milestonesDataGridView.Location = new System.Drawing.Point(224, 358);
-            this.milestonesDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.milestonesDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.milestonesDataGridView.Name = "milestonesDataGridView";
             this.milestonesDataGridView.RowHeadersWidth = 51;
             this.milestonesDataGridView.Size = new System.Drawing.Size(959, 103);
@@ -422,7 +436,6 @@
             this.label6.Size = new System.Drawing.Size(55, 22);
             this.label6.TabIndex = 9;
             this.label6.Text = "Tasks";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // tasksDataGridView
             // 
@@ -436,12 +449,11 @@
             this.taskDescription,
             this.taskSequence});
             this.tasksDataGridView.Location = new System.Drawing.Point(224, 247);
-            this.tasksDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tasksDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.tasksDataGridView.Name = "tasksDataGridView";
             this.tasksDataGridView.RowHeadersWidth = 51;
             this.tasksDataGridView.Size = new System.Drawing.Size(959, 103);
             this.tasksDataGridView.TabIndex = 8;
-            this.tasksDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tasks_CellContentClick);
             // 
             // tasksActivityTitle
             // 
@@ -498,7 +510,7 @@
             this.activityDescription,
             this.activitySequence});
             this.activitiesDataGridView.Location = new System.Drawing.Point(224, 137);
-            this.activitiesDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activitiesDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.activitiesDataGridView.Name = "activitiesDataGridView";
             this.activitiesDataGridView.RowHeadersWidth = 51;
             this.activitiesDataGridView.Size = new System.Drawing.Size(959, 103);
@@ -558,7 +570,7 @@
             this.phaseDescription,
             this.phaseSequence});
             this.phasesDataGridView.Location = new System.Drawing.Point(224, 26);
-            this.phasesDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.phasesDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.phasesDataGridView.Name = "phasesDataGridView";
             this.phasesDataGridView.RowHeadersWidth = 51;
             this.phasesDataGridView.Size = new System.Drawing.Size(959, 103);
@@ -593,9 +605,9 @@
             this.projectPlan.Controls.Add(this.label9);
             this.projectPlan.Controls.Add(this.dependenciesDataGridView);
             this.projectPlan.Location = new System.Drawing.Point(4, 25);
-            this.projectPlan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.projectPlan.Margin = new System.Windows.Forms.Padding(4);
             this.projectPlan.Name = "projectPlan";
-            this.projectPlan.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.projectPlan.Padding = new System.Windows.Forms.Padding(4);
             this.projectPlan.Size = new System.Drawing.Size(1221, 578);
             this.projectPlan.TabIndex = 2;
             this.projectPlan.Text = "Project Plan";
@@ -609,13 +621,12 @@
             this.constrainsTxt.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.constrainsTxt.ForeColor = System.Drawing.Color.White;
             this.constrainsTxt.Location = new System.Drawing.Point(771, 252);
-            this.constrainsTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.constrainsTxt.Margin = new System.Windows.Forms.Padding(4);
             this.constrainsTxt.Multiline = true;
             this.constrainsTxt.Name = "constrainsTxt";
             this.constrainsTxt.Size = new System.Drawing.Size(389, 283);
             this.constrainsTxt.TabIndex = 10;
             this.constrainsTxt.Text = "Constrains";
-            this.constrainsTxt.TextChanged += new System.EventHandler(this.constrains_TextChanged);
             // 
             // assumptionsTxt
             // 
@@ -626,7 +637,7 @@
             this.assumptionsTxt.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.assumptionsTxt.ForeColor = System.Drawing.Color.White;
             this.assumptionsTxt.Location = new System.Drawing.Point(203, 252);
-            this.assumptionsTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.assumptionsTxt.Margin = new System.Windows.Forms.Padding(4);
             this.assumptionsTxt.Multiline = true;
             this.assumptionsTxt.Name = "assumptionsTxt";
             this.assumptionsTxt.Size = new System.Drawing.Size(380, 283);
@@ -659,7 +670,7 @@
             this.dependsOn,
             this.dependencyType});
             this.dependenciesDataGridView.Location = new System.Drawing.Point(203, 89);
-            this.dependenciesDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dependenciesDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.dependenciesDataGridView.Name = "dependenciesDataGridView";
             this.dependenciesDataGridView.RowHeadersWidth = 51;
             this.dependenciesDataGridView.Size = new System.Drawing.Size(959, 103);
@@ -690,9 +701,9 @@
             // 
             this.appendix.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.appendix.Location = new System.Drawing.Point(4, 25);
-            this.appendix.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.appendix.Margin = new System.Windows.Forms.Padding(4);
             this.appendix.Name = "appendix";
-            this.appendix.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.appendix.Padding = new System.Windows.Forms.Padding(4);
             this.appendix.Size = new System.Drawing.Size(1221, 578);
             this.appendix.TabIndex = 3;
             this.appendix.Text = "Appendix";
@@ -701,9 +712,9 @@
             // 
             this.schedule.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.schedule.Location = new System.Drawing.Point(4, 25);
-            this.schedule.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.schedule.Margin = new System.Windows.Forms.Padding(4);
             this.schedule.Name = "schedule";
-            this.schedule.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.schedule.Padding = new System.Windows.Forms.Padding(4);
             this.schedule.Size = new System.Drawing.Size(1221, 578);
             this.schedule.TabIndex = 4;
             this.schedule.Text = "Schedule";
@@ -718,21 +729,6 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // Type
-            // 
-            this.Type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Type.HeaderText = "Type";
-            this.Type.MinimumWidth = 6;
-            this.Type.Name = "Type";
-            this.Type.ReadOnly = true;
-            // 
-            // Information
-            // 
-            this.Information.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Information.HeaderText = "Information";
-            this.Information.MinimumWidth = 6;
-            this.Information.Name = "Information";
-            // 
             // ProjectPlanDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -741,14 +737,15 @@
             this.ClientSize = new System.Drawing.Size(1261, 636);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ProjectPlanDocumentForm";
             this.Text = "ProjectPlanDocumentForm";
+            this.Load += new System.EventHandler(this.ProjectPlanDocumentForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.documentControl.ResumeLayout(false);
             this.documentControl.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.documentApprovals)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentHistory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentApprovalsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentHistoryDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentInformation)).EndInit();
             this.workBreakStructure.ResumeLayout(false);
             this.workBreakStructure.PerformLayout();
@@ -771,12 +768,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView documentApprovals;
+        private System.Windows.Forms.DataGridView documentApprovalsDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn approvalRole;
         private System.Windows.Forms.DataGridViewTextBoxColumn approvalName;
         private System.Windows.Forms.DataGridViewTextBoxColumn approvalSignature;
         private System.Windows.Forms.DataGridViewTextBoxColumn approvalDate;
-        private System.Windows.Forms.DataGridView documentHistory;
+        private System.Windows.Forms.DataGridView documentHistoryDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn Version;
         private System.Windows.Forms.DataGridViewTextBoxColumn historyIssueDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn historyChanges;

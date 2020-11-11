@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProjectManagementToolkit.MPMM.MPMM_Document_Forms;
+using ProjectManagementToolkit.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -53,8 +55,9 @@ namespace ProjectManagementToolkit
             }
             else
             {
-                ProjectSetup projectSetup = new ProjectSetup();
+                ProjectSelection projectSetup = new ProjectSelection();
                 this.Visible = false;
+                Settings.Default.Username = username;
                 projectSetup.Show();
             }
         }

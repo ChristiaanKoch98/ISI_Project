@@ -30,218 +30,1243 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.projectSelectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mPMMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.governanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.assetAndInventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.assetAndInventoryToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.informationTechnologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.generalManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.academicAndTrainingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.humanResourcesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.marketingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.processesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.policiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.financesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eventsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.projectManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pLSMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contactsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tEMPStatementOfWorkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tEMPChangeRequestFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.developABusinessCaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.undertakeAFeasibilityStudyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.establishTheProjectChaterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.appointAProjectTeamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.setupAProjectOfficeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checklistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.peformPhaseReviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reviewFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.projectPlanningToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createAProjectPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.createAResourcePlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.createAFinancialPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.createAQualityPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
+            this.createARiskPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
+            this.createAnAcceptancePlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
+            this.createACommunicationPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
+            this.createAProcurementPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem13 = new System.Windows.Forms.ToolStripMenuItem();
+            this.contractTheSuppliersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.defineTheSelectionProcessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem14 = new System.Windows.Forms.ToolStripMenuItem();
+            this.issueAStatementOfWorkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem15 = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem13 = new System.Windows.Forms.ToolStripMenuItem();
+            this.issueARequestForInfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem14 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem16 = new System.Windows.Forms.ToolStripMenuItem();
+            this.crearteSupplierContractToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem16 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem18 = new System.Windows.Forms.ToolStripMenuItem();
+            this.issueARequestForProposalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem15 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem17 = new System.Windows.Forms.ToolStripMenuItem();
+            this.performPhaseReviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reviewFormToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem19 = new System.Windows.Forms.ToolStripMenuItem();
+            this.projectExecutionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buildDeliverablesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.monitorControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guideToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.peformTimeManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timeManagementProcessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timesheetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timesheetRegisterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem20 = new System.Windows.Forms.ToolStripMenuItem();
+            this.peformCostManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.costManagementProcessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.expenseFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.expenseRegisterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem21 = new System.Windows.Forms.ToolStripMenuItem();
+            this.peformQualityManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.qualityManagementProcessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.qaulityReviewFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.qualityRegisterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem22 = new System.Windows.Forms.ToolStripMenuItem();
+            this.perfromChangeManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changeManagementProcessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changeRequestFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changeRegisterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem23 = new System.Windows.Forms.ToolStripMenuItem();
+            this.peformRiskManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.riskManagementProcessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.riskFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.riskRegisterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem24 = new System.Windows.Forms.ToolStripMenuItem();
+            this.peformIssueManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.issueManagementProcessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.issueFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.issueRegisterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem25 = new System.Windows.Forms.ToolStripMenuItem();
+            this.peformProcurementManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.procurementRegisterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.purchaseOrderFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.procurementRegisterToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem26 = new System.Windows.Forms.ToolStripMenuItem();
+            this.performAcceptanceManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acceptanceManagementProcessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acceptanceFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acceptanceRegisterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem27 = new System.Windows.Forms.ToolStripMenuItem();
+            this.performCommunicationsManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.communicationsManagementProcesssToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.projectStatusReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.communicationsRegisterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem28 = new System.Windows.Forms.ToolStripMenuItem();
+            this.executionPhaseReviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reviewFormToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem29 = new System.Windows.Forms.ToolStripMenuItem();
+            this.projectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.performProjectClosureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem17 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem30 = new System.Windows.Forms.ToolStripMenuItem();
+            this.reviewProjectCompletionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem18 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem31 = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(143)))), ((int)(((byte)(149)))));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.mPMMToolStripMenuItem});
+            this.mPMMToolStripMenuItem,
+            this.projectPlanningToolStripMenuItem,
+            this.projectExecutionToolStripMenuItem,
+            this.projectToolStripMenuItem,
+            this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(600, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(848, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.projectSelectionToolStripMenuItem,
             this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.MenuText;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
+            // 
+            // projectSelectionToolStripMenuItem
+            // 
+            this.projectSelectionToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.projectSelectionToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.projectSelectionToolStripMenuItem.Name = "projectSelectionToolStripMenuItem";
+            this.projectSelectionToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
+            this.projectSelectionToolStripMenuItem.Text = "Project Selection";
+            this.projectSelectionToolStripMenuItem.Click += new System.EventHandler(this.projectSelectionToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
+            this.exitToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.exitToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // mPMMToolStripMenuItem
             // 
             this.mPMMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.governanceToolStripMenuItem,
-            this.assetAndInventoryToolStripMenuItem,
-            this.academicAndTrainingToolStripMenuItem,
-            this.humanResourcesToolStripMenuItem,
-            this.marketingToolStripMenuItem,
-            this.processesToolStripMenuItem,
-            this.policiesToolStripMenuItem,
-            this.inventoryToolStripMenuItem,
-            this.financesToolStripMenuItem,
-            this.eventsToolStripMenuItem,
-            this.projectManagementToolStripMenuItem,
-            this.pLSMToolStripMenuItem,
-            this.contactsToolStripMenuItem,
-            this.tEMPStatementOfWorkToolStripMenuItem,
-            this.tEMPChangeRequestFormToolStripMenuItem});
+            this.developABusinessCaseToolStripMenuItem,
+            this.undertakeAFeasibilityStudyToolStripMenuItem,
+            this.establishTheProjectChaterToolStripMenuItem,
+            this.appointAProjectTeamToolStripMenuItem,
+            this.setupAProjectOfficeToolStripMenuItem,
+            this.peformPhaseReviewToolStripMenuItem});
+            this.mPMMToolStripMenuItem.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.mPMMToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.mPMMToolStripMenuItem.Name = "mPMMToolStripMenuItem";
-            this.mPMMToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.mPMMToolStripMenuItem.Text = "MPMM";
+            this.mPMMToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.mPMMToolStripMenuItem.Text = "Project Initiation";
             // 
-            // governanceToolStripMenuItem
+            // developABusinessCaseToolStripMenuItem
             // 
-            this.governanceToolStripMenuItem.Name = "governanceToolStripMenuItem";
-            this.governanceToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.governanceToolStripMenuItem.Text = "Governance";
-            this.governanceToolStripMenuItem.Click += new System.EventHandler(this.governanceToolStripMenuItem_Click);
+            this.developABusinessCaseToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.developABusinessCaseToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.templateToolStripMenuItem,
+            this.exampleToolStripMenuItem});
+            this.developABusinessCaseToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.developABusinessCaseToolStripMenuItem.Name = "developABusinessCaseToolStripMenuItem";
+            this.developABusinessCaseToolStripMenuItem.Size = new System.Drawing.Size(283, 26);
+            this.developABusinessCaseToolStripMenuItem.Text = "Develop a Business Case";
             // 
-            // assetAndInventoryToolStripMenuItem
+            // templateToolStripMenuItem
             // 
-            this.assetAndInventoryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.assetAndInventoryToolStripMenuItem1,
-            this.informationTechnologyToolStripMenuItem,
-            this.generalManagementToolStripMenuItem});
-            this.assetAndInventoryToolStripMenuItem.Name = "assetAndInventoryToolStripMenuItem";
-            this.assetAndInventoryToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.assetAndInventoryToolStripMenuItem.Text = "Management";
+            this.templateToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.templateToolStripMenuItem.Name = "templateToolStripMenuItem";
+            this.templateToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.templateToolStripMenuItem.Text = "Template";
+            this.templateToolStripMenuItem.Click += new System.EventHandler(this.templateToolStripMenuItem_Click);
             // 
-            // assetAndInventoryToolStripMenuItem1
+            // exampleToolStripMenuItem
             // 
-            this.assetAndInventoryToolStripMenuItem1.Name = "assetAndInventoryToolStripMenuItem1";
-            this.assetAndInventoryToolStripMenuItem1.Size = new System.Drawing.Size(201, 22);
-            this.assetAndInventoryToolStripMenuItem1.Text = "Asset and Inventory";
-            this.assetAndInventoryToolStripMenuItem1.Click += new System.EventHandler(this.assetAndInventoryToolStripMenuItem1_Click);
+            this.exampleToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.exampleToolStripMenuItem.Name = "exampleToolStripMenuItem";
+            this.exampleToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem.Text = "Example";
             // 
-            // informationTechnologyToolStripMenuItem
+            // undertakeAFeasibilityStudyToolStripMenuItem
             // 
-            this.informationTechnologyToolStripMenuItem.Name = "informationTechnologyToolStripMenuItem";
-            this.informationTechnologyToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
-            this.informationTechnologyToolStripMenuItem.Text = "Information Technology";
-            this.informationTechnologyToolStripMenuItem.Click += new System.EventHandler(this.informationTechnologyToolStripMenuItem_Click);
+            this.undertakeAFeasibilityStudyToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.undertakeAFeasibilityStudyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.templateToolStripMenuItem1,
+            this.exampleToolStripMenuItem1});
+            this.undertakeAFeasibilityStudyToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.undertakeAFeasibilityStudyToolStripMenuItem.Name = "undertakeAFeasibilityStudyToolStripMenuItem";
+            this.undertakeAFeasibilityStudyToolStripMenuItem.Size = new System.Drawing.Size(283, 26);
+            this.undertakeAFeasibilityStudyToolStripMenuItem.Text = "Undertake a Feasibility Study";
             // 
-            // generalManagementToolStripMenuItem
+            // templateToolStripMenuItem1
             // 
-            this.generalManagementToolStripMenuItem.Name = "generalManagementToolStripMenuItem";
-            this.generalManagementToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
-            this.generalManagementToolStripMenuItem.Text = "General Management";
-            this.generalManagementToolStripMenuItem.Click += new System.EventHandler(this.generalManagementToolStripMenuItem_Click);
+            this.templateToolStripMenuItem1.BackColor = System.Drawing.Color.Gainsboro;
+            this.templateToolStripMenuItem1.Name = "templateToolStripMenuItem1";
+            this.templateToolStripMenuItem1.Size = new System.Drawing.Size(154, 26);
+            this.templateToolStripMenuItem1.Text = "Template";
+            this.templateToolStripMenuItem1.Click += new System.EventHandler(this.templateToolStripMenuItem1_Click);
             // 
-            // academicAndTrainingToolStripMenuItem
+            // exampleToolStripMenuItem1
             // 
-            this.academicAndTrainingToolStripMenuItem.Name = "academicAndTrainingToolStripMenuItem";
-            this.academicAndTrainingToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.academicAndTrainingToolStripMenuItem.Text = "Academic and Training";
-            this.academicAndTrainingToolStripMenuItem.Click += new System.EventHandler(this.academicAndTrainingToolStripMenuItem_Click);
+            this.exampleToolStripMenuItem1.BackColor = System.Drawing.Color.Gainsboro;
+            this.exampleToolStripMenuItem1.Name = "exampleToolStripMenuItem1";
+            this.exampleToolStripMenuItem1.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem1.Text = "Example";
             // 
-            // humanResourcesToolStripMenuItem
+            // establishTheProjectChaterToolStripMenuItem
             // 
-            this.humanResourcesToolStripMenuItem.Name = "humanResourcesToolStripMenuItem";
-            this.humanResourcesToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.humanResourcesToolStripMenuItem.Text = "Human Resources";
-            this.humanResourcesToolStripMenuItem.Click += new System.EventHandler(this.humanResourcesToolStripMenuItem_Click);
+            this.establishTheProjectChaterToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.establishTheProjectChaterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exampleToolStripMenuItem2,
+            this.templateToolStripMenuItem2});
+            this.establishTheProjectChaterToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.establishTheProjectChaterToolStripMenuItem.Name = "establishTheProjectChaterToolStripMenuItem";
+            this.establishTheProjectChaterToolStripMenuItem.Size = new System.Drawing.Size(283, 26);
+            this.establishTheProjectChaterToolStripMenuItem.Text = "Establish the Project Chater";
             // 
-            // marketingToolStripMenuItem
+            // exampleToolStripMenuItem2
             // 
-            this.marketingToolStripMenuItem.Name = "marketingToolStripMenuItem";
-            this.marketingToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.marketingToolStripMenuItem.Text = "Marketing";
-            this.marketingToolStripMenuItem.Click += new System.EventHandler(this.marketingToolStripMenuItem_Click);
+            this.exampleToolStripMenuItem2.BackColor = System.Drawing.Color.Gainsboro;
+            this.exampleToolStripMenuItem2.Name = "exampleToolStripMenuItem2";
+            this.exampleToolStripMenuItem2.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem2.Text = "Example";
             // 
-            // processesToolStripMenuItem
+            // templateToolStripMenuItem2
             // 
-            this.processesToolStripMenuItem.Name = "processesToolStripMenuItem";
-            this.processesToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.processesToolStripMenuItem.Text = "Processes";
-            this.processesToolStripMenuItem.Click += new System.EventHandler(this.processesToolStripMenuItem_Click);
+            this.templateToolStripMenuItem2.BackColor = System.Drawing.Color.Gainsboro;
+            this.templateToolStripMenuItem2.Name = "templateToolStripMenuItem2";
+            this.templateToolStripMenuItem2.Size = new System.Drawing.Size(154, 26);
+            this.templateToolStripMenuItem2.Text = "Template";
             // 
-            // policiesToolStripMenuItem
+            // appointAProjectTeamToolStripMenuItem
             // 
-            this.policiesToolStripMenuItem.Name = "policiesToolStripMenuItem";
-            this.policiesToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.policiesToolStripMenuItem.Text = "Policies and Procedures";
-            this.policiesToolStripMenuItem.Click += new System.EventHandler(this.policiesToolStripMenuItem_Click);
+            this.appointAProjectTeamToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.appointAProjectTeamToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.templateToolStripMenuItem3,
+            this.exampleToolStripMenuItem3});
+            this.appointAProjectTeamToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.appointAProjectTeamToolStripMenuItem.Name = "appointAProjectTeamToolStripMenuItem";
+            this.appointAProjectTeamToolStripMenuItem.Size = new System.Drawing.Size(283, 26);
+            this.appointAProjectTeamToolStripMenuItem.Text = "Appoint a Project Team";
             // 
-            // inventoryToolStripMenuItem
+            // templateToolStripMenuItem3
             // 
-            this.inventoryToolStripMenuItem.Name = "inventoryToolStripMenuItem";
-            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.inventoryToolStripMenuItem.Text = "Inventory";
-            this.inventoryToolStripMenuItem.Click += new System.EventHandler(this.inventoryToolStripMenuItem_Click);
+            this.templateToolStripMenuItem3.BackColor = System.Drawing.Color.Gainsboro;
+            this.templateToolStripMenuItem3.Name = "templateToolStripMenuItem3";
+            this.templateToolStripMenuItem3.Size = new System.Drawing.Size(154, 26);
+            this.templateToolStripMenuItem3.Text = "Template";
+            this.templateToolStripMenuItem3.Click += new System.EventHandler(this.templateToolStripMenuItem3_Click);
             // 
-            // financesToolStripMenuItem
+            // exampleToolStripMenuItem3
             // 
-            this.financesToolStripMenuItem.Name = "financesToolStripMenuItem";
-            this.financesToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.financesToolStripMenuItem.Text = "Finances";
-            this.financesToolStripMenuItem.Click += new System.EventHandler(this.financesToolStripMenuItem_Click);
+            this.exampleToolStripMenuItem3.BackColor = System.Drawing.Color.Gainsboro;
+            this.exampleToolStripMenuItem3.Name = "exampleToolStripMenuItem3";
+            this.exampleToolStripMenuItem3.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem3.Text = "Example";
             // 
-            // eventsToolStripMenuItem
+            // setupAProjectOfficeToolStripMenuItem
             // 
-            this.eventsToolStripMenuItem.Name = "eventsToolStripMenuItem";
-            this.eventsToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.eventsToolStripMenuItem.Text = "Events";
-            this.eventsToolStripMenuItem.Click += new System.EventHandler(this.eventsToolStripMenuItem_Click);
+            this.setupAProjectOfficeToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.setupAProjectOfficeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.checklistToolStripMenuItem,
+            this.exampleToolStripMenuItem4});
+            this.setupAProjectOfficeToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.setupAProjectOfficeToolStripMenuItem.Name = "setupAProjectOfficeToolStripMenuItem";
+            this.setupAProjectOfficeToolStripMenuItem.Size = new System.Drawing.Size(283, 26);
+            this.setupAProjectOfficeToolStripMenuItem.Text = "Setup a Project Office ";
             // 
-            // projectManagementToolStripMenuItem
+            // checklistToolStripMenuItem
             // 
-            this.projectManagementToolStripMenuItem.Name = "projectManagementToolStripMenuItem";
-            this.projectManagementToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.projectManagementToolStripMenuItem.Text = "Project Management";
-            this.projectManagementToolStripMenuItem.Click += new System.EventHandler(this.projectManagementToolStripMenuItem_Click);
+            this.checklistToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.checklistToolStripMenuItem.Name = "checklistToolStripMenuItem";
+            this.checklistToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.checklistToolStripMenuItem.Text = "Checklist";
+            this.checklistToolStripMenuItem.Click += new System.EventHandler(this.checklistToolStripMenuItem_Click);
             // 
-            // pLSMToolStripMenuItem
+            // exampleToolStripMenuItem4
             // 
-            this.pLSMToolStripMenuItem.Name = "pLSMToolStripMenuItem";
-            this.pLSMToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.pLSMToolStripMenuItem.Text = "PLSM";
-            this.pLSMToolStripMenuItem.Click += new System.EventHandler(this.pLSMToolStripMenuItem_Click);
+            this.exampleToolStripMenuItem4.BackColor = System.Drawing.Color.Gainsboro;
+            this.exampleToolStripMenuItem4.Name = "exampleToolStripMenuItem4";
+            this.exampleToolStripMenuItem4.Size = new System.Drawing.Size(150, 26);
+            this.exampleToolStripMenuItem4.Text = "Example";
             // 
-            // contactsToolStripMenuItem
+            // peformPhaseReviewToolStripMenuItem
             // 
-            this.contactsToolStripMenuItem.Name = "contactsToolStripMenuItem";
-            this.contactsToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.contactsToolStripMenuItem.Text = "Contacts";
-            this.contactsToolStripMenuItem.Click += new System.EventHandler(this.contactsToolStripMenuItem_Click);
+            this.peformPhaseReviewToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.peformPhaseReviewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reviewFormToolStripMenuItem,
+            this.exampleToolStripMenuItem5});
+            this.peformPhaseReviewToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.peformPhaseReviewToolStripMenuItem.Name = "peformPhaseReviewToolStripMenuItem";
+            this.peformPhaseReviewToolStripMenuItem.Size = new System.Drawing.Size(283, 26);
+            this.peformPhaseReviewToolStripMenuItem.Text = "Initiation Phase Review";
             // 
-            // tEMPStatementOfWorkToolStripMenuItem
+            // reviewFormToolStripMenuItem
             // 
-            this.tEMPStatementOfWorkToolStripMenuItem.Name = "tEMPStatementOfWorkToolStripMenuItem";
-            this.tEMPStatementOfWorkToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.tEMPStatementOfWorkToolStripMenuItem.Text = "TEMP Statement of work";
-            this.tEMPStatementOfWorkToolStripMenuItem.Click += new System.EventHandler(this.tEMPStatementOfWorkToolStripMenuItem_Click);
+            this.reviewFormToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.reviewFormToolStripMenuItem.Name = "reviewFormToolStripMenuItem";
+            this.reviewFormToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
+            this.reviewFormToolStripMenuItem.Text = "Review Form";
+            this.reviewFormToolStripMenuItem.Click += new System.EventHandler(this.reviewFormToolStripMenuItem_Click);
             // 
-            // tEMPChangeRequestFormToolStripMenuItem
+            // exampleToolStripMenuItem5
             // 
-            this.tEMPChangeRequestFormToolStripMenuItem.Name = "tEMPChangeRequestFormToolStripMenuItem";
-            this.tEMPChangeRequestFormToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.tEMPChangeRequestFormToolStripMenuItem.Text = "TEMP Change Request Form";
-            this.tEMPChangeRequestFormToolStripMenuItem.Click += new System.EventHandler(this.tEMPChangeRequestFormToolStripMenuItem_Click);
+            this.exampleToolStripMenuItem5.BackColor = System.Drawing.Color.Gainsboro;
+            this.exampleToolStripMenuItem5.Name = "exampleToolStripMenuItem5";
+            this.exampleToolStripMenuItem5.Size = new System.Drawing.Size(177, 26);
+            this.exampleToolStripMenuItem5.Text = "Example";
+            // 
+            // projectPlanningToolStripMenuItem
+            // 
+            this.projectPlanningToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.createAProjectPlanToolStripMenuItem,
+            this.createAResourcePlanToolStripMenuItem,
+            this.createAFinancialPlanToolStripMenuItem,
+            this.createAQualityPlanToolStripMenuItem,
+            this.createARiskPlanToolStripMenuItem,
+            this.createAnAcceptancePlanToolStripMenuItem,
+            this.createACommunicationPlanToolStripMenuItem,
+            this.createAProcurementPlanToolStripMenuItem,
+            this.contractTheSuppliersToolStripMenuItem,
+            this.performPhaseReviewToolStripMenuItem});
+            this.projectPlanningToolStripMenuItem.Name = "projectPlanningToolStripMenuItem";
+            this.projectPlanningToolStripMenuItem.Size = new System.Drawing.Size(130, 24);
+            this.projectPlanningToolStripMenuItem.Text = "Project Planning";
+            // 
+            // createAProjectPlanToolStripMenuItem
+            // 
+            this.createAProjectPlanToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.createAProjectPlanToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.templateToolStripMenuItem4,
+            this.exampleToolStripMenuItem6});
+            this.createAProjectPlanToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.createAProjectPlanToolStripMenuItem.Name = "createAProjectPlanToolStripMenuItem";
+            this.createAProjectPlanToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.createAProjectPlanToolStripMenuItem.Text = "Create a Project Plan";
+            // 
+            // templateToolStripMenuItem4
+            // 
+            this.templateToolStripMenuItem4.BackColor = System.Drawing.Color.Gainsboro;
+            this.templateToolStripMenuItem4.Name = "templateToolStripMenuItem4";
+            this.templateToolStripMenuItem4.Size = new System.Drawing.Size(154, 26);
+            this.templateToolStripMenuItem4.Text = "Template";
+            this.templateToolStripMenuItem4.Click += new System.EventHandler(this.templateToolStripMenuItem4_Click);
+            // 
+            // exampleToolStripMenuItem6
+            // 
+            this.exampleToolStripMenuItem6.BackColor = System.Drawing.Color.Gainsboro;
+            this.exampleToolStripMenuItem6.Name = "exampleToolStripMenuItem6";
+            this.exampleToolStripMenuItem6.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem6.Text = "Example";
+            // 
+            // createAResourcePlanToolStripMenuItem
+            // 
+            this.createAResourcePlanToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.createAResourcePlanToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.templateToolStripMenuItem5,
+            this.exampleToolStripMenuItem7});
+            this.createAResourcePlanToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.createAResourcePlanToolStripMenuItem.Name = "createAResourcePlanToolStripMenuItem";
+            this.createAResourcePlanToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.createAResourcePlanToolStripMenuItem.Text = "Create a Resource Plan";
+            // 
+            // templateToolStripMenuItem5
+            // 
+            this.templateToolStripMenuItem5.BackColor = System.Drawing.Color.Gainsboro;
+            this.templateToolStripMenuItem5.Name = "templateToolStripMenuItem5";
+            this.templateToolStripMenuItem5.Size = new System.Drawing.Size(154, 26);
+            this.templateToolStripMenuItem5.Text = "Template";
+            this.templateToolStripMenuItem5.Click += new System.EventHandler(this.templateToolStripMenuItem5_Click);
+            // 
+            // exampleToolStripMenuItem7
+            // 
+            this.exampleToolStripMenuItem7.BackColor = System.Drawing.Color.Gainsboro;
+            this.exampleToolStripMenuItem7.Name = "exampleToolStripMenuItem7";
+            this.exampleToolStripMenuItem7.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem7.Text = "Example";
+            // 
+            // createAFinancialPlanToolStripMenuItem
+            // 
+            this.createAFinancialPlanToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.createAFinancialPlanToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.templateToolStripMenuItem6,
+            this.exampleToolStripMenuItem8});
+            this.createAFinancialPlanToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.createAFinancialPlanToolStripMenuItem.Name = "createAFinancialPlanToolStripMenuItem";
+            this.createAFinancialPlanToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.createAFinancialPlanToolStripMenuItem.Text = "Create a Financial Plan";
+            // 
+            // templateToolStripMenuItem6
+            // 
+            this.templateToolStripMenuItem6.BackColor = System.Drawing.Color.Gainsboro;
+            this.templateToolStripMenuItem6.Name = "templateToolStripMenuItem6";
+            this.templateToolStripMenuItem6.Size = new System.Drawing.Size(154, 26);
+            this.templateToolStripMenuItem6.Text = "Template";
+            this.templateToolStripMenuItem6.Click += new System.EventHandler(this.templateToolStripMenuItem6_Click);
+            // 
+            // exampleToolStripMenuItem8
+            // 
+            this.exampleToolStripMenuItem8.BackColor = System.Drawing.Color.Gainsboro;
+            this.exampleToolStripMenuItem8.Name = "exampleToolStripMenuItem8";
+            this.exampleToolStripMenuItem8.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem8.Text = "Example";
+            // 
+            // createAQualityPlanToolStripMenuItem
+            // 
+            this.createAQualityPlanToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.createAQualityPlanToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.templateToolStripMenuItem7,
+            this.exampleToolStripMenuItem9});
+            this.createAQualityPlanToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.createAQualityPlanToolStripMenuItem.Name = "createAQualityPlanToolStripMenuItem";
+            this.createAQualityPlanToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.createAQualityPlanToolStripMenuItem.Text = "Create a Quality Plan";
+            // 
+            // templateToolStripMenuItem7
+            // 
+            this.templateToolStripMenuItem7.BackColor = System.Drawing.Color.Gainsboro;
+            this.templateToolStripMenuItem7.Name = "templateToolStripMenuItem7";
+            this.templateToolStripMenuItem7.Size = new System.Drawing.Size(158, 26);
+            this.templateToolStripMenuItem7.Text = "Template ";
+            this.templateToolStripMenuItem7.Click += new System.EventHandler(this.templateToolStripMenuItem7_Click);
+            // 
+            // exampleToolStripMenuItem9
+            // 
+            this.exampleToolStripMenuItem9.BackColor = System.Drawing.Color.Gainsboro;
+            this.exampleToolStripMenuItem9.Name = "exampleToolStripMenuItem9";
+            this.exampleToolStripMenuItem9.Size = new System.Drawing.Size(158, 26);
+            this.exampleToolStripMenuItem9.Text = "Example";
+            // 
+            // createARiskPlanToolStripMenuItem
+            // 
+            this.createARiskPlanToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.createARiskPlanToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.templateToolStripMenuItem8,
+            this.exampleToolStripMenuItem10});
+            this.createARiskPlanToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.createARiskPlanToolStripMenuItem.Name = "createARiskPlanToolStripMenuItem";
+            this.createARiskPlanToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.createARiskPlanToolStripMenuItem.Text = "Create a Risk Plan";
+            // 
+            // templateToolStripMenuItem8
+            // 
+            this.templateToolStripMenuItem8.BackColor = System.Drawing.Color.Gainsboro;
+            this.templateToolStripMenuItem8.Name = "templateToolStripMenuItem8";
+            this.templateToolStripMenuItem8.Size = new System.Drawing.Size(154, 26);
+            this.templateToolStripMenuItem8.Text = "Template";
+            this.templateToolStripMenuItem8.Click += new System.EventHandler(this.templateToolStripMenuItem8_Click);
+            // 
+            // exampleToolStripMenuItem10
+            // 
+            this.exampleToolStripMenuItem10.BackColor = System.Drawing.Color.Gainsboro;
+            this.exampleToolStripMenuItem10.Name = "exampleToolStripMenuItem10";
+            this.exampleToolStripMenuItem10.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem10.Text = "Example";
+            // 
+            // createAnAcceptancePlanToolStripMenuItem
+            // 
+            this.createAnAcceptancePlanToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.createAnAcceptancePlanToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.templateToolStripMenuItem9,
+            this.exampleToolStripMenuItem11});
+            this.createAnAcceptancePlanToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.createAnAcceptancePlanToolStripMenuItem.Name = "createAnAcceptancePlanToolStripMenuItem";
+            this.createAnAcceptancePlanToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.createAnAcceptancePlanToolStripMenuItem.Text = "Create an Acceptance Plan";
+            // 
+            // templateToolStripMenuItem9
+            // 
+            this.templateToolStripMenuItem9.BackColor = System.Drawing.Color.Gainsboro;
+            this.templateToolStripMenuItem9.Name = "templateToolStripMenuItem9";
+            this.templateToolStripMenuItem9.Size = new System.Drawing.Size(158, 26);
+            this.templateToolStripMenuItem9.Text = "Template ";
+            this.templateToolStripMenuItem9.Click += new System.EventHandler(this.templateToolStripMenuItem9_Click);
+            // 
+            // exampleToolStripMenuItem11
+            // 
+            this.exampleToolStripMenuItem11.BackColor = System.Drawing.Color.Gainsboro;
+            this.exampleToolStripMenuItem11.Name = "exampleToolStripMenuItem11";
+            this.exampleToolStripMenuItem11.Size = new System.Drawing.Size(158, 26);
+            this.exampleToolStripMenuItem11.Text = "Example ";
+            // 
+            // createACommunicationPlanToolStripMenuItem
+            // 
+            this.createACommunicationPlanToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.createACommunicationPlanToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.templateToolStripMenuItem10,
+            this.exampleToolStripMenuItem12});
+            this.createACommunicationPlanToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.createACommunicationPlanToolStripMenuItem.Name = "createACommunicationPlanToolStripMenuItem";
+            this.createACommunicationPlanToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.createACommunicationPlanToolStripMenuItem.Text = "Create a Communication Plan";
+            // 
+            // templateToolStripMenuItem10
+            // 
+            this.templateToolStripMenuItem10.BackColor = System.Drawing.Color.Gainsboro;
+            this.templateToolStripMenuItem10.Name = "templateToolStripMenuItem10";
+            this.templateToolStripMenuItem10.Size = new System.Drawing.Size(158, 26);
+            this.templateToolStripMenuItem10.Text = "Template ";
+            this.templateToolStripMenuItem10.Click += new System.EventHandler(this.templateToolStripMenuItem10_Click);
+            // 
+            // exampleToolStripMenuItem12
+            // 
+            this.exampleToolStripMenuItem12.BackColor = System.Drawing.Color.Gainsboro;
+            this.exampleToolStripMenuItem12.Name = "exampleToolStripMenuItem12";
+            this.exampleToolStripMenuItem12.Size = new System.Drawing.Size(158, 26);
+            this.exampleToolStripMenuItem12.Text = "Example";
+            // 
+            // createAProcurementPlanToolStripMenuItem
+            // 
+            this.createAProcurementPlanToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.createAProcurementPlanToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.templateToolStripMenuItem11,
+            this.exampleToolStripMenuItem13});
+            this.createAProcurementPlanToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.createAProcurementPlanToolStripMenuItem.Name = "createAProcurementPlanToolStripMenuItem";
+            this.createAProcurementPlanToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.createAProcurementPlanToolStripMenuItem.Text = "Create a Procurement Plan";
+            // 
+            // templateToolStripMenuItem11
+            // 
+            this.templateToolStripMenuItem11.BackColor = System.Drawing.Color.Gainsboro;
+            this.templateToolStripMenuItem11.Name = "templateToolStripMenuItem11";
+            this.templateToolStripMenuItem11.Size = new System.Drawing.Size(154, 26);
+            this.templateToolStripMenuItem11.Text = "Template";
+            this.templateToolStripMenuItem11.Click += new System.EventHandler(this.templateToolStripMenuItem11_Click);
+            // 
+            // exampleToolStripMenuItem13
+            // 
+            this.exampleToolStripMenuItem13.BackColor = System.Drawing.Color.Gainsboro;
+            this.exampleToolStripMenuItem13.Name = "exampleToolStripMenuItem13";
+            this.exampleToolStripMenuItem13.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem13.Text = "Example";
+            // 
+            // contractTheSuppliersToolStripMenuItem
+            // 
+            this.contractTheSuppliersToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.contractTheSuppliersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.defineTheSelectionProcessToolStripMenuItem,
+            this.issueAStatementOfWorkToolStripMenuItem,
+            this.issueARequestForInfToolStripMenuItem,
+            this.crearteSupplierContractToolStripMenuItem,
+            this.issueARequestForProposalToolStripMenuItem});
+            this.contractTheSuppliersToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.contractTheSuppliersToolStripMenuItem.Name = "contractTheSuppliersToolStripMenuItem";
+            this.contractTheSuppliersToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.contractTheSuppliersToolStripMenuItem.Text = "Contract the Suppliers ";
+            // 
+            // defineTheSelectionProcessToolStripMenuItem
+            // 
+            this.defineTheSelectionProcessToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.defineTheSelectionProcessToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.templateToolStripMenuItem12,
+            this.exampleToolStripMenuItem14});
+            this.defineTheSelectionProcessToolStripMenuItem.Name = "defineTheSelectionProcessToolStripMenuItem";
+            this.defineTheSelectionProcessToolStripMenuItem.Size = new System.Drawing.Size(298, 26);
+            this.defineTheSelectionProcessToolStripMenuItem.Text = "Define the Selection Process";
+            // 
+            // templateToolStripMenuItem12
+            // 
+            this.templateToolStripMenuItem12.BackColor = System.Drawing.Color.Gainsboro;
+            this.templateToolStripMenuItem12.Name = "templateToolStripMenuItem12";
+            this.templateToolStripMenuItem12.Size = new System.Drawing.Size(154, 26);
+            this.templateToolStripMenuItem12.Text = "Template";
+            // 
+            // exampleToolStripMenuItem14
+            // 
+            this.exampleToolStripMenuItem14.BackColor = System.Drawing.Color.Gainsboro;
+            this.exampleToolStripMenuItem14.Name = "exampleToolStripMenuItem14";
+            this.exampleToolStripMenuItem14.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem14.Text = "Example";
+            // 
+            // issueAStatementOfWorkToolStripMenuItem
+            // 
+            this.issueAStatementOfWorkToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.issueAStatementOfWorkToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exampleToolStripMenuItem15,
+            this.templateToolStripMenuItem13});
+            this.issueAStatementOfWorkToolStripMenuItem.Name = "issueAStatementOfWorkToolStripMenuItem";
+            this.issueAStatementOfWorkToolStripMenuItem.Size = new System.Drawing.Size(298, 26);
+            this.issueAStatementOfWorkToolStripMenuItem.Text = "Issue a Statement of Work";
+            // 
+            // exampleToolStripMenuItem15
+            // 
+            this.exampleToolStripMenuItem15.BackColor = System.Drawing.Color.Gainsboro;
+            this.exampleToolStripMenuItem15.Name = "exampleToolStripMenuItem15";
+            this.exampleToolStripMenuItem15.Size = new System.Drawing.Size(224, 26);
+            this.exampleToolStripMenuItem15.Text = "Example";
+            this.exampleToolStripMenuItem15.Click += new System.EventHandler(this.exampleToolStripMenuItem15_Click);
+            // 
+            // templateToolStripMenuItem13
+            // 
+            this.templateToolStripMenuItem13.BackColor = System.Drawing.Color.Gainsboro;
+            this.templateToolStripMenuItem13.Name = "templateToolStripMenuItem13";
+            this.templateToolStripMenuItem13.Size = new System.Drawing.Size(224, 26);
+            this.templateToolStripMenuItem13.Text = "Template";
+            // 
+            // issueARequestForInfToolStripMenuItem
+            // 
+            this.issueARequestForInfToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.issueARequestForInfToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.templateToolStripMenuItem14,
+            this.exampleToolStripMenuItem16});
+            this.issueARequestForInfToolStripMenuItem.Name = "issueARequestForInfToolStripMenuItem";
+            this.issueARequestForInfToolStripMenuItem.Size = new System.Drawing.Size(298, 26);
+            this.issueARequestForInfToolStripMenuItem.Text = "Issue a Request for Information";
+            // 
+            // templateToolStripMenuItem14
+            // 
+            this.templateToolStripMenuItem14.BackColor = System.Drawing.Color.Gainsboro;
+            this.templateToolStripMenuItem14.Name = "templateToolStripMenuItem14";
+            this.templateToolStripMenuItem14.Size = new System.Drawing.Size(224, 26);
+            this.templateToolStripMenuItem14.Text = "Template";
+            this.templateToolStripMenuItem14.Click += new System.EventHandler(this.templateToolStripMenuItem14_Click);
+            // 
+            // exampleToolStripMenuItem16
+            // 
+            this.exampleToolStripMenuItem16.BackColor = System.Drawing.Color.Gainsboro;
+            this.exampleToolStripMenuItem16.Name = "exampleToolStripMenuItem16";
+            this.exampleToolStripMenuItem16.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem16.Text = "Example";
+            // 
+            // crearteSupplierContractToolStripMenuItem
+            // 
+            this.crearteSupplierContractToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.crearteSupplierContractToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.templateToolStripMenuItem16,
+            this.exampleToolStripMenuItem18});
+            this.crearteSupplierContractToolStripMenuItem.Name = "crearteSupplierContractToolStripMenuItem";
+            this.crearteSupplierContractToolStripMenuItem.Size = new System.Drawing.Size(298, 26);
+            this.crearteSupplierContractToolStripMenuItem.Text = "Crearte Supplier Contract";
+            // 
+            // templateToolStripMenuItem16
+            // 
+            this.templateToolStripMenuItem16.BackColor = System.Drawing.Color.Gainsboro;
+            this.templateToolStripMenuItem16.Name = "templateToolStripMenuItem16";
+            this.templateToolStripMenuItem16.Size = new System.Drawing.Size(224, 26);
+            this.templateToolStripMenuItem16.Text = "Template";
+            this.templateToolStripMenuItem16.Click += new System.EventHandler(this.templateToolStripMenuItem16_Click);
+            // 
+            // exampleToolStripMenuItem18
+            // 
+            this.exampleToolStripMenuItem18.BackColor = System.Drawing.Color.Gainsboro;
+            this.exampleToolStripMenuItem18.Name = "exampleToolStripMenuItem18";
+            this.exampleToolStripMenuItem18.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem18.Text = "Example";
+            // 
+            // issueARequestForProposalToolStripMenuItem
+            // 
+            this.issueARequestForProposalToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.issueARequestForProposalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.templateToolStripMenuItem15,
+            this.exampleToolStripMenuItem17});
+            this.issueARequestForProposalToolStripMenuItem.Name = "issueARequestForProposalToolStripMenuItem";
+            this.issueARequestForProposalToolStripMenuItem.Size = new System.Drawing.Size(298, 26);
+            this.issueARequestForProposalToolStripMenuItem.Text = "Issue a Request for Proposal";
+            // 
+            // templateToolStripMenuItem15
+            // 
+            this.templateToolStripMenuItem15.BackColor = System.Drawing.Color.Gainsboro;
+            this.templateToolStripMenuItem15.Name = "templateToolStripMenuItem15";
+            this.templateToolStripMenuItem15.Size = new System.Drawing.Size(224, 26);
+            this.templateToolStripMenuItem15.Text = "Template ";
+            this.templateToolStripMenuItem15.Click += new System.EventHandler(this.templateToolStripMenuItem15_Click);
+            // 
+            // exampleToolStripMenuItem17
+            // 
+            this.exampleToolStripMenuItem17.BackColor = System.Drawing.Color.Gainsboro;
+            this.exampleToolStripMenuItem17.Name = "exampleToolStripMenuItem17";
+            this.exampleToolStripMenuItem17.Size = new System.Drawing.Size(158, 26);
+            this.exampleToolStripMenuItem17.Text = "Example";
+            // 
+            // performPhaseReviewToolStripMenuItem
+            // 
+            this.performPhaseReviewToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.performPhaseReviewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reviewFormToolStripMenuItem1,
+            this.exampleToolStripMenuItem19});
+            this.performPhaseReviewToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.performPhaseReviewToolStripMenuItem.Name = "performPhaseReviewToolStripMenuItem";
+            this.performPhaseReviewToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.performPhaseReviewToolStripMenuItem.Text = "Planning Phase Review ";
+            // 
+            // reviewFormToolStripMenuItem1
+            // 
+            this.reviewFormToolStripMenuItem1.BackColor = System.Drawing.Color.Gainsboro;
+            this.reviewFormToolStripMenuItem1.Name = "reviewFormToolStripMenuItem1";
+            this.reviewFormToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.reviewFormToolStripMenuItem1.Text = "Review Form";
+            this.reviewFormToolStripMenuItem1.Click += new System.EventHandler(this.reviewFormToolStripMenuItem1_Click);
+            // 
+            // exampleToolStripMenuItem19
+            // 
+            this.exampleToolStripMenuItem19.BackColor = System.Drawing.Color.Gainsboro;
+            this.exampleToolStripMenuItem19.Name = "exampleToolStripMenuItem19";
+            this.exampleToolStripMenuItem19.Size = new System.Drawing.Size(177, 26);
+            this.exampleToolStripMenuItem19.Text = "Example";
+            // 
+            // projectExecutionToolStripMenuItem
+            // 
+            this.projectExecutionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.buildDeliverablesToolStripMenuItem,
+            this.monitorControlToolStripMenuItem,
+            this.peformTimeManagementToolStripMenuItem,
+            this.peformCostManagementToolStripMenuItem,
+            this.peformQualityManagementToolStripMenuItem,
+            this.perfromChangeManagementToolStripMenuItem,
+            this.peformRiskManagementToolStripMenuItem,
+            this.peformIssueManagementToolStripMenuItem,
+            this.peformProcurementManagementToolStripMenuItem,
+            this.performAcceptanceManagementToolStripMenuItem,
+            this.performCommunicationsManagementToolStripMenuItem,
+            this.executionPhaseReviewToolStripMenuItem});
+            this.projectExecutionToolStripMenuItem.Name = "projectExecutionToolStripMenuItem";
+            this.projectExecutionToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
+            this.projectExecutionToolStripMenuItem.Text = "Project Execution";
+            // 
+            // buildDeliverablesToolStripMenuItem
+            // 
+            this.buildDeliverablesToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.buildDeliverablesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.guideToolStripMenuItem});
+            this.buildDeliverablesToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.buildDeliverablesToolStripMenuItem.Name = "buildDeliverablesToolStripMenuItem";
+            this.buildDeliverablesToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.buildDeliverablesToolStripMenuItem.Text = "Build Deliverables ";
+            // 
+            // guideToolStripMenuItem
+            // 
+            this.guideToolStripMenuItem.Name = "guideToolStripMenuItem";
+            this.guideToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
+            this.guideToolStripMenuItem.Text = "Guide";
+            // 
+            // monitorControlToolStripMenuItem
+            // 
+            this.monitorControlToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.monitorControlToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.guideToolStripMenuItem1});
+            this.monitorControlToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.monitorControlToolStripMenuItem.Name = "monitorControlToolStripMenuItem";
+            this.monitorControlToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.monitorControlToolStripMenuItem.Text = "Monitor and Control";
+            // 
+            // guideToolStripMenuItem1
+            // 
+            this.guideToolStripMenuItem1.Name = "guideToolStripMenuItem1";
+            this.guideToolStripMenuItem1.Size = new System.Drawing.Size(131, 26);
+            this.guideToolStripMenuItem1.Text = "Guide";
+            // 
+            // peformTimeManagementToolStripMenuItem
+            // 
+            this.peformTimeManagementToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.peformTimeManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.timeManagementProcessToolStripMenuItem,
+            this.timesheetToolStripMenuItem,
+            this.timesheetRegisterToolStripMenuItem,
+            this.exampleToolStripMenuItem20});
+            this.peformTimeManagementToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.peformTimeManagementToolStripMenuItem.Name = "peformTimeManagementToolStripMenuItem";
+            this.peformTimeManagementToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.peformTimeManagementToolStripMenuItem.Text = "Perform Time Management";
+            // 
+            // timeManagementProcessToolStripMenuItem
+            // 
+            this.timeManagementProcessToolStripMenuItem.Name = "timeManagementProcessToolStripMenuItem";
+            this.timeManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(270, 26);
+            this.timeManagementProcessToolStripMenuItem.Text = "Time Management Process";
+            this.timeManagementProcessToolStripMenuItem.Click += new System.EventHandler(this.timeManagementProcessToolStripMenuItem_Click);
+            // 
+            // timesheetToolStripMenuItem
+            // 
+            this.timesheetToolStripMenuItem.Name = "timesheetToolStripMenuItem";
+            this.timesheetToolStripMenuItem.Size = new System.Drawing.Size(270, 26);
+            this.timesheetToolStripMenuItem.Text = "Timesheet";
+            this.timesheetToolStripMenuItem.Click += new System.EventHandler(this.timesheetToolStripMenuItem_Click);
+            // 
+            // timesheetRegisterToolStripMenuItem
+            // 
+            this.timesheetRegisterToolStripMenuItem.Name = "timesheetRegisterToolStripMenuItem";
+            this.timesheetRegisterToolStripMenuItem.Size = new System.Drawing.Size(270, 26);
+            this.timesheetRegisterToolStripMenuItem.Text = "Timesheet Register";
+            // 
+            // exampleToolStripMenuItem20
+            // 
+            this.exampleToolStripMenuItem20.Name = "exampleToolStripMenuItem20";
+            this.exampleToolStripMenuItem20.Size = new System.Drawing.Size(270, 26);
+            this.exampleToolStripMenuItem20.Text = "Example";
+            // 
+            // peformCostManagementToolStripMenuItem
+            // 
+            this.peformCostManagementToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.peformCostManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.costManagementProcessToolStripMenuItem,
+            this.expenseFormToolStripMenuItem,
+            this.expenseRegisterToolStripMenuItem,
+            this.exampleToolStripMenuItem21});
+            this.peformCostManagementToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.peformCostManagementToolStripMenuItem.Name = "peformCostManagementToolStripMenuItem";
+            this.peformCostManagementToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.peformCostManagementToolStripMenuItem.Text = "Perform Cost Management";
+            // 
+            // costManagementProcessToolStripMenuItem
+            // 
+            this.costManagementProcessToolStripMenuItem.Name = "costManagementProcessToolStripMenuItem";
+            this.costManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(266, 26);
+            this.costManagementProcessToolStripMenuItem.Text = "Cost Management Process";
+            this.costManagementProcessToolStripMenuItem.Click += new System.EventHandler(this.costManagementProcessToolStripMenuItem_Click);
+            // 
+            // expenseFormToolStripMenuItem
+            // 
+            this.expenseFormToolStripMenuItem.Name = "expenseFormToolStripMenuItem";
+            this.expenseFormToolStripMenuItem.Size = new System.Drawing.Size(266, 26);
+            this.expenseFormToolStripMenuItem.Text = "Expense Form";
+            this.expenseFormToolStripMenuItem.Click += new System.EventHandler(this.expenseFormToolStripMenuItem_Click);
+            // 
+            // expenseRegisterToolStripMenuItem
+            // 
+            this.expenseRegisterToolStripMenuItem.Name = "expenseRegisterToolStripMenuItem";
+            this.expenseRegisterToolStripMenuItem.Size = new System.Drawing.Size(266, 26);
+            this.expenseRegisterToolStripMenuItem.Text = "Expense Register";
+            // 
+            // exampleToolStripMenuItem21
+            // 
+            this.exampleToolStripMenuItem21.Name = "exampleToolStripMenuItem21";
+            this.exampleToolStripMenuItem21.Size = new System.Drawing.Size(266, 26);
+            this.exampleToolStripMenuItem21.Text = "Example";
+            // 
+            // peformQualityManagementToolStripMenuItem
+            // 
+            this.peformQualityManagementToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.peformQualityManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.qualityManagementProcessToolStripMenuItem,
+            this.qaulityReviewFormToolStripMenuItem,
+            this.qualityRegisterToolStripMenuItem,
+            this.exampleToolStripMenuItem22});
+            this.peformQualityManagementToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.peformQualityManagementToolStripMenuItem.Name = "peformQualityManagementToolStripMenuItem";
+            this.peformQualityManagementToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.peformQualityManagementToolStripMenuItem.Text = "Perform Quality Management";
+            // 
+            // qualityManagementProcessToolStripMenuItem
+            // 
+            this.qualityManagementProcessToolStripMenuItem.Name = "qualityManagementProcessToolStripMenuItem";
+            this.qualityManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.qualityManagementProcessToolStripMenuItem.Text = "Quality Management Process ";
+            this.qualityManagementProcessToolStripMenuItem.Click += new System.EventHandler(this.qualityManagementProcessToolStripMenuItem_Click);
+            // 
+            // qaulityReviewFormToolStripMenuItem
+            // 
+            this.qaulityReviewFormToolStripMenuItem.Name = "qaulityReviewFormToolStripMenuItem";
+            this.qaulityReviewFormToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.qaulityReviewFormToolStripMenuItem.Text = "Qaulity Review Form";
+            this.qaulityReviewFormToolStripMenuItem.Click += new System.EventHandler(this.qaulityReviewFormToolStripMenuItem_Click);
+            // 
+            // qualityRegisterToolStripMenuItem
+            // 
+            this.qualityRegisterToolStripMenuItem.Name = "qualityRegisterToolStripMenuItem";
+            this.qualityRegisterToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.qualityRegisterToolStripMenuItem.Text = "Quality Register ";
+            // 
+            // exampleToolStripMenuItem22
+            // 
+            this.exampleToolStripMenuItem22.Name = "exampleToolStripMenuItem22";
+            this.exampleToolStripMenuItem22.Size = new System.Drawing.Size(288, 26);
+            this.exampleToolStripMenuItem22.Text = "Example";
+            // 
+            // perfromChangeManagementToolStripMenuItem
+            // 
+            this.perfromChangeManagementToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.perfromChangeManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.changeManagementProcessToolStripMenuItem,
+            this.changeRequestFormToolStripMenuItem,
+            this.changeRegisterToolStripMenuItem,
+            this.exampleToolStripMenuItem23});
+            this.perfromChangeManagementToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.perfromChangeManagementToolStripMenuItem.Name = "perfromChangeManagementToolStripMenuItem";
+            this.perfromChangeManagementToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.perfromChangeManagementToolStripMenuItem.Text = "Perform Change Management";
+            // 
+            // changeManagementProcessToolStripMenuItem
+            // 
+            this.changeManagementProcessToolStripMenuItem.Name = "changeManagementProcessToolStripMenuItem";
+            this.changeManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(287, 26);
+            this.changeManagementProcessToolStripMenuItem.Text = "Change Management Process";
+            this.changeManagementProcessToolStripMenuItem.Click += new System.EventHandler(this.changeManagementProcessToolStripMenuItem_Click);
+            // 
+            // changeRequestFormToolStripMenuItem
+            // 
+            this.changeRequestFormToolStripMenuItem.Name = "changeRequestFormToolStripMenuItem";
+            this.changeRequestFormToolStripMenuItem.Size = new System.Drawing.Size(287, 26);
+            this.changeRequestFormToolStripMenuItem.Text = "Change Request Form";
+            this.changeRequestFormToolStripMenuItem.Click += new System.EventHandler(this.changeRequestFormToolStripMenuItem_Click);
+            // 
+            // changeRegisterToolStripMenuItem
+            // 
+            this.changeRegisterToolStripMenuItem.Name = "changeRegisterToolStripMenuItem";
+            this.changeRegisterToolStripMenuItem.Size = new System.Drawing.Size(287, 26);
+            this.changeRegisterToolStripMenuItem.Text = "Change Register";
+            this.changeRegisterToolStripMenuItem.Click += new System.EventHandler(this.changeRegisterToolStripMenuItem_Click);
+            // 
+            // exampleToolStripMenuItem23
+            // 
+            this.exampleToolStripMenuItem23.Name = "exampleToolStripMenuItem23";
+            this.exampleToolStripMenuItem23.Size = new System.Drawing.Size(287, 26);
+            this.exampleToolStripMenuItem23.Text = "Example";
+            // 
+            // peformRiskManagementToolStripMenuItem
+            // 
+            this.peformRiskManagementToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.peformRiskManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.riskManagementProcessToolStripMenuItem,
+            this.riskFormToolStripMenuItem,
+            this.riskRegisterToolStripMenuItem,
+            this.exampleToolStripMenuItem24});
+            this.peformRiskManagementToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.peformRiskManagementToolStripMenuItem.Name = "peformRiskManagementToolStripMenuItem";
+            this.peformRiskManagementToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.peformRiskManagementToolStripMenuItem.Text = "Perform Risk Management";
+            // 
+            // riskManagementProcessToolStripMenuItem
+            // 
+            this.riskManagementProcessToolStripMenuItem.Name = "riskManagementProcessToolStripMenuItem";
+            this.riskManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(263, 26);
+            this.riskManagementProcessToolStripMenuItem.Text = "Risk Management Process";
+            this.riskManagementProcessToolStripMenuItem.Click += new System.EventHandler(this.riskManagementProcessToolStripMenuItem_Click);
+            // 
+            // riskFormToolStripMenuItem
+            // 
+            this.riskFormToolStripMenuItem.Name = "riskFormToolStripMenuItem";
+            this.riskFormToolStripMenuItem.Size = new System.Drawing.Size(263, 26);
+            this.riskFormToolStripMenuItem.Text = "Risk Form";
+            this.riskFormToolStripMenuItem.Click += new System.EventHandler(this.riskFormToolStripMenuItem_Click);
+            // 
+            // riskRegisterToolStripMenuItem
+            // 
+            this.riskRegisterToolStripMenuItem.Name = "riskRegisterToolStripMenuItem";
+            this.riskRegisterToolStripMenuItem.Size = new System.Drawing.Size(263, 26);
+            this.riskRegisterToolStripMenuItem.Text = "Risk Register ";
+            // 
+            // exampleToolStripMenuItem24
+            // 
+            this.exampleToolStripMenuItem24.Name = "exampleToolStripMenuItem24";
+            this.exampleToolStripMenuItem24.Size = new System.Drawing.Size(263, 26);
+            this.exampleToolStripMenuItem24.Text = "Example";
+            // 
+            // peformIssueManagementToolStripMenuItem
+            // 
+            this.peformIssueManagementToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.peformIssueManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.issueManagementProcessToolStripMenuItem,
+            this.issueFormToolStripMenuItem,
+            this.issueRegisterToolStripMenuItem,
+            this.exampleToolStripMenuItem25});
+            this.peformIssueManagementToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.peformIssueManagementToolStripMenuItem.Name = "peformIssueManagementToolStripMenuItem";
+            this.peformIssueManagementToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.peformIssueManagementToolStripMenuItem.Text = "Perform Issue Management";
+            // 
+            // issueManagementProcessToolStripMenuItem
+            // 
+            this.issueManagementProcessToolStripMenuItem.Name = "issueManagementProcessToolStripMenuItem";
+            this.issueManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(269, 26);
+            this.issueManagementProcessToolStripMenuItem.Text = "Issue Management Process";
+            this.issueManagementProcessToolStripMenuItem.Click += new System.EventHandler(this.issueManagementProcessToolStripMenuItem_Click);
+            // 
+            // issueFormToolStripMenuItem
+            // 
+            this.issueFormToolStripMenuItem.Name = "issueFormToolStripMenuItem";
+            this.issueFormToolStripMenuItem.Size = new System.Drawing.Size(269, 26);
+            this.issueFormToolStripMenuItem.Text = "Issue Form";
+            this.issueFormToolStripMenuItem.Click += new System.EventHandler(this.issueFormToolStripMenuItem_Click);
+            // 
+            // issueRegisterToolStripMenuItem
+            // 
+            this.issueRegisterToolStripMenuItem.Name = "issueRegisterToolStripMenuItem";
+            this.issueRegisterToolStripMenuItem.Size = new System.Drawing.Size(269, 26);
+            this.issueRegisterToolStripMenuItem.Text = "Issue Register";
+            // 
+            // exampleToolStripMenuItem25
+            // 
+            this.exampleToolStripMenuItem25.Name = "exampleToolStripMenuItem25";
+            this.exampleToolStripMenuItem25.Size = new System.Drawing.Size(269, 26);
+            this.exampleToolStripMenuItem25.Text = "Example";
+            // 
+            // peformProcurementManagementToolStripMenuItem
+            // 
+            this.peformProcurementManagementToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.peformProcurementManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.procurementRegisterToolStripMenuItem,
+            this.purchaseOrderFormToolStripMenuItem,
+            this.procurementRegisterToolStripMenuItem1,
+            this.exampleToolStripMenuItem26});
+            this.peformProcurementManagementToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.peformProcurementManagementToolStripMenuItem.Name = "peformProcurementManagementToolStripMenuItem";
+            this.peformProcurementManagementToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.peformProcurementManagementToolStripMenuItem.Text = "Perform Procurement Management";
+            // 
+            // procurementRegisterToolStripMenuItem
+            // 
+            this.procurementRegisterToolStripMenuItem.Name = "procurementRegisterToolStripMenuItem";
+            this.procurementRegisterToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
+            this.procurementRegisterToolStripMenuItem.Text = "Procurement Process";
+            this.procurementRegisterToolStripMenuItem.Click += new System.EventHandler(this.procurementRegisterToolStripMenuItem_Click);
+            // 
+            // purchaseOrderFormToolStripMenuItem
+            // 
+            this.purchaseOrderFormToolStripMenuItem.Name = "purchaseOrderFormToolStripMenuItem";
+            this.purchaseOrderFormToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
+            this.purchaseOrderFormToolStripMenuItem.Text = "Purchase Order Form";
+            this.purchaseOrderFormToolStripMenuItem.Click += new System.EventHandler(this.purchaseOrderFormToolStripMenuItem_Click);
+            // 
+            // procurementRegisterToolStripMenuItem1
+            // 
+            this.procurementRegisterToolStripMenuItem1.Name = "procurementRegisterToolStripMenuItem1";
+            this.procurementRegisterToolStripMenuItem1.Size = new System.Drawing.Size(234, 26);
+            this.procurementRegisterToolStripMenuItem1.Text = "Procurement Register";
+            // 
+            // exampleToolStripMenuItem26
+            // 
+            this.exampleToolStripMenuItem26.Name = "exampleToolStripMenuItem26";
+            this.exampleToolStripMenuItem26.Size = new System.Drawing.Size(234, 26);
+            this.exampleToolStripMenuItem26.Text = "Example";
+            // 
+            // performAcceptanceManagementToolStripMenuItem
+            // 
+            this.performAcceptanceManagementToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.performAcceptanceManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.acceptanceManagementProcessToolStripMenuItem,
+            this.acceptanceFormToolStripMenuItem,
+            this.acceptanceRegisterToolStripMenuItem,
+            this.exampleToolStripMenuItem27});
+            this.performAcceptanceManagementToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.performAcceptanceManagementToolStripMenuItem.Name = "performAcceptanceManagementToolStripMenuItem";
+            this.performAcceptanceManagementToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.performAcceptanceManagementToolStripMenuItem.Text = "Perform Acceptance Management";
+            // 
+            // acceptanceManagementProcessToolStripMenuItem
+            // 
+            this.acceptanceManagementProcessToolStripMenuItem.Name = "acceptanceManagementProcessToolStripMenuItem";
+            this.acceptanceManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(318, 26);
+            this.acceptanceManagementProcessToolStripMenuItem.Text = "Acceptance Management Process ";
+            this.acceptanceManagementProcessToolStripMenuItem.Click += new System.EventHandler(this.acceptanceManagementProcessToolStripMenuItem_Click);
+            // 
+            // acceptanceFormToolStripMenuItem
+            // 
+            this.acceptanceFormToolStripMenuItem.Name = "acceptanceFormToolStripMenuItem";
+            this.acceptanceFormToolStripMenuItem.Size = new System.Drawing.Size(318, 26);
+            this.acceptanceFormToolStripMenuItem.Text = "Acceptance Form";
+            this.acceptanceFormToolStripMenuItem.Click += new System.EventHandler(this.acceptanceFormToolStripMenuItem_Click);
+            // 
+            // acceptanceRegisterToolStripMenuItem
+            // 
+            this.acceptanceRegisterToolStripMenuItem.Name = "acceptanceRegisterToolStripMenuItem";
+            this.acceptanceRegisterToolStripMenuItem.Size = new System.Drawing.Size(318, 26);
+            this.acceptanceRegisterToolStripMenuItem.Text = "Acceptance Register";
+            // 
+            // exampleToolStripMenuItem27
+            // 
+            this.exampleToolStripMenuItem27.Name = "exampleToolStripMenuItem27";
+            this.exampleToolStripMenuItem27.Size = new System.Drawing.Size(318, 26);
+            this.exampleToolStripMenuItem27.Text = "Example";
+            // 
+            // performCommunicationsManagementToolStripMenuItem
+            // 
+            this.performCommunicationsManagementToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.performCommunicationsManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.communicationsManagementProcesssToolStripMenuItem,
+            this.projectStatusReportToolStripMenuItem,
+            this.communicationsRegisterToolStripMenuItem,
+            this.exampleToolStripMenuItem28});
+            this.performCommunicationsManagementToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.performCommunicationsManagementToolStripMenuItem.Name = "performCommunicationsManagementToolStripMenuItem";
+            this.performCommunicationsManagementToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.performCommunicationsManagementToolStripMenuItem.Text = "Perform Communications Management";
+            // 
+            // communicationsManagementProcesssToolStripMenuItem
+            // 
+            this.communicationsManagementProcesssToolStripMenuItem.Name = "communicationsManagementProcesssToolStripMenuItem";
+            this.communicationsManagementProcesssToolStripMenuItem.Size = new System.Drawing.Size(354, 26);
+            this.communicationsManagementProcesssToolStripMenuItem.Text = "Communications Management Processs";
+            this.communicationsManagementProcesssToolStripMenuItem.Click += new System.EventHandler(this.communicationsManagementProcesssToolStripMenuItem_Click);
+            // 
+            // projectStatusReportToolStripMenuItem
+            // 
+            this.projectStatusReportToolStripMenuItem.Name = "projectStatusReportToolStripMenuItem";
+            this.projectStatusReportToolStripMenuItem.Size = new System.Drawing.Size(354, 26);
+            this.projectStatusReportToolStripMenuItem.Text = "Project Status Report ";
+            this.projectStatusReportToolStripMenuItem.Click += new System.EventHandler(this.projectStatusReportToolStripMenuItem_Click);
+            // 
+            // communicationsRegisterToolStripMenuItem
+            // 
+            this.communicationsRegisterToolStripMenuItem.Name = "communicationsRegisterToolStripMenuItem";
+            this.communicationsRegisterToolStripMenuItem.Size = new System.Drawing.Size(354, 26);
+            this.communicationsRegisterToolStripMenuItem.Text = "Communications Register";
+            // 
+            // exampleToolStripMenuItem28
+            // 
+            this.exampleToolStripMenuItem28.Name = "exampleToolStripMenuItem28";
+            this.exampleToolStripMenuItem28.Size = new System.Drawing.Size(354, 26);
+            this.exampleToolStripMenuItem28.Text = "Example";
+            // 
+            // executionPhaseReviewToolStripMenuItem
+            // 
+            this.executionPhaseReviewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reviewFormToolStripMenuItem2,
+            this.exampleToolStripMenuItem29});
+            this.executionPhaseReviewToolStripMenuItem.Name = "executionPhaseReviewToolStripMenuItem";
+            this.executionPhaseReviewToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.executionPhaseReviewToolStripMenuItem.Text = "Execution Phase Review";
+            // 
+            // reviewFormToolStripMenuItem2
+            // 
+            this.reviewFormToolStripMenuItem2.Name = "reviewFormToolStripMenuItem2";
+            this.reviewFormToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
+            this.reviewFormToolStripMenuItem2.Text = "Review Form";
+            this.reviewFormToolStripMenuItem2.Click += new System.EventHandler(this.reviewFormToolStripMenuItem2_Click);
+            // 
+            // exampleToolStripMenuItem29
+            // 
+            this.exampleToolStripMenuItem29.Name = "exampleToolStripMenuItem29";
+            this.exampleToolStripMenuItem29.Size = new System.Drawing.Size(177, 26);
+            this.exampleToolStripMenuItem29.Text = "Example";
+            // 
+            // projectToolStripMenuItem
+            // 
+            this.projectToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.performProjectClosureToolStripMenuItem,
+            this.reviewProjectCompletionToolStripMenuItem});
+            this.projectToolStripMenuItem.Name = "projectToolStripMenuItem";
+            this.projectToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
+            this.projectToolStripMenuItem.Text = "Project Closure";
+            // 
+            // performProjectClosureToolStripMenuItem
+            // 
+            this.performProjectClosureToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.performProjectClosureToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.templateToolStripMenuItem17,
+            this.exampleToolStripMenuItem30});
+            this.performProjectClosureToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.performProjectClosureToolStripMenuItem.Name = "performProjectClosureToolStripMenuItem";
+            this.performProjectClosureToolStripMenuItem.Size = new System.Drawing.Size(271, 26);
+            this.performProjectClosureToolStripMenuItem.Text = "Perform Project Closure";
+            // 
+            // templateToolStripMenuItem17
+            // 
+            this.templateToolStripMenuItem17.Name = "templateToolStripMenuItem17";
+            this.templateToolStripMenuItem17.Size = new System.Drawing.Size(224, 26);
+            this.templateToolStripMenuItem17.Text = "Template";
+            this.templateToolStripMenuItem17.Click += new System.EventHandler(this.templateToolStripMenuItem17_Click);
+            // 
+            // exampleToolStripMenuItem30
+            // 
+            this.exampleToolStripMenuItem30.Name = "exampleToolStripMenuItem30";
+            this.exampleToolStripMenuItem30.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem30.Text = "Example";
+            // 
+            // reviewProjectCompletionToolStripMenuItem
+            // 
+            this.reviewProjectCompletionToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
+            this.reviewProjectCompletionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.templateToolStripMenuItem18,
+            this.exampleToolStripMenuItem31});
+            this.reviewProjectCompletionToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.reviewProjectCompletionToolStripMenuItem.Name = "reviewProjectCompletionToolStripMenuItem";
+            this.reviewProjectCompletionToolStripMenuItem.Size = new System.Drawing.Size(271, 26);
+            this.reviewProjectCompletionToolStripMenuItem.Text = "Review Project Completion";
+            // 
+            // templateToolStripMenuItem18
+            // 
+            this.templateToolStripMenuItem18.Name = "templateToolStripMenuItem18";
+            this.templateToolStripMenuItem18.Size = new System.Drawing.Size(224, 26);
+            this.templateToolStripMenuItem18.Text = "Template";
+            this.templateToolStripMenuItem18.Click += new System.EventHandler(this.templateToolStripMenuItem18_Click);
+            // 
+            // exampleToolStripMenuItem31
+            // 
+            this.exampleToolStripMenuItem31.Name = "exampleToolStripMenuItem31";
+            this.exampleToolStripMenuItem31.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem31.Text = "Example";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(143)))), ((int)(((byte)(149)))));
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.helpToolStripMenuItem.Text = "Help";
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.BackColor = System.Drawing.Color.Gray;
+            this.ClientSize = new System.Drawing.Size(848, 489);
             this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
-            this.Text = "MainForm";
+            this.Text = "Main Menu";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -255,23 +1280,129 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mPMMToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem governanceToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem assetAndInventoryToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem assetAndInventoryToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem informationTechnologyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem academicAndTrainingToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem humanResourcesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem marketingToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem processesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem policiesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem generalManagementToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inventoryToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem financesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eventsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem projectManagementToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pLSMToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem contactsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tEMPStatementOfWorkToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tEMPChangeRequestFormToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem projectSelectionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem developABusinessCaseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem undertakeAFeasibilityStudyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem establishTheProjectChaterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem appointAProjectTeamToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem setupAProjectOfficeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem peformPhaseReviewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem projectPlanningToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createAProjectPlanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createAResourcePlanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createAFinancialPlanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createAQualityPlanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createARiskPlanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createAnAcceptancePlanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createACommunicationPlanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem projectExecutionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem projectToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createAProcurementPlanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem contractTheSuppliersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem performPhaseReviewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem buildDeliverablesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem monitorControlToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem peformTimeManagementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem peformCostManagementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem peformQualityManagementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem perfromChangeManagementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem peformRiskManagementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem peformIssueManagementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem peformProcurementManagementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem performAcceptanceManagementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem performCommunicationsManagementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem performProjectClosureToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reviewProjectCompletionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem checklistToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem reviewFormToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem6;
+        private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem7;
+        private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem6;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem8;
+        private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem7;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem9;
+        private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem8;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem10;
+        private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem9;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem11;
+        private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem10;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem12;
+        private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem11;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem13;
+        private System.Windows.Forms.ToolStripMenuItem defineTheSelectionProcessToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem12;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem14;
+        private System.Windows.Forms.ToolStripMenuItem issueAStatementOfWorkToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem13;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem15;
+        private System.Windows.Forms.ToolStripMenuItem issueARequestForInfToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem14;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem16;
+        private System.Windows.Forms.ToolStripMenuItem issueARequestForProposalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem15;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem17;
+        private System.Windows.Forms.ToolStripMenuItem crearteSupplierContractToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem16;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem18;
+        private System.Windows.Forms.ToolStripMenuItem reviewFormToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem19;
+        private System.Windows.Forms.ToolStripMenuItem guideToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem guideToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem timeManagementProcessToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem timesheetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem timesheetRegisterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem20;
+        private System.Windows.Forms.ToolStripMenuItem costManagementProcessToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem expenseFormToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem expenseRegisterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem21;
+        private System.Windows.Forms.ToolStripMenuItem qualityManagementProcessToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem qaulityReviewFormToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem qualityRegisterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem22;
+        private System.Windows.Forms.ToolStripMenuItem changeManagementProcessToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem changeRequestFormToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem changeRegisterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem23;
+        private System.Windows.Forms.ToolStripMenuItem riskManagementProcessToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem riskFormToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem riskRegisterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem24;
+        private System.Windows.Forms.ToolStripMenuItem issueManagementProcessToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem issueFormToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem issueRegisterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem25;
+        private System.Windows.Forms.ToolStripMenuItem procurementRegisterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem purchaseOrderFormToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem procurementRegisterToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem26;
+        private System.Windows.Forms.ToolStripMenuItem acceptanceManagementProcessToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem acceptanceFormToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem acceptanceRegisterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem27;
+        private System.Windows.Forms.ToolStripMenuItem communicationsManagementProcesssToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem projectStatusReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem communicationsRegisterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem28;
+        private System.Windows.Forms.ToolStripMenuItem executionPhaseReviewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reviewFormToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem29;
+        private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem17;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem30;
+        private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem18;
+        private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem31;
     }
 }
