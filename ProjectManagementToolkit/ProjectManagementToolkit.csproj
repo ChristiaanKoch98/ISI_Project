@@ -474,6 +474,18 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\AcceptancePlanDocumentForm.resx">
       <DependentUpon>AcceptancePlanDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\ChangeManagementProcessDocumentForm.resx">
+      <DependentUpon>ChangeManagementProcessDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\ChangeRequestFormDocumentForm.resx">
+      <DependentUpon>ChangeRequestFormDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\CommunicationsManagementProcessDocumentForm.resx">
+      <DependentUpon>CommunicationsManagementProcessDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\CommunicationsPlanDocumentForm.resx">
+      <DependentUpon>CommunicationsPlanDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\CostManagementProcessDocumentForm.resx">
       <DependentUpon>CostManagementProcessDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -486,8 +498,17 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\FinacialPlanDocumentForm.resx">
       <DependentUpon>FinacialPlanDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\IssueManagementProcessDocumentForm.resx">
+      <DependentUpon>IssueManagementProcessDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\JobDescriptionDocumentForm.resx">
       <DependentUpon>JobDescriptionDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\PhaseReviewFormExecutionDocumentForm.resx">
+      <DependentUpon>PhaseReviewFormExecutionDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\PhaseReviewFormInitiationDocumentForm.resx">
+      <DependentUpon>PhaseReviewFormInitiationDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\PhaseReviewFormPlanningDocumentForm.resx">
       <DependentUpon>PhaseReviewFormPlanningDocumentForm.cs</DependentUpon>
@@ -498,8 +519,17 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\ProcurementPlanDocumentForm.resx">
       <DependentUpon>ProcurementPlanDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\ProjectClosureReportDocumentForm.resx">
+      <DependentUpon>ProjectClosureReportDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\ProjectOfficeChecklistDocumentForm.resx">
+      <DependentUpon>ProjectOfficeChecklistDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\ProjectPlanDocumentForm.resx">
       <DependentUpon>ProjectPlanDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\ProjectStatusReportDocumentForm.resx">
+      <DependentUpon>ProjectStatusReportDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\PurchaseOrderFormDocumentForm.resx">
       <DependentUpon>PurchaseOrderFormDocumentForm.cs</DependentUpon>
@@ -513,8 +543,26 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\RequestForInformationDocumentForm.resx">
       <DependentUpon>RequestForInformationDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\ResourcePlanDocumentForm.resx">
+      <DependentUpon>ResourcePlanDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\RiskFormDocumentForm.resx">
+      <DependentUpon>RiskFormDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\RiskManagementProcessDocumentForm.resx">
+      <DependentUpon>RiskManagementProcessDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\RiskPlanDocumentForm.resx">
       <DependentUpon>RiskPlanDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\StatementOfWorkDocumentForm.resx">
+      <DependentUpon>StatementOfWorkDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\SupplierContractDocumentForm.resx">
+      <DependentUpon>SupplierContractDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\TermOfReferenceDocumentForm.resx">
+      <DependentUpon>TermOfReferenceDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\TimeMangementProcessDocumentForm.resx">
       <DependentUpon>TimeMangementProcessDocumentForm.cs</DependentUpon>
