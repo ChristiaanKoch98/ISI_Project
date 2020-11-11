@@ -25,123 +25,6 @@ namespace ProjectManagementToolkit
             InitializeComponent();
         }
 
-        private void governanceToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Governance governanceForm = new Governance();
-            governanceForm.Show();
-            governanceForm.MdiParent = this;
-        }
-
-      
-
-        private void assetAndInventoryToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Asset_and_Inventory assInvForm = new Asset_and_Inventory();
-            assInvForm.Show();
-            assInvForm.MdiParent = this;
-        }
-
-        private void informationTechnologyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            IT_Management itManForm = new IT_Management();
-            itManForm.Show();
-            itManForm.MdiParent = this;
-        }
-
-        private void academicAndTrainingToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Academic_and_Training acTranForm = new Academic_and_Training();
-            acTranForm.Show();
-            acTranForm.MdiParent = this;
-        }
-
-        private void humanResourcesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Human_Resources hrForm = new Human_Resources();
-            hrForm.Show();
-            hrForm.MdiParent = this;
-        }
-
-        private void marketingToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Marketing marketingForm = new Marketing();
-            marketingForm.Show();
-            marketingForm.MdiParent = this;
-        }
-
-        private void processesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Processes processesForm = new Processes();
-            processesForm.Show();
-            processesForm.MdiParent = this;
-        }
-
-        private void policiesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Policies_and_Procedures polProForm = new Policies_and_Procedures();
-            polProForm.Show();
-            polProForm.MdiParent = this;
-        }
-
-        private void generalManagementToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            GeneralManagement genManForm = new GeneralManagement();
-            genManForm.Show();
-            genManForm.MdiParent = this;
-        }
-
-        private void inventoryToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            InventoryAndSales invForm = new InventoryAndSales();
-            invForm.Show();
-            invForm.MdiParent = this;
-        }
-
-        private void financesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Finances financesForm = new Finances();
-            financesForm.Show();
-            financesForm.MdiParent = this;
-
-        }
-
-        private void eventsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Events eventsForm = new Events();
-            eventsForm.Show();
-            eventsForm.MdiParent = this;
-        }
-
-        private void projectManagementToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            PLSM_ProcessGroupingGovernance_Interfaces plsm = new PLSM_ProcessGroupingGovernance_Interfaces();
-            plsm.Show();
-            plsm.MdiParent = this;
-        }
-
-        private void pLSMToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmProjectManagement projMan = new frmProjectManagement();
-            projMan.Show();
-            projMan.MdiParent = this;
-        }
-
-        private void contactsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Contacts contacts = new Contacts();
-            contacts.Show();
-            contacts.MdiParent = this;
-        }
-
-        private void tEMPStatementOfWorkToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            StatementOfWorkDocumentForm stateOfWork = new StatementOfWorkDocumentForm();
-            stateOfWork.Show();
-            stateOfWork.MdiParent = this;
-        }
-
-     
-
         private void MainForm_Load(object sender, EventArgs e)
         {
             foreach (Control control in this.Controls)
@@ -151,6 +34,27 @@ namespace ProjectManagementToolkit
                 {
                     client.BackColor = Color.FromArgb(34, 36, 49);
                     break;
+                }
+            }
+
+            foreach (ToolStripMenuItem item in menuStrip1.Items)
+            {
+                item.BackColor = Color.FromArgb(141, 143, 149);
+                item.ForeColor = Color.FromArgb(32, 32, 32);
+                foreach (ToolStripMenuItem children in item.DropDownItems)
+                {
+                    children.BackColor = Color.FromArgb(128,128,128);
+                    children.ForeColor = Color.FromArgb(32, 32, 32);
+                    foreach (ToolStripMenuItem child in children.DropDownItems)
+                    {
+                        child.BackColor = Color.FromArgb(128, 128, 128);
+                        child.ForeColor = Color.FromArgb(32, 32, 32);
+                        foreach (ToolStripMenuItem InnerChild in child.DropDownItems)
+                        {
+                            InnerChild.BackColor = Color.FromArgb(128, 128, 128);
+                            InnerChild.ForeColor = Color.FromArgb(32, 32, 32);
+                        }
+                    }
                 }
             }
 
@@ -195,27 +99,6 @@ namespace ProjectManagementToolkit
             }
         }
 
-        private void generalManagementToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-            GeneralManagement generalManagement = new GeneralManagement();
-            generalManagement.Show();
-            generalManagement.MdiParent = this;
-        }
-
-        private void assetAndInventoryToolStripMenuItem1_Click_1(object sender, EventArgs e)
-        {
-            Asset_and_Inventory asset_And_Inventory = new Asset_and_Inventory();
-            asset_And_Inventory.Show();
-            asset_And_Inventory.MdiParent = this;
-        }
-
-        private void informationTechnologyToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-            IT_Management iT_Management = new IT_Management();
-            iT_Management.Show();
-            iT_Management.MdiParent = this;
-        }
-
         private void projectSelectionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ProjectSelection projectSelection = new ProjectSelection();
@@ -229,11 +112,277 @@ namespace ProjectManagementToolkit
             Application.Exit();
         }
 
-        private void projectPlanToolStripMenuItem_Click(object sender, EventArgs e)
+        private void templateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void templateToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FeasibiltyStudyDocumentForm feasibiltyStudyDocumentForm = new FeasibiltyStudyDocumentForm();
+            feasibiltyStudyDocumentForm.Show();
+            feasibiltyStudyDocumentForm.MdiParent = this;
+        }
+
+        private void templateToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            JobDescriptionDocumentForm jobDescriptionDocumentForm = new JobDescriptionDocumentForm();
+            jobDescriptionDocumentForm.Show();
+            jobDescriptionDocumentForm.MdiParent = this;
+        }
+
+        private void checklistToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProjectOfficeChecklistDocumentForm form = new ProjectOfficeChecklistDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void reviewFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PhaseReviewFormInitiationDocumentForm form = new PhaseReviewFormInitiationDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void templateToolStripMenuItem4_Click(object sender, EventArgs e)
         {
             ProjectPlanDocumentForm projectPlanDocumentForm = new ProjectPlanDocumentForm();
             projectPlanDocumentForm.Show();
             projectPlanDocumentForm.MdiParent = this;
+        }
+
+        private void templateToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            ResourcePlanDocumentForm form = new ResourcePlanDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void templateToolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            FinacialPlanDocumentForm form = new FinacialPlanDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void templateToolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            QualityPlanDocumentForm form = new QualityPlanDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void templateToolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            RiskPlanDocumentForm form = new RiskPlanDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void templateToolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            AcceptancePlanDocumentForm form = new AcceptancePlanDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void templateToolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            CommunicationsPlanDocumentForm form = new CommunicationsPlanDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void templateToolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+            ProcurementPlanDocumentForm form = new ProcurementPlanDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void exampleToolStripMenuItem15_Click(object sender, EventArgs e)
+        {
+            StatementOfWorkDocumentForm form = new StatementOfWorkDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void templateToolStripMenuItem14_Click(object sender, EventArgs e)
+        {
+            RequestForInformationDocumentForm form = new RequestForInformationDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void templateToolStripMenuItem16_Click(object sender, EventArgs e)
+        {
+            SupplierContractDocumentForm form = new SupplierContractDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void templateToolStripMenuItem15_Click(object sender, EventArgs e)
+        {
+            RequestForProposalDocumentForm form = new RequestForProposalDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void timeManagementProcessToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TimeMangementProcessDocumentForm form = new TimeMangementProcessDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void timesheetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TimesheetFormDocumentForm form = new TimesheetFormDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void costManagementProcessToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CostManagementProcessDocumentForm form = new CostManagementProcessDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void expenseFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ExpenseFormDocumentForm form = new ExpenseFormDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void qualityManagementProcessToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QualityManagementProcessDocumentForm form = new QualityManagementProcessDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void qaulityReviewFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QualityReviewPlanDocumentForm form = new QualityReviewPlanDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void changeManagementProcessToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeManagementProcessDocumentForm form = new ChangeManagementProcessDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void changeRequestFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeRequestFormDocumentForm form = new ChangeRequestFormDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void changeRegisterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void riskManagementProcessToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RiskManagementProcessDocumentForm form = new RiskManagementProcessDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void riskFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RiskFormDocumentForm form = new RiskFormDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void issueManagementProcessToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IssueManagementProcessDocumentForm form = new IssueManagementProcessDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void issueFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IssueFormDocumentForm form = new IssueFormDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void procurementRegisterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void purchaseOrderFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PurchaseOrderFormDocumentForm form = new PurchaseOrderFormDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void acceptanceManagementProcessToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AcceptanceManagementProcessDocumentForm form = new AcceptanceManagementProcessDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void acceptanceFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AcceptanceFormDocumentForm form = new AcceptanceFormDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void communicationsManagementProcesssToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CommunicationsManagementProcessDocumentForm form = new CommunicationsManagementProcessDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void projectStatusReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProjectStatusReportDocumentForm form = new ProjectStatusReportDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void reviewFormToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            PhaseReviewFormExecutionDocumentForm form = new PhaseReviewFormExecutionDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void templateToolStripMenuItem17_Click(object sender, EventArgs e)
+        {
+            ProjectClosureReportDocumentForm form = new ProjectClosureReportDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void templateToolStripMenuItem18_Click(object sender, EventArgs e)
+        {
+            PostImplementationReviewDocumentForm form = new PostImplementationReviewDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void reviewFormToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            PhaseReviewFormPlanningDocumentForm form = new PhaseReviewFormPlanningDocumentForm();
+            form.Show();
+            form.MdiParent = this;
         }
     }
 }
