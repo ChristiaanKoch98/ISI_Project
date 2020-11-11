@@ -24,7 +24,79 @@ namespace ProjectManagementToolkit
 
         private void btnLEgislativeEnviroment_Click(object sender, EventArgs e)
         {
-            //tabControl1.SelectedIndex = 3;
+            tabControl1.SelectedIndex = 3;
+        }
+
+        private void btnProcessesandLegislationMatrix_Click(object sender, EventArgs e)
+        {
+            ProjectManagementToolkit.MPMM.MPMM_Forms.Governance.ProcessesAndLegislationMatrix formOpenProcess = new MPMM.MPMM_Forms.Governance.ProcessesAndLegislationMatrix();
+            formOpenProcess.Show();
+        }
+
+        private void btnPrinciplesandLegislationMatrix_Click(object sender, EventArgs e)
+        {
+            ProjectManagementToolkit.MPMM.MPMM_Forms.Governance.PrinciplesandLegislationMatrix formOpenPrinciples = new MPMM.MPMM_Forms.Governance.PrinciplesandLegislationMatrix();
+            formOpenPrinciples.Show();
+        }
+
+        private void btnCompanyGoals_Click(object sender, EventArgs e)
+        {
+            ProjectManagementToolkit.MPMM.MPMM_Forms.Governance.CompanyGoals formOpenCompanyGoals = new MPMM.MPMM_Forms.Governance.CompanyGoals();
+            formOpenCompanyGoals.Show();
+        }
+
+        private void btnGoverningBodyResponsibiities_Click(object sender, EventArgs e)
+        {
+            ProjectManagementToolkit.MPMM.MPMM_Forms.Governance.GoverningBodyResponsibilities formOpenGBR = new MPMM.MPMM_Forms.Governance.GoverningBodyResponsibilities();
+            formOpenGBR.Show();
+        }
+
+        private void btnGovernanceGoals_Click(object sender, EventArgs e)
+        {
+            ProjectManagementToolkit.MPMM.MPMM_Forms.Governance.GovernanceGoals formOpenGovernanceGoals = new MPMM.MPMM_Forms.Governance.GovernanceGoals();
+            formOpenGovernanceGoals.Show();
+        }
+
+        private void btnGovernanceFunctions_Click(object sender, EventArgs e)
+        {
+            ProjectManagementToolkit.MPMM.MPMM_Forms.Governance.GovernanceFunctions formOpengovernanceFunctions = new MPMM.MPMM_Forms.Governance.GovernanceFunctions();
+            formOpengovernanceFunctions.Show();
+        }
+
+        private void btnGovernancePrinciples_Click(object sender, EventArgs e)
+        {
+            ProjectManagementToolkit.MPMM.MPMM_Forms.Governance.GovernancePrinciples formOpengovernancePrinciples = new MPMM.MPMM_Forms.Governance.GovernancePrinciples();
+            formOpengovernancePrinciples.Show();
+        }
+
+        private void btnGovernanceProcesses_Click(object sender, EventArgs e)
+        {
+            ProjectManagementToolkit.MPMM.MPMM_Forms.Governance.GovernanceProcesses formOpengovernanceProcesses = new MPMM.MPMM_Forms.Governance.GovernanceProcesses();
+            formOpengovernanceProcesses.Show();
+        }
+
+        private void btnGovernanceOutcomes_Click(object sender, EventArgs e)
+        {
+            ProjectManagementToolkit.MPMM.MPMM_Forms.Governance.GovernanceOutcomes formOpengovernanceOutcomes = new MPMM.MPMM_Forms.Governance.GovernanceOutcomes();
+            formOpengovernanceOutcomes.Show();
+        }
+
+        private void btnGovernanceFlows_Click(object sender, EventArgs e)
+        {
+            ProjectManagementToolkit.MPMM.MPMM_Forms.Governance.GovernanceFlows formOpengovernaneFlows = new MPMM.MPMM_Forms.Governance.GovernanceFlows();
+            formOpengovernaneFlows.Show();
+        }
+
+        private void btnGovernanceExecutionStructures_Click(object sender, EventArgs e)
+        {
+            ProjectManagementToolkit.MPMM.MPMM_Forms.Governance.GovernanceExecutionStructure formOpengovernanceExecutionStructure = new MPMM.MPMM_Forms.Governance.GovernanceExecutionStructure();
+            formOpengovernanceExecutionStructure.Show();
+        }
+
+        private void btnUnderpinningConcepts_Click(object sender, EventArgs e)
+        {
+            ProjectManagementToolkit.MPMM.MPMM_Forms.Governance.UnderpinningConcepts formOpenunderpinningConcepts = new MPMM.MPMM_Forms.Governance.UnderpinningConcepts();
+            formOpenunderpinningConcepts.Show();
         }
     }
 }

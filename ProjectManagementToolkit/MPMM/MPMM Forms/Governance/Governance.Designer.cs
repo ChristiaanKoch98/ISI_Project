@@ -57,30 +57,32 @@
             this.btnLEgislativeEnviroment = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnPrinciplesandLegislationMatrix = new System.Windows.Forms.Button();
+            this.btnProcessesandLegislationMatrix = new System.Windows.Forms.Button();
+            this.linkLabelAct = new System.Windows.Forms.LinkLabel();
+            this.linkLabelAct55of1998 = new System.Windows.Forms.LinkLabel();
+            this.linkLabelEmploymentServicesActno4of2014 = new System.Windows.Forms.LinkLabel();
+            this.linkLabelLabourRelationsactno66of1995 = new System.Windows.Forms.LinkLabel();
+            this.linkLabelact78of1973ODIMWA = new System.Windows.Forms.LinkLabel();
+            this.linkLabelActno85of1993 = new System.Windows.Forms.LinkLabel();
+            this.linkLabelActno97of1998 = new System.Windows.Forms.LinkLabel();
+            this.linkLabelActnoof1999 = new System.Windows.Forms.LinkLabel();
+            this.linkLabelActNo63of2001 = new System.Windows.Forms.LinkLabel();
+            this.linkLabelActno4of2002 = new System.Windows.Forms.LinkLabel();
+            this.linkLabelRelevantForms = new System.Windows.Forms.LinkLabel();
+            this.linkLabelProcedures = new System.Windows.Forms.LinkLabel();
+            this.linkLabelMiningAct = new System.Windows.Forms.LinkLabel();
+            this.linkLabelNationalEnvironmentalManagementAct = new System.Windows.Forms.LinkLabel();
+            this.linkLabelGuides = new System.Windows.Forms.LinkLabel();
+            this.linkLabelNationalWaterAct36of1998 = new System.Windows.Forms.LinkLabel();
+            this.linkLabelAct28of2002 = new System.Windows.Forms.LinkLabel();
+            this.linkLabelMineralsAct50of1991 = new System.Windows.Forms.LinkLabel();
+            this.linkLabelMineHealthandSafetyAct1996 = new System.Windows.Forms.LinkLabel();
+            this.linkLabelManpowerTrainingActno56of1981 = new System.Windows.Forms.LinkLabel();
+            this.linkLabelConstitutionofSouthAfrica = new System.Windows.Forms.LinkLabel();
+            this.linkLabelCompensationforOccupationalInjuriesandDiseasesAct = new System.Windows.Forms.LinkLabel();
+            this.linkLabelAct71of2008 = new System.Windows.Forms.LinkLabel();
+            this.linkLabelAct75of1997 = new System.Windows.Forms.LinkLabel();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
@@ -414,6 +416,7 @@
             this.btnUnderpinningConcepts.TabIndex = 11;
             this.btnUnderpinningConcepts.Text = "Underpinning Concepts";
             this.btnUnderpinningConcepts.UseVisualStyleBackColor = false;
+            this.btnUnderpinningConcepts.Click += new System.EventHandler(this.btnUnderpinningConcepts_Click);
             // 
             // btnGovernanceExecutionStructures
             // 
@@ -425,6 +428,7 @@
             this.btnGovernanceExecutionStructures.TabIndex = 10;
             this.btnGovernanceExecutionStructures.Text = "Governance Execution Structures";
             this.btnGovernanceExecutionStructures.UseVisualStyleBackColor = false;
+            this.btnGovernanceExecutionStructures.Click += new System.EventHandler(this.btnGovernanceExecutionStructures_Click);
             // 
             // btnGovernanceFlows
             // 
@@ -436,6 +440,7 @@
             this.btnGovernanceFlows.TabIndex = 9;
             this.btnGovernanceFlows.Text = "Governance Flows";
             this.btnGovernanceFlows.UseVisualStyleBackColor = false;
+            this.btnGovernanceFlows.Click += new System.EventHandler(this.btnGovernanceFlows_Click);
             // 
             // btnGovernanceOutcomes
             // 
@@ -447,6 +452,7 @@
             this.btnGovernanceOutcomes.TabIndex = 8;
             this.btnGovernanceOutcomes.Text = "Governance Outcomes";
             this.btnGovernanceOutcomes.UseVisualStyleBackColor = false;
+            this.btnGovernanceOutcomes.Click += new System.EventHandler(this.btnGovernanceOutcomes_Click);
             // 
             // btnGovernanceProcesses
             // 
@@ -458,6 +464,7 @@
             this.btnGovernanceProcesses.TabIndex = 7;
             this.btnGovernanceProcesses.Text = "Governance Processes";
             this.btnGovernanceProcesses.UseVisualStyleBackColor = false;
+            this.btnGovernanceProcesses.Click += new System.EventHandler(this.btnGovernanceProcesses_Click);
             // 
             // btnGovernancePrinciples
             // 
@@ -469,6 +476,7 @@
             this.btnGovernancePrinciples.TabIndex = 6;
             this.btnGovernancePrinciples.Text = "Governance Principles";
             this.btnGovernancePrinciples.UseVisualStyleBackColor = false;
+            this.btnGovernancePrinciples.Click += new System.EventHandler(this.btnGovernancePrinciples_Click);
             // 
             // btnGovernanceFunctions
             // 
@@ -480,6 +488,7 @@
             this.btnGovernanceFunctions.TabIndex = 5;
             this.btnGovernanceFunctions.Text = "Governance Functions";
             this.btnGovernanceFunctions.UseVisualStyleBackColor = false;
+            this.btnGovernanceFunctions.Click += new System.EventHandler(this.btnGovernanceFunctions_Click);
             // 
             // btnGovernanceGoals
             // 
@@ -491,6 +500,7 @@
             this.btnGovernanceGoals.TabIndex = 4;
             this.btnGovernanceGoals.Text = "Governance Goals";
             this.btnGovernanceGoals.UseVisualStyleBackColor = false;
+            this.btnGovernanceGoals.Click += new System.EventHandler(this.btnGovernanceGoals_Click);
             // 
             // btnGoverningBodyResponsibiities
             // 
@@ -502,6 +512,7 @@
             this.btnGoverningBodyResponsibiities.TabIndex = 3;
             this.btnGoverningBodyResponsibiities.Text = "Governing Body Responsibilities";
             this.btnGoverningBodyResponsibiities.UseVisualStyleBackColor = false;
+            this.btnGoverningBodyResponsibiities.Click += new System.EventHandler(this.btnGoverningBodyResponsibiities_Click);
             // 
             // btnCompanyGoals
             // 
@@ -513,6 +524,7 @@
             this.btnCompanyGoals.TabIndex = 2;
             this.btnCompanyGoals.Text = "Company Goals";
             this.btnCompanyGoals.UseVisualStyleBackColor = false;
+            this.btnCompanyGoals.Click += new System.EventHandler(this.btnCompanyGoals_Click);
             // 
             // btnLEgislativeEnviroment
             // 
@@ -543,30 +555,32 @@
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage4.Controls.Add(this.label26);
-            this.tabPage4.Controls.Add(this.label25);
-            this.tabPage4.Controls.Add(this.label24);
-            this.tabPage4.Controls.Add(this.label23);
-            this.tabPage4.Controls.Add(this.label22);
-            this.tabPage4.Controls.Add(this.label21);
-            this.tabPage4.Controls.Add(this.label20);
-            this.tabPage4.Controls.Add(this.label19);
-            this.tabPage4.Controls.Add(this.label18);
-            this.tabPage4.Controls.Add(this.label17);
-            this.tabPage4.Controls.Add(this.label16);
-            this.tabPage4.Controls.Add(this.label15);
-            this.tabPage4.Controls.Add(this.label14);
-            this.tabPage4.Controls.Add(this.label13);
-            this.tabPage4.Controls.Add(this.label12);
-            this.tabPage4.Controls.Add(this.label11);
-            this.tabPage4.Controls.Add(this.label10);
-            this.tabPage4.Controls.Add(this.label9);
-            this.tabPage4.Controls.Add(this.label8);
-            this.tabPage4.Controls.Add(this.label7);
-            this.tabPage4.Controls.Add(this.label6);
-            this.tabPage4.Controls.Add(this.label5);
-            this.tabPage4.Controls.Add(this.label4);
-            this.tabPage4.Controls.Add(this.label3);
+            this.tabPage4.Controls.Add(this.btnPrinciplesandLegislationMatrix);
+            this.tabPage4.Controls.Add(this.btnProcessesandLegislationMatrix);
+            this.tabPage4.Controls.Add(this.linkLabelAct);
+            this.tabPage4.Controls.Add(this.linkLabelAct55of1998);
+            this.tabPage4.Controls.Add(this.linkLabelEmploymentServicesActno4of2014);
+            this.tabPage4.Controls.Add(this.linkLabelLabourRelationsactno66of1995);
+            this.tabPage4.Controls.Add(this.linkLabelact78of1973ODIMWA);
+            this.tabPage4.Controls.Add(this.linkLabelActno85of1993);
+            this.tabPage4.Controls.Add(this.linkLabelActno97of1998);
+            this.tabPage4.Controls.Add(this.linkLabelActnoof1999);
+            this.tabPage4.Controls.Add(this.linkLabelActNo63of2001);
+            this.tabPage4.Controls.Add(this.linkLabelActno4of2002);
+            this.tabPage4.Controls.Add(this.linkLabelRelevantForms);
+            this.tabPage4.Controls.Add(this.linkLabelProcedures);
+            this.tabPage4.Controls.Add(this.linkLabelMiningAct);
+            this.tabPage4.Controls.Add(this.linkLabelNationalEnvironmentalManagementAct);
+            this.tabPage4.Controls.Add(this.linkLabelGuides);
+            this.tabPage4.Controls.Add(this.linkLabelNationalWaterAct36of1998);
+            this.tabPage4.Controls.Add(this.linkLabelAct28of2002);
+            this.tabPage4.Controls.Add(this.linkLabelMineralsAct50of1991);
+            this.tabPage4.Controls.Add(this.linkLabelMineHealthandSafetyAct1996);
+            this.tabPage4.Controls.Add(this.linkLabelManpowerTrainingActno56of1981);
+            this.tabPage4.Controls.Add(this.linkLabelConstitutionofSouthAfrica);
+            this.tabPage4.Controls.Add(this.linkLabelCompensationforOccupationalInjuriesandDiseasesAct);
+            this.tabPage4.Controls.Add(this.linkLabelAct71of2008);
+            this.tabPage4.Controls.Add(this.linkLabelAct75of1997);
             this.tabPage4.Controls.Add(this.pictureBox30);
             this.tabPage4.Controls.Add(this.pictureBox27);
             this.tabPage4.Controls.Add(this.pictureBox28);
@@ -599,221 +613,291 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Legislation";
             // 
-            // label26
+            // btnPrinciplesandLegislationMatrix
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(623, 300);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(79, 12);
-            this.label26.TabIndex = 47;
-            this.label26.Text = "Relevant Forms";
+            this.btnPrinciplesandLegislationMatrix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnPrinciplesandLegislationMatrix.Location = new System.Drawing.Point(472, 336);
+            this.btnPrinciplesandLegislationMatrix.Name = "btnPrinciplesandLegislationMatrix";
+            this.btnPrinciplesandLegislationMatrix.Size = new System.Drawing.Size(310, 66);
+            this.btnPrinciplesandLegislationMatrix.TabIndex = 73;
+            this.btnPrinciplesandLegislationMatrix.Text = "Principles and Legislation Matrix";
+            this.btnPrinciplesandLegislationMatrix.UseVisualStyleBackColor = true;
+            this.btnPrinciplesandLegislationMatrix.Click += new System.EventHandler(this.btnPrinciplesandLegislationMatrix_Click);
             // 
-            // label25
+            // btnProcessesandLegislationMatrix
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(623, 274);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(59, 12);
-            this.label25.TabIndex = 46;
-            this.label25.Text = "Procedures";
+            this.btnProcessesandLegislationMatrix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnProcessesandLegislationMatrix.Location = new System.Drawing.Point(3, 336);
+            this.btnProcessesandLegislationMatrix.Name = "btnProcessesandLegislationMatrix";
+            this.btnProcessesandLegislationMatrix.Size = new System.Drawing.Size(333, 66);
+            this.btnProcessesandLegislationMatrix.TabIndex = 72;
+            this.btnProcessesandLegislationMatrix.Text = "Processes and Legislation Matrix";
+            this.btnProcessesandLegislationMatrix.UseVisualStyleBackColor = true;
+            this.btnProcessesandLegislationMatrix.Click += new System.EventHandler(this.btnProcessesandLegislationMatrix_Click);
             // 
-            // label24
+            // linkLabelAct
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(623, 248);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(37, 12);
-            this.label24.TabIndex = 45;
-            this.label24.Text = "Guides";
+            this.linkLabelAct.AutoSize = true;
+            this.linkLabelAct.LinkColor = System.Drawing.Color.White;
+            this.linkLabelAct.Location = new System.Drawing.Point(504, 282);
+            this.linkLabelAct.Name = "linkLabelAct";
+            this.linkLabelAct.Size = new System.Drawing.Size(21, 12);
+            this.linkLabelAct.TabIndex = 71;
+            this.linkLabelAct.TabStop = true;
+            this.linkLabelAct.Text = "Act";
             // 
-            // label23
+            // linkLabelAct55of1998
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(504, 274);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(21, 12);
-            this.label23.TabIndex = 44;
-            this.label23.Text = "Act";
+            this.linkLabelAct55of1998.AutoSize = true;
+            this.linkLabelAct55of1998.LinkColor = System.Drawing.Color.White;
+            this.linkLabelAct55of1998.Location = new System.Drawing.Point(39, 118);
+            this.linkLabelAct55of1998.Name = "linkLabelAct55of1998";
+            this.linkLabelAct55of1998.Size = new System.Drawing.Size(169, 12);
+            this.linkLabelAct55of1998.TabIndex = 70;
+            this.linkLabelAct55of1998.TabStop = true;
+            this.linkLabelAct55of1998.Text = "Employment Equity Act, 55 of 1998";
             // 
-            // label22
+            // linkLabelEmploymentServicesActno4of2014
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(417, 213);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(271, 12);
-            this.label22.TabIndex = 43;
-            this.label22.Text = "Unemployment Insurance Contributions Act no 4 of 2002";
+            this.linkLabelEmploymentServicesActno4of2014.AutoSize = true;
+            this.linkLabelEmploymentServicesActno4of2014.LinkColor = System.Drawing.Color.White;
+            this.linkLabelEmploymentServicesActno4of2014.Location = new System.Drawing.Point(39, 144);
+            this.linkLabelEmploymentServicesActno4of2014.Name = "linkLabelEmploymentServicesActno4of2014";
+            this.linkLabelEmploymentServicesActno4of2014.Size = new System.Drawing.Size(183, 12);
+            this.linkLabelEmploymentServicesActno4of2014.TabIndex = 69;
+            this.linkLabelEmploymentServicesActno4of2014.TabStop = true;
+            this.linkLabelEmploymentServicesActno4of2014.Text = "Employment Services Act no 4 of 2014";
             // 
-            // label21
+            // linkLabelLabourRelationsactno66of1995
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(417, 187);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(212, 12);
-            this.label21.TabIndex = 42;
-            this.label21.Text = "Unemployment Insurance Act No. 63 of 2001";
+            this.linkLabelLabourRelationsactno66of1995.AutoSize = true;
+            this.linkLabelLabourRelationsactno66of1995.LinkColor = System.Drawing.Color.White;
+            this.linkLabelLabourRelationsactno66of1995.Location = new System.Drawing.Point(39, 170);
+            this.linkLabelLabourRelationsactno66of1995.Name = "linkLabelLabourRelationsactno66of1995";
+            this.linkLabelLabourRelationsactno66of1995.Size = new System.Drawing.Size(166, 12);
+            this.linkLabelLabourRelationsactno66of1995.TabIndex = 68;
+            this.linkLabelLabourRelationsactno66of1995.TabStop = true;
+            this.linkLabelLabourRelationsactno66of1995.Text = "Labour Relations act no 66 of 1995";
             // 
-            // label20
+            // linkLabelact78of1973ODIMWA
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(417, 162);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(195, 12);
-            this.label20.TabIndex = 41;
-            this.label20.Text = "Skills Development Levies Act no of 1999";
+            this.linkLabelact78of1973ODIMWA.AutoSize = true;
+            this.linkLabelact78of1973ODIMWA.LinkColor = System.Drawing.Color.White;
+            this.linkLabelact78of1973ODIMWA.Location = new System.Drawing.Point(417, 92);
+            this.linkLabelact78of1973ODIMWA.Name = "linkLabelact78of1973ODIMWA";
+            this.linkLabelact78of1973ODIMWA.Size = new System.Drawing.Size(313, 12);
+            this.linkLabelact78of1973ODIMWA.TabIndex = 67;
+            this.linkLabelact78of1973ODIMWA.TabStop = true;
+            this.linkLabelact78of1973ODIMWA.Text = "Occupational Diseases in mines and works act 78 of 1973 ODIMWA";
             // 
-            // label19
+            // linkLabelActno85of1993
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(417, 136);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(177, 12);
-            this.label19.TabIndex = 40;
-            this.label19.Text = "Skills Development Act no 97 of 1998";
+            this.linkLabelActno85of1993.AutoSize = true;
+            this.linkLabelActno85of1993.LinkColor = System.Drawing.Color.White;
+            this.linkLabelActno85of1993.Location = new System.Drawing.Point(417, 118);
+            this.linkLabelActno85of1993.Name = "linkLabelActno85of1993";
+            this.linkLabelActno85of1993.Size = new System.Drawing.Size(231, 12);
+            this.linkLabelActno85of1993.TabIndex = 66;
+            this.linkLabelActno85of1993.TabStop = true;
+            this.linkLabelActno85of1993.Text = "Occupational Health and Safety Act no 85 of 1993";
             // 
-            // label18
+            // linkLabelActno97of1998
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(417, 110);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(231, 12);
-            this.label18.TabIndex = 39;
-            this.label18.Text = "Occupational Health and Safety Act no 85 of 1993";
+            this.linkLabelActno97of1998.AutoSize = true;
+            this.linkLabelActno97of1998.LinkColor = System.Drawing.Color.White;
+            this.linkLabelActno97of1998.Location = new System.Drawing.Point(417, 144);
+            this.linkLabelActno97of1998.Name = "linkLabelActno97of1998";
+            this.linkLabelActno97of1998.Size = new System.Drawing.Size(177, 12);
+            this.linkLabelActno97of1998.TabIndex = 65;
+            this.linkLabelActno97of1998.TabStop = true;
+            this.linkLabelActno97of1998.Text = "Skills Development Act no 97 of 1998";
             // 
-            // label17
+            // linkLabelActnoof1999
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(417, 84);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(313, 12);
-            this.label17.TabIndex = 38;
-            this.label17.Text = "Occupational Diseases in mines and works act 78 of 1973 ODIMWA";
+            this.linkLabelActnoof1999.AutoSize = true;
+            this.linkLabelActnoof1999.LinkColor = System.Drawing.Color.White;
+            this.linkLabelActnoof1999.Location = new System.Drawing.Point(417, 170);
+            this.linkLabelActnoof1999.Name = "linkLabelActnoof1999";
+            this.linkLabelActnoof1999.Size = new System.Drawing.Size(195, 12);
+            this.linkLabelActnoof1999.TabIndex = 64;
+            this.linkLabelActnoof1999.TabStop = true;
+            this.linkLabelActnoof1999.Text = "Skills Development Levies Act no of 1999";
             // 
-            // label16
+            // linkLabelActNo63of2001
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(417, 58);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(144, 12);
-            this.label16.TabIndex = 37;
-            this.label16.Text = "National Water Act 36 of 1998";
+            this.linkLabelActNo63of2001.AutoSize = true;
+            this.linkLabelActNo63of2001.LinkColor = System.Drawing.Color.White;
+            this.linkLabelActNo63of2001.Location = new System.Drawing.Point(417, 195);
+            this.linkLabelActNo63of2001.Name = "linkLabelActNo63of2001";
+            this.linkLabelActNo63of2001.Size = new System.Drawing.Size(212, 12);
+            this.linkLabelActNo63of2001.TabIndex = 63;
+            this.linkLabelActNo63of2001.TabStop = true;
+            this.linkLabelActNo63of2001.Text = "Unemployment Insurance Act No. 63 of 2001";
             // 
-            // label15
+            // linkLabelActno4of2002
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(417, 32);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(195, 12);
-            this.label15.TabIndex = 36;
-            this.label15.Text = "National Environmental Management Act";
+            this.linkLabelActno4of2002.AutoSize = true;
+            this.linkLabelActno4of2002.LinkColor = System.Drawing.Color.White;
+            this.linkLabelActno4of2002.Location = new System.Drawing.Point(417, 221);
+            this.linkLabelActno4of2002.Name = "linkLabelActno4of2002";
+            this.linkLabelActno4of2002.Size = new System.Drawing.Size(271, 12);
+            this.linkLabelActno4of2002.TabIndex = 62;
+            this.linkLabelActno4of2002.TabStop = true;
+            this.linkLabelActno4of2002.Text = "Unemployment Insurance Contributions Act no 4 of 2002";
             // 
-            // label14
+            // linkLabelRelevantForms
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(417, 6);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(55, 12);
-            this.label14.TabIndex = 35;
-            this.label14.Text = "Mining Act";
+            this.linkLabelRelevantForms.AutoSize = true;
+            this.linkLabelRelevantForms.LinkColor = System.Drawing.Color.White;
+            this.linkLabelRelevantForms.Location = new System.Drawing.Point(623, 308);
+            this.linkLabelRelevantForms.Name = "linkLabelRelevantForms";
+            this.linkLabelRelevantForms.Size = new System.Drawing.Size(79, 12);
+            this.linkLabelRelevantForms.TabIndex = 61;
+            this.linkLabelRelevantForms.TabStop = true;
+            this.linkLabelRelevantForms.Text = "Relevant Forms";
             // 
-            // label13
+            // linkLabelProcedures
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(39, 265);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(298, 12);
-            this.label13.TabIndex = 34;
-            this.label13.Text = "Minerals and Petroleum Resource Development ACt, 28 of 2002";
+            this.linkLabelProcedures.AutoSize = true;
+            this.linkLabelProcedures.LinkColor = System.Drawing.Color.White;
+            this.linkLabelProcedures.Location = new System.Drawing.Point(623, 282);
+            this.linkLabelProcedures.Name = "linkLabelProcedures";
+            this.linkLabelProcedures.Size = new System.Drawing.Size(59, 12);
+            this.linkLabelProcedures.TabIndex = 60;
+            this.linkLabelProcedures.TabStop = true;
+            this.linkLabelProcedures.Text = "Procedures";
             // 
-            // label12
+            // linkLabelMiningAct
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(39, 239);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(109, 12);
-            this.label12.TabIndex = 33;
-            this.label12.Text = "Minerals Act 50 of 991";
+            this.linkLabelMiningAct.AutoSize = true;
+            this.linkLabelMiningAct.LinkColor = System.Drawing.Color.White;
+            this.linkLabelMiningAct.Location = new System.Drawing.Point(417, 14);
+            this.linkLabelMiningAct.Name = "linkLabelMiningAct";
+            this.linkLabelMiningAct.Size = new System.Drawing.Size(55, 12);
+            this.linkLabelMiningAct.TabIndex = 59;
+            this.linkLabelMiningAct.TabStop = true;
+            this.linkLabelMiningAct.Text = "Mining Act";
             // 
-            // label11
+            // linkLabelNationalEnvironmentalManagementAct
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(39, 213);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(154, 12);
-            this.label11.TabIndex = 32;
-            this.label11.Text = "Mine Health and Safety Act 1996";
+            this.linkLabelNationalEnvironmentalManagementAct.AutoSize = true;
+            this.linkLabelNationalEnvironmentalManagementAct.LinkColor = System.Drawing.Color.White;
+            this.linkLabelNationalEnvironmentalManagementAct.Location = new System.Drawing.Point(417, 40);
+            this.linkLabelNationalEnvironmentalManagementAct.Name = "linkLabelNationalEnvironmentalManagementAct";
+            this.linkLabelNationalEnvironmentalManagementAct.Size = new System.Drawing.Size(195, 12);
+            this.linkLabelNationalEnvironmentalManagementAct.TabIndex = 58;
+            this.linkLabelNationalEnvironmentalManagementAct.TabStop = true;
+            this.linkLabelNationalEnvironmentalManagementAct.Text = "National Environmental Management Act";
             // 
-            // label10
+            // linkLabelGuides
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(39, 187);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(181, 12);
-            this.label10.TabIndex = 31;
-            this.label10.Text = "Manpower Training Act no 56 of 1981";
+            this.linkLabelGuides.AutoSize = true;
+            this.linkLabelGuides.LinkColor = System.Drawing.Color.White;
+            this.linkLabelGuides.Location = new System.Drawing.Point(623, 256);
+            this.linkLabelGuides.Name = "linkLabelGuides";
+            this.linkLabelGuides.Size = new System.Drawing.Size(37, 12);
+            this.linkLabelGuides.TabIndex = 57;
+            this.linkLabelGuides.TabStop = true;
+            this.linkLabelGuides.Text = "Guides";
             // 
-            // label9
+            // linkLabelNationalWaterAct36of1998
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(39, 162);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(166, 12);
-            this.label9.TabIndex = 30;
-            this.label9.Text = "Labour Relations act no 66 of 1995";
+            this.linkLabelNationalWaterAct36of1998.AutoSize = true;
+            this.linkLabelNationalWaterAct36of1998.LinkColor = System.Drawing.Color.White;
+            this.linkLabelNationalWaterAct36of1998.Location = new System.Drawing.Point(417, 66);
+            this.linkLabelNationalWaterAct36of1998.Name = "linkLabelNationalWaterAct36of1998";
+            this.linkLabelNationalWaterAct36of1998.Size = new System.Drawing.Size(144, 12);
+            this.linkLabelNationalWaterAct36of1998.TabIndex = 56;
+            this.linkLabelNationalWaterAct36of1998.TabStop = true;
+            this.linkLabelNationalWaterAct36of1998.Text = "National Water Act 36 of 1998";
             // 
-            // label8
+            // linkLabelAct28of2002
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(39, 136);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(183, 12);
-            this.label8.TabIndex = 29;
-            this.label8.Text = "Employment Services Act no 4 of 2014";
+            this.linkLabelAct28of2002.AutoSize = true;
+            this.linkLabelAct28of2002.LinkColor = System.Drawing.Color.White;
+            this.linkLabelAct28of2002.Location = new System.Drawing.Point(39, 273);
+            this.linkLabelAct28of2002.Name = "linkLabelAct28of2002";
+            this.linkLabelAct28of2002.Size = new System.Drawing.Size(297, 12);
+            this.linkLabelAct28of2002.TabIndex = 55;
+            this.linkLabelAct28of2002.TabStop = true;
+            this.linkLabelAct28of2002.Text = "Minerals and Petroleum Resource Development Act, 28 of 2002";
             // 
-            // label7
+            // linkLabelMineralsAct50of1991
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(39, 110);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(169, 12);
-            this.label7.TabIndex = 28;
-            this.label7.Text = "Employment Equity Act, 55 of 1998";
+            this.linkLabelMineralsAct50of1991.AutoSize = true;
+            this.linkLabelMineralsAct50of1991.LinkColor = System.Drawing.Color.White;
+            this.linkLabelMineralsAct50of1991.Location = new System.Drawing.Point(39, 247);
+            this.linkLabelMineralsAct50of1991.Name = "linkLabelMineralsAct50of1991";
+            this.linkLabelMineralsAct50of1991.Size = new System.Drawing.Size(115, 12);
+            this.linkLabelMineralsAct50of1991.TabIndex = 54;
+            this.linkLabelMineralsAct50of1991.TabStop = true;
+            this.linkLabelMineralsAct50of1991.Text = "Minerals Act 50 of 1991";
             // 
-            // label6
+            // linkLabelMineHealthandSafetyAct1996
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(39, 84);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(134, 12);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "Constitution of South Africa";
+            this.linkLabelMineHealthandSafetyAct1996.AutoSize = true;
+            this.linkLabelMineHealthandSafetyAct1996.LinkColor = System.Drawing.Color.White;
+            this.linkLabelMineHealthandSafetyAct1996.Location = new System.Drawing.Point(39, 221);
+            this.linkLabelMineHealthandSafetyAct1996.Name = "linkLabelMineHealthandSafetyAct1996";
+            this.linkLabelMineHealthandSafetyAct1996.Size = new System.Drawing.Size(154, 12);
+            this.linkLabelMineHealthandSafetyAct1996.TabIndex = 53;
+            this.linkLabelMineHealthandSafetyAct1996.TabStop = true;
+            this.linkLabelMineHealthandSafetyAct1996.Text = "Mine Health and Safety Act 1996";
             // 
-            // label5
+            // linkLabelManpowerTrainingActno56of1981
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(39, 58);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(269, 12);
-            this.label5.TabIndex = 26;
-            this.label5.Text = "Compensation for Occupational Injuries and Diseases Act";
+            this.linkLabelManpowerTrainingActno56of1981.AutoSize = true;
+            this.linkLabelManpowerTrainingActno56of1981.LinkColor = System.Drawing.Color.White;
+            this.linkLabelManpowerTrainingActno56of1981.Location = new System.Drawing.Point(39, 195);
+            this.linkLabelManpowerTrainingActno56of1981.Name = "linkLabelManpowerTrainingActno56of1981";
+            this.linkLabelManpowerTrainingActno56of1981.Size = new System.Drawing.Size(181, 12);
+            this.linkLabelManpowerTrainingActno56of1981.TabIndex = 52;
+            this.linkLabelManpowerTrainingActno56of1981.TabStop = true;
+            this.linkLabelManpowerTrainingActno56of1981.Text = "Manpower Training Act no 56 of 1981";
             // 
-            // label4
+            // linkLabelConstitutionofSouthAfrica
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(39, 32);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 12);
-            this.label4.TabIndex = 25;
-            this.label4.Text = "Companies Act 71 of 2008";
+            this.linkLabelConstitutionofSouthAfrica.AutoSize = true;
+            this.linkLabelConstitutionofSouthAfrica.LinkColor = System.Drawing.Color.White;
+            this.linkLabelConstitutionofSouthAfrica.Location = new System.Drawing.Point(39, 92);
+            this.linkLabelConstitutionofSouthAfrica.Name = "linkLabelConstitutionofSouthAfrica";
+            this.linkLabelConstitutionofSouthAfrica.Size = new System.Drawing.Size(134, 12);
+            this.linkLabelConstitutionofSouthAfrica.TabIndex = 51;
+            this.linkLabelConstitutionofSouthAfrica.TabStop = true;
+            this.linkLabelConstitutionofSouthAfrica.Text = "Constitution of South Africa";
             // 
-            // label3
+            // linkLabelCompensationforOccupationalInjuriesandDiseasesAct
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 6);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(225, 12);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "Basic Conditions of Employment Act 75 of 1997";
+            this.linkLabelCompensationforOccupationalInjuriesandDiseasesAct.AutoSize = true;
+            this.linkLabelCompensationforOccupationalInjuriesandDiseasesAct.LinkColor = System.Drawing.Color.White;
+            this.linkLabelCompensationforOccupationalInjuriesandDiseasesAct.Location = new System.Drawing.Point(39, 66);
+            this.linkLabelCompensationforOccupationalInjuriesandDiseasesAct.Name = "linkLabelCompensationforOccupationalInjuriesandDiseasesAct";
+            this.linkLabelCompensationforOccupationalInjuriesandDiseasesAct.Size = new System.Drawing.Size(269, 12);
+            this.linkLabelCompensationforOccupationalInjuriesandDiseasesAct.TabIndex = 50;
+            this.linkLabelCompensationforOccupationalInjuriesandDiseasesAct.TabStop = true;
+            this.linkLabelCompensationforOccupationalInjuriesandDiseasesAct.Text = "Compensation for Occupational Injuries and Diseases Act";
+            // 
+            // linkLabelAct71of2008
+            // 
+            this.linkLabelAct71of2008.AutoSize = true;
+            this.linkLabelAct71of2008.LinkColor = System.Drawing.Color.White;
+            this.linkLabelAct71of2008.Location = new System.Drawing.Point(39, 40);
+            this.linkLabelAct71of2008.Name = "linkLabelAct71of2008";
+            this.linkLabelAct71of2008.Size = new System.Drawing.Size(125, 12);
+            this.linkLabelAct71of2008.TabIndex = 49;
+            this.linkLabelAct71of2008.TabStop = true;
+            this.linkLabelAct71of2008.Text = "Companies Act 71 of 2008";
+            // 
+            // linkLabelAct75of1997
+            // 
+            this.linkLabelAct75of1997.AutoSize = true;
+            this.linkLabelAct75of1997.LinkColor = System.Drawing.Color.White;
+            this.linkLabelAct75of1997.Location = new System.Drawing.Point(39, 14);
+            this.linkLabelAct75of1997.Name = "linkLabelAct75of1997";
+            this.linkLabelAct75of1997.Size = new System.Drawing.Size(225, 12);
+            this.linkLabelAct75of1997.TabIndex = 48;
+            this.linkLabelAct75of1997.TabStop = true;
+            this.linkLabelAct75of1997.Text = "Basic Conditions of Employment Act 75 of 1997";
             // 
             // tabPage5
             // 
@@ -1078,6 +1162,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox2.Location = new System.Drawing.Point(242, 6);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(301, 289);
@@ -1659,30 +1744,6 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox30;
         private System.Windows.Forms.PictureBox pictureBox27;
         private System.Windows.Forms.PictureBox pictureBox28;
@@ -1746,5 +1807,31 @@
         private System.Windows.Forms.Button btnCloseKingIVonPage;
         private System.Windows.Forms.PictureBox pictureBox49;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Button btnPrinciplesandLegislationMatrix;
+        private System.Windows.Forms.Button btnProcessesandLegislationMatrix;
+        private System.Windows.Forms.LinkLabel linkLabelAct;
+        private System.Windows.Forms.LinkLabel linkLabelAct55of1998;
+        private System.Windows.Forms.LinkLabel linkLabelEmploymentServicesActno4of2014;
+        private System.Windows.Forms.LinkLabel linkLabelLabourRelationsactno66of1995;
+        private System.Windows.Forms.LinkLabel linkLabelact78of1973ODIMWA;
+        private System.Windows.Forms.LinkLabel linkLabelActno85of1993;
+        private System.Windows.Forms.LinkLabel linkLabelActno97of1998;
+        private System.Windows.Forms.LinkLabel linkLabelActnoof1999;
+        private System.Windows.Forms.LinkLabel linkLabelActNo63of2001;
+        private System.Windows.Forms.LinkLabel linkLabelActno4of2002;
+        private System.Windows.Forms.LinkLabel linkLabelRelevantForms;
+        private System.Windows.Forms.LinkLabel linkLabelProcedures;
+        private System.Windows.Forms.LinkLabel linkLabelMiningAct;
+        private System.Windows.Forms.LinkLabel linkLabelNationalEnvironmentalManagementAct;
+        private System.Windows.Forms.LinkLabel linkLabelGuides;
+        private System.Windows.Forms.LinkLabel linkLabelNationalWaterAct36of1998;
+        private System.Windows.Forms.LinkLabel linkLabelAct28of2002;
+        private System.Windows.Forms.LinkLabel linkLabelMineralsAct50of1991;
+        private System.Windows.Forms.LinkLabel linkLabelMineHealthandSafetyAct1996;
+        private System.Windows.Forms.LinkLabel linkLabelManpowerTrainingActno56of1981;
+        private System.Windows.Forms.LinkLabel linkLabelConstitutionofSouthAfrica;
+        private System.Windows.Forms.LinkLabel linkLabelCompensationforOccupationalInjuriesandDiseasesAct;
+        private System.Windows.Forms.LinkLabel linkLabelAct71of2008;
+        private System.Windows.Forms.LinkLabel linkLabelAct75of1997;
     }
 }

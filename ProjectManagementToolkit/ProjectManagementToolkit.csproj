@@ -55,6 +55,7 @@
       <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -362,6 +363,498 @@
     <Compile Include="MPMM\MPMM Forms\Finances\Finances.Designer.cs">
       <DependentUpon>Finances.cs</DependentUpon>
     </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Accountability.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Accountability.Designer.cs">
+      <DependentUpon>Accountability.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\CompanyGoals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\CompanyGoals.Designer.cs">
+      <DependentUpon>CompanyGoals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC1.Designer.cs">
+      <DependentUpon>FC1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC10.Designer.cs">
+      <DependentUpon>FC10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC11.Designer.cs">
+      <DependentUpon>FC11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC12.Designer.cs">
+      <DependentUpon>FC12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC13.Designer.cs">
+      <DependentUpon>FC13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC14.Designer.cs">
+      <DependentUpon>FC14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC15.Designer.cs">
+      <DependentUpon>FC15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC16.Designer.cs">
+      <DependentUpon>FC16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC17.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC17.Designer.cs">
+      <DependentUpon>FC17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC18.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC18.Designer.cs">
+      <DependentUpon>FC18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC2.Designer.cs">
+      <DependentUpon>FC2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC3.Designer.cs">
+      <DependentUpon>FC3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC4.Designer.cs">
+      <DependentUpon>FC4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC5.Designer.cs">
+      <DependentUpon>FC5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC6.Designer.cs">
+      <DependentUpon>FC6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC7.Designer.cs">
+      <DependentUpon>FC7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC8.Designer.cs">
+      <DependentUpon>FC8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\FC9.Designer.cs">
+      <DependentUpon>FC9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GES1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GES1.Designer.cs">
+      <DependentUpon>GES1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GES2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GES2.Designer.cs">
+      <DependentUpon>GES2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GES3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GES3.Designer.cs">
+      <DependentUpon>GES3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GES4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GES4.Designer.cs">
+      <DependentUpon>GES4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GES5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GES5.Designer.cs">
+      <DependentUpon>GES5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GES6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GES6.Designer.cs">
+      <DependentUpon>GES6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GES7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GES7.Designer.cs">
+      <DependentUpon>GES7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GES8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GES8.Designer.cs">
+      <DependentUpon>GES8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GF1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GF1.Designer.cs">
+      <DependentUpon>GF1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GF2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GF2.Designer.cs">
+      <DependentUpon>GF2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GF3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GF3.Designer.cs">
+      <DependentUpon>GF3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GF4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GF4.Designer.cs">
+      <DependentUpon>GF4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GF5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GF5.Designer.cs">
+      <DependentUpon>GF5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GF6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GF6.Designer.cs">
+      <DependentUpon>GF6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GFImplementation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GFImplementation.Designer.cs">
+      <DependentUpon>GFImplementation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GFlows1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GFlows1.Designer.cs">
+      <DependentUpon>GFlows1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GFlows2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GFlows2.Designer.cs">
+      <DependentUpon>GFlows2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GovernanceExecutionStructure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GovernanceExecutionStructure.Designer.cs">
+      <DependentUpon>GovernanceExecutionStructure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GovernanceFlows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GovernanceFlows.Designer.cs">
+      <DependentUpon>GovernanceFlows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GovernanceFunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GovernanceFunctions.Designer.cs">
+      <DependentUpon>GovernanceFunctions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GovernanceGoals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GovernanceGoals.Designer.cs">
+      <DependentUpon>GovernanceGoals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GovernanceOutcomes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GovernanceOutcomes.Designer.cs">
+      <DependentUpon>GovernanceOutcomes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GovernancePrinciples.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GovernancePrinciples.Designer.cs">
+      <DependentUpon>GovernancePrinciples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GovernanceProcesses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GovernanceProcesses.Designer.cs">
+      <DependentUpon>GovernanceProcesses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GoverningBodyResponsibilities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GoverningBodyResponsibilities.Designer.cs">
+      <DependentUpon>GoverningBodyResponsibilities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GP1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GP1.Designer.cs">
+      <DependentUpon>GP1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GP2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GP2.Designer.cs">
+      <DependentUpon>GP2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GP3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GP3.Designer.cs">
+      <DependentUpon>GP3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GP4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GP4.Designer.cs">
+      <DependentUpon>GP4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GP5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\GP5.Designer.cs">
+      <DependentUpon>GP5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Oversight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Oversight.Designer.cs">
+      <DependentUpon>Oversight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\PARICS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\PARICS.Designer.cs">
+      <DependentUpon>PARICS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Policies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Policies.Designer.cs">
+      <DependentUpon>Policies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle10Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle10Detail.Designer.cs">
+      <DependentUpon>Principle10Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle11Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle11Detail.Designer.cs">
+      <DependentUpon>Principle11Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle12Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle12Detail.Designer.cs">
+      <DependentUpon>Principle12Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle13Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle13Detail.Designer.cs">
+      <DependentUpon>Principle13Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle14Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle14Detail.Designer.cs">
+      <DependentUpon>Principle14Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle15Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle15Detail.Designer.cs">
+      <DependentUpon>Principle15Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle16Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle16Detail.Designer.cs">
+      <DependentUpon>Principle16Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle17Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle17Detail.Designer.cs">
+      <DependentUpon>Principle17Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle1Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle1Detail.Designer.cs">
+      <DependentUpon>Principle1Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle2Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle2Detail.Designer.cs">
+      <DependentUpon>Principle2Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle3Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle3Detail.Designer.cs">
+      <DependentUpon>Principle3Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle4Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle4Detail.Designer.cs">
+      <DependentUpon>Principle4Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle5Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle5Detail.Designer.cs">
+      <DependentUpon>Principle5Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle6Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle6Detail.Designer.cs">
+      <DependentUpon>Principle6Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle7Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle7Detail.Designer.cs">
+      <DependentUpon>Principle7Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle8Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle8Detail.Designer.cs">
+      <DependentUpon>Principle8Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle9Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Principle9Detail.Designer.cs">
+      <DependentUpon>Principle9Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\PrinciplesandLegislationMatrix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\PrinciplesandLegislationMatrix.Designer.cs">
+      <DependentUpon>PrinciplesandLegislationMatrix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\PrinciplesLegalInteractions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\PrinciplesLegalInteractions.Designer.cs">
+      <DependentUpon>PrinciplesLegalInteractions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\ProcessesAndLegislationMatrix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\ProcessesAndLegislationMatrix.Designer.cs">
+      <DependentUpon>ProcessesAndLegislationMatrix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\ProcessLegalInteractions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\ProcessLegalInteractions.Designer.cs">
+      <DependentUpon>ProcessLegalInteractions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\ProcessPrinciplesInteractions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\ProcessPrinciplesInteractions.Designer.cs">
+      <DependentUpon>ProcessPrinciplesInteractions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Strategy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\Strategy.Designer.cs">
+      <DependentUpon>Strategy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\UC1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\UC1.Designer.cs">
+      <DependentUpon>UC1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\UC2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\UC2.Designer.cs">
+      <DependentUpon>UC2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\UC3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\UC3.Designer.cs">
+      <DependentUpon>UC3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\UC301.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\UC301.Designer.cs">
+      <DependentUpon>UC301.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\UC4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\UC4.Designer.cs">
+      <DependentUpon>UC4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\UnderpinningConcepts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Forms\Governance\UnderpinningConcepts.Designer.cs">
+      <DependentUpon>UnderpinningConcepts.cs</DependentUpon>
+    </Compile>
     <Compile Include="MPMM\MPMM Forms\Project Management\frmProjectManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -523,6 +1016,252 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Forms\Finances\Finances.resx">
       <DependentUpon>Finances.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Accountability.resx">
+      <DependentUpon>Accountability.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\CompanyGoals.resx">
+      <DependentUpon>CompanyGoals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\FC1.resx">
+      <DependentUpon>FC1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\FC10.resx">
+      <DependentUpon>FC10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\FC11.resx">
+      <DependentUpon>FC11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\FC12.resx">
+      <DependentUpon>FC12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\FC13.resx">
+      <DependentUpon>FC13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\FC14.resx">
+      <DependentUpon>FC14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\FC15.resx">
+      <DependentUpon>FC15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\FC16.resx">
+      <DependentUpon>FC16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\FC17.resx">
+      <DependentUpon>FC17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\FC18.resx">
+      <DependentUpon>FC18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\FC2.resx">
+      <DependentUpon>FC2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\FC3.resx">
+      <DependentUpon>FC3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\FC4.resx">
+      <DependentUpon>FC4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\FC5.resx">
+      <DependentUpon>FC5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\FC6.resx">
+      <DependentUpon>FC6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\FC7.resx">
+      <DependentUpon>FC7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\FC8.resx">
+      <DependentUpon>FC8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\FC9.resx">
+      <DependentUpon>FC9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GES1.resx">
+      <DependentUpon>GES1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GES2.resx">
+      <DependentUpon>GES2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GES3.resx">
+      <DependentUpon>GES3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GES4.resx">
+      <DependentUpon>GES4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GES5.resx">
+      <DependentUpon>GES5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GES6.resx">
+      <DependentUpon>GES6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GES7.resx">
+      <DependentUpon>GES7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GES8.resx">
+      <DependentUpon>GES8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GF1.resx">
+      <DependentUpon>GF1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GF2.resx">
+      <DependentUpon>GF2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GF3.resx">
+      <DependentUpon>GF3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GF4.resx">
+      <DependentUpon>GF4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GF5.resx">
+      <DependentUpon>GF5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GF6.resx">
+      <DependentUpon>GF6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GFImplementation.resx">
+      <DependentUpon>GFImplementation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GFlows1.resx">
+      <DependentUpon>GFlows1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GFlows2.resx">
+      <DependentUpon>GFlows2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GovernanceExecutionStructure.resx">
+      <DependentUpon>GovernanceExecutionStructure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GovernanceFlows.resx">
+      <DependentUpon>GovernanceFlows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GovernanceFunctions.resx">
+      <DependentUpon>GovernanceFunctions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GovernanceGoals.resx">
+      <DependentUpon>GovernanceGoals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GovernanceOutcomes.resx">
+      <DependentUpon>GovernanceOutcomes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GovernancePrinciples.resx">
+      <DependentUpon>GovernancePrinciples.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GovernanceProcesses.resx">
+      <DependentUpon>GovernanceProcesses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GoverningBodyResponsibilities.resx">
+      <DependentUpon>GoverningBodyResponsibilities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GP1.resx">
+      <DependentUpon>GP1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GP2.resx">
+      <DependentUpon>GP2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GP3.resx">
+      <DependentUpon>GP3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GP4.resx">
+      <DependentUpon>GP4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\GP5.resx">
+      <DependentUpon>GP5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Oversight.resx">
+      <DependentUpon>Oversight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\PARICS.resx">
+      <DependentUpon>PARICS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Policies.resx">
+      <DependentUpon>Policies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Principle10Detail.resx">
+      <DependentUpon>Principle10Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Principle11Detail.resx">
+      <DependentUpon>Principle11Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Principle12Detail.resx">
+      <DependentUpon>Principle12Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Principle13Detail.resx">
+      <DependentUpon>Principle13Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Principle14Detail.resx">
+      <DependentUpon>Principle14Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Principle15Detail.resx">
+      <DependentUpon>Principle15Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Principle16Detail.resx">
+      <DependentUpon>Principle16Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Principle17Detail.resx">
+      <DependentUpon>Principle17Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Principle1Detail.resx">
+      <DependentUpon>Principle1Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Principle2Detail.resx">
+      <DependentUpon>Principle2Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Principle3Detail.resx">
+      <DependentUpon>Principle3Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Principle4Detail.resx">
+      <DependentUpon>Principle4Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Principle5Detail.resx">
+      <DependentUpon>Principle5Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Principle6Detail.resx">
+      <DependentUpon>Principle6Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Principle7Detail.resx">
+      <DependentUpon>Principle7Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Principle8Detail.resx">
+      <DependentUpon>Principle8Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Principle9Detail.resx">
+      <DependentUpon>Principle9Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\PrinciplesandLegislationMatrix.resx">
+      <DependentUpon>PrinciplesandLegislationMatrix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\PrinciplesLegalInteractions.resx">
+      <DependentUpon>PrinciplesLegalInteractions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\ProcessesAndLegislationMatrix.resx">
+      <DependentUpon>ProcessesAndLegislationMatrix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\ProcessLegalInteractions.resx">
+      <DependentUpon>ProcessLegalInteractions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\ProcessPrinciplesInteractions.resx">
+      <DependentUpon>ProcessPrinciplesInteractions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\Strategy.resx">
+      <DependentUpon>Strategy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\UC1.resx">
+      <DependentUpon>UC1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\UC2.resx">
+      <DependentUpon>UC2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\UC3.resx">
+      <DependentUpon>UC3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\UC301.resx">
+      <DependentUpon>UC301.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\UC4.resx">
+      <DependentUpon>UC4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Forms\Governance\UnderpinningConcepts.resx">
+      <DependentUpon>UnderpinningConcepts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Forms\Project Management\frmProjectManagement.resx">
       <DependentUpon>frmProjectManagement.cs</DependentUpon>
