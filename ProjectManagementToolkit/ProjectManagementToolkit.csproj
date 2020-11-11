@@ -48,6 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MoreLinq, Version=3.3.2.0, Culture=neutral, PublicKeyToken=384d532d7e88985d, processorArchitecture=MSIL">
+      <HintPath>..\packages\morelinq.3.3.2\lib\net451\MoreLinq.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -380,6 +383,16 @@
     <Compile Include="MPMM\MPMM Forms\Governance\Governance.Designer.cs">
       <DependentUpon>Governance.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProjectSelection.cs" />
+    <Compile Include="ProjectSelection.Designer.cs">
+      <DependentUpon>ProjectSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SyncForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SyncForm.designer.cs">
+      <DependentUpon>SyncForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utility\Hashing.cs" />
     <Compile Include="MPMM\MPMM Forms\Human Resources\Human_Resources.cs">
       <SubType>Form</SubType>
@@ -441,12 +454,6 @@
       <DependentUpon>Processes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="ProjectSetup.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ProjectSetup.Designer.cs">
-      <DependentUpon>ProjectSetup.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
@@ -454,7 +461,10 @@
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utility\JsonHelper.cs" />
+    <Compile Include="Utility\ProjectModel.cs" />
     <Compile Include="Utility\Validation.cs" />
+    <Compile Include="Utility\VersionControl.cs" />
     <EmbeddedResource Include="MPMM\MPMM Document Forms\AcceptanceFormDocumentForm.resx">
       <DependentUpon>AcceptanceFormDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -560,8 +570,8 @@
     <EmbeddedResource Include="MPMM\MPMM Forms\Processes\Processes.resx">
       <DependentUpon>Processes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProjectSetup.resx">
-      <DependentUpon>ProjectSetup.cs</DependentUpon>
+    <EmbeddedResource Include="ProjectSelection.resx">
+      <DependentUpon>ProjectSelection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -575,6 +585,9 @@
     </Compile>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SyncForm.resx">
+      <DependentUpon>SyncForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ISI_DB.xsc">
       <DependentUpon>ISI_DB.xsd</DependentUpon>
