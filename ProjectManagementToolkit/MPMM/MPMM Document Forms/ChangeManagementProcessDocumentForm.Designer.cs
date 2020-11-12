@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangeManagementProcessDocumentForm));
             this.tbpChangeDocument = new System.Windows.Forms.TabPage();
             this.gpbChangeRegister = new System.Windows.Forms.GroupBox();
             this.txtChangeRegister = new System.Windows.Forms.TextBox();
@@ -69,7 +68,6 @@
             this.gpbOverview = new System.Windows.Forms.GroupBox();
             this.txtOverview = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pixChangeManagementProcess = new System.Windows.Forms.PictureBox();
             this.tbpChangeRoles = new System.Windows.Forms.TabPage();
             this.gpbProjectBoard = new System.Windows.Forms.GroupBox();
             this.txtProjectBoard = new System.Windows.Forms.TextBox();
@@ -79,6 +77,9 @@
             this.txtTeamMember = new System.Windows.Forms.TextBox();
             this.gpbChangeRoles = new System.Windows.Forms.GroupBox();
             this.txtChangeRoles = new System.Windows.Forms.TextBox();
+            this.btnChangeManagementProcess_MainMenue = new System.Windows.Forms.Button();
+            this.btnChangeManagementProcess_EnterProjectName = new System.Windows.Forms.Button();
+            this.pixChangeManagementProcess = new System.Windows.Forms.PictureBox();
             this.tbpChangeDocument.SuspendLayout();
             this.gpbChangeRegister.SuspendLayout();
             this.gpbChangeRequestForm.SuspendLayout();
@@ -99,12 +100,12 @@
             this.gpbIdentifyChange.SuspendLayout();
             this.gpbOverview.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pixChangeManagementProcess)).BeginInit();
             this.tbpChangeRoles.SuspendLayout();
             this.gpbProjectBoard.SuspendLayout();
             this.gpbProjectManager.SuspendLayout();
             this.gpbTeamMember.SuspendLayout();
             this.gpbChangeRoles.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pixChangeManagementProcess)).BeginInit();
             this.SuspendLayout();
             // 
             // tbpChangeDocument
@@ -198,10 +199,10 @@
             this.txtChangeManagementProcessProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.txtChangeManagementProcessProjectName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtChangeManagementProcessProjectName.ForeColor = System.Drawing.Color.White;
-            this.txtChangeManagementProcessProjectName.Location = new System.Drawing.Point(225, 20);
+            this.txtChangeManagementProcessProjectName.Location = new System.Drawing.Point(174, 21);
             this.txtChangeManagementProcessProjectName.Margin = new System.Windows.Forms.Padding(4);
             this.txtChangeManagementProcessProjectName.Name = "txtChangeManagementProcessProjectName";
-            this.txtChangeManagementProcessProjectName.Size = new System.Drawing.Size(132, 20);
+            this.txtChangeManagementProcessProjectName.Size = new System.Drawing.Size(320, 20);
             this.txtChangeManagementProcessProjectName.TabIndex = 4;
             this.txtChangeManagementProcessProjectName.Text = "Project Name";
             // 
@@ -525,16 +526,6 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(510, 435);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
-            // pixChangeManagementProcess
-            // 
-            this.pixChangeManagementProcess.Image = ((System.Drawing.Image)(resources.GetObject("pixChangeManagementProcess.Image")));
-            this.pixChangeManagementProcess.InitialImage = ((System.Drawing.Image)(resources.GetObject("pixChangeManagementProcess.InitialImage")));
-            this.pixChangeManagementProcess.Location = new System.Drawing.Point(3, 3);
-            this.pixChangeManagementProcess.Name = "pixChangeManagementProcess";
-            this.pixChangeManagementProcess.Size = new System.Drawing.Size(507, 778);
-            this.pixChangeManagementProcess.TabIndex = 0;
-            this.pixChangeManagementProcess.TabStop = false;
-            // 
             // tbpChangeRoles
             // 
             this.tbpChangeRoles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -630,6 +621,34 @@
             this.txtChangeRoles.Text = "In this section, describe the key roles and responsibilities involved in the Chan" +
     "ge Management Process.";
             // 
+            // btnChangeManagementProcess_MainMenue
+            // 
+            this.btnChangeManagementProcess_MainMenue.ForeColor = System.Drawing.Color.Black;
+            this.btnChangeManagementProcess_MainMenue.Location = new System.Drawing.Point(596, 22);
+            this.btnChangeManagementProcess_MainMenue.Name = "btnChangeManagementProcess_MainMenue";
+            this.btnChangeManagementProcess_MainMenue.Size = new System.Drawing.Size(108, 18);
+            this.btnChangeManagementProcess_MainMenue.TabIndex = 16;
+            this.btnChangeManagementProcess_MainMenue.Text = "Back to Main Menu";
+            this.btnChangeManagementProcess_MainMenue.UseVisualStyleBackColor = true;
+            // 
+            // btnChangeManagementProcess_EnterProjectName
+            // 
+            this.btnChangeManagementProcess_EnterProjectName.Location = new System.Drawing.Point(494, 22);
+            this.btnChangeManagementProcess_EnterProjectName.Name = "btnChangeManagementProcess_EnterProjectName";
+            this.btnChangeManagementProcess_EnterProjectName.Size = new System.Drawing.Size(89, 18);
+            this.btnChangeManagementProcess_EnterProjectName.TabIndex = 15;
+            this.btnChangeManagementProcess_EnterProjectName.Text = "Enter";
+            this.btnChangeManagementProcess_EnterProjectName.UseVisualStyleBackColor = true;
+            // 
+            // pixChangeManagementProcess
+            // 
+            this.pixChangeManagementProcess.InitialImage = null;
+            this.pixChangeManagementProcess.Location = new System.Drawing.Point(3, 3);
+            this.pixChangeManagementProcess.Name = "pixChangeManagementProcess";
+            this.pixChangeManagementProcess.Size = new System.Drawing.Size(507, 778);
+            this.pixChangeManagementProcess.TabIndex = 0;
+            this.pixChangeManagementProcess.TabStop = false;
+            // 
             // ChangeManagementProcessDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 12F);
@@ -640,6 +659,8 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(1522, 733);
+            this.Controls.Add(this.btnChangeManagementProcess_MainMenue);
+            this.Controls.Add(this.btnChangeManagementProcess_EnterProjectName);
             this.Controls.Add(this.tbcChangeManagementProcess);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.txtChangeManagementProcessProjectName);
@@ -675,7 +696,6 @@
             this.gpbOverview.ResumeLayout(false);
             this.gpbOverview.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pixChangeManagementProcess)).EndInit();
             this.tbpChangeRoles.ResumeLayout(false);
             this.gpbProjectBoard.ResumeLayout(false);
             this.gpbProjectBoard.PerformLayout();
@@ -685,6 +705,7 @@
             this.gpbTeamMember.PerformLayout();
             this.gpbChangeRoles.ResumeLayout(false);
             this.gpbChangeRoles.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pixChangeManagementProcess)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -742,5 +763,7 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox txtChangeDocuments;
         private System.Windows.Forms.TabPage tbpChangeDocument;
+        private System.Windows.Forms.Button btnChangeManagementProcess_MainMenue;
+        private System.Windows.Forms.Button btnChangeManagementProcess_EnterProjectName;
     }
 }

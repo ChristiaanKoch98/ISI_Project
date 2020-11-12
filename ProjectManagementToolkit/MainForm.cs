@@ -109,14 +109,14 @@ namespace ProjectManagementToolkit
 
         private void projectManagementToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            PLSM_ProcessGroupingGovernance_Interfaces plsm = new PLSM_ProcessGroupingGovernance_Interfaces();
+            PLSM_ProcessGroupingGovernance_Interfaces plsm = new PLSM_ProcessGroupingGovernance_Interfaces("tbp_Report_Center");
             plsm.Show();
             plsm.MdiParent = this;
         }
 
         private void pLSMToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmProjectManagement projMan = new frmProjectManagement();
+            frmProjectManagement projMan = new frmProjectManagement("tbp_Report_Center");
             projMan.Show();
             projMan.MdiParent = this;
         }

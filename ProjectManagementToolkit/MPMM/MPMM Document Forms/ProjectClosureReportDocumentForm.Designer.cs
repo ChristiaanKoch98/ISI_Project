@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProjectClosureReportDocumentForm));
             this.tbpProjectCompletion = new System.Windows.Forms.TabPage();
             this.gpbOutstandingItems = new System.Windows.Forms.GroupBox();
             this.dataGridViewOutstandingItems = new System.Windows.Forms.DataGridView();
@@ -43,7 +42,6 @@
             this.gpbProjectCompletion = new System.Windows.Forms.GroupBox();
             this.txtProjectCompletion = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.txtProjectClosureReportProjectName = new System.Windows.Forms.TextBox();
             this.tbpDocumentControl = new System.Windows.Forms.TabPage();
             this.gpbDocumentApprovals = new System.Windows.Forms.GroupBox();
             this.dataGridViewDocumentApprovals = new System.Windows.Forms.DataGridView();
@@ -102,6 +100,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnSignApproval = new System.Windows.Forms.Button();
+            this.btnRequestForProposal_MainMenue = new System.Windows.Forms.Button();
+            this.btnRequestForProposal_EnterProjectName = new System.Windows.Forms.Button();
+            this.txtRequestForProposalProcessProject = new System.Windows.Forms.TextBox();
             this.tbpProjectCompletion.SuspendLayout();
             this.gpbOutstandingItems.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOutstandingItems)).BeginInit();
@@ -271,18 +273,6 @@
             this.label27.Size = new System.Drawing.Size(153, 12);
             this.label27.TabIndex = 11;
             this.label27.Text = "Please Enter Your Project Name:";
-            // 
-            // txtProjectClosureReportProjectName
-            // 
-            this.txtProjectClosureReportProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProjectClosureReportProjectName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProjectClosureReportProjectName.ForeColor = System.Drawing.Color.White;
-            this.txtProjectClosureReportProjectName.Location = new System.Drawing.Point(219, 10);
-            this.txtProjectClosureReportProjectName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtProjectClosureReportProjectName.Name = "txtProjectClosureReportProjectName";
-            this.txtProjectClosureReportProjectName.Size = new System.Drawing.Size(132, 20);
-            this.txtProjectClosureReportProjectName.TabIndex = 10;
-            this.txtProjectClosureReportProjectName.Text = "Project Name";
             // 
             // tbpDocumentControl
             // 
@@ -738,11 +728,11 @@
             this.txtProjectClosure.Name = "txtProjectClosure";
             this.txtProjectClosure.Size = new System.Drawing.Size(1404, 48);
             this.txtProjectClosure.TabIndex = 5;
-            this.txtProjectClosure.Text = resources.GetString("txtProjectClosure.Text");
             // 
             // tbpApproval
             // 
             this.tbpApproval.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tbpApproval.Controls.Add(this.btnSignApproval);
             this.tbpApproval.Controls.Add(this.label6);
             this.tbpApproval.Controls.Add(this.label5);
             this.tbpApproval.Controls.Add(this.lblApprovalRole);
@@ -763,7 +753,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(14, 181);
+            this.label6.Location = new System.Drawing.Point(14, 213);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(282, 12);
             this.label6.TabIndex = 9;
@@ -774,7 +764,7 @@
             this.label5.AllowDrop = true;
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(15, 165);
+            this.label5.Location = new System.Drawing.Point(15, 197);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(272, 12);
             this.label5.TabIndex = 8;
@@ -851,15 +841,56 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Name:";
             // 
+            // btnSignApproval
+            // 
+            this.btnSignApproval.Location = new System.Drawing.Point(16, 161);
+            this.btnSignApproval.Name = "btnSignApproval";
+            this.btnSignApproval.Size = new System.Drawing.Size(355, 20);
+            this.btnSignApproval.TabIndex = 10;
+            this.btnSignApproval.Text = "Sign Approval";
+            this.btnSignApproval.UseVisualStyleBackColor = true;
+            // 
+            // btnRequestForProposal_MainMenue
+            // 
+            this.btnRequestForProposal_MainMenue.Location = new System.Drawing.Point(593, 12);
+            this.btnRequestForProposal_MainMenue.Name = "btnRequestForProposal_MainMenue";
+            this.btnRequestForProposal_MainMenue.Size = new System.Drawing.Size(108, 18);
+            this.btnRequestForProposal_MainMenue.TabIndex = 15;
+            this.btnRequestForProposal_MainMenue.Text = "Back to Main Menu";
+            this.btnRequestForProposal_MainMenue.UseVisualStyleBackColor = true;
+            // 
+            // btnRequestForProposal_EnterProjectName
+            // 
+            this.btnRequestForProposal_EnterProjectName.ForeColor = System.Drawing.Color.Black;
+            this.btnRequestForProposal_EnterProjectName.Location = new System.Drawing.Point(493, 12);
+            this.btnRequestForProposal_EnterProjectName.Name = "btnRequestForProposal_EnterProjectName";
+            this.btnRequestForProposal_EnterProjectName.Size = new System.Drawing.Size(89, 18);
+            this.btnRequestForProposal_EnterProjectName.TabIndex = 14;
+            this.btnRequestForProposal_EnterProjectName.Text = "Enter";
+            this.btnRequestForProposal_EnterProjectName.UseVisualStyleBackColor = true;
+            // 
+            // txtRequestForProposalProcessProject
+            // 
+            this.txtRequestForProposalProcessProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtRequestForProposalProcessProject.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRequestForProposalProcessProject.ForeColor = System.Drawing.Color.White;
+            this.txtRequestForProposalProcessProject.Location = new System.Drawing.Point(167, 12);
+            this.txtRequestForProposalProcessProject.Name = "txtRequestForProposalProcessProject";
+            this.txtRequestForProposalProcessProject.Size = new System.Drawing.Size(320, 20);
+            this.txtRequestForProposalProcessProject.TabIndex = 13;
+            this.txtRequestForProposalProcessProject.Text = "Project Name";
+            // 
             // ProjectClosureReportDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(1522, 733);
+            this.Controls.Add(this.btnRequestForProposal_MainMenue);
+            this.Controls.Add(this.btnRequestForProposal_EnterProjectName);
+            this.Controls.Add(this.txtRequestForProposalProcessProject);
             this.Controls.Add(this.tbcProjectClosureReport);
             this.Controls.Add(this.label27);
-            this.Controls.Add(this.txtProjectClosureReportProjectName);
             this.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.Name = "ProjectClosureReportDocumentForm";
@@ -903,7 +934,6 @@
         #endregion
 
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox txtProjectClosureReportProjectName;
         private System.Windows.Forms.GroupBox gpbProjectCompletion;
         private System.Windows.Forms.TextBox txtProjectCompletion;
         private System.Windows.Forms.TabPage tbpDocumentControl;
@@ -975,5 +1005,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tbpProjectCompletion;
+        private System.Windows.Forms.Button btnSignApproval;
+        private System.Windows.Forms.Button btnRequestForProposal_MainMenue;
+        private System.Windows.Forms.Button btnRequestForProposal_EnterProjectName;
+        private System.Windows.Forms.TextBox txtRequestForProposalProcessProject;
     }
 }

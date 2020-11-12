@@ -28,15 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TabPage tbpIssueDescription;
-            this.tbcQualityReviewForm = new System.Windows.Forms.TabControl();
+            this.tbpIssueDescription = new System.Windows.Forms.TabPage();
             this.gpbIssueDetails = new System.Windows.Forms.GroupBox();
             this.txtIssueDescription = new System.Windows.Forms.TextBox();
+            this.tbcQualityReviewForm = new System.Windows.Forms.TabControl();
             this.tbpIssueImpact = new System.Windows.Forms.TabPage();
+            this.gpbIssueImpact = new System.Windows.Forms.GroupBox();
+            this.txtIssueImpact = new System.Windows.Forms.TextBox();
+            this.tbpIssueResolution = new System.Windows.Forms.TabPage();
+            this.gpbIssueResolution = new System.Windows.Forms.GroupBox();
+            this.txtIssueResolution = new System.Windows.Forms.TextBox();
+            this.tbpApprovalDetails = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtSignature = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtDate = new System.Windows.Forms.TextBox();
+            this.gpbSupportingDocumentation = new System.Windows.Forms.GroupBox();
             this.label27 = new System.Windows.Forms.Label();
             this.txtIssueFormProjectName = new System.Windows.Forms.TextBox();
-            this.tbpIssueResolution = new System.Windows.Forms.TabPage();
-            this.tbpApprovalDetails = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtRaisedBy = new System.Windows.Forms.TextBox();
@@ -45,53 +55,29 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtDateRaised = new System.Windows.Forms.TextBox();
             this.txtProjectManagerName = new System.Windows.Forms.TextBox();
-            this.gpbIssueImpact = new System.Windows.Forms.GroupBox();
-            this.txtIssueImpact = new System.Windows.Forms.TextBox();
-            this.gpbIssueResolution = new System.Windows.Forms.GroupBox();
-            this.txtIssueResolution = new System.Windows.Forms.TextBox();
-            this.gpbSupportingDocumentation = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtDate = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtSignature = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            tbpIssueDescription = new System.Windows.Forms.TabPage();
-            this.tbcQualityReviewForm.SuspendLayout();
-            tbpIssueDescription.SuspendLayout();
+            this.btnIssueForm_MainMenue = new System.Windows.Forms.Button();
+            this.btnIssueForm_EnterProjectName = new System.Windows.Forms.Button();
+            this.btnIssueSign = new System.Windows.Forms.Button();
+            this.btnSendEmail = new System.Windows.Forms.Button();
+            this.tbpIssueDescription.SuspendLayout();
             this.gpbIssueDetails.SuspendLayout();
+            this.tbcQualityReviewForm.SuspendLayout();
             this.tbpIssueImpact.SuspendLayout();
-            this.tbpIssueResolution.SuspendLayout();
-            this.tbpApprovalDetails.SuspendLayout();
             this.gpbIssueImpact.SuspendLayout();
+            this.tbpIssueResolution.SuspendLayout();
             this.gpbIssueResolution.SuspendLayout();
+            this.tbpApprovalDetails.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // tbcQualityReviewForm
-            // 
-            this.tbcQualityReviewForm.AllowDrop = true;
-            this.tbcQualityReviewForm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbcQualityReviewForm.Controls.Add(tbpIssueDescription);
-            this.tbcQualityReviewForm.Controls.Add(this.tbpIssueImpact);
-            this.tbcQualityReviewForm.Controls.Add(this.tbpIssueResolution);
-            this.tbcQualityReviewForm.Controls.Add(this.tbpApprovalDetails);
-            this.tbcQualityReviewForm.Location = new System.Drawing.Point(16, 132);
-            this.tbcQualityReviewForm.Margin = new System.Windows.Forms.Padding(4);
-            this.tbcQualityReviewForm.Name = "tbcQualityReviewForm";
-            this.tbcQualityReviewForm.SelectedIndex = 0;
-            this.tbcQualityReviewForm.Size = new System.Drawing.Size(1260, 521);
-            this.tbcQualityReviewForm.TabIndex = 18;
             // 
             // tbpIssueDescription
             // 
-            tbpIssueDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            tbpIssueDescription.Controls.Add(this.gpbIssueDetails);
-            tbpIssueDescription.Location = new System.Drawing.Point(4, 24);
-            tbpIssueDescription.Name = "tbpIssueDescription";
-            tbpIssueDescription.Size = new System.Drawing.Size(1252, 493);
-            tbpIssueDescription.TabIndex = 3;
-            tbpIssueDescription.Text = "Issue Description";
+            this.tbpIssueDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tbpIssueDescription.Controls.Add(this.gpbIssueDetails);
+            this.tbpIssueDescription.Location = new System.Drawing.Point(4, 21);
+            this.tbpIssueDescription.Name = "tbpIssueDescription";
+            this.tbpIssueDescription.Size = new System.Drawing.Size(1252, 496);
+            this.tbpIssueDescription.TabIndex = 3;
+            this.tbpIssueDescription.Text = "Issue Description";
             // 
             // gpbIssueDetails
             // 
@@ -113,156 +99,32 @@
             this.txtIssueDescription.Size = new System.Drawing.Size(1229, 460);
             this.txtIssueDescription.TabIndex = 5;
             // 
+            // tbcQualityReviewForm
+            // 
+            this.tbcQualityReviewForm.AllowDrop = true;
+            this.tbcQualityReviewForm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbcQualityReviewForm.Controls.Add(this.tbpIssueDescription);
+            this.tbcQualityReviewForm.Controls.Add(this.tbpIssueImpact);
+            this.tbcQualityReviewForm.Controls.Add(this.tbpIssueResolution);
+            this.tbcQualityReviewForm.Controls.Add(this.tbpApprovalDetails);
+            this.tbcQualityReviewForm.Location = new System.Drawing.Point(16, 138);
+            this.tbcQualityReviewForm.Margin = new System.Windows.Forms.Padding(4);
+            this.tbcQualityReviewForm.Name = "tbcQualityReviewForm";
+            this.tbcQualityReviewForm.SelectedIndex = 0;
+            this.tbcQualityReviewForm.Size = new System.Drawing.Size(1260, 515);
+            this.tbcQualityReviewForm.TabIndex = 18;
+            // 
             // tbpIssueImpact
             // 
             this.tbpIssueImpact.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbpIssueImpact.Controls.Add(this.gpbIssueImpact);
-            this.tbpIssueImpact.Location = new System.Drawing.Point(4, 24);
+            this.tbpIssueImpact.Location = new System.Drawing.Point(4, 21);
             this.tbpIssueImpact.Name = "tbpIssueImpact";
             this.tbpIssueImpact.Size = new System.Drawing.Size(1252, 493);
             this.tbpIssueImpact.TabIndex = 4;
             this.tbpIssueImpact.Text = "Issue Impact";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(17, 24);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(204, 16);
-            this.label27.TabIndex = 17;
-            this.label27.Text = "Please Enter Your Project Name:";
-            // 
-            // txtIssueFormProjectName
-            // 
-            this.txtIssueFormProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtIssueFormProjectName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIssueFormProjectName.ForeColor = System.Drawing.Color.White;
-            this.txtIssueFormProjectName.Location = new System.Drawing.Point(248, 21);
-            this.txtIssueFormProjectName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtIssueFormProjectName.Name = "txtIssueFormProjectName";
-            this.txtIssueFormProjectName.Size = new System.Drawing.Size(190, 24);
-            this.txtIssueFormProjectName.TabIndex = 16;
-            this.txtIssueFormProjectName.Text = "Project Name";
-            // 
-            // tbpIssueResolution
-            // 
-            this.tbpIssueResolution.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tbpIssueResolution.Controls.Add(this.gpbIssueResolution);
-            this.tbpIssueResolution.Location = new System.Drawing.Point(4, 24);
-            this.tbpIssueResolution.Name = "tbpIssueResolution";
-            this.tbpIssueResolution.Size = new System.Drawing.Size(1252, 493);
-            this.tbpIssueResolution.TabIndex = 5;
-            this.tbpIssueResolution.Text = "Issue Resolution";
-            // 
-            // tbpApprovalDetails
-            // 
-            this.tbpApprovalDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tbpApprovalDetails.Controls.Add(this.label7);
-            this.tbpApprovalDetails.Controls.Add(this.label6);
-            this.tbpApprovalDetails.Controls.Add(this.txtSignature);
-            this.tbpApprovalDetails.Controls.Add(this.label5);
-            this.tbpApprovalDetails.Controls.Add(this.txtDate);
-            this.tbpApprovalDetails.Controls.Add(this.gpbSupportingDocumentation);
-            this.tbpApprovalDetails.Location = new System.Drawing.Point(4, 24);
-            this.tbpApprovalDetails.Name = "tbpApprovalDetails";
-            this.tbpApprovalDetails.Size = new System.Drawing.Size(1252, 493);
-            this.tbpApprovalDetails.TabIndex = 6;
-            this.tbpApprovalDetails.Text = "Approval Details";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(17, 56);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 16);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Please Enter Project Manager Name:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(476, 56);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 16);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "Raised By:";
-            // 
-            // txtRaisedBy
-            // 
-            this.txtRaisedBy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtRaisedBy.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRaisedBy.ForeColor = System.Drawing.Color.White;
-            this.txtRaisedBy.Location = new System.Drawing.Point(562, 53);
-            this.txtRaisedBy.Margin = new System.Windows.Forms.Padding(4);
-            this.txtRaisedBy.Name = "txtRaisedBy";
-            this.txtRaisedBy.Size = new System.Drawing.Size(190, 24);
-            this.txtRaisedBy.TabIndex = 23;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(476, 24);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 16);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Issue ID:";
-            // 
-            // txtIssueID
-            // 
-            this.txtIssueID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtIssueID.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIssueID.ForeColor = System.Drawing.Color.White;
-            this.txtIssueID.Location = new System.Drawing.Point(562, 21);
-            this.txtIssueID.Margin = new System.Windows.Forms.Padding(4);
-            this.txtIssueID.Name = "txtIssueID";
-            this.txtIssueID.Size = new System.Drawing.Size(190, 24);
-            this.txtIssueID.TabIndex = 21;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(476, 86);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 16);
-            this.label4.TabIndex = 26;
-            this.label4.Text = "Date Raised:";
-            // 
-            // txtDateRaised
-            // 
-            this.txtDateRaised.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtDateRaised.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDateRaised.ForeColor = System.Drawing.Color.White;
-            this.txtDateRaised.Location = new System.Drawing.Point(562, 83);
-            this.txtDateRaised.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDateRaised.Name = "txtDateRaised";
-            this.txtDateRaised.Size = new System.Drawing.Size(190, 24);
-            this.txtDateRaised.TabIndex = 25;
-            // 
-            // txtProjectManagerName
-            // 
-            this.txtProjectManagerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProjectManagerName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProjectManagerName.ForeColor = System.Drawing.Color.White;
-            this.txtProjectManagerName.Location = new System.Drawing.Point(248, 53);
-            this.txtProjectManagerName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtProjectManagerName.Name = "txtProjectManagerName";
-            this.txtProjectManagerName.Size = new System.Drawing.Size(190, 24);
-            this.txtProjectManagerName.TabIndex = 27;
             // 
             // gpbIssueImpact
             // 
@@ -284,6 +146,16 @@
             this.txtIssueImpact.Size = new System.Drawing.Size(1229, 460);
             this.txtIssueImpact.TabIndex = 5;
             // 
+            // tbpIssueResolution
+            // 
+            this.tbpIssueResolution.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tbpIssueResolution.Controls.Add(this.gpbIssueResolution);
+            this.tbpIssueResolution.Location = new System.Drawing.Point(4, 21);
+            this.tbpIssueResolution.Name = "tbpIssueResolution";
+            this.tbpIssueResolution.Size = new System.Drawing.Size(1252, 493);
+            this.tbpIssueResolution.TabIndex = 5;
+            this.tbpIssueResolution.Text = "Issue Resolution";
+            // 
             // gpbIssueResolution
             // 
             this.gpbIssueResolution.Controls.Add(this.txtIssueResolution);
@@ -304,48 +176,44 @@
             this.txtIssueResolution.Size = new System.Drawing.Size(1229, 460);
             this.txtIssueResolution.TabIndex = 5;
             // 
-            // gpbSupportingDocumentation
+            // tbpApprovalDetails
             // 
-            this.gpbSupportingDocumentation.ForeColor = System.Drawing.SystemColors.Control;
-            this.gpbSupportingDocumentation.Location = new System.Drawing.Point(5, 3);
-            this.gpbSupportingDocumentation.Name = "gpbSupportingDocumentation";
-            this.gpbSupportingDocumentation.Size = new System.Drawing.Size(1242, 373);
-            this.gpbSupportingDocumentation.TabIndex = 16;
-            this.gpbSupportingDocumentation.TabStop = false;
-            this.gpbSupportingDocumentation.Text = "Supporting Documentation:";
+            this.tbpApprovalDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tbpApprovalDetails.Controls.Add(this.btnSendEmail);
+            this.tbpApprovalDetails.Controls.Add(this.btnIssueSign);
+            this.tbpApprovalDetails.Controls.Add(this.label7);
+            this.tbpApprovalDetails.Controls.Add(this.label6);
+            this.tbpApprovalDetails.Controls.Add(this.txtSignature);
+            this.tbpApprovalDetails.Controls.Add(this.label5);
+            this.tbpApprovalDetails.Controls.Add(this.txtDate);
+            this.tbpApprovalDetails.Controls.Add(this.gpbSupportingDocumentation);
+            this.tbpApprovalDetails.Location = new System.Drawing.Point(4, 21);
+            this.tbpApprovalDetails.Name = "tbpApprovalDetails";
+            this.tbpApprovalDetails.Size = new System.Drawing.Size(1252, 490);
+            this.tbpApprovalDetails.TabIndex = 6;
+            this.tbpApprovalDetails.Text = "Approval Details";
             // 
-            // label5
+            // label7
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(281, 399);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 16);
-            this.label5.TabIndex = 24;
-            this.label5.Text = "Date:";
-            // 
-            // txtDate
-            // 
-            this.txtDate.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.txtDate.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDate.ForeColor = System.Drawing.Color.Black;
-            this.txtDate.Location = new System.Drawing.Point(284, 424);
-            this.txtDate.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(190, 24);
-            this.txtDate.TabIndex = 23;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Red;
+            this.label7.Location = new System.Drawing.Point(9, 421);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(347, 12);
+            this.label7.TabIndex = 27;
+            this.label7.Text = "PLEASE FORWARD THIS FORM TO THE PROJECT MANAGER FOR ACTION\r\n";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(13, 399);
+            this.label6.Location = new System.Drawing.Point(4, 356);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 16);
+            this.label6.Size = new System.Drawing.Size(52, 12);
             this.label6.TabIndex = 26;
             this.label6.Text = "Signature:";
             // 
@@ -354,30 +222,206 @@
             this.txtSignature.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.txtSignature.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSignature.ForeColor = System.Drawing.Color.Black;
-            this.txtSignature.Location = new System.Drawing.Point(16, 424);
+            this.txtSignature.Location = new System.Drawing.Point(7, 381);
             this.txtSignature.Margin = new System.Windows.Forms.Padding(4);
             this.txtSignature.Name = "txtSignature";
-            this.txtSignature.Size = new System.Drawing.Size(190, 24);
+            this.txtSignature.Size = new System.Drawing.Size(190, 20);
             this.txtSignature.TabIndex = 25;
             // 
-            // label7
+            // label5
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(18, 464);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(452, 16);
-            this.label7.TabIndex = 27;
-            this.label7.Text = "PLEASE FORWARD THIS FORM TO THE PROJECT MANAGER FOR ACTION\r\n";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(226, 356);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(29, 12);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "Date:";
             // 
-            // frmIssueForm
+            // txtDate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.txtDate.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtDate.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDate.ForeColor = System.Drawing.Color.Black;
+            this.txtDate.Location = new System.Drawing.Point(229, 381);
+            this.txtDate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(190, 20);
+            this.txtDate.TabIndex = 23;
+            // 
+            // gpbSupportingDocumentation
+            // 
+            this.gpbSupportingDocumentation.ForeColor = System.Drawing.SystemColors.Control;
+            this.gpbSupportingDocumentation.Location = new System.Drawing.Point(5, 3);
+            this.gpbSupportingDocumentation.Name = "gpbSupportingDocumentation";
+            this.gpbSupportingDocumentation.Size = new System.Drawing.Size(1242, 337);
+            this.gpbSupportingDocumentation.TabIndex = 16;
+            this.gpbSupportingDocumentation.TabStop = false;
+            this.gpbSupportingDocumentation.Text = "Supporting Documentation:";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.Location = new System.Drawing.Point(17, 24);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(153, 12);
+            this.label27.TabIndex = 17;
+            this.label27.Text = "Please Enter Your Project Name:";
+            // 
+            // txtIssueFormProjectName
+            // 
+            this.txtIssueFormProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtIssueFormProjectName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIssueFormProjectName.ForeColor = System.Drawing.Color.White;
+            this.txtIssueFormProjectName.Location = new System.Drawing.Point(248, 21);
+            this.txtIssueFormProjectName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIssueFormProjectName.Name = "txtIssueFormProjectName";
+            this.txtIssueFormProjectName.Size = new System.Drawing.Size(190, 20);
+            this.txtIssueFormProjectName.TabIndex = 16;
+            this.txtIssueFormProjectName.Text = "Project Name";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(17, 56);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(171, 12);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Please Enter Project Manager Name:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(476, 56);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 12);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Raised By:";
+            // 
+            // txtRaisedBy
+            // 
+            this.txtRaisedBy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtRaisedBy.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRaisedBy.ForeColor = System.Drawing.Color.White;
+            this.txtRaisedBy.Location = new System.Drawing.Point(562, 53);
+            this.txtRaisedBy.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRaisedBy.Name = "txtRaisedBy";
+            this.txtRaisedBy.Size = new System.Drawing.Size(190, 20);
+            this.txtRaisedBy.TabIndex = 23;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(476, 24);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 12);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Issue ID:";
+            // 
+            // txtIssueID
+            // 
+            this.txtIssueID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtIssueID.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIssueID.ForeColor = System.Drawing.Color.White;
+            this.txtIssueID.Location = new System.Drawing.Point(562, 21);
+            this.txtIssueID.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIssueID.Name = "txtIssueID";
+            this.txtIssueID.Size = new System.Drawing.Size(190, 20);
+            this.txtIssueID.TabIndex = 21;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(476, 86);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 12);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "Date Raised:";
+            // 
+            // txtDateRaised
+            // 
+            this.txtDateRaised.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtDateRaised.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDateRaised.ForeColor = System.Drawing.Color.White;
+            this.txtDateRaised.Location = new System.Drawing.Point(562, 83);
+            this.txtDateRaised.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDateRaised.Name = "txtDateRaised";
+            this.txtDateRaised.Size = new System.Drawing.Size(190, 20);
+            this.txtDateRaised.TabIndex = 25;
+            // 
+            // txtProjectManagerName
+            // 
+            this.txtProjectManagerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtProjectManagerName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProjectManagerName.ForeColor = System.Drawing.Color.White;
+            this.txtProjectManagerName.Location = new System.Drawing.Point(248, 53);
+            this.txtProjectManagerName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtProjectManagerName.Name = "txtProjectManagerName";
+            this.txtProjectManagerName.Size = new System.Drawing.Size(190, 20);
+            this.txtProjectManagerName.TabIndex = 27;
+            // 
+            // btnIssueForm_MainMenue
+            // 
+            this.btnIssueForm_MainMenue.ForeColor = System.Drawing.Color.Black;
+            this.btnIssueForm_MainMenue.Location = new System.Drawing.Point(793, 68);
+            this.btnIssueForm_MainMenue.Name = "btnIssueForm_MainMenue";
+            this.btnIssueForm_MainMenue.Size = new System.Drawing.Size(108, 35);
+            this.btnIssueForm_MainMenue.TabIndex = 29;
+            this.btnIssueForm_MainMenue.Text = "Back to Main Menu";
+            this.btnIssueForm_MainMenue.UseVisualStyleBackColor = true;
+            // 
+            // btnIssueForm_EnterProjectName
+            // 
+            this.btnIssueForm_EnterProjectName.Location = new System.Drawing.Point(793, 21);
+            this.btnIssueForm_EnterProjectName.Name = "btnIssueForm_EnterProjectName";
+            this.btnIssueForm_EnterProjectName.Size = new System.Drawing.Size(108, 33);
+            this.btnIssueForm_EnterProjectName.TabIndex = 28;
+            this.btnIssueForm_EnterProjectName.Text = "Enter";
+            this.btnIssueForm_EnterProjectName.UseVisualStyleBackColor = true;
+            // 
+            // btnIssueSign
+            // 
+            this.btnIssueSign.Location = new System.Drawing.Point(11, 450);
+            this.btnIssueSign.Name = "btnIssueSign";
+            this.btnIssueSign.Size = new System.Drawing.Size(186, 20);
+            this.btnIssueSign.TabIndex = 28;
+            this.btnIssueSign.Text = "Sign";
+            this.btnIssueSign.UseVisualStyleBackColor = true;
+            // 
+            // btnSendEmail
+            // 
+            this.btnSendEmail.Location = new System.Drawing.Point(228, 450);
+            this.btnSendEmail.Name = "btnSendEmail";
+            this.btnSendEmail.Size = new System.Drawing.Size(190, 20);
+            this.btnSendEmail.TabIndex = 29;
+            this.btnSendEmail.Text = "Send Email";
+            this.btnSendEmail.UseVisualStyleBackColor = true;
+            // 
+            // IssueFormDocumentForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(1332, 687);
+            this.Controls.Add(this.btnIssueForm_MainMenue);
+            this.Controls.Add(this.btnIssueForm_EnterProjectName);
             this.Controls.Add(this.txtProjectManagerName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtDateRaised);
@@ -390,21 +434,21 @@
             this.Controls.Add(this.label27);
             this.Controls.Add(this.txtIssueFormProjectName);
             this.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "frmIssueForm";
+            this.Name = "IssueFormDocumentForm";
             this.Text = "Issue Form";
             this.TopMost = true;
-            this.tbcQualityReviewForm.ResumeLayout(false);
-            tbpIssueDescription.ResumeLayout(false);
+            this.tbpIssueDescription.ResumeLayout(false);
             this.gpbIssueDetails.ResumeLayout(false);
             this.gpbIssueDetails.PerformLayout();
+            this.tbcQualityReviewForm.ResumeLayout(false);
             this.tbpIssueImpact.ResumeLayout(false);
-            this.tbpIssueResolution.ResumeLayout(false);
-            this.tbpApprovalDetails.ResumeLayout(false);
-            this.tbpApprovalDetails.PerformLayout();
             this.gpbIssueImpact.ResumeLayout(false);
             this.gpbIssueImpact.PerformLayout();
+            this.tbpIssueResolution.ResumeLayout(false);
             this.gpbIssueResolution.ResumeLayout(false);
             this.gpbIssueResolution.PerformLayout();
+            this.tbpApprovalDetails.ResumeLayout(false);
+            this.tbpApprovalDetails.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -438,5 +482,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtDate;
         private System.Windows.Forms.GroupBox gpbSupportingDocumentation;
+        private System.Windows.Forms.TabPage tbpIssueDescription;
+        private System.Windows.Forms.Button btnSendEmail;
+        private System.Windows.Forms.Button btnIssueSign;
+        private System.Windows.Forms.Button btnIssueForm_MainMenue;
+        private System.Windows.Forms.Button btnIssueForm_EnterProjectName;
     }
 }

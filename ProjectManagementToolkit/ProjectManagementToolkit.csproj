@@ -464,6 +464,9 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\AcceptancePlanDocumentForm.resx">
       <DependentUpon>AcceptancePlanDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\ChangeManagementProcessDocumentForm.resx">
+      <DependentUpon>ChangeManagementProcessDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\CostManagementProcessDocumentForm.resx">
       <DependentUpon>CostManagementProcessDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -475,6 +478,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\FinacialPlanDocumentForm.resx">
       <DependentUpon>FinacialPlanDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\IssueFormDocumentForm.resx">
+      <DependentUpon>IssueFormDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\JobDescriptionDocumentForm.resx">
       <DependentUpon>JobDescriptionDocumentForm.cs</DependentUpon>
@@ -488,6 +494,9 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\ProcurementPlanDocumentForm.resx">
       <DependentUpon>ProcurementPlanDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\ProjectClosureReportDocumentForm.resx">
+      <DependentUpon>ProjectClosureReportDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\ProjectPlanDocumentForm.resx">
       <DependentUpon>ProjectPlanDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -500,8 +509,14 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\QualityPlanDocumentForm.resx">
       <DependentUpon>QualityPlanDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\QualityReviewPlanDocumentForm.resx">
+      <DependentUpon>QualityReviewPlanDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\RequestForInformationDocumentForm.resx">
       <DependentUpon>RequestForInformationDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\RequestForProposalDocumentForm.resx">
+      <DependentUpon>RequestForProposalDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\RiskPlanDocumentForm.resx">
       <DependentUpon>RiskPlanDocumentForm.cs</DependentUpon>
