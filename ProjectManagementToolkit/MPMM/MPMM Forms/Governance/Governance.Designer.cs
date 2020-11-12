@@ -317,6 +317,7 @@
             this.btnKingIVonPage.TabIndex = 20;
             this.btnKingIVonPage.Text = "King IV on a Page";
             this.btnKingIVonPage.UseVisualStyleBackColor = false;
+            this.btnKingIVonPage.Click += new System.EventHandler(this.btnKingIVonPage_Click);
             // 
             // btnRoadmap
             // 
@@ -328,6 +329,7 @@
             this.btnRoadmap.TabIndex = 19;
             this.btnRoadmap.Text = "Roadmap to disclosure on the application of King IV";
             this.btnRoadmap.UseVisualStyleBackColor = false;
+            this.btnRoadmap.Click += new System.EventHandler(this.btnRoadmap_Click);
             // 
             // btnGI
             // 
@@ -339,6 +341,7 @@
             this.btnGI.TabIndex = 18;
             this.btnGI.Text = "General Information";
             this.btnGI.UseVisualStyleBackColor = false;
+            this.btnGI.Click += new System.EventHandler(this.btnGI_Click);
             // 
             // btnPractices
             // 
@@ -350,6 +353,7 @@
             this.btnPractices.TabIndex = 17;
             this.btnPractices.Text = "Practices";
             this.btnPractices.UseVisualStyleBackColor = false;
+            this.btnPractices.Click += new System.EventHandler(this.btnPractices_Click);
             // 
             // btnContextualbottomlinereporting
             // 
@@ -361,6 +365,7 @@
             this.btnContextualbottomlinereporting.TabIndex = 16;
             this.btnContextualbottomlinereporting.Text = "Contextual and 3 Bottom line reporting";
             this.btnContextualbottomlinereporting.UseVisualStyleBackColor = false;
+            this.btnContextualbottomlinereporting.Click += new System.EventHandler(this.btnContextualbottomlinereporting_Click);
             // 
             // btnManagementExecutionProcesses
             // 
@@ -372,6 +377,7 @@
             this.btnManagementExecutionProcesses.TabIndex = 15;
             this.btnManagementExecutionProcesses.Text = "Management Execution Processes";
             this.btnManagementExecutionProcesses.UseVisualStyleBackColor = false;
+            this.btnManagementExecutionProcesses.Click += new System.EventHandler(this.btnManagementExecutionProcesses_Click);
             // 
             // btnManagementPrinciples
             // 
@@ -383,6 +389,7 @@
             this.btnManagementPrinciples.TabIndex = 14;
             this.btnManagementPrinciples.Text = "Management Principles";
             this.btnManagementPrinciples.UseVisualStyleBackColor = false;
+            this.btnManagementPrinciples.Click += new System.EventHandler(this.btnManagementPrinciples_Click);
             // 
             // btnManagementFunctions
             // 
@@ -394,6 +401,7 @@
             this.btnManagementFunctions.TabIndex = 13;
             this.btnManagementFunctions.Text = "Management functions";
             this.btnManagementFunctions.UseVisualStyleBackColor = false;
+            this.btnManagementFunctions.Click += new System.EventHandler(this.btnManagementFunctions_Click);
             // 
             // btnGvsM
             // 
@@ -405,6 +413,7 @@
             this.btnGvsM.TabIndex = 12;
             this.btnGvsM.Text = "Governance vs Management";
             this.btnGvsM.UseVisualStyleBackColor = false;
+            this.btnGvsM.Click += new System.EventHandler(this.btnGvsM_Click);
             // 
             // btnUnderpinningConcepts
             // 

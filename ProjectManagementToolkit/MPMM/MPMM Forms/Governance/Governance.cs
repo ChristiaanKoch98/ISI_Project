@@ -98,5 +98,57 @@ namespace ProjectManagementToolkit
             ProjectManagementToolkit.MPMM.MPMM_Forms.Governance.UnderpinningConcepts formOpenunderpinningConcepts = new MPMM.MPMM_Forms.Governance.UnderpinningConcepts();
             formOpenunderpinningConcepts.Show();
         }
+
+        private void btnManagementFunctions_Click(object sender, EventArgs e)
+        {
+            ProjectManagementToolkit.MPMM.MPMM_Forms.Governance.ManagementFunctions formOpenManagementFunctions = new MPMM.MPMM_Forms.Governance.ManagementFunctions();
+            formOpenManagementFunctions.Show();
+        }
+
+        private void btnManagementPrinciples_Click(object sender, EventArgs e)
+        {
+            ProjectManagementToolkit.MPMM.MPMM_Forms.Governance.ManagementPrinciples formOpenManagementPrinciples = new MPMM.MPMM_Forms.Governance.ManagementPrinciples();
+            formOpenManagementPrinciples.Show();
+        }
+
+        private void btnManagementExecutionProcesses_Click(object sender, EventArgs e)
+        {
+            ProjectManagementToolkit.MPMM.MPMM_Forms.Governance.ManagementExecutionProcess formOpenManagementExecutionProcess = new MPMM.MPMM_Forms.Governance.ManagementExecutionProcess();
+            formOpenManagementExecutionProcess.Show();
+        }
+
+        private void btnContextualbottomlinereporting_Click(object sender, EventArgs e)
+        {
+            ProjectManagementToolkit.MPMM.MPMM_Forms.Governance.Contextual3BottomLineReporting formOpenContextual3BottomLineReporting = new MPMM.MPMM_Forms.Governance.Contextual3BottomLineReporting();
+            formOpenContextual3BottomLineReporting.Show();
+        }
+
+        private void btnPractices_Click(object sender, EventArgs e)
+        {
+            ProjectManagementToolkit.MPMM.MPMM_Forms.Governance.Practices formOpenPractices = new MPMM.MPMM_Forms.Governance.Practices();
+            formOpenPractices.Show();
+        }
+
+        private void btnGI_Click(object sender, EventArgs e)
+        {
+            ProjectManagementToolkit.MPMM.MPMM_Forms.Governance.GeneralInfo formOpenGeneralInfo = new MPMM.MPMM_Forms.Governance.GeneralInfo();
+            formOpenGeneralInfo.Show();
+        }
+
+        private void btnRoadmap_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("In the Access Program this button does nothing so I do not know at this point what this button should do");
+        }
+
+        private void btnKingIVonPage_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 6;
+        }
+
+        private void btnGvsM_Click(object sender, EventArgs e)
+        {
+            ProjectManagementToolkit.MPMM.MPMM_Forms.Governance.GovernanceVSManagement formOpenGovernanceVSManagement = new MPMM.MPMM_Forms.Governance.GovernanceVSManagement();
+            formOpenGovernanceVSManagement.Show();
+        }
     }
 }
