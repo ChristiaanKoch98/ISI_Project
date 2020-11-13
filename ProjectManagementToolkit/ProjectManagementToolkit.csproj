@@ -123,6 +123,12 @@
     <Compile Include="MPMM\MPMM Document Forms\ExpenseFormDocumentForm.Designer.cs">
       <DependentUpon>ExpenseFormDocumentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\ExpenseRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\ExpenseRegister.Designer.cs">
+      <DependentUpon>ExpenseRegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="MPMM\MPMM Document Forms\FeasibiltyStudyDocumentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -296,6 +302,12 @@
     </Compile>
     <Compile Include="MPMM\MPMM Document Forms\TimesheetFormDocumentForm.Designer.cs">
       <DependentUpon>TimesheetFormDocumentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\TimesheetRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\TimesheetRegister.Designer.cs">
+      <DependentUpon>TimesheetRegister.cs</DependentUpon>
     </Compile>
     <Compile Include="MPMM\MPMM Document Models\AcceptanceFormModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\AcceptanceManagementProcessModel.cs" />
@@ -492,6 +504,9 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\ExpenseFormDocumentForm.resx">
       <DependentUpon>ExpenseFormDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\ExpenseRegister.resx">
+      <DependentUpon>ExpenseRegister.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\FeasibiltyStudyDocumentForm.resx">
       <DependentUpon>FeasibiltyStudyDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -569,6 +584,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\TimesheetFormDocumentForm.resx">
       <DependentUpon>TimesheetFormDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\TimesheetRegister.resx">
+      <DependentUpon>TimesheetRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Forms\Academic and Training\Academic_and_Training.resx">
       <DependentUpon>Academic_and_Training.cs</DependentUpon>
