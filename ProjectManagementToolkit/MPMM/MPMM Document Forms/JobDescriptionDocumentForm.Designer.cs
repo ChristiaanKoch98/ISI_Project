@@ -53,10 +53,11 @@
             this.txtworkenvironmentDescription = new System.Windows.Forms.TextBox();
             this.tabPage12 = new System.Windows.Forms.TabPage();
             this.txtsalaryDescription = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtProjectName = new System.Windows.Forms.TextBox();
             this.tabPage13 = new System.Windows.Forms.TabPage();
             this.txtspecialconditionsDescription = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtProjectName = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
             this.tabPage6.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -80,7 +81,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(974, 239);
+            this.tabPage6.Size = new System.Drawing.Size(941, 239);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Skills";
             // 
@@ -103,7 +104,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(974, 239);
+            this.tabPage5.Size = new System.Drawing.Size(941, 239);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Relationships";
             // 
@@ -126,7 +127,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(974, 239);
+            this.tabPage4.Size = new System.Drawing.Size(941, 239);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Organization";
             // 
@@ -149,7 +150,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(974, 239);
+            this.tabPage3.Size = new System.Drawing.Size(941, 239);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Responsibilities";
             // 
@@ -172,7 +173,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(974, 239);
+            this.tabPage2.Size = new System.Drawing.Size(941, 239);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = " Purpose";
             // 
@@ -195,7 +196,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(974, 239);
+            this.tabPage1.Size = new System.Drawing.Size(941, 239);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Overview";
             // 
@@ -232,7 +233,7 @@
             this.tabControl1.Location = new System.Drawing.Point(9, 62);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(982, 265);
+            this.tabControl1.Size = new System.Drawing.Size(949, 265);
             this.tabControl1.TabIndex = 3;
             // 
             // tabPage7
@@ -242,7 +243,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(974, 239);
+            this.tabPage7.Size = new System.Drawing.Size(941, 239);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Experience";
             // 
@@ -265,7 +266,7 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(974, 239);
+            this.tabPage8.Size = new System.Drawing.Size(941, 239);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Qualifications";
             // 
@@ -287,7 +288,7 @@
             this.tabPage9.Controls.Add(this.txtpersonalityDescription);
             this.tabPage9.Location = new System.Drawing.Point(4, 22);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(974, 239);
+            this.tabPage9.Size = new System.Drawing.Size(941, 239);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "Personality";
             // 
@@ -309,7 +310,7 @@
             this.tabPage10.Controls.Add(this.txtperformancecriteriaDescription);
             this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(974, 239);
+            this.tabPage10.Size = new System.Drawing.Size(941, 239);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "Performance Criteria";
             // 
@@ -331,7 +332,7 @@
             this.tabPage11.Controls.Add(this.txtworkenvironmentDescription);
             this.tabPage11.Location = new System.Drawing.Point(4, 22);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(974, 239);
+            this.tabPage11.Size = new System.Drawing.Size(941, 239);
             this.tabPage11.TabIndex = 10;
             this.tabPage11.Text = "Work Environment ";
             // 
@@ -353,7 +354,7 @@
             this.tabPage12.Controls.Add(this.txtsalaryDescription);
             this.tabPage12.Location = new System.Drawing.Point(4, 22);
             this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Size = new System.Drawing.Size(974, 239);
+            this.tabPage12.Size = new System.Drawing.Size(941, 239);
             this.tabPage12.TabIndex = 11;
             this.tabPage12.Text = "Salary";
             // 
@@ -368,6 +369,28 @@
             this.txtsalaryDescription.Size = new System.Drawing.Size(572, 47);
             this.txtsalaryDescription.TabIndex = 3;
             this.txtsalaryDescription.Text = "Description";
+            // 
+            // tabPage13
+            // 
+            this.tabPage13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage13.Controls.Add(this.txtspecialconditionsDescription);
+            this.tabPage13.Location = new System.Drawing.Point(4, 22);
+            this.tabPage13.Name = "tabPage13";
+            this.tabPage13.Size = new System.Drawing.Size(941, 239);
+            this.tabPage13.TabIndex = 12;
+            this.tabPage13.Text = "Special Conditions";
+            // 
+            // txtspecialconditionsDescription
+            // 
+            this.txtspecialconditionsDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtspecialconditionsDescription.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtspecialconditionsDescription.ForeColor = System.Drawing.Color.White;
+            this.txtspecialconditionsDescription.Location = new System.Drawing.Point(12, 13);
+            this.txtspecialconditionsDescription.Multiline = true;
+            this.txtspecialconditionsDescription.Name = "txtspecialconditionsDescription";
+            this.txtspecialconditionsDescription.Size = new System.Drawing.Size(572, 47);
+            this.txtspecialconditionsDescription.TabIndex = 4;
+            this.txtspecialconditionsDescription.Text = "Description";
             // 
             // label1
             // 
@@ -391,27 +414,16 @@
             this.txtProjectName.TabIndex = 4;
             this.txtProjectName.Text = "Project Name";
             // 
-            // tabPage13
+            // btnSave
             // 
-            this.tabPage13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage13.Controls.Add(this.txtspecialconditionsDescription);
-            this.tabPage13.Location = new System.Drawing.Point(4, 22);
-            this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Size = new System.Drawing.Size(974, 239);
-            this.tabPage13.TabIndex = 12;
-            this.tabPage13.Text = "Special Conditions";
-            // 
-            // txtspecialconditionsDescription
-            // 
-            this.txtspecialconditionsDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtspecialconditionsDescription.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtspecialconditionsDescription.ForeColor = System.Drawing.Color.White;
-            this.txtspecialconditionsDescription.Location = new System.Drawing.Point(12, 13);
-            this.txtspecialconditionsDescription.Multiline = true;
-            this.txtspecialconditionsDescription.Name = "txtspecialconditionsDescription";
-            this.txtspecialconditionsDescription.Size = new System.Drawing.Size(572, 47);
-            this.txtspecialconditionsDescription.TabIndex = 4;
-            this.txtspecialconditionsDescription.Text = "Description";
+            this.btnSave.Location = new System.Drawing.Point(825, 11);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(134, 22);
+            this.btnSave.TabIndex = 13;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // JobDescriptionDocumentForm
             // 
@@ -419,6 +431,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(970, 339);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.tabControl1);
@@ -488,5 +501,6 @@
         private System.Windows.Forms.TextBox txtsalaryDescription;
         private System.Windows.Forms.TabPage tabPage13;
         private System.Windows.Forms.TextBox txtspecialconditionsDescription;
+        private System.Windows.Forms.Button btnSave;
     }
 }

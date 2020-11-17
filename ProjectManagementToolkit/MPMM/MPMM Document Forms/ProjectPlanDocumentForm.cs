@@ -17,9 +17,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
     public partial class ProjectPlanDocumentForm : Form
     {
+
         VersionControl<ProjectPlanModel> versionControl;
         ProjectPlanModel newProjectPlanModel;
         ProjectPlanModel currentProjectPlanModel;
+
+
         public ProjectPlanDocumentForm()
         {
             InitializeComponent();

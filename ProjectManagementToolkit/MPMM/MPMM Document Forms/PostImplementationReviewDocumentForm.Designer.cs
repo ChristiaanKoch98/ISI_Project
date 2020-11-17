@@ -39,15 +39,32 @@
             this.approvalSignature = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.approvalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.historyVersion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.historyIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.historyChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.informationType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.txtexecutivesummaryDescription = new System.Windows.Forms.TextBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.dataGridView8 = new System.Windows.Forms.DataGridView();
+            this.ExpensesTypes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.expensesForecastExpenditure = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.expensesActualExpenditure = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.expensesDeviation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.ResourceTypes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ForecastResource = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ActualResource = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.resourceDeviation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtprojectperformanceSchedule = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.dataGridView10 = new System.Windows.Forms.DataGridView();
+            this.Benefit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.benefitsForecastValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.benefitsActualValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.benefitsDeviation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -55,8 +72,18 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.Deliverable = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deliverablesQualityCriteria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deliverablesQualityStandards = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deliverablesAchievement = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.OriginalScope = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ActualScope = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.scopeDeviation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.Objective = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.objectivesAchievement = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.objectivesShortfall = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtprojectperformanceDescription = new System.Windows.Forms.TextBox();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.label19 = new System.Windows.Forms.Label();
@@ -81,50 +108,24 @@
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.txtprojectachievementDescription = new System.Windows.Forms.TextBox();
             this.dataGridView9 = new System.Windows.Forms.DataGridView();
+            this.Achiviement = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.achievementsEffectonBusiness = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.txtprojectfailureDescription = new System.Windows.Forms.TextBox();
             this.dataGridView11 = new System.Windows.Forms.DataGridView();
+            this.Failure = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.failureEffectonBusiness = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.txtprojectlessonslearneDescription = new System.Windows.Forms.TextBox();
             this.dataGridView12 = new System.Windows.Forms.DataGridView();
+            this.projectlessonlearnedLearning = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.projectlessonLearned = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.txtappendixDescription = new System.Windows.Forms.TextBox();
             this.txtappendixSupportingDocumentation = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.txtProjectName = new System.Windows.Forms.TextBox();
-            this.informationType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Benefit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.benefitsForecastValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.benefitsActualValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.benefitsDeviation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Objective = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.objectivesAchievement = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.objectivesShortfall = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OriginalScope = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ActualScope = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.scopeDeviation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ExpensesTypes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.expensesForecastExpenditure = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.expensesActualExpenditure = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.expensesDeviation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ResourceTypes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ForecastResource = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ActualResource = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.resourceDeviation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Achiviement = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.achievementsEffectonBusiness = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Failure = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.failureEffectonBusiness = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.projectlessonlearnedLearning = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.projectlessonLearned = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtappendixDescription = new System.Windows.Forms.TextBox();
-            this.historyVersion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.historyIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.historyChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Deliverable = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deliverablesQualityCriteria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deliverablesQualityStandards = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deliverablesAchievement = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSave = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -274,6 +275,27 @@
             this.dataGridView2.Size = new System.Drawing.Size(691, 118);
             this.dataGridView2.TabIndex = 1;
             // 
+            // historyVersion
+            // 
+            this.historyVersion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.historyVersion.HeaderText = "Version";
+            this.historyVersion.MinimumWidth = 6;
+            this.historyVersion.Name = "historyVersion";
+            // 
+            // historyIssueDate
+            // 
+            this.historyIssueDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.historyIssueDate.HeaderText = "Issue Date";
+            this.historyIssueDate.MinimumWidth = 6;
+            this.historyIssueDate.Name = "historyIssueDate";
+            // 
+            // historyChanges
+            // 
+            this.historyChanges.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.historyChanges.HeaderText = "Changes";
+            this.historyChanges.MinimumWidth = 6;
+            this.historyChanges.Name = "historyChanges";
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -285,6 +307,20 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(691, 108);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // informationType
+            // 
+            this.informationType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.informationType.HeaderText = "Type";
+            this.informationType.MinimumWidth = 6;
+            this.informationType.Name = "informationType";
+            // 
+            // Information
+            // 
+            this.Information.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Information.HeaderText = "Information";
+            this.Information.MinimumWidth = 6;
+            this.Information.Name = "Information";
             // 
             // tabPage2
             // 
@@ -350,6 +386,34 @@
             this.dataGridView8.Size = new System.Drawing.Size(449, 48);
             this.dataGridView8.TabIndex = 29;
             // 
+            // ExpensesTypes
+            // 
+            this.ExpensesTypes.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ExpensesTypes.HeaderText = "Expenses Types";
+            this.ExpensesTypes.MinimumWidth = 6;
+            this.ExpensesTypes.Name = "ExpensesTypes";
+            // 
+            // expensesForecastExpenditure
+            // 
+            this.expensesForecastExpenditure.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.expensesForecastExpenditure.HeaderText = "Forecast Expenditure";
+            this.expensesForecastExpenditure.MinimumWidth = 6;
+            this.expensesForecastExpenditure.Name = "expensesForecastExpenditure";
+            // 
+            // expensesActualExpenditure
+            // 
+            this.expensesActualExpenditure.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.expensesActualExpenditure.HeaderText = "Actual Expenditure";
+            this.expensesActualExpenditure.MinimumWidth = 6;
+            this.expensesActualExpenditure.Name = "expensesActualExpenditure";
+            // 
+            // expensesDeviation
+            // 
+            this.expensesDeviation.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.expensesDeviation.HeaderText = "Deviation";
+            this.expensesDeviation.MinimumWidth = 6;
+            this.expensesDeviation.Name = "expensesDeviation";
+            // 
             // dataGridView4
             // 
             this.dataGridView4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -365,6 +429,34 @@
             this.dataGridView4.RowHeadersWidth = 51;
             this.dataGridView4.Size = new System.Drawing.Size(449, 48);
             this.dataGridView4.TabIndex = 28;
+            // 
+            // ResourceTypes
+            // 
+            this.ResourceTypes.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ResourceTypes.HeaderText = "Resource Types";
+            this.ResourceTypes.MinimumWidth = 6;
+            this.ResourceTypes.Name = "ResourceTypes";
+            // 
+            // ForecastResource
+            // 
+            this.ForecastResource.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ForecastResource.HeaderText = "Forecast Resource";
+            this.ForecastResource.MinimumWidth = 6;
+            this.ForecastResource.Name = "ForecastResource";
+            // 
+            // ActualResource
+            // 
+            this.ActualResource.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ActualResource.HeaderText = "Actual Resource";
+            this.ActualResource.MinimumWidth = 6;
+            this.ActualResource.Name = "ActualResource";
+            // 
+            // resourceDeviation
+            // 
+            this.resourceDeviation.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.resourceDeviation.HeaderText = "Deviation";
+            this.resourceDeviation.MinimumWidth = 6;
+            this.resourceDeviation.Name = "resourceDeviation";
             // 
             // txtprojectperformanceSchedule
             // 
@@ -405,6 +497,34 @@
             this.dataGridView10.RowHeadersWidth = 51;
             this.dataGridView10.Size = new System.Drawing.Size(449, 48);
             this.dataGridView10.TabIndex = 25;
+            // 
+            // Benefit
+            // 
+            this.Benefit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Benefit.HeaderText = "Benefit";
+            this.Benefit.MinimumWidth = 6;
+            this.Benefit.Name = "Benefit";
+            // 
+            // benefitsForecastValue
+            // 
+            this.benefitsForecastValue.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.benefitsForecastValue.HeaderText = "ForecastValue";
+            this.benefitsForecastValue.MinimumWidth = 6;
+            this.benefitsForecastValue.Name = "benefitsForecastValue";
+            // 
+            // benefitsActualValue
+            // 
+            this.benefitsActualValue.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.benefitsActualValue.HeaderText = "Actual Value";
+            this.benefitsActualValue.MinimumWidth = 6;
+            this.benefitsActualValue.Name = "benefitsActualValue";
+            // 
+            // benefitsDeviation
+            // 
+            this.benefitsDeviation.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.benefitsDeviation.HeaderText = "Deviation";
+            this.benefitsDeviation.MinimumWidth = 6;
+            this.benefitsDeviation.Name = "benefitsDeviation";
             // 
             // label10
             // 
@@ -490,6 +610,32 @@
             this.dataGridView7.Size = new System.Drawing.Size(449, 53);
             this.dataGridView7.TabIndex = 16;
             // 
+            // Deliverable
+            // 
+            this.Deliverable.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Deliverable.HeaderText = "Deliverable";
+            this.Deliverable.MinimumWidth = 6;
+            this.Deliverable.Name = "Deliverable";
+            // 
+            // deliverablesQualityCriteria
+            // 
+            this.deliverablesQualityCriteria.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.deliverablesQualityCriteria.HeaderText = "Quality Criteria";
+            this.deliverablesQualityCriteria.MinimumWidth = 6;
+            this.deliverablesQualityCriteria.Name = "deliverablesQualityCriteria";
+            // 
+            // deliverablesQualityStandards
+            // 
+            this.deliverablesQualityStandards.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.deliverablesQualityStandards.HeaderText = "Quality Standards";
+            this.deliverablesQualityStandards.MinimumWidth = 6;
+            this.deliverablesQualityStandards.Name = "deliverablesQualityStandards";
+            // 
+            // deliverablesAchievement
+            // 
+            this.deliverablesAchievement.HeaderText = "%Achievement";
+            this.deliverablesAchievement.Name = "deliverablesAchievement";
+            // 
             // dataGridView6
             // 
             this.dataGridView6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -506,6 +652,27 @@
             this.dataGridView6.TabIndex = 15;
             this.dataGridView6.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView6_CellContentClick);
             // 
+            // OriginalScope
+            // 
+            this.OriginalScope.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.OriginalScope.HeaderText = "Original Scope";
+            this.OriginalScope.MinimumWidth = 6;
+            this.OriginalScope.Name = "OriginalScope";
+            // 
+            // ActualScope
+            // 
+            this.ActualScope.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ActualScope.HeaderText = "Actual Scope";
+            this.ActualScope.MinimumWidth = 6;
+            this.ActualScope.Name = "ActualScope";
+            // 
+            // scopeDeviation
+            // 
+            this.scopeDeviation.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.scopeDeviation.HeaderText = "Deviation";
+            this.scopeDeviation.MinimumWidth = 6;
+            this.scopeDeviation.Name = "scopeDeviation";
+            // 
             // dataGridView5
             // 
             this.dataGridView5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -520,6 +687,27 @@
             this.dataGridView5.RowHeadersWidth = 51;
             this.dataGridView5.Size = new System.Drawing.Size(449, 51);
             this.dataGridView5.TabIndex = 14;
+            // 
+            // Objective
+            // 
+            this.Objective.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Objective.HeaderText = "Objective";
+            this.Objective.MinimumWidth = 6;
+            this.Objective.Name = "Objective";
+            // 
+            // objectivesAchievement
+            // 
+            this.objectivesAchievement.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.objectivesAchievement.HeaderText = "Achievement";
+            this.objectivesAchievement.MinimumWidth = 6;
+            this.objectivesAchievement.Name = "objectivesAchievement";
+            // 
+            // objectivesShortfall
+            // 
+            this.objectivesShortfall.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.objectivesShortfall.HeaderText = "Shortfall";
+            this.objectivesShortfall.MinimumWidth = 6;
+            this.objectivesShortfall.Name = "objectivesShortfall";
             // 
             // txtprojectperformanceDescription
             // 
@@ -816,6 +1004,20 @@
             this.dataGridView9.Size = new System.Drawing.Size(523, 106);
             this.dataGridView9.TabIndex = 15;
             // 
+            // Achiviement
+            // 
+            this.Achiviement.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Achiviement.HeaderText = "Achievement";
+            this.Achiviement.MinimumWidth = 6;
+            this.Achiviement.Name = "Achiviement";
+            // 
+            // achievementsEffectonBusiness
+            // 
+            this.achievementsEffectonBusiness.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.achievementsEffectonBusiness.HeaderText = "Effect on Business";
+            this.achievementsEffectonBusiness.MinimumWidth = 6;
+            this.achievementsEffectonBusiness.Name = "achievementsEffectonBusiness";
+            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -855,6 +1057,20 @@
             this.dataGridView11.TabIndex = 17;
             this.dataGridView11.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView11_CellContentClick);
             // 
+            // Failure
+            // 
+            this.Failure.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Failure.HeaderText = "Failure";
+            this.Failure.MinimumWidth = 6;
+            this.Failure.Name = "Failure";
+            // 
+            // failureEffectonBusiness
+            // 
+            this.failureEffectonBusiness.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.failureEffectonBusiness.HeaderText = "Effect on Business";
+            this.failureEffectonBusiness.MinimumWidth = 6;
+            this.failureEffectonBusiness.Name = "failureEffectonBusiness";
+            // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -892,6 +1108,20 @@
             this.dataGridView12.Size = new System.Drawing.Size(523, 96);
             this.dataGridView12.TabIndex = 17;
             // 
+            // projectlessonlearnedLearning
+            // 
+            this.projectlessonlearnedLearning.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.projectlessonlearnedLearning.HeaderText = "Learning";
+            this.projectlessonlearnedLearning.MinimumWidth = 6;
+            this.projectlessonlearnedLearning.Name = "projectlessonlearnedLearning";
+            // 
+            // projectlessonLearned
+            // 
+            this.projectlessonLearned.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.projectlessonLearned.HeaderText = "Recommendation";
+            this.projectlessonLearned.MinimumWidth = 6;
+            this.projectlessonLearned.Name = "projectlessonLearned";
+            // 
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -903,6 +1133,18 @@
             this.tabPage5.TabIndex = 8;
             this.tabPage5.Text = "Appendix";
             this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
+            // 
+            // txtappendixDescription
+            // 
+            this.txtappendixDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtappendixDescription.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtappendixDescription.ForeColor = System.Drawing.Color.White;
+            this.txtappendixDescription.Location = new System.Drawing.Point(3, 12);
+            this.txtappendixDescription.Multiline = true;
+            this.txtappendixDescription.Name = "txtappendixDescription";
+            this.txtappendixDescription.Size = new System.Drawing.Size(523, 53);
+            this.txtappendixDescription.TabIndex = 20;
+            this.txtappendixDescription.Text = "Description";
             // 
             // txtappendixSupportingDocumentation
             // 
@@ -938,246 +1180,16 @@
             this.txtProjectName.TabIndex = 4;
             this.txtProjectName.Text = "Project Name";
             // 
-            // informationType
-            // 
-            this.informationType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.informationType.HeaderText = "Type";
-            this.informationType.MinimumWidth = 6;
-            this.informationType.Name = "informationType";
-            // 
-            // Information
-            // 
-            this.Information.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Information.HeaderText = "Information";
-            this.Information.MinimumWidth = 6;
-            this.Information.Name = "Information";
-            // 
-            // Benefit
-            // 
-            this.Benefit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Benefit.HeaderText = "Benefit";
-            this.Benefit.MinimumWidth = 6;
-            this.Benefit.Name = "Benefit";
-            // 
-            // benefitsForecastValue
-            // 
-            this.benefitsForecastValue.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.benefitsForecastValue.HeaderText = "ForecastValue";
-            this.benefitsForecastValue.MinimumWidth = 6;
-            this.benefitsForecastValue.Name = "benefitsForecastValue";
-            // 
-            // benefitsActualValue
-            // 
-            this.benefitsActualValue.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.benefitsActualValue.HeaderText = "Actual Value";
-            this.benefitsActualValue.MinimumWidth = 6;
-            this.benefitsActualValue.Name = "benefitsActualValue";
-            // 
-            // benefitsDeviation
-            // 
-            this.benefitsDeviation.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.benefitsDeviation.HeaderText = "Deviation";
-            this.benefitsDeviation.MinimumWidth = 6;
-            this.benefitsDeviation.Name = "benefitsDeviation";
-            // 
-            // Objective
-            // 
-            this.Objective.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Objective.HeaderText = "Objective";
-            this.Objective.MinimumWidth = 6;
-            this.Objective.Name = "Objective";
-            // 
-            // objectivesAchievement
-            // 
-            this.objectivesAchievement.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.objectivesAchievement.HeaderText = "Achievement";
-            this.objectivesAchievement.MinimumWidth = 6;
-            this.objectivesAchievement.Name = "objectivesAchievement";
-            // 
-            // objectivesShortfall
-            // 
-            this.objectivesShortfall.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.objectivesShortfall.HeaderText = "Shortfall";
-            this.objectivesShortfall.MinimumWidth = 6;
-            this.objectivesShortfall.Name = "objectivesShortfall";
-            // 
-            // OriginalScope
-            // 
-            this.OriginalScope.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.OriginalScope.HeaderText = "Original Scope";
-            this.OriginalScope.MinimumWidth = 6;
-            this.OriginalScope.Name = "OriginalScope";
-            // 
-            // ActualScope
-            // 
-            this.ActualScope.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ActualScope.HeaderText = "Actual Scope";
-            this.ActualScope.MinimumWidth = 6;
-            this.ActualScope.Name = "ActualScope";
-            // 
-            // scopeDeviation
-            // 
-            this.scopeDeviation.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.scopeDeviation.HeaderText = "Deviation";
-            this.scopeDeviation.MinimumWidth = 6;
-            this.scopeDeviation.Name = "scopeDeviation";
-            // 
-            // ExpensesTypes
-            // 
-            this.ExpensesTypes.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ExpensesTypes.HeaderText = "Expenses Types";
-            this.ExpensesTypes.MinimumWidth = 6;
-            this.ExpensesTypes.Name = "ExpensesTypes";
-            // 
-            // expensesForecastExpenditure
-            // 
-            this.expensesForecastExpenditure.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.expensesForecastExpenditure.HeaderText = "Forecast Expenditure";
-            this.expensesForecastExpenditure.MinimumWidth = 6;
-            this.expensesForecastExpenditure.Name = "expensesForecastExpenditure";
-            // 
-            // expensesActualExpenditure
-            // 
-            this.expensesActualExpenditure.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.expensesActualExpenditure.HeaderText = "Actual Expenditure";
-            this.expensesActualExpenditure.MinimumWidth = 6;
-            this.expensesActualExpenditure.Name = "expensesActualExpenditure";
-            // 
-            // expensesDeviation
-            // 
-            this.expensesDeviation.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.expensesDeviation.HeaderText = "Deviation";
-            this.expensesDeviation.MinimumWidth = 6;
-            this.expensesDeviation.Name = "expensesDeviation";
-            // 
-            // ResourceTypes
-            // 
-            this.ResourceTypes.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ResourceTypes.HeaderText = "Resource Types";
-            this.ResourceTypes.MinimumWidth = 6;
-            this.ResourceTypes.Name = "ResourceTypes";
-            // 
-            // ForecastResource
-            // 
-            this.ForecastResource.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ForecastResource.HeaderText = "Forecast Resource";
-            this.ForecastResource.MinimumWidth = 6;
-            this.ForecastResource.Name = "ForecastResource";
-            // 
-            // ActualResource
-            // 
-            this.ActualResource.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ActualResource.HeaderText = "Actual Resource";
-            this.ActualResource.MinimumWidth = 6;
-            this.ActualResource.Name = "ActualResource";
-            // 
-            // resourceDeviation
-            // 
-            this.resourceDeviation.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.resourceDeviation.HeaderText = "Deviation";
-            this.resourceDeviation.MinimumWidth = 6;
-            this.resourceDeviation.Name = "resourceDeviation";
-            // 
-            // Achiviement
-            // 
-            this.Achiviement.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Achiviement.HeaderText = "Achievement";
-            this.Achiviement.MinimumWidth = 6;
-            this.Achiviement.Name = "Achiviement";
-            // 
-            // achievementsEffectonBusiness
-            // 
-            this.achievementsEffectonBusiness.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.achievementsEffectonBusiness.HeaderText = "Effect on Business";
-            this.achievementsEffectonBusiness.MinimumWidth = 6;
-            this.achievementsEffectonBusiness.Name = "achievementsEffectonBusiness";
-            // 
-            // Failure
-            // 
-            this.Failure.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Failure.HeaderText = "Failure";
-            this.Failure.MinimumWidth = 6;
-            this.Failure.Name = "Failure";
-            // 
-            // failureEffectonBusiness
-            // 
-            this.failureEffectonBusiness.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.failureEffectonBusiness.HeaderText = "Effect on Business";
-            this.failureEffectonBusiness.MinimumWidth = 6;
-            this.failureEffectonBusiness.Name = "failureEffectonBusiness";
-            // 
-            // projectlessonlearnedLearning
-            // 
-            this.projectlessonlearnedLearning.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.projectlessonlearnedLearning.HeaderText = "Learning";
-            this.projectlessonlearnedLearning.MinimumWidth = 6;
-            this.projectlessonlearnedLearning.Name = "projectlessonlearnedLearning";
-            // 
-            // projectlessonLearned
-            // 
-            this.projectlessonLearned.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.projectlessonLearned.HeaderText = "Recommendation";
-            this.projectlessonLearned.MinimumWidth = 6;
-            this.projectlessonLearned.Name = "projectlessonLearned";
-            // 
-            // txtappendixDescription
-            // 
-            this.txtappendixDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtappendixDescription.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtappendixDescription.ForeColor = System.Drawing.Color.White;
-            this.txtappendixDescription.Location = new System.Drawing.Point(3, 12);
-            this.txtappendixDescription.Multiline = true;
-            this.txtappendixDescription.Name = "txtappendixDescription";
-            this.txtappendixDescription.Size = new System.Drawing.Size(523, 53);
-            this.txtappendixDescription.TabIndex = 20;
-            this.txtappendixDescription.Text = "Description";
-            // 
-            // historyVersion
-            // 
-            this.historyVersion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.historyVersion.HeaderText = "Version";
-            this.historyVersion.MinimumWidth = 6;
-            this.historyVersion.Name = "historyVersion";
-            // 
-            // historyIssueDate
-            // 
-            this.historyIssueDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.historyIssueDate.HeaderText = "Issue Date";
-            this.historyIssueDate.MinimumWidth = 6;
-            this.historyIssueDate.Name = "historyIssueDate";
-            // 
-            // historyChanges
-            // 
-            this.historyChanges.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.historyChanges.HeaderText = "Changes";
-            this.historyChanges.MinimumWidth = 6;
-            this.historyChanges.Name = "historyChanges";
-            // 
-            // Deliverable
-            // 
-            this.Deliverable.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Deliverable.HeaderText = "Deliverable";
-            this.Deliverable.MinimumWidth = 6;
-            this.Deliverable.Name = "Deliverable";
-            // 
-            // deliverablesQualityCriteria
-            // 
-            this.deliverablesQualityCriteria.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.deliverablesQualityCriteria.HeaderText = "Quality Criteria";
-            this.deliverablesQualityCriteria.MinimumWidth = 6;
-            this.deliverablesQualityCriteria.Name = "deliverablesQualityCriteria";
-            // 
-            // deliverablesQualityStandards
-            // 
-            this.deliverablesQualityStandards.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.deliverablesQualityStandards.HeaderText = "Quality Standards";
-            this.deliverablesQualityStandards.MinimumWidth = 6;
-            this.deliverablesQualityStandards.Name = "deliverablesQualityStandards";
-            // 
-            // deliverablesAchievement
-            // 
-            this.deliverablesAchievement.HeaderText = "%Achievement";
-            this.deliverablesAchievement.Name = "deliverablesAchievement";
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(838, 11);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(134, 22);
+            this.btnSave.TabIndex = 13;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // PostImplementationReviewDocumentForm
             // 
@@ -1185,11 +1197,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(983, 504);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.tabControl1);
             this.Name = "PostImplementationReviewDocumentForm";
             this.Text = "PostImplementationReviewDocumentForm";
+            this.Load += new System.EventHandler(this.PostImplementationReviewDocumentForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -1323,5 +1337,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn deliverablesQualityCriteria;
         private System.Windows.Forms.DataGridViewTextBoxColumn deliverablesQualityStandards;
         private System.Windows.Forms.DataGridViewTextBoxColumn deliverablesAchievement;
+        private System.Windows.Forms.Button btnSave;
     }
 }

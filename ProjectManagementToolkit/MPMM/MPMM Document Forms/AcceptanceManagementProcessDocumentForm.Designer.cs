@@ -39,7 +39,12 @@
             this.approvalSignature = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.approvalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.historyVersion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.historyIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.historyChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.InformationType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.txtacceptanceprocessOverview = new System.Windows.Forms.TextBox();
             this.txtacceptanceprocessAcceptDeliverable = new System.Windows.Forms.TextBox();
@@ -61,11 +66,7 @@
             this.AssessmentCriteria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.txtProjectName = new System.Windows.Forms.TextBox();
-            this.historyVersion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.historyIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.historyChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.InformationType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSave = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -197,6 +198,27 @@
             this.dataGridView2.Size = new System.Drawing.Size(691, 118);
             this.dataGridView2.TabIndex = 1;
             // 
+            // historyVersion
+            // 
+            this.historyVersion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.historyVersion.HeaderText = "Version";
+            this.historyVersion.MinimumWidth = 6;
+            this.historyVersion.Name = "historyVersion";
+            // 
+            // historyIssueDate
+            // 
+            this.historyIssueDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.historyIssueDate.HeaderText = "Issue Date";
+            this.historyIssueDate.MinimumWidth = 6;
+            this.historyIssueDate.Name = "historyIssueDate";
+            // 
+            // historyChanges
+            // 
+            this.historyChanges.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.historyChanges.HeaderText = "Changes";
+            this.historyChanges.MinimumWidth = 6;
+            this.historyChanges.Name = "historyChanges";
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -208,6 +230,20 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(691, 108);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // InformationType
+            // 
+            this.InformationType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.InformationType.HeaderText = "Type";
+            this.InformationType.MinimumWidth = 6;
+            this.InformationType.Name = "InformationType";
+            // 
+            // Information
+            // 
+            this.Information.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Information.HeaderText = "Information";
+            this.Information.MinimumWidth = 6;
+            this.Information.Name = "Information";
             // 
             // tabPage2
             // 
@@ -446,40 +482,16 @@
             this.txtProjectName.TabIndex = 4;
             this.txtProjectName.Text = "Project Name";
             // 
-            // historyVersion
+            // btnSave
             // 
-            this.historyVersion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.historyVersion.HeaderText = "Version";
-            this.historyVersion.MinimumWidth = 6;
-            this.historyVersion.Name = "historyVersion";
-            // 
-            // historyIssueDate
-            // 
-            this.historyIssueDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.historyIssueDate.HeaderText = "Issue Date";
-            this.historyIssueDate.MinimumWidth = 6;
-            this.historyIssueDate.Name = "historyIssueDate";
-            // 
-            // historyChanges
-            // 
-            this.historyChanges.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.historyChanges.HeaderText = "Changes";
-            this.historyChanges.MinimumWidth = 6;
-            this.historyChanges.Name = "historyChanges";
-            // 
-            // InformationType
-            // 
-            this.InformationType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.InformationType.HeaderText = "Type";
-            this.InformationType.MinimumWidth = 6;
-            this.InformationType.Name = "InformationType";
-            // 
-            // Information
-            // 
-            this.Information.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Information.HeaderText = "Information";
-            this.Information.MinimumWidth = 6;
-            this.Information.Name = "Information";
+            this.btnSave.Location = new System.Drawing.Point(755, 6);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(134, 22);
+            this.btnSave.TabIndex = 13;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // AcceptanceManagementProcessDocumentForm
             // 
@@ -487,11 +499,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(900, 521);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.tabControl1);
             this.Name = "AcceptanceManagementProcessDocumentForm";
             this.Text = "AcceptanceManagementProcessDocumentForm";
+            this.Load += new System.EventHandler(this.AcceptanceManagementProcessDocumentForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -549,5 +563,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn historyChanges;
         private System.Windows.Forms.DataGridViewTextBoxColumn InformationType;
         private System.Windows.Forms.DataGridViewTextBoxColumn Information;
+        private System.Windows.Forms.Button btnSave;
     }
 }

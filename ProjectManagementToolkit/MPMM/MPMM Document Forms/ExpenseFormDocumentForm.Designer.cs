@@ -46,6 +46,7 @@
             this.detailsExpenseAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.expensedetailsPayeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.expensedetailsInvoiceNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSave = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -66,6 +67,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage1.Controls.Add(this.btnSave);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
@@ -213,6 +215,17 @@
             this.expensedetailsInvoiceNumber.HeaderText = "Invoice Number";
             this.expensedetailsInvoiceNumber.Name = "expensedetailsInvoiceNumber";
             // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(774, 5);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(134, 22);
+            this.btnSave.TabIndex = 13;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // ExpenseFormDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -221,6 +234,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "ExpenseFormDocumentForm";
             this.Text = "ua";
+            this.Load += new System.EventHandler(this.ExpenseFormDocumentForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -248,5 +262,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn detailsExpenseAmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn expensedetailsPayeeName;
         private System.Windows.Forms.DataGridViewTextBoxColumn expensedetailsInvoiceNumber;
+        private System.Windows.Forms.Button btnSave;
     }
 }
