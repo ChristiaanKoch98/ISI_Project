@@ -19,7 +19,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 
         public string ChangeRequester { get; set; }
 
-        public DateTime ChangeRequestDate { get; set; }
+        public string ChangeRequestDate { get; set; }
 
 
         public string ChangeUrgancy { get; set; }
