@@ -93,6 +93,12 @@
     <Compile Include="MPMM\MPMM Document Forms\ChangeManagementProcessDocumentForm.Designer.cs">
       <DependentUpon>ChangeManagementProcessDocumentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\ChangeRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\ChangeRegister.Designer.cs">
+      <DependentUpon>ChangeRegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="MPMM\MPMM Document Forms\ChangeRequestFormDocumentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -482,6 +488,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\ChangeManagementProcessDocumentForm.resx">
       <DependentUpon>ChangeManagementProcessDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\ChangeRegister.resx">
+      <DependentUpon>ChangeRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\ChangeRequestFormDocumentForm.resx">
       <DependentUpon>ChangeRequestFormDocumentForm.cs</DependentUpon>
