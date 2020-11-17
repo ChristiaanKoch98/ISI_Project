@@ -384,5 +384,12 @@ namespace ProjectManagementToolkit
             form.Show();
             form.MdiParent = this;
         }
+
+        private void syncToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SyncForm syncForm = new SyncForm();
+            syncForm.Show();
+            syncForm.MdiParent = this;
+        }
     }
 }
