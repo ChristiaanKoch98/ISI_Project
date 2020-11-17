@@ -15,9 +15,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 
         public string DocumentOwner { get; set; }
 
-        public DateTime IssueDate { get; set; }
+        public string IssueDate { get; set; }
 
-        public DateTime LastSavedDate { get; set; }
+        public string LastSavedDate { get; set; }
 
         public string FileName { get; set; }
 
@@ -43,7 +43,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 
             public string Version { get; set; }
 
-            public DateTime IssueDate { get; set; }
+            public string IssueDate { get; set; }
 
             public string Changes { get; set; }
 
@@ -58,7 +58,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 
             public string Signature { get; set; }
 
-            public DateTime DateApproved { get; set; }
+            public string DateApproved { get; set; }
 
         }
 
@@ -73,15 +73,15 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 
             public string Skill { get; set; }
 
-            public DateTime StartDate { get; set; }
+            public string StartDate { get; set; }
 
-            public DateTime EndDate { get; set; }
+            public string EndDate { get; set; }
 
         }
         public class Equipment
         {
 
-            public string Iitem { get; set; }
+            public string Item { get; set; }
 
             public string Amount { get; set; }
 
@@ -89,9 +89,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 
             public string Specification { get; set; }
 
-            public DateTime StartDate { get; set; }
+            public string StartDate { get; set; }
 
-            public DateTime EndDate { get; set; }
+            public string EndDate { get; set; }
 
         }
         public class Materials
@@ -100,9 +100,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 
             public string Amount { get; set; }
 
-            public DateTime StartDate { get; set; }
+            public string StartDate { get; set; }
 
-            public DateTime EndDate { get; set; }
+            public string EndDate { get; set; }
         }
 
         public class Schedule

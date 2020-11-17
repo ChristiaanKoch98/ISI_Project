@@ -92,6 +92,7 @@
             this.decColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.appendixTabPage = new System.Windows.Forms.TabPage();
+            this.btnResourceSave = new System.Windows.Forms.Button();
             this.ResourcePlanTabControl.SuspendLayout();
             this.documentCtrlTabPG.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -666,18 +667,29 @@
             this.appendixTabPage.Text = "Appendix";
             this.appendixTabPage.UseVisualStyleBackColor = true;
             // 
+            // btnResourceSave
+            // 
+            this.btnResourceSave.Location = new System.Drawing.Point(376, 13);
+            this.btnResourceSave.Name = "btnResourceSave";
+            this.btnResourceSave.Size = new System.Drawing.Size(75, 23);
+            this.btnResourceSave.TabIndex = 3;
+            this.btnResourceSave.Text = "Save";
+            this.btnResourceSave.UseVisualStyleBackColor = true;
+            this.btnResourceSave.Click += new System.EventHandler(this.btnResourceSave_Click);
+            // 
             // ResourcePlanDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(879, 512);
+            this.Controls.Add(this.btnResourceSave);
             this.Controls.Add(this.ResourcePlanTabControl);
             this.Controls.Add(this.textBoxProjectName);
             this.Controls.Add(this.label1);
             this.Name = "ResourcePlanDocumentForm";
             this.Text = "ResourcePlanDocumentForm";
-            this.Load += new System.EventHandler(this.ResourcePlanDocumentForm_Load_1);
+            this.Load += new System.EventHandler(this.ResourcePlanDocumentForm_Load);
             this.ResourcePlanTabControl.ResumeLayout(false);
             this.documentCtrlTabPG.ResumeLayout(false);
             this.documentCtrlTabPG.PerformLayout();
@@ -763,5 +775,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn novColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn decColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn totalColumn;
+        private System.Windows.Forms.Button btnResourceSave;
     }
 }
