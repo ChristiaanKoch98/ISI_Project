@@ -53,14 +53,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<ResourcePlanModel.DocumentHistory> documentHistories = new List<ResourcePlanModel.DocumentHistory>();
 
-            int versionRowsCount = dataGridView2.Rows.Count;
+            int versionRowsCount = dataGridViewDocHistory.Rows.Count;
 
             for (int i = 0; i < versionRowsCount - 1; i++)
             {
                 ResourcePlanModel.DocumentHistory documentHistoryModel = new ResourcePlanModel.DocumentHistory();
-                var version = dataGridView2.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var issueDate = dataGridView2.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var changes = dataGridView2.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var version = dataGridViewDocHistory.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var issueDate = dataGridViewDocHistory.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var changes = dataGridViewDocHistory.Rows[i].Cells[2].Value?.ToString() ?? "";
                 documentHistoryModel.Version = version;
                 documentHistoryModel.IssueDate = issueDate;
                 documentHistoryModel.Changes = changes;
@@ -70,15 +70,15 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<ResourcePlanModel.DocumentApproval> documentApprovalsModel = new List<ResourcePlanModel.DocumentApproval>();
 
-            int approvalRowsCount = dataGridView3.Rows.Count;
+            int approvalRowsCount = dataGridViewDocApprovals.Rows.Count;
 
             for (int i = 0; i < approvalRowsCount - 1; i++)
             {
                 ResourcePlanModel.DocumentApproval documentApproval = new ResourcePlanModel.DocumentApproval();
-                var role = dataGridView3.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var name = dataGridView3.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var signature = dataGridView3.Rows[i].Cells[2].Value?.ToString() ?? "";
-                var date = dataGridView3.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var role = dataGridViewDocApprovals.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var name = dataGridViewDocApprovals.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var signature = dataGridViewDocApprovals.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var date = dataGridViewDocApprovals.Rows[i].Cells[3].Value?.ToString() ?? "";
                 documentApproval.Role = role;
                 documentApproval.Name = name;
                 documentApproval.Signature = signature;
@@ -96,12 +96,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             for (int i = 0; i < approvalRowsCount - 1; i++)
             {
                 ResourcePlanModel.Labor documentLabor = new ResourcePlanModel.Labor();
-                var constraint = dataGridView3.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var number = dataGridView3.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var responsibility = dataGridView3.Rows[i].Cells[2].Value?.ToString() ?? "";
-                var skill = dataGridView3.Rows[i].Cells[3].Value?.ToString() ?? "";
-                var startDate = dataGridView3.Rows[i].Cells[4].Value?.ToString() ?? "";
-                var endDate = dataGridView3.Rows[i].Cells[5].Value?.ToString() ?? "";
+                var constraint = dataGridViewDocApprovals.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var number = dataGridViewDocApprovals.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var responsibility = dataGridViewDocApprovals.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var skill = dataGridViewDocApprovals.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var startDate = dataGridViewDocApprovals.Rows[i].Cells[4].Value?.ToString() ?? "";
+                var endDate = dataGridViewDocApprovals.Rows[i].Cells[5].Value?.ToString() ?? "";
                 documentLabor.Constraints = constraint;
                 documentLabor.Number = number;
                 documentLabor.Responsibility = responsibility;
@@ -116,17 +116,17 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<ResourcePlanModel.Equipment> documentEquipmentModel = new List<ResourcePlanModel.Equipment>();
 
-            int equipmentRowsCount = dataGridView4.Rows.Count;
+            int equipmentRowsCount = dataGridViewEquipment.Rows.Count;
 
             for (int i = 0; i < approvalRowsCount - 1; i++)
             {
                 ResourcePlanModel.Equipment documentEquipment = new ResourcePlanModel.Equipment();
-                var item = dataGridView3.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var amount = dataGridView3.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var purpose = dataGridView3.Rows[i].Cells[2].Value?.ToString() ?? "";
-                var specification = dataGridView3.Rows[i].Cells[3].Value?.ToString() ?? "";
-                var startDate = dataGridView3.Rows[i].Cells[4].Value?.ToString() ?? "";
-                var endDate = dataGridView3.Rows[i].Cells[5].Value?.ToString() ?? "";
+                var item = dataGridViewDocApprovals.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var amount = dataGridViewDocApprovals.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var purpose = dataGridViewDocApprovals.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var specification = dataGridViewDocApprovals.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var startDate = dataGridViewDocApprovals.Rows[i].Cells[4].Value?.ToString() ?? "";
+                var endDate = dataGridViewDocApprovals.Rows[i].Cells[5].Value?.ToString() ?? "";
                 documentEquipment.Item = item;
                 documentEquipment.Amount = amount;
                 documentEquipment.Purpose = purpose;
@@ -140,15 +140,15 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<ResourcePlanModel.Materials> documentMaterialModel = new List<ResourcePlanModel.Materials>();
 
-            int materialRowsCount = dataGridView4.Rows.Count;
+            int materialRowsCount = dataGridViewEquipment.Rows.Count;
 
             for (int i = 0; i < approvalRowsCount - 1; i++)
             {
                 ResourcePlanModel.Materials documentMaterial = new ResourcePlanModel.Materials();
-                var item = dataGridView3.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var amount = dataGridView3.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var startDate = dataGridView3.Rows[i].Cells[2].Value?.ToString() ?? "";
-                var endDate = dataGridView3.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var item = dataGridViewDocApprovals.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var amount = dataGridViewDocApprovals.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var startDate = dataGridViewDocApprovals.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var endDate = dataGridViewDocApprovals.Rows[i].Cells[3].Value?.ToString() ?? "";
                 documentMaterial.Iitem = item;
                 documentMaterial.Amount = amount;
                 documentMaterial.StartDate = startDate;
@@ -162,25 +162,25 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<ResourcePlanModel.Schedule> documentSchedulelModel = new List<ResourcePlanModel.Schedule>();
 
-            int sheduleRowsCount = dataGridView4.Rows.Count;
+            int sheduleRowsCount = dataGridViewEquipment.Rows.Count;
 
             for (int i = 0; i < approvalRowsCount - 1; i++)
             {
                 ResourcePlanModel.Schedule documentSchedule = new ResourcePlanModel.Schedule();
-                var resource = dataGridView3.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var jan = dataGridView3.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var feb = dataGridView3.Rows[i].Cells[2].Value?.ToString() ?? "";
-                var mar = dataGridView3.Rows[i].Cells[3].Value?.ToString() ?? "";
-                var apr = dataGridView3.Rows[i].Cells[4].Value?.ToString() ?? "";
-                var may = dataGridView3.Rows[i].Cells[5].Value?.ToString() ?? "";
-                var jun = dataGridView3.Rows[i].Cells[6].Value?.ToString() ?? "";
-                var jul = dataGridView3.Rows[i].Cells[7].Value?.ToString() ?? "";
-                var aug = dataGridView3.Rows[i].Cells[8].Value?.ToString() ?? "";
-                var sept = dataGridView3.Rows[i].Cells[9].Value?.ToString() ?? "";
-                var oct = dataGridView3.Rows[i].Cells[10].Value?.ToString() ?? "";
-                var nov = dataGridView3.Rows[i].Cells[11].Value?.ToString() ?? "";
-                var dec = dataGridView3.Rows[i].Cells[12].Value?.ToString() ?? "";
-                var total = dataGridView3.Rows[i].Cells[13].Value?.ToString() ?? "";
+                var resource = dataGridViewDocApprovals.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var jan = dataGridViewDocApprovals.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var feb = dataGridViewDocApprovals.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var mar = dataGridViewDocApprovals.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var apr = dataGridViewDocApprovals.Rows[i].Cells[4].Value?.ToString() ?? "";
+                var may = dataGridViewDocApprovals.Rows[i].Cells[5].Value?.ToString() ?? "";
+                var jun = dataGridViewDocApprovals.Rows[i].Cells[6].Value?.ToString() ?? "";
+                var jul = dataGridViewDocApprovals.Rows[i].Cells[7].Value?.ToString() ?? "";
+                var aug = dataGridViewDocApprovals.Rows[i].Cells[8].Value?.ToString() ?? "";
+                var sept = dataGridViewDocApprovals.Rows[i].Cells[9].Value?.ToString() ?? "";
+                var oct = dataGridViewDocApprovals.Rows[i].Cells[10].Value?.ToString() ?? "";
+                var nov = dataGridViewDocApprovals.Rows[i].Cells[11].Value?.ToString() ?? "";
+                var dec = dataGridViewDocApprovals.Rows[i].Cells[12].Value?.ToString() ?? "";
+                var total = dataGridViewDocApprovals.Rows[i].Cells[13].Value?.ToString() ?? "";
                 documentSchedule.Resource = resource;
                 documentSchedule.Jan = jan;
                 documentSchedule.Feb = feb;
@@ -201,9 +201,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
             newResourcePlanModel.Schedules = documentSchedulelModel;
 
-            newResourcePlanModel.Assumption = textBox1.Text;
+            newResourcePlanModel.Assumption = txtRPAssumptions.Text;
 
-            newResourcePlanModel.Constraint = textBox2.Text;
+            newResourcePlanModel.Constraint = txtRPConstraints.Text;
 
             List<VersionControl<ResourcePlanModel>.DocumentModel> documentModels = versionControl.DocumentModels;
 
@@ -250,12 +250,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 foreach (var row in currentResourcePlanModel.DocumentHistories)
                 {
-                    dataGridView2.Rows.Add(new string[] { row.Version, row.IssueDate, row.Changes });
+                    dataGridViewDocHistory.Rows.Add(new string[] { row.Version, row.IssueDate, row.Changes });
                 }
 
                 foreach (var row in currentResourcePlanModel.DocumentApprovals)
                 {
-                    dataGridView3.Rows.Add(new string[] { row.Role, row.Name, "", row.DateApproved });
+                    dataGridViewDocApprovals.Rows.Add(new string[] { row.Role, row.Name, "", row.DateApproved });
                 }
 
                 foreach (var row in currentResourcePlanModel.Labors)
@@ -265,22 +265,22 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 foreach (var row in currentResourcePlanModel.Equipments)
                 {
-                    dataGridView4.Rows.Add(new string[] { row.Item, row.Amount, row.Purpose, row.Specification, row.StartDate, row.EndDate });
+                    dataGridViewEquipment.Rows.Add(new string[] { row.Item, row.Amount, row.Purpose, row.Specification, row.StartDate, row.EndDate });
                 }
 
                 foreach (var row in currentResourcePlanModel.Material)
                 {
-                    dataGridView5.Rows.Add(new string[] { row.Iitem, row.Iitem, row.Amount, row.StartDate, row.EndDate });
+                    dataGridViewMaterial.Rows.Add(new string[] { row.Iitem, row.Iitem, row.Amount, row.StartDate, row.EndDate });
                 }
 
                 foreach (var row in currentResourcePlanModel.Schedules)
                 {
-                    dataGridView6.Rows.Add(new string[] { row.Resource, row.Jan, row.Feb, row.Mar, row.Apr, row.May, row.Jun, row.Jul, row.Aug, row.Sept, row.Oct, row.Nov, row.Dec, row.Total });
+                    dataGridViewResourcePlanSchedule.Rows.Add(new string[] { row.Resource, row.Jan, row.Feb, row.Mar, row.Apr, row.May, row.Jun, row.Jul, row.Aug, row.Sept, row.Oct, row.Nov, row.Dec, row.Total });
                 }
 
-                textBox1.Text = currentResourcePlanModel.Assumptions;
+                txtRPAssumptions.Text = currentResourcePlanModel.Assumptions;
 
-                textBox2.Text = currentResourcePlanModel.Constraints;
+                txtRPConstraints.Text = currentResourcePlanModel.Constraints;
             }
             else
             {

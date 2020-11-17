@@ -28,17 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBoxProjectName = new System.Windows.Forms.TextBox();
             this.ResourcePlanTabControl = new System.Windows.Forms.TabControl();
             this.documentCtrlTabPG = new System.Windows.Forms.TabPage();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewDocApprovals = new System.Windows.Forms.DataGridView();
             this.approvalRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.approvalName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.approvalSignature = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.approvalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewDocHistory = new System.Windows.Forms.DataGridView();
             this.Version = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.historyIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.historyChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,13 +46,13 @@
             this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dcmntInfoLabel = new System.Windows.Forms.Label();
             this.resourceListTab = new System.Windows.Forms.TabPage();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewMaterial = new System.Windows.Forms.DataGridView();
             this.material_ItemColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.materialAmountColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.materialsStartDateClmn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.materialEndDateColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewEquipment = new System.Windows.Forms.DataGridView();
             this.itemColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.amountColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.purposeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,10 +71,10 @@
             this.resourcePlabTab = new System.Windows.Forms.TabPage();
             this.constraintsLabel = new System.Windows.Forms.Label();
             this.assumptionsLabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtRPConstraints = new System.Windows.Forms.TextBox();
+            this.txtRPAssumptions = new System.Windows.Forms.TextBox();
             this.resourcePlanLabel = new System.Windows.Forms.Label();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewResourcePlanSchedule = new System.Windows.Forms.DataGridView();
             this.ResourceColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.janColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.febColomn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -92,37 +90,22 @@
             this.decColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.appendixTabPage = new System.Windows.Forms.TabPage();
-            this.btnResourceSave = new System.Windows.Forms.Button();
+            this.btnSaveProjectName = new System.Windows.Forms.Button();
+            this.label27 = new System.Windows.Forms.Label();
+            this.txtProjectName = new System.Windows.Forms.TextBox();
+            this.btnSaveResourcePlan = new System.Windows.Forms.Button();
             this.ResourcePlanTabControl.SuspendLayout();
             this.documentCtrlTabPG.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocApprovals)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocHistory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.docInfoGridData)).BeginInit();
             this.resourceListTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMaterial)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEquipment)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.laborDataGridView)).BeginInit();
             this.resourcePlabTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResourcePlanSchedule)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1, 1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Resource Plan For";
-            // 
-            // textBoxProjectName
-            // 
-            this.textBoxProjectName.Location = new System.Drawing.Point(154, 1);
-            this.textBoxProjectName.Name = "textBoxProjectName";
-            this.textBoxProjectName.Size = new System.Drawing.Size(100, 20);
-            this.textBoxProjectName.TabIndex = 1;
-            this.textBoxProjectName.Text = "[Project Name]";
             // 
             // ResourcePlanTabControl
             // 
@@ -130,42 +113,42 @@
             this.ResourcePlanTabControl.Controls.Add(this.resourceListTab);
             this.ResourcePlanTabControl.Controls.Add(this.resourcePlabTab);
             this.ResourcePlanTabControl.Controls.Add(this.appendixTabPage);
-            this.ResourcePlanTabControl.Location = new System.Drawing.Point(4, 38);
+            this.ResourcePlanTabControl.Location = new System.Drawing.Point(12, 35);
             this.ResourcePlanTabControl.Name = "ResourcePlanTabControl";
             this.ResourcePlanTabControl.SelectedIndex = 0;
-            this.ResourcePlanTabControl.Size = new System.Drawing.Size(875, 569);
+            this.ResourcePlanTabControl.Size = new System.Drawing.Size(855, 401);
             this.ResourcePlanTabControl.TabIndex = 2;
             // 
             // documentCtrlTabPG
             // 
-            this.documentCtrlTabPG.Controls.Add(this.dataGridView3);
+            this.documentCtrlTabPG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.documentCtrlTabPG.Controls.Add(this.dataGridViewDocApprovals);
             this.documentCtrlTabPG.Controls.Add(this.label3);
-            this.documentCtrlTabPG.Controls.Add(this.dataGridView2);
+            this.documentCtrlTabPG.Controls.Add(this.dataGridViewDocHistory);
             this.documentCtrlTabPG.Controls.Add(this.label2);
             this.documentCtrlTabPG.Controls.Add(this.docInfoGridData);
             this.documentCtrlTabPG.Controls.Add(this.dcmntInfoLabel);
-            this.documentCtrlTabPG.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.documentCtrlTabPG.Location = new System.Drawing.Point(4, 22);
+            this.documentCtrlTabPG.ForeColor = System.Drawing.Color.White;
+            this.documentCtrlTabPG.Location = new System.Drawing.Point(4, 21);
             this.documentCtrlTabPG.Name = "documentCtrlTabPG";
             this.documentCtrlTabPG.Padding = new System.Windows.Forms.Padding(3);
-            this.documentCtrlTabPG.Size = new System.Drawing.Size(867, 543);
+            this.documentCtrlTabPG.Size = new System.Drawing.Size(847, 376);
             this.documentCtrlTabPG.TabIndex = 0;
             this.documentCtrlTabPG.Text = "Document Control";
-            this.documentCtrlTabPG.UseVisualStyleBackColor = true;
             // 
-            // dataGridView3
+            // dataGridViewDocApprovals
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewDocApprovals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDocApprovals.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.approvalRole,
             this.approvalName,
             this.approvalSignature,
             this.approvalDate});
-            this.dataGridView3.Location = new System.Drawing.Point(180, 261);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.Size = new System.Drawing.Size(659, 124);
-            this.dataGridView3.TabIndex = 8;
+            this.dataGridViewDocApprovals.Location = new System.Drawing.Point(180, 241);
+            this.dataGridViewDocApprovals.Name = "dataGridViewDocApprovals";
+            this.dataGridViewDocApprovals.RowHeadersWidth = 51;
+            this.dataGridViewDocApprovals.Size = new System.Drawing.Size(659, 114);
+            this.dataGridViewDocApprovals.TabIndex = 8;
             // 
             // approvalRole
             // 
@@ -201,25 +184,25 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 12F);
-            this.label3.ForeColor = System.Drawing.Color.Navy;
-            this.label3.Location = new System.Drawing.Point(6, 295);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(6, 272);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(155, 19);
             this.label3.TabIndex = 7;
             this.label3.Text = "Document Approvals";
             // 
-            // dataGridView2
+            // dataGridViewDocHistory
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewDocHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDocHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Version,
             this.historyIssueDate,
             this.historyChanges});
-            this.dataGridView2.Location = new System.Drawing.Point(180, 136);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(659, 92);
-            this.dataGridView2.TabIndex = 6;
+            this.dataGridViewDocHistory.Location = new System.Drawing.Point(180, 126);
+            this.dataGridViewDocHistory.Name = "dataGridViewDocHistory";
+            this.dataGridViewDocHistory.RowHeadersWidth = 51;
+            this.dataGridViewDocHistory.Size = new System.Drawing.Size(659, 85);
+            this.dataGridViewDocHistory.TabIndex = 6;
             // 
             // Version
             // 
@@ -246,8 +229,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 12F);
-            this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(6, 159);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(6, 147);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(135, 19);
             this.label2.TabIndex = 5;
@@ -262,7 +245,7 @@
             this.docInfoGridData.Location = new System.Drawing.Point(180, 6);
             this.docInfoGridData.Name = "docInfoGridData";
             this.docInfoGridData.RowHeadersWidth = 51;
-            this.docInfoGridData.Size = new System.Drawing.Size(659, 88);
+            this.docInfoGridData.Size = new System.Drawing.Size(659, 81);
             this.docInfoGridData.TabIndex = 2;
             // 
             // docNameColumn
@@ -283,8 +266,8 @@
             // 
             this.dcmntInfoLabel.AutoSize = true;
             this.dcmntInfoLabel.Font = new System.Drawing.Font("Cambria", 12F);
-            this.dcmntInfoLabel.ForeColor = System.Drawing.Color.Navy;
-            this.dcmntInfoLabel.Location = new System.Drawing.Point(6, 40);
+            this.dcmntInfoLabel.ForeColor = System.Drawing.Color.White;
+            this.dcmntInfoLabel.Location = new System.Drawing.Point(6, 37);
             this.dcmntInfoLabel.Name = "dcmntInfoLabel";
             this.dcmntInfoLabel.Size = new System.Drawing.Size(167, 19);
             this.dcmntInfoLabel.TabIndex = 1;
@@ -292,33 +275,33 @@
             // 
             // resourceListTab
             // 
-            this.resourceListTab.Controls.Add(this.dataGridView5);
+            this.resourceListTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.resourceListTab.Controls.Add(this.dataGridViewMaterial);
             this.resourceListTab.Controls.Add(this.label4);
-            this.resourceListTab.Controls.Add(this.dataGridView4);
+            this.resourceListTab.Controls.Add(this.dataGridViewEquipment);
             this.resourceListTab.Controls.Add(this.equipmentLabel);
             this.resourceListTab.Controls.Add(this.laborDataGridView);
             this.resourceListTab.Controls.Add(this.laborLabel);
-            this.resourceListTab.Location = new System.Drawing.Point(4, 22);
+            this.resourceListTab.Location = new System.Drawing.Point(4, 21);
             this.resourceListTab.Name = "resourceListTab";
             this.resourceListTab.Padding = new System.Windows.Forms.Padding(3);
-            this.resourceListTab.Size = new System.Drawing.Size(867, 543);
+            this.resourceListTab.Size = new System.Drawing.Size(847, 376);
             this.resourceListTab.TabIndex = 1;
             this.resourceListTab.Text = "Resource Listing";
-            this.resourceListTab.UseVisualStyleBackColor = true;
             // 
-            // dataGridView5
+            // dataGridViewMaterial
             // 
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewMaterial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMaterial.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.material_ItemColumn,
             this.materialAmountColumn,
             this.materialsStartDateClmn,
             this.materialEndDateColumn});
-            this.dataGridView5.Location = new System.Drawing.Point(93, 286);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.RowHeadersWidth = 51;
-            this.dataGridView5.Size = new System.Drawing.Size(749, 124);
-            this.dataGridView5.TabIndex = 7;
+            this.dataGridViewMaterial.Location = new System.Drawing.Point(93, 264);
+            this.dataGridViewMaterial.Name = "dataGridViewMaterial";
+            this.dataGridViewMaterial.RowHeadersWidth = 51;
+            this.dataGridViewMaterial.Size = new System.Drawing.Size(749, 96);
+            this.dataGridViewMaterial.TabIndex = 7;
             // 
             // material_ItemColumn
             // 
@@ -348,28 +331,28 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 12F);
-            this.label4.ForeColor = System.Drawing.Color.Navy;
-            this.label4.Location = new System.Drawing.Point(3, 306);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(6, 302);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 19);
             this.label4.TabIndex = 6;
             this.label4.Text = "Materials";
             // 
-            // dataGridView4
+            // dataGridViewEquipment
             // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewEquipment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEquipment.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.itemColumn,
             this.amountColumn,
             this.purposeColumn,
             this.specificationColumn,
             this.equipmentStartDate,
             this.equipmentEndDateColumn});
-            this.dataGridView4.Location = new System.Drawing.Point(93, 159);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.RowHeadersWidth = 51;
-            this.dataGridView4.Size = new System.Drawing.Size(749, 103);
-            this.dataGridView4.TabIndex = 5;
+            this.dataGridViewEquipment.Location = new System.Drawing.Point(93, 135);
+            this.dataGridViewEquipment.Name = "dataGridViewEquipment";
+            this.dataGridViewEquipment.RowHeadersWidth = 51;
+            this.dataGridViewEquipment.Size = new System.Drawing.Size(749, 104);
+            this.dataGridViewEquipment.TabIndex = 5;
             // 
             // itemColumn
             // 
@@ -415,8 +398,8 @@
             // 
             this.equipmentLabel.AutoSize = true;
             this.equipmentLabel.Font = new System.Drawing.Font("Cambria", 12F);
-            this.equipmentLabel.ForeColor = System.Drawing.Color.Navy;
-            this.equipmentLabel.Location = new System.Drawing.Point(3, 200);
+            this.equipmentLabel.ForeColor = System.Drawing.Color.White;
+            this.equipmentLabel.Location = new System.Drawing.Point(6, 171);
             this.equipmentLabel.Name = "equipmentLabel";
             this.equipmentLabel.Size = new System.Drawing.Size(84, 19);
             this.equipmentLabel.TabIndex = 4;
@@ -432,10 +415,10 @@
             this.dataGridViewTextBoxColumn4,
             this.startDateColumn,
             this.endDateColumn});
-            this.laborDataGridView.Location = new System.Drawing.Point(93, 15);
+            this.laborDataGridView.Location = new System.Drawing.Point(93, 14);
             this.laborDataGridView.Name = "laborDataGridView";
             this.laborDataGridView.RowHeadersWidth = 51;
-            this.laborDataGridView.Size = new System.Drawing.Size(749, 124);
+            this.laborDataGridView.Size = new System.Drawing.Size(749, 94);
             this.laborDataGridView.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn1
@@ -482,8 +465,8 @@
             // 
             this.laborLabel.AutoSize = true;
             this.laborLabel.Font = new System.Drawing.Font("Cambria", 12F);
-            this.laborLabel.ForeColor = System.Drawing.Color.Navy;
-            this.laborLabel.Location = new System.Drawing.Point(6, 59);
+            this.laborLabel.ForeColor = System.Drawing.Color.White;
+            this.laborLabel.Location = new System.Drawing.Point(6, 54);
             this.laborLabel.Name = "laborLabel";
             this.laborLabel.Size = new System.Drawing.Size(51, 19);
             this.laborLabel.TabIndex = 0;
@@ -491,25 +474,26 @@
             // 
             // resourcePlabTab
             // 
+            this.resourcePlabTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.resourcePlabTab.Controls.Add(this.btnSaveResourcePlan);
             this.resourcePlabTab.Controls.Add(this.constraintsLabel);
             this.resourcePlabTab.Controls.Add(this.assumptionsLabel);
-            this.resourcePlabTab.Controls.Add(this.textBox2);
-            this.resourcePlabTab.Controls.Add(this.textBox1);
+            this.resourcePlabTab.Controls.Add(this.txtRPConstraints);
+            this.resourcePlabTab.Controls.Add(this.txtRPAssumptions);
             this.resourcePlabTab.Controls.Add(this.resourcePlanLabel);
-            this.resourcePlabTab.Controls.Add(this.dataGridView6);
-            this.resourcePlabTab.Location = new System.Drawing.Point(4, 22);
+            this.resourcePlabTab.Controls.Add(this.dataGridViewResourcePlanSchedule);
+            this.resourcePlabTab.Location = new System.Drawing.Point(4, 21);
             this.resourcePlabTab.Name = "resourcePlabTab";
             this.resourcePlabTab.Padding = new System.Windows.Forms.Padding(3);
-            this.resourcePlabTab.Size = new System.Drawing.Size(867, 543);
+            this.resourcePlabTab.Size = new System.Drawing.Size(847, 376);
             this.resourcePlabTab.TabIndex = 2;
             this.resourcePlabTab.Text = "Resource Plan";
-            this.resourcePlabTab.UseVisualStyleBackColor = true;
             // 
             // constraintsLabel
             // 
             this.constraintsLabel.AutoSize = true;
             this.constraintsLabel.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.constraintsLabel.Location = new System.Drawing.Point(469, 251);
+            this.constraintsLabel.Location = new System.Drawing.Point(438, 212);
             this.constraintsLabel.Name = "constraintsLabel";
             this.constraintsLabel.Size = new System.Drawing.Size(88, 19);
             this.constraintsLabel.TabIndex = 5;
@@ -519,42 +503,46 @@
             // 
             this.assumptionsLabel.AutoSize = true;
             this.assumptionsLabel.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.assumptionsLabel.Location = new System.Drawing.Point(12, 248);
+            this.assumptionsLabel.Location = new System.Drawing.Point(9, 211);
             this.assumptionsLabel.Name = "assumptionsLabel";
             this.assumptionsLabel.Size = new System.Drawing.Size(98, 19);
             this.assumptionsLabel.TabIndex = 4;
             this.assumptionsLabel.Text = "Assumptions";
             // 
-            // textBox2
+            // txtRPConstraints
             // 
-            this.textBox2.Location = new System.Drawing.Point(458, 271);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(396, 250);
-            this.textBox2.TabIndex = 3;
+            this.txtRPConstraints.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtRPConstraints.ForeColor = System.Drawing.Color.White;
+            this.txtRPConstraints.Location = new System.Drawing.Point(442, 233);
+            this.txtRPConstraints.Multiline = true;
+            this.txtRPConstraints.Name = "txtRPConstraints";
+            this.txtRPConstraints.Size = new System.Drawing.Size(396, 108);
+            this.txtRPConstraints.TabIndex = 3;
             // 
-            // textBox1
+            // txtRPAssumptions
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 271);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(415, 250);
-            this.textBox1.TabIndex = 2;
+            this.txtRPAssumptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtRPAssumptions.ForeColor = System.Drawing.Color.White;
+            this.txtRPAssumptions.Location = new System.Drawing.Point(9, 233);
+            this.txtRPAssumptions.Multiline = true;
+            this.txtRPAssumptions.Name = "txtRPAssumptions";
+            this.txtRPAssumptions.Size = new System.Drawing.Size(415, 108);
+            this.txtRPAssumptions.TabIndex = 2;
             // 
             // resourcePlanLabel
             // 
             this.resourcePlanLabel.AutoSize = true;
             this.resourcePlanLabel.Font = new System.Drawing.Font("Cambria", 12F);
-            this.resourcePlanLabel.Location = new System.Drawing.Point(12, 7);
+            this.resourcePlanLabel.Location = new System.Drawing.Point(12, 6);
             this.resourcePlanLabel.Name = "resourcePlanLabel";
             this.resourcePlanLabel.Size = new System.Drawing.Size(71, 19);
             this.resourcePlanLabel.TabIndex = 1;
             this.resourcePlanLabel.Text = "Schedule";
             // 
-            // dataGridView6
+            // dataGridViewResourcePlanSchedule
             // 
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewResourcePlanSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewResourcePlanSchedule.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ResourceColumn,
             this.janColumn,
             this.febColomn,
@@ -569,10 +557,10 @@
             this.novColumn,
             this.decColumn,
             this.totalColumn});
-            this.dataGridView6.Location = new System.Drawing.Point(12, 45);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(842, 200);
-            this.dataGridView6.TabIndex = 0;
+            this.dataGridViewResourcePlanSchedule.Location = new System.Drawing.Point(9, 28);
+            this.dataGridViewResourcePlanSchedule.Name = "dataGridViewResourcePlanSchedule";
+            this.dataGridViewResourcePlanSchedule.Size = new System.Drawing.Size(832, 185);
+            this.dataGridViewResourcePlanSchedule.TabIndex = 0;
             // 
             // ResourceColumn
             // 
@@ -658,61 +646,93 @@
             // 
             // appendixTabPage
             // 
+            this.appendixTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.appendixTabPage.Font = new System.Drawing.Font("Cambria", 10F);
-            this.appendixTabPage.Location = new System.Drawing.Point(4, 22);
+            this.appendixTabPage.Location = new System.Drawing.Point(4, 21);
             this.appendixTabPage.Name = "appendixTabPage";
             this.appendixTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.appendixTabPage.Size = new System.Drawing.Size(867, 543);
+            this.appendixTabPage.Size = new System.Drawing.Size(847, 376);
             this.appendixTabPage.TabIndex = 3;
             this.appendixTabPage.Text = "Appendix";
-            this.appendixTabPage.UseVisualStyleBackColor = true;
             // 
-            // btnResourceSave
+            // btnSaveProjectName
             // 
-            this.btnResourceSave.Location = new System.Drawing.Point(376, 13);
-            this.btnResourceSave.Name = "btnResourceSave";
-            this.btnResourceSave.Size = new System.Drawing.Size(75, 23);
-            this.btnResourceSave.TabIndex = 3;
-            this.btnResourceSave.Text = "Save";
-            this.btnResourceSave.UseVisualStyleBackColor = true;
-            this.btnResourceSave.Click += new System.EventHandler(this.btnResourceSave_Click);
+            this.btnSaveProjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSaveProjectName.Location = new System.Drawing.Point(772, 8);
+            this.btnSaveProjectName.Name = "btnSaveProjectName";
+            this.btnSaveProjectName.Size = new System.Drawing.Size(95, 42);
+            this.btnSaveProjectName.TabIndex = 3;
+            this.btnSaveProjectName.Text = "Save Project Name";
+            this.btnSaveProjectName.UseVisualStyleBackColor = true;
+            this.btnSaveProjectName.Click += new System.EventHandler(this.btnResourceSave_Click);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.Location = new System.Drawing.Point(4, 12);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(153, 12);
+            this.label27.TabIndex = 20;
+            this.label27.Text = "Please Enter Your Project Name:";
+            // 
+            // txtProjectName
+            // 
+            this.txtProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtProjectName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProjectName.ForeColor = System.Drawing.Color.White;
+            this.txtProjectName.Location = new System.Drawing.Point(173, 9);
+            this.txtProjectName.Name = "txtProjectName";
+            this.txtProjectName.Size = new System.Drawing.Size(113, 20);
+            this.txtProjectName.TabIndex = 19;
+            this.txtProjectName.Text = "Project Name";
+            // 
+            // btnSaveResourcePlan
+            // 
+            this.btnSaveResourcePlan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSaveResourcePlan.Location = new System.Drawing.Point(379, 347);
+            this.btnSaveResourcePlan.Name = "btnSaveResourcePlan";
+            this.btnSaveResourcePlan.Size = new System.Drawing.Size(114, 22);
+            this.btnSaveResourcePlan.TabIndex = 21;
+            this.btnSaveResourcePlan.Text = "Save Resource Plan";
+            this.btnSaveResourcePlan.UseVisualStyleBackColor = true;
             // 
             // ResourcePlanDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(879, 512);
-            this.Controls.Add(this.btnResourceSave);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.ClientSize = new System.Drawing.Size(879, 448);
+            this.Controls.Add(this.label27);
+            this.Controls.Add(this.txtProjectName);
+            this.Controls.Add(this.btnSaveProjectName);
             this.Controls.Add(this.ResourcePlanTabControl);
-            this.Controls.Add(this.textBoxProjectName);
-            this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "ResourcePlanDocumentForm";
             this.Text = "ResourcePlanDocumentForm";
             this.Load += new System.EventHandler(this.ResourcePlanDocumentForm_Load);
             this.ResourcePlanTabControl.ResumeLayout(false);
             this.documentCtrlTabPG.ResumeLayout(false);
             this.documentCtrlTabPG.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocApprovals)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocHistory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.docInfoGridData)).EndInit();
             this.resourceListTab.ResumeLayout(false);
             this.resourceListTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMaterial)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEquipment)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.laborDataGridView)).EndInit();
             this.resourcePlabTab.ResumeLayout(false);
             this.resourcePlabTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResourcePlanSchedule)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxProjectName;
         private System.Windows.Forms.TabControl ResourcePlanTabControl;
         private System.Windows.Forms.TabPage documentCtrlTabPG;
         private System.Windows.Forms.DataGridView docInfoGridData;
@@ -723,23 +743,23 @@
         private System.Windows.Forms.TabPage resourcePlabTab;
         private System.Windows.Forms.TabPage appendixTabPage;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dataGridViewDocApprovals;
         private System.Windows.Forms.DataGridViewTextBoxColumn approvalRole;
         private System.Windows.Forms.DataGridViewTextBoxColumn approvalName;
         private System.Windows.Forms.DataGridViewTextBoxColumn approvalSignature;
         private System.Windows.Forms.DataGridViewTextBoxColumn approvalDate;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridViewDocHistory;
         private System.Windows.Forms.DataGridViewTextBoxColumn Version;
         private System.Windows.Forms.DataGridViewTextBoxColumn historyIssueDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn historyChanges;
-        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.DataGridView dataGridViewMaterial;
         private System.Windows.Forms.DataGridViewTextBoxColumn material_ItemColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn materialAmountColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn materialsStartDateClmn;
         private System.Windows.Forms.DataGridViewTextBoxColumn materialEndDateColumn;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridView dataGridViewEquipment;
         private System.Windows.Forms.DataGridViewTextBoxColumn itemColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn amountColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn purposeColumn;
@@ -757,10 +777,10 @@
         private System.Windows.Forms.Label laborLabel;
         private System.Windows.Forms.Label constraintsLabel;
         private System.Windows.Forms.Label assumptionsLabel;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtRPConstraints;
+        private System.Windows.Forms.TextBox txtRPAssumptions;
         private System.Windows.Forms.Label resourcePlanLabel;
-        private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.DataGridView dataGridViewResourcePlanSchedule;
         private System.Windows.Forms.DataGridViewTextBoxColumn ResourceColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn janColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn febColomn;
@@ -775,6 +795,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn novColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn decColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn totalColumn;
-        private System.Windows.Forms.Button btnResourceSave;
+        private System.Windows.Forms.Button btnSaveProjectName;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox txtProjectName;
+        private System.Windows.Forms.Button btnSaveResourcePlan;
     }
 }

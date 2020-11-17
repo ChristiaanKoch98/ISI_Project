@@ -233,5 +233,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 dataGridView1.AllowUserToAddRows = false;
             }
         }
+
+        private void btnResourceSave_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
