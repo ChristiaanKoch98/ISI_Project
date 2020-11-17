@@ -225,6 +225,12 @@
     <Compile Include="MPMM\MPMM Document Forms\QualityPlanDocumentForm.Designer.cs">
       <DependentUpon>QualityPlanDocumentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\QualityRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\QualityRegister.Designer.cs">
+      <DependentUpon>QualityRegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="MPMM\MPMM Document Forms\QualityReviewPlanDocumentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -539,6 +545,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\QualityPlanDocumentForm.resx">
       <DependentUpon>QualityPlanDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\QualityRegister.resx">
+      <DependentUpon>QualityRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\RequestForInformationDocumentForm.resx">
       <DependentUpon>RequestForInformationDocumentForm.cs</DependentUpon>
