@@ -295,6 +295,5 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 documentInformation.AllowUserToAddRows = false;
             }
         }
-       
     }
 }

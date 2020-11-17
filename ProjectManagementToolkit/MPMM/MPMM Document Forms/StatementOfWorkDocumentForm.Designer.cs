@@ -39,11 +39,10 @@
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -51,6 +50,9 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -65,11 +67,10 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnStatementSave = new System.Windows.Forms.Button();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -189,21 +190,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(246, 72);
             this.dataGridView2.TabIndex = 3;
             // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Version";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Issue Date";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Changes";
-            this.Column5.Name = "Column5";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -220,10 +206,20 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Type,
             this.Column2});
-            this.dataGridView1.Location = new System.Drawing.Point(125, 24);
+            this.dataGridView1.Location = new System.Drawing.Point(124, 19);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(242, 74);
+            this.dataGridView1.Size = new System.Drawing.Size(243, 74);
             this.dataGridView1.TabIndex = 1;
+            // 
+            // Type
+            // 
+            this.Type.HeaderText = "Type";
+            this.Type.Name = "Type";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Information";
+            this.Column2.Name = "Column2";
             // 
             // label2
             // 
@@ -293,6 +289,21 @@
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.Size = new System.Drawing.Size(355, 167);
             this.dataGridView4.TabIndex = 0;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Item Title";
+            this.Column10.Name = "Column10";
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "Item Description";
+            this.Column11.Name = "Column11";
+            // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "Item Quantity";
+            this.Column12.Name = "Column12";
             // 
             // tabPage5
             // 
@@ -424,36 +435,37 @@
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 0;
             // 
-            // Type
+            // btnStatementSave
             // 
-            this.Type.HeaderText = "Type";
-            this.Type.Name = "Type";
+            this.btnStatementSave.Location = new System.Drawing.Point(344, 10);
+            this.btnStatementSave.Name = "btnStatementSave";
+            this.btnStatementSave.Size = new System.Drawing.Size(75, 20);
+            this.btnStatementSave.TabIndex = 3;
+            this.btnStatementSave.Text = "Save";
+            this.btnStatementSave.UseVisualStyleBackColor = true;
+            this.btnStatementSave.Click += new System.EventHandler(this.btnStatementSave_Click);
             // 
-            // Column2
+            // Column3
             // 
-            this.Column2.HeaderText = "Information";
-            this.Column2.Name = "Column2";
+            this.Column3.HeaderText = "Version";
+            this.Column3.Name = "Column3";
             // 
-            // Column10
+            // Column4
             // 
-            this.Column10.HeaderText = "Item Title";
-            this.Column10.Name = "Column10";
+            this.Column4.HeaderText = "Issue Date";
+            this.Column4.Name = "Column4";
             // 
-            // Column11
+            // Column5
             // 
-            this.Column11.HeaderText = "Item Description";
-            this.Column11.Name = "Column11";
-            // 
-            // Column12
-            // 
-            this.Column12.HeaderText = "Item Quantity";
-            this.Column12.Name = "Column12";
+            this.Column5.HeaderText = "Changes";
+            this.Column5.Name = "Column5";
             // 
             // StatementOfWorkDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 487);
+            this.Controls.Add(this.btnStatementSave);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -490,9 +502,6 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
@@ -525,5 +534,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.Button btnStatementSave;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }

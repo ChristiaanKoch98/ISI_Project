@@ -109,11 +109,10 @@
             this.tabControl1.Controls.Add(this.projectPlan);
             this.tabControl1.Controls.Add(this.appendix);
             this.tabControl1.Controls.Add(this.schedule);
-            this.tabControl1.Location = new System.Drawing.Point(16, 15);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1229, 607);
+            this.tabControl1.Size = new System.Drawing.Size(922, 493);
             this.tabControl1.TabIndex = 0;
             // 
             // documentControl
@@ -125,11 +124,10 @@
             this.documentControl.Controls.Add(this.documentApprovalsDataGridView);
             this.documentControl.Controls.Add(this.documentHistoryDataGridView);
             this.documentControl.Controls.Add(this.documentInformation);
-            this.documentControl.Location = new System.Drawing.Point(4, 25);
-            this.documentControl.Margin = new System.Windows.Forms.Padding(4);
+            this.documentControl.Location = new System.Drawing.Point(4, 22);
             this.documentControl.Name = "documentControl";
-            this.documentControl.Padding = new System.Windows.Forms.Padding(4);
-            this.documentControl.Size = new System.Drawing.Size(1221, 578);
+            this.documentControl.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.documentControl.Size = new System.Drawing.Size(914, 467);
             this.documentControl.TabIndex = 0;
             this.documentControl.Text = "Document Control";
             // 
@@ -141,10 +139,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 11F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(7, 389);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(5, 316);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 22);
+            this.label3.Size = new System.Drawing.Size(140, 17);
             this.label3.TabIndex = 11;
             this.label3.Text = "Document Approvals";
             // 
@@ -156,10 +153,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 11F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(7, 233);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(5, 189);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(158, 22);
+            this.label2.Size = new System.Drawing.Size(123, 17);
             this.label2.TabIndex = 10;
             this.label2.Text = "Document History";
             // 
@@ -171,10 +167,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 11F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(7, 70);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(5, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 22);
+            this.label1.Size = new System.Drawing.Size(152, 17);
             this.label1.TabIndex = 9;
             this.label1.Text = "Document Information";
             // 
@@ -189,11 +184,10 @@
             this.approvalName,
             this.approvalSignature,
             this.approvalDate});
-            this.documentApprovalsDataGridView.Location = new System.Drawing.Point(221, 315);
-            this.documentApprovalsDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.documentApprovalsDataGridView.Location = new System.Drawing.Point(166, 256);
             this.documentApprovalsDataGridView.Name = "documentApprovalsDataGridView";
             this.documentApprovalsDataGridView.RowHeadersWidth = 51;
-            this.documentApprovalsDataGridView.Size = new System.Drawing.Size(921, 153);
+            this.documentApprovalsDataGridView.Size = new System.Drawing.Size(691, 124);
             this.documentApprovalsDataGridView.TabIndex = 8;
             // 
             // approvalRole
@@ -236,11 +230,10 @@
             this.Version,
             this.historyIssueDate,
             this.historyChanges});
-            this.documentHistoryDataGridView.Location = new System.Drawing.Point(221, 162);
-            this.documentHistoryDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.documentHistoryDataGridView.Location = new System.Drawing.Point(166, 132);
             this.documentHistoryDataGridView.Name = "documentHistoryDataGridView";
             this.documentHistoryDataGridView.RowHeadersWidth = 51;
-            this.documentHistoryDataGridView.Size = new System.Drawing.Size(921, 145);
+            this.documentHistoryDataGridView.Size = new System.Drawing.Size(691, 118);
             this.documentHistoryDataGridView.TabIndex = 7;
             // 
             // Version
@@ -273,11 +266,10 @@
             this.documentInformation.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Type,
             this.Information});
-            this.documentInformation.Location = new System.Drawing.Point(221, 22);
-            this.documentInformation.Margin = new System.Windows.Forms.Padding(4);
+            this.documentInformation.Location = new System.Drawing.Point(166, 18);
             this.documentInformation.Name = "documentInformation";
             this.documentInformation.RowHeadersWidth = 51;
-            this.documentInformation.Size = new System.Drawing.Size(921, 133);
+            this.documentInformation.Size = new System.Drawing.Size(691, 108);
             this.documentInformation.TabIndex = 6;
             // 
             // Type
@@ -308,11 +300,10 @@
             this.workBreakStructure.Controls.Add(this.activitiesDataGridView);
             this.workBreakStructure.Controls.Add(this.label4);
             this.workBreakStructure.Controls.Add(this.phasesDataGridView);
-            this.workBreakStructure.Location = new System.Drawing.Point(4, 25);
-            this.workBreakStructure.Margin = new System.Windows.Forms.Padding(4);
+            this.workBreakStructure.Location = new System.Drawing.Point(4, 22);
             this.workBreakStructure.Name = "workBreakStructure";
-            this.workBreakStructure.Padding = new System.Windows.Forms.Padding(4);
-            this.workBreakStructure.Size = new System.Drawing.Size(1221, 578);
+            this.workBreakStructure.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.workBreakStructure.Size = new System.Drawing.Size(914, 467);
             this.workBreakStructure.TabIndex = 1;
             this.workBreakStructure.Text = "Work Breakdown Structure";
             // 
@@ -324,10 +315,9 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Cambria", 11F);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(9, 517);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(7, 420);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(145, 22);
+            this.label8.Size = new System.Drawing.Size(114, 17);
             this.label8.TabIndex = 13;
             this.label8.Text = "Document Effort";
             // 
@@ -341,11 +331,10 @@
             this.effortTaskTitle,
             this.resource,
             this.effortMade});
-            this.effortDataGridView.Location = new System.Drawing.Point(224, 469);
-            this.effortDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.effortDataGridView.Location = new System.Drawing.Point(168, 381);
             this.effortDataGridView.Name = "effortDataGridView";
             this.effortDataGridView.RowHeadersWidth = 51;
-            this.effortDataGridView.Size = new System.Drawing.Size(959, 103);
+            this.effortDataGridView.Size = new System.Drawing.Size(719, 84);
             this.effortDataGridView.TabIndex = 12;
             // 
             // effortTaskTitle
@@ -377,10 +366,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cambria", 11F);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(9, 406);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(7, 330);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 22);
+            this.label7.Size = new System.Drawing.Size(75, 17);
             this.label7.TabIndex = 11;
             this.label7.Text = "Milestones";
             // 
@@ -394,11 +382,10 @@
             this.milestoneTitle,
             this.milestoneDescription,
             this.milestoneDate});
-            this.milestonesDataGridView.Location = new System.Drawing.Point(224, 358);
-            this.milestonesDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.milestonesDataGridView.Location = new System.Drawing.Point(168, 291);
             this.milestonesDataGridView.Name = "milestonesDataGridView";
             this.milestonesDataGridView.RowHeadersWidth = 51;
-            this.milestonesDataGridView.Size = new System.Drawing.Size(959, 103);
+            this.milestonesDataGridView.Size = new System.Drawing.Size(719, 84);
             this.milestonesDataGridView.TabIndex = 10;
             // 
             // milestoneTitle
@@ -430,10 +417,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cambria", 11F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(9, 295);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(7, 240);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 22);
+            this.label6.Size = new System.Drawing.Size(43, 17);
             this.label6.TabIndex = 9;
             this.label6.Text = "Tasks";
             // 
@@ -448,11 +434,10 @@
             this.taskTitle,
             this.taskDescription,
             this.taskSequence});
-            this.tasksDataGridView.Location = new System.Drawing.Point(224, 247);
-            this.tasksDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.tasksDataGridView.Location = new System.Drawing.Point(168, 201);
             this.tasksDataGridView.Name = "tasksDataGridView";
             this.tasksDataGridView.RowHeadersWidth = 51;
-            this.tasksDataGridView.Size = new System.Drawing.Size(959, 103);
+            this.tasksDataGridView.Size = new System.Drawing.Size(719, 84);
             this.tasksDataGridView.TabIndex = 8;
             // 
             // tasksActivityTitle
@@ -491,10 +476,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 11F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(9, 185);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(7, 150);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 22);
+            this.label5.Size = new System.Drawing.Size(67, 17);
             this.label5.TabIndex = 7;
             this.label5.Text = "Activities";
             // 
@@ -509,11 +493,10 @@
             this.activityTitle,
             this.activityDescription,
             this.activitySequence});
-            this.activitiesDataGridView.Location = new System.Drawing.Point(224, 137);
-            this.activitiesDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.activitiesDataGridView.Location = new System.Drawing.Point(168, 111);
             this.activitiesDataGridView.Name = "activitiesDataGridView";
             this.activitiesDataGridView.RowHeadersWidth = 51;
-            this.activitiesDataGridView.Size = new System.Drawing.Size(959, 103);
+            this.activitiesDataGridView.Size = new System.Drawing.Size(719, 84);
             this.activitiesDataGridView.TabIndex = 6;
             // 
             // activitiesPhaseTitle
@@ -552,10 +535,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 11F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(13, 68);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(10, 55);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 22);
+            this.label4.Size = new System.Drawing.Size(51, 17);
             this.label4.TabIndex = 5;
             this.label4.Text = "Phases";
             // 
@@ -569,11 +551,10 @@
             this.phaseTitle,
             this.phaseDescription,
             this.phaseSequence});
-            this.phasesDataGridView.Location = new System.Drawing.Point(224, 26);
-            this.phasesDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.phasesDataGridView.Location = new System.Drawing.Point(168, 21);
             this.phasesDataGridView.Name = "phasesDataGridView";
             this.phasesDataGridView.RowHeadersWidth = 51;
-            this.phasesDataGridView.Size = new System.Drawing.Size(959, 103);
+            this.phasesDataGridView.Size = new System.Drawing.Size(719, 84);
             this.phasesDataGridView.TabIndex = 4;
             // 
             // phaseTitle
@@ -604,11 +585,10 @@
             this.projectPlan.Controls.Add(this.assumptionsTxt);
             this.projectPlan.Controls.Add(this.label9);
             this.projectPlan.Controls.Add(this.dependenciesDataGridView);
-            this.projectPlan.Location = new System.Drawing.Point(4, 25);
-            this.projectPlan.Margin = new System.Windows.Forms.Padding(4);
+            this.projectPlan.Location = new System.Drawing.Point(4, 22);
             this.projectPlan.Name = "projectPlan";
-            this.projectPlan.Padding = new System.Windows.Forms.Padding(4);
-            this.projectPlan.Size = new System.Drawing.Size(1221, 578);
+            this.projectPlan.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.projectPlan.Size = new System.Drawing.Size(914, 467);
             this.projectPlan.TabIndex = 2;
             this.projectPlan.Text = "Project Plan";
             // 
@@ -620,11 +600,10 @@
             this.constrainsTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.constrainsTxt.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.constrainsTxt.ForeColor = System.Drawing.Color.White;
-            this.constrainsTxt.Location = new System.Drawing.Point(771, 252);
-            this.constrainsTxt.Margin = new System.Windows.Forms.Padding(4);
+            this.constrainsTxt.Location = new System.Drawing.Point(578, 205);
             this.constrainsTxt.Multiline = true;
             this.constrainsTxt.Name = "constrainsTxt";
-            this.constrainsTxt.Size = new System.Drawing.Size(389, 283);
+            this.constrainsTxt.Size = new System.Drawing.Size(293, 231);
             this.constrainsTxt.TabIndex = 10;
             this.constrainsTxt.Text = "Constrains";
             // 
@@ -636,11 +615,10 @@
             this.assumptionsTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.assumptionsTxt.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.assumptionsTxt.ForeColor = System.Drawing.Color.White;
-            this.assumptionsTxt.Location = new System.Drawing.Point(203, 252);
-            this.assumptionsTxt.Margin = new System.Windows.Forms.Padding(4);
+            this.assumptionsTxt.Location = new System.Drawing.Point(152, 205);
             this.assumptionsTxt.Multiline = true;
             this.assumptionsTxt.Name = "assumptionsTxt";
-            this.assumptionsTxt.Size = new System.Drawing.Size(380, 283);
+            this.assumptionsTxt.Size = new System.Drawing.Size(286, 231);
             this.assumptionsTxt.TabIndex = 9;
             this.assumptionsTxt.Text = "Assumptions";
             // 
@@ -652,10 +630,9 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Cambria", 11F);
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(8, 112);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(6, 91);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(84, 22);
+            this.label9.Size = new System.Drawing.Size(67, 17);
             this.label9.TabIndex = 8;
             this.label9.Text = "Activities";
             // 
@@ -669,11 +646,10 @@
             this.dependencyActivityTitle,
             this.dependsOn,
             this.dependencyType});
-            this.dependenciesDataGridView.Location = new System.Drawing.Point(203, 89);
-            this.dependenciesDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.dependenciesDataGridView.Location = new System.Drawing.Point(152, 72);
             this.dependenciesDataGridView.Name = "dependenciesDataGridView";
             this.dependenciesDataGridView.RowHeadersWidth = 51;
-            this.dependenciesDataGridView.Size = new System.Drawing.Size(959, 103);
+            this.dependenciesDataGridView.Size = new System.Drawing.Size(719, 84);
             this.dependenciesDataGridView.TabIndex = 7;
             // 
             // dependencyActivityTitle
@@ -700,30 +676,29 @@
             // appendix
             // 
             this.appendix.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.appendix.Location = new System.Drawing.Point(4, 25);
-            this.appendix.Margin = new System.Windows.Forms.Padding(4);
+            this.appendix.Location = new System.Drawing.Point(4, 22);
             this.appendix.Name = "appendix";
-            this.appendix.Padding = new System.Windows.Forms.Padding(4);
-            this.appendix.Size = new System.Drawing.Size(1221, 578);
+            this.appendix.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.appendix.Size = new System.Drawing.Size(914, 467);
             this.appendix.TabIndex = 3;
             this.appendix.Text = "Appendix";
             // 
             // schedule
             // 
             this.schedule.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.schedule.Location = new System.Drawing.Point(4, 25);
-            this.schedule.Margin = new System.Windows.Forms.Padding(4);
+            this.schedule.Location = new System.Drawing.Point(4, 22);
             this.schedule.Name = "schedule";
-            this.schedule.Padding = new System.Windows.Forms.Padding(4);
-            this.schedule.Size = new System.Drawing.Size(1221, 578);
+            this.schedule.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.schedule.Size = new System.Drawing.Size(914, 467);
             this.schedule.TabIndex = 4;
             this.schedule.Text = "Schedule";
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(711, 6);
+            this.btnSave.Location = new System.Drawing.Point(533, 5);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(179, 27);
+            this.btnSave.Size = new System.Drawing.Size(134, 22);
             this.btnSave.TabIndex = 12;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -731,13 +706,12 @@
             // 
             // ProjectPlanDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(1261, 636);
+            this.ClientSize = new System.Drawing.Size(946, 517);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ProjectPlanDocumentForm";
             this.Text = "ProjectPlanDocumentForm";
             this.Load += new System.EventHandler(this.ProjectPlanDocumentForm_Load);
