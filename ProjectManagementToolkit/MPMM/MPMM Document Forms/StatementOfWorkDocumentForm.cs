@@ -156,11 +156,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 string json = JsonConvert.SerializeObject(versionControl);
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "StatementOfWork");
-                MessageBox.Show("PStatement of Work saved successfully", "save", MessageBoxButtons.OK);
+                MessageBox.Show("Statement of Work saved successfully", "save", MessageBoxButtons.OK);
             }
-
-
-
         }
 
         public void loadDocument()
