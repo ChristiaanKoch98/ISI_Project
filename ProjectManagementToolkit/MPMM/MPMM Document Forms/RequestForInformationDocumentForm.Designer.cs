@@ -28,6 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label27 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -38,6 +47,7 @@
             this.dataGridViewDocumentHistory = new System.Windows.Forms.DataGridView();
             this.dataGridViewDocumentInformation = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnSaveIntroductionInfo = new System.Windows.Forms.Button();
             this.txtOverview = new System.Windows.Forms.TextBox();
             this.txtQuestions = new System.Windows.Forms.TextBox();
             this.txtRules = new System.Windows.Forms.TextBox();
@@ -80,7 +90,15 @@
             this.listBoxConfidentiality = new System.Windows.Forms.ListBox();
             this.txtProjectName = new System.Windows.Forms.TextBox();
             this.btnSaveProjectNameRequestForInfo = new System.Windows.Forms.Button();
-            this.btnSaveIntroductionInfo = new System.Windows.Forms.Button();
+            this.InfoType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InfoInformation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HistVersion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HistIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HistChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AppRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AppName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AppChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AppDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentApprovals)).BeginInit();
@@ -99,7 +117,7 @@
             this.label27.ForeColor = System.Drawing.Color.White;
             this.label27.Location = new System.Drawing.Point(11, 11);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(153, 12);
+            this.label27.Size = new System.Drawing.Size(244, 20);
             this.label27.TabIndex = 9;
             this.label27.Text = "Please Enter Your Project Name:";
             // 
@@ -125,10 +143,10 @@
             this.tabPage1.Controls.Add(this.dataGridViewDocumentApprovals);
             this.tabPage1.Controls.Add(this.dataGridViewDocumentHistory);
             this.tabPage1.Controls.Add(this.dataGridViewDocumentInformation);
-            this.tabPage1.Location = new System.Drawing.Point(4, 21);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(768, 344);
+            this.tabPage1.Size = new System.Drawing.Size(768, 336);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Document Control";
             // 
@@ -142,7 +160,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(7, 281);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 17);
+            this.label3.Size = new System.Drawing.Size(210, 26);
             this.label3.TabIndex = 5;
             this.label3.Text = "Document Approvals";
             // 
@@ -156,7 +174,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(7, 163);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 17);
+            this.label2.Size = new System.Drawing.Size(183, 26);
             this.label2.TabIndex = 4;
             this.label2.Text = "Document History";
             // 
@@ -170,7 +188,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(7, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 17);
+            this.label1.Size = new System.Drawing.Size(227, 26);
             this.label1.TabIndex = 3;
             this.label1.Text = "Document Information";
             // 
@@ -180,8 +198,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewDocumentApprovals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDocumentApprovals.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.AppRole,
+            this.AppName,
+            this.AppChanges,
+            this.AppDate});
             this.dataGridViewDocumentApprovals.Location = new System.Drawing.Point(168, 225);
             this.dataGridViewDocumentApprovals.Name = "dataGridViewDocumentApprovals";
+            this.dataGridViewDocumentApprovals.RowHeadersWidth = 62;
             this.dataGridViewDocumentApprovals.Size = new System.Drawing.Size(594, 114);
             this.dataGridViewDocumentApprovals.TabIndex = 2;
             // 
@@ -191,8 +215,13 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewDocumentHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDocumentHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.HistVersion,
+            this.HistIssueDate,
+            this.HistChanges});
             this.dataGridViewDocumentHistory.Location = new System.Drawing.Point(168, 111);
             this.dataGridViewDocumentHistory.Name = "dataGridViewDocumentHistory";
+            this.dataGridViewDocumentHistory.RowHeadersWidth = 62;
             this.dataGridViewDocumentHistory.Size = new System.Drawing.Size(594, 109);
             this.dataGridViewDocumentHistory.TabIndex = 1;
             // 
@@ -202,8 +231,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewDocumentInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDocumentInformation.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.InfoType,
+            this.InfoInformation});
             this.dataGridViewDocumentInformation.Location = new System.Drawing.Point(168, 6);
             this.dataGridViewDocumentInformation.Name = "dataGridViewDocumentInformation";
+            this.dataGridViewDocumentInformation.RowHeadersWidth = 62;
             this.dataGridViewDocumentInformation.Size = new System.Drawing.Size(594, 100);
             this.dataGridViewDocumentInformation.TabIndex = 0;
             // 
@@ -218,12 +251,23 @@
             this.tabPage2.Controls.Add(this.txtAcknowledgement);
             this.tabPage2.Controls.Add(this.txtRecipiants);
             this.tabPage2.Controls.Add(this.txtPurpose);
-            this.tabPage2.Location = new System.Drawing.Point(4, 21);
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(768, 344);
+            this.tabPage2.Size = new System.Drawing.Size(768, 336);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Introduction";
+            // 
+            // btnSaveIntroductionInfo
+            // 
+            this.btnSaveIntroductionInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSaveIntroductionInfo.Location = new System.Drawing.Point(6, 295);
+            this.btnSaveIntroductionInfo.Name = "btnSaveIntroductionInfo";
+            this.btnSaveIntroductionInfo.Size = new System.Drawing.Size(755, 43);
+            this.btnSaveIntroductionInfo.TabIndex = 7;
+            this.btnSaveIntroductionInfo.Text = "Save Introduction Information";
+            this.btnSaveIntroductionInfo.UseVisualStyleBackColor = true;
+            this.btnSaveIntroductionInfo.Click += new System.EventHandler(this.btnSaveIntroductionInfo_Click);
             // 
             // txtOverview
             // 
@@ -342,10 +386,10 @@
             this.tabPage3.Controls.Add(this.txtCompanyOverview);
             this.tabPage3.Controls.Add(this.btnCompanyOverview);
             this.tabPage3.Controls.Add(this.listBoxCompanyOverview);
-            this.tabPage3.Location = new System.Drawing.Point(4, 21);
+            this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(768, 344);
+            this.tabPage3.Size = new System.Drawing.Size(768, 336);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Company";
             // 
@@ -359,7 +403,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(258, 318);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(244, 14);
+            this.label4.Size = new System.Drawing.Size(361, 21);
             this.label4.TabIndex = 42;
             this.label4.Text = "3. And your data will then be added to the list";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -374,7 +418,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(258, 294);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(184, 14);
+            this.label5.Size = new System.Drawing.Size(272, 21);
             this.label5.TabIndex = 41;
             this.label5.Text = "2. Press the respective add button";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -389,7 +433,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(258, 267);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(288, 14);
+            this.label6.Size = new System.Drawing.Size(429, 21);
             this.label6.TabIndex = 40;
             this.label6.Text = "1. Please enter your data into the respective textboxes";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -434,10 +478,10 @@
             this.listBoxCompanyOffering.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxCompanyOffering.ForeColor = System.Drawing.Color.White;
             this.listBoxCompanyOffering.FormattingEnabled = true;
-            this.listBoxCompanyOffering.ItemHeight = 12;
+            this.listBoxCompanyOffering.ItemHeight = 20;
             this.listBoxCompanyOffering.Location = new System.Drawing.Point(493, 59);
             this.listBoxCompanyOffering.Name = "listBoxCompanyOffering";
-            this.listBoxCompanyOffering.Size = new System.Drawing.Size(270, 196);
+            this.listBoxCompanyOffering.Size = new System.Drawing.Size(270, 184);
             this.listBoxCompanyOffering.TabIndex = 38;
             // 
             // txtCompanyOverview
@@ -480,10 +524,10 @@
             this.listBoxCompanyOverview.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxCompanyOverview.ForeColor = System.Drawing.Color.White;
             this.listBoxCompanyOverview.FormattingEnabled = true;
-            this.listBoxCompanyOverview.ItemHeight = 12;
+            this.listBoxCompanyOverview.ItemHeight = 20;
             this.listBoxCompanyOverview.Location = new System.Drawing.Point(6, 59);
             this.listBoxCompanyOverview.Name = "listBoxCompanyOverview";
-            this.listBoxCompanyOverview.Size = new System.Drawing.Size(270, 196);
+            this.listBoxCompanyOverview.Size = new System.Drawing.Size(270, 184);
             this.listBoxCompanyOverview.TabIndex = 35;
             // 
             // tabPage7
@@ -501,10 +545,10 @@
             this.tabPage7.Controls.Add(this.listBoxTimeframes);
             this.tabPage7.Controls.Add(this.btnMethod);
             this.tabPage7.Controls.Add(this.listBoxMethods);
-            this.tabPage7.Location = new System.Drawing.Point(4, 21);
+            this.tabPage7.Location = new System.Drawing.Point(4, 29);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(768, 344);
+            this.tabPage7.Size = new System.Drawing.Size(768, 336);
             this.tabPage7.TabIndex = 3;
             this.tabPage7.Text = "Approach";
             // 
@@ -518,7 +562,7 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(213, 313);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(323, 19);
+            this.label8.Size = new System.Drawing.Size(474, 28);
             this.label8.TabIndex = 33;
             this.label8.Text = "3. And your data will then be added to the list";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -533,7 +577,7 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(213, 289);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(244, 19);
+            this.label9.Size = new System.Drawing.Size(357, 28);
             this.label9.TabIndex = 32;
             this.label9.Text = "2. Press the respective add button";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -548,7 +592,7 @@
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(213, 262);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(384, 19);
+            this.label11.Size = new System.Drawing.Size(565, 28);
             this.label11.TabIndex = 31;
             this.label11.Text = "1. Please enter your data into the respective textboxes";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -577,10 +621,10 @@
             this.listBoxPricing.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxPricing.ForeColor = System.Drawing.Color.White;
             this.listBoxPricing.FormattingEnabled = true;
-            this.listBoxPricing.ItemHeight = 12;
+            this.listBoxPricing.ItemHeight = 20;
             this.listBoxPricing.Location = new System.Drawing.Point(541, 30);
             this.listBoxPricing.Name = "listBoxPricing";
-            this.listBoxPricing.Size = new System.Drawing.Size(221, 220);
+            this.listBoxPricing.Size = new System.Drawing.Size(221, 204);
             this.listBoxPricing.TabIndex = 29;
             // 
             // txtPricing
@@ -593,7 +637,7 @@
             this.txtPricing.ForeColor = System.Drawing.Color.White;
             this.txtPricing.Location = new System.Drawing.Point(541, 7);
             this.txtPricing.Name = "txtPricing";
-            this.txtPricing.Size = new System.Drawing.Size(100, 20);
+            this.txtPricing.Size = new System.Drawing.Size(100, 27);
             this.txtPricing.TabIndex = 28;
             this.txtPricing.Text = "Pricing";
             // 
@@ -607,7 +651,7 @@
             this.txtTimeframes.ForeColor = System.Drawing.Color.White;
             this.txtTimeframes.Location = new System.Drawing.Point(268, 7);
             this.txtTimeframes.Name = "txtTimeframes";
-            this.txtTimeframes.Size = new System.Drawing.Size(100, 20);
+            this.txtTimeframes.Size = new System.Drawing.Size(100, 27);
             this.txtTimeframes.TabIndex = 25;
             this.txtTimeframes.Text = "Timeframes";
             // 
@@ -621,7 +665,7 @@
             this.txtMethod.ForeColor = System.Drawing.Color.White;
             this.txtMethod.Location = new System.Drawing.Point(6, 7);
             this.txtMethod.Name = "txtMethod";
-            this.txtMethod.Size = new System.Drawing.Size(100, 20);
+            this.txtMethod.Size = new System.Drawing.Size(100, 27);
             this.txtMethod.TabIndex = 22;
             this.txtMethod.Text = "Method";
             // 
@@ -649,10 +693,10 @@
             this.listBoxTimeframes.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxTimeframes.ForeColor = System.Drawing.Color.White;
             this.listBoxTimeframes.FormattingEnabled = true;
-            this.listBoxTimeframes.ItemHeight = 12;
+            this.listBoxTimeframes.ItemHeight = 20;
             this.listBoxTimeframes.Location = new System.Drawing.Point(268, 30);
             this.listBoxTimeframes.Name = "listBoxTimeframes";
-            this.listBoxTimeframes.Size = new System.Drawing.Size(221, 220);
+            this.listBoxTimeframes.Size = new System.Drawing.Size(221, 204);
             this.listBoxTimeframes.TabIndex = 26;
             // 
             // btnMethod
@@ -679,10 +723,10 @@
             this.listBoxMethods.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxMethods.ForeColor = System.Drawing.Color.White;
             this.listBoxMethods.FormattingEnabled = true;
-            this.listBoxMethods.ItemHeight = 12;
+            this.listBoxMethods.ItemHeight = 20;
             this.listBoxMethods.Location = new System.Drawing.Point(6, 30);
             this.listBoxMethods.Name = "listBoxMethods";
-            this.listBoxMethods.Size = new System.Drawing.Size(221, 220);
+            this.listBoxMethods.Size = new System.Drawing.Size(221, 204);
             this.listBoxMethods.TabIndex = 23;
             // 
             // tabPage9
@@ -697,10 +741,10 @@
             this.tabPage9.Controls.Add(this.txtConfidentiality);
             this.tabPage9.Controls.Add(this.btnConfidentiality);
             this.tabPage9.Controls.Add(this.listBoxConfidentiality);
-            this.tabPage9.Location = new System.Drawing.Point(4, 21);
+            this.tabPage9.Location = new System.Drawing.Point(4, 29);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(768, 344);
+            this.tabPage9.Size = new System.Drawing.Size(768, 336);
             this.tabPage9.TabIndex = 5;
             this.tabPage9.Text = "Other";
             // 
@@ -714,7 +758,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(258, 321);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(244, 14);
+            this.label7.Size = new System.Drawing.Size(361, 21);
             this.label7.TabIndex = 51;
             this.label7.Text = "3. And your data will then be added to the list";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -729,7 +773,7 @@
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(258, 297);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(184, 14);
+            this.label10.Size = new System.Drawing.Size(272, 21);
             this.label10.TabIndex = 50;
             this.label10.Text = "2. Press the respective add button";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -744,7 +788,7 @@
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(258, 270);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(288, 14);
+            this.label12.Size = new System.Drawing.Size(429, 21);
             this.label12.TabIndex = 49;
             this.label12.Text = "1. Please enter your data into the respective textboxes";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -789,10 +833,10 @@
             this.listBoxDocumentation.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxDocumentation.ForeColor = System.Drawing.Color.White;
             this.listBoxDocumentation.FormattingEnabled = true;
-            this.listBoxDocumentation.ItemHeight = 12;
+            this.listBoxDocumentation.ItemHeight = 20;
             this.listBoxDocumentation.Location = new System.Drawing.Point(493, 62);
             this.listBoxDocumentation.Name = "listBoxDocumentation";
-            this.listBoxDocumentation.Size = new System.Drawing.Size(270, 196);
+            this.listBoxDocumentation.Size = new System.Drawing.Size(270, 184);
             this.listBoxDocumentation.TabIndex = 47;
             // 
             // txtConfidentiality
@@ -835,10 +879,10 @@
             this.listBoxConfidentiality.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxConfidentiality.ForeColor = System.Drawing.Color.White;
             this.listBoxConfidentiality.FormattingEnabled = true;
-            this.listBoxConfidentiality.ItemHeight = 12;
+            this.listBoxConfidentiality.ItemHeight = 20;
             this.listBoxConfidentiality.Location = new System.Drawing.Point(6, 62);
             this.listBoxConfidentiality.Name = "listBoxConfidentiality";
-            this.listBoxConfidentiality.Size = new System.Drawing.Size(270, 196);
+            this.listBoxConfidentiality.Size = new System.Drawing.Size(270, 184);
             this.listBoxConfidentiality.TabIndex = 44;
             // 
             // txtProjectName
@@ -848,7 +892,7 @@
             this.txtProjectName.ForeColor = System.Drawing.Color.White;
             this.txtProjectName.Location = new System.Drawing.Point(170, 8);
             this.txtProjectName.Name = "txtProjectName";
-            this.txtProjectName.Size = new System.Drawing.Size(100, 20);
+            this.txtProjectName.Size = new System.Drawing.Size(100, 27);
             this.txtProjectName.TabIndex = 7;
             this.txtProjectName.Text = "Project Name";
             // 
@@ -863,20 +907,99 @@
             this.btnSaveProjectNameRequestForInfo.UseVisualStyleBackColor = true;
             this.btnSaveProjectNameRequestForInfo.Click += new System.EventHandler(this.btnSaveProjectNameRequestForInfo_Click);
             // 
-            // btnSaveIntroductionInfo
+            // InfoType
             // 
-            this.btnSaveIntroductionInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSaveIntroductionInfo.Location = new System.Drawing.Point(6, 295);
-            this.btnSaveIntroductionInfo.Name = "btnSaveIntroductionInfo";
-            this.btnSaveIntroductionInfo.Size = new System.Drawing.Size(755, 43);
-            this.btnSaveIntroductionInfo.TabIndex = 7;
-            this.btnSaveIntroductionInfo.Text = "Save Introduction Information";
-            this.btnSaveIntroductionInfo.UseVisualStyleBackColor = true;
-            this.btnSaveIntroductionInfo.Click += new System.EventHandler(this.btnSaveIntroductionInfo_Click);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            this.InfoType.DefaultCellStyle = dataGridViewCellStyle10;
+            this.InfoType.HeaderText = "Type";
+            this.InfoType.MinimumWidth = 8;
+            this.InfoType.Name = "InfoType";
+            this.InfoType.Width = 150;
+            // 
+            // InfoInformation
+            // 
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            this.InfoInformation.DefaultCellStyle = dataGridViewCellStyle11;
+            this.InfoInformation.HeaderText = "Information";
+            this.InfoInformation.MinimumWidth = 8;
+            this.InfoInformation.Name = "InfoInformation";
+            this.InfoInformation.Width = 150;
+            // 
+            // HistVersion
+            // 
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            this.HistVersion.DefaultCellStyle = dataGridViewCellStyle12;
+            this.HistVersion.HeaderText = "Version";
+            this.HistVersion.MinimumWidth = 8;
+            this.HistVersion.Name = "HistVersion";
+            this.HistVersion.Width = 150;
+            // 
+            // HistIssueDate
+            // 
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
+            this.HistIssueDate.DefaultCellStyle = dataGridViewCellStyle13;
+            this.HistIssueDate.HeaderText = "IssueDate";
+            this.HistIssueDate.MinimumWidth = 8;
+            this.HistIssueDate.Name = "HistIssueDate";
+            this.HistIssueDate.Width = 150;
+            // 
+            // HistChanges
+            // 
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
+            this.HistChanges.DefaultCellStyle = dataGridViewCellStyle14;
+            this.HistChanges.HeaderText = "Changes";
+            this.HistChanges.MinimumWidth = 8;
+            this.HistChanges.Name = "HistChanges";
+            this.HistChanges.Width = 150;
+            // 
+            // AppRole
+            // 
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
+            this.AppRole.DefaultCellStyle = dataGridViewCellStyle15;
+            this.AppRole.HeaderText = "Role";
+            this.AppRole.MinimumWidth = 8;
+            this.AppRole.Name = "AppRole";
+            this.AppRole.Width = 150;
+            // 
+            // AppName
+            // 
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
+            this.AppName.DefaultCellStyle = dataGridViewCellStyle16;
+            this.AppName.HeaderText = "Name";
+            this.AppName.MinimumWidth = 8;
+            this.AppName.Name = "AppName";
+            this.AppName.Width = 150;
+            // 
+            // AppChanges
+            // 
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Black;
+            this.AppChanges.DefaultCellStyle = dataGridViewCellStyle17;
+            this.AppChanges.HeaderText = "Changes";
+            this.AppChanges.MinimumWidth = 8;
+            this.AppChanges.Name = "AppChanges";
+            this.AppChanges.Width = 150;
+            // 
+            // AppDate
+            // 
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
+            this.AppDate.DefaultCellStyle = dataGridViewCellStyle18;
+            this.AppDate.HeaderText = "Date";
+            this.AppDate.MinimumWidth = 8;
+            this.AppDate.Name = "AppDate";
+            this.AppDate.Width = 150;
             // 
             // RequestForInformationDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(800, 415);
@@ -888,6 +1011,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "RequestForInformationDocumentForm";
             this.Text = "RequestForInformationDocumentForm";
+            this.Load += new System.EventHandler(this.RequestForInformationDocumentForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -962,5 +1086,14 @@
         private System.Windows.Forms.ListBox listBoxConfidentiality;
         private System.Windows.Forms.Button btnSaveIntroductionInfo;
         private System.Windows.Forms.Button btnSaveProjectNameRequestForInfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HistVersion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HistIssueDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HistChanges;
+        private System.Windows.Forms.DataGridViewTextBoxColumn InfoType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn InfoInformation;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AppRole;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AppName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AppChanges;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AppDate;
     }
 }
