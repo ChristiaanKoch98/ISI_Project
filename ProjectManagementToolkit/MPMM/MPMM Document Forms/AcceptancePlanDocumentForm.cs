@@ -174,11 +174,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
             newAcceptancePlanModel.documentSchedules = documentSchedules;
 
-            newAcceptancePlanModel.assumptions = listBoxAssumptions.Text;
-            newAcceptancePlanModel.constraints = listBoxConstraints.Text;
-            newAcceptancePlanModel.activites = listBoxActivities.Text;
-            newAcceptancePlanModel.roles = listBoxRoles.Text;
-            newAcceptancePlanModel.documents = listBoxDocuments.Text;
+            newAcceptancePlanModel.assumptions = ReadAllFromList(listBoxAssumptions);
+            newAcceptancePlanModel.constraints = ReadAllFromList(listBoxConstraints);
+            newAcceptancePlanModel.activites = ReadAllFromList(listBoxActivities);
+            newAcceptancePlanModel.roles = ReadAllFromList(listBoxRoles);
+            newAcceptancePlanModel.documents = ReadAllFromList(listBoxDocuments);
 
             List<VersionControl<AcceptancePlanModel>.DocumentModel> documentModels = versionControl.DocumentModels;
 
@@ -244,11 +244,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                     dataGridViewSchedule.Rows.Add(new String[] { row.milestone, row.deliverables, row.milestoneDate, row.reviewMethod, row.reviewers, row.acceptanceDate });
                 }
 
-                listBoxActivities.Text = currentAcceptancePlanModel.activites;
-                listBoxAssumptions.Text = currentAcceptancePlanModel.assumptions;
-                listBoxConstraints.Text = currentAcceptancePlanModel.constraints;
-                listBoxDocuments.Text = currentAcceptancePlanModel.documents;
-                listBoxRoles.Text = currentAcceptancePlanModel.roles;
+                WriteAllToList(listBoxActivities, currentAcceptancePlanModel.activites);
+                WriteAllToList(listBoxAssumptions, currentAcceptancePlanModel.assumptions);
+                WriteAllToList(listBoxConstraints, currentAcceptancePlanModel.constraints);
+                WriteAllToList(listBoxDocuments, currentAcceptancePlanModel.documents);
+                WriteAllToList(listBoxRoles, currentAcceptancePlanModel.roles);
             }
             else
             {
@@ -265,6 +265,32 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                     dataGridViewDocumentInformation.Rows.Add(row);
                 }
                 dataGridViewDocumentInformation.AllowUserToAddRows = false;
+            }
+        }
+
+        List<string> ReadAllFromList(ListBox listBox)
+        {
+            List<string> tempList = new List<string>();
+            foreach (var li in listBox.Items) 
+            {
+                tempList.Add(li.ToString());
+            }
+
+            return tempList;
+        }
+
+        void WriteAllToList(ListBox listBox, List<string> items)
+        {
+            listBox.Items.Clear();
+
+            if (items == null)
+            {
+                return;
+            }
+
+            foreach(string item in items)
+            {
+                listBox.Items.Add(item);
             }
         }
     }

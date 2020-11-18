@@ -83,12 +83,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         #endregion
 
         #region assumptions, constraints, accptance process, activities, roles, documents
-        public string assumptions { get; set; }
-        public string constraints { get; set; }
-        public string acceptanceProcess { get; set; }
-        public string activites { get; set; }
-        public string roles { get; set; }
-        public string documents { get; set; }
+        public List<string> assumptions { get; set; }
+        public List<string> constraints { get; set; }
+        public List<string> acceptanceProcess { get; set; }
+        public List<string> activites { get; set; }
+        public List<string> roles { get; set; }
+        public List<string> documents { get; set; }
         #endregion
     }
 }
