@@ -135,6 +135,12 @@
     <Compile Include="MPMM\MPMM Document Forms\FinacialPlanDocumentForm.Designer.cs">
       <DependentUpon>FinacialPlanDocumentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="MPMM\MPMM Document Forms\IssueFormDocumentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -497,6 +503,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\FinacialPlanDocumentForm.resx">
       <DependentUpon>FinacialPlanDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\IssueManagementProcessDocumentForm.resx">
       <DependentUpon>IssueManagementProcessDocumentForm.cs</DependentUpon>
