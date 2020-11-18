@@ -164,14 +164,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
-                JsonHelper.saveDocument(json, Settings.Default.ProjectID, "AcceptancePlan");
-                MessageBox.Show("Acceptance plan saved successfully", "save", MessageBoxButtons.OK);
+                JsonHelper.saveDocument(json, Settings.Default.ProjectID, "RequestForInformation");
+                MessageBox.Show("Request for information saved successfully", "save", MessageBoxButtons.OK);
             }
         }
 
         public void loadDocument()
         {
-            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "AcceptancePlan");
+            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "RequestForInformation");
             List<string[]> documentInfo = new List<string[]>();
             newRequestForInformationModel = new RequestForInformationModel();
             currentRequestForInformationModel = new RequestForInformationModel();
