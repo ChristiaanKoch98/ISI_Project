@@ -15,8 +15,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         #region Document information
         public string documentID { get; set; }
         public string documentOwner { get; set; }
-        public DateTime issueDate { get; set; }
-        public DateTime lastSavedDate { get; set; }
+        public string issueDate { get; set; }
+        public string lastSavedDate { get; set; }
         public string fileName { get; set; }
         #endregion
 
@@ -24,7 +24,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public class DocumentHistory
         {
             public string version { get; set; }
-            public DateTime issueDate { get; set; }
+            public string issueDate { get; set; }
             public string changes { get; set; }
         }
 
@@ -35,9 +35,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public class DocumentApprovals
         {
             public string role { get; set; }
-            public string mame { get; set; }
+            public string name { get; set; }
             public string changes { get; set; }
-            public DateTime date { get; set; }
+            public string date { get; set; }
 
         }
 
@@ -49,7 +49,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         {
             public string name { get; set; }
             public string description { get; set; }
-            public DateTime date { get; set; }
+            public string date { get; set; }
 
         }
 
@@ -73,10 +73,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         {
             public string milestone { get; set; }
             public string deliverables { get; set; }
-            public DateTime milestoneDate { get; set; }
+            public string milestoneDate { get; set; }
             public string reviewMethod { get; set; }
             public string reviewers { get; set; }
-            public DateTime acceptanceDate { get; set; }
+            public string acceptanceDate { get; set; }
         }
 
         public List<DocumentSchedule> documentSchedules { get; set; }
