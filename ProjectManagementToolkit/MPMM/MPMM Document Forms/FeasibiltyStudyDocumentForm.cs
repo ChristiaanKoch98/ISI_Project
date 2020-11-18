@@ -57,12 +57,18 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             {
                 feasibility.BusinessDrivers = Business_Drivers_tbx.Text;
 
-                foreach (DataGridView row in Business_Requirements_dgv .Rows)
+               
+                List<BusinessRequirements> list = new List<BusinessRequirements>();
+                int rowCount = Business_Requirements_dgv.RowCount;
+                for (int i = 0; i < rowCount - 1; i++)
                 {
-                    foreach (var column in row.Columns)
-                    {
-                        feasibility.BusinessRequirements += column;
-                    }
+                    BusinessRequirements business = new BusinessRequirements();
+                    var businessProblem = Business_Requirements_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
+                    var projectRequirement = Business_Requirements_dgv.Rows[i].Cells[1].Value?.ToString() ?? "";
+                    business.BusinessProblem = businessProblem;
+                    business.ProjectRequirement = projectRequirement;
+                    list.Add(business);
+
                 }
             }
 
@@ -84,19 +90,48 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 feasibility.Solution1Assessment = Assessment_tbx.Text;
                 feasibility.Solution1Assumption = Assumptions_tbx.Text;
 
-                foreach (DataGridView row in Results_dgv.Rows)
+                List<Solution1> results = new List<Solution1>();
+                int ResultsrowCount = Results_dgv.RowCount;
+                for (int i = 0; i < ResultsrowCount - 1; i++)
                 {
-                    foreach (var column in row.Columns)
-                    {
-                        feasibility.Results += column;
-                    }
+                    Solution1 solution1 = new Solution1();
+                    var Solution = Results_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
+                    var FeasibilityScore = Results_dgv.Rows[i].Cells[1].Value?.ToString() ?? "";
+                    var AssessmentMethod = Results_dgv.Rows[i].Cells[2].Value?.ToString() ?? "";
+                    solution1.Solution = Solution;
+                    solution1.FeasibilityScore = FeasibilityScore;
+                    solution1.AssessmentMethod = AssessmentMethod;
+                    results.Add(solution1);
                 }
-                foreach (DataGridView row in Risks_dgv.Rows)
+
+                List<Solution1> risks = new List<Solution1>();
+                int RisksrowCount = Risks_dgv.RowCount;
+                for (int i = 0; i < RisksrowCount - 1; i++)
                 {
-                    foreach (var column in row.Columns)
-                    {
-                        feasibility.Risks += column;
-                    }
+                    Solution1 solution1 = new Solution1();
+                    var RiskDescription = Risks_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
+                    var RiskLikelihood = Risks_dgv.Rows[i].Cells[1].Value?.ToString() ?? "";
+                    var RiskImpact = Risks_dgv.Rows[i].Cells[2].Value?.ToString() ?? "";
+                    var ActionRequiredToMinRisk = Risks_dgv.Rows[i].Cells[3].Value?.ToString() ?? "";
+                    solution1.RiskDescription = RiskDescription;
+                    solution1.RiskLikelihood = RiskLikelihood;
+                    solution1.RiskImpact = RiskImpact;
+                    solution1.ActionRequiredToMinRisk = ActionRequiredToMinRisk;
+                    risks.Add(solution1);
+                }
+
+                List<Solution1> issues = new List<Solution1>();
+                int IssuesrowCount = Issues_dgv.RowCount;
+                for (int i = 0; i < ResultsrowCount - 1; i++)
+                {
+                    Solution1 solution1 = new Solution1();
+                    var IssueDescription = Issues_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
+                    var IssuePriority = Issues_dgv.Rows[i].Cells[1].Value?.ToString() ?? "";
+                    var ActionRequiredToResolveRisk = Issues_dgv.Rows[i].Cells[2].Value?.ToString() ?? "";
+                    solution1.IssueDescription = IssueDescription;
+                    solution1.IssuePriority = IssuePriority;
+                    solution1.ActionRequiredToResolveRisk = ActionRequiredToResolveRisk;
+                    issues.Add(solution1);
                 }
             }
         }
@@ -109,19 +144,48 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 feasibility.Solution2Assessment = Assessment2_tbx.Text;
                 feasibility.Solution2Assumption = Assumptions2_tbx.Text;
 
-                foreach (DataGridView row in Results2_dgv.Rows)
+                List<Solution2> results = new List<Solution2>();
+                int ResultsrowCount = Results_dgv.RowCount;
+                for (int i = 0; i < ResultsrowCount - 1; i++)
                 {
-                    foreach (var column in row.Columns)
-                    {
-                        feasibility.Results2 += column;
-                    }
+                    Solution2 solution2 = new Solution2();
+                    var Solution = Results_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
+                    var FeasibilityScore = Results_dgv.Rows[i].Cells[1].Value?.ToString() ?? "";
+                    var AssessmentMethod = Results_dgv.Rows[i].Cells[2].Value?.ToString() ?? "";
+                    solution2.Solution = Solution;
+                    solution2.FeasibilityScore = FeasibilityScore;
+                    solution2.AssessmentMethod = AssessmentMethod;
+                    results.Add(solution2);
                 }
-                foreach (DataGridView row in Risks2_dgv.Rows)
+
+                List<Solution2> risks = new List<Solution2>();
+                int RisksrowCount = Risks_dgv.RowCount;
+                for (int i = 0; i < RisksrowCount - 1; i++)
                 {
-                    foreach (var column in row.Columns)
-                    {
-                        feasibility.Risks2 += column;
-                    }
+                    Solution2 solution2 = new Solution2();
+                    var RiskDescription = Risks_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
+                    var RiskLikelihood = Risks_dgv.Rows[i].Cells[1].Value?.ToString() ?? "";
+                    var RiskImpact = Risks_dgv.Rows[i].Cells[2].Value?.ToString() ?? "";
+                    var ActionRequiredToMinRisk = Risks_dgv.Rows[i].Cells[3].Value?.ToString() ?? "";
+                    solution2.RiskDescription = RiskDescription;
+                    solution2.RiskLikelihood = RiskLikelihood;
+                    solution2.RiskImpact = RiskImpact;
+                    solution2.ActionRequiredToMinRisk = ActionRequiredToMinRisk;
+                    risks.Add(solution2);
+                }
+
+                List<Solution2> issues = new List<Solution2>();
+                int IssuesrowCount = Issues_dgv.RowCount;
+                for (int i = 0; i < ResultsrowCount - 1; i++)
+                {
+                    Solution2 solution2 = new Solution2();
+                    var IssueDescription = Issues_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
+                    var IssuePriority = Issues_dgv.Rows[i].Cells[1].Value?.ToString() ?? "";
+                    var ActionRequiredToResolveRisk = Issues_dgv.Rows[i].Cells[2].Value?.ToString() ?? "";
+                    solution2.IssueDescription = IssueDescription;
+                    solution2.IssuePriority = IssuePriority;
+                    solution2.ActionRequiredToResolveRisk = ActionRequiredToResolveRisk;
+                    issues.Add(solution2);
                 }
             }
         }
@@ -134,19 +198,48 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 feasibility.Solution3Assessment = Assessment3_tbx.Text;
                 feasibility.Solution3Assumption = Assumptions3_tbx.Text;
 
-                foreach (DataGridView row in Results3_dgv.Rows)
+                List<Solution3> results = new List<Solution3>();
+                int ResultsrowCount = Results_dgv.RowCount;
+                for (int i = 0; i < ResultsrowCount - 1; i++)
                 {
-                    foreach (var column in row.Columns)
-                    {
-                        feasibility.Results3 += column;
-                    }
+                    Solution3 solution3 = new Solution3();
+                    var Solution = Results_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
+                    var FeasibilityScore = Results_dgv.Rows[i].Cells[1].Value?.ToString() ?? "";
+                    var AssessmentMethod = Results_dgv.Rows[i].Cells[2].Value?.ToString() ?? "";
+                    solution3.Solution = Solution;
+                    solution3.FeasibilityScore = FeasibilityScore;
+                    solution3.AssessmentMethod = AssessmentMethod;
+                    results.Add(solution3);
                 }
-                foreach (DataGridView row in Risks3_dgv.Rows)
+
+                List<Solution3> risks = new List<Solution3>();
+                int RisksrowCount = Risks_dgv.RowCount;
+                for (int i = 0; i < RisksrowCount - 1; i++)
                 {
-                    foreach (var column in row.Columns)
-                    {
-                        feasibility.Risks3 += column;
-                    }
+                    Solution3 solution3 = new Solution3();
+                    var RiskDescription = Risks_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
+                    var RiskLikelihood = Risks_dgv.Rows[i].Cells[1].Value?.ToString() ?? "";
+                    var RiskImpact = Risks_dgv.Rows[i].Cells[2].Value?.ToString() ?? "";
+                    var ActionRequiredToMinRisk = Risks_dgv.Rows[i].Cells[3].Value?.ToString() ?? "";
+                    solution3.RiskDescription = RiskDescription;
+                    solution3.RiskLikelihood = RiskLikelihood;
+                    solution3.RiskImpact = RiskImpact;
+                    solution3.ActionRequiredToMinRisk = ActionRequiredToMinRisk;
+                    risks.Add(solution3);
+                }
+
+                List<Solution3> issues = new List<Solution3>();
+                int IssuesrowCount = Issues_dgv.RowCount;
+                for (int i = 0; i < ResultsrowCount - 1; i++)
+                {
+                    Solution3 solution3 = new Solution3();
+                    var IssueDescription = Issues_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
+                    var IssuePriority = Issues_dgv.Rows[i].Cells[1].Value?.ToString() ?? "";
+                    var ActionRequiredToResolveRisk = Issues_dgv.Rows[i].Cells[2].Value?.ToString() ?? "";
+                    solution3.IssueDescription = IssueDescription;
+                    solution3.IssuePriority = IssuePriority;
+                    solution3.ActionRequiredToResolveRisk = ActionRequiredToResolveRisk;
+                    issues.Add(solution3);
                 }
             }
         }
@@ -157,12 +250,46 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             {
                 feasibility.RankingCriteria = Ranking_Criteria_tbx.Text;
 
-                foreach (DataGridView row in Ranking_Scores_dgv.Rows)
+                List<Solution1> ranking1 = new List<Solution1>();
+                List<Solution2> ranking2 = new List<Solution2>();
+                List<Solution3> ranking3 = new List<Solution3>();
+                List<object> feasibilityStudyModels = new List<object>();
+                int Ranking_Scores = Ranking_Scores_dgv.RowCount;
+                for (int i = 0; i < Ranking_Scores - 1; i++)
                 {
-                    foreach (var column in row.Columns)
-                    {
-                        feasibility.RankingScores += column;
-                    }
+                    Solution1 solution1 = new Solution1();
+                    Solution2 solution2 = new Solution2();
+                    Solution3 solution3 = new Solution3();
+                    var Score1 = Ranking_Scores_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
+                    var Weight1 = Ranking_Scores_dgv.Rows[i].Cells[1].Value?.ToString() ?? "";
+                    var Total1 = Ranking_Scores_dgv.Rows[i].Cells[2].Value?.ToString() ?? "";
+
+                    var Score2 = Ranking_Scores_dgv.Rows[i].Cells[3].Value?.ToString() ?? "";
+                    var Weight2 = Ranking_Scores_dgv.Rows[i].Cells[4].Value?.ToString() ?? "";
+                    var Total2 = Ranking_Scores_dgv.Rows[i].Cells[5].Value?.ToString() ?? "";
+
+                    var Score3 = Ranking_Scores_dgv.Rows[i].Cells[6].Value?.ToString() ?? "";
+                    var Weight3 = Ranking_Scores_dgv.Rows[i].Cells[7].Value?.ToString() ?? "";
+                    var Total3 = Ranking_Scores_dgv.Rows[i].Cells[8].Value?.ToString() ?? "";
+                    solution1.Score1 = Score1;
+                    solution1.Weight1 = Weight1;
+                    solution1.Total1 = Total1;
+
+                    solution2.Score2 = Score2;
+                    solution2.Weight2 = Weight2;
+                    solution2.Total2 = Total2;
+
+                    solution3.Score3 = Score3;
+                    solution3.Weight3 = Weight3;
+                    solution3.Total3 = Total3;
+
+                    ranking1.Add(solution1);
+                    ranking2.Add(solution2);
+                    ranking3.Add(solution3);
+
+                    feasibilityStudyModels.Add(ranking1);
+                    feasibilityStudyModels.Add(ranking2);
+                    feasibilityStudyModels.Add(ranking3);
                 }
             }
         }

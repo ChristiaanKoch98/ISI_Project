@@ -81,6 +81,24 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                     purchaseOrderModel.ExpiryDate = Expiration_Date_tbx.Text;
                     purchaseOrderModel.CardName = Name_on_Card_tbx.Text;
                 }
+
+                List<OrderDetails> orderDetails = new List<OrderDetails>();
+                int RowCount = ORDER_DETAILS_dgv.RowCount;
+                for (int i = 0; i < RowCount - 1; i++)
+                {
+                    OrderDetails details = new OrderDetails();
+                    var Item = ORDER_DETAILS_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
+                    var Description = ORDER_DETAILS_dgv.Rows[i].Cells[1].Value?.ToString() ?? "";
+                    var Quanlity = ORDER_DETAILS_dgv.Rows[i].Cells[2].Value?.ToString() ?? "";
+                    var UnitPrice = ORDER_DETAILS_dgv.Rows[i].Cells[3].Value?.ToString() ?? "";
+                    var TotalPrice = ORDER_DETAILS_dgv.Rows[i].Cells[4].Value?.ToString() ?? "";
+                    details.Item = Item;
+                    details.Description = Description;
+                    details.Quanlity = Quanlity;
+                    details.UnitPrice = UnitPrice;
+                    details.TotalPrice = TotalPrice;
+                    orderDetails.Add(details); 
+                }
             }
         }
 

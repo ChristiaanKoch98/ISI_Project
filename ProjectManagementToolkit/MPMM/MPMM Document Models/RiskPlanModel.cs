@@ -19,10 +19,70 @@ namespace ProjectManagementToolkit.Classes
         public string Schedule { get; internal set; }
         public string Risks { get; internal set; }
 
-        public RiskPlanModel()
-        {
+    }
 
-        }
+    class Risks
+    {
+        public string RiskCategory { get; set; }
+        public string RiskDescription { get; set; }
+        public string ID { get; set; }
+    }
+    class Likelihood
+    {
+        public string Title { get; set; }
+        public string Score { get; set; }
+        public string Description { get; set; }
+    }
 
+    class Impact
+    {
+        public string Title { get; set; }
+        public string Score { get; set; }
+        public string Description { get; set; }
+    }
+    class Priority
+    {
+        public string ID { get; set; }
+        public string LikelihoodScore { get; set; }
+        public string ImpactScore { get; set; }
+        public string PriorityScore { get; set; }
+    }
+    class Schedule
+    {
+        public string Rating { get; set; }
+        public string ID { get; set; }
+        public string PrevalantiveActions { get; set; }
+        public string ActionResource1 { get; set; }
+        public string ActionDate1 { get; set; }
+        public string ContingentActions { get; set; }
+        public string ActionResource2 { get; set; }
+        public string ActionDate2 { get; set; }
+        
+    }
+
+    class Information{
+        public string DocumentID { get; set; }
+        public string DocumentOwner { get; set; }
+        public string IssueDate { get; set; }
+        public string LastSavedDate { get; set; }
+        public string FileName { get; set; }
+    }
+
+    class History
+    {
+        public string Version { get; set; }
+        public string IssueDate { get; set; }
+        public string Changes { get; set; }
+    }
+
+    class Approvals
+    {
+        public string ProjectSponsor { get; set; }
+        public string ProjectReviewGroup { get; set; }
+        public string ProjectManager { get; set; }
+        public string QualityManager { get; set; }
+        public string ProcumentManager { get; set; }
+        public string CommunicationsManager { get; set; }
+        public string ProjectOfficeManager { get; set; }
     }
 }

@@ -19,9 +19,8 @@ namespace ProjectManagementToolkit.Classes
         public string ExpenseForm { get; set; }
         public string ExpenseRegister { get; set; }
 
-        public CostManagementProcessModel()
-        {
-
-        }
+       
     }
+    
+
 }

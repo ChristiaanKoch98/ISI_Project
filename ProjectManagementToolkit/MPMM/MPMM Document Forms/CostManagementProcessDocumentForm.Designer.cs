@@ -64,6 +64,7 @@
             this.Cost_Management_Documents_btn = new System.Windows.Forms.Button();
             this.Expense_Form_tbx = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Document_Approvals_dgv)).BeginInit();
@@ -123,6 +124,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.Document_Approvals_dgv);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.Document_History_dgv);
@@ -452,6 +454,16 @@
             this.label13.TabIndex = 18;
             this.label13.Text = "Expense Form";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(18, 411);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Enter";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // CostManagementProcessDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -522,5 +534,6 @@
         private System.Windows.Forms.Button Cost_Management_Documents_btn;
         private System.Windows.Forms.TextBox Expense_Form_tbx;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button button1;
     }
 }
