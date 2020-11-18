@@ -114,7 +114,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void loadDocument()
         {
-            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "TimeMangement");
+            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "QualityManagement");
             List<string[]> documentInfo = new List<string[]>();
             newQualityManagementProcessModel = new QualityManagementProcessModel();
             currentQualityManagementProcessModel = new QualityManagementProcessModel();
