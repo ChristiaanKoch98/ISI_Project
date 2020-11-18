@@ -43,19 +43,29 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         public void saveDocument()
         {
-            newChangeRequestModel.ProjectName = projectNameTextBox.Text;
-            newChangeRequestModel.ProjectManager = projectMamagerTextBox.Text;
-            newChangeRequestModel.ChangeNumber = chngNumLabel.Text;
-            newChangeRequestModel.ChangeRequester = chngRqstTextBox.Text;
-            newChangeRequestModel.ChangeRequestDate = chngRqstDateTextField.Text;
-            newChangeRequestModel.ChangeUrgancy = chngeUrgencyTextBox.Text;
-            newChangeRequestModel.ChangeDescription = chngDscrpTextBox.Text;
-            newChangeRequestModel.ChangeDrivers = changeDriversTextField.Text;
-            newChangeRequestModel.ChangeBenefits = chngBnftsTextBox.Text;
-            newChangeRequestModel.ChangeCost = chngCostsTextBox.Text;
-            newChangeRequestModel.ProjectImpact = textBox2.Text;
-            newChangeRequestModel.SupportingDocumentation = approvalDetailsTextBox.Text;
-            newChangeRequestModel.Signatue = signatureTextBox.Text;
+            newChangeRequestModel.ProjectName = txtProjectName.Text;
+            newChangeRequestModel.ProjectManager = txtProjectManager.Text;
+            newChangeRequestModel.ChangeNumber = txtChangeDetails.Text;
+            newChangeRequestModel.ChangeRequester = txtChangeRequester.Text;
+            newChangeRequestModel.ChangeRequestDate = txtChangeRequestDate.Text;
+            newChangeRequestModel.ChangeUrgancy = txtChangeUrgency.Text;
+            newChangeRequestModel.ChangeDescription = txtChangeDescription.Text;
+            newChangeRequestModel.ChangeDrivers = txtChangeDrivers.Text;
+            newChangeRequestModel.ChangeBenefits = txtChangeBenefits.Text;
+            newChangeRequestModel.ChangeCost = txtChangeCosts.Text;
+            newChangeRequestModel.ProjectImpact = textBox1.Text;
+
+            //newChangeRequestModel.SupportingDocumentation = approvalDetailsTextBox.Text;
+
+            newChangeRequestModel.SubmittedName = txtName.Text;
+            newChangeRequestModel.SubmittedRole = txtProjectRole.Text;
+            newChangeRequestModel.SubmittedSignature = txtSignature.Text;
+            newChangeRequestModel.SubmittedDate = dateTimePickerSubmittedBy.Text;
+
+            newChangeRequestModel.ApprovedName = txtApprovedByName.Text;
+            newChangeRequestModel.ApprovedRole = txtApprovedByProjectRole.Text;
+            newChangeRequestModel.ApprovedSignature = txtApprovedBySignature.Text;
+            newChangeRequestModel.ApprovedDate = dateTimePickerApprovedBy.Text;
 
             List<VersionControl<ChangeRequestModel>.DocumentModel> documentModels = versionControl.DocumentModels;
 
@@ -87,19 +97,30 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 currentChangeRequestModel = JsonConvert.DeserializeObject<ChangeRequestModel>(versionControl.getLatest(versionControl.DocumentModels));
 
 
-                projectNameTextBox.Text = currentChangeRequestModel.ProjectName;
-                projectMamagerTextBox.Text = currentChangeRequestModel.ProjectManager;
-                chngNumLabel.Text = currentChangeRequestModel.ChangeNumber;
-                chngRqstTextBox.Text = currentChangeRequestModel.ChangeRequester;
-                chngRqstDateTextField.Text = currentChangeRequestModel.ChangeRequestDate;
-                chngeUrgencyTextBox.Text = currentChangeRequestModel.ChangeUrgancy;
-                chngDscrpTextBox.Text = currentChangeRequestModel.ChangeDescription;
-                changeDriversTextField.Text = currentChangeRequestModel.ChangeDrivers;
-                chngBnftsTextBox.Text = currentChangeRequestModel.ChangeBenefits;
-                chngCostsTextBox.Text = currentChangeRequestModel.ChangeCost;
-                textBox2.Text = currentChangeRequestModel.ProjectImpact;
-                approvalDetailsTextBox.Text = currentChangeRequestModel.SupportingDocumentation;
-                signatureTextBox.Text = currentChangeRequestModel.Signatue;
+                txtProjectName.Text = currentChangeRequestModel.ProjectName;
+                txtProjectManager.Text = currentChangeRequestModel.ProjectManager;
+                txtChangeDetails.Text = currentChangeRequestModel.ChangeNumber;
+                txtChangeRequester.Text = currentChangeRequestModel.ChangeRequester;
+                txtChangeRequestDate.Text = currentChangeRequestModel.ChangeRequestDate;
+                txtChangeUrgency.Text = currentChangeRequestModel.ChangeUrgancy;
+                txtChangeDescription.Text = currentChangeRequestModel.ChangeDescription;
+                txtChangeDrivers.Text = currentChangeRequestModel.ChangeDrivers;
+                txtChangeBenefits.Text = currentChangeRequestModel.ChangeBenefits;
+                txtChangeCosts.Text = currentChangeRequestModel.ChangeCost;
+                textBox1.Text = currentChangeRequestModel.ProjectImpact;
+
+                //approvalDetailsTextBox.Text = currentChangeRequestModel.SupportingDocumentation;
+
+
+                txtName.Text = currentChangeRequestModel.SubmittedName ;
+                txtProjectRole.Text = currentChangeRequestModel.SubmittedRole ;
+                txtSignature.Text = currentChangeRequestModel.SubmittedSignature ;
+                dateTimePickerSubmittedBy.Text = currentChangeRequestModel.SubmittedDate ;
+
+                txtApprovedByName.Text = currentChangeRequestModel.ApprovedName ;
+                txtApprovedByProjectRole.Text = currentChangeRequestModel.ApprovedRole ;
+                txtApprovedBySignature.Text = currentChangeRequestModel.ApprovedSignature ;
+                dateTimePickerApprovedBy.Text = currentChangeRequestModel.ApprovedDate ;
 
             }
         }

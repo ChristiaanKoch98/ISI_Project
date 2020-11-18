@@ -64,22 +64,22 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         public void saveDocument()
         {
-            newStatementOfWorkModel.DocumentID = dataGridView1.Rows[0].Cells[1].Value.ToString();
-            newStatementOfWorkModel.DocumentOwner = dataGridView1.Rows[1].Cells[1].Value.ToString();
-            newStatementOfWorkModel.IssueDate = dataGridView1.Rows[2].Cells[1].Value.ToString();
-            newStatementOfWorkModel.LastSavedDate = dataGridView1.Rows[3].Cells[1].Value.ToString();
-            newStatementOfWorkModel.FileName = dataGridView1.Rows[4].Cells[1].Value.ToString();
+            newStatementOfWorkModel.DocumentID = docInfoGridData.Rows[0].Cells[1].Value.ToString();
+            newStatementOfWorkModel.DocumentOwner = docInfoGridData.Rows[1].Cells[1].Value.ToString();
+            newStatementOfWorkModel.IssueDate = docInfoGridData.Rows[2].Cells[1].Value.ToString();
+            newStatementOfWorkModel.LastSavedDate = docInfoGridData.Rows[3].Cells[1].Value.ToString();
+            newStatementOfWorkModel.FileName = docInfoGridData.Rows[4].Cells[1].Value.ToString();
 
             List<StatementOfWorkModel.DocumentHistory> documentHistories = new List<StatementOfWorkModel.DocumentHistory>();
 
-            int versionRowsCount = dataGridView2.Rows.Count;
+            int versionRowsCount = dataGridViewDocHistory.Rows.Count;
 
             for (int i = 0; i < versionRowsCount - 1; i++)
             {
                 StatementOfWorkModel.DocumentHistory documentHistoryModel = new StatementOfWorkModel.DocumentHistory();
-                var version = dataGridView2.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var issueDate = dataGridView2.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var changes = dataGridView2.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var version = dataGridViewDocHistory.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var issueDate = dataGridViewDocHistory.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var changes = dataGridViewDocHistory.Rows[i].Cells[2].Value?.ToString() ?? "";
                 documentHistoryModel.Version = version;
                 documentHistoryModel.IssueDate = issueDate;
                 documentHistoryModel.Changes = changes;
@@ -89,15 +89,15 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<StatementOfWorkModel.DocumentApproval> documentApprovalsModel = new List<StatementOfWorkModel.DocumentApproval>();
 
-            int approvalRowsCount = dataGridView3.Rows.Count;
+            int approvalRowsCount = dataGridViewDocApprovals.Rows.Count;
 
             for (int i = 0; i < approvalRowsCount - 1; i++)
             {
                 StatementOfWorkModel.DocumentApproval documentApproval = new StatementOfWorkModel.DocumentApproval();
-                var role = dataGridView3.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var name = dataGridView3.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var signature = dataGridView3.Rows[i].Cells[2].Value?.ToString() ?? "";
-                var date = dataGridView3.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var role = dataGridViewDocApprovals.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var name = dataGridViewDocApprovals.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var signature = dataGridViewDocApprovals.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var date = dataGridViewDocApprovals.Rows[i].Cells[3].Value?.ToString() ?? "";
                 documentApproval.Role = role;
                 documentApproval.Name = name;
                 documentApproval.Signature = signature;
@@ -125,22 +125,22 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
             newStatementOfWorkModel.ScopeOfWorks = scopeOfWorkModel;
 
-            newStatementOfWorkModel.Introduction = textBox2.Text;
+            newStatementOfWorkModel.Introduction = txtIntroduction.Text;
 
 
-            newStatementOfWorkModel.Objectives = textBox3.Text;
+            newStatementOfWorkModel.Objectives = txtObjectives.Text;
 
-            newStatementOfWorkModel.SupplierResponsibilities = textBox4.Text ;
+            newStatementOfWorkModel.SupplierResponsibilities = txtSupplierResponsibilities.Text ;
 
-            newStatementOfWorkModel.ProjectResponsibilities = textBox5.Text ;
+            newStatementOfWorkModel.ProjectResponsibilities = txtProjectResponsibilities.Text ;
 
-            newStatementOfWorkModel.AcceptanceTerms = textBox6.Text ;
+            newStatementOfWorkModel.AcceptanceTerms = txtAcceptanceTerms.Text ;
 
-            newStatementOfWorkModel.PaymentTerms = textBox7.Text ;
+            newStatementOfWorkModel.PaymentTerms = txtPaymentTerms.Text ;
 
-            newStatementOfWorkModel.Confidentiality = textBox8.Text ;
+            newStatementOfWorkModel.Confidentiality = txtConfidentiality.Text ;
 
-            newStatementOfWorkModel.OtherTerms = textBox9.Text ;
+            newStatementOfWorkModel.OtherTerms = txtOtherTerms.Text ;
 
 
             List<VersionControl<StatementOfWorkModel>.DocumentModel> documentModels = versionControl.DocumentModels;
@@ -180,23 +180,23 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 foreach (var row in documentInfo)
                 {
-                    dataGridView1.Rows.Add(row);
+                    docInfoGridData.Rows.Add(row);
                 }
-                dataGridView1.AllowUserToAddRows = false;
+                docInfoGridData.AllowUserToAddRows = false;
 
                 foreach (var row in currentStatementOfWorkModel.DocumentHistories)
                 {
-                    dataGridView2.Rows.Add(new string[] { row.Version, row.IssueDate, row.Changes });
+                    dataGridViewDocHistory.Rows.Add(new string[] { row.Version, row.IssueDate, row.Changes });
                 }
 
                 foreach (var row in currentStatementOfWorkModel.DocumentApprovals)
                 {
-                    dataGridView3.Rows.Add(new string[] { row.Role, row.Name, "", row.DateApproved });
+                    dataGridViewDocApprovals.Rows.Add(new string[] { row.Role, row.Name, "", row.DateApproved });
                 }
 
-                textBox2.Text = currentStatementOfWorkModel.Introduction;
+                txtIntroduction.Text = currentStatementOfWorkModel.Introduction;
 
-                textBox3.Text = currentStatementOfWorkModel.Objectives;
+                txtObjectives.Text = currentStatementOfWorkModel.Objectives;
 
                 foreach (var row in currentStatementOfWorkModel.ScopeOfWorks)
                 {
@@ -204,17 +204,17 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 }
 
 
-                textBox4.Text = currentStatementOfWorkModel.SupplierResponsibilities;
+                txtSupplierResponsibilities.Text = currentStatementOfWorkModel.SupplierResponsibilities;
 
-                textBox5.Text = currentStatementOfWorkModel.ProjectResponsibilities;
+                txtProjectResponsibilities.Text = currentStatementOfWorkModel.ProjectResponsibilities;
 
-                textBox6.Text = currentStatementOfWorkModel.AcceptanceTerms;
+                txtAcceptanceTerms.Text = currentStatementOfWorkModel.AcceptanceTerms;
 
-                textBox7.Text = currentStatementOfWorkModel.PaymentTerms;
+                txtPaymentTerms.Text = currentStatementOfWorkModel.PaymentTerms;
 
-                textBox8.Text = currentStatementOfWorkModel.Confidentiality;
+                txtConfidentiality.Text = currentStatementOfWorkModel.Confidentiality;
 
-                textBox9.Text = currentStatementOfWorkModel.OtherTerms;
+                txtOtherTerms.Text = currentStatementOfWorkModel.OtherTerms;
             }
             else
             {
@@ -228,9 +228,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 newStatementOfWorkModel = new StatementOfWorkModel();
                 foreach (var row in documentInfo)
                 {
-                    dataGridView1.Rows.Add(row);
+                    docInfoGridData.Rows.Add(row);
                 }
-                dataGridView1.AllowUserToAddRows = false;
+                docInfoGridData.AllowUserToAddRows = false;
             }
         }
 

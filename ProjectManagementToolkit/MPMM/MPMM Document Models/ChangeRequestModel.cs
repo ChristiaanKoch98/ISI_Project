@@ -43,7 +43,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string SupportingDocumentation { get; set; }
 
 
-        public string Signatue { get; set; }
+        public string SubmittedName { get; set; }
+        public string SubmittedRole { get; set; }
+        public string SubmittedSignature { get; set; }
+        public string SubmittedDate { get; set; }
 
+        public string ApprovedName { get; set; }
+        public string ApprovedRole { get; set; }
+        public string ApprovedSignature { get; set; }
+        public string ApprovedDate { get; set; }
     }
 }

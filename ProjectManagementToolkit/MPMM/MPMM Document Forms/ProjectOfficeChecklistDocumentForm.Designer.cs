@@ -30,39 +30,32 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPagePremises = new System.Windows.Forms.TabPage();
-            this.tabPageEquipment = new System.Windows.Forms.TabPage();
-            this.tabPageRoles = new System.Windows.Forms.TabPage();
-            this.tabPageSandP = new System.Windows.Forms.TabPage();
-            this.tabPageTemplates = new System.Windows.Forms.TabPage();
-            this.tabPageServicesPt1 = new System.Windows.Forms.TabPage();
-            this.btnSaveProjectDetails = new System.Windows.Forms.Button();
-            this.label27 = new System.Windows.Forms.Label();
-            this.txtProjectName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtProjectManager = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtProjectOfficeManager = new System.Windows.Forms.TextBox();
-            this.checkBoxProjectOfficeRequirements = new System.Windows.Forms.CheckBox();
-            this.checkBoxProjectOfficePremisesProcured = new System.Windows.Forms.CheckBox();
-            this.checkBoxPremisesPracticalLocation = new System.Windows.Forms.CheckBox();
-            this.checkBoxPremisesMeetRequirements = new System.Windows.Forms.CheckBox();
-            this.checkBoxFormalContract = new System.Windows.Forms.CheckBox();
-            this.checkBoxPremisesProvideSufficient = new System.Windows.Forms.CheckBox();
-            this.checkBoxPremisesContinueAvaliable = new System.Windows.Forms.CheckBox();
-            this.checkBoxAdditionalFitOut = new System.Windows.Forms.CheckBox();
-            this.checkBoxOnSiteFacilities = new System.Windows.Forms.CheckBox();
             this.btnSavePremisesInfo = new System.Windows.Forms.Button();
+            this.checkBoxOnSiteFacilities = new System.Windows.Forms.CheckBox();
+            this.checkBoxAdditionalFitOut = new System.Windows.Forms.CheckBox();
+            this.checkBoxPremisesContinueAvaliable = new System.Windows.Forms.CheckBox();
+            this.checkBoxPremisesProvideSufficient = new System.Windows.Forms.CheckBox();
+            this.checkBoxFormalContract = new System.Windows.Forms.CheckBox();
+            this.checkBoxPremisesMeetRequirements = new System.Windows.Forms.CheckBox();
+            this.checkBoxPremisesPracticalLocation = new System.Windows.Forms.CheckBox();
+            this.checkBoxProjectOfficePremisesProcured = new System.Windows.Forms.CheckBox();
+            this.checkBoxProjectOfficeRequirements = new System.Windows.Forms.CheckBox();
+            this.tabPageEquipment = new System.Windows.Forms.TabPage();
+            this.btnSaveEquipInfo = new System.Windows.Forms.Button();
+            this.checkBoxEquipmentFunctioningAsRequired = new System.Windows.Forms.CheckBox();
+            this.checkBoxVideoConferencingAvaliable = new System.Windows.Forms.CheckBox();
+            this.checkBoxSufficientCommunicationsTechnologies = new System.Windows.Forms.CheckBox();
             this.checkBoxOfficeEquipmentFunctioning = new System.Windows.Forms.CheckBox();
             this.checkBoxSpareEquipmentAvaliable = new System.Windows.Forms.CheckBox();
             this.checkBoxMaintanenceContractsInPlace = new System.Windows.Forms.CheckBox();
             this.checkBoxProjectTeamRequiredEquipment = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.checkBoxEquipmentFunctioningAsRequired = new System.Windows.Forms.CheckBox();
-            this.checkBoxVideoConferencingAvaliable = new System.Windows.Forms.CheckBox();
-            this.checkBoxSufficientCommunicationsTechnologies = new System.Windows.Forms.CheckBox();
-            this.btnSaveEquipInfo = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
+            this.tabPageRoles = new System.Windows.Forms.TabPage();
+            this.btnSaveRolesInfo = new System.Windows.Forms.Button();
+            this.checkBoxSuitablySkilledPeopleAppointed = new System.Windows.Forms.CheckBox();
+            this.checkBoxJobDescriptionDescribeResponsibilities = new System.Windows.Forms.CheckBox();
+            this.checkBoxJobDescriptionDocumented = new System.Windows.Forms.CheckBox();
             this.checkBoxTeamLeader = new System.Windows.Forms.CheckBox();
             this.checkBoxRiskManager = new System.Windows.Forms.CheckBox();
             this.checkBoxQualityManager = new System.Windows.Forms.CheckBox();
@@ -71,18 +64,10 @@
             this.checkBoxProjectOfficeManager = new System.Windows.Forms.CheckBox();
             this.checkBoxProjectManager = new System.Windows.Forms.CheckBox();
             this.checkBoxProjectSponser = new System.Windows.Forms.CheckBox();
-            this.checkBoxSuitablySkilledPeopleAppointed = new System.Windows.Forms.CheckBox();
-            this.checkBoxJobDescriptionDescribeResponsibilities = new System.Windows.Forms.CheckBox();
-            this.checkBoxJobDescriptionDocumented = new System.Windows.Forms.CheckBox();
-            this.btnSaveRolesInfo = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.checkBoxSuitableProjectManagementMethodology = new System.Windows.Forms.CheckBox();
-            this.checkBoxPMBOK = new System.Windows.Forms.CheckBox();
-            this.checkBoxProjectPlanning = new System.Windows.Forms.CheckBox();
-            this.checkBoxHealthSafetyStandard = new System.Windows.Forms.CheckBox();
-            this.checkBoxISO = new System.Windows.Forms.CheckBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tabPageSandP = new System.Windows.Forms.TabPage();
+            this.btnSaveSPInfo = new System.Windows.Forms.Button();
+            this.checkBoxCommunicationsMP = new System.Windows.Forms.CheckBox();
             this.checkBoxAcceptanceMP = new System.Windows.Forms.CheckBox();
             this.checkBoxProcurementMP = new System.Windows.Forms.CheckBox();
             this.checkBoxIssueMP = new System.Windows.Forms.CheckBox();
@@ -91,67 +76,83 @@
             this.checkBoxQualityMP = new System.Windows.Forms.CheckBox();
             this.checkBoxCostMP = new System.Windows.Forms.CheckBox();
             this.checkBoxTimeMP = new System.Windows.Forms.CheckBox();
-            this.checkBoxCommunicationsMP = new System.Windows.Forms.CheckBox();
-            this.btnSaveSPInfo = new System.Windows.Forms.Button();
-            this.checkBoxJobDescription = new System.Windows.Forms.CheckBox();
-            this.checkBoxTermsofReference = new System.Windows.Forms.CheckBox();
-            this.checkBoxFeasibilityStudy = new System.Windows.Forms.CheckBox();
-            this.checkBoxBusinessCase = new System.Windows.Forms.CheckBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.checkBoxStageGateReviewForm = new System.Windows.Forms.CheckBox();
-            this.checkBoxRFRR = new System.Windows.Forms.CheckBox();
-            this.checkBoxCFCR = new System.Windows.Forms.CheckBox();
-            this.checkBoxQFDR = new System.Windows.Forms.CheckBox();
-            this.checkBoxEFER = new System.Windows.Forms.CheckBox();
-            this.checkBoxTFTR = new System.Windows.Forms.CheckBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.checkBoxSuitableProjectManagementMethodology = new System.Windows.Forms.CheckBox();
+            this.checkBoxPMBOK = new System.Windows.Forms.CheckBox();
+            this.checkBoxProjectPlanning = new System.Windows.Forms.CheckBox();
+            this.checkBoxHealthSafetyStandard = new System.Windows.Forms.CheckBox();
+            this.checkBoxISO = new System.Windows.Forms.CheckBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tabPageTemplates = new System.Windows.Forms.TabPage();
+            this.btnSaveTemplatesInfo = new System.Windows.Forms.Button();
+            this.checkBoxTenderRegister = new System.Windows.Forms.CheckBox();
+            this.checkBoxSupplierContract = new System.Windows.Forms.CheckBox();
+            this.checkBoxProcurementPlan = new System.Windows.Forms.CheckBox();
+            this.checkBoxCommunicationsPlan = new System.Windows.Forms.CheckBox();
+            this.checkBoxAcceptancePlan = new System.Windows.Forms.CheckBox();
+            this.checkBoxAR = new System.Windows.Forms.CheckBox();
+            this.checkBoxAF = new System.Windows.Forms.CheckBox();
+            this.checkBoxCR = new System.Windows.Forms.CheckBox();
+            this.checkBoxPSR = new System.Windows.Forms.CheckBox();
+            this.checkBoxPR = new System.Windows.Forms.CheckBox();
+            this.checkBoxPOF = new System.Windows.Forms.CheckBox();
+            this.checkBoxIFIR = new System.Windows.Forms.CheckBox();
+            this.checkBoxPostImplementationReview = new System.Windows.Forms.CheckBox();
+            this.checkBoxProjectClosureReport = new System.Windows.Forms.CheckBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.checkBoxTemplatesRiskPlan = new System.Windows.Forms.CheckBox();
             this.checkBoxQualityPlan = new System.Windows.Forms.CheckBox();
             this.checkBoxFinancialPlan = new System.Windows.Forms.CheckBox();
             this.checkBoxResourcePlan = new System.Windows.Forms.CheckBox();
             this.checkBoxProjectPlan = new System.Windows.Forms.CheckBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.checkBoxPostImplementationReview = new System.Windows.Forms.CheckBox();
-            this.checkBoxProjectClosureReport = new System.Windows.Forms.CheckBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.checkBoxCR = new System.Windows.Forms.CheckBox();
-            this.checkBoxPSR = new System.Windows.Forms.CheckBox();
-            this.checkBoxPR = new System.Windows.Forms.CheckBox();
-            this.checkBoxPOF = new System.Windows.Forms.CheckBox();
-            this.checkBoxIFIR = new System.Windows.Forms.CheckBox();
-            this.checkBoxAR = new System.Windows.Forms.CheckBox();
-            this.checkBoxAF = new System.Windows.Forms.CheckBox();
-            this.checkBoxTenderRegister = new System.Windows.Forms.CheckBox();
-            this.checkBoxSupplierContract = new System.Windows.Forms.CheckBox();
-            this.checkBoxProcurementPlan = new System.Windows.Forms.CheckBox();
-            this.checkBoxCommunicationsPlan = new System.Windows.Forms.CheckBox();
-            this.checkBoxAcceptancePlan = new System.Windows.Forms.CheckBox();
-            this.btnSaveTemplatesInfo = new System.Windows.Forms.Button();
-            this.checkBoxTM3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxTM2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxTM1 = new System.Windows.Forms.CheckBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.checkBoxCM3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCM2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCM1 = new System.Windows.Forms.CheckBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.checkBoxQM3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxQM2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxQM1 = new System.Windows.Forms.CheckBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.checkBoxChangeM3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxChangeM2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxChangeM1 = new System.Windows.Forms.CheckBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.checkBoxRM3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxRM2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxRM1 = new System.Windows.Forms.CheckBox();
-            this.label17 = new System.Windows.Forms.Label();
+            this.checkBoxRFRR = new System.Windows.Forms.CheckBox();
+            this.checkBoxCFCR = new System.Windows.Forms.CheckBox();
+            this.checkBoxQFDR = new System.Windows.Forms.CheckBox();
+            this.checkBoxEFER = new System.Windows.Forms.CheckBox();
+            this.checkBoxTFTR = new System.Windows.Forms.CheckBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.checkBoxStageGateReviewForm = new System.Windows.Forms.CheckBox();
+            this.checkBoxJobDescription = new System.Windows.Forms.CheckBox();
+            this.checkBoxTermsofReference = new System.Windows.Forms.CheckBox();
+            this.checkBoxFeasibilityStudy = new System.Windows.Forms.CheckBox();
+            this.checkBoxBusinessCase = new System.Windows.Forms.CheckBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tabPageServicesPt1 = new System.Windows.Forms.TabPage();
             this.checkBoxIM3 = new System.Windows.Forms.CheckBox();
             this.checkBoxIM2 = new System.Windows.Forms.CheckBox();
             this.checkBoxIM1 = new System.Windows.Forms.CheckBox();
             this.label18 = new System.Windows.Forms.Label();
+            this.checkBoxRM3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxRM2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxRM1 = new System.Windows.Forms.CheckBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.checkBoxChangeM3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxChangeM2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxChangeM1 = new System.Windows.Forms.CheckBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.checkBoxQM3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxQM2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxQM1 = new System.Windows.Forms.CheckBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.checkBoxCM3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCM2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCM1 = new System.Windows.Forms.CheckBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.checkBoxTM3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxTM2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxTM1 = new System.Windows.Forms.CheckBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.tabPageServicesPt2 = new System.Windows.Forms.TabPage();
+            this.checkBoxCommsM4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCommsM3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCommsM2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCommsM1 = new System.Windows.Forms.CheckBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.checkBoxAM4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxPM5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxPM4 = new System.Windows.Forms.CheckBox();
             this.checkBoxAM3 = new System.Windows.Forms.CheckBox();
             this.checkBoxAM2 = new System.Windows.Forms.CheckBox();
             this.checkBoxAM1 = new System.Windows.Forms.CheckBox();
@@ -160,15 +161,11 @@
             this.checkBoxPM2 = new System.Windows.Forms.CheckBox();
             this.checkBoxPM1 = new System.Windows.Forms.CheckBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.checkBoxPM4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxPM5 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAM4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCommsM4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCommsM3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCommsM2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCommsM1 = new System.Windows.Forms.CheckBox();
-            this.label19 = new System.Windows.Forms.Label();
             this.tabPageServicesPt3 = new System.Windows.Forms.TabPage();
+            this.checkBoxPT3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxPT2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxPT1 = new System.Windows.Forms.CheckBox();
+            this.label25 = new System.Windows.Forms.Label();
             this.checkBoxSS3 = new System.Windows.Forms.CheckBox();
             this.checkBoxSS2 = new System.Windows.Forms.CheckBox();
             this.checkBoxSS1 = new System.Windows.Forms.CheckBox();
@@ -179,21 +176,24 @@
             this.checkBoxSGR2 = new System.Windows.Forms.CheckBox();
             this.checkBoxSGR1 = new System.Windows.Forms.CheckBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.checkBoxPT3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxPT2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxPT1 = new System.Windows.Forms.CheckBox();
-            this.label25 = new System.Windows.Forms.Label();
             this.tabPageServicesPt4 = new System.Windows.Forms.TabPage();
-            this.checkBoxFD2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxFD1 = new System.Windows.Forms.CheckBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.checkBoxPA2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxPA1 = new System.Windows.Forms.CheckBox();
-            this.label28 = new System.Windows.Forms.Label();
+            this.btnSaveServicesInfo = new System.Windows.Forms.Button();
             this.checkBoxUCR2 = new System.Windows.Forms.CheckBox();
             this.checkBoxUCR1 = new System.Windows.Forms.CheckBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.btnSaveServicesInfo = new System.Windows.Forms.Button();
+            this.checkBoxPA2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxPA1 = new System.Windows.Forms.CheckBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.checkBoxFD2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxFD1 = new System.Windows.Forms.CheckBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.btnSaveProjectDetails = new System.Windows.Forms.Button();
+            this.label27 = new System.Windows.Forms.Label();
+            this.txtProjectName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtProjectManager = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtProjectOfficeManager = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPagePremises.SuspendLayout();
             this.tabPageEquipment.SuspendLayout();
@@ -243,6 +243,117 @@
             this.tabPagePremises.TabIndex = 1;
             this.tabPagePremises.Text = "Premises";
             // 
+            // btnSavePremisesInfo
+            // 
+            this.btnSavePremisesInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSavePremisesInfo.Location = new System.Drawing.Point(668, 295);
+            this.btnSavePremisesInfo.Name = "btnSavePremisesInfo";
+            this.btnSavePremisesInfo.Size = new System.Drawing.Size(101, 37);
+            this.btnSavePremisesInfo.TabIndex = 9;
+            this.btnSavePremisesInfo.Text = "Save Premises Information";
+            this.btnSavePremisesInfo.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxOnSiteFacilities
+            // 
+            this.checkBoxOnSiteFacilities.AutoSize = true;
+            this.checkBoxOnSiteFacilities.Font = new System.Drawing.Font("Cambria", 9F);
+            this.checkBoxOnSiteFacilities.Location = new System.Drawing.Point(7, 183);
+            this.checkBoxOnSiteFacilities.Name = "checkBoxOnSiteFacilities";
+            this.checkBoxOnSiteFacilities.Size = new System.Drawing.Size(444, 18);
+            this.checkBoxOnSiteFacilities.TabIndex = 8;
+            this.checkBoxOnSiteFacilities.Text = "Are the on-site facilities sufficient (e.g. number of meeting rooms, bathrooms)? " +
+    "©";
+            this.checkBoxOnSiteFacilities.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAdditionalFitOut
+            // 
+            this.checkBoxAdditionalFitOut.AutoSize = true;
+            this.checkBoxAdditionalFitOut.Font = new System.Drawing.Font("Cambria", 9F);
+            this.checkBoxAdditionalFitOut.Location = new System.Drawing.Point(7, 161);
+            this.checkBoxAdditionalFitOut.Name = "checkBoxAdditionalFitOut";
+            this.checkBoxAdditionalFitOut.Size = new System.Drawing.Size(457, 18);
+            this.checkBoxAdditionalFitOut.TabIndex = 7;
+            this.checkBoxAdditionalFitOut.Text = "Do the premises require additional fit-out (e.g. partitions, cabling, air conditi" +
+    "oning)?";
+            this.checkBoxAdditionalFitOut.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxPremisesContinueAvaliable
+            // 
+            this.checkBoxPremisesContinueAvaliable.AutoSize = true;
+            this.checkBoxPremisesContinueAvaliable.Font = new System.Drawing.Font("Cambria", 9F);
+            this.checkBoxPremisesContinueAvaliable.Location = new System.Drawing.Point(7, 139);
+            this.checkBoxPremisesContinueAvaliable.Name = "checkBoxPremisesContinueAvaliable";
+            this.checkBoxPremisesContinueAvaliable.Size = new System.Drawing.Size(371, 18);
+            this.checkBoxPremisesContinueAvaliable.TabIndex = 6;
+            this.checkBoxPremisesContinueAvaliable.Text = "Will the premises continue to be available if the project is delayed?";
+            this.checkBoxPremisesContinueAvaliable.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxPremisesProvideSufficient
+            // 
+            this.checkBoxPremisesProvideSufficient.AutoSize = true;
+            this.checkBoxPremisesProvideSufficient.Font = new System.Drawing.Font("Cambria", 9F);
+            this.checkBoxPremisesProvideSufficient.Location = new System.Drawing.Point(6, 117);
+            this.checkBoxPremisesProvideSufficient.Name = "checkBoxPremisesProvideSufficient";
+            this.checkBoxPremisesProvideSufficient.Size = new System.Drawing.Size(347, 18);
+            this.checkBoxPremisesProvideSufficient.TabIndex = 5;
+            this.checkBoxPremisesProvideSufficient.Text = "Do the premises provide sufficient space for the project team?";
+            this.checkBoxPremisesProvideSufficient.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFormalContract
+            // 
+            this.checkBoxFormalContract.AutoSize = true;
+            this.checkBoxFormalContract.Font = new System.Drawing.Font("Cambria", 9F);
+            this.checkBoxFormalContract.Location = new System.Drawing.Point(7, 95);
+            this.checkBoxFormalContract.Name = "checkBoxFormalContract";
+            this.checkBoxFormalContract.Size = new System.Drawing.Size(402, 18);
+            this.checkBoxFormalContract.TabIndex = 4;
+            this.checkBoxFormalContract.Text = "Is there a formal contract for the lease / purchase / use of the premises?";
+            this.checkBoxFormalContract.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxPremisesMeetRequirements
+            // 
+            this.checkBoxPremisesMeetRequirements.AutoSize = true;
+            this.checkBoxPremisesMeetRequirements.Font = new System.Drawing.Font("Cambria", 9F);
+            this.checkBoxPremisesMeetRequirements.Location = new System.Drawing.Point(7, 73);
+            this.checkBoxPremisesMeetRequirements.Name = "checkBoxPremisesMeetRequirements";
+            this.checkBoxPremisesMeetRequirements.Size = new System.Drawing.Size(306, 18);
+            this.checkBoxPremisesMeetRequirements.TabIndex = 3;
+            this.checkBoxPremisesMeetRequirements.Text = "Do the premises meet the requirements documented?";
+            this.checkBoxPremisesMeetRequirements.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxPremisesPracticalLocation
+            // 
+            this.checkBoxPremisesPracticalLocation.AutoSize = true;
+            this.checkBoxPremisesPracticalLocation.Font = new System.Drawing.Font("Cambria", 9F);
+            this.checkBoxPremisesPracticalLocation.Location = new System.Drawing.Point(7, 51);
+            this.checkBoxPremisesPracticalLocation.Name = "checkBoxPremisesPracticalLocation";
+            this.checkBoxPremisesPracticalLocation.Size = new System.Drawing.Size(231, 18);
+            this.checkBoxPremisesPracticalLocation.TabIndex = 2;
+            this.checkBoxPremisesPracticalLocation.Text = "Are the premises in a practical location?";
+            this.checkBoxPremisesPracticalLocation.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxProjectOfficePremisesProcured
+            // 
+            this.checkBoxProjectOfficePremisesProcured.AutoSize = true;
+            this.checkBoxProjectOfficePremisesProcured.Font = new System.Drawing.Font("Cambria", 9F);
+            this.checkBoxProjectOfficePremisesProcured.Location = new System.Drawing.Point(6, 29);
+            this.checkBoxProjectOfficePremisesProcured.Name = "checkBoxProjectOfficePremisesProcured";
+            this.checkBoxProjectOfficePremisesProcured.Size = new System.Drawing.Size(279, 18);
+            this.checkBoxProjectOfficePremisesProcured.TabIndex = 1;
+            this.checkBoxProjectOfficePremisesProcured.Text = "Have the Project Office premises been procured?";
+            this.checkBoxProjectOfficePremisesProcured.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxProjectOfficeRequirements
+            // 
+            this.checkBoxProjectOfficeRequirements.AutoSize = true;
+            this.checkBoxProjectOfficeRequirements.Font = new System.Drawing.Font("Cambria", 9F);
+            this.checkBoxProjectOfficeRequirements.Location = new System.Drawing.Point(7, 7);
+            this.checkBoxProjectOfficeRequirements.Name = "checkBoxProjectOfficeRequirements";
+            this.checkBoxProjectOfficeRequirements.Size = new System.Drawing.Size(292, 18);
+            this.checkBoxProjectOfficeRequirements.TabIndex = 0;
+            this.checkBoxProjectOfficeRequirements.Text = "Were the Project Office requirements documented?";
+            this.checkBoxProjectOfficeRequirements.UseVisualStyleBackColor = true;
+            // 
             // tabPageEquipment
             // 
             this.tabPageEquipment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -263,321 +374,45 @@
             this.tabPageEquipment.TabIndex = 2;
             this.tabPageEquipment.Text = "Equipment";
             // 
-            // tabPageRoles
+            // btnSaveEquipInfo
             // 
-            this.tabPageRoles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPageRoles.Controls.Add(this.btnSaveRolesInfo);
-            this.tabPageRoles.Controls.Add(this.checkBoxSuitablySkilledPeopleAppointed);
-            this.tabPageRoles.Controls.Add(this.checkBoxJobDescriptionDescribeResponsibilities);
-            this.tabPageRoles.Controls.Add(this.checkBoxJobDescriptionDocumented);
-            this.tabPageRoles.Controls.Add(this.checkBoxTeamLeader);
-            this.tabPageRoles.Controls.Add(this.checkBoxRiskManager);
-            this.tabPageRoles.Controls.Add(this.checkBoxQualityManager);
-            this.tabPageRoles.Controls.Add(this.checkBoxCommManager);
-            this.tabPageRoles.Controls.Add(this.checkBoxProcurementManager);
-            this.tabPageRoles.Controls.Add(this.checkBoxProjectOfficeManager);
-            this.tabPageRoles.Controls.Add(this.checkBoxProjectManager);
-            this.tabPageRoles.Controls.Add(this.checkBoxProjectSponser);
-            this.tabPageRoles.Controls.Add(this.label5);
-            this.tabPageRoles.Location = new System.Drawing.Point(4, 21);
-            this.tabPageRoles.Name = "tabPageRoles";
-            this.tabPageRoles.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageRoles.Size = new System.Drawing.Size(828, 348);
-            this.tabPageRoles.TabIndex = 3;
-            this.tabPageRoles.Text = "Roles";
+            this.btnSaveEquipInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSaveEquipInfo.Location = new System.Drawing.Point(668, 295);
+            this.btnSaveEquipInfo.Name = "btnSaveEquipInfo";
+            this.btnSaveEquipInfo.Size = new System.Drawing.Size(101, 37);
+            this.btnSaveEquipInfo.TabIndex = 16;
+            this.btnSaveEquipInfo.Text = "Save Equipment Information";
+            this.btnSaveEquipInfo.UseVisualStyleBackColor = true;
             // 
-            // tabPageSandP
+            // checkBoxEquipmentFunctioningAsRequired
             // 
-            this.tabPageSandP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPageSandP.Controls.Add(this.btnSaveSPInfo);
-            this.tabPageSandP.Controls.Add(this.checkBoxCommunicationsMP);
-            this.tabPageSandP.Controls.Add(this.checkBoxAcceptanceMP);
-            this.tabPageSandP.Controls.Add(this.checkBoxProcurementMP);
-            this.tabPageSandP.Controls.Add(this.checkBoxIssueMP);
-            this.tabPageSandP.Controls.Add(this.checkBoxRiskMP);
-            this.tabPageSandP.Controls.Add(this.checkBoxChangeMP);
-            this.tabPageSandP.Controls.Add(this.checkBoxQualityMP);
-            this.tabPageSandP.Controls.Add(this.checkBoxCostMP);
-            this.tabPageSandP.Controls.Add(this.checkBoxTimeMP);
-            this.tabPageSandP.Controls.Add(this.label8);
-            this.tabPageSandP.Controls.Add(this.checkBoxSuitableProjectManagementMethodology);
-            this.tabPageSandP.Controls.Add(this.checkBoxPMBOK);
-            this.tabPageSandP.Controls.Add(this.checkBoxProjectPlanning);
-            this.tabPageSandP.Controls.Add(this.checkBoxHealthSafetyStandard);
-            this.tabPageSandP.Controls.Add(this.checkBoxISO);
-            this.tabPageSandP.Controls.Add(this.label7);
-            this.tabPageSandP.Controls.Add(this.label6);
-            this.tabPageSandP.Location = new System.Drawing.Point(4, 21);
-            this.tabPageSandP.Name = "tabPageSandP";
-            this.tabPageSandP.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSandP.Size = new System.Drawing.Size(828, 348);
-            this.tabPageSandP.TabIndex = 4;
-            this.tabPageSandP.Text = "Standards & Processes";
+            this.checkBoxEquipmentFunctioningAsRequired.AutoSize = true;
+            this.checkBoxEquipmentFunctioningAsRequired.Location = new System.Drawing.Point(10, 219);
+            this.checkBoxEquipmentFunctioningAsRequired.Name = "checkBoxEquipmentFunctioningAsRequired";
+            this.checkBoxEquipmentFunctioningAsRequired.Size = new System.Drawing.Size(228, 16);
+            this.checkBoxEquipmentFunctioningAsRequired.TabIndex = 15;
+            this.checkBoxEquipmentFunctioningAsRequired.Text = "Is the equipment functioning as required? ©";
+            this.checkBoxEquipmentFunctioningAsRequired.UseVisualStyleBackColor = true;
             // 
-            // tabPageTemplates
+            // checkBoxVideoConferencingAvaliable
             // 
-            this.tabPageTemplates.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPageTemplates.Controls.Add(this.btnSaveTemplatesInfo);
-            this.tabPageTemplates.Controls.Add(this.checkBoxTenderRegister);
-            this.tabPageTemplates.Controls.Add(this.checkBoxSupplierContract);
-            this.tabPageTemplates.Controls.Add(this.checkBoxProcurementPlan);
-            this.tabPageTemplates.Controls.Add(this.checkBoxCommunicationsPlan);
-            this.tabPageTemplates.Controls.Add(this.checkBoxAcceptancePlan);
-            this.tabPageTemplates.Controls.Add(this.checkBoxAR);
-            this.tabPageTemplates.Controls.Add(this.checkBoxAF);
-            this.tabPageTemplates.Controls.Add(this.checkBoxCR);
-            this.tabPageTemplates.Controls.Add(this.checkBoxPSR);
-            this.tabPageTemplates.Controls.Add(this.checkBoxPR);
-            this.tabPageTemplates.Controls.Add(this.checkBoxPOF);
-            this.tabPageTemplates.Controls.Add(this.checkBoxIFIR);
-            this.tabPageTemplates.Controls.Add(this.checkBoxPostImplementationReview);
-            this.tabPageTemplates.Controls.Add(this.checkBoxProjectClosureReport);
-            this.tabPageTemplates.Controls.Add(this.label12);
-            this.tabPageTemplates.Controls.Add(this.checkBoxTemplatesRiskPlan);
-            this.tabPageTemplates.Controls.Add(this.checkBoxQualityPlan);
-            this.tabPageTemplates.Controls.Add(this.checkBoxFinancialPlan);
-            this.tabPageTemplates.Controls.Add(this.checkBoxResourcePlan);
-            this.tabPageTemplates.Controls.Add(this.checkBoxProjectPlan);
-            this.tabPageTemplates.Controls.Add(this.label11);
-            this.tabPageTemplates.Controls.Add(this.checkBoxRFRR);
-            this.tabPageTemplates.Controls.Add(this.checkBoxCFCR);
-            this.tabPageTemplates.Controls.Add(this.checkBoxQFDR);
-            this.tabPageTemplates.Controls.Add(this.checkBoxEFER);
-            this.tabPageTemplates.Controls.Add(this.checkBoxTFTR);
-            this.tabPageTemplates.Controls.Add(this.label10);
-            this.tabPageTemplates.Controls.Add(this.checkBoxStageGateReviewForm);
-            this.tabPageTemplates.Controls.Add(this.checkBoxJobDescription);
-            this.tabPageTemplates.Controls.Add(this.checkBoxTermsofReference);
-            this.tabPageTemplates.Controls.Add(this.checkBoxFeasibilityStudy);
-            this.tabPageTemplates.Controls.Add(this.checkBoxBusinessCase);
-            this.tabPageTemplates.Controls.Add(this.label9);
-            this.tabPageTemplates.Location = new System.Drawing.Point(4, 21);
-            this.tabPageTemplates.Name = "tabPageTemplates";
-            this.tabPageTemplates.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTemplates.Size = new System.Drawing.Size(828, 348);
-            this.tabPageTemplates.TabIndex = 5;
-            this.tabPageTemplates.Text = "Templates";
+            this.checkBoxVideoConferencingAvaliable.AutoSize = true;
+            this.checkBoxVideoConferencingAvaliable.Location = new System.Drawing.Point(10, 197);
+            this.checkBoxVideoConferencingAvaliable.Name = "checkBoxVideoConferencingAvaliable";
+            this.checkBoxVideoConferencingAvaliable.Size = new System.Drawing.Size(223, 16);
+            this.checkBoxVideoConferencingAvaliable.TabIndex = 14;
+            this.checkBoxVideoConferencingAvaliable.Text = "Is video conferencing equipment available?";
+            this.checkBoxVideoConferencingAvaliable.UseVisualStyleBackColor = true;
             // 
-            // tabPageServicesPt1
+            // checkBoxSufficientCommunicationsTechnologies
             // 
-            this.tabPageServicesPt1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPageServicesPt1.Controls.Add(this.checkBoxIM3);
-            this.tabPageServicesPt1.Controls.Add(this.checkBoxIM2);
-            this.tabPageServicesPt1.Controls.Add(this.checkBoxIM1);
-            this.tabPageServicesPt1.Controls.Add(this.label18);
-            this.tabPageServicesPt1.Controls.Add(this.checkBoxRM3);
-            this.tabPageServicesPt1.Controls.Add(this.checkBoxRM2);
-            this.tabPageServicesPt1.Controls.Add(this.checkBoxRM1);
-            this.tabPageServicesPt1.Controls.Add(this.label17);
-            this.tabPageServicesPt1.Controls.Add(this.checkBoxChangeM3);
-            this.tabPageServicesPt1.Controls.Add(this.checkBoxChangeM2);
-            this.tabPageServicesPt1.Controls.Add(this.checkBoxChangeM1);
-            this.tabPageServicesPt1.Controls.Add(this.label16);
-            this.tabPageServicesPt1.Controls.Add(this.checkBoxQM3);
-            this.tabPageServicesPt1.Controls.Add(this.checkBoxQM2);
-            this.tabPageServicesPt1.Controls.Add(this.checkBoxQM1);
-            this.tabPageServicesPt1.Controls.Add(this.label15);
-            this.tabPageServicesPt1.Controls.Add(this.checkBoxCM3);
-            this.tabPageServicesPt1.Controls.Add(this.checkBoxCM2);
-            this.tabPageServicesPt1.Controls.Add(this.checkBoxCM1);
-            this.tabPageServicesPt1.Controls.Add(this.label14);
-            this.tabPageServicesPt1.Controls.Add(this.checkBoxTM3);
-            this.tabPageServicesPt1.Controls.Add(this.checkBoxTM2);
-            this.tabPageServicesPt1.Controls.Add(this.checkBoxTM1);
-            this.tabPageServicesPt1.Controls.Add(this.label13);
-            this.tabPageServicesPt1.Location = new System.Drawing.Point(4, 21);
-            this.tabPageServicesPt1.Name = "tabPageServicesPt1";
-            this.tabPageServicesPt1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageServicesPt1.Size = new System.Drawing.Size(828, 348);
-            this.tabPageServicesPt1.TabIndex = 6;
-            this.tabPageServicesPt1.Text = "Services(Time,Cost,Quality,Change,Risk,Issue)";
-            // 
-            // btnSaveProjectDetails
-            // 
-            this.btnSaveProjectDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSaveProjectDetails.Location = new System.Drawing.Point(733, 12);
-            this.btnSaveProjectDetails.Name = "btnSaveProjectDetails";
-            this.btnSaveProjectDetails.Size = new System.Drawing.Size(111, 35);
-            this.btnSaveProjectDetails.TabIndex = 16;
-            this.btnSaveProjectDetails.Text = "Save Project Details";
-            this.btnSaveProjectDetails.UseVisualStyleBackColor = true;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(16, 15);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(153, 12);
-            this.label27.TabIndex = 15;
-            this.label27.Text = "Please Enter Your Project Name:";
-            // 
-            // txtProjectName
-            // 
-            this.txtProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProjectName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProjectName.ForeColor = System.Drawing.Color.White;
-            this.txtProjectName.Location = new System.Drawing.Point(185, 12);
-            this.txtProjectName.Name = "txtProjectName";
-            this.txtProjectName.Size = new System.Drawing.Size(113, 20);
-            this.txtProjectName.TabIndex = 14;
-            this.txtProjectName.Text = "Project Name";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(337, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(167, 12);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Please Enter Your Project Manager:";
-            // 
-            // txtProjectManager
-            // 
-            this.txtProjectManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProjectManager.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProjectManager.ForeColor = System.Drawing.Color.White;
-            this.txtProjectManager.Location = new System.Drawing.Point(534, 12);
-            this.txtProjectManager.Name = "txtProjectManager";
-            this.txtProjectManager.Size = new System.Drawing.Size(113, 20);
-            this.txtProjectManager.TabIndex = 17;
-            this.txtProjectManager.Text = "Project Manager";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(337, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(195, 12);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Please Enter Your Project Office Manager:";
-            // 
-            // txtProjectOfficeManager
-            // 
-            this.txtProjectOfficeManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProjectOfficeManager.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProjectOfficeManager.ForeColor = System.Drawing.Color.White;
-            this.txtProjectOfficeManager.Location = new System.Drawing.Point(534, 38);
-            this.txtProjectOfficeManager.Name = "txtProjectOfficeManager";
-            this.txtProjectOfficeManager.Size = new System.Drawing.Size(113, 20);
-            this.txtProjectOfficeManager.TabIndex = 19;
-            this.txtProjectOfficeManager.Text = "Project Office Manager";
-            // 
-            // checkBoxProjectOfficeRequirements
-            // 
-            this.checkBoxProjectOfficeRequirements.AutoSize = true;
-            this.checkBoxProjectOfficeRequirements.Font = new System.Drawing.Font("Cambria", 9F);
-            this.checkBoxProjectOfficeRequirements.Location = new System.Drawing.Point(7, 7);
-            this.checkBoxProjectOfficeRequirements.Name = "checkBoxProjectOfficeRequirements";
-            this.checkBoxProjectOfficeRequirements.Size = new System.Drawing.Size(292, 18);
-            this.checkBoxProjectOfficeRequirements.TabIndex = 0;
-            this.checkBoxProjectOfficeRequirements.Text = "Were the Project Office requirements documented?";
-            this.checkBoxProjectOfficeRequirements.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxProjectOfficePremisesProcured
-            // 
-            this.checkBoxProjectOfficePremisesProcured.AutoSize = true;
-            this.checkBoxProjectOfficePremisesProcured.Font = new System.Drawing.Font("Cambria", 9F);
-            this.checkBoxProjectOfficePremisesProcured.Location = new System.Drawing.Point(6, 29);
-            this.checkBoxProjectOfficePremisesProcured.Name = "checkBoxProjectOfficePremisesProcured";
-            this.checkBoxProjectOfficePremisesProcured.Size = new System.Drawing.Size(279, 18);
-            this.checkBoxProjectOfficePremisesProcured.TabIndex = 1;
-            this.checkBoxProjectOfficePremisesProcured.Text = "Have the Project Office premises been procured?";
-            this.checkBoxProjectOfficePremisesProcured.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxPremisesPracticalLocation
-            // 
-            this.checkBoxPremisesPracticalLocation.AutoSize = true;
-            this.checkBoxPremisesPracticalLocation.Font = new System.Drawing.Font("Cambria", 9F);
-            this.checkBoxPremisesPracticalLocation.Location = new System.Drawing.Point(7, 51);
-            this.checkBoxPremisesPracticalLocation.Name = "checkBoxPremisesPracticalLocation";
-            this.checkBoxPremisesPracticalLocation.Size = new System.Drawing.Size(231, 18);
-            this.checkBoxPremisesPracticalLocation.TabIndex = 2;
-            this.checkBoxPremisesPracticalLocation.Text = "Are the premises in a practical location?";
-            this.checkBoxPremisesPracticalLocation.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxPremisesMeetRequirements
-            // 
-            this.checkBoxPremisesMeetRequirements.AutoSize = true;
-            this.checkBoxPremisesMeetRequirements.Font = new System.Drawing.Font("Cambria", 9F);
-            this.checkBoxPremisesMeetRequirements.Location = new System.Drawing.Point(7, 73);
-            this.checkBoxPremisesMeetRequirements.Name = "checkBoxPremisesMeetRequirements";
-            this.checkBoxPremisesMeetRequirements.Size = new System.Drawing.Size(306, 18);
-            this.checkBoxPremisesMeetRequirements.TabIndex = 3;
-            this.checkBoxPremisesMeetRequirements.Text = "Do the premises meet the requirements documented?";
-            this.checkBoxPremisesMeetRequirements.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxFormalContract
-            // 
-            this.checkBoxFormalContract.AutoSize = true;
-            this.checkBoxFormalContract.Font = new System.Drawing.Font("Cambria", 9F);
-            this.checkBoxFormalContract.Location = new System.Drawing.Point(7, 95);
-            this.checkBoxFormalContract.Name = "checkBoxFormalContract";
-            this.checkBoxFormalContract.Size = new System.Drawing.Size(402, 18);
-            this.checkBoxFormalContract.TabIndex = 4;
-            this.checkBoxFormalContract.Text = "Is there a formal contract for the lease / purchase / use of the premises?";
-            this.checkBoxFormalContract.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxPremisesProvideSufficient
-            // 
-            this.checkBoxPremisesProvideSufficient.AutoSize = true;
-            this.checkBoxPremisesProvideSufficient.Font = new System.Drawing.Font("Cambria", 9F);
-            this.checkBoxPremisesProvideSufficient.Location = new System.Drawing.Point(6, 117);
-            this.checkBoxPremisesProvideSufficient.Name = "checkBoxPremisesProvideSufficient";
-            this.checkBoxPremisesProvideSufficient.Size = new System.Drawing.Size(347, 18);
-            this.checkBoxPremisesProvideSufficient.TabIndex = 5;
-            this.checkBoxPremisesProvideSufficient.Text = "Do the premises provide sufficient space for the project team?";
-            this.checkBoxPremisesProvideSufficient.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxPremisesContinueAvaliable
-            // 
-            this.checkBoxPremisesContinueAvaliable.AutoSize = true;
-            this.checkBoxPremisesContinueAvaliable.Font = new System.Drawing.Font("Cambria", 9F);
-            this.checkBoxPremisesContinueAvaliable.Location = new System.Drawing.Point(7, 139);
-            this.checkBoxPremisesContinueAvaliable.Name = "checkBoxPremisesContinueAvaliable";
-            this.checkBoxPremisesContinueAvaliable.Size = new System.Drawing.Size(371, 18);
-            this.checkBoxPremisesContinueAvaliable.TabIndex = 6;
-            this.checkBoxPremisesContinueAvaliable.Text = "Will the premises continue to be available if the project is delayed?";
-            this.checkBoxPremisesContinueAvaliable.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAdditionalFitOut
-            // 
-            this.checkBoxAdditionalFitOut.AutoSize = true;
-            this.checkBoxAdditionalFitOut.Font = new System.Drawing.Font("Cambria", 9F);
-            this.checkBoxAdditionalFitOut.Location = new System.Drawing.Point(7, 161);
-            this.checkBoxAdditionalFitOut.Name = "checkBoxAdditionalFitOut";
-            this.checkBoxAdditionalFitOut.Size = new System.Drawing.Size(457, 18);
-            this.checkBoxAdditionalFitOut.TabIndex = 7;
-            this.checkBoxAdditionalFitOut.Text = "Do the premises require additional fit-out (e.g. partitions, cabling, air conditi" +
-    "oning)?";
-            this.checkBoxAdditionalFitOut.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxOnSiteFacilities
-            // 
-            this.checkBoxOnSiteFacilities.AutoSize = true;
-            this.checkBoxOnSiteFacilities.Font = new System.Drawing.Font("Cambria", 9F);
-            this.checkBoxOnSiteFacilities.Location = new System.Drawing.Point(7, 183);
-            this.checkBoxOnSiteFacilities.Name = "checkBoxOnSiteFacilities";
-            this.checkBoxOnSiteFacilities.Size = new System.Drawing.Size(444, 18);
-            this.checkBoxOnSiteFacilities.TabIndex = 8;
-            this.checkBoxOnSiteFacilities.Text = "Are the on-site facilities sufficient (e.g. number of meeting rooms, bathrooms)? " +
-    "©";
-            this.checkBoxOnSiteFacilities.UseVisualStyleBackColor = true;
-            // 
-            // btnSavePremisesInfo
-            // 
-            this.btnSavePremisesInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSavePremisesInfo.Location = new System.Drawing.Point(668, 295);
-            this.btnSavePremisesInfo.Name = "btnSavePremisesInfo";
-            this.btnSavePremisesInfo.Size = new System.Drawing.Size(101, 37);
-            this.btnSavePremisesInfo.TabIndex = 9;
-            this.btnSavePremisesInfo.Text = "Save Premises Information";
-            this.btnSavePremisesInfo.UseVisualStyleBackColor = true;
+            this.checkBoxSufficientCommunicationsTechnologies.AutoSize = true;
+            this.checkBoxSufficientCommunicationsTechnologies.Location = new System.Drawing.Point(9, 175);
+            this.checkBoxSufficientCommunicationsTechnologies.Name = "checkBoxSufficientCommunicationsTechnologies";
+            this.checkBoxSufficientCommunicationsTechnologies.Size = new System.Drawing.Size(275, 16);
+            this.checkBoxSufficientCommunicationsTechnologies.TabIndex = 13;
+            this.checkBoxSufficientCommunicationsTechnologies.Text = "Are sufficient communications technologies available?";
+            this.checkBoxSufficientCommunicationsTechnologies.UseVisualStyleBackColor = true;
             // 
             // checkBoxOfficeEquipmentFunctioning
             // 
@@ -641,55 +476,68 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Communications Equipment";
             // 
-            // checkBoxEquipmentFunctioningAsRequired
+            // tabPageRoles
             // 
-            this.checkBoxEquipmentFunctioningAsRequired.AutoSize = true;
-            this.checkBoxEquipmentFunctioningAsRequired.Location = new System.Drawing.Point(10, 219);
-            this.checkBoxEquipmentFunctioningAsRequired.Name = "checkBoxEquipmentFunctioningAsRequired";
-            this.checkBoxEquipmentFunctioningAsRequired.Size = new System.Drawing.Size(228, 16);
-            this.checkBoxEquipmentFunctioningAsRequired.TabIndex = 15;
-            this.checkBoxEquipmentFunctioningAsRequired.Text = "Is the equipment functioning as required? ©";
-            this.checkBoxEquipmentFunctioningAsRequired.UseVisualStyleBackColor = true;
+            this.tabPageRoles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPageRoles.Controls.Add(this.btnSaveRolesInfo);
+            this.tabPageRoles.Controls.Add(this.checkBoxSuitablySkilledPeopleAppointed);
+            this.tabPageRoles.Controls.Add(this.checkBoxJobDescriptionDescribeResponsibilities);
+            this.tabPageRoles.Controls.Add(this.checkBoxJobDescriptionDocumented);
+            this.tabPageRoles.Controls.Add(this.checkBoxTeamLeader);
+            this.tabPageRoles.Controls.Add(this.checkBoxRiskManager);
+            this.tabPageRoles.Controls.Add(this.checkBoxQualityManager);
+            this.tabPageRoles.Controls.Add(this.checkBoxCommManager);
+            this.tabPageRoles.Controls.Add(this.checkBoxProcurementManager);
+            this.tabPageRoles.Controls.Add(this.checkBoxProjectOfficeManager);
+            this.tabPageRoles.Controls.Add(this.checkBoxProjectManager);
+            this.tabPageRoles.Controls.Add(this.checkBoxProjectSponser);
+            this.tabPageRoles.Controls.Add(this.label5);
+            this.tabPageRoles.Location = new System.Drawing.Point(4, 21);
+            this.tabPageRoles.Name = "tabPageRoles";
+            this.tabPageRoles.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageRoles.Size = new System.Drawing.Size(828, 348);
+            this.tabPageRoles.TabIndex = 3;
+            this.tabPageRoles.Text = "Roles";
             // 
-            // checkBoxVideoConferencingAvaliable
+            // btnSaveRolesInfo
             // 
-            this.checkBoxVideoConferencingAvaliable.AutoSize = true;
-            this.checkBoxVideoConferencingAvaliable.Location = new System.Drawing.Point(10, 197);
-            this.checkBoxVideoConferencingAvaliable.Name = "checkBoxVideoConferencingAvaliable";
-            this.checkBoxVideoConferencingAvaliable.Size = new System.Drawing.Size(223, 16);
-            this.checkBoxVideoConferencingAvaliable.TabIndex = 14;
-            this.checkBoxVideoConferencingAvaliable.Text = "Is video conferencing equipment available?";
-            this.checkBoxVideoConferencingAvaliable.UseVisualStyleBackColor = true;
+            this.btnSaveRolesInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSaveRolesInfo.Location = new System.Drawing.Point(717, 305);
+            this.btnSaveRolesInfo.Name = "btnSaveRolesInfo";
+            this.btnSaveRolesInfo.Size = new System.Drawing.Size(101, 37);
+            this.btnSaveRolesInfo.TabIndex = 20;
+            this.btnSaveRolesInfo.Text = "Save Roles Information";
+            this.btnSaveRolesInfo.UseVisualStyleBackColor = true;
             // 
-            // checkBoxSufficientCommunicationsTechnologies
+            // checkBoxSuitablySkilledPeopleAppointed
             // 
-            this.checkBoxSufficientCommunicationsTechnologies.AutoSize = true;
-            this.checkBoxSufficientCommunicationsTechnologies.Location = new System.Drawing.Point(9, 175);
-            this.checkBoxSufficientCommunicationsTechnologies.Name = "checkBoxSufficientCommunicationsTechnologies";
-            this.checkBoxSufficientCommunicationsTechnologies.Size = new System.Drawing.Size(275, 16);
-            this.checkBoxSufficientCommunicationsTechnologies.TabIndex = 13;
-            this.checkBoxSufficientCommunicationsTechnologies.Text = "Are sufficient communications technologies available?";
-            this.checkBoxSufficientCommunicationsTechnologies.UseVisualStyleBackColor = true;
+            this.checkBoxSuitablySkilledPeopleAppointed.AutoSize = true;
+            this.checkBoxSuitablySkilledPeopleAppointed.Location = new System.Drawing.Point(346, 85);
+            this.checkBoxSuitablySkilledPeopleAppointed.Name = "checkBoxSuitablySkilledPeopleAppointed";
+            this.checkBoxSuitablySkilledPeopleAppointed.Size = new System.Drawing.Size(312, 16);
+            this.checkBoxSuitablySkilledPeopleAppointed.TabIndex = 19;
+            this.checkBoxSuitablySkilledPeopleAppointed.Text = "Were suitably skilled people appointed to all the project roles?";
+            this.checkBoxSuitablySkilledPeopleAppointed.UseVisualStyleBackColor = true;
             // 
-            // btnSaveEquipInfo
+            // checkBoxJobDescriptionDescribeResponsibilities
             // 
-            this.btnSaveEquipInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSaveEquipInfo.Location = new System.Drawing.Point(668, 295);
-            this.btnSaveEquipInfo.Name = "btnSaveEquipInfo";
-            this.btnSaveEquipInfo.Size = new System.Drawing.Size(101, 37);
-            this.btnSaveEquipInfo.TabIndex = 16;
-            this.btnSaveEquipInfo.Text = "Save Equipment Information";
-            this.btnSaveEquipInfo.UseVisualStyleBackColor = true;
+            this.checkBoxJobDescriptionDescribeResponsibilities.AutoSize = true;
+            this.checkBoxJobDescriptionDescribeResponsibilities.Location = new System.Drawing.Point(346, 63);
+            this.checkBoxJobDescriptionDescribeResponsibilities.Name = "checkBoxJobDescriptionDescribeResponsibilities";
+            this.checkBoxJobDescriptionDescribeResponsibilities.Size = new System.Drawing.Size(386, 16);
+            this.checkBoxJobDescriptionDescribeResponsibilities.TabIndex = 18;
+            this.checkBoxJobDescriptionDescribeResponsibilities.Text = "Do all Job Descriptions describe the responsibilities and performance criteria?";
+            this.checkBoxJobDescriptionDescribeResponsibilities.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // checkBoxJobDescriptionDocumented
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label5.Location = new System.Drawing.Point(6, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(291, 17);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Have the following key roles been appointed?";
+            this.checkBoxJobDescriptionDocumented.AutoSize = true;
+            this.checkBoxJobDescriptionDocumented.Location = new System.Drawing.Point(346, 41);
+            this.checkBoxJobDescriptionDocumented.Name = "checkBoxJobDescriptionDocumented";
+            this.checkBoxJobDescriptionDocumented.Size = new System.Drawing.Size(324, 16);
+            this.checkBoxJobDescriptionDocumented.TabIndex = 17;
+            this.checkBoxJobDescriptionDocumented.Text = "Have Job Descriptions been documented for all the project roles?";
+            this.checkBoxJobDescriptionDocumented.UseVisualStyleBackColor = true;
             // 
             // checkBoxTeamLeader
             // 
@@ -720,6 +568,7 @@
             this.checkBoxQualityManager.TabIndex = 14;
             this.checkBoxQualityManager.Text = "Quality Manager";
             this.checkBoxQualityManager.UseVisualStyleBackColor = true;
+            this.checkBoxQualityManager.CheckedChanged += new System.EventHandler(this.checkBoxQualityManager_CheckedChanged);
             // 
             // checkBoxCommManager
             // 
@@ -771,126 +620,63 @@
             this.checkBoxProjectSponser.Text = "Project Sponsor";
             this.checkBoxProjectSponser.UseVisualStyleBackColor = true;
             // 
-            // checkBoxSuitablySkilledPeopleAppointed
+            // label5
             // 
-            this.checkBoxSuitablySkilledPeopleAppointed.AutoSize = true;
-            this.checkBoxSuitablySkilledPeopleAppointed.Location = new System.Drawing.Point(346, 85);
-            this.checkBoxSuitablySkilledPeopleAppointed.Name = "checkBoxSuitablySkilledPeopleAppointed";
-            this.checkBoxSuitablySkilledPeopleAppointed.Size = new System.Drawing.Size(312, 16);
-            this.checkBoxSuitablySkilledPeopleAppointed.TabIndex = 19;
-            this.checkBoxSuitablySkilledPeopleAppointed.Text = "Were suitably skilled people appointed to all the project roles?";
-            this.checkBoxSuitablySkilledPeopleAppointed.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label5.Location = new System.Drawing.Point(6, 12);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(291, 17);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Have the following key roles been appointed?";
             // 
-            // checkBoxJobDescriptionDescribeResponsibilities
+            // tabPageSandP
             // 
-            this.checkBoxJobDescriptionDescribeResponsibilities.AutoSize = true;
-            this.checkBoxJobDescriptionDescribeResponsibilities.Location = new System.Drawing.Point(346, 63);
-            this.checkBoxJobDescriptionDescribeResponsibilities.Name = "checkBoxJobDescriptionDescribeResponsibilities";
-            this.checkBoxJobDescriptionDescribeResponsibilities.Size = new System.Drawing.Size(386, 16);
-            this.checkBoxJobDescriptionDescribeResponsibilities.TabIndex = 18;
-            this.checkBoxJobDescriptionDescribeResponsibilities.Text = "Do all Job Descriptions describe the responsibilities and performance criteria?";
-            this.checkBoxJobDescriptionDescribeResponsibilities.UseVisualStyleBackColor = true;
+            this.tabPageSandP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPageSandP.Controls.Add(this.btnSaveSPInfo);
+            this.tabPageSandP.Controls.Add(this.checkBoxCommunicationsMP);
+            this.tabPageSandP.Controls.Add(this.checkBoxAcceptanceMP);
+            this.tabPageSandP.Controls.Add(this.checkBoxProcurementMP);
+            this.tabPageSandP.Controls.Add(this.checkBoxIssueMP);
+            this.tabPageSandP.Controls.Add(this.checkBoxRiskMP);
+            this.tabPageSandP.Controls.Add(this.checkBoxChangeMP);
+            this.tabPageSandP.Controls.Add(this.checkBoxQualityMP);
+            this.tabPageSandP.Controls.Add(this.checkBoxCostMP);
+            this.tabPageSandP.Controls.Add(this.checkBoxTimeMP);
+            this.tabPageSandP.Controls.Add(this.label8);
+            this.tabPageSandP.Controls.Add(this.checkBoxSuitableProjectManagementMethodology);
+            this.tabPageSandP.Controls.Add(this.checkBoxPMBOK);
+            this.tabPageSandP.Controls.Add(this.checkBoxProjectPlanning);
+            this.tabPageSandP.Controls.Add(this.checkBoxHealthSafetyStandard);
+            this.tabPageSandP.Controls.Add(this.checkBoxISO);
+            this.tabPageSandP.Controls.Add(this.label7);
+            this.tabPageSandP.Controls.Add(this.label6);
+            this.tabPageSandP.Location = new System.Drawing.Point(4, 21);
+            this.tabPageSandP.Name = "tabPageSandP";
+            this.tabPageSandP.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageSandP.Size = new System.Drawing.Size(828, 348);
+            this.tabPageSandP.TabIndex = 4;
+            this.tabPageSandP.Text = "Standards & Processes";
             // 
-            // checkBoxJobDescriptionDocumented
+            // btnSaveSPInfo
             // 
-            this.checkBoxJobDescriptionDocumented.AutoSize = true;
-            this.checkBoxJobDescriptionDocumented.Location = new System.Drawing.Point(346, 41);
-            this.checkBoxJobDescriptionDocumented.Name = "checkBoxJobDescriptionDocumented";
-            this.checkBoxJobDescriptionDocumented.Size = new System.Drawing.Size(324, 16);
-            this.checkBoxJobDescriptionDocumented.TabIndex = 17;
-            this.checkBoxJobDescriptionDocumented.Text = "Have Job Descriptions been documented for all the project roles?";
-            this.checkBoxJobDescriptionDocumented.UseVisualStyleBackColor = true;
+            this.btnSaveSPInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSaveSPInfo.Location = new System.Drawing.Point(717, 295);
+            this.btnSaveSPInfo.Name = "btnSaveSPInfo";
+            this.btnSaveSPInfo.Size = new System.Drawing.Size(101, 47);
+            this.btnSaveSPInfo.TabIndex = 29;
+            this.btnSaveSPInfo.Text = "Save Standards and Processes Information";
+            this.btnSaveSPInfo.UseVisualStyleBackColor = true;
             // 
-            // btnSaveRolesInfo
+            // checkBoxCommunicationsMP
             // 
-            this.btnSaveRolesInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSaveRolesInfo.Location = new System.Drawing.Point(717, 305);
-            this.btnSaveRolesInfo.Name = "btnSaveRolesInfo";
-            this.btnSaveRolesInfo.Size = new System.Drawing.Size(101, 37);
-            this.btnSaveRolesInfo.TabIndex = 20;
-            this.btnSaveRolesInfo.Text = "Save Roles Information";
-            this.btnSaveRolesInfo.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 9F);
-            this.label6.Location = new System.Drawing.Point(7, 7);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(468, 14);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Have all required industry, business and project management standards been identi" +
-    "fied?";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cambria", 9F);
-            this.label7.Location = new System.Drawing.Point(7, 23);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 14);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "For example:";
-            // 
-            // checkBoxSuitableProjectManagementMethodology
-            // 
-            this.checkBoxSuitableProjectManagementMethodology.AutoSize = true;
-            this.checkBoxSuitableProjectManagementMethodology.Location = new System.Drawing.Point(10, 128);
-            this.checkBoxSuitableProjectManagementMethodology.Name = "checkBoxSuitableProjectManagementMethodology";
-            this.checkBoxSuitableProjectManagementMethodology.Size = new System.Drawing.Size(341, 16);
-            this.checkBoxSuitableProjectManagementMethodology.TabIndex = 18;
-            this.checkBoxSuitableProjectManagementMethodology.Text = "Has a suitable Project Management methodology been implemented?";
-            this.checkBoxSuitableProjectManagementMethodology.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxPMBOK
-            // 
-            this.checkBoxPMBOK.AutoSize = true;
-            this.checkBoxPMBOK.Location = new System.Drawing.Point(11, 106);
-            this.checkBoxPMBOK.Name = "checkBoxPMBOK";
-            this.checkBoxPMBOK.Size = new System.Drawing.Size(120, 16);
-            this.checkBoxPMBOK.TabIndex = 17;
-            this.checkBoxPMBOK.Text = "PMI® and PMBOK® ";
-            this.checkBoxPMBOK.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxProjectPlanning
-            // 
-            this.checkBoxProjectPlanning.AutoSize = true;
-            this.checkBoxProjectPlanning.Location = new System.Drawing.Point(11, 84);
-            this.checkBoxProjectPlanning.Name = "checkBoxProjectPlanning";
-            this.checkBoxProjectPlanning.Size = new System.Drawing.Size(217, 16);
-            this.checkBoxProjectPlanning.TabIndex = 16;
-            this.checkBoxProjectPlanning.Text = "Project Planning and Reporting Standards";
-            this.checkBoxProjectPlanning.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxHealthSafetyStandard
-            // 
-            this.checkBoxHealthSafetyStandard.AutoSize = true;
-            this.checkBoxHealthSafetyStandard.Location = new System.Drawing.Point(11, 62);
-            this.checkBoxHealthSafetyStandard.Name = "checkBoxHealthSafetyStandard";
-            this.checkBoxHealthSafetyStandard.Size = new System.Drawing.Size(153, 16);
-            this.checkBoxHealthSafetyStandard.TabIndex = 15;
-            this.checkBoxHealthSafetyStandard.Text = "Health and Safety Standards";
-            this.checkBoxHealthSafetyStandard.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxISO
-            // 
-            this.checkBoxISO.AutoSize = true;
-            this.checkBoxISO.Location = new System.Drawing.Point(10, 40);
-            this.checkBoxISO.Name = "checkBoxISO";
-            this.checkBoxISO.Size = new System.Drawing.Size(141, 16);
-            this.checkBoxISO.TabIndex = 14;
-            this.checkBoxISO.Text = "Industry standards (ISO)";
-            this.checkBoxISO.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Cambria", 9F);
-            this.label8.Location = new System.Drawing.Point(557, 7);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(233, 14);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "Have the following processes been defined?";
+            this.checkBoxCommunicationsMP.AutoSize = true;
+            this.checkBoxCommunicationsMP.Location = new System.Drawing.Point(560, 200);
+            this.checkBoxCommunicationsMP.Name = "checkBoxCommunicationsMP";
+            this.checkBoxCommunicationsMP.Size = new System.Drawing.Size(203, 16);
+            this.checkBoxCommunicationsMP.TabIndex = 28;
+            this.checkBoxCommunicationsMP.Text = "Communications Management Process";
+            this.checkBoxCommunicationsMP.UseVisualStyleBackColor = true;
             // 
             // checkBoxAcceptanceMP
             // 
@@ -972,145 +758,290 @@
             this.checkBoxTimeMP.Text = "Time Management Process";
             this.checkBoxTimeMP.UseVisualStyleBackColor = true;
             // 
-            // checkBoxCommunicationsMP
+            // label8
             // 
-            this.checkBoxCommunicationsMP.AutoSize = true;
-            this.checkBoxCommunicationsMP.Location = new System.Drawing.Point(560, 200);
-            this.checkBoxCommunicationsMP.Name = "checkBoxCommunicationsMP";
-            this.checkBoxCommunicationsMP.Size = new System.Drawing.Size(203, 16);
-            this.checkBoxCommunicationsMP.TabIndex = 28;
-            this.checkBoxCommunicationsMP.Text = "Communications Management Process";
-            this.checkBoxCommunicationsMP.UseVisualStyleBackColor = true;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Cambria", 9F);
+            this.label8.Location = new System.Drawing.Point(557, 7);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(233, 14);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Have the following processes been defined?";
             // 
-            // btnSaveSPInfo
+            // checkBoxSuitableProjectManagementMethodology
             // 
-            this.btnSaveSPInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSaveSPInfo.Location = new System.Drawing.Point(717, 295);
-            this.btnSaveSPInfo.Name = "btnSaveSPInfo";
-            this.btnSaveSPInfo.Size = new System.Drawing.Size(101, 47);
-            this.btnSaveSPInfo.TabIndex = 29;
-            this.btnSaveSPInfo.Text = "Save Standards and Processes Information";
-            this.btnSaveSPInfo.UseVisualStyleBackColor = true;
+            this.checkBoxSuitableProjectManagementMethodology.AutoSize = true;
+            this.checkBoxSuitableProjectManagementMethodology.Location = new System.Drawing.Point(10, 128);
+            this.checkBoxSuitableProjectManagementMethodology.Name = "checkBoxSuitableProjectManagementMethodology";
+            this.checkBoxSuitableProjectManagementMethodology.Size = new System.Drawing.Size(341, 16);
+            this.checkBoxSuitableProjectManagementMethodology.TabIndex = 18;
+            this.checkBoxSuitableProjectManagementMethodology.Text = "Has a suitable Project Management methodology been implemented?";
+            this.checkBoxSuitableProjectManagementMethodology.UseVisualStyleBackColor = true;
             // 
-            // checkBoxJobDescription
+            // checkBoxPMBOK
             // 
-            this.checkBoxJobDescription.AutoSize = true;
-            this.checkBoxJobDescription.Location = new System.Drawing.Point(10, 98);
-            this.checkBoxJobDescription.Name = "checkBoxJobDescription";
-            this.checkBoxJobDescription.Size = new System.Drawing.Size(96, 16);
-            this.checkBoxJobDescription.TabIndex = 17;
-            this.checkBoxJobDescription.Text = "Job Description";
-            this.checkBoxJobDescription.UseVisualStyleBackColor = true;
+            this.checkBoxPMBOK.AutoSize = true;
+            this.checkBoxPMBOK.Location = new System.Drawing.Point(11, 106);
+            this.checkBoxPMBOK.Name = "checkBoxPMBOK";
+            this.checkBoxPMBOK.Size = new System.Drawing.Size(120, 16);
+            this.checkBoxPMBOK.TabIndex = 17;
+            this.checkBoxPMBOK.Text = "PMI® and PMBOK® ";
+            this.checkBoxPMBOK.UseVisualStyleBackColor = true;
             // 
-            // checkBoxTermsofReference
+            // checkBoxProjectPlanning
             // 
-            this.checkBoxTermsofReference.AutoSize = true;
-            this.checkBoxTermsofReference.Location = new System.Drawing.Point(10, 76);
-            this.checkBoxTermsofReference.Name = "checkBoxTermsofReference";
-            this.checkBoxTermsofReference.Size = new System.Drawing.Size(113, 16);
-            this.checkBoxTermsofReference.TabIndex = 16;
-            this.checkBoxTermsofReference.Text = "Terms of Reference";
-            this.checkBoxTermsofReference.UseVisualStyleBackColor = true;
+            this.checkBoxProjectPlanning.AutoSize = true;
+            this.checkBoxProjectPlanning.Location = new System.Drawing.Point(11, 84);
+            this.checkBoxProjectPlanning.Name = "checkBoxProjectPlanning";
+            this.checkBoxProjectPlanning.Size = new System.Drawing.Size(217, 16);
+            this.checkBoxProjectPlanning.TabIndex = 16;
+            this.checkBoxProjectPlanning.Text = "Project Planning and Reporting Standards";
+            this.checkBoxProjectPlanning.UseVisualStyleBackColor = true;
             // 
-            // checkBoxFeasibilityStudy
+            // checkBoxHealthSafetyStandard
             // 
-            this.checkBoxFeasibilityStudy.AutoSize = true;
-            this.checkBoxFeasibilityStudy.Location = new System.Drawing.Point(10, 54);
-            this.checkBoxFeasibilityStudy.Name = "checkBoxFeasibilityStudy";
-            this.checkBoxFeasibilityStudy.Size = new System.Drawing.Size(102, 16);
-            this.checkBoxFeasibilityStudy.TabIndex = 15;
-            this.checkBoxFeasibilityStudy.Text = "Feasibility Study";
-            this.checkBoxFeasibilityStudy.UseVisualStyleBackColor = true;
+            this.checkBoxHealthSafetyStandard.AutoSize = true;
+            this.checkBoxHealthSafetyStandard.Location = new System.Drawing.Point(11, 62);
+            this.checkBoxHealthSafetyStandard.Name = "checkBoxHealthSafetyStandard";
+            this.checkBoxHealthSafetyStandard.Size = new System.Drawing.Size(153, 16);
+            this.checkBoxHealthSafetyStandard.TabIndex = 15;
+            this.checkBoxHealthSafetyStandard.Text = "Health and Safety Standards";
+            this.checkBoxHealthSafetyStandard.UseVisualStyleBackColor = true;
             // 
-            // checkBoxBusinessCase
+            // checkBoxISO
             // 
-            this.checkBoxBusinessCase.AutoSize = true;
-            this.checkBoxBusinessCase.Location = new System.Drawing.Point(9, 32);
-            this.checkBoxBusinessCase.Name = "checkBoxBusinessCase";
-            this.checkBoxBusinessCase.Size = new System.Drawing.Size(89, 16);
-            this.checkBoxBusinessCase.TabIndex = 14;
-            this.checkBoxBusinessCase.Text = "Business Case";
-            this.checkBoxBusinessCase.UseVisualStyleBackColor = true;
+            this.checkBoxISO.AutoSize = true;
+            this.checkBoxISO.Location = new System.Drawing.Point(10, 40);
+            this.checkBoxISO.Name = "checkBoxISO";
+            this.checkBoxISO.Size = new System.Drawing.Size(141, 16);
+            this.checkBoxISO.TabIndex = 14;
+            this.checkBoxISO.Text = "Industry standards (ISO)";
+            this.checkBoxISO.UseVisualStyleBackColor = true;
             // 
-            // label9
+            // label7
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label9.Location = new System.Drawing.Point(6, 3);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(66, 17);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "Initiation";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Cambria", 9F);
+            this.label7.Location = new System.Drawing.Point(7, 23);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(74, 14);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "For example:";
             // 
-            // checkBoxStageGateReviewForm
+            // label6
             // 
-            this.checkBoxStageGateReviewForm.AutoSize = true;
-            this.checkBoxStageGateReviewForm.Location = new System.Drawing.Point(9, 120);
-            this.checkBoxStageGateReviewForm.Name = "checkBoxStageGateReviewForm";
-            this.checkBoxStageGateReviewForm.Size = new System.Drawing.Size(136, 16);
-            this.checkBoxStageGateReviewForm.TabIndex = 18;
-            this.checkBoxStageGateReviewForm.Text = "Stage Gate Review Form";
-            this.checkBoxStageGateReviewForm.UseVisualStyleBackColor = true;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Cambria", 9F);
+            this.label6.Location = new System.Drawing.Point(7, 7);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(468, 14);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Have all required industry, business and project management standards been identi" +
+    "fied?";
             // 
-            // checkBoxRFRR
+            // tabPageTemplates
             // 
-            this.checkBoxRFRR.AutoSize = true;
-            this.checkBoxRFRR.Location = new System.Drawing.Point(339, 120);
-            this.checkBoxRFRR.Name = "checkBoxRFRR";
-            this.checkBoxRFRR.Size = new System.Drawing.Size(139, 16);
-            this.checkBoxRFRR.TabIndex = 24;
-            this.checkBoxRFRR.Text = "Risk Form, Risk Register";
-            this.checkBoxRFRR.UseVisualStyleBackColor = true;
+            this.tabPageTemplates.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPageTemplates.Controls.Add(this.btnSaveTemplatesInfo);
+            this.tabPageTemplates.Controls.Add(this.checkBoxTenderRegister);
+            this.tabPageTemplates.Controls.Add(this.checkBoxSupplierContract);
+            this.tabPageTemplates.Controls.Add(this.checkBoxProcurementPlan);
+            this.tabPageTemplates.Controls.Add(this.checkBoxCommunicationsPlan);
+            this.tabPageTemplates.Controls.Add(this.checkBoxAcceptancePlan);
+            this.tabPageTemplates.Controls.Add(this.checkBoxAR);
+            this.tabPageTemplates.Controls.Add(this.checkBoxAF);
+            this.tabPageTemplates.Controls.Add(this.checkBoxCR);
+            this.tabPageTemplates.Controls.Add(this.checkBoxPSR);
+            this.tabPageTemplates.Controls.Add(this.checkBoxPR);
+            this.tabPageTemplates.Controls.Add(this.checkBoxPOF);
+            this.tabPageTemplates.Controls.Add(this.checkBoxIFIR);
+            this.tabPageTemplates.Controls.Add(this.checkBoxPostImplementationReview);
+            this.tabPageTemplates.Controls.Add(this.checkBoxProjectClosureReport);
+            this.tabPageTemplates.Controls.Add(this.label12);
+            this.tabPageTemplates.Controls.Add(this.checkBoxTemplatesRiskPlan);
+            this.tabPageTemplates.Controls.Add(this.checkBoxQualityPlan);
+            this.tabPageTemplates.Controls.Add(this.checkBoxFinancialPlan);
+            this.tabPageTemplates.Controls.Add(this.checkBoxResourcePlan);
+            this.tabPageTemplates.Controls.Add(this.checkBoxProjectPlan);
+            this.tabPageTemplates.Controls.Add(this.label11);
+            this.tabPageTemplates.Controls.Add(this.checkBoxRFRR);
+            this.tabPageTemplates.Controls.Add(this.checkBoxCFCR);
+            this.tabPageTemplates.Controls.Add(this.checkBoxQFDR);
+            this.tabPageTemplates.Controls.Add(this.checkBoxEFER);
+            this.tabPageTemplates.Controls.Add(this.checkBoxTFTR);
+            this.tabPageTemplates.Controls.Add(this.label10);
+            this.tabPageTemplates.Controls.Add(this.checkBoxStageGateReviewForm);
+            this.tabPageTemplates.Controls.Add(this.checkBoxJobDescription);
+            this.tabPageTemplates.Controls.Add(this.checkBoxTermsofReference);
+            this.tabPageTemplates.Controls.Add(this.checkBoxFeasibilityStudy);
+            this.tabPageTemplates.Controls.Add(this.checkBoxBusinessCase);
+            this.tabPageTemplates.Controls.Add(this.label9);
+            this.tabPageTemplates.Location = new System.Drawing.Point(4, 21);
+            this.tabPageTemplates.Name = "tabPageTemplates";
+            this.tabPageTemplates.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageTemplates.Size = new System.Drawing.Size(828, 348);
+            this.tabPageTemplates.TabIndex = 5;
+            this.tabPageTemplates.Text = "Templates";
             // 
-            // checkBoxCFCR
+            // btnSaveTemplatesInfo
             // 
-            this.checkBoxCFCR.AutoSize = true;
-            this.checkBoxCFCR.Location = new System.Drawing.Point(340, 98);
-            this.checkBoxCFCR.Name = "checkBoxCFCR";
-            this.checkBoxCFCR.Size = new System.Drawing.Size(163, 16);
-            this.checkBoxCFCR.TabIndex = 23;
-            this.checkBoxCFCR.Text = "Change Form, Change Register";
-            this.checkBoxCFCR.UseVisualStyleBackColor = true;
+            this.btnSaveTemplatesInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSaveTemplatesInfo.Location = new System.Drawing.Point(721, 305);
+            this.btnSaveTemplatesInfo.Name = "btnSaveTemplatesInfo";
+            this.btnSaveTemplatesInfo.Size = new System.Drawing.Size(101, 37);
+            this.btnSaveTemplatesInfo.TabIndex = 49;
+            this.btnSaveTemplatesInfo.Text = "Save Templates Information";
+            this.btnSaveTemplatesInfo.UseVisualStyleBackColor = true;
             // 
-            // checkBoxQFDR
+            // checkBoxTenderRegister
             // 
-            this.checkBoxQFDR.AutoSize = true;
-            this.checkBoxQFDR.Location = new System.Drawing.Point(340, 76);
-            this.checkBoxQFDR.Name = "checkBoxQFDR";
-            this.checkBoxQFDR.Size = new System.Drawing.Size(189, 16);
-            this.checkBoxQFDR.TabIndex = 22;
-            this.checkBoxQFDR.Text = "Quality Form, Deliverables Register";
-            this.checkBoxQFDR.UseVisualStyleBackColor = true;
+            this.checkBoxTenderRegister.AutoSize = true;
+            this.checkBoxTenderRegister.Location = new System.Drawing.Point(175, 230);
+            this.checkBoxTenderRegister.Name = "checkBoxTenderRegister";
+            this.checkBoxTenderRegister.Size = new System.Drawing.Size(98, 16);
+            this.checkBoxTenderRegister.TabIndex = 48;
+            this.checkBoxTenderRegister.Text = "Tender Register";
+            this.checkBoxTenderRegister.UseVisualStyleBackColor = true;
             // 
-            // checkBoxEFER
+            // checkBoxSupplierContract
             // 
-            this.checkBoxEFER.AutoSize = true;
-            this.checkBoxEFER.Location = new System.Drawing.Point(340, 54);
-            this.checkBoxEFER.Name = "checkBoxEFER";
-            this.checkBoxEFER.Size = new System.Drawing.Size(173, 16);
-            this.checkBoxEFER.TabIndex = 21;
-            this.checkBoxEFER.Text = "Expense Form, Expense Register";
-            this.checkBoxEFER.UseVisualStyleBackColor = true;
+            this.checkBoxSupplierContract.AutoSize = true;
+            this.checkBoxSupplierContract.Location = new System.Drawing.Point(176, 208);
+            this.checkBoxSupplierContract.Name = "checkBoxSupplierContract";
+            this.checkBoxSupplierContract.Size = new System.Drawing.Size(106, 16);
+            this.checkBoxSupplierContract.TabIndex = 47;
+            this.checkBoxSupplierContract.Text = "Supplier Contract";
+            this.checkBoxSupplierContract.UseVisualStyleBackColor = true;
             // 
-            // checkBoxTFTR
+            // checkBoxProcurementPlan
             // 
-            this.checkBoxTFTR.AutoSize = true;
-            this.checkBoxTFTR.Location = new System.Drawing.Point(340, 32);
-            this.checkBoxTFTR.Name = "checkBoxTFTR";
-            this.checkBoxTFTR.Size = new System.Drawing.Size(195, 16);
-            this.checkBoxTFTR.TabIndex = 20;
-            this.checkBoxTFTR.Text = "Timesheet Form, Timesheet Register";
-            this.checkBoxTFTR.UseVisualStyleBackColor = true;
+            this.checkBoxProcurementPlan.AutoSize = true;
+            this.checkBoxProcurementPlan.Location = new System.Drawing.Point(176, 186);
+            this.checkBoxProcurementPlan.Name = "checkBoxProcurementPlan";
+            this.checkBoxProcurementPlan.Size = new System.Drawing.Size(108, 16);
+            this.checkBoxProcurementPlan.TabIndex = 46;
+            this.checkBoxProcurementPlan.Text = "Procurement Plan";
+            this.checkBoxProcurementPlan.UseVisualStyleBackColor = true;
             // 
-            // label10
+            // checkBoxCommunicationsPlan
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label10.Location = new System.Drawing.Point(336, 3);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(71, 17);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "Execution";
+            this.checkBoxCommunicationsPlan.AutoSize = true;
+            this.checkBoxCommunicationsPlan.Location = new System.Drawing.Point(176, 164);
+            this.checkBoxCommunicationsPlan.Name = "checkBoxCommunicationsPlan";
+            this.checkBoxCommunicationsPlan.Size = new System.Drawing.Size(125, 16);
+            this.checkBoxCommunicationsPlan.TabIndex = 45;
+            this.checkBoxCommunicationsPlan.Text = "Communications Plan";
+            this.checkBoxCommunicationsPlan.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAcceptancePlan
+            // 
+            this.checkBoxAcceptancePlan.AutoSize = true;
+            this.checkBoxAcceptancePlan.Location = new System.Drawing.Point(175, 142);
+            this.checkBoxAcceptancePlan.Name = "checkBoxAcceptancePlan";
+            this.checkBoxAcceptancePlan.Size = new System.Drawing.Size(99, 16);
+            this.checkBoxAcceptancePlan.TabIndex = 44;
+            this.checkBoxAcceptancePlan.Text = "Acceptance Plan";
+            this.checkBoxAcceptancePlan.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAR
+            // 
+            this.checkBoxAR.AutoSize = true;
+            this.checkBoxAR.Location = new System.Drawing.Point(339, 274);
+            this.checkBoxAR.Name = "checkBoxAR";
+            this.checkBoxAR.Size = new System.Drawing.Size(118, 16);
+            this.checkBoxAR.TabIndex = 43;
+            this.checkBoxAR.Text = "Acceptance Register";
+            this.checkBoxAR.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAF
+            // 
+            this.checkBoxAF.AutoSize = true;
+            this.checkBoxAF.Location = new System.Drawing.Point(339, 252);
+            this.checkBoxAF.Name = "checkBoxAF";
+            this.checkBoxAF.Size = new System.Drawing.Size(105, 16);
+            this.checkBoxAF.TabIndex = 42;
+            this.checkBoxAF.Text = "Acceptance Form";
+            this.checkBoxAF.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCR
+            // 
+            this.checkBoxCR.AutoSize = true;
+            this.checkBoxCR.Location = new System.Drawing.Point(339, 230);
+            this.checkBoxCR.Name = "checkBoxCR";
+            this.checkBoxCR.Size = new System.Drawing.Size(144, 16);
+            this.checkBoxCR.TabIndex = 41;
+            this.checkBoxCR.Text = "Communications Register";
+            this.checkBoxCR.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxPSR
+            // 
+            this.checkBoxPSR.AutoSize = true;
+            this.checkBoxPSR.Location = new System.Drawing.Point(340, 208);
+            this.checkBoxPSR.Name = "checkBoxPSR";
+            this.checkBoxPSR.Size = new System.Drawing.Size(124, 16);
+            this.checkBoxPSR.TabIndex = 40;
+            this.checkBoxPSR.Text = "Project Status Report";
+            this.checkBoxPSR.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxPR
+            // 
+            this.checkBoxPR.AutoSize = true;
+            this.checkBoxPR.Location = new System.Drawing.Point(340, 186);
+            this.checkBoxPR.Name = "checkBoxPR";
+            this.checkBoxPR.Size = new System.Drawing.Size(127, 16);
+            this.checkBoxPR.TabIndex = 39;
+            this.checkBoxPR.Text = "Procurement Register";
+            this.checkBoxPR.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxPOF
+            // 
+            this.checkBoxPOF.AutoSize = true;
+            this.checkBoxPOF.Location = new System.Drawing.Point(340, 164);
+            this.checkBoxPOF.Name = "checkBoxPOF";
+            this.checkBoxPOF.Size = new System.Drawing.Size(125, 16);
+            this.checkBoxPOF.TabIndex = 38;
+            this.checkBoxPOF.Text = "Purchase Order Form";
+            this.checkBoxPOF.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxIFIR
+            // 
+            this.checkBoxIFIR.AutoSize = true;
+            this.checkBoxIFIR.Location = new System.Drawing.Point(339, 142);
+            this.checkBoxIFIR.Name = "checkBoxIFIR";
+            this.checkBoxIFIR.Size = new System.Drawing.Size(147, 16);
+            this.checkBoxIFIR.TabIndex = 37;
+            this.checkBoxIFIR.Text = "Issue Form, Issue Register";
+            this.checkBoxIFIR.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxPostImplementationReview
+            // 
+            this.checkBoxPostImplementationReview.AutoSize = true;
+            this.checkBoxPostImplementationReview.Location = new System.Drawing.Point(579, 54);
+            this.checkBoxPostImplementationReview.Name = "checkBoxPostImplementationReview";
+            this.checkBoxPostImplementationReview.Size = new System.Drawing.Size(159, 16);
+            this.checkBoxPostImplementationReview.TabIndex = 33;
+            this.checkBoxPostImplementationReview.Text = "Post Implementation Review";
+            this.checkBoxPostImplementationReview.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxProjectClosureReport
+            // 
+            this.checkBoxProjectClosureReport.AutoSize = true;
+            this.checkBoxProjectClosureReport.Location = new System.Drawing.Point(579, 32);
+            this.checkBoxProjectClosureReport.Name = "checkBoxProjectClosureReport";
+            this.checkBoxProjectClosureReport.Size = new System.Drawing.Size(131, 16);
+            this.checkBoxProjectClosureReport.TabIndex = 32;
+            this.checkBoxProjectClosureReport.Text = "Project Closure Report";
+            this.checkBoxProjectClosureReport.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label12.Location = new System.Drawing.Point(576, 3);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(55, 17);
+            this.label12.TabIndex = 31;
+            this.label12.Text = "Closure";
             // 
             // checkBoxTemplatesRiskPlan
             // 
@@ -1172,246 +1103,279 @@
             this.label11.TabIndex = 25;
             this.label11.Text = "Planning";
             // 
-            // checkBoxPostImplementationReview
+            // checkBoxRFRR
             // 
-            this.checkBoxPostImplementationReview.AutoSize = true;
-            this.checkBoxPostImplementationReview.Location = new System.Drawing.Point(579, 54);
-            this.checkBoxPostImplementationReview.Name = "checkBoxPostImplementationReview";
-            this.checkBoxPostImplementationReview.Size = new System.Drawing.Size(159, 16);
-            this.checkBoxPostImplementationReview.TabIndex = 33;
-            this.checkBoxPostImplementationReview.Text = "Post Implementation Review";
-            this.checkBoxPostImplementationReview.UseVisualStyleBackColor = true;
+            this.checkBoxRFRR.AutoSize = true;
+            this.checkBoxRFRR.Location = new System.Drawing.Point(339, 120);
+            this.checkBoxRFRR.Name = "checkBoxRFRR";
+            this.checkBoxRFRR.Size = new System.Drawing.Size(139, 16);
+            this.checkBoxRFRR.TabIndex = 24;
+            this.checkBoxRFRR.Text = "Risk Form, Risk Register";
+            this.checkBoxRFRR.UseVisualStyleBackColor = true;
             // 
-            // checkBoxProjectClosureReport
+            // checkBoxCFCR
             // 
-            this.checkBoxProjectClosureReport.AutoSize = true;
-            this.checkBoxProjectClosureReport.Location = new System.Drawing.Point(579, 32);
-            this.checkBoxProjectClosureReport.Name = "checkBoxProjectClosureReport";
-            this.checkBoxProjectClosureReport.Size = new System.Drawing.Size(131, 16);
-            this.checkBoxProjectClosureReport.TabIndex = 32;
-            this.checkBoxProjectClosureReport.Text = "Project Closure Report";
-            this.checkBoxProjectClosureReport.UseVisualStyleBackColor = true;
+            this.checkBoxCFCR.AutoSize = true;
+            this.checkBoxCFCR.Location = new System.Drawing.Point(340, 98);
+            this.checkBoxCFCR.Name = "checkBoxCFCR";
+            this.checkBoxCFCR.Size = new System.Drawing.Size(163, 16);
+            this.checkBoxCFCR.TabIndex = 23;
+            this.checkBoxCFCR.Text = "Change Form, Change Register";
+            this.checkBoxCFCR.UseVisualStyleBackColor = true;
             // 
-            // label12
+            // checkBoxQFDR
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label12.Location = new System.Drawing.Point(576, 3);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(55, 17);
-            this.label12.TabIndex = 31;
-            this.label12.Text = "Closure";
+            this.checkBoxQFDR.AutoSize = true;
+            this.checkBoxQFDR.Location = new System.Drawing.Point(340, 76);
+            this.checkBoxQFDR.Name = "checkBoxQFDR";
+            this.checkBoxQFDR.Size = new System.Drawing.Size(189, 16);
+            this.checkBoxQFDR.TabIndex = 22;
+            this.checkBoxQFDR.Text = "Quality Form, Deliverables Register";
+            this.checkBoxQFDR.UseVisualStyleBackColor = true;
             // 
-            // checkBoxCR
+            // checkBoxEFER
             // 
-            this.checkBoxCR.AutoSize = true;
-            this.checkBoxCR.Location = new System.Drawing.Point(339, 230);
-            this.checkBoxCR.Name = "checkBoxCR";
-            this.checkBoxCR.Size = new System.Drawing.Size(144, 16);
-            this.checkBoxCR.TabIndex = 41;
-            this.checkBoxCR.Text = "Communications Register";
-            this.checkBoxCR.UseVisualStyleBackColor = true;
+            this.checkBoxEFER.AutoSize = true;
+            this.checkBoxEFER.Location = new System.Drawing.Point(340, 54);
+            this.checkBoxEFER.Name = "checkBoxEFER";
+            this.checkBoxEFER.Size = new System.Drawing.Size(173, 16);
+            this.checkBoxEFER.TabIndex = 21;
+            this.checkBoxEFER.Text = "Expense Form, Expense Register";
+            this.checkBoxEFER.UseVisualStyleBackColor = true;
             // 
-            // checkBoxPSR
+            // checkBoxTFTR
             // 
-            this.checkBoxPSR.AutoSize = true;
-            this.checkBoxPSR.Location = new System.Drawing.Point(340, 208);
-            this.checkBoxPSR.Name = "checkBoxPSR";
-            this.checkBoxPSR.Size = new System.Drawing.Size(124, 16);
-            this.checkBoxPSR.TabIndex = 40;
-            this.checkBoxPSR.Text = "Project Status Report";
-            this.checkBoxPSR.UseVisualStyleBackColor = true;
+            this.checkBoxTFTR.AutoSize = true;
+            this.checkBoxTFTR.Location = new System.Drawing.Point(340, 32);
+            this.checkBoxTFTR.Name = "checkBoxTFTR";
+            this.checkBoxTFTR.Size = new System.Drawing.Size(195, 16);
+            this.checkBoxTFTR.TabIndex = 20;
+            this.checkBoxTFTR.Text = "Timesheet Form, Timesheet Register";
+            this.checkBoxTFTR.UseVisualStyleBackColor = true;
             // 
-            // checkBoxPR
+            // label10
             // 
-            this.checkBoxPR.AutoSize = true;
-            this.checkBoxPR.Location = new System.Drawing.Point(340, 186);
-            this.checkBoxPR.Name = "checkBoxPR";
-            this.checkBoxPR.Size = new System.Drawing.Size(127, 16);
-            this.checkBoxPR.TabIndex = 39;
-            this.checkBoxPR.Text = "Procurement Register";
-            this.checkBoxPR.UseVisualStyleBackColor = true;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label10.Location = new System.Drawing.Point(336, 3);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(71, 17);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "Execution";
             // 
-            // checkBoxPOF
+            // checkBoxStageGateReviewForm
             // 
-            this.checkBoxPOF.AutoSize = true;
-            this.checkBoxPOF.Location = new System.Drawing.Point(340, 164);
-            this.checkBoxPOF.Name = "checkBoxPOF";
-            this.checkBoxPOF.Size = new System.Drawing.Size(125, 16);
-            this.checkBoxPOF.TabIndex = 38;
-            this.checkBoxPOF.Text = "Purchase Order Form";
-            this.checkBoxPOF.UseVisualStyleBackColor = true;
+            this.checkBoxStageGateReviewForm.AutoSize = true;
+            this.checkBoxStageGateReviewForm.Location = new System.Drawing.Point(9, 120);
+            this.checkBoxStageGateReviewForm.Name = "checkBoxStageGateReviewForm";
+            this.checkBoxStageGateReviewForm.Size = new System.Drawing.Size(136, 16);
+            this.checkBoxStageGateReviewForm.TabIndex = 18;
+            this.checkBoxStageGateReviewForm.Text = "Stage Gate Review Form";
+            this.checkBoxStageGateReviewForm.UseVisualStyleBackColor = true;
             // 
-            // checkBoxIFIR
+            // checkBoxJobDescription
             // 
-            this.checkBoxIFIR.AutoSize = true;
-            this.checkBoxIFIR.Location = new System.Drawing.Point(339, 142);
-            this.checkBoxIFIR.Name = "checkBoxIFIR";
-            this.checkBoxIFIR.Size = new System.Drawing.Size(147, 16);
-            this.checkBoxIFIR.TabIndex = 37;
-            this.checkBoxIFIR.Text = "Issue Form, Issue Register";
-            this.checkBoxIFIR.UseVisualStyleBackColor = true;
+            this.checkBoxJobDescription.AutoSize = true;
+            this.checkBoxJobDescription.Location = new System.Drawing.Point(10, 98);
+            this.checkBoxJobDescription.Name = "checkBoxJobDescription";
+            this.checkBoxJobDescription.Size = new System.Drawing.Size(96, 16);
+            this.checkBoxJobDescription.TabIndex = 17;
+            this.checkBoxJobDescription.Text = "Job Description";
+            this.checkBoxJobDescription.UseVisualStyleBackColor = true;
             // 
-            // checkBoxAR
+            // checkBoxTermsofReference
             // 
-            this.checkBoxAR.AutoSize = true;
-            this.checkBoxAR.Location = new System.Drawing.Point(339, 274);
-            this.checkBoxAR.Name = "checkBoxAR";
-            this.checkBoxAR.Size = new System.Drawing.Size(118, 16);
-            this.checkBoxAR.TabIndex = 43;
-            this.checkBoxAR.Text = "Acceptance Register";
-            this.checkBoxAR.UseVisualStyleBackColor = true;
+            this.checkBoxTermsofReference.AutoSize = true;
+            this.checkBoxTermsofReference.Location = new System.Drawing.Point(10, 76);
+            this.checkBoxTermsofReference.Name = "checkBoxTermsofReference";
+            this.checkBoxTermsofReference.Size = new System.Drawing.Size(113, 16);
+            this.checkBoxTermsofReference.TabIndex = 16;
+            this.checkBoxTermsofReference.Text = "Terms of Reference";
+            this.checkBoxTermsofReference.UseVisualStyleBackColor = true;
             // 
-            // checkBoxAF
+            // checkBoxFeasibilityStudy
             // 
-            this.checkBoxAF.AutoSize = true;
-            this.checkBoxAF.Location = new System.Drawing.Point(339, 252);
-            this.checkBoxAF.Name = "checkBoxAF";
-            this.checkBoxAF.Size = new System.Drawing.Size(105, 16);
-            this.checkBoxAF.TabIndex = 42;
-            this.checkBoxAF.Text = "Acceptance Form";
-            this.checkBoxAF.UseVisualStyleBackColor = true;
+            this.checkBoxFeasibilityStudy.AutoSize = true;
+            this.checkBoxFeasibilityStudy.Location = new System.Drawing.Point(10, 54);
+            this.checkBoxFeasibilityStudy.Name = "checkBoxFeasibilityStudy";
+            this.checkBoxFeasibilityStudy.Size = new System.Drawing.Size(102, 16);
+            this.checkBoxFeasibilityStudy.TabIndex = 15;
+            this.checkBoxFeasibilityStudy.Text = "Feasibility Study";
+            this.checkBoxFeasibilityStudy.UseVisualStyleBackColor = true;
             // 
-            // checkBoxTenderRegister
+            // checkBoxBusinessCase
             // 
-            this.checkBoxTenderRegister.AutoSize = true;
-            this.checkBoxTenderRegister.Location = new System.Drawing.Point(175, 230);
-            this.checkBoxTenderRegister.Name = "checkBoxTenderRegister";
-            this.checkBoxTenderRegister.Size = new System.Drawing.Size(98, 16);
-            this.checkBoxTenderRegister.TabIndex = 48;
-            this.checkBoxTenderRegister.Text = "Tender Register";
-            this.checkBoxTenderRegister.UseVisualStyleBackColor = true;
+            this.checkBoxBusinessCase.AutoSize = true;
+            this.checkBoxBusinessCase.Location = new System.Drawing.Point(9, 32);
+            this.checkBoxBusinessCase.Name = "checkBoxBusinessCase";
+            this.checkBoxBusinessCase.Size = new System.Drawing.Size(89, 16);
+            this.checkBoxBusinessCase.TabIndex = 14;
+            this.checkBoxBusinessCase.Text = "Business Case";
+            this.checkBoxBusinessCase.UseVisualStyleBackColor = true;
             // 
-            // checkBoxSupplierContract
+            // label9
             // 
-            this.checkBoxSupplierContract.AutoSize = true;
-            this.checkBoxSupplierContract.Location = new System.Drawing.Point(176, 208);
-            this.checkBoxSupplierContract.Name = "checkBoxSupplierContract";
-            this.checkBoxSupplierContract.Size = new System.Drawing.Size(106, 16);
-            this.checkBoxSupplierContract.TabIndex = 47;
-            this.checkBoxSupplierContract.Text = "Supplier Contract";
-            this.checkBoxSupplierContract.UseVisualStyleBackColor = true;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label9.Location = new System.Drawing.Point(6, 3);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(66, 17);
+            this.label9.TabIndex = 13;
+            this.label9.Text = "Initiation";
             // 
-            // checkBoxProcurementPlan
+            // tabPageServicesPt1
             // 
-            this.checkBoxProcurementPlan.AutoSize = true;
-            this.checkBoxProcurementPlan.Location = new System.Drawing.Point(176, 186);
-            this.checkBoxProcurementPlan.Name = "checkBoxProcurementPlan";
-            this.checkBoxProcurementPlan.Size = new System.Drawing.Size(108, 16);
-            this.checkBoxProcurementPlan.TabIndex = 46;
-            this.checkBoxProcurementPlan.Text = "Procurement Plan";
-            this.checkBoxProcurementPlan.UseVisualStyleBackColor = true;
+            this.tabPageServicesPt1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPageServicesPt1.Controls.Add(this.checkBoxIM3);
+            this.tabPageServicesPt1.Controls.Add(this.checkBoxIM2);
+            this.tabPageServicesPt1.Controls.Add(this.checkBoxIM1);
+            this.tabPageServicesPt1.Controls.Add(this.label18);
+            this.tabPageServicesPt1.Controls.Add(this.checkBoxRM3);
+            this.tabPageServicesPt1.Controls.Add(this.checkBoxRM2);
+            this.tabPageServicesPt1.Controls.Add(this.checkBoxRM1);
+            this.tabPageServicesPt1.Controls.Add(this.label17);
+            this.tabPageServicesPt1.Controls.Add(this.checkBoxChangeM3);
+            this.tabPageServicesPt1.Controls.Add(this.checkBoxChangeM2);
+            this.tabPageServicesPt1.Controls.Add(this.checkBoxChangeM1);
+            this.tabPageServicesPt1.Controls.Add(this.label16);
+            this.tabPageServicesPt1.Controls.Add(this.checkBoxQM3);
+            this.tabPageServicesPt1.Controls.Add(this.checkBoxQM2);
+            this.tabPageServicesPt1.Controls.Add(this.checkBoxQM1);
+            this.tabPageServicesPt1.Controls.Add(this.label15);
+            this.tabPageServicesPt1.Controls.Add(this.checkBoxCM3);
+            this.tabPageServicesPt1.Controls.Add(this.checkBoxCM2);
+            this.tabPageServicesPt1.Controls.Add(this.checkBoxCM1);
+            this.tabPageServicesPt1.Controls.Add(this.label14);
+            this.tabPageServicesPt1.Controls.Add(this.checkBoxTM3);
+            this.tabPageServicesPt1.Controls.Add(this.checkBoxTM2);
+            this.tabPageServicesPt1.Controls.Add(this.checkBoxTM1);
+            this.tabPageServicesPt1.Controls.Add(this.label13);
+            this.tabPageServicesPt1.Location = new System.Drawing.Point(4, 21);
+            this.tabPageServicesPt1.Name = "tabPageServicesPt1";
+            this.tabPageServicesPt1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageServicesPt1.Size = new System.Drawing.Size(828, 348);
+            this.tabPageServicesPt1.TabIndex = 6;
+            this.tabPageServicesPt1.Text = "Services(Time,Cost,Quality,Change,Risk,Issue)";
             // 
-            // checkBoxCommunicationsPlan
+            // checkBoxIM3
             // 
-            this.checkBoxCommunicationsPlan.AutoSize = true;
-            this.checkBoxCommunicationsPlan.Location = new System.Drawing.Point(176, 164);
-            this.checkBoxCommunicationsPlan.Name = "checkBoxCommunicationsPlan";
-            this.checkBoxCommunicationsPlan.Size = new System.Drawing.Size(125, 16);
-            this.checkBoxCommunicationsPlan.TabIndex = 45;
-            this.checkBoxCommunicationsPlan.Text = "Communications Plan";
-            this.checkBoxCommunicationsPlan.UseVisualStyleBackColor = true;
+            this.checkBoxIM3.AutoSize = true;
+            this.checkBoxIM3.Location = new System.Drawing.Point(416, 251);
+            this.checkBoxIM3.Name = "checkBoxIM3";
+            this.checkBoxIM3.Size = new System.Drawing.Size(250, 16);
+            this.checkBoxIM3.TabIndex = 44;
+            this.checkBoxIM3.Text = "Keeping the Issue Register up-to-date at all times";
+            this.checkBoxIM3.UseVisualStyleBackColor = true;
             // 
-            // checkBoxAcceptancePlan
+            // checkBoxIM2
             // 
-            this.checkBoxAcceptancePlan.AutoSize = true;
-            this.checkBoxAcceptancePlan.Location = new System.Drawing.Point(175, 142);
-            this.checkBoxAcceptancePlan.Name = "checkBoxAcceptancePlan";
-            this.checkBoxAcceptancePlan.Size = new System.Drawing.Size(99, 16);
-            this.checkBoxAcceptancePlan.TabIndex = 44;
-            this.checkBoxAcceptancePlan.Text = "Acceptance Plan";
-            this.checkBoxAcceptancePlan.UseVisualStyleBackColor = true;
+            this.checkBoxIM2.AutoSize = true;
+            this.checkBoxIM2.Location = new System.Drawing.Point(416, 229);
+            this.checkBoxIM2.Name = "checkBoxIM2";
+            this.checkBoxIM2.Size = new System.Drawing.Size(382, 16);
+            this.checkBoxIM2.TabIndex = 43;
+            this.checkBoxIM2.Text = "Scheduling actions to resolve issues and measuring the impact of such actions";
+            this.checkBoxIM2.UseVisualStyleBackColor = true;
             // 
-            // btnSaveTemplatesInfo
+            // checkBoxIM1
             // 
-            this.btnSaveTemplatesInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSaveTemplatesInfo.Location = new System.Drawing.Point(721, 305);
-            this.btnSaveTemplatesInfo.Name = "btnSaveTemplatesInfo";
-            this.btnSaveTemplatesInfo.Size = new System.Drawing.Size(101, 37);
-            this.btnSaveTemplatesInfo.TabIndex = 49;
-            this.btnSaveTemplatesInfo.Text = "Save Templates Information";
-            this.btnSaveTemplatesInfo.UseVisualStyleBackColor = true;
+            this.checkBoxIM1.AutoSize = true;
+            this.checkBoxIM1.Location = new System.Drawing.Point(416, 207);
+            this.checkBoxIM1.Name = "checkBoxIM1";
+            this.checkBoxIM1.Size = new System.Drawing.Size(311, 16);
+            this.checkBoxIM1.TabIndex = 42;
+            this.checkBoxIM1.Text = "Receiving Issue Forms and managing the issue review process";
+            this.checkBoxIM1.UseVisualStyleBackColor = true;
             // 
-            // checkBoxTM3
+            // label18
             // 
-            this.checkBoxTM3.AutoSize = true;
-            this.checkBoxTM3.Location = new System.Drawing.Point(9, 67);
-            this.checkBoxTM3.Name = "checkBoxTM3";
-            this.checkBoxTM3.Size = new System.Drawing.Size(274, 16);
-            this.checkBoxTM3.TabIndex = 20;
-            this.checkBoxTM3.Text = "Keeping the Timesheet Register up-to-date at all times";
-            this.checkBoxTM3.UseVisualStyleBackColor = true;
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label18.Location = new System.Drawing.Point(413, 187);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(123, 17);
+            this.label18.TabIndex = 41;
+            this.label18.Text = "Issue Management";
             // 
-            // checkBoxTM2
+            // checkBoxRM3
             // 
-            this.checkBoxTM2.AutoSize = true;
-            this.checkBoxTM2.Location = new System.Drawing.Point(9, 45);
-            this.checkBoxTM2.Name = "checkBoxTM2";
-            this.checkBoxTM2.Size = new System.Drawing.Size(381, 16);
-            this.checkBoxTM2.TabIndex = 19;
-            this.checkBoxTM2.Text = "Keeping the Project Plan up-to-date and identifying any delivery date slippage";
-            this.checkBoxTM2.UseVisualStyleBackColor = true;
+            this.checkBoxRM3.AutoSize = true;
+            this.checkBoxRM3.Location = new System.Drawing.Point(416, 159);
+            this.checkBoxRM3.Name = "checkBoxRM3";
+            this.checkBoxRM3.Size = new System.Drawing.Size(246, 16);
+            this.checkBoxRM3.TabIndex = 40;
+            this.checkBoxRM3.Text = "Keeping the Risk Register up-to-date at all times";
+            this.checkBoxRM3.UseVisualStyleBackColor = true;
             // 
-            // checkBoxTM1
+            // checkBoxRM2
             // 
-            this.checkBoxTM1.AutoSize = true;
-            this.checkBoxTM1.Location = new System.Drawing.Point(9, 23);
-            this.checkBoxTM1.Name = "checkBoxTM1";
-            this.checkBoxTM1.Size = new System.Drawing.Size(398, 16);
-            this.checkBoxTM1.TabIndex = 18;
-            this.checkBoxTM1.Text = "Monitoring the project progress by identifying time and effort spent vs. budgeted" +
-    "";
-            this.checkBoxTM1.UseVisualStyleBackColor = true;
+            this.checkBoxRM2.AutoSize = true;
+            this.checkBoxRM2.Location = new System.Drawing.Point(416, 137);
+            this.checkBoxRM2.Name = "checkBoxRM2";
+            this.checkBoxRM2.Size = new System.Drawing.Size(380, 16);
+            this.checkBoxRM2.TabIndex = 39;
+            this.checkBoxRM2.Text = "Scheduling actions to mitigate risks and measuring the impact of such actions";
+            this.checkBoxRM2.UseVisualStyleBackColor = true;
             // 
-            // label13
+            // checkBoxRM1
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label13.Location = new System.Drawing.Point(6, 3);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(123, 17);
-            this.label13.TabIndex = 17;
-            this.label13.Text = "Time Management";
+            this.checkBoxRM1.AutoSize = true;
+            this.checkBoxRM1.Location = new System.Drawing.Point(416, 115);
+            this.checkBoxRM1.Name = "checkBoxRM1";
+            this.checkBoxRM1.Size = new System.Drawing.Size(302, 16);
+            this.checkBoxRM1.TabIndex = 38;
+            this.checkBoxRM1.Text = "Receiving Risk Forms and managing the risk review process";
+            this.checkBoxRM1.UseVisualStyleBackColor = true;
             // 
-            // checkBoxCM3
+            // label17
             // 
-            this.checkBoxCM3.AutoSize = true;
-            this.checkBoxCM3.Location = new System.Drawing.Point(9, 159);
-            this.checkBoxCM3.Name = "checkBoxCM3";
-            this.checkBoxCM3.Size = new System.Drawing.Size(263, 16);
-            this.checkBoxCM3.TabIndex = 28;
-            this.checkBoxCM3.Text = "Keeping the Expense Register up-to-date at all times";
-            this.checkBoxCM3.UseVisualStyleBackColor = true;
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label17.Location = new System.Drawing.Point(413, 95);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(118, 17);
+            this.label17.TabIndex = 37;
+            this.label17.Text = "Risk Management";
             // 
-            // checkBoxCM2
+            // checkBoxChangeM3
             // 
-            this.checkBoxCM2.AutoSize = true;
-            this.checkBoxCM2.Location = new System.Drawing.Point(9, 137);
-            this.checkBoxCM2.Name = "checkBoxCM2";
-            this.checkBoxCM2.Size = new System.Drawing.Size(344, 16);
-            this.checkBoxCM2.TabIndex = 27;
-            this.checkBoxCM2.Text = "Keeping the Project Plan up-to-date and identifying any overspending";
-            this.checkBoxCM2.UseVisualStyleBackColor = true;
+            this.checkBoxChangeM3.AutoSize = true;
+            this.checkBoxChangeM3.Location = new System.Drawing.Point(416, 67);
+            this.checkBoxChangeM3.Name = "checkBoxChangeM3";
+            this.checkBoxChangeM3.Size = new System.Drawing.Size(258, 16);
+            this.checkBoxChangeM3.TabIndex = 36;
+            this.checkBoxChangeM3.Text = "Keeping the Change Register up-to-date at all times";
+            this.checkBoxChangeM3.UseVisualStyleBackColor = true;
             // 
-            // checkBoxCM1
+            // checkBoxChangeM2
             // 
-            this.checkBoxCM1.AutoSize = true;
-            this.checkBoxCM1.Location = new System.Drawing.Point(9, 115);
-            this.checkBoxCM1.Name = "checkBoxCM1";
-            this.checkBoxCM1.Size = new System.Drawing.Size(374, 16);
-            this.checkBoxCM1.TabIndex = 26;
-            this.checkBoxCM1.Text = "Monitoring the project progress by identifying the budget spent vs. forecast";
-            this.checkBoxCM1.UseVisualStyleBackColor = true;
+            this.checkBoxChangeM2.AutoSize = true;
+            this.checkBoxChangeM2.Location = new System.Drawing.Point(416, 45);
+            this.checkBoxChangeM2.Name = "checkBoxChangeM2";
+            this.checkBoxChangeM2.Size = new System.Drawing.Size(388, 16);
+            this.checkBoxChangeM2.TabIndex = 35;
+            this.checkBoxChangeM2.Text = "Scheduling Change Requests and measuring the impact of changes implemented";
+            this.checkBoxChangeM2.UseVisualStyleBackColor = true;
             // 
-            // label14
+            // checkBoxChangeM1
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label14.Location = new System.Drawing.Point(6, 95);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(118, 17);
-            this.label14.TabIndex = 25;
-            this.label14.Text = "Cost Management";
+            this.checkBoxChangeM1.AutoSize = true;
+            this.checkBoxChangeM1.Location = new System.Drawing.Point(416, 23);
+            this.checkBoxChangeM1.Name = "checkBoxChangeM1";
+            this.checkBoxChangeM1.Size = new System.Drawing.Size(348, 16);
+            this.checkBoxChangeM1.TabIndex = 34;
+            this.checkBoxChangeM1.Text = "Receiving Change Requests and managing the change approval process";
+            this.checkBoxChangeM1.UseVisualStyleBackColor = true;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label16.Location = new System.Drawing.Point(413, 3);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(136, 17);
+            this.label16.TabIndex = 33;
+            this.label16.Text = "Change Management";
             // 
             // checkBoxQM3
             // 
@@ -1454,125 +1418,86 @@
             this.label15.TabIndex = 29;
             this.label15.Text = "Quality Management";
             // 
-            // checkBoxChangeM3
+            // checkBoxCM3
             // 
-            this.checkBoxChangeM3.AutoSize = true;
-            this.checkBoxChangeM3.Location = new System.Drawing.Point(416, 67);
-            this.checkBoxChangeM3.Name = "checkBoxChangeM3";
-            this.checkBoxChangeM3.Size = new System.Drawing.Size(258, 16);
-            this.checkBoxChangeM3.TabIndex = 36;
-            this.checkBoxChangeM3.Text = "Keeping the Change Register up-to-date at all times";
-            this.checkBoxChangeM3.UseVisualStyleBackColor = true;
+            this.checkBoxCM3.AutoSize = true;
+            this.checkBoxCM3.Location = new System.Drawing.Point(9, 159);
+            this.checkBoxCM3.Name = "checkBoxCM3";
+            this.checkBoxCM3.Size = new System.Drawing.Size(263, 16);
+            this.checkBoxCM3.TabIndex = 28;
+            this.checkBoxCM3.Text = "Keeping the Expense Register up-to-date at all times";
+            this.checkBoxCM3.UseVisualStyleBackColor = true;
             // 
-            // checkBoxChangeM2
+            // checkBoxCM2
             // 
-            this.checkBoxChangeM2.AutoSize = true;
-            this.checkBoxChangeM2.Location = new System.Drawing.Point(416, 45);
-            this.checkBoxChangeM2.Name = "checkBoxChangeM2";
-            this.checkBoxChangeM2.Size = new System.Drawing.Size(388, 16);
-            this.checkBoxChangeM2.TabIndex = 35;
-            this.checkBoxChangeM2.Text = "Scheduling Change Requests and measuring the impact of changes implemented";
-            this.checkBoxChangeM2.UseVisualStyleBackColor = true;
+            this.checkBoxCM2.AutoSize = true;
+            this.checkBoxCM2.Location = new System.Drawing.Point(9, 137);
+            this.checkBoxCM2.Name = "checkBoxCM2";
+            this.checkBoxCM2.Size = new System.Drawing.Size(344, 16);
+            this.checkBoxCM2.TabIndex = 27;
+            this.checkBoxCM2.Text = "Keeping the Project Plan up-to-date and identifying any overspending";
+            this.checkBoxCM2.UseVisualStyleBackColor = true;
             // 
-            // checkBoxChangeM1
+            // checkBoxCM1
             // 
-            this.checkBoxChangeM1.AutoSize = true;
-            this.checkBoxChangeM1.Location = new System.Drawing.Point(416, 23);
-            this.checkBoxChangeM1.Name = "checkBoxChangeM1";
-            this.checkBoxChangeM1.Size = new System.Drawing.Size(348, 16);
-            this.checkBoxChangeM1.TabIndex = 34;
-            this.checkBoxChangeM1.Text = "Receiving Change Requests and managing the change approval process";
-            this.checkBoxChangeM1.UseVisualStyleBackColor = true;
+            this.checkBoxCM1.AutoSize = true;
+            this.checkBoxCM1.Location = new System.Drawing.Point(9, 115);
+            this.checkBoxCM1.Name = "checkBoxCM1";
+            this.checkBoxCM1.Size = new System.Drawing.Size(374, 16);
+            this.checkBoxCM1.TabIndex = 26;
+            this.checkBoxCM1.Text = "Monitoring the project progress by identifying the budget spent vs. forecast";
+            this.checkBoxCM1.UseVisualStyleBackColor = true;
             // 
-            // label16
+            // label14
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label16.Location = new System.Drawing.Point(413, 3);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(136, 17);
-            this.label16.TabIndex = 33;
-            this.label16.Text = "Change Management";
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label14.Location = new System.Drawing.Point(6, 95);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(118, 17);
+            this.label14.TabIndex = 25;
+            this.label14.Text = "Cost Management";
             // 
-            // checkBoxRM3
+            // checkBoxTM3
             // 
-            this.checkBoxRM3.AutoSize = true;
-            this.checkBoxRM3.Location = new System.Drawing.Point(416, 159);
-            this.checkBoxRM3.Name = "checkBoxRM3";
-            this.checkBoxRM3.Size = new System.Drawing.Size(246, 16);
-            this.checkBoxRM3.TabIndex = 40;
-            this.checkBoxRM3.Text = "Keeping the Risk Register up-to-date at all times";
-            this.checkBoxRM3.UseVisualStyleBackColor = true;
+            this.checkBoxTM3.AutoSize = true;
+            this.checkBoxTM3.Location = new System.Drawing.Point(9, 67);
+            this.checkBoxTM3.Name = "checkBoxTM3";
+            this.checkBoxTM3.Size = new System.Drawing.Size(274, 16);
+            this.checkBoxTM3.TabIndex = 20;
+            this.checkBoxTM3.Text = "Keeping the Timesheet Register up-to-date at all times";
+            this.checkBoxTM3.UseVisualStyleBackColor = true;
             // 
-            // checkBoxRM2
+            // checkBoxTM2
             // 
-            this.checkBoxRM2.AutoSize = true;
-            this.checkBoxRM2.Location = new System.Drawing.Point(416, 137);
-            this.checkBoxRM2.Name = "checkBoxRM2";
-            this.checkBoxRM2.Size = new System.Drawing.Size(380, 16);
-            this.checkBoxRM2.TabIndex = 39;
-            this.checkBoxRM2.Text = "Scheduling actions to mitigate risks and measuring the impact of such actions";
-            this.checkBoxRM2.UseVisualStyleBackColor = true;
+            this.checkBoxTM2.AutoSize = true;
+            this.checkBoxTM2.Location = new System.Drawing.Point(9, 45);
+            this.checkBoxTM2.Name = "checkBoxTM2";
+            this.checkBoxTM2.Size = new System.Drawing.Size(381, 16);
+            this.checkBoxTM2.TabIndex = 19;
+            this.checkBoxTM2.Text = "Keeping the Project Plan up-to-date and identifying any delivery date slippage";
+            this.checkBoxTM2.UseVisualStyleBackColor = true;
             // 
-            // checkBoxRM1
+            // checkBoxTM1
             // 
-            this.checkBoxRM1.AutoSize = true;
-            this.checkBoxRM1.Location = new System.Drawing.Point(416, 115);
-            this.checkBoxRM1.Name = "checkBoxRM1";
-            this.checkBoxRM1.Size = new System.Drawing.Size(302, 16);
-            this.checkBoxRM1.TabIndex = 38;
-            this.checkBoxRM1.Text = "Receiving Risk Forms and managing the risk review process";
-            this.checkBoxRM1.UseVisualStyleBackColor = true;
+            this.checkBoxTM1.AutoSize = true;
+            this.checkBoxTM1.Location = new System.Drawing.Point(9, 23);
+            this.checkBoxTM1.Name = "checkBoxTM1";
+            this.checkBoxTM1.Size = new System.Drawing.Size(398, 16);
+            this.checkBoxTM1.TabIndex = 18;
+            this.checkBoxTM1.Text = "Monitoring the project progress by identifying time and effort spent vs. budgeted" +
+    "";
+            this.checkBoxTM1.UseVisualStyleBackColor = true;
             // 
-            // label17
+            // label13
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label17.Location = new System.Drawing.Point(413, 95);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(118, 17);
-            this.label17.TabIndex = 37;
-            this.label17.Text = "Risk Management";
-            // 
-            // checkBoxIM3
-            // 
-            this.checkBoxIM3.AutoSize = true;
-            this.checkBoxIM3.Location = new System.Drawing.Point(416, 251);
-            this.checkBoxIM3.Name = "checkBoxIM3";
-            this.checkBoxIM3.Size = new System.Drawing.Size(250, 16);
-            this.checkBoxIM3.TabIndex = 44;
-            this.checkBoxIM3.Text = "Keeping the Issue Register up-to-date at all times";
-            this.checkBoxIM3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxIM2
-            // 
-            this.checkBoxIM2.AutoSize = true;
-            this.checkBoxIM2.Location = new System.Drawing.Point(416, 229);
-            this.checkBoxIM2.Name = "checkBoxIM2";
-            this.checkBoxIM2.Size = new System.Drawing.Size(382, 16);
-            this.checkBoxIM2.TabIndex = 43;
-            this.checkBoxIM2.Text = "Scheduling actions to resolve issues and measuring the impact of such actions";
-            this.checkBoxIM2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxIM1
-            // 
-            this.checkBoxIM1.AutoSize = true;
-            this.checkBoxIM1.Location = new System.Drawing.Point(416, 207);
-            this.checkBoxIM1.Name = "checkBoxIM1";
-            this.checkBoxIM1.Size = new System.Drawing.Size(311, 16);
-            this.checkBoxIM1.TabIndex = 42;
-            this.checkBoxIM1.Text = "Receiving Issue Forms and managing the issue review process";
-            this.checkBoxIM1.UseVisualStyleBackColor = true;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label18.Location = new System.Drawing.Point(413, 187);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(123, 17);
-            this.label18.TabIndex = 41;
-            this.label18.Text = "Issue Management";
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label13.Location = new System.Drawing.Point(6, 3);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(123, 17);
+            this.label13.TabIndex = 17;
+            this.label13.Text = "Time Management";
             // 
             // tabPageServicesPt2
             // 
@@ -1600,6 +1525,88 @@
             this.tabPageServicesPt2.Size = new System.Drawing.Size(828, 348);
             this.tabPageServicesPt2.TabIndex = 7;
             this.tabPageServicesPt2.Text = "Services(Procurement, Acceptance, Communications";
+            // 
+            // checkBoxCommsM4
+            // 
+            this.checkBoxCommsM4.AutoSize = true;
+            this.checkBoxCommsM4.Location = new System.Drawing.Point(9, 321);
+            this.checkBoxCommsM4.Name = "checkBoxCommsM4";
+            this.checkBoxCommsM4.Size = new System.Drawing.Size(304, 16);
+            this.checkBoxCommsM4.TabIndex = 64;
+            this.checkBoxCommsM4.Text = "Keeping the Communications Register up-to-date at all times";
+            this.checkBoxCommsM4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCommsM3
+            // 
+            this.checkBoxCommsM3.AutoSize = true;
+            this.checkBoxCommsM3.Location = new System.Drawing.Point(9, 299);
+            this.checkBoxCommsM3.Name = "checkBoxCommsM3";
+            this.checkBoxCommsM3.Size = new System.Drawing.Size(291, 16);
+            this.checkBoxCommsM3.TabIndex = 63;
+            this.checkBoxCommsM3.Text = "Distributing press releases and managing Public Relations";
+            this.checkBoxCommsM3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCommsM2
+            // 
+            this.checkBoxCommsM2.AutoSize = true;
+            this.checkBoxCommsM2.Location = new System.Drawing.Point(9, 277);
+            this.checkBoxCommsM2.Name = "checkBoxCommsM2";
+            this.checkBoxCommsM2.Size = new System.Drawing.Size(269, 16);
+            this.checkBoxCommsM2.TabIndex = 62;
+            this.checkBoxCommsM2.Text = "Creating and releasing regular Project Status Reports";
+            this.checkBoxCommsM2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCommsM1
+            // 
+            this.checkBoxCommsM1.AutoSize = true;
+            this.checkBoxCommsM1.Location = new System.Drawing.Point(9, 255);
+            this.checkBoxCommsM1.Name = "checkBoxCommsM1";
+            this.checkBoxCommsM1.Size = new System.Drawing.Size(429, 16);
+            this.checkBoxCommsM1.TabIndex = 61;
+            this.checkBoxCommsM1.Text = "Undertaking the communications tasks and events as listed in the Communications P" +
+    "lan";
+            this.checkBoxCommsM1.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label19.Location = new System.Drawing.Point(6, 235);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(196, 17);
+            this.label19.TabIndex = 60;
+            this.label19.Text = "Communications Management";
+            // 
+            // checkBoxAM4
+            // 
+            this.checkBoxAM4.AutoSize = true;
+            this.checkBoxAM4.Location = new System.Drawing.Point(9, 216);
+            this.checkBoxAM4.Name = "checkBoxAM4";
+            this.checkBoxAM4.Size = new System.Drawing.Size(278, 16);
+            this.checkBoxAM4.TabIndex = 59;
+            this.checkBoxAM4.Text = "Keeping the Acceptance Register up-to-date at all times";
+            this.checkBoxAM4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxPM5
+            // 
+            this.checkBoxPM5.AutoSize = true;
+            this.checkBoxPM5.Location = new System.Drawing.Point(9, 111);
+            this.checkBoxPM5.Name = "checkBoxPM5";
+            this.checkBoxPM5.Size = new System.Drawing.Size(539, 16);
+            this.checkBoxPM5.TabIndex = 58;
+            this.checkBoxPM5.Text = "Managing the overall performance of suppliers to ensure that they complete their " +
+    "responsibilities as contracted";
+            this.checkBoxPM5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxPM4
+            // 
+            this.checkBoxPM4.AutoSize = true;
+            this.checkBoxPM4.Location = new System.Drawing.Point(9, 89);
+            this.checkBoxPM4.Name = "checkBoxPM4";
+            this.checkBoxPM4.Size = new System.Drawing.Size(311, 16);
+            this.checkBoxPM4.TabIndex = 57;
+            this.checkBoxPM4.Text = "Making payment to suppliers for goods and services delivered";
+            this.checkBoxPM4.UseVisualStyleBackColor = true;
             // 
             // checkBoxAM3
             // 
@@ -1681,88 +1688,6 @@
             this.label21.TabIndex = 45;
             this.label21.Text = "Procurement Management";
             // 
-            // checkBoxPM4
-            // 
-            this.checkBoxPM4.AutoSize = true;
-            this.checkBoxPM4.Location = new System.Drawing.Point(9, 89);
-            this.checkBoxPM4.Name = "checkBoxPM4";
-            this.checkBoxPM4.Size = new System.Drawing.Size(311, 16);
-            this.checkBoxPM4.TabIndex = 57;
-            this.checkBoxPM4.Text = "Making payment to suppliers for goods and services delivered";
-            this.checkBoxPM4.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxPM5
-            // 
-            this.checkBoxPM5.AutoSize = true;
-            this.checkBoxPM5.Location = new System.Drawing.Point(9, 111);
-            this.checkBoxPM5.Name = "checkBoxPM5";
-            this.checkBoxPM5.Size = new System.Drawing.Size(539, 16);
-            this.checkBoxPM5.TabIndex = 58;
-            this.checkBoxPM5.Text = "Managing the overall performance of suppliers to ensure that they complete their " +
-    "responsibilities as contracted";
-            this.checkBoxPM5.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAM4
-            // 
-            this.checkBoxAM4.AutoSize = true;
-            this.checkBoxAM4.Location = new System.Drawing.Point(9, 216);
-            this.checkBoxAM4.Name = "checkBoxAM4";
-            this.checkBoxAM4.Size = new System.Drawing.Size(278, 16);
-            this.checkBoxAM4.TabIndex = 59;
-            this.checkBoxAM4.Text = "Keeping the Acceptance Register up-to-date at all times";
-            this.checkBoxAM4.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCommsM4
-            // 
-            this.checkBoxCommsM4.AutoSize = true;
-            this.checkBoxCommsM4.Location = new System.Drawing.Point(9, 321);
-            this.checkBoxCommsM4.Name = "checkBoxCommsM4";
-            this.checkBoxCommsM4.Size = new System.Drawing.Size(304, 16);
-            this.checkBoxCommsM4.TabIndex = 64;
-            this.checkBoxCommsM4.Text = "Keeping the Communications Register up-to-date at all times";
-            this.checkBoxCommsM4.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCommsM3
-            // 
-            this.checkBoxCommsM3.AutoSize = true;
-            this.checkBoxCommsM3.Location = new System.Drawing.Point(9, 299);
-            this.checkBoxCommsM3.Name = "checkBoxCommsM3";
-            this.checkBoxCommsM3.Size = new System.Drawing.Size(291, 16);
-            this.checkBoxCommsM3.TabIndex = 63;
-            this.checkBoxCommsM3.Text = "Distributing press releases and managing Public Relations";
-            this.checkBoxCommsM3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCommsM2
-            // 
-            this.checkBoxCommsM2.AutoSize = true;
-            this.checkBoxCommsM2.Location = new System.Drawing.Point(9, 277);
-            this.checkBoxCommsM2.Name = "checkBoxCommsM2";
-            this.checkBoxCommsM2.Size = new System.Drawing.Size(269, 16);
-            this.checkBoxCommsM2.TabIndex = 62;
-            this.checkBoxCommsM2.Text = "Creating and releasing regular Project Status Reports";
-            this.checkBoxCommsM2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCommsM1
-            // 
-            this.checkBoxCommsM1.AutoSize = true;
-            this.checkBoxCommsM1.Location = new System.Drawing.Point(9, 255);
-            this.checkBoxCommsM1.Name = "checkBoxCommsM1";
-            this.checkBoxCommsM1.Size = new System.Drawing.Size(429, 16);
-            this.checkBoxCommsM1.TabIndex = 61;
-            this.checkBoxCommsM1.Text = "Undertaking the communications tasks and events as listed in the Communications P" +
-    "lan";
-            this.checkBoxCommsM1.UseVisualStyleBackColor = true;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label19.Location = new System.Drawing.Point(6, 235);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(196, 17);
-            this.label19.TabIndex = 60;
-            this.label19.Text = "Communications Management";
-            // 
             // tabPageServicesPt3
             // 
             this.tabPageServicesPt3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -1787,6 +1712,46 @@
             this.tabPageServicesPt3.TabIndex = 8;
             this.tabPageServicesPt3.Text = "Services(Stage Gate Reviews, Auditing and Compliance, Supporting Staff, Providing" +
     " Tools)";
+            // 
+            // checkBoxPT3
+            // 
+            this.checkBoxPT3.AutoSize = true;
+            this.checkBoxPT3.Location = new System.Drawing.Point(9, 272);
+            this.checkBoxPT3.Name = "checkBoxPT3";
+            this.checkBoxPT3.Size = new System.Drawing.Size(279, 16);
+            this.checkBoxPT3.TabIndex = 48;
+            this.checkBoxPT3.Text = "Training staff in the use of these tools and methodology";
+            this.checkBoxPT3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxPT2
+            // 
+            this.checkBoxPT2.AutoSize = true;
+            this.checkBoxPT2.Location = new System.Drawing.Point(9, 250);
+            this.checkBoxPT2.Name = "checkBoxPT2";
+            this.checkBoxPT2.Size = new System.Drawing.Size(370, 16);
+            this.checkBoxPT2.TabIndex = 47;
+            this.checkBoxPT2.Text = "Procuring tools for project planning, monitoring, controlling and reporting";
+            this.checkBoxPT2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxPT1
+            // 
+            this.checkBoxPT1.AutoSize = true;
+            this.checkBoxPT1.Location = new System.Drawing.Point(9, 228);
+            this.checkBoxPT1.Name = "checkBoxPT1";
+            this.checkBoxPT1.Size = new System.Drawing.Size(278, 16);
+            this.checkBoxPT1.TabIndex = 46;
+            this.checkBoxPT1.Text = "Procuring a suitable Project Management methodology";
+            this.checkBoxPT1.UseVisualStyleBackColor = true;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label25.Location = new System.Drawing.Point(6, 208);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(107, 17);
+            this.label25.TabIndex = 45;
+            this.label25.Text = "Providing Tools";
             // 
             // checkBoxSS3
             // 
@@ -1891,46 +1856,6 @@
             this.label24.TabIndex = 33;
             this.label24.Text = "Stage Gate Reviews";
             // 
-            // checkBoxPT3
-            // 
-            this.checkBoxPT3.AutoSize = true;
-            this.checkBoxPT3.Location = new System.Drawing.Point(9, 272);
-            this.checkBoxPT3.Name = "checkBoxPT3";
-            this.checkBoxPT3.Size = new System.Drawing.Size(279, 16);
-            this.checkBoxPT3.TabIndex = 48;
-            this.checkBoxPT3.Text = "Training staff in the use of these tools and methodology";
-            this.checkBoxPT3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxPT2
-            // 
-            this.checkBoxPT2.AutoSize = true;
-            this.checkBoxPT2.Location = new System.Drawing.Point(9, 250);
-            this.checkBoxPT2.Name = "checkBoxPT2";
-            this.checkBoxPT2.Size = new System.Drawing.Size(370, 16);
-            this.checkBoxPT2.TabIndex = 47;
-            this.checkBoxPT2.Text = "Procuring tools for project planning, monitoring, controlling and reporting";
-            this.checkBoxPT2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxPT1
-            // 
-            this.checkBoxPT1.AutoSize = true;
-            this.checkBoxPT1.Location = new System.Drawing.Point(9, 228);
-            this.checkBoxPT1.Name = "checkBoxPT1";
-            this.checkBoxPT1.Size = new System.Drawing.Size(278, 16);
-            this.checkBoxPT1.TabIndex = 46;
-            this.checkBoxPT1.Text = "Procuring a suitable Project Management methodology";
-            this.checkBoxPT1.UseVisualStyleBackColor = true;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label25.Location = new System.Drawing.Point(6, 208);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(107, 17);
-            this.label25.TabIndex = 45;
-            this.label25.Text = "Providing Tools";
-            // 
             // tabPageServicesPt4
             // 
             this.tabPageServicesPt4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -1951,6 +1876,77 @@
             this.tabPageServicesPt4.TabIndex = 9;
             this.tabPageServicesPt4.Text = "Services(Filling Documents, Performing Administration, Undertaking Closure Review" +
     "s)";
+            // 
+            // btnSaveServicesInfo
+            // 
+            this.btnSaveServicesInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSaveServicesInfo.Location = new System.Drawing.Point(721, 305);
+            this.btnSaveServicesInfo.Name = "btnSaveServicesInfo";
+            this.btnSaveServicesInfo.Size = new System.Drawing.Size(101, 37);
+            this.btnSaveServicesInfo.TabIndex = 49;
+            this.btnSaveServicesInfo.Text = "Save Services Information";
+            this.btnSaveServicesInfo.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxUCR2
+            // 
+            this.checkBoxUCR2.AutoSize = true;
+            this.checkBoxUCR2.Location = new System.Drawing.Point(9, 186);
+            this.checkBoxUCR2.Name = "checkBoxUCR2";
+            this.checkBoxUCR2.Size = new System.Drawing.Size(398, 16);
+            this.checkBoxUCR2.TabIndex = 48;
+            this.checkBoxUCR2.Text = "Communicating the results of the review to the appropriate project stakeholders";
+            this.checkBoxUCR2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxUCR1
+            // 
+            this.checkBoxUCR1.AutoSize = true;
+            this.checkBoxUCR1.Location = new System.Drawing.Point(9, 164);
+            this.checkBoxUCR1.Name = "checkBoxUCR1";
+            this.checkBoxUCR1.Size = new System.Drawing.Size(399, 16);
+            this.checkBoxUCR1.TabIndex = 47;
+            this.checkBoxUCR1.Text = "Organizing the completion of a Post Implementation Review after Project Closure";
+            this.checkBoxUCR1.UseVisualStyleBackColor = true;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label29.Location = new System.Drawing.Point(6, 144);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(192, 17);
+            this.label29.TabIndex = 46;
+            this.label29.Text = "Undertaking Closure Reviews";
+            // 
+            // checkBoxPA2
+            // 
+            this.checkBoxPA2.AutoSize = true;
+            this.checkBoxPA2.Location = new System.Drawing.Point(9, 115);
+            this.checkBoxPA2.Name = "checkBoxPA2";
+            this.checkBoxPA2.Size = new System.Drawing.Size(335, 16);
+            this.checkBoxPA2.TabIndex = 45;
+            this.checkBoxPA2.Text = "Purchasing all office equipment and materials needed by the project";
+            this.checkBoxPA2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxPA1
+            // 
+            this.checkBoxPA1.AutoSize = true;
+            this.checkBoxPA1.Location = new System.Drawing.Point(9, 93);
+            this.checkBoxPA1.Name = "checkBoxPA1";
+            this.checkBoxPA1.Size = new System.Drawing.Size(702, 16);
+            this.checkBoxPA1.TabIndex = 44;
+            this.checkBoxPA1.Text = "Providing administration services such as the organization of travel bookings, ro" +
+    "om bookings, photocopying, secretarial, mail and correspondence";
+            this.checkBoxPA1.UseVisualStyleBackColor = true;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label28.Location = new System.Drawing.Point(6, 73);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(177, 17);
+            this.label28.TabIndex = 43;
+            this.label28.Text = "Performing Administration";
             // 
             // checkBoxFD2
             // 
@@ -1984,76 +1980,82 @@
             this.label26.TabIndex = 40;
             this.label26.Text = "Filing Documents";
             // 
-            // checkBoxPA2
+            // btnSaveProjectDetails
             // 
-            this.checkBoxPA2.AutoSize = true;
-            this.checkBoxPA2.Location = new System.Drawing.Point(9, 115);
-            this.checkBoxPA2.Name = "checkBoxPA2";
-            this.checkBoxPA2.Size = new System.Drawing.Size(335, 16);
-            this.checkBoxPA2.TabIndex = 45;
-            this.checkBoxPA2.Text = "Purchasing all office equipment and materials needed by the project";
-            this.checkBoxPA2.UseVisualStyleBackColor = true;
+            this.btnSaveProjectDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSaveProjectDetails.Location = new System.Drawing.Point(733, 12);
+            this.btnSaveProjectDetails.Name = "btnSaveProjectDetails";
+            this.btnSaveProjectDetails.Size = new System.Drawing.Size(111, 35);
+            this.btnSaveProjectDetails.TabIndex = 16;
+            this.btnSaveProjectDetails.Text = "Save Project Details";
+            this.btnSaveProjectDetails.UseVisualStyleBackColor = true;
+            this.btnSaveProjectDetails.Click += new System.EventHandler(this.btnSaveProjectDetails_Click);
             // 
-            // checkBoxPA1
+            // label27
             // 
-            this.checkBoxPA1.AutoSize = true;
-            this.checkBoxPA1.Location = new System.Drawing.Point(9, 93);
-            this.checkBoxPA1.Name = "checkBoxPA1";
-            this.checkBoxPA1.Size = new System.Drawing.Size(702, 16);
-            this.checkBoxPA1.TabIndex = 44;
-            this.checkBoxPA1.Text = "Providing administration services such as the organization of travel bookings, ro" +
-    "om bookings, photocopying, secretarial, mail and correspondence";
-            this.checkBoxPA1.UseVisualStyleBackColor = true;
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.Location = new System.Drawing.Point(16, 15);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(153, 12);
+            this.label27.TabIndex = 15;
+            this.label27.Text = "Please Enter Your Project Name:";
             // 
-            // label28
+            // txtProjectName
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label28.Location = new System.Drawing.Point(6, 73);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(177, 17);
-            this.label28.TabIndex = 43;
-            this.label28.Text = "Performing Administration";
+            this.txtProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtProjectName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProjectName.ForeColor = System.Drawing.Color.White;
+            this.txtProjectName.Location = new System.Drawing.Point(185, 12);
+            this.txtProjectName.Name = "txtProjectName";
+            this.txtProjectName.Size = new System.Drawing.Size(113, 20);
+            this.txtProjectName.TabIndex = 14;
+            this.txtProjectName.Text = "Project Name";
             // 
-            // checkBoxUCR2
+            // label1
             // 
-            this.checkBoxUCR2.AutoSize = true;
-            this.checkBoxUCR2.Location = new System.Drawing.Point(9, 186);
-            this.checkBoxUCR2.Name = "checkBoxUCR2";
-            this.checkBoxUCR2.Size = new System.Drawing.Size(398, 16);
-            this.checkBoxUCR2.TabIndex = 48;
-            this.checkBoxUCR2.Text = "Communicating the results of the review to the appropriate project stakeholders";
-            this.checkBoxUCR2.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(337, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(167, 12);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Please Enter Your Project Manager:";
             // 
-            // checkBoxUCR1
+            // txtProjectManager
             // 
-            this.checkBoxUCR1.AutoSize = true;
-            this.checkBoxUCR1.Location = new System.Drawing.Point(9, 164);
-            this.checkBoxUCR1.Name = "checkBoxUCR1";
-            this.checkBoxUCR1.Size = new System.Drawing.Size(399, 16);
-            this.checkBoxUCR1.TabIndex = 47;
-            this.checkBoxUCR1.Text = "Organizing the completion of a Post Implementation Review after Project Closure";
-            this.checkBoxUCR1.UseVisualStyleBackColor = true;
+            this.txtProjectManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtProjectManager.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProjectManager.ForeColor = System.Drawing.Color.White;
+            this.txtProjectManager.Location = new System.Drawing.Point(534, 12);
+            this.txtProjectManager.Name = "txtProjectManager";
+            this.txtProjectManager.Size = new System.Drawing.Size(113, 20);
+            this.txtProjectManager.TabIndex = 17;
+            this.txtProjectManager.Text = "Project Manager";
             // 
-            // label29
+            // label2
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label29.Location = new System.Drawing.Point(6, 144);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(192, 17);
-            this.label29.TabIndex = 46;
-            this.label29.Text = "Undertaking Closure Reviews";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(337, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(195, 12);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Please Enter Your Project Office Manager:";
             // 
-            // btnSaveServicesInfo
+            // txtProjectOfficeManager
             // 
-            this.btnSaveServicesInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSaveServicesInfo.Location = new System.Drawing.Point(721, 305);
-            this.btnSaveServicesInfo.Name = "btnSaveServicesInfo";
-            this.btnSaveServicesInfo.Size = new System.Drawing.Size(101, 37);
-            this.btnSaveServicesInfo.TabIndex = 49;
-            this.btnSaveServicesInfo.Text = "Save Services Information";
-            this.btnSaveServicesInfo.UseVisualStyleBackColor = true;
+            this.txtProjectOfficeManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtProjectOfficeManager.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProjectOfficeManager.ForeColor = System.Drawing.Color.White;
+            this.txtProjectOfficeManager.Location = new System.Drawing.Point(534, 38);
+            this.txtProjectOfficeManager.Name = "txtProjectOfficeManager";
+            this.txtProjectOfficeManager.Size = new System.Drawing.Size(113, 20);
+            this.txtProjectOfficeManager.TabIndex = 19;
+            this.txtProjectOfficeManager.Text = "Project Office Manager";
             // 
             // ProjectOfficeChecklistDocumentForm
             // 
