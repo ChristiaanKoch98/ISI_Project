@@ -185,9 +185,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             {
                 VersionControl<AcceptancePlanModel>.DocumentModel documentModel = new VersionControl<AcceptancePlanModel>.DocumentModel(newAcceptancePlanModel, DateTime.Now, VersionControl<ProjectModel>.generateID());
 
+                documentModels.Add(documentModel);
                 versionControl.DocumentModels = documentModels;
 
-                string json = JsonConvert.SerialzeObject(versionControl);
+                string json = JsonConvert.SerializeObject(versionControl);
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "AcceptancePlan");
                 MessageBox.Show("Acceptance plan saved successfully", "save", MessageBoxButtons.OK);
             }

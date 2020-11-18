@@ -67,6 +67,27 @@
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.txtProjectName = new System.Windows.Forms.TextBox();
             this.btnSaveProjectName = new System.Windows.Forms.Button();
+            this.AcceptType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AcceptInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AcceptVersion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AcceptIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AcceptChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ApprovRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ApproveName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ApproveChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ApproveDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MilestoneName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MilestoneDesc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MilestoneDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CritName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CritCriteria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CritAccStand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ScheduleMilestone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ScheduleDeliver = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ScheduleMilstoneDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ScheduleReviewMethod = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ScheduleReviewers = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ScheduleAcceptanceDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentApprovals)).BeginInit();
@@ -87,7 +108,7 @@
             this.label27.ForeColor = System.Drawing.Color.White;
             this.label27.Location = new System.Drawing.Point(11, 11);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(153, 12);
+            this.label27.Size = new System.Drawing.Size(244, 20);
             this.label27.TabIndex = 12;
             this.label27.Text = "Please Enter Your Project Name:";
             // 
@@ -113,10 +134,10 @@
             this.tabPage1.Controls.Add(this.dataGridViewDocumentApprovals);
             this.tabPage1.Controls.Add(this.dataGridViewDocumentHistory);
             this.tabPage1.Controls.Add(this.dataGridViewDocumentInformation);
-            this.tabPage1.Location = new System.Drawing.Point(4, 21);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(768, 344);
+            this.tabPage1.Size = new System.Drawing.Size(768, 336);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Document Control";
             // 
@@ -130,7 +151,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(7, 281);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 17);
+            this.label3.Size = new System.Drawing.Size(210, 26);
             this.label3.TabIndex = 5;
             this.label3.Text = "Document Approvals";
             // 
@@ -144,7 +165,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(7, 163);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 17);
+            this.label2.Size = new System.Drawing.Size(183, 26);
             this.label2.TabIndex = 4;
             this.label2.Text = "Document History";
             // 
@@ -158,7 +179,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(7, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 17);
+            this.label1.Size = new System.Drawing.Size(227, 26);
             this.label1.TabIndex = 3;
             this.label1.Text = "Document Information";
             // 
@@ -168,8 +189,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewDocumentApprovals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDocumentApprovals.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ApprovRole,
+            this.ApproveName,
+            this.ApproveChanges,
+            this.ApproveDate});
             this.dataGridViewDocumentApprovals.Location = new System.Drawing.Point(168, 225);
             this.dataGridViewDocumentApprovals.Name = "dataGridViewDocumentApprovals";
+            this.dataGridViewDocumentApprovals.RowHeadersWidth = 62;
             this.dataGridViewDocumentApprovals.Size = new System.Drawing.Size(594, 114);
             this.dataGridViewDocumentApprovals.TabIndex = 2;
             // 
@@ -179,8 +206,13 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewDocumentHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDocumentHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.AcceptVersion,
+            this.AcceptIssueDate,
+            this.AcceptChanges});
             this.dataGridViewDocumentHistory.Location = new System.Drawing.Point(168, 111);
             this.dataGridViewDocumentHistory.Name = "dataGridViewDocumentHistory";
+            this.dataGridViewDocumentHistory.RowHeadersWidth = 62;
             this.dataGridViewDocumentHistory.Size = new System.Drawing.Size(594, 109);
             this.dataGridViewDocumentHistory.TabIndex = 1;
             // 
@@ -190,8 +222,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewDocumentInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDocumentInformation.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.AcceptType,
+            this.AcceptInfo});
             this.dataGridViewDocumentInformation.Location = new System.Drawing.Point(168, 6);
             this.dataGridViewDocumentInformation.Name = "dataGridViewDocumentInformation";
+            this.dataGridViewDocumentInformation.RowHeadersWidth = 62;
             this.dataGridViewDocumentInformation.Size = new System.Drawing.Size(594, 100);
             this.dataGridViewDocumentInformation.TabIndex = 0;
             // 
@@ -202,10 +238,10 @@
             this.tabPage2.Controls.Add(this.label14);
             this.tabPage2.Controls.Add(this.dataGridViewCriteria);
             this.tabPage2.Controls.Add(this.dataGridViewMilestones);
-            this.tabPage2.Location = new System.Drawing.Point(4, 21);
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(768, 344);
+            this.tabPage2.Size = new System.Drawing.Size(768, 336);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Acceptance Criteria";
             // 
@@ -219,7 +255,7 @@
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(6, 241);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(55, 17);
+            this.label13.Size = new System.Drawing.Size(83, 26);
             this.label13.TabIndex = 8;
             this.label13.Text = "Criteria";
             // 
@@ -233,7 +269,7 @@
             this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Location = new System.Drawing.Point(6, 79);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(75, 17);
+            this.label14.Size = new System.Drawing.Size(113, 26);
             this.label14.TabIndex = 7;
             this.label14.Text = "Milestones";
             // 
@@ -243,8 +279,13 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewCriteria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCriteria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CritName,
+            this.CritCriteria,
+            this.CritAccStand});
             this.dataGridViewCriteria.Location = new System.Drawing.Point(87, 172);
             this.dataGridViewCriteria.Name = "dataGridViewCriteria";
+            this.dataGridViewCriteria.RowHeadersWidth = 62;
             this.dataGridViewCriteria.Size = new System.Drawing.Size(675, 166);
             this.dataGridViewCriteria.TabIndex = 6;
             // 
@@ -254,8 +295,13 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewMilestones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMilestones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MilestoneName,
+            this.MilestoneDesc,
+            this.MilestoneDate});
             this.dataGridViewMilestones.Location = new System.Drawing.Point(87, 6);
             this.dataGridViewMilestones.Name = "dataGridViewMilestones";
+            this.dataGridViewMilestones.RowHeadersWidth = 62;
             this.dataGridViewMilestones.Size = new System.Drawing.Size(675, 160);
             this.dataGridViewMilestones.TabIndex = 5;
             // 
@@ -270,10 +316,10 @@
             this.tabPage3.Controls.Add(this.txtAssumptions);
             this.tabPage3.Controls.Add(this.btnAssumptions);
             this.tabPage3.Controls.Add(this.listBoxAssumptions);
-            this.tabPage3.Location = new System.Drawing.Point(4, 21);
+            this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(768, 344);
+            this.tabPage3.Size = new System.Drawing.Size(768, 336);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Acceptance Plan";
             // 
@@ -287,7 +333,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(339, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 17);
+            this.label4.Size = new System.Drawing.Size(97, 26);
             this.label4.TabIndex = 41;
             this.label4.Text = "Schedule";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -298,8 +344,16 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSchedule.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ScheduleMilestone,
+            this.ScheduleDeliver,
+            this.ScheduleMilstoneDate,
+            this.ScheduleReviewMethod,
+            this.ScheduleReviewers,
+            this.ScheduleAcceptanceDate});
             this.dataGridViewSchedule.Location = new System.Drawing.Point(6, 23);
             this.dataGridViewSchedule.Name = "dataGridViewSchedule";
+            this.dataGridViewSchedule.RowHeadersWidth = 62;
             this.dataGridViewSchedule.Size = new System.Drawing.Size(756, 129);
             this.dataGridViewSchedule.TabIndex = 40;
             // 
@@ -343,7 +397,7 @@
             this.listBoxConstraints.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxConstraints.ForeColor = System.Drawing.Color.White;
             this.listBoxConstraints.FormattingEnabled = true;
-            this.listBoxConstraints.ItemHeight = 12;
+            this.listBoxConstraints.ItemHeight = 20;
             this.listBoxConstraints.Location = new System.Drawing.Point(492, 210);
             this.listBoxConstraints.Name = "listBoxConstraints";
             this.listBoxConstraints.Size = new System.Drawing.Size(270, 124);
@@ -389,7 +443,7 @@
             this.listBoxAssumptions.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxAssumptions.ForeColor = System.Drawing.Color.White;
             this.listBoxAssumptions.FormattingEnabled = true;
-            this.listBoxAssumptions.ItemHeight = 12;
+            this.listBoxAssumptions.ItemHeight = 20;
             this.listBoxAssumptions.Location = new System.Drawing.Point(6, 210);
             this.listBoxAssumptions.Name = "listBoxAssumptions";
             this.listBoxAssumptions.Size = new System.Drawing.Size(270, 124);
@@ -410,10 +464,10 @@
             this.tabPage7.Controls.Add(this.listBoxRoles);
             this.tabPage7.Controls.Add(this.btnActivities);
             this.tabPage7.Controls.Add(this.listBoxActivities);
-            this.tabPage7.Location = new System.Drawing.Point(4, 21);
+            this.tabPage7.Location = new System.Drawing.Point(4, 29);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(768, 344);
+            this.tabPage7.Size = new System.Drawing.Size(768, 336);
             this.tabPage7.TabIndex = 3;
             this.tabPage7.Text = "Acceptance Process";
             // 
@@ -427,7 +481,7 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(213, 313);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(323, 19);
+            this.label8.Size = new System.Drawing.Size(474, 28);
             this.label8.TabIndex = 33;
             this.label8.Text = "3. And your data will then be added to the list";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -442,7 +496,7 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(213, 289);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(244, 19);
+            this.label9.Size = new System.Drawing.Size(357, 28);
             this.label9.TabIndex = 32;
             this.label9.Text = "2. Press the respective add button";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -457,7 +511,7 @@
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(213, 262);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(384, 19);
+            this.label11.Size = new System.Drawing.Size(565, 28);
             this.label11.TabIndex = 31;
             this.label11.Text = "1. Please enter your data into the respective textboxes";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -486,10 +540,10 @@
             this.listBoxDocuments.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxDocuments.ForeColor = System.Drawing.Color.White;
             this.listBoxDocuments.FormattingEnabled = true;
-            this.listBoxDocuments.ItemHeight = 12;
+            this.listBoxDocuments.ItemHeight = 20;
             this.listBoxDocuments.Location = new System.Drawing.Point(541, 30);
             this.listBoxDocuments.Name = "listBoxDocuments";
-            this.listBoxDocuments.Size = new System.Drawing.Size(221, 220);
+            this.listBoxDocuments.Size = new System.Drawing.Size(221, 204);
             this.listBoxDocuments.TabIndex = 29;
             // 
             // txtDocuments
@@ -502,7 +556,7 @@
             this.txtDocuments.ForeColor = System.Drawing.Color.White;
             this.txtDocuments.Location = new System.Drawing.Point(541, 7);
             this.txtDocuments.Name = "txtDocuments";
-            this.txtDocuments.Size = new System.Drawing.Size(100, 20);
+            this.txtDocuments.Size = new System.Drawing.Size(100, 27);
             this.txtDocuments.TabIndex = 28;
             this.txtDocuments.Text = "Documents";
             // 
@@ -516,7 +570,7 @@
             this.txtRoles.ForeColor = System.Drawing.Color.White;
             this.txtRoles.Location = new System.Drawing.Point(268, 7);
             this.txtRoles.Name = "txtRoles";
-            this.txtRoles.Size = new System.Drawing.Size(100, 20);
+            this.txtRoles.Size = new System.Drawing.Size(100, 27);
             this.txtRoles.TabIndex = 25;
             this.txtRoles.Text = "Roles";
             // 
@@ -530,7 +584,7 @@
             this.txtActivities.ForeColor = System.Drawing.Color.White;
             this.txtActivities.Location = new System.Drawing.Point(6, 7);
             this.txtActivities.Name = "txtActivities";
-            this.txtActivities.Size = new System.Drawing.Size(100, 20);
+            this.txtActivities.Size = new System.Drawing.Size(100, 27);
             this.txtActivities.TabIndex = 22;
             this.txtActivities.Text = "Activities";
             // 
@@ -558,10 +612,10 @@
             this.listBoxRoles.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxRoles.ForeColor = System.Drawing.Color.White;
             this.listBoxRoles.FormattingEnabled = true;
-            this.listBoxRoles.ItemHeight = 12;
+            this.listBoxRoles.ItemHeight = 20;
             this.listBoxRoles.Location = new System.Drawing.Point(268, 30);
             this.listBoxRoles.Name = "listBoxRoles";
-            this.listBoxRoles.Size = new System.Drawing.Size(221, 220);
+            this.listBoxRoles.Size = new System.Drawing.Size(221, 204);
             this.listBoxRoles.TabIndex = 26;
             // 
             // btnActivities
@@ -588,19 +642,19 @@
             this.listBoxActivities.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxActivities.ForeColor = System.Drawing.Color.White;
             this.listBoxActivities.FormattingEnabled = true;
-            this.listBoxActivities.ItemHeight = 12;
+            this.listBoxActivities.ItemHeight = 20;
             this.listBoxActivities.Location = new System.Drawing.Point(6, 30);
             this.listBoxActivities.Name = "listBoxActivities";
-            this.listBoxActivities.Size = new System.Drawing.Size(221, 220);
+            this.listBoxActivities.Size = new System.Drawing.Size(221, 204);
             this.listBoxActivities.TabIndex = 23;
             // 
             // tabPage9
             // 
             this.tabPage9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage9.Location = new System.Drawing.Point(4, 21);
+            this.tabPage9.Location = new System.Drawing.Point(4, 29);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(768, 344);
+            this.tabPage9.Size = new System.Drawing.Size(768, 336);
             this.tabPage9.TabIndex = 5;
             this.tabPage9.Text = "Appendix";
             // 
@@ -611,7 +665,7 @@
             this.txtProjectName.ForeColor = System.Drawing.Color.White;
             this.txtProjectName.Location = new System.Drawing.Point(170, 8);
             this.txtProjectName.Name = "txtProjectName";
-            this.txtProjectName.Size = new System.Drawing.Size(100, 20);
+            this.txtProjectName.Size = new System.Drawing.Size(100, 27);
             this.txtProjectName.TabIndex = 10;
             this.txtProjectName.Text = "Project Name";
             // 
@@ -626,9 +680,156 @@
             this.btnSaveProjectName.UseVisualStyleBackColor = true;
             this.btnSaveProjectName.Click += new System.EventHandler(this.btnSaveProjectName_Click);
             // 
+            // AcceptType
+            // 
+            this.AcceptType.HeaderText = "Type";
+            this.AcceptType.MinimumWidth = 8;
+            this.AcceptType.Name = "AcceptType";
+            this.AcceptType.Width = 150;
+            // 
+            // AcceptInfo
+            // 
+            this.AcceptInfo.HeaderText = "Information";
+            this.AcceptInfo.MinimumWidth = 8;
+            this.AcceptInfo.Name = "AcceptInfo";
+            this.AcceptInfo.Width = 150;
+            // 
+            // AcceptVersion
+            // 
+            this.AcceptVersion.HeaderText = "Version";
+            this.AcceptVersion.MinimumWidth = 8;
+            this.AcceptVersion.Name = "AcceptVersion";
+            this.AcceptVersion.Width = 150;
+            // 
+            // AcceptIssueDate
+            // 
+            this.AcceptIssueDate.HeaderText = "IssueDate";
+            this.AcceptIssueDate.MinimumWidth = 8;
+            this.AcceptIssueDate.Name = "AcceptIssueDate";
+            this.AcceptIssueDate.Width = 150;
+            // 
+            // AcceptChanges
+            // 
+            this.AcceptChanges.HeaderText = "Changes";
+            this.AcceptChanges.MinimumWidth = 8;
+            this.AcceptChanges.Name = "AcceptChanges";
+            this.AcceptChanges.Width = 150;
+            // 
+            // ApprovRole
+            // 
+            this.ApprovRole.HeaderText = "Role";
+            this.ApprovRole.MinimumWidth = 8;
+            this.ApprovRole.Name = "ApprovRole";
+            this.ApprovRole.Width = 150;
+            // 
+            // ApproveName
+            // 
+            this.ApproveName.HeaderText = "Name";
+            this.ApproveName.MinimumWidth = 8;
+            this.ApproveName.Name = "ApproveName";
+            this.ApproveName.Width = 150;
+            // 
+            // ApproveChanges
+            // 
+            this.ApproveChanges.HeaderText = "Changes";
+            this.ApproveChanges.MinimumWidth = 8;
+            this.ApproveChanges.Name = "ApproveChanges";
+            this.ApproveChanges.Width = 150;
+            // 
+            // ApproveDate
+            // 
+            this.ApproveDate.HeaderText = "Date";
+            this.ApproveDate.MinimumWidth = 8;
+            this.ApproveDate.Name = "ApproveDate";
+            this.ApproveDate.Width = 150;
+            // 
+            // MilestoneName
+            // 
+            this.MilestoneName.HeaderText = "Name";
+            this.MilestoneName.MinimumWidth = 8;
+            this.MilestoneName.Name = "MilestoneName";
+            this.MilestoneName.Width = 150;
+            // 
+            // MilestoneDesc
+            // 
+            this.MilestoneDesc.HeaderText = "Description";
+            this.MilestoneDesc.MinimumWidth = 8;
+            this.MilestoneDesc.Name = "MilestoneDesc";
+            this.MilestoneDesc.Width = 150;
+            // 
+            // MilestoneDate
+            // 
+            this.MilestoneDate.HeaderText = "Date";
+            this.MilestoneDate.MinimumWidth = 8;
+            this.MilestoneDate.Name = "MilestoneDate";
+            this.MilestoneDate.Width = 150;
+            // 
+            // CritName
+            // 
+            this.CritName.HeaderText = "Name";
+            this.CritName.MinimumWidth = 8;
+            this.CritName.Name = "CritName";
+            this.CritName.Width = 150;
+            // 
+            // CritCriteria
+            // 
+            this.CritCriteria.HeaderText = "Criteria";
+            this.CritCriteria.MinimumWidth = 8;
+            this.CritCriteria.Name = "CritCriteria";
+            this.CritCriteria.Width = 150;
+            // 
+            // CritAccStand
+            // 
+            this.CritAccStand.HeaderText = "Acceptance Standards";
+            this.CritAccStand.MinimumWidth = 8;
+            this.CritAccStand.Name = "CritAccStand";
+            this.CritAccStand.Width = 150;
+            // 
+            // ScheduleMilestone
+            // 
+            this.ScheduleMilestone.HeaderText = "Milestone";
+            this.ScheduleMilestone.MinimumWidth = 8;
+            this.ScheduleMilestone.Name = "ScheduleMilestone";
+            this.ScheduleMilestone.Width = 150;
+            // 
+            // ScheduleDeliver
+            // 
+            this.ScheduleDeliver.HeaderText = "Deliverables";
+            this.ScheduleDeliver.MinimumWidth = 8;
+            this.ScheduleDeliver.Name = "ScheduleDeliver";
+            this.ScheduleDeliver.Width = 150;
+            // 
+            // ScheduleMilstoneDate
+            // 
+            this.ScheduleMilstoneDate.HeaderText = "MilestoneDate";
+            this.ScheduleMilstoneDate.MinimumWidth = 8;
+            this.ScheduleMilstoneDate.Name = "ScheduleMilstoneDate";
+            this.ScheduleMilstoneDate.Width = 150;
+            // 
+            // ScheduleReviewMethod
+            // 
+            this.ScheduleReviewMethod.HeaderText = "ReviewMethod";
+            this.ScheduleReviewMethod.MinimumWidth = 8;
+            this.ScheduleReviewMethod.Name = "ScheduleReviewMethod";
+            this.ScheduleReviewMethod.Width = 150;
+            // 
+            // ScheduleReviewers
+            // 
+            this.ScheduleReviewers.HeaderText = "Reviewers";
+            this.ScheduleReviewers.MinimumWidth = 8;
+            this.ScheduleReviewers.Name = "ScheduleReviewers";
+            this.ScheduleReviewers.Width = 150;
+            // 
+            // ScheduleAcceptanceDate
+            // 
+            this.ScheduleAcceptanceDate.HeaderText = "AcceptanceDate";
+            this.ScheduleAcceptanceDate.MinimumWidth = 8;
+            this.ScheduleAcceptanceDate.Name = "ScheduleAcceptanceDate";
+            this.ScheduleAcceptanceDate.Width = 150;
+            // 
             // AcceptancePlanDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(800, 415);
@@ -702,5 +903,26 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridViewSchedule;
         private System.Windows.Forms.Button btnSaveProjectName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AcceptType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AcceptInfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ApprovRole;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ApproveName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ApproveChanges;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ApproveDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AcceptVersion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AcceptIssueDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AcceptChanges;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MilestoneName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MilestoneDesc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MilestoneDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CritName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CritCriteria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CritAccStand;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ScheduleMilestone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ScheduleDeliver;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ScheduleMilstoneDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ScheduleReviewMethod;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ScheduleReviewers;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ScheduleAcceptanceDate;
     }
 }
