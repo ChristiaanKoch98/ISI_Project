@@ -221,33 +221,28 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 foreach (var row in currentAcceptancePlanModel.documentHistories)
                 {
-                    dataGridViewDocumentHistory.Rows.Add(row);
+                    dataGridViewDocumentHistory.Rows.Add(new string[] { row.version, row.issueDate, row.changes });
                 }
-                dataGridViewDocumentHistory.AllowUserToAddRows = false;
 
                 foreach (var row in currentAcceptancePlanModel.documentApprovals)
                 {
-                    dataGridViewDocumentApprovals.Rows.Add(row);
+                    dataGridViewDocumentApprovals.Rows.Add(new String[] { row.role, row.name, row.changes, row.date });
                 }
-                dataGridViewDocumentApprovals.AllowUserToAddRows = false;
 
                 foreach (var row in currentAcceptancePlanModel.documentMilestones)
                 {
-                    dataGridViewMilestones.Rows.Add(row);
+                    dataGridViewMilestones.Rows.Add(new String[] { row.name, row.description, row.date });
                 }
-                dataGridViewMilestones.AllowUserToAddRows = false;
 
                 foreach (var row in currentAcceptancePlanModel.documentCriterias)
                 {
-                    dataGridViewCriteria.Rows.Add(row);
+                    dataGridViewCriteria.Rows.Add(new String[] { row.name, row.criteria, row.acceptanceStandards });
                 }
-                dataGridViewCriteria.AllowUserToAddRows = false;
 
                 foreach (var row in currentAcceptancePlanModel.documentSchedules)
                 {
-                    dataGridViewSchedule.Rows.Add(row);
+                    dataGridViewSchedule.Rows.Add(new String[] { row.milestone, row.deliverables, row.milestoneDate, row.reviewMethod, row.reviewers, row.acceptanceDate });
                 }
-                dataGridViewSchedule.AllowUserToAddRows = false;
 
                 listBoxActivities.Text = currentAcceptancePlanModel.activites;
                 listBoxAssumptions.Text = currentAcceptancePlanModel.assumptions;
