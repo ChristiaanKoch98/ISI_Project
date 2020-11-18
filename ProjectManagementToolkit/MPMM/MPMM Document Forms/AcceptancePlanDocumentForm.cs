@@ -28,12 +28,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void AcceptancePlanDocumentForm_Load(object sender, EventArgs e)
         {
-
+            loadDocument();
         }
 
         private void btnSaveProjectName_Click(object sender, EventArgs e)
         {
             string projectName = txtProjectName.Text;
+            SaveDocument();
         }
 
         private void btnCompanyOverview_Click(object sender, EventArgs e)

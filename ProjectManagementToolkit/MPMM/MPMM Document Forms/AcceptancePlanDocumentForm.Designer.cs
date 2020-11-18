@@ -28,6 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label27 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -210,6 +233,14 @@
             this.AcceptVersion,
             this.AcceptIssueDate,
             this.AcceptChanges});
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewDocumentHistory.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewDocumentHistory.Location = new System.Drawing.Point(168, 111);
             this.dataGridViewDocumentHistory.Name = "dataGridViewDocumentHistory";
             this.dataGridViewDocumentHistory.RowHeadersWidth = 62;
@@ -225,6 +256,14 @@
             this.dataGridViewDocumentInformation.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.AcceptType,
             this.AcceptInfo});
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewDocumentInformation.DefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridViewDocumentInformation.Location = new System.Drawing.Point(168, 6);
             this.dataGridViewDocumentInformation.Name = "dataGridViewDocumentInformation";
             this.dataGridViewDocumentInformation.RowHeadersWidth = 62;
@@ -682,6 +721,9 @@
             // 
             // AcceptType
             // 
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            this.AcceptType.DefaultCellStyle = dataGridViewCellStyle9;
             this.AcceptType.HeaderText = "Type";
             this.AcceptType.MinimumWidth = 8;
             this.AcceptType.Name = "AcceptType";
@@ -689,6 +731,9 @@
             // 
             // AcceptInfo
             // 
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            this.AcceptInfo.DefaultCellStyle = dataGridViewCellStyle10;
             this.AcceptInfo.HeaderText = "Information";
             this.AcceptInfo.MinimumWidth = 8;
             this.AcceptInfo.Name = "AcceptInfo";
@@ -696,6 +741,9 @@
             // 
             // AcceptVersion
             // 
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            this.AcceptVersion.DefaultCellStyle = dataGridViewCellStyle5;
             this.AcceptVersion.HeaderText = "Version";
             this.AcceptVersion.MinimumWidth = 8;
             this.AcceptVersion.Name = "AcceptVersion";
@@ -703,6 +751,9 @@
             // 
             // AcceptIssueDate
             // 
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            this.AcceptIssueDate.DefaultCellStyle = dataGridViewCellStyle6;
             this.AcceptIssueDate.HeaderText = "IssueDate";
             this.AcceptIssueDate.MinimumWidth = 8;
             this.AcceptIssueDate.Name = "AcceptIssueDate";
@@ -710,6 +761,9 @@
             // 
             // AcceptChanges
             // 
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            this.AcceptChanges.DefaultCellStyle = dataGridViewCellStyle7;
             this.AcceptChanges.HeaderText = "Changes";
             this.AcceptChanges.MinimumWidth = 8;
             this.AcceptChanges.Name = "AcceptChanges";
@@ -717,6 +771,9 @@
             // 
             // ApprovRole
             // 
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.ApprovRole.DefaultCellStyle = dataGridViewCellStyle1;
             this.ApprovRole.HeaderText = "Role";
             this.ApprovRole.MinimumWidth = 8;
             this.ApprovRole.Name = "ApprovRole";
@@ -724,6 +781,9 @@
             // 
             // ApproveName
             // 
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.ApproveName.DefaultCellStyle = dataGridViewCellStyle2;
             this.ApproveName.HeaderText = "Name";
             this.ApproveName.MinimumWidth = 8;
             this.ApproveName.Name = "ApproveName";
@@ -731,6 +791,9 @@
             // 
             // ApproveChanges
             // 
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.ApproveChanges.DefaultCellStyle = dataGridViewCellStyle3;
             this.ApproveChanges.HeaderText = "Changes";
             this.ApproveChanges.MinimumWidth = 8;
             this.ApproveChanges.Name = "ApproveChanges";
@@ -738,6 +801,9 @@
             // 
             // ApproveDate
             // 
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.ApproveDate.DefaultCellStyle = dataGridViewCellStyle4;
             this.ApproveDate.HeaderText = "Date";
             this.ApproveDate.MinimumWidth = 8;
             this.ApproveDate.Name = "ApproveDate";
@@ -745,6 +811,9 @@
             // 
             // MilestoneName
             // 
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
+            this.MilestoneName.DefaultCellStyle = dataGridViewCellStyle15;
             this.MilestoneName.HeaderText = "Name";
             this.MilestoneName.MinimumWidth = 8;
             this.MilestoneName.Name = "MilestoneName";
@@ -752,6 +821,9 @@
             // 
             // MilestoneDesc
             // 
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
+            this.MilestoneDesc.DefaultCellStyle = dataGridViewCellStyle16;
             this.MilestoneDesc.HeaderText = "Description";
             this.MilestoneDesc.MinimumWidth = 8;
             this.MilestoneDesc.Name = "MilestoneDesc";
@@ -759,6 +831,9 @@
             // 
             // MilestoneDate
             // 
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Black;
+            this.MilestoneDate.DefaultCellStyle = dataGridViewCellStyle17;
             this.MilestoneDate.HeaderText = "Date";
             this.MilestoneDate.MinimumWidth = 8;
             this.MilestoneDate.Name = "MilestoneDate";
@@ -766,6 +841,9 @@
             // 
             // CritName
             // 
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            this.CritName.DefaultCellStyle = dataGridViewCellStyle12;
             this.CritName.HeaderText = "Name";
             this.CritName.MinimumWidth = 8;
             this.CritName.Name = "CritName";
@@ -773,6 +851,9 @@
             // 
             // CritCriteria
             // 
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
+            this.CritCriteria.DefaultCellStyle = dataGridViewCellStyle13;
             this.CritCriteria.HeaderText = "Criteria";
             this.CritCriteria.MinimumWidth = 8;
             this.CritCriteria.Name = "CritCriteria";
@@ -780,6 +861,9 @@
             // 
             // CritAccStand
             // 
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
+            this.CritAccStand.DefaultCellStyle = dataGridViewCellStyle14;
             this.CritAccStand.HeaderText = "Acceptance Standards";
             this.CritAccStand.MinimumWidth = 8;
             this.CritAccStand.Name = "CritAccStand";
@@ -787,6 +871,9 @@
             // 
             // ScheduleMilestone
             // 
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
+            this.ScheduleMilestone.DefaultCellStyle = dataGridViewCellStyle18;
             this.ScheduleMilestone.HeaderText = "Milestone";
             this.ScheduleMilestone.MinimumWidth = 8;
             this.ScheduleMilestone.Name = "ScheduleMilestone";
@@ -794,6 +881,9 @@
             // 
             // ScheduleDeliver
             // 
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Black;
+            this.ScheduleDeliver.DefaultCellStyle = dataGridViewCellStyle19;
             this.ScheduleDeliver.HeaderText = "Deliverables";
             this.ScheduleDeliver.MinimumWidth = 8;
             this.ScheduleDeliver.Name = "ScheduleDeliver";
@@ -801,6 +891,9 @@
             // 
             // ScheduleMilstoneDate
             // 
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
+            this.ScheduleMilstoneDate.DefaultCellStyle = dataGridViewCellStyle20;
             this.ScheduleMilstoneDate.HeaderText = "MilestoneDate";
             this.ScheduleMilstoneDate.MinimumWidth = 8;
             this.ScheduleMilstoneDate.Name = "ScheduleMilstoneDate";
@@ -808,6 +901,9 @@
             // 
             // ScheduleReviewMethod
             // 
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.Black;
+            this.ScheduleReviewMethod.DefaultCellStyle = dataGridViewCellStyle21;
             this.ScheduleReviewMethod.HeaderText = "ReviewMethod";
             this.ScheduleReviewMethod.MinimumWidth = 8;
             this.ScheduleReviewMethod.Name = "ScheduleReviewMethod";
@@ -815,6 +911,9 @@
             // 
             // ScheduleReviewers
             // 
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.Black;
+            this.ScheduleReviewers.DefaultCellStyle = dataGridViewCellStyle22;
             this.ScheduleReviewers.HeaderText = "Reviewers";
             this.ScheduleReviewers.MinimumWidth = 8;
             this.ScheduleReviewers.Name = "ScheduleReviewers";
@@ -822,6 +921,9 @@
             // 
             // ScheduleAcceptanceDate
             // 
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Black;
+            this.ScheduleAcceptanceDate.DefaultCellStyle = dataGridViewCellStyle23;
             this.ScheduleAcceptanceDate.HeaderText = "AcceptanceDate";
             this.ScheduleAcceptanceDate.MinimumWidth = 8;
             this.ScheduleAcceptanceDate.Name = "ScheduleAcceptanceDate";
@@ -912,12 +1014,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn AcceptVersion;
         private System.Windows.Forms.DataGridViewTextBoxColumn AcceptIssueDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn AcceptChanges;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MilestoneName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MilestoneDesc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MilestoneDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn CritName;
         private System.Windows.Forms.DataGridViewTextBoxColumn CritCriteria;
         private System.Windows.Forms.DataGridViewTextBoxColumn CritAccStand;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MilestoneName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MilestoneDesc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MilestoneDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn ScheduleMilestone;
         private System.Windows.Forms.DataGridViewTextBoxColumn ScheduleDeliver;
         private System.Windows.Forms.DataGridViewTextBoxColumn ScheduleMilstoneDate;
