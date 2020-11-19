@@ -38,6 +38,9 @@
             this.dgvDocumentHistory = new System.Windows.Forms.DataGridView();
             this.dgvDocumentInformation = new System.Windows.Forms.DataGridView();
             this.tabCommunicationsRequirements = new System.Windows.Forms.TabPage();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.dgvStakeholderRequirements = new System.Windows.Forms.DataGridView();
             this.txtStakeholderList = new System.Windows.Forms.TextBox();
             this.tabCommunicationsPlan = new System.Windows.Forms.TabPage();
             this.label10 = new System.Windows.Forms.Label();
@@ -45,6 +48,8 @@
             this.dgvCommunicationsPlan = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.tabCommunicationsProcess = new System.Windows.Forms.TabPage();
+            this.txtCommunicationsProcess = new System.Windows.Forms.TextBox();
+            this.txtActivities = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -54,21 +59,16 @@
             this.tabAppendix = new System.Windows.Forms.TabPage();
             this.label27 = new System.Windows.Forms.Label();
             this.txtProjectName = new System.Windows.Forms.TextBox();
-            this.dgvStakeholderRequirements = new System.Windows.Forms.DataGridView();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtActivities = new System.Windows.Forms.TextBox();
-            this.txtCommunicationsProcess = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabDocumentControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentApprovals)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentHistory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentInformation)).BeginInit();
             this.tabCommunicationsRequirements.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStakeholderRequirements)).BeginInit();
             this.tabCommunicationsPlan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCommunicationsPlan)).BeginInit();
             this.tabCommunicationsProcess.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStakeholderRequirements)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -192,6 +192,46 @@
             this.tabCommunicationsRequirements.TabIndex = 1;
             this.tabCommunicationsRequirements.Text = "Communications Requirements";
             // 
+            // label15
+            // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(6, 230);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(124, 44);
+            this.label15.TabIndex = 5;
+            this.label15.Text = "Stakeholder\r\nRequirements";
+            // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(6, 64);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(139, 22);
+            this.label14.TabIndex = 4;
+            this.label14.Text = "Stakeholder List";
+            // 
+            // dgvStakeholderRequirements
+            // 
+            this.dgvStakeholderRequirements.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvStakeholderRequirements.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStakeholderRequirements.Location = new System.Drawing.Point(157, 182);
+            this.dgvStakeholderRequirements.Name = "dgvStakeholderRequirements";
+            this.dgvStakeholderRequirements.RowHeadersWidth = 51;
+            this.dgvStakeholderRequirements.Size = new System.Drawing.Size(870, 159);
+            this.dgvStakeholderRequirements.TabIndex = 1;
+            // 
             // txtStakeholderList
             // 
             this.txtStakeholderList.Location = new System.Drawing.Point(157, 6);
@@ -286,6 +326,22 @@
             this.tabCommunicationsProcess.Size = new System.Drawing.Size(1030, 706);
             this.tabCommunicationsProcess.TabIndex = 3;
             this.tabCommunicationsProcess.Text = "Communications Process";
+            // 
+            // txtCommunicationsProcess
+            // 
+            this.txtCommunicationsProcess.Location = new System.Drawing.Point(166, 6);
+            this.txtCommunicationsProcess.Multiline = true;
+            this.txtCommunicationsProcess.Name = "txtCommunicationsProcess";
+            this.txtCommunicationsProcess.Size = new System.Drawing.Size(856, 110);
+            this.txtCommunicationsProcess.TabIndex = 55;
+            // 
+            // txtActivities
+            // 
+            this.txtActivities.Location = new System.Drawing.Point(166, 122);
+            this.txtActivities.Multiline = true;
+            this.txtActivities.Name = "txtActivities";
+            this.txtActivities.Size = new System.Drawing.Size(856, 110);
+            this.txtActivities.TabIndex = 54;
             // 
             // label12
             // 
@@ -390,62 +446,6 @@
             this.txtProjectName.TabIndex = 15;
             this.txtProjectName.Text = "Project Name";
             // 
-            // dgvStakeholderRequirements
-            // 
-            this.dgvStakeholderRequirements.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvStakeholderRequirements.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStakeholderRequirements.Location = new System.Drawing.Point(157, 182);
-            this.dgvStakeholderRequirements.Name = "dgvStakeholderRequirements";
-            this.dgvStakeholderRequirements.RowHeadersWidth = 51;
-            this.dgvStakeholderRequirements.Size = new System.Drawing.Size(870, 159);
-            this.dgvStakeholderRequirements.TabIndex = 1;
-            // 
-            // label14
-            // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(6, 64);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(139, 22);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "Stakeholder List";
-            // 
-            // label15
-            // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(6, 230);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(124, 44);
-            this.label15.TabIndex = 5;
-            this.label15.Text = "Stakeholder\r\nRequirements";
-            // 
-            // txtActivities
-            // 
-            this.txtActivities.Location = new System.Drawing.Point(166, 122);
-            this.txtActivities.Multiline = true;
-            this.txtActivities.Name = "txtActivities";
-            this.txtActivities.Size = new System.Drawing.Size(856, 110);
-            this.txtActivities.TabIndex = 54;
-            // 
-            // txtCommunicationsProcess
-            // 
-            this.txtCommunicationsProcess.Location = new System.Drawing.Point(166, 6);
-            this.txtCommunicationsProcess.Multiline = true;
-            this.txtCommunicationsProcess.Name = "txtCommunicationsProcess";
-            this.txtCommunicationsProcess.Size = new System.Drawing.Size(856, 110);
-            this.txtCommunicationsProcess.TabIndex = 55;
-            // 
             // CommunicationsPlanDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -457,6 +457,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "CommunicationsPlanDocumentForm";
             this.Text = "CommunicationsPlanDocumentForm";
+            this.Load += new System.EventHandler(this.CommunicationsPlanDocumentForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabDocumentControl.ResumeLayout(false);
             this.tabDocumentControl.PerformLayout();
@@ -465,12 +466,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentInformation)).EndInit();
             this.tabCommunicationsRequirements.ResumeLayout(false);
             this.tabCommunicationsRequirements.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStakeholderRequirements)).EndInit();
             this.tabCommunicationsPlan.ResumeLayout(false);
             this.tabCommunicationsPlan.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCommunicationsPlan)).EndInit();
             this.tabCommunicationsProcess.ResumeLayout(false);
             this.tabCommunicationsProcess.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStakeholderRequirements)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

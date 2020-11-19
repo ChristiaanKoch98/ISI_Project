@@ -37,37 +37,37 @@
             this.dgvDocumentHistory = new System.Windows.Forms.DataGridView();
             this.dgvDocumentInformation = new System.Windows.Forms.DataGridView();
             this.tabRiskProcess = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.picBoxOverview = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtAssignRiskActions = new System.Windows.Forms.TextBox();
+            this.txtReviewRisk = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txtIdentifyRisk = new System.Windows.Forms.TextBox();
             this.tabRiskRoles = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtProjectManager = new System.Windows.Forms.TextBox();
+            this.txtProjectBoard = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtTeamMember = new System.Windows.Forms.TextBox();
             this.tabRiskDocuments = new System.Windows.Forms.TabPage();
             this.txtRiskForm = new System.Windows.Forms.TextBox();
-            this.txtRiskManager = new System.Windows.Forms.TextBox();
+            this.txtRiskRegister = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtProjectName = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.txtReviewRisk = new System.Windows.Forms.TextBox();
-            this.txtAssignRiskActions = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.picBoxOverview = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtProjectBoard = new System.Windows.Forms.TextBox();
-            this.txtProjectManager = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabDocumentControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentApprovals)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentHistory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentInformation)).BeginInit();
             this.tabRiskProcess.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxOverview)).BeginInit();
             this.tabRiskRoles.SuspendLayout();
             this.tabRiskDocuments.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxOverview)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -194,6 +194,72 @@
             this.tabRiskProcess.TabIndex = 1;
             this.tabRiskProcess.Text = "Risk Process";
             // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(16, 48);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(88, 22);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Overview";
+            // 
+            // picBoxOverview
+            // 
+            this.picBoxOverview.Location = new System.Drawing.Point(177, 6);
+            this.picBoxOverview.Name = "picBoxOverview";
+            this.picBoxOverview.Size = new System.Drawing.Size(847, 311);
+            this.picBoxOverview.TabIndex = 9;
+            this.picBoxOverview.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(16, 475);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(109, 22);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Review Risk";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(16, 599);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(106, 44);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Assign Risk \r\nActions";
+            // 
+            // txtAssignRiskActions
+            // 
+            this.txtAssignRiskActions.Location = new System.Drawing.Point(177, 584);
+            this.txtAssignRiskActions.Multiline = true;
+            this.txtAssignRiskActions.Name = "txtAssignRiskActions";
+            this.txtAssignRiskActions.Size = new System.Drawing.Size(847, 116);
+            this.txtAssignRiskActions.TabIndex = 6;
+            // 
+            // txtReviewRisk
+            // 
+            this.txtReviewRisk.Location = new System.Drawing.Point(177, 457);
+            this.txtReviewRisk.Multiline = true;
+            this.txtReviewRisk.Name = "txtReviewRisk";
+            this.txtReviewRisk.Size = new System.Drawing.Size(847, 121);
+            this.txtReviewRisk.TabIndex = 5;
+            // 
             // label14
             // 
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -232,6 +298,52 @@
             this.tabRiskRoles.TabIndex = 2;
             this.tabRiskRoles.Text = "Risk Roles";
             // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(42, 358);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(121, 22);
+            this.label13.TabIndex = 56;
+            this.label13.Text = "Project Board";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(42, 190);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(142, 22);
+            this.label4.TabIndex = 55;
+            this.label4.Text = "Project Manager";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtProjectManager
+            // 
+            this.txtProjectManager.Location = new System.Drawing.Point(237, 171);
+            this.txtProjectManager.Multiline = true;
+            this.txtProjectManager.Name = "txtProjectManager";
+            this.txtProjectManager.Size = new System.Drawing.Size(787, 159);
+            this.txtProjectManager.TabIndex = 54;
+            // 
+            // txtProjectBoard
+            // 
+            this.txtProjectBoard.Location = new System.Drawing.Point(237, 336);
+            this.txtProjectBoard.Multiline = true;
+            this.txtProjectBoard.Name = "txtProjectBoard";
+            this.txtProjectBoard.Size = new System.Drawing.Size(787, 159);
+            this.txtProjectBoard.TabIndex = 53;
+            // 
             // label10
             // 
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -261,7 +373,7 @@
             this.tabRiskDocuments.AutoScroll = true;
             this.tabRiskDocuments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tabRiskDocuments.Controls.Add(this.txtRiskForm);
-            this.tabRiskDocuments.Controls.Add(this.txtRiskManager);
+            this.tabRiskDocuments.Controls.Add(this.txtRiskRegister);
             this.tabRiskDocuments.Controls.Add(this.label9);
             this.tabRiskDocuments.Controls.Add(this.label8);
             this.tabRiskDocuments.Location = new System.Drawing.Point(4, 25);
@@ -279,13 +391,13 @@
             this.txtRiskForm.Size = new System.Drawing.Size(856, 110);
             this.txtRiskForm.TabIndex = 55;
             // 
-            // txtRiskManager
+            // txtRiskRegister
             // 
-            this.txtRiskManager.Location = new System.Drawing.Point(166, 122);
-            this.txtRiskManager.Multiline = true;
-            this.txtRiskManager.Name = "txtRiskManager";
-            this.txtRiskManager.Size = new System.Drawing.Size(856, 110);
-            this.txtRiskManager.TabIndex = 54;
+            this.txtRiskRegister.Location = new System.Drawing.Point(166, 122);
+            this.txtRiskRegister.Multiline = true;
+            this.txtRiskRegister.Name = "txtRiskRegister";
+            this.txtRiskRegister.Size = new System.Drawing.Size(856, 110);
+            this.txtRiskRegister.TabIndex = 54;
             // 
             // label9
             // 
@@ -337,118 +449,6 @@
             this.label27.TabIndex = 16;
             this.label27.Text = "Risk Management Process For:";
             // 
-            // txtReviewRisk
-            // 
-            this.txtReviewRisk.Location = new System.Drawing.Point(177, 457);
-            this.txtReviewRisk.Multiline = true;
-            this.txtReviewRisk.Name = "txtReviewRisk";
-            this.txtReviewRisk.Size = new System.Drawing.Size(847, 121);
-            this.txtReviewRisk.TabIndex = 5;
-            // 
-            // txtAssignRiskActions
-            // 
-            this.txtAssignRiskActions.Location = new System.Drawing.Point(177, 584);
-            this.txtAssignRiskActions.Multiline = true;
-            this.txtAssignRiskActions.Name = "txtAssignRiskActions";
-            this.txtAssignRiskActions.Size = new System.Drawing.Size(847, 116);
-            this.txtAssignRiskActions.TabIndex = 6;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(16, 599);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 44);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Assign Risk \r\nActions";
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(16, 475);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(109, 22);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Review Risk";
-            // 
-            // picBoxOverview
-            // 
-            this.picBoxOverview.Location = new System.Drawing.Point(177, 6);
-            this.picBoxOverview.Name = "picBoxOverview";
-            this.picBoxOverview.Size = new System.Drawing.Size(847, 311);
-            this.picBoxOverview.TabIndex = 9;
-            this.picBoxOverview.TabStop = false;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(16, 48);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(88, 22);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Overview";
-            // 
-            // txtProjectBoard
-            // 
-            this.txtProjectBoard.Location = new System.Drawing.Point(237, 336);
-            this.txtProjectBoard.Multiline = true;
-            this.txtProjectBoard.Name = "txtProjectBoard";
-            this.txtProjectBoard.Size = new System.Drawing.Size(787, 159);
-            this.txtProjectBoard.TabIndex = 53;
-            // 
-            // txtProjectManager
-            // 
-            this.txtProjectManager.Location = new System.Drawing.Point(237, 171);
-            this.txtProjectManager.Multiline = true;
-            this.txtProjectManager.Name = "txtProjectManager";
-            this.txtProjectManager.Size = new System.Drawing.Size(787, 159);
-            this.txtProjectManager.TabIndex = 54;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(42, 190);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 22);
-            this.label4.TabIndex = 55;
-            this.label4.Text = "Project Manager";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label13
-            // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(42, 358);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(121, 22);
-            this.label13.TabIndex = 56;
-            this.label13.Text = "Project Board";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // RiskManagementProcessDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -460,6 +460,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "RiskManagementProcessDocumentForm";
             this.Text = "RiskManagementProcessDocumentForm";
+            this.Load += new System.EventHandler(this.RiskManagementProcessDocumentForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabDocumentControl.ResumeLayout(false);
             this.tabDocumentControl.PerformLayout();
@@ -468,11 +469,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentInformation)).EndInit();
             this.tabRiskProcess.ResumeLayout(false);
             this.tabRiskProcess.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxOverview)).EndInit();
             this.tabRiskRoles.ResumeLayout(false);
             this.tabRiskRoles.PerformLayout();
             this.tabRiskDocuments.ResumeLayout(false);
             this.tabRiskDocuments.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxOverview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -496,7 +497,7 @@
         private System.Windows.Forms.TextBox txtTeamMember;
         private System.Windows.Forms.TabPage tabRiskDocuments;
         private System.Windows.Forms.TextBox txtRiskForm;
-        private System.Windows.Forms.TextBox txtRiskManager;
+        private System.Windows.Forms.TextBox txtRiskRegister;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtProjectName;
