@@ -16,8 +16,16 @@ namespace ProjectManagementToolkit.Classes
         public string Roles { get; set; }
         public string Documents { get; set; }
         public string Appendix { get; set; }
-        public string Schedule { get; internal set; }
-        public string Risks { get; internal set; }
+        public List<Schedule> Schedule = new List<Schedule>();
+        public List<Risks> Risks = new List<Risks>();
+        public List<Likelihood> likelihood = new List<Likelihood>();
+        public List<Impact> impact = new List<Impact>();
+        public List<Schedule> scheduleslist = new List<Schedule>();
+        public List<Information> Information = new List<Information>();
+        public List<History> History = new List<History>();
+        public List<Priority> Priority = new List<Priority>();
+        public List<Approvals> approvals = new List<Approvals>();
+        public Information Info = new Information();
 
     }
 
@@ -57,7 +65,8 @@ namespace ProjectManagementToolkit.Classes
         public string ContingentActions { get; set; }
         public string ActionResource2 { get; set; }
         public string ActionDate2 { get; set; }
-        
+        public Information Information { get; set; }
+
     }
 
     class Information{
