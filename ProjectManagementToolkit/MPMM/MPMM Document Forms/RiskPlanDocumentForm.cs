@@ -267,7 +267,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void loadDocument()
         {
-            
+
             string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "ProjectPlan");
             List<string[]> documentInfo = new List<string[]>();
             newRiskPlanModel = new RiskPlanModel();
@@ -297,12 +297,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 foreach (var row in currentRiskPlanModel.approvals)
                 {
-                    Document_Approvals_dgv.Rows.Add(new string[] { row.ProjectSponsor, row.ProjectReviewGroup, row.ProjectManager, row.QualityManager,row.ProcumentManager, row.CommunicationsManager, row.ProjectOfficeManager });
+                    Document_Approvals_dgv.Rows.Add(new string[] { row.ProjectSponsor, row.ProjectReviewGroup, row.ProjectManager, row.QualityManager, row.ProcumentManager, row.CommunicationsManager, row.ProjectOfficeManager });
                 }
 
                 foreach (var row in currentRiskPlanModel.Risks)
                 {
-                   Risks_dgv.Rows.Add(new string[] { row.RiskCategory, row.RiskDescription, "", row.ID });
+                    Risks_dgv.Rows.Add(new string[] { row.RiskCategory, row.RiskDescription, "", row.ID });
                 }
 
                 foreach (var row in currentRiskPlanModel.likelihood)
@@ -317,12 +317,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 foreach (var row in currentRiskPlanModel.impact)
                 {
-                    Impact_dgv.Rows.Add(new string[] { row.Title, row.Score, row.Description});
+                    Impact_dgv.Rows.Add(new string[] { row.Title, row.Score, row.Description });
                 }
 
                 foreach (var row in currentRiskPlanModel.Schedule)
                 {
-                    Schedule_dgv.Rows.Add(new string[] { row.Rating, row.ID, row.PrevalantiveActions, row.ActionResource1, row.ActionDate1, row.ContingentActions,row.ActionResource2, row.ActionDate2 });
+                    Schedule_dgv.Rows.Add(new string[] { row.Rating, row.ID, row.PrevalantiveActions, row.ActionResource1, row.ActionDate1, row.ContingentActions, row.ActionResource2, row.ActionDate2 });
                 }
 
                 Project_Name_tbx.Text = currentRiskPlanModel.ProjectName;
@@ -333,7 +333,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 Activities_tbx.Text = currentRiskPlanModel.Activities;
                 Documents_tbx.Text = currentRiskPlanModel.Documents;
                 Appendix_tbx.Text = currentRiskPlanModel.Appendix;
-               
+
             }
+        }
     }
 }
