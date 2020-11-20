@@ -413,6 +413,7 @@
             this.txtProjectDescription.Name = "txtProjectDescription";
             this.txtProjectDescription.Size = new System.Drawing.Size(741, 82);
             this.txtProjectDescription.TabIndex = 42;
+            this.txtProjectDescription.TextChanged += new System.EventHandler(this.txtProjectDescription_TextChanged);
             // 
             // label13
             // 
