@@ -118,6 +118,57 @@
             this.Project_Name_tbx = new System.Windows.Forms.TextBox();
             this.Enter_btn = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Version = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Changes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Signature = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BusinessProblemOpportunity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProjectRequirement = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Solution = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FeasibilityScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AssessmentMethod = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RiskDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RiskLikelihood = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RiskImpact = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ActionsRequiredtoMitigateRisk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IssueDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IssuePriority = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ActionsRequiredtoResolveIssue = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Solution2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FeasibilityScore2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AssessmentMethod2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RiskDescription2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RiskLikelihood2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RiskImpact2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ActionsRequiredMitigateRisk2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IssueDescription2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IssuePriority2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ActionsRequiredResolveIssue2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Solution3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FeasibilityScore3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AssessmentMethod3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RiskDescription3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RiskLikelihood3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RiskImpact3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ActionsRequiredtoMitigateRisk3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IssueDescription3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IssuePriority3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ActionsRequiredtoResolveIssue3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Criteria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ScoreSolution1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.WeightSolution1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalSolution1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ScoreSolution2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.WeightSolution2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalSolution2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ScoreSolution3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.WeightSolution3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalSolution3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Document_Approvals_dgv)).BeginInit();
@@ -177,18 +228,24 @@
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.Document_Information_dgv);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 21);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1183, 431);
+            this.tabPage1.Size = new System.Drawing.Size(1183, 427);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Document Control";
             // 
             // Document_Approvals_dgv
             // 
             this.Document_Approvals_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Document_Approvals_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Role,
+            this.Name,
+            this.Signature,
+            this.Date});
             this.Document_Approvals_dgv.Location = new System.Drawing.Point(431, 31);
             this.Document_Approvals_dgv.Name = "Document_Approvals_dgv";
+            this.Document_Approvals_dgv.RowHeadersWidth = 51;
             this.Document_Approvals_dgv.Size = new System.Drawing.Size(409, 319);
             this.Document_Approvals_dgv.TabIndex = 5;
             // 
@@ -198,15 +255,20 @@
             this.label4.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(428, 13);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 15);
+            this.label4.Size = new System.Drawing.Size(161, 20);
             this.label4.TabIndex = 4;
             this.label4.Text = "Document Approvals";
             // 
             // Document_History_dgv
             // 
             this.Document_History_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Document_History_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Version,
+            this.IssueDate,
+            this.Changes});
             this.Document_History_dgv.Location = new System.Drawing.Point(34, 213);
             this.Document_History_dgv.Name = "Document_History_dgv";
+            this.Document_History_dgv.RowHeadersWidth = 51;
             this.Document_History_dgv.Size = new System.Drawing.Size(323, 137);
             this.Document_History_dgv.TabIndex = 3;
             // 
@@ -216,15 +278,19 @@
             this.label3.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(31, 195);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 15);
+            this.label3.Size = new System.Drawing.Size(142, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Document History";
             // 
             // Document_Information_dgv
             // 
             this.Document_Information_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Document_Information_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Type,
+            this.Information});
             this.Document_Information_dgv.Location = new System.Drawing.Point(34, 31);
             this.Document_Information_dgv.Name = "Document_Information_dgv";
+            this.Document_Information_dgv.RowHeadersWidth = 51;
             this.Document_Information_dgv.Size = new System.Drawing.Size(323, 150);
             this.Document_Information_dgv.TabIndex = 1;
             // 
@@ -234,7 +300,7 @@
             this.label2.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(31, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 15);
+            this.label2.Size = new System.Drawing.Size(174, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "Document Information";
             // 
@@ -245,10 +311,10 @@
             this.tabPage2.Controls.Add(this.Executive_Summary_tbx);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage2.Location = new System.Drawing.Point(4, 21);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1183, 431);
+            this.tabPage2.Size = new System.Drawing.Size(1183, 427);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Executive Summary";
             // 
@@ -279,7 +345,7 @@
             this.label5.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(6, 12);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(116, 15);
+            this.label5.Size = new System.Drawing.Size(153, 20);
             this.label5.TabIndex = 0;
             this.label5.Text = "Executive Summary";
             // 
@@ -293,10 +359,10 @@
             this.tabPage3.Controls.Add(this.Problem_Statement_btn);
             this.tabPage3.Controls.Add(this.Business_Problem_tbx);
             this.tabPage3.Controls.Add(this.label6);
-            this.tabPage3.Location = new System.Drawing.Point(4, 21);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1183, 431);
+            this.tabPage3.Size = new System.Drawing.Size(1183, 427);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Problem Statement";
             // 
@@ -314,7 +380,7 @@
             this.label8.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(440, 202);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(128, 15);
+            this.label8.Size = new System.Drawing.Size(164, 20);
             this.label8.TabIndex = 10;
             this.label8.Text = "Business Opportunity";
             // 
@@ -332,7 +398,7 @@
             this.label7.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(26, 19);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(132, 15);
+            this.label7.Size = new System.Drawing.Size(170, 20);
             this.label7.TabIndex = 8;
             this.label7.Text = "Business Environment";
             // 
@@ -363,7 +429,7 @@
             this.label6.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(26, 202);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 15);
+            this.label6.Size = new System.Drawing.Size(137, 20);
             this.label6.TabIndex = 5;
             this.label6.Text = "Business Problem";
             // 
@@ -375,18 +441,22 @@
             this.tabPage4.Controls.Add(this.Requirements_Statement_btn);
             this.tabPage4.Controls.Add(this.Business_Drivers_tbx);
             this.tabPage4.Controls.Add(this.label9);
-            this.tabPage4.Location = new System.Drawing.Point(4, 21);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1183, 431);
+            this.tabPage4.Size = new System.Drawing.Size(1183, 427);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Requirements Statement";
             // 
             // Business_Requirements_dgv
             // 
             this.Business_Requirements_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Business_Requirements_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.BusinessProblemOpportunity,
+            this.ProjectRequirement});
             this.Business_Requirements_dgv.Location = new System.Drawing.Point(454, 46);
             this.Business_Requirements_dgv.Name = "Business_Requirements_dgv";
+            this.Business_Requirements_dgv.RowHeadersWidth = 51;
             this.Business_Requirements_dgv.Size = new System.Drawing.Size(318, 310);
             this.Business_Requirements_dgv.TabIndex = 14;
             // 
@@ -396,7 +466,7 @@
             this.label10.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(451, 19);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(137, 15);
+            this.label10.Size = new System.Drawing.Size(176, 20);
             this.label10.TabIndex = 13;
             this.label10.Text = "Business Requirements";
             // 
@@ -428,7 +498,7 @@
             this.label9.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(19, 19);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(102, 15);
+            this.label9.Size = new System.Drawing.Size(129, 20);
             this.label9.TabIndex = 10;
             this.label9.Text = "Business Drivers";
             // 
@@ -438,10 +508,10 @@
             this.tabPage5.Controls.Add(this.Feasibility_Assessment_btn);
             this.tabPage5.Controls.Add(this.Potential_Solutions_tbx);
             this.tabPage5.Controls.Add(this.label11);
-            this.tabPage5.Location = new System.Drawing.Point(4, 21);
+            this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1183, 431);
+            this.tabPage5.Size = new System.Drawing.Size(1183, 427);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Feasibility Assessment";
             // 
@@ -472,7 +542,7 @@
             this.label11.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(14, 22);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(111, 15);
+            this.label11.Size = new System.Drawing.Size(146, 20);
             this.label11.TabIndex = 5;
             this.label11.Text = "Potential Solutions";
             // 
@@ -492,18 +562,23 @@
             this.tabPage6.Controls.Add(this.Description_tbx);
             this.tabPage6.Controls.Add(this.label12);
             this.tabPage6.Controls.Add(this.Solution_1_btn);
-            this.tabPage6.Location = new System.Drawing.Point(4, 21);
+            this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1183, 431);
+            this.tabPage6.Size = new System.Drawing.Size(1183, 427);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Solution 1";
             // 
             // Issues_dgv
             // 
             this.Issues_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Issues_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IssueDescription,
+            this.IssuePriority,
+            this.ActionsRequiredtoResolveIssue});
             this.Issues_dgv.Location = new System.Drawing.Point(810, 216);
             this.Issues_dgv.Name = "Issues_dgv";
+            this.Issues_dgv.RowHeadersWidth = 51;
             this.Issues_dgv.Size = new System.Drawing.Size(346, 150);
             this.Issues_dgv.TabIndex = 22;
             // 
@@ -513,7 +588,7 @@
             this.label16.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(808, 198);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(42, 15);
+            this.label16.Size = new System.Drawing.Size(53, 20);
             this.label16.TabIndex = 21;
             this.label16.Text = "Issues";
             // 
@@ -531,23 +606,34 @@
             this.label17.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(807, 17);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(80, 15);
+            this.label17.Size = new System.Drawing.Size(102, 20);
             this.label17.TabIndex = 19;
             this.label17.Text = "Assumptions";
             // 
             // Risks_dgv
             // 
             this.Risks_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Risks_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.RiskDescription,
+            this.RiskLikelihood,
+            this.RiskImpact,
+            this.ActionsRequiredtoMitigateRisk});
             this.Risks_dgv.Location = new System.Drawing.Point(414, 216);
             this.Risks_dgv.Name = "Risks_dgv";
+            this.Risks_dgv.RowHeadersWidth = 51;
             this.Risks_dgv.Size = new System.Drawing.Size(346, 150);
             this.Risks_dgv.TabIndex = 18;
             // 
             // Results_dgv
             // 
             this.Results_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Results_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Solution,
+            this.FeasibilityScore,
+            this.AssessmentMethod});
             this.Results_dgv.Location = new System.Drawing.Point(15, 216);
             this.Results_dgv.Name = "Results_dgv";
+            this.Results_dgv.RowHeadersWidth = 51;
             this.Results_dgv.Size = new System.Drawing.Size(346, 150);
             this.Results_dgv.TabIndex = 17;
             // 
@@ -557,7 +643,7 @@
             this.label15.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(412, 198);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(38, 15);
+            this.label15.Size = new System.Drawing.Size(48, 20);
             this.label15.TabIndex = 16;
             this.label15.Text = "Risks";
             // 
@@ -567,7 +653,7 @@
             this.label14.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(12, 198);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(48, 15);
+            this.label14.Size = new System.Drawing.Size(62, 20);
             this.label14.TabIndex = 15;
             this.label14.Text = "Results";
             // 
@@ -585,7 +671,7 @@
             this.label13.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(411, 17);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(73, 15);
+            this.label13.Size = new System.Drawing.Size(93, 20);
             this.label13.TabIndex = 13;
             this.label13.Text = "Assessment";
             // 
@@ -603,7 +689,7 @@
             this.label12.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(12, 17);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(72, 15);
+            this.label12.Size = new System.Drawing.Size(93, 20);
             this.label12.TabIndex = 11;
             this.label12.Text = "Description";
             // 
@@ -636,18 +722,23 @@
             this.tabPage7.Controls.Add(this.Description2_tbx);
             this.tabPage7.Controls.Add(this.label23);
             this.tabPage7.Controls.Add(this.Solution_2_btn);
-            this.tabPage7.Location = new System.Drawing.Point(4, 21);
+            this.tabPage7.Location = new System.Drawing.Point(4, 25);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1183, 431);
+            this.tabPage7.Size = new System.Drawing.Size(1183, 427);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Solution 2";
             // 
             // Issues2_dgv
             // 
             this.Issues2_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Issues2_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IssueDescription2,
+            this.IssuePriority2,
+            this.ActionsRequiredResolveIssue2});
             this.Issues2_dgv.Location = new System.Drawing.Point(817, 218);
             this.Issues2_dgv.Name = "Issues2_dgv";
+            this.Issues2_dgv.RowHeadersWidth = 51;
             this.Issues2_dgv.Size = new System.Drawing.Size(346, 150);
             this.Issues2_dgv.TabIndex = 35;
             // 
@@ -657,7 +748,7 @@
             this.label18.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(815, 200);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(42, 15);
+            this.label18.Size = new System.Drawing.Size(53, 20);
             this.label18.TabIndex = 34;
             this.label18.Text = "Issues";
             // 
@@ -675,23 +766,34 @@
             this.label19.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(814, 19);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(80, 15);
+            this.label19.Size = new System.Drawing.Size(102, 20);
             this.label19.TabIndex = 32;
             this.label19.Text = "Assumptions";
             // 
             // Risks2_dgv
             // 
             this.Risks2_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Risks2_dgv.Location = new System.Drawing.Point(421, 218);
+            this.Risks2_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.RiskDescription2,
+            this.RiskLikelihood2,
+            this.RiskImpact2,
+            this.ActionsRequiredMitigateRisk2});
+            this.Risks2_dgv.Location = new System.Drawing.Point(423, 218);
             this.Risks2_dgv.Name = "Risks2_dgv";
+            this.Risks2_dgv.RowHeadersWidth = 51;
             this.Risks2_dgv.Size = new System.Drawing.Size(346, 150);
             this.Risks2_dgv.TabIndex = 31;
             // 
             // Results2_dgv
             // 
             this.Results2_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Results2_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Solution2,
+            this.FeasibilityScore2,
+            this.AssessmentMethod2});
             this.Results2_dgv.Location = new System.Drawing.Point(22, 218);
             this.Results2_dgv.Name = "Results2_dgv";
+            this.Results2_dgv.RowHeadersWidth = 51;
             this.Results2_dgv.Size = new System.Drawing.Size(346, 150);
             this.Results2_dgv.TabIndex = 30;
             // 
@@ -701,7 +803,7 @@
             this.label20.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(419, 200);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(38, 15);
+            this.label20.Size = new System.Drawing.Size(48, 20);
             this.label20.TabIndex = 29;
             this.label20.Text = "Risks";
             // 
@@ -711,7 +813,7 @@
             this.label21.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(19, 200);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(48, 15);
+            this.label21.Size = new System.Drawing.Size(62, 20);
             this.label21.TabIndex = 28;
             this.label21.Text = "Results";
             // 
@@ -729,7 +831,7 @@
             this.label22.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(418, 19);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(73, 15);
+            this.label22.Size = new System.Drawing.Size(93, 20);
             this.label22.TabIndex = 26;
             this.label22.Text = "Assessment";
             // 
@@ -747,7 +849,7 @@
             this.label23.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(19, 19);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(72, 15);
+            this.label23.Size = new System.Drawing.Size(93, 20);
             this.label23.TabIndex = 24;
             this.label23.Text = "Description";
             // 
@@ -780,18 +882,23 @@
             this.tabPage8.Controls.Add(this.Description3_tbx);
             this.tabPage8.Controls.Add(this.label29);
             this.tabPage8.Controls.Add(this.Solution_3_btn);
-            this.tabPage8.Location = new System.Drawing.Point(4, 21);
+            this.tabPage8.Location = new System.Drawing.Point(4, 25);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1183, 431);
+            this.tabPage8.Size = new System.Drawing.Size(1183, 427);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Solution 3";
             // 
             // Issues3_dgv
             // 
             this.Issues3_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Issues3_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IssueDescription3,
+            this.IssuePriority3,
+            this.ActionsRequiredtoResolveIssue3});
             this.Issues3_dgv.Location = new System.Drawing.Point(817, 218);
             this.Issues3_dgv.Name = "Issues3_dgv";
+            this.Issues3_dgv.RowHeadersWidth = 51;
             this.Issues3_dgv.Size = new System.Drawing.Size(346, 150);
             this.Issues3_dgv.TabIndex = 48;
             // 
@@ -801,7 +908,7 @@
             this.label24.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(815, 200);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(42, 15);
+            this.label24.Size = new System.Drawing.Size(53, 20);
             this.label24.TabIndex = 47;
             this.label24.Text = "Issues";
             // 
@@ -819,23 +926,34 @@
             this.label25.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(814, 19);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(80, 15);
+            this.label25.Size = new System.Drawing.Size(102, 20);
             this.label25.TabIndex = 45;
             this.label25.Text = "Assumptions";
             // 
             // Risks3_dgv
             // 
             this.Risks3_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Risks3_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.RiskDescription3,
+            this.RiskLikelihood3,
+            this.RiskImpact3,
+            this.ActionsRequiredtoMitigateRisk3});
             this.Risks3_dgv.Location = new System.Drawing.Point(421, 218);
             this.Risks3_dgv.Name = "Risks3_dgv";
+            this.Risks3_dgv.RowHeadersWidth = 51;
             this.Risks3_dgv.Size = new System.Drawing.Size(346, 150);
             this.Risks3_dgv.TabIndex = 44;
             // 
             // Results3_dgv
             // 
             this.Results3_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Results3_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Solution3,
+            this.FeasibilityScore3,
+            this.AssessmentMethod3});
             this.Results3_dgv.Location = new System.Drawing.Point(22, 218);
             this.Results3_dgv.Name = "Results3_dgv";
+            this.Results3_dgv.RowHeadersWidth = 51;
             this.Results3_dgv.Size = new System.Drawing.Size(346, 150);
             this.Results3_dgv.TabIndex = 43;
             // 
@@ -845,7 +963,7 @@
             this.label26.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.Location = new System.Drawing.Point(419, 200);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(38, 15);
+            this.label26.Size = new System.Drawing.Size(48, 20);
             this.label26.TabIndex = 42;
             this.label26.Text = "Risks";
             // 
@@ -855,7 +973,7 @@
             this.label27.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(19, 200);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(48, 15);
+            this.label27.Size = new System.Drawing.Size(62, 20);
             this.label27.TabIndex = 41;
             this.label27.Text = "Results";
             // 
@@ -873,7 +991,7 @@
             this.label28.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.Location = new System.Drawing.Point(418, 19);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(73, 15);
+            this.label28.Size = new System.Drawing.Size(93, 20);
             this.label28.TabIndex = 39;
             this.label28.Text = "Assessment";
             // 
@@ -891,7 +1009,7 @@
             this.label29.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.Location = new System.Drawing.Point(19, 19);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(72, 15);
+            this.label29.Size = new System.Drawing.Size(93, 20);
             this.label29.TabIndex = 37;
             this.label29.Text = "Description";
             // 
@@ -916,19 +1034,31 @@
             this.tabPage9.Controls.Add(this.Feasibility_Ranking_btn);
             this.tabPage9.Controls.Add(this.Ranking_Criteria_tbx);
             this.tabPage9.Controls.Add(this.label33);
-            this.tabPage9.Location = new System.Drawing.Point(4, 21);
+            this.tabPage9.Location = new System.Drawing.Point(4, 25);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(1183, 431);
+            this.tabPage9.Size = new System.Drawing.Size(1183, 427);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "Feasibility Ranking";
             // 
             // Ranking_Scores_dgv
             // 
             this.Ranking_Scores_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Ranking_Scores_dgv.Location = new System.Drawing.Point(466, 40);
+            this.Ranking_Scores_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Criteria,
+            this.ScoreSolution1,
+            this.WeightSolution1,
+            this.TotalSolution1,
+            this.ScoreSolution2,
+            this.WeightSolution2,
+            this.TotalSolution2,
+            this.ScoreSolution3,
+            this.WeightSolution3,
+            this.TotalSolution3});
+            this.Ranking_Scores_dgv.Location = new System.Drawing.Point(427, 40);
             this.Ranking_Scores_dgv.Name = "Ranking_Scores_dgv";
-            this.Ranking_Scores_dgv.Size = new System.Drawing.Size(318, 310);
+            this.Ranking_Scores_dgv.RowHeadersWidth = 51;
+            this.Ranking_Scores_dgv.Size = new System.Drawing.Size(563, 310);
             this.Ranking_Scores_dgv.TabIndex = 19;
             // 
             // label32
@@ -937,7 +1067,7 @@
             this.label32.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.Location = new System.Drawing.Point(463, 13);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(91, 15);
+            this.label32.Size = new System.Drawing.Size(119, 20);
             this.label32.TabIndex = 18;
             this.label32.Text = "Ranking Scores";
             // 
@@ -968,7 +1098,7 @@
             this.label33.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.Location = new System.Drawing.Point(31, 13);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(96, 15);
+            this.label33.Size = new System.Drawing.Size(128, 20);
             this.label33.TabIndex = 15;
             this.label33.Text = "Ranking Criteria";
             // 
@@ -978,10 +1108,10 @@
             this.tabPage10.Controls.Add(this.Feasibility_Result_btn);
             this.tabPage10.Controls.Add(this.Feasibility_Result_tbx);
             this.tabPage10.Controls.Add(this.label30);
-            this.tabPage10.Location = new System.Drawing.Point(4, 21);
+            this.tabPage10.Location = new System.Drawing.Point(4, 25);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(1183, 431);
+            this.tabPage10.Size = new System.Drawing.Size(1183, 427);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "Feasibility Result";
             // 
@@ -1012,7 +1142,7 @@
             this.label30.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.Location = new System.Drawing.Point(21, 19);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(103, 15);
+            this.label30.Size = new System.Drawing.Size(134, 20);
             this.label30.TabIndex = 8;
             this.label30.Text = "Feasibility Result";
             // 
@@ -1022,10 +1152,10 @@
             this.tabPage11.Controls.Add(this.Appendix_btn);
             this.tabPage11.Controls.Add(this.Supporting_Documentation_btn);
             this.tabPage11.Controls.Add(this.label31);
-            this.tabPage11.Location = new System.Drawing.Point(4, 21);
+            this.tabPage11.Location = new System.Drawing.Point(4, 25);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(1183, 431);
+            this.tabPage11.Size = new System.Drawing.Size(1183, 427);
             this.tabPage11.TabIndex = 10;
             this.tabPage11.Text = "Appendix";
             // 
@@ -1056,7 +1186,7 @@
             this.label31.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.Location = new System.Drawing.Point(14, 19);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(155, 15);
+            this.label31.Size = new System.Drawing.Size(203, 20);
             this.label31.TabIndex = 11;
             this.label31.Text = "Supporting Documentation";
             // 
@@ -1066,7 +1196,7 @@
             this.label1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(53, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 19);
+            this.label1.Size = new System.Drawing.Size(191, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Feasibility Study For:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -1075,7 +1205,7 @@
             // 
             this.Project_Name_tbx.Location = new System.Drawing.Point(212, 47);
             this.Project_Name_tbx.Name = "Project_Name_tbx";
-            this.Project_Name_tbx.Size = new System.Drawing.Size(237, 20);
+            this.Project_Name_tbx.Size = new System.Drawing.Size(237, 24);
             this.Project_Name_tbx.TabIndex = 2;
             // 
             // Enter_btn
@@ -1102,9 +1232,366 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // Type
+            // 
+            this.Type.HeaderText = "Type";
+            this.Type.MinimumWidth = 6;
+            this.Type.Name = "Type";
+            this.Type.Width = 125;
+            // 
+            // Information
+            // 
+            this.Information.HeaderText = "Information";
+            this.Information.MinimumWidth = 6;
+            this.Information.Name = "Information";
+            this.Information.Width = 125;
+            // 
+            // Version
+            // 
+            this.Version.HeaderText = "Version";
+            this.Version.MinimumWidth = 6;
+            this.Version.Name = "Version";
+            this.Version.Width = 125;
+            // 
+            // IssueDate
+            // 
+            this.IssueDate.HeaderText = "Issue Date";
+            this.IssueDate.MinimumWidth = 6;
+            this.IssueDate.Name = "IssueDate";
+            this.IssueDate.Width = 125;
+            // 
+            // Changes
+            // 
+            this.Changes.HeaderText = "Changes";
+            this.Changes.MinimumWidth = 6;
+            this.Changes.Name = "Changes";
+            this.Changes.Width = 125;
+            // 
+            // Role
+            // 
+            this.Role.HeaderText = "Role";
+            this.Role.MinimumWidth = 6;
+            this.Role.Name = "Role";
+            this.Role.Width = 125;
+            // 
+            // Name
+            // 
+            this.Name.HeaderText = "Name";
+            this.Name.MinimumWidth = 6;
+            this.Name.Name = "Name";
+            this.Name.Width = 125;
+            // 
+            // Signature
+            // 
+            this.Signature.HeaderText = "Signature";
+            this.Signature.MinimumWidth = 6;
+            this.Signature.Name = "Signature";
+            this.Signature.Width = 125;
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.MinimumWidth = 6;
+            this.Date.Name = "Date";
+            this.Date.Width = 125;
+            // 
+            // BusinessProblemOpportunity
+            // 
+            this.BusinessProblemOpportunity.HeaderText = "Business Problem or Opportunity";
+            this.BusinessProblemOpportunity.MinimumWidth = 6;
+            this.BusinessProblemOpportunity.Name = "BusinessProblemOpportunity";
+            this.BusinessProblemOpportunity.Width = 125;
+            // 
+            // ProjectRequirement
+            // 
+            this.ProjectRequirement.HeaderText = "Project Requirement";
+            this.ProjectRequirement.MinimumWidth = 6;
+            this.ProjectRequirement.Name = "ProjectRequirement";
+            this.ProjectRequirement.Width = 125;
+            // 
+            // Solution
+            // 
+            this.Solution.HeaderText = "Solution ";
+            this.Solution.MinimumWidth = 6;
+            this.Solution.Name = "Solution";
+            this.Solution.Width = 125;
+            // 
+            // FeasibilityScore
+            // 
+            this.FeasibilityScore.HeaderText = "Feasibility Score";
+            this.FeasibilityScore.MinimumWidth = 6;
+            this.FeasibilityScore.Name = "FeasibilityScore";
+            this.FeasibilityScore.Width = 125;
+            // 
+            // AssessmentMethod
+            // 
+            this.AssessmentMethod.HeaderText = "Assessment Method";
+            this.AssessmentMethod.MinimumWidth = 6;
+            this.AssessmentMethod.Name = "AssessmentMethod";
+            this.AssessmentMethod.Width = 125;
+            // 
+            // RiskDescription
+            // 
+            this.RiskDescription.HeaderText = "Risk Description";
+            this.RiskDescription.MinimumWidth = 6;
+            this.RiskDescription.Name = "RiskDescription";
+            this.RiskDescription.Width = 125;
+            // 
+            // RiskLikelihood
+            // 
+            this.RiskLikelihood.HeaderText = "Risk Likelihood";
+            this.RiskLikelihood.MinimumWidth = 6;
+            this.RiskLikelihood.Name = "RiskLikelihood";
+            this.RiskLikelihood.Width = 125;
+            // 
+            // RiskImpact
+            // 
+            this.RiskImpact.HeaderText = "Risk Impact";
+            this.RiskImpact.MinimumWidth = 6;
+            this.RiskImpact.Name = "RiskImpact";
+            this.RiskImpact.Width = 125;
+            // 
+            // ActionsRequiredtoMitigateRisk
+            // 
+            this.ActionsRequiredtoMitigateRisk.HeaderText = "Actions Required to Mitigate Risk";
+            this.ActionsRequiredtoMitigateRisk.MinimumWidth = 6;
+            this.ActionsRequiredtoMitigateRisk.Name = "ActionsRequiredtoMitigateRisk";
+            this.ActionsRequiredtoMitigateRisk.Width = 125;
+            // 
+            // IssueDescription
+            // 
+            this.IssueDescription.HeaderText = "Issue Description";
+            this.IssueDescription.MinimumWidth = 6;
+            this.IssueDescription.Name = "IssueDescription";
+            this.IssueDescription.Width = 125;
+            // 
+            // IssuePriority
+            // 
+            this.IssuePriority.HeaderText = "Issue Priority";
+            this.IssuePriority.MinimumWidth = 6;
+            this.IssuePriority.Name = "IssuePriority";
+            this.IssuePriority.Width = 125;
+            // 
+            // ActionsRequiredtoResolveIssue
+            // 
+            this.ActionsRequiredtoResolveIssue.HeaderText = "Actions Required to Resolve Issue";
+            this.ActionsRequiredtoResolveIssue.MinimumWidth = 6;
+            this.ActionsRequiredtoResolveIssue.Name = "ActionsRequiredtoResolveIssue";
+            this.ActionsRequiredtoResolveIssue.Width = 125;
+            // 
+            // Solution2
+            // 
+            this.Solution2.HeaderText = "Solution ";
+            this.Solution2.MinimumWidth = 6;
+            this.Solution2.Name = "Solution2";
+            this.Solution2.Width = 125;
+            // 
+            // FeasibilityScore2
+            // 
+            this.FeasibilityScore2.HeaderText = "Feasibility Score";
+            this.FeasibilityScore2.MinimumWidth = 6;
+            this.FeasibilityScore2.Name = "FeasibilityScore2";
+            this.FeasibilityScore2.Width = 125;
+            // 
+            // AssessmentMethod2
+            // 
+            this.AssessmentMethod2.HeaderText = "Assessment Method";
+            this.AssessmentMethod2.MinimumWidth = 6;
+            this.AssessmentMethod2.Name = "AssessmentMethod2";
+            this.AssessmentMethod2.Width = 125;
+            // 
+            // RiskDescription2
+            // 
+            this.RiskDescription2.HeaderText = "Risk Description";
+            this.RiskDescription2.MinimumWidth = 6;
+            this.RiskDescription2.Name = "RiskDescription2";
+            this.RiskDescription2.Width = 125;
+            // 
+            // RiskLikelihood2
+            // 
+            this.RiskLikelihood2.HeaderText = "Risk Likelihood";
+            this.RiskLikelihood2.MinimumWidth = 6;
+            this.RiskLikelihood2.Name = "RiskLikelihood2";
+            this.RiskLikelihood2.Width = 125;
+            // 
+            // RiskImpact2
+            // 
+            this.RiskImpact2.HeaderText = "Risk Impact";
+            this.RiskImpact2.MinimumWidth = 6;
+            this.RiskImpact2.Name = "RiskImpact2";
+            this.RiskImpact2.Width = 125;
+            // 
+            // ActionsRequiredMitigateRisk2
+            // 
+            this.ActionsRequiredMitigateRisk2.HeaderText = "Actions Required to Mitigate Risk";
+            this.ActionsRequiredMitigateRisk2.MinimumWidth = 6;
+            this.ActionsRequiredMitigateRisk2.Name = "ActionsRequiredMitigateRisk2";
+            this.ActionsRequiredMitigateRisk2.Width = 125;
+            // 
+            // IssueDescription2
+            // 
+            this.IssueDescription2.HeaderText = "Issue Description";
+            this.IssueDescription2.MinimumWidth = 6;
+            this.IssueDescription2.Name = "IssueDescription2";
+            this.IssueDescription2.Width = 125;
+            // 
+            // IssuePriority2
+            // 
+            this.IssuePriority2.HeaderText = "Issue Priority";
+            this.IssuePriority2.MinimumWidth = 6;
+            this.IssuePriority2.Name = "IssuePriority2";
+            this.IssuePriority2.Width = 125;
+            // 
+            // ActionsRequiredResolveIssue2
+            // 
+            this.ActionsRequiredResolveIssue2.HeaderText = "Actions Required to Resolve Issue";
+            this.ActionsRequiredResolveIssue2.MinimumWidth = 6;
+            this.ActionsRequiredResolveIssue2.Name = "ActionsRequiredResolveIssue2";
+            this.ActionsRequiredResolveIssue2.Width = 125;
+            // 
+            // Solution3
+            // 
+            this.Solution3.HeaderText = "Solution ";
+            this.Solution3.MinimumWidth = 6;
+            this.Solution3.Name = "Solution3";
+            this.Solution3.Width = 125;
+            // 
+            // FeasibilityScore3
+            // 
+            this.FeasibilityScore3.HeaderText = "Feasibility Score";
+            this.FeasibilityScore3.MinimumWidth = 6;
+            this.FeasibilityScore3.Name = "FeasibilityScore3";
+            this.FeasibilityScore3.Width = 125;
+            // 
+            // AssessmentMethod3
+            // 
+            this.AssessmentMethod3.HeaderText = "Assessment Method";
+            this.AssessmentMethod3.MinimumWidth = 6;
+            this.AssessmentMethod3.Name = "AssessmentMethod3";
+            this.AssessmentMethod3.Width = 125;
+            // 
+            // RiskDescription3
+            // 
+            this.RiskDescription3.HeaderText = "Risk Description";
+            this.RiskDescription3.MinimumWidth = 6;
+            this.RiskDescription3.Name = "RiskDescription3";
+            this.RiskDescription3.Width = 125;
+            // 
+            // RiskLikelihood3
+            // 
+            this.RiskLikelihood3.HeaderText = "Risk Likelihood";
+            this.RiskLikelihood3.MinimumWidth = 6;
+            this.RiskLikelihood3.Name = "RiskLikelihood3";
+            this.RiskLikelihood3.Width = 125;
+            // 
+            // RiskImpact3
+            // 
+            this.RiskImpact3.HeaderText = "Risk Impact";
+            this.RiskImpact3.MinimumWidth = 6;
+            this.RiskImpact3.Name = "RiskImpact3";
+            this.RiskImpact3.Width = 125;
+            // 
+            // ActionsRequiredtoMitigateRisk3
+            // 
+            this.ActionsRequiredtoMitigateRisk3.HeaderText = "Actions Required to Mitigate Risk";
+            this.ActionsRequiredtoMitigateRisk3.MinimumWidth = 6;
+            this.ActionsRequiredtoMitigateRisk3.Name = "ActionsRequiredtoMitigateRisk3";
+            this.ActionsRequiredtoMitigateRisk3.Width = 125;
+            // 
+            // IssueDescription3
+            // 
+            this.IssueDescription3.HeaderText = "Issue Description";
+            this.IssueDescription3.MinimumWidth = 6;
+            this.IssueDescription3.Name = "IssueDescription3";
+            this.IssueDescription3.Width = 125;
+            // 
+            // IssuePriority3
+            // 
+            this.IssuePriority3.HeaderText = "Issue Priority";
+            this.IssuePriority3.MinimumWidth = 6;
+            this.IssuePriority3.Name = "IssuePriority3";
+            this.IssuePriority3.Width = 125;
+            // 
+            // ActionsRequiredtoResolveIssue3
+            // 
+            this.ActionsRequiredtoResolveIssue3.HeaderText = "Actions Required to Resolve Issue";
+            this.ActionsRequiredtoResolveIssue3.MinimumWidth = 6;
+            this.ActionsRequiredtoResolveIssue3.Name = "ActionsRequiredtoResolveIssue3";
+            this.ActionsRequiredtoResolveIssue3.Width = 125;
+            // 
+            // Criteria
+            // 
+            this.Criteria.HeaderText = "Criteria";
+            this.Criteria.MinimumWidth = 6;
+            this.Criteria.Name = "Criteria";
+            this.Criteria.Width = 125;
+            // 
+            // ScoreSolution1
+            // 
+            this.ScoreSolution1.HeaderText = "Score Solution 1";
+            this.ScoreSolution1.MinimumWidth = 6;
+            this.ScoreSolution1.Name = "ScoreSolution1";
+            this.ScoreSolution1.Width = 125;
+            // 
+            // WeightSolution1
+            // 
+            this.WeightSolution1.HeaderText = "Weight Solution1 ";
+            this.WeightSolution1.MinimumWidth = 6;
+            this.WeightSolution1.Name = "WeightSolution1";
+            this.WeightSolution1.Width = 125;
+            // 
+            // TotalSolution1
+            // 
+            this.TotalSolution1.HeaderText = "Total Solution 1";
+            this.TotalSolution1.MinimumWidth = 6;
+            this.TotalSolution1.Name = "TotalSolution1";
+            this.TotalSolution1.Width = 125;
+            // 
+            // ScoreSolution2
+            // 
+            this.ScoreSolution2.HeaderText = "Score Solution 2";
+            this.ScoreSolution2.MinimumWidth = 6;
+            this.ScoreSolution2.Name = "ScoreSolution2";
+            this.ScoreSolution2.Width = 125;
+            // 
+            // WeightSolution2
+            // 
+            this.WeightSolution2.HeaderText = "Weight Solution 2";
+            this.WeightSolution2.MinimumWidth = 6;
+            this.WeightSolution2.Name = "WeightSolution2";
+            this.WeightSolution2.Width = 125;
+            // 
+            // TotalSolution2
+            // 
+            this.TotalSolution2.HeaderText = "Total Solution 2";
+            this.TotalSolution2.MinimumWidth = 6;
+            this.TotalSolution2.Name = "TotalSolution2";
+            this.TotalSolution2.Width = 125;
+            // 
+            // ScoreSolution3
+            // 
+            this.ScoreSolution3.HeaderText = "Score Solution 3";
+            this.ScoreSolution3.MinimumWidth = 6;
+            this.ScoreSolution3.Name = "ScoreSolution3";
+            this.ScoreSolution3.Width = 125;
+            // 
+            // WeightSolution3
+            // 
+            this.WeightSolution3.HeaderText = "Weight Solution 3";
+            this.WeightSolution3.MinimumWidth = 6;
+            this.WeightSolution3.Name = "WeightSolution3";
+            this.WeightSolution3.Width = 125;
+            // 
+            // TotalSolution3
+            // 
+            this.TotalSolution3.HeaderText = "Total Solution 3";
+            this.TotalSolution3.MinimumWidth = 6;
+            this.TotalSolution3.Name = "TotalSolution3";
+            this.TotalSolution3.Width = 125;
+            // 
             // FeasibiltyStudyDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(1362, 614);
@@ -1115,7 +1602,6 @@
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Name = "FeasibiltyStudyDocumentForm";
             this.Text = "FeasibiltyStudyDocumentForm";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -1251,5 +1737,56 @@
         private System.Windows.Forms.TextBox Supporting_Documentation_btn;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Role;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Signature;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Version;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IssueDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Changes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Information;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BusinessProblemOpportunity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProjectRequirement;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IssueDescription;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IssuePriority;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ActionsRequiredtoResolveIssue;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RiskDescription;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RiskLikelihood;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RiskImpact;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ActionsRequiredtoMitigateRisk;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Solution;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FeasibilityScore;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AssessmentMethod;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IssueDescription2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IssuePriority2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ActionsRequiredResolveIssue2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RiskDescription2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RiskLikelihood2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RiskImpact2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ActionsRequiredMitigateRisk2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Solution2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FeasibilityScore2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AssessmentMethod2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IssueDescription3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IssuePriority3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ActionsRequiredtoResolveIssue3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RiskDescription3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RiskLikelihood3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RiskImpact3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ActionsRequiredtoMitigateRisk3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Solution3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FeasibilityScore3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AssessmentMethod3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Criteria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ScoreSolution1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn WeightSolution1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TotalSolution1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ScoreSolution2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn WeightSolution2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TotalSolution2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ScoreSolution3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn WeightSolution3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TotalSolution3;
     }
 }

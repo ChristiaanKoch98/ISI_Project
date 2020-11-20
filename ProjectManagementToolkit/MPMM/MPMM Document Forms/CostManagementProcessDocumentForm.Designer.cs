@@ -66,6 +66,15 @@
             this.Expense_Form_tbx = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
+            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Version = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Changes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Signature = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Document_Approvals_dgv)).BeginInit();
@@ -94,7 +103,7 @@
             // 
             this.Cost_Management_Process_tbx.Location = new System.Drawing.Point(243, 21);
             this.Cost_Management_Process_tbx.Name = "Cost_Management_Process_tbx";
-            this.Cost_Management_Process_tbx.Size = new System.Drawing.Size(237, 20);
+            this.Cost_Management_Process_tbx.Size = new System.Drawing.Size(237, 24);
             this.Cost_Management_Process_tbx.TabIndex = 8;
             // 
             // label1
@@ -103,7 +112,7 @@
             this.label1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(47, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 19);
+            this.label1.Size = new System.Drawing.Size(235, 23);
             this.label1.TabIndex = 7;
             this.label1.Text = "Cost Management Process";
             // 
@@ -132,10 +141,10 @@
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.Document_Information_dgv);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 21);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1087, 565);
+            this.tabPage1.Size = new System.Drawing.Size(1087, 561);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Document Control";
             // 
@@ -152,9 +161,15 @@
             // Document_Approvals_dgv
             // 
             this.Document_Approvals_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Document_Approvals_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Role,
+            this.Name,
+            this.Signature,
+            this.Date});
             this.Document_Approvals_dgv.Location = new System.Drawing.Point(415, 33);
             this.Document_Approvals_dgv.Name = "Document_Approvals_dgv";
-            this.Document_Approvals_dgv.Size = new System.Drawing.Size(409, 319);
+            this.Document_Approvals_dgv.RowHeadersWidth = 51;
+            this.Document_Approvals_dgv.Size = new System.Drawing.Size(572, 319);
             this.Document_Approvals_dgv.TabIndex = 11;
             // 
             // label4
@@ -163,15 +178,20 @@
             this.label4.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(412, 15);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 15);
+            this.label4.Size = new System.Drawing.Size(161, 20);
             this.label4.TabIndex = 10;
             this.label4.Text = "Document Approvals";
             // 
             // Document_History_dgv
             // 
             this.Document_History_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Document_History_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Version,
+            this.IssueDate,
+            this.Changes});
             this.Document_History_dgv.Location = new System.Drawing.Point(18, 215);
             this.Document_History_dgv.Name = "Document_History_dgv";
+            this.Document_History_dgv.RowHeadersWidth = 51;
             this.Document_History_dgv.Size = new System.Drawing.Size(323, 137);
             this.Document_History_dgv.TabIndex = 9;
             // 
@@ -181,15 +201,19 @@
             this.label3.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(15, 197);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 15);
+            this.label3.Size = new System.Drawing.Size(142, 20);
             this.label3.TabIndex = 8;
             this.label3.Text = "Document History";
             // 
             // Document_Information_dgv
             // 
             this.Document_Information_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Document_Information_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Type,
+            this.Information});
             this.Document_Information_dgv.Location = new System.Drawing.Point(18, 33);
             this.Document_Information_dgv.Name = "Document_Information_dgv";
+            this.Document_Information_dgv.RowHeadersWidth = 51;
             this.Document_Information_dgv.Size = new System.Drawing.Size(323, 150);
             this.Document_Information_dgv.TabIndex = 7;
             // 
@@ -199,7 +223,7 @@
             this.label2.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(15, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 15);
+            this.label2.Size = new System.Drawing.Size(174, 20);
             this.label2.TabIndex = 6;
             this.label2.Text = "Document Information";
             // 
@@ -216,10 +240,10 @@
             this.tabPage2.Controls.Add(this.Cost_Management_Roles);
             this.tabPage2.Controls.Add(this.Overview_tbx);
             this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Location = new System.Drawing.Point(4, 21);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1087, 565);
+            this.tabPage2.Size = new System.Drawing.Size(1087, 561);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Cost Management Process";
             // 
@@ -237,7 +261,7 @@
             this.label8.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(16, 388);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(113, 15);
+            this.label8.Size = new System.Drawing.Size(153, 20);
             this.label8.TabIndex = 11;
             this.label8.Text = "Update Project Plan";
             this.label8.Click += new System.EventHandler(this.label8_Click);
@@ -256,7 +280,7 @@
             this.label7.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(16, 260);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(102, 15);
+            this.label7.Size = new System.Drawing.Size(134, 20);
             this.label7.TabIndex = 11;
             this.label7.Text = "Approve Expense";
             // 
@@ -274,7 +298,7 @@
             this.label6.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(16, 140);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(112, 15);
+            this.label6.Size = new System.Drawing.Size(146, 20);
             this.label6.TabIndex = 9;
             this.label6.Text = "Document Expense";
             // 
@@ -313,7 +337,7 @@
             this.label5.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(16, 21);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 15);
+            this.label5.Size = new System.Drawing.Size(79, 20);
             this.label5.TabIndex = 5;
             this.label5.Text = "Overview";
             // 
@@ -327,10 +351,10 @@
             this.tabPage3.Controls.Add(this.Cost_Management_Roles_btn);
             this.tabPage3.Controls.Add(this.Team_Member_tbx);
             this.tabPage3.Controls.Add(this.label12);
-            this.tabPage3.Location = new System.Drawing.Point(4, 21);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1087, 565);
+            this.tabPage3.Size = new System.Drawing.Size(1087, 561);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Cost Management Roles";
             // 
@@ -348,7 +372,7 @@
             this.label10.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(519, 14);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(95, 15);
+            this.label10.Size = new System.Drawing.Size(128, 20);
             this.label10.TabIndex = 19;
             this.label10.Text = "Project Manager";
             // 
@@ -366,7 +390,7 @@
             this.label11.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(15, 280);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(126, 15);
+            this.label11.Size = new System.Drawing.Size(169, 20);
             this.label11.TabIndex = 16;
             this.label11.Text = "Project Administrator";
             // 
@@ -397,7 +421,7 @@
             this.label12.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(15, 14);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(86, 15);
+            this.label12.Size = new System.Drawing.Size(112, 20);
             this.label12.TabIndex = 13;
             this.label12.Text = "Team Member";
             // 
@@ -409,10 +433,10 @@
             this.tabPage4.Controls.Add(this.Cost_Management_Documents_btn);
             this.tabPage4.Controls.Add(this.Expense_Form_tbx);
             this.tabPage4.Controls.Add(this.label13);
-            this.tabPage4.Location = new System.Drawing.Point(4, 21);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1087, 565);
+            this.tabPage4.Size = new System.Drawing.Size(1087, 561);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Cost Management Documents";
             // 
@@ -430,7 +454,7 @@
             this.label9.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(577, 13);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(100, 15);
+            this.label9.Size = new System.Drawing.Size(132, 20);
             this.label9.TabIndex = 21;
             this.label9.Text = "Expense Register";
             // 
@@ -461,7 +485,7 @@
             this.label13.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(16, 13);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(84, 15);
+            this.label13.Size = new System.Drawing.Size(110, 20);
             this.label13.TabIndex = 18;
             this.label13.Text = "Expense Form";
             // 
@@ -476,9 +500,72 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // Type
+            // 
+            this.Type.HeaderText = "Type";
+            this.Type.MinimumWidth = 6;
+            this.Type.Name = "Type";
+            this.Type.Width = 125;
+            // 
+            // Information
+            // 
+            this.Information.HeaderText = "Information";
+            this.Information.MinimumWidth = 6;
+            this.Information.Name = "Information";
+            this.Information.Width = 125;
+            // 
+            // Version
+            // 
+            this.Version.HeaderText = "Version";
+            this.Version.MinimumWidth = 6;
+            this.Version.Name = "Version";
+            this.Version.Width = 125;
+            // 
+            // IssueDate
+            // 
+            this.IssueDate.HeaderText = "Issue Date";
+            this.IssueDate.MinimumWidth = 6;
+            this.IssueDate.Name = "IssueDate";
+            this.IssueDate.Width = 125;
+            // 
+            // Changes
+            // 
+            this.Changes.HeaderText = "Changes";
+            this.Changes.MinimumWidth = 6;
+            this.Changes.Name = "Changes";
+            this.Changes.Width = 125;
+            // 
+            // Role
+            // 
+            this.Role.HeaderText = "Role";
+            this.Role.MinimumWidth = 6;
+            this.Role.Name = "Role";
+            this.Role.Width = 125;
+            // 
+            // Name
+            // 
+            this.Name.HeaderText = "Name";
+            this.Name.MinimumWidth = 6;
+            this.Name.Name = "Name";
+            this.Name.Width = 125;
+            // 
+            // Signature
+            // 
+            this.Signature.HeaderText = "Signature";
+            this.Signature.MinimumWidth = 6;
+            this.Signature.Name = "Signature";
+            this.Signature.Width = 125;
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.MinimumWidth = 6;
+            this.Date.Name = "Date";
+            this.Date.Width = 125;
+            // 
             // CostManagementProcessDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(1204, 686);
@@ -489,7 +576,6 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Name = "CostManagementProcessDocumentForm";
             this.Text = "CostManagementProcessDocumentForm";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -549,5 +635,14 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Information;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Role;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Signature;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Version;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IssueDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Changes;
     }
 }
