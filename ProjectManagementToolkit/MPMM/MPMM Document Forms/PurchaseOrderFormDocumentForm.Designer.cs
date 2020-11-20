@@ -89,6 +89,7 @@
             this.TERMS_AND_CONDITIONS_btn = new System.Windows.Forms.Button();
             this.Terms_and_Conditions_tbx = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -715,12 +716,24 @@
             this.label27.TabIndex = 63;
             this.label27.Text = "Terms and Conditions:";
             // 
+            // btnSave
+            // 
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Location = new System.Drawing.Point(887, 25);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 14;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // PurchaseOrderFormDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(1067, 654);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.Enter_btn);
             this.Controls.Add(this.Purchase_Order_Form_tbx);
@@ -808,5 +821,6 @@
         private System.Windows.Forms.Button TERMS_AND_CONDITIONS_btn;
         private System.Windows.Forms.TextBox Terms_and_Conditions_tbx;
         private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Button btnSave;
     }
 }

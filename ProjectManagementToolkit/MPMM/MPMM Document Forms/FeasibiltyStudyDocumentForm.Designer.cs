@@ -117,6 +117,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Project_Name_tbx = new System.Windows.Forms.TextBox();
             this.Enter_btn = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Document_Approvals_dgv)).BeginInit();
@@ -1090,12 +1091,24 @@
             this.Enter_btn.UseVisualStyleBackColor = false;
             this.Enter_btn.Click += new System.EventHandler(this.Enter_btn_Click);
             // 
+            // btnSave
+            // 
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Location = new System.Drawing.Point(826, 48);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 4;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // FeasibiltyStudyDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(1362, 614);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.Enter_btn);
             this.Controls.Add(this.Project_Name_tbx);
             this.Controls.Add(this.label1);
@@ -1237,5 +1250,6 @@
         private System.Windows.Forms.Button Appendix_btn;
         private System.Windows.Forms.TextBox Supporting_Documentation_btn;
         private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Button btnSave;
     }
 }

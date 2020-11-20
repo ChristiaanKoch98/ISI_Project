@@ -25,8 +25,9 @@ namespace ProjectManagementToolkit.Classes
         public string AcceptanceResults { get; set; }
         //Customer approval
         public string SupportingDocumentation { get; set; }
+        public List<ChildAcceptanceFormModel> acceptanceForm { get; set; } = new List<ChildAcceptanceFormModel>();
 
-       
+
     }
 
     class ChildAcceptanceFormModel

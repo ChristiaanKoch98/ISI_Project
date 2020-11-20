@@ -36,7 +36,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             {
                 Document_Information_dgv.Rows.Add(row);
             }
-            Document_Information_dgv.AllowUserToAddRows = false;
 
             List<string[]> rows2 = new List<string[]>();
             rows2.Add(new string[] { "Project Sponsor", "" });
@@ -222,21 +221,15 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             for (int i = 0; i < Document_HistoryRowCount - 1; i++)
             {
                 Approvals approval = new Approvals();
-                var ProjectSponsor = Document_History_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var ProjectReviewGroup = Document_History_dgv.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var ProjectManager = Document_History_dgv.Rows[i].Cells[2].Value?.ToString() ?? "";
-                var QualityManager = Document_History_dgv.Rows[i].Cells[3].Value?.ToString() ?? "";
-                var ProcumentManager = Document_History_dgv.Rows[i].Cells[4].Value?.ToString() ?? "";
-                var CommunicationsManager = Document_History_dgv.Rows[i].Cells[5].Value?.ToString() ?? "";
-                var ProjectOfficeManager = Document_History_dgv.Rows[i].Cells[6].Value?.ToString() ?? "";
+                var Name = Document_Approvals_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var Signature = Document_Approvals_dgv.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var Date = Document_Approvals_dgv.Rows[i].Cells[2].Value?.ToString() ?? "";
+               
 
-                approval.ProjectSponsor = ProjectSponsor;
-                approval.ProjectReviewGroup = ProjectReviewGroup;
-                approval.ProjectManager = ProjectManager;
-                approval.QualityManager = QualityManager;
-                approval.ProcumentManager = ProcumentManager;
-                approval.CommunicationsManager = CommunicationsManager;
-                approval.ProjectOfficeManager = ProjectOfficeManager;
+                approval.Name = Name;
+                approval.Signature= Signature;
+                approval.Date = Date;
+               
             }
             newRiskPlanModel.approvals = approvals;
         }
@@ -260,15 +253,15 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
-                JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ProjectPlan");
-                MessageBox.Show("Project plan saved successfully", "save", MessageBoxButtons.OK);
+                JsonHelper.saveDocument(json, Settings.Default.ProjectID, "RiskPlan");
+                MessageBox.Show("Risk plan saved successfully", "save", MessageBoxButtons.OK);
             }
         }
 
         private void loadDocument()
         {
 
-            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "ProjectPlan");
+            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "RiskPlan");
             List<string[]> documentInfo = new List<string[]>();
             newRiskPlanModel = new RiskPlanModel();
             currentRiskPlanModel = new RiskPlanModel();
@@ -284,6 +277,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 documentInfo.Add(new string[] { "Last Save Date", currentRiskPlanModel.Info.LastSavedDate });
                 documentInfo.Add(new string[] { "File Name", currentRiskPlanModel.Info.FileName });
 
+                documentInfo.Add(new string[] { "Project Sponsor", currentRiskPlanModel.Approval.ProjectSponsor });
+                documentInfo.Add(new string[] { "Project Review Group",currentRiskPlanModel.Approval.ProjectReviewGroup });
+                documentInfo.Add(new string[] { "Project Manager",currentRiskPlanModel.Approval.ProjectManager });
+                documentInfo.Add(new string[] { "Quality Manager",currentRiskPlanModel.Approval.QualityManager });
+                documentInfo.Add(new string[] { "Procument Manager",currentRiskPlanModel.Approval.ProcumentManager });
+                documentInfo.Add(new string[] { "Communications Manager", currentRiskPlanModel.Approval.CommunicationsManager });
+                documentInfo.Add(new string[] { "Project Office Manager", currentRiskPlanModel.Approval.ProjectOfficeManager});
+
                 foreach (var row in documentInfo)
                 {
                     Document_Information_dgv.Rows.Add(row);
@@ -297,7 +298,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 foreach (var row in currentRiskPlanModel.approvals)
                 {
-                    Document_Approvals_dgv.Rows.Add(new string[] { row.ProjectSponsor, row.ProjectReviewGroup, row.ProjectManager, row.QualityManager, row.ProcumentManager, row.CommunicationsManager, row.ProjectOfficeManager });
+                    Document_Approvals_dgv.Rows.Add(new string[] { row.Name, row.Signature, row.Date});
                 }
 
                 foreach (var row in currentRiskPlanModel.Risks)

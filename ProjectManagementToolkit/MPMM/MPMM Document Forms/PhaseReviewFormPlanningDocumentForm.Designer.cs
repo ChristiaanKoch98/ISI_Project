@@ -62,6 +62,7 @@
             this.Supporting_Documentation_tbx = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.CUSTOMER_APPROVAL_btn = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -423,12 +424,24 @@
             this.CUSTOMER_APPROVAL_btn.UseVisualStyleBackColor = false;
             this.CUSTOMER_APPROVAL_btn.Click += new System.EventHandler(this.CUSTOMER_APPROVAL_btn_Click);
             // 
+            // btnSave
+            // 
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Location = new System.Drawing.Point(810, 20);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 11;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // PhaseReviewFormPlanningDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(961, 534);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.Enter_btn);
             this.Controls.Add(this.Planning_Phase_tbx);
@@ -488,5 +501,6 @@
         private System.Windows.Forms.TextBox Supporting_Documentation_tbx;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button CUSTOMER_APPROVAL_btn;
+        private System.Windows.Forms.Button btnSave;
     }
 }

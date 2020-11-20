@@ -18,9 +18,13 @@ namespace ProjectManagementToolkit.Classes
         public string ProjectManager { get; set; }
         public string ExpenseForm { get; set; }
         public string ExpenseRegister { get; set; }
+        public List<Information> informations = new List<Information>();
+        public List<History> histories = new List<History>();
+        public List<Approvals> approvals = new List<Approvals>();
+        public Information Info { get; set; } = new Information();
+        public Approvals Approval { get; set; } = new Approvals();
 
-       
+
     }
     
-
 }

@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.Document_Approvals_dgv = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.Document_History_dgv = new System.Windows.Forms.DataGridView();
@@ -64,7 +65,7 @@
             this.Cost_Management_Documents_btn = new System.Windows.Forms.Button();
             this.Expense_Form_tbx = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Document_Approvals_dgv)).BeginInit();
@@ -137,6 +138,16 @@
             this.tabPage1.Size = new System.Drawing.Size(1087, 565);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Document Control";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(18, 411);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Enter";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Document_Approvals_dgv
             // 
@@ -454,15 +465,16 @@
             this.label13.TabIndex = 18;
             this.label13.Text = "Expense Form";
             // 
-            // button1
+            // btnSave
             // 
-            this.button1.Location = new System.Drawing.Point(18, 411);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Enter";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Location = new System.Drawing.Point(804, 22);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 11;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // CostManagementProcessDocumentForm
             // 
@@ -470,6 +482,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(1204, 686);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.Enter_btn);
             this.Controls.Add(this.Cost_Management_Process_tbx);
@@ -535,5 +548,6 @@
         private System.Windows.Forms.TextBox Expense_Form_tbx;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSave;
     }
 }

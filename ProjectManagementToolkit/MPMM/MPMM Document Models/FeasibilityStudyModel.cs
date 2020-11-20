@@ -29,6 +29,10 @@ namespace ProjectManagementToolkit.Classes
         public string FeasibilityResults { get; set; }
         public string SupportingDocumentation { get; set; }
         public string RankingScores { get; internal set; }
+        public List<Solution1> solution1 { get; set; } = new List<Solution1>();
+        public List<Solution2> solution2 { get; set; } = new List<Solution2>();
+        public List<Solution3> solution3 { get; set; } = new List<Solution3>();
+        public List<object> models { get; set; } = new List<object>();
 
         public string Results { get; set; }
         public string Risks { get; set; }

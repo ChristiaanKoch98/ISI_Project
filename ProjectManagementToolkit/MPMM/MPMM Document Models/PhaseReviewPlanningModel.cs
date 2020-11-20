@@ -12,7 +12,7 @@ namespace ProjectManagementToolkit.Classes
         public string ProjectName { get; set; }
         public string ProjectManager { get; set; }
         public string ProjectSponsor { get; set; }
-        public string Suummary { get; set; }
+        public string Summary { get; set; }
         public string ProjectSchedule { get; set; }
         public string ProjectExpense { get; set; }
         public string ProjectDeliverables { get; set; }
@@ -20,6 +20,7 @@ namespace ProjectManagementToolkit.Classes
         public string ProjectIssues { get; set; }
         public string ProjectChanges { get; set; }
         public string SupportingDocumentation { get; set; }
+        public List<ReviewDetails> reviws { get; set; } = new List<ReviewDetails>();
     }
 
     class ReviewDetails

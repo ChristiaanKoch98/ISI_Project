@@ -26,6 +26,7 @@ namespace ProjectManagementToolkit.Classes
         public List<Priority> Priority = new List<Priority>();
         public List<Approvals> approvals = new List<Approvals>();
         public Information Info = new Information();
+        public Approvals Approval { get; set; } = new Approvals();
 
     }
 
@@ -86,6 +87,10 @@ namespace ProjectManagementToolkit.Classes
 
     class Approvals
     {
+        public string Name { get; set; }
+        public string Signature { get; set; }
+        public string Date { get; set; }
+
         public string ProjectSponsor { get; set; }
         public string ProjectReviewGroup { get; set; }
         public string ProjectManager { get; set; }
