@@ -43,6 +43,20 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void loadDocument()
         {
+            dgvDocumentHistory.Columns.Add("colVersion", "Version");
+            dgvDocumentHistory.Columns.Add("colIssueDate", "Issue date");
+            dgvDocumentHistory.Columns.Add("colChanges", "Changes");
+
+            dgvDocumentApprovals.Columns.Add("colRole", "Role");
+            dgvDocumentApprovals.Columns.Add("colName", "Name");
+            dgvDocumentApprovals.Columns.Add("colSignature", "Signature");
+            dgvDocumentApprovals.Columns.Add("colDateApproved", "Date approved");
+
+            dgvStakeholderRequirements.Columns.Add("colStakeName", "Stakeholder Name");
+            dgvStakeholderRequirements.Columns.Add("colStakeRole", "Stakeholder Role");
+            dgvStakeholderRequirements.Columns.Add("colStakeOrg", "Stakeholder organization");
+            dgvStakeholderRequirements.Columns.Add("colInfoReq", "Information required");
+
             string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "Communications Plan");
             List<string[]> documentInfo = new List<string[]>();
             newCommunicationsPlanModel = new CommunicationsPlanModel();

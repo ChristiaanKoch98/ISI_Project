@@ -10,8 +10,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
     {
         public List<Stakeholder> StakeholderReq { get; set; }
 
-
-
         public string ProjectName { get; set; }
         public string DocumentID { get; set; }
         public string DocumentOwner { get; set; }
@@ -49,7 +47,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
             public string StakeholderRole { get; set; }
             public string StakeholderOrganization { get; set; }
             public string InformationRequirement { get; set; }
-
         }
 
         public class Phase

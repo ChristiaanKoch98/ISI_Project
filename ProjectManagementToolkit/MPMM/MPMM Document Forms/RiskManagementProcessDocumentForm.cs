@@ -33,7 +33,15 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void loadDocument()
         {
-        
+            dgvDocumentHistory.Columns.Add("colVersion", "Version");
+            dgvDocumentHistory.Columns.Add("colIssueDate", "Issue date");
+            dgvDocumentHistory.Columns.Add("colChanges", "Changes");
+
+            dgvDocumentApprovals.Columns.Add("colRole", "Role");
+            dgvDocumentApprovals.Columns.Add("colName", "Name");
+            dgvDocumentApprovals.Columns.Add("colSignature", "Signature");
+            dgvDocumentApprovals.Columns.Add("colDateApproved", "Date approved");
+
             string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "RiskManagamentProcess");
             List<string[]> documentInfo = new List<string[]>();
             newRiskManagmentProcessModel = new RiskManagmentProcessModel();

@@ -33,6 +33,50 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void loadDocument()
         {
+            dgvProjectSchedule.Columns.Add("colDeliverable", "Deliverable");
+            dgvProjectSchedule.Columns.Add("colScheduledCompletionDate", "Scheduled Completion Date");
+            dgvProjectSchedule.Columns.Add("colActualCompletionDate", "Actual Completion Date");
+            dgvProjectSchedule.Columns.Add("colActualVariance", "Actual Variance");
+            dgvProjectSchedule.Columns.Add("colForecastCompletionDate", "Forecast Completion Date");
+            dgvProjectSchedule.Columns.Add("colForecastVariance", "Forecast Variance");
+            dgvProjectSchedule.Columns.Add("colSummary", "Summary");
+
+            dgvProjectExpense.Columns.Add("colExpenseType", "Expense Type");
+            dgvProjectExpense.Columns.Add("colBudgetedExpenditure", "Budgeted Expenditure");
+            dgvProjectExpense.Columns.Add("colActualExpenditure", "Actual Expenditure");
+            dgvProjectExpense.Columns.Add("colPEActualVariance", "Actual Variance");
+            dgvProjectExpense.Columns.Add("colForecastExpenditure", "Forecast Expenditure");
+            dgvProjectExpense.Columns.Add("colPEForecastVariance", "Forecast Variance");
+            dgvProjectExpense.Columns.Add("colPESummary", "Summary");
+
+            dgvProjectEffort.Columns.Add("colActivities", "Activities");
+            dgvProjectEffort.Columns.Add("colBudgetedEffort", "BudgetedEffort");
+            dgvProjectEffort.Columns.Add("colActualEffort", "ActualEffort");
+            dgvProjectEffort.Columns.Add("colPEFActualVariance", "Actual Variance");
+            dgvProjectEffort.Columns.Add("colForecastEffort", "ForecastEffort");
+            dgvProjectEffort.Columns.Add("colPEFForecastVariance", "Forecast Variance");
+            dgvProjectEffort.Columns.Add("colPEFSummary", "Summary");
+
+            dgvProjectQuality.Columns.Add("colDeliverables", "Deliverables");
+            dgvProjectQuality.Columns.Add("colQualityTarget", "Quality Target");
+            dgvProjectQuality.Columns.Add("colQualityAchieved", "Quality Achieved");
+            dgvProjectQuality.Columns.Add("colQualityVariance", "Quality Variance");
+            dgvProjectQuality.Columns.Add("colSummary", "Summary");
+
+            dgvProjectRisk.Columns.Add("colRisks", "Risks");
+            dgvProjectRisk.Columns.Add("colLikelihood", "Likelihood");
+            dgvProjectRisk.Columns.Add("colImpact", "Impact");
+            dgvProjectRisk.Columns.Add("colSummary", "Summary");
+
+            dgvProjectIssues.Columns.Add("colIssues", "Issues");
+            dgvProjectIssues.Columns.Add("colImpact", "Impact");
+            dgvProjectIssues.Columns.Add("colSummary", "Summary");
+
+
+
+
+
+
             string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "ProjectStatusReport");
             List<string[]> documentInfo = new List<string[]>();
             newProjectStatusReportModel = new ProjectStatusReportModel();

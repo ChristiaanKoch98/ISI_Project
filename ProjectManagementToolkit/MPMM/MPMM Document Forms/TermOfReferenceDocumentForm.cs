@@ -379,6 +379,69 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void loadDocument()
         {
+            dgvDocumentHistory.Columns.Add("colVersion", "Version");
+            dgvDocumentHistory.Columns.Add("colIssueDate", "Issue date");
+            dgvDocumentHistory.Columns.Add("colChanges", "Changes");
+
+            dgvDocumentApprovals.Columns.Add("colRole", "Role");
+            dgvDocumentApprovals.Columns.Add("colName", "Name");
+            dgvDocumentApprovals.Columns.Add("colSignature", "Signature");
+            dgvDocumentApprovals.Columns.Add("colDateApproved", "Date approved");
+
+            dgvDeliverables.Columns.Add("colDeliv", "Deliverable");
+            dgvDeliverables.Columns.Add("colName", "Components");
+            dgvDeliverables.Columns.Add("colSignature", "Description");
+
+            dgvCustomers.Columns.Add("colCG", "CustomerGroup");
+            dgvCustomers.Columns.Add("colCR", "CustomerRepresentative");
+
+            dgvStakeholders.Columns.Add("colSG", "Stakeholders Group");
+            dgvStakeholders.Columns.Add("colSI", "Stakeholder Interest");
+
+            dgvRoles.Columns.Add("colRole", "Role");
+            dgvRoles.Columns.Add("colRN", "ResourceName");
+            dgvRoles.Columns.Add("colOrg", "Organization");
+            dgvRoles.Columns.Add("colDateAS", "Assignment Status");
+            dgvRoles.Columns.Add("colAD", "Assignment Date");
+
+            dgvApproach.Columns.Add("colPhase", "Phase");
+            dgvApproach.Columns.Add("colSI", "OverallApproach");
+
+            dgvMilestones.Columns.Add("colMilestone", "Milestone");
+            dgvMilestones.Columns.Add("colDate", "Date");
+            dgvMilestones.Columns.Add("colDescription", "Description");
+
+            dgvDependencies.Columns.Add("colProjectActivity", "Project Activity");
+            dgvDependencies.Columns.Add("colImpacts", "Impacts");
+            dgvDependencies.Columns.Add("colImpactedBy", "Impacted By");
+            dgvDependencies.Columns.Add("colCritically", "Critically");
+            dgvDependencies.Columns.Add("colDate", "Date");
+
+            dgvResourcePlan.Columns.Add("colRole", "Role");
+            dgvResourcePlan.Columns.Add("colStartDate", "Start Date");
+            dgvResourcePlan.Columns.Add("colEndDate", "End Date");
+            dgvResourcePlan.Columns.Add("colEffort", "Effort");
+
+            dgvFinancialPlan.Columns.Add("colExpenditureCategory", "Expenditure Category");
+            dgvFinancialPlan.Columns.Add("colExpenditureItem", "Expenditure Item");
+            dgvFinancialPlan.Columns.Add("colExpenditureValue", "Expenditure Value");
+
+            dgvQualityPlan.Columns.Add("colProcess", "Process");
+            dgvQualityPlan.Columns.Add("colDescription", "Description");
+
+            dgvCompletionCriteria.Columns.Add("colCCProcess", "Process");
+            dgvCompletionCriteria.Columns.Add("colCCDescription", "Description");
+
+            dgvRisks.Columns.Add("colRiskDesc", "Risk description");
+            dgvRisks.Columns.Add("colRiskLikelihood", "Risk Likelihood");
+            dgvRisks.Columns.Add("colRiskImpact", "Risk Impact");
+            dgvRisks.Columns.Add("colAction", "Action");
+
+            dgvIssues.Columns.Add("colIssueDescription", "Issue Description");
+            dgvIssues.Columns.Add("colIssuePriority", "Issue Priority");
+            dgvIssues.Columns.Add("colAction", "Action");
+
+
             string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "TermsOfReference");
             List<string[]> documentInfo = new List<string[]>();
             newTermsOfReferenceModel = new TermsOfReferenceModel();
