@@ -59,6 +59,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtProjectName = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabDocumentControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentApprovals)).BeginInit();
@@ -449,12 +450,23 @@
             this.label27.TabIndex = 16;
             this.label27.Text = "Risk Management Process For:";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(467, 13);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Save";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // RiskManagementProcessDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(1056, 783);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.tabControl1);
@@ -512,5 +524,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtProjectManager;
         private System.Windows.Forms.TextBox txtProjectBoard;
+        private System.Windows.Forms.Button button1;
     }
 }

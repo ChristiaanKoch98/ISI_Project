@@ -553,5 +553,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 dgvDocumentInformation.AllowUserToAddRows = false;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            saveDocument();
+        }
     }
 }

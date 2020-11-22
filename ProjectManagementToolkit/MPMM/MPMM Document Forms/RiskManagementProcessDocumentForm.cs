@@ -161,5 +161,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
             newRiskManagmentProcessModel.DocumentApprovals = documentApprovalsModel;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            saveDocument();
+        }
     }
 }

@@ -186,5 +186,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newCommunicationsPlanModel.Documents = txtDocuments.Text;
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            saveDocument();
+        }
     }
 }

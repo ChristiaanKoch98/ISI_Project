@@ -95,5 +95,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newPhaseReviewExeModel.Signature = txtSignature.Text;
             newPhaseReviewExeModel.SignatureDate = txtDate.Text;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            saveDocument();
+        }
     }
 }
