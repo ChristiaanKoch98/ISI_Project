@@ -264,7 +264,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             if (!versionControl.isEqual(currentProjectStatusReportModel, newProjectStatusReportModel))
             {
-                VersionControl<ProjectStatusReportModel>.DocumentModel documentModel = new VersionControl<ProjectStatusReportModel>.DocumentModel(newProjectPlanModel, DateTime.Now, VersionControl<ProjectModel>.generateID());
+                VersionControl<ProjectStatusReportModel>.DocumentModel documentModel = new VersionControl<ProjectStatusReportModel>.DocumentModel(newProjectStatusReportModel, DateTime.Now, VersionControl<ProjectModel>.generateID());
 
                 documentModels.Add(documentModel);
 

@@ -54,11 +54,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 newCommunicationsPlanModel = JsonConvert.DeserializeObject<CommunicationsPlanModel>(versionControl.getLatest(versionControl.DocumentModels));
                 currentCommunicationsPlanModel = JsonConvert.DeserializeObject<CommunicationsPlanModel>(versionControl.getLatest(versionControl.DocumentModels));
 
-                documentInfo.Add(new string[] { "Document ID", currentProjectPlanModel.DocumentID });
-                documentInfo.Add(new string[] { "Document Owner", currentProjectPlanModel.DocumentOwner });
-                documentInfo.Add(new string[] { "Issue Date", currentProjectPlanModel.IssueDate });
-                documentInfo.Add(new string[] { "Last Save Date", currentProjectPlanModel.LastSavedDate });
-                documentInfo.Add(new string[] { "File Name", currentProjectPlanModel.FileName });
+                documentInfo.Add(new string[] { "Document ID", currentCommunicationsPlanModel.DocumentID });
+                documentInfo.Add(new string[] { "Document Owner", currentCommunicationsPlanModel.DocumentOwner });
+                documentInfo.Add(new string[] { "Issue Date", currentCommunicationsPlanModel.IssueDate });
+                documentInfo.Add(new string[] { "Last Save Date", currentCommunicationsPlanModel.LastSavedDate });
+                documentInfo.Add(new string[] { "File Name", currentCommunicationsPlanModel.FileName });
 
                 foreach (var row in documentInfo)
                 {

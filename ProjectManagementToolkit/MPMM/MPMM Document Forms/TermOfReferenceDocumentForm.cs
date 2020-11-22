@@ -363,7 +363,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             List<VersionControl<TermsOfReferenceModel>.DocumentModel> documentModels = versionControl.DocumentModels;
             if (!versionControl.isEqual(currentTermsOfReferenceModel, newTermsOfReferenceModel))
             {
-                VersionControl<TermsOfReferenceModel>.DocumentModel documentModel = new VersionControl<TermsOfReferenceModel>.DocumentModel(newProjectPlanModel, DateTime.Now, VersionControl<ProjectModel>.generateID());
+                VersionControl<TermsOfReferenceModel>.DocumentModel documentModel = new VersionControl<TermsOfReferenceModel>.DocumentModel(newTermsOfReferenceModel, DateTime.Now, VersionControl<ProjectModel>.generateID());
 
                 documentModels.Add(documentModel);
 
