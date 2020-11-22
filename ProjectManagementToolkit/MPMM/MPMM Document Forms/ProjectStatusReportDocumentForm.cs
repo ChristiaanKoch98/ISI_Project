@@ -60,11 +60,41 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 //txtProjectIssues.Text = currentProjectStatusReportModel.ProjectIssues;
                 txtProjectChanges.Text = currentProjectStatusReportModel.ProjectChanges;
 
-                
+                foreach (var row in currentProjectStatusReportModel.ProSchedule)
+                {
+                    dgvProjectSchedule.Rows.Add(new string[] { row.Deliverable, row.ScheduledCompletionDate, row.ActualCompletionDate, row.ActualVariance, row.ForecastCompletionDate, row.ForecastVariance, row.Summary });
+                }
+
+                foreach (var row in currentProjectStatusReportModel.ProjExpenses)
+                {
+                    dgvProjectExpense.Rows.Add(new string[] { row.ExpenseType, row.BudgetedExpenditure, row.ActualExpenditure, row.ActualVariance, row.ForecastExpenditure, row.ForecastVariance, row.Summary });
+                }
+
+                foreach (var row in currentProjectStatusReportModel.ProjEffort)
+                {
+                    dgvProjectEffort.Rows.Add(new string[] { row.Activities, row.BudgetedEffort, row.ActualEffort, row.ActualVariance, row.ForecastEffort, row.ForecastVariance, row.Summary });
+                }
+
+                foreach (var row in currentProjectStatusReportModel.ProjQuality)
+                {
+                    dgvProjectQuality.Rows.Add(new string[] { row.Deliverables, row.QualityTarget, row.QualityAchieved, row.QualityVariance, row.Summary});
+                }
+
+                foreach (var row in currentProjectStatusReportModel.ProjRisk)
+                {
+                    dgvProjectRisk.Rows.Add(new string[] { row.Risks, row.Likelihood, row.Impact, row.Summary });
+                }
+
+                foreach (var row in currentProjectStatusReportModel.ProjIssues)
+                {
+                    dgvProjectIssues.Rows.Add(new string[] { row.Issues, row.Impact, row.Summary });
+                }
+
+
             }
             else
             {
-               
+      
             }
         }
 
@@ -228,6 +258,22 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newProjectStatusReportModel.ProjectDeliverables = txtProjectExpenses.Text;
             newProjectStatusReportModel.ProjectRisks = txtProjectRisks.Text;
             newProjectStatusReportModel.ProjectChanges = txtProjectChanges.Text;
+
+            List<VersionControl<ProjectStatusReportModel>.DocumentModel> documentModels = versionControl.DocumentModels;
+
+
+            if (!versionControl.isEqual(currentProjectStatusReportModel, newProjectStatusReportModel))
+            {
+                VersionControl<ProjectStatusReportModel>.DocumentModel documentModel = new VersionControl<ProjectStatusReportModel>.DocumentModel(newProjectPlanModel, DateTime.Now, VersionControl<ProjectModel>.generateID());
+
+                documentModels.Add(documentModel);
+
+                versionControl.DocumentModels = documentModels;
+
+                string json = JsonConvert.SerializeObject(versionControl);
+                JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ProjectStatusReport");
+                MessageBox.Show("Project status report saved successfully", "save", MessageBoxButtons.OK);
+            }
         }
 
         private void txtProjectDescription_TextChanged(object sender, EventArgs e)

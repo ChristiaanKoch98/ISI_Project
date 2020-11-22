@@ -13,7 +13,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string ProjectManager { get; set; }
         public string ProjectSponsor { get; set; }
         public string ReportPreparedBy { get; set; }
-        public DateTime ReportPreparationDate { get; set; }
+        public string ReportPreparationDate { get; set; }
 
         public string Summary { get; set; }
         public string ProjectSchedule { get; set; }
@@ -26,7 +26,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public List<ReviewDetial> ReviewDetials { get; set; }
         public string SupportingDocumentation { get; set; }
         public string Signature { get; set; }
-        public DateTime SignatureDate { get; set; } 
+        public string SignatureDate { get; set; } 
 
         public class ReportingPeriod 
         {

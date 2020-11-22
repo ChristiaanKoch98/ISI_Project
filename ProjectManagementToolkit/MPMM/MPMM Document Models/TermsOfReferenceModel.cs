@@ -30,6 +30,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 
        
         public string Constraints { get; set; }
+        public string Assumptions { get; set; }
 
         public List<Deliverables> Deliv { get; set; }
         public List<Customers> Cust { get; set; }
@@ -137,9 +138,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
             public string Action { get; set; }
         }
 
-
-
-public class DocumentHistory
+        public class DocumentHistory
         {
             public string Version { get; set; }
             public string IssueDate { get; set; }

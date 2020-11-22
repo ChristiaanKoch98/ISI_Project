@@ -55,7 +55,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 txtProjectSponsor.Text = currentPhaseReviewExeModel.ProjectSponsor;
                 txtReportPreparedBy.Text = currentPhaseReviewExeModel.ReportPreparedBy;
                 txtReportPreperationDate.Text = currentPhaseReviewExeModel.ReportPreparationDate.ToString();
-                // txtReportingPeriod.Text = currentPhaseReviewExeModel.re
 
                 txtSummary.Text = currentPhaseReviewExeModel.Summary;
                 txtProjectSchedule.Text = currentPhaseReviewExeModel.ProjectSchedule;
@@ -72,20 +71,29 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
             else
             {
-                versionControl = new VersionControl<PhaseReviewFormExecutionModel>();
-                versionControl.DocumentModels = new List<VersionControl<PhaseReviewFormExecutionModel>.DocumentModel>();
-                documentInfo.Add(new string[] { "Document ID", "" });
-                documentInfo.Add(new string[] { "Document Owner", "" });
-                documentInfo.Add(new string[] { "Issue Date", "" });
-                documentInfo.Add(new string[] { "Last Save Date", "" });
-                documentInfo.Add(new string[] { "File Name", "" });
-                newPhaseReviewExeModel = new PhaseReviewFormExecutionModel();
-                foreach (var row in documentInfo)
-                {
-                    documentInformation.Rows.Add(row);
-                }
-                documentInformation.AllowUserToAddRows = false;
-            }
+     
+            }            
+        }
+
+        private void saveDocument()
+        {
+            newPhaseReviewExeModel.ProjectName = txtProjectName2.Text;
+            newPhaseReviewExeModel.ProjectManager = txtProjectManager.Text;
+            newPhaseReviewExeModel.ProjectSponsor = txtProjectSponsor.Text;
+            newPhaseReviewExeModel.ReportPreparedBy = txtReportPreparedBy.Text;
+            newPhaseReviewExeModel.ReportPreparationDate = txtReportPreperationDate.Text;
+
+            newPhaseReviewExeModel.Summary = txtSummary.Text;
+            newPhaseReviewExeModel.ProjectSchedule = txtProjectSchedule.Text;
+            newPhaseReviewExeModel.ProjectExpenses = txtProjectExpenses.Text;
+            newPhaseReviewExeModel.ProjectDeliverables = txtProjectDeliverables.Text;
+            newPhaseReviewExeModel.ProjectRisks = txtProjectRisks.Text;
+            newPhaseReviewExeModel.ProjectIssues = txtProjectIssues.Text;
+            newPhaseReviewExeModel.ProjectChanges = txtProjectChanges.Text;
+
+            newPhaseReviewExeModel.SupportingDocumentation = txtSupportingDocumentation.Text;
+            newPhaseReviewExeModel.Signature = txtSignature.Text;
+            newPhaseReviewExeModel.SignatureDate = txtDate.Text;
         }
     }
 }
