@@ -12,6 +12,8 @@ using Newtonsoft.Json;
 using System.Runtime.InteropServices;
 using ProjectManagementToolkit.Utility;
 using ProjectManagementToolkit.Properties;
+using Xceed.Document.NET;
+using Xceed.Words.NET;
 
 namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
@@ -20,6 +22,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         VersionControl<ResourcePlanModel> versionControl;
         ResourcePlanModel newResourcePlanModel;
         ResourcePlanModel currentResourcePlanModel;
+        Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
+        ProjectModel projectModel = new ProjectModel();
 
         public ResourcePlanDocumentForm()
         {
@@ -30,7 +34,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
 
             loadDocument();
-
+            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
         }
 
         private void ResourcePlanDocumentForm_Load_1(object sender, EventArgs e)
@@ -96,13 +102,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             for (int i = 0; i < approvalRowsCount - 1; i++)
             {
                 ResourcePlanModel.Labor documentLabor = new ResourcePlanModel.Labor();
-                var constraint = dataGridViewDocApprovals.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var role = dataGridViewDocApprovals.Rows[i].Cells[0].Value?.ToString() ?? "";
                 var number = dataGridViewDocApprovals.Rows[i].Cells[1].Value?.ToString() ?? "";
                 var responsibility = dataGridViewDocApprovals.Rows[i].Cells[2].Value?.ToString() ?? "";
                 var skill = dataGridViewDocApprovals.Rows[i].Cells[3].Value?.ToString() ?? "";
                 var startDate = dataGridViewDocApprovals.Rows[i].Cells[4].Value?.ToString() ?? "";
                 var endDate = dataGridViewDocApprovals.Rows[i].Cells[5].Value?.ToString() ?? "";
-                documentLabor.Constraints = constraint;
+                documentLabor.Role = role;
                 documentLabor.Number = number;
                 documentLabor.Responsibility = responsibility;
                 documentLabor.Skill = skill;
@@ -260,7 +266,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 foreach (var row in currentResourcePlanModel.Labors)
                 {
-                    laborDataGridView.Rows.Add(new string[] { row.Constraints, row.Number, row.Responsibility, row.Skill, row.StartDate, row.EndDate });
+                    laborDataGridView.Rows.Add(new string[] { row.Role, row.Number, row.Responsibility, row.Skill, row.StartDate, row.EndDate });
                 }
 
                 foreach (var row in currentResourcePlanModel.Equipments)
@@ -299,6 +305,461 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 docInfoGridData.AllowUserToAddRows = false;
             }
         }
+
+        private void btnExportResourcePlan_Click(object sender, EventArgs e)
+        {
+            exportToWord();
+        }
+
+        private void exportToWord()
+        {
+            string path;
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                saveFileDialog.Filter = "Word 97-2003 Documents (*.doc)|*.doc|Word 2007 Documents (*.docx)|*.docx";
+                saveFileDialog.FilterIndex = 2;
+                saveFileDialog.RestoreDirectory = true;
+
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    path = saveFileDialog.FileName;
+                    using (var document = DocX.Create(path))
+                    {
+                        for (int i = 0; i < 11; i++)
+                        {
+                            document.InsertParagraph("")
+                                .Font("Arial")
+                                .Bold(true)
+                                .FontSize(22d).Alignment = Alignment.left;
+                        }
+                        document.InsertParagraph("Statement Of Work \nFor " + projectModel.ProjectName)
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(22d).Alignment = Alignment.left;
+                        document.InsertSectionPageBreak();
+                        document.InsertParagraph("Document Control\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        document.InsertParagraph("")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        document.InsertParagraph("Document Information\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+
+                        var documentInfoTable = document.AddTable(6, 2);
+                        documentInfoTable.Rows[0].Cells[0].Paragraphs[0].Append("").Bold(true).Color(Color.White);
+                        documentInfoTable.Rows[0].Cells[1].Paragraphs[0].Append("Information").Bold(true).Color(Color.White);
+                        documentInfoTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentInfoTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+
+                        documentInfoTable.Rows[1].Cells[0].Paragraphs[0].Append("Document ID");
+                        documentInfoTable.Rows[1].Cells[1].Paragraphs[0].Append(currentResourcePlanModel.DocumentID);
+
+                        documentInfoTable.Rows[2].Cells[0].Paragraphs[0].Append("Document Owner");
+                        documentInfoTable.Rows[2].Cells[1].Paragraphs[0].Append(currentResourcePlanModel.DocumentOwner);
+
+                        documentInfoTable.Rows[3].Cells[0].Paragraphs[0].Append("Issue Date");
+                        documentInfoTable.Rows[3].Cells[1].Paragraphs[0].Append(currentResourcePlanModel.IssueDate);
+
+                        documentInfoTable.Rows[4].Cells[0].Paragraphs[0].Append("Last Saved Date");
+                        documentInfoTable.Rows[4].Cells[1].Paragraphs[0].Append(currentResourcePlanModel.LastSavedDate);
+
+                        documentInfoTable.Rows[5].Cells[0].Paragraphs[0].Append("File Name");
+                        documentInfoTable.Rows[5].Cells[1].Paragraphs[0].Append(currentResourcePlanModel.FileName);
+                        documentInfoTable.SetWidths(new float[] { 493, 1094 });
+                        document.InsertTable(documentInfoTable);
+
+
+                        //Document Histories
+                        document.InsertParagraph("\nDocument History\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+
+                        var documentHistoryTable = document.AddTable(currentResourcePlanModel.DocumentHistories.Count + 1, 3);
+                        documentHistoryTable.Rows[0].Cells[0].Paragraphs[0].Append("Version")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[1].Paragraphs[0].Append("Issue Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[2].Paragraphs[0].Append("Changes")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentHistoryTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentHistoryTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        for (int i = 1; i < currentResourcePlanModel.DocumentHistories.Count + 1; i++)
+                        {
+                            documentHistoryTable.Rows[i].Cells[0].Paragraphs[0].Append(currentResourcePlanModel.DocumentHistories[i - 1].Version);
+                            documentHistoryTable.Rows[i].Cells[1].Paragraphs[0].Append(currentResourcePlanModel.DocumentHistories[i - 1].IssueDate);
+                            documentHistoryTable.Rows[i].Cells[2].Paragraphs[0].Append(currentResourcePlanModel.DocumentHistories[i - 1].Changes);
+
+                        }
+
+                        documentHistoryTable.SetWidths(new float[] { 190, 303, 1094 });
+                        document.InsertTable(documentHistoryTable);
+
+
+                        //Document approvals
+                        document.InsertParagraph("\nDocument Approvals\n")
+                           .Font("Arial")
+                           .Bold(true)
+                           .FontSize(14d).Alignment = Alignment.left;
+
+                        var documentApprovalTable = document.AddTable(currentResourcePlanModel.DocumentApprovals.Count + 1, 4);
+                        documentApprovalTable.Rows[0].Cells[0].Paragraphs[0].Append("Role")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[1].Paragraphs[0].Append("Name")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[2].Paragraphs[0].Append("Signature")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[3].Paragraphs[0].Append("Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentResourcePlanModel.DocumentApprovals.Count + 1; i++)
+                        {
+                            documentApprovalTable.Rows[i].Cells[0].Paragraphs[0].Append(currentResourcePlanModel.DocumentApprovals[i - 1].Role);
+                            documentApprovalTable.Rows[i].Cells[1].Paragraphs[0].Append(currentResourcePlanModel.DocumentApprovals[i - 1].Name);
+                            documentApprovalTable.Rows[i].Cells[2].Paragraphs[0].Append(currentResourcePlanModel.DocumentApprovals[i - 1].Signature);
+                            documentApprovalTable.Rows[i].Cells[3].Paragraphs[0].Append(currentResourcePlanModel.DocumentApprovals[i - 1].DateApproved);
+                        }
+                        documentApprovalTable.SetWidths(new float[] { 493, 332, 508, 254 });
+                        document.InsertTable(documentApprovalTable);
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
+
+
+                        var p = document.InsertParagraph();
+                        var title = p.InsertParagraphBeforeSelf("Table of Contents").Bold().FontSize(20);
+
+                        var tocSwitches = new Dictionary<TableOfContentsSwitches, string>()
+                        {
+                            { TableOfContentsSwitches.O, "1-3"},
+                            { TableOfContentsSwitches.U, ""},
+                            { TableOfContentsSwitches.Z, ""},
+                            { TableOfContentsSwitches.H, ""}
+                        };
+                        document.InsertSectionPageBreak();
+
+
+                        //Resource Listing/////////////////////
+                        var responsibilitiesHeading = document.InsertParagraph("1. Resource Listing")
+                           .Bold()
+                           .FontSize(14d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+
+                        responsibilitiesHeading.StyleId = "Heading1";
+                        //Labor
+                        document.InsertParagraph("\n1.1 Labour\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+
+                        var laborTable = document.AddTable(currentResourcePlanModel.DocumentHistories.Count + 1, 6);
+                        laborTable.Rows[0].Cells[0].Paragraphs[0].Append("Role")
+                            .Bold(true)
+                            .Color(Color.White);
+                        laborTable.Rows[0].Cells[1].Paragraphs[0].Append("Number")
+                            .Bold(true)
+                            .Color(Color.White);
+                        laborTable.Rows[0].Cells[2].Paragraphs[0].Append("Responsibilities")
+                            .Bold(true)
+                            .Color(Color.White);
+                        laborTable.Rows[0].Cells[3].Paragraphs[0].Append("SKills")
+                           .Bold(true)
+                           .Color(Color.White);
+                        laborTable.Rows[0].Cells[4].Paragraphs[0].Append("Start Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        laborTable.Rows[0].Cells[5].Paragraphs[0].Append("End Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        laborTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        laborTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        laborTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        laborTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+                        laborTable.Rows[0].Cells[4].FillColor = TABLE_HEADER_COLOR;
+                        laborTable.Rows[0].Cells[5].FillColor = TABLE_HEADER_COLOR;
+                        for (int i = 1; i < currentResourcePlanModel.Labors.Count + 1; i++)
+                        {
+                            laborTable.Rows[i].Cells[0].Paragraphs[0].Append(currentResourcePlanModel.Labors[i - 1].Role);
+                            laborTable.Rows[i].Cells[1].Paragraphs[0].Append(currentResourcePlanModel.Labors[i - 1].Number);
+                            laborTable.Rows[i].Cells[2].Paragraphs[0].Append(currentResourcePlanModel.Labors[i - 1].Responsibility);
+                            laborTable.Rows[i].Cells[3].Paragraphs[0].Append(currentResourcePlanModel.Labors[i - 1].Skill);
+                            laborTable.Rows[i].Cells[4].Paragraphs[0].Append(currentResourcePlanModel.Labors[i - 1].StartDate);
+                            laborTable.Rows[i].Cells[5].Paragraphs[0].Append(currentResourcePlanModel.Labors[i - 1].EndDate);
+
+                        }
+
+                        laborTable.SetWidths(new float[] { 190, 180, 250,180,200,200 });
+                        document.InsertTable(laborTable);
+
+                        //Equipment
+                        document.InsertParagraph("\n1.2 Equipment\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+
+                        var equipmentTable = document.AddTable(currentResourcePlanModel.Equipments.Count + 1, 6);
+                        equipmentTable.Rows[0].Cells[0].Paragraphs[0].Append("Item")
+                            .Bold(true)
+                            .Color(Color.White);
+                        equipmentTable.Rows[0].Cells[1].Paragraphs[0].Append("Amount")
+                            .Bold(true)
+                            .Color(Color.White);
+                        equipmentTable.Rows[0].Cells[2].Paragraphs[0].Append("Purpose")
+                            .Bold(true)
+                            .Color(Color.White);
+                        equipmentTable.Rows[0].Cells[3].Paragraphs[0].Append("Specification")
+                           .Bold(true)
+                           .Color(Color.White);
+                        equipmentTable.Rows[0].Cells[4].Paragraphs[0].Append("Start Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        equipmentTable.Rows[0].Cells[5].Paragraphs[0].Append("End Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        equipmentTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        equipmentTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        equipmentTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        equipmentTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+                        equipmentTable.Rows[0].Cells[4].FillColor = TABLE_HEADER_COLOR;
+                        equipmentTable.Rows[0].Cells[5].FillColor = TABLE_HEADER_COLOR;
+                        for (int i = 1; i < currentResourcePlanModel.Labors.Count + 1; i++)
+                        {
+                            equipmentTable.Rows[i].Cells[0].Paragraphs[0].Append(currentResourcePlanModel.Equipments[i - 1].Item);
+                            equipmentTable.Rows[i].Cells[1].Paragraphs[0].Append(currentResourcePlanModel.Equipments[i - 1].Amount);
+                            equipmentTable.Rows[i].Cells[2].Paragraphs[0].Append(currentResourcePlanModel.Equipments[i - 1].Purpose);
+                            equipmentTable.Rows[i].Cells[3].Paragraphs[0].Append(currentResourcePlanModel.Equipments[i - 1].Specification);
+                            equipmentTable.Rows[i].Cells[4].Paragraphs[0].Append(currentResourcePlanModel.Equipments[i - 1].StartDate);
+                            equipmentTable.Rows[i].Cells[5].Paragraphs[0].Append(currentResourcePlanModel.Equipments[i - 1].EndDate);
+
+                        }
+
+                        laborTable.SetWidths(new float[] { 190, 180, 250, 180, 200, 200 });
+                        document.InsertTable(equipmentTable);
+
+
+                        //Materials
+                        document.InsertParagraph("\n1.3 Material\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+
+                        var materialTable = document.AddTable(currentResourcePlanModel.Material.Count + 1, 4);
+                        materialTable.Rows[0].Cells[0].Paragraphs[0].Append("Item")
+                            .Bold(true)
+                            .Color(Color.White);
+                        materialTable.Rows[0].Cells[1].Paragraphs[0].Append("Amount")
+                            .Bold(true)
+                            .Color(Color.White);
+                        materialTable.Rows[0].Cells[2].Paragraphs[0].Append("Start Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        materialTable.Rows[0].Cells[3].Paragraphs[0].Append("End Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        materialTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        materialTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        materialTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        materialTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+                        for (int i = 1; i < currentResourcePlanModel.Labors.Count + 1; i++)
+                        {
+                            materialTable.Rows[i].Cells[0].Paragraphs[0].Append(currentResourcePlanModel.Equipments[i - 1].Item);
+                            materialTable.Rows[i].Cells[1].Paragraphs[0].Append(currentResourcePlanModel.Equipments[i - 1].Amount);
+                            materialTable.Rows[i].Cells[2].Paragraphs[0].Append(currentResourcePlanModel.Equipments[i - 1].StartDate);
+                            materialTable.Rows[i].Cells[3].Paragraphs[0].Append(currentResourcePlanModel.Equipments[i - 1].EndDate);
+
+                        }
+
+                        laborTable.SetWidths(new float[] { 190, 180, 250, 180 });
+                        document.InsertTable(materialTable);
+
+
+
+
+                        //Resource plan//////////////////////////////
+                        var resourclePlanHeading = document.InsertParagraph("2. Resource Plan")
+                           .Bold()
+                           .FontSize(14d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        //Shedule
+                        document.InsertParagraph("\n2.1 Shedule\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+
+                        var scheduleTable = document.AddTable(currentResourcePlanModel.Equipments.Count + 1, 7);
+                        scheduleTable.Rows[0].Cells[0].Paragraphs[0].Append("Resource")
+                            .Bold(true)
+                            .Color(Color.White);
+                        scheduleTable.Rows[0].Cells[1].Paragraphs[0].Append("Jan")
+                            .Bold(true)
+                            .Color(Color.White);
+                        scheduleTable.Rows[0].Cells[2].Paragraphs[0].Append("Feb")
+                            .Bold(true)
+                            .Color(Color.White);
+                        scheduleTable.Rows[0].Cells[3].Paragraphs[0].Append("Mar")
+                           .Bold(true)
+                           .Color(Color.White);
+                        scheduleTable.Rows[0].Cells[4].Paragraphs[0].Append("Apr")
+                            .Bold(true)
+                            .Color(Color.White);
+                        scheduleTable.Rows[0].Cells[5].Paragraphs[0].Append("May")
+                            .Bold(true)
+                            .Color(Color.White);
+                        scheduleTable.Rows[0].Cells[6].Paragraphs[0].Append("Jun")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        scheduleTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        scheduleTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        scheduleTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        scheduleTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+                        scheduleTable.Rows[0].Cells[4].FillColor = TABLE_HEADER_COLOR;
+                        scheduleTable.Rows[0].Cells[5].FillColor = TABLE_HEADER_COLOR;
+                        scheduleTable.Rows[0].Cells[6].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentResourcePlanModel.Labors.Count + 1; i++)
+                        {
+                            scheduleTable.Rows[i].Cells[0].Paragraphs[0].Append(currentResourcePlanModel.Schedules[i - 1].Resource);
+                            scheduleTable.Rows[i].Cells[1].Paragraphs[0].Append(currentResourcePlanModel.Schedules[i - 1].Jan);
+                            scheduleTable.Rows[i].Cells[2].Paragraphs[0].Append(currentResourcePlanModel.Schedules[i - 1].Feb);
+                            scheduleTable.Rows[i].Cells[3].Paragraphs[0].Append(currentResourcePlanModel.Schedules[i - 1].Mar);
+                            scheduleTable.Rows[i].Cells[4].Paragraphs[0].Append(currentResourcePlanModel.Schedules[i - 1].Apr);
+                            scheduleTable.Rows[i].Cells[5].Paragraphs[0].Append(currentResourcePlanModel.Schedules[i - 1].May);
+                            scheduleTable.Rows[i].Cells[6].Paragraphs[0].Append(currentResourcePlanModel.Schedules[i - 1].Jun);
+
+                        }
+
+                        scheduleTable.SetWidths(new float[] { 100, 80, 80, 80, 80, 80, 80 });
+                        document.InsertTable(scheduleTable);
+
+
+
+
+                        document.InsertParagraph("")
+                           .Font("Arial")
+                           .Bold(true)
+                           .FontSize(14d).Alignment = Alignment.left;
+
+                        var schedule2Table = document.AddTable(currentResourcePlanModel.Equipments.Count + 1, 7);
+                        schedule2Table.Rows[0].Cells[0].Paragraphs[0].Append("Jul")
+                            .Bold(true)
+                            .Color(Color.White);
+                        schedule2Table.Rows[0].Cells[1].Paragraphs[0].Append("Aug")
+                            .Bold(true)
+                            .Color(Color.White);
+                        schedule2Table.Rows[0].Cells[2].Paragraphs[0].Append("Sept")
+                           .Bold(true)
+                           .Color(Color.White);
+                        schedule2Table.Rows[0].Cells[3].Paragraphs[0].Append("Oct")
+                            .Bold(true)
+                            .Color(Color.White);
+                        schedule2Table.Rows[0].Cells[4].Paragraphs[0].Append("Nov")
+                            .Bold(true)
+                            .Color(Color.White);
+                        schedule2Table.Rows[0].Cells[5].Paragraphs[0].Append("Dec")
+                            .Bold(true)
+                            .Color(Color.White);
+                        schedule2Table.Rows[0].Cells[6].Paragraphs[0].Append("Total")
+                            .Bold(true)
+                            .Color(Color.White);
+                        schedule2Table.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        schedule2Table.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        schedule2Table.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        schedule2Table.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+                        schedule2Table.Rows[0].Cells[4].FillColor = TABLE_HEADER_COLOR;
+                        schedule2Table.Rows[0].Cells[5].FillColor = TABLE_HEADER_COLOR;
+                        schedule2Table.Rows[0].Cells[6].FillColor = TABLE_HEADER_COLOR;
+                        for (int i = 1; i < currentResourcePlanModel.Labors.Count + 1; i++)
+                        {
+                            schedule2Table.Rows[i].Cells[0].Paragraphs[0].Append(currentResourcePlanModel.Schedules[i - 1].Jul);
+                            schedule2Table.Rows[i].Cells[1].Paragraphs[0].Append(currentResourcePlanModel.Schedules[i - 1].Aug);
+                            schedule2Table.Rows[i].Cells[2].Paragraphs[0].Append(currentResourcePlanModel.Schedules[i - 1].Sept);
+                            schedule2Table.Rows[i].Cells[3].Paragraphs[0].Append(currentResourcePlanModel.Schedules[i - 1].Oct);
+                            schedule2Table.Rows[i].Cells[4].Paragraphs[0].Append(currentResourcePlanModel.Schedules[i - 1].Nov);
+                            schedule2Table.Rows[i].Cells[5].Paragraphs[0].Append(currentResourcePlanModel.Schedules[i - 1].Dec);
+                            schedule2Table.Rows[i].Cells[6].Paragraphs[0].Append(currentResourcePlanModel.Schedules[i - 1].Total);
+                        }
+
+                        schedule2Table.SetWidths(new float[] { 80, 80, 80, 80, 80, 80, 100});
+                        document.InsertTable(schedule2Table);
+
+
+
+
+
+
+
+
+                        //Assumptions
+
+
+                        var assumptionsHeading = document.InsertParagraph("2.2 Assumptions ")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        document.InsertParagraph(currentResourcePlanModel.Assumptions)
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+                        assumptionsHeading.StyleId = "Heading2";
+
+                        //Constraints
+                        var constraintHeading = document.InsertParagraph("2.3 Constraints ")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        document.InsertParagraph(currentResourcePlanModel.Constraints)
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+                        constraintHeading.StyleId = "Heading2";
+
+                        //Appendix
+
+                        //Save document 
+                        try
+                        {
+                            document.Save();
+                        }
+                        catch
+                        {
+                            MessageBox.Show("The selected File is open.", "Close File", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+
+                    }
+                }
+            }
+        }
     }
 }
-

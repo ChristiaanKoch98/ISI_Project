@@ -65,7 +65,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public class Labor
         {
 
-            public string Constraints { get; set; }
+            public string Role { get; set; }
 
             public string Number { get; set; }
 

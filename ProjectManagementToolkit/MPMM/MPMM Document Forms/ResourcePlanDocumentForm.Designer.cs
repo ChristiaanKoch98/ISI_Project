@@ -69,6 +69,7 @@
             this.endDateColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.laborLabel = new System.Windows.Forms.Label();
             this.resourcePlabTab = new System.Windows.Forms.TabPage();
+            this.btnSaveResourcePlan = new System.Windows.Forms.Button();
             this.constraintsLabel = new System.Windows.Forms.Label();
             this.assumptionsLabel = new System.Windows.Forms.Label();
             this.txtRPConstraints = new System.Windows.Forms.TextBox();
@@ -93,7 +94,7 @@
             this.btnSaveProjectName = new System.Windows.Forms.Button();
             this.label27 = new System.Windows.Forms.Label();
             this.txtProjectName = new System.Windows.Forms.TextBox();
-            this.btnSaveResourcePlan = new System.Windows.Forms.Button();
+            this.btnExportResourcePlan = new System.Windows.Forms.Button();
             this.ResourcePlanTabControl.SuspendLayout();
             this.documentCtrlTabPG.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocApprovals)).BeginInit();
@@ -489,6 +490,16 @@
             this.resourcePlabTab.TabIndex = 2;
             this.resourcePlabTab.Text = "Resource Plan";
             // 
+            // btnSaveResourcePlan
+            // 
+            this.btnSaveResourcePlan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSaveResourcePlan.Location = new System.Drawing.Point(379, 347);
+            this.btnSaveResourcePlan.Name = "btnSaveResourcePlan";
+            this.btnSaveResourcePlan.Size = new System.Drawing.Size(114, 22);
+            this.btnSaveResourcePlan.TabIndex = 21;
+            this.btnSaveResourcePlan.Text = "Save Resource Plan";
+            this.btnSaveResourcePlan.UseVisualStyleBackColor = true;
+            // 
             // constraintsLabel
             // 
             this.constraintsLabel.AutoSize = true;
@@ -688,15 +699,16 @@
             this.txtProjectName.TabIndex = 19;
             this.txtProjectName.Text = "Project Name";
             // 
-            // btnSaveResourcePlan
+            // btnExportResourcePlan
             // 
-            this.btnSaveResourcePlan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSaveResourcePlan.Location = new System.Drawing.Point(379, 347);
-            this.btnSaveResourcePlan.Name = "btnSaveResourcePlan";
-            this.btnSaveResourcePlan.Size = new System.Drawing.Size(114, 22);
-            this.btnSaveResourcePlan.TabIndex = 21;
-            this.btnSaveResourcePlan.Text = "Save Resource Plan";
-            this.btnSaveResourcePlan.UseVisualStyleBackColor = true;
+            this.btnExportResourcePlan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnExportResourcePlan.Location = new System.Drawing.Point(661, 8);
+            this.btnExportResourcePlan.Name = "btnExportResourcePlan";
+            this.btnExportResourcePlan.Size = new System.Drawing.Size(95, 42);
+            this.btnExportResourcePlan.TabIndex = 21;
+            this.btnExportResourcePlan.Text = "Export Project Name";
+            this.btnExportResourcePlan.UseVisualStyleBackColor = true;
+            this.btnExportResourcePlan.Click += new System.EventHandler(this.btnExportResourcePlan_Click);
             // 
             // ResourcePlanDocumentForm
             // 
@@ -704,6 +716,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(879, 448);
+            this.Controls.Add(this.btnExportResourcePlan);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.btnSaveProjectName);
@@ -799,5 +812,6 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox txtProjectName;
         private System.Windows.Forms.Button btnSaveResourcePlan;
+        private System.Windows.Forms.Button btnExportResourcePlan;
     }
 }
