@@ -371,12 +371,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 checkBoxUCR2.Checked = currentProjectOfficeChecklistModel.ServicesComminicating ;
 
 
-
-
-
-
-
-
             }
         }
 

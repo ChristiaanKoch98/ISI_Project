@@ -172,8 +172,8 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(848, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(636, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -184,7 +184,7 @@
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.MenuText;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // projectSelectionToolStripMenuItem
@@ -192,7 +192,7 @@
             this.projectSelectionToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
             this.projectSelectionToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.projectSelectionToolStripMenuItem.Name = "projectSelectionToolStripMenuItem";
-            this.projectSelectionToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
+            this.projectSelectionToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.projectSelectionToolStripMenuItem.Text = "Project Selection";
             this.projectSelectionToolStripMenuItem.Click += new System.EventHandler(this.projectSelectionToolStripMenuItem_Click);
             // 
@@ -201,7 +201,7 @@
             this.exitToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
             this.exitToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -217,7 +217,7 @@
             this.mPMMToolStripMenuItem.ForeColor = System.Drawing.SystemColors.MenuText;
             this.mPMMToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.mPMMToolStripMenuItem.Name = "mPMMToolStripMenuItem";
-            this.mPMMToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.mPMMToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
             this.mPMMToolStripMenuItem.Text = "Project Initiation";
             // 
             // developABusinessCaseToolStripMenuItem
@@ -228,14 +228,14 @@
             this.exampleToolStripMenuItem});
             this.developABusinessCaseToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.developABusinessCaseToolStripMenuItem.Name = "developABusinessCaseToolStripMenuItem";
-            this.developABusinessCaseToolStripMenuItem.Size = new System.Drawing.Size(283, 26);
+            this.developABusinessCaseToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
             this.developABusinessCaseToolStripMenuItem.Text = "Develop a Business Case";
             // 
             // templateToolStripMenuItem
             // 
             this.templateToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem.Name = "templateToolStripMenuItem";
-            this.templateToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.templateToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.templateToolStripMenuItem.Text = "Template";
             this.templateToolStripMenuItem.Click += new System.EventHandler(this.templateToolStripMenuItem_Click);
             // 
@@ -243,7 +243,7 @@
             // 
             this.exampleToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem.Name = "exampleToolStripMenuItem";
-            this.exampleToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.exampleToolStripMenuItem.Text = "Example";
             // 
             // undertakeAFeasibilityStudyToolStripMenuItem
@@ -254,14 +254,14 @@
             this.exampleToolStripMenuItem1});
             this.undertakeAFeasibilityStudyToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.undertakeAFeasibilityStudyToolStripMenuItem.Name = "undertakeAFeasibilityStudyToolStripMenuItem";
-            this.undertakeAFeasibilityStudyToolStripMenuItem.Size = new System.Drawing.Size(283, 26);
+            this.undertakeAFeasibilityStudyToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
             this.undertakeAFeasibilityStudyToolStripMenuItem.Text = "Undertake a Feasibility Study";
             // 
             // templateToolStripMenuItem1
             // 
             this.templateToolStripMenuItem1.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem1.Name = "templateToolStripMenuItem1";
-            this.templateToolStripMenuItem1.Size = new System.Drawing.Size(154, 26);
+            this.templateToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
             this.templateToolStripMenuItem1.Text = "Template";
             this.templateToolStripMenuItem1.Click += new System.EventHandler(this.templateToolStripMenuItem1_Click);
             // 
@@ -269,7 +269,7 @@
             // 
             this.exampleToolStripMenuItem1.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem1.Name = "exampleToolStripMenuItem1";
-            this.exampleToolStripMenuItem1.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
             this.exampleToolStripMenuItem1.Text = "Example";
             // 
             // establishTheProjectChaterToolStripMenuItem
@@ -280,21 +280,21 @@
             this.templateToolStripMenuItem2});
             this.establishTheProjectChaterToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.establishTheProjectChaterToolStripMenuItem.Name = "establishTheProjectChaterToolStripMenuItem";
-            this.establishTheProjectChaterToolStripMenuItem.Size = new System.Drawing.Size(283, 26);
+            this.establishTheProjectChaterToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
             this.establishTheProjectChaterToolStripMenuItem.Text = "Establish the Project Chater";
             // 
             // exampleToolStripMenuItem2
             // 
             this.exampleToolStripMenuItem2.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem2.Name = "exampleToolStripMenuItem2";
-            this.exampleToolStripMenuItem2.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
             this.exampleToolStripMenuItem2.Text = "Example";
             // 
             // templateToolStripMenuItem2
             // 
             this.templateToolStripMenuItem2.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem2.Name = "templateToolStripMenuItem2";
-            this.templateToolStripMenuItem2.Size = new System.Drawing.Size(154, 26);
+            this.templateToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
             this.templateToolStripMenuItem2.Text = "Template";
             // 
             // appointAProjectTeamToolStripMenuItem
@@ -305,14 +305,14 @@
             this.exampleToolStripMenuItem3});
             this.appointAProjectTeamToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.appointAProjectTeamToolStripMenuItem.Name = "appointAProjectTeamToolStripMenuItem";
-            this.appointAProjectTeamToolStripMenuItem.Size = new System.Drawing.Size(283, 26);
+            this.appointAProjectTeamToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
             this.appointAProjectTeamToolStripMenuItem.Text = "Appoint a Project Team";
             // 
             // templateToolStripMenuItem3
             // 
             this.templateToolStripMenuItem3.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem3.Name = "templateToolStripMenuItem3";
-            this.templateToolStripMenuItem3.Size = new System.Drawing.Size(154, 26);
+            this.templateToolStripMenuItem3.Size = new System.Drawing.Size(122, 22);
             this.templateToolStripMenuItem3.Text = "Template";
             this.templateToolStripMenuItem3.Click += new System.EventHandler(this.templateToolStripMenuItem3_Click);
             // 
@@ -320,7 +320,7 @@
             // 
             this.exampleToolStripMenuItem3.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem3.Name = "exampleToolStripMenuItem3";
-            this.exampleToolStripMenuItem3.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem3.Size = new System.Drawing.Size(122, 22);
             this.exampleToolStripMenuItem3.Text = "Example";
             // 
             // setupAProjectOfficeToolStripMenuItem
@@ -331,14 +331,14 @@
             this.exampleToolStripMenuItem4});
             this.setupAProjectOfficeToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.setupAProjectOfficeToolStripMenuItem.Name = "setupAProjectOfficeToolStripMenuItem";
-            this.setupAProjectOfficeToolStripMenuItem.Size = new System.Drawing.Size(283, 26);
+            this.setupAProjectOfficeToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
             this.setupAProjectOfficeToolStripMenuItem.Text = "Setup a Project Office ";
             // 
             // checklistToolStripMenuItem
             // 
             this.checklistToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
             this.checklistToolStripMenuItem.Name = "checklistToolStripMenuItem";
-            this.checklistToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.checklistToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.checklistToolStripMenuItem.Text = "Checklist";
             this.checklistToolStripMenuItem.Click += new System.EventHandler(this.checklistToolStripMenuItem_Click);
             // 
@@ -346,7 +346,7 @@
             // 
             this.exampleToolStripMenuItem4.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem4.Name = "exampleToolStripMenuItem4";
-            this.exampleToolStripMenuItem4.Size = new System.Drawing.Size(150, 26);
+            this.exampleToolStripMenuItem4.Size = new System.Drawing.Size(122, 22);
             this.exampleToolStripMenuItem4.Text = "Example";
             // 
             // peformPhaseReviewToolStripMenuItem
@@ -357,14 +357,14 @@
             this.exampleToolStripMenuItem5});
             this.peformPhaseReviewToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.peformPhaseReviewToolStripMenuItem.Name = "peformPhaseReviewToolStripMenuItem";
-            this.peformPhaseReviewToolStripMenuItem.Size = new System.Drawing.Size(283, 26);
+            this.peformPhaseReviewToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
             this.peformPhaseReviewToolStripMenuItem.Text = "Initiation Phase Review";
             // 
             // reviewFormToolStripMenuItem
             // 
             this.reviewFormToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
             this.reviewFormToolStripMenuItem.Name = "reviewFormToolStripMenuItem";
-            this.reviewFormToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
+            this.reviewFormToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.reviewFormToolStripMenuItem.Text = "Review Form";
             this.reviewFormToolStripMenuItem.Click += new System.EventHandler(this.reviewFormToolStripMenuItem_Click);
             // 
@@ -372,7 +372,7 @@
             // 
             this.exampleToolStripMenuItem5.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem5.Name = "exampleToolStripMenuItem5";
-            this.exampleToolStripMenuItem5.Size = new System.Drawing.Size(177, 26);
+            this.exampleToolStripMenuItem5.Size = new System.Drawing.Size(142, 22);
             this.exampleToolStripMenuItem5.Text = "Example";
             // 
             // projectPlanningToolStripMenuItem
@@ -389,7 +389,7 @@
             this.contractTheSuppliersToolStripMenuItem,
             this.performPhaseReviewToolStripMenuItem});
             this.projectPlanningToolStripMenuItem.Name = "projectPlanningToolStripMenuItem";
-            this.projectPlanningToolStripMenuItem.Size = new System.Drawing.Size(130, 24);
+            this.projectPlanningToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
             this.projectPlanningToolStripMenuItem.Text = "Project Planning";
             // 
             // createAProjectPlanToolStripMenuItem
@@ -400,14 +400,15 @@
             this.exampleToolStripMenuItem6});
             this.createAProjectPlanToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.createAProjectPlanToolStripMenuItem.Name = "createAProjectPlanToolStripMenuItem";
-            this.createAProjectPlanToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.createAProjectPlanToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
             this.createAProjectPlanToolStripMenuItem.Text = "Create a Project Plan";
+            this.createAProjectPlanToolStripMenuItem.Click += new System.EventHandler(this.createAProjectPlanToolStripMenuItem_Click);
             // 
             // templateToolStripMenuItem4
             // 
             this.templateToolStripMenuItem4.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem4.Name = "templateToolStripMenuItem4";
-            this.templateToolStripMenuItem4.Size = new System.Drawing.Size(154, 26);
+            this.templateToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
             this.templateToolStripMenuItem4.Text = "Template";
             this.templateToolStripMenuItem4.Click += new System.EventHandler(this.templateToolStripMenuItem4_Click);
             // 
@@ -415,7 +416,7 @@
             // 
             this.exampleToolStripMenuItem6.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem6.Name = "exampleToolStripMenuItem6";
-            this.exampleToolStripMenuItem6.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
             this.exampleToolStripMenuItem6.Text = "Example";
             // 
             // createAResourcePlanToolStripMenuItem
@@ -426,14 +427,14 @@
             this.exampleToolStripMenuItem7});
             this.createAResourcePlanToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.createAResourcePlanToolStripMenuItem.Name = "createAResourcePlanToolStripMenuItem";
-            this.createAResourcePlanToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.createAResourcePlanToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
             this.createAResourcePlanToolStripMenuItem.Text = "Create a Resource Plan";
             // 
             // templateToolStripMenuItem5
             // 
             this.templateToolStripMenuItem5.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem5.Name = "templateToolStripMenuItem5";
-            this.templateToolStripMenuItem5.Size = new System.Drawing.Size(154, 26);
+            this.templateToolStripMenuItem5.Size = new System.Drawing.Size(122, 22);
             this.templateToolStripMenuItem5.Text = "Template";
             this.templateToolStripMenuItem5.Click += new System.EventHandler(this.templateToolStripMenuItem5_Click);
             // 
@@ -441,7 +442,7 @@
             // 
             this.exampleToolStripMenuItem7.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem7.Name = "exampleToolStripMenuItem7";
-            this.exampleToolStripMenuItem7.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem7.Size = new System.Drawing.Size(122, 22);
             this.exampleToolStripMenuItem7.Text = "Example";
             // 
             // createAFinancialPlanToolStripMenuItem
@@ -452,14 +453,14 @@
             this.exampleToolStripMenuItem8});
             this.createAFinancialPlanToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.createAFinancialPlanToolStripMenuItem.Name = "createAFinancialPlanToolStripMenuItem";
-            this.createAFinancialPlanToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.createAFinancialPlanToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
             this.createAFinancialPlanToolStripMenuItem.Text = "Create a Financial Plan";
             // 
             // templateToolStripMenuItem6
             // 
             this.templateToolStripMenuItem6.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem6.Name = "templateToolStripMenuItem6";
-            this.templateToolStripMenuItem6.Size = new System.Drawing.Size(154, 26);
+            this.templateToolStripMenuItem6.Size = new System.Drawing.Size(122, 22);
             this.templateToolStripMenuItem6.Text = "Template";
             this.templateToolStripMenuItem6.Click += new System.EventHandler(this.templateToolStripMenuItem6_Click);
             // 
@@ -467,7 +468,7 @@
             // 
             this.exampleToolStripMenuItem8.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem8.Name = "exampleToolStripMenuItem8";
-            this.exampleToolStripMenuItem8.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem8.Size = new System.Drawing.Size(122, 22);
             this.exampleToolStripMenuItem8.Text = "Example";
             // 
             // createAQualityPlanToolStripMenuItem
@@ -478,14 +479,14 @@
             this.exampleToolStripMenuItem9});
             this.createAQualityPlanToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.createAQualityPlanToolStripMenuItem.Name = "createAQualityPlanToolStripMenuItem";
-            this.createAQualityPlanToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.createAQualityPlanToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
             this.createAQualityPlanToolStripMenuItem.Text = "Create a Quality Plan";
             // 
             // templateToolStripMenuItem7
             // 
             this.templateToolStripMenuItem7.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem7.Name = "templateToolStripMenuItem7";
-            this.templateToolStripMenuItem7.Size = new System.Drawing.Size(158, 26);
+            this.templateToolStripMenuItem7.Size = new System.Drawing.Size(125, 22);
             this.templateToolStripMenuItem7.Text = "Template ";
             this.templateToolStripMenuItem7.Click += new System.EventHandler(this.templateToolStripMenuItem7_Click);
             // 
@@ -493,7 +494,7 @@
             // 
             this.exampleToolStripMenuItem9.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem9.Name = "exampleToolStripMenuItem9";
-            this.exampleToolStripMenuItem9.Size = new System.Drawing.Size(158, 26);
+            this.exampleToolStripMenuItem9.Size = new System.Drawing.Size(125, 22);
             this.exampleToolStripMenuItem9.Text = "Example";
             // 
             // createARiskPlanToolStripMenuItem
@@ -504,14 +505,14 @@
             this.exampleToolStripMenuItem10});
             this.createARiskPlanToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.createARiskPlanToolStripMenuItem.Name = "createARiskPlanToolStripMenuItem";
-            this.createARiskPlanToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.createARiskPlanToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
             this.createARiskPlanToolStripMenuItem.Text = "Create a Risk Plan";
             // 
             // templateToolStripMenuItem8
             // 
             this.templateToolStripMenuItem8.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem8.Name = "templateToolStripMenuItem8";
-            this.templateToolStripMenuItem8.Size = new System.Drawing.Size(154, 26);
+            this.templateToolStripMenuItem8.Size = new System.Drawing.Size(122, 22);
             this.templateToolStripMenuItem8.Text = "Template";
             this.templateToolStripMenuItem8.Click += new System.EventHandler(this.templateToolStripMenuItem8_Click);
             // 
@@ -519,7 +520,7 @@
             // 
             this.exampleToolStripMenuItem10.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem10.Name = "exampleToolStripMenuItem10";
-            this.exampleToolStripMenuItem10.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem10.Size = new System.Drawing.Size(122, 22);
             this.exampleToolStripMenuItem10.Text = "Example";
             // 
             // createAnAcceptancePlanToolStripMenuItem
@@ -530,14 +531,14 @@
             this.exampleToolStripMenuItem11});
             this.createAnAcceptancePlanToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.createAnAcceptancePlanToolStripMenuItem.Name = "createAnAcceptancePlanToolStripMenuItem";
-            this.createAnAcceptancePlanToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.createAnAcceptancePlanToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
             this.createAnAcceptancePlanToolStripMenuItem.Text = "Create an Acceptance Plan";
             // 
             // templateToolStripMenuItem9
             // 
             this.templateToolStripMenuItem9.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem9.Name = "templateToolStripMenuItem9";
-            this.templateToolStripMenuItem9.Size = new System.Drawing.Size(158, 26);
+            this.templateToolStripMenuItem9.Size = new System.Drawing.Size(125, 22);
             this.templateToolStripMenuItem9.Text = "Template ";
             this.templateToolStripMenuItem9.Click += new System.EventHandler(this.templateToolStripMenuItem9_Click);
             // 
@@ -545,7 +546,7 @@
             // 
             this.exampleToolStripMenuItem11.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem11.Name = "exampleToolStripMenuItem11";
-            this.exampleToolStripMenuItem11.Size = new System.Drawing.Size(158, 26);
+            this.exampleToolStripMenuItem11.Size = new System.Drawing.Size(125, 22);
             this.exampleToolStripMenuItem11.Text = "Example ";
             // 
             // createACommunicationPlanToolStripMenuItem
@@ -556,14 +557,14 @@
             this.exampleToolStripMenuItem12});
             this.createACommunicationPlanToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.createACommunicationPlanToolStripMenuItem.Name = "createACommunicationPlanToolStripMenuItem";
-            this.createACommunicationPlanToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.createACommunicationPlanToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
             this.createACommunicationPlanToolStripMenuItem.Text = "Create a Communication Plan";
             // 
             // templateToolStripMenuItem10
             // 
             this.templateToolStripMenuItem10.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem10.Name = "templateToolStripMenuItem10";
-            this.templateToolStripMenuItem10.Size = new System.Drawing.Size(158, 26);
+            this.templateToolStripMenuItem10.Size = new System.Drawing.Size(125, 22);
             this.templateToolStripMenuItem10.Text = "Template ";
             this.templateToolStripMenuItem10.Click += new System.EventHandler(this.templateToolStripMenuItem10_Click);
             // 
@@ -571,7 +572,7 @@
             // 
             this.exampleToolStripMenuItem12.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem12.Name = "exampleToolStripMenuItem12";
-            this.exampleToolStripMenuItem12.Size = new System.Drawing.Size(158, 26);
+            this.exampleToolStripMenuItem12.Size = new System.Drawing.Size(125, 22);
             this.exampleToolStripMenuItem12.Text = "Example";
             // 
             // createAProcurementPlanToolStripMenuItem
@@ -582,14 +583,14 @@
             this.exampleToolStripMenuItem13});
             this.createAProcurementPlanToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.createAProcurementPlanToolStripMenuItem.Name = "createAProcurementPlanToolStripMenuItem";
-            this.createAProcurementPlanToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.createAProcurementPlanToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
             this.createAProcurementPlanToolStripMenuItem.Text = "Create a Procurement Plan";
             // 
             // templateToolStripMenuItem11
             // 
             this.templateToolStripMenuItem11.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem11.Name = "templateToolStripMenuItem11";
-            this.templateToolStripMenuItem11.Size = new System.Drawing.Size(154, 26);
+            this.templateToolStripMenuItem11.Size = new System.Drawing.Size(122, 22);
             this.templateToolStripMenuItem11.Text = "Template";
             this.templateToolStripMenuItem11.Click += new System.EventHandler(this.templateToolStripMenuItem11_Click);
             // 
@@ -597,7 +598,7 @@
             // 
             this.exampleToolStripMenuItem13.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem13.Name = "exampleToolStripMenuItem13";
-            this.exampleToolStripMenuItem13.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem13.Size = new System.Drawing.Size(122, 22);
             this.exampleToolStripMenuItem13.Text = "Example";
             // 
             // contractTheSuppliersToolStripMenuItem
@@ -611,7 +612,7 @@
             this.issueARequestForProposalToolStripMenuItem});
             this.contractTheSuppliersToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.contractTheSuppliersToolStripMenuItem.Name = "contractTheSuppliersToolStripMenuItem";
-            this.contractTheSuppliersToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.contractTheSuppliersToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
             this.contractTheSuppliersToolStripMenuItem.Text = "Contract the Suppliers ";
             // 
             // defineTheSelectionProcessToolStripMenuItem
@@ -621,21 +622,21 @@
             this.templateToolStripMenuItem12,
             this.exampleToolStripMenuItem14});
             this.defineTheSelectionProcessToolStripMenuItem.Name = "defineTheSelectionProcessToolStripMenuItem";
-            this.defineTheSelectionProcessToolStripMenuItem.Size = new System.Drawing.Size(298, 26);
+            this.defineTheSelectionProcessToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
             this.defineTheSelectionProcessToolStripMenuItem.Text = "Define the Selection Process";
             // 
             // templateToolStripMenuItem12
             // 
             this.templateToolStripMenuItem12.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem12.Name = "templateToolStripMenuItem12";
-            this.templateToolStripMenuItem12.Size = new System.Drawing.Size(154, 26);
+            this.templateToolStripMenuItem12.Size = new System.Drawing.Size(122, 22);
             this.templateToolStripMenuItem12.Text = "Template";
             // 
             // exampleToolStripMenuItem14
             // 
             this.exampleToolStripMenuItem14.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem14.Name = "exampleToolStripMenuItem14";
-            this.exampleToolStripMenuItem14.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem14.Size = new System.Drawing.Size(122, 22);
             this.exampleToolStripMenuItem14.Text = "Example";
             // 
             // issueAStatementOfWorkToolStripMenuItem
@@ -645,14 +646,15 @@
             this.exampleToolStripMenuItem15,
             this.templateToolStripMenuItem13});
             this.issueAStatementOfWorkToolStripMenuItem.Name = "issueAStatementOfWorkToolStripMenuItem";
-            this.issueAStatementOfWorkToolStripMenuItem.Size = new System.Drawing.Size(298, 26);
+            this.issueAStatementOfWorkToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
             this.issueAStatementOfWorkToolStripMenuItem.Text = "Issue a Statement of Work";
+            this.issueAStatementOfWorkToolStripMenuItem.Click += new System.EventHandler(this.issueAStatementOfWorkToolStripMenuItem_Click);
             // 
             // exampleToolStripMenuItem15
             // 
             this.exampleToolStripMenuItem15.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem15.Name = "exampleToolStripMenuItem15";
-            this.exampleToolStripMenuItem15.Size = new System.Drawing.Size(224, 26);
+            this.exampleToolStripMenuItem15.Size = new System.Drawing.Size(122, 22);
             this.exampleToolStripMenuItem15.Text = "Example";
             this.exampleToolStripMenuItem15.Click += new System.EventHandler(this.exampleToolStripMenuItem15_Click);
             // 
@@ -660,7 +662,7 @@
             // 
             this.templateToolStripMenuItem13.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem13.Name = "templateToolStripMenuItem13";
-            this.templateToolStripMenuItem13.Size = new System.Drawing.Size(224, 26);
+            this.templateToolStripMenuItem13.Size = new System.Drawing.Size(122, 22);
             this.templateToolStripMenuItem13.Text = "Template";
             // 
             // issueARequestForInfToolStripMenuItem
@@ -670,14 +672,14 @@
             this.templateToolStripMenuItem14,
             this.exampleToolStripMenuItem16});
             this.issueARequestForInfToolStripMenuItem.Name = "issueARequestForInfToolStripMenuItem";
-            this.issueARequestForInfToolStripMenuItem.Size = new System.Drawing.Size(298, 26);
+            this.issueARequestForInfToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
             this.issueARequestForInfToolStripMenuItem.Text = "Issue a Request for Information";
             // 
             // templateToolStripMenuItem14
             // 
             this.templateToolStripMenuItem14.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem14.Name = "templateToolStripMenuItem14";
-            this.templateToolStripMenuItem14.Size = new System.Drawing.Size(224, 26);
+            this.templateToolStripMenuItem14.Size = new System.Drawing.Size(122, 22);
             this.templateToolStripMenuItem14.Text = "Template";
             this.templateToolStripMenuItem14.Click += new System.EventHandler(this.templateToolStripMenuItem14_Click);
             // 
@@ -685,7 +687,7 @@
             // 
             this.exampleToolStripMenuItem16.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem16.Name = "exampleToolStripMenuItem16";
-            this.exampleToolStripMenuItem16.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem16.Size = new System.Drawing.Size(122, 22);
             this.exampleToolStripMenuItem16.Text = "Example";
             // 
             // crearteSupplierContractToolStripMenuItem
@@ -695,14 +697,14 @@
             this.templateToolStripMenuItem16,
             this.exampleToolStripMenuItem18});
             this.crearteSupplierContractToolStripMenuItem.Name = "crearteSupplierContractToolStripMenuItem";
-            this.crearteSupplierContractToolStripMenuItem.Size = new System.Drawing.Size(298, 26);
+            this.crearteSupplierContractToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
             this.crearteSupplierContractToolStripMenuItem.Text = "Crearte Supplier Contract";
             // 
             // templateToolStripMenuItem16
             // 
             this.templateToolStripMenuItem16.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem16.Name = "templateToolStripMenuItem16";
-            this.templateToolStripMenuItem16.Size = new System.Drawing.Size(224, 26);
+            this.templateToolStripMenuItem16.Size = new System.Drawing.Size(122, 22);
             this.templateToolStripMenuItem16.Text = "Template";
             this.templateToolStripMenuItem16.Click += new System.EventHandler(this.templateToolStripMenuItem16_Click);
             // 
@@ -710,7 +712,7 @@
             // 
             this.exampleToolStripMenuItem18.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem18.Name = "exampleToolStripMenuItem18";
-            this.exampleToolStripMenuItem18.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem18.Size = new System.Drawing.Size(122, 22);
             this.exampleToolStripMenuItem18.Text = "Example";
             // 
             // issueARequestForProposalToolStripMenuItem
@@ -720,14 +722,14 @@
             this.templateToolStripMenuItem15,
             this.exampleToolStripMenuItem17});
             this.issueARequestForProposalToolStripMenuItem.Name = "issueARequestForProposalToolStripMenuItem";
-            this.issueARequestForProposalToolStripMenuItem.Size = new System.Drawing.Size(298, 26);
+            this.issueARequestForProposalToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
             this.issueARequestForProposalToolStripMenuItem.Text = "Issue a Request for Proposal";
             // 
             // templateToolStripMenuItem15
             // 
             this.templateToolStripMenuItem15.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem15.Name = "templateToolStripMenuItem15";
-            this.templateToolStripMenuItem15.Size = new System.Drawing.Size(224, 26);
+            this.templateToolStripMenuItem15.Size = new System.Drawing.Size(125, 22);
             this.templateToolStripMenuItem15.Text = "Template ";
             this.templateToolStripMenuItem15.Click += new System.EventHandler(this.templateToolStripMenuItem15_Click);
             // 
@@ -735,7 +737,7 @@
             // 
             this.exampleToolStripMenuItem17.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem17.Name = "exampleToolStripMenuItem17";
-            this.exampleToolStripMenuItem17.Size = new System.Drawing.Size(158, 26);
+            this.exampleToolStripMenuItem17.Size = new System.Drawing.Size(125, 22);
             this.exampleToolStripMenuItem17.Text = "Example";
             // 
             // performPhaseReviewToolStripMenuItem
@@ -746,14 +748,14 @@
             this.exampleToolStripMenuItem19});
             this.performPhaseReviewToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.performPhaseReviewToolStripMenuItem.Name = "performPhaseReviewToolStripMenuItem";
-            this.performPhaseReviewToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.performPhaseReviewToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
             this.performPhaseReviewToolStripMenuItem.Text = "Planning Phase Review ";
             // 
             // reviewFormToolStripMenuItem1
             // 
             this.reviewFormToolStripMenuItem1.BackColor = System.Drawing.Color.Gainsboro;
             this.reviewFormToolStripMenuItem1.Name = "reviewFormToolStripMenuItem1";
-            this.reviewFormToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.reviewFormToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
             this.reviewFormToolStripMenuItem1.Text = "Review Form";
             this.reviewFormToolStripMenuItem1.Click += new System.EventHandler(this.reviewFormToolStripMenuItem1_Click);
             // 
@@ -761,7 +763,7 @@
             // 
             this.exampleToolStripMenuItem19.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem19.Name = "exampleToolStripMenuItem19";
-            this.exampleToolStripMenuItem19.Size = new System.Drawing.Size(177, 26);
+            this.exampleToolStripMenuItem19.Size = new System.Drawing.Size(142, 22);
             this.exampleToolStripMenuItem19.Text = "Example";
             // 
             // projectExecutionToolStripMenuItem
@@ -780,7 +782,7 @@
             this.performCommunicationsManagementToolStripMenuItem,
             this.executionPhaseReviewToolStripMenuItem});
             this.projectExecutionToolStripMenuItem.Name = "projectExecutionToolStripMenuItem";
-            this.projectExecutionToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
+            this.projectExecutionToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
             this.projectExecutionToolStripMenuItem.Text = "Project Execution";
             // 
             // buildDeliverablesToolStripMenuItem
@@ -790,13 +792,13 @@
             this.guideToolStripMenuItem});
             this.buildDeliverablesToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.buildDeliverablesToolStripMenuItem.Name = "buildDeliverablesToolStripMenuItem";
-            this.buildDeliverablesToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.buildDeliverablesToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
             this.buildDeliverablesToolStripMenuItem.Text = "Build Deliverables ";
             // 
             // guideToolStripMenuItem
             // 
             this.guideToolStripMenuItem.Name = "guideToolStripMenuItem";
-            this.guideToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
+            this.guideToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.guideToolStripMenuItem.Text = "Guide";
             // 
             // monitorControlToolStripMenuItem
@@ -806,13 +808,13 @@
             this.guideToolStripMenuItem1});
             this.monitorControlToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.monitorControlToolStripMenuItem.Name = "monitorControlToolStripMenuItem";
-            this.monitorControlToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.monitorControlToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
             this.monitorControlToolStripMenuItem.Text = "Monitor and Control";
             // 
             // guideToolStripMenuItem1
             // 
             this.guideToolStripMenuItem1.Name = "guideToolStripMenuItem1";
-            this.guideToolStripMenuItem1.Size = new System.Drawing.Size(131, 26);
+            this.guideToolStripMenuItem1.Size = new System.Drawing.Size(105, 22);
             this.guideToolStripMenuItem1.Text = "Guide";
             // 
             // peformTimeManagementToolStripMenuItem
@@ -825,33 +827,33 @@
             this.exampleToolStripMenuItem20});
             this.peformTimeManagementToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.peformTimeManagementToolStripMenuItem.Name = "peformTimeManagementToolStripMenuItem";
-            this.peformTimeManagementToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.peformTimeManagementToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
             this.peformTimeManagementToolStripMenuItem.Text = "Perform Time Management";
             // 
             // timeManagementProcessToolStripMenuItem
             // 
             this.timeManagementProcessToolStripMenuItem.Name = "timeManagementProcessToolStripMenuItem";
-            this.timeManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(270, 26);
+            this.timeManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.timeManagementProcessToolStripMenuItem.Text = "Time Management Process";
             this.timeManagementProcessToolStripMenuItem.Click += new System.EventHandler(this.timeManagementProcessToolStripMenuItem_Click);
             // 
             // timesheetToolStripMenuItem
             // 
             this.timesheetToolStripMenuItem.Name = "timesheetToolStripMenuItem";
-            this.timesheetToolStripMenuItem.Size = new System.Drawing.Size(270, 26);
+            this.timesheetToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.timesheetToolStripMenuItem.Text = "Timesheet";
             this.timesheetToolStripMenuItem.Click += new System.EventHandler(this.timesheetToolStripMenuItem_Click);
             // 
             // timesheetRegisterToolStripMenuItem
             // 
             this.timesheetRegisterToolStripMenuItem.Name = "timesheetRegisterToolStripMenuItem";
-            this.timesheetRegisterToolStripMenuItem.Size = new System.Drawing.Size(270, 26);
+            this.timesheetRegisterToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.timesheetRegisterToolStripMenuItem.Text = "Timesheet Register";
             // 
             // exampleToolStripMenuItem20
             // 
             this.exampleToolStripMenuItem20.Name = "exampleToolStripMenuItem20";
-            this.exampleToolStripMenuItem20.Size = new System.Drawing.Size(270, 26);
+            this.exampleToolStripMenuItem20.Size = new System.Drawing.Size(217, 22);
             this.exampleToolStripMenuItem20.Text = "Example";
             // 
             // peformCostManagementToolStripMenuItem
@@ -864,33 +866,33 @@
             this.exampleToolStripMenuItem21});
             this.peformCostManagementToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.peformCostManagementToolStripMenuItem.Name = "peformCostManagementToolStripMenuItem";
-            this.peformCostManagementToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.peformCostManagementToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
             this.peformCostManagementToolStripMenuItem.Text = "Perform Cost Management";
             // 
             // costManagementProcessToolStripMenuItem
             // 
             this.costManagementProcessToolStripMenuItem.Name = "costManagementProcessToolStripMenuItem";
-            this.costManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(266, 26);
+            this.costManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.costManagementProcessToolStripMenuItem.Text = "Cost Management Process";
             this.costManagementProcessToolStripMenuItem.Click += new System.EventHandler(this.costManagementProcessToolStripMenuItem_Click);
             // 
             // expenseFormToolStripMenuItem
             // 
             this.expenseFormToolStripMenuItem.Name = "expenseFormToolStripMenuItem";
-            this.expenseFormToolStripMenuItem.Size = new System.Drawing.Size(266, 26);
+            this.expenseFormToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.expenseFormToolStripMenuItem.Text = "Expense Form";
             this.expenseFormToolStripMenuItem.Click += new System.EventHandler(this.expenseFormToolStripMenuItem_Click);
             // 
             // expenseRegisterToolStripMenuItem
             // 
             this.expenseRegisterToolStripMenuItem.Name = "expenseRegisterToolStripMenuItem";
-            this.expenseRegisterToolStripMenuItem.Size = new System.Drawing.Size(266, 26);
+            this.expenseRegisterToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.expenseRegisterToolStripMenuItem.Text = "Expense Register";
             // 
             // exampleToolStripMenuItem21
             // 
             this.exampleToolStripMenuItem21.Name = "exampleToolStripMenuItem21";
-            this.exampleToolStripMenuItem21.Size = new System.Drawing.Size(266, 26);
+            this.exampleToolStripMenuItem21.Size = new System.Drawing.Size(215, 22);
             this.exampleToolStripMenuItem21.Text = "Example";
             // 
             // peformQualityManagementToolStripMenuItem
@@ -903,33 +905,33 @@
             this.exampleToolStripMenuItem22});
             this.peformQualityManagementToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.peformQualityManagementToolStripMenuItem.Name = "peformQualityManagementToolStripMenuItem";
-            this.peformQualityManagementToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.peformQualityManagementToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
             this.peformQualityManagementToolStripMenuItem.Text = "Perform Quality Management";
             // 
             // qualityManagementProcessToolStripMenuItem
             // 
             this.qualityManagementProcessToolStripMenuItem.Name = "qualityManagementProcessToolStripMenuItem";
-            this.qualityManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.qualityManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
             this.qualityManagementProcessToolStripMenuItem.Text = "Quality Management Process ";
             this.qualityManagementProcessToolStripMenuItem.Click += new System.EventHandler(this.qualityManagementProcessToolStripMenuItem_Click);
             // 
             // qaulityReviewFormToolStripMenuItem
             // 
             this.qaulityReviewFormToolStripMenuItem.Name = "qaulityReviewFormToolStripMenuItem";
-            this.qaulityReviewFormToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.qaulityReviewFormToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
             this.qaulityReviewFormToolStripMenuItem.Text = "Qaulity Review Form";
             this.qaulityReviewFormToolStripMenuItem.Click += new System.EventHandler(this.qaulityReviewFormToolStripMenuItem_Click);
             // 
             // qualityRegisterToolStripMenuItem
             // 
             this.qualityRegisterToolStripMenuItem.Name = "qualityRegisterToolStripMenuItem";
-            this.qualityRegisterToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
+            this.qualityRegisterToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
             this.qualityRegisterToolStripMenuItem.Text = "Quality Register ";
             // 
             // exampleToolStripMenuItem22
             // 
             this.exampleToolStripMenuItem22.Name = "exampleToolStripMenuItem22";
-            this.exampleToolStripMenuItem22.Size = new System.Drawing.Size(288, 26);
+            this.exampleToolStripMenuItem22.Size = new System.Drawing.Size(232, 22);
             this.exampleToolStripMenuItem22.Text = "Example";
             // 
             // perfromChangeManagementToolStripMenuItem
@@ -942,34 +944,34 @@
             this.exampleToolStripMenuItem23});
             this.perfromChangeManagementToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.perfromChangeManagementToolStripMenuItem.Name = "perfromChangeManagementToolStripMenuItem";
-            this.perfromChangeManagementToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.perfromChangeManagementToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
             this.perfromChangeManagementToolStripMenuItem.Text = "Perform Change Management";
             // 
             // changeManagementProcessToolStripMenuItem
             // 
             this.changeManagementProcessToolStripMenuItem.Name = "changeManagementProcessToolStripMenuItem";
-            this.changeManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(287, 26);
+            this.changeManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
             this.changeManagementProcessToolStripMenuItem.Text = "Change Management Process";
             this.changeManagementProcessToolStripMenuItem.Click += new System.EventHandler(this.changeManagementProcessToolStripMenuItem_Click);
             // 
             // changeRequestFormToolStripMenuItem
             // 
             this.changeRequestFormToolStripMenuItem.Name = "changeRequestFormToolStripMenuItem";
-            this.changeRequestFormToolStripMenuItem.Size = new System.Drawing.Size(287, 26);
+            this.changeRequestFormToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
             this.changeRequestFormToolStripMenuItem.Text = "Change Request Form";
             this.changeRequestFormToolStripMenuItem.Click += new System.EventHandler(this.changeRequestFormToolStripMenuItem_Click);
             // 
             // changeRegisterToolStripMenuItem
             // 
             this.changeRegisterToolStripMenuItem.Name = "changeRegisterToolStripMenuItem";
-            this.changeRegisterToolStripMenuItem.Size = new System.Drawing.Size(287, 26);
+            this.changeRegisterToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
             this.changeRegisterToolStripMenuItem.Text = "Change Register";
             this.changeRegisterToolStripMenuItem.Click += new System.EventHandler(this.changeRegisterToolStripMenuItem_Click);
             // 
             // exampleToolStripMenuItem23
             // 
             this.exampleToolStripMenuItem23.Name = "exampleToolStripMenuItem23";
-            this.exampleToolStripMenuItem23.Size = new System.Drawing.Size(287, 26);
+            this.exampleToolStripMenuItem23.Size = new System.Drawing.Size(232, 22);
             this.exampleToolStripMenuItem23.Text = "Example";
             // 
             // peformRiskManagementToolStripMenuItem
@@ -982,33 +984,33 @@
             this.exampleToolStripMenuItem24});
             this.peformRiskManagementToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.peformRiskManagementToolStripMenuItem.Name = "peformRiskManagementToolStripMenuItem";
-            this.peformRiskManagementToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.peformRiskManagementToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
             this.peformRiskManagementToolStripMenuItem.Text = "Perform Risk Management";
             // 
             // riskManagementProcessToolStripMenuItem
             // 
             this.riskManagementProcessToolStripMenuItem.Name = "riskManagementProcessToolStripMenuItem";
-            this.riskManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(263, 26);
+            this.riskManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.riskManagementProcessToolStripMenuItem.Text = "Risk Management Process";
             this.riskManagementProcessToolStripMenuItem.Click += new System.EventHandler(this.riskManagementProcessToolStripMenuItem_Click);
             // 
             // riskFormToolStripMenuItem
             // 
             this.riskFormToolStripMenuItem.Name = "riskFormToolStripMenuItem";
-            this.riskFormToolStripMenuItem.Size = new System.Drawing.Size(263, 26);
+            this.riskFormToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.riskFormToolStripMenuItem.Text = "Risk Form";
             this.riskFormToolStripMenuItem.Click += new System.EventHandler(this.riskFormToolStripMenuItem_Click);
             // 
             // riskRegisterToolStripMenuItem
             // 
             this.riskRegisterToolStripMenuItem.Name = "riskRegisterToolStripMenuItem";
-            this.riskRegisterToolStripMenuItem.Size = new System.Drawing.Size(263, 26);
+            this.riskRegisterToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.riskRegisterToolStripMenuItem.Text = "Risk Register ";
             // 
             // exampleToolStripMenuItem24
             // 
             this.exampleToolStripMenuItem24.Name = "exampleToolStripMenuItem24";
-            this.exampleToolStripMenuItem24.Size = new System.Drawing.Size(263, 26);
+            this.exampleToolStripMenuItem24.Size = new System.Drawing.Size(212, 22);
             this.exampleToolStripMenuItem24.Text = "Example";
             // 
             // peformIssueManagementToolStripMenuItem
@@ -1021,33 +1023,33 @@
             this.exampleToolStripMenuItem25});
             this.peformIssueManagementToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.peformIssueManagementToolStripMenuItem.Name = "peformIssueManagementToolStripMenuItem";
-            this.peformIssueManagementToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.peformIssueManagementToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
             this.peformIssueManagementToolStripMenuItem.Text = "Perform Issue Management";
             // 
             // issueManagementProcessToolStripMenuItem
             // 
             this.issueManagementProcessToolStripMenuItem.Name = "issueManagementProcessToolStripMenuItem";
-            this.issueManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(269, 26);
+            this.issueManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.issueManagementProcessToolStripMenuItem.Text = "Issue Management Process";
             this.issueManagementProcessToolStripMenuItem.Click += new System.EventHandler(this.issueManagementProcessToolStripMenuItem_Click);
             // 
             // issueFormToolStripMenuItem
             // 
             this.issueFormToolStripMenuItem.Name = "issueFormToolStripMenuItem";
-            this.issueFormToolStripMenuItem.Size = new System.Drawing.Size(269, 26);
+            this.issueFormToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.issueFormToolStripMenuItem.Text = "Issue Form";
             this.issueFormToolStripMenuItem.Click += new System.EventHandler(this.issueFormToolStripMenuItem_Click);
             // 
             // issueRegisterToolStripMenuItem
             // 
             this.issueRegisterToolStripMenuItem.Name = "issueRegisterToolStripMenuItem";
-            this.issueRegisterToolStripMenuItem.Size = new System.Drawing.Size(269, 26);
+            this.issueRegisterToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.issueRegisterToolStripMenuItem.Text = "Issue Register";
             // 
             // exampleToolStripMenuItem25
             // 
             this.exampleToolStripMenuItem25.Name = "exampleToolStripMenuItem25";
-            this.exampleToolStripMenuItem25.Size = new System.Drawing.Size(269, 26);
+            this.exampleToolStripMenuItem25.Size = new System.Drawing.Size(217, 22);
             this.exampleToolStripMenuItem25.Text = "Example";
             // 
             // peformProcurementManagementToolStripMenuItem
@@ -1060,33 +1062,33 @@
             this.exampleToolStripMenuItem26});
             this.peformProcurementManagementToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.peformProcurementManagementToolStripMenuItem.Name = "peformProcurementManagementToolStripMenuItem";
-            this.peformProcurementManagementToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.peformProcurementManagementToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
             this.peformProcurementManagementToolStripMenuItem.Text = "Perform Procurement Management";
             // 
             // procurementRegisterToolStripMenuItem
             // 
             this.procurementRegisterToolStripMenuItem.Name = "procurementRegisterToolStripMenuItem";
-            this.procurementRegisterToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
+            this.procurementRegisterToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.procurementRegisterToolStripMenuItem.Text = "Procurement Process";
             this.procurementRegisterToolStripMenuItem.Click += new System.EventHandler(this.procurementRegisterToolStripMenuItem_Click);
             // 
             // purchaseOrderFormToolStripMenuItem
             // 
             this.purchaseOrderFormToolStripMenuItem.Name = "purchaseOrderFormToolStripMenuItem";
-            this.purchaseOrderFormToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
+            this.purchaseOrderFormToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.purchaseOrderFormToolStripMenuItem.Text = "Purchase Order Form";
             this.purchaseOrderFormToolStripMenuItem.Click += new System.EventHandler(this.purchaseOrderFormToolStripMenuItem_Click);
             // 
             // procurementRegisterToolStripMenuItem1
             // 
             this.procurementRegisterToolStripMenuItem1.Name = "procurementRegisterToolStripMenuItem1";
-            this.procurementRegisterToolStripMenuItem1.Size = new System.Drawing.Size(234, 26);
+            this.procurementRegisterToolStripMenuItem1.Size = new System.Drawing.Size(188, 22);
             this.procurementRegisterToolStripMenuItem1.Text = "Procurement Register";
             // 
             // exampleToolStripMenuItem26
             // 
             this.exampleToolStripMenuItem26.Name = "exampleToolStripMenuItem26";
-            this.exampleToolStripMenuItem26.Size = new System.Drawing.Size(234, 26);
+            this.exampleToolStripMenuItem26.Size = new System.Drawing.Size(188, 22);
             this.exampleToolStripMenuItem26.Text = "Example";
             // 
             // performAcceptanceManagementToolStripMenuItem
@@ -1099,33 +1101,33 @@
             this.exampleToolStripMenuItem27});
             this.performAcceptanceManagementToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.performAcceptanceManagementToolStripMenuItem.Name = "performAcceptanceManagementToolStripMenuItem";
-            this.performAcceptanceManagementToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.performAcceptanceManagementToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
             this.performAcceptanceManagementToolStripMenuItem.Text = "Perform Acceptance Management";
             // 
             // acceptanceManagementProcessToolStripMenuItem
             // 
             this.acceptanceManagementProcessToolStripMenuItem.Name = "acceptanceManagementProcessToolStripMenuItem";
-            this.acceptanceManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(318, 26);
+            this.acceptanceManagementProcessToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
             this.acceptanceManagementProcessToolStripMenuItem.Text = "Acceptance Management Process ";
             this.acceptanceManagementProcessToolStripMenuItem.Click += new System.EventHandler(this.acceptanceManagementProcessToolStripMenuItem_Click);
             // 
             // acceptanceFormToolStripMenuItem
             // 
             this.acceptanceFormToolStripMenuItem.Name = "acceptanceFormToolStripMenuItem";
-            this.acceptanceFormToolStripMenuItem.Size = new System.Drawing.Size(318, 26);
+            this.acceptanceFormToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
             this.acceptanceFormToolStripMenuItem.Text = "Acceptance Form";
             this.acceptanceFormToolStripMenuItem.Click += new System.EventHandler(this.acceptanceFormToolStripMenuItem_Click);
             // 
             // acceptanceRegisterToolStripMenuItem
             // 
             this.acceptanceRegisterToolStripMenuItem.Name = "acceptanceRegisterToolStripMenuItem";
-            this.acceptanceRegisterToolStripMenuItem.Size = new System.Drawing.Size(318, 26);
+            this.acceptanceRegisterToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
             this.acceptanceRegisterToolStripMenuItem.Text = "Acceptance Register";
             // 
             // exampleToolStripMenuItem27
             // 
             this.exampleToolStripMenuItem27.Name = "exampleToolStripMenuItem27";
-            this.exampleToolStripMenuItem27.Size = new System.Drawing.Size(318, 26);
+            this.exampleToolStripMenuItem27.Size = new System.Drawing.Size(256, 22);
             this.exampleToolStripMenuItem27.Text = "Example";
             // 
             // performCommunicationsManagementToolStripMenuItem
@@ -1138,33 +1140,33 @@
             this.exampleToolStripMenuItem28});
             this.performCommunicationsManagementToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.performCommunicationsManagementToolStripMenuItem.Name = "performCommunicationsManagementToolStripMenuItem";
-            this.performCommunicationsManagementToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.performCommunicationsManagementToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
             this.performCommunicationsManagementToolStripMenuItem.Text = "Perform Communications Management";
             // 
             // communicationsManagementProcesssToolStripMenuItem
             // 
             this.communicationsManagementProcesssToolStripMenuItem.Name = "communicationsManagementProcesssToolStripMenuItem";
-            this.communicationsManagementProcesssToolStripMenuItem.Size = new System.Drawing.Size(354, 26);
+            this.communicationsManagementProcesssToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
             this.communicationsManagementProcesssToolStripMenuItem.Text = "Communications Management Processs";
             this.communicationsManagementProcesssToolStripMenuItem.Click += new System.EventHandler(this.communicationsManagementProcesssToolStripMenuItem_Click);
             // 
             // projectStatusReportToolStripMenuItem
             // 
             this.projectStatusReportToolStripMenuItem.Name = "projectStatusReportToolStripMenuItem";
-            this.projectStatusReportToolStripMenuItem.Size = new System.Drawing.Size(354, 26);
+            this.projectStatusReportToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
             this.projectStatusReportToolStripMenuItem.Text = "Project Status Report ";
             this.projectStatusReportToolStripMenuItem.Click += new System.EventHandler(this.projectStatusReportToolStripMenuItem_Click);
             // 
             // communicationsRegisterToolStripMenuItem
             // 
             this.communicationsRegisterToolStripMenuItem.Name = "communicationsRegisterToolStripMenuItem";
-            this.communicationsRegisterToolStripMenuItem.Size = new System.Drawing.Size(354, 26);
+            this.communicationsRegisterToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
             this.communicationsRegisterToolStripMenuItem.Text = "Communications Register";
             // 
             // exampleToolStripMenuItem28
             // 
             this.exampleToolStripMenuItem28.Name = "exampleToolStripMenuItem28";
-            this.exampleToolStripMenuItem28.Size = new System.Drawing.Size(354, 26);
+            this.exampleToolStripMenuItem28.Size = new System.Drawing.Size(288, 22);
             this.exampleToolStripMenuItem28.Text = "Example";
             // 
             // executionPhaseReviewToolStripMenuItem
@@ -1173,20 +1175,20 @@
             this.reviewFormToolStripMenuItem2,
             this.exampleToolStripMenuItem29});
             this.executionPhaseReviewToolStripMenuItem.Name = "executionPhaseReviewToolStripMenuItem";
-            this.executionPhaseReviewToolStripMenuItem.Size = new System.Drawing.Size(351, 26);
+            this.executionPhaseReviewToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
             this.executionPhaseReviewToolStripMenuItem.Text = "Execution Phase Review";
             // 
             // reviewFormToolStripMenuItem2
             // 
             this.reviewFormToolStripMenuItem2.Name = "reviewFormToolStripMenuItem2";
-            this.reviewFormToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
+            this.reviewFormToolStripMenuItem2.Size = new System.Drawing.Size(142, 22);
             this.reviewFormToolStripMenuItem2.Text = "Review Form";
             this.reviewFormToolStripMenuItem2.Click += new System.EventHandler(this.reviewFormToolStripMenuItem2_Click);
             // 
             // exampleToolStripMenuItem29
             // 
             this.exampleToolStripMenuItem29.Name = "exampleToolStripMenuItem29";
-            this.exampleToolStripMenuItem29.Size = new System.Drawing.Size(177, 26);
+            this.exampleToolStripMenuItem29.Size = new System.Drawing.Size(142, 22);
             this.exampleToolStripMenuItem29.Text = "Example";
             // 
             // projectToolStripMenuItem
@@ -1195,7 +1197,7 @@
             this.performProjectClosureToolStripMenuItem,
             this.reviewProjectCompletionToolStripMenuItem});
             this.projectToolStripMenuItem.Name = "projectToolStripMenuItem";
-            this.projectToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
+            this.projectToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
             this.projectToolStripMenuItem.Text = "Project Closure";
             // 
             // performProjectClosureToolStripMenuItem
@@ -1206,20 +1208,20 @@
             this.exampleToolStripMenuItem30});
             this.performProjectClosureToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.performProjectClosureToolStripMenuItem.Name = "performProjectClosureToolStripMenuItem";
-            this.performProjectClosureToolStripMenuItem.Size = new System.Drawing.Size(271, 26);
+            this.performProjectClosureToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.performProjectClosureToolStripMenuItem.Text = "Perform Project Closure";
             // 
             // templateToolStripMenuItem17
             // 
             this.templateToolStripMenuItem17.Name = "templateToolStripMenuItem17";
-            this.templateToolStripMenuItem17.Size = new System.Drawing.Size(224, 26);
+            this.templateToolStripMenuItem17.Size = new System.Drawing.Size(122, 22);
             this.templateToolStripMenuItem17.Text = "Template";
             this.templateToolStripMenuItem17.Click += new System.EventHandler(this.templateToolStripMenuItem17_Click);
             // 
             // exampleToolStripMenuItem30
             // 
             this.exampleToolStripMenuItem30.Name = "exampleToolStripMenuItem30";
-            this.exampleToolStripMenuItem30.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem30.Size = new System.Drawing.Size(122, 22);
             this.exampleToolStripMenuItem30.Text = "Example";
             // 
             // reviewProjectCompletionToolStripMenuItem
@@ -1230,40 +1232,40 @@
             this.exampleToolStripMenuItem31});
             this.reviewProjectCompletionToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.reviewProjectCompletionToolStripMenuItem.Name = "reviewProjectCompletionToolStripMenuItem";
-            this.reviewProjectCompletionToolStripMenuItem.Size = new System.Drawing.Size(271, 26);
+            this.reviewProjectCompletionToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.reviewProjectCompletionToolStripMenuItem.Text = "Review Project Completion";
             // 
             // templateToolStripMenuItem18
             // 
             this.templateToolStripMenuItem18.Name = "templateToolStripMenuItem18";
-            this.templateToolStripMenuItem18.Size = new System.Drawing.Size(224, 26);
+            this.templateToolStripMenuItem18.Size = new System.Drawing.Size(122, 22);
             this.templateToolStripMenuItem18.Text = "Template";
             this.templateToolStripMenuItem18.Click += new System.EventHandler(this.templateToolStripMenuItem18_Click);
             // 
             // exampleToolStripMenuItem31
             // 
             this.exampleToolStripMenuItem31.Name = "exampleToolStripMenuItem31";
-            this.exampleToolStripMenuItem31.Size = new System.Drawing.Size(154, 26);
+            this.exampleToolStripMenuItem31.Size = new System.Drawing.Size(122, 22);
             this.exampleToolStripMenuItem31.Text = "Example";
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(143)))), ((int)(((byte)(149)))));
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(848, 489);
+            this.ClientSize = new System.Drawing.Size(636, 397);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainForm";
             this.Text = "Main Menu";
             this.Load += new System.EventHandler(this.MainForm_Load);

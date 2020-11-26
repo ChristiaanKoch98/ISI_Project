@@ -384,5 +384,17 @@ namespace ProjectManagementToolkit
             form.Show();
             form.MdiParent = this;
         }
+
+        private void createAProjectPlanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void issueAStatementOfWorkToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StatementOfWorkDocumentForm form = new StatementOfWorkDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
     }
 }
