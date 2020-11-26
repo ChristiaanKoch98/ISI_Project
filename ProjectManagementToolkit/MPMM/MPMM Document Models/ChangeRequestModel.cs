@@ -40,8 +40,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string ProjectImpact { get; set; }
 
 
-        public string SupportingDocumentation { get; set; }
+        public List<SupportingDocument> SupportingDocuments { get; set; }
 
+        public class SupportingDocument
+        {
+            public string DocumentName { get; set; }
+            public string DocumentDescription { get; set; }
+        }
 
         public string SubmittedName { get; set; }
         public string SubmittedRole { get; set; }

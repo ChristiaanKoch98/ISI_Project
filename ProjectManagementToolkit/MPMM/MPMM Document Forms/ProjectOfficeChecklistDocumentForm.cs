@@ -221,156 +221,161 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 //Premises
                 checkBoxProjectOfficeRequirements.Checked = currentProjectOfficeChecklistModel.PremisesProjectOfficeDocumented;
-                checkBoxProjectOfficePremisesProcured.Checked = currentProjectOfficeChecklistModel.PremisesProjectOfficeProcured ;
-                checkBoxPremisesPracticalLocation.Checked = currentProjectOfficeChecklistModel.PremisesPracticalLocation ;
-                checkBoxPremisesMeetRequirements.Checked = currentProjectOfficeChecklistModel.PremisesRequiredDocumted ;
-                checkBoxFormalContract.Checked = currentProjectOfficeChecklistModel.PremisesFormalContract ;
-                checkBoxPremisesProvideSufficient.Checked = currentProjectOfficeChecklistModel.PremisesSufficientSpace ;
-                checkBoxPremisesContinueAvaliable.Checked = currentProjectOfficeChecklistModel.PremisesContinueAvailible ;
-                checkBoxAdditionalFitOut.Checked = currentProjectOfficeChecklistModel.PremisesAdditionalFitOut ;
-                checkBoxOnSiteFacilities.Checked = currentProjectOfficeChecklistModel.PremisesOnSiteFacilities ;
+                checkBoxProjectOfficePremisesProcured.Checked = currentProjectOfficeChecklistModel.PremisesProjectOfficeProcured;
+                checkBoxPremisesPracticalLocation.Checked = currentProjectOfficeChecklistModel.PremisesPracticalLocation;
+                checkBoxPremisesMeetRequirements.Checked = currentProjectOfficeChecklistModel.PremisesRequiredDocumted;
+                checkBoxFormalContract.Checked = currentProjectOfficeChecklistModel.PremisesFormalContract;
+                checkBoxPremisesProvideSufficient.Checked = currentProjectOfficeChecklistModel.PremisesSufficientSpace;
+                checkBoxPremisesContinueAvaliable.Checked = currentProjectOfficeChecklistModel.PremisesContinueAvailible;
+                checkBoxAdditionalFitOut.Checked = currentProjectOfficeChecklistModel.PremisesAdditionalFitOut;
+                checkBoxOnSiteFacilities.Checked = currentProjectOfficeChecklistModel.PremisesOnSiteFacilities;
 
                 //Equipment
-                checkBoxProjectTeamRequiredEquipment.Checked = currentProjectOfficeChecklistModel.EquipmentRequiredOffice ;
-                checkBoxMaintanenceContractsInPlace.Checked = currentProjectOfficeChecklistModel.EquipmentMaintananceCOntracts ;
-                checkBoxSpareEquipmentAvaliable.Checked = currentProjectOfficeChecklistModel.EquipmentSpareEquipment ;
-                checkBoxOfficeEquipmentFunctioning.Checked = currentProjectOfficeChecklistModel.EquipmentOfficeFunctioning ;
-                checkBoxSufficientCommunicationsTechnologies.Checked = currentProjectOfficeChecklistModel.EquipmentSufficientCommunication ;
-                checkBoxVideoConferencingAvaliable.Checked = currentProjectOfficeChecklistModel.EquipmentVideoCOnferensing ;
-                checkBoxEquipmentFunctioningAsRequired.Checked = currentProjectOfficeChecklistModel.EquipmentFunctioningAsRequired ;
+                checkBoxProjectTeamRequiredEquipment.Checked = currentProjectOfficeChecklistModel.EquipmentRequiredOffice;
+                checkBoxMaintanenceContractsInPlace.Checked = currentProjectOfficeChecklistModel.EquipmentMaintananceCOntracts;
+                checkBoxSpareEquipmentAvaliable.Checked = currentProjectOfficeChecklistModel.EquipmentSpareEquipment;
+                checkBoxOfficeEquipmentFunctioning.Checked = currentProjectOfficeChecklistModel.EquipmentOfficeFunctioning;
+                checkBoxSufficientCommunicationsTechnologies.Checked = currentProjectOfficeChecklistModel.EquipmentSufficientCommunication;
+                checkBoxVideoConferencingAvaliable.Checked = currentProjectOfficeChecklistModel.EquipmentVideoCOnferensing;
+                checkBoxEquipmentFunctioningAsRequired.Checked = currentProjectOfficeChecklistModel.EquipmentFunctioningAsRequired;
 
                 //Roles
-                checkBoxProjectSponser.Checked = currentProjectOfficeChecklistModel.RolesAppointedProjectSponsor ;
-                checkBoxProjectManager.Checked = currentProjectOfficeChecklistModel.RolesAppointedProjectManager ;
-                checkBoxProjectOfficeManager.Checked = currentProjectOfficeChecklistModel.RolesAppointedProjectOfficeManager ;
-                checkBoxProcurementManager.Checked = currentProjectOfficeChecklistModel.RolesAppointedProcurementManager ;
-                checkBoxCommManager.Checked = currentProjectOfficeChecklistModel.RolesAppointedCommunicationsManager ;
-                checkBoxQualityManager.Checked = currentProjectOfficeChecklistModel.RolesAppointedQualityManager ;
-                checkBoxRiskManager.Checked = currentProjectOfficeChecklistModel.RolesAppointedRiskManager ;
-                checkBoxTeamLeader.Checked = currentProjectOfficeChecklistModel.RolesAppointedTeamLeader ;
-                checkBoxJobDescriptionDocumented.Checked = currentProjectOfficeChecklistModel.RolesJobDescriptionsDocumented ;
-                checkBoxJobDescriptionDescribeResponsibilities.Checked = currentProjectOfficeChecklistModel.RolesJobDescriptionsResponsibilities ;
-                checkBoxSuitablySkilledPeopleAppointed.Checked = currentProjectOfficeChecklistModel.RolesSkilledPeopleAppointed ;
+                checkBoxProjectSponser.Checked = currentProjectOfficeChecklistModel.RolesAppointedProjectSponsor;
+                checkBoxProjectManager.Checked = currentProjectOfficeChecklistModel.RolesAppointedProjectManager;
+                checkBoxProjectOfficeManager.Checked = currentProjectOfficeChecklistModel.RolesAppointedProjectOfficeManager;
+                checkBoxProcurementManager.Checked = currentProjectOfficeChecklistModel.RolesAppointedProcurementManager;
+                checkBoxCommManager.Checked = currentProjectOfficeChecklistModel.RolesAppointedCommunicationsManager;
+                checkBoxQualityManager.Checked = currentProjectOfficeChecklistModel.RolesAppointedQualityManager;
+                checkBoxRiskManager.Checked = currentProjectOfficeChecklistModel.RolesAppointedRiskManager;
+                checkBoxTeamLeader.Checked = currentProjectOfficeChecklistModel.RolesAppointedTeamLeader;
+                checkBoxJobDescriptionDocumented.Checked = currentProjectOfficeChecklistModel.RolesJobDescriptionsDocumented;
+                checkBoxJobDescriptionDescribeResponsibilities.Checked = currentProjectOfficeChecklistModel.RolesJobDescriptionsResponsibilities;
+                checkBoxSuitablySkilledPeopleAppointed.Checked = currentProjectOfficeChecklistModel.RolesSkilledPeopleAppointed;
 
                 //Standards and Processes
-                checkBoxISO.Checked = currentProjectOfficeChecklistModel.StandardsIndustyStandards ;
-                checkBoxHealthSafetyStandard.Checked = currentProjectOfficeChecklistModel.StandardsHealthAndSafety ;
-                checkBoxProjectPlanning.Checked = currentProjectOfficeChecklistModel.StandardsProjectPlanning ;
-                checkBoxPMBOK.Checked = currentProjectOfficeChecklistModel.StandardsPMI ;
-                checkBoxSuitableProjectManagementMethodology.Checked = currentProjectOfficeChecklistModel.StandardSuitableProjManMethod ;
+                checkBoxISO.Checked = currentProjectOfficeChecklistModel.StandardsIndustyStandards;
+                checkBoxHealthSafetyStandard.Checked = currentProjectOfficeChecklistModel.StandardsHealthAndSafety;
+                checkBoxProjectPlanning.Checked = currentProjectOfficeChecklistModel.StandardsProjectPlanning;
+                checkBoxPMBOK.Checked = currentProjectOfficeChecklistModel.StandardsPMI;
+                checkBoxSuitableProjectManagementMethodology.Checked = currentProjectOfficeChecklistModel.StandardSuitableProjManMethod;
 
-                checkBoxTimeMP.Checked = currentProjectOfficeChecklistModel.ProcessesTimeManagement ;
-                checkBoxCostMP.Checked = currentProjectOfficeChecklistModel.ProcessesCostManagement ;
-                checkBoxQualityMP.Checked = currentProjectOfficeChecklistModel.ProcessesQualityManagement ;
-                checkBoxChangeMP.Checked = currentProjectOfficeChecklistModel.ProcessesChangeManagement ;
-                checkBoxRiskMP.Checked = currentProjectOfficeChecklistModel.ProcessesRiskManagement ;
-                checkBoxIssueMP.Checked = currentProjectOfficeChecklistModel.ProcessesIssueManagement ;
-                checkBoxProcurementMP.Checked = currentProjectOfficeChecklistModel.ProcessesProcurementManagement ;
-                checkBoxAcceptanceMP.Checked = currentProjectOfficeChecklistModel.ProcessesAcceptanceManagement ;
-                checkBoxCommunicationsMP.Checked = currentProjectOfficeChecklistModel.ProcessesCommunicationsManagement ;
+                checkBoxTimeMP.Checked = currentProjectOfficeChecklistModel.ProcessesTimeManagement;
+                checkBoxCostMP.Checked = currentProjectOfficeChecklistModel.ProcessesCostManagement;
+                checkBoxQualityMP.Checked = currentProjectOfficeChecklistModel.ProcessesQualityManagement;
+                checkBoxChangeMP.Checked = currentProjectOfficeChecklistModel.ProcessesChangeManagement;
+                checkBoxRiskMP.Checked = currentProjectOfficeChecklistModel.ProcessesRiskManagement;
+                checkBoxIssueMP.Checked = currentProjectOfficeChecklistModel.ProcessesIssueManagement;
+                checkBoxProcurementMP.Checked = currentProjectOfficeChecklistModel.ProcessesProcurementManagement;
+                checkBoxAcceptanceMP.Checked = currentProjectOfficeChecklistModel.ProcessesAcceptanceManagement;
+                checkBoxCommunicationsMP.Checked = currentProjectOfficeChecklistModel.ProcessesCommunicationsManagement;
 
                 //Templates
-                checkBoxBusinessCase.Checked = currentProjectOfficeChecklistModel.TemplatesInitiationBusinessCase ;
-                checkBoxFeasibilityStudy.Checked = currentProjectOfficeChecklistModel.TemplatesInitiationFeasibilityStudy ;
-                checkBoxTermsofReference.Checked = currentProjectOfficeChecklistModel.TemplatesInitiationTermsOfReference ;
-                checkBoxJobDescription.Checked = currentProjectOfficeChecklistModel.TemplatesInitiationJobDescription ;
-                checkBoxStageGateReviewForm.Checked = currentProjectOfficeChecklistModel.TemplatesInitiationStageGate ;
+                checkBoxBusinessCase.Checked = currentProjectOfficeChecklistModel.TemplatesInitiationBusinessCase;
+                checkBoxFeasibilityStudy.Checked = currentProjectOfficeChecklistModel.TemplatesInitiationFeasibilityStudy;
+                checkBoxTermsofReference.Checked = currentProjectOfficeChecklistModel.TemplatesInitiationTermsOfReference;
+                checkBoxJobDescription.Checked = currentProjectOfficeChecklistModel.TemplatesInitiationJobDescription;
+                checkBoxStageGateReviewForm.Checked = currentProjectOfficeChecklistModel.TemplatesInitiationStageGate;
 
-                checkBoxProjectPlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningProjectPlan ;
-                checkBoxResourcePlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningResourcePlan ;
-                checkBoxFinancialPlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningFinancialPlan ;
-                checkBoxQualityPlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningQualityPlan ;
-                checkBoxTemplatesRiskPlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningRiskPlan ;
-                checkBoxAcceptancePlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningAcceptancePlan ;
-                checkBoxCommunicationsPlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningCommunicationsPlan ;
-                checkBoxProcurementPlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningProcurementPlan ;
-                checkBoxSupplierContract.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningSupplierPlan ;
-                checkBoxTenderRegister.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningTenderPlan ;
+                checkBoxProjectPlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningProjectPlan;
+                checkBoxResourcePlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningResourcePlan;
+                checkBoxFinancialPlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningFinancialPlan;
+                checkBoxQualityPlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningQualityPlan;
+                checkBoxTemplatesRiskPlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningRiskPlan;
+                checkBoxAcceptancePlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningAcceptancePlan;
+                checkBoxCommunicationsPlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningCommunicationsPlan;
+                checkBoxProcurementPlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningProcurementPlan;
+                checkBoxSupplierContract.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningSupplierPlan;
+                checkBoxTenderRegister.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningTenderPlan;
 
-                checkBoxTFTR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionTimesheet ;
-                checkBoxEFER.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionExpense ;
-                checkBoxQFDR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionQuality ;
-                checkBoxCFCR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionChange ;
-                checkBoxRFRR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionRisk ;
-                checkBoxIFIR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionIssue ;
-                checkBoxPOF.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionPurchase ;
-                checkBoxPR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionProcurement ;
-                checkBoxPSR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionProject ;
-                checkBoxCR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionCommunication ;
-                checkBoxAF.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionAcceptanceForm ;
-                checkBoxAR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionAcceptanceRegister ;
+                checkBoxTFTR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionTimesheet;
+                checkBoxEFER.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionExpense;
+                checkBoxQFDR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionQuality;
+                checkBoxCFCR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionChange;
+                checkBoxRFRR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionRisk;
+                checkBoxIFIR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionIssue;
+                checkBoxPOF.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionPurchase;
+                checkBoxPR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionProcurement;
+                checkBoxPSR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionProject;
+                checkBoxCR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionCommunication;
+                checkBoxAF.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionAcceptanceForm;
+                checkBoxAR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionAcceptanceRegister;
 
-                checkBoxProjectClosureReport.Checked = currentProjectOfficeChecklistModel.TemplatesClosureProjectReport ;
-                checkBoxPostImplementationReview.Checked = currentProjectOfficeChecklistModel.TemplatesClosurePostReview ;
+                checkBoxProjectClosureReport.Checked = currentProjectOfficeChecklistModel.TemplatesClosureProjectReport;
+                checkBoxPostImplementationReview.Checked = currentProjectOfficeChecklistModel.TemplatesClosurePostReview;
 
                 //Services(Time, Cost, Quality,Change, Risk,Issue)
-                checkBoxTM1.Checked = currentProjectOfficeChecklistModel.ServicesTimeMonitoring ;
-                checkBoxTM2.Checked = currentProjectOfficeChecklistModel.ServicesTimeProjectPlan ;
-                checkBoxTM3.Checked = currentProjectOfficeChecklistModel.ServicesTimeTimesheet ;
+                checkBoxTM1.Checked = currentProjectOfficeChecklistModel.ServicesTimeMonitoring;
+                checkBoxTM2.Checked = currentProjectOfficeChecklistModel.ServicesTimeProjectPlan;
+                checkBoxTM3.Checked = currentProjectOfficeChecklistModel.ServicesTimeTimesheet;
 
-                checkBoxCM1.Checked = currentProjectOfficeChecklistModel.ServicesCostMonitoring ;
-                checkBoxCM2.Checked = currentProjectOfficeChecklistModel.ServicesCostProjectPlan ;
-                checkBoxCM3.Checked = currentProjectOfficeChecklistModel.ServicesCostExpense ;
+                checkBoxCM1.Checked = currentProjectOfficeChecklistModel.ServicesCostMonitoring;
+                checkBoxCM2.Checked = currentProjectOfficeChecklistModel.ServicesCostProjectPlan;
+                checkBoxCM3.Checked = currentProjectOfficeChecklistModel.ServicesCostExpense;
 
-                checkBoxQM1.Checked = currentProjectOfficeChecklistModel.ServicesQualityAssurance ;
-                checkBoxQM2.Checked = currentProjectOfficeChecklistModel.ServicesQualityControl ;
-                checkBoxQM3.Checked = currentProjectOfficeChecklistModel.ServicesQualityDeliverables ;
+                checkBoxQM1.Checked = currentProjectOfficeChecklistModel.ServicesQualityAssurance;
+                checkBoxQM2.Checked = currentProjectOfficeChecklistModel.ServicesQualityControl;
+                checkBoxQM3.Checked = currentProjectOfficeChecklistModel.ServicesQualityDeliverables;
 
-                checkBoxChangeM1.Checked = currentProjectOfficeChecklistModel.ServicesChangeRequests ;
-                checkBoxChangeM2.Checked = currentProjectOfficeChecklistModel.ServicesChangeSheduling ;
-                checkBoxChangeM3.Checked = currentProjectOfficeChecklistModel.ServicesChangeKeeping ;
+                checkBoxChangeM1.Checked = currentProjectOfficeChecklistModel.ServicesChangeRequests;
+                checkBoxChangeM2.Checked = currentProjectOfficeChecklistModel.ServicesChangeSheduling;
+                checkBoxChangeM3.Checked = currentProjectOfficeChecklistModel.ServicesChangeKeeping;
 
-                checkBoxRM1.Checked = currentProjectOfficeChecklistModel.ServicesRiskForms ;
-                checkBoxRM2.Checked = currentProjectOfficeChecklistModel.ServicesRiskSheduling ;
-                checkBoxRM3.Checked = currentProjectOfficeChecklistModel.ServicesRiskKeeping ;
+                checkBoxRM1.Checked = currentProjectOfficeChecklistModel.ServicesRiskForms;
+                checkBoxRM2.Checked = currentProjectOfficeChecklistModel.ServicesRiskSheduling;
+                checkBoxRM3.Checked = currentProjectOfficeChecklistModel.ServicesRiskKeeping;
 
-                checkBoxIM1.Checked = currentProjectOfficeChecklistModel.ServicesIssueForms ;
-                checkBoxIM2.Checked = currentProjectOfficeChecklistModel.ServicesIssueScheduling ;
-                checkBoxIM3.Checked = currentProjectOfficeChecklistModel.ServicesIssueKeeping ;
+                checkBoxIM1.Checked = currentProjectOfficeChecklistModel.ServicesIssueForms;
+                checkBoxIM2.Checked = currentProjectOfficeChecklistModel.ServicesIssueScheduling;
+                checkBoxIM3.Checked = currentProjectOfficeChecklistModel.ServicesIssueKeeping;
 
                 //Services(Procuremenm, Acceptance, communication)
-                checkBoxPM1.Checked = currentProjectOfficeChecklistModel.ServicesProcurementPurchase ;
-                checkBoxPM2.Checked = currentProjectOfficeChecklistModel.ServicesProcurementGoodsAndServices ;
-                checkBoxPM3.Checked = currentProjectOfficeChecklistModel.ServicesProcurementKeeping ;
-                checkBoxPM4.Checked = currentProjectOfficeChecklistModel.ServicesProcurementPayement ;
-                checkBoxPM5.Checked = currentProjectOfficeChecklistModel.ServicesProcurementManaging ;
+                checkBoxPM1.Checked = currentProjectOfficeChecklistModel.ServicesProcurementPurchase;
+                checkBoxPM2.Checked = currentProjectOfficeChecklistModel.ServicesProcurementGoodsAndServices;
+                checkBoxPM3.Checked = currentProjectOfficeChecklistModel.ServicesProcurementKeeping;
+                checkBoxPM4.Checked = currentProjectOfficeChecklistModel.ServicesProcurementPayement;
+                checkBoxPM5.Checked = currentProjectOfficeChecklistModel.ServicesProcurementManaging;
 
-                checkBoxAM1.Checked = currentProjectOfficeChecklistModel.ServicesAcceptanceInitiating ;
-                checkBoxAM2.Checked = currentProjectOfficeChecklistModel.ServicesAcceptanceDocumenting ;
-                checkBoxAM3.Checked = currentProjectOfficeChecklistModel.ServicesAcceptanceGainingFinalAcceptance ;
-                checkBoxAM4.Checked = currentProjectOfficeChecklistModel.ServicesAcceptanceKeeping ;
+                checkBoxAM1.Checked = currentProjectOfficeChecklistModel.ServicesAcceptanceInitiating;
+                checkBoxAM2.Checked = currentProjectOfficeChecklistModel.ServicesAcceptanceDocumenting;
+                checkBoxAM3.Checked = currentProjectOfficeChecklistModel.ServicesAcceptanceGainingFinalAcceptance;
+                checkBoxAM4.Checked = currentProjectOfficeChecklistModel.ServicesAcceptanceKeeping;
 
-                checkBoxCommsM1.Checked = currentProjectOfficeChecklistModel.ServicesCommunicationsUndertaking ;
-                checkBoxCommsM2.Checked = currentProjectOfficeChecklistModel.ServicesCommunicationsCreating ;
-                checkBoxCommsM3.Checked = currentProjectOfficeChecklistModel.ServicesCommunicationsDistributing ;
-                checkBoxCommsM4.Checked = currentProjectOfficeChecklistModel.ServicesCommunicationsKeeping ;
+                checkBoxCommsM1.Checked = currentProjectOfficeChecklistModel.ServicesCommunicationsUndertaking;
+                checkBoxCommsM2.Checked = currentProjectOfficeChecklistModel.ServicesCommunicationsCreating;
+                checkBoxCommsM3.Checked = currentProjectOfficeChecklistModel.ServicesCommunicationsDistributing;
+                checkBoxCommsM4.Checked = currentProjectOfficeChecklistModel.ServicesCommunicationsKeeping;
 
                 //Service(StageGAte, Auditing, Supporting, Providing)
-                checkBoxSGR1.Checked = currentProjectOfficeChecklistModel.ServicesStageGateIdentifying ;
-                checkBoxSGR2.Checked = currentProjectOfficeChecklistModel.ServicesStageGateOrganizing ;
+                checkBoxSGR1.Checked = currentProjectOfficeChecklistModel.ServicesStageGateIdentifying;
+                checkBoxSGR2.Checked = currentProjectOfficeChecklistModel.ServicesStageGateOrganizing;
 
-                checkBoxAandC1.Checked = currentProjectOfficeChecklistModel.ServicesAuditingEnsuringConforms ;
-                checkBoxAandC2.Checked = currentProjectOfficeChecklistModel.ServicesAuditingInforming ;
+                checkBoxAandC1.Checked = currentProjectOfficeChecklistModel.ServicesAuditingEnsuringConforms;
+                checkBoxAandC2.Checked = currentProjectOfficeChecklistModel.ServicesAuditingInforming;
 
-                checkBoxSS1.Checked = currentProjectOfficeChecklistModel.ServicesSupportingAssisting ;
-                checkBoxSS2.Checked = currentProjectOfficeChecklistModel.ServicesSupportingAdvising ;
-                checkBoxSS3.Checked = currentProjectOfficeChecklistModel.ServicesSupportingPaying ;
+                checkBoxSS1.Checked = currentProjectOfficeChecklistModel.ServicesSupportingAssisting;
+                checkBoxSS2.Checked = currentProjectOfficeChecklistModel.ServicesSupportingAdvising;
+                checkBoxSS3.Checked = currentProjectOfficeChecklistModel.ServicesSupportingPaying;
 
-                checkBoxPT1.Checked = currentProjectOfficeChecklistModel.ServicesProvidingProjectManagement ;
-                checkBoxPT2.Checked = currentProjectOfficeChecklistModel.ServicesProvidingToolsForMonitoring ;
-                checkBoxPT3.Checked = currentProjectOfficeChecklistModel.ServicesProvidingTraining ;
+                checkBoxPT1.Checked = currentProjectOfficeChecklistModel.ServicesProvidingProjectManagement;
+                checkBoxPT2.Checked = currentProjectOfficeChecklistModel.ServicesProvidingToolsForMonitoring;
+                checkBoxPT3.Checked = currentProjectOfficeChecklistModel.ServicesProvidingTraining;
 
                 //Service(Filling, Performing, Undertaking)
-                checkBoxFD1.Checked = currentProjectOfficeChecklistModel.ServicesPerformingAdministration ;
-                checkBoxFD2.Checked = currentProjectOfficeChecklistModel.ServicesPerformingPurchasing ;
+                checkBoxFD1.Checked = currentProjectOfficeChecklistModel.ServicesPerformingAdministration;
+                checkBoxFD2.Checked = currentProjectOfficeChecklistModel.ServicesPerformingPurchasing;
 
-                checkBoxPA1.Checked = currentProjectOfficeChecklistModel.ServicesFilingLibrary ;
-                checkBoxPA2.Checked = currentProjectOfficeChecklistModel.ServicesFilingImplementing ;
+                checkBoxPA1.Checked = currentProjectOfficeChecklistModel.ServicesFilingLibrary;
+                checkBoxPA2.Checked = currentProjectOfficeChecklistModel.ServicesFilingImplementing;
 
-                checkBoxUCR1.Checked = currentProjectOfficeChecklistModel.ServicesClosureOrganizing ;
-                checkBoxUCR2.Checked = currentProjectOfficeChecklistModel.ServicesComminicating ;
+                checkBoxUCR1.Checked = currentProjectOfficeChecklistModel.ServicesClosureOrganizing;
+                checkBoxUCR2.Checked = currentProjectOfficeChecklistModel.ServicesComminicating;
 
 
+            }
+            else
+            {
+                versionControl = new VersionControl<ProjectOfficeChecklistModel>();
+                versionControl.DocumentModels = new List<VersionControl<ProjectOfficeChecklistModel>.DocumentModel>();
             }
         }
 

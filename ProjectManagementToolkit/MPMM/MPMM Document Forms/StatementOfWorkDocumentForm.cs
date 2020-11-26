@@ -507,9 +507,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .Color(Color.Black)
                             .Font("Arial").Alignment = Alignment.left;
 
-                        //Terms of Supply
-                       
-
+                        //Terms of Supply                   
                         var termsHeading = document.InsertParagraph("5. Terms of Supply")
                            .Bold()
                            .FontSize(14d)
