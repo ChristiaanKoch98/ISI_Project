@@ -33,63 +33,63 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.Project_Manager_tbx = new System.Windows.Forms.TextBox();
+            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
             this.Project_Name_tbx = new System.Windows.Forms.TextBox();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.Project_Manager_tbx = new System.Windows.Forms.TextBox();
             this.PROJECT_DETAILS_btn = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.Description_tbx = new System.Windows.Forms.TextBox();
-            this.Requested_By_tbx = new System.Windows.Forms.TextBox();
-            this.Date_Requested_tbx = new System.Windows.Forms.TextBox();
+            this.tabControl5 = new System.Windows.Forms.TabControl();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
             this.Acceptance_ID_tbx = new System.Windows.Forms.TextBox();
+            this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.Requested_By_tbx = new System.Windows.Forms.TextBox();
+            this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.Date_Requested_tbx = new System.Windows.Forms.TextBox();
+            this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.Description_tbx = new System.Windows.Forms.TextBox();
             this.ACCEPTANCE_DETAILS_btn = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.Standards_tbx = new System.Windows.Forms.TextBox();
+            this.tabControl4 = new System.Windows.Forms.TabControl();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
             this.Criteria_tbx = new System.Windows.Forms.TextBox();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.Standards_tbx = new System.Windows.Forms.TextBox();
             this.ACCEPTANCE_CRITERIA_btn = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.ACCEPTANCE_RESULTS_dgv = new System.Windows.Forms.DataGridView();
-            this.ACCEPTANCE_RESULTS_btn = new System.Windows.Forms.Button();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.Supporting_Documentation_tbx = new System.Windows.Forms.TextBox();
-            this.CUSTOMER_APPROVAL_btn = new System.Windows.Forms.Button();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabControl3 = new System.Windows.Forms.TabControl();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.Acceptance = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Method = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Reviewer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Result = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabControl4 = new System.Windows.Forms.TabControl();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.tabControl5 = new System.Windows.Forms.TabControl();
-            this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.tabPage12 = new System.Windows.Forms.TabPage();
-            this.tabPage13 = new System.Windows.Forms.TabPage();
-            this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.ACCEPTANCE_RESULTS_btn = new System.Windows.Forms.Button();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.Supporting_Documentation_tbx = new System.Windows.Forms.TextBox();
+            this.CUSTOMER_APPROVAL_btn = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ACCEPTANCE_RESULTS_dgv)).BeginInit();
-            this.tabPage5.SuspendLayout();
-            this.tabControl2.SuspendLayout();
-            this.tabPage6.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.tabPage8.SuspendLayout();
-            this.tabControl4.SuspendLayout();
-            this.tabPage9.SuspendLayout();
-            this.tabPage10.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.tabControl5.SuspendLayout();
             this.tabPage11.SuspendLayout();
             this.tabPage12.SuspendLayout();
             this.tabPage13.SuspendLayout();
             this.tabPage14.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.tabControl4.SuspendLayout();
+            this.tabPage9.SuspendLayout();
+            this.tabPage10.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ACCEPTANCE_RESULTS_dgv)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            this.tabControl2.SuspendLayout();
+            this.tabPage6.SuspendLayout();
             this.SuspendLayout();
             // 
             // Enter_btn
@@ -152,17 +152,26 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Project details";
             // 
-            // Project_Manager_tbx
+            // tabControl3
             // 
-            this.Project_Manager_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Project_Manager_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Project_Manager_tbx.Location = new System.Drawing.Point(0, 0);
-            this.Project_Manager_tbx.Multiline = true;
-            this.Project_Manager_tbx.Name = "Project_Manager_tbx";
-            this.Project_Manager_tbx.Size = new System.Drawing.Size(1026, 290);
-            this.Project_Manager_tbx.TabIndex = 10;
+            this.tabControl3.Controls.Add(this.tabPage7);
+            this.tabControl3.Controls.Add(this.tabPage8);
+            this.tabControl3.Location = new System.Drawing.Point(3, 3);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.SelectedIndex = 0;
+            this.tabControl3.Size = new System.Drawing.Size(1034, 317);
+            this.tabControl3.TabIndex = 11;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.Project_Name_tbx);
+            this.tabPage7.Location = new System.Drawing.Point(4, 23);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(1026, 290);
+            this.tabPage7.TabIndex = 0;
+            this.tabPage7.Text = "Project Name";
+            this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // Project_Name_tbx
             // 
@@ -175,6 +184,29 @@
             this.Project_Name_tbx.Name = "Project_Name_tbx";
             this.Project_Name_tbx.Size = new System.Drawing.Size(1027, 287);
             this.Project_Name_tbx.TabIndex = 8;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.Project_Manager_tbx);
+            this.tabPage8.Location = new System.Drawing.Point(4, 23);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(1026, 290);
+            this.tabPage8.TabIndex = 1;
+            this.tabPage8.Text = "Project Manager";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // Project_Manager_tbx
+            // 
+            this.Project_Manager_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Project_Manager_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.Project_Manager_tbx.Location = new System.Drawing.Point(0, 0);
+            this.Project_Manager_tbx.Multiline = true;
+            this.Project_Manager_tbx.Name = "Project_Manager_tbx";
+            this.Project_Manager_tbx.Size = new System.Drawing.Size(1026, 291);
+            this.Project_Manager_tbx.TabIndex = 10;
             // 
             // PROJECT_DETAILS_btn
             // 
@@ -201,40 +233,28 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Acceptance details";
             // 
-            // Description_tbx
+            // tabControl5
             // 
-            this.Description_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Description_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Description_tbx.Location = new System.Drawing.Point(3, -4);
-            this.Description_tbx.Multiline = true;
-            this.Description_tbx.Name = "Description_tbx";
-            this.Description_tbx.Size = new System.Drawing.Size(1031, 337);
-            this.Description_tbx.TabIndex = 19;
+            this.tabControl5.Controls.Add(this.tabPage11);
+            this.tabControl5.Controls.Add(this.tabPage12);
+            this.tabControl5.Controls.Add(this.tabPage13);
+            this.tabControl5.Controls.Add(this.tabPage14);
+            this.tabControl5.Location = new System.Drawing.Point(0, 0);
+            this.tabControl5.Name = "tabControl5";
+            this.tabControl5.SelectedIndex = 0;
+            this.tabControl5.Size = new System.Drawing.Size(1034, 360);
+            this.tabControl5.TabIndex = 20;
             // 
-            // Requested_By_tbx
+            // tabPage11
             // 
-            this.Requested_By_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Requested_By_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Requested_By_tbx.Location = new System.Drawing.Point(2, 0);
-            this.Requested_By_tbx.Multiline = true;
-            this.Requested_By_tbx.Name = "Requested_By_tbx";
-            this.Requested_By_tbx.Size = new System.Drawing.Size(1031, 337);
-            this.Requested_By_tbx.TabIndex = 17;
-            // 
-            // Date_Requested_tbx
-            // 
-            this.Date_Requested_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Date_Requested_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Date_Requested_tbx.Location = new System.Drawing.Point(-4, 0);
-            this.Date_Requested_tbx.Multiline = true;
-            this.Date_Requested_tbx.Name = "Date_Requested_tbx";
-            this.Date_Requested_tbx.Size = new System.Drawing.Size(1034, 333);
-            this.Date_Requested_tbx.TabIndex = 15;
+            this.tabPage11.Controls.Add(this.Acceptance_ID_tbx);
+            this.tabPage11.Location = new System.Drawing.Point(4, 23);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage11.Size = new System.Drawing.Size(1026, 333);
+            this.tabPage11.TabIndex = 0;
+            this.tabPage11.Text = "Acceptance ID";
+            this.tabPage11.UseVisualStyleBackColor = true;
             // 
             // Acceptance_ID_tbx
             // 
@@ -247,6 +267,74 @@
             this.Acceptance_ID_tbx.Name = "Acceptance_ID_tbx";
             this.Acceptance_ID_tbx.Size = new System.Drawing.Size(1031, 337);
             this.Acceptance_ID_tbx.TabIndex = 11;
+            // 
+            // tabPage12
+            // 
+            this.tabPage12.Controls.Add(this.Requested_By_tbx);
+            this.tabPage12.Location = new System.Drawing.Point(4, 23);
+            this.tabPage12.Name = "tabPage12";
+            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage12.Size = new System.Drawing.Size(1026, 333);
+            this.tabPage12.TabIndex = 1;
+            this.tabPage12.Text = "Requested By";
+            this.tabPage12.UseVisualStyleBackColor = true;
+            // 
+            // Requested_By_tbx
+            // 
+            this.Requested_By_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Requested_By_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.Requested_By_tbx.Location = new System.Drawing.Point(2, 0);
+            this.Requested_By_tbx.Multiline = true;
+            this.Requested_By_tbx.Name = "Requested_By_tbx";
+            this.Requested_By_tbx.Size = new System.Drawing.Size(1031, 338);
+            this.Requested_By_tbx.TabIndex = 17;
+            // 
+            // tabPage13
+            // 
+            this.tabPage13.Controls.Add(this.Date_Requested_tbx);
+            this.tabPage13.Location = new System.Drawing.Point(4, 23);
+            this.tabPage13.Name = "tabPage13";
+            this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage13.Size = new System.Drawing.Size(1026, 333);
+            this.tabPage13.TabIndex = 2;
+            this.tabPage13.Text = "Date Requested";
+            this.tabPage13.UseVisualStyleBackColor = true;
+            // 
+            // Date_Requested_tbx
+            // 
+            this.Date_Requested_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Date_Requested_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.Date_Requested_tbx.Location = new System.Drawing.Point(-4, 0);
+            this.Date_Requested_tbx.Multiline = true;
+            this.Date_Requested_tbx.Name = "Date_Requested_tbx";
+            this.Date_Requested_tbx.Size = new System.Drawing.Size(1034, 334);
+            this.Date_Requested_tbx.TabIndex = 15;
+            // 
+            // tabPage14
+            // 
+            this.tabPage14.Controls.Add(this.Description_tbx);
+            this.tabPage14.Location = new System.Drawing.Point(4, 23);
+            this.tabPage14.Name = "tabPage14";
+            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage14.Size = new System.Drawing.Size(1026, 333);
+            this.tabPage14.TabIndex = 3;
+            this.tabPage14.Text = "Description";
+            this.tabPage14.UseVisualStyleBackColor = true;
+            // 
+            // Description_tbx
+            // 
+            this.Description_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Description_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.Description_tbx.Location = new System.Drawing.Point(3, -4);
+            this.Description_tbx.Multiline = true;
+            this.Description_tbx.Name = "Description_tbx";
+            this.Description_tbx.Size = new System.Drawing.Size(1031, 337);
+            this.Description_tbx.TabIndex = 19;
             // 
             // ACCEPTANCE_DETAILS_btn
             // 
@@ -273,17 +361,26 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Acceptance criteria";
             // 
-            // Standards_tbx
+            // tabControl4
             // 
-            this.Standards_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Standards_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Standards_tbx.Location = new System.Drawing.Point(0, 0);
-            this.Standards_tbx.Multiline = true;
-            this.Standards_tbx.Name = "Standards_tbx";
-            this.Standards_tbx.Size = new System.Drawing.Size(1027, 312);
-            this.Standards_tbx.TabIndex = 24;
+            this.tabControl4.Controls.Add(this.tabPage9);
+            this.tabControl4.Controls.Add(this.tabPage10);
+            this.tabControl4.Location = new System.Drawing.Point(6, 3);
+            this.tabControl4.Name = "tabControl4";
+            this.tabControl4.SelectedIndex = 0;
+            this.tabControl4.Size = new System.Drawing.Size(1031, 335);
+            this.tabControl4.TabIndex = 25;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Controls.Add(this.Criteria_tbx);
+            this.tabPage9.Location = new System.Drawing.Point(4, 23);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(1023, 308);
+            this.tabPage9.TabIndex = 0;
+            this.tabPage9.Text = "Criteria";
+            this.tabPage9.UseVisualStyleBackColor = true;
             // 
             // Criteria_tbx
             // 
@@ -296,6 +393,29 @@
             this.Criteria_tbx.Name = "Criteria_tbx";
             this.Criteria_tbx.Size = new System.Drawing.Size(1024, 312);
             this.Criteria_tbx.TabIndex = 22;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.Controls.Add(this.Standards_tbx);
+            this.tabPage10.Location = new System.Drawing.Point(4, 23);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage10.Size = new System.Drawing.Size(1023, 308);
+            this.tabPage10.TabIndex = 1;
+            this.tabPage10.Text = "Standards";
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // Standards_tbx
+            // 
+            this.Standards_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Standards_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.Standards_tbx.Location = new System.Drawing.Point(0, 0);
+            this.Standards_tbx.Multiline = true;
+            this.Standards_tbx.Name = "Standards_tbx";
+            this.Standards_tbx.Size = new System.Drawing.Size(1027, 313);
+            this.Standards_tbx.TabIndex = 24;
             // 
             // ACCEPTANCE_CRITERIA_btn
             // 
@@ -341,6 +461,31 @@
             this.ACCEPTANCE_RESULTS_dgv.Size = new System.Drawing.Size(1037, 361);
             this.ACCEPTANCE_RESULTS_dgv.TabIndex = 9;
             // 
+            // Acceptance
+            // 
+            this.Acceptance.HeaderText = "Acceptance";
+            this.Acceptance.Name = "Acceptance";
+            // 
+            // Method
+            // 
+            this.Method.HeaderText = "Method";
+            this.Method.Name = "Method";
+            // 
+            // Reviewer
+            // 
+            this.Reviewer.HeaderText = "Reviewer";
+            this.Reviewer.Name = "Reviewer";
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
+            // 
+            // Result
+            // 
+            this.Result.HeaderText = "Result";
+            this.Result.Name = "Result";
+            // 
             // ACCEPTANCE_RESULTS_btn
             // 
             this.ACCEPTANCE_RESULTS_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
@@ -365,6 +510,26 @@
             this.tabPage5.Size = new System.Drawing.Size(1040, 418);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Customer approval";
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage6);
+            this.tabControl2.Location = new System.Drawing.Point(3, 3);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(1028, 339);
+            this.tabControl2.TabIndex = 23;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage6.Controls.Add(this.Supporting_Documentation_tbx);
+            this.tabPage6.Location = new System.Drawing.Point(4, 23);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1020, 312);
+            this.tabPage6.TabIndex = 0;
+            this.tabPage6.Text = "Supporting Documentation:";
             // 
             // Supporting_Documentation_tbx
             // 
@@ -391,171 +556,6 @@
             this.CUSTOMER_APPROVAL_btn.UseVisualStyleBackColor = false;
             this.CUSTOMER_APPROVAL_btn.Click += new System.EventHandler(this.CUSTOMER_APPROVAL_btn_Click);
             // 
-            // tabControl2
-            // 
-            this.tabControl2.Controls.Add(this.tabPage6);
-            this.tabControl2.Location = new System.Drawing.Point(3, 3);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1028, 339);
-            this.tabControl2.TabIndex = 23;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage6.Controls.Add(this.Supporting_Documentation_tbx);
-            this.tabPage6.Location = new System.Drawing.Point(4, 23);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1020, 312);
-            this.tabPage6.TabIndex = 0;
-            this.tabPage6.Text = "Supporting Documentation:";
-            // 
-            // tabControl3
-            // 
-            this.tabControl3.Controls.Add(this.tabPage7);
-            this.tabControl3.Controls.Add(this.tabPage8);
-            this.tabControl3.Location = new System.Drawing.Point(3, 3);
-            this.tabControl3.Name = "tabControl3";
-            this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(1034, 317);
-            this.tabControl3.TabIndex = 11;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.Project_Name_tbx);
-            this.tabPage7.Location = new System.Drawing.Point(4, 23);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1026, 290);
-            this.tabPage7.TabIndex = 0;
-            this.tabPage7.Text = "Project Name";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Controls.Add(this.Project_Manager_tbx);
-            this.tabPage8.Location = new System.Drawing.Point(4, 23);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1026, 290);
-            this.tabPage8.TabIndex = 1;
-            this.tabPage8.Text = "Project Manager";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // Acceptance
-            // 
-            this.Acceptance.HeaderText = "Acceptance";
-            this.Acceptance.Name = "Acceptance";
-            // 
-            // Method
-            // 
-            this.Method.HeaderText = "Method";
-            this.Method.Name = "Method";
-            // 
-            // Reviewer
-            // 
-            this.Reviewer.HeaderText = "Reviewer";
-            this.Reviewer.Name = "Reviewer";
-            // 
-            // Date
-            // 
-            this.Date.HeaderText = "Date";
-            this.Date.Name = "Date";
-            // 
-            // Result
-            // 
-            this.Result.HeaderText = "Result";
-            this.Result.Name = "Result";
-            // 
-            // tabControl4
-            // 
-            this.tabControl4.Controls.Add(this.tabPage9);
-            this.tabControl4.Controls.Add(this.tabPage10);
-            this.tabControl4.Location = new System.Drawing.Point(6, 3);
-            this.tabControl4.Name = "tabControl4";
-            this.tabControl4.SelectedIndex = 0;
-            this.tabControl4.Size = new System.Drawing.Size(1031, 335);
-            this.tabControl4.TabIndex = 25;
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.Controls.Add(this.Criteria_tbx);
-            this.tabPage9.Location = new System.Drawing.Point(4, 23);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(1023, 308);
-            this.tabPage9.TabIndex = 0;
-            this.tabPage9.Text = "Criteria";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
-            // tabPage10
-            // 
-            this.tabPage10.Controls.Add(this.Standards_tbx);
-            this.tabPage10.Location = new System.Drawing.Point(4, 23);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(1023, 308);
-            this.tabPage10.TabIndex = 1;
-            this.tabPage10.Text = "Standards";
-            this.tabPage10.UseVisualStyleBackColor = true;
-            // 
-            // tabControl5
-            // 
-            this.tabControl5.Controls.Add(this.tabPage11);
-            this.tabControl5.Controls.Add(this.tabPage12);
-            this.tabControl5.Controls.Add(this.tabPage13);
-            this.tabControl5.Controls.Add(this.tabPage14);
-            this.tabControl5.Location = new System.Drawing.Point(0, 0);
-            this.tabControl5.Name = "tabControl5";
-            this.tabControl5.SelectedIndex = 0;
-            this.tabControl5.Size = new System.Drawing.Size(1034, 360);
-            this.tabControl5.TabIndex = 20;
-            // 
-            // tabPage11
-            // 
-            this.tabPage11.Controls.Add(this.Acceptance_ID_tbx);
-            this.tabPage11.Location = new System.Drawing.Point(4, 23);
-            this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(1026, 333);
-            this.tabPage11.TabIndex = 0;
-            this.tabPage11.Text = "Acceptance ID";
-            this.tabPage11.UseVisualStyleBackColor = true;
-            // 
-            // tabPage12
-            // 
-            this.tabPage12.Controls.Add(this.Requested_By_tbx);
-            this.tabPage12.Location = new System.Drawing.Point(4, 23);
-            this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(1026, 333);
-            this.tabPage12.TabIndex = 1;
-            this.tabPage12.Text = "Requested By";
-            this.tabPage12.UseVisualStyleBackColor = true;
-            // 
-            // tabPage13
-            // 
-            this.tabPage13.Controls.Add(this.Date_Requested_tbx);
-            this.tabPage13.Location = new System.Drawing.Point(4, 23);
-            this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(1026, 333);
-            this.tabPage13.TabIndex = 2;
-            this.tabPage13.Text = "Date Requested";
-            this.tabPage13.UseVisualStyleBackColor = true;
-            // 
-            // tabPage14
-            // 
-            this.tabPage14.Controls.Add(this.Description_tbx);
-            this.tabPage14.Location = new System.Drawing.Point(4, 23);
-            this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage14.Size = new System.Drawing.Size(1026, 333);
-            this.tabPage14.TabIndex = 3;
-            this.tabPage14.Text = "Description";
-            this.tabPage14.UseVisualStyleBackColor = true;
-            // 
             // AcceptanceFormDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
@@ -572,24 +572,12 @@
             this.Text = "AcceptanceFormDocumentForm";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ACCEPTANCE_RESULTS_dgv)).EndInit();
-            this.tabPage5.ResumeLayout(false);
-            this.tabControl2.ResumeLayout(false);
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
             this.tabControl3.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
-            this.tabControl4.ResumeLayout(false);
-            this.tabPage9.ResumeLayout(false);
-            this.tabPage9.PerformLayout();
-            this.tabPage10.ResumeLayout(false);
-            this.tabPage10.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.tabControl5.ResumeLayout(false);
             this.tabPage11.ResumeLayout(false);
             this.tabPage11.PerformLayout();
@@ -599,6 +587,18 @@
             this.tabPage13.PerformLayout();
             this.tabPage14.ResumeLayout(false);
             this.tabPage14.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabControl4.ResumeLayout(false);
+            this.tabPage9.ResumeLayout(false);
+            this.tabPage9.PerformLayout();
+            this.tabPage10.ResumeLayout(false);
+            this.tabPage10.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ACCEPTANCE_RESULTS_dgv)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tabControl2.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
