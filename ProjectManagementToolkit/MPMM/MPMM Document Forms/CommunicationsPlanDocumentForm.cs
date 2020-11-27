@@ -57,10 +57,27 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             dgvStakeholderRequirements.Columns.Add("colStakeOrg", "Stakeholder organization");
             dgvStakeholderRequirements.Columns.Add("colInfoReq", "Information required");
 
+            dgvDocumentInformation.Columns.Add("colDocID", "Document ID");
+            dgvDocumentInformation.Columns.Add("colDocOwner", "Stakeholder Document owner");
+            dgvDocumentInformation.Columns.Add("colIssueDate", "Issue date");
+            dgvDocumentInformation.Columns.Add("colLastSaveDate", "Last save date");
+            dgvDocumentInformation.Columns.Add("colFileName", "File Name");
+
+            //Test 
             string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "Communications Plan");
             List<string[]> documentInfo = new List<string[]>();
             newCommunicationsPlanModel = new CommunicationsPlanModel();
             currentCommunicationsPlanModel = new CommunicationsPlanModel();
+
+            versionControl = JsonConvert.DeserializeObject<VersionControl<CommunicationsPlanModel>>(json);
+            newCommunicationsPlanModel = JsonConvert.DeserializeObject<CommunicationsPlanModel>(versionControl.getLatest(versionControl.DocumentModels));
+            currentCommunicationsPlanModel = JsonConvert.DeserializeObject<CommunicationsPlanModel>(versionControl.getLatest(versionControl.DocumentModels));
+
+
+            foreach (var row in currentCommunicationsPlanModel.StakeholderReq)
+            {
+                dgvStakeholderRequirements.Rows.Add(new string[] { row.StakeholderName, row.StakeholderRole, row.InformationRequirement, row.StakeholderOrganization });
+            }
 
             if (json != "")
             {
@@ -169,7 +186,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 var StakeName = dgvStakeholderRequirements.Rows[i].Cells[0].Value?.ToString() ?? "";
                 var StakeRole = dgvStakeholderRequirements.Rows[i].Cells[1].Value?.ToString() ?? "";
                 var Organization = dgvStakeholderRequirements.Rows[i].Cells[2].Value?.ToString() ?? "";
-                var Requirement = dgvStakeholderRequirements.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var Requirement = dgvStakeholderRequirements.Rows[i].Cells[3].Value?.ToString() ?? "";
 
                 Stakereq.StakeholderName = StakeName;
                 Stakereq.StakeholderRole = StakeRole;
@@ -185,11 +202,31 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newCommunicationsPlanModel.Roles = txtRoles.Text;
             newCommunicationsPlanModel.Documents = txtDocuments.Text;
 
+            List<VersionControl<CommunicationsPlanModel>.DocumentModel> documentModels = versionControl.DocumentModels;
+
+            if (!versionControl.isEqual(currentCommunicationsPlanModel, newCommunicationsPlanModel))
+            {
+                VersionControl<CommunicationsPlanModel>.DocumentModel documentModel = new VersionControl<CommunicationsPlanModel>.DocumentModel(newCommunicationsPlanModel, DateTime.Now, VersionControl<ProjectModel>.generateID());
+
+                documentModels.Add(documentModel);
+
+                versionControl.DocumentModels = documentModels;
+
+                string json = JsonConvert.SerializeObject(versionControl);
+                JsonHelper.saveDocument(json, Settings.Default.ProjectID, "CommunicationPlan");
+                MessageBox.Show("Communication plan saved successfully", "save", MessageBoxButtons.OK);
+            }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             saveDocument();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
