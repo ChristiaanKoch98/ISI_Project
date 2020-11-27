@@ -30,68 +30,109 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.documentControl = new System.Windows.Forms.TabPage();
-            this.introduction = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.documentInformation = new System.Windows.Forms.DataGridView();
+            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.documentHistory = new System.Windows.Forms.DataGridView();
+            this.Version = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.historyIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.historyChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.documentApprovals = new System.Windows.Forms.DataGridView();
             this.approvalRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.approvalName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.approvalSignature = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.approvalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.documentHistory = new System.Windows.Forms.DataGridView();
-            this.Version = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.historyIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.historyChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.documentInformation = new System.Windows.Forms.DataGridView();
-            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.introduction = new System.Windows.Forms.TabPage();
+            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.purpose = new System.Windows.Forms.TextBox();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.recipients = new System.Windows.Forms.TextBox();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.definitions = new System.Windows.Forms.DataGridView();
+            this.term = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.definition = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.scopeOfWork = new System.Windows.Forms.TabPage();
-            this.responsibilities = new System.Windows.Forms.TabPage();
-            this.performance = new System.Windows.Forms.TabPage();
-            this.termsAndConditions = new System.Windows.Forms.TabPage();
-            this.payment = new System.Windows.Forms.TextBox();
-            this.disputes = new System.Windows.Forms.TextBox();
-            this.termination = new System.Windows.Forms.TextBox();
-            this.invoicing = new System.Windows.Forms.TextBox();
-            this.agreement = new System.Windows.Forms.TextBox();
-            this.law = new System.Windows.Forms.TextBox();
-            this.confidentiality = new System.Windows.Forms.TextBox();
-            this.indemnity = new System.Windows.Forms.TextBox();
-            this.reviewCriteriaIntro = new System.Windows.Forms.DataGridView();
-            this.reviewCriteria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reviewDecription = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label4 = new System.Windows.Forms.Label();
-            this.reviewProcess = new System.Windows.Forms.TextBox();
-            this.reviewSchedule = new System.Windows.Forms.TabPage();
-            this.supplier = new System.Windows.Forms.TextBox();
-            this.project = new System.Windows.Forms.TextBox();
-            this.procurementItems = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
+            this.procurementItems = new System.Windows.Forms.DataGridView();
             this.itemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.responsibilities = new System.Windows.Forms.TabPage();
+            this.performance = new System.Windows.Forms.TabPage();
+            this.termsAndConditions = new System.Windows.Forms.TabPage();
+            this.reviewSchedule = new System.Windows.Forms.TabPage();
             this.deliverySchedule = new System.Windows.Forms.TabPage();
-            this.recipients = new System.Windows.Forms.TextBox();
-            this.purpose = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.definitions = new System.Windows.Forms.DataGridView();
-            this.term = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.definition = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabControl4 = new System.Windows.Forms.TabControl();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.supplier = new System.Windows.Forms.TextBox();
+            this.project = new System.Windows.Forms.TextBox();
+            this.tabControl5 = new System.Windows.Forms.TabControl();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.reviewCriteriaIntro = new System.Windows.Forms.DataGridView();
+            this.reviewCriteria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reviewDecription = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reviewProcess = new System.Windows.Forms.TextBox();
+            this.tabControl6 = new System.Windows.Forms.TabControl();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.payment = new System.Windows.Forms.TextBox();
+            this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.tabPage15 = new System.Windows.Forms.TabPage();
+            this.tabPage16 = new System.Windows.Forms.TabPage();
+            this.tabPage17 = new System.Windows.Forms.TabPage();
+            this.tabPage18 = new System.Windows.Forms.TabPage();
+            this.invoicing = new System.Windows.Forms.TextBox();
+            this.confidentiality = new System.Windows.Forms.TextBox();
+            this.termination = new System.Windows.Forms.TextBox();
+            this.disputes = new System.Windows.Forms.TextBox();
+            this.indemnity = new System.Windows.Forms.TextBox();
+            this.law = new System.Windows.Forms.TextBox();
+            this.agreement = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.documentControl.SuspendLayout();
-            this.introduction.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.documentApprovals)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentHistory)).BeginInit();
+            this.tabControl2.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.documentInformation)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.documentHistory)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.documentApprovals)).BeginInit();
+            this.introduction.SuspendLayout();
+            this.tabControl3.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.definitions)).BeginInit();
             this.scopeOfWork.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.procurementItems)).BeginInit();
             this.responsibilities.SuspendLayout();
             this.performance.SuspendLayout();
             this.termsAndConditions.SuspendLayout();
+            this.tabControl4.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.tabPage8.SuspendLayout();
+            this.tabControl5.SuspendLayout();
+            this.tabPage9.SuspendLayout();
+            this.tabPage10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reviewCriteriaIntro)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.procurementItems)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.definitions)).BeginInit();
+            this.tabControl6.SuspendLayout();
+            this.tabPage11.SuspendLayout();
+            this.tabPage12.SuspendLayout();
+            this.tabPage13.SuspendLayout();
+            this.tabPage14.SuspendLayout();
+            this.tabPage15.SuspendLayout();
+            this.tabPage16.SuspendLayout();
+            this.tabPage17.SuspendLayout();
+            this.tabPage18.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -107,7 +148,7 @@
             this.tabControl1.Controls.Add(this.termsAndConditions);
             this.tabControl1.Controls.Add(this.reviewSchedule);
             this.tabControl1.Controls.Add(this.deliverySchedule);
-            this.tabControl1.Location = new System.Drawing.Point(12, 41);
+            this.tabControl1.Location = new System.Drawing.Point(3, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(922, 476);
@@ -115,13 +156,8 @@
             // 
             // documentControl
             // 
-            this.documentControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.documentControl.Controls.Add(this.label3);
-            this.documentControl.Controls.Add(this.label2);
-            this.documentControl.Controls.Add(this.label1);
-            this.documentControl.Controls.Add(this.documentApprovals);
-            this.documentControl.Controls.Add(this.documentHistory);
-            this.documentControl.Controls.Add(this.documentInformation);
+            this.documentControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.documentControl.Controls.Add(this.tabControl2);
             this.documentControl.Location = new System.Drawing.Point(4, 22);
             this.documentControl.Name = "documentControl";
             this.documentControl.Padding = new System.Windows.Forms.Padding(3);
@@ -129,61 +165,118 @@
             this.documentControl.TabIndex = 0;
             this.documentControl.Text = "Document Control";
             // 
-            // introduction
+            // tabControl2
             // 
-            this.introduction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.introduction.Controls.Add(this.label6);
-            this.introduction.Controls.Add(this.definitions);
-            this.introduction.Controls.Add(this.purpose);
-            this.introduction.Controls.Add(this.recipients);
-            this.introduction.Location = new System.Drawing.Point(4, 22);
-            this.introduction.Name = "introduction";
-            this.introduction.Padding = new System.Windows.Forms.Padding(3);
-            this.introduction.Size = new System.Drawing.Size(914, 450);
-            this.introduction.TabIndex = 1;
-            this.introduction.Text = "Introduction";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(8, 337);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 17);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Document Approvals";
+            this.tabControl2.Controls.Add(this.tabPage1);
+            this.tabControl2.Controls.Add(this.tabPage2);
+            this.tabControl2.Controls.Add(this.tabPage3);
+            this.tabControl2.Location = new System.Drawing.Point(3, 5);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(905, 439);
+            this.tabControl2.TabIndex = 1;
             // 
-            // label2
+            // tabPage1
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage1.Controls.Add(this.documentInformation);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(897, 413);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Document Information";
+            // 
+            // documentInformation
+            // 
+            this.documentInformation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(8, 210);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 17);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Document History";
+            this.documentInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.documentInformation.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Type,
+            this.Information});
+            this.documentInformation.Location = new System.Drawing.Point(3, 2);
+            this.documentInformation.Name = "documentInformation";
+            this.documentInformation.RowHeadersWidth = 51;
+            this.documentInformation.Size = new System.Drawing.Size(859, 407);
+            this.documentInformation.TabIndex = 16;
             // 
-            // label1
+            // Type
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Type.HeaderText = "Type";
+            this.Type.MinimumWidth = 6;
+            this.Type.Name = "Type";
+            // 
+            // Information
+            // 
+            this.Information.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Information.HeaderText = "Information";
+            this.Information.MinimumWidth = 6;
+            this.Information.Name = "Information";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage2.Controls.Add(this.documentHistory);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(897, 413);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Document History";
+            // 
+            // documentHistory
+            // 
+            this.documentHistory.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(8, 78);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 17);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Document Information";
+            this.documentHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.documentHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Version,
+            this.historyIssueDate,
+            this.historyChanges});
+            this.documentHistory.Location = new System.Drawing.Point(3, 2);
+            this.documentHistory.Name = "documentHistory";
+            this.documentHistory.RowHeadersWidth = 51;
+            this.documentHistory.Size = new System.Drawing.Size(891, 407);
+            this.documentHistory.TabIndex = 13;
+            // 
+            // Version
+            // 
+            this.Version.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Version.HeaderText = "Version";
+            this.Version.MinimumWidth = 6;
+            this.Version.Name = "Version";
+            // 
+            // historyIssueDate
+            // 
+            this.historyIssueDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.historyIssueDate.HeaderText = "Issue Date";
+            this.historyIssueDate.MinimumWidth = 6;
+            this.historyIssueDate.Name = "historyIssueDate";
+            // 
+            // historyChanges
+            // 
+            this.historyChanges.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.historyChanges.HeaderText = "Changes";
+            this.historyChanges.MinimumWidth = 6;
+            this.historyChanges.Name = "historyChanges";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage3.Controls.Add(this.documentApprovals);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(897, 413);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Document Approval";
             // 
             // documentApprovals
             // 
@@ -196,11 +289,11 @@
             this.approvalName,
             this.approvalSignature,
             this.approvalDate});
-            this.documentApprovals.Location = new System.Drawing.Point(169, 277);
+            this.documentApprovals.Location = new System.Drawing.Point(3, 3);
             this.documentApprovals.Name = "documentApprovals";
             this.documentApprovals.RowHeadersWidth = 51;
-            this.documentApprovals.Size = new System.Drawing.Size(691, 124);
-            this.documentApprovals.TabIndex = 8;
+            this.documentApprovals.Size = new System.Drawing.Size(895, 404);
+            this.documentApprovals.TabIndex = 18;
             // 
             // approvalRole
             // 
@@ -232,75 +325,123 @@
             this.approvalDate.MinimumWidth = 6;
             this.approvalDate.Name = "approvalDate";
             // 
-            // documentHistory
+            // introduction
             // 
-            this.documentHistory.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.introduction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.introduction.Controls.Add(this.tabControl3);
+            this.introduction.Location = new System.Drawing.Point(4, 22);
+            this.introduction.Name = "introduction";
+            this.introduction.Padding = new System.Windows.Forms.Padding(3);
+            this.introduction.Size = new System.Drawing.Size(914, 450);
+            this.introduction.TabIndex = 1;
+            this.introduction.Text = "Introduction";
+            // 
+            // tabControl3
+            // 
+            this.tabControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.documentHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.documentHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Version,
-            this.historyIssueDate,
-            this.historyChanges});
-            this.documentHistory.Location = new System.Drawing.Point(169, 153);
-            this.documentHistory.Name = "documentHistory";
-            this.documentHistory.RowHeadersWidth = 51;
-            this.documentHistory.Size = new System.Drawing.Size(691, 118);
-            this.documentHistory.TabIndex = 7;
+            this.tabControl3.Controls.Add(this.tabPage5);
+            this.tabControl3.Controls.Add(this.tabPage6);
+            this.tabControl3.Controls.Add(this.tabPage7);
+            this.tabControl3.Location = new System.Drawing.Point(7, 4);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.SelectedIndex = 0;
+            this.tabControl3.Size = new System.Drawing.Size(887, 440);
+            this.tabControl3.TabIndex = 0;
             // 
-            // Version
+            // tabPage5
             // 
-            this.Version.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Version.HeaderText = "Version";
-            this.Version.MinimumWidth = 6;
-            this.Version.Name = "Version";
+            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage5.Controls.Add(this.purpose);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(879, 414);
+            this.tabPage5.TabIndex = 1;
+            this.tabPage5.Text = "Purpose";
             // 
-            // historyIssueDate
+            // purpose
             // 
-            this.historyIssueDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.historyIssueDate.HeaderText = "Issue Date";
-            this.historyIssueDate.MinimumWidth = 6;
-            this.historyIssueDate.Name = "historyIssueDate";
-            // 
-            // historyChanges
-            // 
-            this.historyChanges.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.historyChanges.HeaderText = "Changes";
-            this.historyChanges.MinimumWidth = 6;
-            this.historyChanges.Name = "historyChanges";
-            // 
-            // documentInformation
-            // 
-            this.documentInformation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.purpose.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.documentInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.documentInformation.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Type,
-            this.Information});
-            this.documentInformation.Location = new System.Drawing.Point(169, 39);
-            this.documentInformation.Name = "documentInformation";
-            this.documentInformation.RowHeadersWidth = 51;
-            this.documentInformation.Size = new System.Drawing.Size(691, 108);
-            this.documentInformation.TabIndex = 6;
+            this.purpose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.purpose.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.purpose.ForeColor = System.Drawing.Color.Black;
+            this.purpose.Location = new System.Drawing.Point(-5, 3);
+            this.purpose.Multiline = true;
+            this.purpose.Name = "purpose";
+            this.purpose.Size = new System.Drawing.Size(881, 405);
+            this.purpose.TabIndex = 24;
+            this.purpose.Text = "Purpose";
             // 
-            // Type
+            // tabPage6
             // 
-            this.Type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Type.HeaderText = "Type";
-            this.Type.MinimumWidth = 6;
-            this.Type.Name = "Type";
+            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage6.Controls.Add(this.recipients);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(879, 414);
+            this.tabPage6.TabIndex = 2;
+            this.tabPage6.Text = "Recipients";
             // 
-            // Information
+            // recipients
             // 
-            this.Information.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Information.HeaderText = "Information";
-            this.Information.MinimumWidth = 6;
-            this.Information.Name = "Information";
+            this.recipients.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.recipients.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.recipients.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recipients.ForeColor = System.Drawing.Color.Black;
+            this.recipients.Location = new System.Drawing.Point(3, 3);
+            this.recipients.Multiline = true;
+            this.recipients.Name = "recipients";
+            this.recipients.Size = new System.Drawing.Size(873, 408);
+            this.recipients.TabIndex = 23;
+            this.recipients.Text = "Recipients";
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage7.Controls.Add(this.definitions);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(879, 414);
+            this.tabPage7.TabIndex = 3;
+            this.tabPage7.Text = "Definitions";
+            // 
+            // definitions
+            // 
+            this.definitions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.definitions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.definitions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.term,
+            this.definition});
+            this.definitions.Location = new System.Drawing.Point(3, 6);
+            this.definitions.Name = "definitions";
+            this.definitions.Size = new System.Drawing.Size(867, 397);
+            this.definitions.TabIndex = 26;
+            // 
+            // term
+            // 
+            this.term.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.term.HeaderText = "Term";
+            this.term.Name = "term";
+            // 
+            // definition
+            // 
+            this.definition.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.definition.HeaderText = "Definition";
+            this.definition.Name = "definition";
             // 
             // scopeOfWork
             // 
-            this.scopeOfWork.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.scopeOfWork.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.scopeOfWork.Controls.Add(this.label5);
             this.scopeOfWork.Controls.Add(this.procurementItems);
             this.scopeOfWork.Location = new System.Drawing.Point(4, 22);
@@ -310,263 +451,19 @@
             this.scopeOfWork.TabIndex = 2;
             this.scopeOfWork.Text = "Scope Of Work";
             // 
-            // responsibilities
+            // label5
             // 
-            this.responsibilities.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.responsibilities.Controls.Add(this.project);
-            this.responsibilities.Controls.Add(this.supplier);
-            this.responsibilities.Location = new System.Drawing.Point(4, 22);
-            this.responsibilities.Name = "responsibilities";
-            this.responsibilities.Padding = new System.Windows.Forms.Padding(3);
-            this.responsibilities.Size = new System.Drawing.Size(914, 450);
-            this.responsibilities.TabIndex = 3;
-            this.responsibilities.Text = "Responsibilities";
-            // 
-            // performance
-            // 
-            this.performance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.performance.Controls.Add(this.reviewProcess);
-            this.performance.Controls.Add(this.label4);
-            this.performance.Controls.Add(this.reviewCriteriaIntro);
-            this.performance.Location = new System.Drawing.Point(4, 22);
-            this.performance.Name = "performance";
-            this.performance.Padding = new System.Windows.Forms.Padding(3);
-            this.performance.Size = new System.Drawing.Size(914, 450);
-            this.performance.TabIndex = 4;
-            this.performance.Text = "Performance";
-            // 
-            // termsAndConditions
-            // 
-            this.termsAndConditions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.termsAndConditions.Controls.Add(this.indemnity);
-            this.termsAndConditions.Controls.Add(this.confidentiality);
-            this.termsAndConditions.Controls.Add(this.law);
-            this.termsAndConditions.Controls.Add(this.agreement);
-            this.termsAndConditions.Controls.Add(this.invoicing);
-            this.termsAndConditions.Controls.Add(this.termination);
-            this.termsAndConditions.Controls.Add(this.disputes);
-            this.termsAndConditions.Controls.Add(this.payment);
-            this.termsAndConditions.Location = new System.Drawing.Point(4, 22);
-            this.termsAndConditions.Name = "termsAndConditions";
-            this.termsAndConditions.Padding = new System.Windows.Forms.Padding(3);
-            this.termsAndConditions.Size = new System.Drawing.Size(914, 450);
-            this.termsAndConditions.TabIndex = 5;
-            this.termsAndConditions.Text = "Terms and Conditions";
-            // 
-            // payment
-            // 
-            this.payment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.payment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.payment.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.payment.ForeColor = System.Drawing.Color.White;
-            this.payment.Location = new System.Drawing.Point(6, 21);
-            this.payment.Multiline = true;
-            this.payment.Name = "payment";
-            this.payment.Size = new System.Drawing.Size(274, 111);
-            this.payment.TabIndex = 17;
-            this.payment.Text = "Payment";
-            // 
-            // disputes
-            // 
-            this.disputes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.disputes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.disputes.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.disputes.ForeColor = System.Drawing.Color.White;
-            this.disputes.Location = new System.Drawing.Point(327, 161);
-            this.disputes.Multiline = true;
-            this.disputes.Name = "disputes";
-            this.disputes.Size = new System.Drawing.Size(265, 111);
-            this.disputes.TabIndex = 18;
-            this.disputes.Text = "Disputes";
-            // 
-            // termination
-            // 
-            this.termination.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.termination.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.termination.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.termination.ForeColor = System.Drawing.Color.White;
-            this.termination.Location = new System.Drawing.Point(6, 161);
-            this.termination.Multiline = true;
-            this.termination.Name = "termination";
-            this.termination.Size = new System.Drawing.Size(274, 111);
-            this.termination.TabIndex = 19;
-            this.termination.Text = "Termination";
-            // 
-            // invoicing
-            // 
-            this.invoicing.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.invoicing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.invoicing.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.invoicing.ForeColor = System.Drawing.Color.White;
-            this.invoicing.Location = new System.Drawing.Point(327, 21);
-            this.invoicing.Multiline = true;
-            this.invoicing.Name = "invoicing";
-            this.invoicing.Size = new System.Drawing.Size(265, 111);
-            this.invoicing.TabIndex = 20;
-            this.invoicing.Text = "Invoicing";
-            // 
-            // agreement
-            // 
-            this.agreement.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.agreement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.agreement.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.agreement.ForeColor = System.Drawing.Color.White;
-            this.agreement.Location = new System.Drawing.Point(327, 298);
-            this.agreement.Multiline = true;
-            this.agreement.Name = "agreement";
-            this.agreement.Size = new System.Drawing.Size(265, 111);
-            this.agreement.TabIndex = 21;
-            this.agreement.Text = "Agreement";
-            // 
-            // law
-            // 
-            this.law.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.law.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.law.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.law.ForeColor = System.Drawing.Color.White;
-            this.law.Location = new System.Drawing.Point(6, 298);
-            this.law.Multiline = true;
-            this.law.Name = "law";
-            this.law.Size = new System.Drawing.Size(274, 111);
-            this.law.TabIndex = 22;
-            this.law.Text = "Law";
-            // 
-            // confidentiality
-            // 
-            this.confidentiality.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.confidentiality.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.confidentiality.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confidentiality.ForeColor = System.Drawing.Color.White;
-            this.confidentiality.Location = new System.Drawing.Point(625, 21);
-            this.confidentiality.Multiline = true;
-            this.confidentiality.Name = "confidentiality";
-            this.confidentiality.Size = new System.Drawing.Size(274, 111);
-            this.confidentiality.TabIndex = 23;
-            this.confidentiality.Text = "Confidentiality";
-            // 
-            // indemnity
-            // 
-            this.indemnity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.indemnity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.indemnity.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.indemnity.ForeColor = System.Drawing.Color.White;
-            this.indemnity.Location = new System.Drawing.Point(625, 161);
-            this.indemnity.Multiline = true;
-            this.indemnity.Name = "indemnity";
-            this.indemnity.Size = new System.Drawing.Size(274, 111);
-            this.indemnity.TabIndex = 24;
-            this.indemnity.Text = "Indemnity";
-            // 
-            // reviewCriteriaIntro
-            // 
-            this.reviewCriteriaIntro.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.reviewCriteriaIntro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.reviewCriteriaIntro.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.reviewCriteria,
-            this.reviewDecription});
-            this.reviewCriteriaIntro.Location = new System.Drawing.Point(126, 22);
-            this.reviewCriteriaIntro.Name = "reviewCriteriaIntro";
-            this.reviewCriteriaIntro.Size = new System.Drawing.Size(691, 108);
-            this.reviewCriteriaIntro.TabIndex = 0;
-            // 
-            // reviewCriteria
-            // 
-            this.reviewCriteria.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.reviewCriteria.HeaderText = "Criteria";
-            this.reviewCriteria.Name = "reviewCriteria";
-            // 
-            // reviewDecription
-            // 
-            this.reviewDecription.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.reviewDecription.HeaderText = "Description";
-            this.reviewDecription.Name = "reviewDecription";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(6, 64);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 17);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Review Criteria";
-            // 
-            // reviewProcess
-            // 
-            this.reviewProcess.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.reviewProcess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.reviewProcess.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reviewProcess.ForeColor = System.Drawing.Color.White;
-            this.reviewProcess.Location = new System.Drawing.Point(126, 151);
-            this.reviewProcess.Multiline = true;
-            this.reviewProcess.Name = "reviewProcess";
-            this.reviewProcess.Size = new System.Drawing.Size(631, 251);
-            this.reviewProcess.TabIndex = 18;
-            this.reviewProcess.Text = "Review Process";
-            // 
-            // reviewSchedule
-            // 
-            this.reviewSchedule.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.reviewSchedule.Location = new System.Drawing.Point(4, 22);
-            this.reviewSchedule.Name = "reviewSchedule";
-            this.reviewSchedule.Padding = new System.Windows.Forms.Padding(3);
-            this.reviewSchedule.Size = new System.Drawing.Size(914, 450);
-            this.reviewSchedule.TabIndex = 6;
-            this.reviewSchedule.Text = "Review Schedule";
-            // 
-            // supplier
-            // 
-            this.supplier.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.supplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.supplier.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.supplier.ForeColor = System.Drawing.Color.White;
-            this.supplier.Location = new System.Drawing.Point(36, 37);
-            this.supplier.Multiline = true;
-            this.supplier.Name = "supplier";
-            this.supplier.Size = new System.Drawing.Size(328, 261);
-            this.supplier.TabIndex = 18;
-            this.supplier.Text = "Supplier";
-            // 
-            // project
-            // 
-            this.project.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.project.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.project.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.project.ForeColor = System.Drawing.Color.White;
-            this.project.Location = new System.Drawing.Point(452, 37);
-            this.project.Multiline = true;
-            this.project.Name = "project";
-            this.project.Size = new System.Drawing.Size(348, 261);
-            this.project.TabIndex = 19;
-            this.project.Text = "Project";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(6, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(129, 17);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Procurement Items";
             // 
             // procurementItems
             // 
@@ -579,24 +476,10 @@
             this.itemDescription,
             this.itemQuantity,
             this.itemPrice});
-            this.procurementItems.Location = new System.Drawing.Point(148, 73);
+            this.procurementItems.Location = new System.Drawing.Point(6, 47);
             this.procurementItems.Name = "procurementItems";
-            this.procurementItems.Size = new System.Drawing.Size(691, 108);
+            this.procurementItems.Size = new System.Drawing.Size(902, 397);
             this.procurementItems.TabIndex = 1;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(3, 111);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(129, 17);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Procurement Items";
             // 
             // itemName
             // 
@@ -622,9 +505,52 @@
             this.itemPrice.HeaderText = "Item Price";
             this.itemPrice.Name = "itemPrice";
             // 
+            // responsibilities
+            // 
+            this.responsibilities.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.responsibilities.Controls.Add(this.tabControl4);
+            this.responsibilities.Location = new System.Drawing.Point(4, 22);
+            this.responsibilities.Name = "responsibilities";
+            this.responsibilities.Padding = new System.Windows.Forms.Padding(3);
+            this.responsibilities.Size = new System.Drawing.Size(914, 450);
+            this.responsibilities.TabIndex = 3;
+            this.responsibilities.Text = "Responsibilities";
+            // 
+            // performance
+            // 
+            this.performance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.performance.Controls.Add(this.tabControl5);
+            this.performance.Location = new System.Drawing.Point(4, 22);
+            this.performance.Name = "performance";
+            this.performance.Padding = new System.Windows.Forms.Padding(3);
+            this.performance.Size = new System.Drawing.Size(914, 450);
+            this.performance.TabIndex = 4;
+            this.performance.Text = "Performance";
+            // 
+            // termsAndConditions
+            // 
+            this.termsAndConditions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.termsAndConditions.Controls.Add(this.tabControl6);
+            this.termsAndConditions.Location = new System.Drawing.Point(4, 22);
+            this.termsAndConditions.Name = "termsAndConditions";
+            this.termsAndConditions.Padding = new System.Windows.Forms.Padding(3);
+            this.termsAndConditions.Size = new System.Drawing.Size(914, 450);
+            this.termsAndConditions.TabIndex = 5;
+            this.termsAndConditions.Text = "Terms and Conditions";
+            // 
+            // reviewSchedule
+            // 
+            this.reviewSchedule.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.reviewSchedule.Location = new System.Drawing.Point(4, 22);
+            this.reviewSchedule.Name = "reviewSchedule";
+            this.reviewSchedule.Padding = new System.Windows.Forms.Padding(3);
+            this.reviewSchedule.Size = new System.Drawing.Size(914, 450);
+            this.reviewSchedule.TabIndex = 6;
+            this.reviewSchedule.Text = "Review Schedule";
+            // 
             // deliverySchedule
             // 
-            this.deliverySchedule.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.deliverySchedule.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.deliverySchedule.Location = new System.Drawing.Point(4, 22);
             this.deliverySchedule.Name = "deliverySchedule";
             this.deliverySchedule.Padding = new System.Windows.Forms.Padding(3);
@@ -632,104 +558,424 @@
             this.deliverySchedule.TabIndex = 7;
             this.deliverySchedule.Text = "Delivery Schedule";
             // 
-            // recipients
+            // tabControl4
             // 
-            this.recipients.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabControl4.Controls.Add(this.tabPage4);
+            this.tabControl4.Controls.Add(this.tabPage8);
+            this.tabControl4.Location = new System.Drawing.Point(7, 7);
+            this.tabControl4.Name = "tabControl4";
+            this.tabControl4.SelectedIndex = 0;
+            this.tabControl4.Size = new System.Drawing.Size(904, 437);
+            this.tabControl4.TabIndex = 0;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage4.Controls.Add(this.supplier);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(896, 411);
+            this.tabPage4.TabIndex = 0;
+            this.tabPage4.Text = "Supplier";
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage8.Controls.Add(this.project);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(896, 411);
+            this.tabPage8.TabIndex = 1;
+            this.tabPage8.Text = "Project";
+            // 
+            // supplier
+            // 
+            this.supplier.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.recipients.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.recipients.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recipients.ForeColor = System.Drawing.Color.White;
-            this.recipients.Location = new System.Drawing.Point(539, 29);
-            this.recipients.Multiline = true;
-            this.recipients.Name = "recipients";
-            this.recipients.Size = new System.Drawing.Size(304, 186);
-            this.recipients.TabIndex = 18;
-            this.recipients.Text = "Recipients";
+            this.supplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.supplier.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.supplier.ForeColor = System.Drawing.Color.Black;
+            this.supplier.Location = new System.Drawing.Point(3, 6);
+            this.supplier.Multiline = true;
+            this.supplier.Name = "supplier";
+            this.supplier.Size = new System.Drawing.Size(887, 399);
+            this.supplier.TabIndex = 20;
+            this.supplier.Text = "Supplier";
             // 
-            // purpose
+            // project
             // 
-            this.purpose.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.project.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.purpose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.purpose.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.purpose.ForeColor = System.Drawing.Color.White;
-            this.purpose.Location = new System.Drawing.Point(152, 29);
-            this.purpose.Multiline = true;
-            this.purpose.Name = "purpose";
-            this.purpose.Size = new System.Drawing.Size(313, 186);
-            this.purpose.TabIndex = 19;
-            this.purpose.Text = "Purpose";
+            this.project.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.project.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.project.ForeColor = System.Drawing.Color.Black;
+            this.project.Location = new System.Drawing.Point(3, 3);
+            this.project.Multiline = true;
+            this.project.Name = "project";
+            this.project.Size = new System.Drawing.Size(887, 405);
+            this.project.TabIndex = 22;
+            this.project.Text = "Project";
             // 
-            // label6
+            // tabControl5
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabControl5.Controls.Add(this.tabPage9);
+            this.tabControl5.Controls.Add(this.tabPage10);
+            this.tabControl5.Location = new System.Drawing.Point(7, 7);
+            this.tabControl5.Name = "tabControl5";
+            this.tabControl5.SelectedIndex = 0;
+            this.tabControl5.Size = new System.Drawing.Size(901, 437);
+            this.tabControl5.TabIndex = 0;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage9.Controls.Add(this.reviewCriteriaIntro);
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(893, 411);
+            this.tabPage9.TabIndex = 0;
+            this.tabPage9.Text = "Review Criteria";
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage10.Controls.Add(this.reviewProcess);
+            this.tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage10.Size = new System.Drawing.Size(893, 411);
+            this.tabPage10.TabIndex = 1;
+            this.tabPage10.Text = "Review Process";
+            // 
+            // reviewCriteriaIntro
+            // 
+            this.reviewCriteriaIntro.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(30, 294);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 17);
-            this.label6.TabIndex = 21;
-            this.label6.Text = "Definitions";
+            this.reviewCriteriaIntro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.reviewCriteriaIntro.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.reviewCriteria,
+            this.reviewDecription});
+            this.reviewCriteriaIntro.Location = new System.Drawing.Point(3, 3);
+            this.reviewCriteriaIntro.Name = "reviewCriteriaIntro";
+            this.reviewCriteriaIntro.Size = new System.Drawing.Size(884, 402);
+            this.reviewCriteriaIntro.TabIndex = 19;
             // 
-            // definitions
+            // reviewCriteria
             // 
-            this.definitions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.reviewCriteria.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.reviewCriteria.HeaderText = "Criteria";
+            this.reviewCriteria.Name = "reviewCriteria";
+            // 
+            // reviewDecription
+            // 
+            this.reviewDecription.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.reviewDecription.HeaderText = "Description";
+            this.reviewDecription.Name = "reviewDecription";
+            // 
+            // reviewProcess
+            // 
+            this.reviewProcess.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.definitions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.definitions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.term,
-            this.definition});
-            this.definitions.Location = new System.Drawing.Point(152, 237);
-            this.definitions.Name = "definitions";
-            this.definitions.Size = new System.Drawing.Size(691, 108);
-            this.definitions.TabIndex = 20;
+            this.reviewProcess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.reviewProcess.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reviewProcess.ForeColor = System.Drawing.Color.Black;
+            this.reviewProcess.Location = new System.Drawing.Point(6, 6);
+            this.reviewProcess.Multiline = true;
+            this.reviewProcess.Name = "reviewProcess";
+            this.reviewProcess.Size = new System.Drawing.Size(881, 399);
+            this.reviewProcess.TabIndex = 22;
+            this.reviewProcess.Text = "Review Process";
             // 
-            // term
+            // tabControl6
             // 
-            this.term.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.term.HeaderText = "Term";
-            this.term.Name = "term";
+            this.tabControl6.Controls.Add(this.tabPage11);
+            this.tabControl6.Controls.Add(this.tabPage12);
+            this.tabControl6.Controls.Add(this.tabPage13);
+            this.tabControl6.Controls.Add(this.tabPage14);
+            this.tabControl6.Controls.Add(this.tabPage15);
+            this.tabControl6.Controls.Add(this.tabPage16);
+            this.tabControl6.Controls.Add(this.tabPage17);
+            this.tabControl6.Controls.Add(this.tabPage18);
+            this.tabControl6.Location = new System.Drawing.Point(7, 7);
+            this.tabControl6.Name = "tabControl6";
+            this.tabControl6.SelectedIndex = 0;
+            this.tabControl6.Size = new System.Drawing.Size(901, 440);
+            this.tabControl6.TabIndex = 0;
             // 
-            // definition
+            // tabPage11
             // 
-            this.definition.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.definition.HeaderText = "Definition";
-            this.definition.Name = "definition";
+            this.tabPage11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage11.Controls.Add(this.payment);
+            this.tabPage11.Location = new System.Drawing.Point(4, 22);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage11.Size = new System.Drawing.Size(893, 414);
+            this.tabPage11.TabIndex = 0;
+            this.tabPage11.Text = "Payment";
+            // 
+            // tabPage12
+            // 
+            this.tabPage12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage12.Controls.Add(this.invoicing);
+            this.tabPage12.Location = new System.Drawing.Point(4, 22);
+            this.tabPage12.Name = "tabPage12";
+            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage12.Size = new System.Drawing.Size(893, 414);
+            this.tabPage12.TabIndex = 1;
+            this.tabPage12.Text = "Invoicing";
+            // 
+            // payment
+            // 
+            this.payment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.payment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.payment.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.payment.ForeColor = System.Drawing.Color.Black;
+            this.payment.Location = new System.Drawing.Point(6, 6);
+            this.payment.Multiline = true;
+            this.payment.Name = "payment";
+            this.payment.Size = new System.Drawing.Size(881, 402);
+            this.payment.TabIndex = 25;
+            this.payment.Text = "Payment";
+            // 
+            // tabPage13
+            // 
+            this.tabPage13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage13.Controls.Add(this.confidentiality);
+            this.tabPage13.Location = new System.Drawing.Point(4, 22);
+            this.tabPage13.Name = "tabPage13";
+            this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage13.Size = new System.Drawing.Size(893, 414);
+            this.tabPage13.TabIndex = 2;
+            this.tabPage13.Text = "Confidentiality";
+            // 
+            // tabPage14
+            // 
+            this.tabPage14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage14.Controls.Add(this.termination);
+            this.tabPage14.Location = new System.Drawing.Point(4, 22);
+            this.tabPage14.Name = "tabPage14";
+            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage14.Size = new System.Drawing.Size(893, 414);
+            this.tabPage14.TabIndex = 3;
+            this.tabPage14.Text = "Termination";
+            // 
+            // tabPage15
+            // 
+            this.tabPage15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage15.Controls.Add(this.disputes);
+            this.tabPage15.Location = new System.Drawing.Point(4, 22);
+            this.tabPage15.Name = "tabPage15";
+            this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage15.Size = new System.Drawing.Size(893, 414);
+            this.tabPage15.TabIndex = 4;
+            this.tabPage15.Text = "Disputes";
+            // 
+            // tabPage16
+            // 
+            this.tabPage16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage16.Controls.Add(this.indemnity);
+            this.tabPage16.Location = new System.Drawing.Point(4, 22);
+            this.tabPage16.Name = "tabPage16";
+            this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage16.Size = new System.Drawing.Size(893, 414);
+            this.tabPage16.TabIndex = 5;
+            this.tabPage16.Text = "Indemnity";
+            // 
+            // tabPage17
+            // 
+            this.tabPage17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage17.Controls.Add(this.law);
+            this.tabPage17.Location = new System.Drawing.Point(4, 22);
+            this.tabPage17.Name = "tabPage17";
+            this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage17.Size = new System.Drawing.Size(893, 414);
+            this.tabPage17.TabIndex = 6;
+            this.tabPage17.Text = "Law";
+            // 
+            // tabPage18
+            // 
+            this.tabPage18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage18.Controls.Add(this.agreement);
+            this.tabPage18.Location = new System.Drawing.Point(4, 22);
+            this.tabPage18.Name = "tabPage18";
+            this.tabPage18.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage18.Size = new System.Drawing.Size(893, 414);
+            this.tabPage18.TabIndex = 7;
+            this.tabPage18.Text = "Agreement";
+            // 
+            // invoicing
+            // 
+            this.invoicing.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.invoicing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.invoicing.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.invoicing.ForeColor = System.Drawing.Color.Black;
+            this.invoicing.Location = new System.Drawing.Point(3, 3);
+            this.invoicing.Multiline = true;
+            this.invoicing.Name = "invoicing";
+            this.invoicing.Size = new System.Drawing.Size(884, 408);
+            this.invoicing.TabIndex = 29;
+            this.invoicing.Text = "Invoicing";
+            // 
+            // confidentiality
+            // 
+            this.confidentiality.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.confidentiality.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.confidentiality.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confidentiality.ForeColor = System.Drawing.Color.Black;
+            this.confidentiality.Location = new System.Drawing.Point(3, 3);
+            this.confidentiality.Multiline = true;
+            this.confidentiality.Name = "confidentiality";
+            this.confidentiality.Size = new System.Drawing.Size(884, 405);
+            this.confidentiality.TabIndex = 32;
+            this.confidentiality.Text = "Confidentiality";
+            // 
+            // termination
+            // 
+            this.termination.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.termination.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.termination.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.termination.ForeColor = System.Drawing.Color.Black;
+            this.termination.Location = new System.Drawing.Point(3, 3);
+            this.termination.Multiline = true;
+            this.termination.Name = "termination";
+            this.termination.Size = new System.Drawing.Size(884, 408);
+            this.termination.TabIndex = 28;
+            this.termination.Text = "Termination";
+            // 
+            // disputes
+            // 
+            this.disputes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.disputes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.disputes.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.disputes.ForeColor = System.Drawing.Color.Black;
+            this.disputes.Location = new System.Drawing.Point(3, 3);
+            this.disputes.Multiline = true;
+            this.disputes.Name = "disputes";
+            this.disputes.Size = new System.Drawing.Size(884, 408);
+            this.disputes.TabIndex = 27;
+            this.disputes.Text = "Disputes";
+            // 
+            // indemnity
+            // 
+            this.indemnity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.indemnity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.indemnity.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.indemnity.ForeColor = System.Drawing.Color.Black;
+            this.indemnity.Location = new System.Drawing.Point(3, 3);
+            this.indemnity.Multiline = true;
+            this.indemnity.Name = "indemnity";
+            this.indemnity.Size = new System.Drawing.Size(887, 408);
+            this.indemnity.TabIndex = 33;
+            this.indemnity.Text = "Indemnity";
+            // 
+            // law
+            // 
+            this.law.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.law.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.law.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.law.ForeColor = System.Drawing.Color.Black;
+            this.law.Location = new System.Drawing.Point(6, 6);
+            this.law.Multiline = true;
+            this.law.Name = "law";
+            this.law.Size = new System.Drawing.Size(881, 402);
+            this.law.TabIndex = 31;
+            this.law.Text = "Law";
+            // 
+            // agreement
+            // 
+            this.agreement.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.agreement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.agreement.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.agreement.ForeColor = System.Drawing.Color.Black;
+            this.agreement.Location = new System.Drawing.Point(6, 6);
+            this.agreement.Multiline = true;
+            this.agreement.Name = "agreement";
+            this.agreement.Size = new System.Drawing.Size(881, 402);
+            this.agreement.TabIndex = 30;
+            this.agreement.Text = "Agreement";
             // 
             // SupplierContractDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(946, 530);
             this.Controls.Add(this.tabControl1);
             this.Name = "SupplierContractDocumentForm";
             this.Text = "SupplierContractDocumentForm";
             this.tabControl1.ResumeLayout(false);
             this.documentControl.ResumeLayout(false);
-            this.documentControl.PerformLayout();
-            this.introduction.ResumeLayout(false);
-            this.introduction.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.documentApprovals)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentHistory)).EndInit();
+            this.tabControl2.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.documentInformation)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.documentHistory)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.documentApprovals)).EndInit();
+            this.introduction.ResumeLayout(false);
+            this.tabControl3.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.definitions)).EndInit();
             this.scopeOfWork.ResumeLayout(false);
             this.scopeOfWork.PerformLayout();
-            this.responsibilities.ResumeLayout(false);
-            this.responsibilities.PerformLayout();
-            this.performance.ResumeLayout(false);
-            this.performance.PerformLayout();
-            this.termsAndConditions.ResumeLayout(false);
-            this.termsAndConditions.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.reviewCriteriaIntro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.procurementItems)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.definitions)).EndInit();
+            this.responsibilities.ResumeLayout(false);
+            this.performance.ResumeLayout(false);
+            this.termsAndConditions.ResumeLayout(false);
+            this.tabControl4.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            this.tabPage8.ResumeLayout(false);
+            this.tabPage8.PerformLayout();
+            this.tabControl5.ResumeLayout(false);
+            this.tabPage9.ResumeLayout(false);
+            this.tabPage10.ResumeLayout(false);
+            this.tabPage10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.reviewCriteriaIntro)).EndInit();
+            this.tabControl6.ResumeLayout(false);
+            this.tabPage11.ResumeLayout(false);
+            this.tabPage11.PerformLayout();
+            this.tabPage12.ResumeLayout(false);
+            this.tabPage12.PerformLayout();
+            this.tabPage13.ResumeLayout(false);
+            this.tabPage13.PerformLayout();
+            this.tabPage14.ResumeLayout(false);
+            this.tabPage14.PerformLayout();
+            this.tabPage15.ResumeLayout(false);
+            this.tabPage15.PerformLayout();
+            this.tabPage16.ResumeLayout(false);
+            this.tabPage16.PerformLayout();
+            this.tabPage17.ResumeLayout(false);
+            this.tabPage17.PerformLayout();
+            this.tabPage18.ResumeLayout(false);
+            this.tabPage18.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -738,54 +984,72 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage documentControl;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView documentApprovals;
-        private System.Windows.Forms.DataGridViewTextBoxColumn approvalRole;
-        private System.Windows.Forms.DataGridViewTextBoxColumn approvalName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn approvalSignature;
-        private System.Windows.Forms.DataGridViewTextBoxColumn approvalDate;
-        private System.Windows.Forms.DataGridView documentHistory;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Version;
-        private System.Windows.Forms.DataGridViewTextBoxColumn historyIssueDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn historyChanges;
-        private System.Windows.Forms.DataGridView documentInformation;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Information;
         private System.Windows.Forms.TabPage introduction;
         private System.Windows.Forms.TabPage scopeOfWork;
         private System.Windows.Forms.TabPage responsibilities;
         private System.Windows.Forms.TabPage performance;
         private System.Windows.Forms.TabPage termsAndConditions;
-        private System.Windows.Forms.TextBox reviewProcess;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView reviewCriteriaIntro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn reviewCriteria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn reviewDecription;
-        private System.Windows.Forms.TextBox indemnity;
-        private System.Windows.Forms.TextBox confidentiality;
-        private System.Windows.Forms.TextBox law;
-        private System.Windows.Forms.TextBox agreement;
-        private System.Windows.Forms.TextBox invoicing;
-        private System.Windows.Forms.TextBox termination;
-        private System.Windows.Forms.TextBox disputes;
-        private System.Windows.Forms.TextBox payment;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView procurementItems;
         private System.Windows.Forms.DataGridViewTextBoxColumn itemName;
         private System.Windows.Forms.DataGridViewTextBoxColumn itemDescription;
         private System.Windows.Forms.DataGridViewTextBoxColumn itemQuantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn itemPrice;
-        private System.Windows.Forms.TextBox project;
-        private System.Windows.Forms.TextBox supplier;
         private System.Windows.Forms.TabPage reviewSchedule;
         private System.Windows.Forms.TabPage deliverySchedule;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.DataGridView documentInformation;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Information;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.DataGridView documentHistory;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Version;
+        private System.Windows.Forms.DataGridViewTextBoxColumn historyIssueDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn historyChanges;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.DataGridView documentApprovals;
+        private System.Windows.Forms.DataGridViewTextBoxColumn approvalRole;
+        private System.Windows.Forms.DataGridViewTextBoxColumn approvalName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn approvalSignature;
+        private System.Windows.Forms.DataGridViewTextBoxColumn approvalDate;
+        private System.Windows.Forms.TabControl tabControl3;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TextBox purpose;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TextBox recipients;
+        private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.DataGridView definitions;
         private System.Windows.Forms.DataGridViewTextBoxColumn term;
         private System.Windows.Forms.DataGridViewTextBoxColumn definition;
-        private System.Windows.Forms.TextBox purpose;
-        private System.Windows.Forms.TextBox recipients;
+        private System.Windows.Forms.TabControl tabControl4;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TextBox supplier;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.TextBox project;
+        private System.Windows.Forms.TabControl tabControl5;
+        private System.Windows.Forms.TabPage tabPage9;
+        private System.Windows.Forms.DataGridView reviewCriteriaIntro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn reviewCriteria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn reviewDecription;
+        private System.Windows.Forms.TabPage tabPage10;
+        private System.Windows.Forms.TextBox reviewProcess;
+        private System.Windows.Forms.TabControl tabControl6;
+        private System.Windows.Forms.TabPage tabPage11;
+        private System.Windows.Forms.TextBox payment;
+        private System.Windows.Forms.TabPage tabPage12;
+        private System.Windows.Forms.TextBox invoicing;
+        private System.Windows.Forms.TabPage tabPage13;
+        private System.Windows.Forms.TextBox confidentiality;
+        private System.Windows.Forms.TabPage tabPage14;
+        private System.Windows.Forms.TextBox termination;
+        private System.Windows.Forms.TabPage tabPage15;
+        private System.Windows.Forms.TextBox disputes;
+        private System.Windows.Forms.TabPage tabPage16;
+        private System.Windows.Forms.TextBox indemnity;
+        private System.Windows.Forms.TabPage tabPage17;
+        private System.Windows.Forms.TextBox law;
+        private System.Windows.Forms.TabPage tabPage18;
+        private System.Windows.Forms.TextBox agreement;
     }
 }
