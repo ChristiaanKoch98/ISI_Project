@@ -12,6 +12,8 @@ using Newtonsoft.Json;
 using System.Runtime.InteropServices;
 using ProjectManagementToolkit.Utility;
 using ProjectManagementToolkit.Properties;
+using Xceed.Document.NET;
+using Xceed.Words.NET;
 
 namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
@@ -22,7 +24,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         AcceptanceManagementProcessModel newAcceptanceManagementProcessModel;
         AcceptanceManagementProcessModel currentAcceptanceManagementProcessModel;
 
-
+        Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
+        ProjectModel projectModel = new ProjectModel();
 
 
 
@@ -198,6 +201,45 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         }
 
 
+        private void exportToWord()
+        {
+            string path;
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                saveFileDialog.Filter = "Word 97-2003 Documents (*.doc)|*.doc|Word 2007 Documents (*.docx)|*.docx";
+                saveFileDialog.FilterIndex = 2;
+                saveFileDialog.RestoreDirectory = true;
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    path = saveFileDialog.FileName;
+                    using (var document = DocX.Create(path))
+                    {
+                        for (int i = 0; i < 11; i++)
+                        {
+                            document.InsertParagraph("")
+                                .Font("Arial")
+                                .Bold(true)
+                                .FontSize(22d).Alignment = Alignment.left;
+                        }
+
+                        //Code for the Front page
+                        document.InsertParagraph("Project Plan \nFor " + projectModel.ProjectName)
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(22d).Alignment = Alignment.left;
+                        document.InsertSectionPageBreak();
+                        //Code for the Front page
+
+
+
+                    }
+                }
+            }
+        }
+
+
 
 
 
@@ -231,6 +273,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private void AcceptanceManagementProcessDocumentForm_Load(object sender, EventArgs e)
         {
             loadDocument();
+            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
         }
     }
 }

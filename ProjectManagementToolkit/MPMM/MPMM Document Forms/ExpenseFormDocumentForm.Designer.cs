@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExpenseFormDocumentForm));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnSave = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,7 +47,7 @@
             this.detailsExpenseAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.expensedetailsPayeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.expensedetailsInvoiceNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSave = new System.Windows.Forms.Button();
+            this.btnExportWord = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -67,6 +68,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage1.Controls.Add(this.btnExportWord);
             this.tabPage1.Controls.Add(this.btnSave);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.label2);
@@ -81,6 +83,17 @@
             this.tabPage1.Size = new System.Drawing.Size(914, 450);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "EXPENSE FORM";
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(774, 5);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(134, 22);
+            this.btnSave.TabIndex = 13;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label4
             // 
@@ -215,16 +228,16 @@
             this.expensedetailsInvoiceNumber.HeaderText = "Invoice Number";
             this.expensedetailsInvoiceNumber.Name = "expensedetailsInvoiceNumber";
             // 
-            // btnSave
+            // btnExportWord
             // 
-            this.btnSave.Location = new System.Drawing.Point(774, 5);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(134, 22);
-            this.btnSave.TabIndex = 13;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.btnExportWord.Location = new System.Drawing.Point(636, 5);
+            this.btnExportWord.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExportWord.Name = "btnExportWord";
+            this.btnExportWord.Size = new System.Drawing.Size(134, 22);
+            this.btnExportWord.TabIndex = 16;
+            this.btnExportWord.Text = "Export to Word";
+            this.btnExportWord.UseVisualStyleBackColor = true;
+            this.btnExportWord.Click += new System.EventHandler(this.btnExportWord_Click);
             // 
             // ExpenseFormDocumentForm
             // 
@@ -263,5 +276,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn expensedetailsPayeeName;
         private System.Windows.Forms.DataGridViewTextBoxColumn expensedetailsInvoiceNumber;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnExportWord;
     }
 }

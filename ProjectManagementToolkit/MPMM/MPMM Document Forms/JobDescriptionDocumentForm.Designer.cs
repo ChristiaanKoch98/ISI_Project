@@ -58,6 +58,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtProjectName = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.btnExportWord = new System.Windows.Forms.Button();
             this.tabPage6.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -425,12 +426,23 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // btnExportWord
+            // 
+            this.btnExportWord.Location = new System.Drawing.Point(687, 11);
+            this.btnExportWord.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExportWord.Name = "btnExportWord";
+            this.btnExportWord.Size = new System.Drawing.Size(134, 22);
+            this.btnExportWord.TabIndex = 17;
+            this.btnExportWord.Text = "Export to Word";
+            this.btnExportWord.UseVisualStyleBackColor = true;
+            // 
             // JobDescriptionDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(970, 339);
+            this.Controls.Add(this.btnExportWord);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtProjectName);
@@ -502,5 +514,6 @@
         private System.Windows.Forms.TabPage tabPage13;
         private System.Windows.Forms.TextBox txtspecialconditionsDescription;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnExportWord;
     }
 }

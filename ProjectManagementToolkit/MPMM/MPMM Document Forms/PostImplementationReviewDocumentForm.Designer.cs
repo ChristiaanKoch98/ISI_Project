@@ -126,6 +126,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.txtProjectName = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.btnExportWord = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -1182,14 +1183,24 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(838, 11);
+            this.btnSave.Location = new System.Drawing.Point(927, 11);
             this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(134, 22);
+            this.btnSave.Size = new System.Drawing.Size(45, 22);
             this.btnSave.TabIndex = 13;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnExportWord
+            // 
+            this.btnExportWord.Location = new System.Drawing.Point(827, 11);
+            this.btnExportWord.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExportWord.Name = "btnExportWord";
+            this.btnExportWord.Size = new System.Drawing.Size(96, 22);
+            this.btnExportWord.TabIndex = 17;
+            this.btnExportWord.Text = "Export to Word";
+            this.btnExportWord.UseVisualStyleBackColor = true;
             // 
             // PostImplementationReviewDocumentForm
             // 
@@ -1197,6 +1208,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(983, 504);
+            this.Controls.Add(this.btnExportWord);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.txtProjectName);
@@ -1338,5 +1350,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn deliverablesQualityStandards;
         private System.Windows.Forms.DataGridViewTextBoxColumn deliverablesAchievement;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnExportWord;
     }
 }

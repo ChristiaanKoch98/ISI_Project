@@ -63,6 +63,7 @@
             this.txttimemanagementdocumentsTimeSheet = new System.Windows.Forms.TextBox();
             this.txttimemanagementdocumentsDescription = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.btnExportWord = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -474,12 +475,23 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // btnExportWord
+            // 
+            this.btnExportWord.Location = new System.Drawing.Point(589, 11);
+            this.btnExportWord.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExportWord.Name = "btnExportWord";
+            this.btnExportWord.Size = new System.Drawing.Size(134, 22);
+            this.btnExportWord.TabIndex = 17;
+            this.btnExportWord.Text = "Export to Word";
+            this.btnExportWord.UseVisualStyleBackColor = true;
+            // 
             // TimeMangementProcessDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(872, 487);
+            this.Controls.Add(this.btnExportWord);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label4);
@@ -541,5 +553,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn InformationType;
         private System.Windows.Forms.DataGridViewTextBoxColumn Information;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnExportWord;
     }
 }
