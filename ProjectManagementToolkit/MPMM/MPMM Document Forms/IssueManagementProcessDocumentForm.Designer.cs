@@ -70,6 +70,7 @@
             this.issueRegisterTextBox = new System.Windows.Forms.TextBox();
             this.issueFormTextBox = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.btnExportIssueManagememnt = new System.Windows.Forms.Button();
             this.i.SuspendLayout();
             this.dcmntControlTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.docApprovalsDataGrid)).BeginInit();
@@ -498,11 +499,22 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // btnExportIssueManagememnt
+            // 
+            this.btnExportIssueManagememnt.Location = new System.Drawing.Point(602, 13);
+            this.btnExportIssueManagememnt.Name = "btnExportIssueManagememnt";
+            this.btnExportIssueManagememnt.Size = new System.Drawing.Size(75, 23);
+            this.btnExportIssueManagememnt.TabIndex = 4;
+            this.btnExportIssueManagememnt.Text = "Export";
+            this.btnExportIssueManagememnt.UseVisualStyleBackColor = true;
+            this.btnExportIssueManagememnt.Click += new System.EventHandler(this.btnExportIssueManagememnt_Click);
+            // 
             // IssueManagementProcessDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 532);
+            this.Controls.Add(this.btnExportIssueManagememnt);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.i);
             this.Controls.Add(this.projectNameLabel);
@@ -572,5 +584,6 @@
         private System.Windows.Forms.TextBox issueRegisterTextBox;
         private System.Windows.Forms.TextBox issueFormTextBox;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnExportIssueManagememnt;
     }
 }
