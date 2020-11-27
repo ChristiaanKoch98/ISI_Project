@@ -54,18 +54,18 @@
             this.riskImpact = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl3 = new System.Windows.Forms.TabControl();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.riskMigigationList = new System.Windows.Forms.TextBox();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.supportingDocumentation = new System.Windows.Forms.TextBox();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.riskRecommendedContingentActions = new System.Windows.Forms.TextBox();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.label10 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.signatureDate = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.signature = new System.Windows.Forms.PictureBox();
-            this.supportingDocumentation = new System.Windows.Forms.TextBox();
-            this.riskRecommendedContingentActions = new System.Windows.Forms.TextBox();
-            this.riskMigigationList = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.projectDeatailsAndRiskDetails.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -77,8 +77,8 @@
             this.tabPage5.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabControl3.SuspendLayout();
-            this.tabPage7.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.tabPage9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.signature)).BeginInit();
@@ -91,6 +91,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.projectDeatailsAndRiskDetails);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(3, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -102,10 +103,10 @@
             this.projectDeatailsAndRiskDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.projectDeatailsAndRiskDetails.Controls.Add(this.tabControl2);
             this.projectDeatailsAndRiskDetails.Font = new System.Drawing.Font("Cambria", 10F);
-            this.projectDeatailsAndRiskDetails.Location = new System.Drawing.Point(4, 22);
+            this.projectDeatailsAndRiskDetails.Location = new System.Drawing.Point(4, 21);
             this.projectDeatailsAndRiskDetails.Name = "projectDeatailsAndRiskDetails";
             this.projectDeatailsAndRiskDetails.Padding = new System.Windows.Forms.Padding(3);
-            this.projectDeatailsAndRiskDetails.Size = new System.Drawing.Size(914, 377);
+            this.projectDeatailsAndRiskDetails.Size = new System.Drawing.Size(914, 378);
             this.projectDeatailsAndRiskDetails.TabIndex = 0;
             this.projectDeatailsAndRiskDetails.Text = "Project Deatails & Risk Details";
             // 
@@ -115,6 +116,7 @@
             this.tabControl2.Controls.Add(this.tabPage3);
             this.tabControl2.Controls.Add(this.tabPage4);
             this.tabControl2.Controls.Add(this.tabPage5);
+            this.tabControl2.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl2.Location = new System.Drawing.Point(0, 3);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
@@ -154,6 +156,7 @@
             // 
             // dateRaised
             // 
+            this.dateRaised.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateRaised.Location = new System.Drawing.Point(151, 75);
             this.dateRaised.Name = "dateRaised";
             this.dateRaised.Size = new System.Drawing.Size(185, 23);
@@ -161,6 +164,7 @@
             // 
             // raisedBy
             // 
+            this.raisedBy.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.raisedBy.Location = new System.Drawing.Point(151, 42);
             this.raisedBy.Name = "raisedBy";
             this.raisedBy.Size = new System.Drawing.Size(185, 23);
@@ -168,6 +172,7 @@
             // 
             // riskID
             // 
+            this.riskID.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.riskID.Location = new System.Drawing.Point(151, 6);
             this.riskID.Name = "riskID";
             this.riskID.Size = new System.Drawing.Size(185, 23);
@@ -176,33 +181,33 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label9.Font = new System.Drawing.Font("Helvetica", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(19, 48);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(73, 17);
+            this.label9.Size = new System.Drawing.Size(80, 17);
             this.label9.TabIndex = 15;
             this.label9.Text = "Raised By:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label8.Font = new System.Drawing.Font("Helvetica", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(19, 81);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(85, 17);
+            this.label8.Size = new System.Drawing.Size(93, 17);
             this.label8.TabIndex = 14;
             this.label8.Text = "Date Raised:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label5.Font = new System.Drawing.Font("Helvetica", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(19, 12);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 17);
+            this.label5.Size = new System.Drawing.Size(61, 17);
             this.label5.TabIndex = 13;
             this.label5.Text = "Risk ID:";
             // 
@@ -222,6 +227,7 @@
             // 
             // projectManager
             // 
+            this.projectManager.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.projectManager.Location = new System.Drawing.Point(147, 53);
             this.projectManager.Name = "projectManager";
             this.projectManager.Size = new System.Drawing.Size(185, 23);
@@ -229,6 +235,7 @@
             // 
             // projectName
             // 
+            this.projectName.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.projectName.Location = new System.Drawing.Point(147, 6);
             this.projectName.Name = "projectName";
             this.projectName.Size = new System.Drawing.Size(185, 23);
@@ -237,22 +244,22 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label7.Font = new System.Drawing.Font("Helvetica", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(3, 59);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(115, 17);
+            this.label7.Size = new System.Drawing.Size(120, 17);
             this.label7.TabIndex = 13;
             this.label7.Text = "Project Manager:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label6.Font = new System.Drawing.Font("Helvetica", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(3, 12);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 17);
+            this.label6.Size = new System.Drawing.Size(102, 17);
             this.label6.TabIndex = 12;
             this.label6.Text = "Project Name:";
             // 
@@ -262,11 +269,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label3.Font = new System.Drawing.Font("Helvetica", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(26, 167);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 17);
+            this.label3.Size = new System.Drawing.Size(103, 17);
             this.label3.TabIndex = 21;
             this.label3.Text = "Risk Deatails";
             // 
@@ -276,11 +283,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label2.Font = new System.Drawing.Font("Helvetica", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(26, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 17);
+            this.label2.Size = new System.Drawing.Size(114, 17);
             this.label2.TabIndex = 20;
             this.label2.Text = "Project Details";
             // 
@@ -301,6 +308,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.riskDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.riskDescription.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.riskDescription.ForeColor = System.Drawing.Color.Black;
             this.riskDescription.Location = new System.Drawing.Point(0, 3);
             this.riskDescription.Multiline = true;
@@ -326,6 +334,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.riskLikelihood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.riskLikelihood.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.riskLikelihood.ForeColor = System.Drawing.Color.Black;
             this.riskLikelihood.Location = new System.Drawing.Point(0, 0);
             this.riskLikelihood.Multiline = true;
@@ -351,6 +360,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.riskImpact.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.riskImpact.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.riskImpact.ForeColor = System.Drawing.Color.Black;
             this.riskImpact.Location = new System.Drawing.Point(-4, 0);
             this.riskImpact.Multiline = true;
@@ -363,10 +373,10 @@
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage2.Controls.Add(this.tabControl3);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 21);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(914, 377);
+            this.tabPage2.Size = new System.Drawing.Size(914, 378);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Risk Mitigation & Approval Details";
             // 
@@ -382,38 +392,83 @@
             this.tabControl3.Size = new System.Drawing.Size(904, 367);
             this.tabControl3.TabIndex = 0;
             // 
-            // tabPage7
-            // 
-            this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage7.Controls.Add(this.supportingDocumentation);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(896, 341);
-            this.tabPage7.TabIndex = 1;
-            this.tabPage7.Text = "Supporting Documentation:";
-            // 
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage6.Controls.Add(this.riskMigigationList);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Location = new System.Drawing.Point(4, 21);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(896, 341);
+            this.tabPage6.Size = new System.Drawing.Size(896, 342);
             this.tabPage6.TabIndex = 0;
             this.tabPage6.Text = "Risk Mitigation List";
+            // 
+            // riskMigigationList
+            // 
+            this.riskMigigationList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.riskMigigationList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.riskMigigationList.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.riskMigigationList.ForeColor = System.Drawing.Color.Black;
+            this.riskMigigationList.Location = new System.Drawing.Point(3, 6);
+            this.riskMigigationList.Multiline = true;
+            this.riskMigigationList.Name = "riskMigigationList";
+            this.riskMigigationList.Size = new System.Drawing.Size(887, 330);
+            this.riskMigigationList.TabIndex = 37;
+            this.riskMigigationList.Text = "Risk Mitigation List";
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage7.Controls.Add(this.supportingDocumentation);
+            this.tabPage7.Location = new System.Drawing.Point(4, 21);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(896, 342);
+            this.tabPage7.TabIndex = 1;
+            this.tabPage7.Text = "Supporting Documentation";
+            // 
+            // supportingDocumentation
+            // 
+            this.supportingDocumentation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.supportingDocumentation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.supportingDocumentation.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.supportingDocumentation.ForeColor = System.Drawing.Color.Black;
+            this.supportingDocumentation.Location = new System.Drawing.Point(6, 6);
+            this.supportingDocumentation.Multiline = true;
+            this.supportingDocumentation.Name = "supportingDocumentation";
+            this.supportingDocumentation.Size = new System.Drawing.Size(884, 329);
+            this.supportingDocumentation.TabIndex = 37;
+            this.supportingDocumentation.Text = "Supporting Documentation";
             // 
             // tabPage8
             // 
             this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage8.Controls.Add(this.riskRecommendedContingentActions);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Location = new System.Drawing.Point(4, 21);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(896, 341);
+            this.tabPage8.Size = new System.Drawing.Size(896, 342);
             this.tabPage8.TabIndex = 2;
-            this.tabPage8.Text = "Recommended Contingent Actions:";
+            this.tabPage8.Text = "Recommended Contingent Actions";
+            // 
+            // riskRecommendedContingentActions
+            // 
+            this.riskRecommendedContingentActions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.riskRecommendedContingentActions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.riskRecommendedContingentActions.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.riskRecommendedContingentActions.ForeColor = System.Drawing.Color.Black;
+            this.riskRecommendedContingentActions.Location = new System.Drawing.Point(6, 6);
+            this.riskRecommendedContingentActions.Multiline = true;
+            this.riskRecommendedContingentActions.Name = "riskRecommendedContingentActions";
+            this.riskRecommendedContingentActions.Size = new System.Drawing.Size(887, 329);
+            this.riskRecommendedContingentActions.TabIndex = 36;
+            this.riskRecommendedContingentActions.Text = "Recommended Contingent Actions";
             // 
             // tabPage9
             // 
@@ -423,10 +478,10 @@
             this.tabPage9.Controls.Add(this.signatureDate);
             this.tabPage9.Controls.Add(this.label1);
             this.tabPage9.Controls.Add(this.signature);
-            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Location = new System.Drawing.Point(4, 21);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(896, 341);
+            this.tabPage9.Size = new System.Drawing.Size(896, 342);
             this.tabPage9.TabIndex = 3;
             this.tabPage9.Text = "Signature & Date";
             // 
@@ -436,11 +491,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label10.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.DarkRed;
             this.label10.Location = new System.Drawing.Point(6, 119);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(475, 17);
+            this.label10.Size = new System.Drawing.Size(475, 15);
             this.label10.TabIndex = 43;
             this.label10.Text = "PLEASE FORWARD THIS FORM TO THE PROJECT MANAGER FOR ACTION";
             // 
@@ -450,11 +505,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label4.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(6, 20);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 17);
+            this.label4.Size = new System.Drawing.Size(60, 15);
             this.label4.TabIndex = 42;
             this.label4.Text = "signature";
             // 
@@ -463,9 +518,10 @@
             this.signatureDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.signatureDate.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signatureDate.Location = new System.Drawing.Point(112, 60);
             this.signatureDate.Name = "signatureDate";
-            this.signatureDate.Size = new System.Drawing.Size(230, 20);
+            this.signatureDate.Size = new System.Drawing.Size(230, 23);
             this.signatureDate.TabIndex = 41;
             // 
             // label1
@@ -474,11 +530,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label1.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(6, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 17);
+            this.label1.Size = new System.Drawing.Size(34, 15);
             this.label1.TabIndex = 40;
             this.label1.Text = "Date";
             // 
@@ -493,48 +549,6 @@
             this.signature.Size = new System.Drawing.Size(160, 16);
             this.signature.TabIndex = 39;
             this.signature.TabStop = false;
-            // 
-            // supportingDocumentation
-            // 
-            this.supportingDocumentation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.supportingDocumentation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.supportingDocumentation.ForeColor = System.Drawing.Color.Black;
-            this.supportingDocumentation.Location = new System.Drawing.Point(6, 6);
-            this.supportingDocumentation.Multiline = true;
-            this.supportingDocumentation.Name = "supportingDocumentation";
-            this.supportingDocumentation.Size = new System.Drawing.Size(884, 329);
-            this.supportingDocumentation.TabIndex = 37;
-            this.supportingDocumentation.Text = "Supporting Documentation:";
-            // 
-            // riskRecommendedContingentActions
-            // 
-            this.riskRecommendedContingentActions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.riskRecommendedContingentActions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.riskRecommendedContingentActions.ForeColor = System.Drawing.Color.Black;
-            this.riskRecommendedContingentActions.Location = new System.Drawing.Point(6, 6);
-            this.riskRecommendedContingentActions.Multiline = true;
-            this.riskRecommendedContingentActions.Name = "riskRecommendedContingentActions";
-            this.riskRecommendedContingentActions.Size = new System.Drawing.Size(887, 329);
-            this.riskRecommendedContingentActions.TabIndex = 36;
-            this.riskRecommendedContingentActions.Text = "Recommended Contingent Actions:";
-            // 
-            // riskMigigationList
-            // 
-            this.riskMigigationList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.riskMigigationList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.riskMigigationList.ForeColor = System.Drawing.Color.Black;
-            this.riskMigigationList.Location = new System.Drawing.Point(3, 6);
-            this.riskMigigationList.Multiline = true;
-            this.riskMigigationList.Name = "riskMigigationList";
-            this.riskMigigationList.Size = new System.Drawing.Size(887, 329);
-            this.riskMigigationList.TabIndex = 37;
-            this.riskMigigationList.Text = "Risk Mitigation List:";
             // 
             // RiskFormDocumentForm
             // 
@@ -562,10 +576,10 @@
             this.tabPage5.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage7.PerformLayout();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
             this.tabPage9.ResumeLayout(false);
