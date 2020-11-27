@@ -194,6 +194,7 @@
             this.txtProjectManager = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtProjectOfficeManager = new System.Windows.Forms.TextBox();
+            this.btnExportProjectDetails = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPagePremises.SuspendLayout();
             this.tabPageEquipment.SuspendLayout();
@@ -1983,9 +1984,9 @@
             // btnSaveProjectDetails
             // 
             this.btnSaveProjectDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSaveProjectDetails.Location = new System.Drawing.Point(733, 12);
+            this.btnSaveProjectDetails.Location = new System.Drawing.Point(772, 12);
             this.btnSaveProjectDetails.Name = "btnSaveProjectDetails";
-            this.btnSaveProjectDetails.Size = new System.Drawing.Size(111, 35);
+            this.btnSaveProjectDetails.Size = new System.Drawing.Size(72, 35);
             this.btnSaveProjectDetails.TabIndex = 16;
             this.btnSaveProjectDetails.Text = "Save Project Details";
             this.btnSaveProjectDetails.UseVisualStyleBackColor = true;
@@ -2057,12 +2058,24 @@
             this.txtProjectOfficeManager.TabIndex = 19;
             this.txtProjectOfficeManager.Text = "Project Office Manager";
             // 
+            // btnExportProjectDetails
+            // 
+            this.btnExportProjectDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnExportProjectDetails.Location = new System.Drawing.Point(684, 12);
+            this.btnExportProjectDetails.Name = "btnExportProjectDetails";
+            this.btnExportProjectDetails.Size = new System.Drawing.Size(72, 35);
+            this.btnExportProjectDetails.TabIndex = 21;
+            this.btnExportProjectDetails.Text = "Export Project Details";
+            this.btnExportProjectDetails.UseVisualStyleBackColor = true;
+            this.btnExportProjectDetails.Click += new System.EventHandler(this.btnExportProjectDetails_Click);
+            // 
             // ProjectOfficeChecklistDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(860, 449);
+            this.Controls.Add(this.btnExportProjectDetails);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtProjectOfficeManager);
             this.Controls.Add(this.label1);
@@ -2267,5 +2280,6 @@
         private System.Windows.Forms.CheckBox checkBoxFD2;
         private System.Windows.Forms.CheckBox checkBoxFD1;
         private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Button btnExportProjectDetails;
     }
 }
