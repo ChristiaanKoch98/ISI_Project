@@ -159,12 +159,280 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         }
 
                         //Code for the Front page
-                        document.InsertParagraph("Project Plan \nFor " + projectModel.ProjectName)
+                        document.InsertParagraph("Job Description \nFor " + projectModel.ProjectName)
                             .Font("Arial")
                             .Bold(true)
                             .FontSize(22d).Alignment = Alignment.left;
                         document.InsertSectionPageBreak();
                         //Code for the Front page
+
+
+                        //Code for a table of contents
+                        var p = document.InsertParagraph();
+                        var title = p.InsertParagraphBeforeSelf("Table of Contents").Bold().FontSize(20);
+
+                        var tocSwitches = new Dictionary<TableOfContentsSwitches, string>()
+                        {
+                            { TableOfContentsSwitches.O, "1-3"},
+                            { TableOfContentsSwitches.U, ""},
+                            { TableOfContentsSwitches.Z, ""},
+                            { TableOfContentsSwitches.H, ""}
+                        };
+
+                        document.InsertTableOfContents(p, "", tocSwitches);
+                        //Code for a table of contents
+
+
+                        //Code for a page break
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
+                        //Code for a page break
+
+
+                        //Code for a heading 1
+                        var OverviewHeading = document.InsertParagraph("1 Overview")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        OverviewHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+                        //Code for a sentence
+                        document.InsertParagraph(currentJobDescriptionDocumentModel.ProjectNaOverviewDescriptionme)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+                        //Code for a heading 1
+                        var PurposeHeading = document.InsertParagraph("2 Purpose")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        PurposeHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+                        //Code for a sentence
+                        document.InsertParagraph(currentJobDescriptionDocumentModel.PurposeDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+                        //Code for a heading 1
+                        var ResponsibilitiesHeading = document.InsertParagraph("3 Responsibilities")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        ResponsibilitiesHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+                        //Code for a sentence
+                        document.InsertParagraph(currentJobDescriptionDocumentModel.ResponsibilitiesDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+                        //Code for a heading 1
+                        var OrganizationHeading = document.InsertParagraph("4 Organization")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        OrganizationHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+                        //Code for a sentence
+                        document.InsertParagraph(currentJobDescriptionDocumentModel.OrganizationDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+                        //Code for a heading 1
+                        var RelationshipsHeading = document.InsertParagraph("5 Relationships")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        RelationshipsHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+                        //Code for a sentence
+                        document.InsertParagraph(currentJobDescriptionDocumentModel.RelationshipsDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+                        //Code for a heading 1
+                        var SkillsHeading = document.InsertParagraph("6 Skills")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        SkillsHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+                        //Code for a sentence
+                        document.InsertParagraph(currentJobDescriptionDocumentModel.SkillsDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+                        //Code for a heading 1
+                        var ExperienceHeading = document.InsertParagraph("7 Experience")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        ExperienceHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+                        //Code for a sentence
+                        document.InsertParagraph(currentJobDescriptionDocumentModel.ExperienceDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+                        //Code for a heading 1
+                        var QualificationsHeading = document.InsertParagraph("8 Qualifications")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        QualificationsHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+                        //Code for a sentence
+                        document.InsertParagraph(currentJobDescriptionDocumentModel.QualificationsDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+                        //Code for a heading 1
+                        var PersonalityHeading = document.InsertParagraph("9 Personality")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        PersonalityHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+                        //Code for a sentence
+                        document.InsertParagraph(currentJobDescriptionDocumentModel.PersonalityDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+                        //Code for a heading 1
+                        var PerformanceCriteriaHeading = document.InsertParagraph("10 Performance Criteria")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        PerformanceCriteriaHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+                        //Code for a sentence
+                        document.InsertParagraph(currentJobDescriptionDocumentModel.PerformancecriteriaDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+                        //Code for a heading 1
+                        var WorkEnvironmentHeading = document.InsertParagraph("11 Work Environment")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        WorkEnvironmentHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+                        //Code for a sentence
+                        document.InsertParagraph(currentJobDescriptionDocumentModel.WorkenvironmentDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+                        //Code for a heading 1
+                        var SalaryHeading = document.InsertParagraph("12 Salary")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        SalaryHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+                        //Code for a sentence
+                        document.InsertParagraph(currentJobDescriptionDocumentModel.SalaryDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+                        //Code for a heading 1
+                        var SpecialConditionsHeading = document.InsertParagraph("13 Special Conditions")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        SpecialConditionsHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+                        //Code for a sentence
+                        document.InsertParagraph(currentJobDescriptionDocumentModel.SpecialconditionsDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+                        //Code for saving
+                        try
+                        {
+                            document.Save();
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("The selected File is open.", "Close File", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        //Code for saving
 
 
 
