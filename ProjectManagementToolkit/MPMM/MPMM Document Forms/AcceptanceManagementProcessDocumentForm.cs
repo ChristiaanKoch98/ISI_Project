@@ -225,7 +225,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         }
 
                         //Code for the Front page
-                        document.InsertParagraph("Project Plan \nFor " + projectModel.ProjectName)
+                        document.InsertParagraph("Acceptance Management Process \nFor " + projectModel.ProjectName)
                             .Font("Arial")
                             .Bold(true)
                             .FontSize(22d).Alignment = Alignment.left;
@@ -233,6 +233,368 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         //Code for the Front page
 
 
+
+                        //Code for the title of a page
+                        document.InsertParagraph("Document Control\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        //Code for the title of a page
+
+
+                        //Code for a space
+                        document.InsertParagraph("")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        //Code for a space
+
+
+                        //Code of a sentence
+                        document.InsertParagraph("Document Information\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        //Code of a sentence
+
+
+                        //Code for a table
+                        var documentInfoTable = document.AddTable(6, 2);
+                        documentInfoTable.Rows[0].Cells[0].Paragraphs[0].Append("").Bold(true).Color(Color.White);
+                        documentInfoTable.Rows[0].Cells[1].Paragraphs[0].Append("Information").Bold(true).Color(Color.White);
+                        documentInfoTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentInfoTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+
+                        documentInfoTable.Rows[1].Cells[0].Paragraphs[0].Append("Document ID");
+                        documentInfoTable.Rows[1].Cells[1].Paragraphs[0].Append(currentAcceptanceManagementProcessModel.DocumentID);
+
+                        documentInfoTable.Rows[2].Cells[0].Paragraphs[0].Append("Document Owner");
+                        documentInfoTable.Rows[2].Cells[1].Paragraphs[0].Append(currentAcceptanceManagementProcessModel.DocumentOwner);
+
+                        documentInfoTable.Rows[3].Cells[0].Paragraphs[0].Append("Issue Date");
+                        documentInfoTable.Rows[3].Cells[1].Paragraphs[0].Append(currentAcceptanceManagementProcessModel.IssueDate);
+
+                        documentInfoTable.Rows[4].Cells[0].Paragraphs[0].Append("Last Saved Date");
+                        documentInfoTable.Rows[4].Cells[1].Paragraphs[0].Append(currentAcceptanceManagementProcessModel.LastSavedDate);
+
+                        documentInfoTable.Rows[5].Cells[0].Paragraphs[0].Append("File Name");
+                        documentInfoTable.Rows[5].Cells[1].Paragraphs[0].Append(currentAcceptanceManagementProcessModel.FileName);
+                        documentInfoTable.SetWidths(new float[] { 493, 1094 });
+                        document.InsertTable(documentInfoTable);
+                        //Code for a table
+
+
+                        //Code of a sentence
+                        document.InsertParagraph("\nDocument History\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        //Code of a sentence
+
+
+                        //Code for a table
+                        var documentHistoryTable = document.AddTable(currentAcceptanceManagementProcessModel.DocumentHistories.Count + 1, 3);
+                        documentHistoryTable.Rows[0].Cells[0].Paragraphs[0].Append("Version")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[1].Paragraphs[0].Append("Issue Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[2].Paragraphs[0].Append("Changes")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentHistoryTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentHistoryTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        for (int i = 1; i < currentAcceptanceManagementProcessModel.DocumentHistories.Count + 1; i++)
+                        {
+                            documentHistoryTable.Rows[i].Cells[0].Paragraphs[0].Append(currentAcceptanceManagementProcessModel.DocumentHistories[i - 1].Version);
+                            documentHistoryTable.Rows[i].Cells[1].Paragraphs[0].Append(currentAcceptanceManagementProcessModel.DocumentHistories[i - 1].IssueDate);
+                            documentHistoryTable.Rows[i].Cells[2].Paragraphs[0].Append(currentAcceptanceManagementProcessModel.DocumentHistories[i - 1].Changes);
+
+                        }
+
+                        documentHistoryTable.SetWidths(new float[] { 190, 303, 1094 });
+                        document.InsertTable(documentHistoryTable);
+                        //Code for a table
+
+
+                        //Code of a sentence
+                        document.InsertParagraph("\nDocument Approvals\n")
+                           .Font("Arial")
+                           .Bold(true)
+                           .FontSize(14d).Alignment = Alignment.left;
+                        //Code of a sentence
+
+
+                        //Code for a table
+                        var documentApprovalTable = document.AddTable(currentAcceptanceManagementProcessModel.DocumentApprovals.Count + 1, 4);
+                        documentApprovalTable.Rows[0].Cells[0].Paragraphs[0].Append("Role")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[1].Paragraphs[0].Append("Name")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[2].Paragraphs[0].Append("Signature")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[3].Paragraphs[0].Append("Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentAcceptanceManagementProcessModel.DocumentApprovals.Count + 1; i++)
+                        {
+                            documentApprovalTable.Rows[i].Cells[0].Paragraphs[0].Append(currentAcceptanceManagementProcessModel.DocumentApprovals[i - 1].Role);
+                            documentApprovalTable.Rows[i].Cells[1].Paragraphs[0].Append(currentAcceptanceManagementProcessModel.DocumentApprovals[i - 1].Name);
+                            documentApprovalTable.Rows[i].Cells[2].Paragraphs[0].Append(currentAcceptanceManagementProcessModel.DocumentApprovals[i - 1].Signature);
+                            documentApprovalTable.Rows[i].Cells[3].Paragraphs[0].Append(currentAcceptanceManagementProcessModel.DocumentApprovals[i - 1].DateApproved);
+                        }
+                        documentApprovalTable.SetWidths(new float[] { 493, 332, 508, 254 });
+                        document.InsertTable(documentApprovalTable);
+                        //Code for a table
+
+
+                        //Code for a page break
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
+                        //Code for a page break
+
+
+                        //Code for a table of contents
+                        var p = document.InsertParagraph();
+                        var title = p.InsertParagraphBeforeSelf("Table of Contents").Bold().FontSize(20);
+
+                        var tocSwitches = new Dictionary<TableOfContentsSwitches, string>()
+                        {
+                            { TableOfContentsSwitches.O, "1-3"},
+                            { TableOfContentsSwitches.U, ""},
+                            { TableOfContentsSwitches.Z, ""},
+                            { TableOfContentsSwitches.H, ""}
+                        };
+
+                        document.InsertTableOfContents(p, "", tocSwitches);
+                        //Code for a table of contents
+
+
+                        //Code for a page break
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
+                        //Code for a page break
+
+
+
+
+
+                        // Code for a heading 1
+ 
+                         var AcceptanceProcessHeading = document.InsertParagraph("1 Acceptance Process")
+                             .Bold()
+                             .FontSize(14d)
+                             .Color(Color.Black)
+                             .Bold(true)
+                             .Font("Arial");
+
+                        AcceptanceProcessHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+
+
+                        //Code for a heading 2
+                        var OverviewSubHeading = document.InsertParagraph("1.1 Overview")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        OverviewSubHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a heading 2
+                        var CompleteDeliverableAchievedHeading = document.InsertParagraph("1.2 Complete Deliverable")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        CompleteDeliverableAchievedHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentAcceptanceManagementProcessModel.AcceptanceprocessCompleteDeliverable)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+                        //Code for a heading 2
+                        var CompleteAcceptanceTestHeading = document.InsertParagraph("1.3 Complete Acceptance Test")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        CompleteAcceptanceTestHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentAcceptanceManagementProcessModel.AcceptanceprocessCompleteAcceptanceTest)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+                        //Code for a heading 2
+                        var AcceptDeliverableHeading = document.InsertParagraph("1.4 Accept Deliverable")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        AcceptDeliverableHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentAcceptanceManagementProcessModel.AcceptanceprocessAcceptDeliverable)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+
+
+                        // Code for a heading 1
+
+                        var AcceptanceRolesHeading = document.InsertParagraph("2 Acceptance Roles")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        AcceptanceRolesHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+
+
+                        //Code for a heading 2
+                        var ProjectManagerHeading = document.InsertParagraph("2.1 Project Manager")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        ProjectManagerHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentAcceptanceManagementProcessModel.AcceptancerolesProjectManager)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+                        //Code for a heading 2
+                        var CustomerHeading = document.InsertParagraph("2.2 Customer")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        CustomerHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentAcceptanceManagementProcessModel.AcceptancerolesCustomer)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+
+                        // Code for a heading 1
+
+                        var AcceptanceDocumentsHeading = document.InsertParagraph("3 Acceptance Documents")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        AcceptanceDocumentsHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+
+
+                        //Code for a heading 2
+                        var AcceptanceFormHeading = document.InsertParagraph("3.1 Acceptance Form")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        AcceptanceFormHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentAcceptanceManagementProcessModel.AcceptancedocumentsAcceptanceForm)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+                        //Code for a heading 2
+                        var AcceptanceRegisterHeading = document.InsertParagraph("3.2 Acceptance Register")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        AcceptanceRegisterHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentAcceptanceManagementProcessModel.AcceptancedocumentsAcceptanceRegister)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+
+                        //Code for saving
+                        try
+                        {
+                            document.Save();
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("The selected File is open.", "Close File", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        //Code for saving
 
                     }
                 }

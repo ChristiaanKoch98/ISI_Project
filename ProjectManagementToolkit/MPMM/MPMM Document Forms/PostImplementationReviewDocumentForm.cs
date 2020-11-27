@@ -353,7 +353,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void loadDocument()
         {
-            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "PostImplementation");
+            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "PostImplementationReview");
             List<string[]> documentInfo = new List<string[]>();
             newPostImplementationReviewModel = new PostImplementationReviewModel();
             currentPostImplementationReviewModel = new PostImplementationReviewModel();
@@ -517,7 +517,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         }
 
                         //Code for the Front page
-                        document.InsertParagraph("Project Plan \nFor " + projectModel.ProjectName)
+                        document.InsertParagraph("Post Implementation Review \nFor " + projectModel.ProjectName)
                             .Font("Arial")
                             .Bold(true)
                             .FontSize(22d).Alignment = Alignment.left;
@@ -525,6 +525,833 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         //Code for the Front page
 
 
+                        //Code for the title of a page
+                        document.InsertParagraph("Document Control\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        //Code for the title of a page
+
+
+                        //Code for a space
+                        document.InsertParagraph("")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        //Code for a space
+
+
+                        //Code of a sentence
+                        document.InsertParagraph("Document Information\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        //Code of a sentence
+
+
+                        //Code for a table
+                        var documentInfoTable = document.AddTable(6, 2);
+                        documentInfoTable.Rows[0].Cells[0].Paragraphs[0].Append("").Bold(true).Color(Color.White);
+                        documentInfoTable.Rows[0].Cells[1].Paragraphs[0].Append("Information").Bold(true).Color(Color.White);
+                        documentInfoTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentInfoTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+
+                        documentInfoTable.Rows[1].Cells[0].Paragraphs[0].Append("Document ID");
+                        documentInfoTable.Rows[1].Cells[1].Paragraphs[0].Append(currentPostImplementationReviewModel.DocumentID);
+
+                        documentInfoTable.Rows[2].Cells[0].Paragraphs[0].Append("Document Owner");
+                        documentInfoTable.Rows[2].Cells[1].Paragraphs[0].Append(currentPostImplementationReviewModel.DocumentOwner);
+
+                        documentInfoTable.Rows[3].Cells[0].Paragraphs[0].Append("Issue Date");
+                        documentInfoTable.Rows[3].Cells[1].Paragraphs[0].Append(currentPostImplementationReviewModel.IssueDate);
+
+                        documentInfoTable.Rows[4].Cells[0].Paragraphs[0].Append("Last Saved Date");
+                        documentInfoTable.Rows[4].Cells[1].Paragraphs[0].Append(currentPostImplementationReviewModel.LastSavedDate);
+
+                        documentInfoTable.Rows[5].Cells[0].Paragraphs[0].Append("File Name");
+                        documentInfoTable.Rows[5].Cells[1].Paragraphs[0].Append(currentPostImplementationReviewModel.FileName);
+                        documentInfoTable.SetWidths(new float[] { 493, 1094 });
+                        document.InsertTable(documentInfoTable);
+                        //Code for a table
+
+
+                        //Code of a sentence
+                        document.InsertParagraph("\nDocument History\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        //Code of a sentence
+
+
+                        //Code for a table
+                        var documentHistoryTable = document.AddTable(currentPostImplementationReviewModel.DocumentHistories.Count + 1, 3);
+                        documentHistoryTable.Rows[0].Cells[0].Paragraphs[0].Append("Version")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[1].Paragraphs[0].Append("Issue Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[2].Paragraphs[0].Append("Changes")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentHistoryTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentHistoryTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        for (int i = 1; i < currentPostImplementationReviewModel.DocumentHistories.Count + 1; i++)
+                        {
+                            documentHistoryTable.Rows[i].Cells[0].Paragraphs[0].Append(currentPostImplementationReviewModel.DocumentHistories[i - 1].Version);
+                            documentHistoryTable.Rows[i].Cells[1].Paragraphs[0].Append(currentPostImplementationReviewModel.DocumentHistories[i - 1].IssueDate);
+                            documentHistoryTable.Rows[i].Cells[2].Paragraphs[0].Append(currentPostImplementationReviewModel.DocumentHistories[i - 1].Changes);
+
+                        }
+
+                        documentHistoryTable.SetWidths(new float[] { 190, 303, 1094 });
+                        document.InsertTable(documentHistoryTable);
+                        //Code for a table
+
+
+                        //Code of a sentence
+                        document.InsertParagraph("\nDocument Approvals\n")
+                           .Font("Arial")
+                           .Bold(true)
+                           .FontSize(14d).Alignment = Alignment.left;
+                        //Code of a sentence
+
+
+                        //Code for a table
+                        var documentApprovalTable = document.AddTable(currentPostImplementationReviewModel.DocumentApprovals.Count + 1, 4);
+                        documentApprovalTable.Rows[0].Cells[0].Paragraphs[0].Append("Role")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[1].Paragraphs[0].Append("Name")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[2].Paragraphs[0].Append("Signature")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[3].Paragraphs[0].Append("Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentPostImplementationReviewModel.DocumentApprovals.Count + 1; i++)
+                        {
+                            documentApprovalTable.Rows[i].Cells[0].Paragraphs[0].Append(currentPostImplementationReviewModel.DocumentApprovals[i - 1].Role);
+                            documentApprovalTable.Rows[i].Cells[1].Paragraphs[0].Append(currentPostImplementationReviewModel.DocumentApprovals[i - 1].Name);
+                            documentApprovalTable.Rows[i].Cells[2].Paragraphs[0].Append(currentPostImplementationReviewModel.DocumentApprovals[i - 1].Signature);
+                            documentApprovalTable.Rows[i].Cells[3].Paragraphs[0].Append(currentPostImplementationReviewModel.DocumentApprovals[i - 1].DateApproved);
+                        }
+                        documentApprovalTable.SetWidths(new float[] { 493, 332, 508, 254 });
+                        document.InsertTable(documentApprovalTable);
+                        //Code for a table
+
+
+                        //Code for a page break
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
+                        //Code for a page break
+
+
+                        //Code for a table of contents
+                        var p = document.InsertParagraph();
+                        var title = p.InsertParagraphBeforeSelf("Table of Contents").Bold().FontSize(20);
+
+                        var tocSwitches = new Dictionary<TableOfContentsSwitches, string>()
+                        {
+                            { TableOfContentsSwitches.O, "1-3"},
+                            { TableOfContentsSwitches.U, ""},
+                            { TableOfContentsSwitches.Z, ""},
+                            { TableOfContentsSwitches.H, ""}
+                        };
+
+                        document.InsertTableOfContents(p, "", tocSwitches);
+                        //Code for a table of contents
+
+
+                        //Code for a page break
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
+                        //Code for a page break
+
+
+                        //Code for a heading 1
+                        var ExecutiveSummaryHeading = document.InsertParagraph("1 Executive Summary")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        ExecutiveSummaryHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentPostImplementationReviewModel.ExecutivesummaryDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+                        //Code for a heading 1
+                        var ProjectPerformanceHeading = document.InsertParagraph("2 Project Performance")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        ProjectPerformanceHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+
+
+                        //Code for a heading 2
+                        var BenefitsHeading = document.InsertParagraph("2.1 Benefits")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        BenefitsHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a table
+                        var documentBenefitsTable = document.AddTable(currentPostImplementationReviewModel.Benefits.Count + 1, 4);
+                        documentBenefitsTable.Rows[0].Cells[0].Paragraphs[0].Append("Benefit")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentBenefitsTable.Rows[0].Cells[1].Paragraphs[0].Append("Forecast Value")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentBenefitsTable.Rows[0].Cells[2].Paragraphs[0].Append("Actual Value")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentBenefitsTable.Rows[0].Cells[3].Paragraphs[0].Append("Deviation")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        documentBenefitsTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentBenefitsTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentBenefitsTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentBenefitsTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+
+
+                        for (int i = 1; i < currentPostImplementationReviewModel.Benefits.Count + 1; i++)
+                        {
+                            documentBenefitsTable.Rows[i].Cells[0].Paragraphs[0].Append(currentPostImplementationReviewModel.Benefits[i - 1].BenefitDesc);
+                            documentBenefitsTable.Rows[i].Cells[1].Paragraphs[0].Append(currentPostImplementationReviewModel.Benefits[i - 1].ForecastValue);
+                            documentBenefitsTable.Rows[i].Cells[2].Paragraphs[0].Append(currentPostImplementationReviewModel.Benefits[i - 1].ActualValue);
+                            documentBenefitsTable.Rows[i].Cells[3].Paragraphs[0].Append(currentPostImplementationReviewModel.Benefits[i - 1].Deviation);
+                        }
+
+                        documentBenefitsTable.SetWidths(new float[] { 493, 332, 508, 254 });
+                        document.InsertTable(documentBenefitsTable);
+                        //Code for a table
+
+
+
+
+
+                        //Code for a heading 2
+                        var ObjectivesHeading = document.InsertParagraph("2.2 Objectives")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        ObjectivesHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a table
+                        var documentObjectivesTable = document.AddTable(currentPostImplementationReviewModel.Objectives.Count + 1, 3);
+                        documentObjectivesTable.Rows[0].Cells[0].Paragraphs[0].Append("Objective")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentObjectivesTable.Rows[0].Cells[1].Paragraphs[0].Append("Achievement")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentObjectivesTable.Rows[0].Cells[2].Paragraphs[0].Append("Shortfall")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        documentObjectivesTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentObjectivesTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentObjectivesTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+
+
+                        for (int i = 1; i < currentPostImplementationReviewModel.Objectives.Count + 1; i++)
+                        {
+                            documentObjectivesTable.Rows[i].Cells[0].Paragraphs[0].Append(currentPostImplementationReviewModel.Objectives[i - 1].ObjectiveDesc);
+                            documentObjectivesTable.Rows[i].Cells[1].Paragraphs[0].Append(currentPostImplementationReviewModel.Objectives[i - 1].Achievement);
+                            documentObjectivesTable.Rows[i].Cells[2].Paragraphs[0].Append(currentPostImplementationReviewModel.Objectives[i - 1].Shortfall);
+                        }
+
+                        documentObjectivesTable.SetWidths(new float[] { 394, 762, 419});
+                        document.InsertTable(documentObjectivesTable);
+                        //Code for a table
+
+
+
+
+                        //Code for a heading 2
+                        var ScopeHeading = document.InsertParagraph("2.3 Scope")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        ScopeHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a table
+                        var documentScopeTable = document.AddTable(currentPostImplementationReviewModel.Scopes.Count + 1, 3);
+                        documentScopeTable.Rows[0].Cells[0].Paragraphs[0].Append("Original Scope")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentScopeTable.Rows[0].Cells[1].Paragraphs[0].Append("Actual Scope")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentScopeTable.Rows[0].Cells[2].Paragraphs[0].Append("Deviation")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        documentScopeTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentScopeTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentScopeTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+
+
+                        for (int i = 1; i < currentPostImplementationReviewModel.Scopes.Count + 1; i++)
+                        {
+                            documentScopeTable.Rows[i].Cells[0].Paragraphs[0].Append(currentPostImplementationReviewModel.Scopes[i - 1].OriginalScope);
+                            documentScopeTable.Rows[i].Cells[1].Paragraphs[0].Append(currentPostImplementationReviewModel.Scopes[i - 1].ActualScope);
+                            documentScopeTable.Rows[i].Cells[2].Paragraphs[0].Append(currentPostImplementationReviewModel.Scopes[i - 1].Deviation);
+                        }
+
+                        documentScopeTable.SetWidths(new float[] { 394, 762, 419 });
+                        document.InsertTable(documentScopeTable);
+                        //Code for a table
+
+
+
+
+                        //Code for a heading 2
+                        var DeliverablesHeading = document.InsertParagraph("2.4 Deliverables")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        DeliverablesHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a table
+                        var documentDeliverablesTable = document.AddTable(currentPostImplementationReviewModel.Delivarables.Count + 1, 4);
+                        documentDeliverablesTable.Rows[0].Cells[0].Paragraphs[0].Append("Deliverable")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentDeliverablesTable.Rows[0].Cells[1].Paragraphs[0].Append("Quality Criteria")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentDeliverablesTable.Rows[0].Cells[2].Paragraphs[0].Append("Quality Standards")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentDeliverablesTable.Rows[0].Cells[3].Paragraphs[0].Append("% Achievement")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        documentDeliverablesTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentDeliverablesTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentDeliverablesTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentDeliverablesTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+
+
+                        for (int i = 1; i < currentPostImplementationReviewModel.Delivarables.Count + 1; i++)
+                        {
+                            documentDeliverablesTable.Rows[i].Cells[0].Paragraphs[0].Append(currentPostImplementationReviewModel.Delivarables[i - 1].DeliverableDesc);
+                            documentDeliverablesTable.Rows[i].Cells[1].Paragraphs[0].Append(currentPostImplementationReviewModel.Delivarables[i - 1].QualityCriteria);
+                            documentDeliverablesTable.Rows[i].Cells[2].Paragraphs[0].Append(currentPostImplementationReviewModel.Delivarables[i - 1].QualityStandards);
+                            documentDeliverablesTable.Rows[i].Cells[3].Paragraphs[0].Append(currentPostImplementationReviewModel.Delivarables[i - 1].Achievement);
+                        }
+
+                        documentDeliverablesTable.SetWidths(new float[] { 493, 332, 508, 254 });
+                        document.InsertTable(documentDeliverablesTable);
+                        //Code for a table
+
+
+
+
+
+                        //Code for a heading 2
+                        var ScheduleHeading = document.InsertParagraph("2.5 Schedule")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        ScheduleHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+                        //Code for a sentence
+                        document.InsertParagraph(currentPostImplementationReviewModel.ProjectperformanceSchedule)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+
+                        //Code for a heading 2
+                        var ExpensesHeading = document.InsertParagraph("2.6 Expenses")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        ExpensesHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a table
+                        var documentExpensesTable = document.AddTable(currentPostImplementationReviewModel.Expenses.Count + 1, 4);
+                        documentExpensesTable.Rows[0].Cells[0].Paragraphs[0].Append("Expense Types")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentExpensesTable.Rows[0].Cells[1].Paragraphs[0].Append("Forecast Expenditure")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentExpensesTable.Rows[0].Cells[2].Paragraphs[0].Append("Actual Expenditure")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentExpensesTable.Rows[0].Cells[3].Paragraphs[0].Append("Deviation")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        documentExpensesTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentExpensesTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentExpensesTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentExpensesTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+
+
+                        for (int i = 1; i < currentPostImplementationReviewModel.Expenses.Count + 1; i++)
+                        {
+                            documentExpensesTable.Rows[i].Cells[0].Paragraphs[0].Append(currentPostImplementationReviewModel.Expenses[i - 1].ExpenseTypes);
+                            documentExpensesTable.Rows[i].Cells[1].Paragraphs[0].Append(currentPostImplementationReviewModel.Expenses[i - 1].ForecastExpenditure);
+                            documentExpensesTable.Rows[i].Cells[2].Paragraphs[0].Append(currentPostImplementationReviewModel.Expenses[i - 1].ActualExpenditure);
+                            documentExpensesTable.Rows[i].Cells[3].Paragraphs[0].Append(currentPostImplementationReviewModel.Expenses[i - 1].Deviation);
+                        }
+
+                        documentExpensesTable.SetWidths(new float[] { 493, 332, 508, 254 });
+                        document.InsertTable(documentExpensesTable);
+                        //Code for a table
+
+
+
+
+                        //Code for a heading 2
+                        var ResourcesHeading = document.InsertParagraph("2.7 Resources")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        ResourcesHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a table
+                        var documentResourcesTable = document.AddTable(currentPostImplementationReviewModel.Resources.Count + 1, 4);
+                        documentResourcesTable.Rows[0].Cells[0].Paragraphs[0].Append("Resource Types")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourcesTable.Rows[0].Cells[1].Paragraphs[0].Append("Forecast Resource")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourcesTable.Rows[0].Cells[2].Paragraphs[0].Append("Actual Resource")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourcesTable.Rows[0].Cells[3].Paragraphs[0].Append("Deviation")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        documentResourcesTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentResourcesTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentResourcesTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentResourcesTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+
+
+                        for (int i = 1; i < currentPostImplementationReviewModel.Resources.Count + 1; i++)
+                        {
+                            documentResourcesTable.Rows[i].Cells[0].Paragraphs[0].Append(currentPostImplementationReviewModel.Resources[i - 1].ResourceTypes);
+                            documentResourcesTable.Rows[i].Cells[1].Paragraphs[0].Append(currentPostImplementationReviewModel.Resources[i - 1].ForecastResource);
+                            documentResourcesTable.Rows[i].Cells[2].Paragraphs[0].Append(currentPostImplementationReviewModel.Resources[i - 1].ActualResource);
+                            documentResourcesTable.Rows[i].Cells[3].Paragraphs[0].Append(currentPostImplementationReviewModel.Resources[i - 1].Deviation);
+                        }
+
+                        documentResourcesTable.SetWidths(new float[] { 493, 332, 508, 254 });
+                        document.InsertTable(documentResourcesTable);
+                        //Code for a table
+
+
+
+
+
+                        //Code for a heading 1
+                        var ProjectConformanceHeading = document.InsertParagraph("3 Project Conformance")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        ProjectConformanceHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+
+
+                        //Code for a heading 2
+                        var TimeManagementHeading = document.InsertParagraph("3.1 Time Management")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        TimeManagementHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+                        //Code for a sentence
+                        document.InsertParagraph(currentPostImplementationReviewModel.ProjectcomformanceTimeManagement)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+
+                        //Code for a heading 2
+                        var CostManagementHeading = document.InsertParagraph("3.2 Cost Management")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        CostManagementHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+                        //Code for a sentence
+                        document.InsertParagraph(currentPostImplementationReviewModel.ProjectcomformanceCostManagement)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+
+                        //Code for a heading 2
+                        var QualityManagementHeading = document.InsertParagraph("3.3 Quality Management")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        QualityManagementHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+                        //Code for a sentence
+                        document.InsertParagraph(currentPostImplementationReviewModel.ProjectcomformanceQualitManagement)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+
+                        //Code for a heading 2
+                        var ChangeManagementHeading = document.InsertParagraph("3.4 Change Management")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        ChangeManagementHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+                        //Code for a sentence
+                        document.InsertParagraph(currentPostImplementationReviewModel.ProjectcomformanceChangeManagement)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+
+                        //Code for a heading 2
+                        var RiskManagementHeading = document.InsertParagraph("3.5 Risk Management")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        RiskManagementHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+                        //Code for a sentence
+                        document.InsertParagraph(currentPostImplementationReviewModel.ProjectcomformanceRiskManagement)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+
+                        //Code for a heading 2
+                        var IssueManagementHeading = document.InsertParagraph("3.6 Issue Management")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        IssueManagementHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+                        //Code for a sentence
+                        document.InsertParagraph(currentPostImplementationReviewModel.ProjectcomformanceIssueManagement)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+
+
+                        //Code for a heading 2
+                        var ProcurementManagementHeading = document.InsertParagraph("3.7 Procurement Management")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        ProcurementManagementHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+                        //Code for a sentence
+                        document.InsertParagraph(currentPostImplementationReviewModel.ProjectcomformanceProcurementManagement)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+
+                        //Code for a heading 2
+                        var AcceptanceManagementHeading = document.InsertParagraph("3.8 Acceptance Management")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        AcceptanceManagementHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+                        //Code for a sentence
+                        document.InsertParagraph(currentPostImplementationReviewModel.ProjectcomformanceAcceptanceManagement)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+
+                        //Code for a heading 2
+                        var CommunicationsManagementHeading = document.InsertParagraph("3.9 Communications Management")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        CommunicationsManagementHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+                        //Code for a sentence
+                        document.InsertParagraph(currentPostImplementationReviewModel.ProjectcomformanceCommunicationManagement)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+
+                        //Code for a heading 1
+                        var ProjectAchievementsHeading = document.InsertParagraph("4 Project Achievements")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        ProjectAchievementsHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+                        //Code for a table
+                        var documentProjectAchievementsTable = document.AddTable(currentPostImplementationReviewModel.ProjectAchievements.Count + 1, 2);
+                        documentProjectAchievementsTable.Rows[0].Cells[0].Paragraphs[0].Append("Achievement")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentProjectAchievementsTable.Rows[0].Cells[1].Paragraphs[0].Append("Effect on Business")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        documentProjectAchievementsTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentProjectAchievementsTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+
+
+                        for (int i = 1; i < currentPostImplementationReviewModel.ProjectAchievements.Count + 1; i++)
+                        {
+                            documentProjectAchievementsTable.Rows[i].Cells[0].Paragraphs[0].Append(currentPostImplementationReviewModel.ProjectAchievements[i - 1].Achievement);
+                            documentProjectAchievementsTable.Rows[i].Cells[1].Paragraphs[0].Append(currentPostImplementationReviewModel.ProjectAchievements[i - 1].EffectOnBusiness);
+                        }
+
+                        documentProjectAchievementsTable.SetWidths(new float[] { 500, 500 });
+                        document.InsertTable(documentProjectAchievementsTable);
+                        //Code for a table
+
+
+
+
+
+                        //Code for a heading 1
+                        var ProjectFailuresHeading = document.InsertParagraph("5 Project Failures")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        ProjectFailuresHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+                        //Code for a table
+                        var documentProjectFailuresHeadingTable = document.AddTable(currentPostImplementationReviewModel.ProjectFailures.Count + 1, 2);
+                        documentProjectFailuresHeadingTable.Rows[0].Cells[0].Paragraphs[0].Append("Failure")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentProjectFailuresHeadingTable.Rows[0].Cells[1].Paragraphs[0].Append("Effect on Business")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        documentProjectFailuresHeadingTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentProjectFailuresHeadingTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+
+
+                        for (int i = 1; i < currentPostImplementationReviewModel.ProjectFailures.Count + 1; i++)
+                        {
+                            documentProjectFailuresHeadingTable.Rows[i].Cells[0].Paragraphs[0].Append(currentPostImplementationReviewModel.ProjectFailures[i - 1].Failure);
+                            documentProjectFailuresHeadingTable.Rows[i].Cells[1].Paragraphs[0].Append(currentPostImplementationReviewModel.ProjectFailures[i - 1].EffectOnBusiness);
+                        }
+
+                        documentProjectFailuresHeadingTable.SetWidths(new float[] { 500, 500 });
+                        document.InsertTable(documentProjectFailuresHeadingTable);
+                        //Code for a table
+
+
+
+
+                        //Code for a heading 1
+                        var ProjectLessonsLearnedHeading = document.InsertParagraph("6 Project Lessons Learned")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        ProjectLessonsLearnedHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+                        //Code for a table
+                        var documentProjectLessonsLearnedTable = document.AddTable(currentPostImplementationReviewModel.ProjectLessonsLearneds.Count + 1, 2);
+                        documentProjectLessonsLearnedTable.Rows[0].Cells[0].Paragraphs[0].Append("Failure")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentProjectLessonsLearnedTable.Rows[0].Cells[1].Paragraphs[0].Append("Effect on Business")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        documentProjectLessonsLearnedTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentProjectLessonsLearnedTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+
+
+                        for (int i = 1; i < currentPostImplementationReviewModel.ProjectLessonsLearneds.Count + 1; i++)
+                        {
+                            documentProjectLessonsLearnedTable.Rows[i].Cells[0].Paragraphs[0].Append(currentPostImplementationReviewModel.ProjectLessonsLearneds[i - 1].Learning);
+                            documentProjectLessonsLearnedTable.Rows[i].Cells[1].Paragraphs[0].Append(currentPostImplementationReviewModel.ProjectLessonsLearneds[i - 1].Recommendation);
+                        }
+
+                        documentProjectLessonsLearnedTable.SetWidths(new float[] { 500, 500 });
+                        document.InsertTable(documentProjectLessonsLearnedTable);
+                        //Code for a table
+
+
+                                                                     
+
+                        //Code for a heading 1
+                        var AppendixHeading = document.InsertParagraph("7 Appendix")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        AppendixHeading.StyleId = "Heading1";
+                        //Code for a heading 1
+
+
+                        //Code for a heading 2
+                        var SupportingDocumentationHeading = document.InsertParagraph("7.1 Supporting Documentation")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        SupportingDocumentationHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+                        //Code for a sentence
+                        document.InsertParagraph(currentPostImplementationReviewModel.AppendixSupportingDocumentation)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+
+                        //Code for saving
+                        try
+                        {
+                            document.Save();
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("The selected File is open.", "Close File", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        //Code for saving
 
                     }
                 }
