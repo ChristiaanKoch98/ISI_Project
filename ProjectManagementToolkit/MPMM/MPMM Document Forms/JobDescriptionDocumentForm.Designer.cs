@@ -435,6 +435,7 @@
             this.btnExportWord.TabIndex = 17;
             this.btnExportWord.Text = "Export to Word";
             this.btnExportWord.UseVisualStyleBackColor = true;
+            this.btnExportWord.Click += new System.EventHandler(this.btnExportWord_Click);
             // 
             // JobDescriptionDocumentForm
             // 

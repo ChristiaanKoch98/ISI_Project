@@ -228,7 +228,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         }
 
 
-                        exspenseDetailsTableTable.SetWidthsPercentage(new float[] { 12 });
+                        exspenseDetailsTableTable.SetWidths(new float[] { 100, 100, 100, 112, 112, 112, 112, 112 });
                         document.InsertTable(exspenseDetailsTableTable);
                         //Code for a table
 
