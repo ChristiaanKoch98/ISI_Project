@@ -76,7 +76,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 currentRiskFormModel = JsonConvert
                     .DeserializeObject<RiskFormModel>(JsonConvert.SerializeObject(newRiskFormModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "RiskForm");
-                MessageBox.Show("Project plan saved successfully", "save", MessageBoxButtons.OK);
+                MessageBox.Show("Risk Form saved successfully", "save", MessageBoxButtons.OK);
             }
             else
             {
@@ -137,7 +137,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                                 .Bold(true)
                                 .FontSize(22d).Alignment = Alignment.left;
                         }
-                        document.InsertParagraph("Project Plan \nFor " + projectModel.ProjectName)
+                        document.InsertParagraph("Risk Form \nFor " + projectModel.ProjectName)
                             .Font("Arial")
                             .Bold(true)
                             .FontSize(22d).Alignment = Alignment.left;
