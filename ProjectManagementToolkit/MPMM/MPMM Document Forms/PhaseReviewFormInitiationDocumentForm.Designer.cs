@@ -28,25 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.documentControl = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.documentApprovals = new System.Windows.Forms.DataGridView();
-            this.approvalRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.approvalName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.approvalSignature = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.approvalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.documentHistory = new System.Windows.Forms.DataGridView();
-            this.Version = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.historyIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.historyChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.documentInformation = new System.Windows.Forms.DataGridView();
-            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvReviewDetails = new System.Windows.Forms.DataGridView();
+            this.variance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.answer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reviewQuestions = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reviewCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label10 = new System.Windows.Forms.Label();
+            this.supportingDetails = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.signatureDate = new System.Windows.Forms.DateTimePicker();
+            this.signature = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -68,73 +65,35 @@
             this.projectSchedule = new System.Windows.Forms.TextBox();
             this.projectIssues = new System.Windows.Forms.TextBox();
             this.projectChanges = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.reviewDetails = new System.Windows.Forms.DataGridView();
-            this.reviewCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reviewQuestions = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.answer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.variance = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supportingDetails = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.signatureDate = new System.Windows.Forms.DateTimePicker();
-            this.signature = new System.Windows.Forms.PictureBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.tabControl1.SuspendLayout();
-            this.documentControl.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.documentApprovals)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentHistory)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentInformation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReviewDetails)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.signature)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.reviewDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.signature)).BeginInit();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // btnSave
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Controls.Add(this.documentControl);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(12, 41);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(922, 419);
-            this.tabControl1.TabIndex = 0;
+            this.btnSave.Location = new System.Drawing.Point(612, 20);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(122, 23);
+            this.btnSave.TabIndex = 1;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // documentControl
+            // btnExport
             // 
-            this.documentControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.documentControl.Controls.Add(this.label3);
-            this.documentControl.Controls.Add(this.label2);
-            this.documentControl.Controls.Add(this.label1);
-            this.documentControl.Controls.Add(this.documentApprovals);
-            this.documentControl.Controls.Add(this.documentHistory);
-            this.documentControl.Controls.Add(this.documentInformation);
-            this.documentControl.Location = new System.Drawing.Point(4, 22);
-            this.documentControl.Name = "documentControl";
-            this.documentControl.Padding = new System.Windows.Forms.Padding(3);
-            this.documentControl.Size = new System.Drawing.Size(914, 393);
-            this.documentControl.TabIndex = 0;
-            this.documentControl.Text = "Document Control";
-            this.documentControl.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage2.Controls.Add(this.panel2);
-            this.tabPage2.Controls.Add(this.panel1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(914, 393);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Project Details & Overall Status";
+            this.btnExport.Location = new System.Drawing.Point(784, 20);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(145, 23);
+            this.btnExport.TabIndex = 2;
+            this.btnExport.Text = "Export to Word";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // tabPage3
             // 
@@ -146,168 +105,172 @@
             this.tabPage3.Controls.Add(this.label11);
             this.tabPage3.Controls.Add(this.supportingDetails);
             this.tabPage3.Controls.Add(this.label10);
-            this.tabPage3.Controls.Add(this.reviewDetails);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Controls.Add(this.dgvReviewDetails);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(914, 393);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage3.Size = new System.Drawing.Size(1221, 487);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Review Details &  Approval Details";
             // 
-            // label3
+            // dgvReviewDetails
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvReviewDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(31, 313);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 17);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Document Approvals";
+            this.dgvReviewDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReviewDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.reviewCategory,
+            this.reviewQuestions,
+            this.answer,
+            this.variance});
+            this.dgvReviewDetails.Location = new System.Drawing.Point(167, 26);
+            this.dgvReviewDetails.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvReviewDetails.Name = "dgvReviewDetails";
+            this.dgvReviewDetails.RowHeadersWidth = 51;
+            this.dgvReviewDetails.Size = new System.Drawing.Size(1029, 133);
+            this.dgvReviewDetails.TabIndex = 10;
             // 
-            // label2
+            // variance
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.variance.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.variance.HeaderText = "Variance";
+            this.variance.MinimumWidth = 6;
+            this.variance.Name = "variance";
+            // 
+            // answer
+            // 
+            this.answer.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.answer.HeaderText = "Answer";
+            this.answer.MinimumWidth = 6;
+            this.answer.Name = "answer";
+            // 
+            // reviewQuestions
+            // 
+            this.reviewQuestions.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.reviewQuestions.HeaderText = "Review Questions";
+            this.reviewQuestions.MinimumWidth = 6;
+            this.reviewQuestions.Name = "reviewQuestions";
+            // 
+            // reviewCategory
+            // 
+            this.reviewCategory.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.reviewCategory.HeaderText = "Review Category";
+            this.reviewCategory.MinimumWidth = 6;
+            this.reviewCategory.Name = "reviewCategory";
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(31, 186);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 17);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Document History";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(11, 70);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(129, 22);
+            this.label10.TabIndex = 11;
+            this.label10.Text = "Review Details";
             // 
-            // label1
+            // supportingDetails
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.supportingDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(31, 54);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 17);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Document Information";
+            this.supportingDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.supportingDetails.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.supportingDetails.ForeColor = System.Drawing.Color.White;
+            this.supportingDetails.Location = new System.Drawing.Point(15, 178);
+            this.supportingDetails.Margin = new System.Windows.Forms.Padding(4);
+            this.supportingDetails.Multiline = true;
+            this.supportingDetails.Name = "supportingDetails";
+            this.supportingDetails.Size = new System.Drawing.Size(695, 297);
+            this.supportingDetails.TabIndex = 17;
+            this.supportingDetails.Text = "Supporting Documentation";
             // 
-            // documentApprovals
+            // label11
             // 
-            this.documentApprovals.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.documentApprovals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.documentApprovals.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.approvalRole,
-            this.approvalName,
-            this.approvalSignature,
-            this.approvalDate});
-            this.documentApprovals.Location = new System.Drawing.Point(192, 253);
-            this.documentApprovals.Name = "documentApprovals";
-            this.documentApprovals.RowHeadersWidth = 51;
-            this.documentApprovals.Size = new System.Drawing.Size(691, 124);
-            this.documentApprovals.TabIndex = 8;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(741, 210);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(87, 22);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "Signature";
             // 
-            // approvalRole
+            // label12
             // 
-            this.approvalRole.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.approvalRole.HeaderText = "Role";
-            this.approvalRole.MinimumWidth = 6;
-            this.approvalRole.Name = "approvalRole";
-            // 
-            // approvalName
-            // 
-            this.approvalName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.approvalName.HeaderText = "Name";
-            this.approvalName.MinimumWidth = 6;
-            this.approvalName.Name = "approvalName";
-            // 
-            // approvalSignature
-            // 
-            this.approvalSignature.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.approvalSignature.DataPropertyName = "(none)";
-            this.approvalSignature.HeaderText = "Signature";
-            this.approvalSignature.MinimumWidth = 6;
-            this.approvalSignature.Name = "approvalSignature";
-            this.approvalSignature.ReadOnly = true;
-            // 
-            // approvalDate
-            // 
-            this.approvalDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.approvalDate.HeaderText = "Date";
-            this.approvalDate.MinimumWidth = 6;
-            this.approvalDate.Name = "approvalDate";
-            // 
-            // documentHistory
-            // 
-            this.documentHistory.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.documentHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.documentHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Version,
-            this.historyIssueDate,
-            this.historyChanges});
-            this.documentHistory.Location = new System.Drawing.Point(192, 129);
-            this.documentHistory.Name = "documentHistory";
-            this.documentHistory.RowHeadersWidth = 51;
-            this.documentHistory.Size = new System.Drawing.Size(691, 118);
-            this.documentHistory.TabIndex = 7;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(741, 300);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(47, 22);
+            this.label12.TabIndex = 19;
+            this.label12.Text = "Date";
             // 
-            // Version
+            // signatureDate
             // 
-            this.Version.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Version.HeaderText = "Version";
-            this.Version.MinimumWidth = 6;
-            this.Version.Name = "Version";
-            // 
-            // historyIssueDate
-            // 
-            this.historyIssueDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.historyIssueDate.HeaderText = "Issue Date";
-            this.historyIssueDate.MinimumWidth = 6;
-            this.historyIssueDate.Name = "historyIssueDate";
-            // 
-            // historyChanges
-            // 
-            this.historyChanges.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.historyChanges.HeaderText = "Changes";
-            this.historyChanges.MinimumWidth = 6;
-            this.historyChanges.Name = "historyChanges";
-            // 
-            // documentInformation
-            // 
-            this.documentInformation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.signatureDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.documentInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.documentInformation.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Type,
-            this.Information});
-            this.documentInformation.Location = new System.Drawing.Point(192, 15);
-            this.documentInformation.Name = "documentInformation";
-            this.documentInformation.RowHeadersWidth = 51;
-            this.documentInformation.Size = new System.Drawing.Size(691, 108);
-            this.documentInformation.TabIndex = 6;
+            this.signatureDate.Location = new System.Drawing.Point(917, 300);
+            this.signatureDate.Margin = new System.Windows.Forms.Padding(4);
+            this.signatureDate.Name = "signatureDate";
+            this.signatureDate.Size = new System.Drawing.Size(265, 22);
+            this.signatureDate.TabIndex = 20;
             // 
-            // Type
+            // signature
             // 
-            this.Type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Type.HeaderText = "Type";
-            this.Type.MinimumWidth = 6;
-            this.Type.Name = "Type";
+            this.signature.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.signature.Location = new System.Drawing.Point(917, 202);
+            this.signature.Margin = new System.Windows.Forms.Padding(4);
+            this.signature.Name = "signature";
+            this.signature.Size = new System.Drawing.Size(217, 30);
+            this.signature.TabIndex = 21;
+            this.signature.TabStop = false;
             // 
-            // Information
+            // label13
             // 
-            this.Information.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Information.HeaderText = "Information";
-            this.Information.MinimumWidth = 6;
-            this.Information.Name = "Information";
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(741, 434);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(322, 44);
+            this.label13.TabIndex = 22;
+            this.label13.Text = "THIS PROJECT IS APPROVED TO \r\nPROCEEED TO THE PLANNING PHASE";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage2.Controls.Add(this.panel2);
+            this.tabPage2.Controls.Add(this.panel1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage2.Size = new System.Drawing.Size(1221, 487);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Project Details & Overall Status";
             // 
             // panel1
             // 
@@ -326,9 +289,10 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(12, 24);
+            this.panel1.Location = new System.Drawing.Point(16, 30);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 118);
+            this.panel1.Size = new System.Drawing.Size(1179, 145);
             this.panel1.TabIndex = 0;
             // 
             // label4
@@ -336,9 +300,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 11F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(3, 11);
+            this.label4.Location = new System.Drawing.Point(4, 14);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 17);
+            this.label4.Size = new System.Drawing.Size(123, 22);
             this.label4.TabIndex = 11;
             this.label4.Text = "Project Name:";
             // 
@@ -347,9 +312,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 11F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(432, 41);
+            this.label5.Location = new System.Drawing.Point(576, 50);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(165, 17);
+            this.label5.Size = new System.Drawing.Size(213, 22);
             this.label5.TabIndex = 12;
             this.label5.Text = "Report Preparation Date:";
             // 
@@ -358,9 +324,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cambria", 11F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(432, 11);
+            this.label6.Location = new System.Drawing.Point(576, 14);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(136, 17);
+            this.label6.Size = new System.Drawing.Size(177, 22);
             this.label6.TabIndex = 13;
             this.label6.Text = "Report Prepared By:";
             // 
@@ -369,9 +336,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cambria", 11F);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(3, 41);
+            this.label7.Location = new System.Drawing.Point(4, 50);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 17);
+            this.label7.Size = new System.Drawing.Size(86, 22);
             this.label7.TabIndex = 14;
             this.label7.Text = "Manager:";
             // 
@@ -380,9 +348,10 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Cambria", 11F);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(432, 69);
+            this.label8.Location = new System.Drawing.Point(576, 85);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(96, 17);
+            this.label8.Size = new System.Drawing.Size(124, 22);
             this.label8.TabIndex = 15;
             this.label8.Text = "Report Period";
             // 
@@ -391,52 +360,59 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Cambria", 11F);
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(3, 69);
+            this.label9.Location = new System.Drawing.Point(4, 85);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(112, 17);
+            this.label9.Size = new System.Drawing.Size(143, 22);
             this.label9.TabIndex = 16;
             this.label9.Text = "Project Sponsor:";
             // 
             // projectName
             // 
-            this.projectName.Location = new System.Drawing.Point(146, 8);
+            this.projectName.Location = new System.Drawing.Point(195, 10);
+            this.projectName.Margin = new System.Windows.Forms.Padding(4);
             this.projectName.Name = "projectName";
-            this.projectName.Size = new System.Drawing.Size(233, 20);
+            this.projectName.Size = new System.Drawing.Size(309, 22);
             this.projectName.TabIndex = 17;
             // 
             // projectManager
             // 
-            this.projectManager.Location = new System.Drawing.Point(146, 38);
+            this.projectManager.Location = new System.Drawing.Point(195, 47);
+            this.projectManager.Margin = new System.Windows.Forms.Padding(4);
             this.projectManager.Name = "projectManager";
-            this.projectManager.Size = new System.Drawing.Size(233, 20);
+            this.projectManager.Size = new System.Drawing.Size(309, 22);
             this.projectManager.TabIndex = 18;
             // 
             // projectSponsor
             // 
-            this.projectSponsor.Location = new System.Drawing.Point(146, 69);
+            this.projectSponsor.Location = new System.Drawing.Point(195, 85);
+            this.projectSponsor.Margin = new System.Windows.Forms.Padding(4);
             this.projectSponsor.Name = "projectSponsor";
-            this.projectSponsor.Size = new System.Drawing.Size(233, 20);
+            this.projectSponsor.Size = new System.Drawing.Size(309, 22);
             this.projectSponsor.TabIndex = 19;
             // 
             // reportPreparationDate
             // 
-            this.reportPreparationDate.Location = new System.Drawing.Point(626, 37);
+            this.reportPreparationDate.Location = new System.Drawing.Point(835, 46);
+            this.reportPreparationDate.Margin = new System.Windows.Forms.Padding(4);
             this.reportPreparationDate.Name = "reportPreparationDate";
-            this.reportPreparationDate.Size = new System.Drawing.Size(233, 20);
+            this.reportPreparationDate.Size = new System.Drawing.Size(309, 22);
             this.reportPreparationDate.TabIndex = 20;
             // 
             // reportPreparedBy
             // 
-            this.reportPreparedBy.Location = new System.Drawing.Point(626, 8);
+            this.reportPreparedBy.Location = new System.Drawing.Point(835, 10);
+            this.reportPreparedBy.Margin = new System.Windows.Forms.Padding(4);
             this.reportPreparedBy.Name = "reportPreparedBy";
-            this.reportPreparedBy.Size = new System.Drawing.Size(233, 20);
+            this.reportPreparedBy.Size = new System.Drawing.Size(309, 22);
             this.reportPreparedBy.TabIndex = 21;
             // 
             // reportingPeriod
             // 
-            this.reportingPeriod.Location = new System.Drawing.Point(626, 66);
+            this.reportingPeriod.Location = new System.Drawing.Point(835, 81);
+            this.reportingPeriod.Margin = new System.Windows.Forms.Padding(4);
             this.reportingPeriod.Name = "reportingPeriod";
-            this.reportingPeriod.Size = new System.Drawing.Size(233, 20);
+            this.reportingPeriod.Size = new System.Drawing.Size(309, 22);
             this.reportingPeriod.TabIndex = 22;
             // 
             // panel2
@@ -451,9 +427,10 @@
             this.panel2.Controls.Add(this.projectRisks);
             this.panel2.Controls.Add(this.projectExpenses);
             this.panel2.Controls.Add(this.summary);
-            this.panel2.Location = new System.Drawing.Point(12, 161);
+            this.panel2.Location = new System.Drawing.Point(16, 198);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(884, 226);
+            this.panel2.Size = new System.Drawing.Size(1179, 278);
             this.panel2.TabIndex = 1;
             // 
             // summary
@@ -461,10 +438,11 @@
             this.summary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.summary.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.summary.ForeColor = System.Drawing.Color.White;
-            this.summary.Location = new System.Drawing.Point(6, 16);
+            this.summary.Location = new System.Drawing.Point(8, 20);
+            this.summary.Margin = new System.Windows.Forms.Padding(4);
             this.summary.Multiline = true;
             this.summary.Name = "summary";
-            this.summary.Size = new System.Drawing.Size(199, 90);
+            this.summary.Size = new System.Drawing.Size(264, 110);
             this.summary.TabIndex = 16;
             this.summary.Text = "Summary";
             // 
@@ -473,10 +451,11 @@
             this.projectExpenses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.projectExpenses.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.projectExpenses.ForeColor = System.Drawing.Color.White;
-            this.projectExpenses.Location = new System.Drawing.Point(228, 16);
+            this.projectExpenses.Location = new System.Drawing.Point(304, 20);
+            this.projectExpenses.Margin = new System.Windows.Forms.Padding(4);
             this.projectExpenses.Multiline = true;
             this.projectExpenses.Name = "projectExpenses";
-            this.projectExpenses.Size = new System.Drawing.Size(199, 90);
+            this.projectExpenses.Size = new System.Drawing.Size(264, 110);
             this.projectExpenses.TabIndex = 17;
             this.projectExpenses.Text = "Project Expenses";
             // 
@@ -485,10 +464,11 @@
             this.projectRisks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.projectRisks.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.projectRisks.ForeColor = System.Drawing.Color.White;
-            this.projectRisks.Location = new System.Drawing.Point(452, 16);
+            this.projectRisks.Location = new System.Drawing.Point(603, 20);
+            this.projectRisks.Margin = new System.Windows.Forms.Padding(4);
             this.projectRisks.Multiline = true;
             this.projectRisks.Name = "projectRisks";
-            this.projectRisks.Size = new System.Drawing.Size(199, 90);
+            this.projectRisks.Size = new System.Drawing.Size(264, 110);
             this.projectRisks.TabIndex = 18;
             this.projectRisks.Text = "Project Risks";
             // 
@@ -497,10 +477,11 @@
             this.projectDeliverables.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.projectDeliverables.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.projectDeliverables.ForeColor = System.Drawing.Color.White;
-            this.projectDeliverables.Location = new System.Drawing.Point(228, 112);
+            this.projectDeliverables.Location = new System.Drawing.Point(304, 138);
+            this.projectDeliverables.Margin = new System.Windows.Forms.Padding(4);
             this.projectDeliverables.Multiline = true;
             this.projectDeliverables.Name = "projectDeliverables";
-            this.projectDeliverables.Size = new System.Drawing.Size(199, 103);
+            this.projectDeliverables.Size = new System.Drawing.Size(264, 126);
             this.projectDeliverables.TabIndex = 19;
             this.projectDeliverables.Text = "Project Deliverables";
             // 
@@ -509,10 +490,11 @@
             this.projectSchedule.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.projectSchedule.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.projectSchedule.ForeColor = System.Drawing.Color.White;
-            this.projectSchedule.Location = new System.Drawing.Point(6, 112);
+            this.projectSchedule.Location = new System.Drawing.Point(8, 138);
+            this.projectSchedule.Margin = new System.Windows.Forms.Padding(4);
             this.projectSchedule.Multiline = true;
             this.projectSchedule.Name = "projectSchedule";
-            this.projectSchedule.Size = new System.Drawing.Size(199, 103);
+            this.projectSchedule.Size = new System.Drawing.Size(264, 126);
             this.projectSchedule.TabIndex = 20;
             this.projectSchedule.Text = "Project Schedule";
             // 
@@ -521,10 +503,11 @@
             this.projectIssues.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.projectIssues.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.projectIssues.ForeColor = System.Drawing.Color.White;
-            this.projectIssues.Location = new System.Drawing.Point(452, 112);
+            this.projectIssues.Location = new System.Drawing.Point(603, 138);
+            this.projectIssues.Margin = new System.Windows.Forms.Padding(4);
             this.projectIssues.Multiline = true;
             this.projectIssues.Name = "projectIssues";
-            this.projectIssues.Size = new System.Drawing.Size(199, 103);
+            this.projectIssues.Size = new System.Drawing.Size(264, 126);
             this.projectIssues.TabIndex = 21;
             this.projectIssues.Text = "Project Issues ";
             // 
@@ -533,197 +516,72 @@
             this.projectChanges.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.projectChanges.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.projectChanges.ForeColor = System.Drawing.Color.White;
-            this.projectChanges.Location = new System.Drawing.Point(673, 16);
+            this.projectChanges.Location = new System.Drawing.Point(897, 20);
+            this.projectChanges.Margin = new System.Windows.Forms.Padding(4);
             this.projectChanges.Multiline = true;
             this.projectChanges.Name = "projectChanges";
-            this.projectChanges.Size = new System.Drawing.Size(199, 90);
+            this.projectChanges.Size = new System.Drawing.Size(264, 110);
             this.projectChanges.TabIndex = 22;
             this.projectChanges.Text = "Project Changes";
             // 
-            // label10
+            // tabControl1
             // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(8, 57);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(101, 17);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "Review Details";
-            // 
-            // reviewDetails
-            // 
-            this.reviewDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.reviewDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.reviewDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.reviewCategory,
-            this.reviewQuestions,
-            this.answer,
-            this.variance});
-            this.reviewDetails.Location = new System.Drawing.Point(125, 21);
-            this.reviewDetails.Name = "reviewDetails";
-            this.reviewDetails.RowHeadersWidth = 51;
-            this.reviewDetails.Size = new System.Drawing.Size(772, 108);
-            this.reviewDetails.TabIndex = 10;
-            // 
-            // reviewCategory
-            // 
-            this.reviewCategory.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.reviewCategory.HeaderText = "Review Category";
-            this.reviewCategory.MinimumWidth = 6;
-            this.reviewCategory.Name = "reviewCategory";
-            // 
-            // reviewQuestions
-            // 
-            this.reviewQuestions.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.reviewQuestions.HeaderText = "Review Questions";
-            this.reviewQuestions.MinimumWidth = 6;
-            this.reviewQuestions.Name = "reviewQuestions";
-            // 
-            // answer
-            // 
-            this.answer.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.answer.HeaderText = "Answer";
-            this.answer.Name = "answer";
-            // 
-            // variance
-            // 
-            this.variance.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.variance.HeaderText = "Variance";
-            this.variance.Name = "variance";
-            // 
-            // supportingDetails
-            // 
-            this.supportingDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.supportingDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.supportingDetails.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.supportingDetails.ForeColor = System.Drawing.Color.White;
-            this.supportingDetails.Location = new System.Drawing.Point(11, 145);
-            this.supportingDetails.Multiline = true;
-            this.supportingDetails.Name = "supportingDetails";
-            this.supportingDetails.Size = new System.Drawing.Size(522, 242);
-            this.supportingDetails.TabIndex = 17;
-            this.supportingDetails.Text = "Supporting Documentation";
-            // 
-            // label11
-            // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(556, 171);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(67, 17);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Signature";
-            // 
-            // label12
-            // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(556, 244);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(37, 17);
-            this.label12.TabIndex = 19;
-            this.label12.Text = "Date";
-            // 
-            // signatureDate
-            // 
-            this.signatureDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.signatureDate.Location = new System.Drawing.Point(688, 244);
-            this.signatureDate.Name = "signatureDate";
-            this.signatureDate.Size = new System.Drawing.Size(200, 20);
-            this.signatureDate.TabIndex = 20;
-            // 
-            // signature
-            // 
-            this.signature.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.signature.Location = new System.Drawing.Point(688, 164);
-            this.signature.Name = "signature";
-            this.signature.Size = new System.Drawing.Size(163, 24);
-            this.signature.TabIndex = 21;
-            this.signature.TabStop = false;
-            // 
-            // label13
-            // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(556, 353);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(254, 34);
-            this.label13.TabIndex = 22;
-            this.label13.Text = "THIS PROJECT IS APPROVED TO \r\nPROCEEED TO THE PLANNING PHASE";
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Location = new System.Drawing.Point(16, 50);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1229, 516);
+            this.tabControl1.TabIndex = 0;
             // 
             // PhaseReviewFormInitiationDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(946, 473);
+            this.ClientSize = new System.Drawing.Size(1261, 582);
+            this.Controls.Add(this.btnExport);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tabControl1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "PhaseReviewFormInitiationDocumentForm";
             this.Text = "PhaseReviewFormInitiationDocumentForm";
-            this.tabControl1.ResumeLayout(false);
-            this.documentControl.ResumeLayout(false);
-            this.documentControl.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.PhaseReviewFormInitiationDocumentForm_Load);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.documentApprovals)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentHistory)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentInformation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReviewDetails)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.signature)).EndInit();
+            this.tabPage2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.reviewDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.signature)).EndInit();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage documentControl;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView documentApprovals;
-        private System.Windows.Forms.DataGridViewTextBoxColumn approvalRole;
-        private System.Windows.Forms.DataGridViewTextBoxColumn approvalName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn approvalSignature;
-        private System.Windows.Forms.DataGridViewTextBoxColumn approvalDate;
-        private System.Windows.Forms.DataGridView documentHistory;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Version;
-        private System.Windows.Forms.DataGridViewTextBoxColumn historyIssueDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn historyChanges;
-        private System.Windows.Forms.DataGridView documentInformation;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Information;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.PictureBox signature;
+        private System.Windows.Forms.DateTimePicker signatureDate;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox supportingDetails;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DataGridView dgvReviewDetails;
+        private System.Windows.Forms.DataGridViewTextBoxColumn reviewCategory;
+        private System.Windows.Forms.DataGridViewTextBoxColumn reviewQuestions;
+        private System.Windows.Forms.DataGridViewTextBoxColumn answer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn variance;
+        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox projectChanges;
         private System.Windows.Forms.TextBox projectIssues;
@@ -745,17 +603,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DataGridView reviewDetails;
-        private System.Windows.Forms.DataGridViewTextBoxColumn reviewCategory;
-        private System.Windows.Forms.DataGridViewTextBoxColumn reviewQuestions;
-        private System.Windows.Forms.DataGridViewTextBoxColumn answer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn variance;
-        private System.Windows.Forms.PictureBox signature;
-        private System.Windows.Forms.DateTimePicker signatureDate;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox supportingDetails;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TabControl tabControl1;
     }
 }
