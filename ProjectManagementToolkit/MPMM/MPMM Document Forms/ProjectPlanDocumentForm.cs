@@ -29,12 +29,29 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             InitializeComponent();
         }
 
+
+
         private void ProjectPlanDocumentForm_Load(object sender, EventArgs e)
         {
             loadDocument();
             string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+
+            //tabControl collor
+            tabControl1.DrawMode = TabDrawMode.OwnerDrawFixed;
+            tabControl1.SizeMode = TabSizeMode.Fixed;
+            Size tab_size = tabControl1.ItemSize;
+            tab_size.Width = 100;
+            tab_size.Height += 15;
+            tabControl1.ItemSize = tab_size;
+
+            tabControl3.DrawMode = TabDrawMode.OwnerDrawFixed;
+            tabControl3.SizeMode = TabSizeMode.Fixed;
+            Size tab_size2 = tabControl3.ItemSize;
+            tab_size2.Width = 100;
+            tab_size2.Height += 15;
+            tabControl3.ItemSize = tab_size2;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -221,7 +238,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ProjectPlan");
                 MessageBox.Show("Project plan saved successfully", "save", MessageBoxButtons.OK);
             }
-            else 
+            else
             {
                 MessageBox.Show("No changes was made!", "save", MessageBoxButtons.OK);
             }
@@ -325,8 +342,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     path = saveFileDialog.FileName;
-                    using (var document = DocX.Create(path)) {
-                        for (int i = 0; i < 11; i++) {
+                    using (var document = DocX.Create(path))
+                    {
+                        for (int i = 0; i < 11; i++)
+                        {
                             document.InsertParagraph("")
                                 .Font("Arial")
                                 .Bold(true)
@@ -378,7 +397,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .Bold(true)
                             .FontSize(14d).Alignment = Alignment.left;
 
-                        var documentHistoryTable = document.AddTable(currentProjectPlanModel.DocumentHistories.Count+1, 3);
+                        var documentHistoryTable = document.AddTable(currentProjectPlanModel.DocumentHistories.Count + 1, 3);
                         documentHistoryTable.Rows[0].Cells[0].Paragraphs[0].Append("Version")
                             .Bold(true)
                             .Color(Color.White);
@@ -391,15 +410,15 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         documentHistoryTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
                         documentHistoryTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
                         documentHistoryTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
-                        for (int i = 1; i < currentProjectPlanModel.DocumentHistories.Count+1; i++)
+                        for (int i = 1; i < currentProjectPlanModel.DocumentHistories.Count + 1; i++)
                         {
-                            documentHistoryTable.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectPlanModel.DocumentHistories[i-1].Version);
-                            documentHistoryTable.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectPlanModel.DocumentHistories[i-1].IssueDate);
-                            documentHistoryTable.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectPlanModel.DocumentHistories[i-1].Changes);
+                            documentHistoryTable.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectPlanModel.DocumentHistories[i - 1].Version);
+                            documentHistoryTable.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectPlanModel.DocumentHistories[i - 1].IssueDate);
+                            documentHistoryTable.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectPlanModel.DocumentHistories[i - 1].Changes);
 
                         }
 
-                        documentHistoryTable.SetWidths(new float[] {190 , 303, 1094 });
+                        documentHistoryTable.SetWidths(new float[] { 190, 303, 1094 });
                         document.InsertTable(documentHistoryTable);
 
                         document.InsertParagraph("\nDocument Approvals\n")
@@ -425,14 +444,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         documentApprovalTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
                         documentApprovalTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
 
-                        for (int i = 1; i < currentProjectPlanModel.DocumentApprovals.Count + 1; i++) 
+                        for (int i = 1; i < currentProjectPlanModel.DocumentApprovals.Count + 1; i++)
                         {
                             documentApprovalTable.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectPlanModel.DocumentApprovals[i - 1].Role);
                             documentApprovalTable.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectPlanModel.DocumentApprovals[i - 1].Name);
                             documentApprovalTable.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectPlanModel.DocumentApprovals[i - 1].Signature);
                             documentApprovalTable.Rows[i].Cells[3].Paragraphs[0].Append(currentProjectPlanModel.DocumentApprovals[i - 1].DateApproved);
                         }
-                        documentApprovalTable.SetWidths(new float[] { 493, 332, 508, 254});
+                        documentApprovalTable.SetWidths(new float[] { 493, 332, 508, 254 });
                         document.InsertTable(documentApprovalTable);
                         document.InsertParagraph().InsertPageBreakAfterSelf();
 
@@ -449,7 +468,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         };
 
 
-                        document.InsertTableOfContents(p,"", tocSwitches);
+                        document.InsertTableOfContents(p, "", tocSwitches);
                         document.InsertParagraph().InsertPageBreakAfterSelf();
                         var WorkBreakdownHeading = document.InsertParagraph("1 Work Breakdown Structure")
                             .Bold()
@@ -457,7 +476,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .Color(Color.Black)
                             .Bold(true)
                             .Font("Arial");
-                            
+
                         WorkBreakdownHeading.StyleId = "Heading1";
 
                         var PhasesSubHeading = WorkBreakdownHeading.InsertParagraphAfterSelf("1.1 Phases")
@@ -484,7 +503,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         documentPhaseTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
                         documentPhaseTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
 
-                        for (int i = 1; i < currentProjectPlanModel.Phases.Count + 1; i++) 
+                        for (int i = 1; i < currentProjectPlanModel.Phases.Count + 1; i++)
                         {
                             documentPhaseTable.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectPlanModel.Phases[i - 1].PhaseTitle);
                             documentPhaseTable.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectPlanModel.Phases[i - 1].PhaseDescription);
@@ -526,14 +545,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         for (int i = 1; i < currentProjectPlanModel.Activities.Count + 1; i++)
                         {
-                            
+
                             documentActivitiesTable.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectPlanModel.Activities[i - 1].PhaseTitle);
                             documentActivitiesTable.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectPlanModel.Activities[i - 1].ActivityTitle);
                             documentActivitiesTable.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectPlanModel.Activities[i - 1].ActivityDescription);
                             documentActivitiesTable.Rows[i].Cells[3].Paragraphs[0].Append(currentProjectPlanModel.Activities[i - 1].ActivitySequence);
                         }
 
-                        documentActivitiesTable.SetWidths(new float[] { 250, 279, 626, 420});
+                        documentActivitiesTable.SetWidths(new float[] { 250, 279, 626, 420 });
                         document.InsertTable(documentActivitiesTable);
 
 
@@ -743,13 +762,113 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         }
                         catch (Exception)
                         {
-                            MessageBox.Show("The selected File is open.", "Close File",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("The selected File is open.", "Close File", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
-                        
+
 
                     }
 
 
+                }
+            }
+        }
+
+        private int Xwid = 8;
+        private const int tab_margin = 3;
+
+        private void tabControl1_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            Brush txt_brush, box_brush;
+            Pen box_pen;
+
+            Rectangle tab_rect = tabControl1.GetTabRect(e.Index);
+
+            if (e.State == DrawItemState.Selected)
+            {
+                e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(209,237,242)), tab_rect);
+                e.DrawFocusRectangle();
+
+                txt_brush = Brushes.Black;
+                box_brush = Brushes.Black;
+                box_pen = Pens.DarkBlue;
+            }
+            else
+            {
+                e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(73, 173, 252)), tab_rect);
+
+                txt_brush = Brushes.Black;
+                box_brush = Brushes.Black;
+                box_pen = Pens.DarkBlue;
+            }
+
+            RectangleF layout_rect = new RectangleF(
+            tab_rect.Left + tab_margin,
+            tab_rect.Y + tab_margin,
+            tab_rect.Width - 2 * tab_margin,
+            tab_rect.Height - 2 * tab_margin);
+
+            using (StringFormat string_format = new StringFormat())
+            {
+                using (System.Drawing.Font big_font = new System.Drawing.Font(this.Font, FontStyle.Bold))
+                {
+                    string_format.Alignment = StringAlignment.Center;
+                    string_format.LineAlignment = StringAlignment.Center;
+                    e.Graphics.DrawString(
+                        tabControl1.TabPages[e.Index].Text,
+                        big_font,
+                        txt_brush,
+                        layout_rect,
+                        string_format);
+                }
+            }
+        }
+
+        private void tabControl3_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            Brush txt_brush, box_brush;
+            Pen box_pen;
+
+            Rectangle tab_rect = tabControl3.GetTabRect(e.Index);
+
+           
+
+            if (e.State == DrawItemState.Selected)
+            {
+                e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(209, 237, 242)), tab_rect);
+                e.DrawFocusRectangle();
+
+                txt_brush = Brushes.Black;
+                box_brush = Brushes.Black;
+                box_pen = Pens.DarkBlue;
+            }
+            else
+            {
+                e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(73, 173, 252)), tab_rect);
+
+                txt_brush = Brushes.Black;
+                box_brush = Brushes.Black;
+                box_pen = Pens.DarkBlue;
+            }
+
+            RectangleF layout_rect = new RectangleF(
+            tab_rect.Left + tab_margin,
+            tab_rect.Y + tab_margin,
+            tab_rect.Width - 2 * tab_margin,
+            tab_rect.Height - 2 * tab_margin);
+
+
+            using (StringFormat string_format = new StringFormat())
+            {
+                using (System.Drawing.Font big_font = new System.Drawing.Font(this.Font, FontStyle.Bold))
+                {
+                    string_format.Alignment = StringAlignment.Center;
+                    string_format.LineAlignment = StringAlignment.Center;
+                    e.Graphics.DrawString(
+                        tabControl3.TabPages[e.Index].Text,
+                        big_font,
+                        txt_brush,
+                        layout_rect,
+                        string_format);
                 }
             }
         }

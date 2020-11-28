@@ -1,4 +1,6 @@
-﻿namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
+﻿using System.Windows.Forms;
+
+namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
     partial class ProjectPlanDocumentForm
     {
@@ -28,6 +30,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.documentControl = new System.Windows.Forms.TabPage();
             this.tabControl3 = new System.Windows.Forms.TabControl();
@@ -54,7 +60,17 @@
             this.phaseDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phaseSequence = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.activitiesDataGridView = new System.Windows.Forms.DataGridView();
+            this.activitiesPhaseTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activityTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activityDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activitySequence = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tasksDataGridView = new System.Windows.Forms.DataGridView();
+            this.tasksActivityTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.taskTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.taskDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.taskSequence = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.milestonesDataGridView = new System.Windows.Forms.DataGridView();
             this.milestoneTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,16 +97,6 @@
             this.schedule = new System.Windows.Forms.TabPage();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnExportWord = new System.Windows.Forms.Button();
-            this.activitiesDataGridView = new System.Windows.Forms.DataGridView();
-            this.activitiesPhaseTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.activityTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.activityDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.activitySequence = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tasksDataGridView = new System.Windows.Forms.DataGridView();
-            this.tasksActivityTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.taskTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.taskDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.taskSequence = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.documentControl.SuspendLayout();
             this.tabControl3.SuspendLayout();
@@ -105,7 +111,9 @@
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.phasesDataGridView)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.activitiesDataGridView)).BeginInit();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tasksDataGridView)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.milestonesDataGridView)).BeginInit();
             this.tabPage5.SuspendLayout();
@@ -116,8 +124,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dependenciesDataGridView)).BeginInit();
             this.tabPage9.SuspendLayout();
             this.tabPage11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.activitiesDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tasksDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -130,22 +136,24 @@
             this.tabControl1.Controls.Add(this.projectPlan);
             this.tabControl1.Controls.Add(this.appendix);
             this.tabControl1.Controls.Add(this.schedule);
+            this.tabControl1.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(16, 15);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1229, 607);
+            this.tabControl1.Size = new System.Drawing.Size(1250, 648);
             this.tabControl1.TabIndex = 0;
+            this.tabControl1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl1_DrawItem);
             // 
             // documentControl
             // 
-            this.documentControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.documentControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.documentControl.Controls.Add(this.tabControl3);
-            this.documentControl.Location = new System.Drawing.Point(4, 25);
+            this.documentControl.Location = new System.Drawing.Point(4, 24);
             this.documentControl.Margin = new System.Windows.Forms.Padding(4);
             this.documentControl.Name = "documentControl";
             this.documentControl.Padding = new System.Windows.Forms.Padding(4);
-            this.documentControl.Size = new System.Drawing.Size(1221, 578);
+            this.documentControl.Size = new System.Drawing.Size(1242, 620);
             this.documentControl.TabIndex = 0;
             this.documentControl.Text = "Document Control";
             // 
@@ -155,35 +163,66 @@
             this.tabControl3.Controls.Add(this.tabPage7);
             this.tabControl3.Controls.Add(this.tabPage8);
             this.tabControl3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl3.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl3.Location = new System.Drawing.Point(4, 4);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(1213, 570);
+            this.tabControl3.Size = new System.Drawing.Size(1234, 612);
             this.tabControl3.TabIndex = 12;
+            this.tabControl3.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl3_DrawItem);
             // 
             // tabPage6
             // 
+            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage6.Controls.Add(this.documentInformation);
-            this.tabPage6.Location = new System.Drawing.Point(4, 25);
+            this.tabPage6.Location = new System.Drawing.Point(4, 24);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1205, 541);
+            this.tabPage6.Size = new System.Drawing.Size(1226, 584);
             this.tabPage6.TabIndex = 0;
             this.tabPage6.Text = "Document Information";
-            this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // documentInformation
             // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Empty;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Helvetica", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Empty;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Empty;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Empty;
+            this.documentInformation.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.documentInformation.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.documentInformation.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.documentInformation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.documentInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.documentInformation.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Type,
             this.Information});
             this.documentInformation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.documentInformation.EnableHeadersVisualStyles = false;
+            this.documentInformation.GridColor = System.Drawing.Color.Black;
             this.documentInformation.Location = new System.Drawing.Point(3, 3);
             this.documentInformation.Margin = new System.Windows.Forms.Padding(4);
             this.documentInformation.Name = "documentInformation";
+            this.documentInformation.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.documentInformation.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.documentInformation.RowHeadersWidth = 51;
-            this.documentInformation.Size = new System.Drawing.Size(1199, 535);
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Helvetica", 10.8F);
+            this.documentInformation.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.documentInformation.Size = new System.Drawing.Size(1220, 578);
             this.documentInformation.TabIndex = 6;
             // 
             // Type
@@ -203,14 +242,14 @@
             // 
             // tabPage7
             // 
+            this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage7.Controls.Add(this.documentHistoryDataGridView);
-            this.tabPage7.Location = new System.Drawing.Point(4, 25);
+            this.tabPage7.Location = new System.Drawing.Point(4, 24);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1205, 541);
+            this.tabPage7.Size = new System.Drawing.Size(1226, 584);
             this.tabPage7.TabIndex = 1;
             this.tabPage7.Text = "Document History";
-            this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // documentHistoryDataGridView
             // 
@@ -224,7 +263,7 @@
             this.documentHistoryDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.documentHistoryDataGridView.Name = "documentHistoryDataGridView";
             this.documentHistoryDataGridView.RowHeadersWidth = 51;
-            this.documentHistoryDataGridView.Size = new System.Drawing.Size(1199, 535);
+            this.documentHistoryDataGridView.Size = new System.Drawing.Size(1220, 578);
             this.documentHistoryDataGridView.TabIndex = 7;
             // 
             // Version
@@ -250,13 +289,13 @@
             // 
             // tabPage8
             // 
+            this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage8.Controls.Add(this.documentApprovalsDataGridView);
-            this.tabPage8.Location = new System.Drawing.Point(4, 25);
+            this.tabPage8.Location = new System.Drawing.Point(4, 24);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(1205, 541);
+            this.tabPage8.Size = new System.Drawing.Size(1226, 584);
             this.tabPage8.TabIndex = 2;
             this.tabPage8.Text = "Document Approvals";
-            this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // documentApprovalsDataGridView
             // 
@@ -271,7 +310,7 @@
             this.documentApprovalsDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.documentApprovalsDataGridView.Name = "documentApprovalsDataGridView";
             this.documentApprovalsDataGridView.RowHeadersWidth = 51;
-            this.documentApprovalsDataGridView.Size = new System.Drawing.Size(1205, 541);
+            this.documentApprovalsDataGridView.Size = new System.Drawing.Size(1226, 584);
             this.documentApprovalsDataGridView.TabIndex = 8;
             // 
             // approvalRole
@@ -306,13 +345,13 @@
             // 
             // workBreakStructure
             // 
-            this.workBreakStructure.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.workBreakStructure.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.workBreakStructure.Controls.Add(this.tabControl2);
-            this.workBreakStructure.Location = new System.Drawing.Point(4, 25);
+            this.workBreakStructure.Location = new System.Drawing.Point(4, 24);
             this.workBreakStructure.Margin = new System.Windows.Forms.Padding(4);
             this.workBreakStructure.Name = "workBreakStructure";
             this.workBreakStructure.Padding = new System.Windows.Forms.Padding(4);
-            this.workBreakStructure.Size = new System.Drawing.Size(1221, 578);
+            this.workBreakStructure.Size = new System.Drawing.Size(1242, 620);
             this.workBreakStructure.TabIndex = 1;
             this.workBreakStructure.Text = "Work Breakdown Structure";
             // 
@@ -327,16 +366,16 @@
             this.tabControl2.Location = new System.Drawing.Point(4, 4);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1213, 570);
+            this.tabControl2.Size = new System.Drawing.Size(1234, 612);
             this.tabControl2.TabIndex = 14;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.phasesDataGridView);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1205, 541);
+            this.tabPage1.Size = new System.Drawing.Size(1226, 584);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Phases";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -353,7 +392,7 @@
             this.phasesDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.phasesDataGridView.Name = "phasesDataGridView";
             this.phasesDataGridView.RowHeadersWidth = 51;
-            this.phasesDataGridView.Size = new System.Drawing.Size(1199, 535);
+            this.phasesDataGridView.Size = new System.Drawing.Size(1220, 578);
             this.phasesDataGridView.TabIndex = 4;
             // 
             // phaseTitle
@@ -380,293 +419,13 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.activitiesDataGridView);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1205, 541);
+            this.tabPage2.Size = new System.Drawing.Size(1226, 584);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Activities ";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.tasksDataGridView);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1205, 541);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Tasks";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.milestonesDataGridView);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1205, 541);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Miltsone";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // milestonesDataGridView
-            // 
-            this.milestonesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.milestonesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.milestoneTitle,
-            this.milestoneDescription,
-            this.milestoneDate});
-            this.milestonesDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.milestonesDataGridView.Location = new System.Drawing.Point(0, 0);
-            this.milestonesDataGridView.Margin = new System.Windows.Forms.Padding(4);
-            this.milestonesDataGridView.Name = "milestonesDataGridView";
-            this.milestonesDataGridView.RowHeadersWidth = 51;
-            this.milestonesDataGridView.Size = new System.Drawing.Size(1205, 541);
-            this.milestonesDataGridView.TabIndex = 10;
-            // 
-            // milestoneTitle
-            // 
-            this.milestoneTitle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.milestoneTitle.HeaderText = "Milestone Title";
-            this.milestoneTitle.MinimumWidth = 6;
-            this.milestoneTitle.Name = "milestoneTitle";
-            // 
-            // milestoneDescription
-            // 
-            this.milestoneDescription.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.milestoneDescription.HeaderText = "Milestone Description";
-            this.milestoneDescription.MinimumWidth = 6;
-            this.milestoneDescription.Name = "milestoneDescription";
-            // 
-            // milestoneDate
-            // 
-            this.milestoneDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.milestoneDate.HeaderText = "Milestone Date";
-            this.milestoneDate.MinimumWidth = 6;
-            this.milestoneDate.Name = "milestoneDate";
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.effortDataGridView);
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1205, 541);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Effort";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // effortDataGridView
-            // 
-            this.effortDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.effortDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.effortTaskTitle,
-            this.resource,
-            this.effortMade});
-            this.effortDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.effortDataGridView.Location = new System.Drawing.Point(0, 0);
-            this.effortDataGridView.Margin = new System.Windows.Forms.Padding(4);
-            this.effortDataGridView.Name = "effortDataGridView";
-            this.effortDataGridView.RowHeadersWidth = 51;
-            this.effortDataGridView.Size = new System.Drawing.Size(1205, 541);
-            this.effortDataGridView.TabIndex = 12;
-            // 
-            // effortTaskTitle
-            // 
-            this.effortTaskTitle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.effortTaskTitle.HeaderText = "Task Title";
-            this.effortTaskTitle.MinimumWidth = 6;
-            this.effortTaskTitle.Name = "effortTaskTitle";
-            // 
-            // resource
-            // 
-            this.resource.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.resource.HeaderText = "Resource";
-            this.resource.MinimumWidth = 6;
-            this.resource.Name = "resource";
-            // 
-            // effortMade
-            // 
-            this.effortMade.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.effortMade.HeaderText = "Effort";
-            this.effortMade.MinimumWidth = 6;
-            this.effortMade.Name = "effortMade";
-            // 
-            // projectPlan
-            // 
-            this.projectPlan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.projectPlan.Controls.Add(this.tabControl4);
-            this.projectPlan.Controls.Add(this.label9);
-            this.projectPlan.Location = new System.Drawing.Point(4, 25);
-            this.projectPlan.Margin = new System.Windows.Forms.Padding(4);
-            this.projectPlan.Name = "projectPlan";
-            this.projectPlan.Padding = new System.Windows.Forms.Padding(4);
-            this.projectPlan.Size = new System.Drawing.Size(1221, 578);
-            this.projectPlan.TabIndex = 2;
-            this.projectPlan.Text = "Project Plan";
-            // 
-            // tabControl4
-            // 
-            this.tabControl4.Controls.Add(this.tabPage10);
-            this.tabControl4.Controls.Add(this.tabPage9);
-            this.tabControl4.Controls.Add(this.tabPage11);
-            this.tabControl4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl4.Location = new System.Drawing.Point(4, 4);
-            this.tabControl4.Name = "tabControl4";
-            this.tabControl4.SelectedIndex = 0;
-            this.tabControl4.Size = new System.Drawing.Size(1213, 570);
-            this.tabControl4.TabIndex = 11;
-            // 
-            // tabPage10
-            // 
-            this.tabPage10.Controls.Add(this.dependenciesDataGridView);
-            this.tabPage10.Location = new System.Drawing.Point(4, 25);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(1205, 541);
-            this.tabPage10.TabIndex = 1;
-            this.tabPage10.Text = "Dependencies";
-            this.tabPage10.UseVisualStyleBackColor = true;
-            // 
-            // dependenciesDataGridView
-            // 
-            this.dependenciesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dependenciesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dependencyActivityTitle,
-            this.dependsOn,
-            this.dependencyType});
-            this.dependenciesDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dependenciesDataGridView.Location = new System.Drawing.Point(3, 3);
-            this.dependenciesDataGridView.Margin = new System.Windows.Forms.Padding(4);
-            this.dependenciesDataGridView.Name = "dependenciesDataGridView";
-            this.dependenciesDataGridView.RowHeadersWidth = 51;
-            this.dependenciesDataGridView.Size = new System.Drawing.Size(1199, 535);
-            this.dependenciesDataGridView.TabIndex = 7;
-            // 
-            // dependencyActivityTitle
-            // 
-            this.dependencyActivityTitle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dependencyActivityTitle.HeaderText = "Activity Title";
-            this.dependencyActivityTitle.MinimumWidth = 6;
-            this.dependencyActivityTitle.Name = "dependencyActivityTitle";
-            // 
-            // dependsOn
-            // 
-            this.dependsOn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dependsOn.HeaderText = "Depends on";
-            this.dependsOn.MinimumWidth = 6;
-            this.dependsOn.Name = "dependsOn";
-            // 
-            // dependencyType
-            // 
-            this.dependencyType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dependencyType.HeaderText = "Dependency Type";
-            this.dependencyType.MinimumWidth = 6;
-            this.dependencyType.Name = "dependencyType";
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.Controls.Add(this.assumptionsTxt);
-            this.tabPage9.Location = new System.Drawing.Point(4, 25);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(1205, 541);
-            this.tabPage9.TabIndex = 0;
-            this.tabPage9.Text = "Assumptions";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
-            // assumptionsTxt
-            // 
-            this.assumptionsTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.assumptionsTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.assumptionsTxt.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.assumptionsTxt.ForeColor = System.Drawing.Color.White;
-            this.assumptionsTxt.Location = new System.Drawing.Point(3, 3);
-            this.assumptionsTxt.Margin = new System.Windows.Forms.Padding(4);
-            this.assumptionsTxt.Multiline = true;
-            this.assumptionsTxt.Name = "assumptionsTxt";
-            this.assumptionsTxt.Size = new System.Drawing.Size(1199, 535);
-            this.assumptionsTxt.TabIndex = 9;
-            this.assumptionsTxt.Text = "Assumptions";
-            // 
-            // tabPage11
-            // 
-            this.tabPage11.Controls.Add(this.constrainsTxt);
-            this.tabPage11.Location = new System.Drawing.Point(4, 25);
-            this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(1205, 541);
-            this.tabPage11.TabIndex = 2;
-            this.tabPage11.Text = "Constraints";
-            this.tabPage11.UseVisualStyleBackColor = true;
-            // 
-            // constrainsTxt
-            // 
-            this.constrainsTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.constrainsTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.constrainsTxt.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.constrainsTxt.ForeColor = System.Drawing.Color.White;
-            this.constrainsTxt.Location = new System.Drawing.Point(0, 0);
-            this.constrainsTxt.Margin = new System.Windows.Forms.Padding(4);
-            this.constrainsTxt.Multiline = true;
-            this.constrainsTxt.Name = "constrainsTxt";
-            this.constrainsTxt.Size = new System.Drawing.Size(1205, 541);
-            this.constrainsTxt.TabIndex = 10;
-            this.constrainsTxt.Text = "Constrains";
-            // 
-            // label9
-            // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(8, 112);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(84, 22);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Activities";
-            // 
-            // appendix
-            // 
-            this.appendix.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.appendix.Location = new System.Drawing.Point(4, 25);
-            this.appendix.Margin = new System.Windows.Forms.Padding(4);
-            this.appendix.Name = "appendix";
-            this.appendix.Padding = new System.Windows.Forms.Padding(4);
-            this.appendix.Size = new System.Drawing.Size(1221, 578);
-            this.appendix.TabIndex = 3;
-            this.appendix.Text = "Appendix";
-            // 
-            // schedule
-            // 
-            this.schedule.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.schedule.Location = new System.Drawing.Point(4, 25);
-            this.schedule.Margin = new System.Windows.Forms.Padding(4);
-            this.schedule.Name = "schedule";
-            this.schedule.Padding = new System.Windows.Forms.Padding(4);
-            this.schedule.Size = new System.Drawing.Size(1221, 578);
-            this.schedule.TabIndex = 4;
-            this.schedule.Text = "Schedule";
-            // 
-            // btnSave
-            // 
-            this.btnSave.Location = new System.Drawing.Point(711, 6);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(179, 27);
-            this.btnSave.TabIndex = 12;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnExportWord
-            // 
-            this.btnExportWord.Location = new System.Drawing.Point(915, 6);
-            this.btnExportWord.Name = "btnExportWord";
-            this.btnExportWord.Size = new System.Drawing.Size(179, 27);
-            this.btnExportWord.TabIndex = 13;
-            this.btnExportWord.Text = "Export to Word";
-            this.btnExportWord.UseVisualStyleBackColor = true;
-            this.btnExportWord.Click += new System.EventHandler(this.btnExportWord_Click);
             // 
             // activitiesDataGridView
             // 
@@ -681,7 +440,7 @@
             this.activitiesDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.activitiesDataGridView.Name = "activitiesDataGridView";
             this.activitiesDataGridView.RowHeadersWidth = 51;
-            this.activitiesDataGridView.Size = new System.Drawing.Size(1199, 535);
+            this.activitiesDataGridView.Size = new System.Drawing.Size(1220, 578);
             this.activitiesDataGridView.TabIndex = 9;
             // 
             // activitiesPhaseTitle
@@ -711,6 +470,16 @@
             this.activitySequence.HeaderText = "Activity Sequence";
             this.activitySequence.MinimumWidth = 6;
             this.activitySequence.Name = "activitySequence";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.tasksDataGridView);
+            this.tabPage3.Location = new System.Drawing.Point(4, 24);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(1226, 584);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Tasks";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tasksDataGridView
             // 
@@ -755,12 +524,288 @@
             this.taskSequence.MinimumWidth = 6;
             this.taskSequence.Name = "taskSequence";
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.milestonesDataGridView);
+            this.tabPage4.Location = new System.Drawing.Point(4, 24);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1226, 584);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Miltsone";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // milestonesDataGridView
+            // 
+            this.milestonesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.milestonesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.milestoneTitle,
+            this.milestoneDescription,
+            this.milestoneDate});
+            this.milestonesDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.milestonesDataGridView.Location = new System.Drawing.Point(0, 0);
+            this.milestonesDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.milestonesDataGridView.Name = "milestonesDataGridView";
+            this.milestonesDataGridView.RowHeadersWidth = 51;
+            this.milestonesDataGridView.Size = new System.Drawing.Size(1226, 584);
+            this.milestonesDataGridView.TabIndex = 10;
+            // 
+            // milestoneTitle
+            // 
+            this.milestoneTitle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.milestoneTitle.HeaderText = "Milestone Title";
+            this.milestoneTitle.MinimumWidth = 6;
+            this.milestoneTitle.Name = "milestoneTitle";
+            // 
+            // milestoneDescription
+            // 
+            this.milestoneDescription.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.milestoneDescription.HeaderText = "Milestone Description";
+            this.milestoneDescription.MinimumWidth = 6;
+            this.milestoneDescription.Name = "milestoneDescription";
+            // 
+            // milestoneDate
+            // 
+            this.milestoneDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.milestoneDate.HeaderText = "Milestone Date";
+            this.milestoneDate.MinimumWidth = 6;
+            this.milestoneDate.Name = "milestoneDate";
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.effortDataGridView);
+            this.tabPage5.Location = new System.Drawing.Point(4, 24);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(1226, 584);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Effort";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // effortDataGridView
+            // 
+            this.effortDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.effortDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.effortTaskTitle,
+            this.resource,
+            this.effortMade});
+            this.effortDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.effortDataGridView.Location = new System.Drawing.Point(0, 0);
+            this.effortDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.effortDataGridView.Name = "effortDataGridView";
+            this.effortDataGridView.RowHeadersWidth = 51;
+            this.effortDataGridView.Size = new System.Drawing.Size(1226, 584);
+            this.effortDataGridView.TabIndex = 12;
+            // 
+            // effortTaskTitle
+            // 
+            this.effortTaskTitle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.effortTaskTitle.HeaderText = "Task Title";
+            this.effortTaskTitle.MinimumWidth = 6;
+            this.effortTaskTitle.Name = "effortTaskTitle";
+            // 
+            // resource
+            // 
+            this.resource.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.resource.HeaderText = "Resource";
+            this.resource.MinimumWidth = 6;
+            this.resource.Name = "resource";
+            // 
+            // effortMade
+            // 
+            this.effortMade.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.effortMade.HeaderText = "Effort";
+            this.effortMade.MinimumWidth = 6;
+            this.effortMade.Name = "effortMade";
+            // 
+            // projectPlan
+            // 
+            this.projectPlan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.projectPlan.Controls.Add(this.tabControl4);
+            this.projectPlan.Controls.Add(this.label9);
+            this.projectPlan.Location = new System.Drawing.Point(4, 24);
+            this.projectPlan.Margin = new System.Windows.Forms.Padding(4);
+            this.projectPlan.Name = "projectPlan";
+            this.projectPlan.Padding = new System.Windows.Forms.Padding(4);
+            this.projectPlan.Size = new System.Drawing.Size(1242, 620);
+            this.projectPlan.TabIndex = 2;
+            this.projectPlan.Text = "Project Plan";
+            // 
+            // tabControl4
+            // 
+            this.tabControl4.Controls.Add(this.tabPage10);
+            this.tabControl4.Controls.Add(this.tabPage9);
+            this.tabControl4.Controls.Add(this.tabPage11);
+            this.tabControl4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl4.Location = new System.Drawing.Point(4, 4);
+            this.tabControl4.Name = "tabControl4";
+            this.tabControl4.SelectedIndex = 0;
+            this.tabControl4.Size = new System.Drawing.Size(1234, 612);
+            this.tabControl4.TabIndex = 11;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.Controls.Add(this.dependenciesDataGridView);
+            this.tabPage10.Location = new System.Drawing.Point(4, 24);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage10.Size = new System.Drawing.Size(1226, 584);
+            this.tabPage10.TabIndex = 1;
+            this.tabPage10.Text = "Dependencies";
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // dependenciesDataGridView
+            // 
+            this.dependenciesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dependenciesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dependencyActivityTitle,
+            this.dependsOn,
+            this.dependencyType});
+            this.dependenciesDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dependenciesDataGridView.Location = new System.Drawing.Point(3, 3);
+            this.dependenciesDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.dependenciesDataGridView.Name = "dependenciesDataGridView";
+            this.dependenciesDataGridView.RowHeadersWidth = 51;
+            this.dependenciesDataGridView.Size = new System.Drawing.Size(1220, 578);
+            this.dependenciesDataGridView.TabIndex = 7;
+            // 
+            // dependencyActivityTitle
+            // 
+            this.dependencyActivityTitle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dependencyActivityTitle.HeaderText = "Activity Title";
+            this.dependencyActivityTitle.MinimumWidth = 6;
+            this.dependencyActivityTitle.Name = "dependencyActivityTitle";
+            // 
+            // dependsOn
+            // 
+            this.dependsOn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dependsOn.HeaderText = "Depends on";
+            this.dependsOn.MinimumWidth = 6;
+            this.dependsOn.Name = "dependsOn";
+            // 
+            // dependencyType
+            // 
+            this.dependencyType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dependencyType.HeaderText = "Dependency Type";
+            this.dependencyType.MinimumWidth = 6;
+            this.dependencyType.Name = "dependencyType";
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Controls.Add(this.assumptionsTxt);
+            this.tabPage9.Location = new System.Drawing.Point(4, 24);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(1226, 584);
+            this.tabPage9.TabIndex = 0;
+            this.tabPage9.Text = "Assumptions";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // assumptionsTxt
+            // 
+            this.assumptionsTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.assumptionsTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.assumptionsTxt.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assumptionsTxt.ForeColor = System.Drawing.Color.White;
+            this.assumptionsTxt.Location = new System.Drawing.Point(3, 3);
+            this.assumptionsTxt.Margin = new System.Windows.Forms.Padding(4);
+            this.assumptionsTxt.Multiline = true;
+            this.assumptionsTxt.Name = "assumptionsTxt";
+            this.assumptionsTxt.Size = new System.Drawing.Size(1220, 578);
+            this.assumptionsTxt.TabIndex = 9;
+            this.assumptionsTxt.Text = "Assumptions";
+            // 
+            // tabPage11
+            // 
+            this.tabPage11.Controls.Add(this.constrainsTxt);
+            this.tabPage11.Location = new System.Drawing.Point(4, 24);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Size = new System.Drawing.Size(1226, 584);
+            this.tabPage11.TabIndex = 2;
+            this.tabPage11.Text = "Constraints";
+            this.tabPage11.UseVisualStyleBackColor = true;
+            // 
+            // constrainsTxt
+            // 
+            this.constrainsTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.constrainsTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.constrainsTxt.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.constrainsTxt.ForeColor = System.Drawing.Color.White;
+            this.constrainsTxt.Location = new System.Drawing.Point(0, 0);
+            this.constrainsTxt.Margin = new System.Windows.Forms.Padding(4);
+            this.constrainsTxt.Multiline = true;
+            this.constrainsTxt.Name = "constrainsTxt";
+            this.constrainsTxt.Size = new System.Drawing.Size(1226, 584);
+            this.constrainsTxt.TabIndex = 10;
+            this.constrainsTxt.Text = "Constrains";
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Cambria", 11F);
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(8, 112);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(84, 22);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "Activities";
+            // 
+            // appendix
+            // 
+            this.appendix.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.appendix.Location = new System.Drawing.Point(4, 24);
+            this.appendix.Margin = new System.Windows.Forms.Padding(4);
+            this.appendix.Name = "appendix";
+            this.appendix.Padding = new System.Windows.Forms.Padding(4);
+            this.appendix.Size = new System.Drawing.Size(1242, 620);
+            this.appendix.TabIndex = 3;
+            this.appendix.Text = "Appendix";
+            // 
+            // schedule
+            // 
+            this.schedule.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.schedule.Location = new System.Drawing.Point(4, 24);
+            this.schedule.Margin = new System.Windows.Forms.Padding(4);
+            this.schedule.Name = "schedule";
+            this.schedule.Padding = new System.Windows.Forms.Padding(4);
+            this.schedule.Size = new System.Drawing.Size(1242, 620);
+            this.schedule.TabIndex = 4;
+            this.schedule.Text = "Schedule";
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(711, 16);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(179, 45);
+            this.btnSave.TabIndex = 12;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnExportWord
+            // 
+            this.btnExportWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnExportWord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExportWord.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportWord.Location = new System.Drawing.Point(921, 15);
+            this.btnExportWord.Name = "btnExportWord";
+            this.btnExportWord.Size = new System.Drawing.Size(179, 45);
+            this.btnExportWord.TabIndex = 13;
+            this.btnExportWord.Text = "Export to Word";
+            this.btnExportWord.UseVisualStyleBackColor = false;
+            this.btnExportWord.Click += new System.EventHandler(this.btnExportWord_Click);
+            // 
             // ProjectPlanDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(1261, 636);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.ClientSize = new System.Drawing.Size(1279, 676);
             this.Controls.Add(this.btnExportWord);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tabControl1);
@@ -782,7 +827,9 @@
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.phasesDataGridView)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.activitiesDataGridView)).EndInit();
             this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tasksDataGridView)).EndInit();
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.milestonesDataGridView)).EndInit();
             this.tabPage5.ResumeLayout(false);
@@ -796,8 +843,6 @@
             this.tabPage9.PerformLayout();
             this.tabPage11.ResumeLayout(false);
             this.tabPage11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.activitiesDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tasksDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
