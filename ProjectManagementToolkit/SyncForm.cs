@@ -12,6 +12,9 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using System.Net;
 using ProjectManagementToolkit.Utility;
+using ProjectManagementToolkit.Properties;
+using Newtonsoft.Json.Linq;
+using System.IO;
 
 namespace ProjectManagementToolkit.MPMM
 {
@@ -27,14 +30,46 @@ namespace ProjectManagementToolkit.MPMM
 
         private void btnSync_Click(object sender, EventArgs e)
         {
-            List<string> documents = new List<string>();
-            documents.Add("projectPlan");
             bool connectionSuccessful = attemptHttpConnection();
-            if(connectionSuccessful)
+
+            if(!connectionSuccessful)
+            {
+                MessageBox.Show("Unable to connect to server.", "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            List<string> serverDocuments;
+            List<string> localDocuments;
+
+            serverDocuments = getServerCollections();
+            if(serverDocuments == null)
+            {
+                MessageBox.Show("An unexpected server ocurred.", "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            localDocuments = getLocalDocuments();
+
+            //Pull all missing documents from server.
+            /*var missingLocal = new List<string>();
+            foreach (var item in serverDocuments)
+            {
+                if(!localDocuments.Contains(item))
+                {
+                    missingLocal.Add(item);
+                }
+            }
+
+            foreach (var item in missingLocal)
+            {
+                
+            }*/
+
+            if(localDocuments != null && serverDocuments != null)
             {
                 //Loop Through All Syncable Documents
                 //VersionControl.getLatest()
-                foreach (var item in documents)
+                foreach (string item in localDocuments)
                 {
                     syncDocument(item);
                 }
@@ -43,7 +78,8 @@ namespace ProjectManagementToolkit.MPMM
             {
                 lblProgress.Text = "Sync Failed...";
             }
-            /*
+            /* Old Temp Code 
+             
             List<string> documents = new List<string>();
             documents.Add("Project Plan");
             documents.Add("Business Case");
@@ -66,15 +102,86 @@ namespace ProjectManagementToolkit.MPMM
             syncProgressBar.Value = syncProgressBar.Maximum;
             lblProgress.Text = "Progress: 100%";
             MessageBox.Show("Sync completed");
-            this.Close();*/
+            this.Close();
+            */
+        }
+        private List<string> getServerCollections()
+        {
+            List<string> serverDocuments = new List<string>();
+            try
+            {
+                HttpResponseMessage responseMessage = client.GetAsync("http://localhost:3000/document/" + Settings.Default.ProjectID).Result;
+                var jsonResponse = responseMessage.Content.ReadAsStringAsync().Result;
+                JArray serverDocumentsJson = JArray.Parse(jsonResponse);
+                foreach (var item in serverDocumentsJson)
+                {
+                    serverDocuments.Add(item["name"].ToString());
+                    MessageBox.Show("Server " + item["name"].ToString());
+                }
+                return serverDocuments;
+            }
+            catch (AggregateException)
+            {
+                MessageBox.Show("An unexpected server ocurred.", "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
         }
 
+        private List<string> getLocalDocuments()
+        {
+            List<string> localDocuments = new List<string>();
+            string projectPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "ProjectManagementToolkit", Settings.Default.ProjectID);
+            
+            if (Directory.Exists(projectPath))
+            {
+                foreach (string documentPath in Directory.GetFiles(projectPath))
+                {
+                    string documentName = Path.GetFileNameWithoutExtension(documentPath);
+                    MessageBox.Show("Local " + documentName);
+                    localDocuments.Add(documentName);
+                }
+            }
+            else
+            {
+                return null;
+            }
+
+            return localDocuments;
+        }
 
         private bool syncDocument(string document)
         {
-            //MongoDB/<project_id>/<document>
-            //url + <project_id>/<document>
-            return true;
+            string documentJson = JsonHelper.loadDocument(Settings.Default.ProjectID, document);
+            //Server = Local
+                //Do Nothing
+            //Server ahead of Local
+                //Merge Server with Local version and save locally
+            //Local ahead of Server
+                //Merge Local version with srver version and POST
+
+
+            var body = new StringContent(documentJson, Encoding.UTF8, "application/json");
+
+            Task<HttpResponseMessage> responseMessage = client.PostAsync("http://localhost:3000/document/" + Settings.Default.ProjectID + "/" + document, body);
+            HttpResponseMessage response = responseMessage.Result;
+            int statusCode = response.StatusCode.GetHashCode();
+
+            switch (statusCode)
+            {
+                case 200:
+                    return true;
+                case 404:
+                    return false;
+                default:
+                    break;
+            }
+
+            return false;
+        }
+
+        private void getServerDocument(string document)
+        {
+
         }
 
         private bool attemptHttpConnection()
@@ -83,8 +190,7 @@ namespace ProjectManagementToolkit.MPMM
             {
                 Task<HttpResponseMessage> responseMessage = client.GetAsync("http://137.117.194.119:3000/");
                 HttpResponseMessage response = responseMessage.Result;
-                HttpStatusCode httpStatusCode = response.StatusCode;
-                int statusCode = httpStatusCode.GetHashCode();
+                int statusCode = response.StatusCode.GetHashCode();
 
                 switch (statusCode)
                 {
@@ -98,7 +204,7 @@ namespace ProjectManagementToolkit.MPMM
 
                 return false;
             }
-            catch (AggregateException e)
+            catch (AggregateException)
             {
                 MessageBox.Show("An unexpected server ocurred.", "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
