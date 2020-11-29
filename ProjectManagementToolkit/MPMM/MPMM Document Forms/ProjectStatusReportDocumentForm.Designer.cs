@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabCtrlProjectStatusDocumentForm = new System.Windows.Forms.TabControl();
             this.tabProjectDetails = new System.Windows.Forms.TabPage();
             this.txtProjectRecipients = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -64,7 +64,7 @@
             this.dgvProjectSchedule = new System.Windows.Forms.DataGridView();
             this.txtProjectName = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabCtrlExecutiveSummary = new System.Windows.Forms.TabControl();
             this.tabProjectDiscription = new System.Windows.Forms.TabPage();
             this.tabOverallStatus = new System.Windows.Forms.TabPage();
             this.tabProjectSchedule = new System.Windows.Forms.TabPage();
@@ -73,14 +73,14 @@
             this.tabProjectRisks = new System.Windows.Forms.TabPage();
             this.tabProjectIssues = new System.Windows.Forms.TabPage();
             this.tabProjectChanges = new System.Windows.Forms.TabPage();
-            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.tabCtrlDetailedStatusReport = new System.Windows.Forms.TabControl();
             this.tabProjectSchedule2 = new System.Windows.Forms.TabPage();
             this.tabProjectExpenses2 = new System.Windows.Forms.TabPage();
             this.tabProjectEffort = new System.Windows.Forms.TabPage();
             this.tabProjectQuality = new System.Windows.Forms.TabPage();
             this.tabProjectRisk2 = new System.Windows.Forms.TabPage();
             this.tabProjectIssues2 = new System.Windows.Forms.TabPage();
-            this.tabControl1.SuspendLayout();
+            this.tabCtrlProjectStatusDocumentForm.SuspendLayout();
             this.tabProjectDetails.SuspendLayout();
             this.tabExecutiveSummary.SuspendLayout();
             this.tabDetailedStatusReport.SuspendLayout();
@@ -90,7 +90,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvProjectRisk)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProjectQuality)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProjectSchedule)).BeginInit();
-            this.tabControl2.SuspendLayout();
+            this.tabCtrlExecutiveSummary.SuspendLayout();
             this.tabProjectDiscription.SuspendLayout();
             this.tabOverallStatus.SuspendLayout();
             this.tabProjectSchedule.SuspendLayout();
@@ -99,7 +99,7 @@
             this.tabProjectRisks.SuspendLayout();
             this.tabProjectIssues.SuspendLayout();
             this.tabProjectChanges.SuspendLayout();
-            this.tabControl3.SuspendLayout();
+            this.tabCtrlDetailedStatusReport.SuspendLayout();
             this.tabProjectSchedule2.SuspendLayout();
             this.tabProjectExpenses2.SuspendLayout();
             this.tabProjectEffort.SuspendLayout();
@@ -108,16 +108,17 @@
             this.tabProjectIssues2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tabCtrlProjectStatusDocumentForm
             // 
-            this.tabControl1.Controls.Add(this.tabProjectDetails);
-            this.tabControl1.Controls.Add(this.tabExecutiveSummary);
-            this.tabControl1.Controls.Add(this.tabDetailedStatusReport);
-            this.tabControl1.Location = new System.Drawing.Point(8, 43);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1038, 735);
-            this.tabControl1.TabIndex = 14;
+            this.tabCtrlProjectStatusDocumentForm.Controls.Add(this.tabProjectDetails);
+            this.tabCtrlProjectStatusDocumentForm.Controls.Add(this.tabExecutiveSummary);
+            this.tabCtrlProjectStatusDocumentForm.Controls.Add(this.tabDetailedStatusReport);
+            this.tabCtrlProjectStatusDocumentForm.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabCtrlProjectStatusDocumentForm.Location = new System.Drawing.Point(8, 43);
+            this.tabCtrlProjectStatusDocumentForm.Name = "tabCtrlProjectStatusDocumentForm";
+            this.tabCtrlProjectStatusDocumentForm.SelectedIndex = 0;
+            this.tabCtrlProjectStatusDocumentForm.Size = new System.Drawing.Size(1038, 735);
+            this.tabCtrlProjectStatusDocumentForm.TabIndex = 14;
             // 
             // tabProjectDetails
             // 
@@ -317,7 +318,7 @@
             // tabExecutiveSummary
             // 
             this.tabExecutiveSummary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabExecutiveSummary.Controls.Add(this.tabControl2);
+            this.tabExecutiveSummary.Controls.Add(this.tabCtrlExecutiveSummary);
             this.tabExecutiveSummary.Location = new System.Drawing.Point(4, 25);
             this.tabExecutiveSummary.Name = "tabExecutiveSummary";
             this.tabExecutiveSummary.Padding = new System.Windows.Forms.Padding(3);
@@ -392,7 +393,7 @@
             // tabDetailedStatusReport
             // 
             this.tabDetailedStatusReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabDetailedStatusReport.Controls.Add(this.tabControl3);
+            this.tabDetailedStatusReport.Controls.Add(this.tabCtrlDetailedStatusReport);
             this.tabDetailedStatusReport.Location = new System.Drawing.Point(4, 25);
             this.tabDetailedStatusReport.Name = "tabDetailedStatusReport";
             this.tabDetailedStatusReport.Padding = new System.Windows.Forms.Padding(3);
@@ -495,21 +496,21 @@
             this.label27.TabIndex = 16;
             this.label27.Text = "Project Status Report For: ";
             // 
-            // tabControl2
+            // tabCtrlExecutiveSummary
             // 
-            this.tabControl2.Controls.Add(this.tabProjectDiscription);
-            this.tabControl2.Controls.Add(this.tabOverallStatus);
-            this.tabControl2.Controls.Add(this.tabProjectSchedule);
-            this.tabControl2.Controls.Add(this.tabProjectExpenses);
-            this.tabControl2.Controls.Add(this.tabProjectDeliverables);
-            this.tabControl2.Controls.Add(this.tabProjectRisks);
-            this.tabControl2.Controls.Add(this.tabProjectIssues);
-            this.tabControl2.Controls.Add(this.tabProjectChanges);
-            this.tabControl2.Location = new System.Drawing.Point(3, 3);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1024, 700);
-            this.tabControl2.TabIndex = 52;
+            this.tabCtrlExecutiveSummary.Controls.Add(this.tabProjectDiscription);
+            this.tabCtrlExecutiveSummary.Controls.Add(this.tabOverallStatus);
+            this.tabCtrlExecutiveSummary.Controls.Add(this.tabProjectSchedule);
+            this.tabCtrlExecutiveSummary.Controls.Add(this.tabProjectExpenses);
+            this.tabCtrlExecutiveSummary.Controls.Add(this.tabProjectDeliverables);
+            this.tabCtrlExecutiveSummary.Controls.Add(this.tabProjectRisks);
+            this.tabCtrlExecutiveSummary.Controls.Add(this.tabProjectIssues);
+            this.tabCtrlExecutiveSummary.Controls.Add(this.tabProjectChanges);
+            this.tabCtrlExecutiveSummary.Location = new System.Drawing.Point(3, 3);
+            this.tabCtrlExecutiveSummary.Name = "tabCtrlExecutiveSummary";
+            this.tabCtrlExecutiveSummary.SelectedIndex = 0;
+            this.tabCtrlExecutiveSummary.Size = new System.Drawing.Size(1024, 700);
+            this.tabCtrlExecutiveSummary.TabIndex = 52;
             // 
             // tabProjectDiscription
             // 
@@ -593,19 +594,19 @@
             this.tabProjectChanges.Text = "Project Changes";
             this.tabProjectChanges.UseVisualStyleBackColor = true;
             // 
-            // tabControl3
+            // tabCtrlDetailedStatusReport
             // 
-            this.tabControl3.Controls.Add(this.tabProjectSchedule2);
-            this.tabControl3.Controls.Add(this.tabProjectExpenses2);
-            this.tabControl3.Controls.Add(this.tabProjectEffort);
-            this.tabControl3.Controls.Add(this.tabProjectQuality);
-            this.tabControl3.Controls.Add(this.tabProjectRisk2);
-            this.tabControl3.Controls.Add(this.tabProjectIssues2);
-            this.tabControl3.Location = new System.Drawing.Point(3, 3);
-            this.tabControl3.Name = "tabControl3";
-            this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(1024, 700);
-            this.tabControl3.TabIndex = 57;
+            this.tabCtrlDetailedStatusReport.Controls.Add(this.tabProjectSchedule2);
+            this.tabCtrlDetailedStatusReport.Controls.Add(this.tabProjectExpenses2);
+            this.tabCtrlDetailedStatusReport.Controls.Add(this.tabProjectEffort);
+            this.tabCtrlDetailedStatusReport.Controls.Add(this.tabProjectQuality);
+            this.tabCtrlDetailedStatusReport.Controls.Add(this.tabProjectRisk2);
+            this.tabCtrlDetailedStatusReport.Controls.Add(this.tabProjectIssues2);
+            this.tabCtrlDetailedStatusReport.Location = new System.Drawing.Point(3, 3);
+            this.tabCtrlDetailedStatusReport.Name = "tabCtrlDetailedStatusReport";
+            this.tabCtrlDetailedStatusReport.SelectedIndex = 0;
+            this.tabCtrlDetailedStatusReport.Size = new System.Drawing.Size(1024, 700);
+            this.tabCtrlDetailedStatusReport.TabIndex = 57;
             // 
             // tabProjectSchedule2
             // 
@@ -677,10 +678,10 @@
             this.ClientSize = new System.Drawing.Size(1058, 790);
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.label27);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabCtrlProjectStatusDocumentForm);
             this.Name = "ProjectStatusReportDocumentForm";
             this.Text = "ProjectStatusReportDocumentForm";
-            this.tabControl1.ResumeLayout(false);
+            this.tabCtrlProjectStatusDocumentForm.ResumeLayout(false);
             this.tabProjectDetails.ResumeLayout(false);
             this.tabProjectDetails.PerformLayout();
             this.tabExecutiveSummary.ResumeLayout(false);
@@ -691,7 +692,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvProjectRisk)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProjectQuality)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProjectSchedule)).EndInit();
-            this.tabControl2.ResumeLayout(false);
+            this.tabCtrlExecutiveSummary.ResumeLayout(false);
             this.tabProjectDiscription.ResumeLayout(false);
             this.tabProjectDiscription.PerformLayout();
             this.tabOverallStatus.ResumeLayout(false);
@@ -708,7 +709,7 @@
             this.tabProjectIssues.PerformLayout();
             this.tabProjectChanges.ResumeLayout(false);
             this.tabProjectChanges.PerformLayout();
-            this.tabControl3.ResumeLayout(false);
+            this.tabCtrlDetailedStatusReport.ResumeLayout(false);
             this.tabProjectSchedule2.ResumeLayout(false);
             this.tabProjectExpenses2.ResumeLayout(false);
             this.tabProjectEffort.ResumeLayout(false);
@@ -722,7 +723,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabCtrlProjectStatusDocumentForm;
         private System.Windows.Forms.TabPage tabProjectDetails;
         private System.Windows.Forms.TabPage tabExecutiveSummary;
         private System.Windows.Forms.TabPage tabDetailedStatusReport;
@@ -758,7 +759,7 @@
         private System.Windows.Forms.DataGridView dgvProjectIssues;
         private System.Windows.Forms.DataGridView dgvProjectRisk;
         private System.Windows.Forms.DataGridView dgvProjectQuality;
-        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabControl tabCtrlExecutiveSummary;
         private System.Windows.Forms.TabPage tabProjectDiscription;
         private System.Windows.Forms.TabPage tabOverallStatus;
         private System.Windows.Forms.TabPage tabProjectSchedule;
@@ -767,7 +768,7 @@
         private System.Windows.Forms.TabPage tabProjectRisks;
         private System.Windows.Forms.TabPage tabProjectIssues;
         private System.Windows.Forms.TabPage tabProjectChanges;
-        private System.Windows.Forms.TabControl tabControl3;
+        private System.Windows.Forms.TabControl tabCtrlDetailedStatusReport;
         private System.Windows.Forms.TabPage tabProjectSchedule2;
         private System.Windows.Forms.TabPage tabProjectExpenses2;
         private System.Windows.Forms.TabPage tabProjectEffort;

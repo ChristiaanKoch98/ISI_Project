@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabCtrlRiskManagementProcessDocumentForm = new System.Windows.Forms.TabControl();
             this.tabDocumentControl = new System.Windows.Forms.TabPage();
             this.dgvDocumentApprovals = new System.Windows.Forms.DataGridView();
             this.dgvDocumentHistory = new System.Windows.Forms.DataGridView();
@@ -63,7 +63,7 @@
             this.tabRiskForm = new System.Windows.Forms.TabPage();
             this.txtRiskForm = new System.Windows.Forms.TextBox();
             this.tabRiskDocuments = new System.Windows.Forms.TabPage();
-            this.tabControl1.SuspendLayout();
+            this.tabCtrlRiskManagementProcessDocumentForm.SuspendLayout();
             this.tabDocumentControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentApprovals)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentHistory)).BeginInit();
@@ -90,18 +90,18 @@
             this.tabRiskDocuments.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tabCtrlRiskManagementProcessDocumentForm
             // 
-            this.tabControl1.Controls.Add(this.tabDocumentControl);
-            this.tabControl1.Controls.Add(this.tabRiskProcess);
-            this.tabControl1.Controls.Add(this.tabRiskRoles);
-            this.tabControl1.Controls.Add(this.tabRiskDocuments);
-            this.tabControl1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(12, 36);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1038, 735);
-            this.tabControl1.TabIndex = 14;
+            this.tabCtrlRiskManagementProcessDocumentForm.Controls.Add(this.tabDocumentControl);
+            this.tabCtrlRiskManagementProcessDocumentForm.Controls.Add(this.tabRiskProcess);
+            this.tabCtrlRiskManagementProcessDocumentForm.Controls.Add(this.tabRiskRoles);
+            this.tabCtrlRiskManagementProcessDocumentForm.Controls.Add(this.tabRiskDocuments);
+            this.tabCtrlRiskManagementProcessDocumentForm.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabCtrlRiskManagementProcessDocumentForm.Location = new System.Drawing.Point(12, 36);
+            this.tabCtrlRiskManagementProcessDocumentForm.Name = "tabCtrlRiskManagementProcessDocumentForm";
+            this.tabCtrlRiskManagementProcessDocumentForm.SelectedIndex = 0;
+            this.tabCtrlRiskManagementProcessDocumentForm.Size = new System.Drawing.Size(1038, 735);
+            this.tabCtrlRiskManagementProcessDocumentForm.TabIndex = 14;
             // 
             // tabDocumentControl
             // 
@@ -460,10 +460,10 @@
             this.ClientSize = new System.Drawing.Size(1056, 783);
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.label27);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabCtrlRiskManagementProcessDocumentForm);
             this.Name = "RiskManagementProcessDocumentForm";
             this.Text = "RiskManagementProcessDocumentForm";
-            this.tabControl1.ResumeLayout(false);
+            this.tabCtrlRiskManagementProcessDocumentForm.ResumeLayout(false);
             this.tabDocumentControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentApprovals)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentHistory)).EndInit();
@@ -503,7 +503,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabCtrlRiskManagementProcessDocumentForm;
         private System.Windows.Forms.TabPage tabDocumentControl;
         private System.Windows.Forms.DataGridView dgvDocumentApprovals;
         private System.Windows.Forms.DataGridView dgvDocumentHistory;

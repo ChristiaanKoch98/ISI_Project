@@ -28,116 +28,147 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabCtrlTermOfReferenceDocumentForm = new System.Windows.Forms.TabControl();
             this.tabDocumentControl = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.dgvDocumentApprovals = new System.Windows.Forms.DataGridView();
             this.dgvDocumentHistory = new System.Windows.Forms.DataGridView();
             this.dgvDocumentInformation = new System.Windows.Forms.DataGridView();
             this.tabExecutiveSummary = new System.Windows.Forms.TabPage();
+            this.txtExecutiveSummary = new System.Windows.Forms.TextBox();
             this.tabProjectDefinition = new System.Windows.Forms.TabPage();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tabProjectOrganization = new System.Windows.Forms.TabPage();
+            this.txtScope = new System.Windows.Forms.TextBox();
+            this.txtObjectives = new System.Windows.Forms.TextBox();
+            this.txtVision = new System.Windows.Forms.TextBox();
+            this.dgvDeliverables = new System.Windows.Forms.DataGridView();
+            this.txtProjectDefinition = new System.Windows.Forms.TextBox();
             this.tabImplementationPlan = new System.Windows.Forms.TabPage();
+            this.txtSchedule = new System.Windows.Forms.TextBox();
+            this.dgvQualityPlan = new System.Windows.Forms.DataGridView();
+            this.dgvFinancialPlan = new System.Windows.Forms.DataGridView();
+            this.dgvResourcePlan = new System.Windows.Forms.DataGridView();
+            this.dgvDependencies = new System.Windows.Forms.DataGridView();
+            this.dgvMilestones = new System.Windows.Forms.DataGridView();
+            this.dgvCompletionCriteria = new System.Windows.Forms.DataGridView();
+            this.dgvApproach = new System.Windows.Forms.DataGridView();
+            this.tabProjectConsiderations = new System.Windows.Forms.TabPage();
+            this.txtConstraints = new System.Windows.Forms.TextBox();
+            this.txtAssumptions = new System.Windows.Forms.TextBox();
+            this.dgvIssues = new System.Windows.Forms.DataGridView();
+            this.dgvRisks = new System.Windows.Forms.DataGridView();
+            this.tabAppendix = new System.Windows.Forms.TabPage();
             this.label27 = new System.Windows.Forms.Label();
             this.txtProjectName = new System.Windows.Forms.TextBox();
-            this.tabProjectConsiderations = new System.Windows.Forms.TabPage();
-            this.tabAppendix = new System.Windows.Forms.TabPage();
-            this.txtExecutiveSummary = new System.Windows.Forms.TextBox();
-            this.txtProjectDefinition = new System.Windows.Forms.TextBox();
-            this.dgvDeliverables = new System.Windows.Forms.DataGridView();
-            this.txtVision = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtObjectives = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtScope = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.tabCtrlDocumentControl = new System.Windows.Forms.TabControl();
+            this.tabDocumentInformation = new System.Windows.Forms.TabPage();
+            this.tabDocumentHistory = new System.Windows.Forms.TabPage();
+            this.tabDocumentApprovals = new System.Windows.Forms.TabPage();
+            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.tabVision = new System.Windows.Forms.TabPage();
+            this.tabObjectives = new System.Windows.Forms.TabPage();
+            this.tabProjectDefinition2 = new System.Windows.Forms.TabPage();
+            this.tabScope = new System.Windows.Forms.TabPage();
+            this.tabDeliverables = new System.Windows.Forms.TabPage();
+            this.tabControl4 = new System.Windows.Forms.TabControl();
+            this.tabStructure = new System.Windows.Forms.TabPage();
             this.txtStructure = new System.Windows.Forms.TextBox();
+            this.tabResponsibilities = new System.Windows.Forms.TabPage();
             this.txtResponsibilities = new System.Windows.Forms.TextBox();
-            this.dgvStakeholders = new System.Windows.Forms.DataGridView();
+            this.tabRoles = new System.Windows.Forms.TabPage();
             this.dgvRoles = new System.Windows.Forms.DataGridView();
+            this.tabStakeholders = new System.Windows.Forms.TabPage();
+            this.dgvStakeholders = new System.Windows.Forms.DataGridView();
+            this.tabCustomers = new System.Windows.Forms.TabPage();
             this.dgvCustomers = new System.Windows.Forms.DataGridView();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.dgvApproach = new System.Windows.Forms.DataGridView();
-            this.dgvCompletionCriteria = new System.Windows.Forms.DataGridView();
-            this.dgvMilestones = new System.Windows.Forms.DataGridView();
-            this.dgvDependencies = new System.Windows.Forms.DataGridView();
-            this.dgvResourcePlan = new System.Windows.Forms.DataGridView();
-            this.dgvFinancialPlan = new System.Windows.Forms.DataGridView();
-            this.dgvQualityPlan = new System.Windows.Forms.DataGridView();
-            this.txtSchedule = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.dgvRisks = new System.Windows.Forms.DataGridView();
-            this.dgvIssues = new System.Windows.Forms.DataGridView();
-            this.txtAssumptions = new System.Windows.Forms.TextBox();
-            this.txtConstraints = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.tabControl1.SuspendLayout();
+            this.tabProjectOrganization = new System.Windows.Forms.TabPage();
+            this.tabCtrlImplementationPlan = new System.Windows.Forms.TabControl();
+            this.tabApproach = new System.Windows.Forms.TabPage();
+            this.tabSchedule = new System.Windows.Forms.TabPage();
+            this.tabMilestones = new System.Windows.Forms.TabPage();
+            this.tabDependencies = new System.Windows.Forms.TabPage();
+            this.tabResourcePlan = new System.Windows.Forms.TabPage();
+            this.tabFinancialPlan = new System.Windows.Forms.TabPage();
+            this.tabQualityPlan = new System.Windows.Forms.TabPage();
+            this.tabCompletionCriteria = new System.Windows.Forms.TabPage();
+            this.tabCtrlProjectConsiderations = new System.Windows.Forms.TabControl();
+            this.tabRisks = new System.Windows.Forms.TabPage();
+            this.tabIssues = new System.Windows.Forms.TabPage();
+            this.tabAssumptions = new System.Windows.Forms.TabPage();
+            this.tabConstraints = new System.Windows.Forms.TabPage();
+            this.tabCtrlTermOfReferenceDocumentForm.SuspendLayout();
             this.tabDocumentControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentApprovals)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentHistory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentInformation)).BeginInit();
             this.tabExecutiveSummary.SuspendLayout();
             this.tabProjectDefinition.SuspendLayout();
-            this.tabProjectOrganization.SuspendLayout();
-            this.tabImplementationPlan.SuspendLayout();
-            this.tabProjectConsiderations.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDeliverables)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStakeholders)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRoles)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvApproach)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCompletionCriteria)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMilestones)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDependencies)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResourcePlan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFinancialPlan)).BeginInit();
+            this.tabImplementationPlan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQualityPlan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRisks)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFinancialPlan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResourcePlan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDependencies)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMilestones)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCompletionCriteria)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvApproach)).BeginInit();
+            this.tabProjectConsiderations.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIssues)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRisks)).BeginInit();
+            this.tabCtrlDocumentControl.SuspendLayout();
+            this.tabDocumentInformation.SuspendLayout();
+            this.tabDocumentHistory.SuspendLayout();
+            this.tabDocumentApprovals.SuspendLayout();
+            this.tabControl3.SuspendLayout();
+            this.tabVision.SuspendLayout();
+            this.tabObjectives.SuspendLayout();
+            this.tabProjectDefinition2.SuspendLayout();
+            this.tabScope.SuspendLayout();
+            this.tabDeliverables.SuspendLayout();
+            this.tabControl4.SuspendLayout();
+            this.tabStructure.SuspendLayout();
+            this.tabResponsibilities.SuspendLayout();
+            this.tabRoles.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRoles)).BeginInit();
+            this.tabStakeholders.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStakeholders)).BeginInit();
+            this.tabCustomers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).BeginInit();
+            this.tabProjectOrganization.SuspendLayout();
+            this.tabCtrlImplementationPlan.SuspendLayout();
+            this.tabApproach.SuspendLayout();
+            this.tabSchedule.SuspendLayout();
+            this.tabMilestones.SuspendLayout();
+            this.tabDependencies.SuspendLayout();
+            this.tabResourcePlan.SuspendLayout();
+            this.tabFinancialPlan.SuspendLayout();
+            this.tabQualityPlan.SuspendLayout();
+            this.tabCompletionCriteria.SuspendLayout();
+            this.tabCtrlProjectConsiderations.SuspendLayout();
+            this.tabRisks.SuspendLayout();
+            this.tabIssues.SuspendLayout();
+            this.tabAssumptions.SuspendLayout();
+            this.tabConstraints.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tabCtrlTermOfReferenceDocumentForm
             // 
-            this.tabControl1.Controls.Add(this.tabDocumentControl);
-            this.tabControl1.Controls.Add(this.tabExecutiveSummary);
-            this.tabControl1.Controls.Add(this.tabProjectDefinition);
-            this.tabControl1.Controls.Add(this.tabProjectOrganization);
-            this.tabControl1.Controls.Add(this.tabImplementationPlan);
-            this.tabControl1.Controls.Add(this.tabProjectConsiderations);
-            this.tabControl1.Controls.Add(this.tabAppendix);
-            this.tabControl1.Location = new System.Drawing.Point(12, 41);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1038, 735);
-            this.tabControl1.TabIndex = 12;
+            this.tabCtrlTermOfReferenceDocumentForm.Controls.Add(this.tabDocumentControl);
+            this.tabCtrlTermOfReferenceDocumentForm.Controls.Add(this.tabExecutiveSummary);
+            this.tabCtrlTermOfReferenceDocumentForm.Controls.Add(this.tabProjectDefinition);
+            this.tabCtrlTermOfReferenceDocumentForm.Controls.Add(this.tabProjectOrganization);
+            this.tabCtrlTermOfReferenceDocumentForm.Controls.Add(this.tabImplementationPlan);
+            this.tabCtrlTermOfReferenceDocumentForm.Controls.Add(this.tabProjectConsiderations);
+            this.tabCtrlTermOfReferenceDocumentForm.Controls.Add(this.tabAppendix);
+            this.tabCtrlTermOfReferenceDocumentForm.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabCtrlTermOfReferenceDocumentForm.Location = new System.Drawing.Point(12, 41);
+            this.tabCtrlTermOfReferenceDocumentForm.Name = "tabCtrlTermOfReferenceDocumentForm";
+            this.tabCtrlTermOfReferenceDocumentForm.SelectedIndex = 0;
+            this.tabCtrlTermOfReferenceDocumentForm.Size = new System.Drawing.Size(1038, 735);
+            this.tabCtrlTermOfReferenceDocumentForm.TabIndex = 12;
             // 
             // tabDocumentControl
             // 
-            this.tabDocumentControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabDocumentControl.Controls.Add(this.label3);
-            this.tabDocumentControl.Controls.Add(this.label2);
-            this.tabDocumentControl.Controls.Add(this.label1);
-            this.tabDocumentControl.Controls.Add(this.dgvDocumentApprovals);
-            this.tabDocumentControl.Controls.Add(this.dgvDocumentHistory);
-            this.tabDocumentControl.Controls.Add(this.dgvDocumentInformation);
+            this.tabDocumentControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabDocumentControl.Controls.Add(this.tabCtrlDocumentControl);
             this.tabDocumentControl.Location = new System.Drawing.Point(4, 25);
             this.tabDocumentControl.Name = "tabDocumentControl";
             this.tabDocumentControl.Padding = new System.Windows.Forms.Padding(3);
@@ -145,58 +176,16 @@
             this.tabDocumentControl.TabIndex = 0;
             this.tabDocumentControl.Text = "Document Control";
             // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(27, 317);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 44);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Document \r\nApprovals";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(27, 174);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 44);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Document \r\nHistory";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(27, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 44);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Document \r\nInformation";
-            // 
             // dgvDocumentApprovals
             // 
             this.dgvDocumentApprovals.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvDocumentApprovals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDocumentApprovals.Location = new System.Drawing.Point(168, 276);
+            this.dgvDocumentApprovals.Location = new System.Drawing.Point(0, 0);
             this.dgvDocumentApprovals.Name = "dgvDocumentApprovals";
             this.dgvDocumentApprovals.RowHeadersWidth = 51;
-            this.dgvDocumentApprovals.Size = new System.Drawing.Size(856, 110);
+            this.dgvDocumentApprovals.Size = new System.Drawing.Size(1013, 668);
             this.dgvDocumentApprovals.TabIndex = 2;
             // 
             // dgvDocumentHistory
@@ -205,10 +194,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvDocumentHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDocumentHistory.Location = new System.Drawing.Point(168, 141);
+            this.dgvDocumentHistory.Location = new System.Drawing.Point(0, 0);
             this.dgvDocumentHistory.Name = "dgvDocumentHistory";
             this.dgvDocumentHistory.RowHeadersWidth = 51;
-            this.dgvDocumentHistory.Size = new System.Drawing.Size(856, 110);
+            this.dgvDocumentHistory.Size = new System.Drawing.Size(1013, 665);
             this.dgvDocumentHistory.TabIndex = 1;
             // 
             // dgvDocumentInformation
@@ -217,15 +206,15 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvDocumentInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDocumentInformation.Location = new System.Drawing.Point(168, 6);
+            this.dgvDocumentInformation.Location = new System.Drawing.Point(0, 0);
             this.dgvDocumentInformation.Name = "dgvDocumentInformation";
             this.dgvDocumentInformation.RowHeadersWidth = 51;
-            this.dgvDocumentInformation.Size = new System.Drawing.Size(856, 110);
+            this.dgvDocumentInformation.Size = new System.Drawing.Size(1016, 671);
             this.dgvDocumentInformation.TabIndex = 0;
             // 
             // tabExecutiveSummary
             // 
-            this.tabExecutiveSummary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabExecutiveSummary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabExecutiveSummary.Controls.Add(this.txtExecutiveSummary);
             this.tabExecutiveSummary.Location = new System.Drawing.Point(4, 25);
             this.tabExecutiveSummary.Name = "tabExecutiveSummary";
@@ -233,140 +222,6 @@
             this.tabExecutiveSummary.Size = new System.Drawing.Size(1030, 706);
             this.tabExecutiveSummary.TabIndex = 1;
             this.tabExecutiveSummary.Text = "Executive Summary";
-            // 
-            // tabProjectDefinition
-            // 
-            this.tabProjectDefinition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabProjectDefinition.Controls.Add(this.label10);
-            this.tabProjectDefinition.Controls.Add(this.label7);
-            this.tabProjectDefinition.Controls.Add(this.txtScope);
-            this.tabProjectDefinition.Controls.Add(this.label6);
-            this.tabProjectDefinition.Controls.Add(this.txtObjectives);
-            this.tabProjectDefinition.Controls.Add(this.label5);
-            this.tabProjectDefinition.Controls.Add(this.txtVision);
-            this.tabProjectDefinition.Controls.Add(this.dgvDeliverables);
-            this.tabProjectDefinition.Controls.Add(this.txtProjectDefinition);
-            this.tabProjectDefinition.Controls.Add(this.label4);
-            this.tabProjectDefinition.Location = new System.Drawing.Point(4, 25);
-            this.tabProjectDefinition.Name = "tabProjectDefinition";
-            this.tabProjectDefinition.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProjectDefinition.Size = new System.Drawing.Size(1030, 706);
-            this.tabProjectDefinition.TabIndex = 2;
-            this.tabProjectDefinition.Text = "Project Definition";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(43, 33);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 44);
-            this.label4.TabIndex = 41;
-            this.label4.Text = "Project\r\nDefinition";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // tabProjectOrganization
-            // 
-            this.tabProjectOrganization.AllowDrop = true;
-            this.tabProjectOrganization.AutoScroll = true;
-            this.tabProjectOrganization.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabProjectOrganization.Controls.Add(this.label13);
-            this.tabProjectOrganization.Controls.Add(this.label12);
-            this.tabProjectOrganization.Controls.Add(this.label11);
-            this.tabProjectOrganization.Controls.Add(this.label9);
-            this.tabProjectOrganization.Controls.Add(this.label8);
-            this.tabProjectOrganization.Controls.Add(this.dgvCustomers);
-            this.tabProjectOrganization.Controls.Add(this.dgvRoles);
-            this.tabProjectOrganization.Controls.Add(this.dgvStakeholders);
-            this.tabProjectOrganization.Controls.Add(this.txtResponsibilities);
-            this.tabProjectOrganization.Controls.Add(this.txtStructure);
-            this.tabProjectOrganization.Location = new System.Drawing.Point(4, 25);
-            this.tabProjectOrganization.Name = "tabProjectOrganization";
-            this.tabProjectOrganization.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProjectOrganization.Size = new System.Drawing.Size(1030, 706);
-            this.tabProjectOrganization.TabIndex = 3;
-            this.tabProjectOrganization.Text = "Project Organization";
-            // 
-            // tabImplementationPlan
-            // 
-            this.tabImplementationPlan.AutoScroll = true;
-            this.tabImplementationPlan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabImplementationPlan.Controls.Add(this.label21);
-            this.tabImplementationPlan.Controls.Add(this.label20);
-            this.tabImplementationPlan.Controls.Add(this.label19);
-            this.tabImplementationPlan.Controls.Add(this.label18);
-            this.tabImplementationPlan.Controls.Add(this.label17);
-            this.tabImplementationPlan.Controls.Add(this.label16);
-            this.tabImplementationPlan.Controls.Add(this.label15);
-            this.tabImplementationPlan.Controls.Add(this.label14);
-            this.tabImplementationPlan.Controls.Add(this.txtSchedule);
-            this.tabImplementationPlan.Controls.Add(this.dgvQualityPlan);
-            this.tabImplementationPlan.Controls.Add(this.dgvFinancialPlan);
-            this.tabImplementationPlan.Controls.Add(this.dgvResourcePlan);
-            this.tabImplementationPlan.Controls.Add(this.dgvDependencies);
-            this.tabImplementationPlan.Controls.Add(this.dgvMilestones);
-            this.tabImplementationPlan.Controls.Add(this.dgvCompletionCriteria);
-            this.tabImplementationPlan.Controls.Add(this.dgvApproach);
-            this.tabImplementationPlan.Location = new System.Drawing.Point(4, 25);
-            this.tabImplementationPlan.Name = "tabImplementationPlan";
-            this.tabImplementationPlan.Padding = new System.Windows.Forms.Padding(3);
-            this.tabImplementationPlan.Size = new System.Drawing.Size(1030, 706);
-            this.tabImplementationPlan.TabIndex = 5;
-            this.tabImplementationPlan.Text = "Implementation Plan";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(24, 9);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(154, 16);
-            this.label27.TabIndex = 13;
-            this.label27.Text = "Terms of Reference For: ";
-            // 
-            // txtProjectName
-            // 
-            this.txtProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProjectName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProjectName.ForeColor = System.Drawing.Color.White;
-            this.txtProjectName.Location = new System.Drawing.Point(184, 9);
-            this.txtProjectName.Name = "txtProjectName";
-            this.txtProjectName.Size = new System.Drawing.Size(100, 24);
-            this.txtProjectName.TabIndex = 14;
-            this.txtProjectName.Text = "Project Name";
-            // 
-            // tabProjectConsiderations
-            // 
-            this.tabProjectConsiderations.AutoScroll = true;
-            this.tabProjectConsiderations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabProjectConsiderations.Controls.Add(this.label25);
-            this.tabProjectConsiderations.Controls.Add(this.label24);
-            this.tabProjectConsiderations.Controls.Add(this.label23);
-            this.tabProjectConsiderations.Controls.Add(this.label22);
-            this.tabProjectConsiderations.Controls.Add(this.txtConstraints);
-            this.tabProjectConsiderations.Controls.Add(this.txtAssumptions);
-            this.tabProjectConsiderations.Controls.Add(this.dgvIssues);
-            this.tabProjectConsiderations.Controls.Add(this.dgvRisks);
-            this.tabProjectConsiderations.Location = new System.Drawing.Point(4, 25);
-            this.tabProjectConsiderations.Name = "tabProjectConsiderations";
-            this.tabProjectConsiderations.Size = new System.Drawing.Size(1030, 706);
-            this.tabProjectConsiderations.TabIndex = 6;
-            this.tabProjectConsiderations.Text = "Project Considerations";
-            // 
-            // tabAppendix
-            // 
-            this.tabAppendix.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabAppendix.Location = new System.Drawing.Point(4, 25);
-            this.tabAppendix.Name = "tabAppendix";
-            this.tabAppendix.Size = new System.Drawing.Size(1030, 706);
-            this.tabAppendix.TabIndex = 7;
-            this.tabAppendix.Text = "Appendix";
-            this.tabAppendix.Click += new System.EventHandler(this.tabAppendix_Click);
             // 
             // txtExecutiveSummary
             // 
@@ -376,14 +231,40 @@
             this.txtExecutiveSummary.Size = new System.Drawing.Size(1018, 564);
             this.txtExecutiveSummary.TabIndex = 0;
             // 
-            // txtProjectDefinition
+            // tabProjectDefinition
             // 
-            this.txtProjectDefinition.Location = new System.Drawing.Point(168, 6);
-            this.txtProjectDefinition.Multiline = true;
-            this.txtProjectDefinition.Name = "txtProjectDefinition";
-            this.txtProjectDefinition.Size = new System.Drawing.Size(856, 100);
-            this.txtProjectDefinition.TabIndex = 42;
-            this.txtProjectDefinition.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.tabProjectDefinition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabProjectDefinition.Controls.Add(this.tabControl3);
+            this.tabProjectDefinition.Location = new System.Drawing.Point(4, 25);
+            this.tabProjectDefinition.Name = "tabProjectDefinition";
+            this.tabProjectDefinition.Padding = new System.Windows.Forms.Padding(3);
+            this.tabProjectDefinition.Size = new System.Drawing.Size(1030, 706);
+            this.tabProjectDefinition.TabIndex = 2;
+            this.tabProjectDefinition.Text = "Project Definition";
+            // 
+            // txtScope
+            // 
+            this.txtScope.Location = new System.Drawing.Point(0, 0);
+            this.txtScope.Multiline = true;
+            this.txtScope.Name = "txtScope";
+            this.txtScope.Size = new System.Drawing.Size(1017, 669);
+            this.txtScope.TabIndex = 50;
+            // 
+            // txtObjectives
+            // 
+            this.txtObjectives.Location = new System.Drawing.Point(0, 0);
+            this.txtObjectives.Multiline = true;
+            this.txtObjectives.Name = "txtObjectives";
+            this.txtObjectives.Size = new System.Drawing.Size(1013, 668);
+            this.txtObjectives.TabIndex = 48;
+            // 
+            // txtVision
+            // 
+            this.txtVision.Location = new System.Drawing.Point(0, 0);
+            this.txtVision.Multiline = true;
+            this.txtVision.Name = "txtVision";
+            this.txtVision.Size = new System.Drawing.Size(1016, 672);
+            this.txtVision.TabIndex = 46;
             // 
             // dgvDeliverables
             // 
@@ -391,290 +272,41 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvDeliverables.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDeliverables.Location = new System.Drawing.Point(168, 430);
+            this.dgvDeliverables.Location = new System.Drawing.Point(0, 0);
             this.dgvDeliverables.Name = "dgvDeliverables";
             this.dgvDeliverables.RowHeadersWidth = 51;
-            this.dgvDeliverables.Size = new System.Drawing.Size(856, 240);
+            this.dgvDeliverables.Size = new System.Drawing.Size(1016, 668);
             this.dgvDeliverables.TabIndex = 45;
             this.dgvDeliverables.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // txtVision
+            // txtProjectDefinition
             // 
-            this.txtVision.Location = new System.Drawing.Point(168, 112);
-            this.txtVision.Multiline = true;
-            this.txtVision.Name = "txtVision";
-            this.txtVision.Size = new System.Drawing.Size(856, 100);
-            this.txtVision.TabIndex = 46;
+            this.txtProjectDefinition.Location = new System.Drawing.Point(0, 0);
+            this.txtProjectDefinition.Multiline = true;
+            this.txtProjectDefinition.Name = "txtProjectDefinition";
+            this.txtProjectDefinition.Size = new System.Drawing.Size(1016, 668);
+            this.txtProjectDefinition.TabIndex = 42;
+            this.txtProjectDefinition.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // label5
+            // tabImplementationPlan
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(43, 146);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 22);
-            this.label5.TabIndex = 47;
-            this.label5.Text = "Vision";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tabImplementationPlan.AutoScroll = true;
+            this.tabImplementationPlan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabImplementationPlan.Controls.Add(this.tabCtrlImplementationPlan);
+            this.tabImplementationPlan.Location = new System.Drawing.Point(4, 25);
+            this.tabImplementationPlan.Name = "tabImplementationPlan";
+            this.tabImplementationPlan.Padding = new System.Windows.Forms.Padding(3);
+            this.tabImplementationPlan.Size = new System.Drawing.Size(1030, 706);
+            this.tabImplementationPlan.TabIndex = 5;
+            this.tabImplementationPlan.Text = "Implementation Plan";
             // 
-            // txtObjectives
+            // txtSchedule
             // 
-            this.txtObjectives.Location = new System.Drawing.Point(168, 218);
-            this.txtObjectives.Multiline = true;
-            this.txtObjectives.Name = "txtObjectives";
-            this.txtObjectives.Size = new System.Drawing.Size(856, 100);
-            this.txtObjectives.TabIndex = 48;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(43, 255);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 22);
-            this.label6.TabIndex = 49;
-            this.label6.Text = "Objectives";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtScope
-            // 
-            this.txtScope.Location = new System.Drawing.Point(168, 324);
-            this.txtScope.Multiline = true;
-            this.txtScope.Name = "txtScope";
-            this.txtScope.Size = new System.Drawing.Size(856, 100);
-            this.txtScope.TabIndex = 50;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(43, 356);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 22);
-            this.label7.TabIndex = 51;
-            this.label7.Text = "Scope";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label10
-            // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(43, 471);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(110, 22);
-            this.label10.TabIndex = 52;
-            this.label10.Text = "Deliverables";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtStructure
-            // 
-            this.txtStructure.Location = new System.Drawing.Point(168, 470);
-            this.txtStructure.Multiline = true;
-            this.txtStructure.Name = "txtStructure";
-            this.txtStructure.Size = new System.Drawing.Size(856, 110);
-            this.txtStructure.TabIndex = 43;
-            // 
-            // txtResponsibilities
-            // 
-            this.txtResponsibilities.Location = new System.Drawing.Point(168, 354);
-            this.txtResponsibilities.Multiline = true;
-            this.txtResponsibilities.Name = "txtResponsibilities";
-            this.txtResponsibilities.Size = new System.Drawing.Size(856, 110);
-            this.txtResponsibilities.TabIndex = 44;
-            // 
-            // dgvStakeholders
-            // 
-            this.dgvStakeholders.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvStakeholders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStakeholders.Location = new System.Drawing.Point(168, 122);
-            this.dgvStakeholders.Name = "dgvStakeholders";
-            this.dgvStakeholders.RowHeadersWidth = 51;
-            this.dgvStakeholders.Size = new System.Drawing.Size(856, 110);
-            this.dgvStakeholders.TabIndex = 46;
-            // 
-            // dgvRoles
-            // 
-            this.dgvRoles.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvRoles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRoles.Location = new System.Drawing.Point(168, 238);
-            this.dgvRoles.Name = "dgvRoles";
-            this.dgvRoles.RowHeadersWidth = 51;
-            this.dgvRoles.Size = new System.Drawing.Size(856, 110);
-            this.dgvRoles.TabIndex = 47;
-            // 
-            // dgvCustomers
-            // 
-            this.dgvCustomers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCustomers.Location = new System.Drawing.Point(168, 6);
-            this.dgvCustomers.Name = "dgvCustomers";
-            this.dgvCustomers.RowHeadersWidth = 51;
-            this.dgvCustomers.Size = new System.Drawing.Size(856, 110);
-            this.dgvCustomers.TabIndex = 48;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(7, 46);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(97, 22);
-            this.label8.TabIndex = 49;
-            this.label8.Text = "Customers";
-            // 
-            // label9
-            // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(7, 159);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(114, 22);
-            this.label9.TabIndex = 50;
-            this.label9.Text = "Stakeholders";
-            // 
-            // label11
-            // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(7, 280);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(54, 22);
-            this.label11.TabIndex = 51;
-            this.label11.Text = "Roles";
-            // 
-            // label12
-            // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(7, 392);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(137, 22);
-            this.label12.TabIndex = 52;
-            this.label12.Text = "Responsibilities";
-            // 
-            // label13
-            // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(7, 491);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(86, 22);
-            this.label13.TabIndex = 53;
-            this.label13.Text = "Structure";
-            // 
-            // dgvApproach
-            // 
-            this.dgvApproach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvApproach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvApproach.Location = new System.Drawing.Point(168, 6);
-            this.dgvApproach.Name = "dgvApproach";
-            this.dgvApproach.RowHeadersWidth = 51;
-            this.dgvApproach.Size = new System.Drawing.Size(856, 110);
-            this.dgvApproach.TabIndex = 47;
-            // 
-            // dgvCompletionCriteria
-            // 
-            this.dgvCompletionCriteria.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvCompletionCriteria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCompletionCriteria.Location = new System.Drawing.Point(168, 533);
-            this.dgvCompletionCriteria.Name = "dgvCompletionCriteria";
-            this.dgvCompletionCriteria.RowHeadersWidth = 51;
-            this.dgvCompletionCriteria.Size = new System.Drawing.Size(856, 53);
-            this.dgvCompletionCriteria.TabIndex = 48;
-            // 
-            // dgvMilestones
-            // 
-            this.dgvMilestones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvMilestones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMilestones.Location = new System.Drawing.Point(168, 238);
-            this.dgvMilestones.Name = "dgvMilestones";
-            this.dgvMilestones.RowHeadersWidth = 51;
-            this.dgvMilestones.Size = new System.Drawing.Size(856, 53);
-            this.dgvMilestones.TabIndex = 49;
-            // 
-            // dgvDependencies
-            // 
-            this.dgvDependencies.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvDependencies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDependencies.Location = new System.Drawing.Point(168, 297);
-            this.dgvDependencies.Name = "dgvDependencies";
-            this.dgvDependencies.RowHeadersWidth = 51;
-            this.dgvDependencies.Size = new System.Drawing.Size(856, 53);
-            this.dgvDependencies.TabIndex = 50;
-            // 
-            // dgvResourcePlan
-            // 
-            this.dgvResourcePlan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvResourcePlan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResourcePlan.Location = new System.Drawing.Point(168, 356);
-            this.dgvResourcePlan.Name = "dgvResourcePlan";
-            this.dgvResourcePlan.RowHeadersWidth = 51;
-            this.dgvResourcePlan.Size = new System.Drawing.Size(856, 53);
-            this.dgvResourcePlan.TabIndex = 51;
-            // 
-            // dgvFinancialPlan
-            // 
-            this.dgvFinancialPlan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvFinancialPlan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFinancialPlan.Location = new System.Drawing.Point(168, 415);
-            this.dgvFinancialPlan.Name = "dgvFinancialPlan";
-            this.dgvFinancialPlan.RowHeadersWidth = 51;
-            this.dgvFinancialPlan.Size = new System.Drawing.Size(856, 53);
-            this.dgvFinancialPlan.TabIndex = 52;
+            this.txtSchedule.Location = new System.Drawing.Point(0, 0);
+            this.txtSchedule.Multiline = true;
+            this.txtSchedule.Name = "txtSchedule";
+            this.txtSchedule.Size = new System.Drawing.Size(1016, 668);
+            this.txtSchedule.TabIndex = 54;
             // 
             // dgvQualityPlan
             // 
@@ -682,143 +314,110 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvQualityPlan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvQualityPlan.Location = new System.Drawing.Point(168, 474);
+            this.dgvQualityPlan.Location = new System.Drawing.Point(0, 0);
             this.dgvQualityPlan.Name = "dgvQualityPlan";
             this.dgvQualityPlan.RowHeadersWidth = 51;
-            this.dgvQualityPlan.Size = new System.Drawing.Size(856, 53);
+            this.dgvQualityPlan.Size = new System.Drawing.Size(1016, 668);
             this.dgvQualityPlan.TabIndex = 53;
             // 
-            // txtSchedule
+            // dgvFinancialPlan
             // 
-            this.txtSchedule.Location = new System.Drawing.Point(168, 122);
-            this.txtSchedule.Multiline = true;
-            this.txtSchedule.Name = "txtSchedule";
-            this.txtSchedule.Size = new System.Drawing.Size(856, 110);
-            this.txtSchedule.TabIndex = 54;
-            // 
-            // label14
-            // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvFinancialPlan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(7, 43);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(89, 22);
-            this.label14.TabIndex = 55;
-            this.label14.Text = "Approach";
+            this.dgvFinancialPlan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFinancialPlan.Location = new System.Drawing.Point(0, 0);
+            this.dgvFinancialPlan.Name = "dgvFinancialPlan";
+            this.dgvFinancialPlan.RowHeadersWidth = 51;
+            this.dgvFinancialPlan.Size = new System.Drawing.Size(1016, 668);
+            this.dgvFinancialPlan.TabIndex = 52;
             // 
-            // label15
+            // dgvResourcePlan
             // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvResourcePlan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(7, 154);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(82, 22);
-            this.label15.TabIndex = 56;
-            this.label15.Text = "Schedule";
+            this.dgvResourcePlan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResourcePlan.Location = new System.Drawing.Point(0, 0);
+            this.dgvResourcePlan.Name = "dgvResourcePlan";
+            this.dgvResourcePlan.RowHeadersWidth = 51;
+            this.dgvResourcePlan.Size = new System.Drawing.Size(1016, 668);
+            this.dgvResourcePlan.TabIndex = 51;
             // 
-            // label16
+            // dgvDependencies
             // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvDependencies.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(7, 252);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(97, 22);
-            this.label16.TabIndex = 57;
-            this.label16.Text = "Milestones";
+            this.dgvDependencies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDependencies.Location = new System.Drawing.Point(0, 0);
+            this.dgvDependencies.Name = "dgvDependencies";
+            this.dgvDependencies.RowHeadersWidth = 51;
+            this.dgvDependencies.Size = new System.Drawing.Size(1016, 668);
+            this.dgvDependencies.TabIndex = 50;
             // 
-            // label17
+            // dgvMilestones
             // 
-            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvMilestones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(7, 310);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(124, 22);
-            this.label17.TabIndex = 58;
-            this.label17.Text = "Dependencies";
+            this.dgvMilestones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMilestones.Location = new System.Drawing.Point(0, 0);
+            this.dgvMilestones.Name = "dgvMilestones";
+            this.dgvMilestones.RowHeadersWidth = 51;
+            this.dgvMilestones.Size = new System.Drawing.Size(1016, 668);
+            this.dgvMilestones.TabIndex = 49;
             // 
-            // label18
+            // dgvCompletionCriteria
             // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvCompletionCriteria.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(7, 374);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(125, 22);
-            this.label18.TabIndex = 59;
-            this.label18.Text = "Resource Plan";
+            this.dgvCompletionCriteria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCompletionCriteria.Location = new System.Drawing.Point(0, 0);
+            this.dgvCompletionCriteria.Name = "dgvCompletionCriteria";
+            this.dgvCompletionCriteria.RowHeadersWidth = 51;
+            this.dgvCompletionCriteria.Size = new System.Drawing.Size(1016, 668);
+            this.dgvCompletionCriteria.TabIndex = 48;
             // 
-            // label19
+            // dgvApproach
             // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvApproach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(7, 434);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(123, 22);
-            this.label19.TabIndex = 60;
-            this.label19.Text = "Financial Plan";
+            this.dgvApproach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvApproach.Location = new System.Drawing.Point(0, 0);
+            this.dgvApproach.Name = "dgvApproach";
+            this.dgvApproach.RowHeadersWidth = 51;
+            this.dgvApproach.Size = new System.Drawing.Size(1017, 671);
+            this.dgvApproach.TabIndex = 47;
             // 
-            // label20
+            // tabProjectConsiderations
             // 
-            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(7, 491);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(108, 22);
-            this.label20.TabIndex = 61;
-            this.label20.Text = "Quality Plan";
+            this.tabProjectConsiderations.AutoScroll = true;
+            this.tabProjectConsiderations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabProjectConsiderations.Controls.Add(this.tabCtrlProjectConsiderations);
+            this.tabProjectConsiderations.Location = new System.Drawing.Point(4, 25);
+            this.tabProjectConsiderations.Name = "tabProjectConsiderations";
+            this.tabProjectConsiderations.Size = new System.Drawing.Size(1030, 706);
+            this.tabProjectConsiderations.TabIndex = 6;
+            this.tabProjectConsiderations.Text = "Project Considerations";
             // 
-            // label21
+            // txtConstraints
             // 
-            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(6, 542);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(108, 44);
-            this.label21.TabIndex = 62;
-            this.label21.Text = "Completion \r\nCriteria";
+            this.txtConstraints.Location = new System.Drawing.Point(0, 0);
+            this.txtConstraints.Multiline = true;
+            this.txtConstraints.Name = "txtConstraints";
+            this.txtConstraints.Size = new System.Drawing.Size(1020, 675);
+            this.txtConstraints.TabIndex = 56;
             // 
-            // dgvRisks
+            // txtAssumptions
             // 
-            this.dgvRisks.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvRisks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRisks.Location = new System.Drawing.Point(168, 30);
-            this.dgvRisks.Name = "dgvRisks";
-            this.dgvRisks.RowHeadersWidth = 51;
-            this.dgvRisks.Size = new System.Drawing.Size(856, 110);
-            this.dgvRisks.TabIndex = 48;
+            this.txtAssumptions.Location = new System.Drawing.Point(0, 0);
+            this.txtAssumptions.Multiline = true;
+            this.txtAssumptions.Name = "txtAssumptions";
+            this.txtAssumptions.Size = new System.Drawing.Size(1013, 668);
+            this.txtAssumptions.TabIndex = 55;
             // 
             // dgvIssues
             // 
@@ -826,125 +425,521 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvIssues.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvIssues.Location = new System.Drawing.Point(168, 159);
+            this.dgvIssues.Location = new System.Drawing.Point(0, 0);
             this.dgvIssues.Name = "dgvIssues";
             this.dgvIssues.RowHeadersWidth = 51;
-            this.dgvIssues.Size = new System.Drawing.Size(856, 110);
+            this.dgvIssues.Size = new System.Drawing.Size(1016, 671);
             this.dgvIssues.TabIndex = 49;
             // 
-            // txtAssumptions
+            // dgvRisks
             // 
-            this.txtAssumptions.Location = new System.Drawing.Point(168, 289);
-            this.txtAssumptions.Multiline = true;
-            this.txtAssumptions.Name = "txtAssumptions";
-            this.txtAssumptions.Size = new System.Drawing.Size(856, 110);
-            this.txtAssumptions.TabIndex = 55;
-            // 
-            // txtConstraints
-            // 
-            this.txtConstraints.Location = new System.Drawing.Point(168, 419);
-            this.txtConstraints.Multiline = true;
-            this.txtConstraints.Name = "txtConstraints";
-            this.txtConstraints.Size = new System.Drawing.Size(856, 110);
-            this.txtConstraints.TabIndex = 56;
-            // 
-            // label22
-            // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvRisks.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(17, 66);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(53, 22);
-            this.label22.TabIndex = 57;
-            this.label22.Text = "Risks";
+            this.dgvRisks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRisks.Location = new System.Drawing.Point(0, 0);
+            this.dgvRisks.Name = "dgvRisks";
+            this.dgvRisks.RowHeadersWidth = 51;
+            this.dgvRisks.Size = new System.Drawing.Size(1010, 665);
+            this.dgvRisks.TabIndex = 48;
             // 
-            // label23
+            // tabAppendix
             // 
-            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabAppendix.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabAppendix.Location = new System.Drawing.Point(4, 25);
+            this.tabAppendix.Name = "tabAppendix";
+            this.tabAppendix.Size = new System.Drawing.Size(1030, 706);
+            this.tabAppendix.TabIndex = 7;
+            this.tabAppendix.Text = "Appendix";
+            this.tabAppendix.Click += new System.EventHandler(this.tabAppendix_Click);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Black;
+            this.label27.Location = new System.Drawing.Point(24, 9);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(166, 16);
+            this.label27.TabIndex = 13;
+            this.label27.Text = "Terms of Reference For: ";
+            // 
+            // txtProjectName
+            // 
+            this.txtProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.txtProjectName.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProjectName.ForeColor = System.Drawing.Color.Black;
+            this.txtProjectName.Location = new System.Drawing.Point(196, 6);
+            this.txtProjectName.Name = "txtProjectName";
+            this.txtProjectName.Size = new System.Drawing.Size(100, 22);
+            this.txtProjectName.TabIndex = 14;
+            this.txtProjectName.Text = "Project Name";
+            // 
+            // tabCtrlDocumentControl
+            // 
+            this.tabCtrlDocumentControl.Controls.Add(this.tabDocumentInformation);
+            this.tabCtrlDocumentControl.Controls.Add(this.tabDocumentHistory);
+            this.tabCtrlDocumentControl.Controls.Add(this.tabDocumentApprovals);
+            this.tabCtrlDocumentControl.Location = new System.Drawing.Point(3, 3);
+            this.tabCtrlDocumentControl.Name = "tabCtrlDocumentControl";
+            this.tabCtrlDocumentControl.SelectedIndex = 0;
+            this.tabCtrlDocumentControl.Size = new System.Drawing.Size(1024, 700);
+            this.tabCtrlDocumentControl.TabIndex = 6;
+            // 
+            // tabDocumentInformation
+            // 
+            this.tabDocumentInformation.Controls.Add(this.dgvDocumentInformation);
+            this.tabDocumentInformation.Location = new System.Drawing.Point(4, 25);
+            this.tabDocumentInformation.Name = "tabDocumentInformation";
+            this.tabDocumentInformation.Padding = new System.Windows.Forms.Padding(3);
+            this.tabDocumentInformation.Size = new System.Drawing.Size(1016, 671);
+            this.tabDocumentInformation.TabIndex = 0;
+            this.tabDocumentInformation.Text = "Document Information";
+            this.tabDocumentInformation.UseVisualStyleBackColor = true;
+            // 
+            // tabDocumentHistory
+            // 
+            this.tabDocumentHistory.Controls.Add(this.dgvDocumentHistory);
+            this.tabDocumentHistory.Location = new System.Drawing.Point(4, 25);
+            this.tabDocumentHistory.Name = "tabDocumentHistory";
+            this.tabDocumentHistory.Padding = new System.Windows.Forms.Padding(3);
+            this.tabDocumentHistory.Size = new System.Drawing.Size(1016, 671);
+            this.tabDocumentHistory.TabIndex = 1;
+            this.tabDocumentHistory.Text = "Document History";
+            this.tabDocumentHistory.UseVisualStyleBackColor = true;
+            // 
+            // tabDocumentApprovals
+            // 
+            this.tabDocumentApprovals.Controls.Add(this.dgvDocumentApprovals);
+            this.tabDocumentApprovals.Location = new System.Drawing.Point(4, 25);
+            this.tabDocumentApprovals.Name = "tabDocumentApprovals";
+            this.tabDocumentApprovals.Size = new System.Drawing.Size(1016, 671);
+            this.tabDocumentApprovals.TabIndex = 2;
+            this.tabDocumentApprovals.Text = "Document Aprovals";
+            this.tabDocumentApprovals.UseVisualStyleBackColor = true;
+            // 
+            // tabControl3
+            // 
+            this.tabControl3.Controls.Add(this.tabProjectDefinition2);
+            this.tabControl3.Controls.Add(this.tabVision);
+            this.tabControl3.Controls.Add(this.tabObjectives);
+            this.tabControl3.Controls.Add(this.tabScope);
+            this.tabControl3.Controls.Add(this.tabDeliverables);
+            this.tabControl3.Location = new System.Drawing.Point(3, 6);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.SelectedIndex = 0;
+            this.tabControl3.Size = new System.Drawing.Size(1027, 700);
+            this.tabControl3.TabIndex = 53;
+            // 
+            // tabVision
+            // 
+            this.tabVision.Controls.Add(this.txtVision);
+            this.tabVision.Location = new System.Drawing.Point(4, 25);
+            this.tabVision.Name = "tabVision";
+            this.tabVision.Padding = new System.Windows.Forms.Padding(3);
+            this.tabVision.Size = new System.Drawing.Size(1019, 671);
+            this.tabVision.TabIndex = 0;
+            this.tabVision.Text = "Vision";
+            this.tabVision.UseVisualStyleBackColor = true;
+            // 
+            // tabObjectives
+            // 
+            this.tabObjectives.Controls.Add(this.txtObjectives);
+            this.tabObjectives.Location = new System.Drawing.Point(4, 25);
+            this.tabObjectives.Name = "tabObjectives";
+            this.tabObjectives.Padding = new System.Windows.Forms.Padding(3);
+            this.tabObjectives.Size = new System.Drawing.Size(1019, 671);
+            this.tabObjectives.TabIndex = 1;
+            this.tabObjectives.Text = "Objectives";
+            this.tabObjectives.UseVisualStyleBackColor = true;
+            // 
+            // tabProjectDefinition2
+            // 
+            this.tabProjectDefinition2.Controls.Add(this.txtProjectDefinition);
+            this.tabProjectDefinition2.Location = new System.Drawing.Point(4, 25);
+            this.tabProjectDefinition2.Name = "tabProjectDefinition2";
+            this.tabProjectDefinition2.Size = new System.Drawing.Size(1019, 671);
+            this.tabProjectDefinition2.TabIndex = 2;
+            this.tabProjectDefinition2.Text = "Project Definition";
+            this.tabProjectDefinition2.UseVisualStyleBackColor = true;
+            // 
+            // tabScope
+            // 
+            this.tabScope.Controls.Add(this.txtScope);
+            this.tabScope.Location = new System.Drawing.Point(4, 25);
+            this.tabScope.Name = "tabScope";
+            this.tabScope.Size = new System.Drawing.Size(1019, 671);
+            this.tabScope.TabIndex = 3;
+            this.tabScope.Text = "Scope";
+            this.tabScope.UseVisualStyleBackColor = true;
+            // 
+            // tabDeliverables
+            // 
+            this.tabDeliverables.Controls.Add(this.dgvDeliverables);
+            this.tabDeliverables.Location = new System.Drawing.Point(4, 25);
+            this.tabDeliverables.Name = "tabDeliverables";
+            this.tabDeliverables.Size = new System.Drawing.Size(1019, 671);
+            this.tabDeliverables.TabIndex = 4;
+            this.tabDeliverables.Text = "Deliverables";
+            this.tabDeliverables.UseVisualStyleBackColor = true;
+            // 
+            // tabControl4
+            // 
+            this.tabControl4.Controls.Add(this.tabCustomers);
+            this.tabControl4.Controls.Add(this.tabStakeholders);
+            this.tabControl4.Controls.Add(this.tabRoles);
+            this.tabControl4.Controls.Add(this.tabResponsibilities);
+            this.tabControl4.Controls.Add(this.tabStructure);
+            this.tabControl4.Location = new System.Drawing.Point(3, 3);
+            this.tabControl4.Name = "tabControl4";
+            this.tabControl4.SelectedIndex = 0;
+            this.tabControl4.Size = new System.Drawing.Size(1027, 703);
+            this.tabControl4.TabIndex = 54;
+            // 
+            // tabStructure
+            // 
+            this.tabStructure.Controls.Add(this.txtStructure);
+            this.tabStructure.Location = new System.Drawing.Point(4, 25);
+            this.tabStructure.Name = "tabStructure";
+            this.tabStructure.Size = new System.Drawing.Size(1019, 674);
+            this.tabStructure.TabIndex = 4;
+            this.tabStructure.Text = "Structure";
+            this.tabStructure.UseVisualStyleBackColor = true;
+            // 
+            // txtStructure
+            // 
+            this.txtStructure.Location = new System.Drawing.Point(0, 0);
+            this.txtStructure.Multiline = true;
+            this.txtStructure.Name = "txtStructure";
+            this.txtStructure.Size = new System.Drawing.Size(1017, 671);
+            this.txtStructure.TabIndex = 43;
+            // 
+            // tabResponsibilities
+            // 
+            this.tabResponsibilities.Controls.Add(this.txtResponsibilities);
+            this.tabResponsibilities.Location = new System.Drawing.Point(4, 25);
+            this.tabResponsibilities.Name = "tabResponsibilities";
+            this.tabResponsibilities.Size = new System.Drawing.Size(1019, 674);
+            this.tabResponsibilities.TabIndex = 3;
+            this.tabResponsibilities.Text = "Responsibilities";
+            this.tabResponsibilities.UseVisualStyleBackColor = true;
+            // 
+            // txtResponsibilities
+            // 
+            this.txtResponsibilities.Location = new System.Drawing.Point(0, 0);
+            this.txtResponsibilities.Multiline = true;
+            this.txtResponsibilities.Name = "txtResponsibilities";
+            this.txtResponsibilities.Size = new System.Drawing.Size(1017, 671);
+            this.txtResponsibilities.TabIndex = 44;
+            // 
+            // tabRoles
+            // 
+            this.tabRoles.Controls.Add(this.dgvRoles);
+            this.tabRoles.Location = new System.Drawing.Point(4, 25);
+            this.tabRoles.Name = "tabRoles";
+            this.tabRoles.Size = new System.Drawing.Size(1019, 674);
+            this.tabRoles.TabIndex = 2;
+            this.tabRoles.Text = "Roles";
+            this.tabRoles.UseVisualStyleBackColor = true;
+            // 
+            // dgvRoles
+            // 
+            this.dgvRoles.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(17, 197);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(60, 22);
-            this.label23.TabIndex = 58;
-            this.label23.Text = "Issues";
+            this.dgvRoles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRoles.Location = new System.Drawing.Point(0, 0);
+            this.dgvRoles.Name = "dgvRoles";
+            this.dgvRoles.RowHeadersWidth = 51;
+            this.dgvRoles.Size = new System.Drawing.Size(1016, 671);
+            this.dgvRoles.TabIndex = 47;
             // 
-            // label24
+            // tabStakeholders
             // 
-            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabStakeholders.Controls.Add(this.dgvStakeholders);
+            this.tabStakeholders.Location = new System.Drawing.Point(4, 25);
+            this.tabStakeholders.Name = "tabStakeholders";
+            this.tabStakeholders.Padding = new System.Windows.Forms.Padding(3);
+            this.tabStakeholders.Size = new System.Drawing.Size(1019, 674);
+            this.tabStakeholders.TabIndex = 1;
+            this.tabStakeholders.Text = "Stakeholders";
+            this.tabStakeholders.UseVisualStyleBackColor = true;
+            // 
+            // dgvStakeholders
+            // 
+            this.dgvStakeholders.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(17, 332);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(116, 22);
-            this.label24.TabIndex = 59;
-            this.label24.Text = "Assumptions";
+            this.dgvStakeholders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStakeholders.Location = new System.Drawing.Point(0, 0);
+            this.dgvStakeholders.Name = "dgvStakeholders";
+            this.dgvStakeholders.RowHeadersWidth = 51;
+            this.dgvStakeholders.Size = new System.Drawing.Size(1016, 672);
+            this.dgvStakeholders.TabIndex = 46;
             // 
-            // label25
+            // tabCustomers
             // 
-            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabCustomers.Controls.Add(this.dgvCustomers);
+            this.tabCustomers.Location = new System.Drawing.Point(4, 25);
+            this.tabCustomers.Name = "tabCustomers";
+            this.tabCustomers.Padding = new System.Windows.Forms.Padding(3);
+            this.tabCustomers.Size = new System.Drawing.Size(1019, 674);
+            this.tabCustomers.TabIndex = 0;
+            this.tabCustomers.Text = "Customers";
+            this.tabCustomers.UseVisualStyleBackColor = true;
+            // 
+            // dgvCustomers
+            // 
+            this.dgvCustomers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(17, 465);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(103, 22);
-            this.label25.TabIndex = 60;
-            this.label25.Text = "Constraints";
+            this.dgvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCustomers.Location = new System.Drawing.Point(-1, 0);
+            this.dgvCustomers.Name = "dgvCustomers";
+            this.dgvCustomers.RowHeadersWidth = 51;
+            this.dgvCustomers.Size = new System.Drawing.Size(1018, 672);
+            this.dgvCustomers.TabIndex = 48;
+            // 
+            // tabProjectOrganization
+            // 
+            this.tabProjectOrganization.AllowDrop = true;
+            this.tabProjectOrganization.AutoScroll = true;
+            this.tabProjectOrganization.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabProjectOrganization.Controls.Add(this.tabControl4);
+            this.tabProjectOrganization.Location = new System.Drawing.Point(4, 25);
+            this.tabProjectOrganization.Name = "tabProjectOrganization";
+            this.tabProjectOrganization.Padding = new System.Windows.Forms.Padding(3);
+            this.tabProjectOrganization.Size = new System.Drawing.Size(1030, 706);
+            this.tabProjectOrganization.TabIndex = 3;
+            this.tabProjectOrganization.Text = "Project Organization";
+            // 
+            // tabCtrlImplementationPlan
+            // 
+            this.tabCtrlImplementationPlan.Controls.Add(this.tabApproach);
+            this.tabCtrlImplementationPlan.Controls.Add(this.tabSchedule);
+            this.tabCtrlImplementationPlan.Controls.Add(this.tabMilestones);
+            this.tabCtrlImplementationPlan.Controls.Add(this.tabDependencies);
+            this.tabCtrlImplementationPlan.Controls.Add(this.tabResourcePlan);
+            this.tabCtrlImplementationPlan.Controls.Add(this.tabFinancialPlan);
+            this.tabCtrlImplementationPlan.Controls.Add(this.tabQualityPlan);
+            this.tabCtrlImplementationPlan.Controls.Add(this.tabCompletionCriteria);
+            this.tabCtrlImplementationPlan.Location = new System.Drawing.Point(3, 3);
+            this.tabCtrlImplementationPlan.Name = "tabCtrlImplementationPlan";
+            this.tabCtrlImplementationPlan.SelectedIndex = 0;
+            this.tabCtrlImplementationPlan.Size = new System.Drawing.Size(1027, 700);
+            this.tabCtrlImplementationPlan.TabIndex = 63;
+            // 
+            // tabApproach
+            // 
+            this.tabApproach.Controls.Add(this.dgvApproach);
+            this.tabApproach.Location = new System.Drawing.Point(4, 25);
+            this.tabApproach.Name = "tabApproach";
+            this.tabApproach.Padding = new System.Windows.Forms.Padding(3);
+            this.tabApproach.Size = new System.Drawing.Size(1019, 671);
+            this.tabApproach.TabIndex = 0;
+            this.tabApproach.Text = "Approach";
+            this.tabApproach.UseVisualStyleBackColor = true;
+            // 
+            // tabSchedule
+            // 
+            this.tabSchedule.Controls.Add(this.txtSchedule);
+            this.tabSchedule.Location = new System.Drawing.Point(4, 25);
+            this.tabSchedule.Name = "tabSchedule";
+            this.tabSchedule.Padding = new System.Windows.Forms.Padding(3);
+            this.tabSchedule.Size = new System.Drawing.Size(1019, 671);
+            this.tabSchedule.TabIndex = 1;
+            this.tabSchedule.Text = "Scedule";
+            this.tabSchedule.UseVisualStyleBackColor = true;
+            // 
+            // tabMilestones
+            // 
+            this.tabMilestones.Controls.Add(this.dgvMilestones);
+            this.tabMilestones.Location = new System.Drawing.Point(4, 25);
+            this.tabMilestones.Name = "tabMilestones";
+            this.tabMilestones.Size = new System.Drawing.Size(1019, 671);
+            this.tabMilestones.TabIndex = 2;
+            this.tabMilestones.Text = "Milestones";
+            this.tabMilestones.UseVisualStyleBackColor = true;
+            // 
+            // tabDependencies
+            // 
+            this.tabDependencies.Controls.Add(this.dgvDependencies);
+            this.tabDependencies.Location = new System.Drawing.Point(4, 25);
+            this.tabDependencies.Name = "tabDependencies";
+            this.tabDependencies.Size = new System.Drawing.Size(1019, 671);
+            this.tabDependencies.TabIndex = 3;
+            this.tabDependencies.Text = "Dependencies";
+            this.tabDependencies.UseVisualStyleBackColor = true;
+            // 
+            // tabResourcePlan
+            // 
+            this.tabResourcePlan.Controls.Add(this.dgvResourcePlan);
+            this.tabResourcePlan.Location = new System.Drawing.Point(4, 25);
+            this.tabResourcePlan.Name = "tabResourcePlan";
+            this.tabResourcePlan.Size = new System.Drawing.Size(1019, 671);
+            this.tabResourcePlan.TabIndex = 4;
+            this.tabResourcePlan.Text = "Resource Plan";
+            this.tabResourcePlan.UseVisualStyleBackColor = true;
+            // 
+            // tabFinancialPlan
+            // 
+            this.tabFinancialPlan.Controls.Add(this.dgvFinancialPlan);
+            this.tabFinancialPlan.Location = new System.Drawing.Point(4, 25);
+            this.tabFinancialPlan.Name = "tabFinancialPlan";
+            this.tabFinancialPlan.Size = new System.Drawing.Size(1019, 671);
+            this.tabFinancialPlan.TabIndex = 5;
+            this.tabFinancialPlan.Text = "Financial Plan";
+            this.tabFinancialPlan.UseVisualStyleBackColor = true;
+            // 
+            // tabQualityPlan
+            // 
+            this.tabQualityPlan.Controls.Add(this.dgvQualityPlan);
+            this.tabQualityPlan.Location = new System.Drawing.Point(4, 25);
+            this.tabQualityPlan.Name = "tabQualityPlan";
+            this.tabQualityPlan.Size = new System.Drawing.Size(1019, 671);
+            this.tabQualityPlan.TabIndex = 6;
+            this.tabQualityPlan.Text = "Quality Plan";
+            this.tabQualityPlan.UseVisualStyleBackColor = true;
+            // 
+            // tabCompletionCriteria
+            // 
+            this.tabCompletionCriteria.Controls.Add(this.dgvCompletionCriteria);
+            this.tabCompletionCriteria.Location = new System.Drawing.Point(4, 25);
+            this.tabCompletionCriteria.Name = "tabCompletionCriteria";
+            this.tabCompletionCriteria.Size = new System.Drawing.Size(1019, 671);
+            this.tabCompletionCriteria.TabIndex = 7;
+            this.tabCompletionCriteria.Text = "Completion Criteria";
+            this.tabCompletionCriteria.UseVisualStyleBackColor = true;
+            // 
+            // tabCtrlProjectConsiderations
+            // 
+            this.tabCtrlProjectConsiderations.Controls.Add(this.tabRisks);
+            this.tabCtrlProjectConsiderations.Controls.Add(this.tabIssues);
+            this.tabCtrlProjectConsiderations.Controls.Add(this.tabAssumptions);
+            this.tabCtrlProjectConsiderations.Controls.Add(this.tabConstraints);
+            this.tabCtrlProjectConsiderations.Location = new System.Drawing.Point(3, 3);
+            this.tabCtrlProjectConsiderations.Name = "tabCtrlProjectConsiderations";
+            this.tabCtrlProjectConsiderations.SelectedIndex = 0;
+            this.tabCtrlProjectConsiderations.Size = new System.Drawing.Size(1024, 700);
+            this.tabCtrlProjectConsiderations.TabIndex = 61;
+            // 
+            // tabRisks
+            // 
+            this.tabRisks.Controls.Add(this.dgvRisks);
+            this.tabRisks.Location = new System.Drawing.Point(4, 25);
+            this.tabRisks.Name = "tabRisks";
+            this.tabRisks.Padding = new System.Windows.Forms.Padding(3);
+            this.tabRisks.Size = new System.Drawing.Size(1016, 671);
+            this.tabRisks.TabIndex = 0;
+            this.tabRisks.Text = "Risks";
+            this.tabRisks.UseVisualStyleBackColor = true;
+            // 
+            // tabIssues
+            // 
+            this.tabIssues.Controls.Add(this.dgvIssues);
+            this.tabIssues.Location = new System.Drawing.Point(4, 25);
+            this.tabIssues.Name = "tabIssues";
+            this.tabIssues.Padding = new System.Windows.Forms.Padding(3);
+            this.tabIssues.Size = new System.Drawing.Size(1016, 671);
+            this.tabIssues.TabIndex = 1;
+            this.tabIssues.Text = "Issues";
+            this.tabIssues.UseVisualStyleBackColor = true;
+            // 
+            // tabAssumptions
+            // 
+            this.tabAssumptions.Controls.Add(this.txtAssumptions);
+            this.tabAssumptions.Location = new System.Drawing.Point(4, 25);
+            this.tabAssumptions.Name = "tabAssumptions";
+            this.tabAssumptions.Size = new System.Drawing.Size(1016, 671);
+            this.tabAssumptions.TabIndex = 2;
+            this.tabAssumptions.Text = "Assumptions";
+            this.tabAssumptions.UseVisualStyleBackColor = true;
+            // 
+            // tabConstraints
+            // 
+            this.tabConstraints.Controls.Add(this.txtConstraints);
+            this.tabConstraints.Location = new System.Drawing.Point(4, 25);
+            this.tabConstraints.Name = "tabConstraints";
+            this.tabConstraints.Size = new System.Drawing.Size(1016, 671);
+            this.tabConstraints.TabIndex = 3;
+            this.tabConstraints.Text = "Constraints";
+            this.tabConstraints.UseVisualStyleBackColor = true;
             // 
             // TermOfReferenceDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1062, 788);
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.label27);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabCtrlTermOfReferenceDocumentForm);
             this.Font = new System.Drawing.Font("Cambria", 8.25F);
             this.Name = "TermOfReferenceDocumentForm";
             this.Text = "TermOfReferenceDocumentForm";
-            this.tabControl1.ResumeLayout(false);
+            this.tabCtrlTermOfReferenceDocumentForm.ResumeLayout(false);
             this.tabDocumentControl.ResumeLayout(false);
-            this.tabDocumentControl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentApprovals)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentHistory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentInformation)).EndInit();
             this.tabExecutiveSummary.ResumeLayout(false);
             this.tabExecutiveSummary.PerformLayout();
             this.tabProjectDefinition.ResumeLayout(false);
-            this.tabProjectDefinition.PerformLayout();
-            this.tabProjectOrganization.ResumeLayout(false);
-            this.tabProjectOrganization.PerformLayout();
-            this.tabImplementationPlan.ResumeLayout(false);
-            this.tabImplementationPlan.PerformLayout();
-            this.tabProjectConsiderations.ResumeLayout(false);
-            this.tabProjectConsiderations.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDeliverables)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStakeholders)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRoles)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvApproach)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCompletionCriteria)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMilestones)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDependencies)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResourcePlan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFinancialPlan)).EndInit();
+            this.tabImplementationPlan.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvQualityPlan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRisks)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFinancialPlan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResourcePlan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDependencies)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMilestones)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCompletionCriteria)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvApproach)).EndInit();
+            this.tabProjectConsiderations.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvIssues)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRisks)).EndInit();
+            this.tabCtrlDocumentControl.ResumeLayout(false);
+            this.tabDocumentInformation.ResumeLayout(false);
+            this.tabDocumentHistory.ResumeLayout(false);
+            this.tabDocumentApprovals.ResumeLayout(false);
+            this.tabControl3.ResumeLayout(false);
+            this.tabVision.ResumeLayout(false);
+            this.tabVision.PerformLayout();
+            this.tabObjectives.ResumeLayout(false);
+            this.tabObjectives.PerformLayout();
+            this.tabProjectDefinition2.ResumeLayout(false);
+            this.tabProjectDefinition2.PerformLayout();
+            this.tabScope.ResumeLayout(false);
+            this.tabScope.PerformLayout();
+            this.tabDeliverables.ResumeLayout(false);
+            this.tabControl4.ResumeLayout(false);
+            this.tabStructure.ResumeLayout(false);
+            this.tabStructure.PerformLayout();
+            this.tabResponsibilities.ResumeLayout(false);
+            this.tabResponsibilities.PerformLayout();
+            this.tabRoles.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRoles)).EndInit();
+            this.tabStakeholders.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStakeholders)).EndInit();
+            this.tabCustomers.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).EndInit();
+            this.tabProjectOrganization.ResumeLayout(false);
+            this.tabCtrlImplementationPlan.ResumeLayout(false);
+            this.tabApproach.ResumeLayout(false);
+            this.tabSchedule.ResumeLayout(false);
+            this.tabSchedule.PerformLayout();
+            this.tabMilestones.ResumeLayout(false);
+            this.tabDependencies.ResumeLayout(false);
+            this.tabResourcePlan.ResumeLayout(false);
+            this.tabFinancialPlan.ResumeLayout(false);
+            this.tabQualityPlan.ResumeLayout(false);
+            this.tabCompletionCriteria.ResumeLayout(false);
+            this.tabCtrlProjectConsiderations.ResumeLayout(false);
+            this.tabRisks.ResumeLayout(false);
+            this.tabIssues.ResumeLayout(false);
+            this.tabAssumptions.ResumeLayout(false);
+            this.tabAssumptions.PerformLayout();
+            this.tabConstraints.ResumeLayout(false);
+            this.tabConstraints.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -952,18 +947,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabCtrlTermOfReferenceDocumentForm;
         private System.Windows.Forms.TabPage tabDocumentControl;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvDocumentApprovals;
         private System.Windows.Forms.DataGridView dgvDocumentHistory;
         private System.Windows.Forms.DataGridView dgvDocumentInformation;
         private System.Windows.Forms.TabPage tabExecutiveSummary;
         private System.Windows.Forms.TabPage tabProjectDefinition;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TabPage tabProjectOrganization;
         private System.Windows.Forms.TabPage tabImplementationPlan;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox txtProjectName;
@@ -973,22 +963,8 @@
         private System.Windows.Forms.DataGridView dgvDeliverables;
         private System.Windows.Forms.TextBox txtProjectDefinition;
         private System.Windows.Forms.TextBox txtVision;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtScope;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtObjectives;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView dgvCustomers;
-        private System.Windows.Forms.DataGridView dgvRoles;
-        private System.Windows.Forms.DataGridView dgvStakeholders;
-        private System.Windows.Forms.TextBox txtResponsibilities;
-        private System.Windows.Forms.TextBox txtStructure;
         private System.Windows.Forms.DataGridView dgvFinancialPlan;
         private System.Windows.Forms.DataGridView dgvResourcePlan;
         private System.Windows.Forms.DataGridView dgvDependencies;
@@ -997,21 +973,45 @@
         private System.Windows.Forms.DataGridView dgvApproach;
         private System.Windows.Forms.DataGridView dgvQualityPlan;
         private System.Windows.Forms.TextBox txtSchedule;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox txtConstraints;
         private System.Windows.Forms.TextBox txtAssumptions;
         private System.Windows.Forms.DataGridView dgvIssues;
         private System.Windows.Forms.DataGridView dgvRisks;
+        private System.Windows.Forms.TabControl tabCtrlDocumentControl;
+        private System.Windows.Forms.TabPage tabDocumentInformation;
+        private System.Windows.Forms.TabPage tabDocumentHistory;
+        private System.Windows.Forms.TabPage tabDocumentApprovals;
+        private System.Windows.Forms.TabControl tabControl3;
+        private System.Windows.Forms.TabPage tabProjectDefinition2;
+        private System.Windows.Forms.TabPage tabVision;
+        private System.Windows.Forms.TabPage tabObjectives;
+        private System.Windows.Forms.TabPage tabScope;
+        private System.Windows.Forms.TabPage tabDeliverables;
+        private System.Windows.Forms.TabPage tabProjectOrganization;
+        private System.Windows.Forms.TabControl tabControl4;
+        private System.Windows.Forms.TabPage tabCustomers;
+        private System.Windows.Forms.DataGridView dgvCustomers;
+        private System.Windows.Forms.TabPage tabStakeholders;
+        private System.Windows.Forms.DataGridView dgvStakeholders;
+        private System.Windows.Forms.TabPage tabRoles;
+        private System.Windows.Forms.DataGridView dgvRoles;
+        private System.Windows.Forms.TabPage tabResponsibilities;
+        private System.Windows.Forms.TextBox txtResponsibilities;
+        private System.Windows.Forms.TabPage tabStructure;
+        private System.Windows.Forms.TextBox txtStructure;
+        private System.Windows.Forms.TabControl tabCtrlImplementationPlan;
+        private System.Windows.Forms.TabPage tabApproach;
+        private System.Windows.Forms.TabPage tabSchedule;
+        private System.Windows.Forms.TabPage tabMilestones;
+        private System.Windows.Forms.TabPage tabDependencies;
+        private System.Windows.Forms.TabPage tabResourcePlan;
+        private System.Windows.Forms.TabPage tabFinancialPlan;
+        private System.Windows.Forms.TabPage tabQualityPlan;
+        private System.Windows.Forms.TabPage tabCompletionCriteria;
+        private System.Windows.Forms.TabControl tabCtrlProjectConsiderations;
+        private System.Windows.Forms.TabPage tabRisks;
+        private System.Windows.Forms.TabPage tabIssues;
+        private System.Windows.Forms.TabPage tabAssumptions;
+        private System.Windows.Forms.TabPage tabConstraints;
     }
 }
