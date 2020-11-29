@@ -21,7 +21,7 @@ namespace ProjectManagementToolkit.MPMM
     public partial class SyncForm : Form
     {
         private static readonly HttpClient client = new HttpClient();
-        
+        List<string> serverDocuments = new List<string>();
 
         public SyncForm()
         {
@@ -38,39 +38,18 @@ namespace ProjectManagementToolkit.MPMM
                 return;
             }
 
-            List<string> serverDocuments;
-            List<string> localDocuments;
+            List<string> documentsToSync = new List<string>();
 
-            serverDocuments = getServerCollections();
-            if(serverDocuments == null)
-            {
-                MessageBox.Show("An unexpected server ocurred.", "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            localDocuments = getLocalDocuments();
-
-            //Pull all missing documents from server.
-            /*var missingLocal = new List<string>();
-            foreach (var item in serverDocuments)
-            {
-                if(!localDocuments.Contains(item))
-                {
-                    missingLocal.Add(item);
-                }
-            }
-
-            foreach (var item in missingLocal)
-            {
-                
-            }*/
-
-            if(localDocuments != null && serverDocuments != null)
+            documentsToSync.Add("ProjectPlan");
+            
+        
+            if (connectionSuccessful)
             {
                 //Loop Through All Syncable Documents
                 //VersionControl.getLatest()
-                foreach (string item in localDocuments)
+                foreach (string item in documentsToSync)
                 {
+                    MessageBox.Show("Syncing: " + item);
                     syncDocument(item);
                 }
             }
@@ -149,20 +128,84 @@ namespace ProjectManagementToolkit.MPMM
             return localDocuments;
         }
 
-        private bool syncDocument(string document)
+        private async Task<bool> syncDocument(string document)
         {
-            string documentJson = JsonHelper.loadDocument(Settings.Default.ProjectID, document);
+            string localJsonString = JsonHelper.loadDocument(Settings.Default.ProjectID, document);
+            string serverJsonString = await getServerDocument(document);
+            //string serverJsonString = serverDocuments[serverDocuments.IndexOf(document)];
+            string documentJson = "";
+            
+            if (serverJsonString == null)
+            {
+                MessageBox.Show("No document on server");
+                serverJsonString = localJsonString;
+            }
+
+            JObject localJson = JObject.Parse(localJsonString);
+            JObject serverJson = JObject.Parse(serverJsonString);
+            
             //Server = Local
-                //Do Nothing
+            //Do Nothing
+            var localLatest = localJson["DocumentModels"].OrderByDescending(x => x["DateModified"]).FirstOrDefault().ToObject<JObject>();
+            var serverLatest = serverJson["DocumentModels"].OrderByDescending(x => x["DateModified"]).FirstOrDefault().ToObject<JObject>();
+            MessageBox.Show("LocalLatest: " + localLatest.ToString());
+            var temp = localJson["DocumentModels"][0];
+            
             //Server ahead of Local
-                //Merge Server with Local version and save locally
+            //Merge Server with Local version and save locally
+            if (serverLatest["DateModified"].ToObject<DateTime>() > localLatest["DateModified"].ToObject<DateTime>())
+            {
+                MessageBox.Show("Server is Latest");
+                serverLatest.Merge(localLatest, new JsonMergeSettings
+                {
+                    MergeArrayHandling = MergeArrayHandling.Union
+                });
+
+                temp["DocumentObject"] = serverLatest;
+                temp["VersionID"] = generateID();
+                temp["DateModified"] = DateTime.Now;
+
+                serverJson["DocumentModels"].ToObject<JObject>().Add("DocumentObject", temp);
+
+                documentJson = JsonConvert.SerializeObject(serverJson);
+            }
             //Local ahead of Server
-                //Merge Local version with srver version and POST
+            //Merge Local version with server version and PUT
+            else if (localLatest["DateModified"].ToObject<DateTime>() > serverLatest["DateModified"].ToObject<DateTime>())
+            {
+                MessageBox.Show("Local is Latest");
+                localLatest.Merge(serverLatest, new JsonMergeSettings
+                {
+                    MergeArrayHandling = MergeArrayHandling.Union
+                });
 
+                temp["DocumentObject"] = localLatest;
+                temp["VersionID"] = generateID();
+                temp["DateModified"] = DateTime.Now;
 
+                localJson["DocumentModels"].ToObject<JObject>().Add("DocumentObject", temp); ;
+
+                documentJson = JsonConvert.SerializeObject(localJson);
+            }
+            //Server = Local
+            //Keep same
+            else if (localLatest["VersionID"].ToObject<DateTime>() == serverLatest["VersionID"].ToObject<DateTime>())
+            {
+                MessageBox.Show("Local = Server");
+                documentJson = JsonConvert.SerializeObject(localJson);
+            }
+            else
+            {
+                MessageBox.Show("Error with DateModified");
+            }
+
+            //Save to local
+            JsonHelper.saveDocument(documentJson, Settings.Default.ProjectID, document);
+
+            //Save to server
             var body = new StringContent(documentJson, Encoding.UTF8, "application/json");
 
-            Task<HttpResponseMessage> responseMessage = client.PostAsync("http://localhost:3000/document/" + Settings.Default.ProjectID + "/" + document, body);
+            Task<HttpResponseMessage> responseMessage = client.PutAsync("http://localhost:3000/document/" + Settings.Default.ProjectID + "/" + document, body);
             HttpResponseMessage response = responseMessage.Result;
             int statusCode = response.StatusCode.GetHashCode();
 
@@ -179,9 +222,32 @@ namespace ProjectManagementToolkit.MPMM
             return false;
         }
 
-        private void getServerDocument(string document)
-        {
 
+        private async Task<string> getServerDocument(string document)
+        {
+            try
+            {
+                string uri = "http://localhost:3000/document/" + Settings.Default.ProjectID + "/" + document;
+                MessageBox.Show(uri);
+                HttpResponseMessage responseMessage = await client.GetAsync(uri);
+                var jsonResponse = responseMessage.Content.ReadAsStringAsync().Result;
+                int statusCode = responseMessage.StatusCode.GetHashCode();
+                MessageBox.Show("Get Server Document (" + statusCode.ToString() + ") = " + jsonResponse.ToString());
+                //Check if the collection does not exist
+                if (statusCode == 404 || jsonResponse.ToString() == "[]")
+                {
+                    return null;
+                }
+                else
+                {
+                    return jsonResponse;
+                }
+            }
+            catch (AggregateException)
+            {
+                MessageBox.Show("An unexpected server ocurred.", "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return "";
+            }
         }
 
         private bool attemptHttpConnection()
@@ -210,8 +276,11 @@ namespace ProjectManagementToolkit.MPMM
                 return false;
             }
         }
-
-        
-
+        static public string generateID()
+        {
+            Guid guid = Guid.NewGuid();
+            string id = guid.ToString();
+            return id;
+        }
     }
 }
