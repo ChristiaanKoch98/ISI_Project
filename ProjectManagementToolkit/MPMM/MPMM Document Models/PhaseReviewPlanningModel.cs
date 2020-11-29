@@ -20,7 +20,7 @@ namespace ProjectManagementToolkit.Classes
         public string ProjectIssues { get; set; }
         public string ProjectChanges { get; set; }
         public string SupportingDocumentation { get; set; }
-        public List<ReviewDetails> reviws { get; set; } = new List<ReviewDetails>();
+        public List<ReviewDetails> Reviews { get; set; }
     }
 
     class ReviewDetails

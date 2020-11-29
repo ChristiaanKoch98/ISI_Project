@@ -175,7 +175,7 @@ namespace ProjectManagementToolkit
 
         private void templateToolStripMenuItem8_Click(object sender, EventArgs e)
         {
-            RiskPlanDocumentForm form = new RiskPlanDocumentForm();
+            RiskPlanForm form = new RiskPlanForm();
             form.Show();
             form.MdiParent = this;
         }

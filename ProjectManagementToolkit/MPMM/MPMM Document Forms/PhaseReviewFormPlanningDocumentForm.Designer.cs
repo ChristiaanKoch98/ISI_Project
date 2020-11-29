@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Enter_btn = new System.Windows.Forms.Button();
             this.Planning_Phase_tbx = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -37,7 +36,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Project_Manager_tbx = new System.Windows.Forms.TextBox();
             this.Project_Name_tbx = new System.Windows.Forms.TextBox();
-            this.PROJECT_DETAILS_btn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -55,18 +53,17 @@
             this.label5 = new System.Windows.Forms.Label();
             this.Summary_tbx = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.OVERALL_STATUS_btn = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.REVIEW_DETAILS_dgv = new System.Windows.Forms.DataGridView();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.Supporting_Documentation_tbx = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.CUSTOMER_APPROVAL_btn = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
             this.ReviewCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ReviewQuestion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Answer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Variance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.Supporting_Documentation_tbx = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnExportToWord = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -75,24 +72,11 @@
             this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Enter_btn
-            // 
-            this.Enter_btn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Enter_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Enter_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.Enter_btn.Location = new System.Drawing.Point(637, 23);
-            this.Enter_btn.Name = "Enter_btn";
-            this.Enter_btn.Size = new System.Drawing.Size(75, 21);
-            this.Enter_btn.TabIndex = 9;
-            this.Enter_btn.Text = "Enter";
-            this.Enter_btn.UseVisualStyleBackColor = false;
-            this.Enter_btn.Click += new System.EventHandler(this.Enter_btn_Click);
-            // 
             // Planning_Phase_tbx
             // 
             this.Planning_Phase_tbx.Location = new System.Drawing.Point(352, 23);
             this.Planning_Phase_tbx.Name = "Planning_Phase_tbx";
-            this.Planning_Phase_tbx.Size = new System.Drawing.Size(237, 24);
+            this.Planning_Phase_tbx.Size = new System.Drawing.Size(237, 20);
             this.Planning_Phase_tbx.TabIndex = 8;
             // 
             // label1
@@ -101,7 +85,7 @@
             this.label1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(389, 23);
+            this.label1.Size = new System.Drawing.Size(317, 19);
             this.label1.TabIndex = 7;
             this.label1.Text = "Planning Phase Stage Gate Review Form For:";
             // 
@@ -127,13 +111,12 @@
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.Project_Manager_tbx);
             this.tabPage1.Controls.Add(this.Project_Name_tbx);
-            this.tabPage1.Controls.Add(this.PROJECT_DETAILS_btn);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 21);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(861, 402);
+            this.tabPage1.Size = new System.Drawing.Size(861, 406);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "PROJECT DETAILS";
             // 
@@ -141,7 +124,7 @@
             // 
             this.Project_Sponsor_tbx.Location = new System.Drawing.Point(238, 153);
             this.Project_Sponsor_tbx.Name = "Project_Sponsor_tbx";
-            this.Project_Sponsor_tbx.Size = new System.Drawing.Size(237, 24);
+            this.Project_Sponsor_tbx.Size = new System.Drawing.Size(237, 20);
             this.Project_Sponsor_tbx.TabIndex = 17;
             // 
             // label4
@@ -150,7 +133,7 @@
             this.label4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(30, 154);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(151, 23);
+            this.label4.Size = new System.Drawing.Size(124, 19);
             this.label4.TabIndex = 16;
             this.label4.Text = "Project Sponsor:";
             // 
@@ -158,28 +141,15 @@
             // 
             this.Project_Manager_tbx.Location = new System.Drawing.Point(238, 89);
             this.Project_Manager_tbx.Name = "Project_Manager_tbx";
-            this.Project_Manager_tbx.Size = new System.Drawing.Size(237, 24);
+            this.Project_Manager_tbx.Size = new System.Drawing.Size(237, 20);
             this.Project_Manager_tbx.TabIndex = 15;
             // 
             // Project_Name_tbx
             // 
             this.Project_Name_tbx.Location = new System.Drawing.Point(238, 31);
             this.Project_Name_tbx.Name = "Project_Name_tbx";
-            this.Project_Name_tbx.Size = new System.Drawing.Size(237, 24);
+            this.Project_Name_tbx.Size = new System.Drawing.Size(237, 20);
             this.Project_Name_tbx.TabIndex = 11;
-            // 
-            // PROJECT_DETAILS_btn
-            // 
-            this.PROJECT_DETAILS_btn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.PROJECT_DETAILS_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PROJECT_DETAILS_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.PROJECT_DETAILS_btn.Location = new System.Drawing.Point(24, 353);
-            this.PROJECT_DETAILS_btn.Name = "PROJECT_DETAILS_btn";
-            this.PROJECT_DETAILS_btn.Size = new System.Drawing.Size(75, 23);
-            this.PROJECT_DETAILS_btn.TabIndex = 12;
-            this.PROJECT_DETAILS_btn.Text = "Enter";
-            this.PROJECT_DETAILS_btn.UseVisualStyleBackColor = false;
-            this.PROJECT_DETAILS_btn.Click += new System.EventHandler(this.PROJECT_DETAILS_btn_Click);
             // 
             // label3
             // 
@@ -187,7 +157,7 @@
             this.label3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(30, 90);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(155, 23);
+            this.label3.Size = new System.Drawing.Size(127, 19);
             this.label3.TabIndex = 14;
             this.label3.Text = "Project Manager:";
             // 
@@ -197,7 +167,7 @@
             this.label2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(47, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 23);
+            this.label2.Size = new System.Drawing.Size(106, 19);
             this.label2.TabIndex = 13;
             this.label2.Text = "Project Name:";
             // 
@@ -218,11 +188,10 @@
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.Summary_tbx);
             this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.OVERALL_STATUS_btn);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 21);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(861, 402);
+            this.tabPage2.Size = new System.Drawing.Size(861, 406);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "OVERALL STATUS";
             // 
@@ -240,7 +209,7 @@
             this.label11.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(447, 174);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(152, 23);
+            this.label11.Size = new System.Drawing.Size(124, 19);
             this.label11.TabIndex = 33;
             this.label11.Text = "Project Changes:";
             // 
@@ -258,7 +227,7 @@
             this.label10.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(462, 101);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(134, 23);
+            this.label10.Size = new System.Drawing.Size(109, 19);
             this.label10.TabIndex = 31;
             this.label10.Text = "Project Issues:";
             // 
@@ -276,7 +245,7 @@
             this.label9.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(469, 23);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(126, 23);
+            this.label9.Size = new System.Drawing.Size(102, 19);
             this.label9.TabIndex = 29;
             this.label9.Text = "Project Risks:";
             // 
@@ -294,7 +263,7 @@
             this.label8.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(6, 256);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(187, 23);
+            this.label8.Size = new System.Drawing.Size(152, 19);
             this.label8.TabIndex = 27;
             this.label8.Text = "Project Deliverables:";
             // 
@@ -312,7 +281,7 @@
             this.label6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(27, 174);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(162, 23);
+            this.label6.Size = new System.Drawing.Size(131, 19);
             this.label6.TabIndex = 25;
             this.label6.Text = "Project Expenses:";
             // 
@@ -330,7 +299,7 @@
             this.label5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(30, 101);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(157, 23);
+            this.label5.Size = new System.Drawing.Size(128, 19);
             this.label5.TabIndex = 23;
             this.label5.Text = "Project Schedule:";
             // 
@@ -348,31 +317,18 @@
             this.label7.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(79, 23);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(98, 23);
+            this.label7.Size = new System.Drawing.Size(79, 19);
             this.label7.TabIndex = 21;
             this.label7.Text = "Summary:";
-            // 
-            // OVERALL_STATUS_btn
-            // 
-            this.OVERALL_STATUS_btn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.OVERALL_STATUS_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OVERALL_STATUS_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.OVERALL_STATUS_btn.Location = new System.Drawing.Point(6, 358);
-            this.OVERALL_STATUS_btn.Name = "OVERALL_STATUS_btn";
-            this.OVERALL_STATUS_btn.Size = new System.Drawing.Size(75, 23);
-            this.OVERALL_STATUS_btn.TabIndex = 20;
-            this.OVERALL_STATUS_btn.Text = "Enter";
-            this.OVERALL_STATUS_btn.UseVisualStyleBackColor = false;
-            this.OVERALL_STATUS_btn.Click += new System.EventHandler(this.OVERALL_STATUS_btn_Click);
             // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tabPage3.Controls.Add(this.REVIEW_DETAILS_dgv);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Location = new System.Drawing.Point(4, 21);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(861, 402);
+            this.tabPage3.Size = new System.Drawing.Size(861, 406);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "REVIEW DETAILS";
             // 
@@ -389,61 +345,6 @@
             this.REVIEW_DETAILS_dgv.RowHeadersWidth = 51;
             this.REVIEW_DETAILS_dgv.Size = new System.Drawing.Size(793, 299);
             this.REVIEW_DETAILS_dgv.TabIndex = 0;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage4.Controls.Add(this.Supporting_Documentation_tbx);
-            this.tabPage4.Controls.Add(this.label12);
-            this.tabPage4.Controls.Add(this.CUSTOMER_APPROVAL_btn);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(861, 402);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "APPROVAL DETAILS";
-            // 
-            // Supporting_Documentation_tbx
-            // 
-            this.Supporting_Documentation_tbx.Location = new System.Drawing.Point(237, 30);
-            this.Supporting_Documentation_tbx.Multiline = true;
-            this.Supporting_Documentation_tbx.Name = "Supporting_Documentation_tbx";
-            this.Supporting_Documentation_tbx.Size = new System.Drawing.Size(548, 193);
-            this.Supporting_Documentation_tbx.TabIndex = 25;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(17, 30);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(249, 23);
-            this.label12.TabIndex = 24;
-            this.label12.Text = "Supporting Documentation:";
-            // 
-            // CUSTOMER_APPROVAL_btn
-            // 
-            this.CUSTOMER_APPROVAL_btn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.CUSTOMER_APPROVAL_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CUSTOMER_APPROVAL_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.CUSTOMER_APPROVAL_btn.Location = new System.Drawing.Point(21, 352);
-            this.CUSTOMER_APPROVAL_btn.Name = "CUSTOMER_APPROVAL_btn";
-            this.CUSTOMER_APPROVAL_btn.Size = new System.Drawing.Size(75, 23);
-            this.CUSTOMER_APPROVAL_btn.TabIndex = 23;
-            this.CUSTOMER_APPROVAL_btn.Text = "Enter";
-            this.CUSTOMER_APPROVAL_btn.UseVisualStyleBackColor = false;
-            this.CUSTOMER_APPROVAL_btn.Click += new System.EventHandler(this.CUSTOMER_APPROVAL_btn_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(810, 20);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 11;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // ReviewCategory
             // 
@@ -473,22 +374,73 @@
             this.Variance.Name = "Variance";
             this.Variance.Width = 125;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage4.Controls.Add(this.Supporting_Documentation_tbx);
+            this.tabPage4.Controls.Add(this.label12);
+            this.tabPage4.Location = new System.Drawing.Point(4, 21);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(861, 406);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "APPROVAL DETAILS";
+            // 
+            // Supporting_Documentation_tbx
+            // 
+            this.Supporting_Documentation_tbx.Location = new System.Drawing.Point(237, 30);
+            this.Supporting_Documentation_tbx.Multiline = true;
+            this.Supporting_Documentation_tbx.Name = "Supporting_Documentation_tbx";
+            this.Supporting_Documentation_tbx.Size = new System.Drawing.Size(548, 193);
+            this.Supporting_Documentation_tbx.TabIndex = 25;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(17, 30);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(200, 19);
+            this.label12.TabIndex = 24;
+            this.label12.Text = "Supporting Documentation:";
+            // 
+            // btnSave
+            // 
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Location = new System.Drawing.Point(628, 20);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 11;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnExportToWord
+            // 
+            this.btnExportToWord.ForeColor = System.Drawing.Color.Black;
+            this.btnExportToWord.Location = new System.Drawing.Point(784, 20);
+            this.btnExportToWord.Name = "btnExportToWord";
+            this.btnExportToWord.Size = new System.Drawing.Size(97, 23);
+            this.btnExportToWord.TabIndex = 12;
+            this.btnExportToWord.Text = "Export to word";
+            this.btnExportToWord.UseVisualStyleBackColor = true;
+            this.btnExportToWord.Click += new System.EventHandler(this.btnExportToWord_Click);
+            // 
             // PhaseReviewFormPlanningDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(961, 534);
+            this.Controls.Add(this.btnExportToWord);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.Enter_btn);
             this.Controls.Add(this.Planning_Phase_tbx);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Name = "PhaseReviewFormPlanningDocumentForm";
             this.Text = "PhaseReviewFormPlanningDocumentForm";
-            this.Load += new System.EventHandler(this.PhaseReviewFormPlanningDocumentForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -504,8 +456,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button Enter_btn;
         private System.Windows.Forms.TextBox Planning_Phase_tbx;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabControl tabControl1;
@@ -517,12 +467,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox Project_Manager_tbx;
         private System.Windows.Forms.TextBox Project_Name_tbx;
-        private System.Windows.Forms.Button PROJECT_DETAILS_btn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox Summary_tbx;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button OVERALL_STATUS_btn;
         private System.Windows.Forms.TextBox Project_Changes_tbx;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox Project_Issues_tbx;
@@ -538,11 +486,11 @@
         private System.Windows.Forms.DataGridView REVIEW_DETAILS_dgv;
         private System.Windows.Forms.TextBox Supporting_Documentation_tbx;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button CUSTOMER_APPROVAL_btn;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.DataGridViewTextBoxColumn ReviewCategory;
         private System.Windows.Forms.DataGridViewTextBoxColumn ReviewQuestion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Answer;
         private System.Windows.Forms.DataGridViewTextBoxColumn Variance;
+        private System.Windows.Forms.Button btnExportToWord;
     }
 }
