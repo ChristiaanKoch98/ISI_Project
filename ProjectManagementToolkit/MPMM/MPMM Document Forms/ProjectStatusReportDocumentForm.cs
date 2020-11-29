@@ -16,5 +16,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             InitializeComponent();
         }
+
+        private void dgvProjectRisk_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
