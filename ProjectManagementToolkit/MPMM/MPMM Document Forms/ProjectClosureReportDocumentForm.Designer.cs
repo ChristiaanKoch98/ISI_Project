@@ -102,6 +102,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
             this.tbpProjectCompletion.SuspendLayout();
             this.gpbOutstandingItems.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOutstandingItems)).BeginInit();
@@ -138,9 +140,9 @@
             this.tbpProjectCompletion.Controls.Add(this.gpbOutstandingItems);
             this.tbpProjectCompletion.Controls.Add(this.gpbCompletionCriteria);
             this.tbpProjectCompletion.Controls.Add(this.gpbProjectCompletion);
-            this.tbpProjectCompletion.Location = new System.Drawing.Point(4, 21);
+            this.tbpProjectCompletion.Location = new System.Drawing.Point(4, 24);
             this.tbpProjectCompletion.Name = "tbpProjectCompletion";
-            this.tbpProjectCompletion.Size = new System.Drawing.Size(1482, 635);
+            this.tbpProjectCompletion.Size = new System.Drawing.Size(1482, 632);
             this.tbpProjectCompletion.TabIndex = 3;
             this.tbpProjectCompletion.Text = "Project Completion";
             // 
@@ -268,7 +270,7 @@
             this.label27.Location = new System.Drawing.Point(7, 14);
             this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(153, 12);
+            this.label27.Size = new System.Drawing.Size(204, 16);
             this.label27.TabIndex = 11;
             this.label27.Text = "Please Enter Your Project Name:";
             // 
@@ -280,7 +282,7 @@
             this.txtProjectClosureReportProjectName.Location = new System.Drawing.Point(219, 10);
             this.txtProjectClosureReportProjectName.Margin = new System.Windows.Forms.Padding(4);
             this.txtProjectClosureReportProjectName.Name = "txtProjectClosureReportProjectName";
-            this.txtProjectClosureReportProjectName.Size = new System.Drawing.Size(132, 20);
+            this.txtProjectClosureReportProjectName.Size = new System.Drawing.Size(132, 24);
             this.txtProjectClosureReportProjectName.TabIndex = 10;
             this.txtProjectClosureReportProjectName.Text = "Project Name";
             // 
@@ -290,11 +292,11 @@
             this.tbpDocumentControl.Controls.Add(this.gpbDocumentApprovals);
             this.tbpDocumentControl.Controls.Add(this.gpbDocumentHistory);
             this.tbpDocumentControl.Controls.Add(this.gpbDocumentInformation);
-            this.tbpDocumentControl.Location = new System.Drawing.Point(4, 21);
+            this.tbpDocumentControl.Location = new System.Drawing.Point(4, 24);
             this.tbpDocumentControl.Margin = new System.Windows.Forms.Padding(4);
             this.tbpDocumentControl.Name = "tbpDocumentControl";
             this.tbpDocumentControl.Padding = new System.Windows.Forms.Padding(4);
-            this.tbpDocumentControl.Size = new System.Drawing.Size(1482, 635);
+            this.tbpDocumentControl.Size = new System.Drawing.Size(1482, 632);
             this.tbpDocumentControl.TabIndex = 0;
             this.tbpDocumentControl.Text = "Document Control";
             // 
@@ -460,9 +462,9 @@
             this.tbpProjectClosure.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbpProjectClosure.Controls.Add(this.tbcProjectClosure);
             this.tbpProjectClosure.Controls.Add(this.gpbProjectClosure);
-            this.tbpProjectClosure.Location = new System.Drawing.Point(4, 21);
+            this.tbpProjectClosure.Location = new System.Drawing.Point(4, 24);
             this.tbpProjectClosure.Name = "tbpProjectClosure";
-            this.tbpProjectClosure.Size = new System.Drawing.Size(1482, 635);
+            this.tbpProjectClosure.Size = new System.Drawing.Size(1482, 632);
             this.tbpProjectClosure.TabIndex = 4;
             this.tbpProjectClosure.Text = "Project Closure";
             // 
@@ -483,10 +485,10 @@
             // 
             this.tbpDeliverables.BackColor = System.Drawing.Color.LightGray;
             this.tbpDeliverables.Controls.Add(this.dataGridViewDeliverables);
-            this.tbpDeliverables.Location = new System.Drawing.Point(4, 21);
+            this.tbpDeliverables.Location = new System.Drawing.Point(4, 24);
             this.tbpDeliverables.Name = "tbpDeliverables";
             this.tbpDeliverables.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpDeliverables.Size = new System.Drawing.Size(1412, 501);
+            this.tbpDeliverables.Size = new System.Drawing.Size(1412, 498);
             this.tbpDeliverables.TabIndex = 0;
             this.tbpDeliverables.Text = "Deliverables";
             // 
@@ -530,10 +532,10 @@
             // 
             this.tbpDocumentation.BackColor = System.Drawing.Color.LightGray;
             this.tbpDocumentation.Controls.Add(this.dataGridViewDocumentation);
-            this.tbpDocumentation.Location = new System.Drawing.Point(4, 21);
+            this.tbpDocumentation.Location = new System.Drawing.Point(4, 24);
             this.tbpDocumentation.Name = "tbpDocumentation";
             this.tbpDocumentation.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpDocumentation.Size = new System.Drawing.Size(1412, 501);
+            this.tbpDocumentation.Size = new System.Drawing.Size(1412, 498);
             this.tbpDocumentation.TabIndex = 1;
             this.tbpDocumentation.Text = "Documentation";
             // 
@@ -577,9 +579,9 @@
             // 
             this.tbpSuppliers.BackColor = System.Drawing.Color.LightGray;
             this.tbpSuppliers.Controls.Add(this.dataGridViewSippliers);
-            this.tbpSuppliers.Location = new System.Drawing.Point(4, 21);
+            this.tbpSuppliers.Location = new System.Drawing.Point(4, 24);
             this.tbpSuppliers.Name = "tbpSuppliers";
-            this.tbpSuppliers.Size = new System.Drawing.Size(1412, 501);
+            this.tbpSuppliers.Size = new System.Drawing.Size(1412, 498);
             this.tbpSuppliers.TabIndex = 2;
             this.tbpSuppliers.Text = "Suppliers";
             // 
@@ -623,9 +625,9 @@
             // 
             this.tbpResources.BackColor = System.Drawing.Color.LightGray;
             this.tbpResources.Controls.Add(this.dataGridViewResources);
-            this.tbpResources.Location = new System.Drawing.Point(4, 21);
+            this.tbpResources.Location = new System.Drawing.Point(4, 24);
             this.tbpResources.Name = "tbpResources";
-            this.tbpResources.Size = new System.Drawing.Size(1412, 501);
+            this.tbpResources.Size = new System.Drawing.Size(1412, 498);
             this.tbpResources.TabIndex = 3;
             this.tbpResources.Text = "Resources";
             // 
@@ -669,9 +671,9 @@
             // 
             this.tbpCommunication.BackColor = System.Drawing.Color.LightGray;
             this.tbpCommunication.Controls.Add(this.dataGridViewCommunications);
-            this.tbpCommunication.Location = new System.Drawing.Point(4, 21);
+            this.tbpCommunication.Location = new System.Drawing.Point(4, 24);
             this.tbpCommunication.Name = "tbpCommunication";
-            this.tbpCommunication.Size = new System.Drawing.Size(1412, 501);
+            this.tbpCommunication.Size = new System.Drawing.Size(1412, 498);
             this.tbpCommunication.TabIndex = 4;
             this.tbpCommunication.Text = "Communication";
             // 
@@ -753,9 +755,9 @@
             this.tbpApproval.Controls.Add(this.label3);
             this.tbpApproval.Controls.Add(this.label2);
             this.tbpApproval.Controls.Add(this.label1);
-            this.tbpApproval.Location = new System.Drawing.Point(4, 21);
+            this.tbpApproval.Location = new System.Drawing.Point(4, 24);
             this.tbpApproval.Name = "tbpApproval";
-            this.tbpApproval.Size = new System.Drawing.Size(1482, 635);
+            this.tbpApproval.Size = new System.Drawing.Size(1482, 632);
             this.tbpApproval.TabIndex = 5;
             this.tbpApproval.Text = "Approval";
             // 
@@ -765,7 +767,7 @@
             this.label6.ForeColor = System.Drawing.Color.Red;
             this.label6.Location = new System.Drawing.Point(14, 181);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(282, 12);
+            this.label6.Size = new System.Drawing.Size(370, 16);
             this.label6.TabIndex = 9;
             this.label6.Text = "this project and complete the handover activities described.";
             // 
@@ -776,7 +778,7 @@
             this.label5.ForeColor = System.Drawing.Color.Red;
             this.label5.Location = new System.Drawing.Point(15, 165);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(272, 12);
+            this.label5.Size = new System.Drawing.Size(356, 16);
             this.label5.TabIndex = 8;
             this.label5.Text = "By signing this document, I grant formal approval to close";
             // 
@@ -786,7 +788,7 @@
             this.lblApprovalRole.ForeColor = System.Drawing.Color.White;
             this.lblApprovalRole.Location = new System.Drawing.Point(106, 58);
             this.lblApprovalRole.Name = "lblApprovalRole";
-            this.lblApprovalRole.Size = new System.Drawing.Size(11, 12);
+            this.lblApprovalRole.Size = new System.Drawing.Size(17, 16);
             this.lblApprovalRole.TabIndex = 7;
             this.lblApprovalRole.Text = "...";
             // 
@@ -794,21 +796,21 @@
             // 
             this.txtDate.Location = new System.Drawing.Point(109, 123);
             this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(262, 20);
+            this.txtDate.Size = new System.Drawing.Size(262, 23);
             this.txtDate.TabIndex = 6;
             // 
             // txtSignature
             // 
             this.txtSignature.Location = new System.Drawing.Point(109, 85);
             this.txtSignature.Name = "txtSignature";
-            this.txtSignature.Size = new System.Drawing.Size(262, 20);
+            this.txtSignature.Size = new System.Drawing.Size(262, 23);
             this.txtSignature.TabIndex = 5;
             // 
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(109, 15);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(262, 20);
+            this.txtName.Size = new System.Drawing.Size(262, 23);
             this.txtName.TabIndex = 4;
             // 
             // label4
@@ -817,7 +819,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(14, 126);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 12);
+            this.label4.Size = new System.Drawing.Size(40, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Date:";
             // 
@@ -827,7 +829,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(14, 88);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 12);
+            this.label3.Size = new System.Drawing.Size(71, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Signature:";
             // 
@@ -837,7 +839,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(15, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 12);
+            this.label2.Size = new System.Drawing.Size(39, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Role:";
             // 
@@ -847,16 +849,38 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(15, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 12);
+            this.label1.Size = new System.Drawing.Size(48, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name:";
             // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(494, 10);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 13;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnExport
+            // 
+            this.btnExport.Location = new System.Drawing.Point(607, 14);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(115, 23);
+            this.btnExport.TabIndex = 14;
+            this.btnExport.Text = "Export to Word";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
             // ProjectClosureReportDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(1522, 733);
+            this.Controls.Add(this.btnExport);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tbcProjectClosureReport);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.txtProjectClosureReportProjectName);
@@ -864,6 +888,7 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.Name = "ProjectClosureReportDocumentForm";
             this.Text = "Project Closure Report";
+            this.Load += new System.EventHandler(this.ProjectClosureReportDocumentForm_Load);
             this.tbpProjectCompletion.ResumeLayout(false);
             this.gpbOutstandingItems.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOutstandingItems)).EndInit();
@@ -975,5 +1000,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tbpProjectCompletion;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnExport;
     }
 }

@@ -8,92 +8,153 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 {
     class ProjectClosureReportModel
     {
-        public string projectName { get; set; }
-        public List<DocumentInformation> documentInformation {get; set;}
-        public List<DocumentApproval> documentApproval { get; set; }
-        public string projectCompletionDescription { get; set; }
-        public List<CompletionCriteria> completionCriteria { get; set; }
-        public List<OutstandingItem> outstandingItems { get; set; }
-        public string projectClosureDescription { get; set; }
-        public List<Deliverable> deliverables { get; set; }
-        public List<Documentation> documentation { get; set; }
-        public List<Supplier> suppliers { get; set; }
-        public List<Resource> resources { get; set; }
-        public List<Communication> communications { get; set; }
-        public string approvalName { get; set; }
-        public string approvalRole { get; set; }
-        public string approvalSignature { get; set; }
-        public DateTime approvalDate { get; set; }
-        public class DocumentInformation
-        {
-            private string documentType { get; set; }
-            private string documentInformation { get; set; }
-
-        }
+        public string ProjectName { get; set; }
+        public string DocumentID { get; set; }
+        public string DocumentOwner { get; set; }
+        public string IssueDate { get; set; }
+        public string LastSavedDate { get; set; }
+        public string FileName { get; set; }
+        public List<DocumentHistory> DocumentHistories { get; set; }
+        public List<DocumentApproval> DocumentApprovals { get; set; }
+        public string ProjectCompletionDescription { get; set; }
+        public List<CompletionCriteria> CompletionCriterion { get; set; }
+        public List<OutstandingItem> OutstandingItems { get; set; }
+        public string ProjectClosureDescription { get; set; }
+        public List<Deliverable> Deliverables { get; set; }
+        public List<Documentation> Documentations { get; set; }
+        public List<Supplier> Suppliers { get; set; }
+        public List<Resource> Resources { get; set; }
+        public List<Communication> Communications { get; set; }
+        public string ApprovalName { get; set; }
+        public string ApprovalRole { get; set; }
+        public string ApprovalSignature { get; set; }
+        public string ApprovalDate { get; set; }
 
         public class DocumentHistory
         {
-            private string version { get; set; }
-            private DateTime issueDate { get; set; }
-            private string changes { get; set; }
+            public string Version { get; set; }
+            public string IssueDate { get; set; }
+            public string Changes { get; set; }
 
+            public DocumentHistory(string version, string issueDate, string changes)
+            {
+                this.Changes = changes;
+                this.Version = version;
+                this.IssueDate = issueDate;
+            }
         }
-
         public class DocumentApproval
         {
-            private string role { get; set; }
-            private string name { get; set; }
-            private string signature { get; set; }
-            private DateTime date { get; set; }
+            public string Role { get; set; }
+            public string Name { get; set; }
+            public string Signature { get; set; }
+            public string DateApproved { get; set; }
 
+            public DocumentApproval(string role, string name, string signature, string date)
+            {
+                this.Role = role;
+                this.Name = name;
+                this.Signature = signature;
+                this.DateApproved = date;
+            }
         }
 
         public class CompletionCriteria
         {
-            private string completionCategory { get; set; }
-            private string completionCriteria { get; set; }
-            private bool satisfied { get; set; }
+            public string CompletionCategory { get; set; }
+            public string completionCriteria { get; set; }
+            public string Satisfied { get; set; }
+
+            public CompletionCriteria(string completionCategory, string completionCriteria, string statisfied)
+            {
+                this.CompletionCategory = completionCategory;
+                this.completionCriteria = completionCriteria;
+                this.Satisfied = statisfied;
+            }
         }
 
         public class OutstandingItem
         {
-            private string outstandingItem { get; set; }
-            private string actionRequired { get; set; }
-            private DateTime completionDate { get; set; }
+            public string outstandingItem { get; set; }
+            public string ActionRequired { get; set; }
+            public string CompletionDate { get; set; }
+
+            public OutstandingItem(string outstandingItem, string actionRequired, string completionDate)
+            {
+                this.outstandingItem = outstandingItem;
+                this.ActionRequired = actionRequired;
+                this.CompletionDate = completionDate;
+            }
 
         }
         public class Deliverable
         {
-            private string projectDeliverable { get; set; }
-            private string actionRequired { get; set; }
-            private DateTime completionDate { get; set; } 
+            public string ProjectDeliverable { get; set; }
+            public string ActionRequired { get; set; }
+            public string CompletionDate { get; set; }
+
+            public Deliverable(string projectDeliverable, string actionRequired, string completionDate)
+            {
+                this.ProjectDeliverable = projectDeliverable;
+                this.ActionRequired = actionRequired;
+                this.CompletionDate = completionDate;
+            }
         }
 
         public class Documentation
         {
-            private string projectDocument { get; set; }
-            private string actionRequired { get; set; }
-            private DateTime completionDate { get; set; }
+            public string ProjectDocument { get; set; }
+            public string ActionRequired { get; set; }
+            public string CompletionDate { get; set; }
+
+            public Documentation(string projectDocument, string actionRequired, string completionDate)
+            {
+                this.ProjectDocument = projectDocument;
+                this.ActionRequired = actionRequired;
+                this.CompletionDate = completionDate;
+            }
         }
 
         public class Supplier
         {
-            private string supplierContract { get; set; }
-            private string actionRequired { get; set; }
-            private DateTime completionDate { get; set; }
+            public string SupplierContract { get; set; }
+            public string ActionRequired { get; set; }
+            public string CompletionDate { get; set; }
+
+            public Supplier(string supplierContract, string actionRequired, string completionDate)
+            {
+                this.SupplierContract = supplierContract;
+                this.ActionRequired = actionRequired;
+                this.CompletionDate = completionDate;
+            }
         }
         public class Resource
         {
-            private string projectResource { get; set; }
-            private string actionRequired { get; set; }
-            private DateTime completionDate { get; set; }
+            public string ProjectResource { get; set; }
+            public string ActionRequired { get; set; }
+            public string CompletionDate { get; set; }
+            public Resource(string projectResource, string actionRequired, string completionDate)
+            {
+                this.ProjectResource = projectResource;
+                this.ActionRequired = actionRequired;
+                this.CompletionDate = completionDate;
+            }
         }
         public class Communication
         {
-            private string audience { get; set; }
-            private string message { get; set; }
-            private string method { get; set; }
-            private DateTime communicationDate { get; set; }
+            public string Audience { get; set; }
+            public string Message { get; set; }
+            public string Method { get; set; }
+            public string CommunicationDate { get; set; }
+
+            public Communication(string audience, string message, string method, string communicationDate)
+            {
+                this.Audience = audience;
+                this.Message = message;
+                this.Method = method;
+                this.CommunicationDate = communicationDate;
+                
+            }
         }
     }
 }
