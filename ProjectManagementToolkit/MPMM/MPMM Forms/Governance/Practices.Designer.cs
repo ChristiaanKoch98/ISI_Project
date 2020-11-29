@@ -41,7 +41,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 16F);
-            this.label1.Location = new System.Drawing.Point(346, 13);
+            this.label1.Location = new System.Drawing.Point(346, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 26);
             this.label1.TabIndex = 0;
@@ -49,57 +49,58 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox1.Font = new System.Drawing.Font("Cambria", 11F);
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(13, 42);
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.textBox1.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
+            this.textBox1.Location = new System.Drawing.Point(13, 49);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(775, 75);
+            this.textBox1.Size = new System.Drawing.Size(775, 87);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 124);
+            this.label2.Location = new System.Drawing.Point(13, 145);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(325, 12);
+            this.label2.Size = new System.Drawing.Size(350, 14);
             this.label2.TabIndex = 2;
             this.label2.Text = "There are 208 Practices in 6 Categories according to the 17 Principles";
             // 
             // dataGridViewPractices
             // 
             this.dataGridViewPractices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPractices.Location = new System.Drawing.Point(13, 140);
+            this.dataGridViewPractices.Location = new System.Drawing.Point(13, 163);
             this.dataGridViewPractices.Name = "dataGridViewPractices";
-            this.dataGridViewPractices.Size = new System.Drawing.Size(775, 236);
+            this.dataGridViewPractices.Size = new System.Drawing.Size(775, 275);
             this.dataGridViewPractices.TabIndex = 3;
             // 
             // btnClose
             // 
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnClose.Location = new System.Drawing.Point(369, 382);
+            this.btnClose.Location = new System.Drawing.Point(369, 446);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.Size = new System.Drawing.Size(75, 27);
             this.btnClose.TabIndex = 15;
             this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // Practices
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(800, 415);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.ClientSize = new System.Drawing.Size(800, 484);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.dataGridViewPractices);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.White;
+            this.Font = new System.Drawing.Font("Helvetica Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Practices";
             this.Text = "Practices";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPractices)).EndInit();

@@ -35,33 +35,34 @@
             // 
             // pictureBoxPrinciplesandLegislationMatrix
             // 
-            this.pictureBoxPrinciplesandLegislationMatrix.Location = new System.Drawing.Point(13, 13);
+            this.pictureBoxPrinciplesandLegislationMatrix.Location = new System.Drawing.Point(13, 15);
             this.pictureBoxPrinciplesandLegislationMatrix.Name = "pictureBoxPrinciplesandLegislationMatrix";
-            this.pictureBoxPrinciplesandLegislationMatrix.Size = new System.Drawing.Size(775, 364);
+            this.pictureBoxPrinciplesandLegislationMatrix.Size = new System.Drawing.Size(775, 425);
             this.pictureBoxPrinciplesandLegislationMatrix.TabIndex = 0;
             this.pictureBoxPrinciplesandLegislationMatrix.TabStop = false;
             // 
             // btnClose
             // 
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnClose.Location = new System.Drawing.Point(361, 383);
+            this.btnClose.Location = new System.Drawing.Point(361, 447);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.Size = new System.Drawing.Size(75, 27);
             this.btnClose.TabIndex = 1;
             this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // PrinciplesandLegislationMatrix
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(800, 415);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.ClientSize = new System.Drawing.Size(800, 484);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.pictureBoxPrinciplesandLegislationMatrix);
-            this.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.White;
+            this.Font = new System.Drawing.Font("Helvetica Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "PrinciplesandLegislationMatrix";
             this.Text = "PrinciplesandLegislationMatrix";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPrinciplesandLegislationMatrix)).EndInit();

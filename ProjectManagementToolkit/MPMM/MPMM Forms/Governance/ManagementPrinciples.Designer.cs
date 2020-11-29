@@ -47,175 +47,190 @@
             // 
             // btnMP1
             // 
+            this.btnMP1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnMP1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnMP1.Location = new System.Drawing.Point(13, 13);
+            this.btnMP1.Location = new System.Drawing.Point(13, 15);
             this.btnMP1.Name = "btnMP1";
-            this.btnMP1.Size = new System.Drawing.Size(189, 42);
+            this.btnMP1.Size = new System.Drawing.Size(189, 49);
             this.btnMP1.TabIndex = 0;
             this.btnMP1.Text = "MP 01: Division of Work";
-            this.btnMP1.UseVisualStyleBackColor = true;
+            this.btnMP1.UseVisualStyleBackColor = false;
             this.btnMP1.Click += new System.EventHandler(this.btnMP1_Click);
             // 
             // btnMP2
             // 
+            this.btnMP2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnMP2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnMP2.Location = new System.Drawing.Point(13, 61);
+            this.btnMP2.Location = new System.Drawing.Point(13, 71);
             this.btnMP2.Name = "btnMP2";
-            this.btnMP2.Size = new System.Drawing.Size(189, 42);
+            this.btnMP2.Size = new System.Drawing.Size(189, 49);
             this.btnMP2.TabIndex = 1;
             this.btnMP2.Text = "MP 02: Authority";
-            this.btnMP2.UseVisualStyleBackColor = true;
+            this.btnMP2.UseVisualStyleBackColor = false;
             this.btnMP2.Click += new System.EventHandler(this.btnMP2_Click);
             // 
             // btnMP3
             // 
+            this.btnMP3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnMP3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnMP3.Location = new System.Drawing.Point(12, 109);
+            this.btnMP3.Location = new System.Drawing.Point(12, 127);
             this.btnMP3.Name = "btnMP3";
-            this.btnMP3.Size = new System.Drawing.Size(190, 42);
+            this.btnMP3.Size = new System.Drawing.Size(190, 49);
             this.btnMP3.TabIndex = 2;
             this.btnMP3.Text = "MP 03: Discipline";
-            this.btnMP3.UseVisualStyleBackColor = true;
+            this.btnMP3.UseVisualStyleBackColor = false;
             this.btnMP3.Click += new System.EventHandler(this.btnMP3_Click);
             // 
             // btnMP4
             // 
+            this.btnMP4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnMP4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnMP4.Location = new System.Drawing.Point(13, 157);
+            this.btnMP4.Location = new System.Drawing.Point(13, 183);
             this.btnMP4.Name = "btnMP4";
-            this.btnMP4.Size = new System.Drawing.Size(189, 42);
+            this.btnMP4.Size = new System.Drawing.Size(189, 49);
             this.btnMP4.TabIndex = 3;
             this.btnMP4.Text = "MP 04: Unity of Command";
-            this.btnMP4.UseVisualStyleBackColor = true;
+            this.btnMP4.UseVisualStyleBackColor = false;
             this.btnMP4.Click += new System.EventHandler(this.btnMP4_Click);
             // 
             // btnMP5
             // 
+            this.btnMP5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnMP5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnMP5.Location = new System.Drawing.Point(12, 205);
+            this.btnMP5.Location = new System.Drawing.Point(12, 239);
             this.btnMP5.Name = "btnMP5";
-            this.btnMP5.Size = new System.Drawing.Size(190, 42);
+            this.btnMP5.Size = new System.Drawing.Size(190, 49);
             this.btnMP5.TabIndex = 4;
             this.btnMP5.Text = "MP 05: Unity of Direction";
-            this.btnMP5.UseVisualStyleBackColor = true;
+            this.btnMP5.UseVisualStyleBackColor = false;
             this.btnMP5.Click += new System.EventHandler(this.btnMP5_Click);
             // 
             // btnMP6
             // 
+            this.btnMP6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnMP6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnMP6.Location = new System.Drawing.Point(13, 253);
+            this.btnMP6.Location = new System.Drawing.Point(13, 295);
             this.btnMP6.Name = "btnMP6";
-            this.btnMP6.Size = new System.Drawing.Size(189, 42);
+            this.btnMP6.Size = new System.Drawing.Size(189, 49);
             this.btnMP6.TabIndex = 5;
             this.btnMP6.Text = "MP 06: Subordinaton of individual interests to general interests";
-            this.btnMP6.UseVisualStyleBackColor = true;
+            this.btnMP6.UseVisualStyleBackColor = false;
             this.btnMP6.Click += new System.EventHandler(this.btnMP6_Click);
             // 
             // btnMP7
             // 
+            this.btnMP7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnMP7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnMP7.Location = new System.Drawing.Point(12, 301);
+            this.btnMP7.Location = new System.Drawing.Point(12, 351);
             this.btnMP7.Name = "btnMP7";
-            this.btnMP7.Size = new System.Drawing.Size(190, 42);
+            this.btnMP7.Size = new System.Drawing.Size(190, 49);
             this.btnMP7.TabIndex = 6;
             this.btnMP7.Text = "MP 07: Remuneration";
-            this.btnMP7.UseVisualStyleBackColor = true;
+            this.btnMP7.UseVisualStyleBackColor = false;
             this.btnMP7.Click += new System.EventHandler(this.btnMP7_Click);
             // 
             // btnClose
             // 
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnClose.Location = new System.Drawing.Point(713, 380);
+            this.btnClose.Location = new System.Drawing.Point(713, 443);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.Size = new System.Drawing.Size(75, 27);
             this.btnClose.TabIndex = 7;
             this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnMP8
             // 
+            this.btnMP8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnMP8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnMP8.Location = new System.Drawing.Point(208, 12);
+            this.btnMP8.Location = new System.Drawing.Point(208, 14);
             this.btnMP8.Name = "btnMP8";
-            this.btnMP8.Size = new System.Drawing.Size(190, 42);
+            this.btnMP8.Size = new System.Drawing.Size(190, 49);
             this.btnMP8.TabIndex = 8;
             this.btnMP8.Text = "MP 08: Centralization";
-            this.btnMP8.UseVisualStyleBackColor = true;
+            this.btnMP8.UseVisualStyleBackColor = false;
             this.btnMP8.Click += new System.EventHandler(this.btnMP8_Click);
             // 
             // btnMP9
             // 
+            this.btnMP9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnMP9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnMP9.Location = new System.Drawing.Point(208, 61);
+            this.btnMP9.Location = new System.Drawing.Point(208, 71);
             this.btnMP9.Name = "btnMP9";
-            this.btnMP9.Size = new System.Drawing.Size(190, 42);
+            this.btnMP9.Size = new System.Drawing.Size(190, 49);
             this.btnMP9.TabIndex = 9;
             this.btnMP9.Text = "MP 09: Scalar chain";
-            this.btnMP9.UseVisualStyleBackColor = true;
+            this.btnMP9.UseVisualStyleBackColor = false;
             this.btnMP9.Click += new System.EventHandler(this.btnMP9_Click);
             // 
             // btnMP10
             // 
+            this.btnMP10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnMP10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnMP10.Location = new System.Drawing.Point(208, 109);
+            this.btnMP10.Location = new System.Drawing.Point(208, 127);
             this.btnMP10.Name = "btnMP10";
-            this.btnMP10.Size = new System.Drawing.Size(190, 42);
+            this.btnMP10.Size = new System.Drawing.Size(190, 49);
             this.btnMP10.TabIndex = 10;
             this.btnMP10.Text = "MP 10: Order";
-            this.btnMP10.UseVisualStyleBackColor = true;
+            this.btnMP10.UseVisualStyleBackColor = false;
             this.btnMP10.Click += new System.EventHandler(this.btnMP10_Click);
             // 
             // btnMP11
             // 
+            this.btnMP11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnMP11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnMP11.Location = new System.Drawing.Point(208, 157);
+            this.btnMP11.Location = new System.Drawing.Point(208, 183);
             this.btnMP11.Name = "btnMP11";
-            this.btnMP11.Size = new System.Drawing.Size(190, 42);
+            this.btnMP11.Size = new System.Drawing.Size(190, 49);
             this.btnMP11.TabIndex = 11;
             this.btnMP11.Text = "MP 11: Equity";
-            this.btnMP11.UseVisualStyleBackColor = true;
+            this.btnMP11.UseVisualStyleBackColor = false;
             this.btnMP11.Click += new System.EventHandler(this.btnMP11_Click);
             // 
             // btnMP12
             // 
+            this.btnMP12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnMP12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnMP12.Location = new System.Drawing.Point(208, 205);
+            this.btnMP12.Location = new System.Drawing.Point(208, 239);
             this.btnMP12.Name = "btnMP12";
-            this.btnMP12.Size = new System.Drawing.Size(190, 42);
+            this.btnMP12.Size = new System.Drawing.Size(190, 49);
             this.btnMP12.TabIndex = 12;
             this.btnMP12.Text = "MP 12: Stability of tenure of personal";
-            this.btnMP12.UseVisualStyleBackColor = true;
+            this.btnMP12.UseVisualStyleBackColor = false;
             this.btnMP12.Click += new System.EventHandler(this.btnMP12_Click);
             // 
             // btnMP13
             // 
+            this.btnMP13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnMP13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnMP13.Location = new System.Drawing.Point(208, 253);
+            this.btnMP13.Location = new System.Drawing.Point(208, 295);
             this.btnMP13.Name = "btnMP13";
-            this.btnMP13.Size = new System.Drawing.Size(190, 42);
+            this.btnMP13.Size = new System.Drawing.Size(190, 49);
             this.btnMP13.TabIndex = 13;
             this.btnMP13.Text = "MP 13: Initiative";
-            this.btnMP13.UseVisualStyleBackColor = true;
+            this.btnMP13.UseVisualStyleBackColor = false;
             this.btnMP13.Click += new System.EventHandler(this.btnMP13_Click);
             // 
             // btnMP14
             // 
+            this.btnMP14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnMP14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnMP14.Location = new System.Drawing.Point(208, 301);
+            this.btnMP14.Location = new System.Drawing.Point(208, 351);
             this.btnMP14.Name = "btnMP14";
-            this.btnMP14.Size = new System.Drawing.Size(190, 42);
+            this.btnMP14.Size = new System.Drawing.Size(190, 49);
             this.btnMP14.TabIndex = 14;
             this.btnMP14.Text = "MP 014: Esprit de Corps";
-            this.btnMP14.UseVisualStyleBackColor = true;
+            this.btnMP14.UseVisualStyleBackColor = false;
             this.btnMP14.Click += new System.EventHandler(this.btnMP14_Click);
             // 
             // ManagementPrinciples
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(800, 415);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.ClientSize = new System.Drawing.Size(800, 484);
             this.Controls.Add(this.btnMP14);
             this.Controls.Add(this.btnMP13);
             this.Controls.Add(this.btnMP12);
@@ -231,8 +246,8 @@
             this.Controls.Add(this.btnMP3);
             this.Controls.Add(this.btnMP2);
             this.Controls.Add(this.btnMP1);
-            this.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.White;
+            this.Font = new System.Drawing.Font("Helvetica Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ManagementPrinciples";
             this.Text = "ManagementPrinciples";
             this.ResumeLayout(false);
