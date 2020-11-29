@@ -28,36 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewDocumentApprovals = new System.Windows.Forms.DataGridView();
+            this.AppRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AppName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AppChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AppDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewDocumentHistory = new System.Windows.Forms.DataGridView();
+            this.HistVersion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HistIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HistChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewDocumentInformation = new System.Windows.Forms.DataGridView();
+            this.InfoType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InfoInformation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label28 = new System.Windows.Forms.Label();
             this.dataGridViewQualityTargets = new System.Windows.Forms.DataGridView();
+            this.QualReq = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QualDel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QualCrit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QualStand = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -69,7 +82,13 @@
             this.txtConstraints = new System.Windows.Forms.TextBox();
             this.txtAssumptions = new System.Windows.Forms.TextBox();
             this.dataGridViewQCP = new System.Windows.Forms.DataGridView();
+            this.QualTech = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QualDesc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QualFreq = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewQAP = new System.Windows.Forms.DataGridView();
+            this.AssTech = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AssDesc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AssFreq = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
@@ -89,25 +108,7 @@
             this.label27 = new System.Windows.Forms.Label();
             this.txtProjectName = new System.Windows.Forms.TextBox();
             this.btnSaveProjectName = new System.Windows.Forms.Button();
-            this.InfoType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.InfoInformation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HistVersion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HistIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HistChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AppRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AppName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AppChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AppDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QualReq = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QualDel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QualCrit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QualStand = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AssTech = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AssDesc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AssFreq = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QualTech = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QualDesc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QualFreq = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_Export = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentApprovals)).BeginInit();
@@ -197,6 +198,46 @@
             this.dataGridViewDocumentApprovals.Size = new System.Drawing.Size(594, 114);
             this.dataGridViewDocumentApprovals.TabIndex = 2;
             // 
+            // AppRole
+            // 
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.AppRole.DefaultCellStyle = dataGridViewCellStyle1;
+            this.AppRole.HeaderText = "Role";
+            this.AppRole.MinimumWidth = 8;
+            this.AppRole.Name = "AppRole";
+            this.AppRole.Width = 150;
+            // 
+            // AppName
+            // 
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.AppName.DefaultCellStyle = dataGridViewCellStyle2;
+            this.AppName.HeaderText = "Name";
+            this.AppName.MinimumWidth = 8;
+            this.AppName.Name = "AppName";
+            this.AppName.Width = 150;
+            // 
+            // AppChanges
+            // 
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.AppChanges.DefaultCellStyle = dataGridViewCellStyle3;
+            this.AppChanges.HeaderText = "Changes";
+            this.AppChanges.MinimumWidth = 8;
+            this.AppChanges.Name = "AppChanges";
+            this.AppChanges.Width = 150;
+            // 
+            // AppDate
+            // 
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.AppDate.DefaultCellStyle = dataGridViewCellStyle4;
+            this.AppDate.HeaderText = "Date";
+            this.AppDate.MinimumWidth = 8;
+            this.AppDate.Name = "AppDate";
+            this.AppDate.Width = 150;
+            // 
             // dataGridViewDocumentHistory
             // 
             this.dataGridViewDocumentHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -210,6 +251,36 @@
             this.dataGridViewDocumentHistory.Size = new System.Drawing.Size(594, 109);
             this.dataGridViewDocumentHistory.TabIndex = 1;
             // 
+            // HistVersion
+            // 
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            this.HistVersion.DefaultCellStyle = dataGridViewCellStyle5;
+            this.HistVersion.HeaderText = "Version";
+            this.HistVersion.MinimumWidth = 8;
+            this.HistVersion.Name = "HistVersion";
+            this.HistVersion.Width = 150;
+            // 
+            // HistIssueDate
+            // 
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            this.HistIssueDate.DefaultCellStyle = dataGridViewCellStyle6;
+            this.HistIssueDate.HeaderText = "IssueDate";
+            this.HistIssueDate.MinimumWidth = 8;
+            this.HistIssueDate.Name = "HistIssueDate";
+            this.HistIssueDate.Width = 150;
+            // 
+            // HistChanges
+            // 
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            this.HistChanges.DefaultCellStyle = dataGridViewCellStyle7;
+            this.HistChanges.HeaderText = "Changes";
+            this.HistChanges.MinimumWidth = 8;
+            this.HistChanges.Name = "HistChanges";
+            this.HistChanges.Width = 150;
+            // 
             // dataGridViewDocumentInformation
             // 
             this.dataGridViewDocumentInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -221,6 +292,26 @@
             this.dataGridViewDocumentInformation.RowHeadersWidth = 62;
             this.dataGridViewDocumentInformation.Size = new System.Drawing.Size(594, 100);
             this.dataGridViewDocumentInformation.TabIndex = 0;
+            // 
+            // InfoType
+            // 
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            this.InfoType.DefaultCellStyle = dataGridViewCellStyle8;
+            this.InfoType.HeaderText = "Type";
+            this.InfoType.MinimumWidth = 8;
+            this.InfoType.Name = "InfoType";
+            this.InfoType.Width = 150;
+            // 
+            // InfoInformation
+            // 
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            this.InfoInformation.DefaultCellStyle = dataGridViewCellStyle9;
+            this.InfoInformation.HeaderText = "Information";
+            this.InfoInformation.MinimumWidth = 8;
+            this.InfoInformation.Name = "InfoInformation";
+            this.InfoInformation.Width = 150;
             // 
             // tabPage2
             // 
@@ -258,6 +349,46 @@
             this.dataGridViewQualityTargets.RowHeadersWidth = 62;
             this.dataGridViewQualityTargets.Size = new System.Drawing.Size(755, 317);
             this.dataGridViewQualityTargets.TabIndex = 0;
+            // 
+            // QualReq
+            // 
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            this.QualReq.DefaultCellStyle = dataGridViewCellStyle10;
+            this.QualReq.HeaderText = "Requirements";
+            this.QualReq.MinimumWidth = 8;
+            this.QualReq.Name = "QualReq";
+            this.QualReq.Width = 150;
+            // 
+            // QualDel
+            // 
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            this.QualDel.DefaultCellStyle = dataGridViewCellStyle11;
+            this.QualDel.HeaderText = "Deliverables";
+            this.QualDel.MinimumWidth = 8;
+            this.QualDel.Name = "QualDel";
+            this.QualDel.Width = 150;
+            // 
+            // QualCrit
+            // 
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            this.QualCrit.DefaultCellStyle = dataGridViewCellStyle12;
+            this.QualCrit.HeaderText = "Criteria";
+            this.QualCrit.MinimumWidth = 8;
+            this.QualCrit.Name = "QualCrit";
+            this.QualCrit.Width = 150;
+            // 
+            // QualStand
+            // 
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
+            this.QualStand.DefaultCellStyle = dataGridViewCellStyle13;
+            this.QualStand.HeaderText = "Standards";
+            this.QualStand.MinimumWidth = 8;
+            this.QualStand.Name = "QualStand";
+            this.QualStand.Width = 150;
             // 
             // tabPage3
             // 
@@ -399,6 +530,36 @@
             this.dataGridViewQCP.Size = new System.Drawing.Size(756, 84);
             this.dataGridViewQCP.TabIndex = 5;
             // 
+            // QualTech
+            // 
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
+            this.QualTech.DefaultCellStyle = dataGridViewCellStyle14;
+            this.QualTech.HeaderText = "Technique";
+            this.QualTech.MinimumWidth = 8;
+            this.QualTech.Name = "QualTech";
+            this.QualTech.Width = 150;
+            // 
+            // QualDesc
+            // 
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
+            this.QualDesc.DefaultCellStyle = dataGridViewCellStyle15;
+            this.QualDesc.HeaderText = "Description";
+            this.QualDesc.MinimumWidth = 8;
+            this.QualDesc.Name = "QualDesc";
+            this.QualDesc.Width = 150;
+            // 
+            // QualFreq
+            // 
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
+            this.QualFreq.DefaultCellStyle = dataGridViewCellStyle16;
+            this.QualFreq.HeaderText = "Frequency";
+            this.QualFreq.MinimumWidth = 8;
+            this.QualFreq.Name = "QualFreq";
+            this.QualFreq.Width = 150;
+            // 
             // dataGridViewQAP
             // 
             this.dataGridViewQAP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -411,6 +572,36 @@
             this.dataGridViewQAP.RowHeadersWidth = 62;
             this.dataGridViewQAP.Size = new System.Drawing.Size(756, 82);
             this.dataGridViewQAP.TabIndex = 4;
+            // 
+            // AssTech
+            // 
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Black;
+            this.AssTech.DefaultCellStyle = dataGridViewCellStyle17;
+            this.AssTech.HeaderText = "Technique";
+            this.AssTech.MinimumWidth = 8;
+            this.AssTech.Name = "AssTech";
+            this.AssTech.Width = 150;
+            // 
+            // AssDesc
+            // 
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
+            this.AssDesc.DefaultCellStyle = dataGridViewCellStyle18;
+            this.AssDesc.HeaderText = "Description";
+            this.AssDesc.MinimumWidth = 8;
+            this.AssDesc.Name = "AssDesc";
+            this.AssDesc.Width = 150;
+            // 
+            // AssFreq
+            // 
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Black;
+            this.AssFreq.DefaultCellStyle = dataGridViewCellStyle19;
+            this.AssFreq.HeaderText = "Frequency";
+            this.AssFreq.MinimumWidth = 8;
+            this.AssFreq.Name = "AssFreq";
+            this.AssFreq.Width = 150;
             // 
             // label5
             // 
@@ -638,195 +829,15 @@
             this.btnSaveProjectName.UseVisualStyleBackColor = true;
             this.btnSaveProjectName.Click += new System.EventHandler(this.btnSaveProjectName_Click);
             // 
-            // InfoType
+            // btn_Export
             // 
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
-            this.InfoType.DefaultCellStyle = dataGridViewCellStyle20;
-            this.InfoType.HeaderText = "Type";
-            this.InfoType.MinimumWidth = 8;
-            this.InfoType.Name = "InfoType";
-            this.InfoType.Width = 150;
-            // 
-            // InfoInformation
-            // 
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.Black;
-            this.InfoInformation.DefaultCellStyle = dataGridViewCellStyle21;
-            this.InfoInformation.HeaderText = "Information";
-            this.InfoInformation.MinimumWidth = 8;
-            this.InfoInformation.Name = "InfoInformation";
-            this.InfoInformation.Width = 150;
-            // 
-            // HistVersion
-            // 
-            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.Black;
-            this.HistVersion.DefaultCellStyle = dataGridViewCellStyle22;
-            this.HistVersion.HeaderText = "Version";
-            this.HistVersion.MinimumWidth = 8;
-            this.HistVersion.Name = "HistVersion";
-            this.HistVersion.Width = 150;
-            // 
-            // HistIssueDate
-            // 
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Black;
-            this.HistIssueDate.DefaultCellStyle = dataGridViewCellStyle23;
-            this.HistIssueDate.HeaderText = "IssueDate";
-            this.HistIssueDate.MinimumWidth = 8;
-            this.HistIssueDate.Name = "HistIssueDate";
-            this.HistIssueDate.Width = 150;
-            // 
-            // HistChanges
-            // 
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.Black;
-            this.HistChanges.DefaultCellStyle = dataGridViewCellStyle24;
-            this.HistChanges.HeaderText = "Changes";
-            this.HistChanges.MinimumWidth = 8;
-            this.HistChanges.Name = "HistChanges";
-            this.HistChanges.Width = 150;
-            // 
-            // AppRole
-            // 
-            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.Black;
-            this.AppRole.DefaultCellStyle = dataGridViewCellStyle25;
-            this.AppRole.HeaderText = "Role";
-            this.AppRole.MinimumWidth = 8;
-            this.AppRole.Name = "AppRole";
-            this.AppRole.Width = 150;
-            // 
-            // AppName
-            // 
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.Black;
-            this.AppName.DefaultCellStyle = dataGridViewCellStyle26;
-            this.AppName.HeaderText = "Name";
-            this.AppName.MinimumWidth = 8;
-            this.AppName.Name = "AppName";
-            this.AppName.Width = 150;
-            // 
-            // AppChanges
-            // 
-            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.Black;
-            this.AppChanges.DefaultCellStyle = dataGridViewCellStyle27;
-            this.AppChanges.HeaderText = "Changes";
-            this.AppChanges.MinimumWidth = 8;
-            this.AppChanges.Name = "AppChanges";
-            this.AppChanges.Width = 150;
-            // 
-            // AppDate
-            // 
-            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.Black;
-            this.AppDate.DefaultCellStyle = dataGridViewCellStyle28;
-            this.AppDate.HeaderText = "Date";
-            this.AppDate.MinimumWidth = 8;
-            this.AppDate.Name = "AppDate";
-            this.AppDate.Width = 150;
-            // 
-            // QualReq
-            // 
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.Black;
-            this.QualReq.DefaultCellStyle = dataGridViewCellStyle29;
-            this.QualReq.HeaderText = "Requirements";
-            this.QualReq.MinimumWidth = 8;
-            this.QualReq.Name = "QualReq";
-            this.QualReq.Width = 150;
-            // 
-            // QualDel
-            // 
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.Black;
-            this.QualDel.DefaultCellStyle = dataGridViewCellStyle30;
-            this.QualDel.HeaderText = "Deliverables";
-            this.QualDel.MinimumWidth = 8;
-            this.QualDel.Name = "QualDel";
-            this.QualDel.Width = 150;
-            // 
-            // QualCrit
-            // 
-            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.Black;
-            this.QualCrit.DefaultCellStyle = dataGridViewCellStyle31;
-            this.QualCrit.HeaderText = "Criteria";
-            this.QualCrit.MinimumWidth = 8;
-            this.QualCrit.Name = "QualCrit";
-            this.QualCrit.Width = 150;
-            // 
-            // QualStand
-            // 
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.Black;
-            this.QualStand.DefaultCellStyle = dataGridViewCellStyle32;
-            this.QualStand.HeaderText = "Standards";
-            this.QualStand.MinimumWidth = 8;
-            this.QualStand.Name = "QualStand";
-            this.QualStand.Width = 150;
-            // 
-            // AssTech
-            // 
-            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.Black;
-            this.AssTech.DefaultCellStyle = dataGridViewCellStyle33;
-            this.AssTech.HeaderText = "Technique";
-            this.AssTech.MinimumWidth = 8;
-            this.AssTech.Name = "AssTech";
-            this.AssTech.Width = 150;
-            // 
-            // AssDesc
-            // 
-            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.Black;
-            this.AssDesc.DefaultCellStyle = dataGridViewCellStyle34;
-            this.AssDesc.HeaderText = "Description";
-            this.AssDesc.MinimumWidth = 8;
-            this.AssDesc.Name = "AssDesc";
-            this.AssDesc.Width = 150;
-            // 
-            // AssFreq
-            // 
-            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.Black;
-            this.AssFreq.DefaultCellStyle = dataGridViewCellStyle35;
-            this.AssFreq.HeaderText = "Frequency";
-            this.AssFreq.MinimumWidth = 8;
-            this.AssFreq.Name = "AssFreq";
-            this.AssFreq.Width = 150;
-            // 
-            // QualTech
-            // 
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.Black;
-            this.QualTech.DefaultCellStyle = dataGridViewCellStyle36;
-            this.QualTech.HeaderText = "Technique";
-            this.QualTech.MinimumWidth = 8;
-            this.QualTech.Name = "QualTech";
-            this.QualTech.Width = 150;
-            // 
-            // QualDesc
-            // 
-            dataGridViewCellStyle37.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.Color.Black;
-            this.QualDesc.DefaultCellStyle = dataGridViewCellStyle37;
-            this.QualDesc.HeaderText = "Description";
-            this.QualDesc.MinimumWidth = 8;
-            this.QualDesc.Name = "QualDesc";
-            this.QualDesc.Width = 150;
-            // 
-            // QualFreq
-            // 
-            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.Color.Black;
-            this.QualFreq.DefaultCellStyle = dataGridViewCellStyle38;
-            this.QualFreq.HeaderText = "Frequency";
-            this.QualFreq.MinimumWidth = 8;
-            this.QualFreq.Name = "QualFreq";
-            this.QualFreq.Width = 150;
+            this.btn_Export.Location = new System.Drawing.Point(405, 7);
+            this.btn_Export.Name = "btn_Export";
+            this.btn_Export.Size = new System.Drawing.Size(157, 28);
+            this.btn_Export.TabIndex = 11;
+            this.btn_Export.Text = "Export to Word";
+            this.btn_Export.UseVisualStyleBackColor = true;
+            this.btn_Export.Click += new System.EventHandler(this.btn_Export_Click);
             // 
             // QualityPlanDocumentForm
             // 
@@ -834,6 +845,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(800, 415);
+            this.Controls.Add(this.btn_Export);
             this.Controls.Add(this.btnSaveProjectName);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label27);
@@ -925,5 +937,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn QualTech;
         private System.Windows.Forms.DataGridViewTextBoxColumn QualDesc;
         private System.Windows.Forms.DataGridViewTextBoxColumn QualFreq;
+        private System.Windows.Forms.Button btn_Export;
     }
 }
