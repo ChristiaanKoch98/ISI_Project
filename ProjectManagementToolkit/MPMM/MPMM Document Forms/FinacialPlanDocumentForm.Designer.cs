@@ -115,16 +115,6 @@
             this.txtConstraints = new System.Windows.Forms.TextBox();
             this.lblSchedule = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tabPageFinancialProcess = new System.Windows.Forms.TabPage();
-            this.btnSaveActivitiesRolesDocuments = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtDocuments = new System.Windows.Forms.TextBox();
-            this.txtRoles = new System.Windows.Forms.TextBox();
-            this.txtActivities = new System.Windows.Forms.TextBox();
-            this.tabPageAppendix = new System.Windows.Forms.TabPage();
-            this.btnSaveProjectName = new System.Windows.Forms.Button();
             this.ScheduleType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Jan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Feb = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -138,6 +128,17 @@
             this.Oct = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nov = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Dec = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPageFinancialProcess = new System.Windows.Forms.TabPage();
+            this.btnSaveActivitiesRolesDocuments = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtDocuments = new System.Windows.Forms.TextBox();
+            this.txtRoles = new System.Windows.Forms.TextBox();
+            this.txtActivities = new System.Windows.Forms.TextBox();
+            this.tabPageAppendix = new System.Windows.Forms.TabPage();
+            this.btnSaveProjectName = new System.Windows.Forms.Button();
+            this.btn_Export = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPageDocumentControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentApprovals)).BeginInit();
@@ -830,6 +831,136 @@
             this.dataGridView1.Size = new System.Drawing.Size(683, 199);
             this.dataGridView1.TabIndex = 0;
             // 
+            // ScheduleType
+            // 
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.Black;
+            this.ScheduleType.DefaultCellStyle = dataGridViewCellStyle22;
+            this.ScheduleType.HeaderText = "Type";
+            this.ScheduleType.MinimumWidth = 8;
+            this.ScheduleType.Name = "ScheduleType";
+            this.ScheduleType.Width = 150;
+            // 
+            // Jan
+            // 
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Black;
+            this.Jan.DefaultCellStyle = dataGridViewCellStyle23;
+            this.Jan.HeaderText = "Jan";
+            this.Jan.MinimumWidth = 8;
+            this.Jan.Name = "Jan";
+            this.Jan.Width = 150;
+            // 
+            // Feb
+            // 
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.Black;
+            this.Feb.DefaultCellStyle = dataGridViewCellStyle24;
+            this.Feb.HeaderText = "Feb";
+            this.Feb.MinimumWidth = 8;
+            this.Feb.Name = "Feb";
+            this.Feb.Width = 150;
+            // 
+            // Mar
+            // 
+            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.Black;
+            this.Mar.DefaultCellStyle = dataGridViewCellStyle25;
+            this.Mar.HeaderText = "Mar";
+            this.Mar.MinimumWidth = 8;
+            this.Mar.Name = "Mar";
+            this.Mar.Width = 150;
+            // 
+            // Apr
+            // 
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.Black;
+            this.Apr.DefaultCellStyle = dataGridViewCellStyle26;
+            this.Apr.HeaderText = "Apr";
+            this.Apr.MinimumWidth = 8;
+            this.Apr.Name = "Apr";
+            this.Apr.Width = 150;
+            // 
+            // May
+            // 
+            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.Black;
+            this.May.DefaultCellStyle = dataGridViewCellStyle27;
+            this.May.HeaderText = "May";
+            this.May.MinimumWidth = 8;
+            this.May.Name = "May";
+            this.May.Width = 150;
+            // 
+            // June
+            // 
+            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.Black;
+            this.June.DefaultCellStyle = dataGridViewCellStyle28;
+            this.June.HeaderText = "June";
+            this.June.MinimumWidth = 8;
+            this.June.Name = "June";
+            this.June.Width = 150;
+            // 
+            // July
+            // 
+            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.Black;
+            this.July.DefaultCellStyle = dataGridViewCellStyle29;
+            this.July.HeaderText = "July";
+            this.July.MinimumWidth = 8;
+            this.July.Name = "July";
+            this.July.Width = 150;
+            // 
+            // Aug
+            // 
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.Black;
+            this.Aug.DefaultCellStyle = dataGridViewCellStyle30;
+            this.Aug.HeaderText = "Aug";
+            this.Aug.MinimumWidth = 8;
+            this.Aug.Name = "Aug";
+            this.Aug.Width = 150;
+            // 
+            // Sept
+            // 
+            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.Black;
+            this.Sept.DefaultCellStyle = dataGridViewCellStyle31;
+            this.Sept.HeaderText = "Sept";
+            this.Sept.MinimumWidth = 8;
+            this.Sept.Name = "Sept";
+            this.Sept.Width = 150;
+            // 
+            // Oct
+            // 
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.Black;
+            this.Oct.DefaultCellStyle = dataGridViewCellStyle32;
+            this.Oct.HeaderText = "Oct";
+            this.Oct.MinimumWidth = 8;
+            this.Oct.Name = "Oct";
+            this.Oct.Width = 150;
+            // 
+            // Nov
+            // 
+            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.Black;
+            this.Nov.DefaultCellStyle = dataGridViewCellStyle33;
+            this.Nov.HeaderText = "Nov";
+            this.Nov.MinimumWidth = 8;
+            this.Nov.Name = "Nov";
+            this.Nov.Width = 150;
+            // 
+            // Dec
+            // 
+            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.Black;
+            this.Dec.DefaultCellStyle = dataGridViewCellStyle34;
+            this.Dec.HeaderText = "Dec";
+            this.Dec.MinimumWidth = 8;
+            this.Dec.Name = "Dec";
+            this.Dec.Width = 150;
+            // 
             // tabPageFinancialProcess
             // 
             this.tabPageFinancialProcess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -961,135 +1092,16 @@
             this.btnSaveProjectName.UseVisualStyleBackColor = true;
             this.btnSaveProjectName.Click += new System.EventHandler(this.btnSaveProjectName_Click);
             // 
-            // ScheduleType
+            // btn_Export
             // 
-            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.Black;
-            this.ScheduleType.DefaultCellStyle = dataGridViewCellStyle22;
-            this.ScheduleType.HeaderText = "Type";
-            this.ScheduleType.MinimumWidth = 8;
-            this.ScheduleType.Name = "ScheduleType";
-            this.ScheduleType.Width = 150;
-            // 
-            // Jan
-            // 
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Black;
-            this.Jan.DefaultCellStyle = dataGridViewCellStyle23;
-            this.Jan.HeaderText = "Jan";
-            this.Jan.MinimumWidth = 8;
-            this.Jan.Name = "Jan";
-            this.Jan.Width = 150;
-            // 
-            // Feb
-            // 
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.Black;
-            this.Feb.DefaultCellStyle = dataGridViewCellStyle24;
-            this.Feb.HeaderText = "Feb";
-            this.Feb.MinimumWidth = 8;
-            this.Feb.Name = "Feb";
-            this.Feb.Width = 150;
-            // 
-            // Mar
-            // 
-            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.Black;
-            this.Mar.DefaultCellStyle = dataGridViewCellStyle25;
-            this.Mar.HeaderText = "Mar";
-            this.Mar.MinimumWidth = 8;
-            this.Mar.Name = "Mar";
-            this.Mar.Width = 150;
-            // 
-            // Apr
-            // 
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.Black;
-            this.Apr.DefaultCellStyle = dataGridViewCellStyle26;
-            this.Apr.HeaderText = "Apr";
-            this.Apr.MinimumWidth = 8;
-            this.Apr.Name = "Apr";
-            this.Apr.Width = 150;
-            // 
-            // May
-            // 
-            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.Black;
-            this.May.DefaultCellStyle = dataGridViewCellStyle27;
-            this.May.HeaderText = "May";
-            this.May.MinimumWidth = 8;
-            this.May.Name = "May";
-            this.May.Width = 150;
-            // 
-            // June
-            // 
-            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.Black;
-            this.June.DefaultCellStyle = dataGridViewCellStyle28;
-            this.June.HeaderText = "June";
-            this.June.MinimumWidth = 8;
-            this.June.Name = "June";
-            this.June.Width = 150;
-            // 
-            // July
-            // 
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.Black;
-            this.July.DefaultCellStyle = dataGridViewCellStyle29;
-            this.July.HeaderText = "July";
-            this.July.MinimumWidth = 8;
-            this.July.Name = "July";
-            this.July.Width = 150;
-            // 
-            // Aug
-            // 
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.Black;
-            this.Aug.DefaultCellStyle = dataGridViewCellStyle30;
-            this.Aug.HeaderText = "Aug";
-            this.Aug.MinimumWidth = 8;
-            this.Aug.Name = "Aug";
-            this.Aug.Width = 150;
-            // 
-            // Sept
-            // 
-            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.Black;
-            this.Sept.DefaultCellStyle = dataGridViewCellStyle31;
-            this.Sept.HeaderText = "Sept";
-            this.Sept.MinimumWidth = 8;
-            this.Sept.Name = "Sept";
-            this.Sept.Width = 150;
-            // 
-            // Oct
-            // 
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.Black;
-            this.Oct.DefaultCellStyle = dataGridViewCellStyle32;
-            this.Oct.HeaderText = "Oct";
-            this.Oct.MinimumWidth = 8;
-            this.Oct.Name = "Oct";
-            this.Oct.Width = 150;
-            // 
-            // Nov
-            // 
-            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.Black;
-            this.Nov.DefaultCellStyle = dataGridViewCellStyle33;
-            this.Nov.HeaderText = "Nov";
-            this.Nov.MinimumWidth = 8;
-            this.Nov.Name = "Nov";
-            this.Nov.Width = 150;
-            // 
-            // Dec
-            // 
-            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.Black;
-            this.Dec.DefaultCellStyle = dataGridViewCellStyle34;
-            this.Dec.HeaderText = "Dec";
-            this.Dec.MinimumWidth = 8;
-            this.Dec.Name = "Dec";
-            this.Dec.Width = 150;
+            this.btn_Export.ForeColor = System.Drawing.Color.Black;
+            this.btn_Export.Location = new System.Drawing.Point(406, 8);
+            this.btn_Export.Name = "btn_Export";
+            this.btn_Export.Size = new System.Drawing.Size(119, 23);
+            this.btn_Export.TabIndex = 8;
+            this.btn_Export.Text = "Export to Word";
+            this.btn_Export.UseVisualStyleBackColor = true;
+            this.btn_Export.Click += new System.EventHandler(this.btn_Export_Click);
             // 
             // FinacialPlanDocumentForm
             // 
@@ -1097,6 +1109,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(800, 435);
+            this.Controls.Add(this.btn_Export);
             this.Controls.Add(this.btnSaveProjectName);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.txtProjectName);
@@ -1208,5 +1221,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Oct;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nov;
         private System.Windows.Forms.DataGridViewTextBoxColumn Dec;
+        private System.Windows.Forms.Button btn_Export;
     }
 }

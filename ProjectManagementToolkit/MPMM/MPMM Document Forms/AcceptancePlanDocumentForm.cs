@@ -658,7 +658,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .Bold(true)
                             .Font("Arial");
 
-                        document.InsertParagraph(String.Join(",\n", currentAcceptancePlanModel.constraints))
+                        document.InsertParagraph(String.Join(",\n", currentAcceptancePlanModel.activites))
                             .FontSize(11d)
                             .Color(Color.Black)
                             .Font("Arial").Alignment = Alignment.left;
