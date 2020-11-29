@@ -12,6 +12,8 @@ using Newtonsoft.Json;
 using System.Runtime.InteropServices;
 using ProjectManagementToolkit.Utility;
 using ProjectManagementToolkit.Properties;
+using Xceed.Words.NET;
+using Xceed.Document.NET;
 
 namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
@@ -20,6 +22,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         VersionControl<AcceptancePlanModel> versionControl;
         AcceptancePlanModel newAcceptancePlanModel;
         AcceptancePlanModel currentAcceptancePlanModel;
+
+        Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
+        Color TABLE_SUBHEADER_COLOR = Color.FromArgb(255, 255, 0);
 
         public AcceptancePlanDocumentForm()
         {
@@ -291,6 +296,419 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             foreach(string item in items)
             {
                 listBox.Items.Add(item);
+            }
+        }
+
+        private void btn_Export_Click(object sender, EventArgs e)
+        {
+            exportToWord();
+        }
+
+        private void exportToWord()
+        {
+            string path;
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                saveFileDialog.Filter = "Word 97-2003 Documents (*.doc)|*.doc|Word 2007 Documents (*.docx)|*.docx";
+                saveFileDialog.FilterIndex = 2;
+                saveFileDialog.RestoreDirectory = true;
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    path = saveFileDialog.FileName;
+                    using (var document = DocX.Create(path))
+                    {
+                        #region Heading
+                        for (int i = 0; i < 11; i++)
+                        {
+                            document.InsertParagraph("")
+                                .Font("Arial")
+                                .Bold(true)
+                                .FontSize(22d).Alignment = Alignment.left;
+                        }
+
+                        document.InsertParagraph("Acceptance Plan \nFor " + txtProjectName.Text)
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(22d).Alignment = Alignment.left;
+                        document.InsertSectionPageBreak();
+                        document.InsertParagraph("Document Control\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        document.InsertParagraph("")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        document.InsertParagraph("Document Information\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        #endregion
+
+                        #region Document basics
+                        var documentInfoTable = document.AddTable(6, 2);
+                        documentInfoTable.Rows[0].Cells[0].Paragraphs[0].Append("").Bold(true).Color(Color.White);
+                        documentInfoTable.Rows[0].Cells[1].Paragraphs[0].Append("Information").Bold(true).Color(Color.White);
+                        documentInfoTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentInfoTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+
+                        documentInfoTable.Rows[1].Cells[0].Paragraphs[0].Append("Document ID");
+                        documentInfoTable.Rows[1].Cells[1].Paragraphs[0].Append(currentAcceptancePlanModel.documentID);
+
+                        documentInfoTable.Rows[2].Cells[0].Paragraphs[0].Append("Document Owner");
+                        documentInfoTable.Rows[2].Cells[1].Paragraphs[0].Append(currentAcceptancePlanModel.documentOwner);
+
+                        documentInfoTable.Rows[3].Cells[0].Paragraphs[0].Append("Issue Date");
+                        documentInfoTable.Rows[3].Cells[1].Paragraphs[0].Append(currentAcceptancePlanModel.issueDate);
+
+                        documentInfoTable.Rows[4].Cells[0].Paragraphs[0].Append("Last Saved Date");
+                        documentInfoTable.Rows[4].Cells[1].Paragraphs[0].Append(currentAcceptancePlanModel.lastSavedDate);
+
+                        documentInfoTable.Rows[5].Cells[0].Paragraphs[0].Append("File Name");
+                        documentInfoTable.Rows[5].Cells[1].Paragraphs[0].Append(currentAcceptancePlanModel.fileName);
+                        documentInfoTable.SetWidths(new float[] { 493, 1094 });
+                        document.InsertTable(documentInfoTable);
+
+                        document.InsertParagraph("\nDocument History\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+
+                        var documentHistoryTable = document.AddTable(currentAcceptancePlanModel.documentHistories.Count + 1, 3);
+                        documentHistoryTable.Rows[0].Cells[0].Paragraphs[0].Append("Version")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[1].Paragraphs[0].Append("Issue Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[2].Paragraphs[0].Append("Changes")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentHistoryTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentHistoryTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        for (int i = 1; i < currentAcceptancePlanModel.documentHistories.Count + 1; i++)
+                        {
+                            documentHistoryTable.Rows[i].Cells[0].Paragraphs[0].Append(currentAcceptancePlanModel.documentHistories[i - 1].version);
+                            documentHistoryTable.Rows[i].Cells[1].Paragraphs[0].Append(currentAcceptancePlanModel.documentHistories[i - 1].issueDate);
+                            documentHistoryTable.Rows[i].Cells[2].Paragraphs[0].Append(currentAcceptancePlanModel.documentHistories[i - 1].changes);
+
+                        }
+
+                        documentHistoryTable.SetWidths(new float[] { 190, 303, 1094 });
+                        document.InsertTable(documentHistoryTable);
+
+                        document.InsertParagraph("\nDocument Approvals\n")
+                           .Font("Arial")
+                           .Bold(true)
+                           .FontSize(14d).Alignment = Alignment.left;
+
+                        var documentApprovalTable = document.AddTable(currentAcceptancePlanModel.documentApprovals.Count + 1, 4);
+                        documentApprovalTable.Rows[0].Cells[0].Paragraphs[0].Append("Role")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[1].Paragraphs[0].Append("Name")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[2].Paragraphs[0].Append("Signature")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[3].Paragraphs[0].Append("Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentAcceptancePlanModel.documentApprovals.Count + 1; i++)
+                        {
+                            documentApprovalTable.Rows[i].Cells[0].Paragraphs[0].Append(currentAcceptancePlanModel.documentApprovals[i - 1].role);
+                            documentApprovalTable.Rows[i].Cells[1].Paragraphs[0].Append(currentAcceptancePlanModel.documentApprovals[i - 1].name);
+                            documentApprovalTable.Rows[i].Cells[2].Paragraphs[0].Append(currentAcceptancePlanModel.documentApprovals[i - 1].changes);
+                            documentApprovalTable.Rows[i].Cells[3].Paragraphs[0].Append(currentAcceptancePlanModel.documentApprovals[i - 1].date);
+                        }
+                        documentApprovalTable.SetWidths(new float[] { 493, 332, 508, 254 });
+                        document.InsertTable(documentApprovalTable);
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
+
+                        var p = document.InsertParagraph();
+                        var title = p.InsertParagraphBeforeSelf("Table of contents").Bold().FontSize(20);
+
+                        var tocSwitches = new Dictionary<TableOfContentsSwitches, string>()
+                        {
+                            { TableOfContentsSwitches.O, "1-3"},
+                            { TableOfContentsSwitches.U, ""},
+                            { TableOfContentsSwitches.Z, ""},
+                            { TableOfContentsSwitches.H, ""}
+                        };
+
+                        document.InsertTableOfContents(p, "", tocSwitches);
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
+                        #endregion
+
+                        #region Acceptance Criteria
+                        var acceptanceCritHeading = document.InsertParagraph("1 Acceptance Criteria")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        acceptanceCritHeading.StyleId = "Heading1";
+
+                        #region Milestones
+                        var milestonesSubHeading = acceptanceCritHeading.InsertParagraphAfterSelf("1.1 Milestones")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        milestonesSubHeading.StyleId = "Heading2";
+
+                        var documentMilestoneTable = document.AddTable(currentAcceptancePlanModel.documentMilestones.Count + 1, 3);
+                        documentMilestoneTable.Rows[0].Cells[0].Paragraphs[0].Append("Milestone Name")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentMilestoneTable.Rows[0].Cells[1].Paragraphs[0].Append("Milestone Description")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentMilestoneTable.Rows[0].Cells[2].Paragraphs[0].Append("Milestone Date")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        documentMilestoneTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentMilestoneTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentMilestoneTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentAcceptancePlanModel.documentMilestones.Count + 1; i++)
+                        {
+                            documentMilestoneTable.Rows[i].Cells[0].Paragraphs[0].Append(currentAcceptancePlanModel.documentMilestones[i - 1].name);
+                            documentMilestoneTable.Rows[i].Cells[1].Paragraphs[0].Append(currentAcceptancePlanModel.documentMilestones[i - 1].description);
+                            documentMilestoneTable.Rows[i].Cells[2].Paragraphs[0].Append(currentAcceptancePlanModel.documentMilestones[i - 1].date);
+                        }
+
+                        documentMilestoneTable.SetWidths(new float[] { 394, 762, 419 });
+                        document.InsertTable(documentMilestoneTable);
+                        #endregion
+
+                        #region Criteria
+                        var criteriaSubHeading = document.InsertParagraph("1.2 Criteria")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        criteriaSubHeading.StyleId = "Heading2";
+
+                        var documentCriteriaTable = document.AddTable(currentAcceptancePlanModel.documentCriterias.Count + 1, 3);
+                        documentCriteriaTable.Rows[0].Cells[0].Paragraphs[0].Append("Milestone Name")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentCriteriaTable.Rows[0].Cells[1].Paragraphs[0].Append("Acceptance Criteria")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentCriteriaTable.Rows[0].Cells[2].Paragraphs[0].Append("Acceptance Standards")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        documentCriteriaTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentCriteriaTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentCriteriaTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentAcceptancePlanModel.documentCriterias.Count + 1; i++)
+                        {
+                            documentCriteriaTable.Rows[i].Cells[0].Paragraphs[0].Append(currentAcceptancePlanModel.documentCriterias[i - 1].name);
+                            documentCriteriaTable.Rows[i].Cells[1].Paragraphs[0].Append(currentAcceptancePlanModel.documentCriterias[i - 1].criteria);
+                            documentCriteriaTable.Rows[i].Cells[2].Paragraphs[0].Append(currentAcceptancePlanModel.documentCriterias[i - 1].acceptanceStandards);
+                        }
+
+                        documentCriteriaTable.SetWidths(new float[] { 394, 762, 419 });
+                        document.InsertTable(documentCriteriaTable);
+                        #endregion
+                        #endregion
+
+                        #region Acceptance Plan
+                        var acceptancePlanHeading = document.InsertParagraph("2 Acceptance Plan")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        acceptancePlanHeading.StyleId = "Heading1";
+
+                        #region Schedule
+                        var scheduleSubHeading = acceptancePlanHeading.InsertParagraphAfterSelf("2.1 Schedule")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        scheduleSubHeading.StyleId = "Heading2";
+                        var documentScheduleTable = document.AddTable(currentAcceptancePlanModel.documentSchedules.Count + 2, 6);
+
+                        documentScheduleTable.Rows[0].MergeCells(0, 2);
+                        documentScheduleTable.Rows[0].MergeCells(1, 3);
+
+                        documentScheduleTable.Rows[0].Cells[0].Paragraphs[0].Append("Milestone")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentScheduleTable.Rows[0].Cells[1].Paragraphs[0].Append("Acceptance Tests")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        documentScheduleTable.Rows[1].Cells[0].Paragraphs[0].Append("Milestone")
+                            .Bold(true)
+                            .Color(Color.Black);
+                        documentScheduleTable.Rows[1].Cells[1].Paragraphs[0].Append("Deliverables")
+                            .Bold(true)
+                            .Color(Color.Black);
+                        documentScheduleTable.Rows[1].Cells[2].Paragraphs[0].Append("Date")
+                            .Bold(true)
+                            .Color(Color.Black);
+                        documentScheduleTable.Rows[1].Cells[3].Paragraphs[0].Append("Review Method")
+                            .Bold(true)
+                            .Color(Color.Black);
+                        documentScheduleTable.Rows[1].Cells[4].Paragraphs[0].Append("Reviewers")
+                            .Bold(true)
+                            .Color(Color.Black);
+                        documentScheduleTable.Rows[1].Cells[5].Paragraphs[0].Append("Date")
+                            .Bold(true)
+                            .Color(Color.Black);
+
+                        documentScheduleTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentScheduleTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+
+                        documentScheduleTable.Rows[1].Cells[0].FillColor = TABLE_SUBHEADER_COLOR;
+                        documentScheduleTable.Rows[1].Cells[1].FillColor = TABLE_SUBHEADER_COLOR;
+                        documentScheduleTable.Rows[1].Cells[2].FillColor = TABLE_SUBHEADER_COLOR;
+                        documentScheduleTable.Rows[1].Cells[3].FillColor = TABLE_SUBHEADER_COLOR;
+                        documentScheduleTable.Rows[1].Cells[4].FillColor = TABLE_SUBHEADER_COLOR;
+                        documentScheduleTable.Rows[1].Cells[5].FillColor = TABLE_SUBHEADER_COLOR;
+
+                        for (int i = 2; i < currentAcceptancePlanModel.documentSchedules.Count + 2; i++)
+                        {
+                            documentScheduleTable.Rows[i].Cells[0].Paragraphs[0].Append(currentAcceptancePlanModel.documentSchedules[i - 2].milestone);
+                            documentScheduleTable.Rows[i].Cells[1].Paragraphs[0].Append(currentAcceptancePlanModel.documentSchedules[i - 2].deliverables);
+                            documentScheduleTable.Rows[i].Cells[2].Paragraphs[0].Append(currentAcceptancePlanModel.documentSchedules[i - 2].milestoneDate);
+                            documentScheduleTable.Rows[i].Cells[3].Paragraphs[0].Append(currentAcceptancePlanModel.documentSchedules[i - 2].reviewMethod);
+                            documentScheduleTable.Rows[i].Cells[4].Paragraphs[0].Append(currentAcceptancePlanModel.documentSchedules[i - 2].reviewers);
+                            documentScheduleTable.Rows[i].Cells[5].Paragraphs[0].Append(currentAcceptancePlanModel.documentSchedules[i - 2].acceptanceDate);
+                        }
+
+                        document.InsertTable(documentScheduleTable);
+                        #endregion
+
+                        #region Assumptions
+                        var assumptionsSubHeading = document.InsertParagraph("2.2 Assumptions")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        document.InsertParagraph(String.Join(",\n", currentAcceptancePlanModel.assumptions))
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+
+                        assumptionsSubHeading.StyleId = "Heading2";
+                        #endregion
+
+                        #region Constraints
+                        var constraintsSubHeading = document.InsertParagraph("2.3 Constraints")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        document.InsertParagraph(String.Join(",\n", currentAcceptancePlanModel.constraints))
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+
+                        constraintsSubHeading.StyleId = "Heading2";
+                        #endregion
+                        #endregion
+
+                        #region Acceptance Process
+                        var acceptanceProcessHeading = document.InsertParagraph("3 Acceptance Process")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        acceptanceProcessHeading.StyleId = "Heading1";
+
+                        #region Activities
+                        var activitiestSubHeading = document.InsertParagraph("3.1 Activities")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        document.InsertParagraph(String.Join(",\n", currentAcceptancePlanModel.constraints))
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+                        activitiestSubHeading.StyleId = "Heading2";
+                        #endregion
+
+                        #region Roles
+                        var rolesSubHeading = document.InsertParagraph("3.2 Roles")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        document.InsertParagraph(String.Join(",\n", currentAcceptancePlanModel.roles))
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+                        rolesSubHeading.StyleId = "Heading2";
+                        #endregion
+
+                        #region Documents
+                        var documentsSubHeading = document.InsertParagraph("3.3 Documents")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        document.InsertParagraph(String.Join(",\n", currentAcceptancePlanModel.documents))
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+                        documentsSubHeading.StyleId = "Heading2";
+                        #endregion
+                        #endregion
+
+                        try
+                        {
+                            document.Save();
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("The selected File is open.", "Close File", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
             }
         }
     }
