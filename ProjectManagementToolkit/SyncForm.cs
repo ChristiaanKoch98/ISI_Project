@@ -128,45 +128,61 @@ namespace ProjectManagementToolkit.MPMM
             return localDocuments;
         }
 
-        private async Task<bool> syncDocument(string document)
+        private bool syncDocument(string document)
         {
             string localJsonString = JsonHelper.loadDocument(Settings.Default.ProjectID, document);
-            string serverJsonString = await getServerDocument(document);
+            string serverJsonString = getServerDocument(document);
             //string serverJsonString = serverDocuments[serverDocuments.IndexOf(document)];
             string documentJson = "";
-            
+            MessageBox.Show(serverJsonString);
+            JObject localJson, serverJson;
+
             if (serverJsonString == null)
             {
                 MessageBox.Show("No document on server");
                 serverJsonString = localJsonString;
+                localJson = JObject.Parse(localJsonString);
+                serverJson = localJson;
+            }
+            else
+            {
+                localJson = JObject.Parse(localJsonString);
+                JArray serverJsonArray = JArray.Parse(serverJsonString);
+                serverJson = serverJsonArray.First.ToObject<JObject>();
             }
 
-            JObject localJson = JObject.Parse(localJsonString);
-            JObject serverJson = JObject.Parse(serverJsonString);
+
+            //Get Latest Document Object from local and server
+            var localLatest = localJson["DocumentModels"].OrderByDescending(x => x["DateModified"])
+                                                            .FirstOrDefault().DeepClone()
+                                                            .ToObject<JObject>();
+
+            var serverLatest = serverJson["DocumentModels"].OrderByDescending(x => x["DateModified"])
+                                                            .FirstOrDefault().DeepClone()
+                                                            .ToObject<JObject>();
             
-            //Server = Local
-            //Do Nothing
-            var localLatest = localJson["DocumentModels"].OrderByDescending(x => x["DateModified"]).FirstOrDefault().ToObject<JObject>();
-            var serverLatest = serverJson["DocumentModels"].OrderByDescending(x => x["DateModified"]).FirstOrDefault().ToObject<JObject>();
-            MessageBox.Show("LocalLatest: " + localLatest.ToString());
-            var temp = localJson["DocumentModels"][0];
+            var temp = localLatest.DeepClone().ToObject<JObject>();
             
             //Server ahead of Local
             //Merge Server with Local version and save locally
             if (serverLatest["DateModified"].ToObject<DateTime>() > localLatest["DateModified"].ToObject<DateTime>())
             {
-                MessageBox.Show("Server is Latest");
-                serverLatest.Merge(localLatest, new JsonMergeSettings
-                {
-                    MergeArrayHandling = MergeArrayHandling.Union
-                });
+                JObject updatedDocument = new JObject();
+                updatedDocument.Add("DocumentObject", localLatest["DocumentObject"]);
+                updatedDocument.Add("VersionID", generateID());
+                updatedDocument.Add("DateModified", DateTime.Now);
 
-                temp["DocumentObject"] = serverLatest;
-                temp["VersionID"] = generateID();
-                temp["DateModified"] = DateTime.Now;
+                MessageBox.Show("updatedDocument: " + updatedDocument.ToString());
 
-                serverJson["DocumentModels"].ToObject<JObject>().Add("DocumentObject", temp);
+                MessageBox.Show("New Local Latest: " + localLatest.ToString());
 
+                JArray documentModels = serverJson["DocumentModels"].ToObject<JArray>();
+                documentModels.Add(updatedDocument);
+                MessageBox.Show("DocumentModels Json: " + documentModels.ToString());
+
+                serverJson["DocumentModels"] = documentModels;
+
+                MessageBox.Show("Server Json: " + JsonConvert.SerializeObject(serverJson));
                 documentJson = JsonConvert.SerializeObject(serverJson);
             }
             //Local ahead of Server
@@ -174,22 +190,33 @@ namespace ProjectManagementToolkit.MPMM
             else if (localLatest["DateModified"].ToObject<DateTime>() > serverLatest["DateModified"].ToObject<DateTime>())
             {
                 MessageBox.Show("Local is Latest");
-                localLatest.Merge(serverLatest, new JsonMergeSettings
+                MessageBox.Show("LocalLatest: " + localLatest.ToString());
+                serverLatest.Merge(localLatest, new JsonMergeSettings
                 {
                     MergeArrayHandling = MergeArrayHandling.Union
                 });
 
-                temp["DocumentObject"] = localLatest;
-                temp["VersionID"] = generateID();
-                temp["DateModified"] = DateTime.Now;
+                JObject updatedDocument = new JObject();
+                updatedDocument.Add("DocumentObject", localLatest["DocumentObject"]);
+                updatedDocument.Add("VersionID", generateID());
+                updatedDocument.Add("DateModified", DateTime.Now);
 
-                localJson["DocumentModels"].ToObject<JObject>().Add("DocumentObject", temp); ;
+                MessageBox.Show("updatedDocument: " + updatedDocument.ToString());
 
-                documentJson = JsonConvert.SerializeObject(localJson);
+                MessageBox.Show("New Local Latest: " + localLatest.ToString());
+
+                JArray documentModels = serverJson["DocumentModels"].ToObject<JArray>();
+                documentModels.Add(updatedDocument);
+                MessageBox.Show("DocumentModels Json: " + documentModels.ToString());
+
+                serverJson["DocumentModels"] = documentModels;
+
+                MessageBox.Show("Server Json: " + JsonConvert.SerializeObject(serverJson));
+                documentJson = JsonConvert.SerializeObject(serverJson);
             }
             //Server = Local
             //Keep same
-            else if (localLatest["VersionID"].ToObject<DateTime>() == serverLatest["VersionID"].ToObject<DateTime>())
+            else if (localLatest["DateModified"].ToObject<DateTime>() == serverLatest["DateModified"].ToObject<DateTime>())
             {
                 MessageBox.Show("Local = Server");
                 documentJson = JsonConvert.SerializeObject(localJson);
@@ -223,13 +250,13 @@ namespace ProjectManagementToolkit.MPMM
         }
 
 
-        private async Task<string> getServerDocument(string document)
+        private string getServerDocument(string document)
         {
             try
             {
                 string uri = "http://localhost:3000/document/" + Settings.Default.ProjectID + "/" + document;
                 MessageBox.Show(uri);
-                HttpResponseMessage responseMessage = await client.GetAsync(uri);
+                HttpResponseMessage responseMessage = client.GetAsync(uri).Result;
                 var jsonResponse = responseMessage.Content.ReadAsStringAsync().Result;
                 int statusCode = responseMessage.StatusCode.GetHashCode();
                 MessageBox.Show("Get Server Document (" + statusCode.ToString() + ") = " + jsonResponse.ToString());
