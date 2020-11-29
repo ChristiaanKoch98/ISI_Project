@@ -56,10 +56,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblTimesheetProjectName = new System.Windows.Forms.Label();
             this.dataGridViewTimesheetForm = new System.Windows.Forms.DataGridView();
-            this.txtTimesheetFormTeamMember = new System.Windows.Forms.TextBox();
-            this.txtTimesheetFormProjectManager = new System.Windows.Forms.TextBox();
-            this.txtTimesheetFormProjectName = new System.Windows.Forms.TextBox();
-            this.btnSaveProjectName = new System.Windows.Forms.Button();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StartTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EndTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,6 +65,11 @@
             this.PercentComplete = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PercentEndComplete = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Result = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtTimesheetFormTeamMember = new System.Windows.Forms.TextBox();
+            this.txtTimesheetFormProjectManager = new System.Windows.Forms.TextBox();
+            this.txtTimesheetFormProjectName = new System.Windows.Forms.TextBox();
+            this.btnSaveProjectName = new System.Windows.Forms.Button();
+            this.btn_Export = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTimesheetForm)).BeginInit();
             this.SuspendLayout();
@@ -158,6 +159,7 @@
             this.dateTimePickerApprovedBy.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateTimePickerApprovedBy.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerApprovedBy.Location = new System.Drawing.Point(569, 321);
             this.dateTimePickerApprovedBy.Name = "dateTimePickerApprovedBy";
             this.dateTimePickerApprovedBy.Size = new System.Drawing.Size(200, 27);
@@ -219,6 +221,7 @@
             this.dateTimePickerSubmittedBy.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateTimePickerSubmittedBy.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerSubmittedBy.Location = new System.Drawing.Point(194, 324);
             this.dateTimePickerSubmittedBy.Name = "dateTimePickerSubmittedBy";
             this.dateTimePickerSubmittedBy.Size = new System.Drawing.Size(200, 27);
@@ -333,56 +336,6 @@
             this.dataGridViewTimesheetForm.Size = new System.Drawing.Size(761, 168);
             this.dataGridViewTimesheetForm.TabIndex = 6;
             // 
-            // txtTimesheetFormTeamMember
-            // 
-            this.txtTimesheetFormTeamMember.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTimesheetFormTeamMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtTimesheetFormTeamMember.ForeColor = System.Drawing.Color.White;
-            this.txtTimesheetFormTeamMember.Location = new System.Drawing.Point(184, 71);
-            this.txtTimesheetFormTeamMember.Name = "txtTimesheetFormTeamMember";
-            this.txtTimesheetFormTeamMember.Size = new System.Drawing.Size(100, 27);
-            this.txtTimesheetFormTeamMember.TabIndex = 5;
-            this.txtTimesheetFormTeamMember.Text = "Team Member";
-            // 
-            // txtTimesheetFormProjectManager
-            // 
-            this.txtTimesheetFormProjectManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTimesheetFormProjectManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtTimesheetFormProjectManager.ForeColor = System.Drawing.Color.White;
-            this.txtTimesheetFormProjectManager.Location = new System.Drawing.Point(184, 45);
-            this.txtTimesheetFormProjectManager.Name = "txtTimesheetFormProjectManager";
-            this.txtTimesheetFormProjectManager.Size = new System.Drawing.Size(100, 27);
-            this.txtTimesheetFormProjectManager.TabIndex = 4;
-            this.txtTimesheetFormProjectManager.Text = "Project Manager";
-            // 
-            // txtTimesheetFormProjectName
-            // 
-            this.txtTimesheetFormProjectName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTimesheetFormProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtTimesheetFormProjectName.ForeColor = System.Drawing.Color.White;
-            this.txtTimesheetFormProjectName.Location = new System.Drawing.Point(184, 19);
-            this.txtTimesheetFormProjectName.Name = "txtTimesheetFormProjectName";
-            this.txtTimesheetFormProjectName.Size = new System.Drawing.Size(100, 27);
-            this.txtTimesheetFormProjectName.TabIndex = 3;
-            this.txtTimesheetFormProjectName.Text = "Project Name";
-            // 
-            // btnSaveProjectName
-            // 
-            this.btnSaveProjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSaveProjectName.Location = new System.Drawing.Point(280, 10);
-            this.btnSaveProjectName.Name = "btnSaveProjectName";
-            this.btnSaveProjectName.Size = new System.Drawing.Size(105, 20);
-            this.btnSaveProjectName.TabIndex = 3;
-            this.btnSaveProjectName.Text = "Save Project Name";
-            this.btnSaveProjectName.UseVisualStyleBackColor = true;
-            this.btnSaveProjectName.Click += new System.EventHandler(this.btnSaveProjectName_Click);
-            // 
             // Date
             // 
             dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
@@ -473,12 +426,74 @@
             this.Result.Name = "Result";
             this.Result.Width = 150;
             // 
+            // txtTimesheetFormTeamMember
+            // 
+            this.txtTimesheetFormTeamMember.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTimesheetFormTeamMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtTimesheetFormTeamMember.ForeColor = System.Drawing.Color.White;
+            this.txtTimesheetFormTeamMember.Location = new System.Drawing.Point(184, 71);
+            this.txtTimesheetFormTeamMember.Name = "txtTimesheetFormTeamMember";
+            this.txtTimesheetFormTeamMember.Size = new System.Drawing.Size(100, 27);
+            this.txtTimesheetFormTeamMember.TabIndex = 5;
+            this.txtTimesheetFormTeamMember.Text = "Team Member";
+            // 
+            // txtTimesheetFormProjectManager
+            // 
+            this.txtTimesheetFormProjectManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTimesheetFormProjectManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtTimesheetFormProjectManager.ForeColor = System.Drawing.Color.White;
+            this.txtTimesheetFormProjectManager.Location = new System.Drawing.Point(184, 45);
+            this.txtTimesheetFormProjectManager.Name = "txtTimesheetFormProjectManager";
+            this.txtTimesheetFormProjectManager.Size = new System.Drawing.Size(100, 27);
+            this.txtTimesheetFormProjectManager.TabIndex = 4;
+            this.txtTimesheetFormProjectManager.Text = "Project Manager";
+            // 
+            // txtTimesheetFormProjectName
+            // 
+            this.txtTimesheetFormProjectName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTimesheetFormProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtTimesheetFormProjectName.ForeColor = System.Drawing.Color.White;
+            this.txtTimesheetFormProjectName.Location = new System.Drawing.Point(184, 19);
+            this.txtTimesheetFormProjectName.Name = "txtTimesheetFormProjectName";
+            this.txtTimesheetFormProjectName.Size = new System.Drawing.Size(100, 27);
+            this.txtTimesheetFormProjectName.TabIndex = 3;
+            this.txtTimesheetFormProjectName.Text = "Project Name";
+            // 
+            // btnSaveProjectName
+            // 
+            this.btnSaveProjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSaveProjectName.Location = new System.Drawing.Point(280, 10);
+            this.btnSaveProjectName.Name = "btnSaveProjectName";
+            this.btnSaveProjectName.Size = new System.Drawing.Size(105, 20);
+            this.btnSaveProjectName.TabIndex = 3;
+            this.btnSaveProjectName.Text = "Save Project Name";
+            this.btnSaveProjectName.UseVisualStyleBackColor = true;
+            this.btnSaveProjectName.Click += new System.EventHandler(this.btnSaveProjectName_Click);
+            // 
+            // btn_Export
+            // 
+            this.btn_Export.ForeColor = System.Drawing.Color.Black;
+            this.btn_Export.Location = new System.Drawing.Point(391, 12);
+            this.btn_Export.Name = "btn_Export";
+            this.btn_Export.Size = new System.Drawing.Size(144, 23);
+            this.btn_Export.TabIndex = 4;
+            this.btn_Export.Text = "Export to Word";
+            this.btn_Export.UseVisualStyleBackColor = true;
+            this.btn_Export.Click += new System.EventHandler(this.btn_Export_Click);
+            // 
             // TimesheetFormDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(800, 415);
+            this.Controls.Add(this.btn_Export);
             this.Controls.Add(this.btnSaveProjectName);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtProjectName);
@@ -530,5 +545,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PercentComplete;
         private System.Windows.Forms.DataGridViewTextBoxColumn PercentEndComplete;
         private System.Windows.Forms.DataGridViewTextBoxColumn Result;
+        private System.Windows.Forms.Button btn_Export;
     }
 }

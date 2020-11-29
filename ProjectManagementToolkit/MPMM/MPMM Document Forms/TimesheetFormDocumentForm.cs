@@ -12,6 +12,8 @@ using Newtonsoft.Json;
 using System.Runtime.InteropServices;
 using ProjectManagementToolkit.Utility;
 using ProjectManagementToolkit.Properties;
+using Xceed.Document.NET;
+using Xceed.Words.NET;
 
 namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
@@ -20,6 +22,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         VersionControl<TimeSheetModel> versionControl;
         TimeSheetModel newTimeSheetModel;
         TimeSheetModel currentTimeSheetModel;
+
+        Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
+        Color TABLE_SUBHEADER_FIRST_COLOR = Color.FromArgb(0, 255, 0);
+        Color TABLE_SUBHEADER_SECOND_COLOR = Color.FromArgb(255, 255, 0);
+        Color TABLE_SUBHEADER_THIRD_COLOR = Color.FromArgb(255, 165, 0);
 
         public TimesheetFormDocumentForm()
         {
@@ -183,6 +190,220 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = new List<VersionControl<TimeSheetModel>.DocumentModel>();
                 newTimeSheetModel = new TimeSheetModel();
             }
+        }
+
+        private void btn_Export_Click(object sender, EventArgs e)
+        {
+            exportToWord();
+        }
+
+        private void exportToWord()
+        {
+            string path;
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                saveFileDialog.Filter = "Word 97-2003 Documents (*.doc)|*.doc|Word 2007 Documents (*.docx)|*.docx";
+                saveFileDialog.FilterIndex = 2;
+                saveFileDialog.RestoreDirectory = true;
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    path = saveFileDialog.FileName;
+                    using (var document = DocX.Create(path))
+                    {
+                        #region Heading
+                        for (int i = 0; i < 11; i++)
+                        {
+                            document.InsertParagraph("")
+                                .Font("Arial")
+                                .Bold(true)
+                                .FontSize(22d).Alignment = Alignment.left;
+                        }
+
+                        document.InsertParagraph("TimeSheet \nFor " + txtProjectName.Text)
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(22d).Alignment = Alignment.left;
+                        document.InsertSectionPageBreak();
+                        #endregion
+
+                        int maxList = Math.Max(currentTimeSheetModel.timeSheetForm.timeSpents.Count, currentTimeSheetModel.timeSheetForm.tasksCompleted.Count);
+                        maxList = Math.Max(maxList, currentTimeSheetModel.timeSheetForm.deliverablesProduced.Count) - 1;
+
+                        var documentTimeSheet = document.AddTable(maxList + 7, 9);
+
+                        documentTimeSheet.Rows[0].MergeCells(0, 8);
+                        documentTimeSheet.Rows[0].Cells[0].Paragraphs[0].Append("TIMESHEET FORM")
+                            .Bold(true)
+                            .Color(Color.White)
+                            .Alignment = Alignment.center;
+                        documentTimeSheet.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+
+                        documentTimeSheet.Rows[1].MergeCells(0, 8);
+                        documentTimeSheet.Rows[1].Cells[0].Paragraphs[0].Append(string.Format("Project Name: {0}\n", currentTimeSheetModel.timeSheetForm.projectName));
+                        documentTimeSheet.Rows[1].Cells[0].Paragraphs[0].Append(string.Format("Project Manager: {0}\n", currentTimeSheetModel.timeSheetForm.projectManager));
+                        documentTimeSheet.Rows[1].Cells[0].Paragraphs[0].Append(string.Format("Team Memeber: {0}\n", currentTimeSheetModel.timeSheetForm.teamMember));
+
+                        documentTimeSheet.Rows[2].MergeCells(0, 3);
+                        documentTimeSheet.Rows[2].MergeCells(1, 2);
+                        documentTimeSheet.Rows[2].MergeCells(2, 4);
+                        documentTimeSheet.Rows[2].Cells[0].Paragraphs[0].Append("Time Spent")
+                            .Bold(true)
+                            .Alignment = Alignment.center;
+                        documentTimeSheet.Rows[2].Cells[1].Paragraphs[0].Append("Tasks Completed")
+                            .Bold(true)
+                            .Alignment = Alignment.center;
+                        documentTimeSheet.Rows[2].Cells[2].Paragraphs[0].Append("Deliverables Produced")
+                            .Bold(true)
+                            .Alignment = Alignment.center;
+                        documentTimeSheet.Rows[2].Cells[0].FillColor = TABLE_SUBHEADER_FIRST_COLOR;
+                        documentTimeSheet.Rows[2].Cells[1].FillColor = TABLE_SUBHEADER_SECOND_COLOR;
+                        documentTimeSheet.Rows[2].Cells[2].FillColor = TABLE_SUBHEADER_THIRD_COLOR;
+
+                        documentTimeSheet.Rows[3].Cells[0].Paragraphs[0].Append("Date")
+                            .Bold(true)
+                            .Alignment = Alignment.center;
+                        documentTimeSheet.Rows[3].Cells[1].Paragraphs[0].Append("Start Time")
+                            .Bold(true)
+                            .Alignment = Alignment.center;
+                        documentTimeSheet.Rows[3].Cells[2].Paragraphs[0].Append("End Time")
+                            .Bold(true)
+                            .Alignment = Alignment.center;
+                        documentTimeSheet.Rows[3].Cells[3].Paragraphs[0].Append("Duration")
+                            .Bold(true)
+                            .Alignment = Alignment.center;
+                        documentTimeSheet.Rows[3].Cells[0].FillColor = TABLE_SUBHEADER_FIRST_COLOR;
+                        documentTimeSheet.Rows[3].Cells[1].FillColor = TABLE_SUBHEADER_FIRST_COLOR;
+                        documentTimeSheet.Rows[3].Cells[2].FillColor = TABLE_SUBHEADER_FIRST_COLOR;
+                        documentTimeSheet.Rows[3].Cells[3].FillColor = TABLE_SUBHEADER_FIRST_COLOR;
+                        documentTimeSheet.Rows[3].Cells[4].Paragraphs[0].Append("Activity")
+                            .Bold(true)
+                            .Alignment = Alignment.center;
+                        documentTimeSheet.Rows[3].Cells[5].Paragraphs[0].Append("Task")
+                            .Bold(true)
+                            .Alignment = Alignment.center;
+                        documentTimeSheet.Rows[3].Cells[4].FillColor = TABLE_SUBHEADER_SECOND_COLOR;
+                        documentTimeSheet.Rows[3].Cells[5].FillColor = TABLE_SUBHEADER_SECOND_COLOR;
+                        documentTimeSheet.Rows[3].Cells[6].Paragraphs[0].Append("Start % Complete")
+                            .Bold(true)
+                            .Alignment = Alignment.center;
+                        documentTimeSheet.Rows[3].Cells[7].Paragraphs[0].Append("End % Complete")
+                            .Bold(true)
+                            .Alignment = Alignment.center;
+                        documentTimeSheet.Rows[3].Cells[8].Paragraphs[0].Append("Result")
+                            .Bold(true)
+                            .Alignment = Alignment.center;
+                        documentTimeSheet.Rows[3].Cells[6].FillColor = TABLE_SUBHEADER_THIRD_COLOR;
+                        documentTimeSheet.Rows[3].Cells[7].FillColor = TABLE_SUBHEADER_THIRD_COLOR;
+                        documentTimeSheet.Rows[3].Cells[8].FillColor = TABLE_SUBHEADER_THIRD_COLOR;
+
+                        for (int i = 0; i < currentTimeSheetModel.timeSheetForm.timeSpents.Count; i++)
+                        {
+                            documentTimeSheet.Rows[4 + i].Cells[0].Paragraphs[0].Append(currentTimeSheetModel.timeSheetForm.timeSpents[i].date);
+                            documentTimeSheet.Rows[4 + i].Cells[1].Paragraphs[0].Append(currentTimeSheetModel.timeSheetForm.timeSpents[i].startTime);
+                            documentTimeSheet.Rows[4 + i].Cells[2].Paragraphs[0].Append(currentTimeSheetModel.timeSheetForm.timeSpents[i].endTime);
+                            documentTimeSheet.Rows[4 + i].Cells[3].Paragraphs[0].Append(currentTimeSheetModel.timeSheetForm.timeSpents[i].duration);
+                        }
+
+                        for (int i = 0; i < currentTimeSheetModel.timeSheetForm.tasksCompleted.Count; i++)
+                        {
+                            documentTimeSheet.Rows[4 + i].Cells[4].Paragraphs[0].Append(currentTimeSheetModel.timeSheetForm.tasksCompleted[i].activity);
+                            documentTimeSheet.Rows[4 + i].Cells[5].Paragraphs[0].Append(currentTimeSheetModel.timeSheetForm.tasksCompleted[i].task);
+                        }
+
+                        for (int i = 0; i < currentTimeSheetModel.timeSheetForm.deliverablesProduced.Count; i++)
+                        {
+                            documentTimeSheet.Rows[4 + i].Cells[6].Paragraphs[0].Append(currentTimeSheetModel.timeSheetForm.deliverablesProduced[i].startPercentComplete);
+                            documentTimeSheet.Rows[4 + i].Cells[7].Paragraphs[0].Append(currentTimeSheetModel.timeSheetForm.deliverablesProduced[i].endPercentComplete);
+                            documentTimeSheet.Rows[4 + i].Cells[8].Paragraphs[0].Append(currentTimeSheetModel.timeSheetForm.deliverablesProduced[i].result);
+                        }
+
+                        int currentRowAfterInsert = maxList + 5;
+
+                        documentTimeSheet.Rows[currentRowAfterInsert].MergeCells(0, 8);
+                        documentTimeSheet.Rows[0].Cells[0].Paragraphs[0].Append("APPROVAL DETAILS")
+                            .Bold(true)
+                            .Color(Color.White)
+                            .Alignment = Alignment.center;
+                        documentTimeSheet.Rows[currentRowAfterInsert].Cells[0].FillColor = TABLE_HEADER_COLOR;
+
+                        var finalData = new[]
+                        {
+                            new[] {"Submitted by", "Approved by"},
+                            new[] {
+                                string.Format("Name: {0}", currentTimeSheetModel.timeSheetForm.submittedName),
+                                string.Format("Name: {0}", currentTimeSheetModel.timeSheetForm.approvedName) 
+                            },
+                            new[] {
+                                string.Format("Project role: {0}", currentTimeSheetModel.timeSheetForm.submittedRole),
+                                string.Format("Project role: {0}", currentTimeSheetModel.timeSheetForm.approvedRole) 
+                            },
+                        };
+                        var tabbedData = EvenColumns(100, finalData);
+
+                        documentTimeSheet.Rows[currentRowAfterInsert + 1].MergeCells(0, 8);
+                        documentTimeSheet.Rows[currentRowAfterInsert + 1].Cells[0].Paragraphs[0].Append(tabbedData + "\n");
+
+                        finalData = new[]
+                        {
+                            new[] {"Signature", "Date:", "Signature", "Date"},
+                            new[] {
+                                currentTimeSheetModel.timeSheetForm.submittedSignature,
+                                currentTimeSheetModel.timeSheetForm.submittedDate,
+                                currentTimeSheetModel.timeSheetForm.approvedSignature,
+                                currentTimeSheetModel.timeSheetForm.approvedDate
+                            },
+                        };
+                        tabbedData = EvenColumns(50, finalData);
+                        documentTimeSheet.Rows[currentRowAfterInsert + 1].Cells[0].Paragraphs[0]
+                            .Append(tabbedData + "\nPLEASE FORWARD THIS FORM TO THE PROJECT MANAGER FOR APPROVAL");
+
+                        document.InsertTable(documentTimeSheet);
+
+                        try
+                        {
+                            document.Save();
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("The selected File is open.", "Close File", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
+        }
+
+        public string EvenColumns(int desiredWidth, IEnumerable<IEnumerable<string>> lists)
+        {
+            return string.Join(Environment.NewLine, EvenColumns(desiredWidth, true, lists));
+        }
+
+        public IEnumerable<string> EvenColumns(int desiredWidth, bool rightOrLeft, IEnumerable<IEnumerable<string>> lists)
+        {
+            return lists.Select(o => EvenColumns(desiredWidth, rightOrLeft, o.ToArray()));
+        }
+
+        public string EvenColumns(int desiredWidth, bool rightOrLeftAlignment, string[] list, bool fitToItems = false)
+        {
+            int columnWidth = (rightOrLeftAlignment ? -1 : 1) *
+                                (fitToItems
+                                    ? Math.Max(desiredWidth, list.Select(o => o.Length).Max())
+                                    : desiredWidth
+                                );
+
+            string format = string.Concat(Enumerable.Range(rightOrLeftAlignment ? 0 : 1, list.Length - 1).Select(i => string.Format("{{{0},{1}}}", i, columnWidth)));
+
+            if (rightOrLeftAlignment)
+            {
+                format += "{" + (list.Length - 1) + "}";
+            }
+            else
+            {
+                format = "{0}" + format;
+            }
+
+            return string.Format(format, list);
         }
     }
 }
