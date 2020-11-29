@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label27 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageDocumentControl = new System.Windows.Forms.TabPage();
@@ -54,13 +54,32 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewDocumentApprovals = new System.Windows.Forms.DataGridView();
+            this.ApprovalRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ApprovalName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ApprovalChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ApprovalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewDocumentHistory = new System.Windows.Forms.DataGridView();
+            this.ProcVersion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProcIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProcChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewDocumentInformation = new System.Windows.Forms.DataGridView();
+            this.ProcType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProcInformation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.dataGridViewMarketResearch = new System.Windows.Forms.DataGridView();
+            this.ResItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ResSupp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ResOff = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ResPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ResAvail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewRequirements = new System.Windows.Forms.DataGridView();
+            this.ReqItems = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReqDesc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReqJust = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReqQuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReqBudget = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -102,25 +121,7 @@
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.txtProjectName = new System.Windows.Forms.TextBox();
             this.btnSaveProjectName = new System.Windows.Forms.Button();
-            this.ProcType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProcInformation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProcVersion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProcIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProcChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ApprovalRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ApprovalName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ApprovalChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ApprovalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReqItems = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReqDesc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReqJust = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReqQuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReqBudget = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ResItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ResSupp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ResOff = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ResPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ResAvail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_Export = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPageDocumentControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentApprovals)).BeginInit();
@@ -223,6 +224,46 @@
             this.dataGridViewDocumentApprovals.Size = new System.Drawing.Size(594, 114);
             this.dataGridViewDocumentApprovals.TabIndex = 2;
             // 
+            // ApprovalRole
+            // 
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.ApprovalRole.DefaultCellStyle = dataGridViewCellStyle1;
+            this.ApprovalRole.HeaderText = "Role";
+            this.ApprovalRole.MinimumWidth = 8;
+            this.ApprovalRole.Name = "ApprovalRole";
+            this.ApprovalRole.Width = 150;
+            // 
+            // ApprovalName
+            // 
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.ApprovalName.DefaultCellStyle = dataGridViewCellStyle2;
+            this.ApprovalName.HeaderText = "Name";
+            this.ApprovalName.MinimumWidth = 8;
+            this.ApprovalName.Name = "ApprovalName";
+            this.ApprovalName.Width = 150;
+            // 
+            // ApprovalChanges
+            // 
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.ApprovalChanges.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ApprovalChanges.HeaderText = "Changes";
+            this.ApprovalChanges.MinimumWidth = 8;
+            this.ApprovalChanges.Name = "ApprovalChanges";
+            this.ApprovalChanges.Width = 150;
+            // 
+            // ApprovalDate
+            // 
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.ApprovalDate.DefaultCellStyle = dataGridViewCellStyle4;
+            this.ApprovalDate.HeaderText = "Date";
+            this.ApprovalDate.MinimumWidth = 8;
+            this.ApprovalDate.Name = "ApprovalDate";
+            this.ApprovalDate.Width = 150;
+            // 
             // dataGridViewDocumentHistory
             // 
             this.dataGridViewDocumentHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -236,6 +277,36 @@
             this.dataGridViewDocumentHistory.Size = new System.Drawing.Size(594, 109);
             this.dataGridViewDocumentHistory.TabIndex = 1;
             // 
+            // ProcVersion
+            // 
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            this.ProcVersion.DefaultCellStyle = dataGridViewCellStyle5;
+            this.ProcVersion.HeaderText = "Version";
+            this.ProcVersion.MinimumWidth = 8;
+            this.ProcVersion.Name = "ProcVersion";
+            this.ProcVersion.Width = 150;
+            // 
+            // ProcIssueDate
+            // 
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            this.ProcIssueDate.DefaultCellStyle = dataGridViewCellStyle6;
+            this.ProcIssueDate.HeaderText = "IssueDate";
+            this.ProcIssueDate.MinimumWidth = 8;
+            this.ProcIssueDate.Name = "ProcIssueDate";
+            this.ProcIssueDate.Width = 150;
+            // 
+            // ProcChanges
+            // 
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            this.ProcChanges.DefaultCellStyle = dataGridViewCellStyle7;
+            this.ProcChanges.HeaderText = "Changes";
+            this.ProcChanges.MinimumWidth = 8;
+            this.ProcChanges.Name = "ProcChanges";
+            this.ProcChanges.Width = 150;
+            // 
             // dataGridViewDocumentInformation
             // 
             this.dataGridViewDocumentInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -247,6 +318,26 @@
             this.dataGridViewDocumentInformation.RowHeadersWidth = 62;
             this.dataGridViewDocumentInformation.Size = new System.Drawing.Size(594, 100);
             this.dataGridViewDocumentInformation.TabIndex = 0;
+            // 
+            // ProcType
+            // 
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            this.ProcType.DefaultCellStyle = dataGridViewCellStyle8;
+            this.ProcType.HeaderText = "Type";
+            this.ProcType.MinimumWidth = 8;
+            this.ProcType.Name = "ProcType";
+            this.ProcType.Width = 150;
+            // 
+            // ProcInformation
+            // 
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            this.ProcInformation.DefaultCellStyle = dataGridViewCellStyle9;
+            this.ProcInformation.HeaderText = "Information";
+            this.ProcInformation.MinimumWidth = 8;
+            this.ProcInformation.Name = "ProcInformation";
+            this.ProcInformation.Width = 150;
             // 
             // tabPage2
             // 
@@ -302,6 +393,56 @@
             this.dataGridViewMarketResearch.TabIndex = 6;
             this.dataGridViewMarketResearch.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // ResItem
+            // 
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            this.ResItem.DefaultCellStyle = dataGridViewCellStyle10;
+            this.ResItem.HeaderText = "Item";
+            this.ResItem.MinimumWidth = 8;
+            this.ResItem.Name = "ResItem";
+            this.ResItem.Width = 150;
+            // 
+            // ResSupp
+            // 
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            this.ResSupp.DefaultCellStyle = dataGridViewCellStyle11;
+            this.ResSupp.HeaderText = "Supplier";
+            this.ResSupp.MinimumWidth = 8;
+            this.ResSupp.Name = "ResSupp";
+            this.ResSupp.Width = 150;
+            // 
+            // ResOff
+            // 
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            this.ResOff.DefaultCellStyle = dataGridViewCellStyle12;
+            this.ResOff.HeaderText = "Offering";
+            this.ResOff.MinimumWidth = 8;
+            this.ResOff.Name = "ResOff";
+            this.ResOff.Width = 150;
+            // 
+            // ResPrice
+            // 
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
+            this.ResPrice.DefaultCellStyle = dataGridViewCellStyle13;
+            this.ResPrice.HeaderText = "Price";
+            this.ResPrice.MinimumWidth = 8;
+            this.ResPrice.Name = "ResPrice";
+            this.ResPrice.Width = 150;
+            // 
+            // ResAvail
+            // 
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
+            this.ResAvail.DefaultCellStyle = dataGridViewCellStyle14;
+            this.ResAvail.HeaderText = "Availability";
+            this.ResAvail.MinimumWidth = 8;
+            this.ResAvail.Name = "ResAvail";
+            this.ResAvail.Width = 150;
+            // 
             // dataGridViewRequirements
             // 
             this.dataGridViewRequirements.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -317,6 +458,56 @@
             this.dataGridViewRequirements.Size = new System.Drawing.Size(637, 164);
             this.dataGridViewRequirements.TabIndex = 5;
             this.dataGridViewRequirements.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            // 
+            // ReqItems
+            // 
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
+            this.ReqItems.DefaultCellStyle = dataGridViewCellStyle15;
+            this.ReqItems.HeaderText = "Item";
+            this.ReqItems.MinimumWidth = 8;
+            this.ReqItems.Name = "ReqItems";
+            this.ReqItems.Width = 150;
+            // 
+            // ReqDesc
+            // 
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
+            this.ReqDesc.DefaultCellStyle = dataGridViewCellStyle16;
+            this.ReqDesc.HeaderText = "Description";
+            this.ReqDesc.MinimumWidth = 8;
+            this.ReqDesc.Name = "ReqDesc";
+            this.ReqDesc.Width = 150;
+            // 
+            // ReqJust
+            // 
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Black;
+            this.ReqJust.DefaultCellStyle = dataGridViewCellStyle17;
+            this.ReqJust.HeaderText = "Justification";
+            this.ReqJust.MinimumWidth = 8;
+            this.ReqJust.Name = "ReqJust";
+            this.ReqJust.Width = 150;
+            // 
+            // ReqQuan
+            // 
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
+            this.ReqQuan.DefaultCellStyle = dataGridViewCellStyle18;
+            this.ReqQuan.HeaderText = "Quantity";
+            this.ReqQuan.MinimumWidth = 8;
+            this.ReqQuan.Name = "ReqQuan";
+            this.ReqQuan.Width = 150;
+            // 
+            // ReqBudget
+            // 
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Black;
+            this.ReqBudget.DefaultCellStyle = dataGridViewCellStyle19;
+            this.ReqBudget.HeaderText = "Budget";
+            this.ReqBudget.MinimumWidth = 8;
+            this.ReqBudget.Name = "ReqBudget";
+            this.ReqBudget.Width = 150;
             // 
             // tabPage3
             // 
@@ -815,195 +1006,15 @@
             this.btnSaveProjectName.UseVisualStyleBackColor = true;
             this.btnSaveProjectName.Click += new System.EventHandler(this.btnSaveProjectName_Click);
             // 
-            // ProcType
+            // btn_Export
             // 
-            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.Black;
-            this.ProcType.DefaultCellStyle = dataGridViewCellStyle39;
-            this.ProcType.HeaderText = "Type";
-            this.ProcType.MinimumWidth = 8;
-            this.ProcType.Name = "ProcType";
-            this.ProcType.Width = 150;
-            // 
-            // ProcInformation
-            // 
-            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.Black;
-            this.ProcInformation.DefaultCellStyle = dataGridViewCellStyle40;
-            this.ProcInformation.HeaderText = "Information";
-            this.ProcInformation.MinimumWidth = 8;
-            this.ProcInformation.Name = "ProcInformation";
-            this.ProcInformation.Width = 150;
-            // 
-            // ProcVersion
-            // 
-            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.Color.Black;
-            this.ProcVersion.DefaultCellStyle = dataGridViewCellStyle41;
-            this.ProcVersion.HeaderText = "Version";
-            this.ProcVersion.MinimumWidth = 8;
-            this.ProcVersion.Name = "ProcVersion";
-            this.ProcVersion.Width = 150;
-            // 
-            // ProcIssueDate
-            // 
-            dataGridViewCellStyle42.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.Color.Black;
-            this.ProcIssueDate.DefaultCellStyle = dataGridViewCellStyle42;
-            this.ProcIssueDate.HeaderText = "IssueDate";
-            this.ProcIssueDate.MinimumWidth = 8;
-            this.ProcIssueDate.Name = "ProcIssueDate";
-            this.ProcIssueDate.Width = 150;
-            // 
-            // ProcChanges
-            // 
-            dataGridViewCellStyle43.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.Color.Black;
-            this.ProcChanges.DefaultCellStyle = dataGridViewCellStyle43;
-            this.ProcChanges.HeaderText = "Changes";
-            this.ProcChanges.MinimumWidth = 8;
-            this.ProcChanges.Name = "ProcChanges";
-            this.ProcChanges.Width = 150;
-            // 
-            // ApprovalRole
-            // 
-            dataGridViewCellStyle44.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.Color.Black;
-            this.ApprovalRole.DefaultCellStyle = dataGridViewCellStyle44;
-            this.ApprovalRole.HeaderText = "Role";
-            this.ApprovalRole.MinimumWidth = 8;
-            this.ApprovalRole.Name = "ApprovalRole";
-            this.ApprovalRole.Width = 150;
-            // 
-            // ApprovalName
-            // 
-            dataGridViewCellStyle45.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.Color.Black;
-            this.ApprovalName.DefaultCellStyle = dataGridViewCellStyle45;
-            this.ApprovalName.HeaderText = "Name";
-            this.ApprovalName.MinimumWidth = 8;
-            this.ApprovalName.Name = "ApprovalName";
-            this.ApprovalName.Width = 150;
-            // 
-            // ApprovalChanges
-            // 
-            dataGridViewCellStyle46.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.Color.Black;
-            this.ApprovalChanges.DefaultCellStyle = dataGridViewCellStyle46;
-            this.ApprovalChanges.HeaderText = "Changes";
-            this.ApprovalChanges.MinimumWidth = 8;
-            this.ApprovalChanges.Name = "ApprovalChanges";
-            this.ApprovalChanges.Width = 150;
-            // 
-            // ApprovalDate
-            // 
-            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.Color.Black;
-            this.ApprovalDate.DefaultCellStyle = dataGridViewCellStyle47;
-            this.ApprovalDate.HeaderText = "Date";
-            this.ApprovalDate.MinimumWidth = 8;
-            this.ApprovalDate.Name = "ApprovalDate";
-            this.ApprovalDate.Width = 150;
-            // 
-            // ReqItems
-            // 
-            dataGridViewCellStyle48.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.Color.Black;
-            this.ReqItems.DefaultCellStyle = dataGridViewCellStyle48;
-            this.ReqItems.HeaderText = "Item";
-            this.ReqItems.MinimumWidth = 8;
-            this.ReqItems.Name = "ReqItems";
-            this.ReqItems.Width = 150;
-            // 
-            // ReqDesc
-            // 
-            dataGridViewCellStyle49.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle49.SelectionForeColor = System.Drawing.Color.Black;
-            this.ReqDesc.DefaultCellStyle = dataGridViewCellStyle49;
-            this.ReqDesc.HeaderText = "Description";
-            this.ReqDesc.MinimumWidth = 8;
-            this.ReqDesc.Name = "ReqDesc";
-            this.ReqDesc.Width = 150;
-            // 
-            // ReqJust
-            // 
-            dataGridViewCellStyle50.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.Color.Black;
-            this.ReqJust.DefaultCellStyle = dataGridViewCellStyle50;
-            this.ReqJust.HeaderText = "Justification";
-            this.ReqJust.MinimumWidth = 8;
-            this.ReqJust.Name = "ReqJust";
-            this.ReqJust.Width = 150;
-            // 
-            // ReqQuan
-            // 
-            dataGridViewCellStyle51.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle51.SelectionForeColor = System.Drawing.Color.Black;
-            this.ReqQuan.DefaultCellStyle = dataGridViewCellStyle51;
-            this.ReqQuan.HeaderText = "Quantity";
-            this.ReqQuan.MinimumWidth = 8;
-            this.ReqQuan.Name = "ReqQuan";
-            this.ReqQuan.Width = 150;
-            // 
-            // ReqBudget
-            // 
-            dataGridViewCellStyle52.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle52.SelectionForeColor = System.Drawing.Color.Black;
-            this.ReqBudget.DefaultCellStyle = dataGridViewCellStyle52;
-            this.ReqBudget.HeaderText = "Budget";
-            this.ReqBudget.MinimumWidth = 8;
-            this.ReqBudget.Name = "ReqBudget";
-            this.ReqBudget.Width = 150;
-            // 
-            // ResItem
-            // 
-            dataGridViewCellStyle53.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle53.SelectionForeColor = System.Drawing.Color.Black;
-            this.ResItem.DefaultCellStyle = dataGridViewCellStyle53;
-            this.ResItem.HeaderText = "Item";
-            this.ResItem.MinimumWidth = 8;
-            this.ResItem.Name = "ResItem";
-            this.ResItem.Width = 150;
-            // 
-            // ResSupp
-            // 
-            dataGridViewCellStyle54.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle54.SelectionForeColor = System.Drawing.Color.Black;
-            this.ResSupp.DefaultCellStyle = dataGridViewCellStyle54;
-            this.ResSupp.HeaderText = "Supplier";
-            this.ResSupp.MinimumWidth = 8;
-            this.ResSupp.Name = "ResSupp";
-            this.ResSupp.Width = 150;
-            // 
-            // ResOff
-            // 
-            dataGridViewCellStyle55.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle55.SelectionForeColor = System.Drawing.Color.Black;
-            this.ResOff.DefaultCellStyle = dataGridViewCellStyle55;
-            this.ResOff.HeaderText = "Offering";
-            this.ResOff.MinimumWidth = 8;
-            this.ResOff.Name = "ResOff";
-            this.ResOff.Width = 150;
-            // 
-            // ResPrice
-            // 
-            dataGridViewCellStyle56.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.Color.Black;
-            this.ResPrice.DefaultCellStyle = dataGridViewCellStyle56;
-            this.ResPrice.HeaderText = "Price";
-            this.ResPrice.MinimumWidth = 8;
-            this.ResPrice.Name = "ResPrice";
-            this.ResPrice.Width = 150;
-            // 
-            // ResAvail
-            // 
-            dataGridViewCellStyle57.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle57.SelectionForeColor = System.Drawing.Color.Black;
-            this.ResAvail.DefaultCellStyle = dataGridViewCellStyle57;
-            this.ResAvail.HeaderText = "Availability";
-            this.ResAvail.MinimumWidth = 8;
-            this.ResAvail.Name = "ResAvail";
-            this.ResAvail.Width = 150;
+            this.btn_Export.Location = new System.Drawing.Point(398, 10);
+            this.btn_Export.Name = "btn_Export";
+            this.btn_Export.Size = new System.Drawing.Size(130, 23);
+            this.btn_Export.TabIndex = 8;
+            this.btn_Export.Text = "Export to Word";
+            this.btn_Export.UseVisualStyleBackColor = true;
+            this.btn_Export.Click += new System.EventHandler(this.btn_Export_Click);
             // 
             // ProcurementPlanDocumentForm
             // 
@@ -1011,6 +1022,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(800, 415);
+            this.Controls.Add(this.btn_Export);
             this.Controls.Add(this.btnSaveProjectName);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.tabControl1);
@@ -1117,5 +1129,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ReqJust;
         private System.Windows.Forms.DataGridViewTextBoxColumn ReqQuan;
         private System.Windows.Forms.DataGridViewTextBoxColumn ReqBudget;
+        private System.Windows.Forms.Button btn_Export;
     }
 }

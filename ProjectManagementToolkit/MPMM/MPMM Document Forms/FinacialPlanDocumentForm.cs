@@ -381,7 +381,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                                 .FontSize(22d).Alignment = Alignment.left;
                         }
 
-                        document.InsertParagraph("Acceptance Plan \nFor " + txtProjectName.Text)
+                        document.InsertParagraph("Financial Plan \nFor " + txtProjectName.Text)
                             .Font("Arial")
                             .Bold(true)
                             .FontSize(22d).Alignment = Alignment.left;

@@ -12,6 +12,8 @@ using Newtonsoft.Json;
 using System.Runtime.InteropServices;
 using ProjectManagementToolkit.Utility;
 using ProjectManagementToolkit.Properties;
+using Xceed.Document.NET;
+using Xceed.Words.NET;
 
 namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
@@ -20,6 +22,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         VersionControl<ProcurementPlanModel> versionControl;
         ProcurementPlanModel newProcurementPlanModel;
         ProcurementPlanModel currentProcurementPlanModel;
+
+        Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
 
         public ProcurementPlanDocumentForm()
         {
@@ -315,6 +319,440 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             foreach (string item in items)
             {
                 listBox.Items.Add(item);
+            }
+        }
+
+        private void btn_Export_Click(object sender, EventArgs e)
+        {
+            exportToWord();
+        }
+
+        private void exportToWord()
+        {
+            string path;
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                saveFileDialog.Filter = "Word 97-2003 Documents (*.doc)|*.doc|Word 2007 Documents (*.docx)|*.docx";
+                saveFileDialog.FilterIndex = 2;
+                saveFileDialog.RestoreDirectory = true;
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    path = saveFileDialog.FileName;
+                    using (var document = DocX.Create(path))
+                    {
+                        #region Heading
+                        for (int i = 0; i < 11; i++)
+                        {
+                            document.InsertParagraph("")
+                                .Font("Arial")
+                                .Bold(true)
+                                .FontSize(22d).Alignment = Alignment.left;
+                        }
+
+                        document.InsertParagraph("Procurement Plan \nFor " + txtProjectName.Text)
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(22d).Alignment = Alignment.left;
+                        document.InsertSectionPageBreak();
+                        document.InsertParagraph("Document Control\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        document.InsertParagraph("")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        document.InsertParagraph("Document Information\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        #endregion
+
+                        #region Document basics
+                        var documentInfoTable = document.AddTable(6, 2);
+                        documentInfoTable.Rows[0].Cells[0].Paragraphs[0].Append("").Bold(true).Color(Color.White);
+                        documentInfoTable.Rows[0].Cells[1].Paragraphs[0].Append("Information").Bold(true).Color(Color.White);
+                        documentInfoTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentInfoTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+
+                        documentInfoTable.Rows[1].Cells[0].Paragraphs[0].Append("Document ID");
+                        documentInfoTable.Rows[1].Cells[1].Paragraphs[0].Append(currentProcurementPlanModel.documentID);
+
+                        documentInfoTable.Rows[2].Cells[0].Paragraphs[0].Append("Document Owner");
+                        documentInfoTable.Rows[2].Cells[1].Paragraphs[0].Append(currentProcurementPlanModel.documentOwner);
+
+                        documentInfoTable.Rows[3].Cells[0].Paragraphs[0].Append("Issue Date");
+                        documentInfoTable.Rows[3].Cells[1].Paragraphs[0].Append(currentProcurementPlanModel.issueDate);
+
+                        documentInfoTable.Rows[4].Cells[0].Paragraphs[0].Append("Last Saved Date");
+                        documentInfoTable.Rows[4].Cells[1].Paragraphs[0].Append(currentProcurementPlanModel.lastSavedDate);
+
+                        documentInfoTable.Rows[5].Cells[0].Paragraphs[0].Append("File Name");
+                        documentInfoTable.Rows[5].Cells[1].Paragraphs[0].Append(currentProcurementPlanModel.fileName);
+                        documentInfoTable.SetWidths(new float[] { 493, 1094 });
+                        document.InsertTable(documentInfoTable);
+
+                        document.InsertParagraph("\nDocument History\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+
+                        var documentHistoryTable = document.AddTable(currentProcurementPlanModel.documentHistories.Count + 1, 3);
+                        documentHistoryTable.Rows[0].Cells[0].Paragraphs[0].Append("Version")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[1].Paragraphs[0].Append("Issue Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[2].Paragraphs[0].Append("Changes")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentHistoryTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentHistoryTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        for (int i = 1; i < currentProcurementPlanModel.documentHistories.Count + 1; i++)
+                        {
+                            documentHistoryTable.Rows[i].Cells[0].Paragraphs[0].Append(currentProcurementPlanModel.documentHistories[i - 1].version);
+                            documentHistoryTable.Rows[i].Cells[1].Paragraphs[0].Append(currentProcurementPlanModel.documentHistories[i - 1].issueDate);
+                            documentHistoryTable.Rows[i].Cells[2].Paragraphs[0].Append(currentProcurementPlanModel.documentHistories[i - 1].changes);
+
+                        }
+
+                        documentHistoryTable.SetWidths(new float[] { 190, 303, 1094 });
+                        document.InsertTable(documentHistoryTable);
+
+                        document.InsertParagraph("\nDocument Approvals\n")
+                           .Font("Arial")
+                           .Bold(true)
+                           .FontSize(14d).Alignment = Alignment.left;
+
+                        var documentApprovalTable = document.AddTable(currentProcurementPlanModel.documentApprovals.Count + 1, 4);
+                        documentApprovalTable.Rows[0].Cells[0].Paragraphs[0].Append("Role")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[1].Paragraphs[0].Append("Name")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[2].Paragraphs[0].Append("Signature")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[3].Paragraphs[0].Append("Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentProcurementPlanModel.documentApprovals.Count + 1; i++)
+                        {
+                            documentApprovalTable.Rows[i].Cells[0].Paragraphs[0].Append(currentProcurementPlanModel.documentApprovals[i - 1].role);
+                            documentApprovalTable.Rows[i].Cells[1].Paragraphs[0].Append(currentProcurementPlanModel.documentApprovals[i - 1].name);
+                            documentApprovalTable.Rows[i].Cells[2].Paragraphs[0].Append(currentProcurementPlanModel.documentApprovals[i - 1].changes);
+                            documentApprovalTable.Rows[i].Cells[3].Paragraphs[0].Append(currentProcurementPlanModel.documentApprovals[i - 1].date);
+                        }
+                        documentApprovalTable.SetWidths(new float[] { 493, 332, 508, 254 });
+                        document.InsertTable(documentApprovalTable);
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
+
+                        var p = document.InsertParagraph();
+                        var title = p.InsertParagraphBeforeSelf("Table of contents").Bold().FontSize(20);
+
+                        var tocSwitches = new Dictionary<TableOfContentsSwitches, string>()
+                        {
+                            { TableOfContentsSwitches.O, "1-3"},
+                            { TableOfContentsSwitches.U, ""},
+                            { TableOfContentsSwitches.Z, ""},
+                            { TableOfContentsSwitches.H, ""}
+                        };
+
+                        document.InsertTableOfContents(p, "", tocSwitches);
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
+                        #endregion
+
+                        #region Procurement Requirements
+                        var procReqHeading = document.InsertParagraph("1 Procurement Requirements")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        procReqHeading.StyleId = "Heading1";
+
+                        #region Requirements
+                        var requirementsSubHeading = document.InsertParagraph("1.1 Requirements")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        requirementsSubHeading.StyleId = "Heading2";
+
+                        var documentRequirementsTable = document.AddTable(currentProcurementPlanModel.documentRequirements.Count + 1, 5);
+
+                        documentRequirementsTable.Rows[0].Cells[0].Paragraphs[0].Append("Item")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentRequirementsTable.Rows[0].Cells[1].Paragraphs[0].Append("Description")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentRequirementsTable.Rows[0].Cells[2].Paragraphs[0].Append("Justification")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentRequirementsTable.Rows[0].Cells[3].Paragraphs[0].Append("Quantity")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentRequirementsTable.Rows[0].Cells[4].Paragraphs[0].Append("Budget")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        documentRequirementsTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentRequirementsTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentRequirementsTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentRequirementsTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+                        documentRequirementsTable.Rows[0].Cells[4].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentProcurementPlanModel.documentRequirements.Count + 1; i++)
+                        {
+                            documentRequirementsTable.Rows[i].Cells[0].Paragraphs[0].Append(currentProcurementPlanModel.documentRequirements[i - 1].item);
+                            documentRequirementsTable.Rows[i].Cells[1].Paragraphs[0].Append(currentProcurementPlanModel.documentRequirements[i - 1].description);
+                            documentRequirementsTable.Rows[i].Cells[2].Paragraphs[0].Append(currentProcurementPlanModel.documentRequirements[i - 1].justification);
+                            documentRequirementsTable.Rows[i].Cells[3].Paragraphs[0].Append(currentProcurementPlanModel.documentRequirements[i - 1].quantity);
+                            documentRequirementsTable.Rows[i].Cells[4].Paragraphs[0].Append(currentProcurementPlanModel.documentRequirements[i - 1].budget);
+                        }
+
+                        document.InsertTable(documentRequirementsTable);
+                        #endregion
+
+                        #region Market Research
+                        var researchSubHeading = document.InsertParagraph("1.2 Market Research")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        researchSubHeading.StyleId = "Heading2";
+
+                        var documentResearchTable = document.AddTable(currentProcurementPlanModel.documentMarketResearch.Count + 1, 5);
+
+                        documentResearchTable.Rows[0].Cells[0].Paragraphs[0].Append("Item")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResearchTable.Rows[0].Cells[1].Paragraphs[0].Append("Supplier")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResearchTable.Rows[0].Cells[2].Paragraphs[0].Append("Offering")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResearchTable.Rows[0].Cells[3].Paragraphs[0].Append("Price")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResearchTable.Rows[0].Cells[4].Paragraphs[0].Append("Availability")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        documentResearchTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentResearchTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentResearchTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentResearchTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+                        documentResearchTable.Rows[0].Cells[4].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentProcurementPlanModel.documentMarketResearch.Count + 1; i++)
+                        {
+                            documentResearchTable.Rows[i].Cells[0].Paragraphs[0].Append(currentProcurementPlanModel.documentMarketResearch[i - 1].item);
+                            documentResearchTable.Rows[i].Cells[1].Paragraphs[0].Append(currentProcurementPlanModel.documentMarketResearch[i - 1].supplier);
+                            documentResearchTable.Rows[i].Cells[2].Paragraphs[0].Append(currentProcurementPlanModel.documentMarketResearch[i - 1].offering);
+                            documentResearchTable.Rows[i].Cells[3].Paragraphs[0].Append(currentProcurementPlanModel.documentMarketResearch[i - 1].price);
+                            documentResearchTable.Rows[i].Cells[4].Paragraphs[0].Append(currentProcurementPlanModel.documentMarketResearch[i - 1].availability);
+                        }
+
+                        document.InsertTable(documentResearchTable);
+                        #endregion
+                        #endregion
+
+                        #region Procurement Plan
+                        var procPlanHeading = document.InsertParagraph("2 Procurement Plan")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        procPlanHeading.StyleId = "Heading1";
+
+                        #region Schedule
+                        var scheduleSubHeading = document.InsertParagraph("2.1 Schedule")
+                           .Bold()
+                           .FontSize(12d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        document.InsertParagraph(String.Join(",\n", "ADD SCHEDULE PLAN HERE"))
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+                        scheduleSubHeading.StyleId = "Heading2";
+                        #endregion
+
+                        var assumptionsSubHeading = document.InsertParagraph("2.2 Assumptions")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        document.InsertParagraph(String.Join(",\n", currentProcurementPlanModel.assumptions))
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+                        assumptionsSubHeading.StyleId = "Heading2";
+
+
+                        var constraintsSubHeading = document.InsertParagraph("2.3 Constraints")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        document.InsertParagraph(String.Join(",\n", currentProcurementPlanModel.constraints))
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+                        constraintsSubHeading.StyleId = "Heading2";
+                        #endregion
+
+                        #region Tender Process
+                        var tenderProcHeading = document.InsertParagraph("3 Tender Process")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        tenderProcHeading.StyleId = "Heading1";
+
+
+                        var activitiesSubHeading = document.InsertParagraph("3.1 Activities")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        document.InsertParagraph(String.Join(",\n", currentProcurementPlanModel.tenderActivities))
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+                        activitiesSubHeading.StyleId = "Heading2";
+
+
+                        var rolesSubHeading = document.InsertParagraph("3.2 Roles")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        document.InsertParagraph(String.Join(",\n", currentProcurementPlanModel.tenderRoles))
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+                        rolesSubHeading.StyleId = "Heading2";
+
+
+                        var documentsSubHeading = document.InsertParagraph("3.3 Documents")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        document.InsertParagraph(String.Join(",\n", currentProcurementPlanModel.tenderDocuments))
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+                        documentsSubHeading.StyleId = "Heading2";
+                        #endregion
+
+                        #region Procurement Process
+                        var procProcHeading = document.InsertParagraph("4 Procurement Process")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        procProcHeading.StyleId = "Heading1";
+
+
+                        var procActivitiesSubHeading = document.InsertParagraph("4.1 Activities")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        document.InsertParagraph(String.Join(",\n", currentProcurementPlanModel.procurementActivities))
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+                        procActivitiesSubHeading.StyleId = "Heading2";
+
+
+                        var procRolesSubHeading = document.InsertParagraph("4.2 Roles")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        document.InsertParagraph(String.Join(",\n", currentProcurementPlanModel.procurementRoles))
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+                        procRolesSubHeading.StyleId = "Heading2";
+
+
+                        var procDocumentsSubHeading = document.InsertParagraph("4.3 Documents")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        document.InsertParagraph(String.Join(",\n", currentProcurementPlanModel.procurementDocuments))
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+                        procDocumentsSubHeading.StyleId = "Heading2";
+                        #endregion
+
+                        try
+                        {
+                            document.Save();
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("The selected File is open.", "Close File", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
             }
         }
     }
