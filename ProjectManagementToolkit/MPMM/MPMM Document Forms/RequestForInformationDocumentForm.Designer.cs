@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label27 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -44,8 +44,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewDocumentApprovals = new System.Windows.Forms.DataGridView();
+            this.AppRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AppName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AppChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AppDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewDocumentHistory = new System.Windows.Forms.DataGridView();
+            this.HistVersion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HistIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HistChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewDocumentInformation = new System.Windows.Forms.DataGridView();
+            this.InfoType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InfoInformation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnSaveIntroductionInfo = new System.Windows.Forms.Button();
             this.txtOverview = new System.Windows.Forms.TextBox();
@@ -90,15 +99,7 @@
             this.listBoxConfidentiality = new System.Windows.Forms.ListBox();
             this.txtProjectName = new System.Windows.Forms.TextBox();
             this.btnSaveProjectNameRequestForInfo = new System.Windows.Forms.Button();
-            this.InfoType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.InfoInformation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HistVersion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HistIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HistChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AppRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AppName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AppChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AppDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_Export = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentApprovals)).BeginInit();
@@ -209,6 +210,46 @@
             this.dataGridViewDocumentApprovals.Size = new System.Drawing.Size(594, 114);
             this.dataGridViewDocumentApprovals.TabIndex = 2;
             // 
+            // AppRole
+            // 
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.AppRole.DefaultCellStyle = dataGridViewCellStyle1;
+            this.AppRole.HeaderText = "Role";
+            this.AppRole.MinimumWidth = 8;
+            this.AppRole.Name = "AppRole";
+            this.AppRole.Width = 150;
+            // 
+            // AppName
+            // 
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.AppName.DefaultCellStyle = dataGridViewCellStyle2;
+            this.AppName.HeaderText = "Name";
+            this.AppName.MinimumWidth = 8;
+            this.AppName.Name = "AppName";
+            this.AppName.Width = 150;
+            // 
+            // AppChanges
+            // 
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.AppChanges.DefaultCellStyle = dataGridViewCellStyle3;
+            this.AppChanges.HeaderText = "Changes";
+            this.AppChanges.MinimumWidth = 8;
+            this.AppChanges.Name = "AppChanges";
+            this.AppChanges.Width = 150;
+            // 
+            // AppDate
+            // 
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.AppDate.DefaultCellStyle = dataGridViewCellStyle4;
+            this.AppDate.HeaderText = "Date";
+            this.AppDate.MinimumWidth = 8;
+            this.AppDate.Name = "AppDate";
+            this.AppDate.Width = 150;
+            // 
             // dataGridViewDocumentHistory
             // 
             this.dataGridViewDocumentHistory.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -225,6 +266,36 @@
             this.dataGridViewDocumentHistory.Size = new System.Drawing.Size(594, 109);
             this.dataGridViewDocumentHistory.TabIndex = 1;
             // 
+            // HistVersion
+            // 
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            this.HistVersion.DefaultCellStyle = dataGridViewCellStyle5;
+            this.HistVersion.HeaderText = "Version";
+            this.HistVersion.MinimumWidth = 8;
+            this.HistVersion.Name = "HistVersion";
+            this.HistVersion.Width = 150;
+            // 
+            // HistIssueDate
+            // 
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            this.HistIssueDate.DefaultCellStyle = dataGridViewCellStyle6;
+            this.HistIssueDate.HeaderText = "IssueDate";
+            this.HistIssueDate.MinimumWidth = 8;
+            this.HistIssueDate.Name = "HistIssueDate";
+            this.HistIssueDate.Width = 150;
+            // 
+            // HistChanges
+            // 
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            this.HistChanges.DefaultCellStyle = dataGridViewCellStyle7;
+            this.HistChanges.HeaderText = "Changes";
+            this.HistChanges.MinimumWidth = 8;
+            this.HistChanges.Name = "HistChanges";
+            this.HistChanges.Width = 150;
+            // 
             // dataGridViewDocumentInformation
             // 
             this.dataGridViewDocumentInformation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -239,6 +310,26 @@
             this.dataGridViewDocumentInformation.RowHeadersWidth = 62;
             this.dataGridViewDocumentInformation.Size = new System.Drawing.Size(594, 100);
             this.dataGridViewDocumentInformation.TabIndex = 0;
+            // 
+            // InfoType
+            // 
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            this.InfoType.DefaultCellStyle = dataGridViewCellStyle8;
+            this.InfoType.HeaderText = "Type";
+            this.InfoType.MinimumWidth = 8;
+            this.InfoType.Name = "InfoType";
+            this.InfoType.Width = 150;
+            // 
+            // InfoInformation
+            // 
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            this.InfoInformation.DefaultCellStyle = dataGridViewCellStyle9;
+            this.InfoInformation.HeaderText = "Information";
+            this.InfoInformation.MinimumWidth = 8;
+            this.InfoInformation.Name = "InfoInformation";
+            this.InfoInformation.Width = 150;
             // 
             // tabPage2
             // 
@@ -907,95 +998,16 @@
             this.btnSaveProjectNameRequestForInfo.UseVisualStyleBackColor = true;
             this.btnSaveProjectNameRequestForInfo.Click += new System.EventHandler(this.btnSaveProjectNameRequestForInfo_Click);
             // 
-            // InfoType
+            // btn_Export
             // 
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
-            this.InfoType.DefaultCellStyle = dataGridViewCellStyle10;
-            this.InfoType.HeaderText = "Type";
-            this.InfoType.MinimumWidth = 8;
-            this.InfoType.Name = "InfoType";
-            this.InfoType.Width = 150;
-            // 
-            // InfoInformation
-            // 
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
-            this.InfoInformation.DefaultCellStyle = dataGridViewCellStyle11;
-            this.InfoInformation.HeaderText = "Information";
-            this.InfoInformation.MinimumWidth = 8;
-            this.InfoInformation.Name = "InfoInformation";
-            this.InfoInformation.Width = 150;
-            // 
-            // HistVersion
-            // 
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
-            this.HistVersion.DefaultCellStyle = dataGridViewCellStyle12;
-            this.HistVersion.HeaderText = "Version";
-            this.HistVersion.MinimumWidth = 8;
-            this.HistVersion.Name = "HistVersion";
-            this.HistVersion.Width = 150;
-            // 
-            // HistIssueDate
-            // 
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
-            this.HistIssueDate.DefaultCellStyle = dataGridViewCellStyle13;
-            this.HistIssueDate.HeaderText = "IssueDate";
-            this.HistIssueDate.MinimumWidth = 8;
-            this.HistIssueDate.Name = "HistIssueDate";
-            this.HistIssueDate.Width = 150;
-            // 
-            // HistChanges
-            // 
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
-            this.HistChanges.DefaultCellStyle = dataGridViewCellStyle14;
-            this.HistChanges.HeaderText = "Changes";
-            this.HistChanges.MinimumWidth = 8;
-            this.HistChanges.Name = "HistChanges";
-            this.HistChanges.Width = 150;
-            // 
-            // AppRole
-            // 
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
-            this.AppRole.DefaultCellStyle = dataGridViewCellStyle15;
-            this.AppRole.HeaderText = "Role";
-            this.AppRole.MinimumWidth = 8;
-            this.AppRole.Name = "AppRole";
-            this.AppRole.Width = 150;
-            // 
-            // AppName
-            // 
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
-            this.AppName.DefaultCellStyle = dataGridViewCellStyle16;
-            this.AppName.HeaderText = "Name";
-            this.AppName.MinimumWidth = 8;
-            this.AppName.Name = "AppName";
-            this.AppName.Width = 150;
-            // 
-            // AppChanges
-            // 
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Black;
-            this.AppChanges.DefaultCellStyle = dataGridViewCellStyle17;
-            this.AppChanges.HeaderText = "Changes";
-            this.AppChanges.MinimumWidth = 8;
-            this.AppChanges.Name = "AppChanges";
-            this.AppChanges.Width = 150;
-            // 
-            // AppDate
-            // 
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
-            this.AppDate.DefaultCellStyle = dataGridViewCellStyle18;
-            this.AppDate.HeaderText = "Date";
-            this.AppDate.MinimumWidth = 8;
-            this.AppDate.Name = "AppDate";
-            this.AppDate.Width = 150;
+            this.btn_Export.ForeColor = System.Drawing.Color.Black;
+            this.btn_Export.Location = new System.Drawing.Point(400, 7);
+            this.btn_Export.Name = "btn_Export";
+            this.btn_Export.Size = new System.Drawing.Size(134, 28);
+            this.btn_Export.TabIndex = 11;
+            this.btn_Export.Text = "Export to Word";
+            this.btn_Export.UseVisualStyleBackColor = true;
+            this.btn_Export.Click += new System.EventHandler(this.btn_Export_Click);
             // 
             // RequestForInformationDocumentForm
             // 
@@ -1003,6 +1015,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(800, 415);
+            this.Controls.Add(this.btn_Export);
             this.Controls.Add(this.btnSaveProjectNameRequestForInfo);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.tabControl1);
@@ -1095,5 +1108,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn AppName;
         private System.Windows.Forms.DataGridViewTextBoxColumn AppChanges;
         private System.Windows.Forms.DataGridViewTextBoxColumn AppDate;
+        private System.Windows.Forms.Button btn_Export;
     }
 }
