@@ -46,6 +46,8 @@
             this.detailsExpenseAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.expensedetailsPayeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.expensedetailsInvoiceNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnExportWord = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -60,12 +62,14 @@
             this.tabControl1.Location = new System.Drawing.Point(3, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(922, 476);
+            this.tabControl1.Size = new System.Drawing.Size(720, 446);
             this.tabControl1.TabIndex = 3;
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage1.Controls.Add(this.btnSave);
+            this.tabPage1.Controls.Add(this.btnExportWord);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
@@ -76,16 +80,18 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(914, 450);
+            this.tabPage1.Size = new System.Drawing.Size(712, 420);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "EXPENSE FORM";
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.label4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(140, 234);
+            this.label4.Location = new System.Drawing.Point(6, 234);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(154, 19);
             this.label4.TabIndex = 15;
@@ -94,9 +100,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.label2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(140, 117);
+            this.label2.Location = new System.Drawing.Point(3, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(140, 19);
             this.label2.TabIndex = 14;
@@ -105,13 +112,15 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.label1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(140, 16);
+            this.label1.Location = new System.Drawing.Point(3, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 19);
             this.label1.TabIndex = 13;
             this.label1.Text = "PROJECT DETAILS";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label27
             // 
@@ -129,7 +138,7 @@
             this.txtapprovaldetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.txtapprovaldetails.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtapprovaldetails.ForeColor = System.Drawing.Color.White;
-            this.txtapprovaldetails.Location = new System.Drawing.Point(144, 256);
+            this.txtapprovaldetails.Location = new System.Drawing.Point(3, 256);
             this.txtapprovaldetails.Multiline = true;
             this.txtapprovaldetails.Name = "txtapprovaldetails";
             this.txtapprovaldetails.Size = new System.Drawing.Size(719, 188);
@@ -142,10 +151,10 @@
             this.txtprojectdetailsContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.txtprojectdetailsContent.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtprojectdetailsContent.ForeColor = System.Drawing.Color.White;
-            this.txtprojectdetailsContent.Location = new System.Drawing.Point(144, 38);
+            this.txtprojectdetailsContent.Location = new System.Drawing.Point(0, 38);
             this.txtprojectdetailsContent.Multiline = true;
             this.txtprojectdetailsContent.Name = "txtprojectdetailsContent";
-            this.txtprojectdetailsContent.Size = new System.Drawing.Size(719, 76);
+            this.txtprojectdetailsContent.Size = new System.Drawing.Size(722, 76);
             this.txtprojectdetailsContent.TabIndex = 6;
             this.txtprojectdetailsContent.Text = "\r\nProject Name:\r\nProject Manager:\r\nTeam Member:";
             // 
@@ -161,10 +170,10 @@
             this.detailsExpenseAmount,
             this.expensedetailsPayeeName,
             this.expensedetailsInvoiceNumber});
-            this.dataGridView2.Location = new System.Drawing.Point(144, 134);
+            this.dataGridView2.Location = new System.Drawing.Point(5, 134);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(719, 97);
+            this.dataGridView2.Size = new System.Drawing.Size(701, 97);
             this.dataGridView2.TabIndex = 1;
             // 
             // expensedetailsActivityID
@@ -213,11 +222,37 @@
             this.expensedetailsInvoiceNumber.HeaderText = "Invoice Number";
             this.expensedetailsInvoiceNumber.Name = "expensedetailsInvoiceNumber";
             // 
+            // btnExportWord
+            // 
+            this.btnExportWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnExportWord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExportWord.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportWord.Location = new System.Drawing.Point(600, 2);
+            this.btnExportWord.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExportWord.Name = "btnExportWord";
+            this.btnExportWord.Size = new System.Drawing.Size(107, 37);
+            this.btnExportWord.TabIndex = 16;
+            this.btnExportWord.Text = "Export to Word";
+            this.btnExportWord.UseVisualStyleBackColor = false;
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(525, 2);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(71, 37);
+            this.btnSave.TabIndex = 17;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            // 
             // ExpenseFormDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(926, 514);
+            this.ClientSize = new System.Drawing.Size(746, 514);
             this.Controls.Add(this.tabControl1);
             this.Name = "ExpenseFormDocumentForm";
             this.Text = "ua";
@@ -248,5 +283,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn detailsExpenseAmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn expensedetailsPayeeName;
         private System.Windows.Forms.DataGridViewTextBoxColumn expensedetailsInvoiceNumber;
+        private System.Windows.Forms.Button btnExportWord;
+        private System.Windows.Forms.Button btnSave;
     }
 }
