@@ -103,7 +103,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
             else
             {
-                MessageBox.Show("No changes was made!", "save", MessageBoxButtons.OK);
+                MessageBox.Show("No changes were made!", "save", MessageBoxButtons.OK);
             }
         }
         private void loadDocument()

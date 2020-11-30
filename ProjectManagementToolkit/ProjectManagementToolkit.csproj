@@ -555,6 +555,9 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\RequestForInformationDocumentForm.resx">
       <DependentUpon>RequestForInformationDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\RequestForProposalDocumentForm.resx">
+      <DependentUpon>RequestForProposalDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\ResourcePlanDocumentForm.resx">
       <DependentUpon>ResourcePlanDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
