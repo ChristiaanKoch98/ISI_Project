@@ -412,6 +412,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         //Code for a heading 2
 
 
+                        //Code for a sentence
+                        document.InsertParagraph(currentAcceptanceManagementProcessModel.AcceptanceprocessOverview)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
                         //Code for a heading 2
                         var CompleteDeliverableAchievedHeading = document.InsertParagraph("1.2 Complete Deliverable")
                             .Bold()
