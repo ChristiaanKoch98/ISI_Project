@@ -50,50 +50,50 @@
             this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.initiationTab = new System.Windows.Forms.TabPage();
+            this.checkedListBox5 = new System.Windows.Forms.CheckedListBox();
+            this.planningTab = new System.Windows.Forms.TabPage();
+            this.checkedListBox22 = new System.Windows.Forms.CheckedListBox();
+            this.executionTab = new System.Windows.Forms.TabPage();
+            this.checkedListBox23 = new System.Windows.Forms.CheckedListBox();
+            this.closureTab = new System.Windows.Forms.TabPage();
+            this.checkedListBox24 = new System.Windows.Forms.CheckedListBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.timeManagement = new System.Windows.Forms.TabPage();
-            this.costManagement = new System.Windows.Forms.TabPage();
             this.checkedListBox6 = new System.Windows.Forms.CheckedListBox();
-            this.qualityManagement = new System.Windows.Forms.TabPage();
-            this.changeManagement = new System.Windows.Forms.TabPage();
-            this.riskManagement = new System.Windows.Forms.TabPage();
-            this.issueManagement = new System.Windows.Forms.TabPage();
-            this.procurementManagement = new System.Windows.Forms.TabPage();
-            this.acceptanceManagement = new System.Windows.Forms.TabPage();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.stageGateReviews = new System.Windows.Forms.TabPage();
-            this.auditingAndCompliance = new System.Windows.Forms.TabPage();
-            this.supportingStaff = new System.Windows.Forms.TabPage();
-            this.providingTools = new System.Windows.Forms.TabPage();
-            this.filingDocuments = new System.Windows.Forms.TabPage();
-            this.performingAdministration = new System.Windows.Forms.TabPage();
-            this.undertakingClosureReviews = new System.Windows.Forms.TabPage();
+            this.costManagement = new System.Windows.Forms.TabPage();
             this.checkedListBox7 = new System.Windows.Forms.CheckedListBox();
+            this.qualityManagement = new System.Windows.Forms.TabPage();
             this.checkedListBox8 = new System.Windows.Forms.CheckedListBox();
+            this.changeManagement = new System.Windows.Forms.TabPage();
             this.checkedListBox9 = new System.Windows.Forms.CheckedListBox();
+            this.riskManagement = new System.Windows.Forms.TabPage();
             this.checkedListBox10 = new System.Windows.Forms.CheckedListBox();
+            this.issueManagement = new System.Windows.Forms.TabPage();
             this.checkedListBox11 = new System.Windows.Forms.CheckedListBox();
+            this.procurementManagement = new System.Windows.Forms.TabPage();
             this.checkedListBox12 = new System.Windows.Forms.CheckedListBox();
+            this.acceptanceManagement = new System.Windows.Forms.TabPage();
             this.checkedListBox13 = new System.Windows.Forms.CheckedListBox();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
             this.checkedListBox14 = new System.Windows.Forms.CheckedListBox();
+            this.stageGateReviews = new System.Windows.Forms.TabPage();
             this.checkedListBox15 = new System.Windows.Forms.CheckedListBox();
+            this.auditingAndCompliance = new System.Windows.Forms.TabPage();
             this.checkedListBox16 = new System.Windows.Forms.CheckedListBox();
+            this.supportingStaff = new System.Windows.Forms.TabPage();
             this.checkedListBox17 = new System.Windows.Forms.CheckedListBox();
+            this.providingTools = new System.Windows.Forms.TabPage();
             this.checkedListBox18 = new System.Windows.Forms.CheckedListBox();
+            this.filingDocuments = new System.Windows.Forms.TabPage();
             this.checkedListBox19 = new System.Windows.Forms.CheckedListBox();
+            this.performingAdministration = new System.Windows.Forms.TabPage();
             this.checkedListBox20 = new System.Windows.Forms.CheckedListBox();
+            this.undertakingClosureReviews = new System.Windows.Forms.TabPage();
             this.checkedListBox21 = new System.Windows.Forms.CheckedListBox();
-            this.tabControl3 = new System.Windows.Forms.TabControl();
-            this.initiationTab = new System.Windows.Forms.TabPage();
-            this.planningTab = new System.Windows.Forms.TabPage();
-            this.executionTab = new System.Windows.Forms.TabPage();
-            this.checkedListBox5 = new System.Windows.Forms.CheckedListBox();
-            this.closureTab = new System.Windows.Forms.TabPage();
-            this.checkedListBox22 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox23 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox24 = new System.Windows.Forms.CheckedListBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -101,6 +101,11 @@
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            this.tabControl3.SuspendLayout();
+            this.initiationTab.SuspendLayout();
+            this.planningTab.SuspendLayout();
+            this.executionTab.SuspendLayout();
+            this.closureTab.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.timeManagement.SuspendLayout();
@@ -119,11 +124,6 @@
             this.filingDocuments.SuspendLayout();
             this.performingAdministration.SuspendLayout();
             this.undertakingClosureReviews.SuspendLayout();
-            this.tabControl3.SuspendLayout();
-            this.initiationTab.SuspendLayout();
-            this.planningTab.SuspendLayout();
-            this.executionTab.SuspendLayout();
-            this.closureTab.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -146,6 +146,9 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label2.Location = new System.Drawing.Point(42, 60);
@@ -156,6 +159,9 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
@@ -404,6 +410,131 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Templates";
             // 
+            // tabControl3
+            // 
+            this.tabControl3.Controls.Add(this.initiationTab);
+            this.tabControl3.Controls.Add(this.planningTab);
+            this.tabControl3.Controls.Add(this.executionTab);
+            this.tabControl3.Controls.Add(this.closureTab);
+            this.tabControl3.Location = new System.Drawing.Point(20, 59);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.SelectedIndex = 0;
+            this.tabControl3.Size = new System.Drawing.Size(462, 303);
+            this.tabControl3.TabIndex = 2;
+            // 
+            // initiationTab
+            // 
+            this.initiationTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.initiationTab.Controls.Add(this.checkedListBox5);
+            this.initiationTab.Location = new System.Drawing.Point(4, 21);
+            this.initiationTab.Name = "initiationTab";
+            this.initiationTab.Padding = new System.Windows.Forms.Padding(3);
+            this.initiationTab.Size = new System.Drawing.Size(454, 278);
+            this.initiationTab.TabIndex = 0;
+            this.initiationTab.Text = "Initiation";
+            // 
+            // checkedListBox5
+            // 
+            this.checkedListBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.checkedListBox5.FormattingEnabled = true;
+            this.checkedListBox5.Items.AddRange(new object[] {
+            "Business Case",
+            "Feasibility Study",
+            "Terms of Reference",
+            "Job Description",
+            "Stage Gate Review Form"});
+            this.checkedListBox5.Location = new System.Drawing.Point(6, 6);
+            this.checkedListBox5.Name = "checkedListBox5";
+            this.checkedListBox5.Size = new System.Drawing.Size(309, 94);
+            this.checkedListBox5.TabIndex = 1;
+            // 
+            // planningTab
+            // 
+            this.planningTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.planningTab.Controls.Add(this.checkedListBox22);
+            this.planningTab.Location = new System.Drawing.Point(4, 21);
+            this.planningTab.Name = "planningTab";
+            this.planningTab.Padding = new System.Windows.Forms.Padding(3);
+            this.planningTab.Size = new System.Drawing.Size(454, 278);
+            this.planningTab.TabIndex = 1;
+            this.planningTab.Text = "Planning";
+            // 
+            // checkedListBox22
+            // 
+            this.checkedListBox22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.checkedListBox22.FormattingEnabled = true;
+            this.checkedListBox22.Items.AddRange(new object[] {
+            "Project Plan",
+            "Resource Plan",
+            "Financial Plan",
+            "Quality Plan",
+            "Risk Plan    ",
+            "Acceptance Plan     ",
+            "Communications Plan",
+            "Procurement Plan",
+            "Supplier Contract",
+            "Tender Register"});
+            this.checkedListBox22.Location = new System.Drawing.Point(6, 6);
+            this.checkedListBox22.Name = "checkedListBox22";
+            this.checkedListBox22.Size = new System.Drawing.Size(309, 154);
+            this.checkedListBox22.TabIndex = 2;
+            // 
+            // executionTab
+            // 
+            this.executionTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.executionTab.Controls.Add(this.checkedListBox23);
+            this.executionTab.Location = new System.Drawing.Point(4, 21);
+            this.executionTab.Name = "executionTab";
+            this.executionTab.Padding = new System.Windows.Forms.Padding(3);
+            this.executionTab.Size = new System.Drawing.Size(454, 278);
+            this.executionTab.TabIndex = 2;
+            this.executionTab.Text = "Execution";
+            // 
+            // checkedListBox23
+            // 
+            this.checkedListBox23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.checkedListBox23.FormattingEnabled = true;
+            this.checkedListBox23.Items.AddRange(new object[] {
+            "Timesheet Form, Timesheet Register",
+            "Expense Form, Expense Register",
+            "Quality Form, Deliverables Register",
+            "Change Form, Change Register",
+            "Risk Form, Risk Register",
+            "Issue Form, Issue Register",
+            "Purchase Order Form",
+            "Procurement Register",
+            "Project Status Report",
+            "Communications Register",
+            "Acceptance Form",
+            "Acceptance Register"});
+            this.checkedListBox23.Location = new System.Drawing.Point(6, 6);
+            this.checkedListBox23.Name = "checkedListBox23";
+            this.checkedListBox23.Size = new System.Drawing.Size(309, 184);
+            this.checkedListBox23.TabIndex = 2;
+            // 
+            // closureTab
+            // 
+            this.closureTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.closureTab.Controls.Add(this.checkedListBox24);
+            this.closureTab.Location = new System.Drawing.Point(4, 21);
+            this.closureTab.Name = "closureTab";
+            this.closureTab.Padding = new System.Windows.Forms.Padding(3);
+            this.closureTab.Size = new System.Drawing.Size(454, 278);
+            this.closureTab.TabIndex = 3;
+            this.closureTab.Text = "Closure";
+            // 
+            // checkedListBox24
+            // 
+            this.checkedListBox24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.checkedListBox24.FormattingEnabled = true;
+            this.checkedListBox24.Items.AddRange(new object[] {
+            "Project Closure Report",
+            "Post Implementation Review"});
+            this.checkedListBox24.Location = new System.Drawing.Point(3, 6);
+            this.checkedListBox24.Name = "checkedListBox24";
+            this.checkedListBox24.Size = new System.Drawing.Size(309, 49);
+            this.checkedListBox24.TabIndex = 2;
+            // 
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
@@ -447,7 +578,7 @@
             this.tabControl2.Location = new System.Drawing.Point(6, 25);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(428, 331);
+            this.tabControl2.Size = new System.Drawing.Size(498, 331);
             this.tabControl2.TabIndex = 0;
             // 
             // timeManagement
@@ -458,21 +589,9 @@
             this.timeManagement.Location = new System.Drawing.Point(4, 23);
             this.timeManagement.Name = "timeManagement";
             this.timeManagement.Padding = new System.Windows.Forms.Padding(3);
-            this.timeManagement.Size = new System.Drawing.Size(472, 338);
+            this.timeManagement.Size = new System.Drawing.Size(420, 304);
             this.timeManagement.TabIndex = 0;
             this.timeManagement.Text = "Time Management";
-            // 
-            // costManagement
-            // 
-            this.costManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.costManagement.Controls.Add(this.checkedListBox7);
-            this.costManagement.Font = new System.Drawing.Font("Helvetica", 8.25F);
-            this.costManagement.Location = new System.Drawing.Point(4, 23);
-            this.costManagement.Name = "costManagement";
-            this.costManagement.Padding = new System.Windows.Forms.Padding(3);
-            this.costManagement.Size = new System.Drawing.Size(472, 338);
-            this.costManagement.TabIndex = 1;
-            this.costManagement.Text = "Cost Management";
             // 
             // checkedListBox6
             // 
@@ -483,177 +602,22 @@
                 "",
             "Keeping the Project Plan up-to-date and identifying any delivery date slippage",
             "Keeping the Timesheet Register up-to-date at all times"});
-            this.checkedListBox6.Location = new System.Drawing.Point(3, 31);
+            this.checkedListBox6.Location = new System.Drawing.Point(3, 6);
             this.checkedListBox6.Name = "checkedListBox6";
-            this.checkedListBox6.Size = new System.Drawing.Size(432, 84);
+            this.checkedListBox6.Size = new System.Drawing.Size(414, 79);
             this.checkedListBox6.TabIndex = 1;
             // 
-            // qualityManagement
+            // costManagement
             // 
-            this.qualityManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.qualityManagement.Controls.Add(this.checkedListBox8);
-            this.qualityManagement.Font = new System.Drawing.Font("Helvetica", 8.25F);
-            this.qualityManagement.Location = new System.Drawing.Point(4, 23);
-            this.qualityManagement.Name = "qualityManagement";
-            this.qualityManagement.Padding = new System.Windows.Forms.Padding(3);
-            this.qualityManagement.Size = new System.Drawing.Size(472, 338);
-            this.qualityManagement.TabIndex = 2;
-            this.qualityManagement.Text = "Quality Management";
-            // 
-            // changeManagement
-            // 
-            this.changeManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.changeManagement.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.changeManagement.Controls.Add(this.checkedListBox9);
-            this.changeManagement.Font = new System.Drawing.Font("Helvetica", 8.25F);
-            this.changeManagement.Location = new System.Drawing.Point(4, 23);
-            this.changeManagement.Name = "changeManagement";
-            this.changeManagement.Padding = new System.Windows.Forms.Padding(3);
-            this.changeManagement.Size = new System.Drawing.Size(472, 338);
-            this.changeManagement.TabIndex = 3;
-            this.changeManagement.Text = "Change Management";
-            // 
-            // riskManagement
-            // 
-            this.riskManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.riskManagement.Controls.Add(this.checkedListBox10);
-            this.riskManagement.Font = new System.Drawing.Font("Helvetica", 8.25F);
-            this.riskManagement.Location = new System.Drawing.Point(4, 23);
-            this.riskManagement.Name = "riskManagement";
-            this.riskManagement.Padding = new System.Windows.Forms.Padding(3);
-            this.riskManagement.Size = new System.Drawing.Size(472, 338);
-            this.riskManagement.TabIndex = 4;
-            this.riskManagement.Text = "Risk Management";
-            // 
-            // issueManagement
-            // 
-            this.issueManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.issueManagement.Controls.Add(this.checkedListBox11);
-            this.issueManagement.Font = new System.Drawing.Font("Helvetica", 8.25F);
-            this.issueManagement.Location = new System.Drawing.Point(4, 23);
-            this.issueManagement.Name = "issueManagement";
-            this.issueManagement.Padding = new System.Windows.Forms.Padding(3);
-            this.issueManagement.Size = new System.Drawing.Size(472, 338);
-            this.issueManagement.TabIndex = 5;
-            this.issueManagement.Text = "Issue Management";
-            // 
-            // procurementManagement
-            // 
-            this.procurementManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.procurementManagement.Controls.Add(this.checkedListBox12);
-            this.procurementManagement.Font = new System.Drawing.Font("Helvetica", 8.25F);
-            this.procurementManagement.Location = new System.Drawing.Point(4, 23);
-            this.procurementManagement.Name = "procurementManagement";
-            this.procurementManagement.Padding = new System.Windows.Forms.Padding(3);
-            this.procurementManagement.Size = new System.Drawing.Size(472, 338);
-            this.procurementManagement.TabIndex = 6;
-            this.procurementManagement.Text = "Procurement Management";
-            // 
-            // acceptanceManagement
-            // 
-            this.acceptanceManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.acceptanceManagement.Controls.Add(this.checkedListBox13);
-            this.acceptanceManagement.Font = new System.Drawing.Font("Helvetica", 8.25F);
-            this.acceptanceManagement.Location = new System.Drawing.Point(4, 23);
-            this.acceptanceManagement.Name = "acceptanceManagement";
-            this.acceptanceManagement.Padding = new System.Windows.Forms.Padding(3);
-            this.acceptanceManagement.Size = new System.Drawing.Size(472, 338);
-            this.acceptanceManagement.TabIndex = 7;
-            this.acceptanceManagement.Text = "Acceptance Management";
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage9.Controls.Add(this.checkedListBox14);
-            this.tabPage9.Location = new System.Drawing.Point(4, 23);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(472, 338);
-            this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "Communications Management ";
-            // 
-            // stageGateReviews
-            // 
-            this.stageGateReviews.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.stageGateReviews.Controls.Add(this.checkedListBox15);
-            this.stageGateReviews.Font = new System.Drawing.Font("Helvetica", 8.25F);
-            this.stageGateReviews.Location = new System.Drawing.Point(4, 23);
-            this.stageGateReviews.Name = "stageGateReviews";
-            this.stageGateReviews.Padding = new System.Windows.Forms.Padding(3);
-            this.stageGateReviews.Size = new System.Drawing.Size(472, 338);
-            this.stageGateReviews.TabIndex = 9;
-            this.stageGateReviews.Text = "Stage Gate Reviews";
-            // 
-            // auditingAndCompliance
-            // 
-            this.auditingAndCompliance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.auditingAndCompliance.Controls.Add(this.checkedListBox16);
-            this.auditingAndCompliance.Location = new System.Drawing.Point(4, 23);
-            this.auditingAndCompliance.Name = "auditingAndCompliance";
-            this.auditingAndCompliance.Padding = new System.Windows.Forms.Padding(3);
-            this.auditingAndCompliance.Size = new System.Drawing.Size(472, 338);
-            this.auditingAndCompliance.TabIndex = 10;
-            this.auditingAndCompliance.Text = "Auditing and Compliance";
-            // 
-            // supportingStaff
-            // 
-            this.supportingStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.supportingStaff.Controls.Add(this.checkedListBox17);
-            this.supportingStaff.Font = new System.Drawing.Font("Helvetica", 8.25F);
-            this.supportingStaff.Location = new System.Drawing.Point(4, 23);
-            this.supportingStaff.Name = "supportingStaff";
-            this.supportingStaff.Padding = new System.Windows.Forms.Padding(3);
-            this.supportingStaff.Size = new System.Drawing.Size(472, 338);
-            this.supportingStaff.TabIndex = 11;
-            this.supportingStaff.Text = "Supporting Staff";
-            // 
-            // providingTools
-            // 
-            this.providingTools.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.providingTools.Controls.Add(this.checkedListBox18);
-            this.providingTools.Font = new System.Drawing.Font("Helvetica", 8.25F);
-            this.providingTools.Location = new System.Drawing.Point(4, 23);
-            this.providingTools.Name = "providingTools";
-            this.providingTools.Padding = new System.Windows.Forms.Padding(3);
-            this.providingTools.Size = new System.Drawing.Size(472, 338);
-            this.providingTools.TabIndex = 12;
-            this.providingTools.Text = "Providing Tools";
-            // 
-            // filingDocuments
-            // 
-            this.filingDocuments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.filingDocuments.Controls.Add(this.checkedListBox19);
-            this.filingDocuments.Font = new System.Drawing.Font("Helvetica", 8.25F);
-            this.filingDocuments.Location = new System.Drawing.Point(4, 23);
-            this.filingDocuments.Name = "filingDocuments";
-            this.filingDocuments.Padding = new System.Windows.Forms.Padding(3);
-            this.filingDocuments.Size = new System.Drawing.Size(472, 338);
-            this.filingDocuments.TabIndex = 13;
-            this.filingDocuments.Text = "Filing Documents";
-            // 
-            // performingAdministration
-            // 
-            this.performingAdministration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.performingAdministration.Controls.Add(this.checkedListBox20);
-            this.performingAdministration.Font = new System.Drawing.Font("Helvetica", 8.25F);
-            this.performingAdministration.Location = new System.Drawing.Point(4, 23);
-            this.performingAdministration.Name = "performingAdministration";
-            this.performingAdministration.Padding = new System.Windows.Forms.Padding(3);
-            this.performingAdministration.Size = new System.Drawing.Size(472, 338);
-            this.performingAdministration.TabIndex = 14;
-            this.performingAdministration.Text = "Performing Administration";
-            // 
-            // undertakingClosureReviews
-            // 
-            this.undertakingClosureReviews.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.undertakingClosureReviews.Controls.Add(this.checkedListBox21);
-            this.undertakingClosureReviews.Font = new System.Drawing.Font("Helvetica", 8.25F);
-            this.undertakingClosureReviews.Location = new System.Drawing.Point(4, 23);
-            this.undertakingClosureReviews.Name = "undertakingClosureReviews";
-            this.undertakingClosureReviews.Padding = new System.Windows.Forms.Padding(3);
-            this.undertakingClosureReviews.Size = new System.Drawing.Size(420, 304);
-            this.undertakingClosureReviews.TabIndex = 15;
-            this.undertakingClosureReviews.Text = "Undertaking Closure Reviews";
+            this.costManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.costManagement.Controls.Add(this.checkedListBox7);
+            this.costManagement.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.costManagement.Location = new System.Drawing.Point(4, 23);
+            this.costManagement.Name = "costManagement";
+            this.costManagement.Padding = new System.Windows.Forms.Padding(3);
+            this.costManagement.Size = new System.Drawing.Size(420, 304);
+            this.costManagement.TabIndex = 1;
+            this.costManagement.Text = "Cost Management";
             // 
             // checkedListBox7
             // 
@@ -663,10 +627,22 @@
             "Monitoring the project progress by identifying the budget spent vs. forecast",
             "Keeping the Project Plan up-to-date and identifying any overspending",
             "Keeping the Expense Register up-to-date at all times"});
-            this.checkedListBox7.Location = new System.Drawing.Point(20, 39);
+            this.checkedListBox7.Location = new System.Drawing.Point(6, 6);
             this.checkedListBox7.Name = "checkedListBox7";
-            this.checkedListBox7.Size = new System.Drawing.Size(432, 68);
+            this.checkedListBox7.Size = new System.Drawing.Size(408, 64);
             this.checkedListBox7.TabIndex = 2;
+            // 
+            // qualityManagement
+            // 
+            this.qualityManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.qualityManagement.Controls.Add(this.checkedListBox8);
+            this.qualityManagement.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.qualityManagement.Location = new System.Drawing.Point(4, 23);
+            this.qualityManagement.Name = "qualityManagement";
+            this.qualityManagement.Padding = new System.Windows.Forms.Padding(3);
+            this.qualityManagement.Size = new System.Drawing.Size(420, 304);
+            this.qualityManagement.TabIndex = 2;
+            this.qualityManagement.Text = "Quality Management";
             // 
             // checkedListBox8
             // 
@@ -677,10 +653,23 @@
             "Ensuring that Quality Control is implemented to measure the actual level of quali" +
                 "ty",
             "Keeping the Deliverables Register up-to-date at all times"});
-            this.checkedListBox8.Location = new System.Drawing.Point(20, 39);
+            this.checkedListBox8.Location = new System.Drawing.Point(6, 6);
             this.checkedListBox8.Name = "checkedListBox8";
-            this.checkedListBox8.Size = new System.Drawing.Size(432, 68);
+            this.checkedListBox8.Size = new System.Drawing.Size(414, 64);
             this.checkedListBox8.TabIndex = 2;
+            // 
+            // changeManagement
+            // 
+            this.changeManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.changeManagement.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.changeManagement.Controls.Add(this.checkedListBox9);
+            this.changeManagement.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.changeManagement.Location = new System.Drawing.Point(4, 23);
+            this.changeManagement.Name = "changeManagement";
+            this.changeManagement.Padding = new System.Windows.Forms.Padding(3);
+            this.changeManagement.Size = new System.Drawing.Size(490, 304);
+            this.changeManagement.TabIndex = 3;
+            this.changeManagement.Text = "Change Management";
             // 
             // checkedListBox9
             // 
@@ -690,10 +679,22 @@
             "Receiving Change Requests and managing the change approval process",
             "Scheduling Change Requests and measuring the impact of changes implemented",
             "Keeping the Change Register up-to-date at all times"});
-            this.checkedListBox9.Location = new System.Drawing.Point(6, 23);
+            this.checkedListBox9.Location = new System.Drawing.Point(6, 6);
             this.checkedListBox9.Name = "checkedListBox9";
-            this.checkedListBox9.Size = new System.Drawing.Size(432, 68);
+            this.checkedListBox9.Size = new System.Drawing.Size(476, 64);
             this.checkedListBox9.TabIndex = 2;
+            // 
+            // riskManagement
+            // 
+            this.riskManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.riskManagement.Controls.Add(this.checkedListBox10);
+            this.riskManagement.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.riskManagement.Location = new System.Drawing.Point(4, 23);
+            this.riskManagement.Name = "riskManagement";
+            this.riskManagement.Padding = new System.Windows.Forms.Padding(3);
+            this.riskManagement.Size = new System.Drawing.Size(490, 304);
+            this.riskManagement.TabIndex = 4;
+            this.riskManagement.Text = "Risk Management";
             // 
             // checkedListBox10
             // 
@@ -703,10 +704,22 @@
             "Receiving Risk Forms and managing the risk review process",
             "Scheduling actions to mitigate risks and measuring the impact of such actions",
             "Keeping the Risk Register up-to-date at all times"});
-            this.checkedListBox10.Location = new System.Drawing.Point(20, 39);
+            this.checkedListBox10.Location = new System.Drawing.Point(6, 6);
             this.checkedListBox10.Name = "checkedListBox10";
-            this.checkedListBox10.Size = new System.Drawing.Size(432, 68);
+            this.checkedListBox10.Size = new System.Drawing.Size(478, 64);
             this.checkedListBox10.TabIndex = 2;
+            // 
+            // issueManagement
+            // 
+            this.issueManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.issueManagement.Controls.Add(this.checkedListBox11);
+            this.issueManagement.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.issueManagement.Location = new System.Drawing.Point(4, 23);
+            this.issueManagement.Name = "issueManagement";
+            this.issueManagement.Padding = new System.Windows.Forms.Padding(3);
+            this.issueManagement.Size = new System.Drawing.Size(490, 304);
+            this.issueManagement.TabIndex = 5;
+            this.issueManagement.Text = "Issue Management";
             // 
             // checkedListBox11
             // 
@@ -716,10 +729,22 @@
             "Receiving Issue Forms and managing the issue review process",
             "Scheduling actions to resolve issues and measuring the impact of such actions",
             "Keeping the Issue Register up-to-date at all times"});
-            this.checkedListBox11.Location = new System.Drawing.Point(20, 39);
+            this.checkedListBox11.Location = new System.Drawing.Point(6, 6);
             this.checkedListBox11.Name = "checkedListBox11";
-            this.checkedListBox11.Size = new System.Drawing.Size(432, 52);
+            this.checkedListBox11.Size = new System.Drawing.Size(478, 64);
             this.checkedListBox11.TabIndex = 2;
+            // 
+            // procurementManagement
+            // 
+            this.procurementManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.procurementManagement.Controls.Add(this.checkedListBox12);
+            this.procurementManagement.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.procurementManagement.Location = new System.Drawing.Point(4, 23);
+            this.procurementManagement.Name = "procurementManagement";
+            this.procurementManagement.Padding = new System.Windows.Forms.Padding(3);
+            this.procurementManagement.Size = new System.Drawing.Size(490, 304);
+            this.procurementManagement.TabIndex = 6;
+            this.procurementManagement.Text = "Procurement Management";
             // 
             // checkedListBox12
             // 
@@ -732,10 +757,22 @@
             "Making payment to suppliers for goods and services delivered",
             "Managing the overall performance of suppliers to ensure that they complete their " +
                 "responsibilities as contracted"});
-            this.checkedListBox12.Location = new System.Drawing.Point(20, 39);
+            this.checkedListBox12.Location = new System.Drawing.Point(6, 6);
             this.checkedListBox12.Name = "checkedListBox12";
-            this.checkedListBox12.Size = new System.Drawing.Size(432, 84);
+            this.checkedListBox12.Size = new System.Drawing.Size(478, 79);
             this.checkedListBox12.TabIndex = 2;
+            // 
+            // acceptanceManagement
+            // 
+            this.acceptanceManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.acceptanceManagement.Controls.Add(this.checkedListBox13);
+            this.acceptanceManagement.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.acceptanceManagement.Location = new System.Drawing.Point(4, 23);
+            this.acceptanceManagement.Name = "acceptanceManagement";
+            this.acceptanceManagement.Padding = new System.Windows.Forms.Padding(3);
+            this.acceptanceManagement.Size = new System.Drawing.Size(490, 304);
+            this.acceptanceManagement.TabIndex = 7;
+            this.acceptanceManagement.Text = "Acceptance Management";
             // 
             // checkedListBox13
             // 
@@ -746,10 +783,21 @@
             "Documenting the results of each review by completing Acceptance Forms",
             "Gaining final acceptance from the customer for each deliverable produced",
             "Keeping the Acceptance Register up-to-date at all times"});
-            this.checkedListBox13.Location = new System.Drawing.Point(20, 39);
+            this.checkedListBox13.Location = new System.Drawing.Point(6, 6);
             this.checkedListBox13.Name = "checkedListBox13";
-            this.checkedListBox13.Size = new System.Drawing.Size(432, 84);
+            this.checkedListBox13.Size = new System.Drawing.Size(478, 79);
             this.checkedListBox13.TabIndex = 2;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage9.Controls.Add(this.checkedListBox14);
+            this.tabPage9.Location = new System.Drawing.Point(4, 23);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(490, 304);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "Communications Management ";
             // 
             // checkedListBox14
             // 
@@ -762,10 +810,22 @@
             "Creating and releasing regular Project Status Reports",
             "Distributing press releases and managing Public Relations",
             "Keeping the Communications Register up-to-date at all times"});
-            this.checkedListBox14.Location = new System.Drawing.Point(20, 39);
+            this.checkedListBox14.Location = new System.Drawing.Point(6, 6);
             this.checkedListBox14.Name = "checkedListBox14";
-            this.checkedListBox14.Size = new System.Drawing.Size(432, 84);
+            this.checkedListBox14.Size = new System.Drawing.Size(478, 79);
             this.checkedListBox14.TabIndex = 2;
+            // 
+            // stageGateReviews
+            // 
+            this.stageGateReviews.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.stageGateReviews.Controls.Add(this.checkedListBox15);
+            this.stageGateReviews.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.stageGateReviews.Location = new System.Drawing.Point(4, 23);
+            this.stageGateReviews.Name = "stageGateReviews";
+            this.stageGateReviews.Padding = new System.Windows.Forms.Padding(3);
+            this.stageGateReviews.Size = new System.Drawing.Size(490, 304);
+            this.stageGateReviews.TabIndex = 9;
+            this.stageGateReviews.Text = "Stage Gate Reviews";
             // 
             // checkedListBox15
             // 
@@ -774,10 +834,21 @@
             this.checkedListBox15.Items.AddRange(new object[] {
             "Identifying the point in time when a Stage Gate must be undertaken",
             "Organizing the Stage Gate and recording the results on a Stage Gate Form"});
-            this.checkedListBox15.Location = new System.Drawing.Point(20, 39);
+            this.checkedListBox15.Location = new System.Drawing.Point(6, 6);
             this.checkedListBox15.Name = "checkedListBox15";
-            this.checkedListBox15.Size = new System.Drawing.Size(432, 68);
+            this.checkedListBox15.Size = new System.Drawing.Size(478, 64);
             this.checkedListBox15.TabIndex = 2;
+            // 
+            // auditingAndCompliance
+            // 
+            this.auditingAndCompliance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.auditingAndCompliance.Controls.Add(this.checkedListBox16);
+            this.auditingAndCompliance.Location = new System.Drawing.Point(4, 23);
+            this.auditingAndCompliance.Name = "auditingAndCompliance";
+            this.auditingAndCompliance.Padding = new System.Windows.Forms.Padding(3);
+            this.auditingAndCompliance.Size = new System.Drawing.Size(490, 304);
+            this.auditingAndCompliance.TabIndex = 10;
+            this.auditingAndCompliance.Text = "Auditing and Compliance";
             // 
             // checkedListBox16
             // 
@@ -791,8 +862,20 @@
                 " actions taken to correct them"});
             this.checkedListBox16.Location = new System.Drawing.Point(20, 39);
             this.checkedListBox16.Name = "checkedListBox16";
-            this.checkedListBox16.Size = new System.Drawing.Size(432, 68);
+            this.checkedListBox16.Size = new System.Drawing.Size(432, 64);
             this.checkedListBox16.TabIndex = 2;
+            // 
+            // supportingStaff
+            // 
+            this.supportingStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.supportingStaff.Controls.Add(this.checkedListBox17);
+            this.supportingStaff.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.supportingStaff.Location = new System.Drawing.Point(4, 23);
+            this.supportingStaff.Name = "supportingStaff";
+            this.supportingStaff.Padding = new System.Windows.Forms.Padding(3);
+            this.supportingStaff.Size = new System.Drawing.Size(490, 304);
+            this.supportingStaff.TabIndex = 11;
+            this.supportingStaff.Text = "Supporting Staff";
             // 
             // checkedListBox17
             // 
@@ -803,10 +886,22 @@
             "Supporting and advising staff, resolving staff issues and providing staff trainin" +
                 "g",
             "Paying staff in accordance with their contracts and administering leave"});
-            this.checkedListBox17.Location = new System.Drawing.Point(20, 39);
+            this.checkedListBox17.Location = new System.Drawing.Point(6, 6);
             this.checkedListBox17.Name = "checkedListBox17";
-            this.checkedListBox17.Size = new System.Drawing.Size(432, 100);
+            this.checkedListBox17.Size = new System.Drawing.Size(432, 94);
             this.checkedListBox17.TabIndex = 2;
+            // 
+            // providingTools
+            // 
+            this.providingTools.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.providingTools.Controls.Add(this.checkedListBox18);
+            this.providingTools.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.providingTools.Location = new System.Drawing.Point(4, 23);
+            this.providingTools.Name = "providingTools";
+            this.providingTools.Padding = new System.Windows.Forms.Padding(3);
+            this.providingTools.Size = new System.Drawing.Size(490, 304);
+            this.providingTools.TabIndex = 12;
+            this.providingTools.Text = "Providing Tools";
             // 
             // checkedListBox18
             // 
@@ -816,10 +911,22 @@
             "Procuring a suitable Project Management methodology",
             "Procuring tools for project planning, monitoring, controlling and reporting",
             "Training staff in the use of these tools and methodology"});
-            this.checkedListBox18.Location = new System.Drawing.Point(20, 39);
+            this.checkedListBox18.Location = new System.Drawing.Point(6, 6);
             this.checkedListBox18.Name = "checkedListBox18";
-            this.checkedListBox18.Size = new System.Drawing.Size(432, 52);
+            this.checkedListBox18.Size = new System.Drawing.Size(432, 49);
             this.checkedListBox18.TabIndex = 2;
+            // 
+            // filingDocuments
+            // 
+            this.filingDocuments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.filingDocuments.Controls.Add(this.checkedListBox19);
+            this.filingDocuments.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.filingDocuments.Location = new System.Drawing.Point(4, 23);
+            this.filingDocuments.Name = "filingDocuments";
+            this.filingDocuments.Padding = new System.Windows.Forms.Padding(3);
+            this.filingDocuments.Size = new System.Drawing.Size(490, 304);
+            this.filingDocuments.TabIndex = 13;
+            this.filingDocuments.Text = "Filing Documents";
             // 
             // checkedListBox19
             // 
@@ -830,10 +937,22 @@
                 "ence, standards, processes, registers, forms and templates",
             "Implementing an indexing method to ensure that project documentation may be easil" +
                 "y sourced when required"});
-            this.checkedListBox19.Location = new System.Drawing.Point(3, 30);
+            this.checkedListBox19.Location = new System.Drawing.Point(6, 6);
             this.checkedListBox19.Name = "checkedListBox19";
-            this.checkedListBox19.Size = new System.Drawing.Size(432, 52);
+            this.checkedListBox19.Size = new System.Drawing.Size(432, 49);
             this.checkedListBox19.TabIndex = 2;
+            // 
+            // performingAdministration
+            // 
+            this.performingAdministration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.performingAdministration.Controls.Add(this.checkedListBox20);
+            this.performingAdministration.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.performingAdministration.Location = new System.Drawing.Point(4, 23);
+            this.performingAdministration.Name = "performingAdministration";
+            this.performingAdministration.Padding = new System.Windows.Forms.Padding(3);
+            this.performingAdministration.Size = new System.Drawing.Size(490, 304);
+            this.performingAdministration.TabIndex = 14;
+            this.performingAdministration.Text = "Performing Administration";
             // 
             // checkedListBox20
             // 
@@ -843,10 +962,22 @@
             "Providing administration services such as the organization of travel bookings, ro" +
                 "om bookings, photocopying, secretarial, mail and correspondence",
             "Purchasing all office equipment and materials needed by the project"});
-            this.checkedListBox20.Location = new System.Drawing.Point(3, 23);
+            this.checkedListBox20.Location = new System.Drawing.Point(6, 6);
             this.checkedListBox20.Name = "checkedListBox20";
-            this.checkedListBox20.Size = new System.Drawing.Size(432, 52);
+            this.checkedListBox20.Size = new System.Drawing.Size(432, 49);
             this.checkedListBox20.TabIndex = 2;
+            // 
+            // undertakingClosureReviews
+            // 
+            this.undertakingClosureReviews.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.undertakingClosureReviews.Controls.Add(this.checkedListBox21);
+            this.undertakingClosureReviews.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.undertakingClosureReviews.Location = new System.Drawing.Point(4, 23);
+            this.undertakingClosureReviews.Name = "undertakingClosureReviews";
+            this.undertakingClosureReviews.Padding = new System.Windows.Forms.Padding(3);
+            this.undertakingClosureReviews.Size = new System.Drawing.Size(490, 304);
+            this.undertakingClosureReviews.TabIndex = 15;
+            this.undertakingClosureReviews.Text = "Undertaking Closure Reviews";
             // 
             // checkedListBox21
             // 
@@ -855,135 +986,10 @@
             this.checkedListBox21.Items.AddRange(new object[] {
             "Organizing the completion of a Post Implementation Review after Project Closure",
             "Communicating the results of the review to the appropriate project stakeholders"});
-            this.checkedListBox21.Location = new System.Drawing.Point(20, 39);
+            this.checkedListBox21.Location = new System.Drawing.Point(6, 6);
             this.checkedListBox21.Name = "checkedListBox21";
-            this.checkedListBox21.Size = new System.Drawing.Size(432, 52);
+            this.checkedListBox21.Size = new System.Drawing.Size(432, 49);
             this.checkedListBox21.TabIndex = 2;
-            // 
-            // tabControl3
-            // 
-            this.tabControl3.Controls.Add(this.initiationTab);
-            this.tabControl3.Controls.Add(this.planningTab);
-            this.tabControl3.Controls.Add(this.executionTab);
-            this.tabControl3.Controls.Add(this.closureTab);
-            this.tabControl3.Location = new System.Drawing.Point(20, 59);
-            this.tabControl3.Name = "tabControl3";
-            this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(462, 303);
-            this.tabControl3.TabIndex = 2;
-            // 
-            // initiationTab
-            // 
-            this.initiationTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.initiationTab.Controls.Add(this.checkedListBox5);
-            this.initiationTab.Location = new System.Drawing.Point(4, 21);
-            this.initiationTab.Name = "initiationTab";
-            this.initiationTab.Padding = new System.Windows.Forms.Padding(3);
-            this.initiationTab.Size = new System.Drawing.Size(454, 278);
-            this.initiationTab.TabIndex = 0;
-            this.initiationTab.Text = "Initiation";
-            // 
-            // planningTab
-            // 
-            this.planningTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.planningTab.Controls.Add(this.checkedListBox22);
-            this.planningTab.Location = new System.Drawing.Point(4, 21);
-            this.planningTab.Name = "planningTab";
-            this.planningTab.Padding = new System.Windows.Forms.Padding(3);
-            this.planningTab.Size = new System.Drawing.Size(454, 278);
-            this.planningTab.TabIndex = 1;
-            this.planningTab.Text = "Planning";
-            // 
-            // executionTab
-            // 
-            this.executionTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.executionTab.Controls.Add(this.checkedListBox23);
-            this.executionTab.Location = new System.Drawing.Point(4, 21);
-            this.executionTab.Name = "executionTab";
-            this.executionTab.Padding = new System.Windows.Forms.Padding(3);
-            this.executionTab.Size = new System.Drawing.Size(454, 278);
-            this.executionTab.TabIndex = 2;
-            this.executionTab.Text = "Execution";
-            // 
-            // checkedListBox5
-            // 
-            this.checkedListBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.checkedListBox5.FormattingEnabled = true;
-            this.checkedListBox5.Items.AddRange(new object[] {
-            "Business Case",
-            "Feasibility Study",
-            "Terms of Reference",
-            "Job Description",
-            "Stage Gate Review Form"});
-            this.checkedListBox5.Location = new System.Drawing.Point(29, 19);
-            this.checkedListBox5.Name = "checkedListBox5";
-            this.checkedListBox5.Size = new System.Drawing.Size(309, 94);
-            this.checkedListBox5.TabIndex = 1;
-            // 
-            // closureTab
-            // 
-            this.closureTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.closureTab.Controls.Add(this.checkedListBox24);
-            this.closureTab.Location = new System.Drawing.Point(4, 21);
-            this.closureTab.Name = "closureTab";
-            this.closureTab.Padding = new System.Windows.Forms.Padding(3);
-            this.closureTab.Size = new System.Drawing.Size(454, 278);
-            this.closureTab.TabIndex = 3;
-            this.closureTab.Text = "Closure";
-            // 
-            // checkedListBox22
-            // 
-            this.checkedListBox22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.checkedListBox22.FormattingEnabled = true;
-            this.checkedListBox22.Items.AddRange(new object[] {
-            "Project Plan",
-            "Resource Plan",
-            "Financial Plan",
-            "Quality Plan",
-            "Risk Plan    ",
-            "Acceptance Plan     ",
-            "Communications Plan",
-            "Procurement Plan",
-            "Supplier Contract",
-            "Tender Register"});
-            this.checkedListBox22.Location = new System.Drawing.Point(21, 6);
-            this.checkedListBox22.Name = "checkedListBox22";
-            this.checkedListBox22.Size = new System.Drawing.Size(309, 154);
-            this.checkedListBox22.TabIndex = 2;
-            // 
-            // checkedListBox23
-            // 
-            this.checkedListBox23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.checkedListBox23.FormattingEnabled = true;
-            this.checkedListBox23.Items.AddRange(new object[] {
-            "Timesheet Form, Timesheet Register",
-            "Expense Form, Expense Register",
-            "Quality Form, Deliverables Register",
-            "Change Form, Change Register",
-            "Risk Form, Risk Register",
-            "Issue Form, Issue Register",
-            "Purchase Order Form",
-            "Procurement Register",
-            "Project Status Report",
-            "Communications Register",
-            "Acceptance Form",
-            "Acceptance Register"});
-            this.checkedListBox23.Location = new System.Drawing.Point(25, 26);
-            this.checkedListBox23.Name = "checkedListBox23";
-            this.checkedListBox23.Size = new System.Drawing.Size(309, 184);
-            this.checkedListBox23.TabIndex = 2;
-            // 
-            // checkedListBox24
-            // 
-            this.checkedListBox24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.checkedListBox24.FormattingEnabled = true;
-            this.checkedListBox24.Items.AddRange(new object[] {
-            "Project Closure Report",
-            "Post Implementation Review"});
-            this.checkedListBox24.Location = new System.Drawing.Point(23, 16);
-            this.checkedListBox24.Name = "checkedListBox24";
-            this.checkedListBox24.Size = new System.Drawing.Size(309, 49);
-            this.checkedListBox24.TabIndex = 2;
             // 
             // ProjectOfficeChecklistDocumentForm
             // 
@@ -1009,6 +1015,11 @@
             this.tabPage5.PerformLayout();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
+            this.tabControl3.ResumeLayout(false);
+            this.initiationTab.ResumeLayout(false);
+            this.planningTab.ResumeLayout(false);
+            this.executionTab.ResumeLayout(false);
+            this.closureTab.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.timeManagement.ResumeLayout(false);
@@ -1027,11 +1038,6 @@
             this.filingDocuments.ResumeLayout(false);
             this.performingAdministration.ResumeLayout(false);
             this.undertakingClosureReviews.ResumeLayout(false);
-            this.tabControl3.ResumeLayout(false);
-            this.initiationTab.ResumeLayout(false);
-            this.planningTab.ResumeLayout(false);
-            this.executionTab.ResumeLayout(false);
-            this.closureTab.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
