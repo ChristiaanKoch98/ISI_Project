@@ -12,6 +12,8 @@ using ProjectManagementToolkit.Utility;
 using ProjectManagementToolkit.Properties;
 using Newtonsoft.Json;
 using MoreLinq;
+using Xceed.Document.NET;
+using Xceed.Words.NET;
 
 namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
@@ -20,7 +22,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         VersionControl<CommunicationsPlanModel> versionControl;
         CommunicationsPlanModel newCommunicationsPlanModel;
         CommunicationsPlanModel currentCommunicationsPlanModel;
-
+        Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
+        ProjectModel projectModel;
         public CommunicationsPlanDocumentForm()
         {
             InitializeComponent();

@@ -85,7 +85,7 @@
             this.tabControl1.Controls.Add(this.tabReviewDetails);
             this.tabControl1.Controls.Add(this.tabApprovalDetails);
             this.tabControl1.Location = new System.Drawing.Point(9, 32);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(778, 597);
@@ -107,9 +107,9 @@
             this.tabProjectDetails.Controls.Add(this.label2);
             this.tabProjectDetails.Controls.Add(this.label1);
             this.tabProjectDetails.Location = new System.Drawing.Point(4, 22);
-            this.tabProjectDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectDetails.Margin = new System.Windows.Forms.Padding(2);
             this.tabProjectDetails.Name = "tabProjectDetails";
-            this.tabProjectDetails.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectDetails.Padding = new System.Windows.Forms.Padding(2);
             this.tabProjectDetails.Size = new System.Drawing.Size(770, 571);
             this.tabProjectDetails.TabIndex = 0;
             this.tabProjectDetails.Text = "Project Details";
@@ -117,7 +117,7 @@
             // txtProjectManager
             // 
             this.txtProjectManager.Location = new System.Drawing.Point(218, 82);
-            this.txtProjectManager.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectManager.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectManager.Name = "txtProjectManager";
             this.txtProjectManager.Size = new System.Drawing.Size(233, 20);
             this.txtProjectManager.TabIndex = 14;
@@ -125,7 +125,7 @@
             // txtProjectSponsor
             // 
             this.txtProjectSponsor.Location = new System.Drawing.Point(218, 145);
-            this.txtProjectSponsor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectSponsor.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectSponsor.Name = "txtProjectSponsor";
             this.txtProjectSponsor.Size = new System.Drawing.Size(233, 20);
             this.txtProjectSponsor.TabIndex = 13;
@@ -133,7 +133,7 @@
             // txtReportPreparedBy
             // 
             this.txtReportPreparedBy.Location = new System.Drawing.Point(218, 200);
-            this.txtReportPreparedBy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtReportPreparedBy.Margin = new System.Windows.Forms.Padding(2);
             this.txtReportPreparedBy.Name = "txtReportPreparedBy";
             this.txtReportPreparedBy.Size = new System.Drawing.Size(233, 20);
             this.txtReportPreparedBy.TabIndex = 12;
@@ -141,7 +141,7 @@
             // txtReportPreperationDate
             // 
             this.txtReportPreperationDate.Location = new System.Drawing.Point(218, 252);
-            this.txtReportPreperationDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtReportPreperationDate.Margin = new System.Windows.Forms.Padding(2);
             this.txtReportPreperationDate.Name = "txtReportPreperationDate";
             this.txtReportPreperationDate.Size = new System.Drawing.Size(233, 20);
             this.txtReportPreperationDate.TabIndex = 11;
@@ -149,7 +149,7 @@
             // txtReportingPeriod
             // 
             this.txtReportingPeriod.Location = new System.Drawing.Point(218, 311);
-            this.txtReportingPeriod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtReportingPeriod.Margin = new System.Windows.Forms.Padding(2);
             this.txtReportingPeriod.Name = "txtReportingPeriod";
             this.txtReportingPeriod.Size = new System.Drawing.Size(233, 20);
             this.txtReportingPeriod.TabIndex = 10;
@@ -157,7 +157,7 @@
             // txtProjectName2
             // 
             this.txtProjectName2.Location = new System.Drawing.Point(218, 28);
-            this.txtProjectName2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectName2.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectName2.Name = "txtProjectName2";
             this.txtProjectName2.Size = new System.Drawing.Size(233, 20);
             this.txtProjectName2.TabIndex = 9;
@@ -270,9 +270,9 @@
             this.tabOverallStatus.Controls.Add(this.label17);
             this.tabOverallStatus.Controls.Add(this.label18);
             this.tabOverallStatus.Location = new System.Drawing.Point(4, 22);
-            this.tabOverallStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabOverallStatus.Margin = new System.Windows.Forms.Padding(2);
             this.tabOverallStatus.Name = "tabOverallStatus";
-            this.tabOverallStatus.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabOverallStatus.Padding = new System.Windows.Forms.Padding(2);
             this.tabOverallStatus.Size = new System.Drawing.Size(770, 571);
             this.tabOverallStatus.TabIndex = 1;
             this.tabOverallStatus.Text = "Overall Status";
@@ -280,7 +280,7 @@
             // txtProjectChanges
             // 
             this.txtProjectChanges.Location = new System.Drawing.Point(214, 433);
-            this.txtProjectChanges.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectChanges.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectChanges.Multiline = true;
             this.txtProjectChanges.Name = "txtProjectChanges";
             this.txtProjectChanges.Size = new System.Drawing.Size(557, 67);
@@ -289,7 +289,7 @@
             // txtProjectIssues
             // 
             this.txtProjectIssues.Location = new System.Drawing.Point(214, 362);
-            this.txtProjectIssues.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectIssues.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectIssues.Multiline = true;
             this.txtProjectIssues.Name = "txtProjectIssues";
             this.txtProjectIssues.Size = new System.Drawing.Size(557, 67);
@@ -298,7 +298,7 @@
             // txtProjectRisks
             // 
             this.txtProjectRisks.Location = new System.Drawing.Point(214, 290);
-            this.txtProjectRisks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectRisks.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectRisks.Multiline = true;
             this.txtProjectRisks.Name = "txtProjectRisks";
             this.txtProjectRisks.Size = new System.Drawing.Size(557, 67);
@@ -307,7 +307,7 @@
             // txtProjectDeliverables
             // 
             this.txtProjectDeliverables.Location = new System.Drawing.Point(214, 219);
-            this.txtProjectDeliverables.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectDeliverables.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectDeliverables.Multiline = true;
             this.txtProjectDeliverables.Name = "txtProjectDeliverables";
             this.txtProjectDeliverables.Size = new System.Drawing.Size(557, 67);
@@ -316,7 +316,7 @@
             // txtProjectExpenses
             // 
             this.txtProjectExpenses.Location = new System.Drawing.Point(214, 145);
-            this.txtProjectExpenses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectExpenses.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectExpenses.Multiline = true;
             this.txtProjectExpenses.Name = "txtProjectExpenses";
             this.txtProjectExpenses.Size = new System.Drawing.Size(557, 67);
@@ -325,7 +325,7 @@
             // txtProjectSchedule
             // 
             this.txtProjectSchedule.Location = new System.Drawing.Point(214, 74);
-            this.txtProjectSchedule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectSchedule.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectSchedule.Multiline = true;
             this.txtProjectSchedule.Name = "txtProjectSchedule";
             this.txtProjectSchedule.Size = new System.Drawing.Size(557, 67);
@@ -350,7 +350,7 @@
             // txtSummary
             // 
             this.txtSummary.Location = new System.Drawing.Point(214, 2);
-            this.txtSummary.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSummary.Margin = new System.Windows.Forms.Padding(2);
             this.txtSummary.Multiline = true;
             this.txtSummary.Name = "txtSummary";
             this.txtSummary.Size = new System.Drawing.Size(557, 67);
@@ -451,9 +451,9 @@
             this.tabReviewDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tabReviewDetails.Controls.Add(this.dgvReviewDetails);
             this.tabReviewDetails.Location = new System.Drawing.Point(4, 22);
-            this.tabReviewDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabReviewDetails.Margin = new System.Windows.Forms.Padding(2);
             this.tabReviewDetails.Name = "tabReviewDetails";
-            this.tabReviewDetails.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabReviewDetails.Padding = new System.Windows.Forms.Padding(2);
             this.tabReviewDetails.Size = new System.Drawing.Size(770, 571);
             this.tabReviewDetails.TabIndex = 2;
             this.tabReviewDetails.Text = "Review Details";
@@ -465,7 +465,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvReviewDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvReviewDetails.Location = new System.Drawing.Point(4, 5);
-            this.dgvReviewDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvReviewDetails.Margin = new System.Windows.Forms.Padding(2);
             this.dgvReviewDetails.Name = "dgvReviewDetails";
             this.dgvReviewDetails.RowHeadersWidth = 51;
             this.dgvReviewDetails.Size = new System.Drawing.Size(762, 564);
@@ -483,9 +483,9 @@
             this.tabApprovalDetails.Controls.Add(this.label8);
             this.tabApprovalDetails.Controls.Add(this.txtDate);
             this.tabApprovalDetails.Location = new System.Drawing.Point(4, 22);
-            this.tabApprovalDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabApprovalDetails.Margin = new System.Windows.Forms.Padding(2);
             this.tabApprovalDetails.Name = "tabApprovalDetails";
-            this.tabApprovalDetails.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabApprovalDetails.Padding = new System.Windows.Forms.Padding(2);
             this.tabApprovalDetails.Size = new System.Drawing.Size(770, 571);
             this.tabApprovalDetails.TabIndex = 3;
             this.tabApprovalDetails.Text = "Approval Details";
@@ -493,7 +493,7 @@
             // txtSupportingDocumentation
             // 
             this.txtSupportingDocumentation.Location = new System.Drawing.Point(124, 5);
-            this.txtSupportingDocumentation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSupportingDocumentation.Margin = new System.Windows.Forms.Padding(2);
             this.txtSupportingDocumentation.Multiline = true;
             this.txtSupportingDocumentation.Name = "txtSupportingDocumentation";
             this.txtSupportingDocumentation.Size = new System.Drawing.Size(643, 90);
@@ -502,7 +502,7 @@
             // txtSignature
             // 
             this.txtSignature.Location = new System.Drawing.Point(124, 99);
-            this.txtSignature.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSignature.Margin = new System.Windows.Forms.Padding(2);
             this.txtSignature.Multiline = true;
             this.txtSignature.Name = "txtSignature";
             this.txtSignature.Size = new System.Drawing.Size(643, 90);
@@ -556,7 +556,7 @@
             // txtDate
             // 
             this.txtDate.Location = new System.Drawing.Point(124, 193);
-            this.txtDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDate.Margin = new System.Windows.Forms.Padding(2);
             this.txtDate.Multiline = true;
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(643, 90);
@@ -568,7 +568,7 @@
             this.txtProjectName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProjectName.ForeColor = System.Drawing.Color.White;
             this.txtProjectName.Location = new System.Drawing.Point(230, 5);
-            this.txtProjectName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectName.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectName.Name = "txtProjectName";
             this.txtProjectName.Size = new System.Drawing.Size(76, 20);
             this.txtProjectName.TabIndex = 17;
@@ -616,9 +616,10 @@
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PhaseReviewFormExecutionDocumentForm";
             this.Text = "PhaseReviewFormExecutionDocumentForm";
+            this.Load += new System.EventHandler(this.PhaseReviewFormExecutionDocumentForm_Load_1);
             this.tabControl1.ResumeLayout(false);
             this.tabProjectDetails.ResumeLayout(false);
             this.tabProjectDetails.PerformLayout();

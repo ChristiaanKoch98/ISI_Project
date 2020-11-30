@@ -12,6 +12,8 @@ using ProjectManagementToolkit.Utility;
 using ProjectManagementToolkit.Properties;
 using Newtonsoft.Json;
 using MoreLinq;
+using Xceed.Words.NET;
+using Xceed.Document.NET;
 
 namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
@@ -20,7 +22,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         VersionControl<ProjectStatusReportModel> versionControl;
         ProjectStatusReportModel newProjectStatusReportModel;
         ProjectStatusReportModel currentProjectStatusReportModel;
-
+        Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
         public ProjectStatusReportDocumentForm()
         {
             InitializeComponent();

@@ -12,6 +12,8 @@ using ProjectManagementToolkit.Utility;
 using ProjectManagementToolkit.Properties;
 using Newtonsoft.Json;
 using MoreLinq;
+using Xceed.Document.NET;
+using Xceed.Words.NET;
 
 namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
@@ -20,6 +22,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         VersionControl<TermsOfReferenceModel> versionControl;
         TermsOfReferenceModel newTermsOfReferenceModel;
         TermsOfReferenceModel currentTermsOfReferenceModel;
+        ProjectModel projectModel;
+        Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
 
         public TermOfReferenceDocumentForm()
         {
@@ -695,12 +699,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             { TableOfContentsSwitches.H, ""}
                         };
 
-                       var ComPlanHeading = document.InsertParagraph("1 Executive summary")
-                      .Bold()
-                      .FontSize(12d)
-                      .Color(Color.Black)
-                      .Bold(true)
-                      .Font("Arial");
+                        var ComPlanHeading = document.InsertParagraph("1 Executive summary")
+                       .Bold()
+                       .FontSize(12d)
+                       .Color(Color.Black)
+                       .Bold(true)
+                       .Font("Arial");
 
                         document.InsertParagraph(currentTermsOfReferenceModel.ExecutiveSummary)
                             .FontSize(11d)
@@ -844,7 +848,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         customersDoc.SetWidths(new float[] { 394, 762 });
                         document.InsertTable(customersDoc);
 
-                        var custSubHeading = document.InsertParagraph("3.2 Stakeholders")
+                        var custSubHeading1 = document.InsertParagraph("3.2 Stakeholders")
                             .Bold()
                             .FontSize(14d)
                             .Color(Color.Black)
@@ -1134,12 +1138,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         finPlanDoc.Rows[0].Cells[2].Paragraphs[0].Append("ExpenditureValue")
                             .Bold(true)
                             .Color(Color.White);
-                       
+
 
                         finPlanDoc.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
                         finPlanDoc.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
                         finPlanDoc.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
-           
+
 
                         for (int i = 1; i < currentTermsOfReferenceModel.FinP.Count + 1; i++)
                         {
@@ -1178,7 +1182,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             qPlanDoc.Rows[i].Cells[1].Paragraphs[0].Append(currentTermsOfReferenceModel.QuaP[i - 1].Description);
                         }
 
-                        qPlanDoc.SetWidths(new float[] { 394, 762});
+                        qPlanDoc.SetWidths(new float[] { 394, 762 });
                         document.InsertTable(qPlanDoc);
 
                         var compcHeading = document.InsertParagraph("4.8 Completion Criteria")
@@ -1278,19 +1282,19 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         issuesDoc.Rows[0].Cells[2].Paragraphs[0].Append("Action")
                             .Bold(true)
                             .Color(Color.White);
-                    
+
 
                         issuesDoc.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
                         issuesDoc.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
                         issuesDoc.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
-              
+
 
                         for (int i = 1; i < currentTermsOfReferenceModel.Issuess.Count + 1; i++)
                         {
                             issuesDoc.Rows[i].Cells[0].Paragraphs[0].Append(currentTermsOfReferenceModel.Issuess[i - 1].IssueDescription);
                             issuesDoc.Rows[i].Cells[1].Paragraphs[0].Append(currentTermsOfReferenceModel.Issuess[i - 1].IssuePriority);
                             issuesDoc.Rows[i].Cells[2].Paragraphs[0].Append(currentTermsOfReferenceModel.Issuess[i - 1].Action);
-                           
+
                         }
 
                         issuesDoc.SetWidths(new float[] { 394, 762, 762, 762 });
@@ -1343,6 +1347,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 }
             }
-           
-    }
+        }    
+    }   
 }
