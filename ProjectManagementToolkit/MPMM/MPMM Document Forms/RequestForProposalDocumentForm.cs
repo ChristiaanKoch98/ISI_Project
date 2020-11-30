@@ -92,7 +92,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newRequestForProposalModel.introductionQuestions = txtQuestions.Text;
 
             newRequestForProposalModel.companyDescription = txtCompany.Text;
-            newRequestForProposalModel.companyVisionObjectivesSizeLocation = txtVisionObjectivesSizeLocation.Text;
+            newRequestForProposalModel.companyVisionObjectivesSizeLocation = txtVision.Text;
             newRequestForProposalModel.companyTypeAndNumberOfCustomers = txtTypeAndNumberOfCustomers.Text;
             newRequestForProposalModel.companyMarketSegment = txtMarketSegment.Text;
             newRequestForProposalModel.companyKnowledgeOfIndustryAndExpertise = txtKnowledgeOfIndustryAndExpertise.Text;
@@ -174,7 +174,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 txtQuestions.Text = currentRequestForProposalModel.introductionQuestions;
 
                 txtCompany.Text = currentRequestForProposalModel.companyDescription;
-                txtVisionObjectivesSizeLocation.Text = currentRequestForProposalModel.companyVisionObjectivesSizeLocation;
+                txtVision.Text = currentRequestForProposalModel.companyVisionObjectivesSizeLocation;
                 txtTypeAndNumberOfCustomers.Text = currentRequestForProposalModel.companyTypeAndNumberOfCustomers;
                 //txtMarketSegment.Text = currentRequestForProposalModel.companyMarketSegment;
                 txtKnowledgeOfIndustryAndExpertise.Text = currentRequestForProposalModel.companyKnowledgeOfIndustryAndExpertise;
@@ -614,5 +614,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
         }
+
+       
     }
 }

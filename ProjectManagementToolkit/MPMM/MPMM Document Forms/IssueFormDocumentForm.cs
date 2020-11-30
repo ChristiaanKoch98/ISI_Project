@@ -28,21 +28,22 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             InitializeComponent();
         }
 
-        private void IssueFormDocumentForm_Load(object sender, EventArgs e)
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+            saveDocument();
+        }
+
+        private void IssueFormDocumentForm_Load_1(object sender, EventArgs e)
         {
             loadDocument();
             string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
             txtIssueFormProjectName.Text = projectModel.ProjectName;
+
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            saveDocument();
-        }
-
-        private void btnExport_Click(object sender, EventArgs e)
+        private void btnExport_Click_1(object sender, EventArgs e)
         {
             exportToWord();
         }
@@ -53,7 +54,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newIssueFormModel.ProjectManagerName = txtProjectManagerName.Text;
             newIssueFormModel.IssueID = txtIssueID.Text;
             newIssueFormModel.RaisedBy = txtRaisedBy.Text;
-            newIssueFormModel.DateRaised = txtDateRaised.Text;
+            newIssueFormModel.DateRaised = dateTimePicker1.ToString();
             newIssueFormModel.IssueDescription = txtIssueDescription.Text;
             newIssueFormModel.IssueImpact = txtIssueImpact.Text;
             newIssueFormModel.IssueResolution = txtIssueResolution.Text;
@@ -97,7 +98,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 txtProjectManagerName.Text = newIssueFormModel.ProjectManagerName;
                 txtIssueID.Text = newIssueFormModel.IssueID;
                 txtRaisedBy.Text = newIssueFormModel.RaisedBy;
-                txtDateRaised.Text = newIssueFormModel.DateRaised;
+                dateTimePicker1.Value = Convert.ToDateTime(newIssueFormModel.DateRaised);
                 txtIssueDescription.Text = newIssueFormModel.IssueDescription;
                 txtIssueImpact.Text = newIssueFormModel.IssueImpact;
                 txtIssueResolution.Text = newIssueFormModel.IssueResolution;

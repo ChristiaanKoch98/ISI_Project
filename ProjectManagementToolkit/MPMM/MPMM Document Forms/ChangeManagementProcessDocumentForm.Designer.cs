@@ -30,8 +30,8 @@
         {
             this.label27 = new System.Windows.Forms.Label();
             this.txtChangeManagementProcessProjectName = new System.Windows.Forms.TextBox();
-            this.btnChangeManagementProcess_MainMenue = new System.Windows.Forms.Button();
-            this.btnChangeManagementProcess_EnterProjectName = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.tbcChangeManagementProcess = new System.Windows.Forms.TabControl();
             this.tbpDocumentControl = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
@@ -72,12 +72,12 @@
             this.txtProjectBoard = new System.Windows.Forms.TextBox();
             this.txtChangeRoles = new System.Windows.Forms.TextBox();
             this.tbpChangeDocument = new System.Windows.Forms.TabPage();
-            this.txtChangeRegister = new System.Windows.Forms.TextBox();
-            this.txtChangeRequestForm = new System.Windows.Forms.TextBox();
-            this.txtChangeDocuments = new System.Windows.Forms.TextBox();
             this.tbcChangeDocument = new System.Windows.Forms.TabControl();
             this.tbpChangeRequestForm = new System.Windows.Forms.TabPage();
+            this.txtChangeRequestForm = new System.Windows.Forms.TextBox();
             this.tbpChangeRegister = new System.Windows.Forms.TabPage();
+            this.txtChangeRegister = new System.Windows.Forms.TextBox();
+            this.txtChangeDocuments = new System.Windows.Forms.TextBox();
             this.tbcChangeManagementProcess.SuspendLayout();
             this.tbpDocumentControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentApprovals)).BeginInit();
@@ -110,7 +110,7 @@
             this.label27.Location = new System.Drawing.Point(16, 24);
             this.label27.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(183, 14);
+            this.label27.Size = new System.Drawing.Size(239, 16);
             this.label27.TabIndex = 5;
             this.label27.Text = "Please Enter Your Project Name:";
             // 
@@ -119,37 +119,39 @@
             this.txtChangeManagementProcessProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.txtChangeManagementProcessProjectName.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtChangeManagementProcessProjectName.ForeColor = System.Drawing.Color.Black;
-            this.txtChangeManagementProcessProjectName.Location = new System.Drawing.Point(209, 21);
+            this.txtChangeManagementProcessProjectName.Location = new System.Drawing.Point(265, 21);
             this.txtChangeManagementProcessProjectName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtChangeManagementProcessProjectName.Name = "txtChangeManagementProcessProjectName";
-            this.txtChangeManagementProcessProjectName.Size = new System.Drawing.Size(383, 20);
+            this.txtChangeManagementProcessProjectName.Size = new System.Drawing.Size(383, 24);
             this.txtChangeManagementProcessProjectName.TabIndex = 4;
             this.txtChangeManagementProcessProjectName.Text = "Project Name";
             // 
-            // btnChangeManagementProcess_MainMenue
+            // btnExport
             // 
-            this.btnChangeManagementProcess_MainMenue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnChangeManagementProcess_MainMenue.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnChangeManagementProcess_MainMenue.ForeColor = System.Drawing.Color.Black;
-            this.btnChangeManagementProcess_MainMenue.Location = new System.Drawing.Point(716, 18);
-            this.btnChangeManagementProcess_MainMenue.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnChangeManagementProcess_MainMenue.Name = "btnChangeManagementProcess_MainMenue";
-            this.btnChangeManagementProcess_MainMenue.Size = new System.Drawing.Size(130, 26);
-            this.btnChangeManagementProcess_MainMenue.TabIndex = 16;
-            this.btnChangeManagementProcess_MainMenue.Text = "Back to Main Menu";
-            this.btnChangeManagementProcess_MainMenue.UseVisualStyleBackColor = false;
+            this.btnExport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExport.ForeColor = System.Drawing.Color.Black;
+            this.btnExport.Location = new System.Drawing.Point(784, 18);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(130, 26);
+            this.btnExport.TabIndex = 16;
+            this.btnExport.Text = "Export to Word";
+            this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
-            // btnChangeManagementProcess_EnterProjectName
+            // btnSave
             // 
-            this.btnChangeManagementProcess_EnterProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnChangeManagementProcess_EnterProjectName.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnChangeManagementProcess_EnterProjectName.Location = new System.Drawing.Point(601, 18);
-            this.btnChangeManagementProcess_EnterProjectName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnChangeManagementProcess_EnterProjectName.Name = "btnChangeManagementProcess_EnterProjectName";
-            this.btnChangeManagementProcess_EnterProjectName.Size = new System.Drawing.Size(107, 26);
-            this.btnChangeManagementProcess_EnterProjectName.TabIndex = 15;
-            this.btnChangeManagementProcess_EnterProjectName.Text = "Enter";
-            this.btnChangeManagementProcess_EnterProjectName.UseVisualStyleBackColor = false;
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSave.Location = new System.Drawing.Point(669, 18);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(107, 26);
+            this.btnSave.TabIndex = 15;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // tbcChangeManagementProcess
             // 
@@ -176,11 +178,11 @@
             this.tbpDocumentControl.Controls.Add(this.dataGridViewDocumentApprovals);
             this.tbpDocumentControl.Controls.Add(this.dataGridViewDocumentHistory);
             this.tbpDocumentControl.Controls.Add(this.dataGridViewDocumentInformation);
-            this.tbpDocumentControl.Location = new System.Drawing.Point(4, 21);
+            this.tbpDocumentControl.Location = new System.Drawing.Point(4, 25);
             this.tbpDocumentControl.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tbpDocumentControl.Name = "tbpDocumentControl";
             this.tbpDocumentControl.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tbpDocumentControl.Size = new System.Drawing.Size(1944, 456);
+            this.tbpDocumentControl.Size = new System.Drawing.Size(1107, 452);
             this.tbpDocumentControl.TabIndex = 0;
             this.tbpDocumentControl.Text = "Document Control";
             // 
@@ -191,7 +193,7 @@
             this.label3.Location = new System.Drawing.Point(21, 305);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 14);
+            this.label3.Size = new System.Drawing.Size(164, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Document Approvals:";
             // 
@@ -202,7 +204,7 @@
             this.label2.Location = new System.Drawing.Point(16, 158);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 14);
+            this.label2.Size = new System.Drawing.Size(143, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Document History:";
             // 
@@ -213,7 +215,7 @@
             this.label1.Location = new System.Drawing.Point(16, 12);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 14);
+            this.label1.Size = new System.Drawing.Size(172, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "Document Information:";
             // 
@@ -329,10 +331,10 @@
             this.tbpChangeProcess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpChangeProcess.Controls.Add(this.tbcChangeProcess);
             this.tbpChangeProcess.Controls.Add(this.txtChangeProcess);
-            this.tbpChangeProcess.Location = new System.Drawing.Point(4, 21);
+            this.tbpChangeProcess.Location = new System.Drawing.Point(4, 25);
             this.tbpChangeProcess.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpChangeProcess.Name = "tbpChangeProcess";
-            this.tbpChangeProcess.Size = new System.Drawing.Size(1107, 456);
+            this.tbpChangeProcess.Size = new System.Drawing.Size(1107, 452);
             this.tbpChangeProcess.TabIndex = 1;
             this.tbpChangeProcess.Text = " Change Process";
             // 
@@ -353,10 +355,10 @@
             // 
             this.tbpOverview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpOverview.Controls.Add(this.txtOverview);
-            this.tbpOverview.Location = new System.Drawing.Point(4, 21);
+            this.tbpOverview.Location = new System.Drawing.Point(4, 25);
             this.tbpOverview.Name = "tbpOverview";
             this.tbpOverview.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpOverview.Size = new System.Drawing.Size(1059, 297);
+            this.tbpOverview.Size = new System.Drawing.Size(1059, 293);
             this.tbpOverview.TabIndex = 0;
             this.tbpOverview.Text = "Overview";
             // 
@@ -374,10 +376,10 @@
             // 
             this.tbpIdentifyChange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpIdentifyChange.Controls.Add(this.txtIdentifyChange);
-            this.tbpIdentifyChange.Location = new System.Drawing.Point(4, 21);
+            this.tbpIdentifyChange.Location = new System.Drawing.Point(4, 25);
             this.tbpIdentifyChange.Name = "tbpIdentifyChange";
             this.tbpIdentifyChange.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpIdentifyChange.Size = new System.Drawing.Size(1059, 297);
+            this.tbpIdentifyChange.Size = new System.Drawing.Size(1059, 293);
             this.tbpIdentifyChange.TabIndex = 1;
             this.tbpIdentifyChange.Text = "Identify Change";
             // 
@@ -395,10 +397,10 @@
             // 
             this.tbpReviewChange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpReviewChange.Controls.Add(this.txtReviewChange);
-            this.tbpReviewChange.Location = new System.Drawing.Point(4, 21);
+            this.tbpReviewChange.Location = new System.Drawing.Point(4, 25);
             this.tbpReviewChange.Name = "tbpReviewChange";
             this.tbpReviewChange.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpReviewChange.Size = new System.Drawing.Size(1059, 297);
+            this.tbpReviewChange.Size = new System.Drawing.Size(1059, 293);
             this.tbpReviewChange.TabIndex = 2;
             this.tbpReviewChange.Text = "Review Change";
             // 
@@ -416,10 +418,10 @@
             // 
             this.tbpApproveChange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpApproveChange.Controls.Add(this.txtApproveChange);
-            this.tbpApproveChange.Location = new System.Drawing.Point(4, 21);
+            this.tbpApproveChange.Location = new System.Drawing.Point(4, 25);
             this.tbpApproveChange.Name = "tbpApproveChange";
             this.tbpApproveChange.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpApproveChange.Size = new System.Drawing.Size(1059, 297);
+            this.tbpApproveChange.Size = new System.Drawing.Size(1059, 293);
             this.tbpApproveChange.TabIndex = 3;
             this.tbpApproveChange.Text = "Approve Change";
             // 
@@ -437,10 +439,10 @@
             // 
             this.tbpImplementChange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpImplementChange.Controls.Add(this.txtImplementChange);
-            this.tbpImplementChange.Location = new System.Drawing.Point(4, 21);
+            this.tbpImplementChange.Location = new System.Drawing.Point(4, 25);
             this.tbpImplementChange.Name = "tbpImplementChange";
             this.tbpImplementChange.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpImplementChange.Size = new System.Drawing.Size(1059, 297);
+            this.tbpImplementChange.Size = new System.Drawing.Size(1059, 293);
             this.tbpImplementChange.TabIndex = 4;
             this.tbpImplementChange.Text = "Implement Change";
             // 
@@ -472,10 +474,10 @@
             this.tbpChangeRoles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpChangeRoles.Controls.Add(this.tabControl1);
             this.tbpChangeRoles.Controls.Add(this.txtChangeRoles);
-            this.tbpChangeRoles.Location = new System.Drawing.Point(4, 21);
+            this.tbpChangeRoles.Location = new System.Drawing.Point(4, 25);
             this.tbpChangeRoles.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpChangeRoles.Name = "tbpChangeRoles";
-            this.tbpChangeRoles.Size = new System.Drawing.Size(1107, 456);
+            this.tbpChangeRoles.Size = new System.Drawing.Size(1107, 452);
             this.tbpChangeRoles.TabIndex = 2;
             this.tbpChangeRoles.Text = "Change Roles";
             // 
@@ -494,10 +496,10 @@
             // 
             this.tbpTeamMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpTeamMember.Controls.Add(this.txtTeamMember);
-            this.tbpTeamMember.Location = new System.Drawing.Point(4, 21);
+            this.tbpTeamMember.Location = new System.Drawing.Point(4, 25);
             this.tbpTeamMember.Name = "tbpTeamMember";
             this.tbpTeamMember.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpTeamMember.Size = new System.Drawing.Size(1059, 311);
+            this.tbpTeamMember.Size = new System.Drawing.Size(1059, 307);
             this.tbpTeamMember.TabIndex = 0;
             this.tbpTeamMember.Text = "Team Member";
             // 
@@ -515,10 +517,10 @@
             // 
             this.tbpProjectManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpProjectManager.Controls.Add(this.txtProjectManager);
-            this.tbpProjectManager.Location = new System.Drawing.Point(4, 21);
+            this.tbpProjectManager.Location = new System.Drawing.Point(4, 25);
             this.tbpProjectManager.Name = "tbpProjectManager";
             this.tbpProjectManager.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpProjectManager.Size = new System.Drawing.Size(1059, 311);
+            this.tbpProjectManager.Size = new System.Drawing.Size(1059, 307);
             this.tbpProjectManager.TabIndex = 1;
             this.tbpProjectManager.Text = "Project Manager";
             // 
@@ -536,10 +538,10 @@
             // 
             this.tbpProjectBoard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpProjectBoard.Controls.Add(this.txtProjectBoard);
-            this.tbpProjectBoard.Location = new System.Drawing.Point(4, 21);
+            this.tbpProjectBoard.Location = new System.Drawing.Point(4, 25);
             this.tbpProjectBoard.Name = "tbpProjectBoard";
             this.tbpProjectBoard.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpProjectBoard.Size = new System.Drawing.Size(1059, 311);
+            this.tbpProjectBoard.Size = new System.Drawing.Size(1059, 307);
             this.tbpProjectBoard.TabIndex = 2;
             this.tbpProjectBoard.Text = "Project Board";
             // 
@@ -570,44 +572,12 @@
             this.tbpChangeDocument.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpChangeDocument.Controls.Add(this.tbcChangeDocument);
             this.tbpChangeDocument.Controls.Add(this.txtChangeDocuments);
-            this.tbpChangeDocument.Location = new System.Drawing.Point(4, 21);
+            this.tbpChangeDocument.Location = new System.Drawing.Point(4, 25);
             this.tbpChangeDocument.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpChangeDocument.Name = "tbpChangeDocument";
-            this.tbpChangeDocument.Size = new System.Drawing.Size(1107, 456);
+            this.tbpChangeDocument.Size = new System.Drawing.Size(1107, 452);
             this.tbpChangeDocument.TabIndex = 3;
             this.tbpChangeDocument.Text = "Change Document";
-            // 
-            // txtChangeRegister
-            // 
-            this.txtChangeRegister.BackColor = System.Drawing.SystemColors.Control;
-            this.txtChangeRegister.Location = new System.Drawing.Point(7, 6);
-            this.txtChangeRegister.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtChangeRegister.Multiline = true;
-            this.txtChangeRegister.Name = "txtChangeRegister";
-            this.txtChangeRegister.Size = new System.Drawing.Size(1045, 300);
-            this.txtChangeRegister.TabIndex = 3;
-            // 
-            // txtChangeRequestForm
-            // 
-            this.txtChangeRequestForm.BackColor = System.Drawing.SystemColors.Control;
-            this.txtChangeRequestForm.Location = new System.Drawing.Point(7, 6);
-            this.txtChangeRequestForm.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtChangeRequestForm.Multiline = true;
-            this.txtChangeRequestForm.Name = "txtChangeRequestForm";
-            this.txtChangeRequestForm.Size = new System.Drawing.Size(1045, 299);
-            this.txtChangeRequestForm.TabIndex = 3;
-            // 
-            // txtChangeDocuments
-            // 
-            this.txtChangeDocuments.BackColor = System.Drawing.SystemColors.Control;
-            this.txtChangeDocuments.Location = new System.Drawing.Point(18, 21);
-            this.txtChangeDocuments.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtChangeDocuments.Multiline = true;
-            this.txtChangeDocuments.Name = "txtChangeDocuments";
-            this.txtChangeDocuments.Size = new System.Drawing.Size(1067, 65);
-            this.txtChangeDocuments.TabIndex = 5;
-            this.txtChangeDocuments.Text = "In this section, identify the documents used to successfully undertake the Change" +
-    " Management Process.";
             // 
             // tbcChangeDocument
             // 
@@ -622,28 +592,60 @@
             // tbpChangeRequestForm
             // 
             this.tbpChangeRequestForm.Controls.Add(this.txtChangeRequestForm);
-            this.tbpChangeRequestForm.Location = new System.Drawing.Point(4, 21);
+            this.tbpChangeRequestForm.Location = new System.Drawing.Point(4, 25);
             this.tbpChangeRequestForm.Name = "tbpChangeRequestForm";
             this.tbpChangeRequestForm.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpChangeRequestForm.Size = new System.Drawing.Size(1059, 311);
+            this.tbpChangeRequestForm.Size = new System.Drawing.Size(1059, 307);
             this.tbpChangeRequestForm.TabIndex = 0;
             this.tbpChangeRequestForm.Text = "Change Request Form";
             this.tbpChangeRequestForm.UseVisualStyleBackColor = true;
             // 
+            // txtChangeRequestForm
+            // 
+            this.txtChangeRequestForm.BackColor = System.Drawing.SystemColors.Control;
+            this.txtChangeRequestForm.Location = new System.Drawing.Point(7, 6);
+            this.txtChangeRequestForm.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtChangeRequestForm.Multiline = true;
+            this.txtChangeRequestForm.Name = "txtChangeRequestForm";
+            this.txtChangeRequestForm.Size = new System.Drawing.Size(1045, 299);
+            this.txtChangeRequestForm.TabIndex = 3;
+            // 
             // tbpChangeRegister
             // 
             this.tbpChangeRegister.Controls.Add(this.txtChangeRegister);
-            this.tbpChangeRegister.Location = new System.Drawing.Point(4, 21);
+            this.tbpChangeRegister.Location = new System.Drawing.Point(4, 25);
             this.tbpChangeRegister.Name = "tbpChangeRegister";
             this.tbpChangeRegister.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpChangeRegister.Size = new System.Drawing.Size(1059, 311);
+            this.tbpChangeRegister.Size = new System.Drawing.Size(1059, 307);
             this.tbpChangeRegister.TabIndex = 1;
             this.tbpChangeRegister.Text = "Change Register";
             this.tbpChangeRegister.UseVisualStyleBackColor = true;
             // 
+            // txtChangeRegister
+            // 
+            this.txtChangeRegister.BackColor = System.Drawing.SystemColors.Control;
+            this.txtChangeRegister.Location = new System.Drawing.Point(7, 6);
+            this.txtChangeRegister.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtChangeRegister.Multiline = true;
+            this.txtChangeRegister.Name = "txtChangeRegister";
+            this.txtChangeRegister.Size = new System.Drawing.Size(1045, 300);
+            this.txtChangeRegister.TabIndex = 3;
+            // 
+            // txtChangeDocuments
+            // 
+            this.txtChangeDocuments.BackColor = System.Drawing.SystemColors.Control;
+            this.txtChangeDocuments.Location = new System.Drawing.Point(18, 21);
+            this.txtChangeDocuments.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtChangeDocuments.Multiline = true;
+            this.txtChangeDocuments.Name = "txtChangeDocuments";
+            this.txtChangeDocuments.Size = new System.Drawing.Size(1067, 65);
+            this.txtChangeDocuments.TabIndex = 5;
+            this.txtChangeDocuments.Text = "In this section, identify the documents used to successfully undertake the Change" +
+    " Management Process.";
+            // 
             // ChangeManagementProcessDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(2, 2);
@@ -652,14 +654,15 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1148, 545);
             this.Controls.Add(this.tbcChangeManagementProcess);
-            this.Controls.Add(this.btnChangeManagementProcess_MainMenue);
-            this.Controls.Add(this.btnChangeManagementProcess_EnterProjectName);
+            this.Controls.Add(this.btnExport);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.txtChangeManagementProcessProjectName);
             this.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "ChangeManagementProcessDocumentForm";
             this.Text = "Change Management Process";
+            this.Load += new System.EventHandler(this.ChangeManagementProcessDocumentForm_Load);
             this.tbcChangeManagementProcess.ResumeLayout(false);
             this.tbpDocumentControl.ResumeLayout(false);
             this.tbpDocumentControl.PerformLayout();
@@ -704,8 +707,8 @@
 
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox txtChangeManagementProcessProjectName;
-        private System.Windows.Forms.Button btnChangeManagementProcess_MainMenue;
-        private System.Windows.Forms.Button btnChangeManagementProcess_EnterProjectName;
+        private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TabControl tbcChangeManagementProcess;
         private System.Windows.Forms.TabPage tbpDocumentControl;
         private System.Windows.Forms.Label label3;

@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.tbpSolution = new System.Windows.Forms.TabPage();
+            this.dataGridViewSolution = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxSolutionComponents = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSolution = new System.Windows.Forms.TextBox();
             this.tbcRequestForProposal = new System.Windows.Forms.TabControl();
             this.tbpDocumentControl = new System.Windows.Forms.TabPage();
@@ -44,71 +48,65 @@
             this.dataGridViewDocumentInformation = new System.Windows.Forms.DataGridView();
             this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tbpIntroduction = new System.Windows.Forms.TabPage();
-            this.txtQuestions = new System.Windows.Forms.TextBox();
-            this.txtProcess = new System.Windows.Forms.TextBox();
-            this.txtRules = new System.Windows.Forms.TextBox();
-            this.txtRecipients = new System.Windows.Forms.TextBox();
-            this.txtAcknowledgement = new System.Windows.Forms.TextBox();
-            this.txtPurpose = new System.Windows.Forms.TextBox();
-            this.txtOverview = new System.Windows.Forms.TextBox();
-            this.tbpCompany = new System.Windows.Forms.TabPage();
-            this.txtCompany = new System.Windows.Forms.TextBox();
-            this.tbpImplementation = new System.Windows.Forms.TabPage();
-            this.tbpOtherInformation = new System.Windows.Forms.TabPage();
-            this.txtDocumentation = new System.Windows.Forms.TextBox();
-            this.txtConfidentiality = new System.Windows.Forms.TextBox();
-            this.txtOtherInformation = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.txtRequestForProposalProcessProject = new System.Windows.Forms.TextBox();
-            this.btnRequestForProposal_EnterProjectName = new System.Windows.Forms.Button();
-            this.btnRequestForProposal_MainMenue = new System.Windows.Forms.Button();
-            this.txtChangeProcess = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tbpOverview = new System.Windows.Forms.TabPage();
+            this.txtOverview = new System.Windows.Forms.TextBox();
             this.tbpPurpose = new System.Windows.Forms.TabPage();
+            this.txtPurpose = new System.Windows.Forms.TextBox();
             this.tbpAcknowledgement = new System.Windows.Forms.TabPage();
+            this.txtAcknowledgement = new System.Windows.Forms.TextBox();
             this.tbpRecipients = new System.Windows.Forms.TabPage();
+            this.txtRecipients = new System.Windows.Forms.TextBox();
             this.tbpProcess = new System.Windows.Forms.TabPage();
+            this.txtProcess = new System.Windows.Forms.TextBox();
             this.tbpRules = new System.Windows.Forms.TabPage();
+            this.txtRules = new System.Windows.Forms.TextBox();
             this.tbpQuestions = new System.Windows.Forms.TabPage();
+            this.txtQuestions = new System.Windows.Forms.TextBox();
+            this.txtChangeProcess = new System.Windows.Forms.TextBox();
+            this.tbpCompany = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tbpVision = new System.Windows.Forms.TabPage();
-            this.tbpObjectives = new System.Windows.Forms.TabPage();
-            this.tbpSize = new System.Windows.Forms.TabPage();
-            this.tbpLocation = new System.Windows.Forms.TabPage();
-            this.tbpTypeAndNumberOfCustomers = new System.Windows.Forms.TabPage();
-            this.tbpMarketSegmentOfOperation = new System.Windows.Forms.TabPage();
-            this.tbpKnowledgeOfIndustryAndExpertise = new System.Windows.Forms.TabPage();
-            this.txtTypeAndNumberOfCustomers = new System.Windows.Forms.TextBox();
-            this.txtMarketSegment = new System.Windows.Forms.TextBox();
-            this.txtKnowledgeOfIndustryAndExpertise = new System.Windows.Forms.TextBox();
             this.txtVision = new System.Windows.Forms.TextBox();
+            this.tbpObjectives = new System.Windows.Forms.TabPage();
             this.txtObjectives = new System.Windows.Forms.TextBox();
+            this.tbpSize = new System.Windows.Forms.TabPage();
             this.txtSize = new System.Windows.Forms.TextBox();
+            this.tbpLocation = new System.Windows.Forms.TabPage();
             this.txtLocation = new System.Windows.Forms.TextBox();
-            this.dataGridViewSolution = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxSolutionComponents = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tbpTypeAndNumberOfCustomers = new System.Windows.Forms.TabPage();
+            this.txtTypeAndNumberOfCustomers = new System.Windows.Forms.TextBox();
+            this.tbpMarketSegmentOfOperation = new System.Windows.Forms.TabPage();
+            this.txtMarketSegment = new System.Windows.Forms.TextBox();
+            this.tbpKnowledgeOfIndustryAndExpertise = new System.Windows.Forms.TabPage();
+            this.txtKnowledgeOfIndustryAndExpertise = new System.Windows.Forms.TextBox();
+            this.txtCompany = new System.Windows.Forms.TextBox();
+            this.tbpImplementation = new System.Windows.Forms.TabPage();
             this.txtImplementation = new System.Windows.Forms.TextBox();
+            this.tbpOtherInformation = new System.Windows.Forms.TabPage();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tbpOtherInformation2 = new System.Windows.Forms.TabPage();
+            this.txtOtherInformation = new System.Windows.Forms.TextBox();
             this.tbpConfidentiality = new System.Windows.Forms.TabPage();
+            this.txtConfidentiality = new System.Windows.Forms.TextBox();
             this.tbpDocumentation = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txtDocumentation = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.txtRequestForProposalProcessProject = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
             this.tbpSolution.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSolution)).BeginInit();
             this.tbcRequestForProposal.SuspendLayout();
             this.tbpDocumentControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentApprovals)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentHistory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentInformation)).BeginInit();
             this.tbpIntroduction.SuspendLayout();
-            this.tbpCompany.SuspendLayout();
-            this.tbpImplementation.SuspendLayout();
-            this.tbpOtherInformation.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tbpOverview.SuspendLayout();
             this.tbpPurpose.SuspendLayout();
@@ -117,6 +115,7 @@
             this.tbpProcess.SuspendLayout();
             this.tbpRules.SuspendLayout();
             this.tbpQuestions.SuspendLayout();
+            this.tbpCompany.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tbpVision.SuspendLayout();
             this.tbpObjectives.SuspendLayout();
@@ -125,7 +124,8 @@
             this.tbpTypeAndNumberOfCustomers.SuspendLayout();
             this.tbpMarketSegmentOfOperation.SuspendLayout();
             this.tbpKnowledgeOfIndustryAndExpertise.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSolution)).BeginInit();
+            this.tbpImplementation.SuspendLayout();
+            this.tbpOtherInformation.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.tbpOtherInformation2.SuspendLayout();
             this.tbpConfidentiality.SuspendLayout();
@@ -137,12 +137,47 @@
             this.tbpSolution.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpSolution.Controls.Add(this.dataGridViewSolution);
             this.tbpSolution.Controls.Add(this.txtSolution);
-            this.tbpSolution.Location = new System.Drawing.Point(4, 21);
+            this.tbpSolution.Location = new System.Drawing.Point(4, 25);
             this.tbpSolution.Margin = new System.Windows.Forms.Padding(2);
             this.tbpSolution.Name = "tbpSolution";
-            this.tbpSolution.Size = new System.Drawing.Size(1109, 446);
+            this.tbpSolution.Size = new System.Drawing.Size(1109, 450);
             this.tbpSolution.TabIndex = 3;
             this.tbpSolution.Text = "Solution";
+            // 
+            // dataGridViewSolution
+            // 
+            this.dataGridViewSolution.AllowUserToOrderColumns = true;
+            this.dataGridViewSolution.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSolution.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxSolutionComponents,
+            this.dataGridViewTextBoxQuantity,
+            this.Price});
+            this.dataGridViewSolution.Location = new System.Drawing.Point(12, 68);
+            this.dataGridViewSolution.Name = "dataGridViewSolution";
+            this.dataGridViewSolution.RowHeadersWidth = 51;
+            this.dataGridViewSolution.Size = new System.Drawing.Size(1088, 388);
+            this.dataGridViewSolution.TabIndex = 8;
+            // 
+            // dataGridViewTextBoxSolutionComponents
+            // 
+            this.dataGridViewTextBoxSolutionComponents.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxSolutionComponents.HeaderText = "Solution & Components";
+            this.dataGridViewTextBoxSolutionComponents.MinimumWidth = 6;
+            this.dataGridViewTextBoxSolutionComponents.Name = "dataGridViewTextBoxSolutionComponents";
+            // 
+            // dataGridViewTextBoxQuantity
+            // 
+            this.dataGridViewTextBoxQuantity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxQuantity.HeaderText = "Quantity";
+            this.dataGridViewTextBoxQuantity.MinimumWidth = 6;
+            this.dataGridViewTextBoxQuantity.Name = "dataGridViewTextBoxQuantity";
+            // 
+            // Price
+            // 
+            this.Price.HeaderText = "Price";
+            this.Price.MinimumWidth = 6;
+            this.Price.Name = "Price";
+            this.Price.Width = 125;
             // 
             // txtSolution
             // 
@@ -165,10 +200,10 @@
             this.tbcRequestForProposal.Controls.Add(this.tbpSolution);
             this.tbcRequestForProposal.Controls.Add(this.tbpImplementation);
             this.tbcRequestForProposal.Controls.Add(this.tbpOtherInformation);
-            this.tbcRequestForProposal.Location = new System.Drawing.Point(19, 62);
+            this.tbcRequestForProposal.Location = new System.Drawing.Point(19, 54);
             this.tbcRequestForProposal.Name = "tbcRequestForProposal";
             this.tbcRequestForProposal.SelectedIndex = 0;
-            this.tbcRequestForProposal.Size = new System.Drawing.Size(1117, 471);
+            this.tbcRequestForProposal.Size = new System.Drawing.Size(1117, 479);
             this.tbcRequestForProposal.TabIndex = 9;
             // 
             // tbpDocumentControl
@@ -181,10 +216,10 @@
             this.tbpDocumentControl.Controls.Add(this.label2);
             this.tbpDocumentControl.Controls.Add(this.label1);
             this.tbpDocumentControl.ForeColor = System.Drawing.Color.Black;
-            this.tbpDocumentControl.Location = new System.Drawing.Point(4, 21);
+            this.tbpDocumentControl.Location = new System.Drawing.Point(4, 25);
             this.tbpDocumentControl.Name = "tbpDocumentControl";
             this.tbpDocumentControl.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpDocumentControl.Size = new System.Drawing.Size(1109, 446);
+            this.tbpDocumentControl.Size = new System.Drawing.Size(1109, 450);
             this.tbpDocumentControl.TabIndex = 0;
             this.tbpDocumentControl.Text = "Document Control";
             // 
@@ -292,222 +327,48 @@
             this.Information.MinimumWidth = 6;
             this.Information.Name = "Information";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(21, 305);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(164, 16);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Document Approvals:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(16, 158);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(143, 16);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Document History:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(16, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(172, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Document Information:";
+            // 
             // tbpIntroduction
             // 
             this.tbpIntroduction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpIntroduction.Controls.Add(this.tabControl1);
             this.tbpIntroduction.Controls.Add(this.txtChangeProcess);
             this.tbpIntroduction.ForeColor = System.Drawing.Color.White;
-            this.tbpIntroduction.Location = new System.Drawing.Point(4, 21);
+            this.tbpIntroduction.Location = new System.Drawing.Point(4, 25);
             this.tbpIntroduction.Margin = new System.Windows.Forms.Padding(2);
             this.tbpIntroduction.Name = "tbpIntroduction";
-            this.tbpIntroduction.Size = new System.Drawing.Size(1109, 446);
+            this.tbpIntroduction.Size = new System.Drawing.Size(1109, 450);
             this.tbpIntroduction.TabIndex = 1;
             this.tbpIntroduction.Text = "Introduction";
-            // 
-            // txtQuestions
-            // 
-            this.txtQuestions.BackColor = System.Drawing.SystemColors.Control;
-            this.txtQuestions.Location = new System.Drawing.Point(5, 5);
-            this.txtQuestions.Margin = new System.Windows.Forms.Padding(2);
-            this.txtQuestions.Multiline = true;
-            this.txtQuestions.Name = "txtQuestions";
-            this.txtQuestions.Size = new System.Drawing.Size(1073, 359);
-            this.txtQuestions.TabIndex = 4;
-            // 
-            // txtProcess
-            // 
-            this.txtProcess.BackColor = System.Drawing.SystemColors.Control;
-            this.txtProcess.Location = new System.Drawing.Point(5, 5);
-            this.txtProcess.Margin = new System.Windows.Forms.Padding(2);
-            this.txtProcess.Multiline = true;
-            this.txtProcess.Name = "txtProcess";
-            this.txtProcess.Size = new System.Drawing.Size(1073, 359);
-            this.txtProcess.TabIndex = 4;
-            // 
-            // txtRules
-            // 
-            this.txtRules.BackColor = System.Drawing.SystemColors.Control;
-            this.txtRules.Location = new System.Drawing.Point(5, 5);
-            this.txtRules.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRules.Multiline = true;
-            this.txtRules.Name = "txtRules";
-            this.txtRules.Size = new System.Drawing.Size(1073, 359);
-            this.txtRules.TabIndex = 5;
-            // 
-            // txtRecipients
-            // 
-            this.txtRecipients.BackColor = System.Drawing.SystemColors.Control;
-            this.txtRecipients.Location = new System.Drawing.Point(4, 6);
-            this.txtRecipients.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRecipients.Multiline = true;
-            this.txtRecipients.Name = "txtRecipients";
-            this.txtRecipients.Size = new System.Drawing.Size(1073, 359);
-            this.txtRecipients.TabIndex = 4;
-            // 
-            // txtAcknowledgement
-            // 
-            this.txtAcknowledgement.BackColor = System.Drawing.SystemColors.Control;
-            this.txtAcknowledgement.Location = new System.Drawing.Point(5, 7);
-            this.txtAcknowledgement.Margin = new System.Windows.Forms.Padding(2);
-            this.txtAcknowledgement.Multiline = true;
-            this.txtAcknowledgement.Name = "txtAcknowledgement";
-            this.txtAcknowledgement.Size = new System.Drawing.Size(1073, 359);
-            this.txtAcknowledgement.TabIndex = 4;
-            // 
-            // txtPurpose
-            // 
-            this.txtPurpose.BackColor = System.Drawing.SystemColors.Control;
-            this.txtPurpose.Location = new System.Drawing.Point(5, 5);
-            this.txtPurpose.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPurpose.Multiline = true;
-            this.txtPurpose.Name = "txtPurpose";
-            this.txtPurpose.Size = new System.Drawing.Size(1073, 359);
-            this.txtPurpose.TabIndex = 3;
-            // 
-            // txtOverview
-            // 
-            this.txtOverview.BackColor = System.Drawing.SystemColors.Control;
-            this.txtOverview.Location = new System.Drawing.Point(5, 7);
-            this.txtOverview.Margin = new System.Windows.Forms.Padding(2);
-            this.txtOverview.Multiline = true;
-            this.txtOverview.Name = "txtOverview";
-            this.txtOverview.Size = new System.Drawing.Size(1073, 359);
-            this.txtOverview.TabIndex = 2;
-            // 
-            // tbpCompany
-            // 
-            this.tbpCompany.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tbpCompany.Controls.Add(this.tabControl2);
-            this.tbpCompany.Controls.Add(this.txtCompany);
-            this.tbpCompany.Location = new System.Drawing.Point(4, 21);
-            this.tbpCompany.Margin = new System.Windows.Forms.Padding(2);
-            this.tbpCompany.Name = "tbpCompany";
-            this.tbpCompany.Size = new System.Drawing.Size(1109, 446);
-            this.tbpCompany.TabIndex = 2;
-            this.tbpCompany.Text = "Company";
-            // 
-            // txtCompany
-            // 
-            this.txtCompany.BackColor = System.Drawing.SystemColors.Control;
-            this.txtCompany.Location = new System.Drawing.Point(12, 15);
-            this.txtCompany.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCompany.Multiline = true;
-            this.txtCompany.Name = "txtCompany";
-            this.txtCompany.Size = new System.Drawing.Size(1089, 50);
-            this.txtCompany.TabIndex = 5;
-            this.txtCompany.Text = "Specify the information to be provided by the supplier to present a detailed desc" +
-    "ription of its company, such as:";
-            // 
-            // tbpImplementation
-            // 
-            this.tbpImplementation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tbpImplementation.Controls.Add(this.txtImplementation);
-            this.tbpImplementation.Location = new System.Drawing.Point(4, 21);
-            this.tbpImplementation.Margin = new System.Windows.Forms.Padding(2);
-            this.tbpImplementation.Name = "tbpImplementation";
-            this.tbpImplementation.Size = new System.Drawing.Size(1109, 446);
-            this.tbpImplementation.TabIndex = 4;
-            this.tbpImplementation.Text = "Implementation";
-            // 
-            // tbpOtherInformation
-            // 
-            this.tbpOtherInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tbpOtherInformation.Controls.Add(this.tabControl3);
-            this.tbpOtherInformation.Location = new System.Drawing.Point(4, 21);
-            this.tbpOtherInformation.Margin = new System.Windows.Forms.Padding(2);
-            this.tbpOtherInformation.Name = "tbpOtherInformation";
-            this.tbpOtherInformation.Size = new System.Drawing.Size(1109, 446);
-            this.tbpOtherInformation.TabIndex = 5;
-            this.tbpOtherInformation.Text = "Other Information";
-            // 
-            // txtDocumentation
-            // 
-            this.txtDocumentation.BackColor = System.Drawing.SystemColors.Control;
-            this.txtDocumentation.Location = new System.Drawing.Point(5, 5);
-            this.txtDocumentation.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDocumentation.Multiline = true;
-            this.txtDocumentation.Name = "txtDocumentation";
-            this.txtDocumentation.Size = new System.Drawing.Size(1061, 380);
-            this.txtDocumentation.TabIndex = 5;
-            // 
-            // txtConfidentiality
-            // 
-            this.txtConfidentiality.BackColor = System.Drawing.SystemColors.Control;
-            this.txtConfidentiality.Location = new System.Drawing.Point(5, 5);
-            this.txtConfidentiality.Margin = new System.Windows.Forms.Padding(2);
-            this.txtConfidentiality.Multiline = true;
-            this.txtConfidentiality.Name = "txtConfidentiality";
-            this.txtConfidentiality.Size = new System.Drawing.Size(1061, 380);
-            this.txtConfidentiality.TabIndex = 5;
-            // 
-            // txtOtherInformation
-            // 
-            this.txtOtherInformation.BackColor = System.Drawing.SystemColors.Control;
-            this.txtOtherInformation.Location = new System.Drawing.Point(5, 5);
-            this.txtOtherInformation.Margin = new System.Windows.Forms.Padding(2);
-            this.txtOtherInformation.Multiline = true;
-            this.txtOtherInformation.Name = "txtOtherInformation";
-            this.txtOtherInformation.Size = new System.Drawing.Size(1061, 380);
-            this.txtOtherInformation.TabIndex = 5;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(20, 26);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(183, 14);
-            this.label27.TabIndex = 8;
-            this.label27.Text = "Please Enter Your Project Name:";
-            // 
-            // txtRequestForProposalProcessProject
-            // 
-            this.txtRequestForProposalProcessProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.txtRequestForProposalProcessProject.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRequestForProposalProcessProject.ForeColor = System.Drawing.Color.Black;
-            this.txtRequestForProposalProcessProject.Location = new System.Drawing.Point(209, 24);
-            this.txtRequestForProposalProcessProject.Name = "txtRequestForProposalProcessProject";
-            this.txtRequestForProposalProcessProject.Size = new System.Drawing.Size(320, 20);
-            this.txtRequestForProposalProcessProject.TabIndex = 7;
-            this.txtRequestForProposalProcessProject.Text = "Project Name";
-            // 
-            // btnRequestForProposal_EnterProjectName
-            // 
-            this.btnRequestForProposal_EnterProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnRequestForProposal_EnterProjectName.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRequestForProposal_EnterProjectName.ForeColor = System.Drawing.Color.Black;
-            this.btnRequestForProposal_EnterProjectName.Location = new System.Drawing.Point(535, 22);
-            this.btnRequestForProposal_EnterProjectName.Name = "btnRequestForProposal_EnterProjectName";
-            this.btnRequestForProposal_EnterProjectName.Size = new System.Drawing.Size(89, 23);
-            this.btnRequestForProposal_EnterProjectName.TabIndex = 10;
-            this.btnRequestForProposal_EnterProjectName.Text = "Enter";
-            this.btnRequestForProposal_EnterProjectName.UseVisualStyleBackColor = false;
-            // 
-            // btnRequestForProposal_MainMenue
-            // 
-            this.btnRequestForProposal_MainMenue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnRequestForProposal_MainMenue.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRequestForProposal_MainMenue.ForeColor = System.Drawing.Color.Black;
-            this.btnRequestForProposal_MainMenue.Location = new System.Drawing.Point(630, 22);
-            this.btnRequestForProposal_MainMenue.Name = "btnRequestForProposal_MainMenue";
-            this.btnRequestForProposal_MainMenue.Size = new System.Drawing.Size(108, 23);
-            this.btnRequestForProposal_MainMenue.TabIndex = 11;
-            this.btnRequestForProposal_MainMenue.Text = "Back to Main Menu";
-            this.btnRequestForProposal_MainMenue.UseVisualStyleBackColor = false;
-            // 
-            // txtChangeProcess
-            // 
-            this.txtChangeProcess.BackColor = System.Drawing.SystemColors.Control;
-            this.txtChangeProcess.Location = new System.Drawing.Point(10, 15);
-            this.txtChangeProcess.Margin = new System.Windows.Forms.Padding(2);
-            this.txtChangeProcess.Multiline = true;
-            this.txtChangeProcess.Name = "txtChangeProcess";
-            this.txtChangeProcess.Size = new System.Drawing.Size(1091, 50);
-            this.txtChangeProcess.TabIndex = 6;
-            this.txtChangeProcess.Text = "This section provides a detailed description of the project and the process invol" +
-    "ved in selecting a preferred supplier. ";
             // 
             // tabControl1
             // 
@@ -528,78 +389,172 @@
             // 
             this.tbpOverview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpOverview.Controls.Add(this.txtOverview);
-            this.tbpOverview.Location = new System.Drawing.Point(4, 21);
+            this.tbpOverview.Location = new System.Drawing.Point(4, 25);
             this.tbpOverview.Name = "tbpOverview";
             this.tbpOverview.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpOverview.Size = new System.Drawing.Size(1083, 371);
+            this.tbpOverview.Size = new System.Drawing.Size(1083, 367);
             this.tbpOverview.TabIndex = 0;
             this.tbpOverview.Text = "Overview";
+            // 
+            // txtOverview
+            // 
+            this.txtOverview.BackColor = System.Drawing.SystemColors.Control;
+            this.txtOverview.Location = new System.Drawing.Point(5, 7);
+            this.txtOverview.Margin = new System.Windows.Forms.Padding(2);
+            this.txtOverview.Multiline = true;
+            this.txtOverview.Name = "txtOverview";
+            this.txtOverview.Size = new System.Drawing.Size(1073, 359);
+            this.txtOverview.TabIndex = 2;
             // 
             // tbpPurpose
             // 
             this.tbpPurpose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpPurpose.Controls.Add(this.txtPurpose);
-            this.tbpPurpose.Location = new System.Drawing.Point(4, 21);
+            this.tbpPurpose.Location = new System.Drawing.Point(4, 25);
             this.tbpPurpose.Name = "tbpPurpose";
             this.tbpPurpose.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpPurpose.Size = new System.Drawing.Size(1083, 371);
+            this.tbpPurpose.Size = new System.Drawing.Size(1083, 367);
             this.tbpPurpose.TabIndex = 1;
             this.tbpPurpose.Text = "Purpose";
+            // 
+            // txtPurpose
+            // 
+            this.txtPurpose.BackColor = System.Drawing.SystemColors.Control;
+            this.txtPurpose.Location = new System.Drawing.Point(5, 5);
+            this.txtPurpose.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPurpose.Multiline = true;
+            this.txtPurpose.Name = "txtPurpose";
+            this.txtPurpose.Size = new System.Drawing.Size(1073, 359);
+            this.txtPurpose.TabIndex = 3;
             // 
             // tbpAcknowledgement
             // 
             this.tbpAcknowledgement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpAcknowledgement.Controls.Add(this.txtAcknowledgement);
-            this.tbpAcknowledgement.Location = new System.Drawing.Point(4, 21);
+            this.tbpAcknowledgement.Location = new System.Drawing.Point(4, 25);
             this.tbpAcknowledgement.Name = "tbpAcknowledgement";
             this.tbpAcknowledgement.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpAcknowledgement.Size = new System.Drawing.Size(1083, 371);
+            this.tbpAcknowledgement.Size = new System.Drawing.Size(1083, 367);
             this.tbpAcknowledgement.TabIndex = 2;
             this.tbpAcknowledgement.Text = "Acknowledgement";
+            // 
+            // txtAcknowledgement
+            // 
+            this.txtAcknowledgement.BackColor = System.Drawing.SystemColors.Control;
+            this.txtAcknowledgement.Location = new System.Drawing.Point(5, 7);
+            this.txtAcknowledgement.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAcknowledgement.Multiline = true;
+            this.txtAcknowledgement.Name = "txtAcknowledgement";
+            this.txtAcknowledgement.Size = new System.Drawing.Size(1073, 359);
+            this.txtAcknowledgement.TabIndex = 4;
             // 
             // tbpRecipients
             // 
             this.tbpRecipients.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpRecipients.Controls.Add(this.txtRecipients);
-            this.tbpRecipients.Location = new System.Drawing.Point(4, 21);
+            this.tbpRecipients.Location = new System.Drawing.Point(4, 25);
             this.tbpRecipients.Name = "tbpRecipients";
             this.tbpRecipients.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpRecipients.Size = new System.Drawing.Size(1083, 371);
+            this.tbpRecipients.Size = new System.Drawing.Size(1083, 367);
             this.tbpRecipients.TabIndex = 3;
             this.tbpRecipients.Text = "Recipients";
+            // 
+            // txtRecipients
+            // 
+            this.txtRecipients.BackColor = System.Drawing.SystemColors.Control;
+            this.txtRecipients.Location = new System.Drawing.Point(4, 6);
+            this.txtRecipients.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRecipients.Multiline = true;
+            this.txtRecipients.Name = "txtRecipients";
+            this.txtRecipients.Size = new System.Drawing.Size(1073, 359);
+            this.txtRecipients.TabIndex = 4;
             // 
             // tbpProcess
             // 
             this.tbpProcess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpProcess.Controls.Add(this.txtProcess);
-            this.tbpProcess.Location = new System.Drawing.Point(4, 21);
+            this.tbpProcess.Location = new System.Drawing.Point(4, 25);
             this.tbpProcess.Name = "tbpProcess";
             this.tbpProcess.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpProcess.Size = new System.Drawing.Size(1083, 371);
+            this.tbpProcess.Size = new System.Drawing.Size(1083, 367);
             this.tbpProcess.TabIndex = 4;
             this.tbpProcess.Text = "Process";
+            // 
+            // txtProcess
+            // 
+            this.txtProcess.BackColor = System.Drawing.SystemColors.Control;
+            this.txtProcess.Location = new System.Drawing.Point(5, 5);
+            this.txtProcess.Margin = new System.Windows.Forms.Padding(2);
+            this.txtProcess.Multiline = true;
+            this.txtProcess.Name = "txtProcess";
+            this.txtProcess.Size = new System.Drawing.Size(1073, 359);
+            this.txtProcess.TabIndex = 4;
             // 
             // tbpRules
             // 
             this.tbpRules.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpRules.Controls.Add(this.txtRules);
-            this.tbpRules.Location = new System.Drawing.Point(4, 21);
+            this.tbpRules.Location = new System.Drawing.Point(4, 25);
             this.tbpRules.Name = "tbpRules";
             this.tbpRules.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpRules.Size = new System.Drawing.Size(1083, 371);
+            this.tbpRules.Size = new System.Drawing.Size(1083, 367);
             this.tbpRules.TabIndex = 5;
             this.tbpRules.Text = "Rules";
+            // 
+            // txtRules
+            // 
+            this.txtRules.BackColor = System.Drawing.SystemColors.Control;
+            this.txtRules.Location = new System.Drawing.Point(5, 5);
+            this.txtRules.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRules.Multiline = true;
+            this.txtRules.Name = "txtRules";
+            this.txtRules.Size = new System.Drawing.Size(1073, 359);
+            this.txtRules.TabIndex = 5;
             // 
             // tbpQuestions
             // 
             this.tbpQuestions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpQuestions.Controls.Add(this.txtQuestions);
-            this.tbpQuestions.Location = new System.Drawing.Point(4, 21);
+            this.tbpQuestions.Location = new System.Drawing.Point(4, 25);
             this.tbpQuestions.Name = "tbpQuestions";
             this.tbpQuestions.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpQuestions.Size = new System.Drawing.Size(1083, 371);
+            this.tbpQuestions.Size = new System.Drawing.Size(1083, 367);
             this.tbpQuestions.TabIndex = 6;
             this.tbpQuestions.Text = "Questions";
+            // 
+            // txtQuestions
+            // 
+            this.txtQuestions.BackColor = System.Drawing.SystemColors.Control;
+            this.txtQuestions.Location = new System.Drawing.Point(5, 5);
+            this.txtQuestions.Margin = new System.Windows.Forms.Padding(2);
+            this.txtQuestions.Multiline = true;
+            this.txtQuestions.Name = "txtQuestions";
+            this.txtQuestions.Size = new System.Drawing.Size(1073, 359);
+            this.txtQuestions.TabIndex = 4;
+            // 
+            // txtChangeProcess
+            // 
+            this.txtChangeProcess.BackColor = System.Drawing.SystemColors.Control;
+            this.txtChangeProcess.Location = new System.Drawing.Point(10, 15);
+            this.txtChangeProcess.Margin = new System.Windows.Forms.Padding(2);
+            this.txtChangeProcess.Multiline = true;
+            this.txtChangeProcess.Name = "txtChangeProcess";
+            this.txtChangeProcess.Size = new System.Drawing.Size(1091, 50);
+            this.txtChangeProcess.TabIndex = 6;
+            this.txtChangeProcess.Text = "This section provides a detailed description of the project and the process invol" +
+    "ved in selecting a preferred supplier. ";
+            // 
+            // tbpCompany
+            // 
+            this.tbpCompany.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tbpCompany.Controls.Add(this.tabControl2);
+            this.tbpCompany.Controls.Add(this.txtCompany);
+            this.tbpCompany.Location = new System.Drawing.Point(4, 25);
+            this.tbpCompany.Margin = new System.Windows.Forms.Padding(2);
+            this.tbpCompany.Name = "tbpCompany";
+            this.tbpCompany.Size = new System.Drawing.Size(1109, 450);
+            this.tbpCompany.TabIndex = 2;
+            this.tbpCompany.Text = "Company";
             // 
             // tabControl2
             // 
@@ -620,105 +575,12 @@
             // 
             this.tbpVision.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpVision.Controls.Add(this.txtVision);
-            this.tbpVision.Location = new System.Drawing.Point(4, 21);
+            this.tbpVision.Location = new System.Drawing.Point(4, 25);
             this.tbpVision.Name = "tbpVision";
             this.tbpVision.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpVision.Size = new System.Drawing.Size(1081, 362);
+            this.tbpVision.Size = new System.Drawing.Size(1081, 358);
             this.tbpVision.TabIndex = 0;
             this.tbpVision.Text = "Vision";
-            // 
-            // tbpObjectives
-            // 
-            this.tbpObjectives.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tbpObjectives.Controls.Add(this.txtObjectives);
-            this.tbpObjectives.Location = new System.Drawing.Point(4, 21);
-            this.tbpObjectives.Name = "tbpObjectives";
-            this.tbpObjectives.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpObjectives.Size = new System.Drawing.Size(1081, 362);
-            this.tbpObjectives.TabIndex = 1;
-            this.tbpObjectives.Text = "Objectives";
-            // 
-            // tbpSize
-            // 
-            this.tbpSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tbpSize.Controls.Add(this.txtSize);
-            this.tbpSize.Location = new System.Drawing.Point(4, 21);
-            this.tbpSize.Name = "tbpSize";
-            this.tbpSize.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpSize.Size = new System.Drawing.Size(1081, 362);
-            this.tbpSize.TabIndex = 2;
-            this.tbpSize.Text = "Size";
-            // 
-            // tbpLocation
-            // 
-            this.tbpLocation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tbpLocation.Controls.Add(this.txtLocation);
-            this.tbpLocation.Location = new System.Drawing.Point(4, 21);
-            this.tbpLocation.Name = "tbpLocation";
-            this.tbpLocation.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpLocation.Size = new System.Drawing.Size(1081, 362);
-            this.tbpLocation.TabIndex = 3;
-            this.tbpLocation.Text = "Location";
-            // 
-            // tbpTypeAndNumberOfCustomers
-            // 
-            this.tbpTypeAndNumberOfCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tbpTypeAndNumberOfCustomers.Controls.Add(this.txtTypeAndNumberOfCustomers);
-            this.tbpTypeAndNumberOfCustomers.Location = new System.Drawing.Point(4, 21);
-            this.tbpTypeAndNumberOfCustomers.Name = "tbpTypeAndNumberOfCustomers";
-            this.tbpTypeAndNumberOfCustomers.Size = new System.Drawing.Size(1081, 362);
-            this.tbpTypeAndNumberOfCustomers.TabIndex = 4;
-            this.tbpTypeAndNumberOfCustomers.Text = "Type and Number of Customers";
-            // 
-            // tbpMarketSegmentOfOperation
-            // 
-            this.tbpMarketSegmentOfOperation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tbpMarketSegmentOfOperation.Controls.Add(this.txtMarketSegment);
-            this.tbpMarketSegmentOfOperation.Location = new System.Drawing.Point(4, 21);
-            this.tbpMarketSegmentOfOperation.Name = "tbpMarketSegmentOfOperation";
-            this.tbpMarketSegmentOfOperation.Size = new System.Drawing.Size(1081, 362);
-            this.tbpMarketSegmentOfOperation.TabIndex = 5;
-            this.tbpMarketSegmentOfOperation.Text = "Market segment of operation";
-            // 
-            // tbpKnowledgeOfIndustryAndExpertise
-            // 
-            this.tbpKnowledgeOfIndustryAndExpertise.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tbpKnowledgeOfIndustryAndExpertise.Controls.Add(this.txtKnowledgeOfIndustryAndExpertise);
-            this.tbpKnowledgeOfIndustryAndExpertise.Location = new System.Drawing.Point(4, 21);
-            this.tbpKnowledgeOfIndustryAndExpertise.Name = "tbpKnowledgeOfIndustryAndExpertise";
-            this.tbpKnowledgeOfIndustryAndExpertise.Size = new System.Drawing.Size(1081, 362);
-            this.tbpKnowledgeOfIndustryAndExpertise.TabIndex = 6;
-            this.tbpKnowledgeOfIndustryAndExpertise.Text = "Knowledge of Industry and Expertise";
-            // 
-            // txtTypeAndNumberOfCustomers
-            // 
-            this.txtTypeAndNumberOfCustomers.BackColor = System.Drawing.SystemColors.Control;
-            this.txtTypeAndNumberOfCustomers.Location = new System.Drawing.Point(5, 5);
-            this.txtTypeAndNumberOfCustomers.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTypeAndNumberOfCustomers.Multiline = true;
-            this.txtTypeAndNumberOfCustomers.Name = "txtTypeAndNumberOfCustomers";
-            this.txtTypeAndNumberOfCustomers.Size = new System.Drawing.Size(1071, 352);
-            this.txtTypeAndNumberOfCustomers.TabIndex = 4;
-            // 
-            // txtMarketSegment
-            // 
-            this.txtMarketSegment.BackColor = System.Drawing.SystemColors.Control;
-            this.txtMarketSegment.Location = new System.Drawing.Point(5, 5);
-            this.txtMarketSegment.Margin = new System.Windows.Forms.Padding(2);
-            this.txtMarketSegment.Multiline = true;
-            this.txtMarketSegment.Name = "txtMarketSegment";
-            this.txtMarketSegment.Size = new System.Drawing.Size(1071, 352);
-            this.txtMarketSegment.TabIndex = 4;
-            // 
-            // txtKnowledgeOfIndustryAndExpertise
-            // 
-            this.txtKnowledgeOfIndustryAndExpertise.BackColor = System.Drawing.SystemColors.Control;
-            this.txtKnowledgeOfIndustryAndExpertise.Location = new System.Drawing.Point(5, 5);
-            this.txtKnowledgeOfIndustryAndExpertise.Margin = new System.Windows.Forms.Padding(2);
-            this.txtKnowledgeOfIndustryAndExpertise.Multiline = true;
-            this.txtKnowledgeOfIndustryAndExpertise.Name = "txtKnowledgeOfIndustryAndExpertise";
-            this.txtKnowledgeOfIndustryAndExpertise.Size = new System.Drawing.Size(1071, 352);
-            this.txtKnowledgeOfIndustryAndExpertise.TabIndex = 4;
             // 
             // txtVision
             // 
@@ -730,6 +592,17 @@
             this.txtVision.Size = new System.Drawing.Size(1071, 352);
             this.txtVision.TabIndex = 5;
             // 
+            // tbpObjectives
+            // 
+            this.tbpObjectives.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tbpObjectives.Controls.Add(this.txtObjectives);
+            this.tbpObjectives.Location = new System.Drawing.Point(4, 25);
+            this.tbpObjectives.Name = "tbpObjectives";
+            this.tbpObjectives.Padding = new System.Windows.Forms.Padding(3);
+            this.tbpObjectives.Size = new System.Drawing.Size(1081, 358);
+            this.tbpObjectives.TabIndex = 1;
+            this.tbpObjectives.Text = "Objectives";
+            // 
             // txtObjectives
             // 
             this.txtObjectives.BackColor = System.Drawing.SystemColors.Control;
@@ -739,6 +612,17 @@
             this.txtObjectives.Name = "txtObjectives";
             this.txtObjectives.Size = new System.Drawing.Size(1071, 352);
             this.txtObjectives.TabIndex = 6;
+            // 
+            // tbpSize
+            // 
+            this.tbpSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tbpSize.Controls.Add(this.txtSize);
+            this.tbpSize.Location = new System.Drawing.Point(4, 25);
+            this.tbpSize.Name = "tbpSize";
+            this.tbpSize.Padding = new System.Windows.Forms.Padding(3);
+            this.tbpSize.Size = new System.Drawing.Size(1081, 358);
+            this.tbpSize.TabIndex = 2;
+            this.tbpSize.Text = "Size";
             // 
             // txtSize
             // 
@@ -750,6 +634,17 @@
             this.txtSize.Size = new System.Drawing.Size(1071, 352);
             this.txtSize.TabIndex = 7;
             // 
+            // tbpLocation
+            // 
+            this.tbpLocation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tbpLocation.Controls.Add(this.txtLocation);
+            this.tbpLocation.Location = new System.Drawing.Point(4, 25);
+            this.tbpLocation.Name = "tbpLocation";
+            this.tbpLocation.Padding = new System.Windows.Forms.Padding(3);
+            this.tbpLocation.Size = new System.Drawing.Size(1081, 358);
+            this.tbpLocation.TabIndex = 3;
+            this.tbpLocation.Text = "Location";
+            // 
             // txtLocation
             // 
             this.txtLocation.BackColor = System.Drawing.SystemColors.Control;
@@ -760,40 +655,88 @@
             this.txtLocation.Size = new System.Drawing.Size(1071, 352);
             this.txtLocation.TabIndex = 8;
             // 
-            // dataGridViewSolution
+            // tbpTypeAndNumberOfCustomers
             // 
-            this.dataGridViewSolution.AllowUserToOrderColumns = true;
-            this.dataGridViewSolution.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSolution.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxSolutionComponents,
-            this.dataGridViewTextBoxQuantity,
-            this.Price});
-            this.dataGridViewSolution.Location = new System.Drawing.Point(12, 68);
-            this.dataGridViewSolution.Name = "dataGridViewSolution";
-            this.dataGridViewSolution.RowHeadersWidth = 51;
-            this.dataGridViewSolution.Size = new System.Drawing.Size(1088, 388);
-            this.dataGridViewSolution.TabIndex = 8;
+            this.tbpTypeAndNumberOfCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tbpTypeAndNumberOfCustomers.Controls.Add(this.txtTypeAndNumberOfCustomers);
+            this.tbpTypeAndNumberOfCustomers.Location = new System.Drawing.Point(4, 25);
+            this.tbpTypeAndNumberOfCustomers.Name = "tbpTypeAndNumberOfCustomers";
+            this.tbpTypeAndNumberOfCustomers.Size = new System.Drawing.Size(1081, 358);
+            this.tbpTypeAndNumberOfCustomers.TabIndex = 4;
+            this.tbpTypeAndNumberOfCustomers.Text = "Type and Number of Customers";
             // 
-            // dataGridViewTextBoxSolutionComponents
+            // txtTypeAndNumberOfCustomers
             // 
-            this.dataGridViewTextBoxSolutionComponents.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxSolutionComponents.HeaderText = "Solution & Components";
-            this.dataGridViewTextBoxSolutionComponents.MinimumWidth = 6;
-            this.dataGridViewTextBoxSolutionComponents.Name = "dataGridViewTextBoxSolutionComponents";
+            this.txtTypeAndNumberOfCustomers.BackColor = System.Drawing.SystemColors.Control;
+            this.txtTypeAndNumberOfCustomers.Location = new System.Drawing.Point(5, 5);
+            this.txtTypeAndNumberOfCustomers.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTypeAndNumberOfCustomers.Multiline = true;
+            this.txtTypeAndNumberOfCustomers.Name = "txtTypeAndNumberOfCustomers";
+            this.txtTypeAndNumberOfCustomers.Size = new System.Drawing.Size(1071, 352);
+            this.txtTypeAndNumberOfCustomers.TabIndex = 4;
             // 
-            // dataGridViewTextBoxQuantity
+            // tbpMarketSegmentOfOperation
             // 
-            this.dataGridViewTextBoxQuantity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxQuantity.HeaderText = "Quantity";
-            this.dataGridViewTextBoxQuantity.MinimumWidth = 6;
-            this.dataGridViewTextBoxQuantity.Name = "dataGridViewTextBoxQuantity";
+            this.tbpMarketSegmentOfOperation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tbpMarketSegmentOfOperation.Controls.Add(this.txtMarketSegment);
+            this.tbpMarketSegmentOfOperation.Location = new System.Drawing.Point(4, 25);
+            this.tbpMarketSegmentOfOperation.Name = "tbpMarketSegmentOfOperation";
+            this.tbpMarketSegmentOfOperation.Size = new System.Drawing.Size(1081, 358);
+            this.tbpMarketSegmentOfOperation.TabIndex = 5;
+            this.tbpMarketSegmentOfOperation.Text = "Market segment of operation";
             // 
-            // Price
+            // txtMarketSegment
             // 
-            this.Price.HeaderText = "Price";
-            this.Price.MinimumWidth = 6;
-            this.Price.Name = "Price";
-            this.Price.Width = 125;
+            this.txtMarketSegment.BackColor = System.Drawing.SystemColors.Control;
+            this.txtMarketSegment.Location = new System.Drawing.Point(5, 5);
+            this.txtMarketSegment.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMarketSegment.Multiline = true;
+            this.txtMarketSegment.Name = "txtMarketSegment";
+            this.txtMarketSegment.Size = new System.Drawing.Size(1071, 352);
+            this.txtMarketSegment.TabIndex = 4;
+            // 
+            // tbpKnowledgeOfIndustryAndExpertise
+            // 
+            this.tbpKnowledgeOfIndustryAndExpertise.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tbpKnowledgeOfIndustryAndExpertise.Controls.Add(this.txtKnowledgeOfIndustryAndExpertise);
+            this.tbpKnowledgeOfIndustryAndExpertise.Location = new System.Drawing.Point(4, 25);
+            this.tbpKnowledgeOfIndustryAndExpertise.Name = "tbpKnowledgeOfIndustryAndExpertise";
+            this.tbpKnowledgeOfIndustryAndExpertise.Size = new System.Drawing.Size(1081, 358);
+            this.tbpKnowledgeOfIndustryAndExpertise.TabIndex = 6;
+            this.tbpKnowledgeOfIndustryAndExpertise.Text = "Knowledge of Industry and Expertise";
+            // 
+            // txtKnowledgeOfIndustryAndExpertise
+            // 
+            this.txtKnowledgeOfIndustryAndExpertise.BackColor = System.Drawing.SystemColors.Control;
+            this.txtKnowledgeOfIndustryAndExpertise.Location = new System.Drawing.Point(5, 5);
+            this.txtKnowledgeOfIndustryAndExpertise.Margin = new System.Windows.Forms.Padding(2);
+            this.txtKnowledgeOfIndustryAndExpertise.Multiline = true;
+            this.txtKnowledgeOfIndustryAndExpertise.Name = "txtKnowledgeOfIndustryAndExpertise";
+            this.txtKnowledgeOfIndustryAndExpertise.Size = new System.Drawing.Size(1071, 352);
+            this.txtKnowledgeOfIndustryAndExpertise.TabIndex = 4;
+            // 
+            // txtCompany
+            // 
+            this.txtCompany.BackColor = System.Drawing.SystemColors.Control;
+            this.txtCompany.Location = new System.Drawing.Point(12, 15);
+            this.txtCompany.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCompany.Multiline = true;
+            this.txtCompany.Name = "txtCompany";
+            this.txtCompany.Size = new System.Drawing.Size(1089, 50);
+            this.txtCompany.TabIndex = 5;
+            this.txtCompany.Text = "Specify the information to be provided by the supplier to present a detailed desc" +
+    "ription of its company, such as:";
+            // 
+            // tbpImplementation
+            // 
+            this.tbpImplementation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tbpImplementation.Controls.Add(this.txtImplementation);
+            this.tbpImplementation.Location = new System.Drawing.Point(4, 25);
+            this.tbpImplementation.Margin = new System.Windows.Forms.Padding(2);
+            this.tbpImplementation.Name = "tbpImplementation";
+            this.tbpImplementation.Size = new System.Drawing.Size(1109, 450);
+            this.tbpImplementation.TabIndex = 4;
+            this.tbpImplementation.Text = "Implementation";
             // 
             // txtImplementation
             // 
@@ -806,6 +749,17 @@
             this.txtImplementation.TabIndex = 6;
             this.txtImplementation.Text = "List the information the project team needs in order to have a detailed understan" +
     "ding of the supplier’s proposed approach to implementing the solution.";
+            // 
+            // tbpOtherInformation
+            // 
+            this.tbpOtherInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tbpOtherInformation.Controls.Add(this.tabControl3);
+            this.tbpOtherInformation.Location = new System.Drawing.Point(4, 25);
+            this.tbpOtherInformation.Margin = new System.Windows.Forms.Padding(2);
+            this.tbpOtherInformation.Name = "tbpOtherInformation";
+            this.tbpOtherInformation.Size = new System.Drawing.Size(1109, 450);
+            this.tbpOtherInformation.TabIndex = 5;
+            this.tbpOtherInformation.Text = "Other Information";
             // 
             // tabControl3
             // 
@@ -822,73 +776,121 @@
             // 
             this.tbpOtherInformation2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpOtherInformation2.Controls.Add(this.txtOtherInformation);
-            this.tbpOtherInformation2.Location = new System.Drawing.Point(4, 21);
+            this.tbpOtherInformation2.Location = new System.Drawing.Point(4, 25);
             this.tbpOtherInformation2.Name = "tbpOtherInformation2";
             this.tbpOtherInformation2.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpOtherInformation2.Size = new System.Drawing.Size(1071, 390);
+            this.tbpOtherInformation2.Size = new System.Drawing.Size(1071, 386);
             this.tbpOtherInformation2.TabIndex = 0;
             this.tbpOtherInformation2.Text = "Other Information";
+            // 
+            // txtOtherInformation
+            // 
+            this.txtOtherInformation.BackColor = System.Drawing.SystemColors.Control;
+            this.txtOtherInformation.Location = new System.Drawing.Point(5, 5);
+            this.txtOtherInformation.Margin = new System.Windows.Forms.Padding(2);
+            this.txtOtherInformation.Multiline = true;
+            this.txtOtherInformation.Name = "txtOtherInformation";
+            this.txtOtherInformation.Size = new System.Drawing.Size(1061, 380);
+            this.txtOtherInformation.TabIndex = 5;
             // 
             // tbpConfidentiality
             // 
             this.tbpConfidentiality.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpConfidentiality.Controls.Add(this.txtConfidentiality);
-            this.tbpConfidentiality.Location = new System.Drawing.Point(4, 21);
+            this.tbpConfidentiality.Location = new System.Drawing.Point(4, 25);
             this.tbpConfidentiality.Name = "tbpConfidentiality";
             this.tbpConfidentiality.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpConfidentiality.Size = new System.Drawing.Size(1071, 390);
+            this.tbpConfidentiality.Size = new System.Drawing.Size(1071, 386);
             this.tbpConfidentiality.TabIndex = 1;
             this.tbpConfidentiality.Text = "Confidentiality";
+            // 
+            // txtConfidentiality
+            // 
+            this.txtConfidentiality.BackColor = System.Drawing.SystemColors.Control;
+            this.txtConfidentiality.Location = new System.Drawing.Point(5, 5);
+            this.txtConfidentiality.Margin = new System.Windows.Forms.Padding(2);
+            this.txtConfidentiality.Multiline = true;
+            this.txtConfidentiality.Name = "txtConfidentiality";
+            this.txtConfidentiality.Size = new System.Drawing.Size(1061, 380);
+            this.txtConfidentiality.TabIndex = 5;
             // 
             // tbpDocumentation
             // 
             this.tbpDocumentation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpDocumentation.Controls.Add(this.txtDocumentation);
-            this.tbpDocumentation.Location = new System.Drawing.Point(4, 21);
+            this.tbpDocumentation.Location = new System.Drawing.Point(4, 25);
             this.tbpDocumentation.Name = "tbpDocumentation";
             this.tbpDocumentation.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpDocumentation.Size = new System.Drawing.Size(1071, 390);
+            this.tbpDocumentation.Size = new System.Drawing.Size(1071, 386);
             this.tbpDocumentation.TabIndex = 2;
             this.tbpDocumentation.Text = "Documentation";
             // 
-            // label1
+            // txtDocumentation
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 14);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Document Information:";
+            this.txtDocumentation.BackColor = System.Drawing.SystemColors.Control;
+            this.txtDocumentation.Location = new System.Drawing.Point(5, 5);
+            this.txtDocumentation.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDocumentation.Multiline = true;
+            this.txtDocumentation.Name = "txtDocumentation";
+            this.txtDocumentation.Size = new System.Drawing.Size(1061, 380);
+            this.txtDocumentation.TabIndex = 5;
             // 
-            // label2
+            // label27
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 158);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 14);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Document History:";
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Black;
+            this.label27.Location = new System.Drawing.Point(20, 26);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(239, 16);
+            this.label27.TabIndex = 8;
+            this.label27.Text = "Please Enter Your Project Name:";
             // 
-            // label3
+            // txtRequestForProposalProcessProject
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 305);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 14);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Document Approvals:";
+            this.txtRequestForProposalProcessProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.txtRequestForProposalProcessProject.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRequestForProposalProcessProject.ForeColor = System.Drawing.Color.Black;
+            this.txtRequestForProposalProcessProject.Location = new System.Drawing.Point(265, 24);
+            this.txtRequestForProposalProcessProject.Name = "txtRequestForProposalProcessProject";
+            this.txtRequestForProposalProcessProject.Size = new System.Drawing.Size(320, 24);
+            this.txtRequestForProposalProcessProject.TabIndex = 7;
+            this.txtRequestForProposalProcessProject.Text = "Project Name";
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Location = new System.Drawing.Point(630, 25);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(89, 23);
+            this.btnSave.TabIndex = 10;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnExport
+            // 
+            this.btnExport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExport.ForeColor = System.Drawing.Color.Black;
+            this.btnExport.Location = new System.Drawing.Point(751, 23);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(89, 23);
+            this.btnExport.TabIndex = 11;
+            this.btnExport.Text = "Export to Word";
+            this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // RequestForProposalDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1148, 545);
-            this.Controls.Add(this.btnRequestForProposal_MainMenue);
-            this.Controls.Add(this.btnRequestForProposal_EnterProjectName);
+            this.Controls.Add(this.btnExport);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tbcRequestForProposal);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.txtRequestForProposalProcessProject);
@@ -897,8 +899,10 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RequestForProposalDocumentForm";
             this.Text = "Request for Proposal";
+            this.Load += new System.EventHandler(this.RequestForProposalDocumentForm_Load);
             this.tbpSolution.ResumeLayout(false);
             this.tbpSolution.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSolution)).EndInit();
             this.tbcRequestForProposal.ResumeLayout(false);
             this.tbpDocumentControl.ResumeLayout(false);
             this.tbpDocumentControl.PerformLayout();
@@ -907,11 +911,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentInformation)).EndInit();
             this.tbpIntroduction.ResumeLayout(false);
             this.tbpIntroduction.PerformLayout();
-            this.tbpCompany.ResumeLayout(false);
-            this.tbpCompany.PerformLayout();
-            this.tbpImplementation.ResumeLayout(false);
-            this.tbpImplementation.PerformLayout();
-            this.tbpOtherInformation.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tbpOverview.ResumeLayout(false);
             this.tbpOverview.PerformLayout();
@@ -927,6 +926,8 @@
             this.tbpRules.PerformLayout();
             this.tbpQuestions.ResumeLayout(false);
             this.tbpQuestions.PerformLayout();
+            this.tbpCompany.ResumeLayout(false);
+            this.tbpCompany.PerformLayout();
             this.tabControl2.ResumeLayout(false);
             this.tbpVision.ResumeLayout(false);
             this.tbpVision.PerformLayout();
@@ -942,7 +943,9 @@
             this.tbpMarketSegmentOfOperation.PerformLayout();
             this.tbpKnowledgeOfIndustryAndExpertise.ResumeLayout(false);
             this.tbpKnowledgeOfIndustryAndExpertise.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSolution)).EndInit();
+            this.tbpImplementation.ResumeLayout(false);
+            this.tbpImplementation.PerformLayout();
+            this.tbpOtherInformation.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
             this.tbpOtherInformation2.ResumeLayout(false);
             this.tbpOtherInformation2.PerformLayout();
@@ -986,8 +989,7 @@
         private System.Windows.Forms.TextBox txtOtherInformation;
         private System.Windows.Forms.TabPage tbpSolution;
         private System.Windows.Forms.TextBox txtRequestForProposalProcessProject;
-        private System.Windows.Forms.Button btnRequestForProposal_EnterProjectName;
-        private System.Windows.Forms.Button btnRequestForProposal_MainMenue;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.DataGridView dataGridViewDocumentHistory;
         private System.Windows.Forms.DataGridViewTextBoxColumn Version;
         private System.Windows.Forms.DataGridViewTextBoxColumn historyIssueDate;
@@ -1028,5 +1030,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnExport;
     }
 }

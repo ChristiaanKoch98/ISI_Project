@@ -47,7 +47,23 @@
             this.approvalSignature = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.approvalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbcProjectClosureReport = new System.Windows.Forms.TabControl();
+            this.tbpProjectCompletion = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtProjectCompletion = new System.Windows.Forms.TextBox();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tbpCompletionCriteria = new System.Windows.Forms.TabPage();
+            this.dataGridViewCompletionCriteria = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxCompletionCatagory = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxCompletionCriteria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxSatisfied = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tbpOutstandingItems = new System.Windows.Forms.TabPage();
+            this.dataGridViewOutstandingItems = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxOutstandingItems = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxActionRequired1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxCompletionDate1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbpProjectClosure = new System.Windows.Forms.TabPage();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtProjectClosure = new System.Windows.Forms.TextBox();
             this.tbcProjectClosure = new System.Windows.Forms.TabControl();
             this.tbpDeliverables = new System.Windows.Forms.TabPage();
             this.dataGridViewDeliverables = new System.Windows.Forms.DataGridView();
@@ -87,25 +103,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnRequestForProposal_MainMenue = new System.Windows.Forms.Button();
-            this.btnRequestForProposal_EnterProjectName = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.txtRequestForProposalProcessProject = new System.Windows.Forms.TextBox();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.dataGridViewOutstandingItems = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxCompletionDate1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxActionRequired1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxOutstandingItems = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tbpOutstandingItems = new System.Windows.Forms.TabPage();
-            this.tbpCompletionCriteria = new System.Windows.Forms.TabPage();
-            this.txtProjectCompletion = new System.Windows.Forms.TextBox();
-            this.tbpProjectCompletion = new System.Windows.Forms.TabPage();
-            this.dataGridViewCompletionCriteria = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxCompletionCatagory = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxCompletionCriteria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxSatisfied = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtProjectClosure = new System.Windows.Forms.TextBox();
             this.tbpDocumentControl.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tbpDocumentInformation.SuspendLayout();
@@ -115,6 +115,12 @@
             this.tbpDocumentApprovals.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentApprovals)).BeginInit();
             this.tbcProjectClosureReport.SuspendLayout();
+            this.tbpProjectCompletion.SuspendLayout();
+            this.tabControl2.SuspendLayout();
+            this.tbpCompletionCriteria.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCompletionCriteria)).BeginInit();
+            this.tbpOutstandingItems.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOutstandingItems)).BeginInit();
             this.tbpProjectClosure.SuspendLayout();
             this.tbcProjectClosure.SuspendLayout();
             this.tbpDeliverables.SuspendLayout();
@@ -128,12 +134,6 @@
             this.tbpCommunication.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCommunications)).BeginInit();
             this.tbpApproval.SuspendLayout();
-            this.tabControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOutstandingItems)).BeginInit();
-            this.tbpOutstandingItems.SuspendLayout();
-            this.tbpCompletionCriteria.SuspendLayout();
-            this.tbpProjectCompletion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCompletionCriteria)).BeginInit();
             this.SuspendLayout();
             // 
             // label27
@@ -144,7 +144,7 @@
             this.label27.Location = new System.Drawing.Point(8, 18);
             this.label27.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(183, 14);
+            this.label27.Size = new System.Drawing.Size(239, 16);
             this.label27.TabIndex = 11;
             this.label27.Text = "Please Enter Your Project Name:";
             // 
@@ -152,11 +152,11 @@
             // 
             this.tbpDocumentControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpDocumentControl.Controls.Add(this.tabControl1);
-            this.tbpDocumentControl.Location = new System.Drawing.Point(4, 21);
+            this.tbpDocumentControl.Location = new System.Drawing.Point(4, 25);
             this.tbpDocumentControl.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tbpDocumentControl.Name = "tbpDocumentControl";
             this.tbpDocumentControl.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tbpDocumentControl.Size = new System.Drawing.Size(1298, 599);
+            this.tbpDocumentControl.Size = new System.Drawing.Size(1298, 595);
             this.tbpDocumentControl.TabIndex = 0;
             this.tbpDocumentControl.Text = "Document Control";
             // 
@@ -177,11 +177,11 @@
             this.tbpDocumentInformation.BackColor = System.Drawing.Color.Gray;
             this.tbpDocumentInformation.Controls.Add(this.dataGridViewDocumentInformation);
             this.tbpDocumentInformation.ForeColor = System.Drawing.Color.Gray;
-            this.tbpDocumentInformation.Location = new System.Drawing.Point(4, 21);
+            this.tbpDocumentInformation.Location = new System.Drawing.Point(4, 25);
             this.tbpDocumentInformation.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpDocumentInformation.Name = "tbpDocumentInformation";
             this.tbpDocumentInformation.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tbpDocumentInformation.Size = new System.Drawing.Size(1260, 541);
+            this.tbpDocumentInformation.Size = new System.Drawing.Size(1260, 537);
             this.tbpDocumentInformation.TabIndex = 0;
             this.tbpDocumentInformation.Text = "Document Information";
             // 
@@ -217,11 +217,11 @@
             this.tbpDocumentHistory.BackColor = System.Drawing.Color.Gray;
             this.tbpDocumentHistory.Controls.Add(this.dataGridViewDocumentHistory);
             this.tbpDocumentHistory.ForeColor = System.Drawing.Color.Gray;
-            this.tbpDocumentHistory.Location = new System.Drawing.Point(4, 21);
+            this.tbpDocumentHistory.Location = new System.Drawing.Point(4, 25);
             this.tbpDocumentHistory.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpDocumentHistory.Name = "tbpDocumentHistory";
             this.tbpDocumentHistory.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tbpDocumentHistory.Size = new System.Drawing.Size(1260, 541);
+            this.tbpDocumentHistory.Size = new System.Drawing.Size(1260, 537);
             this.tbpDocumentHistory.TabIndex = 1;
             this.tbpDocumentHistory.Text = "Document History";
             // 
@@ -265,10 +265,10 @@
             this.tbpDocumentApprovals.BackColor = System.Drawing.Color.Gray;
             this.tbpDocumentApprovals.Controls.Add(this.dataGridViewDocumentApprovals);
             this.tbpDocumentApprovals.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.tbpDocumentApprovals.Location = new System.Drawing.Point(4, 21);
+            this.tbpDocumentApprovals.Location = new System.Drawing.Point(4, 25);
             this.tbpDocumentApprovals.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpDocumentApprovals.Name = "tbpDocumentApprovals";
-            this.tbpDocumentApprovals.Size = new System.Drawing.Size(1260, 541);
+            this.tbpDocumentApprovals.Size = new System.Drawing.Size(1260, 537);
             this.tbpDocumentApprovals.TabIndex = 2;
             this.tbpDocumentApprovals.Text = "Document Approvals";
             // 
@@ -331,18 +331,177 @@
             this.tbcProjectClosureReport.Size = new System.Drawing.Size(1306, 624);
             this.tbcProjectClosureReport.TabIndex = 12;
             // 
+            // tbpProjectCompletion
+            // 
+            this.tbpProjectCompletion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tbpProjectCompletion.Controls.Add(this.label7);
+            this.tbpProjectCompletion.Controls.Add(this.txtProjectCompletion);
+            this.tbpProjectCompletion.Controls.Add(this.tabControl2);
+            this.tbpProjectCompletion.Location = new System.Drawing.Point(4, 25);
+            this.tbpProjectCompletion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tbpProjectCompletion.Name = "tbpProjectCompletion";
+            this.tbpProjectCompletion.Size = new System.Drawing.Size(1298, 595);
+            this.tbpProjectCompletion.TabIndex = 3;
+            this.tbpProjectCompletion.Text = "Project Completion";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(17, 13);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(240, 16);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Project Completion Description:";
+            // 
+            // txtProjectCompletion
+            // 
+            this.txtProjectCompletion.BackColor = System.Drawing.SystemColors.Control;
+            this.txtProjectCompletion.Location = new System.Drawing.Point(20, 30);
+            this.txtProjectCompletion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtProjectCompletion.Multiline = true;
+            this.txtProjectCompletion.Name = "txtProjectCompletion";
+            this.txtProjectCompletion.Size = new System.Drawing.Size(1260, 43);
+            this.txtProjectCompletion.TabIndex = 5;
+            this.txtProjectCompletion.Text = "Before you undertake project closure, this section identifies the criteria requir" +
+    "ed to ensure that the project is complete, and lists any outstanding items.";
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tbpCompletionCriteria);
+            this.tabControl2.Controls.Add(this.tbpOutstandingItems);
+            this.tabControl2.Location = new System.Drawing.Point(16, 79);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(1268, 503);
+            this.tabControl2.TabIndex = 16;
+            // 
+            // tbpCompletionCriteria
+            // 
+            this.tbpCompletionCriteria.BackColor = System.Drawing.Color.Gray;
+            this.tbpCompletionCriteria.Controls.Add(this.dataGridViewCompletionCriteria);
+            this.tbpCompletionCriteria.Location = new System.Drawing.Point(4, 25);
+            this.tbpCompletionCriteria.Name = "tbpCompletionCriteria";
+            this.tbpCompletionCriteria.Padding = new System.Windows.Forms.Padding(3);
+            this.tbpCompletionCriteria.Size = new System.Drawing.Size(1260, 474);
+            this.tbpCompletionCriteria.TabIndex = 0;
+            this.tbpCompletionCriteria.Text = "Completion Criteria";
+            // 
+            // dataGridViewCompletionCriteria
+            // 
+            this.dataGridViewCompletionCriteria.AllowUserToOrderColumns = true;
+            this.dataGridViewCompletionCriteria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCompletionCriteria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxCompletionCatagory,
+            this.dataGridViewTextBoxCompletionCriteria,
+            this.dataGridViewTextBoxSatisfied});
+            this.dataGridViewCompletionCriteria.Location = new System.Drawing.Point(8, 7);
+            this.dataGridViewCompletionCriteria.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.dataGridViewCompletionCriteria.Name = "dataGridViewCompletionCriteria";
+            this.dataGridViewCompletionCriteria.RowHeadersWidth = 51;
+            this.dataGridViewCompletionCriteria.Size = new System.Drawing.Size(1244, 220);
+            this.dataGridViewCompletionCriteria.TabIndex = 8;
+            // 
+            // dataGridViewTextBoxCompletionCatagory
+            // 
+            this.dataGridViewTextBoxCompletionCatagory.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxCompletionCatagory.HeaderText = "Completion Catagory";
+            this.dataGridViewTextBoxCompletionCatagory.MinimumWidth = 6;
+            this.dataGridViewTextBoxCompletionCatagory.Name = "dataGridViewTextBoxCompletionCatagory";
+            // 
+            // dataGridViewTextBoxCompletionCriteria
+            // 
+            this.dataGridViewTextBoxCompletionCriteria.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxCompletionCriteria.HeaderText = "Completion Criteria";
+            this.dataGridViewTextBoxCompletionCriteria.MinimumWidth = 6;
+            this.dataGridViewTextBoxCompletionCriteria.Name = "dataGridViewTextBoxCompletionCriteria";
+            // 
+            // dataGridViewTextBoxSatisfied
+            // 
+            this.dataGridViewTextBoxSatisfied.HeaderText = "Satisfied?";
+            this.dataGridViewTextBoxSatisfied.MinimumWidth = 6;
+            this.dataGridViewTextBoxSatisfied.Name = "dataGridViewTextBoxSatisfied";
+            this.dataGridViewTextBoxSatisfied.Width = 125;
+            // 
+            // tbpOutstandingItems
+            // 
+            this.tbpOutstandingItems.BackColor = System.Drawing.Color.Gray;
+            this.tbpOutstandingItems.Controls.Add(this.dataGridViewOutstandingItems);
+            this.tbpOutstandingItems.Location = new System.Drawing.Point(4, 25);
+            this.tbpOutstandingItems.Name = "tbpOutstandingItems";
+            this.tbpOutstandingItems.Padding = new System.Windows.Forms.Padding(3);
+            this.tbpOutstandingItems.Size = new System.Drawing.Size(1260, 474);
+            this.tbpOutstandingItems.TabIndex = 1;
+            this.tbpOutstandingItems.Text = "Outstanding Items";
+            // 
+            // dataGridViewOutstandingItems
+            // 
+            this.dataGridViewOutstandingItems.AllowUserToOrderColumns = true;
+            this.dataGridViewOutstandingItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewOutstandingItems.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxOutstandingItems,
+            this.dataGridViewTextBoxActionRequired1,
+            this.dataGridViewTextBoxCompletionDate1});
+            this.dataGridViewOutstandingItems.Location = new System.Drawing.Point(8, 7);
+            this.dataGridViewOutstandingItems.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.dataGridViewOutstandingItems.Name = "dataGridViewOutstandingItems";
+            this.dataGridViewOutstandingItems.RowHeadersWidth = 51;
+            this.dataGridViewOutstandingItems.Size = new System.Drawing.Size(1244, 220);
+            this.dataGridViewOutstandingItems.TabIndex = 7;
+            // 
+            // dataGridViewTextBoxOutstandingItems
+            // 
+            this.dataGridViewTextBoxOutstandingItems.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxOutstandingItems.HeaderText = "Outstanding Items";
+            this.dataGridViewTextBoxOutstandingItems.MinimumWidth = 6;
+            this.dataGridViewTextBoxOutstandingItems.Name = "dataGridViewTextBoxOutstandingItems";
+            // 
+            // dataGridViewTextBoxActionRequired1
+            // 
+            this.dataGridViewTextBoxActionRequired1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxActionRequired1.HeaderText = "Action Required";
+            this.dataGridViewTextBoxActionRequired1.MinimumWidth = 6;
+            this.dataGridViewTextBoxActionRequired1.Name = "dataGridViewTextBoxActionRequired1";
+            // 
+            // dataGridViewTextBoxCompletionDate1
+            // 
+            this.dataGridViewTextBoxCompletionDate1.HeaderText = "Completion Date";
+            this.dataGridViewTextBoxCompletionDate1.MinimumWidth = 6;
+            this.dataGridViewTextBoxCompletionDate1.Name = "dataGridViewTextBoxCompletionDate1";
+            this.dataGridViewTextBoxCompletionDate1.Width = 125;
+            // 
             // tbpProjectClosure
             // 
             this.tbpProjectClosure.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpProjectClosure.Controls.Add(this.label8);
             this.tbpProjectClosure.Controls.Add(this.txtProjectClosure);
             this.tbpProjectClosure.Controls.Add(this.tbcProjectClosure);
-            this.tbpProjectClosure.Location = new System.Drawing.Point(4, 21);
+            this.tbpProjectClosure.Location = new System.Drawing.Point(4, 25);
             this.tbpProjectClosure.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpProjectClosure.Name = "tbpProjectClosure";
-            this.tbpProjectClosure.Size = new System.Drawing.Size(1298, 599);
+            this.tbpProjectClosure.Size = new System.Drawing.Size(1298, 595);
             this.tbpProjectClosure.TabIndex = 4;
             this.tbpProjectClosure.Text = "Project Closure";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(18, 13);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(214, 16);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Project Closure Description:";
+            // 
+            // txtProjectClosure
+            // 
+            this.txtProjectClosure.BackColor = System.Drawing.SystemColors.Control;
+            this.txtProjectClosure.Location = new System.Drawing.Point(20, 30);
+            this.txtProjectClosure.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtProjectClosure.Multiline = true;
+            this.txtProjectClosure.Name = "txtProjectClosure";
+            this.txtProjectClosure.Size = new System.Drawing.Size(1257, 48);
+            this.txtProjectClosure.TabIndex = 16;
             // 
             // tbcProjectClosure
             // 
@@ -362,11 +521,11 @@
             // 
             this.tbpDeliverables.BackColor = System.Drawing.Color.LightGray;
             this.tbpDeliverables.Controls.Add(this.dataGridViewDeliverables);
-            this.tbpDeliverables.Location = new System.Drawing.Point(4, 21);
+            this.tbpDeliverables.Location = new System.Drawing.Point(4, 25);
             this.tbpDeliverables.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpDeliverables.Name = "tbpDeliverables";
             this.tbpDeliverables.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tbpDeliverables.Size = new System.Drawing.Size(1255, 474);
+            this.tbpDeliverables.Size = new System.Drawing.Size(1255, 470);
             this.tbpDeliverables.TabIndex = 0;
             this.tbpDeliverables.Text = "Deliverables";
             // 
@@ -410,11 +569,11 @@
             // 
             this.tbpDocumentation.BackColor = System.Drawing.Color.LightGray;
             this.tbpDocumentation.Controls.Add(this.dataGridViewDocumentation);
-            this.tbpDocumentation.Location = new System.Drawing.Point(4, 21);
+            this.tbpDocumentation.Location = new System.Drawing.Point(4, 25);
             this.tbpDocumentation.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpDocumentation.Name = "tbpDocumentation";
             this.tbpDocumentation.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tbpDocumentation.Size = new System.Drawing.Size(1255, 474);
+            this.tbpDocumentation.Size = new System.Drawing.Size(1255, 470);
             this.tbpDocumentation.TabIndex = 1;
             this.tbpDocumentation.Text = "Documentation";
             // 
@@ -458,10 +617,10 @@
             // 
             this.tbpSuppliers.BackColor = System.Drawing.Color.LightGray;
             this.tbpSuppliers.Controls.Add(this.dataGridViewSippliers);
-            this.tbpSuppliers.Location = new System.Drawing.Point(4, 21);
+            this.tbpSuppliers.Location = new System.Drawing.Point(4, 25);
             this.tbpSuppliers.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpSuppliers.Name = "tbpSuppliers";
-            this.tbpSuppliers.Size = new System.Drawing.Size(1255, 474);
+            this.tbpSuppliers.Size = new System.Drawing.Size(1255, 470);
             this.tbpSuppliers.TabIndex = 2;
             this.tbpSuppliers.Text = "Suppliers";
             // 
@@ -505,10 +664,10 @@
             // 
             this.tbpResources.BackColor = System.Drawing.Color.LightGray;
             this.tbpResources.Controls.Add(this.dataGridViewResources);
-            this.tbpResources.Location = new System.Drawing.Point(4, 21);
+            this.tbpResources.Location = new System.Drawing.Point(4, 25);
             this.tbpResources.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpResources.Name = "tbpResources";
-            this.tbpResources.Size = new System.Drawing.Size(1255, 474);
+            this.tbpResources.Size = new System.Drawing.Size(1255, 470);
             this.tbpResources.TabIndex = 3;
             this.tbpResources.Text = "Resources";
             // 
@@ -552,10 +711,10 @@
             // 
             this.tbpCommunication.BackColor = System.Drawing.Color.LightGray;
             this.tbpCommunication.Controls.Add(this.dataGridViewCommunications);
-            this.tbpCommunication.Location = new System.Drawing.Point(4, 21);
+            this.tbpCommunication.Location = new System.Drawing.Point(4, 25);
             this.tbpCommunication.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpCommunication.Name = "tbpCommunication";
-            this.tbpCommunication.Size = new System.Drawing.Size(1255, 474);
+            this.tbpCommunication.Size = new System.Drawing.Size(1255, 470);
             this.tbpCommunication.TabIndex = 4;
             this.tbpCommunication.Text = "Communication";
             // 
@@ -617,10 +776,10 @@
             this.tbpApproval.Controls.Add(this.label3);
             this.tbpApproval.Controls.Add(this.label2);
             this.tbpApproval.Controls.Add(this.label1);
-            this.tbpApproval.Location = new System.Drawing.Point(4, 21);
+            this.tbpApproval.Location = new System.Drawing.Point(4, 25);
             this.tbpApproval.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpApproval.Name = "tbpApproval";
-            this.tbpApproval.Size = new System.Drawing.Size(1298, 599);
+            this.tbpApproval.Size = new System.Drawing.Size(1298, 595);
             this.tbpApproval.TabIndex = 5;
             this.tbpApproval.Text = "Approval";
             // 
@@ -644,7 +803,7 @@
             this.label6.Location = new System.Drawing.Point(17, 213);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(292, 12);
+            this.label6.Size = new System.Drawing.Size(383, 16);
             this.label6.TabIndex = 9;
             this.label6.Text = "this project and complete the handover activities described.";
             // 
@@ -656,7 +815,7 @@
             this.label5.Location = new System.Drawing.Point(18, 197);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(282, 12);
+            this.label5.Size = new System.Drawing.Size(371, 16);
             this.label5.TabIndex = 8;
             this.label5.Text = "By signing this document, I grant formal approval to close";
             // 
@@ -667,7 +826,7 @@
             this.lblApprovalRole.Location = new System.Drawing.Point(127, 58);
             this.lblApprovalRole.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApprovalRole.Name = "lblApprovalRole";
-            this.lblApprovalRole.Size = new System.Drawing.Size(14, 12);
+            this.lblApprovalRole.Size = new System.Drawing.Size(20, 16);
             this.lblApprovalRole.TabIndex = 7;
             this.lblApprovalRole.Text = "...";
             // 
@@ -677,7 +836,7 @@
             this.txtDate.Location = new System.Drawing.Point(131, 123);
             this.txtDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(314, 20);
+            this.txtDate.Size = new System.Drawing.Size(314, 24);
             this.txtDate.TabIndex = 6;
             // 
             // txtSignature
@@ -686,7 +845,7 @@
             this.txtSignature.Location = new System.Drawing.Point(131, 85);
             this.txtSignature.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtSignature.Name = "txtSignature";
-            this.txtSignature.Size = new System.Drawing.Size(314, 20);
+            this.txtSignature.Size = new System.Drawing.Size(314, 24);
             this.txtSignature.TabIndex = 5;
             // 
             // txtName
@@ -695,7 +854,7 @@
             this.txtName.Location = new System.Drawing.Point(131, 15);
             this.txtName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(314, 20);
+            this.txtName.Size = new System.Drawing.Size(314, 24);
             this.txtName.TabIndex = 4;
             // 
             // label4
@@ -705,7 +864,7 @@
             this.label4.Location = new System.Drawing.Point(17, 126);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 12);
+            this.label4.Size = new System.Drawing.Size(42, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Date:";
             // 
@@ -716,7 +875,7 @@
             this.label3.Location = new System.Drawing.Point(17, 88);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 12);
+            this.label3.Size = new System.Drawing.Size(73, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Signature:";
             // 
@@ -727,7 +886,7 @@
             this.label2.Location = new System.Drawing.Point(18, 58);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 12);
+            this.label2.Size = new System.Drawing.Size(41, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Role:";
             // 
@@ -738,214 +897,57 @@
             this.label1.Location = new System.Drawing.Point(18, 18);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 12);
+            this.label1.Size = new System.Drawing.Size(50, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name:";
             // 
-            // btnRequestForProposal_MainMenue
+            // btnExport
             // 
-            this.btnRequestForProposal_MainMenue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnRequestForProposal_MainMenue.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRequestForProposal_MainMenue.Location = new System.Drawing.Point(706, 11);
-            this.btnRequestForProposal_MainMenue.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnRequestForProposal_MainMenue.Name = "btnRequestForProposal_MainMenue";
-            this.btnRequestForProposal_MainMenue.Size = new System.Drawing.Size(130, 28);
-            this.btnRequestForProposal_MainMenue.TabIndex = 15;
-            this.btnRequestForProposal_MainMenue.Text = "Back to Main Menu";
-            this.btnRequestForProposal_MainMenue.UseVisualStyleBackColor = false;
+            this.btnExport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExport.Location = new System.Drawing.Point(816, 12);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(130, 28);
+            this.btnExport.TabIndex = 15;
+            this.btnExport.Text = "Export to Word";
+            this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
-            // btnRequestForProposal_EnterProjectName
+            // btnSave
             // 
-            this.btnRequestForProposal_EnterProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnRequestForProposal_EnterProjectName.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRequestForProposal_EnterProjectName.ForeColor = System.Drawing.Color.Black;
-            this.btnRequestForProposal_EnterProjectName.Location = new System.Drawing.Point(591, 11);
-            this.btnRequestForProposal_EnterProjectName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnRequestForProposal_EnterProjectName.Name = "btnRequestForProposal_EnterProjectName";
-            this.btnRequestForProposal_EnterProjectName.Size = new System.Drawing.Size(107, 28);
-            this.btnRequestForProposal_EnterProjectName.TabIndex = 14;
-            this.btnRequestForProposal_EnterProjectName.Text = "Enter";
-            this.btnRequestForProposal_EnterProjectName.UseVisualStyleBackColor = false;
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Location = new System.Drawing.Point(701, 11);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(107, 28);
+            this.btnSave.TabIndex = 14;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtRequestForProposalProcessProject
             // 
             this.txtRequestForProposalProcessProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.txtRequestForProposalProcessProject.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRequestForProposalProcessProject.ForeColor = System.Drawing.Color.Black;
-            this.txtRequestForProposalProcessProject.Location = new System.Drawing.Point(200, 16);
+            this.txtRequestForProposalProcessProject.Location = new System.Drawing.Point(256, 15);
             this.txtRequestForProposalProcessProject.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtRequestForProposalProcessProject.Name = "txtRequestForProposalProcessProject";
-            this.txtRequestForProposalProcessProject.Size = new System.Drawing.Size(383, 20);
+            this.txtRequestForProposalProcessProject.Size = new System.Drawing.Size(383, 24);
             this.txtRequestForProposalProcessProject.TabIndex = 13;
             this.txtRequestForProposalProcessProject.Text = "Project Name";
             // 
-            // tabControl2
-            // 
-            this.tabControl2.Controls.Add(this.tbpCompletionCriteria);
-            this.tabControl2.Controls.Add(this.tbpOutstandingItems);
-            this.tabControl2.Location = new System.Drawing.Point(16, 79);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1268, 503);
-            this.tabControl2.TabIndex = 16;
-            // 
-            // dataGridViewOutstandingItems
-            // 
-            this.dataGridViewOutstandingItems.AllowUserToOrderColumns = true;
-            this.dataGridViewOutstandingItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewOutstandingItems.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxOutstandingItems,
-            this.dataGridViewTextBoxActionRequired1,
-            this.dataGridViewTextBoxCompletionDate1});
-            this.dataGridViewOutstandingItems.Location = new System.Drawing.Point(8, 7);
-            this.dataGridViewOutstandingItems.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.dataGridViewOutstandingItems.Name = "dataGridViewOutstandingItems";
-            this.dataGridViewOutstandingItems.RowHeadersWidth = 51;
-            this.dataGridViewOutstandingItems.Size = new System.Drawing.Size(1244, 220);
-            this.dataGridViewOutstandingItems.TabIndex = 7;
-            // 
-            // dataGridViewTextBoxCompletionDate1
-            // 
-            this.dataGridViewTextBoxCompletionDate1.HeaderText = "Completion Date";
-            this.dataGridViewTextBoxCompletionDate1.MinimumWidth = 6;
-            this.dataGridViewTextBoxCompletionDate1.Name = "dataGridViewTextBoxCompletionDate1";
-            this.dataGridViewTextBoxCompletionDate1.Width = 125;
-            // 
-            // dataGridViewTextBoxActionRequired1
-            // 
-            this.dataGridViewTextBoxActionRequired1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxActionRequired1.HeaderText = "Action Required";
-            this.dataGridViewTextBoxActionRequired1.MinimumWidth = 6;
-            this.dataGridViewTextBoxActionRequired1.Name = "dataGridViewTextBoxActionRequired1";
-            // 
-            // dataGridViewTextBoxOutstandingItems
-            // 
-            this.dataGridViewTextBoxOutstandingItems.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxOutstandingItems.HeaderText = "Outstanding Items";
-            this.dataGridViewTextBoxOutstandingItems.MinimumWidth = 6;
-            this.dataGridViewTextBoxOutstandingItems.Name = "dataGridViewTextBoxOutstandingItems";
-            // 
-            // tbpOutstandingItems
-            // 
-            this.tbpOutstandingItems.BackColor = System.Drawing.Color.Gray;
-            this.tbpOutstandingItems.Controls.Add(this.dataGridViewOutstandingItems);
-            this.tbpOutstandingItems.Location = new System.Drawing.Point(4, 21);
-            this.tbpOutstandingItems.Name = "tbpOutstandingItems";
-            this.tbpOutstandingItems.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpOutstandingItems.Size = new System.Drawing.Size(1260, 478);
-            this.tbpOutstandingItems.TabIndex = 1;
-            this.tbpOutstandingItems.Text = "Outstanding Items";
-            // 
-            // tbpCompletionCriteria
-            // 
-            this.tbpCompletionCriteria.BackColor = System.Drawing.Color.Gray;
-            this.tbpCompletionCriteria.Controls.Add(this.dataGridViewCompletionCriteria);
-            this.tbpCompletionCriteria.Location = new System.Drawing.Point(4, 21);
-            this.tbpCompletionCriteria.Name = "tbpCompletionCriteria";
-            this.tbpCompletionCriteria.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpCompletionCriteria.Size = new System.Drawing.Size(1260, 478);
-            this.tbpCompletionCriteria.TabIndex = 0;
-            this.tbpCompletionCriteria.Text = "Completion Criteria";
-            // 
-            // txtProjectCompletion
-            // 
-            this.txtProjectCompletion.BackColor = System.Drawing.SystemColors.Control;
-            this.txtProjectCompletion.Location = new System.Drawing.Point(20, 30);
-            this.txtProjectCompletion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtProjectCompletion.Multiline = true;
-            this.txtProjectCompletion.Name = "txtProjectCompletion";
-            this.txtProjectCompletion.Size = new System.Drawing.Size(1260, 43);
-            this.txtProjectCompletion.TabIndex = 5;
-            this.txtProjectCompletion.Text = "Before you undertake project closure, this section identifies the criteria requir" +
-    "ed to ensure that the project is complete, and lists any outstanding items.";
-            // 
-            // tbpProjectCompletion
-            // 
-            this.tbpProjectCompletion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tbpProjectCompletion.Controls.Add(this.label7);
-            this.tbpProjectCompletion.Controls.Add(this.txtProjectCompletion);
-            this.tbpProjectCompletion.Controls.Add(this.tabControl2);
-            this.tbpProjectCompletion.Location = new System.Drawing.Point(4, 21);
-            this.tbpProjectCompletion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tbpProjectCompletion.Name = "tbpProjectCompletion";
-            this.tbpProjectCompletion.Size = new System.Drawing.Size(1298, 599);
-            this.tbpProjectCompletion.TabIndex = 3;
-            this.tbpProjectCompletion.Text = "Project Completion";
-            // 
-            // dataGridViewCompletionCriteria
-            // 
-            this.dataGridViewCompletionCriteria.AllowUserToOrderColumns = true;
-            this.dataGridViewCompletionCriteria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCompletionCriteria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxCompletionCatagory,
-            this.dataGridViewTextBoxCompletionCriteria,
-            this.dataGridViewTextBoxSatisfied});
-            this.dataGridViewCompletionCriteria.Location = new System.Drawing.Point(8, 7);
-            this.dataGridViewCompletionCriteria.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.dataGridViewCompletionCriteria.Name = "dataGridViewCompletionCriteria";
-            this.dataGridViewCompletionCriteria.RowHeadersWidth = 51;
-            this.dataGridViewCompletionCriteria.Size = new System.Drawing.Size(1244, 220);
-            this.dataGridViewCompletionCriteria.TabIndex = 8;
-            // 
-            // dataGridViewTextBoxCompletionCatagory
-            // 
-            this.dataGridViewTextBoxCompletionCatagory.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxCompletionCatagory.HeaderText = "Completion Catagory";
-            this.dataGridViewTextBoxCompletionCatagory.MinimumWidth = 6;
-            this.dataGridViewTextBoxCompletionCatagory.Name = "dataGridViewTextBoxCompletionCatagory";
-            // 
-            // dataGridViewTextBoxCompletionCriteria
-            // 
-            this.dataGridViewTextBoxCompletionCriteria.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxCompletionCriteria.HeaderText = "Completion Criteria";
-            this.dataGridViewTextBoxCompletionCriteria.MinimumWidth = 6;
-            this.dataGridViewTextBoxCompletionCriteria.Name = "dataGridViewTextBoxCompletionCriteria";
-            // 
-            // dataGridViewTextBoxSatisfied
-            // 
-            this.dataGridViewTextBoxSatisfied.HeaderText = "Satisfied?";
-            this.dataGridViewTextBoxSatisfied.MinimumWidth = 6;
-            this.dataGridViewTextBoxSatisfied.Name = "dataGridViewTextBoxSatisfied";
-            this.dataGridViewTextBoxSatisfied.Width = 125;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(17, 13);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(182, 14);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "Project Completion Description:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(18, 13);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(161, 14);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Project Closure Description:";
-            // 
-            // txtProjectClosure
-            // 
-            this.txtProjectClosure.BackColor = System.Drawing.SystemColors.Control;
-            this.txtProjectClosure.Location = new System.Drawing.Point(20, 30);
-            this.txtProjectClosure.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtProjectClosure.Multiline = true;
-            this.txtProjectClosure.Name = "txtProjectClosure";
-            this.txtProjectClosure.Size = new System.Drawing.Size(1257, 48);
-            this.txtProjectClosure.TabIndex = 16;
-            // 
             // ProjectClosureReportDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1332, 687);
-            this.Controls.Add(this.btnRequestForProposal_MainMenue);
-            this.Controls.Add(this.btnRequestForProposal_EnterProjectName);
+            this.Controls.Add(this.btnExport);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtRequestForProposalProcessProject);
             this.Controls.Add(this.tbcProjectClosureReport);
             this.Controls.Add(this.label27);
@@ -954,6 +956,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "ProjectClosureReportDocumentForm";
             this.Text = "Project Closure Report";
+            this.Load += new System.EventHandler(this.ProjectClosureReportDocumentForm_Load);
             this.tbpDocumentControl.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tbpDocumentInformation.ResumeLayout(false);
@@ -963,6 +966,13 @@
             this.tbpDocumentApprovals.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentApprovals)).EndInit();
             this.tbcProjectClosureReport.ResumeLayout(false);
+            this.tbpProjectCompletion.ResumeLayout(false);
+            this.tbpProjectCompletion.PerformLayout();
+            this.tabControl2.ResumeLayout(false);
+            this.tbpCompletionCriteria.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCompletionCriteria)).EndInit();
+            this.tbpOutstandingItems.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOutstandingItems)).EndInit();
             this.tbpProjectClosure.ResumeLayout(false);
             this.tbpProjectClosure.PerformLayout();
             this.tbcProjectClosure.ResumeLayout(false);
@@ -978,13 +988,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCommunications)).EndInit();
             this.tbpApproval.ResumeLayout(false);
             this.tbpApproval.PerformLayout();
-            this.tabControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOutstandingItems)).EndInit();
-            this.tbpOutstandingItems.ResumeLayout(false);
-            this.tbpCompletionCriteria.ResumeLayout(false);
-            this.tbpProjectCompletion.ResumeLayout(false);
-            this.tbpProjectCompletion.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCompletionCriteria)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1047,8 +1050,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSignApproval;
-        private System.Windows.Forms.Button btnRequestForProposal_MainMenue;
-        private System.Windows.Forms.Button btnRequestForProposal_EnterProjectName;
+        private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox txtRequestForProposalProcessProject;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tbpDocumentInformation;
