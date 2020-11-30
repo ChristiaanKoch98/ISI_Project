@@ -74,5 +74,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             string documentation = txtDocumentation.Text;
             listBoxDocumentation.Items.Add(txtDocumentation.Text);
         }
+
+        private void RequestForInformationDocumentForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
