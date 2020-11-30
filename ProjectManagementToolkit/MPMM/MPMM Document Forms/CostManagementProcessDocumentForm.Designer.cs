@@ -44,7 +44,7 @@
             this.Issue_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Changes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Document_Approvals_dgv = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -84,7 +84,7 @@
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Document_History_dgv)).BeginInit();
             this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Document_Approvals_dgv)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.tabPage8.SuspendLayout();
@@ -120,7 +120,7 @@
             // 
             this.Cost_Management_Process_tbx.Location = new System.Drawing.Point(243, 18);
             this.Cost_Management_Process_tbx.Name = "Cost_Management_Process_tbx";
-            this.Cost_Management_Process_tbx.Size = new System.Drawing.Size(237, 21);
+            this.Cost_Management_Process_tbx.Size = new System.Drawing.Size(237, 24);
             this.Cost_Management_Process_tbx.TabIndex = 8;
             // 
             // label1
@@ -130,7 +130,7 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(12, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(225, 19);
+            this.label1.Size = new System.Drawing.Size(277, 24);
             this.label1.TabIndex = 7;
             this.label1.Text = "Cost Management Process";
             // 
@@ -154,10 +154,10 @@
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage1.Controls.Add(this.tabControl2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 23);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1171, 598);
+            this.tabPage1.Size = new System.Drawing.Size(1171, 596);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Document Control";
             // 
@@ -175,10 +175,10 @@
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.Document_Information_dgv);
-            this.tabPage5.Location = new System.Drawing.Point(4, 23);
+            this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1160, 565);
+            this.tabPage5.Size = new System.Drawing.Size(1160, 563);
             this.tabPage5.TabIndex = 0;
             this.tabPage5.Text = "Document Information";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -196,26 +196,29 @@
             this.Information});
             this.Document_Information_dgv.Location = new System.Drawing.Point(0, 0);
             this.Document_Information_dgv.Name = "Document_Information_dgv";
-            this.Document_Information_dgv.Size = new System.Drawing.Size(1164, 565);
+            this.Document_Information_dgv.RowHeadersWidth = 51;
+            this.Document_Information_dgv.Size = new System.Drawing.Size(1164, 563);
             this.Document_Information_dgv.TabIndex = 8;
             // 
             // Name
             // 
             this.Name.HeaderText = "Name";
+            this.Name.MinimumWidth = 6;
             this.Name.Name = "Name";
             // 
             // Information
             // 
             this.Information.HeaderText = "Information";
+            this.Information.MinimumWidth = 6;
             this.Information.Name = "Information";
             // 
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.Document_History_dgv);
-            this.tabPage6.Location = new System.Drawing.Point(4, 23);
+            this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1160, 565);
+            this.tabPage6.Size = new System.Drawing.Size(1160, 563);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "Document History";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -235,66 +238,74 @@
             this.Document_History_dgv.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Document_History_dgv.Location = new System.Drawing.Point(-1, 0);
             this.Document_History_dgv.Name = "Document_History_dgv";
-            this.Document_History_dgv.Size = new System.Drawing.Size(1161, 567);
+            this.Document_History_dgv.RowHeadersWidth = 51;
+            this.Document_History_dgv.Size = new System.Drawing.Size(1161, 565);
             this.Document_History_dgv.TabIndex = 4;
             // 
             // Version
             // 
             this.Version.HeaderText = "Version";
+            this.Version.MinimumWidth = 6;
             this.Version.Name = "Version";
             // 
             // Issue_Date
             // 
             this.Issue_Date.HeaderText = "Issue Date";
+            this.Issue_Date.MinimumWidth = 6;
             this.Issue_Date.Name = "Issue_Date";
             // 
             // Changes
             // 
             this.Changes.HeaderText = "Changes";
+            this.Changes.MinimumWidth = 6;
             this.Changes.Name = "Changes";
             // 
             // tabPage7
             // 
-            this.tabPage7.Controls.Add(this.dataGridView1);
-            this.tabPage7.Location = new System.Drawing.Point(4, 23);
+            this.tabPage7.Controls.Add(this.Document_Approvals_dgv);
+            this.tabPage7.Location = new System.Drawing.Point(4, 25);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1160, 565);
+            this.tabPage7.Size = new System.Drawing.Size(1160, 563);
             this.tabPage7.TabIndex = 2;
             this.tabPage7.Text = "Document Approvals";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // Document_Approvals_dgv
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Document_Approvals_dgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Document_Approvals_dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Document_Approvals_dgv.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.Document_Approvals_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Document_Approvals_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1164, 568);
-            this.dataGridView1.TabIndex = 4;
+            this.Document_Approvals_dgv.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Document_Approvals_dgv.Location = new System.Drawing.Point(0, 0);
+            this.Document_Approvals_dgv.Name = "Document_Approvals_dgv";
+            this.Document_Approvals_dgv.RowHeadersWidth = 51;
+            this.Document_Approvals_dgv.Size = new System.Drawing.Size(1164, 566);
+            this.Document_Approvals_dgv.TabIndex = 4;
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.HeaderText = "Version";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.HeaderText = "Issue Date";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.HeaderText = "Changes";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // tabPage2
@@ -303,10 +314,10 @@
             this.tabPage2.Controls.Add(this.tabControl3);
             this.tabPage2.Controls.Add(this.pictureBox1);
             this.tabPage2.Controls.Add(this.Cost_Management_Roles);
-            this.tabPage2.Location = new System.Drawing.Point(4, 23);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1171, 598);
+            this.tabPage2.Size = new System.Drawing.Size(1171, 596);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Cost Management Process";
             // 
@@ -325,10 +336,10 @@
             // tabPage8
             // 
             this.tabPage8.Controls.Add(this.Overview_tbx);
-            this.tabPage8.Location = new System.Drawing.Point(4, 23);
+            this.tabPage8.Location = new System.Drawing.Point(4, 25);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(734, 516);
+            this.tabPage8.Size = new System.Drawing.Size(734, 514);
             this.tabPage8.TabIndex = 0;
             this.tabPage8.Text = "Overview";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -342,16 +353,16 @@
             this.Overview_tbx.Location = new System.Drawing.Point(0, 0);
             this.Overview_tbx.Multiline = true;
             this.Overview_tbx.Name = "Overview_tbx";
-            this.Overview_tbx.Size = new System.Drawing.Size(734, 516);
+            this.Overview_tbx.Size = new System.Drawing.Size(734, 514);
             this.Overview_tbx.TabIndex = 6;
             // 
             // tabPage9
             // 
             this.tabPage9.Controls.Add(this.Document_Expense_tbx);
-            this.tabPage9.Location = new System.Drawing.Point(4, 23);
+            this.tabPage9.Location = new System.Drawing.Point(4, 25);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(734, 516);
+            this.tabPage9.Size = new System.Drawing.Size(734, 514);
             this.tabPage9.TabIndex = 1;
             this.tabPage9.Text = "Document Expense";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -365,16 +376,16 @@
             this.Document_Expense_tbx.Location = new System.Drawing.Point(-4, 0);
             this.Document_Expense_tbx.Multiline = true;
             this.Document_Expense_tbx.Name = "Document_Expense_tbx";
-            this.Document_Expense_tbx.Size = new System.Drawing.Size(738, 518);
+            this.Document_Expense_tbx.Size = new System.Drawing.Size(738, 516);
             this.Document_Expense_tbx.TabIndex = 10;
             // 
             // tabPage10
             // 
             this.tabPage10.Controls.Add(this.Approve_Expense_tbx);
-            this.tabPage10.Location = new System.Drawing.Point(4, 23);
+            this.tabPage10.Location = new System.Drawing.Point(4, 25);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(734, 516);
+            this.tabPage10.Size = new System.Drawing.Size(734, 514);
             this.tabPage10.TabIndex = 2;
             this.tabPage10.Text = "Approve Expense";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -388,16 +399,16 @@
             this.Approve_Expense_tbx.Location = new System.Drawing.Point(0, 0);
             this.Approve_Expense_tbx.Multiline = true;
             this.Approve_Expense_tbx.Name = "Approve_Expense_tbx";
-            this.Approve_Expense_tbx.Size = new System.Drawing.Size(734, 515);
+            this.Approve_Expense_tbx.Size = new System.Drawing.Size(734, 513);
             this.Approve_Expense_tbx.TabIndex = 12;
             // 
             // tabPage11
             // 
             this.tabPage11.Controls.Add(this.Update_Project_Plan_tbx);
-            this.tabPage11.Location = new System.Drawing.Point(4, 23);
+            this.tabPage11.Location = new System.Drawing.Point(4, 25);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(734, 516);
+            this.tabPage11.Size = new System.Drawing.Size(734, 514);
             this.tabPage11.TabIndex = 3;
             this.tabPage11.Text = "Update Project Plan";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -411,7 +422,7 @@
             this.Update_Project_Plan_tbx.Location = new System.Drawing.Point(-1, 0);
             this.Update_Project_Plan_tbx.Multiline = true;
             this.Update_Project_Plan_tbx.Name = "Update_Project_Plan_tbx";
-            this.Update_Project_Plan_tbx.Size = new System.Drawing.Size(735, 518);
+            this.Update_Project_Plan_tbx.Size = new System.Drawing.Size(735, 516);
             this.Update_Project_Plan_tbx.TabIndex = 12;
             // 
             // pictureBox1
@@ -440,10 +451,10 @@
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage3.Controls.Add(this.tabControl4);
             this.tabPage3.Controls.Add(this.Cost_Management_Roles_btn);
-            this.tabPage3.Location = new System.Drawing.Point(4, 23);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1171, 598);
+            this.tabPage3.Size = new System.Drawing.Size(1171, 596);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Cost Management Roles";
             // 
@@ -461,10 +472,10 @@
             // tabPage12
             // 
             this.tabPage12.Controls.Add(this.Team_Member_tbx);
-            this.tabPage12.Location = new System.Drawing.Point(4, 23);
+            this.tabPage12.Location = new System.Drawing.Point(4, 25);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(1164, 500);
+            this.tabPage12.Size = new System.Drawing.Size(1164, 498);
             this.tabPage12.TabIndex = 0;
             this.tabPage12.Text = "Team Member";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -478,16 +489,16 @@
             this.Team_Member_tbx.Location = new System.Drawing.Point(-1, 0);
             this.Team_Member_tbx.Multiline = true;
             this.Team_Member_tbx.Name = "Team_Member_tbx";
-            this.Team_Member_tbx.Size = new System.Drawing.Size(1165, 500);
+            this.Team_Member_tbx.Size = new System.Drawing.Size(1165, 498);
             this.Team_Member_tbx.TabIndex = 14;
             // 
             // tabPage13
             // 
             this.tabPage13.Controls.Add(this.Project_Administrator_tbx);
-            this.tabPage13.Location = new System.Drawing.Point(4, 23);
+            this.tabPage13.Location = new System.Drawing.Point(4, 25);
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(1164, 500);
+            this.tabPage13.Size = new System.Drawing.Size(1164, 498);
             this.tabPage13.TabIndex = 1;
             this.tabPage13.Text = "Project Administrator";
             this.tabPage13.UseVisualStyleBackColor = true;
@@ -501,16 +512,16 @@
             this.Project_Administrator_tbx.Location = new System.Drawing.Point(-1, 0);
             this.Project_Administrator_tbx.Multiline = true;
             this.Project_Administrator_tbx.Name = "Project_Administrator_tbx";
-            this.Project_Administrator_tbx.Size = new System.Drawing.Size(1162, 502);
+            this.Project_Administrator_tbx.Size = new System.Drawing.Size(1162, 500);
             this.Project_Administrator_tbx.TabIndex = 17;
             // 
             // tabPage14
             // 
             this.tabPage14.Controls.Add(this.Project_Manager_tbx);
-            this.tabPage14.Location = new System.Drawing.Point(4, 23);
+            this.tabPage14.Location = new System.Drawing.Point(4, 25);
             this.tabPage14.Name = "tabPage14";
             this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage14.Size = new System.Drawing.Size(1164, 500);
+            this.tabPage14.Size = new System.Drawing.Size(1164, 498);
             this.tabPage14.TabIndex = 2;
             this.tabPage14.Text = "Project Manager";
             this.tabPage14.UseVisualStyleBackColor = true;
@@ -524,7 +535,7 @@
             this.Project_Manager_tbx.Location = new System.Drawing.Point(0, 0);
             this.Project_Manager_tbx.Multiline = true;
             this.Project_Manager_tbx.Name = "Project_Manager_tbx";
-            this.Project_Manager_tbx.Size = new System.Drawing.Size(1164, 502);
+            this.Project_Manager_tbx.Size = new System.Drawing.Size(1164, 500);
             this.Project_Manager_tbx.TabIndex = 21;
             // 
             // Cost_Management_Roles_btn
@@ -545,10 +556,10 @@
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage4.Controls.Add(this.tabControl5);
             this.tabPage4.Controls.Add(this.Cost_Management_Documents_btn);
-            this.tabPage4.Location = new System.Drawing.Point(4, 23);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1171, 598);
+            this.tabPage4.Size = new System.Drawing.Size(1171, 596);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Cost Management Documents";
             // 
@@ -565,10 +576,10 @@
             // tabPage15
             // 
             this.tabPage15.Controls.Add(this.Expense_Form_tbx);
-            this.tabPage15.Location = new System.Drawing.Point(4, 23);
+            this.tabPage15.Location = new System.Drawing.Point(4, 25);
             this.tabPage15.Name = "tabPage15";
             this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage15.Size = new System.Drawing.Size(1160, 475);
+            this.tabPage15.Size = new System.Drawing.Size(1160, 473);
             this.tabPage15.TabIndex = 0;
             this.tabPage15.Text = "Expense Form";
             this.tabPage15.UseVisualStyleBackColor = true;
@@ -582,16 +593,16 @@
             this.Expense_Form_tbx.Location = new System.Drawing.Point(-4, 0);
             this.Expense_Form_tbx.Multiline = true;
             this.Expense_Form_tbx.Name = "Expense_Form_tbx";
-            this.Expense_Form_tbx.Size = new System.Drawing.Size(1162, 475);
+            this.Expense_Form_tbx.Size = new System.Drawing.Size(1162, 473);
             this.Expense_Form_tbx.TabIndex = 19;
             // 
             // tabPage16
             // 
             this.tabPage16.Controls.Add(this.Expense_Register_tbx);
-            this.tabPage16.Location = new System.Drawing.Point(4, 23);
+            this.tabPage16.Location = new System.Drawing.Point(4, 25);
             this.tabPage16.Name = "tabPage16";
             this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage16.Size = new System.Drawing.Size(1160, 475);
+            this.tabPage16.Size = new System.Drawing.Size(1160, 473);
             this.tabPage16.TabIndex = 1;
             this.tabPage16.Text = "Expense Register";
             this.tabPage16.UseVisualStyleBackColor = true;
@@ -605,7 +616,7 @@
             this.Expense_Register_tbx.Location = new System.Drawing.Point(0, 0);
             this.Expense_Register_tbx.Multiline = true;
             this.Expense_Register_tbx.Name = "Expense_Register_tbx";
-            this.Expense_Register_tbx.Size = new System.Drawing.Size(1161, 477);
+            this.Expense_Register_tbx.Size = new System.Drawing.Size(1161, 475);
             this.Expense_Register_tbx.TabIndex = 22;
             // 
             // Cost_Management_Documents_btn
@@ -623,7 +634,7 @@
             // 
             // CostManagementProcessDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1288, 674);
@@ -633,7 +644,6 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Helvetica Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Name = "CostManagementProcessDocumentForm";
             this.Text = "CostManagementProcessDocumentForm";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -643,7 +653,7 @@
             this.tabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Document_History_dgv)).EndInit();
             this.tabPage7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Document_Approvals_dgv)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
             this.tabPage8.ResumeLayout(false);
@@ -708,7 +718,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Version;
         private System.Windows.Forms.DataGridViewTextBoxColumn Issue_Date;
         private System.Windows.Forms.DataGridViewTextBoxColumn Changes;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView Document_Approvals_dgv;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;

@@ -1721,7 +1721,6 @@
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Helvetica Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
-            this.Name = "FeasibiltyStudyDocumentForm";
             this.Text = "FeasibiltyStudyDocumentForm";
             this.tabPage11.ResumeLayout(false);
             this.tabControl10.ResumeLayout(false);

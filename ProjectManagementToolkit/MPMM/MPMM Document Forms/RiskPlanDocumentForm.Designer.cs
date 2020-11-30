@@ -918,7 +918,6 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Name = "RiskPlanDocumentForm";
             this.Text = "RiskPlanDocumentForm";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
