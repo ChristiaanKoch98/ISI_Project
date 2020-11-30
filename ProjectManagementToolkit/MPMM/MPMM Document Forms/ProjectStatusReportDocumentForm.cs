@@ -131,7 +131,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                     dgvProjectRisk.Rows.Add(new string[] { row.Risks, row.Likelihood, row.Impact, row.Summary });
                 }
 
-                foreach (var row in currentProjectStatusReportModel.ProjIssues)
+                foreach (var row in currentProjectStatusReportModel.NewProjIssues)
                 {
                     dgvProjectIssues.Rows.Add(new string[] { row.Issues, row.Impact, row.Summary });
                 }
@@ -289,7 +289,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 ProjIssues.Add(ProjectISS);
             }
-            newProjectStatusReportModel.ProjIssues = ProjIssues;
+            newProjectStatusReportModel.ProjIssues = ProjIssues.ToString() ;
 
             newProjectStatusReportModel.ProjectName = txtProjectName2.Text;
             newProjectStatusReportModel.ProjectID = txtProjectID.Text;
@@ -337,6 +337,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                     path = saveFileDialog.FileName;
                     using (var document = DocX.Create(path))
                     {
+                        var p = document.InsertParagraph();
                         var title = p.InsertParagraphBeforeSelf("Table of Contents").Bold().FontSize(20);
 
                         var tocSwitches = new Dictionary<TableOfContentsSwitches, string>()
@@ -526,7 +527,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                          .Bold(true)
                          .Font("Arial");
 
-                        document.InsertParagraph(currentProjectStatusReportModel.ProSchedule)
+                        document.InsertParagraph(currentProjectStatusReportModel.NewProSchedule)
                              .FontSize(11d)
                              .Color(Color.Black)
                              .Font("Arial").Alignment = Alignment.left;

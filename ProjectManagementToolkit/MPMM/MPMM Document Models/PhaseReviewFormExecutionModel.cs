@@ -15,6 +15,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string ReportPreparedBy { get; set; }
         public string ReportPreparationDate { get; set; }
 
+        public string Recipients { get; set; }
+
         public string Summary { get; set; }
         public string ProjectSchedule { get; set; }
         public string ProjectExpenses { get; set; }
@@ -22,6 +24,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string ProjectRisks { get; set; }
         public string ProjectIssues { get; set; }
         public string ProjectChanges { get; set; }
+
+        public string PreperationPeriod { get; set; }
 
         public List<ReviewDetial> ReviewDetials { get; set; }
         public string SupportingDocumentation { get; set; }

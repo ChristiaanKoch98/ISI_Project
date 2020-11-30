@@ -107,12 +107,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 saveFileDialog.Filter = "Word 97-2003 Documents (*.doc)|*.doc|Word 2007 Documents (*.docx)|*.docx";
                 saveFileDialog.FilterIndex = 2;
                 saveFileDialog.RestoreDirectory = true;
+                
 
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     path = saveFileDialog.FileName;
                     using (var document = DocX.Create(path))
                     {
+                        var p = document.InsertParagraph();
                         var title = p.InsertParagraphBeforeSelf("Table of Contents").Bold().FontSize(20);
 
                         var tocSwitches = new Dictionary<TableOfContentsSwitches, string>()
@@ -156,7 +158,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                          .Bold(true)
                          .Font("Arial");
 
-                        document.InsertParagraph(currentPhaseReviewExeModel.ProjectID)
+                        document.InsertParagraph(Settings.Default.ProjectID)
                              .FontSize(11d)
                              .Color(Color.Black)
                              .Font("Arial").Alignment = Alignment.left;

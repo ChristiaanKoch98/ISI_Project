@@ -19,6 +19,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string Recipients { get; set; }
         public string PreperationPeriod { get; set; }
 
+        public string NewProSchedule { get; set; }
+
+        public string ProjIssues { get; set; }
+
         public string ProjectDescription { get; set; }
         public string OverallStatus { get; set; }
        // public string ProjectSchedule { get; set; }
@@ -45,7 +49,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public List<ProjectEffort> ProjEffort { get; set; }
         public List<ProjectQuality> ProjQuality { get; set; }
         public List<ProjectRisk> ProjRisk { get; set; }
-        public List<ProjectIssues> ProjIssues { get; set; }
+        public List<ProjectIssues> NewProjIssues { get; set; }
 
         public class ProjectSchedule
         {
