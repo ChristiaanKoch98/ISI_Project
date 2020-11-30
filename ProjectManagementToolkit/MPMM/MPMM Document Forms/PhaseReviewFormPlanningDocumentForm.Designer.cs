@@ -33,52 +33,49 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.Project_Name_tbx = new System.Windows.Forms.TextBox();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.Project_Manager_tbx = new System.Windows.Forms.TextBox();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
             this.Project_Sponsor_tbx = new System.Windows.Forms.TextBox();
             this.PROJECT_DETAILS_btn = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.Project_Changes_tbx = new System.Windows.Forms.TextBox();
-            this.Project_Issues_tbx = new System.Windows.Forms.TextBox();
-            this.Project_Risks_tbx = new System.Windows.Forms.TextBox();
-            this.Project_Deliverables_tbx = new System.Windows.Forms.TextBox();
-            this.Project_Expenses_tbx = new System.Windows.Forms.TextBox();
-            this.Project_Schedule_tbx = new System.Windows.Forms.TextBox();
+            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.Summary_tbx = new System.Windows.Forms.TextBox();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.Project_Schedule_tbx = new System.Windows.Forms.TextBox();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.Project_Expenses_tbx = new System.Windows.Forms.TextBox();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.Project_Deliverables_tbx = new System.Windows.Forms.TextBox();
+            this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.Project_Risks_tbx = new System.Windows.Forms.TextBox();
+            this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.Project_Issues_tbx = new System.Windows.Forms.TextBox();
+            this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.Project_Changes_tbx = new System.Windows.Forms.TextBox();
             this.OVERALL_STATUS_btn = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.REVIEW_DETAILS_dgv = new System.Windows.Forms.DataGridView();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.Supporting_Documentation_tbx = new System.Windows.Forms.TextBox();
-            this.CUSTOMER_APPROVAL_btn = new System.Windows.Forms.Button();
-            this.Project_Name_tbx = new System.Windows.Forms.TextBox();
-            this.Project_Manager_tbx = new System.Windows.Forms.TextBox();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.tabControl3 = new System.Windows.Forms.TabControl();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
             this.Review_Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Review_Question = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Answer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Variance = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.tabPage12 = new System.Windows.Forms.TabPage();
-            this.tabPage13 = new System.Windows.Forms.TabPage();
-            this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage15 = new System.Windows.Forms.TabPage();
+            this.Supporting_Documentation_tbx = new System.Windows.Forms.TextBox();
+            this.CUSTOMER_APPROVAL_btn = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.REVIEW_DETAILS_dgv)).BeginInit();
-            this.tabPage4.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.tabPage9.SuspendLayout();
@@ -87,6 +84,9 @@
             this.tabPage12.SuspendLayout();
             this.tabPage13.SuspendLayout();
             this.tabPage14.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.REVIEW_DETAILS_dgv)).BeginInit();
+            this.tabPage4.SuspendLayout();
             this.tabControl4.SuspendLayout();
             this.tabPage15.SuspendLayout();
             this.SuspendLayout();
@@ -108,17 +108,17 @@
             // 
             this.Planning_Phase_tbx.Location = new System.Drawing.Point(374, 27);
             this.Planning_Phase_tbx.Name = "Planning_Phase_tbx";
-            this.Planning_Phase_tbx.Size = new System.Drawing.Size(237, 20);
+            this.Planning_Phase_tbx.Size = new System.Drawing.Size(237, 21);
             this.Planning_Phase_tbx.TabIndex = 8;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(12, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(356, 19);
+            this.label1.Size = new System.Drawing.Size(366, 19);
             this.label1.TabIndex = 7;
             this.label1.Text = "Planning Phase Stage Gate Review Form For:";
             // 
@@ -150,6 +150,74 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Project details";
             // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage5);
+            this.tabControl2.Controls.Add(this.tabPage6);
+            this.tabControl2.Controls.Add(this.tabPage7);
+            this.tabControl2.Location = new System.Drawing.Point(3, 3);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(1031, 397);
+            this.tabControl2.TabIndex = 18;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.Project_Name_tbx);
+            this.tabPage5.Location = new System.Drawing.Point(4, 23);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1023, 370);
+            this.tabPage5.TabIndex = 0;
+            this.tabPage5.Text = "Project Name";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // Project_Name_tbx
+            // 
+            this.Project_Name_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Project_Name_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.Project_Name_tbx.Location = new System.Drawing.Point(-1, 0);
+            this.Project_Name_tbx.Multiline = true;
+            this.Project_Name_tbx.Name = "Project_Name_tbx";
+            this.Project_Name_tbx.Size = new System.Drawing.Size(1024, 374);
+            this.Project_Name_tbx.TabIndex = 11;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.Project_Manager_tbx);
+            this.tabPage6.Location = new System.Drawing.Point(4, 23);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1023, 370);
+            this.tabPage6.TabIndex = 1;
+            this.tabPage6.Text = "Project Manager";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // Project_Manager_tbx
+            // 
+            this.Project_Manager_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Project_Manager_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.Project_Manager_tbx.Location = new System.Drawing.Point(-1, 0);
+            this.Project_Manager_tbx.Multiline = true;
+            this.Project_Manager_tbx.Name = "Project_Manager_tbx";
+            this.Project_Manager_tbx.Size = new System.Drawing.Size(1024, 375);
+            this.Project_Manager_tbx.TabIndex = 15;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.Project_Sponsor_tbx);
+            this.tabPage7.Location = new System.Drawing.Point(4, 23);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(1023, 370);
+            this.tabPage7.TabIndex = 2;
+            this.tabPage7.Text = "Project Sponsor";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
             // Project_Sponsor_tbx
             // 
             this.Project_Sponsor_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -159,7 +227,7 @@
             this.Project_Sponsor_tbx.Location = new System.Drawing.Point(-1, 0);
             this.Project_Sponsor_tbx.Multiline = true;
             this.Project_Sponsor_tbx.Name = "Project_Sponsor_tbx";
-            this.Project_Sponsor_tbx.Size = new System.Drawing.Size(1024, 374);
+            this.Project_Sponsor_tbx.Size = new System.Drawing.Size(1024, 375);
             this.Project_Sponsor_tbx.TabIndex = 17;
             // 
             // PROJECT_DETAILS_btn
@@ -187,77 +255,31 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Overall status";
             // 
-            // Project_Changes_tbx
+            // tabControl3
             // 
-            this.Project_Changes_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Project_Changes_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Project_Changes_tbx.Location = new System.Drawing.Point(0, 0);
-            this.Project_Changes_tbx.Multiline = true;
-            this.Project_Changes_tbx.Name = "Project_Changes_tbx";
-            this.Project_Changes_tbx.Size = new System.Drawing.Size(1029, 394);
-            this.Project_Changes_tbx.TabIndex = 34;
+            this.tabControl3.Controls.Add(this.tabPage8);
+            this.tabControl3.Controls.Add(this.tabPage9);
+            this.tabControl3.Controls.Add(this.tabPage10);
+            this.tabControl3.Controls.Add(this.tabPage11);
+            this.tabControl3.Controls.Add(this.tabPage12);
+            this.tabControl3.Controls.Add(this.tabPage13);
+            this.tabControl3.Controls.Add(this.tabPage14);
+            this.tabControl3.Location = new System.Drawing.Point(0, 3);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.SelectedIndex = 0;
+            this.tabControl3.Size = new System.Drawing.Size(1037, 421);
+            this.tabControl3.TabIndex = 35;
             // 
-            // Project_Issues_tbx
+            // tabPage8
             // 
-            this.Project_Issues_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Project_Issues_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Project_Issues_tbx.Location = new System.Drawing.Point(-1, 0);
-            this.Project_Issues_tbx.Multiline = true;
-            this.Project_Issues_tbx.Name = "Project_Issues_tbx";
-            this.Project_Issues_tbx.Size = new System.Drawing.Size(1030, 391);
-            this.Project_Issues_tbx.TabIndex = 32;
-            // 
-            // Project_Risks_tbx
-            // 
-            this.Project_Risks_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Project_Risks_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Project_Risks_tbx.Location = new System.Drawing.Point(-1, 0);
-            this.Project_Risks_tbx.Multiline = true;
-            this.Project_Risks_tbx.Name = "Project_Risks_tbx";
-            this.Project_Risks_tbx.Size = new System.Drawing.Size(1027, 388);
-            this.Project_Risks_tbx.TabIndex = 30;
-            // 
-            // Project_Deliverables_tbx
-            // 
-            this.Project_Deliverables_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Project_Deliverables_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Project_Deliverables_tbx.Location = new System.Drawing.Point(0, 0);
-            this.Project_Deliverables_tbx.Multiline = true;
-            this.Project_Deliverables_tbx.Name = "Project_Deliverables_tbx";
-            this.Project_Deliverables_tbx.Size = new System.Drawing.Size(1026, 391);
-            this.Project_Deliverables_tbx.TabIndex = 28;
-            // 
-            // Project_Expenses_tbx
-            // 
-            this.Project_Expenses_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Project_Expenses_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Project_Expenses_tbx.Location = new System.Drawing.Point(0, 0);
-            this.Project_Expenses_tbx.Multiline = true;
-            this.Project_Expenses_tbx.Name = "Project_Expenses_tbx";
-            this.Project_Expenses_tbx.Size = new System.Drawing.Size(1026, 391);
-            this.Project_Expenses_tbx.TabIndex = 26;
-            // 
-            // Project_Schedule_tbx
-            // 
-            this.Project_Schedule_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Project_Schedule_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Project_Schedule_tbx.Location = new System.Drawing.Point(-1, 0);
-            this.Project_Schedule_tbx.Multiline = true;
-            this.Project_Schedule_tbx.Name = "Project_Schedule_tbx";
-            this.Project_Schedule_tbx.Size = new System.Drawing.Size(1030, 394);
-            this.Project_Schedule_tbx.TabIndex = 24;
+            this.tabPage8.Controls.Add(this.Summary_tbx);
+            this.tabPage8.Location = new System.Drawing.Point(4, 23);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(1029, 394);
+            this.tabPage8.TabIndex = 0;
+            this.tabPage8.Text = "Summary";
+            this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // Summary_tbx
             // 
@@ -270,6 +292,144 @@
             this.Summary_tbx.Name = "Summary_tbx";
             this.Summary_tbx.Size = new System.Drawing.Size(1030, 394);
             this.Summary_tbx.TabIndex = 22;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Controls.Add(this.Project_Schedule_tbx);
+            this.tabPage9.Location = new System.Drawing.Point(4, 23);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(1029, 394);
+            this.tabPage9.TabIndex = 1;
+            this.tabPage9.Text = "Project Schedule";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // Project_Schedule_tbx
+            // 
+            this.Project_Schedule_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Project_Schedule_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.Project_Schedule_tbx.Location = new System.Drawing.Point(-1, 0);
+            this.Project_Schedule_tbx.Multiline = true;
+            this.Project_Schedule_tbx.Name = "Project_Schedule_tbx";
+            this.Project_Schedule_tbx.Size = new System.Drawing.Size(1030, 395);
+            this.Project_Schedule_tbx.TabIndex = 24;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.Controls.Add(this.Project_Expenses_tbx);
+            this.tabPage10.Location = new System.Drawing.Point(4, 23);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage10.Size = new System.Drawing.Size(1029, 394);
+            this.tabPage10.TabIndex = 2;
+            this.tabPage10.Text = "Project Expenses";
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // Project_Expenses_tbx
+            // 
+            this.Project_Expenses_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Project_Expenses_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.Project_Expenses_tbx.Location = new System.Drawing.Point(0, 0);
+            this.Project_Expenses_tbx.Multiline = true;
+            this.Project_Expenses_tbx.Name = "Project_Expenses_tbx";
+            this.Project_Expenses_tbx.Size = new System.Drawing.Size(1026, 392);
+            this.Project_Expenses_tbx.TabIndex = 26;
+            // 
+            // tabPage11
+            // 
+            this.tabPage11.Controls.Add(this.Project_Deliverables_tbx);
+            this.tabPage11.Location = new System.Drawing.Point(4, 23);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage11.Size = new System.Drawing.Size(1029, 394);
+            this.tabPage11.TabIndex = 3;
+            this.tabPage11.Text = "Project Deliverables";
+            this.tabPage11.UseVisualStyleBackColor = true;
+            // 
+            // Project_Deliverables_tbx
+            // 
+            this.Project_Deliverables_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Project_Deliverables_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.Project_Deliverables_tbx.Location = new System.Drawing.Point(0, 0);
+            this.Project_Deliverables_tbx.Multiline = true;
+            this.Project_Deliverables_tbx.Name = "Project_Deliverables_tbx";
+            this.Project_Deliverables_tbx.Size = new System.Drawing.Size(1026, 392);
+            this.Project_Deliverables_tbx.TabIndex = 28;
+            // 
+            // tabPage12
+            // 
+            this.tabPage12.Controls.Add(this.Project_Risks_tbx);
+            this.tabPage12.Location = new System.Drawing.Point(4, 23);
+            this.tabPage12.Name = "tabPage12";
+            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage12.Size = new System.Drawing.Size(1029, 394);
+            this.tabPage12.TabIndex = 4;
+            this.tabPage12.Text = "Project Risks";
+            this.tabPage12.UseVisualStyleBackColor = true;
+            // 
+            // Project_Risks_tbx
+            // 
+            this.Project_Risks_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Project_Risks_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.Project_Risks_tbx.Location = new System.Drawing.Point(-1, 0);
+            this.Project_Risks_tbx.Multiline = true;
+            this.Project_Risks_tbx.Name = "Project_Risks_tbx";
+            this.Project_Risks_tbx.Size = new System.Drawing.Size(1027, 389);
+            this.Project_Risks_tbx.TabIndex = 30;
+            // 
+            // tabPage13
+            // 
+            this.tabPage13.Controls.Add(this.Project_Issues_tbx);
+            this.tabPage13.Location = new System.Drawing.Point(4, 23);
+            this.tabPage13.Name = "tabPage13";
+            this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage13.Size = new System.Drawing.Size(1029, 394);
+            this.tabPage13.TabIndex = 5;
+            this.tabPage13.Text = "Project Issues";
+            this.tabPage13.UseVisualStyleBackColor = true;
+            // 
+            // Project_Issues_tbx
+            // 
+            this.Project_Issues_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Project_Issues_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.Project_Issues_tbx.Location = new System.Drawing.Point(-1, 0);
+            this.Project_Issues_tbx.Multiline = true;
+            this.Project_Issues_tbx.Name = "Project_Issues_tbx";
+            this.Project_Issues_tbx.Size = new System.Drawing.Size(1030, 392);
+            this.Project_Issues_tbx.TabIndex = 32;
+            // 
+            // tabPage14
+            // 
+            this.tabPage14.Controls.Add(this.Project_Changes_tbx);
+            this.tabPage14.Location = new System.Drawing.Point(4, 23);
+            this.tabPage14.Name = "tabPage14";
+            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage14.Size = new System.Drawing.Size(1029, 394);
+            this.tabPage14.TabIndex = 6;
+            this.tabPage14.Text = "Project Changes";
+            this.tabPage14.UseVisualStyleBackColor = true;
+            // 
+            // Project_Changes_tbx
+            // 
+            this.Project_Changes_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Project_Changes_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.Project_Changes_tbx.Location = new System.Drawing.Point(0, 0);
+            this.Project_Changes_tbx.Multiline = true;
+            this.Project_Changes_tbx.Name = "Project_Changes_tbx";
+            this.Project_Changes_tbx.Size = new System.Drawing.Size(1029, 395);
+            this.Project_Changes_tbx.TabIndex = 34;
             // 
             // OVERALL_STATUS_btn
             // 
@@ -313,148 +473,6 @@
             this.REVIEW_DETAILS_dgv.Size = new System.Drawing.Size(1040, 508);
             this.REVIEW_DETAILS_dgv.TabIndex = 0;
             // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage4.Controls.Add(this.tabControl4);
-            this.tabPage4.Controls.Add(this.CUSTOMER_APPROVAL_btn);
-            this.tabPage4.Location = new System.Drawing.Point(4, 23);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1040, 511);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Approval details";
-            // 
-            // Supporting_Documentation_tbx
-            // 
-            this.Supporting_Documentation_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Supporting_Documentation_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Supporting_Documentation_tbx.Location = new System.Drawing.Point(0, 0);
-            this.Supporting_Documentation_tbx.Multiline = true;
-            this.Supporting_Documentation_tbx.Name = "Supporting_Documentation_tbx";
-            this.Supporting_Documentation_tbx.Size = new System.Drawing.Size(1020, 371);
-            this.Supporting_Documentation_tbx.TabIndex = 25;
-            // 
-            // CUSTOMER_APPROVAL_btn
-            // 
-            this.CUSTOMER_APPROVAL_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.CUSTOMER_APPROVAL_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CUSTOMER_APPROVAL_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.CUSTOMER_APPROVAL_btn.Location = new System.Drawing.Point(6, 478);
-            this.CUSTOMER_APPROVAL_btn.Name = "CUSTOMER_APPROVAL_btn";
-            this.CUSTOMER_APPROVAL_btn.Size = new System.Drawing.Size(75, 27);
-            this.CUSTOMER_APPROVAL_btn.TabIndex = 23;
-            this.CUSTOMER_APPROVAL_btn.Text = "Enter";
-            this.CUSTOMER_APPROVAL_btn.UseVisualStyleBackColor = false;
-            this.CUSTOMER_APPROVAL_btn.Click += new System.EventHandler(this.CUSTOMER_APPROVAL_btn_Click);
-            // 
-            // Project_Name_tbx
-            // 
-            this.Project_Name_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Project_Name_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Project_Name_tbx.Location = new System.Drawing.Point(-1, 0);
-            this.Project_Name_tbx.Multiline = true;
-            this.Project_Name_tbx.Name = "Project_Name_tbx";
-            this.Project_Name_tbx.Size = new System.Drawing.Size(848, 374);
-            this.Project_Name_tbx.TabIndex = 11;
-            // 
-            // Project_Manager_tbx
-            // 
-            this.Project_Manager_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Project_Manager_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Project_Manager_tbx.Location = new System.Drawing.Point(-1, 0);
-            this.Project_Manager_tbx.Multiline = true;
-            this.Project_Manager_tbx.Name = "Project_Manager_tbx";
-            this.Project_Manager_tbx.Size = new System.Drawing.Size(848, 374);
-            this.Project_Manager_tbx.TabIndex = 15;
-            // 
-            // tabControl2
-            // 
-            this.tabControl2.Controls.Add(this.tabPage5);
-            this.tabControl2.Controls.Add(this.tabPage6);
-            this.tabControl2.Controls.Add(this.tabPage7);
-            this.tabControl2.Location = new System.Drawing.Point(3, 3);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1031, 397);
-            this.tabControl2.TabIndex = 18;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.Project_Name_tbx);
-            this.tabPage5.Location = new System.Drawing.Point(4, 23);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(847, 370);
-            this.tabPage5.TabIndex = 0;
-            this.tabPage5.Text = "Project Name";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.Project_Manager_tbx);
-            this.tabPage6.Location = new System.Drawing.Point(4, 23);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(847, 370);
-            this.tabPage6.TabIndex = 1;
-            this.tabPage6.Text = "Project Manager";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.Project_Sponsor_tbx);
-            this.tabPage7.Location = new System.Drawing.Point(4, 23);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1023, 370);
-            this.tabPage7.TabIndex = 2;
-            this.tabPage7.Text = "Project Sponsor";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // tabControl3
-            // 
-            this.tabControl3.Controls.Add(this.tabPage8);
-            this.tabControl3.Controls.Add(this.tabPage9);
-            this.tabControl3.Controls.Add(this.tabPage10);
-            this.tabControl3.Controls.Add(this.tabPage11);
-            this.tabControl3.Controls.Add(this.tabPage12);
-            this.tabControl3.Controls.Add(this.tabPage13);
-            this.tabControl3.Controls.Add(this.tabPage14);
-            this.tabControl3.Location = new System.Drawing.Point(0, 3);
-            this.tabControl3.Name = "tabControl3";
-            this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(1037, 421);
-            this.tabControl3.TabIndex = 35;
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Controls.Add(this.Summary_tbx);
-            this.tabPage8.Location = new System.Drawing.Point(4, 23);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1029, 394);
-            this.tabPage8.TabIndex = 0;
-            this.tabPage8.Text = "Summary";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.Controls.Add(this.Project_Schedule_tbx);
-            this.tabPage9.Location = new System.Drawing.Point(4, 23);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(1029, 394);
-            this.tabPage9.TabIndex = 1;
-            this.tabPage9.Text = "Project Schedule";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
             // Review_Category
             // 
             this.Review_Category.HeaderText = "Review Category";
@@ -475,60 +493,17 @@
             this.Variance.HeaderText = "Variance";
             this.Variance.Name = "Variance";
             // 
-            // tabPage10
+            // tabPage4
             // 
-            this.tabPage10.Controls.Add(this.Project_Expenses_tbx);
-            this.tabPage10.Location = new System.Drawing.Point(4, 23);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(1029, 394);
-            this.tabPage10.TabIndex = 2;
-            this.tabPage10.Text = "Project Expenses";
-            this.tabPage10.UseVisualStyleBackColor = true;
-            // 
-            // tabPage11
-            // 
-            this.tabPage11.Controls.Add(this.Project_Deliverables_tbx);
-            this.tabPage11.Location = new System.Drawing.Point(4, 23);
-            this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(1029, 394);
-            this.tabPage11.TabIndex = 3;
-            this.tabPage11.Text = "Project Deliverables";
-            this.tabPage11.UseVisualStyleBackColor = true;
-            // 
-            // tabPage12
-            // 
-            this.tabPage12.Controls.Add(this.Project_Risks_tbx);
-            this.tabPage12.Location = new System.Drawing.Point(4, 23);
-            this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(1029, 394);
-            this.tabPage12.TabIndex = 4;
-            this.tabPage12.Text = "Project Risks";
-            this.tabPage12.UseVisualStyleBackColor = true;
-            // 
-            // tabPage13
-            // 
-            this.tabPage13.Controls.Add(this.Project_Issues_tbx);
-            this.tabPage13.Location = new System.Drawing.Point(4, 23);
-            this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(1029, 394);
-            this.tabPage13.TabIndex = 5;
-            this.tabPage13.Text = "Project Issues";
-            this.tabPage13.UseVisualStyleBackColor = true;
-            // 
-            // tabPage14
-            // 
-            this.tabPage14.Controls.Add(this.Project_Changes_tbx);
-            this.tabPage14.Location = new System.Drawing.Point(4, 23);
-            this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage14.Size = new System.Drawing.Size(1029, 394);
-            this.tabPage14.TabIndex = 6;
-            this.tabPage14.Text = "Project Changes";
-            this.tabPage14.UseVisualStyleBackColor = true;
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage4.Controls.Add(this.tabControl4);
+            this.tabPage4.Controls.Add(this.CUSTOMER_APPROVAL_btn);
+            this.tabPage4.Location = new System.Drawing.Point(4, 23);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1040, 511);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Approval details";
             // 
             // tabControl4
             // 
@@ -550,6 +525,32 @@
             this.tabPage15.Text = "Supporting Documentation";
             this.tabPage15.UseVisualStyleBackColor = true;
             // 
+            // Supporting_Documentation_tbx
+            // 
+            this.Supporting_Documentation_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Supporting_Documentation_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.Supporting_Documentation_tbx.Location = new System.Drawing.Point(0, 0);
+            this.Supporting_Documentation_tbx.Multiline = true;
+            this.Supporting_Documentation_tbx.Name = "Supporting_Documentation_tbx";
+            this.Supporting_Documentation_tbx.Size = new System.Drawing.Size(1020, 371);
+            this.Supporting_Documentation_tbx.TabIndex = 25;
+            // 
+            // CUSTOMER_APPROVAL_btn
+            // 
+            this.CUSTOMER_APPROVAL_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.CUSTOMER_APPROVAL_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CUSTOMER_APPROVAL_btn.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CUSTOMER_APPROVAL_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.CUSTOMER_APPROVAL_btn.Location = new System.Drawing.Point(6, 478);
+            this.CUSTOMER_APPROVAL_btn.Name = "CUSTOMER_APPROVAL_btn";
+            this.CUSTOMER_APPROVAL_btn.Size = new System.Drawing.Size(75, 27);
+            this.CUSTOMER_APPROVAL_btn.TabIndex = 23;
+            this.CUSTOMER_APPROVAL_btn.Text = "Enter";
+            this.CUSTOMER_APPROVAL_btn.UseVisualStyleBackColor = false;
+            this.CUSTOMER_APPROVAL_btn.Click += new System.EventHandler(this.CUSTOMER_APPROVAL_btn_Click);
+            // 
             // PhaseReviewFormPlanningDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
@@ -560,17 +561,13 @@
             this.Controls.Add(this.Enter_btn);
             this.Controls.Add(this.Planning_Phase_tbx);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Helvetica Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Name = "PhaseReviewFormPlanningDocumentForm";
             this.Text = "PhaseReviewFormPlanningDocumentForm";
             this.Load += new System.EventHandler(this.PhaseReviewFormPlanningDocumentForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.REVIEW_DETAILS_dgv)).EndInit();
-            this.tabPage4.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
@@ -578,6 +575,7 @@
             this.tabPage6.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
@@ -593,6 +591,9 @@
             this.tabPage13.PerformLayout();
             this.tabPage14.ResumeLayout(false);
             this.tabPage14.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.REVIEW_DETAILS_dgv)).EndInit();
+            this.tabPage4.ResumeLayout(false);
             this.tabControl4.ResumeLayout(false);
             this.tabPage15.ResumeLayout(false);
             this.tabPage15.PerformLayout();

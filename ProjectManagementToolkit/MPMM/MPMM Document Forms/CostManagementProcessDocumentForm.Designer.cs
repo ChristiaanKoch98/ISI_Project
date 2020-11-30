@@ -118,19 +118,19 @@
             // 
             // Cost_Management_Process_tbx
             // 
-            this.Cost_Management_Process_tbx.Location = new System.Drawing.Point(232, 17);
+            this.Cost_Management_Process_tbx.Location = new System.Drawing.Point(243, 18);
             this.Cost_Management_Process_tbx.Name = "Cost_Management_Process_tbx";
-            this.Cost_Management_Process_tbx.Size = new System.Drawing.Size(237, 20);
+            this.Cost_Management_Process_tbx.Size = new System.Drawing.Size(237, 21);
             this.Cost_Management_Process_tbx.TabIndex = 8;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(12, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 19);
+            this.label1.Size = new System.Drawing.Size(225, 19);
             this.label1.TabIndex = 7;
             this.label1.Text = "Cost Management Process";
             // 
@@ -235,7 +235,7 @@
             this.Document_History_dgv.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Document_History_dgv.Location = new System.Drawing.Point(-1, 0);
             this.Document_History_dgv.Name = "Document_History_dgv";
-            this.Document_History_dgv.Size = new System.Drawing.Size(1161, 566);
+            this.Document_History_dgv.Size = new System.Drawing.Size(1161, 567);
             this.Document_History_dgv.TabIndex = 4;
             // 
             // Version
@@ -279,7 +279,7 @@
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1164, 567);
+            this.dataGridView1.Size = new System.Drawing.Size(1164, 568);
             this.dataGridView1.TabIndex = 4;
             // 
             // dataGridViewTextBoxColumn1
@@ -365,7 +365,7 @@
             this.Document_Expense_tbx.Location = new System.Drawing.Point(-4, 0);
             this.Document_Expense_tbx.Multiline = true;
             this.Document_Expense_tbx.Name = "Document_Expense_tbx";
-            this.Document_Expense_tbx.Size = new System.Drawing.Size(738, 517);
+            this.Document_Expense_tbx.Size = new System.Drawing.Size(738, 518);
             this.Document_Expense_tbx.TabIndex = 10;
             // 
             // tabPage10
@@ -388,7 +388,7 @@
             this.Approve_Expense_tbx.Location = new System.Drawing.Point(0, 0);
             this.Approve_Expense_tbx.Multiline = true;
             this.Approve_Expense_tbx.Name = "Approve_Expense_tbx";
-            this.Approve_Expense_tbx.Size = new System.Drawing.Size(734, 514);
+            this.Approve_Expense_tbx.Size = new System.Drawing.Size(734, 515);
             this.Approve_Expense_tbx.TabIndex = 12;
             // 
             // tabPage11
@@ -411,7 +411,7 @@
             this.Update_Project_Plan_tbx.Location = new System.Drawing.Point(-1, 0);
             this.Update_Project_Plan_tbx.Multiline = true;
             this.Update_Project_Plan_tbx.Name = "Update_Project_Plan_tbx";
-            this.Update_Project_Plan_tbx.Size = new System.Drawing.Size(735, 517);
+            this.Update_Project_Plan_tbx.Size = new System.Drawing.Size(735, 518);
             this.Update_Project_Plan_tbx.TabIndex = 12;
             // 
             // pictureBox1
@@ -501,7 +501,7 @@
             this.Project_Administrator_tbx.Location = new System.Drawing.Point(-1, 0);
             this.Project_Administrator_tbx.Multiline = true;
             this.Project_Administrator_tbx.Name = "Project_Administrator_tbx";
-            this.Project_Administrator_tbx.Size = new System.Drawing.Size(1162, 501);
+            this.Project_Administrator_tbx.Size = new System.Drawing.Size(1162, 502);
             this.Project_Administrator_tbx.TabIndex = 17;
             // 
             // tabPage14
@@ -524,7 +524,7 @@
             this.Project_Manager_tbx.Location = new System.Drawing.Point(0, 0);
             this.Project_Manager_tbx.Multiline = true;
             this.Project_Manager_tbx.Name = "Project_Manager_tbx";
-            this.Project_Manager_tbx.Size = new System.Drawing.Size(1164, 501);
+            this.Project_Manager_tbx.Size = new System.Drawing.Size(1164, 502);
             this.Project_Manager_tbx.TabIndex = 21;
             // 
             // Cost_Management_Roles_btn
@@ -605,7 +605,7 @@
             this.Expense_Register_tbx.Location = new System.Drawing.Point(0, 0);
             this.Expense_Register_tbx.Multiline = true;
             this.Expense_Register_tbx.Name = "Expense_Register_tbx";
-            this.Expense_Register_tbx.Size = new System.Drawing.Size(1161, 476);
+            this.Expense_Register_tbx.Size = new System.Drawing.Size(1161, 477);
             this.Expense_Register_tbx.TabIndex = 22;
             // 
             // Cost_Management_Documents_btn
@@ -631,7 +631,7 @@
             this.Controls.Add(this.Enter_btn);
             this.Controls.Add(this.Cost_Management_Process_tbx);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Helvetica Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Name = "CostManagementProcessDocumentForm";
             this.Text = "CostManagementProcessDocumentForm";

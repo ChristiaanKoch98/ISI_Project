@@ -41,33 +41,43 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.DELIVERY_DETAILS_btn = new System.Windows.Forms.Button();
-            this.Contact_Address2_tbx = new System.Windows.Forms.TextBox();
-            this.Contact_Name2_tbx = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.Contact_Address1_tbx = new System.Windows.Forms.TextBox();
-            this.Contact_Name1_tbx = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.Supplier_Contact_Phone_tbx = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.Supplier_Contact_Name_tbx = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.Supplier_Address_tbx = new System.Windows.Forms.TextBox();
-            this.Supplier_Name_tbx = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.Project_Contact_Phone_tbx = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.Project_Contact_Name_tbx = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.Project_Address_tbx = new System.Windows.Forms.TextBox();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.Project_Name_tbx = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Project_Address_tbx = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Project_Contact_Name_tbx = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Project_Contact_Phone_tbx = new System.Windows.Forms.TextBox();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.Supplier_Name_tbx = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.Supplier_Address_tbx = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.Supplier_Contact_Name_tbx = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.Supplier_Contact_Phone_tbx = new System.Windows.Forms.TextBox();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.Contact_Name1_tbx = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.Contact_Address1_tbx = new System.Windows.Forms.TextBox();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.Contact_Name2_tbx = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.Contact_Address2_tbx = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.DELIVERY_DETAILS_btn = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.ORDER_DETAILS_dgv = new System.Windows.Forms.DataGridView();
+            this.Item = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Unit_Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Total_Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.PAYMENT_DETAILS_btn = new System.Windows.Forms.Button();
             this.cmbxPaymentMethod = new System.Windows.Forms.ComboBox();
@@ -84,34 +94,25 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.TERMS_AND_CONDITIONS_btn = new System.Windows.Forms.Button();
             this.Terms_and_Conditions_tbx = new System.Windows.Forms.TextBox();
-            this.Item = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Unit_Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Total_Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ORDER_DETAILS_dgv)).BeginInit();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.tabPage9.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ORDER_DETAILS_dgv)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // Enter_btn
             // 
             this.Enter_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.Enter_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Enter_btn.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Enter_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.Enter_btn.Location = new System.Drawing.Point(581, 17);
             this.Enter_btn.Name = "Enter_btn";
@@ -125,17 +126,17 @@
             // 
             this.Purchase_Order_Form_tbx.Location = new System.Drawing.Point(263, 21);
             this.Purchase_Order_Form_tbx.Name = "Purchase_Order_Form_tbx";
-            this.Purchase_Order_Form_tbx.Size = new System.Drawing.Size(276, 20);
+            this.Purchase_Order_Form_tbx.Size = new System.Drawing.Size(276, 21);
             this.Purchase_Order_Form_tbx.TabIndex = 11;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(23, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 19);
+            this.label1.Size = new System.Drawing.Size(214, 19);
             this.label1.TabIndex = 10;
             this.label1.Text = "Purchase Order Form For:";
             // 
@@ -177,16 +178,16 @@
             // 
             this.Date_Required_tbx.Location = new System.Drawing.Point(261, 175);
             this.Date_Required_tbx.Name = "Date_Required_tbx";
-            this.Date_Required_tbx.Size = new System.Drawing.Size(276, 20);
+            this.Date_Required_tbx.Size = new System.Drawing.Size(276, 21);
             this.Date_Required_tbx.TabIndex = 24;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(18, 174);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(134, 18);
+            this.label4.Size = new System.Drawing.Size(140, 20);
             this.label4.TabIndex = 23;
             this.label4.Text = "Date Required by:";
             // 
@@ -194,14 +195,14 @@
             // 
             this.Purchase_Order_Date_tbx.Location = new System.Drawing.Point(261, 104);
             this.Purchase_Order_Date_tbx.Name = "Purchase_Order_Date_tbx";
-            this.Purchase_Order_Date_tbx.Size = new System.Drawing.Size(276, 20);
+            this.Purchase_Order_Date_tbx.Size = new System.Drawing.Size(276, 21);
             this.Purchase_Order_Date_tbx.TabIndex = 22;
             // 
             // Purchase_Order_Number_tbx
             // 
             this.Purchase_Order_Number_tbx.Location = new System.Drawing.Point(261, 32);
             this.Purchase_Order_Number_tbx.Name = "Purchase_Order_Number_tbx";
-            this.Purchase_Order_Number_tbx.Size = new System.Drawing.Size(276, 20);
+            this.Purchase_Order_Number_tbx.Size = new System.Drawing.Size(276, 21);
             this.Purchase_Order_Number_tbx.TabIndex = 18;
             // 
             // PROJECT_DETAILS_btn
@@ -220,20 +221,20 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(18, 103);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(160, 18);
+            this.label3.Size = new System.Drawing.Size(164, 20);
             this.label3.TabIndex = 21;
             this.label3.Text = "Purchase Order Date:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(18, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 18);
+            this.label2.Size = new System.Drawing.Size(188, 20);
             this.label2.TabIndex = 20;
             this.label2.Text = "Purchase Order Number:";
             // 
@@ -249,6 +250,292 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "DELIVERY DETAILS";
             // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage6);
+            this.tabControl2.Controls.Add(this.tabPage7);
+            this.tabControl2.Controls.Add(this.tabPage8);
+            this.tabControl2.Controls.Add(this.tabPage9);
+            this.tabControl2.Font = new System.Drawing.Font("Helvetica", 8F, System.Drawing.FontStyle.Bold);
+            this.tabControl2.Location = new System.Drawing.Point(6, 6);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(1063, 266);
+            this.tabControl2.TabIndex = 62;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage6.Controls.Add(this.Project_Name_tbx);
+            this.tabPage6.Controls.Add(this.label7);
+            this.tabPage6.Controls.Add(this.label6);
+            this.tabPage6.Controls.Add(this.Project_Address_tbx);
+            this.tabPage6.Controls.Add(this.label5);
+            this.tabPage6.Controls.Add(this.Project_Contact_Name_tbx);
+            this.tabPage6.Controls.Add(this.label9);
+            this.tabPage6.Controls.Add(this.Project_Contact_Phone_tbx);
+            this.tabPage6.Font = new System.Drawing.Font("Helvetica Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage6.ForeColor = System.Drawing.Color.Black;
+            this.tabPage6.Location = new System.Drawing.Point(4, 23);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1055, 239);
+            this.tabPage6.TabIndex = 0;
+            this.tabPage6.Text = "From";
+            // 
+            // Project_Name_tbx
+            // 
+            this.Project_Name_tbx.Location = new System.Drawing.Point(233, 20);
+            this.Project_Name_tbx.Name = "Project_Name_tbx";
+            this.Project_Name_tbx.Size = new System.Drawing.Size(145, 21);
+            this.Project_Name_tbx.TabIndex = 25;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(13, 21);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(110, 20);
+            this.label7.TabIndex = 26;
+            this.label7.Text = "Project Name:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(13, 64);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(128, 20);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "Project Address:";
+            // 
+            // Project_Address_tbx
+            // 
+            this.Project_Address_tbx.Location = new System.Drawing.Point(233, 63);
+            this.Project_Address_tbx.Name = "Project_Address_tbx";
+            this.Project_Address_tbx.Size = new System.Drawing.Size(145, 21);
+            this.Project_Address_tbx.TabIndex = 28;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(13, 106);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(170, 20);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "Project Contact Name:";
+            // 
+            // Project_Contact_Name_tbx
+            // 
+            this.Project_Contact_Name_tbx.Location = new System.Drawing.Point(233, 105);
+            this.Project_Contact_Name_tbx.Name = "Project_Contact_Name_tbx";
+            this.Project_Contact_Name_tbx.Size = new System.Drawing.Size(145, 21);
+            this.Project_Contact_Name_tbx.TabIndex = 30;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(13, 147);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(186, 20);
+            this.label9.TabIndex = 32;
+            this.label9.Text = "Project Contact Phone #:";
+            // 
+            // Project_Contact_Phone_tbx
+            // 
+            this.Project_Contact_Phone_tbx.Location = new System.Drawing.Point(233, 147);
+            this.Project_Contact_Phone_tbx.Name = "Project_Contact_Phone_tbx";
+            this.Project_Contact_Phone_tbx.Size = new System.Drawing.Size(145, 21);
+            this.Project_Contact_Phone_tbx.TabIndex = 33;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage7.Controls.Add(this.Supplier_Name_tbx);
+            this.tabPage7.Controls.Add(this.label14);
+            this.tabPage7.Controls.Add(this.label13);
+            this.tabPage7.Controls.Add(this.Supplier_Address_tbx);
+            this.tabPage7.Controls.Add(this.label12);
+            this.tabPage7.Controls.Add(this.Supplier_Contact_Name_tbx);
+            this.tabPage7.Controls.Add(this.label10);
+            this.tabPage7.Controls.Add(this.Supplier_Contact_Phone_tbx);
+            this.tabPage7.ForeColor = System.Drawing.Color.Black;
+            this.tabPage7.Location = new System.Drawing.Point(4, 23);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(1055, 239);
+            this.tabPage7.TabIndex = 1;
+            this.tabPage7.Text = "To";
+            // 
+            // Supplier_Name_tbx
+            // 
+            this.Supplier_Name_tbx.Location = new System.Drawing.Point(240, 22);
+            this.Supplier_Name_tbx.Name = "Supplier_Name_tbx";
+            this.Supplier_Name_tbx.Size = new System.Drawing.Size(145, 20);
+            this.Supplier_Name_tbx.TabIndex = 34;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(12, 23);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(121, 20);
+            this.label14.TabIndex = 35;
+            this.label14.Text = "Supplier Name:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(12, 66);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(139, 20);
+            this.label13.TabIndex = 36;
+            this.label13.Text = "Supplier Address:";
+            // 
+            // Supplier_Address_tbx
+            // 
+            this.Supplier_Address_tbx.Location = new System.Drawing.Point(240, 65);
+            this.Supplier_Address_tbx.Name = "Supplier_Address_tbx";
+            this.Supplier_Address_tbx.Size = new System.Drawing.Size(145, 20);
+            this.Supplier_Address_tbx.TabIndex = 37;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(12, 108);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(181, 20);
+            this.label12.TabIndex = 38;
+            this.label12.Text = "Supplier Contact Name:";
+            // 
+            // Supplier_Contact_Name_tbx
+            // 
+            this.Supplier_Contact_Name_tbx.Location = new System.Drawing.Point(240, 107);
+            this.Supplier_Contact_Name_tbx.Name = "Supplier_Contact_Name_tbx";
+            this.Supplier_Contact_Name_tbx.Size = new System.Drawing.Size(145, 20);
+            this.Supplier_Contact_Name_tbx.TabIndex = 39;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(12, 147);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(197, 20);
+            this.label10.TabIndex = 41;
+            this.label10.Text = "Supplier Contact Phone #:";
+            // 
+            // Supplier_Contact_Phone_tbx
+            // 
+            this.Supplier_Contact_Phone_tbx.Location = new System.Drawing.Point(240, 149);
+            this.Supplier_Contact_Phone_tbx.Name = "Supplier_Contact_Phone_tbx";
+            this.Supplier_Contact_Phone_tbx.Size = new System.Drawing.Size(145, 20);
+            this.Supplier_Contact_Phone_tbx.TabIndex = 42;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage8.Controls.Add(this.Contact_Name1_tbx);
+            this.tabPage8.Controls.Add(this.label24);
+            this.tabPage8.Controls.Add(this.label23);
+            this.tabPage8.Controls.Add(this.Contact_Address1_tbx);
+            this.tabPage8.ForeColor = System.Drawing.Color.Black;
+            this.tabPage8.Location = new System.Drawing.Point(4, 23);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(1055, 239);
+            this.tabPage8.TabIndex = 2;
+            this.tabPage8.Text = "Deliver To";
+            // 
+            // Contact_Name1_tbx
+            // 
+            this.Contact_Name1_tbx.Location = new System.Drawing.Point(171, 32);
+            this.Contact_Name1_tbx.Name = "Contact_Name1_tbx";
+            this.Contact_Name1_tbx.Size = new System.Drawing.Size(145, 20);
+            this.Contact_Name1_tbx.TabIndex = 43;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(13, 33);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(116, 20);
+            this.label24.TabIndex = 44;
+            this.label24.Text = "Contact Name:";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(13, 76);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(134, 20);
+            this.label23.TabIndex = 45;
+            this.label23.Text = "Contact Address:";
+            // 
+            // Contact_Address1_tbx
+            // 
+            this.Contact_Address1_tbx.Location = new System.Drawing.Point(170, 75);
+            this.Contact_Address1_tbx.Name = "Contact_Address1_tbx";
+            this.Contact_Address1_tbx.Size = new System.Drawing.Size(145, 20);
+            this.Contact_Address1_tbx.TabIndex = 46;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage9.Controls.Add(this.Contact_Name2_tbx);
+            this.tabPage9.Controls.Add(this.label19);
+            this.tabPage9.Controls.Add(this.Contact_Address2_tbx);
+            this.tabPage9.Controls.Add(this.label18);
+            this.tabPage9.ForeColor = System.Drawing.Color.Black;
+            this.tabPage9.Location = new System.Drawing.Point(4, 23);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(1055, 239);
+            this.tabPage9.TabIndex = 3;
+            this.tabPage9.Text = "Bill To";
+            // 
+            // Contact_Name2_tbx
+            // 
+            this.Contact_Name2_tbx.Location = new System.Drawing.Point(182, 34);
+            this.Contact_Name2_tbx.Name = "Contact_Name2_tbx";
+            this.Contact_Name2_tbx.Size = new System.Drawing.Size(145, 20);
+            this.Contact_Name2_tbx.TabIndex = 52;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(21, 35);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(116, 20);
+            this.label19.TabIndex = 53;
+            this.label19.Text = "Contact Name:";
+            // 
+            // Contact_Address2_tbx
+            // 
+            this.Contact_Address2_tbx.Location = new System.Drawing.Point(182, 77);
+            this.Contact_Address2_tbx.Name = "Contact_Address2_tbx";
+            this.Contact_Address2_tbx.Size = new System.Drawing.Size(145, 20);
+            this.Contact_Address2_tbx.TabIndex = 55;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(21, 78);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(134, 20);
+            this.label18.TabIndex = 54;
+            this.label18.Text = "Contact Address:";
+            // 
             // DELIVERY_DETAILS_btn
             // 
             this.DELIVERY_DETAILS_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
@@ -261,210 +548,6 @@
             this.DELIVERY_DETAILS_btn.Text = "Enter";
             this.DELIVERY_DETAILS_btn.UseVisualStyleBackColor = false;
             this.DELIVERY_DETAILS_btn.Click += new System.EventHandler(this.DELIVERY_DETAILS_btn_Click);
-            // 
-            // Contact_Address2_tbx
-            // 
-            this.Contact_Address2_tbx.Location = new System.Drawing.Point(182, 77);
-            this.Contact_Address2_tbx.Name = "Contact_Address2_tbx";
-            this.Contact_Address2_tbx.Size = new System.Drawing.Size(145, 20);
-            this.Contact_Address2_tbx.TabIndex = 55;
-            // 
-            // Contact_Name2_tbx
-            // 
-            this.Contact_Name2_tbx.Location = new System.Drawing.Point(182, 34);
-            this.Contact_Name2_tbx.Name = "Contact_Name2_tbx";
-            this.Contact_Name2_tbx.Size = new System.Drawing.Size(145, 20);
-            this.Contact_Name2_tbx.TabIndex = 52;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(21, 78);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(128, 18);
-            this.label18.TabIndex = 54;
-            this.label18.Text = "Contact Address:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(21, 35);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(112, 18);
-            this.label19.TabIndex = 53;
-            this.label19.Text = "Contact Name:";
-            // 
-            // Contact_Address1_tbx
-            // 
-            this.Contact_Address1_tbx.Location = new System.Drawing.Point(170, 75);
-            this.Contact_Address1_tbx.Name = "Contact_Address1_tbx";
-            this.Contact_Address1_tbx.Size = new System.Drawing.Size(145, 20);
-            this.Contact_Address1_tbx.TabIndex = 46;
-            // 
-            // Contact_Name1_tbx
-            // 
-            this.Contact_Name1_tbx.Location = new System.Drawing.Point(171, 32);
-            this.Contact_Name1_tbx.Name = "Contact_Name1_tbx";
-            this.Contact_Name1_tbx.Size = new System.Drawing.Size(145, 20);
-            this.Contact_Name1_tbx.TabIndex = 43;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(13, 76);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(128, 18);
-            this.label23.TabIndex = 45;
-            this.label23.Text = "Contact Address:";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(13, 33);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(112, 18);
-            this.label24.TabIndex = 44;
-            this.label24.Text = "Contact Name:";
-            // 
-            // Supplier_Contact_Phone_tbx
-            // 
-            this.Supplier_Contact_Phone_tbx.Location = new System.Drawing.Point(240, 149);
-            this.Supplier_Contact_Phone_tbx.Name = "Supplier_Contact_Phone_tbx";
-            this.Supplier_Contact_Phone_tbx.Size = new System.Drawing.Size(145, 20);
-            this.Supplier_Contact_Phone_tbx.TabIndex = 42;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(12, 147);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(190, 18);
-            this.label10.TabIndex = 41;
-            this.label10.Text = "Supplier Contact Phone #:";
-            // 
-            // Supplier_Contact_Name_tbx
-            // 
-            this.Supplier_Contact_Name_tbx.Location = new System.Drawing.Point(240, 107);
-            this.Supplier_Contact_Name_tbx.Name = "Supplier_Contact_Name_tbx";
-            this.Supplier_Contact_Name_tbx.Size = new System.Drawing.Size(145, 20);
-            this.Supplier_Contact_Name_tbx.TabIndex = 39;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(12, 108);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(174, 18);
-            this.label12.TabIndex = 38;
-            this.label12.Text = "Supplier Contact Name:";
-            // 
-            // Supplier_Address_tbx
-            // 
-            this.Supplier_Address_tbx.Location = new System.Drawing.Point(240, 65);
-            this.Supplier_Address_tbx.Name = "Supplier_Address_tbx";
-            this.Supplier_Address_tbx.Size = new System.Drawing.Size(145, 20);
-            this.Supplier_Address_tbx.TabIndex = 37;
-            // 
-            // Supplier_Name_tbx
-            // 
-            this.Supplier_Name_tbx.Location = new System.Drawing.Point(240, 22);
-            this.Supplier_Name_tbx.Name = "Supplier_Name_tbx";
-            this.Supplier_Name_tbx.Size = new System.Drawing.Size(145, 20);
-            this.Supplier_Name_tbx.TabIndex = 34;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(12, 66);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(132, 18);
-            this.label13.TabIndex = 36;
-            this.label13.Text = "Supplier Address:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(12, 23);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(116, 18);
-            this.label14.TabIndex = 35;
-            this.label14.Text = "Supplier Name:";
-            // 
-            // Project_Contact_Phone_tbx
-            // 
-            this.Project_Contact_Phone_tbx.Location = new System.Drawing.Point(233, 147);
-            this.Project_Contact_Phone_tbx.Name = "Project_Contact_Phone_tbx";
-            this.Project_Contact_Phone_tbx.Size = new System.Drawing.Size(145, 20);
-            this.Project_Contact_Phone_tbx.TabIndex = 33;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(13, 147);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(181, 18);
-            this.label9.TabIndex = 32;
-            this.label9.Text = "Project Contact Phone #:";
-            // 
-            // Project_Contact_Name_tbx
-            // 
-            this.Project_Contact_Name_tbx.Location = new System.Drawing.Point(233, 105);
-            this.Project_Contact_Name_tbx.Name = "Project_Contact_Name_tbx";
-            this.Project_Contact_Name_tbx.Size = new System.Drawing.Size(145, 20);
-            this.Project_Contact_Name_tbx.TabIndex = 30;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(13, 106);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(165, 18);
-            this.label5.TabIndex = 29;
-            this.label5.Text = "Project Contact Name:";
-            // 
-            // Project_Address_tbx
-            // 
-            this.Project_Address_tbx.Location = new System.Drawing.Point(233, 63);
-            this.Project_Address_tbx.Name = "Project_Address_tbx";
-            this.Project_Address_tbx.Size = new System.Drawing.Size(145, 20);
-            this.Project_Address_tbx.TabIndex = 28;
-            // 
-            // Project_Name_tbx
-            // 
-            this.Project_Name_tbx.Location = new System.Drawing.Point(233, 20);
-            this.Project_Name_tbx.Name = "Project_Name_tbx";
-            this.Project_Name_tbx.Size = new System.Drawing.Size(145, 20);
-            this.Project_Name_tbx.TabIndex = 25;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(13, 64);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 18);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "Project Address:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(13, 21);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(107, 18);
-            this.label7.TabIndex = 26;
-            this.label7.Text = "Project Name:";
             // 
             // tabPage3
             // 
@@ -495,6 +578,31 @@
             this.ORDER_DETAILS_dgv.Name = "ORDER_DETAILS_dgv";
             this.ORDER_DETAILS_dgv.Size = new System.Drawing.Size(1101, 390);
             this.ORDER_DETAILS_dgv.TabIndex = 0;
+            // 
+            // Item
+            // 
+            this.Item.HeaderText = "Item";
+            this.Item.Name = "Item";
+            // 
+            // Description
+            // 
+            this.Description.HeaderText = "Description";
+            this.Description.Name = "Description";
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.Name = "Quantity";
+            // 
+            // Unit_Price
+            // 
+            this.Unit_Price.HeaderText = "Unit Price";
+            this.Unit_Price.Name = "Unit_Price";
+            // 
+            // Total_Price
+            // 
+            this.Total_Price.HeaderText = "Total Price";
+            this.Total_Price.Name = "Total_Price";
             // 
             // tabPage4
             // 
@@ -543,10 +651,10 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.Location = new System.Drawing.Point(24, 23);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(129, 18);
+            this.label26.Size = new System.Drawing.Size(133, 20);
             this.label26.TabIndex = 43;
             this.label26.Text = "Payment Method:";
             // 
@@ -554,26 +662,26 @@
             // 
             this.Name_on_Card_tbx.Location = new System.Drawing.Point(186, 262);
             this.Name_on_Card_tbx.Name = "Name_on_Card_tbx";
-            this.Name_on_Card_tbx.Size = new System.Drawing.Size(453, 20);
+            this.Name_on_Card_tbx.Size = new System.Drawing.Size(453, 21);
             this.Name_on_Card_tbx.TabIndex = 42;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(20, 261);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(114, 18);
+            this.label15.Size = new System.Drawing.Size(118, 20);
             this.label15.TabIndex = 41;
             this.label15.Text = "Name on Card:";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(181, 75);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(147, 18);
+            this.label17.Size = new System.Drawing.Size(151, 20);
             this.label17.TabIndex = 40;
             this.label17.Text = "Credit Card Details:";
             // 
@@ -581,16 +689,16 @@
             // 
             this.Expiration_Date_tbx.Location = new System.Drawing.Point(187, 220);
             this.Expiration_Date_tbx.Name = "Expiration_Date_tbx";
-            this.Expiration_Date_tbx.Size = new System.Drawing.Size(453, 20);
+            this.Expiration_Date_tbx.Size = new System.Drawing.Size(453, 21);
             this.Expiration_Date_tbx.TabIndex = 39;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(20, 221);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(120, 18);
+            this.label20.Size = new System.Drawing.Size(123, 20);
             this.label20.TabIndex = 38;
             this.label20.Text = "Expiration Date:";
             // 
@@ -598,33 +706,33 @@
             // 
             this.Card_Number_tbx.Location = new System.Drawing.Point(187, 178);
             this.Card_Number_tbx.Name = "Card_Number_tbx";
-            this.Card_Number_tbx.Size = new System.Drawing.Size(453, 20);
+            this.Card_Number_tbx.Size = new System.Drawing.Size(453, 21);
             this.Card_Number_tbx.TabIndex = 37;
             // 
             // Card_Type_tbx
             // 
             this.Card_Type_tbx.Location = new System.Drawing.Point(187, 135);
             this.Card_Type_tbx.Name = "Card_Type_tbx";
-            this.Card_Type_tbx.Size = new System.Drawing.Size(453, 20);
+            this.Card_Type_tbx.Size = new System.Drawing.Size(453, 21);
             this.Card_Type_tbx.TabIndex = 34;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(20, 179);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(106, 18);
+            this.label22.Size = new System.Drawing.Size(111, 20);
             this.label22.TabIndex = 36;
             this.label22.Text = "Card Number:";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(20, 135);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(84, 18);
+            this.label25.Size = new System.Drawing.Size(89, 20);
             this.label25.TabIndex = 35;
             this.label25.Text = "Card Type:";
             // 
@@ -665,112 +773,6 @@
             this.Terms_and_Conditions_tbx.Size = new System.Drawing.Size(1103, 173);
             this.Terms_and_Conditions_tbx.TabIndex = 64;
             // 
-            // Item
-            // 
-            this.Item.HeaderText = "Item";
-            this.Item.Name = "Item";
-            // 
-            // Description
-            // 
-            this.Description.HeaderText = "Description";
-            this.Description.Name = "Description";
-            // 
-            // Quantity
-            // 
-            this.Quantity.HeaderText = "Quantity";
-            this.Quantity.Name = "Quantity";
-            // 
-            // Unit_Price
-            // 
-            this.Unit_Price.HeaderText = "Unit Price";
-            this.Unit_Price.Name = "Unit_Price";
-            // 
-            // Total_Price
-            // 
-            this.Total_Price.HeaderText = "Total Price";
-            this.Total_Price.Name = "Total_Price";
-            // 
-            // tabControl2
-            // 
-            this.tabControl2.Controls.Add(this.tabPage6);
-            this.tabControl2.Controls.Add(this.tabPage7);
-            this.tabControl2.Controls.Add(this.tabPage8);
-            this.tabControl2.Controls.Add(this.tabPage9);
-            this.tabControl2.Location = new System.Drawing.Point(6, 6);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1063, 266);
-            this.tabControl2.TabIndex = 62;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage6.Controls.Add(this.Project_Name_tbx);
-            this.tabPage6.Controls.Add(this.label7);
-            this.tabPage6.Controls.Add(this.label6);
-            this.tabPage6.Controls.Add(this.Project_Address_tbx);
-            this.tabPage6.Controls.Add(this.label5);
-            this.tabPage6.Controls.Add(this.Project_Contact_Name_tbx);
-            this.tabPage6.Controls.Add(this.label9);
-            this.tabPage6.Controls.Add(this.Project_Contact_Phone_tbx);
-            this.tabPage6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage6.ForeColor = System.Drawing.Color.Black;
-            this.tabPage6.Location = new System.Drawing.Point(4, 23);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1055, 239);
-            this.tabPage6.TabIndex = 0;
-            this.tabPage6.Text = "From";
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage7.Controls.Add(this.Supplier_Name_tbx);
-            this.tabPage7.Controls.Add(this.label14);
-            this.tabPage7.Controls.Add(this.label13);
-            this.tabPage7.Controls.Add(this.Supplier_Address_tbx);
-            this.tabPage7.Controls.Add(this.label12);
-            this.tabPage7.Controls.Add(this.Supplier_Contact_Name_tbx);
-            this.tabPage7.Controls.Add(this.label10);
-            this.tabPage7.Controls.Add(this.Supplier_Contact_Phone_tbx);
-            this.tabPage7.ForeColor = System.Drawing.Color.Black;
-            this.tabPage7.Location = new System.Drawing.Point(4, 23);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1055, 239);
-            this.tabPage7.TabIndex = 1;
-            this.tabPage7.Text = "To";
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage8.Controls.Add(this.Contact_Name1_tbx);
-            this.tabPage8.Controls.Add(this.label24);
-            this.tabPage8.Controls.Add(this.label23);
-            this.tabPage8.Controls.Add(this.Contact_Address1_tbx);
-            this.tabPage8.ForeColor = System.Drawing.Color.Black;
-            this.tabPage8.Location = new System.Drawing.Point(4, 23);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1055, 239);
-            this.tabPage8.TabIndex = 2;
-            this.tabPage8.Text = "Deliver To";
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage9.Controls.Add(this.Contact_Name2_tbx);
-            this.tabPage9.Controls.Add(this.label19);
-            this.tabPage9.Controls.Add(this.Contact_Address2_tbx);
-            this.tabPage9.Controls.Add(this.label18);
-            this.tabPage9.ForeColor = System.Drawing.Color.Black;
-            this.tabPage9.Location = new System.Drawing.Point(4, 23);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(1055, 239);
-            this.tabPage9.TabIndex = 3;
-            this.tabPage9.Text = "Bill To";
-            // 
             // PurchaseOrderFormDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -781,7 +783,7 @@
             this.Controls.Add(this.Enter_btn);
             this.Controls.Add(this.Purchase_Order_Form_tbx);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Name = "PurchaseOrderFormDocumentForm";
             this.Text = "PurchaseOrderFormDocumentForm";
@@ -789,12 +791,6 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ORDER_DETAILS_dgv)).EndInit();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
             this.tabControl2.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
@@ -804,6 +800,12 @@
             this.tabPage8.PerformLayout();
             this.tabPage9.ResumeLayout(false);
             this.tabPage9.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ORDER_DETAILS_dgv)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

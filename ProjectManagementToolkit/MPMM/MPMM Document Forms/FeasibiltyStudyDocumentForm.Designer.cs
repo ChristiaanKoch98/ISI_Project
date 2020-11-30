@@ -32,13 +32,15 @@
             this.Project_Name_tbx = new System.Windows.Forms.TextBox();
             this.Enter_btn = new System.Windows.Forms.Button();
             this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.Appendix_btn = new System.Windows.Forms.Button();
+            this.tabControl10 = new System.Windows.Forms.TabControl();
+            this.tabPage29 = new System.Windows.Forms.TabPage();
             this.Supporting_Documentation_btn = new System.Windows.Forms.TextBox();
+            this.Appendix_btn = new System.Windows.Forms.Button();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.tabControl9 = new System.Windows.Forms.TabControl();
             this.tabPage28 = new System.Windows.Forms.TabPage();
-            this.Feasibility_Result_btn = new System.Windows.Forms.Button();
             this.Feasibility_Result_tbx = new System.Windows.Forms.TextBox();
+            this.Feasibility_Result_btn = new System.Windows.Forms.Button();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.tabControl8 = new System.Windows.Forms.TabControl();
             this.tabPage7 = new System.Windows.Forms.TabPage();
@@ -120,10 +122,8 @@
             this.Signature = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabControl10 = new System.Windows.Forms.TabControl();
-            this.tabPage29 = new System.Windows.Forms.TabPage();
             this.tabPage30 = new System.Windows.Forms.TabPage();
-            this.tabPage31 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl11 = new System.Windows.Forms.TabControl();
             this.tabPage32 = new System.Windows.Forms.TabPage();
             this.Description2_tbx = new System.Windows.Forms.TextBox();
@@ -147,7 +147,8 @@
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage37 = new System.Windows.Forms.TabPage();
             this.Assumptions2_tbx = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tabPage31 = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
             this.tabControl12 = new System.Windows.Forms.TabControl();
             this.tabPage38 = new System.Windows.Forms.TabPage();
             this.Description3_tbx = new System.Windows.Forms.TextBox();
@@ -171,8 +172,9 @@
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage43 = new System.Windows.Forms.TabPage();
             this.Assumptions3_tbx = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.tabPage11.SuspendLayout();
+            this.tabControl10.SuspendLayout();
+            this.tabPage29.SuspendLayout();
             this.tabPage10.SuspendLayout();
             this.tabControl9.SuspendLayout();
             this.tabPage28.SuspendLayout();
@@ -217,10 +219,7 @@
             this.tabPage14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Document_Approvals_dgv)).BeginInit();
             this.tabControl1.SuspendLayout();
-            this.tabControl10.SuspendLayout();
-            this.tabPage29.SuspendLayout();
             this.tabPage30.SuspendLayout();
-            this.tabPage31.SuspendLayout();
             this.tabControl11.SuspendLayout();
             this.tabPage32.SuspendLayout();
             this.tabPage33.SuspendLayout();
@@ -231,6 +230,7 @@
             this.tabPage36.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Issues2_dgv)).BeginInit();
             this.tabPage37.SuspendLayout();
+            this.tabPage31.SuspendLayout();
             this.tabControl12.SuspendLayout();
             this.tabPage38.SuspendLayout();
             this.tabPage39.SuspendLayout();
@@ -246,11 +246,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(16, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 19);
+            this.label1.Size = new System.Drawing.Size(173, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "Feasibility Study For:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -261,16 +261,16 @@
             this.Project_Name_tbx.ForeColor = System.Drawing.Color.Black;
             this.Project_Name_tbx.Location = new System.Drawing.Point(193, 24);
             this.Project_Name_tbx.Name = "Project_Name_tbx";
-            this.Project_Name_tbx.Size = new System.Drawing.Size(237, 20);
+            this.Project_Name_tbx.Size = new System.Drawing.Size(237, 21);
             this.Project_Name_tbx.TabIndex = 2;
             // 
             // Enter_btn
             // 
             this.Enter_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.Enter_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Enter_btn.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Enter_btn.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Enter_btn.ForeColor = System.Drawing.Color.Black;
-            this.Enter_btn.Location = new System.Drawing.Point(467, 26);
+            this.Enter_btn.Location = new System.Drawing.Point(436, 21);
             this.Enter_btn.Name = "Enter_btn";
             this.Enter_btn.Size = new System.Drawing.Size(75, 27);
             this.Enter_btn.TabIndex = 3;
@@ -290,6 +290,38 @@
             this.tabPage11.TabIndex = 10;
             this.tabPage11.Text = "Appendix";
             // 
+            // tabControl10
+            // 
+            this.tabControl10.Controls.Add(this.tabPage29);
+            this.tabControl10.Location = new System.Drawing.Point(3, 3);
+            this.tabControl10.Name = "tabControl10";
+            this.tabControl10.SelectedIndex = 0;
+            this.tabControl10.Size = new System.Drawing.Size(1204, 460);
+            this.tabControl10.TabIndex = 14;
+            // 
+            // tabPage29
+            // 
+            this.tabPage29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage29.Controls.Add(this.Supporting_Documentation_btn);
+            this.tabPage29.Location = new System.Drawing.Point(4, 23);
+            this.tabPage29.Name = "tabPage29";
+            this.tabPage29.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage29.Size = new System.Drawing.Size(1196, 433);
+            this.tabPage29.TabIndex = 0;
+            this.tabPage29.Text = "Supporting Documentation";
+            // 
+            // Supporting_Documentation_btn
+            // 
+            this.Supporting_Documentation_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Supporting_Documentation_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.Supporting_Documentation_btn.Location = new System.Drawing.Point(0, 0);
+            this.Supporting_Documentation_btn.Multiline = true;
+            this.Supporting_Documentation_btn.Name = "Supporting_Documentation_btn";
+            this.Supporting_Documentation_btn.Size = new System.Drawing.Size(1190, 436);
+            this.Supporting_Documentation_btn.TabIndex = 12;
+            // 
             // Appendix_btn
             // 
             this.Appendix_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
@@ -302,18 +334,6 @@
             this.Appendix_btn.Text = "Enter";
             this.Appendix_btn.UseVisualStyleBackColor = false;
             this.Appendix_btn.Click += new System.EventHandler(this.Appendix_btn_Click);
-            // 
-            // Supporting_Documentation_btn
-            // 
-            this.Supporting_Documentation_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Supporting_Documentation_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Supporting_Documentation_btn.Location = new System.Drawing.Point(0, 0);
-            this.Supporting_Documentation_btn.Multiline = true;
-            this.Supporting_Documentation_btn.Name = "Supporting_Documentation_btn";
-            this.Supporting_Documentation_btn.Size = new System.Drawing.Size(1190, 437);
-            this.Supporting_Documentation_btn.TabIndex = 12;
             // 
             // tabPage10
             // 
@@ -347,6 +367,18 @@
             this.tabPage28.TabIndex = 0;
             this.tabPage28.Text = "Feasibility Result";
             // 
+            // Feasibility_Result_tbx
+            // 
+            this.Feasibility_Result_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Feasibility_Result_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.Feasibility_Result_tbx.Location = new System.Drawing.Point(-1, 0);
+            this.Feasibility_Result_tbx.Multiline = true;
+            this.Feasibility_Result_tbx.Name = "Feasibility_Result_tbx";
+            this.Feasibility_Result_tbx.Size = new System.Drawing.Size(1194, 451);
+            this.Feasibility_Result_tbx.TabIndex = 9;
+            // 
             // Feasibility_Result_btn
             // 
             this.Feasibility_Result_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
@@ -359,18 +391,6 @@
             this.Feasibility_Result_btn.Text = "Enter";
             this.Feasibility_Result_btn.UseVisualStyleBackColor = false;
             this.Feasibility_Result_btn.Click += new System.EventHandler(this.Feasibility_Result_btn_Click);
-            // 
-            // Feasibility_Result_tbx
-            // 
-            this.Feasibility_Result_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Feasibility_Result_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Feasibility_Result_tbx.Location = new System.Drawing.Point(-1, 0);
-            this.Feasibility_Result_tbx.Multiline = true;
-            this.Feasibility_Result_tbx.Name = "Feasibility_Result_tbx";
-            this.Feasibility_Result_tbx.Size = new System.Drawing.Size(1194, 452);
-            this.Feasibility_Result_tbx.TabIndex = 9;
             // 
             // tabPage9
             // 
@@ -414,7 +434,7 @@
             this.Ranking_Criteria_tbx.Location = new System.Drawing.Point(0, 0);
             this.Ranking_Criteria_tbx.Multiline = true;
             this.Ranking_Criteria_tbx.Name = "Ranking_Criteria_tbx";
-            this.Ranking_Criteria_tbx.Size = new System.Drawing.Size(1087, 398);
+            this.Ranking_Criteria_tbx.Size = new System.Drawing.Size(1087, 397);
             this.Ranking_Criteria_tbx.TabIndex = 16;
             // 
             // tabPage8
@@ -520,7 +540,7 @@
             this.Description_tbx.Location = new System.Drawing.Point(0, 0);
             this.Description_tbx.Multiline = true;
             this.Description_tbx.Name = "Description_tbx";
-            this.Description_tbx.Size = new System.Drawing.Size(1191, 422);
+            this.Description_tbx.Size = new System.Drawing.Size(1191, 421);
             this.Description_tbx.TabIndex = 12;
             // 
             // tabPage23
@@ -1074,7 +1094,7 @@
             this.Information});
             this.Document_Information_dgv.Location = new System.Drawing.Point(0, 5);
             this.Document_Information_dgv.Name = "Document_Information_dgv";
-            this.Document_Information_dgv.Size = new System.Drawing.Size(1190, 476);
+            this.Document_Information_dgv.Size = new System.Drawing.Size(1190, 475);
             this.Document_Information_dgv.TabIndex = 1;
             // 
             // Name
@@ -1180,7 +1200,7 @@
             this.Date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.Date.HeaderText = "Date";
             this.Date.Name = "Date";
-            this.Date.Width = 56;
+            this.Date.Width = 59;
             // 
             // tabControl1
             // 
@@ -1198,32 +1218,12 @@
             this.tabControl1.Controls.Add(this.tabPage9);
             this.tabControl1.Controls.Add(this.tabPage10);
             this.tabControl1.Controls.Add(this.tabPage11);
-            this.tabControl1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(15, 59);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1215, 563);
             this.tabControl1.TabIndex = 0;
-            // 
-            // tabControl10
-            // 
-            this.tabControl10.Controls.Add(this.tabPage29);
-            this.tabControl10.Location = new System.Drawing.Point(3, 3);
-            this.tabControl10.Name = "tabControl10";
-            this.tabControl10.SelectedIndex = 0;
-            this.tabControl10.Size = new System.Drawing.Size(1204, 460);
-            this.tabControl10.TabIndex = 14;
-            // 
-            // tabPage29
-            // 
-            this.tabPage29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage29.Controls.Add(this.Supporting_Documentation_btn);
-            this.tabPage29.Location = new System.Drawing.Point(4, 23);
-            this.tabPage29.Name = "tabPage29";
-            this.tabPage29.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage29.Size = new System.Drawing.Size(1196, 433);
-            this.tabPage29.TabIndex = 0;
-            this.tabPage29.Text = "Supporting Documentation";
             // 
             // tabPage30
             // 
@@ -1237,17 +1237,17 @@
             this.tabPage30.TabIndex = 11;
             this.tabPage30.Text = "Solution 2";
             // 
-            // tabPage31
+            // button1
             // 
-            this.tabPage31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage31.Controls.Add(this.button2);
-            this.tabPage31.Controls.Add(this.tabControl12);
-            this.tabPage31.Location = new System.Drawing.Point(4, 23);
-            this.tabPage31.Name = "tabPage31";
-            this.tabPage31.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage31.Size = new System.Drawing.Size(1207, 536);
-            this.tabPage31.TabIndex = 12;
-            this.tabPage31.Text = "Solution 3";
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(7, 494);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 27);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Enter";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // tabControl11
             // 
@@ -1306,7 +1306,7 @@
             this.Assessment2_tbx.Location = new System.Drawing.Point(0, 0);
             this.Assessment2_tbx.Multiline = true;
             this.Assessment2_tbx.Name = "Assessment2_tbx";
-            this.Assessment2_tbx.Size = new System.Drawing.Size(1216, 452);
+            this.Assessment2_tbx.Size = new System.Drawing.Size(1216, 453);
             this.Assessment2_tbx.TabIndex = 14;
             // 
             // tabPage34
@@ -1334,7 +1334,7 @@
             this.dataGridViewTextBoxColumn3});
             this.Results2_dgv.Location = new System.Drawing.Point(0, 0);
             this.Results2_dgv.Name = "Results2_dgv";
-            this.Results2_dgv.Size = new System.Drawing.Size(1190, 434);
+            this.Results2_dgv.Size = new System.Drawing.Size(1190, 435);
             this.Results2_dgv.TabIndex = 17;
             // 
             // dataGridViewTextBoxColumn1
@@ -1378,7 +1378,7 @@
             this.dataGridViewTextBoxColumn7});
             this.Risks2_dgv.Location = new System.Drawing.Point(0, 3);
             this.Risks2_dgv.Name = "Risks2_dgv";
-            this.Risks2_dgv.Size = new System.Drawing.Size(1190, 426);
+            this.Risks2_dgv.Size = new System.Drawing.Size(1190, 427);
             this.Risks2_dgv.TabIndex = 18;
             // 
             // dataGridViewTextBoxColumn4
@@ -1426,7 +1426,7 @@
             this.dataGridViewTextBoxColumn10});
             this.Issues2_dgv.Location = new System.Drawing.Point(-4, 0);
             this.Issues2_dgv.Name = "Issues2_dgv";
-            this.Issues2_dgv.Size = new System.Drawing.Size(1194, 438);
+            this.Issues2_dgv.Size = new System.Drawing.Size(1194, 439);
             this.Issues2_dgv.TabIndex = 22;
             // 
             // dataGridViewTextBoxColumn8
@@ -1464,20 +1464,32 @@
             this.Assumptions2_tbx.Location = new System.Drawing.Point(-4, 0);
             this.Assumptions2_tbx.Multiline = true;
             this.Assumptions2_tbx.Name = "Assumptions2_tbx";
-            this.Assumptions2_tbx.Size = new System.Drawing.Size(1209, 452);
+            this.Assumptions2_tbx.Size = new System.Drawing.Size(1209, 453);
             this.Assumptions2_tbx.TabIndex = 20;
             // 
-            // button1
+            // tabPage31
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(7, 494);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 27);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "Enter";
-            this.button1.UseVisualStyleBackColor = false;
+            this.tabPage31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage31.Controls.Add(this.button2);
+            this.tabPage31.Controls.Add(this.tabControl12);
+            this.tabPage31.Location = new System.Drawing.Point(4, 23);
+            this.tabPage31.Name = "tabPage31";
+            this.tabPage31.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage31.Size = new System.Drawing.Size(1207, 536);
+            this.tabPage31.TabIndex = 12;
+            this.tabPage31.Text = "Solution 3";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(3, 489);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 27);
+            this.button2.TabIndex = 26;
+            this.button2.Text = "Enter";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // tabControl12
             // 
@@ -1536,7 +1548,7 @@
             this.Assessment3_tbx.Location = new System.Drawing.Point(0, 0);
             this.Assessment3_tbx.Multiline = true;
             this.Assessment3_tbx.Name = "Assessment3_tbx";
-            this.Assessment3_tbx.Size = new System.Drawing.Size(1191, 425);
+            this.Assessment3_tbx.Size = new System.Drawing.Size(1191, 426);
             this.Assessment3_tbx.TabIndex = 14;
             // 
             // tabPage40
@@ -1564,7 +1576,7 @@
             this.dataGridViewTextBoxColumn13});
             this.Results3_dgv.Location = new System.Drawing.Point(0, 0);
             this.Results3_dgv.Name = "Results3_dgv";
-            this.Results3_dgv.Size = new System.Drawing.Size(1165, 407);
+            this.Results3_dgv.Size = new System.Drawing.Size(1165, 408);
             this.Results3_dgv.TabIndex = 17;
             // 
             // dataGridViewTextBoxColumn11
@@ -1608,7 +1620,7 @@
             this.dataGridViewTextBoxColumn17});
             this.Risks3_dgv.Location = new System.Drawing.Point(0, 3);
             this.Risks3_dgv.Name = "Risks3_dgv";
-            this.Risks3_dgv.Size = new System.Drawing.Size(1165, 399);
+            this.Risks3_dgv.Size = new System.Drawing.Size(1165, 400);
             this.Risks3_dgv.TabIndex = 18;
             // 
             // dataGridViewTextBoxColumn14
@@ -1656,7 +1668,7 @@
             this.dataGridViewTextBoxColumn20});
             this.Issues3_dgv.Location = new System.Drawing.Point(-4, 0);
             this.Issues3_dgv.Name = "Issues3_dgv";
-            this.Issues3_dgv.Size = new System.Drawing.Size(1169, 402);
+            this.Issues3_dgv.Size = new System.Drawing.Size(1169, 403);
             this.Issues3_dgv.TabIndex = 22;
             // 
             // dataGridViewTextBoxColumn18
@@ -1694,20 +1706,8 @@
             this.Assumptions3_tbx.Location = new System.Drawing.Point(-4, 0);
             this.Assumptions3_tbx.Multiline = true;
             this.Assumptions3_tbx.Name = "Assumptions3_tbx";
-            this.Assumptions3_tbx.Size = new System.Drawing.Size(1184, 425);
+            this.Assumptions3_tbx.Size = new System.Drawing.Size(1184, 426);
             this.Assumptions3_tbx.TabIndex = 20;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(3, 489);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 27);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "Enter";
-            this.button2.UseVisualStyleBackColor = false;
             // 
             // FeasibiltyStudyDocumentForm
             // 
@@ -1719,11 +1719,14 @@
             this.Controls.Add(this.Project_Name_tbx);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
-            this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Helvetica Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "FeasibiltyStudyDocumentForm";
             this.Text = "FeasibiltyStudyDocumentForm";
             this.tabPage11.ResumeLayout(false);
+            this.tabControl10.ResumeLayout(false);
+            this.tabPage29.ResumeLayout(false);
+            this.tabPage29.PerformLayout();
             this.tabPage10.ResumeLayout(false);
             this.tabControl9.ResumeLayout(false);
             this.tabPage28.ResumeLayout(false);
@@ -1779,11 +1782,7 @@
             this.tabPage14.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Document_Approvals_dgv)).EndInit();
             this.tabControl1.ResumeLayout(false);
-            this.tabControl10.ResumeLayout(false);
-            this.tabPage29.ResumeLayout(false);
-            this.tabPage29.PerformLayout();
             this.tabPage30.ResumeLayout(false);
-            this.tabPage31.ResumeLayout(false);
             this.tabControl11.ResumeLayout(false);
             this.tabPage32.ResumeLayout(false);
             this.tabPage32.PerformLayout();
@@ -1797,6 +1796,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Issues2_dgv)).EndInit();
             this.tabPage37.ResumeLayout(false);
             this.tabPage37.PerformLayout();
+            this.tabPage31.ResumeLayout(false);
             this.tabControl12.ResumeLayout(false);
             this.tabPage38.ResumeLayout(false);
             this.tabPage38.PerformLayout();

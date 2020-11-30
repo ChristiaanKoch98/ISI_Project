@@ -96,10 +96,12 @@
             // 
             this.Enter_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.Enter_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Enter_btn.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Enter_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.Enter_btn.Location = new System.Drawing.Point(492, 23);
+            this.Enter_btn.Location = new System.Drawing.Point(470, 33);
+            this.Enter_btn.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Enter_btn.Name = "Enter_btn";
-            this.Enter_btn.Size = new System.Drawing.Size(75, 27);
+            this.Enter_btn.Size = new System.Drawing.Size(78, 33);
             this.Enter_btn.TabIndex = 6;
             this.Enter_btn.Text = "Enter";
             this.Enter_btn.UseVisualStyleBackColor = false;
@@ -107,19 +109,21 @@
             // 
             // Acceptance_Form_Name_tbx
             // 
-            this.Acceptance_Form_Name_tbx.Location = new System.Drawing.Point(228, 30);
+            this.Acceptance_Form_Name_tbx.Location = new System.Drawing.Point(246, 37);
+            this.Acceptance_Form_Name_tbx.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Acceptance_Form_Name_tbx.Name = "Acceptance_Form_Name_tbx";
-            this.Acceptance_Form_Name_tbx.Size = new System.Drawing.Size(237, 20);
+            this.Acceptance_Form_Name_tbx.Size = new System.Drawing.Size(183, 18);
             this.Acceptance_Form_Name_tbx.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(27, 31);
+            this.label1.Location = new System.Drawing.Point(50, 38);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 19);
+            this.label1.Size = new System.Drawing.Size(184, 19);
             this.label1.TabIndex = 4;
             this.label1.Text = "Acceptance Form For:";
             // 
@@ -134,10 +138,11 @@
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(31, 67);
+            this.tabControl1.Location = new System.Drawing.Point(57, 81);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1048, 445);
+            this.tabControl1.Size = new System.Drawing.Size(1921, 540);
             this.tabControl1.TabIndex = 7;
             // 
             // tabPage1
@@ -146,9 +151,10 @@
             this.tabPage1.Controls.Add(this.tabControl3);
             this.tabPage1.Controls.Add(this.PROJECT_DETAILS_btn);
             this.tabPage1.Location = new System.Drawing.Point(4, 23);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1040, 418);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.tabPage1.Size = new System.Drawing.Size(1913, 513);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Project details";
             // 
@@ -156,19 +162,21 @@
             // 
             this.tabControl3.Controls.Add(this.tabPage7);
             this.tabControl3.Controls.Add(this.tabPage8);
-            this.tabControl3.Location = new System.Drawing.Point(3, 3);
+            this.tabControl3.Location = new System.Drawing.Point(6, 4);
+            this.tabControl3.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(1034, 317);
+            this.tabControl3.Size = new System.Drawing.Size(1896, 385);
             this.tabControl3.TabIndex = 11;
             // 
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.Project_Name_tbx);
             this.tabPage7.Location = new System.Drawing.Point(4, 23);
+            this.tabPage7.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1026, 290);
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.tabPage7.Size = new System.Drawing.Size(1888, 358);
             this.tabPage7.TabIndex = 0;
             this.tabPage7.Text = "Project Name";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -179,19 +187,21 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Project_Name_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Project_Name_tbx.Location = new System.Drawing.Point(3, 3);
+            this.Project_Name_tbx.Location = new System.Drawing.Point(6, 4);
+            this.Project_Name_tbx.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Project_Name_tbx.Multiline = true;
             this.Project_Name_tbx.Name = "Project_Name_tbx";
-            this.Project_Name_tbx.Size = new System.Drawing.Size(1027, 287);
+            this.Project_Name_tbx.Size = new System.Drawing.Size(1880, 348);
             this.Project_Name_tbx.TabIndex = 8;
             // 
             // tabPage8
             // 
             this.tabPage8.Controls.Add(this.Project_Manager_tbx);
             this.tabPage8.Location = new System.Drawing.Point(4, 23);
+            this.tabPage8.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1026, 290);
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.tabPage8.Size = new System.Drawing.Size(1888, 358);
             this.tabPage8.TabIndex = 1;
             this.tabPage8.Text = "Project Manager";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -203,9 +213,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Project_Manager_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.Project_Manager_tbx.Location = new System.Drawing.Point(0, 0);
+            this.Project_Manager_tbx.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Project_Manager_tbx.Multiline = true;
             this.Project_Manager_tbx.Name = "Project_Manager_tbx";
-            this.Project_Manager_tbx.Size = new System.Drawing.Size(1026, 291);
+            this.Project_Manager_tbx.Size = new System.Drawing.Size(1878, 354);
             this.Project_Manager_tbx.TabIndex = 10;
             // 
             // PROJECT_DETAILS_btn
@@ -213,9 +224,10 @@
             this.PROJECT_DETAILS_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.PROJECT_DETAILS_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PROJECT_DETAILS_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.PROJECT_DETAILS_btn.Location = new System.Drawing.Point(7, 372);
+            this.PROJECT_DETAILS_btn.Location = new System.Drawing.Point(13, 452);
+            this.PROJECT_DETAILS_btn.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.PROJECT_DETAILS_btn.Name = "PROJECT_DETAILS_btn";
-            this.PROJECT_DETAILS_btn.Size = new System.Drawing.Size(75, 27);
+            this.PROJECT_DETAILS_btn.Size = new System.Drawing.Size(138, 33);
             this.PROJECT_DETAILS_btn.TabIndex = 8;
             this.PROJECT_DETAILS_btn.Text = "Enter";
             this.PROJECT_DETAILS_btn.UseVisualStyleBackColor = false;
@@ -227,9 +239,10 @@
             this.tabPage2.Controls.Add(this.tabControl5);
             this.tabPage2.Controls.Add(this.ACCEPTANCE_DETAILS_btn);
             this.tabPage2.Location = new System.Drawing.Point(4, 23);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1040, 418);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.tabPage2.Size = new System.Drawing.Size(1913, 513);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Acceptance details";
             // 
@@ -240,18 +253,20 @@
             this.tabControl5.Controls.Add(this.tabPage13);
             this.tabControl5.Controls.Add(this.tabPage14);
             this.tabControl5.Location = new System.Drawing.Point(0, 0);
+            this.tabControl5.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.tabControl5.Name = "tabControl5";
             this.tabControl5.SelectedIndex = 0;
-            this.tabControl5.Size = new System.Drawing.Size(1034, 360);
+            this.tabControl5.Size = new System.Drawing.Size(1896, 437);
             this.tabControl5.TabIndex = 20;
             // 
             // tabPage11
             // 
             this.tabPage11.Controls.Add(this.Acceptance_ID_tbx);
             this.tabPage11.Location = new System.Drawing.Point(4, 23);
+            this.tabPage11.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(1026, 333);
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.tabPage11.Size = new System.Drawing.Size(1888, 410);
             this.tabPage11.TabIndex = 0;
             this.tabPage11.Text = "Acceptance ID";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -262,19 +277,21 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Acceptance_ID_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Acceptance_ID_tbx.Location = new System.Drawing.Point(-1, 0);
+            this.Acceptance_ID_tbx.Location = new System.Drawing.Point(-2, 0);
+            this.Acceptance_ID_tbx.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Acceptance_ID_tbx.Multiline = true;
             this.Acceptance_ID_tbx.Name = "Acceptance_ID_tbx";
-            this.Acceptance_ID_tbx.Size = new System.Drawing.Size(1031, 337);
+            this.Acceptance_ID_tbx.Size = new System.Drawing.Size(1887, 408);
             this.Acceptance_ID_tbx.TabIndex = 11;
             // 
             // tabPage12
             // 
             this.tabPage12.Controls.Add(this.Requested_By_tbx);
             this.tabPage12.Location = new System.Drawing.Point(4, 23);
+            this.tabPage12.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(1026, 333);
+            this.tabPage12.Padding = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.tabPage12.Size = new System.Drawing.Size(1888, 410);
             this.tabPage12.TabIndex = 1;
             this.tabPage12.Text = "Requested By";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -285,19 +302,21 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Requested_By_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Requested_By_tbx.Location = new System.Drawing.Point(2, 0);
+            this.Requested_By_tbx.Location = new System.Drawing.Point(4, 0);
+            this.Requested_By_tbx.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Requested_By_tbx.Multiline = true;
             this.Requested_By_tbx.Name = "Requested_By_tbx";
-            this.Requested_By_tbx.Size = new System.Drawing.Size(1031, 338);
+            this.Requested_By_tbx.Size = new System.Drawing.Size(1887, 411);
             this.Requested_By_tbx.TabIndex = 17;
             // 
             // tabPage13
             // 
             this.tabPage13.Controls.Add(this.Date_Requested_tbx);
             this.tabPage13.Location = new System.Drawing.Point(4, 23);
+            this.tabPage13.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(1026, 333);
+            this.tabPage13.Padding = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.tabPage13.Size = new System.Drawing.Size(1888, 410);
             this.tabPage13.TabIndex = 2;
             this.tabPage13.Text = "Date Requested";
             this.tabPage13.UseVisualStyleBackColor = true;
@@ -308,19 +327,21 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Date_Requested_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Date_Requested_tbx.Location = new System.Drawing.Point(-4, 0);
+            this.Date_Requested_tbx.Location = new System.Drawing.Point(-7, 0);
+            this.Date_Requested_tbx.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Date_Requested_tbx.Multiline = true;
             this.Date_Requested_tbx.Name = "Date_Requested_tbx";
-            this.Date_Requested_tbx.Size = new System.Drawing.Size(1034, 334);
+            this.Date_Requested_tbx.Size = new System.Drawing.Size(1892, 406);
             this.Date_Requested_tbx.TabIndex = 15;
             // 
             // tabPage14
             // 
             this.tabPage14.Controls.Add(this.Description_tbx);
             this.tabPage14.Location = new System.Drawing.Point(4, 23);
+            this.tabPage14.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage14.Size = new System.Drawing.Size(1026, 333);
+            this.tabPage14.Padding = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.tabPage14.Size = new System.Drawing.Size(1888, 410);
             this.tabPage14.TabIndex = 3;
             this.tabPage14.Text = "Description";
             this.tabPage14.UseVisualStyleBackColor = true;
@@ -330,10 +351,11 @@
             this.Description_tbx.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Description_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Description_tbx.Location = new System.Drawing.Point(3, -4);
+            this.Description_tbx.Location = new System.Drawing.Point(6, -5);
+            this.Description_tbx.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Description_tbx.Multiline = true;
             this.Description_tbx.Name = "Description_tbx";
-            this.Description_tbx.Size = new System.Drawing.Size(1031, 337);
+            this.Description_tbx.Size = new System.Drawing.Size(1887, 408);
             this.Description_tbx.TabIndex = 19;
             // 
             // ACCEPTANCE_DETAILS_btn
@@ -341,9 +363,10 @@
             this.ACCEPTANCE_DETAILS_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.ACCEPTANCE_DETAILS_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ACCEPTANCE_DETAILS_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ACCEPTANCE_DETAILS_btn.Location = new System.Drawing.Point(6, 385);
+            this.ACCEPTANCE_DETAILS_btn.Location = new System.Drawing.Point(11, 468);
+            this.ACCEPTANCE_DETAILS_btn.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.ACCEPTANCE_DETAILS_btn.Name = "ACCEPTANCE_DETAILS_btn";
-            this.ACCEPTANCE_DETAILS_btn.Size = new System.Drawing.Size(75, 27);
+            this.ACCEPTANCE_DETAILS_btn.Size = new System.Drawing.Size(138, 33);
             this.ACCEPTANCE_DETAILS_btn.TabIndex = 12;
             this.ACCEPTANCE_DETAILS_btn.Text = "Enter";
             this.ACCEPTANCE_DETAILS_btn.UseVisualStyleBackColor = false;
@@ -355,9 +378,10 @@
             this.tabPage3.Controls.Add(this.tabControl4);
             this.tabPage3.Controls.Add(this.ACCEPTANCE_CRITERIA_btn);
             this.tabPage3.Location = new System.Drawing.Point(4, 23);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1040, 418);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.tabPage3.Size = new System.Drawing.Size(1913, 513);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Acceptance criteria";
             // 
@@ -365,19 +389,21 @@
             // 
             this.tabControl4.Controls.Add(this.tabPage9);
             this.tabControl4.Controls.Add(this.tabPage10);
-            this.tabControl4.Location = new System.Drawing.Point(6, 3);
+            this.tabControl4.Location = new System.Drawing.Point(11, 4);
+            this.tabControl4.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.tabControl4.Name = "tabControl4";
             this.tabControl4.SelectedIndex = 0;
-            this.tabControl4.Size = new System.Drawing.Size(1031, 335);
+            this.tabControl4.Size = new System.Drawing.Size(1890, 407);
             this.tabControl4.TabIndex = 25;
             // 
             // tabPage9
             // 
             this.tabPage9.Controls.Add(this.Criteria_tbx);
             this.tabPage9.Location = new System.Drawing.Point(4, 23);
+            this.tabPage9.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(1023, 308);
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.tabPage9.Size = new System.Drawing.Size(1882, 380);
             this.tabPage9.TabIndex = 0;
             this.tabPage9.Text = "Criteria";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -389,18 +415,20 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Criteria_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.Criteria_tbx.Location = new System.Drawing.Point(0, 0);
+            this.Criteria_tbx.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Criteria_tbx.Multiline = true;
             this.Criteria_tbx.Name = "Criteria_tbx";
-            this.Criteria_tbx.Size = new System.Drawing.Size(1024, 312);
+            this.Criteria_tbx.Size = new System.Drawing.Size(1874, 378);
             this.Criteria_tbx.TabIndex = 22;
             // 
             // tabPage10
             // 
             this.tabPage10.Controls.Add(this.Standards_tbx);
             this.tabPage10.Location = new System.Drawing.Point(4, 23);
+            this.tabPage10.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(1023, 308);
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.tabPage10.Size = new System.Drawing.Size(1882, 380);
             this.tabPage10.TabIndex = 1;
             this.tabPage10.Text = "Standards";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -412,9 +440,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Standards_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.Standards_tbx.Location = new System.Drawing.Point(0, 0);
+            this.Standards_tbx.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Standards_tbx.Multiline = true;
             this.Standards_tbx.Name = "Standards_tbx";
-            this.Standards_tbx.Size = new System.Drawing.Size(1027, 313);
+            this.Standards_tbx.Size = new System.Drawing.Size(1880, 380);
             this.Standards_tbx.TabIndex = 24;
             // 
             // ACCEPTANCE_CRITERIA_btn
@@ -422,9 +451,10 @@
             this.ACCEPTANCE_CRITERIA_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.ACCEPTANCE_CRITERIA_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ACCEPTANCE_CRITERIA_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ACCEPTANCE_CRITERIA_btn.Location = new System.Drawing.Point(6, 385);
+            this.ACCEPTANCE_CRITERIA_btn.Location = new System.Drawing.Point(11, 468);
+            this.ACCEPTANCE_CRITERIA_btn.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.ACCEPTANCE_CRITERIA_btn.Name = "ACCEPTANCE_CRITERIA_btn";
-            this.ACCEPTANCE_CRITERIA_btn.Size = new System.Drawing.Size(75, 27);
+            this.ACCEPTANCE_CRITERIA_btn.Size = new System.Drawing.Size(138, 33);
             this.ACCEPTANCE_CRITERIA_btn.TabIndex = 20;
             this.ACCEPTANCE_CRITERIA_btn.Text = "Enter";
             this.ACCEPTANCE_CRITERIA_btn.UseVisualStyleBackColor = false;
@@ -436,9 +466,10 @@
             this.tabPage4.Controls.Add(this.ACCEPTANCE_RESULTS_dgv);
             this.tabPage4.Controls.Add(this.ACCEPTANCE_RESULTS_btn);
             this.tabPage4.Location = new System.Drawing.Point(4, 23);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1040, 418);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.tabPage4.Size = new System.Drawing.Size(1913, 513);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Acceptance results";
             // 
@@ -456,9 +487,10 @@
             this.Reviewer,
             this.Date,
             this.Result});
-            this.ACCEPTANCE_RESULTS_dgv.Location = new System.Drawing.Point(3, 6);
+            this.ACCEPTANCE_RESULTS_dgv.Location = new System.Drawing.Point(6, 7);
+            this.ACCEPTANCE_RESULTS_dgv.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.ACCEPTANCE_RESULTS_dgv.Name = "ACCEPTANCE_RESULTS_dgv";
-            this.ACCEPTANCE_RESULTS_dgv.Size = new System.Drawing.Size(1037, 361);
+            this.ACCEPTANCE_RESULTS_dgv.Size = new System.Drawing.Size(1901, 438);
             this.ACCEPTANCE_RESULTS_dgv.TabIndex = 9;
             // 
             // Acceptance
@@ -491,9 +523,10 @@
             this.ACCEPTANCE_RESULTS_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.ACCEPTANCE_RESULTS_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ACCEPTANCE_RESULTS_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ACCEPTANCE_RESULTS_btn.Location = new System.Drawing.Point(6, 385);
+            this.ACCEPTANCE_RESULTS_btn.Location = new System.Drawing.Point(11, 468);
+            this.ACCEPTANCE_RESULTS_btn.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.ACCEPTANCE_RESULTS_btn.Name = "ACCEPTANCE_RESULTS_btn";
-            this.ACCEPTANCE_RESULTS_btn.Size = new System.Drawing.Size(75, 27);
+            this.ACCEPTANCE_RESULTS_btn.Size = new System.Drawing.Size(138, 33);
             this.ACCEPTANCE_RESULTS_btn.TabIndex = 8;
             this.ACCEPTANCE_RESULTS_btn.Text = "Enter";
             this.ACCEPTANCE_RESULTS_btn.UseVisualStyleBackColor = false;
@@ -505,19 +538,21 @@
             this.tabPage5.Controls.Add(this.tabControl2);
             this.tabPage5.Controls.Add(this.CUSTOMER_APPROVAL_btn);
             this.tabPage5.Location = new System.Drawing.Point(4, 23);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1040, 418);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.tabPage5.Size = new System.Drawing.Size(1913, 513);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Customer approval";
             // 
             // tabControl2
             // 
             this.tabControl2.Controls.Add(this.tabPage6);
-            this.tabControl2.Location = new System.Drawing.Point(3, 3);
+            this.tabControl2.Location = new System.Drawing.Point(6, 4);
+            this.tabControl2.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1028, 339);
+            this.tabControl2.Size = new System.Drawing.Size(1885, 412);
             this.tabControl2.TabIndex = 23;
             // 
             // tabPage6
@@ -525,9 +560,10 @@
             this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage6.Controls.Add(this.Supporting_Documentation_tbx);
             this.tabPage6.Location = new System.Drawing.Point(4, 23);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1020, 312);
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.tabPage6.Size = new System.Drawing.Size(1877, 385);
             this.tabPage6.TabIndex = 0;
             this.tabPage6.Text = "Supporting Documentation:";
             // 
@@ -537,20 +573,23 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Supporting_Documentation_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.Supporting_Documentation_tbx.Location = new System.Drawing.Point(0, 3);
+            this.Supporting_Documentation_tbx.Location = new System.Drawing.Point(0, 4);
+            this.Supporting_Documentation_tbx.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Supporting_Documentation_tbx.Multiline = true;
             this.Supporting_Documentation_tbx.Name = "Supporting_Documentation_tbx";
-            this.Supporting_Documentation_tbx.Size = new System.Drawing.Size(1047, 336);
+            this.Supporting_Documentation_tbx.Size = new System.Drawing.Size(1916, 407);
             this.Supporting_Documentation_tbx.TabIndex = 22;
             // 
             // CUSTOMER_APPROVAL_btn
             // 
             this.CUSTOMER_APPROVAL_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.CUSTOMER_APPROVAL_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CUSTOMER_APPROVAL_btn.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CUSTOMER_APPROVAL_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.CUSTOMER_APPROVAL_btn.Location = new System.Drawing.Point(6, 374);
+            this.CUSTOMER_APPROVAL_btn.Location = new System.Drawing.Point(11, 454);
+            this.CUSTOMER_APPROVAL_btn.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.CUSTOMER_APPROVAL_btn.Name = "CUSTOMER_APPROVAL_btn";
-            this.CUSTOMER_APPROVAL_btn.Size = new System.Drawing.Size(75, 27);
+            this.CUSTOMER_APPROVAL_btn.Size = new System.Drawing.Size(88, 33);
             this.CUSTOMER_APPROVAL_btn.TabIndex = 20;
             this.CUSTOMER_APPROVAL_btn.Text = "Enter";
             this.CUSTOMER_APPROVAL_btn.UseVisualStyleBackColor = false;
@@ -558,16 +597,17 @@
             // 
             // AcceptanceFormDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(1131, 574);
+            this.ClientSize = new System.Drawing.Size(1370, 697);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.Enter_btn);
             this.Controls.Add(this.Acceptance_Form_Name_tbx);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Webdings", 8.25F);
             this.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Name = "AcceptanceFormDocumentForm";
             this.Text = "AcceptanceFormDocumentForm";
             this.tabControl1.ResumeLayout(false);
