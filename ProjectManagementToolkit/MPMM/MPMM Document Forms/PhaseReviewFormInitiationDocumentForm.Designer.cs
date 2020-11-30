@@ -129,21 +129,21 @@
             this.tabControl1.Controls.Add(this.documentControl);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(14, 13);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(895, 459);
+            this.tabControl1.Size = new System.Drawing.Size(1044, 494);
             this.tabControl1.TabIndex = 0;
             // 
             // documentControl
             // 
             this.documentControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.documentControl.Controls.Add(this.tabControl2);
-            this.documentControl.Location = new System.Drawing.Point(4, 21);
+            this.documentControl.Location = new System.Drawing.Point(4, 23);
             this.documentControl.Name = "documentControl";
             this.documentControl.Padding = new System.Windows.Forms.Padding(3);
-            this.documentControl.Size = new System.Drawing.Size(887, 434);
+            this.documentControl.Size = new System.Drawing.Size(1036, 467);
             this.documentControl.TabIndex = 0;
             this.documentControl.Text = "Document Control";
             this.documentControl.Click += new System.EventHandler(this.tabPage1_Click);
@@ -156,20 +156,20 @@
             this.tabControl2.Controls.Add(this.tabPage1);
             this.tabControl2.Controls.Add(this.tabPage4);
             this.tabControl2.Controls.Add(this.tabPage5);
-            this.tabControl2.Location = new System.Drawing.Point(5, 2);
+            this.tabControl2.Location = new System.Drawing.Point(6, 2);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(878, 431);
+            this.tabControl2.Size = new System.Drawing.Size(1024, 462);
             this.tabControl2.TabIndex = 2;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage1.Controls.Add(this.documentInformation);
-            this.tabPage1.Location = new System.Drawing.Point(4, 21);
+            this.tabPage1.Location = new System.Drawing.Point(4, 23);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(870, 406);
+            this.tabPage1.Size = new System.Drawing.Size(1016, 435);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Document Information";
             // 
@@ -185,7 +185,7 @@
             this.documentInformation.Location = new System.Drawing.Point(3, 2);
             this.documentInformation.Name = "documentInformation";
             this.documentInformation.RowHeadersWidth = 51;
-            this.documentInformation.Size = new System.Drawing.Size(864, 400);
+            this.documentInformation.Size = new System.Drawing.Size(1008, 427);
             this.documentInformation.TabIndex = 16;
             // 
             // Type
@@ -206,10 +206,10 @@
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage4.Controls.Add(this.documentHistory);
-            this.tabPage4.Location = new System.Drawing.Point(4, 21);
+            this.tabPage4.Location = new System.Drawing.Point(4, 23);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(870, 406);
+            this.tabPage4.Size = new System.Drawing.Size(1016, 435);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Document History";
             // 
@@ -226,7 +226,7 @@
             this.documentHistory.Location = new System.Drawing.Point(3, 2);
             this.documentHistory.Name = "documentHistory";
             this.documentHistory.RowHeadersWidth = 51;
-            this.documentHistory.Size = new System.Drawing.Size(864, 399);
+            this.documentHistory.Size = new System.Drawing.Size(1008, 425);
             this.documentHistory.TabIndex = 13;
             // 
             // Version
@@ -254,10 +254,10 @@
             // 
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage5.Controls.Add(this.documentApprovals);
-            this.tabPage5.Location = new System.Drawing.Point(4, 21);
+            this.tabPage5.Location = new System.Drawing.Point(4, 23);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(870, 406);
+            this.tabPage5.Size = new System.Drawing.Size(1016, 435);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "Document Approval";
             // 
@@ -275,7 +275,7 @@
             this.documentApprovals.Location = new System.Drawing.Point(3, 3);
             this.documentApprovals.Name = "documentApprovals";
             this.documentApprovals.RowHeadersWidth = 51;
-            this.documentApprovals.Size = new System.Drawing.Size(868, 396);
+            this.documentApprovals.Size = new System.Drawing.Size(1013, 421);
             this.documentApprovals.TabIndex = 18;
             // 
             // approvalRole
@@ -312,10 +312,10 @@
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage2.Controls.Add(this.tabControl3);
-            this.tabPage2.Location = new System.Drawing.Point(4, 21);
+            this.tabPage2.Location = new System.Drawing.Point(4, 23);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(887, 434);
+            this.tabPage2.Size = new System.Drawing.Size(1036, 467);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Project Details & Overall Status";
             // 
@@ -332,17 +332,17 @@
             this.tabControl3.Location = new System.Drawing.Point(3, 6);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(905, 430);
+            this.tabControl3.Size = new System.Drawing.Size(1056, 463);
             this.tabControl3.TabIndex = 0;
             // 
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage6.Controls.Add(this.panel1);
-            this.tabPage6.Location = new System.Drawing.Point(4, 21);
+            this.tabPage6.Location = new System.Drawing.Point(4, 23);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(897, 405);
+            this.tabPage6.Size = new System.Drawing.Size(1048, 436);
             this.tabPage6.TabIndex = 0;
             this.tabPage6.Text = "Project Details";
             // 
@@ -364,65 +364,65 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Font = new System.Drawing.Font("Helvetica", 9F);
-            this.panel1.Location = new System.Drawing.Point(3, 17);
+            this.panel1.Location = new System.Drawing.Point(3, 18);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(885, 135);
+            this.panel1.Size = new System.Drawing.Size(1032, 143);
             this.panel1.TabIndex = 2;
             // 
             // reportingPeriod
             // 
             this.reportingPeriod.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reportingPeriod.Location = new System.Drawing.Point(626, 66);
+            this.reportingPeriod.Location = new System.Drawing.Point(730, 71);
             this.reportingPeriod.Name = "reportingPeriod";
-            this.reportingPeriod.Size = new System.Drawing.Size(233, 20);
+            this.reportingPeriod.Size = new System.Drawing.Size(271, 20);
             this.reportingPeriod.TabIndex = 22;
             // 
             // reportPreparedBy
             // 
             this.reportPreparedBy.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reportPreparedBy.Location = new System.Drawing.Point(626, 8);
+            this.reportPreparedBy.Location = new System.Drawing.Point(730, 9);
             this.reportPreparedBy.Name = "reportPreparedBy";
-            this.reportPreparedBy.Size = new System.Drawing.Size(233, 20);
+            this.reportPreparedBy.Size = new System.Drawing.Size(271, 20);
             this.reportPreparedBy.TabIndex = 21;
             // 
             // reportPreparationDate
             // 
             this.reportPreparationDate.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reportPreparationDate.Location = new System.Drawing.Point(626, 37);
+            this.reportPreparationDate.Location = new System.Drawing.Point(730, 40);
             this.reportPreparationDate.Name = "reportPreparationDate";
-            this.reportPreparationDate.Size = new System.Drawing.Size(233, 20);
+            this.reportPreparationDate.Size = new System.Drawing.Size(271, 20);
             this.reportPreparationDate.TabIndex = 20;
             // 
             // projectSponsor
             // 
             this.projectSponsor.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.projectSponsor.Location = new System.Drawing.Point(146, 69);
+            this.projectSponsor.Location = new System.Drawing.Point(170, 74);
             this.projectSponsor.Name = "projectSponsor";
-            this.projectSponsor.Size = new System.Drawing.Size(233, 20);
+            this.projectSponsor.Size = new System.Drawing.Size(271, 20);
             this.projectSponsor.TabIndex = 19;
             // 
             // projectManager
             // 
             this.projectManager.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.projectManager.Location = new System.Drawing.Point(146, 38);
+            this.projectManager.Location = new System.Drawing.Point(170, 41);
             this.projectManager.Name = "projectManager";
-            this.projectManager.Size = new System.Drawing.Size(233, 20);
+            this.projectManager.Size = new System.Drawing.Size(271, 20);
             this.projectManager.TabIndex = 18;
             // 
             // projectName
             // 
             this.projectName.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.projectName.Location = new System.Drawing.Point(146, 8);
+            this.projectName.Location = new System.Drawing.Point(170, 9);
             this.projectName.Name = "projectName";
-            this.projectName.Size = new System.Drawing.Size(233, 20);
+            this.projectName.Size = new System.Drawing.Size(271, 20);
             this.projectName.TabIndex = 17;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Helvetica", 9F);
+            this.label9.Font = new System.Drawing.Font("Helvetica", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(3, 69);
+            this.label9.Location = new System.Drawing.Point(3, 74);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(97, 14);
             this.label9.TabIndex = 16;
@@ -431,9 +431,9 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Helvetica", 9F);
+            this.label8.Font = new System.Drawing.Font("Helvetica", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(432, 69);
+            this.label8.Location = new System.Drawing.Point(504, 74);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(83, 14);
             this.label8.TabIndex = 15;
@@ -442,9 +442,9 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Helvetica", 9F);
+            this.label7.Font = new System.Drawing.Font("Helvetica", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(3, 41);
+            this.label7.Location = new System.Drawing.Point(3, 44);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(59, 14);
             this.label7.TabIndex = 14;
@@ -453,9 +453,9 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Helvetica", 9F);
+            this.label6.Font = new System.Drawing.Font("Helvetica", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(432, 11);
+            this.label6.Location = new System.Drawing.Point(504, 12);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(118, 14);
             this.label6.TabIndex = 13;
@@ -464,9 +464,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Helvetica", 9F);
+            this.label5.Font = new System.Drawing.Font("Helvetica", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(432, 41);
+            this.label5.Location = new System.Drawing.Point(504, 44);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(143, 14);
             this.label5.TabIndex = 12;
@@ -475,9 +475,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Helvetica", 9F);
+            this.label4.Font = new System.Drawing.Font("Helvetica", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(3, 11);
+            this.label4.Location = new System.Drawing.Point(3, 12);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 14);
             this.label4.TabIndex = 11;
@@ -487,10 +487,10 @@
             // 
             this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage7.Controls.Add(this.summary);
-            this.tabPage7.Location = new System.Drawing.Point(4, 21);
+            this.tabPage7.Location = new System.Drawing.Point(4, 23);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(897, 405);
+            this.tabPage7.Size = new System.Drawing.Size(1048, 436);
             this.tabPage7.TabIndex = 1;
             this.tabPage7.Text = "Summary";
             // 
@@ -499,10 +499,10 @@
             this.summary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.summary.Font = new System.Drawing.Font("Helvetica", 9.75F);
             this.summary.ForeColor = System.Drawing.Color.Black;
-            this.summary.Location = new System.Drawing.Point(6, 6);
+            this.summary.Location = new System.Drawing.Point(7, 6);
             this.summary.Multiline = true;
             this.summary.Name = "summary";
-            this.summary.Size = new System.Drawing.Size(888, 395);
+            this.summary.Size = new System.Drawing.Size(1035, 425);
             this.summary.TabIndex = 16;
             this.summary.Text = "Summary";
             // 
@@ -510,10 +510,10 @@
             // 
             this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage8.Controls.Add(this.projectExpenses);
-            this.tabPage8.Location = new System.Drawing.Point(4, 21);
+            this.tabPage8.Location = new System.Drawing.Point(4, 23);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(897, 405);
+            this.tabPage8.Size = new System.Drawing.Size(1048, 436);
             this.tabPage8.TabIndex = 2;
             this.tabPage8.Text = "Project Expenses";
             // 
@@ -522,10 +522,10 @@
             this.projectExpenses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.projectExpenses.Font = new System.Drawing.Font("Helvetica", 9.75F);
             this.projectExpenses.ForeColor = System.Drawing.Color.Black;
-            this.projectExpenses.Location = new System.Drawing.Point(6, 6);
+            this.projectExpenses.Location = new System.Drawing.Point(7, 6);
             this.projectExpenses.Multiline = true;
             this.projectExpenses.Name = "projectExpenses";
-            this.projectExpenses.Size = new System.Drawing.Size(885, 392);
+            this.projectExpenses.Size = new System.Drawing.Size(1032, 422);
             this.projectExpenses.TabIndex = 18;
             this.projectExpenses.Text = "Project Expenses";
             // 
@@ -533,10 +533,10 @@
             // 
             this.tabPage9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage9.Controls.Add(this.projectRisks);
-            this.tabPage9.Location = new System.Drawing.Point(4, 21);
+            this.tabPage9.Location = new System.Drawing.Point(4, 23);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(897, 405);
+            this.tabPage9.Size = new System.Drawing.Size(1048, 436);
             this.tabPage9.TabIndex = 3;
             this.tabPage9.Text = "Project Risks";
             // 
@@ -545,10 +545,10 @@
             this.projectRisks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.projectRisks.Font = new System.Drawing.Font("Helvetica", 9.75F);
             this.projectRisks.ForeColor = System.Drawing.Color.Black;
-            this.projectRisks.Location = new System.Drawing.Point(6, 6);
+            this.projectRisks.Location = new System.Drawing.Point(7, 6);
             this.projectRisks.Multiline = true;
             this.projectRisks.Name = "projectRisks";
-            this.projectRisks.Size = new System.Drawing.Size(888, 392);
+            this.projectRisks.Size = new System.Drawing.Size(1035, 422);
             this.projectRisks.TabIndex = 19;
             this.projectRisks.Text = "Project Risks";
             // 
@@ -556,10 +556,10 @@
             // 
             this.tabPage10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage10.Controls.Add(this.projectChanges);
-            this.tabPage10.Location = new System.Drawing.Point(4, 21);
+            this.tabPage10.Location = new System.Drawing.Point(4, 23);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(897, 405);
+            this.tabPage10.Size = new System.Drawing.Size(1048, 436);
             this.tabPage10.TabIndex = 4;
             this.tabPage10.Text = "Project Changes";
             // 
@@ -568,10 +568,10 @@
             this.projectChanges.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.projectChanges.Font = new System.Drawing.Font("Helvetica", 9.75F);
             this.projectChanges.ForeColor = System.Drawing.Color.Black;
-            this.projectChanges.Location = new System.Drawing.Point(6, 6);
+            this.projectChanges.Location = new System.Drawing.Point(7, 6);
             this.projectChanges.Multiline = true;
             this.projectChanges.Name = "projectChanges";
-            this.projectChanges.Size = new System.Drawing.Size(885, 393);
+            this.projectChanges.Size = new System.Drawing.Size(1032, 423);
             this.projectChanges.TabIndex = 23;
             this.projectChanges.Text = "Project Changes";
             // 
@@ -579,10 +579,10 @@
             // 
             this.tabPage11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage11.Controls.Add(this.projectSchedule);
-            this.tabPage11.Location = new System.Drawing.Point(4, 21);
+            this.tabPage11.Location = new System.Drawing.Point(4, 23);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(897, 405);
+            this.tabPage11.Size = new System.Drawing.Size(1048, 436);
             this.tabPage11.TabIndex = 5;
             this.tabPage11.Text = "Project Schedule";
             // 
@@ -594,7 +594,7 @@
             this.projectSchedule.Location = new System.Drawing.Point(3, 6);
             this.projectSchedule.Multiline = true;
             this.projectSchedule.Name = "projectSchedule";
-            this.projectSchedule.Size = new System.Drawing.Size(888, 392);
+            this.projectSchedule.Size = new System.Drawing.Size(1035, 422);
             this.projectSchedule.TabIndex = 21;
             this.projectSchedule.Text = "Project Schedule";
             // 
@@ -602,10 +602,10 @@
             // 
             this.tabPage12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage12.Controls.Add(this.projectDeliverables);
-            this.tabPage12.Location = new System.Drawing.Point(4, 21);
+            this.tabPage12.Location = new System.Drawing.Point(4, 23);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(897, 405);
+            this.tabPage12.Size = new System.Drawing.Size(1048, 436);
             this.tabPage12.TabIndex = 6;
             this.tabPage12.Text = "Project Deliverables";
             // 
@@ -614,10 +614,10 @@
             this.projectDeliverables.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.projectDeliverables.Font = new System.Drawing.Font("Helvetica", 9.75F);
             this.projectDeliverables.ForeColor = System.Drawing.Color.Black;
-            this.projectDeliverables.Location = new System.Drawing.Point(6, 6);
+            this.projectDeliverables.Location = new System.Drawing.Point(7, 6);
             this.projectDeliverables.Multiline = true;
             this.projectDeliverables.Name = "projectDeliverables";
-            this.projectDeliverables.Size = new System.Drawing.Size(885, 395);
+            this.projectDeliverables.Size = new System.Drawing.Size(1032, 425);
             this.projectDeliverables.TabIndex = 20;
             this.projectDeliverables.Text = "Project Deliverables";
             // 
@@ -625,10 +625,10 @@
             // 
             this.tabPage13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage13.Controls.Add(this.projectIssues);
-            this.tabPage13.Location = new System.Drawing.Point(4, 21);
+            this.tabPage13.Location = new System.Drawing.Point(4, 23);
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(897, 405);
+            this.tabPage13.Size = new System.Drawing.Size(1048, 436);
             this.tabPage13.TabIndex = 7;
             this.tabPage13.Text = "Project Issues ";
             // 
@@ -640,7 +640,7 @@
             this.projectIssues.Location = new System.Drawing.Point(3, 3);
             this.projectIssues.Multiline = true;
             this.projectIssues.Name = "projectIssues";
-            this.projectIssues.Size = new System.Drawing.Size(888, 398);
+            this.projectIssues.Size = new System.Drawing.Size(1035, 428);
             this.projectIssues.TabIndex = 22;
             this.projectIssues.Text = "Project Issues ";
             // 
@@ -648,10 +648,10 @@
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage3.Controls.Add(this.tabControl4);
-            this.tabPage3.Location = new System.Drawing.Point(4, 21);
+            this.tabPage3.Location = new System.Drawing.Point(4, 23);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(887, 434);
+            this.tabPage3.Size = new System.Drawing.Size(1036, 467);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Review Details &  Approval Details";
             // 
@@ -660,20 +660,20 @@
             this.tabControl4.Controls.Add(this.tabPage14);
             this.tabControl4.Controls.Add(this.tabPage15);
             this.tabControl4.Controls.Add(this.tabPage16);
-            this.tabControl4.Location = new System.Drawing.Point(7, 7);
+            this.tabControl4.Location = new System.Drawing.Point(8, 8);
             this.tabControl4.Name = "tabControl4";
             this.tabControl4.SelectedIndex = 0;
-            this.tabControl4.Size = new System.Drawing.Size(901, 429);
+            this.tabControl4.Size = new System.Drawing.Size(1051, 462);
             this.tabControl4.TabIndex = 0;
             // 
             // tabPage14
             // 
             this.tabPage14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage14.Controls.Add(this.reviewDetails);
-            this.tabPage14.Location = new System.Drawing.Point(4, 21);
+            this.tabPage14.Location = new System.Drawing.Point(4, 23);
             this.tabPage14.Name = "tabPage14";
             this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage14.Size = new System.Drawing.Size(893, 404);
+            this.tabPage14.Size = new System.Drawing.Size(1043, 435);
             this.tabPage14.TabIndex = 0;
             this.tabPage14.Text = "Review Details";
             // 
@@ -691,7 +691,7 @@
             this.reviewDetails.Location = new System.Drawing.Point(3, 6);
             this.reviewDetails.Name = "reviewDetails";
             this.reviewDetails.RowHeadersWidth = 51;
-            this.reviewDetails.Size = new System.Drawing.Size(867, 392);
+            this.reviewDetails.Size = new System.Drawing.Size(1011, 420);
             this.reviewDetails.TabIndex = 23;
             // 
             // reviewCategory
@@ -725,10 +725,10 @@
             this.tabPage15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPage15.Controls.Add(this.supportingDetails);
             this.tabPage15.ForeColor = System.Drawing.Color.Black;
-            this.tabPage15.Location = new System.Drawing.Point(4, 21);
+            this.tabPage15.Location = new System.Drawing.Point(4, 23);
             this.tabPage15.Name = "tabPage15";
             this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage15.Size = new System.Drawing.Size(893, 404);
+            this.tabPage15.Size = new System.Drawing.Size(1043, 435);
             this.tabPage15.TabIndex = 1;
             this.tabPage15.Text = "Supporting Documentation";
             // 
@@ -740,10 +740,10 @@
             this.supportingDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.supportingDetails.Font = new System.Drawing.Font("Helvetica", 9.75F);
             this.supportingDetails.ForeColor = System.Drawing.Color.Black;
-            this.supportingDetails.Location = new System.Drawing.Point(6, 6);
+            this.supportingDetails.Location = new System.Drawing.Point(7, 6);
             this.supportingDetails.Multiline = true;
             this.supportingDetails.Name = "supportingDetails";
-            this.supportingDetails.Size = new System.Drawing.Size(864, 391);
+            this.supportingDetails.Size = new System.Drawing.Size(1007, 418);
             this.supportingDetails.TabIndex = 26;
             this.supportingDetails.Text = "Supporting Documentation";
             // 
@@ -755,10 +755,10 @@
             this.tabPage16.Controls.Add(this.signatureDate);
             this.tabPage16.Controls.Add(this.label12);
             this.tabPage16.Controls.Add(this.label11);
-            this.tabPage16.Location = new System.Drawing.Point(4, 21);
+            this.tabPage16.Location = new System.Drawing.Point(4, 23);
             this.tabPage16.Name = "tabPage16";
             this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage16.Size = new System.Drawing.Size(893, 404);
+            this.tabPage16.Size = new System.Drawing.Size(1043, 435);
             this.tabPage16.TabIndex = 2;
             this.tabPage16.Text = "Signature & Date";
             // 
@@ -770,7 +770,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Helvetica", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Maroon;
-            this.label13.Location = new System.Drawing.Point(18, 205);
+            this.label13.Location = new System.Drawing.Point(21, 221);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(230, 28);
             this.label13.TabIndex = 40;
@@ -782,9 +782,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.signature.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.signature.Location = new System.Drawing.Point(150, 18);
+            this.signature.Location = new System.Drawing.Point(175, 19);
             this.signature.Name = "signature";
-            this.signature.Size = new System.Drawing.Size(163, 43);
+            this.signature.Size = new System.Drawing.Size(190, 43);
             this.signature.TabIndex = 39;
             this.signature.TabStop = false;
             // 
@@ -794,9 +794,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.signatureDate.Font = new System.Drawing.Font("Helvetica", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signatureDate.Location = new System.Drawing.Point(150, 121);
+            this.signatureDate.Location = new System.Drawing.Point(175, 130);
             this.signatureDate.Name = "signatureDate";
-            this.signatureDate.Size = new System.Drawing.Size(200, 22);
+            this.signatureDate.Size = new System.Drawing.Size(233, 22);
             this.signatureDate.TabIndex = 38;
             // 
             // label12
@@ -807,7 +807,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Helvetica", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(18, 121);
+            this.label12.Location = new System.Drawing.Point(21, 130);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(33, 14);
             this.label12.TabIndex = 37;
@@ -821,7 +821,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Helvetica", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(18, 48);
+            this.label11.Location = new System.Drawing.Point(21, 52);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(60, 14);
             this.label11.TabIndex = 36;
@@ -829,11 +829,12 @@
             // 
             // PhaseReviewFormInitiationDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(946, 473);
+            this.ClientSize = new System.Drawing.Size(1104, 509);
             this.Controls.Add(this.tabControl1);
+            this.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "PhaseReviewFormInitiationDocumentForm";
             this.Text = "PhaseReviewFormInitiationDocumentForm";
             this.tabControl1.ResumeLayout(false);
