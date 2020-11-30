@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ResourcePlanTabControl = new System.Windows.Forms.TabControl();
             this.documentCtrlTabPG = new System.Windows.Forms.TabPage();
             this.dataGridViewDocApprovals = new System.Windows.Forms.DataGridView();
@@ -53,20 +54,8 @@
             this.materialEndDateColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridViewEquipment = new System.Windows.Forms.DataGridView();
-            this.itemColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.amountColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.purposeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.specificationColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.equipmentStartDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.equipmentEndDateColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.equipmentLabel = new System.Windows.Forms.Label();
             this.laborDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.startDateColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.endDateColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.laborLabel = new System.Windows.Forms.Label();
             this.resourcePlabTab = new System.Windows.Forms.TabPage();
             this.btnSaveResourcePlan = new System.Windows.Forms.Button();
@@ -95,6 +84,18 @@
             this.label27 = new System.Windows.Forms.Label();
             this.txtProjectName = new System.Windows.Forms.TextBox();
             this.btnExportResourcePlan = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startDateColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.endDateColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amountColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.purposeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.specificationColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.equipmentStartDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.equipmentEndDateColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ResourcePlanTabControl.SuspendLayout();
             this.documentCtrlTabPG.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocApprovals)).BeginInit();
@@ -239,6 +240,14 @@
             // 
             // docInfoGridData
             // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.docInfoGridData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.docInfoGridData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.docInfoGridData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.docNameColumn,
@@ -355,46 +364,6 @@
             this.dataGridViewEquipment.Size = new System.Drawing.Size(749, 104);
             this.dataGridViewEquipment.TabIndex = 5;
             // 
-            // itemColumn
-            // 
-            this.itemColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.itemColumn.HeaderText = "Item";
-            this.itemColumn.MinimumWidth = 6;
-            this.itemColumn.Name = "itemColumn";
-            // 
-            // amountColumn
-            // 
-            this.amountColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.amountColumn.HeaderText = "Amount";
-            this.amountColumn.MinimumWidth = 6;
-            this.amountColumn.Name = "amountColumn";
-            // 
-            // purposeColumn
-            // 
-            this.purposeColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.purposeColumn.DataPropertyName = "(none)";
-            this.purposeColumn.HeaderText = "Purpose";
-            this.purposeColumn.MinimumWidth = 6;
-            this.purposeColumn.Name = "purposeColumn";
-            this.purposeColumn.ReadOnly = true;
-            // 
-            // specificationColumn
-            // 
-            this.specificationColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.specificationColumn.HeaderText = "Specification";
-            this.specificationColumn.MinimumWidth = 6;
-            this.specificationColumn.Name = "specificationColumn";
-            // 
-            // equipmentStartDate
-            // 
-            this.equipmentStartDate.HeaderText = "Start Date";
-            this.equipmentStartDate.Name = "equipmentStartDate";
-            // 
-            // equipmentEndDateColumn
-            // 
-            this.equipmentEndDateColumn.HeaderText = "End Date";
-            this.equipmentEndDateColumn.Name = "equipmentEndDateColumn";
-            // 
             // equipmentLabel
             // 
             this.equipmentLabel.AutoSize = true;
@@ -421,46 +390,6 @@
             this.laborDataGridView.RowHeadersWidth = 51;
             this.laborDataGridView.Size = new System.Drawing.Size(749, 94);
             this.laborDataGridView.TabIndex = 3;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Role";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Number";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "(none)";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Responsibilities";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn4.HeaderText = "Skills";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // startDateColumn
-            // 
-            this.startDateColumn.HeaderText = "Start Date";
-            this.startDateColumn.Name = "startDateColumn";
-            // 
-            // endDateColumn
-            // 
-            this.endDateColumn.HeaderText = "End Date";
-            this.endDateColumn.Name = "endDateColumn";
             // 
             // laborLabel
             // 
@@ -710,6 +639,84 @@
             this.btnExportResourcePlan.UseVisualStyleBackColor = true;
             this.btnExportResourcePlan.Click += new System.EventHandler(this.btnExportResourcePlan_Click);
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Role";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Number";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "(none)";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Responsibilities";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn4.HeaderText = "Skills";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // startDateColumn
+            // 
+            this.startDateColumn.HeaderText = "Start Date";
+            this.startDateColumn.Name = "startDateColumn";
+            // 
+            // endDateColumn
+            // 
+            this.endDateColumn.HeaderText = "End Date";
+            this.endDateColumn.Name = "endDateColumn";
+            // 
+            // itemColumn
+            // 
+            this.itemColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.itemColumn.HeaderText = "Item";
+            this.itemColumn.MinimumWidth = 6;
+            this.itemColumn.Name = "itemColumn";
+            // 
+            // amountColumn
+            // 
+            this.amountColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.amountColumn.HeaderText = "Amount";
+            this.amountColumn.MinimumWidth = 6;
+            this.amountColumn.Name = "amountColumn";
+            // 
+            // purposeColumn
+            // 
+            this.purposeColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.purposeColumn.DataPropertyName = "(none)";
+            this.purposeColumn.HeaderText = "Purpose";
+            this.purposeColumn.MinimumWidth = 6;
+            this.purposeColumn.Name = "purposeColumn";
+            // 
+            // specificationColumn
+            // 
+            this.specificationColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.specificationColumn.HeaderText = "Specification";
+            this.specificationColumn.MinimumWidth = 6;
+            this.specificationColumn.Name = "specificationColumn";
+            // 
+            // equipmentStartDate
+            // 
+            this.equipmentStartDate.HeaderText = "Start Date";
+            this.equipmentStartDate.Name = "equipmentStartDate";
+            // 
+            // equipmentEndDateColumn
+            // 
+            this.equipmentEndDateColumn.HeaderText = "End Date";
+            this.equipmentEndDateColumn.Name = "equipmentEndDateColumn";
+            // 
             // ResourcePlanDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -773,20 +780,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn materialEndDateColumn;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridViewEquipment;
-        private System.Windows.Forms.DataGridViewTextBoxColumn itemColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn amountColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn purposeColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn specificationColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn equipmentStartDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn equipmentEndDateColumn;
         private System.Windows.Forms.Label equipmentLabel;
         private System.Windows.Forms.DataGridView laborDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn startDateColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn endDateColumn;
         private System.Windows.Forms.Label laborLabel;
         private System.Windows.Forms.Label constraintsLabel;
         private System.Windows.Forms.Label assumptionsLabel;
@@ -813,5 +808,17 @@
         private System.Windows.Forms.TextBox txtProjectName;
         private System.Windows.Forms.Button btnSaveResourcePlan;
         private System.Windows.Forms.Button btnExportResourcePlan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn itemColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn amountColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn purposeColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn specificationColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn equipmentStartDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn equipmentEndDateColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn startDateColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn endDateColumn;
     }
 }

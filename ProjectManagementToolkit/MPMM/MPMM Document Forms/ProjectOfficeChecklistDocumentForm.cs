@@ -396,6 +396,22 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             exportToWord();
         }
 
+        static string DisplayYesNo(bool answer)
+        {
+            string yn = "";
+
+            if (answer == true)
+            {
+                yn = "Yes";
+                return yn;
+            }
+            else
+            {
+                yn = "No";
+                return yn;
+            }
+        }
+
         private void exportToWord()
         {
             string path;
@@ -440,7 +456,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         checklistTable.Rows[2].Cells[0].Paragraphs[0].Append("Premises").Bold(true).Color(Color.White).FontSize(14d);
                         checklistTable.Rows[2].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
-                        checklistTable.Rows[3].Cells[0].Paragraphs[0].Append("Were the Project Office requirements documented? \t\t\t\t\t" + currentProjectOfficeChecklistModel.PremisesProjectOfficeDocumented
+                        checklistTable.Rows[3].Cells[0].Paragraphs[0].Append("Were the Project Office requirements documented? \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.PremisesProjectOfficeDocumented)
                             + "\nHave the Project Office premises been procured? \t\t\t\t\t" + currentProjectOfficeChecklistModel.PremisesProjectOfficeProcured
                             + "\nAre the premises in a practical location? \t\t\t\t\t\t" + currentProjectOfficeChecklistModel.PremisesPracticalLocation
                             + "\nDo the premises meet the requirements documented? \t\t\t\t\t" + currentProjectOfficeChecklistModel.PremisesRequiredDocumted

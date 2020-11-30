@@ -99,15 +99,15 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             int laborRowsCount = laborDataGridView.Rows.Count;
 
-            for (int i = 0; i < approvalRowsCount - 1; i++)
+            for (int i = 0; i < laborRowsCount - 1; i++)
             {
                 ResourcePlanModel.Labor documentLabor = new ResourcePlanModel.Labor();
-                var role = dataGridViewDocApprovals.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var number = dataGridViewDocApprovals.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var responsibility = dataGridViewDocApprovals.Rows[i].Cells[2].Value?.ToString() ?? "";
-                var skill = dataGridViewDocApprovals.Rows[i].Cells[3].Value?.ToString() ?? "";
-                var startDate = dataGridViewDocApprovals.Rows[i].Cells[4].Value?.ToString() ?? "";
-                var endDate = dataGridViewDocApprovals.Rows[i].Cells[5].Value?.ToString() ?? "";
+                var role = laborDataGridView.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var number = laborDataGridView.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var responsibility = laborDataGridView.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var skill = laborDataGridView.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var startDate = laborDataGridView.Rows[i].Cells[4].Value?.ToString() ?? "";      //HIERSO
+                var endDate = laborDataGridView.Rows[i].Cells[5].Value?.ToString() ?? "";
                 documentLabor.Role = role;
                 documentLabor.Number = number;
                 documentLabor.Responsibility = responsibility;
@@ -124,15 +124,15 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             int equipmentRowsCount = dataGridViewEquipment.Rows.Count;
 
-            for (int i = 0; i < approvalRowsCount - 1; i++)
+            for (int i = 0; i < equipmentRowsCount - 1; i++)
             {
                 ResourcePlanModel.Equipment documentEquipment = new ResourcePlanModel.Equipment();
-                var item = dataGridViewDocApprovals.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var amount = dataGridViewDocApprovals.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var purpose = dataGridViewDocApprovals.Rows[i].Cells[2].Value?.ToString() ?? "";
-                var specification = dataGridViewDocApprovals.Rows[i].Cells[3].Value?.ToString() ?? "";
-                var startDate = dataGridViewDocApprovals.Rows[i].Cells[4].Value?.ToString() ?? "";
-                var endDate = dataGridViewDocApprovals.Rows[i].Cells[5].Value?.ToString() ?? "";
+                var item = dataGridViewEquipment.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var amount = dataGridViewEquipment.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var purpose = dataGridViewEquipment.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var specification = dataGridViewEquipment.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var startDate = dataGridViewEquipment.Rows[i].Cells[4].Value?.ToString() ?? "";
+                var endDate = dataGridViewEquipment.Rows[i].Cells[5].Value?.ToString() ?? "";
                 documentEquipment.Item = item;
                 documentEquipment.Amount = amount;
                 documentEquipment.Purpose = purpose;
@@ -146,15 +146,15 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<ResourcePlanModel.Materials> documentMaterialModel = new List<ResourcePlanModel.Materials>();
 
-            int materialRowsCount = dataGridViewEquipment.Rows.Count;
+            int materialRowsCount = dataGridViewMaterial.Rows.Count;
 
-            for (int i = 0; i < approvalRowsCount - 1; i++)
+            for (int i = 0; i < materialRowsCount - 1; i++)
             {
                 ResourcePlanModel.Materials documentMaterial = new ResourcePlanModel.Materials();
-                var item = dataGridViewDocApprovals.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var amount = dataGridViewDocApprovals.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var startDate = dataGridViewDocApprovals.Rows[i].Cells[2].Value?.ToString() ?? "";
-                var endDate = dataGridViewDocApprovals.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var item = dataGridViewMaterial.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var amount = dataGridViewMaterial.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var startDate = dataGridViewMaterial.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var endDate = dataGridViewMaterial.Rows[i].Cells[3].Value?.ToString() ?? "";
                 documentMaterial.Iitem = item;
                 documentMaterial.Amount = amount;
                 documentMaterial.StartDate = startDate;
@@ -168,25 +168,25 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<ResourcePlanModel.Schedule> documentSchedulelModel = new List<ResourcePlanModel.Schedule>();
 
-            int sheduleRowsCount = dataGridViewEquipment.Rows.Count;
+            int sheduleRowsCount = dataGridViewResourcePlanSchedule.Rows.Count;
 
-            for (int i = 0; i < approvalRowsCount - 1; i++)
+            for (int i = 0; i < sheduleRowsCount - 1; i++)
             {
                 ResourcePlanModel.Schedule documentSchedule = new ResourcePlanModel.Schedule();
-                var resource = dataGridViewDocApprovals.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var jan = dataGridViewDocApprovals.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var feb = dataGridViewDocApprovals.Rows[i].Cells[2].Value?.ToString() ?? "";
-                var mar = dataGridViewDocApprovals.Rows[i].Cells[3].Value?.ToString() ?? "";
-                var apr = dataGridViewDocApprovals.Rows[i].Cells[4].Value?.ToString() ?? "";
-                var may = dataGridViewDocApprovals.Rows[i].Cells[5].Value?.ToString() ?? "";
-                var jun = dataGridViewDocApprovals.Rows[i].Cells[6].Value?.ToString() ?? "";
-                var jul = dataGridViewDocApprovals.Rows[i].Cells[7].Value?.ToString() ?? "";
-                var aug = dataGridViewDocApprovals.Rows[i].Cells[8].Value?.ToString() ?? "";
-                var sept = dataGridViewDocApprovals.Rows[i].Cells[9].Value?.ToString() ?? "";
-                var oct = dataGridViewDocApprovals.Rows[i].Cells[10].Value?.ToString() ?? "";
-                var nov = dataGridViewDocApprovals.Rows[i].Cells[11].Value?.ToString() ?? "";
-                var dec = dataGridViewDocApprovals.Rows[i].Cells[12].Value?.ToString() ?? "";
-                var total = dataGridViewDocApprovals.Rows[i].Cells[13].Value?.ToString() ?? "";
+                var resource = dataGridViewResourcePlanSchedule.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var jan = dataGridViewResourcePlanSchedule.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var feb = dataGridViewResourcePlanSchedule.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var mar = dataGridViewResourcePlanSchedule.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var apr = dataGridViewResourcePlanSchedule.Rows[i].Cells[4].Value?.ToString() ?? "";
+                var may = dataGridViewResourcePlanSchedule.Rows[i].Cells[5].Value?.ToString() ?? "";
+                var jun = dataGridViewResourcePlanSchedule.Rows[i].Cells[6].Value?.ToString() ?? "";
+                var jul = dataGridViewResourcePlanSchedule.Rows[i].Cells[7].Value?.ToString() ?? "";
+                var aug = dataGridViewResourcePlanSchedule.Rows[i].Cells[8].Value?.ToString() ?? "";
+                var sept = dataGridViewResourcePlanSchedule.Rows[i].Cells[9].Value?.ToString() ?? "";
+                var oct = dataGridViewResourcePlanSchedule.Rows[i].Cells[10].Value?.ToString() ?? "";
+                var nov = dataGridViewResourcePlanSchedule.Rows[i].Cells[11].Value?.ToString() ?? "";
+                var dec = dataGridViewResourcePlanSchedule.Rows[i].Cells[12].Value?.ToString() ?? "";
+                var total = dataGridViewResourcePlanSchedule.Rows[i].Cells[13].Value?.ToString() ?? "";
                 documentSchedule.Resource = resource;
                 documentSchedule.Jan = jan;
                 documentSchedule.Feb = feb;
@@ -334,7 +334,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                                 .Bold(true)
                                 .FontSize(22d).Alignment = Alignment.left;
                         }
-                        document.InsertParagraph("Statement Of Work \nFor " + projectModel.ProjectName)
+                        document.InsertParagraph("Resource Plan \nFor " + projectModel.ProjectName)
                             .Font("Arial")
                             .Bold(true)
                             .FontSize(22d).Alignment = Alignment.left;
@@ -453,7 +453,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             { TableOfContentsSwitches.Z, ""},
                             { TableOfContentsSwitches.H, ""}
                         };
-                        document.InsertSectionPageBreak();
+                        document.InsertTableOfContents(p, "", tocSwitches);
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
 
 
                         //Resource Listing/////////////////////
@@ -467,10 +468,15 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         responsibilitiesHeading.StyleId = "Heading1";
                         //Labor
-                        document.InsertParagraph("\n1.1 Labour\n")
-                            .Font("Arial")
+                        
+                        var equipmentSubHeading = document.InsertParagraph("1.1 Labour")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
                             .Bold(true)
-                            .FontSize(14d).Alignment = Alignment.left;
+                            .Font("Arial");
+
+                        equipmentSubHeading.StyleId = "Heading2";
 
                         var laborTable = document.AddTable(currentResourcePlanModel.DocumentHistories.Count + 1, 6);
                         laborTable.Rows[0].Cells[0].Paragraphs[0].Append("Role")
@@ -491,12 +497,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         laborTable.Rows[0].Cells[5].Paragraphs[0].Append("End Date")
                             .Bold(true)
                             .Color(Color.White);
+
                         laborTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
                         laborTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
                         laborTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
                         laborTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
                         laborTable.Rows[0].Cells[4].FillColor = TABLE_HEADER_COLOR;
                         laborTable.Rows[0].Cells[5].FillColor = TABLE_HEADER_COLOR;
+
                         for (int i = 1; i < currentResourcePlanModel.Labors.Count + 1; i++)
                         {
                             laborTable.Rows[i].Cells[0].Paragraphs[0].Append(currentResourcePlanModel.Labors[i - 1].Role);
@@ -508,14 +516,19 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         }
 
-                        laborTable.SetWidths(new float[] { 190, 180, 250,180,200,200 });
+                        laborTable.SetWidths(new float[] { 394, 400, 400 });
                         document.InsertTable(laborTable);
 
                         //Equipment
-                        document.InsertParagraph("\n1.2 Equipment\n")
-                            .Font("Arial")
+                        
+                        var equipmentubHeading = document.InsertParagraph("1.2 Equipment")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
                             .Bold(true)
-                            .FontSize(14d).Alignment = Alignment.left;
+                            .Font("Arial");
+
+                        equipmentubHeading.StyleId = "Heading2";
 
                         var equipmentTable = document.AddTable(currentResourcePlanModel.Equipments.Count + 1, 6);
                         equipmentTable.Rows[0].Cells[0].Paragraphs[0].Append("Item")
@@ -542,6 +555,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         equipmentTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
                         equipmentTable.Rows[0].Cells[4].FillColor = TABLE_HEADER_COLOR;
                         equipmentTable.Rows[0].Cells[5].FillColor = TABLE_HEADER_COLOR;
+
                         for (int i = 1; i < currentResourcePlanModel.Labors.Count + 1; i++)
                         {
                             equipmentTable.Rows[i].Cells[0].Paragraphs[0].Append(currentResourcePlanModel.Equipments[i - 1].Item);
@@ -558,10 +572,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Materials
-                        document.InsertParagraph("\n1.3 Material\n")
-                            .Font("Arial")
+                        var MaterialtubHeading = document.InsertParagraph("1.3 Material")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
                             .Bold(true)
-                            .FontSize(14d).Alignment = Alignment.left;
+                            .Font("Arial");
+
+                        equipmentubHeading.StyleId = "Heading2";
 
                         var materialTable = document.AddTable(currentResourcePlanModel.Material.Count + 1, 4);
                         materialTable.Rows[0].Cells[0].Paragraphs[0].Append("Item")
@@ -603,11 +621,17 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                            .Bold(true)
                            .Font("Arial");
 
+                        resourclePlanHeading.StyleId = "Heading1";
+
                         //Shedule
-                        document.InsertParagraph("\n2.1 Shedule\n")
-                            .Font("Arial")
+                        var sheduleSubHeading = document.InsertParagraph("2.1 Shedule")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
                             .Bold(true)
-                            .FontSize(14d).Alignment = Alignment.left;
+                            .Font("Arial");
+
+                        sheduleSubHeading.StyleId = "Heading2";
 
                         var scheduleTable = document.AddTable(currentResourcePlanModel.Equipments.Count + 1, 7);
                         scheduleTable.Rows[0].Cells[0].Paragraphs[0].Append("Resource")
@@ -705,13 +729,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         schedule2Table.SetWidths(new float[] { 80, 80, 80, 80, 80, 80, 100});
                         document.InsertTable(schedule2Table);
-
-
-
-
-
-
-
 
                         //Assumptions
 

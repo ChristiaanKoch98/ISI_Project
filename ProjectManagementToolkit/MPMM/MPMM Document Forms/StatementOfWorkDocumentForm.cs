@@ -286,7 +286,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                                 .Bold(true)
                                 .FontSize(22d).Alignment = Alignment.left;
                         }
-                        document.InsertParagraph("Statement Of Work \nFor " + projectModel.ProjectName)
+                        document.InsertParagraph("Statement of Work \nFor " + projectModel.ProjectName)
                             .Font("Arial")
                             .Bold(true)
                             .FontSize(22d).Alignment = Alignment.left;
@@ -405,7 +405,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             { TableOfContentsSwitches.Z, ""},
                             { TableOfContentsSwitches.H, ""}
                         };
-                        document.InsertSectionPageBreak();
+                        document.InsertTableOfContents(p, "", tocSwitches);
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
 
                         ////Introduction
                         var introductionSubheading = document.InsertParagraph("1. Introduction")
@@ -466,7 +467,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         }
                         scopeOfWOrkTable.SetWidths(new float[] { 450, 400, 508 });
                         document.InsertTable(scopeOfWOrkTable);
-                        document.InsertParagraph().InsertPageBreakAfterSelf();
+                        
 
                         //Responsibilities
                         var responsibilitiesHeading = document.InsertParagraph("4. Responsibilities")

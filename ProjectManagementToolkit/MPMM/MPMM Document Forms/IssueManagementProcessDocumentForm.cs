@@ -327,7 +327,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             { TableOfContentsSwitches.Z, ""},
                             { TableOfContentsSwitches.H, ""}
                         };
-                        document.InsertSectionPageBreak();
+                        document.InsertTableOfContents(p, "", tocSwitches);
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
 
                         //Issue Process/////
                         var introductionSubheading = document.InsertParagraph("1. Issue Process")
