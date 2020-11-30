@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.Conformance_of_Processes_dgv = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Project_Manager_tbx = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Enter_btn = new System.Windows.Forms.Button();
-            this.Project_Name_tbx = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date_Raised = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Raised_By = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +42,12 @@
             this.Implementation_Resource = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Implementation_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Implementation_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Project_Manager_tbx = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Enter_btn = new System.Windows.Forms.Button();
+            this.Project_Name_tbx = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Conformance_of_Processes_dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,63 +77,6 @@
             this.Conformance_of_Processes_dgv.Name = "Conformance_of_Processes_dgv";
             this.Conformance_of_Processes_dgv.Size = new System.Drawing.Size(1218, 341);
             this.Conformance_of_Processes_dgv.TabIndex = 27;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(11, 27);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(290, 41);
-            this.label4.TabIndex = 25;
-            this.label4.Text = "Change Register";
-            // 
-            // Project_Manager_tbx
-            // 
-            this.Project_Manager_tbx.Location = new System.Drawing.Point(150, 143);
-            this.Project_Manager_tbx.Name = "Project_Manager_tbx";
-            this.Project_Manager_tbx.Size = new System.Drawing.Size(237, 20);
-            this.Project_Manager_tbx.TabIndex = 22;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(14, 145);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 18);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Project Manager:";
-            // 
-            // Enter_btn
-            // 
-            this.Enter_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.Enter_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Enter_btn.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Enter_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.Enter_btn.Location = new System.Drawing.Point(509, 96);
-            this.Enter_btn.Name = "Enter_btn";
-            this.Enter_btn.Size = new System.Drawing.Size(75, 27);
-            this.Enter_btn.TabIndex = 20;
-            this.Enter_btn.Text = "Enter";
-            this.Enter_btn.UseVisualStyleBackColor = false;
-            // 
-            // Project_Name_tbx
-            // 
-            this.Project_Name_tbx.Location = new System.Drawing.Point(150, 99);
-            this.Project_Name_tbx.Name = "Project_Name_tbx";
-            this.Project_Name_tbx.Size = new System.Drawing.Size(237, 20);
-            this.Project_Name_tbx.TabIndex = 19;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(35, 100);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 18);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Project Name:";
             // 
             // ID
             // 
@@ -199,6 +142,63 @@
             // 
             this.Implementation_Date.HeaderText = "Implementation Date";
             this.Implementation_Date.Name = "Implementation_Date";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Helvetica", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(11, 27);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(298, 42);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "Change Register";
+            // 
+            // Project_Manager_tbx
+            // 
+            this.Project_Manager_tbx.Location = new System.Drawing.Point(150, 143);
+            this.Project_Manager_tbx.Name = "Project_Manager_tbx";
+            this.Project_Manager_tbx.Size = new System.Drawing.Size(237, 20);
+            this.Project_Manager_tbx.TabIndex = 22;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(14, 145);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(131, 20);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Project Manager:";
+            // 
+            // Enter_btn
+            // 
+            this.Enter_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.Enter_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Enter_btn.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Enter_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Enter_btn.Location = new System.Drawing.Point(509, 96);
+            this.Enter_btn.Name = "Enter_btn";
+            this.Enter_btn.Size = new System.Drawing.Size(75, 27);
+            this.Enter_btn.TabIndex = 20;
+            this.Enter_btn.Text = "Enter";
+            this.Enter_btn.UseVisualStyleBackColor = false;
+            // 
+            // Project_Name_tbx
+            // 
+            this.Project_Name_tbx.Location = new System.Drawing.Point(150, 99);
+            this.Project_Name_tbx.Name = "Project_Name_tbx";
+            this.Project_Name_tbx.Size = new System.Drawing.Size(237, 20);
+            this.Project_Name_tbx.TabIndex = 19;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Helvetica Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(35, 100);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 20);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Project Name:";
             // 
             // ChangeRegister
             // 
