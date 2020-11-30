@@ -361,7 +361,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             documentApprovalTable.Rows[i].Cells[3].Paragraphs[0].Append(currentSupplierContractModel.DocumentApprovals[i - 1].DateApproved);
                         }
                         documentApprovalTable.SetWidths(new float[] { 493, 332, 508, 254 });
-                        document.InsertTable(documentApprovalTable);
+                      document.InsertTable(documentApprovalTable);
                         document.InsertParagraph().InsertPageBreakAfterSelf();
 
                         var p = document.InsertParagraph();

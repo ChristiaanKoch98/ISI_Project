@@ -549,6 +549,9 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\QualityPlanDocumentForm.resx">
       <DependentUpon>QualityPlanDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\QualityReviewPlanDocumentForm.resx">
+      <DependentUpon>QualityReviewPlanDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\RequestForInformationDocumentForm.resx">
       <DependentUpon>RequestForInformationDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -690,6 +693,9 @@
     </Content>
     <None Include="Resources\Powerpoint.jpg" />
     <None Include="Resources\excel.png" />
+    <EmbeddedResource Include="Resources\QualityTables.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <None Include="Resources\word.png" />
     <None Include="Resources\image-file-xxl.png" />
   </ItemGroup>
