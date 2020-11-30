@@ -32,23 +32,29 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.termsOfSupply = new System.Windows.Forms.TabControl();
             this.documentControlTab = new System.Windows.Forms.TabPage();
+            this.documentApproval = new System.Windows.Forms.TabControl();
+            this.documentInformationTab = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.documentHistoryTab = new System.Windows.Forms.TabPage();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.documentApprovalsTab = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.introductionTab = new System.Windows.Forms.TabPage();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.objectives = new System.Windows.Forms.TabPage();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.scopeOfWork = new System.Windows.Forms.TabPage();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,29 +73,23 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.documentApproval = new System.Windows.Forms.TabControl();
-            this.documentInformationTab = new System.Windows.Forms.TabPage();
-            this.documentHistoryTab = new System.Windows.Forms.TabPage();
-            this.documentApprovalsTab = new System.Windows.Forms.TabPage();
-            this.tabControl3 = new System.Windows.Forms.TabControl();
-            this.scopeOfWork = new System.Windows.Forms.TabPage();
             this.termsOfSupply.SuspendLayout();
             this.documentControlTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.documentApproval.SuspendLayout();
+            this.documentInformationTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.documentHistoryTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.documentApprovalsTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.introductionTab.SuspendLayout();
             this.objectives.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.tabControl3.SuspendLayout();
+            this.scopeOfWork.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.responsibilities.SuspendLayout();
             this.tabPage6.SuspendLayout();
-            this.documentApproval.SuspendLayout();
-            this.documentInformationTab.SuspendLayout();
-            this.documentHistoryTab.SuspendLayout();
-            this.documentApprovalsTab.SuspendLayout();
-            this.tabControl3.SuspendLayout();
-            this.scopeOfWork.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -138,6 +138,104 @@
             this.documentControlTab.Text = "Document Control";
             this.documentControlTab.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // documentApproval
+            // 
+            this.documentApproval.Controls.Add(this.documentInformationTab);
+            this.documentApproval.Controls.Add(this.documentHistoryTab);
+            this.documentApproval.Controls.Add(this.documentApprovalsTab);
+            this.documentApproval.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.documentApproval.Location = new System.Drawing.Point(6, 16);
+            this.documentApproval.Name = "documentApproval";
+            this.documentApproval.SelectedIndex = 0;
+            this.documentApproval.Size = new System.Drawing.Size(647, 283);
+            this.documentApproval.TabIndex = 6;
+            // 
+            // documentInformationTab
+            // 
+            this.documentInformationTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.documentInformationTab.Controls.Add(this.dataGridView1);
+            this.documentInformationTab.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.documentInformationTab.Location = new System.Drawing.Point(4, 23);
+            this.documentInformationTab.Name = "documentInformationTab";
+            this.documentInformationTab.Padding = new System.Windows.Forms.Padding(3);
+            this.documentInformationTab.Size = new System.Drawing.Size(639, 256);
+            this.documentInformationTab.TabIndex = 0;
+            this.documentInformationTab.Text = "Document Information";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2});
+            this.dataGridView1.Location = new System.Drawing.Point(6, 22);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(627, 228);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Information";
+            this.Column2.Name = "Column2";
+            // 
+            // documentHistoryTab
+            // 
+            this.documentHistoryTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.documentHistoryTab.Controls.Add(this.dataGridView2);
+            this.documentHistoryTab.Location = new System.Drawing.Point(4, 23);
+            this.documentHistoryTab.Name = "documentHistoryTab";
+            this.documentHistoryTab.Padding = new System.Windows.Forms.Padding(3);
+            this.documentHistoryTab.Size = new System.Drawing.Size(639, 256);
+            this.documentHistoryTab.TabIndex = 1;
+            this.documentHistoryTab.Text = "Document History";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToOrderColumns = true;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column3,
+            this.Column4,
+            this.Column5});
+            this.dataGridView2.Location = new System.Drawing.Point(6, 6);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(627, 244);
+            this.dataGridView2.TabIndex = 3;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Version";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Issue Date";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Changes";
+            this.Column5.Name = "Column5";
+            // 
+            // documentApprovalsTab
+            // 
+            this.documentApprovalsTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.documentApprovalsTab.Controls.Add(this.dataGridView3);
+            this.documentApprovalsTab.Location = new System.Drawing.Point(4, 23);
+            this.documentApprovalsTab.Name = "documentApprovalsTab";
+            this.documentApprovalsTab.Padding = new System.Windows.Forms.Padding(3);
+            this.documentApprovalsTab.Size = new System.Drawing.Size(639, 256);
+            this.documentApprovalsTab.TabIndex = 2;
+            this.documentApprovalsTab.Text = "Document Approvals";
+            // 
             // dataGridView3
             // 
             this.dataGridView3.AllowUserToOrderColumns = true;
@@ -150,7 +248,7 @@
             this.Column9});
             this.dataGridView3.Location = new System.Drawing.Point(0, 3);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(439, 83);
+            this.dataGridView3.Size = new System.Drawing.Size(633, 247);
             this.dataGridView3.TabIndex = 5;
             // 
             // Column6
@@ -172,58 +270,6 @@
             // 
             this.Column9.HeaderText = "Date";
             this.Column9.Name = "Column9";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToOrderColumns = true;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column3,
-            this.Column4,
-            this.Column5});
-            this.dataGridView2.Location = new System.Drawing.Point(6, 6);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(383, 66);
-            this.dataGridView2.TabIndex = 3;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Version";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Issue Date";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Changes";
-            this.Column5.Name = "Column5";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 22);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(344, 68);
-            this.dataGridView1.TabIndex = 1;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Information";
-            this.Column2.Name = "Column2";
             // 
             // introductionTab
             // 
@@ -274,6 +320,26 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Scope of Work";
             // 
+            // tabControl3
+            // 
+            this.tabControl3.Controls.Add(this.scopeOfWork);
+            this.tabControl3.Location = new System.Drawing.Point(6, 6);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.SelectedIndex = 0;
+            this.tabControl3.Size = new System.Drawing.Size(647, 293);
+            this.tabControl3.TabIndex = 1;
+            // 
+            // scopeOfWork
+            // 
+            this.scopeOfWork.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.scopeOfWork.Controls.Add(this.dataGridView4);
+            this.scopeOfWork.Location = new System.Drawing.Point(4, 23);
+            this.scopeOfWork.Name = "scopeOfWork";
+            this.scopeOfWork.Padding = new System.Windows.Forms.Padding(3);
+            this.scopeOfWork.Size = new System.Drawing.Size(639, 266);
+            this.scopeOfWork.TabIndex = 0;
+            this.scopeOfWork.Text = "Scope of Work";
+            // 
             // dataGridView4
             // 
             this.dataGridView4.AllowUserToOrderColumns = true;
@@ -285,7 +351,7 @@
             this.Column12});
             this.dataGridView4.Location = new System.Drawing.Point(18, 15);
             this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(355, 97);
+            this.dataGridView4.Size = new System.Drawing.Size(615, 245);
             this.dataGridView4.TabIndex = 0;
             // 
             // Column10
@@ -445,72 +511,6 @@
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 0;
             // 
-            // documentApproval
-            // 
-            this.documentApproval.Controls.Add(this.documentInformationTab);
-            this.documentApproval.Controls.Add(this.documentHistoryTab);
-            this.documentApproval.Controls.Add(this.documentApprovalsTab);
-            this.documentApproval.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.documentApproval.Location = new System.Drawing.Point(6, 16);
-            this.documentApproval.Name = "documentApproval";
-            this.documentApproval.SelectedIndex = 0;
-            this.documentApproval.Size = new System.Drawing.Size(474, 223);
-            this.documentApproval.TabIndex = 6;
-            // 
-            // documentInformationTab
-            // 
-            this.documentInformationTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.documentInformationTab.Controls.Add(this.dataGridView1);
-            this.documentInformationTab.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.documentInformationTab.Location = new System.Drawing.Point(4, 23);
-            this.documentInformationTab.Name = "documentInformationTab";
-            this.documentInformationTab.Padding = new System.Windows.Forms.Padding(3);
-            this.documentInformationTab.Size = new System.Drawing.Size(466, 196);
-            this.documentInformationTab.TabIndex = 0;
-            this.documentInformationTab.Text = "Document Information";
-            // 
-            // documentHistoryTab
-            // 
-            this.documentHistoryTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.documentHistoryTab.Controls.Add(this.dataGridView2);
-            this.documentHistoryTab.Location = new System.Drawing.Point(4, 23);
-            this.documentHistoryTab.Name = "documentHistoryTab";
-            this.documentHistoryTab.Padding = new System.Windows.Forms.Padding(3);
-            this.documentHistoryTab.Size = new System.Drawing.Size(466, 196);
-            this.documentHistoryTab.TabIndex = 1;
-            this.documentHistoryTab.Text = "Document History";
-            // 
-            // documentApprovalsTab
-            // 
-            this.documentApprovalsTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.documentApprovalsTab.Controls.Add(this.dataGridView3);
-            this.documentApprovalsTab.Location = new System.Drawing.Point(4, 23);
-            this.documentApprovalsTab.Name = "documentApprovalsTab";
-            this.documentApprovalsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.documentApprovalsTab.Size = new System.Drawing.Size(466, 196);
-            this.documentApprovalsTab.TabIndex = 2;
-            this.documentApprovalsTab.Text = "Document Approvals";
-            // 
-            // tabControl3
-            // 
-            this.tabControl3.Controls.Add(this.scopeOfWork);
-            this.tabControl3.Location = new System.Drawing.Point(6, 6);
-            this.tabControl3.Name = "tabControl3";
-            this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(414, 158);
-            this.tabControl3.TabIndex = 1;
-            // 
-            // scopeOfWork
-            // 
-            this.scopeOfWork.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.scopeOfWork.Controls.Add(this.dataGridView4);
-            this.scopeOfWork.Location = new System.Drawing.Point(4, 23);
-            this.scopeOfWork.Name = "scopeOfWork";
-            this.scopeOfWork.Padding = new System.Windows.Forms.Padding(3);
-            this.scopeOfWork.Size = new System.Drawing.Size(406, 131);
-            this.scopeOfWork.TabIndex = 0;
-            this.scopeOfWork.Text = "Scope of Work";
-            // 
             // StatementOfWorkDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -525,25 +525,25 @@
             this.Text = "StatementOfWorkDocumentForm";
             this.termsOfSupply.ResumeLayout(false);
             this.documentControlTab.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.documentApproval.ResumeLayout(false);
+            this.documentInformationTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.documentHistoryTab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.documentApprovalsTab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.introductionTab.ResumeLayout(false);
             this.introductionTab.PerformLayout();
             this.objectives.ResumeLayout(false);
             this.objectives.PerformLayout();
             this.tabPage4.ResumeLayout(false);
+            this.tabControl3.ResumeLayout(false);
+            this.scopeOfWork.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.responsibilities.ResumeLayout(false);
             this.responsibilities.PerformLayout();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
-            this.documentApproval.ResumeLayout(false);
-            this.documentInformationTab.ResumeLayout(false);
-            this.documentHistoryTab.ResumeLayout(false);
-            this.documentApprovalsTab.ResumeLayout(false);
-            this.tabControl3.ResumeLayout(false);
-            this.scopeOfWork.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
