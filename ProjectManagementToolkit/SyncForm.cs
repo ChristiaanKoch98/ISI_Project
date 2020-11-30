@@ -21,7 +21,6 @@ namespace ProjectManagementToolkit.MPMM
     public partial class SyncForm : Form
     {
         private static readonly HttpClient client = new HttpClient();
-        List<string> serverDocuments = new List<string>();
 
         public SyncForm()
         {
@@ -38,11 +37,14 @@ namespace ProjectManagementToolkit.MPMM
                 return;
             }
 
+            List<string> localDocuments = getLocalDocuments();
+            List<string> serverDocuments = getServerCollections();
             List<string> documentsToSync = new List<string>();
 
-            documentsToSync.Add("ProjectPlan");
-            
-        
+            documentsToSync = localDocuments.Union(serverDocuments).ToList<string>();
+
+            MessageBox.Show("Documents to sync: " + documentsToSync.ToString());
+
             if (connectionSuccessful)
             {
                 //Loop Through All Syncable Documents
@@ -50,7 +52,12 @@ namespace ProjectManagementToolkit.MPMM
                 foreach (string item in documentsToSync)
                 {
                     MessageBox.Show("Syncing: " + item);
-                    syncDocument(item);
+                    bool syncSuccess = syncDocument(item);
+                    if(syncSuccess)
+                    {
+                        //Advance progress bar
+                    }
+                    
                 }
             }
             else
@@ -132,9 +139,10 @@ namespace ProjectManagementToolkit.MPMM
         {
             string localJsonString = JsonHelper.loadDocument(Settings.Default.ProjectID, document);
             string serverJsonString = getServerDocument(document);
-            //string serverJsonString = serverDocuments[serverDocuments.IndexOf(document)];
+
             string documentJson = "";
             MessageBox.Show(serverJsonString);
+            
             JObject localJson, serverJson;
 
             if (serverJsonString == null)
@@ -143,6 +151,11 @@ namespace ProjectManagementToolkit.MPMM
                 serverJsonString = localJsonString;
                 localJson = JObject.Parse(localJsonString);
                 serverJson = localJson;
+            }
+            else if(localJsonString == null || localJsonString == "")
+            {
+                MessageBox.Show("No local documents to sync.", "Local Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
             else
             {
@@ -161,12 +174,16 @@ namespace ProjectManagementToolkit.MPMM
                                                             .FirstOrDefault().DeepClone()
                                                             .ToObject<JObject>();
             
-            var temp = localLatest.DeepClone().ToObject<JObject>();
-            
             //Server ahead of Local
             //Merge Server with Local version and save locally
             if (serverLatest["DateModified"].ToObject<DateTime>() > localLatest["DateModified"].ToObject<DateTime>())
             {
+                MessageBox.Show("Server is Latest");
+                MessageBox.Show("LocalLatest: " + localLatest.ToString());
+                localLatest.Merge(serverLatest, new JsonMergeSettings
+                {
+                    MergeArrayHandling = MergeArrayHandling.Union
+                });
                 JObject updatedDocument = new JObject();
                 updatedDocument.Add("DocumentObject", localLatest["DocumentObject"]);
                 updatedDocument.Add("VersionID", generateID());
@@ -219,7 +236,14 @@ namespace ProjectManagementToolkit.MPMM
             else if (localLatest["DateModified"].ToObject<DateTime>() == serverLatest["DateModified"].ToObject<DateTime>())
             {
                 MessageBox.Show("Local = Server");
-                documentJson = JsonConvert.SerializeObject(localJson);
+                JArray documentModels = serverJson["DocumentModels"].ToObject<JArray>();
+                documentModels.Clear();
+                documentModels.Add(localLatest);
+
+                serverJson["DocumentModels"] = documentModels;
+
+                documentJson = JsonConvert.SerializeObject(serverJson);
+
             }
             else
             {
