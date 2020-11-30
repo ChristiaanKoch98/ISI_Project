@@ -1491,6 +1491,7 @@
             this.btnExportToWord.TabIndex = 5;
             this.btnExportToWord.Text = "Export to word";
             this.btnExportToWord.UseVisualStyleBackColor = true;
+            this.btnExportToWord.Click += new System.EventHandler(this.btnExportToWord_Click);
             // 
             // FeasibiltyStudyDocumentForm
             // 
@@ -1505,7 +1506,7 @@
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Name.Name = "FeasibiltyStudyDocumentForm";
+            this.Text = "FeasibiltyStudyDocumentForm";
             this.Text = "FeasibiltyStudyDocumentForm";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

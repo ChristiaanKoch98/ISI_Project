@@ -325,6 +325,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         document.InsertTableOfContents(p, "", tocSwitches);
                         document.InsertParagraph().InsertPageBreakAfterSelf();
+
                         var costManagementProcess = document.InsertParagraph("1 Cost Management Process")
                             .Bold()
                             .FontSize(14d)

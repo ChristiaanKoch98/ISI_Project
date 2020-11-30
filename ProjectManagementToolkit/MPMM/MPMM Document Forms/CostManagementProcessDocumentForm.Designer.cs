@@ -516,7 +516,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Name.Name = "CostManagementProcessDocumentForm";
+            this.Text = "CostManagementProcessDocumentForm";
             this.Text = "CostManagementProcessDocumentForm";
             this.Load += new System.EventHandler(this.CostManagementProcessDocumentForm_Load);
             this.tabControl1.ResumeLayout(false);
