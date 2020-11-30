@@ -27,8 +27,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 
         public string Responsibilities { get; set; }
         public string Structure { get; set; }
+        public string Schedule { get; set; }
 
-       
+
         public string Constraints { get; set; }
         public string Assumptions { get; set; }
 

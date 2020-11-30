@@ -15,8 +15,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string ProjectManager { get; set; }
         public string ProjectSponsor { get; set; }
         public string ReportPreparedBy { get; set; }
-        public DateTime ReportPreparationDate { get; set; }
+        public string ReportPreparationDate { get; set; }
         public string Recipients { get; set; }
+        public string PreperationPeriod { get; set; }
 
         public string ProjectDescription { get; set; }
         public string OverallStatus { get; set; }

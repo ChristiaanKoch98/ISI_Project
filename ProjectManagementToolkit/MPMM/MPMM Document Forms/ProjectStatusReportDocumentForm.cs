@@ -320,6 +320,602 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
         }
 
+        private void exportToWord()
+        {
+            string path;
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                saveFileDialog.Filter = "Word 97-2003 Documents (*.doc)|*.doc|Word 2007 Documents (*.docx)|*.docx";
+                saveFileDialog.FilterIndex = 2;
+                saveFileDialog.RestoreDirectory = true;
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    path = saveFileDialog.FileName;
+                    using (var document = DocX.Create(path))
+                    {
+                        var title = p.InsertParagraphBeforeSelf("Table of Contents").Bold().FontSize(20);
+
+                        var tocSwitches = new Dictionary<TableOfContentsSwitches, string>()
+                        {
+                            { TableOfContentsSwitches.O, "1-3"},
+                            { TableOfContentsSwitches.U, ""},
+                            { TableOfContentsSwitches.Z, ""},
+                            { TableOfContentsSwitches.H, ""}
+                        };
+
+                        document.InsertTableOfContents(p, "", tocSwitches);
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
+                        var CommunicationReqHeading = document.InsertParagraph("1 Project details")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        CommunicationReqHeading.StyleId = "Heading1";
+
+                        var ComPlanHeading = document.InsertParagraph("1.1 Project name")
+                     .Bold()
+                     .FontSize(12d)
+                     .Color(Color.Black)
+                     .Bold(true)
+                     .Font("Arial");
+
+                     document.InsertParagraph(currentProjectStatusReportModel.ProjectName)
+                          .FontSize(11d)
+                          .Color(Color.Black)
+                          .Font("Arial").Alignment = Alignment.left;
+
+
+                        ComPlanHeading.StyleId = "Heading2";
+
+                        var projIDHeading = document.InsertParagraph("1.2 Project ID")
+                         .Bold()
+                         .FontSize(12d)
+                         .Color(Color.Black)
+                         .Bold(true)
+                         .Font("Arial");
+
+                        document.InsertParagraph(currentProjectStatusReportModel.ProjectID)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        projIDHeading.StyleId = "Heading2";
+
+                        var promanagerHeading = document.InsertParagraph("1.3 Project manager")
+                         .Bold()
+                         .FontSize(12d)
+                         .Color(Color.Black)
+                         .Bold(true)
+                         .Font("Arial");
+
+                        document.InsertParagraph(currentProjectStatusReportModel.ProjectManager)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        promanagerHeading.StyleId = "Heading2";
+
+                        var sponsorHeading = document.InsertParagraph("1.4 Project sponsor")
+                         .Bold()
+                         .FontSize(12d)
+                         .Color(Color.Black)
+                         .Bold(true)
+                         .Font("Arial");
+
+                        document.InsertParagraph(currentProjectStatusReportModel.ProjectSponsor)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        sponsorHeading.StyleId = "Heading2";
+
+                        var reportHeading = document.InsertParagraph("1.5 Report prepared by")
+                        .Bold()
+                        .FontSize(12d)
+                        .Color(Color.Black)
+                        .Bold(true)
+                        .Font("Arial");
+
+                        document.InsertParagraph(currentProjectStatusReportModel.ReportPreparedBy)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        sponsorHeading.StyleId = "Heading2";
+
+                        var prepdateHeading = document.InsertParagraph("1.6 Report preperation date")
+                        .Bold()
+                        .FontSize(12d)
+                        .Color(Color.Black)
+                        .Bold(true)
+                        .Font("Arial");
+
+                        document.InsertParagraph(currentProjectStatusReportModel.ReportPreparationDate)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        prepdateHeading.StyleId = "Heading2";
+
+                        var rperHeading = document.InsertParagraph("1.7 Reporting Period")
+                        .Bold()
+                        .FontSize(12d)
+                        .Color(Color.Black)
+                        .Bold(true)
+                        .Font("Arial");
+
+                        document.InsertParagraph(currentProjectStatusReportModel.PreperationPeriod)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        rperHeading.StyleId = "Heading2";
+
+                        var recHeading = document.InsertParagraph("1.8 Reporting Recipients")
+                        .Bold()
+                        .FontSize(12d)
+                        .Color(Color.Black)
+                        .Bold(true)
+                        .Font("Arial");
+
+                        document.InsertParagraph(currentProjectStatusReportModel.Recipients)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        recHeading.StyleId = "Heading2";
+
+                        document.InsertTableOfContents(p, "", tocSwitches);
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
+                        var sumHeading = document.InsertParagraph("2 Executive summary")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        CommunicationReqHeading.StyleId = "Heading1";
+
+                        var desHeading = document.InsertParagraph("2.1 Project description")
+                     .Bold()
+                     .FontSize(12d)
+                     .Color(Color.Black)
+                     .Bold(true)
+                     .Font("Arial");
+
+                        document.InsertParagraph(currentProjectStatusReportModel.ProjectDescription)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        desHeading.StyleId = "Heading2";
+
+                        var oStatHeading = document.InsertParagraph("2.2 Overall status")
+                         .Bold()
+                         .FontSize(12d)
+                         .Color(Color.Black)
+                         .Bold(true)
+                         .Font("Arial");
+
+                        document.InsertParagraph(currentProjectStatusReportModel.OverallStatus)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        oStatHeading.StyleId = "Heading2";
+
+                        var scheHeading = document.InsertParagraph("2.3 Project schedule")
+                         .Bold()
+                         .FontSize(12d)
+                         .Color(Color.Black)
+                         .Bold(true)
+                         .Font("Arial");
+
+                        document.InsertParagraph(currentProjectStatusReportModel.ProSchedule)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        scheHeading.StyleId = "Heading2";
+
+                        var expensesHeading = document.InsertParagraph("2.4 Project expenses")
+                         .Bold()
+                         .FontSize(12d)
+                         .Color(Color.Black)
+                         .Bold(true)
+                         .Font("Arial");
+
+                        document.InsertParagraph(currentProjectStatusReportModel.ProjExpenses)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        expensesHeading.StyleId = "Heading2";
+
+                        var delivHeading = document.InsertParagraph("2.5 Project Deliverables")
+                        .Bold()
+                        .FontSize(12d)
+                        .Color(Color.Black)
+                        .Bold(true)
+                        .Font("Arial");
+
+                        document.InsertParagraph(currentProjectStatusReportModel.ProjectDeliverables)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        delivHeading.StyleId = "Heading2";
+
+                        var riskHeading = document.InsertParagraph("2.6 Project risks")
+                        .Bold()
+                        .FontSize(12d)
+                        .Color(Color.Black)
+                        .Bold(true)
+                        .Font("Arial");
+
+                        document.InsertParagraph(currentProjectStatusReportModel.ProjectRisks)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        riskHeading.StyleId = "Heading2";
+
+                        var issuesHeading = document.InsertParagraph("2.7 Reporting Issues")
+                        .Bold()
+                        .FontSize(12d)
+                        .Color(Color.Black)
+                        .Bold(true)
+                        .Font("Arial");
+
+                        document.InsertParagraph(currentProjectStatusReportModel.ProjIssues)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        issuesHeading.StyleId = "Heading2";
+
+                        var changesHeading = document.InsertParagraph("2.8 Reporting Changes")
+                        .Bold()
+                        .FontSize(12d)
+                        .Color(Color.Black)
+                        .Bold(true)
+                        .Font("Arial");
+
+                        document.InsertParagraph(currentProjectStatusReportModel.ProjectChanges)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        changesHeading.StyleId = "Heading2";
+
+                        var statusHeading = document.InsertParagraph("3 Detailed status report")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        statusHeading.StyleId = "Heading1";
+
+                        var scheSubHeading = document.InsertParagraph("3.1 Project Schedule")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        scheSubHeading.StyleId = "Heading2";
+
+                        var scheDoc = document.AddTable(currentProjectStatusReportModel.ProSchedule.Count + 1, 2);
+                        scheDoc.Rows[0].Cells[0].Paragraphs[0].Append("Deliverable")
+                            .Bold(true)
+                            .Color(Color.White);
+                        scheDoc.Rows[0].Cells[1].Paragraphs[0].Append("ScheduledCompletionDate")
+                            .Bold(true)
+                            .Color(Color.White);
+                        scheDoc.Rows[0].Cells[2].Paragraphs[0].Append("ActualCompletionDate")
+                            .Bold(true)
+                            .Color(Color.White);
+                        scheDoc.Rows[0].Cells[3].Paragraphs[0].Append("ActualVariance")
+                            .Bold(true)
+                            .Color(Color.White);
+                        scheDoc.Rows[0].Cells[4].Paragraphs[0].Append("ForecastCompletionDate")
+                            .Bold(true)
+                            .Color(Color.White);
+                        scheDoc.Rows[0].Cells[5].Paragraphs[0].Append("ForecastVariance")
+                            .Bold(true)
+                            .Color(Color.White);
+                        scheDoc.Rows[0].Cells[6].Paragraphs[0].Append("Summary")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        scheDoc.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        scheDoc.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        scheDoc.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        scheDoc.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+                        scheDoc.Rows[0].Cells[4].FillColor = TABLE_HEADER_COLOR;
+                        scheDoc.Rows[0].Cells[5].FillColor = TABLE_HEADER_COLOR;
+                        scheDoc.Rows[0].Cells[6].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentProjectStatusReportModel.ProSchedule.Count + 1; i++)
+                        {
+                            scheDoc.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectStatusReportModel.ProSchedule[i - 1].Deliverable);
+                            scheDoc.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectStatusReportModel.ProSchedule[i - 1].ScheduledCompletionDate);
+                            scheDoc.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectStatusReportModel.ProSchedule[i - 1].ActualCompletionDate);
+                            scheDoc.Rows[i].Cells[3].Paragraphs[0].Append(currentProjectStatusReportModel.ProSchedule[i - 1].ActualVariance);
+                            scheDoc.Rows[i].Cells[4].Paragraphs[0].Append(currentProjectStatusReportModel.ProSchedule[i - 1].ForecastCompletionDate);
+                            scheDoc.Rows[i].Cells[5].Paragraphs[0].Append(currentProjectStatusReportModel.ProSchedule[i - 1].ForecastVariance);
+                            scheDoc.Rows[i].Cells[6].Paragraphs[0].Append(currentProjectStatusReportModel.ProSchedule[i - 1].Summary);
+                          
+                        }
+                        scheDoc.SetWidths(new float[] { 394, 762, 762, 762, 762 });
+                        document.InsertTable(scheDoc);
+
+                        var expsSubHeading = document.InsertParagraph("3.2 Project Expenses")
+                           .Bold()
+                           .FontSize(14d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        expsSubHeading.StyleId = "Heading2";
+
+                        var expDoc = document.AddTable(currentProjectStatusReportModel.ProjExpenses.Count + 1, 2);
+                        expDoc.Rows[0].Cells[0].Paragraphs[0].Append("ExpenseType")
+                            .Bold(true)
+                            .Color(Color.White);
+                        expDoc.Rows[0].Cells[1].Paragraphs[0].Append("BudgetedExpenditure")
+                            .Bold(true)
+                            .Color(Color.White);
+                        expDoc.Rows[0].Cells[2].Paragraphs[0].Append("ActualExpenditure")
+                            .Bold(true)
+                            .Color(Color.White);
+                        expDoc.Rows[0].Cells[3].Paragraphs[0].Append("ActualVariance")
+                            .Bold(true)
+                            .Color(Color.White);
+                        expDoc.Rows[0].Cells[4].Paragraphs[0].Append("ForecastExpenditure")
+                            .Bold(true)
+                            .Color(Color.White);
+                        expDoc.Rows[0].Cells[5].Paragraphs[0].Append("ForecastVariance")
+                            .Bold(true)
+                            .Color(Color.White);
+                        expDoc.Rows[0].Cells[6].Paragraphs[0].Append("Summary")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        expDoc.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        expDoc.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        expDoc.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        expDoc.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+                        expDoc.Rows[0].Cells[4].FillColor = TABLE_HEADER_COLOR;
+                        expDoc.Rows[0].Cells[5].FillColor = TABLE_HEADER_COLOR;
+                        expDoc.Rows[0].Cells[6].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentProjectStatusReportModel.ProSchedule.Count + 1; i++)
+                        {
+                            expDoc.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectStatusReportModel.ProjExpenses[i - 1].ExpenseType);
+                            expDoc.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectStatusReportModel.ProjExpenses[i - 1].BudgetedExpenditure);
+                            expDoc.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectStatusReportModel.ProjExpenses[i - 1].ActualExpenditure);
+                            expDoc.Rows[i].Cells[3].Paragraphs[0].Append(currentProjectStatusReportModel.ProjExpenses[i - 1].ActualVariance);
+                            expDoc.Rows[i].Cells[4].Paragraphs[0].Append(currentProjectStatusReportModel.ProjExpenses[i - 1].ForecastExpenditure);
+                            expDoc.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectStatusReportModel.ProjExpenses[i - 1].ForecastVariance);
+                            expDoc.Rows[i].Cells[3].Paragraphs[0].Append(currentProjectStatusReportModel.ProjExpenses[i - 1].Summary);
+
+                        }
+                        expDoc.SetWidths(new float[] { 394, 762, 762, 762, 762 });
+                        document.InsertTable(expDoc);
+
+                        var effSubHeading = document.InsertParagraph("3.3 Project Effort")
+                           .Bold()
+                           .FontSize(14d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        expsSubHeading.StyleId = "Heading2";
+
+                        var effDoc = document.AddTable(currentProjectStatusReportModel.ProjEffort.Count + 1, 2);
+                        effDoc.Rows[0].Cells[0].Paragraphs[0].Append("Activities")
+                            .Bold(true)
+                            .Color(Color.White);
+                        effDoc.Rows[0].Cells[1].Paragraphs[0].Append("BudgetedEffort")
+                            .Bold(true)
+                            .Color(Color.White);
+                        effDoc.Rows[0].Cells[2].Paragraphs[0].Append("ActualEffort")
+                            .Bold(true)
+                            .Color(Color.White);
+                        effDoc.Rows[0].Cells[3].Paragraphs[0].Append("ActualVariance")
+                            .Bold(true)
+                            .Color(Color.White);
+                        effDoc.Rows[0].Cells[4].Paragraphs[0].Append("ForecastEffort")
+                            .Bold(true)
+                            .Color(Color.White);
+                        effDoc.Rows[0].Cells[5].Paragraphs[0].Append("ForecastVariance")
+                            .Bold(true)
+                            .Color(Color.White);
+                        effDoc.Rows[0].Cells[6].Paragraphs[0].Append("Summary")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        effDoc.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        effDoc.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        effDoc.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        effDoc.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+                        effDoc.Rows[0].Cells[4].FillColor = TABLE_HEADER_COLOR;
+                        effDoc.Rows[0].Cells[5].FillColor = TABLE_HEADER_COLOR;
+                        effDoc.Rows[0].Cells[6].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentProjectStatusReportModel.ProSchedule.Count + 1; i++)
+                        {
+                            effDoc.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectStatusReportModel.ProjEffort[i - 1].Activities);
+                            effDoc.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectStatusReportModel.ProjEffort[i - 1].BudgetedEffort);
+                            effDoc.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectStatusReportModel.ProjEffort[i - 1].ActualEffort);
+                            effDoc.Rows[i].Cells[3].Paragraphs[0].Append(currentProjectStatusReportModel.ProjEffort[i - 1].ActualVariance);
+                            effDoc.Rows[i].Cells[4].Paragraphs[0].Append(currentProjectStatusReportModel.ProjEffort[i - 1].ForecastEffort);
+                            effDoc.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectStatusReportModel.ProjEffort[i - 1].ForecastVariance);
+                            effDoc.Rows[i].Cells[3].Paragraphs[0].Append(currentProjectStatusReportModel.ProjEffort[i - 1].Summary);
+
+                        }
+                        effDoc.SetWidths(new float[] { 394, 762, 762, 762, 762 });
+                        document.InsertTable(effDoc);
+
+                        var proqSubHeading = document.InsertParagraph("3.4 Project Quality")
+                           .Bold()
+                           .FontSize(14d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        expsSubHeading.StyleId = "Heading2";
+
+                        var prqSubHeading = document.AddTable(currentProjectStatusReportModel.ProjQuality.Count + 1, 2);
+                        prqSubHeading.Rows[0].Cells[0].Paragraphs[0].Append("Deliverables")
+                            .Bold(true)
+                            .Color(Color.White);
+                        prqSubHeading.Rows[0].Cells[1].Paragraphs[0].Append("QualityTarget")
+                            .Bold(true)
+                            .Color(Color.White);
+                        prqSubHeading.Rows[0].Cells[2].Paragraphs[0].Append("QualityAchieved")
+                            .Bold(true)
+                            .Color(Color.White);
+                        prqSubHeading.Rows[0].Cells[3].Paragraphs[0].Append("QualityVariance")
+                            .Bold(true)
+                            .Color(Color.White);
+                        prqSubHeading.Rows[0].Cells[4].Paragraphs[0].Append("Summary")
+                           .Bold(true)
+                           .Color(Color.White);
+
+
+                        prqSubHeading.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        prqSubHeading.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        prqSubHeading.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        prqSubHeading.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+                        prqSubHeading.Rows[0].Cells[4].FillColor = TABLE_HEADER_COLOR;
+
+
+                        for (int i = 1; i < currentProjectStatusReportModel.ProSchedule.Count + 1; i++)
+                        {
+                            prqSubHeading.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectStatusReportModel.ProjQuality[i - 1].Deliverables);
+                            prqSubHeading.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectStatusReportModel.ProjQuality[i - 1].QualityTarget);
+                            prqSubHeading.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectStatusReportModel.ProjQuality[i - 1].QualityAchieved);
+                            prqSubHeading.Rows[i].Cells[3].Paragraphs[0].Append(currentProjectStatusReportModel.ProjQuality[i - 1].QualityVariance);
+                            prqSubHeading.Rows[i].Cells[4].Paragraphs[0].Append(currentProjectStatusReportModel.ProjQuality[i - 1].Summary);
+
+                        }
+                        prqSubHeading.SetWidths(new float[] { 394, 762, 762, 762, 762 });
+                        document.InsertTable(prqSubHeading);
+
+                        var riskSubHeading = document.InsertParagraph("3.5 Project Risks")
+                           .Bold()
+                           .FontSize(14d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        riskSubHeading.StyleId = "Heading2";
+
+                        var riSubHeading = document.AddTable(currentProjectStatusReportModel.ProjRisk.Count + 1, 2);
+                        riSubHeading.Rows[0].Cells[0].Paragraphs[0].Append("Risks")
+                            .Bold(true)
+                            .Color(Color.White);
+                        riSubHeading.Rows[0].Cells[1].Paragraphs[0].Append("Likelihood")
+                            .Bold(true)
+                            .Color(Color.White);
+                        riSubHeading.Rows[0].Cells[2].Paragraphs[0].Append("Impact")
+                            .Bold(true)
+                            .Color(Color.White);
+                        riSubHeading.Rows[0].Cells[3].Paragraphs[0].Append("Summary")
+                            .Bold(true)
+                            .Color(Color.White);
+                       
+
+
+                        riSubHeading.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        riSubHeading.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        riSubHeading.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        riSubHeading.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+                       
+
+
+                        for (int i = 1; i < currentProjectStatusReportModel.ProSchedule.Count + 1; i++)
+                        {
+                            riSubHeading.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectStatusReportModel.ProjRisk[i - 1].Risks);
+                            riSubHeading.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectStatusReportModel.ProjRisk[i - 1].Likelihood);
+                            riSubHeading.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectStatusReportModel.ProjRisk[i - 1].Impact);
+                            riSubHeading.Rows[i].Cells[3].Paragraphs[0].Append(currentProjectStatusReportModel.ProjRisk[i - 1].Summary);
+                         
+
+                        }
+                        riSubHeading.SetWidths(new float[] { 394, 762, 762, 762, });
+                        document.InsertTable(riSubHeading);
+
+                        var issSubHeading = document.InsertParagraph("3.6 Project Issues")
+                           .Bold()
+                           .FontSize(14d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        issSubHeading.StyleId = "Heading2";
+
+                        var issuesSubHeading = document.AddTable(currentProjectStatusReportModel.ProjIssues.Count + 1, 2);
+                        issuesSubHeading.Rows[0].Cells[0].Paragraphs[0].Append("Risks")
+                            .Bold(true)
+                            .Color(Color.White);
+                        issuesSubHeading.Rows[0].Cells[1].Paragraphs[0].Append("Likelihood")
+                            .Bold(true)
+                            .Color(Color.White);
+                        issuesSubHeading.Rows[0].Cells[2].Paragraphs[0].Append("Impact")
+                            .Bold(true)
+                            .Color(Color.White);
+
+
+
+
+                        issuesSubHeading.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        issuesSubHeading.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        issuesSubHeading.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                       
+
+
+
+                        for (int i = 1; i < currentProjectStatusReportModel.ProSchedule.Count + 1; i++)
+                        {
+                            issuesSubHeading.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectStatusReportModel.ProjIssues[i - 1].Issues);
+                            issuesSubHeading.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectStatusReportModel.ProjIssues[i - 1].Impact);
+                            issuesSubHeading.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectStatusReportModel.ProjIssues[i - 1].Summary);
+                          
+
+
+                        }
+                        issuesSubHeading.SetWidths(new float[] { 394, 762, 762, 762, });
+                        document.InsertTable(issuesSubHeading);
+
+                    }
+                }
+            }
+        }
+
+
         private void txtProjectDescription_TextChanged(object sender, EventArgs e)
         {
 

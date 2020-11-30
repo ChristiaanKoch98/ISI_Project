@@ -162,6 +162,299 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newRiskManagmentProcessModel.DocumentApprovals = documentApprovalsModel;
         }
 
+        private void exportToWord()
+        {
+            string path;
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                saveFileDialog.Filter = "Word 97-2003 Documents (*.doc)|*.doc|Word 2007 Documents (*.docx)|*.docx";
+                saveFileDialog.FilterIndex = 2;
+                saveFileDialog.RestoreDirectory = true;
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    path = saveFileDialog.FileName;
+                    using (var document = DocX.Create(path))
+                    {
+                        for (int i = 0; i < 11; i++)
+                        {
+                            document.InsertParagraph("")
+                                .Font("Arial")
+                                .Bold(true)
+                                .FontSize(22d).Alignment = Alignment.left;
+                        }
+                        document.InsertParagraph("Communication Plan \nFor " + projectModel.ProjectName)
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(22d).Alignment = Alignment.left;
+                        document.InsertSectionPageBreak();
+                        document.InsertParagraph("Document Control\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        document.InsertParagraph("")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        document.InsertParagraph("Document Information\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+
+                        var documentInfoTable = document.AddTable(6, 2);
+                        documentInfoTable.Rows[0].Cells[0].Paragraphs[0].Append("").Bold(true).Color(Color.White);
+                        documentInfoTable.Rows[0].Cells[1].Paragraphs[0].Append("Information").Bold(true).Color(Color.White);
+                        documentInfoTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentInfoTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+
+                        documentInfoTable.Rows[1].Cells[0].Paragraphs[0].Append("Document ID");
+                        documentInfoTable.Rows[1].Cells[1].Paragraphs[0].Append(currentRiskManagmentProcessModel.DocumentID);
+
+                        documentInfoTable.Rows[2].Cells[0].Paragraphs[0].Append("Document Owner");
+                        documentInfoTable.Rows[2].Cells[1].Paragraphs[0].Append(currentRiskManagmentProcessModel.DocumentOwner);
+
+                        documentInfoTable.Rows[3].Cells[0].Paragraphs[0].Append("Issue Date");
+                        documentInfoTable.Rows[3].Cells[1].Paragraphs[0].Append(currentRiskManagmentProcessModel.IssueDate);
+
+                        documentInfoTable.Rows[4].Cells[0].Paragraphs[0].Append("Last Saved Date");
+                        documentInfoTable.Rows[4].Cells[1].Paragraphs[0].Append(currentRiskManagmentProcessModel.LastSavedDate);
+
+                        documentInfoTable.Rows[5].Cells[0].Paragraphs[0].Append("File Name");
+                        documentInfoTable.Rows[5].Cells[1].Paragraphs[0].Append(currentRiskManagmentProcessModel.FileName);
+                        documentInfoTable.SetWidths(new float[] { 493, 1094 });
+                        document.InsertTable(documentInfoTable);
+
+                        document.InsertParagraph("\nDocument History\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+
+                        var documentHistoryTable = document.AddTable(currentRiskManagmentProcessModel.DocumentHistories.Count + 1, 3);
+                        documentHistoryTable.Rows[0].Cells[0].Paragraphs[0].Append("Version")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[1].Paragraphs[0].Append("Issue Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[2].Paragraphs[0].Append("Changes")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentHistoryTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentHistoryTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        for (int i = 1; i < currentRiskManagmentProcessModel.DocumentHistories.Count + 1; i++)
+                        {
+                            documentHistoryTable.Rows[i].Cells[0].Paragraphs[0].Append(currentRiskManagmentProcessModel.DocumentHistories[i - 1].Version);
+                            documentHistoryTable.Rows[i].Cells[1].Paragraphs[0].Append(currentRiskManagmentProcessModel.DocumentHistories[i - 1].IssueDate);
+                            documentHistoryTable.Rows[i].Cells[2].Paragraphs[0].Append(currentRiskManagmentProcessModel.DocumentHistories[i - 1].Changes);
+
+                        }
+
+                        documentHistoryTable.SetWidths(new float[] { 190, 303, 1094 });
+                        document.InsertTable(documentHistoryTable);
+
+                        document.InsertParagraph("\nDocument Approvals\n")
+                           .Font("Arial")
+                           .Bold(true)
+                           .FontSize(14d).Alignment = Alignment.left;
+
+                        var documentApprovalTable = document.AddTable(currentRiskManagmentProcessModel.DocumentApprovals.Count + 1, 4);
+                        documentApprovalTable.Rows[0].Cells[0].Paragraphs[0].Append("Role")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[1].Paragraphs[0].Append("Name")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[2].Paragraphs[0].Append("Signature")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[3].Paragraphs[0].Append("Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentRiskManagmentProcessModel.DocumentApprovals.Count + 1; i++)
+                        {
+                            documentApprovalTable.Rows[i].Cells[0].Paragraphs[0].Append(currentRiskManagmentProcessModel.DocumentApprovals[i - 1].Role);
+                            documentApprovalTable.Rows[i].Cells[1].Paragraphs[0].Append(currentRiskManagmentProcessModel.DocumentApprovals[i - 1].Name);
+                            documentApprovalTable.Rows[i].Cells[2].Paragraphs[0].Append(currentRiskManagmentProcessModel.DocumentApprovals[i - 1].Signature);
+                            documentApprovalTable.Rows[i].Cells[3].Paragraphs[0].Append(currentRiskManagmentProcessModel.DocumentApprovals[i - 1].DateApproved);
+                        }
+                        documentApprovalTable.SetWidths(new float[] { 493, 332, 508, 254 });
+                        document.InsertTable(documentApprovalTable);
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
+
+
+                        var p = document.InsertParagraph();
+                        var title = p.InsertParagraphBeforeSelf("Table of Contents").Bold().FontSize(20);
+
+                        var tocSwitches = new Dictionary<TableOfContentsSwitches, string>()
+                        {
+                            { TableOfContentsSwitches.O, "1-3"},
+                            { TableOfContentsSwitches.U, ""},
+                            { TableOfContentsSwitches.Z, ""},
+                            { TableOfContentsSwitches.H, ""}
+                        };
+
+
+                        document.InsertTableOfContents(p, "", tocSwitches);
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
+
+                        var riskHeading = document.InsertParagraph("1 Risk process")
+                           .Bold()
+                           .FontSize(14d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        riskHeading.StyleId = "Heading1";
+
+                        var idrHeading = document.InsertParagraph("1.1 Identify risk")
+                     .Bold()
+                     .FontSize(12d)
+                     .Color(Color.Black)
+                     .Bold(true)
+                     .Font("Arial");
+
+                        document.InsertParagraph(currentRiskManagmentProcessModel.IdentifyRisk)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        idrHeading.StyleId = "Heading2";
+
+                        var reHeading = document.InsertParagraph("1.2 Review risk")
+                     .Bold()
+                     .FontSize(12d)
+                     .Color(Color.Black)
+                     .Bold(true)
+                     .Font("Arial");
+
+                        document.InsertParagraph(currentRiskManagmentProcessModel.ReviewRisk)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        reHeading.StyleId = "Heading2";
+
+                        var ractionHeading = document.InsertParagraph("1.3 Assign risk Action")
+                    .Bold()
+                    .FontSize(12d)
+                    .Color(Color.Black)
+                    .Bold(true)
+                    .Font("Arial");
+
+                        document.InsertParagraph(currentRiskManagmentProcessModel.AssignRisk)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        ractionHeading.StyleId = "Heading2";
+
+                        var rrolesHeading = document.InsertParagraph("2 Risk Roles")
+                           .Bold()
+                           .FontSize(14d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        rrolesHeading.StyleId = "Heading1";
+
+                        var tmHeading = document.InsertParagraph("2.1 Team member")
+                     .Bold()
+                     .FontSize(12d)
+                     .Color(Color.Black)
+                     .Bold(true)
+                     .Font("Arial");
+
+                        document.InsertParagraph(currentRiskManagmentProcessModel.TeamMember)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        tmHeading.StyleId = "Heading2";
+
+                        var pmHeading = document.InsertParagraph("2.2 Project Manager")
+                     .Bold()
+                     .FontSize(12d)
+                     .Color(Color.Black)
+                     .Bold(true)
+                     .Font("Arial");
+
+                        document.InsertParagraph(currentRiskManagmentProcessModel.ProjectManager)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        pmHeading.StyleId = "Heading2";
+
+                        var boardHeading = document.InsertParagraph("2.3 Project Board")
+                    .Bold()
+                    .FontSize(12d)
+                    .Color(Color.Black)
+                    .Bold(true)
+                    .Font("Arial");
+
+                        document.InsertParagraph(currentRiskManagmentProcessModel.ProjectBoard)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        boardHeading.StyleId = "Heading2";
+
+                        var rdHeading = document.InsertParagraph("3 Risk documents")
+                           .Bold()
+                           .FontSize(14d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        rrolesHeading.StyleId = "Heading1";
+
+                        var rfHeading = document.InsertParagraph("3.1 Risk Form")
+                     .Bold()
+                     .FontSize(12d)
+                     .Color(Color.Black)
+                     .Bold(true)
+                     .Font("Arial");
+
+                        document.InsertParagraph(currentRiskManagmentProcessModel.RiskForm)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        rfHeading.StyleId = "Heading2";
+
+                        var rregHeading = document.InsertParagraph("3.2 Risk register")
+                     .Bold()
+                     .FontSize(12d)
+                     .Color(Color.Black)
+                     .Bold(true)
+                     .Font("Arial");
+
+                        document.InsertParagraph(currentRiskManagmentProcessModel.RiskRegister)
+                             .FontSize(11d)
+                             .Color(Color.Black)
+                             .Font("Arial").Alignment = Alignment.left;
+
+
+                        rregHeading.StyleId = "Heading2";
+                    }
+                }
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             saveDocument();

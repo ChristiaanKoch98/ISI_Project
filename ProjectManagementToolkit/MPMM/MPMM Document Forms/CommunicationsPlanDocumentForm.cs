@@ -219,6 +219,309 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         }
 
+        private void exportToWord()
+        {
+            string path;
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                saveFileDialog.Filter = "Word 97-2003 Documents (*.doc)|*.doc|Word 2007 Documents (*.docx)|*.docx";
+                saveFileDialog.FilterIndex = 2;
+                saveFileDialog.RestoreDirectory = true;
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    path = saveFileDialog.FileName;
+                    using (var document = DocX.Create(path))
+                    {
+                        for (int i = 0; i < 11; i++)
+                        {
+                            document.InsertParagraph("")
+                                .Font("Arial")
+                                .Bold(true)
+                                .FontSize(22d).Alignment = Alignment.left;
+                        }
+                        document.InsertParagraph("Communication Plan \nFor " + projectModel.ProjectName)
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(22d).Alignment = Alignment.left;
+                        document.InsertSectionPageBreak();
+                        document.InsertParagraph("Document Control\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        document.InsertParagraph("")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        document.InsertParagraph("Document Information\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+
+                        var documentInfoTable = document.AddTable(6, 2);
+                        documentInfoTable.Rows[0].Cells[0].Paragraphs[0].Append("").Bold(true).Color(Color.White);
+                        documentInfoTable.Rows[0].Cells[1].Paragraphs[0].Append("Information").Bold(true).Color(Color.White);
+                        documentInfoTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentInfoTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+
+                        documentInfoTable.Rows[1].Cells[0].Paragraphs[0].Append("Document ID");
+                        documentInfoTable.Rows[1].Cells[1].Paragraphs[0].Append(currentCommunicationsPlanModel.DocumentID);
+
+                        documentInfoTable.Rows[2].Cells[0].Paragraphs[0].Append("Document Owner");
+                        documentInfoTable.Rows[2].Cells[1].Paragraphs[0].Append(currentCommunicationsPlanModel.DocumentOwner);
+
+                        documentInfoTable.Rows[3].Cells[0].Paragraphs[0].Append("Issue Date");
+                        documentInfoTable.Rows[3].Cells[1].Paragraphs[0].Append(currentCommunicationsPlanModel.IssueDate);
+
+                        documentInfoTable.Rows[4].Cells[0].Paragraphs[0].Append("Last Saved Date");
+                        documentInfoTable.Rows[4].Cells[1].Paragraphs[0].Append(currentCommunicationsPlanModel.LastSavedDate);
+
+                        documentInfoTable.Rows[5].Cells[0].Paragraphs[0].Append("File Name");
+                        documentInfoTable.Rows[5].Cells[1].Paragraphs[0].Append(currentCommunicationsPlanModel.FileName);
+                        documentInfoTable.SetWidths(new float[] { 493, 1094 });
+                        document.InsertTable(documentInfoTable);
+
+                        document.InsertParagraph("\nDocument History\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+
+                        var documentHistoryTable = document.AddTable(currentCommunicationsPlanModel.DocumentHistories.Count + 1, 3);
+                        documentHistoryTable.Rows[0].Cells[0].Paragraphs[0].Append("Version")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[1].Paragraphs[0].Append("Issue Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[2].Paragraphs[0].Append("Changes")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentHistoryTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentHistoryTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        for (int i = 1; i < currentCommunicationsPlanModel.DocumentHistories.Count + 1; i++)
+                        {
+                            documentHistoryTable.Rows[i].Cells[0].Paragraphs[0].Append(currentCommunicationsPlanModel.DocumentHistories[i - 1].Version);
+                            documentHistoryTable.Rows[i].Cells[1].Paragraphs[0].Append(currentCommunicationsPlanModel.DocumentHistories[i - 1].IssueDate);
+                            documentHistoryTable.Rows[i].Cells[2].Paragraphs[0].Append(currentCommunicationsPlanModel.DocumentHistories[i - 1].Changes);
+
+                        }
+
+                        documentHistoryTable.SetWidths(new float[] { 190, 303, 1094 });
+                        document.InsertTable(documentHistoryTable);
+
+                        document.InsertParagraph("\nDocument Approvals\n")
+                           .Font("Arial")
+                           .Bold(true)
+                           .FontSize(14d).Alignment = Alignment.left;
+
+                        var documentApprovalTable = document.AddTable(currentCommunicationsPlanModel.DocumentApprovals.Count + 1, 4);
+                        documentApprovalTable.Rows[0].Cells[0].Paragraphs[0].Append("Role")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[1].Paragraphs[0].Append("Name")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[2].Paragraphs[0].Append("Signature")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[3].Paragraphs[0].Append("Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentCommunicationsPlanModel.DocumentApprovals.Count + 1; i++)
+                        {
+                            documentApprovalTable.Rows[i].Cells[0].Paragraphs[0].Append(currentCommunicationsPlanModel.DocumentApprovals[i - 1].Role);
+                            documentApprovalTable.Rows[i].Cells[1].Paragraphs[0].Append(currentCommunicationsPlanModel.DocumentApprovals[i - 1].Name);
+                            documentApprovalTable.Rows[i].Cells[2].Paragraphs[0].Append(currentCommunicationsPlanModel.DocumentApprovals[i - 1].Signature);
+                            documentApprovalTable.Rows[i].Cells[3].Paragraphs[0].Append(currentCommunicationsPlanModel.DocumentApprovals[i - 1].DateApproved);
+                        }
+                        documentApprovalTable.SetWidths(new float[] { 493, 332, 508, 254 });
+                        document.InsertTable(documentApprovalTable);
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
+
+
+                        var p = document.InsertParagraph();
+                        var title = p.InsertParagraphBeforeSelf("Table of Contents").Bold().FontSize(20);
+
+                        var tocSwitches = new Dictionary<TableOfContentsSwitches, string>()
+                        {
+                            { TableOfContentsSwitches.O, "1-3"},
+                            { TableOfContentsSwitches.U, ""},
+                            { TableOfContentsSwitches.Z, ""},
+                            { TableOfContentsSwitches.H, ""}
+                        };
+
+
+                        document.InsertTableOfContents(p, "", tocSwitches);
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
+                        var CommunicationReqHeading = document.InsertParagraph("1 Communication requirement")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        CommunicationReqHeading.StyleId = "Heading1";
+
+                        var CommunicationReqSubHeading = CommunicationReqHeading.InsertParagraphAfterSelf("1.1 Communication requirement")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        CommunicationReqSubHeading.StyleId = "Heading2";
+
+                        var documentStakeholderReq = document.AddTable(currentCommunicationsPlanModel.StakeholderReq.Count + 1, 3);
+                        documentStakeholderReq.Rows[0].Cells[0].Paragraphs[0].Append("Stakeholder Name")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentStakeholderReq.Rows[0].Cells[1].Paragraphs[0].Append("Stakeholder Role")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentStakeholderReq.Rows[0].Cells[2].Paragraphs[0].Append("Stakeholder organization")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentStakeholderReq.Rows[0].Cells[3].Paragraphs[0].Append("Information required")
+                           .Bold(true)
+                           .Color(Color.White);
+
+                        documentStakeholderReq.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentStakeholderReq.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentStakeholderReq.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentStakeholderReq.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentCommunicationsPlanModel.StakeholderReq.Count + 1; i++)
+                        {
+                            documentStakeholderReq.Rows[i].Cells[0].Paragraphs[0].Append(currentCommunicationsPlanModel.StakeholderReq[i - 1].StakeholderName);
+                            documentStakeholderReq.Rows[i].Cells[1].Paragraphs[0].Append(currentCommunicationsPlanModel.StakeholderReq[i - 1].StakeholderRole);
+                            documentStakeholderReq.Rows[i].Cells[2].Paragraphs[0].Append(currentCommunicationsPlanModel.StakeholderReq[i - 1].StakeholderOrganization);
+                            documentStakeholderReq.Rows[i].Cells[3].Paragraphs[0].Append(currentCommunicationsPlanModel.StakeholderReq[i - 1].InformationRequirement);
+                        }
+
+                        documentStakeholderReq.SetWidths(new float[] { 394, 762, 419 });
+                        document.InsertTable(documentStakeholderReq);
+
+
+                        var CommunicationPlanHeading = document.InsertParagraph("2 Communications Plan")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        CommunicationReqHeading.StyleId = "Heading1";
+
+                        var ComPlanHeading = document.InsertParagraph("2 Communications Plan")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        document.InsertParagraph(currentCommunicationsPlanModel.Assumptions)
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+
+                        ComPlanHeading.StyleId = "Heading2";
+
+                        var CommunicationProcessHeading = document.InsertParagraph("3 Communications Process")
+                           .Bold()
+                           .FontSize(14d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        CommunicationReqHeading.StyleId = "Heading1";
+
+                        var ProcessHeading = document.InsertParagraph("3.1 Communications Process")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        document.InsertParagraph(currentCommunicationsPlanModel.ComProcess)
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+
+                        ProcessHeading.StyleId = "Heading2";
+
+                        var ActivitiesHeading = document.InsertParagraph("3.2 Activities")
+                           .Bold()
+                           .FontSize(12d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        document.InsertParagraph(currentCommunicationsPlanModel.Activities)
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+
+                        ActivitiesHeading.StyleId = "Heading2";
+
+                        var RolesHeading = document.InsertParagraph("3.3 Roles")
+                           .Bold()
+                           .FontSize(12d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        document.InsertParagraph(currentCommunicationsPlanModel.Roles)
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+
+                        RolesHeading.StyleId = "Heading2";
+
+                        var DocumentsHeading = document.InsertParagraph("3.4 Documents")
+                          .Bold()
+                          .FontSize(12d)
+                          .Color(Color.Black)
+                          .Bold(true)
+                          .Font("Arial");
+
+                        document.InsertParagraph(currentCommunicationsPlanModel.Roles)
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+
+                        RolesHeading.StyleId = "Heading2";
+
+
+
+                        
+                        try
+                        {
+                            document.Save();
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("The selected File is open.", "Close File", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+
+
+                    }
+
+
+                }
+            }
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             saveDocument();
