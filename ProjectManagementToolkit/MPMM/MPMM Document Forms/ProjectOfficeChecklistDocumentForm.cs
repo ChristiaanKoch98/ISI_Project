@@ -448,7 +448,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         checklistTable.Rows[0].Cells[0].Paragraphs[0].Append("Project Details").Bold(true).Color(Color.White).FontSize(14d);
 
                         checklistTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
-                        checklistTable.Rows[1].Cells[0].Paragraphs[0].Append("Project Name: \t\t" + currentProjectOfficeChecklistModel.ProjectName 
+                        checklistTable.Rows[1].Cells[0].Paragraphs[0].Append("Project Name: \t\t" + currentProjectOfficeChecklistModel.ProjectName
                             + "\nProject Manager: \t" + currentProjectOfficeChecklistModel.ProjectManager
                             + "\nProject Office Manager: \t" + currentProjectOfficeChecklistModel.ProjectOfficeManager);
 
@@ -457,29 +457,29 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         checklistTable.Rows[2].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
                         checklistTable.Rows[3].Cells[0].Paragraphs[0].Append("Were the Project Office requirements documented? \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.PremisesProjectOfficeDocumented)
-                            + "\nHave the Project Office premises been procured? \t\t\t\t\t" + currentProjectOfficeChecklistModel.PremisesProjectOfficeProcured
-                            + "\nAre the premises in a practical location? \t\t\t\t\t\t" + currentProjectOfficeChecklistModel.PremisesPracticalLocation
-                            + "\nDo the premises meet the requirements documented? \t\t\t\t\t" + currentProjectOfficeChecklistModel.PremisesRequiredDocumted
-                            + "\nIs there a formal contract for the lease / purchase / use of the premises? \t\t" + currentProjectOfficeChecklistModel.PremisesFormalContract
-                            + "\nDo the premises provide sufficient space for the project team? \t\t\t\t" + currentProjectOfficeChecklistModel.PremisesSufficientSpace
-                            + "\nWill the premises continue to be available if the project is delayed? \t\t\t" + currentProjectOfficeChecklistModel.PremisesContinueAvailible
-                            + "\nDo the premises require additional fit-out (e.g. partitions, cabling, air conditioning)? \t" + currentProjectOfficeChecklistModel.PremisesAdditionalFitOut
-                            + "\nAre the on-site facilities sufficient (e.g. number of meeting rooms, bathrooms \t\t" + currentProjectOfficeChecklistModel.PremisesOnSiteFacilities);
+                            + "\nHave the Project Office premises been procured? \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.PremisesProjectOfficeProcured)
+                            + "\nAre the premises in a practical location? \t\t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.PremisesPracticalLocation)
+                            + "\nDo the premises meet the requirements documented? \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.PremisesRequiredDocumted)
+                            + "\nIs there a formal contract for the lease / purchase / use of the premises? \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.PremisesFormalContract)
+                            + "\nDo the premises provide sufficient space for the project team? \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.PremisesSufficientSpace)
+                            + "\nWill the premises continue to be available if the project is delayed? \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.PremisesContinueAvailible)
+                            + "\nDo the premises require additional fit-out (e.g. partitions, cabling, air conditioning)? \t" + DisplayYesNo(currentProjectOfficeChecklistModel.PremisesAdditionalFitOut)
+                            + "\nAre the on-site facilities sufficient (e.g. number of meeting rooms, bathrooms \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.PremisesOnSiteFacilities));
 
                         //Equipment/////////
                         checklistTable.Rows[4].Cells[0].Paragraphs[0].Append("Equipment").Bold(true).Color(Color.White).FontSize(14d);
                         checklistTable.Rows[4].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
                         checklistTable.Rows[5].Cells[0].Paragraphs[0].Append("Office Equipment\n \t" 
-                           + "\nDoes the project team have the required office equipment and application software available to manage the project (e.g. computer hardware, project planning and financial software, projectors, fax machines, printers, scanners, copiers)? \t\t" + currentProjectOfficeChecklistModel.EquipmentRequiredOffice
-                           + "\nAre maintenance contracts in place to ensure that equipment remains operational throughout the project? \t\t\t\t\t\t" + currentProjectOfficeChecklistModel.EquipmentMaintananceCOntracts
-                           + "\nIs spare equipment available in case of a shortage? \t" + currentProjectOfficeChecklistModel.EquipmentSpareEquipment
-                           + "\nIs office equipment functioning as required? \t\t" + currentProjectOfficeChecklistModel.EquipmentFunctioningAsRequired
+                           + "\nDoes the project team have the required office equipment and application software available to manage the project (e.g. computer hardware, project planning and financial software, projectors, fax machines, printers, scanners, copiers)? \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.EquipmentRequiredOffice)
+                           + "\nAre maintenance contracts in place to ensure that equipment remains operational throughout the project? \t\t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.EquipmentMaintananceCOntracts)
+                           + "\nIs spare equipment available in case of a shortage? \t" + DisplayYesNo(currentProjectOfficeChecklistModel.EquipmentSpareEquipment)
+                           + "\nIs office equipment functioning as required? \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.EquipmentFunctioningAsRequired)
 
                            + "\n\nCommunications Equipment\n \t"  
-                           + "\nAre sufficient communications technologies available (e.g. computer networks, email, internet access, remote network dial-up software, mobile phones, laptops and hand-held devices)? \t\t\t\t\t\t\t" + currentProjectOfficeChecklistModel.EquipmentSufficientCommunication
-                           + "\nIs video conferencing equipment available? \t" + currentProjectOfficeChecklistModel.EquipmentVideoCOnferensing
-                           + "\nIs the equipment functioning as required?  \t" + currentProjectOfficeChecklistModel.EquipmentFunctioningAsRequired);
+                           + "\nAre sufficient communications technologies available (e.g. computer networks, email, internet access, remote network dial-up software, mobile phones, laptops and hand-held devices)? \t\t\t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.EquipmentSufficientCommunication)
+                           + "\nIs video conferencing equipment available? \t" + DisplayYesNo(currentProjectOfficeChecklistModel.EquipmentVideoCOnferensing)
+                           + "\nIs the equipment functioning as required?  \t" + DisplayYesNo(currentProjectOfficeChecklistModel.EquipmentFunctioningAsRequired));
 
 
 
@@ -489,40 +489,40 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         checklistTable.Rows[6].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
                         checklistTable.Rows[7].Cells[0].Paragraphs[0].Append("Have the following key roles been appointed?\n "
-                           + "\n\tProject Sponsor \t\t" + currentProjectOfficeChecklistModel.RolesAppointedProjectSponsor
-                           + "\n\tProject Manager \t\t" + currentProjectOfficeChecklistModel.RolesAppointedProjectManager
-                           + "\n\tProject Office Manager \t\t" + currentProjectOfficeChecklistModel.RolesAppointedProjectOfficeManager
-                           + "\n\tProcurement Manager \t\t" + currentProjectOfficeChecklistModel.RolesAppointedProcurementManager
-                           + "\n\tCommunications Manager \t" + currentProjectOfficeChecklistModel.RolesAppointedCommunicationsManager
-                           + "\n\tQuality Manager \t\t" + currentProjectOfficeChecklistModel.RolesAppointedQualityManager
-                           + "\n\tRisk Manager \t\t\t" + currentProjectOfficeChecklistModel.RolesAppointedRiskManager
-                           + "\n\tTeam Leader(s)\t\t\t" + currentProjectOfficeChecklistModel.RolesAppointedTeamLeader
-                           + "\n\nHave Job Descriptions been documented for all the project roles?  \t\t" + currentProjectOfficeChecklistModel.RolesJobDescriptionsDocumented
-                           + "\nDo all Job Descriptions describe the responsibilities and performance criteria?  \t" + currentProjectOfficeChecklistModel.RolesJobDescriptionsResponsibilities
-                           + "\nWere suitably skilled people appointed to all the project roles? \t\t\t" + currentProjectOfficeChecklistModel.RolesSkilledPeopleAppointed);
+                           + "\n\tProject Sponsor \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesAppointedProjectSponsor)
+                           + "\n\tProject Manager \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesAppointedProjectManager)
+                           + "\n\tProject Office Manager \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesAppointedProjectOfficeManager)
+                           + "\n\tProcurement Manager \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesAppointedProcurementManager)
+                           + "\n\tCommunications Manager \t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesAppointedCommunicationsManager)
+                           + "\n\tQuality Manager \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesAppointedQualityManager)
+                           + "\n\tRisk Manager \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesAppointedRiskManager)
+                           + "\n\tTeam Leader(s)\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesAppointedTeamLeader)
+                           + "\n\nHave Job Descriptions been documented for all the project roles?  \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesJobDescriptionsDocumented)
+                           + "\nDo all Job Descriptions describe the responsibilities and performance criteria?  \t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesJobDescriptionsResponsibilities)
+                           + "\nWere suitably skilled people appointed to all the project roles? \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesSkilledPeopleAppointed));
 
                         //Standards and Process///////////
                         checklistTable.Rows[8].Cells[0].Paragraphs[0].Append("Standards and Process").Bold(true).Color(Color.White).FontSize(14d);
                         checklistTable.Rows[8].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
                         checklistTable.Rows[9].Cells[0].Paragraphs[0].Append("Have all required industry, business and project management standards been identified? For example:\n "
-                           + "\nIndustry standards (ISO):\t\t\t" + currentProjectOfficeChecklistModel.StandardsIndustyStandards
-                           + "\nHealth & Safety Standards:\t\t\t" + currentProjectOfficeChecklistModel.StandardsHealthAndSafety
-                           + "\nProject Planning & Reporting Standards:\t\t" + currentProjectOfficeChecklistModel.StandardsProjectPlanning
-                           + "\nPMI® & PMBOK®:\t\t\t\t" + currentProjectOfficeChecklistModel.StandardsPMI
-                           + "\n\nHas a suitable Project Management methodology been implemented?\t" + currentProjectOfficeChecklistModel.StandardSuitableProjManMethod);
+                           + "\nIndustry standards (ISO):\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.StandardsIndustyStandards)
+                           + "\nHealth & Safety Standards:\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.StandardsHealthAndSafety)
+                           + "\nProject Planning & Reporting Standards:\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.StandardsProjectPlanning)
+                           + "\nPMI® & PMBOK®:\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.StandardsPMI)
+                           + "\n\nHas a suitable Project Management methodology been implemented?\t" + DisplayYesNo(currentProjectOfficeChecklistModel.StandardSuitableProjManMethod));
 
                         
                         checklistTable.Rows[10].Cells[0].Paragraphs[0].Append("Have the following processes been defined?\n "
-                           + "\n\nTime Management Process: \t\t\t" + currentProjectOfficeChecklistModel.ProcessesTimeManagement
-                           + "\nCost Management Process: \t\t\t" + currentProjectOfficeChecklistModel.ProcessesCostManagement
-                           + "\nQuality Management Process: \t\t\t" + currentProjectOfficeChecklistModel.ProcessesQualityManagement
-                           + "\nChange Management Process: \t\t\t" + currentProjectOfficeChecklistModel.ProcessesChangeManagement
-                           + "\nRisk Management Process: \t\t\t" + currentProjectOfficeChecklistModel.ProcessesRiskManagement
-                           + "\nIssue Management Process: \t\t\t" + currentProjectOfficeChecklistModel.ProcessesIssueManagement
-                           + "\nProcurement Management Process: \t\t" + currentProjectOfficeChecklistModel.ProcessesProcurementManagement
-                           + "\nAcceptance Management Process:  \t\t" + currentProjectOfficeChecklistModel.ProcessesAcceptanceManagement
-                           + "\nCommunications Management Process:  \t" + currentProjectOfficeChecklistModel.ProcessesCommunicationsManagement);
+                           + "\n\nTime Management Process: \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ProcessesTimeManagement)
+                           + "\nCost Management Process: \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ProcessesCostManagement)
+                           + "\nQuality Management Process: \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ProcessesQualityManagement)
+                           + "\nChange Management Process: \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ProcessesChangeManagement)
+                           + "\nRisk Management Process: \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ProcessesRiskManagement)
+                           + "\nIssue Management Process: \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ProcessesIssueManagement)
+                           + "\nProcurement Management Process: \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ProcessesProcurementManagement)
+                           + "\nAcceptance Management Process:  \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ProcessesAcceptanceManagement)
+                           + "\nCommunications Management Process:  \t" + DisplayYesNo(currentProjectOfficeChecklistModel.ProcessesCommunicationsManagement));
 
                         //Templates////////////
                         checklistTable.Rows[11].Cells[0].Paragraphs[0].Append("Templates").Bold(true).Color(Color.White).FontSize(14d);
@@ -530,41 +530,41 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         checklistTable.Rows[12].Cells[0].Paragraphs[0].Append("Are the following templates available?\n\n "
                            + "\nInitiation \t\t" 
-                           + "\nBusiness Case \t\t\t\t\t" + currentProjectOfficeChecklistModel.TemplatesInitiationBusinessCase
-                           + "\nFeasibility Study \t\t\t\t" + currentProjectOfficeChecklistModel.TemplatesInitiationFeasibilityStudy
-                           + "\nTerms of Reference \t\t\t\t" + currentProjectOfficeChecklistModel.TemplatesInitiationTermsOfReference
-                           + "\nJob Description \t\t\t\t\t" + currentProjectOfficeChecklistModel.TemplatesInitiationJobDescription
-                           + "\nStage Gate Review Form \t\t\t" + currentProjectOfficeChecklistModel.TemplatesInitiationStageGate
+                           + "\nBusiness Case \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesInitiationBusinessCase)
+                           + "\nFeasibility Study \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesInitiationFeasibilityStudy)
+                           + "\nTerms of Reference \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesInitiationTermsOfReference)
+                           + "\nJob Description \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesInitiationJobDescription)
+                           + "\nStage Gate Review Form \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesInitiationStageGate)
 
                            + "\n\nPlanning \n" 
-                           + "\nProject Plan \t\t\t\t\t" + currentProjectOfficeChecklistModel.TemplatesPlanningProjectPlan
-                           + "\nResource Plan \t\t\t\t\t" + currentProjectOfficeChecklistModel.TemplatesPlanningResourcePlan
-                           + "\nFinancial Plan \t\t\t\t\t" + currentProjectOfficeChecklistModel.TemplatesPlanningFinancialPlan
-                           + "\nQuality Plan \t\t\t\t\t" + currentProjectOfficeChecklistModel.TemplatesPlanningQualityPlan
-                           + "\nRisk Plan \t\t\t\t\t" + currentProjectOfficeChecklistModel.TemplatesPlanningRiskPlan
-                           + "\nAcceptance Plan\t\t\t\t" + currentProjectOfficeChecklistModel.TemplatesPlanningAcceptancePlan
-                           + "\nCommunications Plan \t\t\t\t" + currentProjectOfficeChecklistModel.TemplatesPlanningCommunicationsPlan
-                           + "\nProcurement Plan \t\t\t\t" + currentProjectOfficeChecklistModel.TemplatesPlanningProcurementPlan
-                           + "\nSupplier Contract \t\t\t\t" + currentProjectOfficeChecklistModel.TemplatesPlanningSupplierPlan
-                           + "\nTender Register  \t\t\t\t" + currentProjectOfficeChecklistModel.TemplatesPlanningTenderPlan
+                           + "\nProject Plan \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesPlanningProjectPlan)
+                           + "\nResource Plan \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesPlanningResourcePlan)
+                           + "\nFinancial Plan \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesPlanningFinancialPlan)
+                           + "\nQuality Plan \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesPlanningQualityPlan)
+                           + "\nRisk Plan \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesPlanningRiskPlan)
+                           + "\nAcceptance Plan\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesPlanningAcceptancePlan)
+                           + "\nCommunications Plan \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesPlanningCommunicationsPlan)
+                           + "\nProcurement Plan \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesPlanningProcurementPlan)
+                           + "\nSupplier Contract \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesPlanningSupplierPlan)
+                           + "\nTender Register  \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesPlanningTenderPlan)
 
                            + "\n\nExecution  \t\t" 
-                           + "\nTimesheet Form, Timesheet Register \t\t" + currentProjectOfficeChecklistModel.TemplatesExecutionTimesheet
-                           + "\nExpense Form, Expense Register \t\t" + currentProjectOfficeChecklistModel.TemplatesExecutionExpense
-                           + "\nQuality Form, Deliverables Register \t\t" + currentProjectOfficeChecklistModel.TemplatesExecutionQuality
-                           + "\nChange Form, Change Register \t\t\t" + currentProjectOfficeChecklistModel.TemplatesExecutionChange
-                           + "\nRisk Form, Risk Register \t\t\t" + currentProjectOfficeChecklistModel.TemplatesExecutionRisk
-                           + "\nIssue Form, Issue Register \t\t\t" + currentProjectOfficeChecklistModel.TemplatesExecutionIssue
-                           + "\nPurchase Order Form \t\t\t\t" + currentProjectOfficeChecklistModel.TemplatesExecutionPurchase
-                           + "\nProcurement Register  \t\t\t" + currentProjectOfficeChecklistModel.TemplatesExecutionProcurement
-                           + "\nProject Status Report  \t\t\t" + currentProjectOfficeChecklistModel.TemplatesExecutionProject
-                           + "\nCommunications Register \t\t" + currentProjectOfficeChecklistModel.TemplatesExecutionCommunication
-                           + "\nAcceptance Form \t\t\t" + currentProjectOfficeChecklistModel.TemplatesExecutionAcceptanceForm
-                           + "\nAcceptance Register \t\t\t" + currentProjectOfficeChecklistModel.TemplatesExecutionAcceptanceRegister
+                           + "\nTimesheet Form, Timesheet Register \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionTimesheet)
+                           + "\nExpense Form, Expense Register \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionExpense)
+                           + "\nQuality Form, Deliverables Register \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionQuality)
+                           + "\nChange Form, Change Register \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionChange)
+                           + "\nRisk Form, Risk Register \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionRisk)
+                           + "\nIssue Form, Issue Register \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionIssue)
+                           + "\nPurchase Order Form \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionPurchase)
+                           + "\nProcurement Register  \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionProcurement)
+                           + "\nProject Status Report  \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionProject)
+                           + "\nCommunications Register \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionCommunication)
+                           + "\nAcceptance Form \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionAcceptanceForm)
+                           + "\nAcceptance Register \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionAcceptanceRegister)
 
                            + "\n\nClosure  \t\t" 
-                           + "\nProject Closure Report  \t\t\t" + currentProjectOfficeChecklistModel.TemplatesClosureProjectReport
-                           + "\nPost Implementation Review  \t\t" + currentProjectOfficeChecklistModel.TemplatesClosurePostReview);
+                           + "\nProject Closure Report  \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesClosureProjectReport)
+                           + "\nPost Implementation Review  \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesClosurePostReview));
 
 
 
@@ -573,83 +573,83 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         checklistTable.Rows[13].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
                         checklistTable.Rows[14].Cells[0].Paragraphs[0].Append("Time Management\n "
-                           + "\nMonitoring the project progress by identifying time and effort spent vs. budgeted \t" + currentProjectOfficeChecklistModel.ServicesTimeMonitoring
-                           + "\nKeeping the Project Plan up-to-date and identifying any delivery date slippage \t\t" + currentProjectOfficeChecklistModel.ServicesTimeProjectPlan
-                           + "\nKeeping the Timesheet Register up-to-date at all times \t\t\t\t\t" + currentProjectOfficeChecklistModel.ServicesTimeTimesheet
+                           + "\nMonitoring the project progress by identifying time and effort spent vs. budgeted \t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesTimeMonitoring)
+                           + "\nKeeping the Project Plan up-to-date and identifying any delivery date slippage \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesTimeProjectPlan)
+                           + "\nKeeping the Timesheet Register up-to-date at all times \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesTimeTimesheet)
 
                            + "\n\nCost Management \t\t"
-                           + "\nMonitoring the project progress by identifying the budget spent vs. forecast \t\t" + currentProjectOfficeChecklistModel.ServicesCostMonitoring
-                           + "\nKeeping the Project Plan up-to-date and identifying any overspending \t\t\t" + currentProjectOfficeChecklistModel.ServicesCostProjectPlan
-                           + "\nKeeping the Expense Register up-to-date at all times \t\t\t\t\t" + currentProjectOfficeChecklistModel.ServicesCostExpense
+                           + "\nMonitoring the project progress by identifying the budget spent vs. forecast \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesCostMonitoring)
+                           + "\nKeeping the Project Plan up-to-date and identifying any overspending \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesCostProjectPlan)
+                           + "\nKeeping the Expense Register up-to-date at all times \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesCostExpense)
 
                            + "\n\nQuality Management  \t\t"
-                           + "\nPerforming Quality Assurance to improve the chances of delivering quality  \t\t" + currentProjectOfficeChecklistModel.ServicesQualityAssurance
-                           + "\nEnsuring that Quality Control is implemented to measure the actual level of quality\t" + currentProjectOfficeChecklistModel.ServicesQualityControl
-                           + "\nKeeping the Deliverables Register up-to-date at all times\t\t\t\t\t" + currentProjectOfficeChecklistModel.ServicesQualityDeliverables
+                           + "\nPerforming Quality Assurance to improve the chances of delivering quality  \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesQualityAssurance)
+                           + "\nEnsuring that Quality Control is implemented to measure the actual level of quality\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesQualityControl)
+                           + "\nKeeping the Deliverables Register up-to-date at all times\t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesQualityDeliverables)
 
                            + "\n\nChange Management\t\t"
-                           + "\nReceiving Change Requests and managing the change approval process\t\t\t" + currentProjectOfficeChecklistModel.ServicesChangeRequests
-                           + "\nScheduling Change Requests and measuring the impact of changes implemented \t" + currentProjectOfficeChecklistModel.ServicesChangeSheduling
-                           + "\nKeeping the Change Register up-to-date at all times \t\t\t\t\t" + currentProjectOfficeChecklistModel.ServicesChangeKeeping
+                           + "\nReceiving Change Requests and managing the change approval process\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesChangeRequests)
+                           + "\nScheduling Change Requests and measuring the impact of changes implemented \t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesChangeSheduling)
+                           + "\nKeeping the Change Register up-to-date at all times \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesChangeKeeping)
 
                            + "\n\nRisk Management \t\t\t"
-                           + "\nReceiving Risk Forms and managing the risk review process  \t\t\t\t" + currentProjectOfficeChecklistModel.ServicesRiskForms
-                           + "\nScheduling actions to mitigate risks and measuring the impact of such actions  \t\t" + currentProjectOfficeChecklistModel.ServicesRiskSheduling
-                           + "\nKeeping the Risk Register up-to-date at all times \t\t\t\t\t" + currentProjectOfficeChecklistModel.ServicesRiskKeeping
+                           + "\nReceiving Risk Forms and managing the risk review process  \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesRiskForms)
+                           + "\nScheduling actions to mitigate risks and measuring the impact of such actions  \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesRiskSheduling)
+                           + "\nKeeping the Risk Register up-to-date at all times \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesRiskKeeping)
 
                            + "\n\nIssue Management \t\t"
-                           + "\nReceiving Issue Forms and managing the issue review process \t\t\t\t" + currentProjectOfficeChecklistModel.ServicesIssueForms
-                           + "\nScheduling actions to resolve issues and measuring the impact of such actions \t\t" + currentProjectOfficeChecklistModel.ServicesIssueScheduling
-                           + "\nKeeping the Issue Register up-to-date at all times \t\t\t\t\t" + currentProjectOfficeChecklistModel.ServicesIssueKeeping
+                           + "\nReceiving Issue Forms and managing the issue review process \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesIssueForms)
+                           + "\nScheduling actions to resolve issues and measuring the impact of such actions \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesIssueScheduling)
+                           + "\nKeeping the Issue Register up-to-date at all times \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesIssueKeeping)
 
                            + "\n\nProcurement Management \t\t"
-                           + "\nIssuing Purchase Orders for the provision of goods and services from suppliers \t\t" + currentProjectOfficeChecklistModel.ServicesProcurementPurchase
-                           + "\nReceiving and accepting goods and services ordered from suppliers  \t\t\t" + currentProjectOfficeChecklistModel.ServicesProcurementGoodsAndServices
-                           + "\nKeeping the Procurement Register up-to-date at all times  \t\t\t\t" + currentProjectOfficeChecklistModel.ServicesProcurementKeeping
-                           + "\nMaking payment to suppliers for goods and services delivered \t\t\t\t" + currentProjectOfficeChecklistModel.ServicesProcurementPayement
-                           + "\nManaging the overall performance of suppliers to ensure that they complete their responsibilities as contracted \t\t\t\t\t\t\t\t\t\t" + currentProjectOfficeChecklistModel.ServicesProcurementManaging
+                           + "\nIssuing Purchase Orders for the provision of goods and services from suppliers \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesProcurementPurchase)
+                           + "\nReceiving and accepting goods and services ordered from suppliers  \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesProcurementGoodsAndServices)
+                           + "\nKeeping the Procurement Register up-to-date at all times  \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesProcurementKeeping)
+                           + "\nMaking payment to suppliers for goods and services delivered \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesProcurementPayement)
+                           + "\nManaging the overall performance of suppliers to ensure that they complete their responsibilities as contracted \t\t\t\t\t\t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesProcurementManaging)
 
                            + "\n\nAcceptance Management \t\t\t"
-                           + "\nInitiating Acceptance Reviews, as scheduled in the Acceptance Plan \t\t\t" + currentProjectOfficeChecklistModel.ServicesAcceptanceInitiating
-                           + "\nDocumenting the results of each review by completing Acceptance Forms  \t\t" + currentProjectOfficeChecklistModel.ServicesAcceptanceDocumenting
-                           + "\nGaining final acceptance from the customer for each deliverable produced  \t\t" + currentProjectOfficeChecklistModel.ServicesAcceptanceGainingFinalAcceptance
-                           + "\nKeeping the Acceptance Register up-to-date at all times \t\t\t\t\t" + currentProjectOfficeChecklistModel.ServicesAcceptanceKeeping
+                           + "\nInitiating Acceptance Reviews, as scheduled in the Acceptance Plan \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesAcceptanceInitiating)
+                           + "\nDocumenting the results of each review by completing Acceptance Forms  \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesAcceptanceDocumenting)
+                           + "\nGaining final acceptance from the customer for each deliverable produced  \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesAcceptanceGainingFinalAcceptance)
+                           + "\nKeeping the Acceptance Register up-to-date at all times \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesAcceptanceKeeping)
 
                            + "\n\nCommunications Management \t\t"
-                           + "\nUndertaking the communications tasks and events as listed in the Communications Plan " + currentProjectOfficeChecklistModel.ServicesCommunicationsUndertaking
-                           + "\nCreating and releasing regular Project Status Reports  \t\t\t\t\t" + currentProjectOfficeChecklistModel.ServicesCommunicationsCreating
-                           + "\nDistributing press releases and managing Public Relations  \t\t\t\t" + currentProjectOfficeChecklistModel.ServicesCommunicationsDistributing
-                           + "\nKeeping the Communications Register up-to-date at all times \t\t\t\t" + currentProjectOfficeChecklistModel.ServicesCommunicationsKeeping
+                           + "\nUndertaking the communications tasks and events as listed in the Communications Plan " + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesCommunicationsUndertaking)
+                           + "\nCreating and releasing regular Project Status Reports  \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesCommunicationsCreating)
+                           + "\nDistributing press releases and managing Public Relations  \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesCommunicationsDistributing)
+                           + "\nKeeping the Communications Register up-to-date at all times \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesCommunicationsKeeping)
 
                            + "\n\nStage Gate Reviews  \t\t"
-                           + "\nIdentifying the point in time when a Stage Gate must be undertaken  \t\t\t" + currentProjectOfficeChecklistModel.ServicesStageGateIdentifying
-                           + "\nOrganizing the Stage Gate and recording the results on a Stage Gate Form  \t\t" + currentProjectOfficeChecklistModel.ServicesStageGateOrganizing
+                           + "\nIdentifying the point in time when a Stage Gate must be undertaken  \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesStageGateIdentifying)
+                           + "\nOrganizing the Stage Gate and recording the results on a Stage Gate Form  \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesStageGateOrganizing)
 
                            + "\n\nAuditing and Compliance  \t\t\t"
-                           + "\nEnsuring that the project conforms to appropriate industry and business policies, processes, standards and guidelines  \t\t\t\t\t\t\t" + currentProjectOfficeChecklistModel.ServicesAuditingEnsuringConforms
-                           + "\nInforming the Project Manager of any deviations and monitoring the results of any actions taken to correct them  \t\t\t\t\t\t\t\t" + currentProjectOfficeChecklistModel.ServicesAuditingInforming
+                           + "\nEnsuring that the project conforms to appropriate industry and business policies, processes, standards and guidelines  \t\t\t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesAuditingEnsuringConforms)
+                           + "\nInforming the Project Manager of any deviations and monitoring the results of any actions taken to correct them  \t\t\t\t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesAuditingInforming)
 
                            + "\n\nSupporting Staff  \t\t"
-                           + "\nAssisting the Project Manager with the recruitment of new staff \t\t\t\t" + currentProjectOfficeChecklistModel.ServicesSupportingAssisting
-                           + "\nSupporting and advising staff, resolving staff issues and providing staff training \t\t" + currentProjectOfficeChecklistModel.ServicesSupportingAdvising
-                           + "\nPaying staff in accordance with their contracts and administering leave  \t\t\t" + currentProjectOfficeChecklistModel.ServicesSupportingPaying
+                           + "\nAssisting the Project Manager with the recruitment of new staff \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesSupportingAssisting)
+                           + "\nSupporting and advising staff, resolving staff issues and providing staff training \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesSupportingAdvising)
+                           + "\nPaying staff in accordance with their contracts and administering leave  \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesSupportingPaying)
 
                            + "\n\nProviding Tools  \t\t"
-                           + "\nProcuring a suitable Project Management methodology  \t\t\t\t" + currentProjectOfficeChecklistModel.ServicesProvidingProjectManagement
-                           + "\nProcuring tools for project planning, monitoring, controlling and reporting  \t\t" + currentProjectOfficeChecklistModel.ServicesProvidingToolsForMonitoring
-                           + "\nTraining staff in the use of these tools and methodology  \t\t\t\t" + currentProjectOfficeChecklistModel.ServicesProvidingTraining
+                           + "\nProcuring a suitable Project Management methodology  \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesProvidingProjectManagement)
+                           + "\nProcuring tools for project planning, monitoring, controlling and reporting  \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesProvidingToolsForMonitoring)
+                           + "\nTraining staff in the use of these tools and methodology  \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesProvidingTraining)
 
                            + "\n\nFiling Documents  \t\t"
-                           + "\nKeeping a library of all project documents, reports, job descriptions, correspondence, standards, processes, registers, forms and templates  \t\t\t\t\t\t" + currentProjectOfficeChecklistModel.ServicesFilingLibrary
-                           + "\nImplementing an indexing method to ensure that project documentation may be easily sourced when required  \t\t\t\t\t\t\t\t\t\t" + currentProjectOfficeChecklistModel.ServicesFilingImplementing
+                           + "\nKeeping a library of all project documents, reports, job descriptions, correspondence, standards, processes, registers, forms and templates  \t\t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesFilingLibrary)
+                           + "\nImplementing an indexing method to ensure that project documentation may be easily sourced when required  \t\t\t\t\t\t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesFilingImplementing)
 
                            + "\n\nPerforming Administration  \t\t"
-                           + "\nProviding administration services such as the organization of travel bookings, room bookings, photocopying, secretarial, mail and correspondence  \t\t\t\t\t" + currentProjectOfficeChecklistModel.ServicesPerformingAdministration
-                           + "\nPurchasing all office equipment and materials needed by the project  \t\t\t" + currentProjectOfficeChecklistModel.ServicesPerformingPurchasing
+                           + "\nProviding administration services such as the organization of travel bookings, room bookings, photocopying, secretarial, mail and correspondence  \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesPerformingAdministration)
+                           + "\nPurchasing all office equipment and materials needed by the project  \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesPerformingPurchasing)
 
                            + "\n\nUndertaking Closure Reviews  \t\t" 
-                           + "\nOrganizing the completion of a Post Implementation Review after Project Closure  \t" + currentProjectOfficeChecklistModel.ServicesClosureOrganizing
-                           + "\nCommunicating the results of the review to the appropriate project stakeholders  \t" + currentProjectOfficeChecklistModel.ServicesComminicating) ;
+                           + "\nOrganizing the completion of a Post Implementation Review after Project Closure  \t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesClosureOrganizing)
+                           + "\nCommunicating the results of the review to the appropriate project stakeholders  \t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesComminicating));
 
 
 
