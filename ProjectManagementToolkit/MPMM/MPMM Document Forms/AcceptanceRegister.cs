@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
-    public partial class ProjectStatusReportDocumentForm : Form
+    public partial class AcceptanceRegister : Form
     {
-        public ProjectStatusReportDocumentForm()
+        public AcceptanceRegister()
         {
             InitializeComponent();
-        }
-
-        private void dgvProjectRisk_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

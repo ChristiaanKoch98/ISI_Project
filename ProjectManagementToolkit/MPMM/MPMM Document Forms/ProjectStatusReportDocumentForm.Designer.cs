@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabCtrlProjectStatusDocumentForm = new System.Windows.Forms.TabControl();
             this.tabProjectDetails = new System.Windows.Forms.TabPage();
-            this.tabExecutiveSummary = new System.Windows.Forms.TabPage();
-            this.tabDetailedStatusReport = new System.Windows.Forms.TabPage();
-            this.dgvProjectSchedule = new System.Windows.Forms.DataGridView();
-            this.txtProjectName = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
+            this.txtProjectRecipients = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtProjectID = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.txtProjectManager = new System.Windows.Forms.TextBox();
             this.txtProjectSponsor = new System.Windows.Forms.TextBox();
             this.txtReportPreparedBy = new System.Windows.Forms.TextBox();
@@ -47,63 +46,84 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtProjectID = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtProjectRecipients = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtProjectChanges = new System.Windows.Forms.TextBox();
-            this.txtProjectIssues = new System.Windows.Forms.TextBox();
-            this.txtProjectRisks = new System.Windows.Forms.TextBox();
-            this.txtProjectDeliverables = new System.Windows.Forms.TextBox();
-            this.txtProjectExpenses = new System.Windows.Forms.TextBox();
-            this.txtProjectSchedule = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
+            this.tabExecutiveSummary = new System.Windows.Forms.TabPage();
+            this.tabCtrlExecutiveSummary = new System.Windows.Forms.TabControl();
+            this.tabProjectDiscription = new System.Windows.Forms.TabPage();
             this.txtProjectDescription = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.tabOverallStatus = new System.Windows.Forms.TabPage();
             this.txtOverallStatus = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.dgvProjectQuality = new System.Windows.Forms.DataGridView();
-            this.dgvProjectRisk = new System.Windows.Forms.DataGridView();
-            this.dgvProjectIssues = new System.Windows.Forms.DataGridView();
-            this.dgvProjectEffort = new System.Windows.Forms.DataGridView();
+            this.tabProjectSchedule = new System.Windows.Forms.TabPage();
+            this.txtProjectSchedule = new System.Windows.Forms.TextBox();
+            this.tabProjectExpenses = new System.Windows.Forms.TabPage();
+            this.txtProjectExpenses = new System.Windows.Forms.TextBox();
+            this.tabProjectDeliverables = new System.Windows.Forms.TabPage();
+            this.txtProjectDeliverables = new System.Windows.Forms.TextBox();
+            this.tabProjectRisks = new System.Windows.Forms.TabPage();
+            this.txtProjectRisks = new System.Windows.Forms.TextBox();
+            this.tabProjectIssues = new System.Windows.Forms.TabPage();
+            this.txtProjectIssues = new System.Windows.Forms.TextBox();
+            this.tabProjectChanges = new System.Windows.Forms.TabPage();
+            this.txtProjectChanges = new System.Windows.Forms.TextBox();
+            this.tabDetailedStatusReport = new System.Windows.Forms.TabPage();
+            this.tabCtrlDetailedStatusReport = new System.Windows.Forms.TabControl();
+            this.tabProjectSchedule2 = new System.Windows.Forms.TabPage();
+            this.dgvProjectSchedule = new System.Windows.Forms.DataGridView();
+            this.tabProjectExpenses2 = new System.Windows.Forms.TabPage();
             this.dgvProjectExpense = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.tabControl1.SuspendLayout();
+            this.tabProjectEffort = new System.Windows.Forms.TabPage();
+            this.dgvProjectEffort = new System.Windows.Forms.DataGridView();
+            this.tabProjectQuality = new System.Windows.Forms.TabPage();
+            this.dgvProjectQuality = new System.Windows.Forms.DataGridView();
+            this.tabProjectRisk2 = new System.Windows.Forms.TabPage();
+            this.dgvProjectRisk = new System.Windows.Forms.DataGridView();
+            this.tabProjectIssues2 = new System.Windows.Forms.TabPage();
+            this.dgvProjectIssues = new System.Windows.Forms.DataGridView();
+            this.txtProjectName = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.tabCtrlProjectStatusDocumentForm.SuspendLayout();
             this.tabProjectDetails.SuspendLayout();
             this.tabExecutiveSummary.SuspendLayout();
+            this.tabCtrlExecutiveSummary.SuspendLayout();
+            this.tabProjectDiscription.SuspendLayout();
+            this.tabOverallStatus.SuspendLayout();
+            this.tabProjectSchedule.SuspendLayout();
+            this.tabProjectExpenses.SuspendLayout();
+            this.tabProjectDeliverables.SuspendLayout();
+            this.tabProjectRisks.SuspendLayout();
+            this.tabProjectIssues.SuspendLayout();
+            this.tabProjectChanges.SuspendLayout();
             this.tabDetailedStatusReport.SuspendLayout();
+            this.tabCtrlDetailedStatusReport.SuspendLayout();
+            this.tabProjectSchedule2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProjectSchedule)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectQuality)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectRisk)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectIssues)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectEffort)).BeginInit();
+            this.tabProjectExpenses2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProjectExpense)).BeginInit();
+            this.tabProjectEffort.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectEffort)).BeginInit();
+            this.tabProjectQuality.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectQuality)).BeginInit();
+            this.tabProjectRisk2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectRisk)).BeginInit();
+            this.tabProjectIssues2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectIssues)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tabCtrlProjectStatusDocumentForm
             // 
-            this.tabControl1.Controls.Add(this.tabProjectDetails);
-            this.tabControl1.Controls.Add(this.tabExecutiveSummary);
-            this.tabControl1.Controls.Add(this.tabDetailedStatusReport);
-            this.tabControl1.Location = new System.Drawing.Point(8, 43);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1038, 735);
-            this.tabControl1.TabIndex = 14;
+            this.tabCtrlProjectStatusDocumentForm.Controls.Add(this.tabProjectDetails);
+            this.tabCtrlProjectStatusDocumentForm.Controls.Add(this.tabExecutiveSummary);
+            this.tabCtrlProjectStatusDocumentForm.Controls.Add(this.tabDetailedStatusReport);
+            this.tabCtrlProjectStatusDocumentForm.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabCtrlProjectStatusDocumentForm.Location = new System.Drawing.Point(6, 35);
+            this.tabCtrlProjectStatusDocumentForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabCtrlProjectStatusDocumentForm.Name = "tabCtrlProjectStatusDocumentForm";
+            this.tabCtrlProjectStatusDocumentForm.SelectedIndex = 0;
+            this.tabCtrlProjectStatusDocumentForm.Size = new System.Drawing.Size(778, 597);
+            this.tabCtrlProjectStatusDocumentForm.TabIndex = 14;
             // 
             // tabProjectDetails
             // 
-            this.tabProjectDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabProjectDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabProjectDetails.Controls.Add(this.txtProjectRecipients);
             this.tabProjectDetails.Controls.Add(this.label9);
             this.tabProjectDetails.Controls.Add(this.txtProjectID);
@@ -120,135 +140,107 @@
             this.tabProjectDetails.Controls.Add(this.label3);
             this.tabProjectDetails.Controls.Add(this.label2);
             this.tabProjectDetails.Controls.Add(this.label1);
-            this.tabProjectDetails.Location = new System.Drawing.Point(4, 25);
+            this.tabProjectDetails.Location = new System.Drawing.Point(4, 23);
+            this.tabProjectDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabProjectDetails.Name = "tabProjectDetails";
-            this.tabProjectDetails.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProjectDetails.Size = new System.Drawing.Size(1030, 706);
+            this.tabProjectDetails.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectDetails.Size = new System.Drawing.Size(770, 570);
             this.tabProjectDetails.TabIndex = 0;
             this.tabProjectDetails.Text = "Project Details";
             // 
-            // tabExecutiveSummary
+            // txtProjectRecipients
             // 
-            this.tabExecutiveSummary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabExecutiveSummary.Controls.Add(this.txtOverallStatus);
-            this.tabExecutiveSummary.Controls.Add(this.label11);
-            this.tabExecutiveSummary.Controls.Add(this.txtProjectChanges);
-            this.tabExecutiveSummary.Controls.Add(this.txtProjectIssues);
-            this.tabExecutiveSummary.Controls.Add(this.txtProjectRisks);
-            this.tabExecutiveSummary.Controls.Add(this.txtProjectDeliverables);
-            this.tabExecutiveSummary.Controls.Add(this.txtProjectExpenses);
-            this.tabExecutiveSummary.Controls.Add(this.txtProjectSchedule);
-            this.tabExecutiveSummary.Controls.Add(this.label19);
-            this.tabExecutiveSummary.Controls.Add(this.txtProjectDescription);
-            this.tabExecutiveSummary.Controls.Add(this.label13);
-            this.tabExecutiveSummary.Controls.Add(this.label14);
-            this.tabExecutiveSummary.Controls.Add(this.label15);
-            this.tabExecutiveSummary.Controls.Add(this.label16);
-            this.tabExecutiveSummary.Controls.Add(this.label17);
-            this.tabExecutiveSummary.Controls.Add(this.label18);
-            this.tabExecutiveSummary.Location = new System.Drawing.Point(4, 25);
-            this.tabExecutiveSummary.Name = "tabExecutiveSummary";
-            this.tabExecutiveSummary.Padding = new System.Windows.Forms.Padding(3);
-            this.tabExecutiveSummary.Size = new System.Drawing.Size(1030, 706);
-            this.tabExecutiveSummary.TabIndex = 1;
-            this.tabExecutiveSummary.Text = "Executive Summary";
+            this.txtProjectRecipients.Location = new System.Drawing.Point(218, 464);
+            this.txtProjectRecipients.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectRecipients.Multiline = true;
+            this.txtProjectRecipients.Name = "txtProjectRecipients";
+            this.txtProjectRecipients.Size = new System.Drawing.Size(233, 54);
+            this.txtProjectRecipients.TabIndex = 30;
             // 
-            // tabDetailedStatusReport
+            // label9
             // 
-            this.tabDetailedStatusReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabDetailedStatusReport.Controls.Add(this.label22);
-            this.tabDetailedStatusReport.Controls.Add(this.label21);
-            this.tabDetailedStatusReport.Controls.Add(this.label20);
-            this.tabDetailedStatusReport.Controls.Add(this.label12);
-            this.tabDetailedStatusReport.Controls.Add(this.label10);
-            this.tabDetailedStatusReport.Controls.Add(this.label4);
-            this.tabDetailedStatusReport.Controls.Add(this.dgvProjectExpense);
-            this.tabDetailedStatusReport.Controls.Add(this.dgvProjectEffort);
-            this.tabDetailedStatusReport.Controls.Add(this.dgvProjectIssues);
-            this.tabDetailedStatusReport.Controls.Add(this.dgvProjectRisk);
-            this.tabDetailedStatusReport.Controls.Add(this.dgvProjectQuality);
-            this.tabDetailedStatusReport.Controls.Add(this.dgvProjectSchedule);
-            this.tabDetailedStatusReport.Location = new System.Drawing.Point(4, 25);
-            this.tabDetailedStatusReport.Name = "tabDetailedStatusReport";
-            this.tabDetailedStatusReport.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDetailedStatusReport.Size = new System.Drawing.Size(1030, 706);
-            this.tabDetailedStatusReport.TabIndex = 2;
-            this.tabDetailedStatusReport.Text = "Detailed Status Report";
-            // 
-            // dgvProjectSchedule
-            // 
-            this.dgvProjectSchedule.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvProjectSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProjectSchedule.Location = new System.Drawing.Point(243, 3);
-            this.dgvProjectSchedule.Name = "dgvProjectSchedule";
-            this.dgvProjectSchedule.RowHeadersWidth = 51;
-            this.dgvProjectSchedule.Size = new System.Drawing.Size(781, 109);
-            this.dgvProjectSchedule.TabIndex = 45;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Helvetica", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(24, 483);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(131, 17);
+            this.label9.TabIndex = 29;
+            this.label9.Text = "Project Recipients:";
             // 
-            // txtProjectName
+            // txtProjectID
             // 
-            this.txtProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProjectName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProjectName.ForeColor = System.Drawing.Color.White;
-            this.txtProjectName.Location = new System.Drawing.Point(188, 6);
-            this.txtProjectName.Name = "txtProjectName";
-            this.txtProjectName.Size = new System.Drawing.Size(100, 24);
-            this.txtProjectName.TabIndex = 17;
-            this.txtProjectName.Text = "Project Name";
+            this.txtProjectID.Location = new System.Drawing.Point(218, 78);
+            this.txtProjectID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectID.Name = "txtProjectID";
+            this.txtProjectID.Size = new System.Drawing.Size(233, 21);
+            this.txtProjectID.TabIndex = 28;
             // 
-            // label27
+            // label8
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(12, 9);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(167, 16);
-            this.label27.TabIndex = 16;
-            this.label27.Text = "Project Status Report For: ";
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Helvetica", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(21, 79);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(77, 17);
+            this.label8.TabIndex = 27;
+            this.label8.Text = "Project ID:";
             // 
             // txtProjectManager
             // 
-            this.txtProjectManager.Location = new System.Drawing.Point(291, 172);
+            this.txtProjectManager.Location = new System.Drawing.Point(218, 140);
+            this.txtProjectManager.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtProjectManager.Name = "txtProjectManager";
-            this.txtProjectManager.Size = new System.Drawing.Size(309, 22);
+            this.txtProjectManager.Size = new System.Drawing.Size(233, 21);
             this.txtProjectManager.TabIndex = 26;
             // 
             // txtProjectSponsor
             // 
-            this.txtProjectSponsor.Location = new System.Drawing.Point(291, 250);
+            this.txtProjectSponsor.Location = new System.Drawing.Point(218, 203);
+            this.txtProjectSponsor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtProjectSponsor.Name = "txtProjectSponsor";
-            this.txtProjectSponsor.Size = new System.Drawing.Size(309, 22);
+            this.txtProjectSponsor.Size = new System.Drawing.Size(233, 21);
             this.txtProjectSponsor.TabIndex = 25;
             // 
             // txtReportPreparedBy
             // 
-            this.txtReportPreparedBy.Location = new System.Drawing.Point(291, 327);
+            this.txtReportPreparedBy.Location = new System.Drawing.Point(218, 266);
+            this.txtReportPreparedBy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtReportPreparedBy.Name = "txtReportPreparedBy";
-            this.txtReportPreparedBy.Size = new System.Drawing.Size(309, 22);
+            this.txtReportPreparedBy.Size = new System.Drawing.Size(233, 21);
             this.txtReportPreparedBy.TabIndex = 24;
             // 
             // txtReportPreperationDate
             // 
-            this.txtReportPreperationDate.Location = new System.Drawing.Point(291, 407);
+            this.txtReportPreperationDate.Location = new System.Drawing.Point(218, 331);
+            this.txtReportPreperationDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtReportPreperationDate.Name = "txtReportPreperationDate";
-            this.txtReportPreperationDate.Size = new System.Drawing.Size(309, 22);
+            this.txtReportPreperationDate.Size = new System.Drawing.Size(233, 21);
             this.txtReportPreperationDate.TabIndex = 23;
             // 
             // txtReportingPeriod
             // 
-            this.txtReportingPeriod.Location = new System.Drawing.Point(291, 487);
+            this.txtReportingPeriod.Location = new System.Drawing.Point(218, 396);
+            this.txtReportingPeriod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtReportingPeriod.Name = "txtReportingPeriod";
-            this.txtReportingPeriod.Size = new System.Drawing.Size(309, 22);
+            this.txtReportingPeriod.Size = new System.Drawing.Size(233, 21);
             this.txtReportingPeriod.TabIndex = 22;
             // 
             // txtProjectName2
             // 
-            this.txtProjectName2.Location = new System.Drawing.Point(291, 26);
+            this.txtProjectName2.Location = new System.Drawing.Point(218, 21);
+            this.txtProjectName2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtProjectName2.Name = "txtProjectName2";
-            this.txtProjectName2.Size = new System.Drawing.Size(309, 22);
+            this.txtProjectName2.Size = new System.Drawing.Size(233, 21);
             this.txtProjectName2.TabIndex = 21;
             // 
             // label7
@@ -257,11 +249,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(32, 487);
+            this.label7.Font = new System.Drawing.Font("Helvetica", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(24, 396);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(154, 22);
+            this.label7.Size = new System.Drawing.Size(121, 17);
             this.label7.TabIndex = 20;
             this.label7.Text = "Reporting Period:";
             // 
@@ -271,11 +264,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(32, 407);
+            this.label6.Font = new System.Drawing.Font("Helvetica", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(24, 331);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(213, 22);
+            this.label6.Size = new System.Drawing.Size(170, 17);
             this.label6.TabIndex = 19;
             this.label6.Text = "Report Preperation Date:";
             // 
@@ -285,11 +279,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(32, 326);
+            this.label5.Font = new System.Drawing.Font("Helvetica", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(24, 265);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(177, 22);
+            this.label5.Size = new System.Drawing.Size(142, 17);
             this.label5.TabIndex = 18;
             this.label5.Text = "Report Prepared By:";
             // 
@@ -299,11 +294,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(32, 249);
+            this.label3.Font = new System.Drawing.Font("Helvetica", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(24, 202);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 22);
+            this.label3.Size = new System.Drawing.Size(117, 17);
             this.label3.TabIndex = 17;
             this.label3.Text = "Project Sponsor:";
             // 
@@ -313,11 +309,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(28, 172);
+            this.label2.Font = new System.Drawing.Font("Helvetica", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(21, 140);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 22);
+            this.label2.Size = new System.Drawing.Size(120, 17);
             this.label2.TabIndex = 16;
             this.label2.Text = "Project Manager:";
             // 
@@ -327,280 +324,269 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(28, 27);
+            this.label1.Font = new System.Drawing.Font("Helvetica", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(21, 22);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 22);
+            this.label1.Size = new System.Drawing.Size(102, 17);
             this.label1.TabIndex = 15;
             this.label1.Text = "Project Name:";
             // 
-            // txtProjectID
+            // tabExecutiveSummary
             // 
-            this.txtProjectID.Location = new System.Drawing.Point(291, 96);
-            this.txtProjectID.Name = "txtProjectID";
-            this.txtProjectID.Size = new System.Drawing.Size(309, 22);
-            this.txtProjectID.TabIndex = 28;
+            this.tabExecutiveSummary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabExecutiveSummary.Controls.Add(this.tabCtrlExecutiveSummary);
+            this.tabExecutiveSummary.Location = new System.Drawing.Point(4, 23);
+            this.tabExecutiveSummary.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabExecutiveSummary.Name = "tabExecutiveSummary";
+            this.tabExecutiveSummary.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabExecutiveSummary.Size = new System.Drawing.Size(770, 570);
+            this.tabExecutiveSummary.TabIndex = 1;
+            this.tabExecutiveSummary.Text = "Executive Summary";
             // 
-            // label8
+            // tabCtrlExecutiveSummary
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(28, 97);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(95, 22);
-            this.label8.TabIndex = 27;
-            this.label8.Text = "Project ID:";
+            this.tabCtrlExecutiveSummary.Controls.Add(this.tabProjectDiscription);
+            this.tabCtrlExecutiveSummary.Controls.Add(this.tabOverallStatus);
+            this.tabCtrlExecutiveSummary.Controls.Add(this.tabProjectSchedule);
+            this.tabCtrlExecutiveSummary.Controls.Add(this.tabProjectExpenses);
+            this.tabCtrlExecutiveSummary.Controls.Add(this.tabProjectDeliverables);
+            this.tabCtrlExecutiveSummary.Controls.Add(this.tabProjectRisks);
+            this.tabCtrlExecutiveSummary.Controls.Add(this.tabProjectIssues);
+            this.tabCtrlExecutiveSummary.Controls.Add(this.tabProjectChanges);
+            this.tabCtrlExecutiveSummary.Location = new System.Drawing.Point(2, 2);
+            this.tabCtrlExecutiveSummary.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabCtrlExecutiveSummary.Name = "tabCtrlExecutiveSummary";
+            this.tabCtrlExecutiveSummary.SelectedIndex = 0;
+            this.tabCtrlExecutiveSummary.Size = new System.Drawing.Size(768, 569);
+            this.tabCtrlExecutiveSummary.TabIndex = 52;
             // 
-            // txtProjectRecipients
+            // tabProjectDiscription
             // 
-            this.txtProjectRecipients.Location = new System.Drawing.Point(291, 571);
-            this.txtProjectRecipients.Multiline = true;
-            this.txtProjectRecipients.Name = "txtProjectRecipients";
-            this.txtProjectRecipients.Size = new System.Drawing.Size(309, 66);
-            this.txtProjectRecipients.TabIndex = 30;
-            // 
-            // label9
-            // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(32, 595);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(160, 22);
-            this.label9.TabIndex = 29;
-            this.label9.Text = "Project Recipients:";
-            // 
-            // txtProjectChanges
-            // 
-            this.txtProjectChanges.Location = new System.Drawing.Point(283, 624);
-            this.txtProjectChanges.Multiline = true;
-            this.txtProjectChanges.Name = "txtProjectChanges";
-            this.txtProjectChanges.Size = new System.Drawing.Size(741, 82);
-            this.txtProjectChanges.TabIndex = 49;
-            // 
-            // txtProjectIssues
-            // 
-            this.txtProjectIssues.Location = new System.Drawing.Point(283, 536);
-            this.txtProjectIssues.Multiline = true;
-            this.txtProjectIssues.Name = "txtProjectIssues";
-            this.txtProjectIssues.Size = new System.Drawing.Size(741, 82);
-            this.txtProjectIssues.TabIndex = 48;
-            // 
-            // txtProjectRisks
-            // 
-            this.txtProjectRisks.Location = new System.Drawing.Point(283, 448);
-            this.txtProjectRisks.Multiline = true;
-            this.txtProjectRisks.Name = "txtProjectRisks";
-            this.txtProjectRisks.Size = new System.Drawing.Size(741, 82);
-            this.txtProjectRisks.TabIndex = 47;
-            // 
-            // txtProjectDeliverables
-            // 
-            this.txtProjectDeliverables.Location = new System.Drawing.Point(283, 360);
-            this.txtProjectDeliverables.Multiline = true;
-            this.txtProjectDeliverables.Name = "txtProjectDeliverables";
-            this.txtProjectDeliverables.Size = new System.Drawing.Size(741, 82);
-            this.txtProjectDeliverables.TabIndex = 46;
-            // 
-            // txtProjectExpenses
-            // 
-            this.txtProjectExpenses.Location = new System.Drawing.Point(283, 270);
-            this.txtProjectExpenses.Multiline = true;
-            this.txtProjectExpenses.Name = "txtProjectExpenses";
-            this.txtProjectExpenses.Size = new System.Drawing.Size(741, 82);
-            this.txtProjectExpenses.TabIndex = 45;
-            // 
-            // txtProjectSchedule
-            // 
-            this.txtProjectSchedule.Location = new System.Drawing.Point(283, 182);
-            this.txtProjectSchedule.Multiline = true;
-            this.txtProjectSchedule.Name = "txtProjectSchedule";
-            this.txtProjectSchedule.Size = new System.Drawing.Size(741, 82);
-            this.txtProjectSchedule.TabIndex = 44;
-            // 
-            // label19
-            // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(33, 648);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(143, 22);
-            this.label19.TabIndex = 43;
-            this.label19.Text = "Project Changes:";
+            this.tabProjectDiscription.Controls.Add(this.txtProjectDescription);
+            this.tabProjectDiscription.Location = new System.Drawing.Point(4, 23);
+            this.tabProjectDiscription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectDiscription.Name = "tabProjectDiscription";
+            this.tabProjectDiscription.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectDiscription.Size = new System.Drawing.Size(760, 542);
+            this.tabProjectDiscription.TabIndex = 0;
+            this.tabProjectDiscription.Text = "Project Description";
+            this.tabProjectDiscription.UseVisualStyleBackColor = true;
             // 
             // txtProjectDescription
             // 
-            this.txtProjectDescription.Location = new System.Drawing.Point(283, 6);
+            this.txtProjectDescription.Location = new System.Drawing.Point(0, 0);
+            this.txtProjectDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtProjectDescription.Multiline = true;
             this.txtProjectDescription.Name = "txtProjectDescription";
-            this.txtProjectDescription.Size = new System.Drawing.Size(741, 82);
+            this.txtProjectDescription.Size = new System.Drawing.Size(763, 544);
             this.txtProjectDescription.TabIndex = 42;
             // 
-            // label13
+            // tabOverallStatus
             // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(33, 480);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(119, 22);
-            this.label13.TabIndex = 41;
-            this.label13.Text = "Project Risks:";
-            // 
-            // label14
-            // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(33, 565);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(126, 22);
-            this.label14.TabIndex = 40;
-            this.label14.Text = "Project Issues:";
-            // 
-            // label15
-            // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(33, 390);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(176, 22);
-            this.label15.TabIndex = 39;
-            this.label15.Text = "Project Deliverables:";
-            // 
-            // label16
-            // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(33, 300);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(152, 22);
-            this.label16.TabIndex = 38;
-            this.label16.Text = "Project Expenses:";
-            // 
-            // label17
-            // 
-            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(33, 215);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(148, 22);
-            this.label17.TabIndex = 37;
-            this.label17.Text = "Project Schedule:";
-            // 
-            // label18
-            // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(42, 39);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(170, 22);
-            this.label18.TabIndex = 36;
-            this.label18.Text = "Project Description:";
+            this.tabOverallStatus.Controls.Add(this.txtOverallStatus);
+            this.tabOverallStatus.Location = new System.Drawing.Point(4, 23);
+            this.tabOverallStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabOverallStatus.Name = "tabOverallStatus";
+            this.tabOverallStatus.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabOverallStatus.Size = new System.Drawing.Size(760, 542);
+            this.tabOverallStatus.TabIndex = 1;
+            this.tabOverallStatus.Text = "Overall Status";
+            this.tabOverallStatus.UseVisualStyleBackColor = true;
             // 
             // txtOverallStatus
             // 
-            this.txtOverallStatus.Location = new System.Drawing.Point(283, 94);
+            this.txtOverallStatus.Location = new System.Drawing.Point(0, 0);
+            this.txtOverallStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtOverallStatus.Multiline = true;
             this.txtOverallStatus.Name = "txtOverallStatus";
-            this.txtOverallStatus.Size = new System.Drawing.Size(741, 82);
+            this.txtOverallStatus.Size = new System.Drawing.Size(761, 544);
             this.txtOverallStatus.TabIndex = 51;
             // 
-            // label11
+            // tabProjectSchedule
             // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabProjectSchedule.Controls.Add(this.txtProjectSchedule);
+            this.tabProjectSchedule.Location = new System.Drawing.Point(4, 23);
+            this.tabProjectSchedule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectSchedule.Name = "tabProjectSchedule";
+            this.tabProjectSchedule.Size = new System.Drawing.Size(760, 542);
+            this.tabProjectSchedule.TabIndex = 2;
+            this.tabProjectSchedule.Text = "Project Schedule";
+            this.tabProjectSchedule.UseVisualStyleBackColor = true;
+            // 
+            // txtProjectSchedule
+            // 
+            this.txtProjectSchedule.Location = new System.Drawing.Point(0, 0);
+            this.txtProjectSchedule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectSchedule.Multiline = true;
+            this.txtProjectSchedule.Name = "txtProjectSchedule";
+            this.txtProjectSchedule.Size = new System.Drawing.Size(761, 544);
+            this.txtProjectSchedule.TabIndex = 44;
+            // 
+            // tabProjectExpenses
+            // 
+            this.tabProjectExpenses.Controls.Add(this.txtProjectExpenses);
+            this.tabProjectExpenses.Location = new System.Drawing.Point(4, 21);
+            this.tabProjectExpenses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectExpenses.Name = "tabProjectExpenses";
+            this.tabProjectExpenses.Size = new System.Drawing.Size(760, 544);
+            this.tabProjectExpenses.TabIndex = 3;
+            this.tabProjectExpenses.Text = "Project Expenses";
+            this.tabProjectExpenses.UseVisualStyleBackColor = true;
+            // 
+            // txtProjectExpenses
+            // 
+            this.txtProjectExpenses.Location = new System.Drawing.Point(0, 0);
+            this.txtProjectExpenses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectExpenses.Multiline = true;
+            this.txtProjectExpenses.Name = "txtProjectExpenses";
+            this.txtProjectExpenses.Size = new System.Drawing.Size(761, 544);
+            this.txtProjectExpenses.TabIndex = 45;
+            // 
+            // tabProjectDeliverables
+            // 
+            this.tabProjectDeliverables.Controls.Add(this.txtProjectDeliverables);
+            this.tabProjectDeliverables.Location = new System.Drawing.Point(4, 23);
+            this.tabProjectDeliverables.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectDeliverables.Name = "tabProjectDeliverables";
+            this.tabProjectDeliverables.Size = new System.Drawing.Size(760, 542);
+            this.tabProjectDeliverables.TabIndex = 4;
+            this.tabProjectDeliverables.Text = "Project Deliverables";
+            this.tabProjectDeliverables.UseVisualStyleBackColor = true;
+            // 
+            // txtProjectDeliverables
+            // 
+            this.txtProjectDeliverables.Location = new System.Drawing.Point(0, 0);
+            this.txtProjectDeliverables.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectDeliverables.Multiline = true;
+            this.txtProjectDeliverables.Name = "txtProjectDeliverables";
+            this.txtProjectDeliverables.Size = new System.Drawing.Size(761, 544);
+            this.txtProjectDeliverables.TabIndex = 46;
+            // 
+            // tabProjectRisks
+            // 
+            this.tabProjectRisks.Controls.Add(this.txtProjectRisks);
+            this.tabProjectRisks.Location = new System.Drawing.Point(4, 23);
+            this.tabProjectRisks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectRisks.Name = "tabProjectRisks";
+            this.tabProjectRisks.Size = new System.Drawing.Size(760, 542);
+            this.tabProjectRisks.TabIndex = 5;
+            this.tabProjectRisks.Text = "Project Risks";
+            this.tabProjectRisks.UseVisualStyleBackColor = true;
+            // 
+            // txtProjectRisks
+            // 
+            this.txtProjectRisks.Location = new System.Drawing.Point(0, 0);
+            this.txtProjectRisks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectRisks.Multiline = true;
+            this.txtProjectRisks.Name = "txtProjectRisks";
+            this.txtProjectRisks.Size = new System.Drawing.Size(761, 546);
+            this.txtProjectRisks.TabIndex = 47;
+            // 
+            // tabProjectIssues
+            // 
+            this.tabProjectIssues.Controls.Add(this.txtProjectIssues);
+            this.tabProjectIssues.Location = new System.Drawing.Point(4, 23);
+            this.tabProjectIssues.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectIssues.Name = "tabProjectIssues";
+            this.tabProjectIssues.Size = new System.Drawing.Size(760, 542);
+            this.tabProjectIssues.TabIndex = 6;
+            this.tabProjectIssues.Text = "Project Issues";
+            this.tabProjectIssues.UseVisualStyleBackColor = true;
+            // 
+            // txtProjectIssues
+            // 
+            this.txtProjectIssues.Location = new System.Drawing.Point(0, 0);
+            this.txtProjectIssues.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectIssues.Multiline = true;
+            this.txtProjectIssues.Name = "txtProjectIssues";
+            this.txtProjectIssues.Size = new System.Drawing.Size(761, 544);
+            this.txtProjectIssues.TabIndex = 48;
+            // 
+            // tabProjectChanges
+            // 
+            this.tabProjectChanges.Controls.Add(this.txtProjectChanges);
+            this.tabProjectChanges.Location = new System.Drawing.Point(4, 23);
+            this.tabProjectChanges.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectChanges.Name = "tabProjectChanges";
+            this.tabProjectChanges.Size = new System.Drawing.Size(760, 542);
+            this.tabProjectChanges.TabIndex = 7;
+            this.tabProjectChanges.Text = "Project Changes";
+            this.tabProjectChanges.UseVisualStyleBackColor = true;
+            // 
+            // txtProjectChanges
+            // 
+            this.txtProjectChanges.Location = new System.Drawing.Point(0, 0);
+            this.txtProjectChanges.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectChanges.Multiline = true;
+            this.txtProjectChanges.Name = "txtProjectChanges";
+            this.txtProjectChanges.Size = new System.Drawing.Size(761, 544);
+            this.txtProjectChanges.TabIndex = 49;
+            // 
+            // tabDetailedStatusReport
+            // 
+            this.tabDetailedStatusReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabDetailedStatusReport.Controls.Add(this.tabCtrlDetailedStatusReport);
+            this.tabDetailedStatusReport.Location = new System.Drawing.Point(4, 23);
+            this.tabDetailedStatusReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabDetailedStatusReport.Name = "tabDetailedStatusReport";
+            this.tabDetailedStatusReport.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabDetailedStatusReport.Size = new System.Drawing.Size(770, 570);
+            this.tabDetailedStatusReport.TabIndex = 2;
+            this.tabDetailedStatusReport.Text = "Detailed Status Report";
+            // 
+            // tabCtrlDetailedStatusReport
+            // 
+            this.tabCtrlDetailedStatusReport.Controls.Add(this.tabProjectSchedule2);
+            this.tabCtrlDetailedStatusReport.Controls.Add(this.tabProjectExpenses2);
+            this.tabCtrlDetailedStatusReport.Controls.Add(this.tabProjectEffort);
+            this.tabCtrlDetailedStatusReport.Controls.Add(this.tabProjectQuality);
+            this.tabCtrlDetailedStatusReport.Controls.Add(this.tabProjectRisk2);
+            this.tabCtrlDetailedStatusReport.Controls.Add(this.tabProjectIssues2);
+            this.tabCtrlDetailedStatusReport.Location = new System.Drawing.Point(2, 2);
+            this.tabCtrlDetailedStatusReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabCtrlDetailedStatusReport.Name = "tabCtrlDetailedStatusReport";
+            this.tabCtrlDetailedStatusReport.SelectedIndex = 0;
+            this.tabCtrlDetailedStatusReport.Size = new System.Drawing.Size(768, 569);
+            this.tabCtrlDetailedStatusReport.TabIndex = 57;
+            // 
+            // tabProjectSchedule2
+            // 
+            this.tabProjectSchedule2.Controls.Add(this.dgvProjectSchedule);
+            this.tabProjectSchedule2.Location = new System.Drawing.Point(4, 23);
+            this.tabProjectSchedule2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectSchedule2.Name = "tabProjectSchedule2";
+            this.tabProjectSchedule2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectSchedule2.Size = new System.Drawing.Size(760, 542);
+            this.tabProjectSchedule2.TabIndex = 0;
+            this.tabProjectSchedule2.Text = "Project Schedule";
+            this.tabProjectSchedule2.UseVisualStyleBackColor = true;
+            // 
+            // dgvProjectSchedule
+            // 
+            this.dgvProjectSchedule.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(42, 127);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(126, 22);
-            this.label11.TabIndex = 50;
-            this.label11.Text = "Overall Status:";
+            this.dgvProjectSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProjectSchedule.Location = new System.Drawing.Point(0, 0);
+            this.dgvProjectSchedule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvProjectSchedule.Name = "dgvProjectSchedule";
+            this.dgvProjectSchedule.RowHeadersWidth = 51;
+            this.dgvProjectSchedule.Size = new System.Drawing.Size(758, 542);
+            this.dgvProjectSchedule.TabIndex = 45;
             // 
-            // dgvProjectQuality
+            // tabProjectExpenses2
             // 
-            this.dgvProjectQuality.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvProjectQuality.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProjectQuality.Location = new System.Drawing.Point(243, 348);
-            this.dgvProjectQuality.Name = "dgvProjectQuality";
-            this.dgvProjectQuality.RowHeadersWidth = 51;
-            this.dgvProjectQuality.Size = new System.Drawing.Size(781, 109);
-            this.dgvProjectQuality.TabIndex = 46;
-            // 
-            // dgvProjectRisk
-            // 
-            this.dgvProjectRisk.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvProjectRisk.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProjectRisk.Location = new System.Drawing.Point(243, 463);
-            this.dgvProjectRisk.Name = "dgvProjectRisk";
-            this.dgvProjectRisk.RowHeadersWidth = 51;
-            this.dgvProjectRisk.Size = new System.Drawing.Size(781, 109);
-            this.dgvProjectRisk.TabIndex = 47;
-            // 
-            // dgvProjectIssues
-            // 
-            this.dgvProjectIssues.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvProjectIssues.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProjectIssues.Location = new System.Drawing.Point(243, 578);
-            this.dgvProjectIssues.Name = "dgvProjectIssues";
-            this.dgvProjectIssues.RowHeadersWidth = 51;
-            this.dgvProjectIssues.Size = new System.Drawing.Size(781, 109);
-            this.dgvProjectIssues.TabIndex = 48;
-            // 
-            // dgvProjectEffort
-            // 
-            this.dgvProjectEffort.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvProjectEffort.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProjectEffort.Location = new System.Drawing.Point(243, 233);
-            this.dgvProjectEffort.Name = "dgvProjectEffort";
-            this.dgvProjectEffort.RowHeadersWidth = 51;
-            this.dgvProjectEffort.Size = new System.Drawing.Size(781, 109);
-            this.dgvProjectEffort.TabIndex = 49;
+            this.tabProjectExpenses2.Controls.Add(this.dgvProjectExpense);
+            this.tabProjectExpenses2.Location = new System.Drawing.Point(4, 23);
+            this.tabProjectExpenses2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectExpenses2.Name = "tabProjectExpenses2";
+            this.tabProjectExpenses2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectExpenses2.Size = new System.Drawing.Size(760, 542);
+            this.tabProjectExpenses2.TabIndex = 1;
+            this.tabProjectExpenses2.Text = "Project Expenses";
+            this.tabProjectExpenses2.UseVisualStyleBackColor = true;
             // 
             // dgvProjectExpense
             // 
@@ -608,120 +594,181 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvProjectExpense.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProjectExpense.Location = new System.Drawing.Point(243, 118);
+            this.dgvProjectExpense.Location = new System.Drawing.Point(0, 0);
+            this.dgvProjectExpense.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvProjectExpense.Name = "dgvProjectExpense";
             this.dgvProjectExpense.RowHeadersWidth = 51;
-            this.dgvProjectExpense.Size = new System.Drawing.Size(781, 109);
+            this.dgvProjectExpense.Size = new System.Drawing.Size(760, 543);
             this.dgvProjectExpense.TabIndex = 50;
             // 
-            // label4
+            // tabProjectEffort
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabProjectEffort.Controls.Add(this.dgvProjectEffort);
+            this.tabProjectEffort.Location = new System.Drawing.Point(4, 23);
+            this.tabProjectEffort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectEffort.Name = "tabProjectEffort";
+            this.tabProjectEffort.Size = new System.Drawing.Size(760, 542);
+            this.tabProjectEffort.TabIndex = 2;
+            this.tabProjectEffort.Text = "Project Effort";
+            this.tabProjectEffort.UseVisualStyleBackColor = true;
+            // 
+            // dgvProjectEffort
+            // 
+            this.dgvProjectEffort.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(18, 38);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 22);
-            this.label4.TabIndex = 51;
-            this.label4.Text = "Project Schedule:";
+            this.dgvProjectEffort.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProjectEffort.Location = new System.Drawing.Point(0, 0);
+            this.dgvProjectEffort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvProjectEffort.Name = "dgvProjectEffort";
+            this.dgvProjectEffort.RowHeadersWidth = 51;
+            this.dgvProjectEffort.Size = new System.Drawing.Size(760, 543);
+            this.dgvProjectEffort.TabIndex = 49;
             // 
-            // label10
+            // tabProjectQuality
             // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabProjectQuality.Controls.Add(this.dgvProjectQuality);
+            this.tabProjectQuality.Location = new System.Drawing.Point(4, 23);
+            this.tabProjectQuality.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectQuality.Name = "tabProjectQuality";
+            this.tabProjectQuality.Size = new System.Drawing.Size(760, 542);
+            this.tabProjectQuality.TabIndex = 3;
+            this.tabProjectQuality.Text = "Project Quality";
+            this.tabProjectQuality.UseVisualStyleBackColor = true;
+            // 
+            // dgvProjectQuality
+            // 
+            this.dgvProjectQuality.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(18, 616);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(126, 22);
-            this.label10.TabIndex = 52;
-            this.label10.Text = "Project Issues:";
+            this.dgvProjectQuality.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProjectQuality.Location = new System.Drawing.Point(2, 2);
+            this.dgvProjectQuality.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvProjectQuality.Name = "dgvProjectQuality";
+            this.dgvProjectQuality.RowHeadersWidth = 51;
+            this.dgvProjectQuality.Size = new System.Drawing.Size(758, 541);
+            this.dgvProjectQuality.TabIndex = 46;
             // 
-            // label12
+            // tabProjectRisk2
             // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabProjectRisk2.Controls.Add(this.dgvProjectRisk);
+            this.tabProjectRisk2.Location = new System.Drawing.Point(4, 23);
+            this.tabProjectRisk2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectRisk2.Name = "tabProjectRisk2";
+            this.tabProjectRisk2.Size = new System.Drawing.Size(760, 542);
+            this.tabProjectRisk2.TabIndex = 4;
+            this.tabProjectRisk2.Text = "Project Risk";
+            this.tabProjectRisk2.UseVisualStyleBackColor = true;
+            // 
+            // dgvProjectRisk
+            // 
+            this.dgvProjectRisk.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(18, 495);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(111, 22);
-            this.label12.TabIndex = 53;
-            this.label12.Text = "Project Risk:";
+            this.dgvProjectRisk.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProjectRisk.Location = new System.Drawing.Point(0, 0);
+            this.dgvProjectRisk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvProjectRisk.Name = "dgvProjectRisk";
+            this.dgvProjectRisk.RowHeadersWidth = 51;
+            this.dgvProjectRisk.Size = new System.Drawing.Size(760, 543);
+            this.dgvProjectRisk.TabIndex = 47;
+            this.dgvProjectRisk.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProjectRisk_CellContentClick);
             // 
-            // label20
+            // tabProjectIssues2
             // 
-            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabProjectIssues2.Controls.Add(this.dgvProjectIssues);
+            this.tabProjectIssues2.Location = new System.Drawing.Point(4, 23);
+            this.tabProjectIssues2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectIssues2.Name = "tabProjectIssues2";
+            this.tabProjectIssues2.Size = new System.Drawing.Size(760, 542);
+            this.tabProjectIssues2.TabIndex = 5;
+            this.tabProjectIssues2.Text = "Project Issues";
+            this.tabProjectIssues2.UseVisualStyleBackColor = true;
+            // 
+            // dgvProjectIssues
+            // 
+            this.dgvProjectIssues.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(18, 381);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(134, 22);
-            this.label20.TabIndex = 54;
-            this.label20.Text = "Project Quality:";
+            this.dgvProjectIssues.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProjectIssues.Location = new System.Drawing.Point(0, 0);
+            this.dgvProjectIssues.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvProjectIssues.Name = "dgvProjectIssues";
+            this.dgvProjectIssues.RowHeadersWidth = 51;
+            this.dgvProjectIssues.Size = new System.Drawing.Size(760, 543);
+            this.dgvProjectIssues.TabIndex = 48;
             // 
-            // label21
+            // txtProjectName
             // 
-            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(18, 268);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(123, 22);
-            this.label21.TabIndex = 55;
-            this.label21.Text = "Project Effort:";
+            this.txtProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.txtProjectName.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProjectName.ForeColor = System.Drawing.Color.Black;
+            this.txtProjectName.Location = new System.Drawing.Point(153, 5);
+            this.txtProjectName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectName.Name = "txtProjectName";
+            this.txtProjectName.Size = new System.Drawing.Size(76, 20);
+            this.txtProjectName.TabIndex = 17;
+            this.txtProjectName.Text = "Project Name";
             // 
-            // label22
+            // label27
             // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(18, 154);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(144, 22);
-            this.label22.TabIndex = 56;
-            this.label22.Text = "Project Expense:";
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Black;
+            this.label27.Location = new System.Drawing.Point(9, 7);
+            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(135, 12);
+            this.label27.TabIndex = 16;
+            this.label27.Text = "Project Status Report For: ";
             // 
             // ProjectStatusReportDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(1058, 790);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.ClientSize = new System.Drawing.Size(794, 609);
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.label27);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabCtrlProjectStatusDocumentForm);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ProjectStatusReportDocumentForm";
             this.Text = "ProjectStatusReportDocumentForm";
-            this.tabControl1.ResumeLayout(false);
+            this.tabCtrlProjectStatusDocumentForm.ResumeLayout(false);
             this.tabProjectDetails.ResumeLayout(false);
             this.tabProjectDetails.PerformLayout();
             this.tabExecutiveSummary.ResumeLayout(false);
-            this.tabExecutiveSummary.PerformLayout();
+            this.tabCtrlExecutiveSummary.ResumeLayout(false);
+            this.tabProjectDiscription.ResumeLayout(false);
+            this.tabProjectDiscription.PerformLayout();
+            this.tabOverallStatus.ResumeLayout(false);
+            this.tabOverallStatus.PerformLayout();
+            this.tabProjectSchedule.ResumeLayout(false);
+            this.tabProjectSchedule.PerformLayout();
+            this.tabProjectExpenses.ResumeLayout(false);
+            this.tabProjectExpenses.PerformLayout();
+            this.tabProjectDeliverables.ResumeLayout(false);
+            this.tabProjectDeliverables.PerformLayout();
+            this.tabProjectRisks.ResumeLayout(false);
+            this.tabProjectRisks.PerformLayout();
+            this.tabProjectIssues.ResumeLayout(false);
+            this.tabProjectIssues.PerformLayout();
+            this.tabProjectChanges.ResumeLayout(false);
+            this.tabProjectChanges.PerformLayout();
             this.tabDetailedStatusReport.ResumeLayout(false);
-            this.tabDetailedStatusReport.PerformLayout();
+            this.tabCtrlDetailedStatusReport.ResumeLayout(false);
+            this.tabProjectSchedule2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProjectSchedule)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectQuality)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectRisk)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectIssues)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectEffort)).EndInit();
+            this.tabProjectExpenses2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProjectExpense)).EndInit();
+            this.tabProjectEffort.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectEffort)).EndInit();
+            this.tabProjectQuality.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectQuality)).EndInit();
+            this.tabProjectRisk2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectRisk)).EndInit();
+            this.tabProjectIssues2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectIssues)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -729,7 +776,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabCtrlProjectStatusDocumentForm;
         private System.Windows.Forms.TabPage tabProjectDetails;
         private System.Windows.Forms.TabPage tabExecutiveSummary;
         private System.Windows.Forms.TabPage tabDetailedStatusReport;
@@ -753,31 +800,33 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtOverallStatus;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtProjectChanges;
         private System.Windows.Forms.TextBox txtProjectIssues;
         private System.Windows.Forms.TextBox txtProjectRisks;
         private System.Windows.Forms.TextBox txtProjectDeliverables;
         private System.Windows.Forms.TextBox txtProjectExpenses;
         private System.Windows.Forms.TextBox txtProjectSchedule;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtProjectDescription;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dgvProjectExpense;
         private System.Windows.Forms.DataGridView dgvProjectEffort;
         private System.Windows.Forms.DataGridView dgvProjectIssues;
         private System.Windows.Forms.DataGridView dgvProjectRisk;
         private System.Windows.Forms.DataGridView dgvProjectQuality;
+        private System.Windows.Forms.TabControl tabCtrlExecutiveSummary;
+        private System.Windows.Forms.TabPage tabProjectDiscription;
+        private System.Windows.Forms.TabPage tabOverallStatus;
+        private System.Windows.Forms.TabPage tabProjectSchedule;
+        private System.Windows.Forms.TabPage tabProjectExpenses;
+        private System.Windows.Forms.TabPage tabProjectDeliverables;
+        private System.Windows.Forms.TabPage tabProjectRisks;
+        private System.Windows.Forms.TabPage tabProjectIssues;
+        private System.Windows.Forms.TabPage tabProjectChanges;
+        private System.Windows.Forms.TabControl tabCtrlDetailedStatusReport;
+        private System.Windows.Forms.TabPage tabProjectSchedule2;
+        private System.Windows.Forms.TabPage tabProjectExpenses2;
+        private System.Windows.Forms.TabPage tabProjectEffort;
+        private System.Windows.Forms.TabPage tabProjectQuality;
+        private System.Windows.Forms.TabPage tabProjectRisk2;
+        private System.Windows.Forms.TabPage tabProjectIssues2;
     }
 }

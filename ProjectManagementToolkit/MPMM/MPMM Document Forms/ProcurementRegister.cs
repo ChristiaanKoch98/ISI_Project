@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
-    public partial class ProjectStatusReportDocumentForm : Form
+    public partial class ProcurementRegister : Form
     {
-        public ProjectStatusReportDocumentForm()
+        public ProcurementRegister()
         {
             InitializeComponent();
         }
 
-        private void dgvProjectRisk_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void txtProjectManagerName_TextChanged(object sender, EventArgs e)
         {
 
         }

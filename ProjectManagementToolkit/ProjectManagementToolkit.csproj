@@ -94,6 +94,12 @@
     <Compile Include="MPMM\MPMM Document Forms\AcceptancePlanDocumentForm.Designer.cs">
       <DependentUpon>AcceptancePlanDocumentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\AcceptanceRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\AcceptanceRegister.Designer.cs">
+      <DependentUpon>AcceptanceRegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="MPMM\MPMM Document Forms\ChangeManagementProcessDocumentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,6 +201,12 @@
     </Compile>
     <Compile Include="MPMM\MPMM Document Forms\ProcurementPlanDocumentForm.Designer.cs">
       <DependentUpon>ProcurementPlanDocumentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\ProcurementRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\ProcurementRegister.Designer.cs">
+      <DependentUpon>ProcurementRegister.cs</DependentUpon>
     </Compile>
     <Compile Include="MPMM\MPMM Document Forms\ProjectClosureReportDocumentForm.cs">
       <SubType>Form</SubType>
@@ -1068,7 +1080,9 @@
     <Compile Include="MPMM\MPMM Forms\Governance\Governance.Designer.cs">
       <DependentUpon>Governance.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProjectSelection.cs" />
+    <Compile Include="ProjectSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ProjectSelection.Designer.cs">
       <DependentUpon>ProjectSelection.cs</DependentUpon>
     </Compile>
@@ -1159,6 +1173,9 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\AcceptancePlanDocumentForm.resx">
       <DependentUpon>AcceptancePlanDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\AcceptanceRegister.resx">
+      <DependentUpon>AcceptanceRegister.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\ChangeManagementProcessDocumentForm.resx">
       <DependentUpon>ChangeManagementProcessDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -1206,6 +1223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\ProcurementPlanDocumentForm.resx">
       <DependentUpon>ProcurementPlanDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\ProcurementRegister.resx">
+      <DependentUpon>ProcurementRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\ProjectClosureReportDocumentForm.resx">
       <DependentUpon>ProjectClosureReportDocumentForm.cs</DependentUpon>
