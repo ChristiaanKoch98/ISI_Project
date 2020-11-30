@@ -36,10 +36,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             }
 
-        private void ResourcePlanDocumentForm_Load_1(object sender, EventArgs e)
-        {
-           
-        }
+       
+
+        
     }
     }
 
