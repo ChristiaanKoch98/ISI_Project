@@ -91,7 +91,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newCostManagementProcessModel.Overview = Overview_tbx.Text;
             newCostManagementProcessModel.DocumentExpense = Document_Expense_tbx.Text;
             newCostManagementProcessModel.ApproveExpense = Approve_Expense_tbx.Text;
-            newCostManagementProcessModel.UpdateExpense = Update_Project_Plan_tbx.Text;
+            newCostManagementProcessModel.UpdateProjectPlan = Update_Project_Plan_tbx.Text;
             newCostManagementProcessModel.TeamMembers = Team_Member_tbx.Text;
             newCostManagementProcessModel.ProjectAdmin = Project_Administrator_tbx.Text;
             newCostManagementProcessModel.ProjectManager = Project_Manager_tbx.Text;
@@ -157,7 +157,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 Overview_tbx.Text = currentCostManagementProcessModel.Overview;
                 Document_Expense_tbx.Text = currentCostManagementProcessModel.DocumentExpense;
                 Approve_Expense_tbx.Text = currentCostManagementProcessModel.ApproveExpense;
-                Update_Project_Plan_tbx.Text = currentCostManagementProcessModel.UpdateExpense;
+                Update_Project_Plan_tbx.Text = currentCostManagementProcessModel.UpdateProjectPlan;
                 Team_Member_tbx.Text = currentCostManagementProcessModel.TeamMembers;
                 Project_Administrator_tbx.Text = currentCostManagementProcessModel.ProjectAdmin;
                 Project_Manager_tbx.Text = currentCostManagementProcessModel.ProjectManager;
@@ -378,8 +378,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .Color(Color.Black)
                             .Bold(true)
                             .Font("Arial");
+                        
 
                         updateProjectPlanSubHeading.StyleId = "Heading2";
+                        document.InsertParagraph(currentCostManagementProcessModel.UpdateProjectPlan)
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
 
                         var costManagementRolesHeading = document.InsertParagraph("2 Cost Management Roles")
                             .Bold()

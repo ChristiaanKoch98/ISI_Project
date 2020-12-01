@@ -270,18 +270,20 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             for (int i = 0; i < Ranking_Scores - 1; i++)
             {
                 RankingScore rankingScore = new RankingScore();
-                var Score1 = Ranking_Scores_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var Weight1 = Ranking_Scores_dgv.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var Total1 = Ranking_Scores_dgv.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var Criteria = Ranking_Scores_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var Score1 = Ranking_Scores_dgv.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var Weight1 = Ranking_Scores_dgv.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var Total1 = Ranking_Scores_dgv.Rows[i].Cells[3].Value?.ToString() ?? "";
 
-                var Score2 = Ranking_Scores_dgv.Rows[i].Cells[3].Value?.ToString() ?? "";
-                var Weight2 = Ranking_Scores_dgv.Rows[i].Cells[4].Value?.ToString() ?? "";
-                var Total2 = Ranking_Scores_dgv.Rows[i].Cells[5].Value?.ToString() ?? "";
+                var Score2 = Ranking_Scores_dgv.Rows[i].Cells[4].Value?.ToString() ?? "";
+                var Weight2 = Ranking_Scores_dgv.Rows[i].Cells[5].Value?.ToString() ?? "";
+                var Total2 = Ranking_Scores_dgv.Rows[i].Cells[6].Value?.ToString() ?? "";
 
-                var Score3 = Ranking_Scores_dgv.Rows[i].Cells[6].Value?.ToString() ?? "";
-                var Weight3 = Ranking_Scores_dgv.Rows[i].Cells[7].Value?.ToString() ?? "";
-                var Total3 = Ranking_Scores_dgv.Rows[i].Cells[8].Value?.ToString() ?? "";
+                var Score3 = Ranking_Scores_dgv.Rows[i].Cells[7].Value?.ToString() ?? "";
+                var Weight3 = Ranking_Scores_dgv.Rows[i].Cells[8].Value?.ToString() ?? "";
+                var Total3 = Ranking_Scores_dgv.Rows[i].Cells[9].Value?.ToString() ?? "";
 
+                rankingScore.Criteria = Criteria;
                 rankingScore.Score1 = Score1;
                 rankingScore.Weight1 = Weight1;
                 rankingScore.Total1 = Total1;
@@ -312,7 +314,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 string json = JsonConvert.SerializeObject(versionControl);
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "FeasibilityStudy");
-                MessageBox.Show("Feasibility study form saved successfully", "save", MessageBoxButtons.OK);
+                //MessageBox.Show("Feasibility study form saved successfully", "save", MessageBoxButtons.OK);
             }
         }
 

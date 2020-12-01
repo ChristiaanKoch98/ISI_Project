@@ -12,7 +12,7 @@ namespace ProjectManagementToolkit.Classes
         public string Overview { get; set; }
         public string DocumentExpense { get; set; }
         public string ApproveExpense { get; set; }
-        public string UpdateExpense { get; set; }
+        public string UpdateProjectPlan { get; set; }
         public string TeamMembers { get; set; }
         public string ProjectAdmin { get; set; }
         public string ProjectManager { get; set; }

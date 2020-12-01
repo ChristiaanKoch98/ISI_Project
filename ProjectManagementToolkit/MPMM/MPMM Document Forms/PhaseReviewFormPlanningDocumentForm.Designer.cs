@@ -64,6 +64,12 @@
             this.label12 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnExportToWord = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtPreparedBy = new System.Windows.Forms.TextBox();
+            this.txtPrepDate = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtReportingPeriod = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -107,11 +113,17 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tabPage1.Controls.Add(this.txtReportingPeriod);
             this.tabPage1.Controls.Add(this.Project_Sponsor_tbx);
+            this.tabPage1.Controls.Add(this.label15);
             this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Controls.Add(this.txtPrepDate);
             this.tabPage1.Controls.Add(this.Project_Manager_tbx);
+            this.tabPage1.Controls.Add(this.txtPreparedBy);
             this.tabPage1.Controls.Add(this.Project_Name_tbx);
+            this.tabPage1.Controls.Add(this.label14);
             this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.label13);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Location = new System.Drawing.Point(4, 21);
             this.tabPage1.Name = "tabPage1";
@@ -122,7 +134,7 @@
             // 
             // Project_Sponsor_tbx
             // 
-            this.Project_Sponsor_tbx.Location = new System.Drawing.Point(238, 153);
+            this.Project_Sponsor_tbx.Location = new System.Drawing.Point(178, 154);
             this.Project_Sponsor_tbx.Name = "Project_Sponsor_tbx";
             this.Project_Sponsor_tbx.Size = new System.Drawing.Size(237, 20);
             this.Project_Sponsor_tbx.TabIndex = 17;
@@ -139,14 +151,14 @@
             // 
             // Project_Manager_tbx
             // 
-            this.Project_Manager_tbx.Location = new System.Drawing.Point(238, 89);
+            this.Project_Manager_tbx.Location = new System.Drawing.Point(178, 90);
             this.Project_Manager_tbx.Name = "Project_Manager_tbx";
             this.Project_Manager_tbx.Size = new System.Drawing.Size(237, 20);
             this.Project_Manager_tbx.TabIndex = 15;
             // 
             // Project_Name_tbx
             // 
-            this.Project_Name_tbx.Location = new System.Drawing.Point(238, 31);
+            this.Project_Name_tbx.Location = new System.Drawing.Point(178, 32);
             this.Project_Name_tbx.Name = "Project_Name_tbx";
             this.Project_Name_tbx.Size = new System.Drawing.Size(237, 20);
             this.Project_Name_tbx.TabIndex = 11;
@@ -426,6 +438,58 @@
             this.btnExportToWord.UseVisualStyleBackColor = true;
             this.btnExportToWord.Click += new System.EventHandler(this.btnExportToWord_Click);
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(441, 33);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(152, 19);
+            this.label13.TabIndex = 13;
+            this.label13.Text = "Report Prepared By:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(424, 91);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(184, 19);
+            this.label14.TabIndex = 14;
+            this.label14.Text = "Report Preparation Date:";
+            // 
+            // txtPreparedBy
+            // 
+            this.txtPreparedBy.Location = new System.Drawing.Point(608, 32);
+            this.txtPreparedBy.Name = "txtPreparedBy";
+            this.txtPreparedBy.Size = new System.Drawing.Size(237, 20);
+            this.txtPreparedBy.TabIndex = 11;
+            // 
+            // txtPrepDate
+            // 
+            this.txtPrepDate.Location = new System.Drawing.Point(608, 89);
+            this.txtPrepDate.Name = "txtPrepDate";
+            this.txtPrepDate.Size = new System.Drawing.Size(237, 20);
+            this.txtPrepDate.TabIndex = 15;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(424, 155);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(132, 19);
+            this.label15.TabIndex = 16;
+            this.label15.Text = "Reporting Period:";
+            // 
+            // txtReportingPeriod
+            // 
+            this.txtReportingPeriod.Location = new System.Drawing.Point(608, 157);
+            this.txtReportingPeriod.Name = "txtReportingPeriod";
+            this.txtReportingPeriod.Size = new System.Drawing.Size(237, 20);
+            this.txtReportingPeriod.TabIndex = 17;
+            this.txtReportingPeriod.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
             // PhaseReviewFormPlanningDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -492,5 +556,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Answer;
         private System.Windows.Forms.DataGridViewTextBoxColumn Variance;
         private System.Windows.Forms.Button btnExportToWord;
+        private System.Windows.Forms.TextBox txtReportingPeriod;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtPrepDate;
+        private System.Windows.Forms.TextBox txtPreparedBy;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
     }
 }

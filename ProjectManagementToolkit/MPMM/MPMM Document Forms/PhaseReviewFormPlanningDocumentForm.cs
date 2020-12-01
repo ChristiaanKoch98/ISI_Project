@@ -43,6 +43,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newPhaseReviewPlanningModel.ProjectManager = Project_Manager_tbx.Text;
             newPhaseReviewPlanningModel.ProjectSponsor = Project_Sponsor_tbx.Text;
 
+            newPhaseReviewPlanningModel.RepportPreparedBy = txtPreparedBy.Text;
+            newPhaseReviewPlanningModel.ReportPrepDate = txtPrepDate.Text;
+            newPhaseReviewPlanningModel.ReportingPeriod = txtReportingPeriod.Text;
+
             newPhaseReviewPlanningModel.Summary = Summary_tbx.Text;
             newPhaseReviewPlanningModel.ProjectSchedule = Project_Schedule_tbx.Text;
             newPhaseReviewPlanningModel.ProjectExpense = Project_Expenses_tbx.Text;
@@ -111,6 +115,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 Project_Manager_tbx.Text = currentPhaseReviewPlanningModel.ProjectManager;
                 Project_Sponsor_tbx.Text = currentPhaseReviewPlanningModel.ProjectSponsor;
 
+                txtPreparedBy.Text = currentPhaseReviewPlanningModel.RepportPreparedBy;
+                txtPrepDate.Text = currentPhaseReviewPlanningModel.ReportPrepDate;
+                txtReportingPeriod.Text = currentPhaseReviewPlanningModel.ReportingPeriod;
+
                 Summary_tbx.Text = currentPhaseReviewPlanningModel.Summary;
                 Project_Schedule_tbx.Text = currentPhaseReviewPlanningModel.ProjectSchedule;
                 Project_Expenses_tbx.Text = currentPhaseReviewPlanningModel.ProjectExpense;
@@ -175,14 +183,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         projectDetailsTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
                         //projectDetailsTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
 
-                        projectDetailsTable.Rows[1].Cells[0].Paragraphs[0].Append($"Project Name: { currentPhaseReviewPlanningModel.ProjectName}\t" +
-                            $"Report Prepared By: {"*No input control"}");
+                        projectDetailsTable.Rows[1].Cells[0].Paragraphs[0].Append($"Project Name: { currentPhaseReviewPlanningModel.ProjectName}\t\t" +
+                            $"Report Prepared By: {currentPhaseReviewPlanningModel.RepportPreparedBy}");
 
                         projectDetailsTable.Rows[2].Cells[0].Paragraphs[0].Append($"Project Manager: {currentPhaseReviewPlanningModel.ProjectManager}\t" +
-                            $"Report Preparation Date: {"*No input control"}");
+                            $"Report Preparation Date: {currentPhaseReviewPlanningModel.ReportPrepDate}");
 
-                        projectDetailsTable.Rows[3].Cells[0].Paragraphs[0].Append($"Project Sponsor: {currentPhaseReviewPlanningModel.ProjectSponsor}\t" +
-                            $"Reporting Period {"*No input control"}");
+                        projectDetailsTable.Rows[3].Cells[0].Paragraphs[0].Append($"Project Sponsor: {currentPhaseReviewPlanningModel.ProjectSponsor}\t\t" +
+                            $"Reporting Period {currentPhaseReviewPlanningModel.ReportingPeriod}");
 
                         projectDetailsTable.SetWidths(new float[] {1000});
                         document.InsertTable(projectDetailsTable);
@@ -277,6 +285,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private void btnExportToWord_Click(object sender, EventArgs e)
         {
             ExportToWord();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

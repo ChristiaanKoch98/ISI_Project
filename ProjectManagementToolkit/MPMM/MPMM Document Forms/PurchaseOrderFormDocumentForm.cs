@@ -51,8 +51,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newPurchaseOrderModel.SupplierContactName = Supplier_Contact_Name_tbx.Text;
             newPurchaseOrderModel.SupplierContactPhone = Supplier_Contact_Phone_tbx.Text;
             newPurchaseOrderModel.SupplierAddress = Supplier_Address_tbx.Text;
-            newPurchaseOrderModel.BillToContactName = Contact_Name1_tbx.Text;
-            newPurchaseOrderModel.BillToContactAddress = Contact_Address1_tbx.Text;
+
+            newPurchaseOrderModel.ContactName = Contact_Name1_tbx.Text;
+            newPurchaseOrderModel.ContactAddress = Contact_Address1_tbx.Text;
             newPurchaseOrderModel.BillToContactName = Contact_Name2_tbx.Text;
             newPurchaseOrderModel.BillToContactAddress = Contact_Address2_tbx.Text;
 
@@ -85,7 +86,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             
             List<VersionControl<PurchaseOrderModel>.DocumentModel> documentModels = versionControl.DocumentModels;
 
-            MessageBox.Show(JsonConvert.SerializeObject(newPurchaseOrderModel), "save", MessageBoxButtons.OK);
+            //MessageBox.Show(JsonConvert.SerializeObject(newPurchaseOrderModel), "save", MessageBoxButtons.OK);
 
             if (!versionControl.isEqual(currentPurchaseOrderModel, newPurchaseOrderModel))
             {
@@ -126,8 +127,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 Supplier_Contact_Name_tbx.Text = currentPurchaseOrderModel.SupplierContactName;
                 Supplier_Contact_Phone_tbx.Text = currentPurchaseOrderModel.SupplierContactPhone;
                 Supplier_Address_tbx.Text = currentPurchaseOrderModel.SupplierAddress;
-                Contact_Name1_tbx.Text = currentPurchaseOrderModel.BillToContactName;
-                Contact_Address1_tbx.Text = currentPurchaseOrderModel.BillToContactAddress;
+                Contact_Name1_tbx.Text = currentPurchaseOrderModel.ContactName;
+                Contact_Address1_tbx.Text = currentPurchaseOrderModel.ContactAddress;
                 Contact_Name2_tbx.Text = currentPurchaseOrderModel.BillToContactName;
                 Contact_Address2_tbx.Text = currentPurchaseOrderModel.BillToContactAddress;
 
@@ -223,10 +224,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             $"Supplier Contact Phone #: {currentPurchaseOrderModel.SupplierContactPhone}\n");
                         deliveryDetails.Rows[2].Cells[0].Paragraphs[0].Append($"Delivered To:\n\n" +
                             $"Contact Name: {currentPurchaseOrderModel.ContactName}\n" +
-                            $"Cotact Address: {currentPurchaseOrderModel.ContactAddress}\n");
+                            $"Contact Address: {currentPurchaseOrderModel.ContactAddress}\n");
                         deliveryDetails.Rows[2].Cells[1].Paragraphs[0].Append($"Bill To:\n\n" +
                            $"Contact Name: {currentPurchaseOrderModel.BillToContactName}\n" +
-                           $"Cotact Address: {currentPurchaseOrderModel.BillToContactAddress}\n");
+                           $"Contact Address: {currentPurchaseOrderModel.BillToContactAddress}\n");
                         
                         deliveryDetails.SetWidths(new float[] { 1000 });
                         document.InsertTable(deliveryDetails);

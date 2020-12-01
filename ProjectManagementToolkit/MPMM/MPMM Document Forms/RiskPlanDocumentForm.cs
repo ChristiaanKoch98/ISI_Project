@@ -259,7 +259,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 foreach (var row in currentRiskPlanModel.Risks)
                 {
-                    Risks_dgv.Rows.Add(new string[] { row.RiskCategory, row.RiskDescription, "", row.ID });
+                    Risks_dgv.Rows.Add(new string[] { row.RiskCategory, row.RiskDescription, row.ID });
                 }
 
                 foreach (var row in currentRiskPlanModel.Likelihoods)
@@ -339,7 +339,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                                 .FontSize(22d).Alignment = Alignment.left;
                         }
 
-                        document.InsertParagraph("Risk Plan \nFor " + riskModel.ProjectName)
+                        document.InsertParagraph("Risk Plan \nFor " + currentRiskPlanModel.ProjectName)
                             .Font("Arial")
                             .Bold(true)
                             .FontSize(22d).Alignment = Alignment.left;
@@ -630,7 +630,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         }
 
-                        documentPriorityTable.SetWidths(new float[] { 190, 303, 1094 });
+                        //documentPriorityTable.SetWidths(new float[] { 190, 303, 1094 });
                         document.InsertTable(documentPriorityTable);
 
                         var RiskPlan = document.InsertParagraph("3 Risk Plan")
@@ -696,7 +696,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             documentScheduleyTable.Rows[i].Cells[7].Paragraphs[0].Append(currentRiskPlanModel.Schedules[i - 1].ActionDate2);
                         }
 
-                        documentScheduleyTable.SetWidths(new float[] { 190, 303, 1094 });
+                        //documentScheduleyTable.SetWidths(new float[] { 190, 303, 1094 });
                         document.InsertTable(documentScheduleyTable);
 
                         var assumptions = document.InsertParagraph("3.2 Assumptions")
