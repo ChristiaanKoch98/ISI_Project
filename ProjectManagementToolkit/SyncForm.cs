@@ -29,49 +29,80 @@ namespace ProjectManagementToolkit.MPMM
 
         private void btnSync_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
+
             bool connectionSuccessful = attemptHttpConnection();
 
-            if(!connectionSuccessful)
+            if (!connectionSuccessful)
             {
                 MessageBox.Show("Unable to connect to server.", "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
+            bool projectExists = checkProjectConfig();
+            
+            if (!projectExists)
+            {
+                bool projectSynced = syncProjectConfig();
+                if (projectSynced)
+                {
+                    MessageBox.Show("Project Synced to server");
+                }
+                else
+                {
+                    MessageBox.Show("Error syncing project with server","Server Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    return;
+                }
+                
+            }
+
             List<string> localDocuments = getLocalDocuments();
             List<string> serverDocuments = getServerCollections();
-            List<string> documentsToSync = new List<string>();
 
-            documentsToSync = localDocuments.Union(serverDocuments).ToList<string>();
+            if(localDocuments == null && serverDocuments == null)
+            {
+                MessageBox.Show("No documents to sync.");
+                return;
+            }
 
-            MessageBox.Show("Documents to sync: " + documentsToSync.ToString());
+            //Remove Config from sync
+            serverDocuments.Remove("Config");
 
+            List<string> documentsToSync = localDocuments.Union(serverDocuments).ToList<string>();
+
+            bool[] documentsSuccesful = new bool[documentsToSync.Count];
+            
+            syncProgressBar.Maximum = (documentsToSync.Count);
+            double progressValue = 0;
             if (connectionSuccessful)
             {
-                //Loop Through All Syncable Documents
-                //VersionControl.getLatest()
+
                 foreach (string item in documentsToSync)
                 {
-                    bool syncSuccess = syncDocument(item);
-                    if(syncSuccess)
-                    {
-                        //Advance progress bar
-                    }
                     
+                    bool syncSuccess = syncDocument(item);
+
+                    documentsSuccesful[documentsToSync.IndexOf(item)] = syncSuccess;
+
+                    progressValue++;
+                    double progressPercentage = ((progressValue - 1) / syncProgressBar.Maximum) * 100;
+                    syncProgressBar.Value = (int)progressValue;
+                    lblProgress.Text = "Progress: " + item + " - " + Math.Round(progressPercentage,2).ToString() + "%";
+                    lblProgress.Refresh();
+                    syncProgressBar.Refresh();
                 }
+                syncProgressBar.Value = syncProgressBar.Maximum;
+                lblProgress.Text = "Progress: 100%";
+                MessageBox.Show("Sync completed");
             }
             else
             {
                 lblProgress.Text = "Sync Failed...";
             }
-            /* Old Temp Code 
-             
-            List<string> documents = new List<string>();
-            documents.Add("Project Plan");
-            documents.Add("Business Case");
-            documents.Add("Acceptance Plan");
-            documents.Add("Financial Plan");
-            documents.Add("Feasiblity Study");
 
+            Cursor.Current = Cursors.Default;
+
+            /* Old Temp Code 
             syncProgressBar.Maximum = (documents.Count);
             double progressValue = 0;
             foreach(string item in documents)
@@ -90,48 +121,69 @@ namespace ProjectManagementToolkit.MPMM
             this.Close();
             */
         }
-        private List<string> getServerCollections()
-        {
-            List<string> serverDocuments = new List<string>();
-            try
-            {
-                HttpResponseMessage responseMessage = client.GetAsync("http://localhost:3000/document/" + Settings.Default.ProjectID).Result;
-                var jsonResponse = responseMessage.Content.ReadAsStringAsync().Result;
-                JArray serverDocumentsJson = JArray.Parse(jsonResponse);
-                foreach (var item in serverDocumentsJson)
-                {
-                    serverDocuments.Add(item["name"].ToString());
-                }
-                return serverDocuments;
-            }
-            catch (AggregateException)
-            {
-                MessageBox.Show("An unexpected server ocurred.", "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return null;
-            }
-        }
 
-        private List<string> getLocalDocuments()
+        private bool checkProjectConfig()
         {
-            List<string> localDocuments = new List<string>();
-            string projectPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "ProjectManagementToolkit", Settings.Default.ProjectID);
-            
-            if (Directory.Exists(projectPath))
+            HttpResponseMessage httpResponseMessage = client.GetAsync(Settings.Default.URI + "/project/" + Settings.Default.ProjectID).Result;
+            var jsonResponse = httpResponseMessage.Content.ReadAsStringAsync().Result;
+
+            if(jsonResponse == "[]")
             {
-                foreach (string documentPath in Directory.GetFiles(projectPath))
-                {
-                    string documentName = Path.GetFileNameWithoutExtension(documentPath);
-                    localDocuments.Add(documentName);
-                }
+                MessageBox.Show("Syncing Project for the first time.");
+                return false;
             }
             else
             {
-                return null;
+                return true;
             }
+            
+            /*JArray configJsonArray = JArray.Parse(jsonResponse);
+            JObject configJson = configJsonArray[0].ToObject<JObject>();
 
-            return localDocuments;
+            MessageBox.Show(configJson.ToString());
+            if(configJson.ToString() == "[]" || configJson.ToString() == "")
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }*/
         }
 
+        private bool syncProjectConfig()
+        {
+            List<ProjectModel> projectListModel = new List<ProjectModel>();
+            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            if (json != "")
+            {
+                projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            }
+
+            ProjectModel currentProject = ProjectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            var currentProjectJson = JsonConvert.SerializeObject(currentProject);
+
+            MessageBox.Show(currentProjectJson);
+
+            var body = new StringContent(currentProjectJson, Encoding.UTF8, "application/json");
+            MessageBox.Show(Settings.Default.URI + "/project/" + Settings.Default.ProjectID);
+            HttpResponseMessage httpResponseMessage = client.PostAsync(Settings.Default.URI + "/project/" + Settings.Default.ProjectID, body).Result;
+
+            int statusCode = httpResponseMessage.StatusCode.GetHashCode();
+
+            switch (statusCode)
+            {
+                case 200:
+                    return true;
+                case 404:
+                    return false;
+                default:
+                    break;
+            }
+
+            return false;
+        }
+       
         private bool syncDocument(string document)
         {
             string localJsonString = JsonHelper.loadDocument(Settings.Default.ProjectID, document);
@@ -234,7 +286,7 @@ namespace ProjectManagementToolkit.MPMM
             //Save to server
             var body = new StringContent(documentJson, Encoding.UTF8, "application/json");
 
-            Task<HttpResponseMessage> responseMessage = client.PutAsync("http://localhost:3000/document/" + Settings.Default.ProjectID + "/" + document, body);
+            Task<HttpResponseMessage> responseMessage = client.PutAsync(Settings.Default.URI + "/document/" + Settings.Default.ProjectID + "/" + document, body);
             HttpResponseMessage response = responseMessage.Result;
             int statusCode = response.StatusCode.GetHashCode();
 
@@ -251,13 +303,54 @@ namespace ProjectManagementToolkit.MPMM
             return false;
         }
 
+        private List<string> getServerCollections()
+        {
+            List<string> serverDocuments = new List<string>();
+            try
+            {
+                HttpResponseMessage responseMessage = client.GetAsync(Settings.Default.URI + "/document/" + Settings.Default.ProjectID).Result;
+                var jsonResponse = responseMessage.Content.ReadAsStringAsync().Result;
+                JArray serverDocumentsJson = JArray.Parse(jsonResponse);
+                foreach (var item in serverDocumentsJson)
+                {
+                    serverDocuments.Add(item["name"].ToString());
+                }
+                return serverDocuments;
+            }
+            catch (AggregateException)
+            {
+                MessageBox.Show("An unexpected server ocurred.", "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+        }
+
+        private List<string> getLocalDocuments()
+        {
+            List<string> localDocuments = new List<string>();
+            string projectPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "ProjectManagementToolkit", Settings.Default.ProjectID);
+
+            if (Directory.Exists(projectPath))
+            {
+                foreach (string documentPath in Directory.GetFiles(projectPath))
+                {
+                    string documentName = Path.GetFileNameWithoutExtension(documentPath);
+                    localDocuments.Add(documentName);
+                }
+            }
+            else
+            {
+                return null;
+            }
+
+            return localDocuments;
+        }
 
         private string getServerDocument(string document)
         {
             try
             {
-                string uri = "http://localhost:3000/document/" + Settings.Default.ProjectID + "/" + document;
-                MessageBox.Show(uri);
+                string uri = Settings.Default.URI + "/document/" + Settings.Default.ProjectID + "/" + document;
+                //MessageBox.Show(uri);
                 HttpResponseMessage responseMessage = client.GetAsync(uri).Result;
                 var jsonResponse = responseMessage.Content.ReadAsStringAsync().Result;
                 int statusCode = responseMessage.StatusCode.GetHashCode();
@@ -282,7 +375,7 @@ namespace ProjectManagementToolkit.MPMM
         {
             try
             {
-                Task<HttpResponseMessage> responseMessage = client.GetAsync("http://137.117.194.119:3000/");
+                Task<HttpResponseMessage> responseMessage = client.GetAsync(Settings.Default.URI + "/");
                 HttpResponseMessage response = responseMessage.Result;
                 int statusCode = response.StatusCode.GetHashCode();
 
@@ -300,7 +393,6 @@ namespace ProjectManagementToolkit.MPMM
             }
             catch (AggregateException)
             {
-                MessageBox.Show("An unexpected server ocurred.", "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
         }

@@ -57,5 +57,17 @@ namespace ProjectManagementToolkit.Properties {
                 this["Username"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:3000")]
+        public string URI {
+            get {
+                return ((string)(this["URI"]));
+            }
+            set {
+                this["URI"] = value;
+            }
+        }
     }
 }

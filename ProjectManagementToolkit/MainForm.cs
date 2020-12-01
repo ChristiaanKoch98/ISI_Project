@@ -61,7 +61,7 @@ namespace ProjectManagementToolkit
             string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
             ProjectModel projectModel = new ProjectModel();
-            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            projectModel = ProjectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
             DialogResult result;
             if (projectModel.LastDateTimeSynced.Year == 1)
             {
