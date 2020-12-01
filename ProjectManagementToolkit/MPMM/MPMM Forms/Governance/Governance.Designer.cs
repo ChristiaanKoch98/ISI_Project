@@ -1469,7 +1469,6 @@
             // 
             // pictureBox48
             // 
-            this.pictureBox48.Image = global::ProjectManagementToolkit.Properties.Resources.excel;
             this.pictureBox48.Location = new System.Drawing.Point(6, 272);
             this.pictureBox48.Name = "pictureBox48";
             this.pictureBox48.Size = new System.Drawing.Size(32, 37);
@@ -1559,7 +1558,6 @@
             // 
             // pictureBox37
             // 
-            this.pictureBox37.Image = global::ProjectManagementToolkit.Properties.Resources.Powerpoint;
             this.pictureBox37.Location = new System.Drawing.Point(6, 227);
             this.pictureBox37.Name = "pictureBox37";
             this.pictureBox37.Size = new System.Drawing.Size(32, 37);
@@ -1569,7 +1567,6 @@
             // 
             // pictureBox38
             // 
-            this.pictureBox38.Image = global::ProjectManagementToolkit.Properties.Resources.excel;
             this.pictureBox38.Location = new System.Drawing.Point(6, 183);
             this.pictureBox38.Name = "pictureBox38";
             this.pictureBox38.Size = new System.Drawing.Size(32, 37);

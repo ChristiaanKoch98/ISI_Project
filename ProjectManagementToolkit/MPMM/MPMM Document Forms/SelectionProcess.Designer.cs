@@ -82,7 +82,6 @@
             // 
             // selectionProcessImage
             // 
-            this.selectionProcessImage.Image = global::ProjectManagementToolkit.Properties.Resources.selectionProcess;
             this.selectionProcessImage.Location = new System.Drawing.Point(0, 34);
             this.selectionProcessImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.selectionProcessImage.Name = "selectionProcessImage";
