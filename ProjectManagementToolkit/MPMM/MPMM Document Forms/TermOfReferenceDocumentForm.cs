@@ -163,9 +163,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 TermsOfReferenceModel.Roles rolls = new TermsOfReferenceModel.Roles();
                 var Role = dgvRoles.Rows[i].Cells[0].Value?.ToString() ?? "";
                 var ResourceName = dgvRoles.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var Organization = dgvRoles.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var AssignmentStatus = dgvRoles.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var AssignmentDate = dgvRoles.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var Organization = dgvRoles.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var AssignmentStatus = dgvRoles.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var AssignmentDate = dgvRoles.Rows[i].Cells[4].Value?.ToString() ?? "";
 
                 rolls.Role = Role;
                 rolls.ResourceName = ResourceName;
@@ -204,7 +204,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 TermsOfReferenceModel.Milestones mil = new TermsOfReferenceModel.Milestones();
                 var Milestone = dgvMilestones.Rows[i].Cells[0].Value?.ToString() ?? "";
                 var Date = dgvMilestones.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var Description = dgvMilestones.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var Description = dgvMilestones.Rows[i].Cells[2].Value?.ToString() ?? "";
                 
                 mil.Milestone = Milestone;
                 mil.Date = Date;
@@ -223,9 +223,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 TermsOfReferenceModel.Dependencies depe = new TermsOfReferenceModel.Dependencies();
                 var ProjectActivity = dgvDependencies.Rows[i].Cells[0].Value?.ToString() ?? "";
                 var Impacts = dgvDependencies.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var ImpactedBy = dgvDependencies.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var Critically = dgvDependencies.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var Date = dgvDependencies.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var ImpactedBy = dgvDependencies.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var Critically = dgvDependencies.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var Date = dgvDependencies.Rows[i].Cells[4].Value?.ToString() ?? "";
 
                 depe.ProjectActivity = ProjectActivity;
                 depe.Impacts = Impacts;
@@ -246,8 +246,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 TermsOfReferenceModel.ResourcePlan resou = new TermsOfReferenceModel.ResourcePlan();
                 var Role = dgvResourcePlan.Rows[i].Cells[0].Value?.ToString() ?? "";
                 var StartDate = dgvResourcePlan.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var EndDate = dgvResourcePlan.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var Effort = dgvResourcePlan.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var EndDate = dgvResourcePlan.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var Effort = dgvResourcePlan.Rows[i].Cells[3].Value?.ToString() ?? "";
           
                 resou.Role = Role;
                 resou.StartDate = StartDate;
@@ -267,7 +267,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 TermsOfReferenceModel.FinancialPlan fin = new TermsOfReferenceModel.FinancialPlan();
                 var ExpenditureCategory = dgvFinancialPlan.Rows[i].Cells[0].Value?.ToString() ?? "";
                 var ExpenditureItem = dgvFinancialPlan.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var ExpenditureValue = dgvFinancialPlan.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var ExpenditureValue = dgvFinancialPlan.Rows[i].Cells[2].Value?.ToString() ?? "";
 
                 fin.ExpenditureCategory = ExpenditureCategory;
                 fin.ExpenditureItem = ExpenditureItem;
@@ -320,8 +320,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 TermsOfReferenceModel.Risks ris = new TermsOfReferenceModel.Risks();
                 var Role = dgvRisks.Rows[i].Cells[0].Value?.ToString() ?? "";
                 var StartDate = dgvRisks.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var EndDate = dgvRisks.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var Effort = dgvRisks.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var EndDate = dgvRisks.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var Effort = dgvRisks.Rows[i].Cells[3].Value?.ToString() ?? "";
 
                 ris.RiskDesc = Role;
                 ris.RiskLikelihood = StartDate;
@@ -341,7 +341,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 TermsOfReferenceModel.Issues iss = new TermsOfReferenceModel.Issues();
                 var IssueDescription = dgvIssues.Rows[i].Cells[0].Value?.ToString() ?? "";
                 var IssuePriority = dgvIssues.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var Action = dgvIssues.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var Action = dgvIssues.Rows[i].Cells[2].Value?.ToString() ?? "";
 
                 iss.IssueDescription = IssueDescription;
                 iss.IssuePriority = IssuePriority;
@@ -357,6 +357,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newTermsOfReferenceModel.Vision = txtVision.Text;
             newTermsOfReferenceModel.Objectives = txtObjectives.Text;
             newTermsOfReferenceModel.Scope = txtScope.Text;
+            newTermsOfReferenceModel.Schedule = txtSchedule.Text;
 
             newTermsOfReferenceModel.Responsibilities = txtResponsibilities.Text;
             newTermsOfReferenceModel.Structure = txtStructure.Text;
@@ -381,6 +382,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 string json = JsonConvert.SerializeObject(versionControl);
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "TermOfReferenceDocument");
+                currentTermsOfReferenceModel = JsonConvert.DeserializeObject<TermsOfReferenceModel>(JsonConvert.SerializeObject(newTermsOfReferenceModel));
                 MessageBox.Show("Terms of reference saved successfully", "save", MessageBoxButtons.OK);
             }
         }
@@ -501,6 +503,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 txtVision.Text = currentTermsOfReferenceModel.Vision;
                 txtObjectives.Text = currentTermsOfReferenceModel.Objectives;
                 txtScope.Text = currentTermsOfReferenceModel.Scope;
+                txtSchedule.Text = currentTermsOfReferenceModel.Schedule;
 
                 txtResponsibilities.Text = currentTermsOfReferenceModel.Responsibilities;
                 txtStructure.Text = currentTermsOfReferenceModel.Structure;
@@ -754,7 +757,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .Bold(true)
                             .Font("Arial");
 
-                        CommunicationReqHeading.StyleId = "Heading1";
+                        ComPlanHeading.StyleId = "Heading1";
 
                         var ProDefHeading = document.InsertParagraph("2.1 Project Definition")
                       .Bold()
@@ -786,7 +789,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         VisionHeading.StyleId = "Heading2";
 
-                        var ObjectivesHeading = document.InsertParagraph("2.2 Objectives")
+                        var ObjectivesHeading = document.InsertParagraph("2.3 Objectives")
                          .Bold()
                          .FontSize(12d)
                          .Color(Color.Black)
@@ -801,7 +804,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         ObjectivesHeading.StyleId = "Heading2";
 
-                        var ScopesHeading = document.InsertParagraph("2.2 Scope")
+                        var ScopesHeading = document.InsertParagraph("2.4 Scope")
                         .Bold()
                         .FontSize(12d)
                         .Color(Color.Black)
@@ -965,7 +968,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         ObjectivesHeading.StyleId = "Heading2";
 
-                        var structureHeading = document.InsertParagraph("3.4 Structure")
+                        var structureHeading = document.InsertParagraph("3.5 Structure")
                         .Bold()
                         .FontSize(12d)
                         .Color(Color.Black)
