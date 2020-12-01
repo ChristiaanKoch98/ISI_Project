@@ -1373,8 +1373,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             MessageBox.Show("The selected File is open.", "Close File", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
-
-
                 }
                 else
                 {

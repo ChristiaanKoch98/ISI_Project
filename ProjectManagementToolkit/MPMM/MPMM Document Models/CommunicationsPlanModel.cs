@@ -19,6 +19,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string StakeholderList { get; set; }
         public List<DocumentHistory> DocumentHistories { get; set; }
         public List<DocumentApproval> DocumentApprovals { get; set; }
+        public List<ProjectSchedule> ProSchedule { get; set; }
 
         public string ComPlan { get; set; }
         public string Assumptions { get; set; }
@@ -27,6 +28,17 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string Activities { get; set; }
         public string Roles { get; set; }
         public string Documents { get; set; }
+
+        public class ProjectSchedule
+        {
+            public string Deliverable { get; set; }
+            public string ScheduledCompletionDate { get; set; }
+            public string ActualCompletionDate { get; set; }
+            public string ActualVariance { get; set; }
+            public string ForecastCompletionDate { get; set; }
+            public string ForecastVariance { get; set; }
+            public string Summary { get; set; }
+        }
 
         public class DocumentHistory
         {

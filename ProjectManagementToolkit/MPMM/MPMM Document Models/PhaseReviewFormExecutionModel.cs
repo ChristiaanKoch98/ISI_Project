@@ -42,7 +42,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         {
             public string ReviewCategory { get; set; }
             public string ReviewQuestion { get; set; }
-            public bool Answer { get; set; }
+            public string Answer { get; set; }
             public string Varaince { get; set; }
         }
     }

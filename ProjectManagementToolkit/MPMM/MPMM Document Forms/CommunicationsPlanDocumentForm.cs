@@ -68,6 +68,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             dgvDocumentInformation.Columns.Add("colLastSaveDate", "Last save date");
             dgvDocumentInformation.Columns.Add("colFileName", "File Name");
 
+            dgvCommunicationsPlan.Columns.Add("colDeliverable", "Deliverable");
+            dgvCommunicationsPlan.Columns.Add("colScheduledCompletionDate", "Scheduled Completion Date");
+            dgvCommunicationsPlan.Columns.Add("colActualCompletionDate", "Actual Completion Date");
+            dgvCommunicationsPlan.Columns.Add("colActualVariance", "Actual Variance");
+            dgvCommunicationsPlan.Columns.Add("colForecastCompletionDate", "Forecast Completion Date");
+            dgvCommunicationsPlan.Columns.Add("colForecastVariance", "Forecast Variance");
+            dgvCommunicationsPlan.Columns.Add("colSummary", "Summary");
+
             string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "CommunicationPlan");
             List<string[]> documentInfo = new List<string[]>();
             newCommunicationsPlanModel = new CommunicationsPlanModel();
@@ -88,6 +96,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 documentInfo.Add(new string[] { "Issue Date", currentCommunicationsPlanModel.IssueDate });
                 documentInfo.Add(new string[] { "Last Save Date", currentCommunicationsPlanModel.LastSavedDate });
                 documentInfo.Add(new string[] { "File Name", currentCommunicationsPlanModel.FileName });
+
+                foreach (var row in currentCommunicationsPlanModel.ProSchedule)
+                {
+                    dgvCommunicationsPlan.Rows.Add(new string[] { row.Deliverable, row.ScheduledCompletionDate, row.ActualCompletionDate, row.ActualVariance, row.ForecastCompletionDate, row.ForecastVariance, row.Summary });
+                }
 
                 foreach (var row in documentInfo)
                 {
@@ -201,6 +214,34 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 Stake.Add(Stakereq);
             }
             newCommunicationsPlanModel.StakeholderReq = Stake;
+
+            List<CommunicationsPlanModel.ProjectSchedule> ProjSchedules = new List<CommunicationsPlanModel.ProjectSchedule>();
+
+            int scheduleRowsCount = dgvCommunicationsPlan.Rows.Count;
+
+            for (int i = 0; i < scheduleRowsCount - 1; i++)
+            {
+                CommunicationsPlanModel.ProjectSchedule ProjectScheduleMod = new CommunicationsPlanModel.ProjectSchedule();
+                var Deliverable = dgvCommunicationsPlan.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var ScheduledCompletionDate = dgvCommunicationsPlan.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var ActualCompletionDate = dgvCommunicationsPlan.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var ActualVariance = dgvCommunicationsPlan.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var ForecastCompletionDate = dgvCommunicationsPlan.Rows[i].Cells[4].Value?.ToString() ?? "";
+                var ForecastVariance = dgvCommunicationsPlan.Rows[i].Cells[5].Value?.ToString() ?? "";
+                var Summary = dgvCommunicationsPlan.Rows[i].Cells[6].Value?.ToString() ?? "";
+
+                ProjectScheduleMod.Deliverable = Deliverable;
+                ProjectScheduleMod.ScheduledCompletionDate = ScheduledCompletionDate;
+                ProjectScheduleMod.ActualCompletionDate = ActualCompletionDate;
+                ProjectScheduleMod.ActualVariance = ActualVariance;
+                ProjectScheduleMod.ForecastCompletionDate = ForecastCompletionDate;
+                ProjectScheduleMod.ForecastVariance = ForecastVariance;
+                ProjectScheduleMod.Summary = Summary;
+
+                ProjSchedules.Add(ProjectScheduleMod);
+            }
+            newCommunicationsPlanModel.ProSchedule = ProjSchedules;
+
 
             newCommunicationsPlanModel.Activities = txtActivities.Text;
             newCommunicationsPlanModel.Assumptions = txtAssumptions.Text;
@@ -425,7 +466,61 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         CommunicationReqHeading.StyleId = "Heading1";
 
-                        var ComPlanHeading = document.InsertParagraph("2.1 Assumption")
+                        var scheSubHeading = document.InsertParagraph("3.1 Project Schedule")
+                           .Bold()
+                           .FontSize(14d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        scheSubHeading.StyleId = "Heading2";
+
+                        var scheDoc = document.AddTable(currentCommunicationsPlanModel.ProSchedule.Count + 1, 7);
+                        scheDoc.Rows[0].Cells[0].Paragraphs[0].Append("Deliverable")
+                            .Bold(true)
+                            .Color(Color.White);
+                        scheDoc.Rows[0].Cells[1].Paragraphs[0].Append("ScheduledCompletionDate")
+                            .Bold(true)
+                            .Color(Color.White);
+                        scheDoc.Rows[0].Cells[2].Paragraphs[0].Append("ActualCompletionDate")
+                            .Bold(true)
+                            .Color(Color.White);
+                        scheDoc.Rows[0].Cells[3].Paragraphs[0].Append("ActualVariance")
+                            .Bold(true)
+                            .Color(Color.White);
+                        scheDoc.Rows[0].Cells[4].Paragraphs[0].Append("ForecastCompletionDate")
+                            .Bold(true)
+                            .Color(Color.White);
+                        scheDoc.Rows[0].Cells[5].Paragraphs[0].Append("ForecastVariance")
+                            .Bold(true)
+                            .Color(Color.White);
+                        scheDoc.Rows[0].Cells[6].Paragraphs[0].Append("Summary")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        scheDoc.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        scheDoc.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        scheDoc.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        scheDoc.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+                        scheDoc.Rows[0].Cells[4].FillColor = TABLE_HEADER_COLOR;
+                        scheDoc.Rows[0].Cells[5].FillColor = TABLE_HEADER_COLOR;
+                        scheDoc.Rows[0].Cells[6].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentCommunicationsPlanModel.ProSchedule.Count + 1; i++)
+                        {
+                            scheDoc.Rows[i].Cells[0].Paragraphs[0].Append(currentCommunicationsPlanModel.ProSchedule[i - 1].Deliverable);
+                            scheDoc.Rows[i].Cells[1].Paragraphs[0].Append(currentCommunicationsPlanModel.ProSchedule[i - 1].ScheduledCompletionDate);
+                            scheDoc.Rows[i].Cells[2].Paragraphs[0].Append(currentCommunicationsPlanModel.ProSchedule[i - 1].ActualCompletionDate);
+                            scheDoc.Rows[i].Cells[3].Paragraphs[0].Append(currentCommunicationsPlanModel.ProSchedule[i - 1].ActualVariance);
+                            scheDoc.Rows[i].Cells[4].Paragraphs[0].Append(currentCommunicationsPlanModel.ProSchedule[i - 1].ForecastCompletionDate);
+                            scheDoc.Rows[i].Cells[5].Paragraphs[0].Append(currentCommunicationsPlanModel.ProSchedule[i - 1].ForecastVariance);
+                            scheDoc.Rows[i].Cells[6].Paragraphs[0].Append(currentCommunicationsPlanModel.ProSchedule[i - 1].Summary);
+
+                        }
+                        scheDoc.SetWidths(new float[] { 394, 762, 762, 762, 762, 762, 762 });
+                        document.InsertTable(scheDoc);
+
+                        var ComPlanHeading = document.InsertParagraph("2.2 Assumption")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)

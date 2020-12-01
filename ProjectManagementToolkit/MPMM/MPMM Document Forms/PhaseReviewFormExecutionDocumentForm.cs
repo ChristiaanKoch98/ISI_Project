@@ -47,6 +47,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void loadDocument()
         {
+            dgvReviewDetails.Columns.Add("colReviewCategory", "ReviewCategory");
+            dgvReviewDetails.Columns.Add("colReviewQuestion", "ReviewQuestion");
+            dgvReviewDetails.Columns.Add("colAnswer", "Answer");
+            dgvReviewDetails.Columns.Add("colVariance", "Variance");
+
             string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "PhaseReviewExe");
             List<string[]> documentInfo = new List<string[]>();
             newPhaseReviewExeModel = new PhaseReviewFormExecutionModel();
@@ -80,6 +85,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 txtSupportingDocumentation.Text = currentPhaseReviewExeModel.SupportingDocumentation;
                 txtSignature.Text = currentPhaseReviewExeModel.Signature;
                 txtDate.Text = currentPhaseReviewExeModel.SignatureDate;
+
+                foreach (var row in currentPhaseReviewExeModel.ReviewDetials)
+                {
+                    dgvReviewDetails.Rows.Add(new string[] { row.ReviewCategory, row.ReviewQuestion, row.Answer, row.Varaince });
+                }
 
             }
             else
@@ -116,6 +126,28 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newPhaseReviewExeModel.SupportingDocumentation = txtSupportingDocumentation.Text;
             newPhaseReviewExeModel.Signature = txtSignature.Text;
             newPhaseReviewExeModel.SignatureDate = txtDate.Text;
+
+            List<PhaseReviewFormExecutionModel.ReviewDetial> review = new List<PhaseReviewFormExecutionModel.ReviewDetial>();
+
+            int reviewRowsCount = dgvReviewDetails.Rows.Count;
+
+            for (int i = 0; i < reviewRowsCount - 1; i++)
+            {
+                PhaseReviewFormExecutionModel.ReviewDetial rev = new PhaseReviewFormExecutionModel.ReviewDetial();
+                var ReviewCategory = dgvReviewDetails.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var ReviewQuestion = dgvReviewDetails.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var Answer = dgvReviewDetails.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var Varaince = dgvReviewDetails.Rows[i].Cells[3].Value?.ToString() ?? "";
+
+                rev.ReviewCategory = ReviewCategory;
+                rev.ReviewQuestion = ReviewQuestion;
+                rev.Answer = Answer;
+                rev.Varaince = Varaince;
+
+                review.Add(rev);
+            }
+            newPhaseReviewExeModel.ReviewDetials = review;
+
 
             List<VersionControl<PhaseReviewFormExecutionModel>.DocumentModel> documentModels = versionControl.DocumentModels;
 
@@ -415,7 +447,46 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         changesHeading.StyleId = "Heading2";
 
-                        var adHeading = document.InsertParagraph("3 Approval details")
+                        var revHead = document.InsertParagraph("3 Review details")
+                           .Bold()
+                           .FontSize(14d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        revHead.StyleId = "Heading1";
+
+                        var docReviewDetail = document.AddTable(currentPhaseReviewExeModel.ReviewDetials.Count + 1, 4);
+                        docReviewDetail.Rows[0].Cells[0].Paragraphs[0].Append("ReviewCategory")
+                            .Bold(true)
+                            .Color(Color.White);
+                        docReviewDetail.Rows[0].Cells[1].Paragraphs[0].Append("ReviewQuestion")
+                            .Bold(true)
+                            .Color(Color.White);
+                        docReviewDetail.Rows[0].Cells[2].Paragraphs[0].Append("Answer")
+                            .Bold(true)
+                            .Color(Color.White);
+                        docReviewDetail.Rows[0].Cells[3].Paragraphs[0].Append("Varaince")
+                            .Bold(true)
+                            .Color(Color.White);
+                        docReviewDetail.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        docReviewDetail.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        docReviewDetail.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        docReviewDetail.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentPhaseReviewExeModel.ReviewDetials.Count + 1; i++)
+                        {
+                            docReviewDetail.Rows[i].Cells[0].Paragraphs[0].Append(currentPhaseReviewExeModel.ReviewDetials[i - 1].ReviewCategory);
+                            docReviewDetail.Rows[i].Cells[1].Paragraphs[0].Append(currentPhaseReviewExeModel.ReviewDetials[i - 1].ReviewQuestion);
+                            docReviewDetail.Rows[i].Cells[2].Paragraphs[0].Append(currentPhaseReviewExeModel.ReviewDetials[i - 1].Answer);
+                            docReviewDetail.Rows[i].Cells[3].Paragraphs[0].Append(currentPhaseReviewExeModel.ReviewDetials[i - 1].Varaince);
+                        }
+                        docReviewDetail.SetWidths(new float[] { 493, 332, 508, 254 });
+                        document.InsertTable(docReviewDetail);
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
+
+
+                        var adHeading = document.InsertParagraph("4 Approval details")
                            .Bold()
                            .FontSize(14d)
                            .Color(Color.Black)
@@ -424,7 +495,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         CommunicationReqHeading.StyleId = "Heading1";
 
-                        var sdHeading = document.InsertParagraph("3.1 Supporting documentation")
+                        var sdHeading = document.InsertParagraph("4.1 Supporting documentation")
                      .Bold()
                      .FontSize(12d)
                      .Color(Color.Black)
@@ -439,7 +510,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         sdHeading.StyleId = "Heading2";
 
-                        var psSignature = document.InsertParagraph("3.2 Project signature")
+                        var psSignature = document.InsertParagraph("4.2 Project signature")
                          .Bold()
                          .FontSize(12d)
                          .Color(Color.Black)
@@ -454,7 +525,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         psSignature.StyleId = "Heading2";
 
-                        var dateHeading = document.InsertParagraph("3.3 Date")
+                        var dateHeading = document.InsertParagraph("4.3 Date")
                          .Bold()
                          .FontSize(12d)
                          .Color(Color.Black)
