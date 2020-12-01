@@ -26,5 +26,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
 
         }
+
+        private void documentApprovals_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
