@@ -304,7 +304,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newFeasibilityStudyModel.SupportingDocumentation = Supporting_Documentation_btn.Text;
 
             List<VersionControl<FeasibilityStudyModel>.DocumentModel> documentModels = versionControl.DocumentModels;
-            MessageBox.Show(JsonConvert.SerializeObject(newFeasibilityStudyModel), "save", MessageBoxButtons.OK);
+            MessageBox.Show("Document saved", "save", MessageBoxButtons.OK);
 
             if (!versionControl.isEqual(currentFeasibilityStudyModel, newFeasibilityStudyModel))
             {
