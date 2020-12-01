@@ -572,7 +572,7 @@
             // Btn_Save_Document
             // 
             this.Btn_Save_Document.Location = new System.Drawing.Point(892, 15);
-            this.Btn_Save_Document.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Save_Document.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Save_Document.Name = "Btn_Save_Document";
             this.Btn_Save_Document.Size = new System.Drawing.Size(148, 28);
             this.Btn_Save_Document.TabIndex = 18;
@@ -584,12 +584,13 @@
             // btn_Export_Document
             // 
             this.btn_Export_Document.Location = new System.Drawing.Point(739, 15);
-            this.btn_Export_Document.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Export_Document.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Export_Document.Name = "btn_Export_Document";
             this.btn_Export_Document.Size = new System.Drawing.Size(145, 28);
             this.btn_Export_Document.TabIndex = 19;
             this.btn_Export_Document.Text = "Export Documnet";
             this.btn_Export_Document.UseVisualStyleBackColor = true;
+            this.btn_Export_Document.Click += new System.EventHandler(this.btn_Export_Document_Click);
             // 
             // PhaseReviewFormExecutionDocumentForm
             // 

@@ -23,7 +23,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         CommunicationsPlanModel newCommunicationsPlanModel;
         CommunicationsPlanModel currentCommunicationsPlanModel;
         Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
-        ProjectModel projectModel;
+        ProjectModel projectModel = new ProjectModel();
+
         public CommunicationsPlanDocumentForm()
         {
             InitializeComponent();
@@ -42,6 +43,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private void CommunicationsPlanDocumentForm_Load(object sender, EventArgs e)
         {
             loadDocument();
+            
         }
 
         private void loadDocument()
@@ -58,7 +60,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             dgvStakeholderRequirements.Columns.Add("colStakeName", "Stakeholder Name");
             dgvStakeholderRequirements.Columns.Add("colStakeRole", "Stakeholder Role");
             dgvStakeholderRequirements.Columns.Add("colStakeOrg", "Stakeholder organization");
-            dgvStakeholderRequirements.Columns.Add("colInfoReq", "Information required");
+            dgvStakeholderRequirements.Columns.Add("colInfoReq", "Information required"); 
 
             dgvDocumentInformation.Columns.Add("colDocID", "Document ID");
             dgvDocumentInformation.Columns.Add("colDocOwner", "Stakeholder Document owner");
@@ -71,7 +73,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newCommunicationsPlanModel = new CommunicationsPlanModel();
             currentCommunicationsPlanModel = new CommunicationsPlanModel();
 
-           if (json != "")
+            string jsonWord = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsonWord);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+
+            if (json != "")
             {
                 versionControl = JsonConvert.DeserializeObject<VersionControl<CommunicationsPlanModel>>(json);
                 newCommunicationsPlanModel = JsonConvert.DeserializeObject<CommunicationsPlanModel>(versionControl.getLatest(versionControl.DocumentModels));
@@ -222,7 +228,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void exportToWord()
         {
-           /* string path;
+            string path;
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
                 saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -379,7 +385,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         CommunicationReqSubHeading.StyleId = "Heading2";
 
-                        var documentStakeholderReq = document.AddTable(currentCommunicationsPlanModel.StakeholderReq.Count + 1, 3);
+                        var documentStakeholderReq = document.AddTable(currentCommunicationsPlanModel.StakeholderReq.Count + 1, 4);
                         documentStakeholderReq.Rows[0].Cells[0].Paragraphs[0].Append("Stakeholder Name")
                             .Bold(true)
                             .Color(Color.White);
@@ -406,7 +412,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             documentStakeholderReq.Rows[i].Cells[3].Paragraphs[0].Append(currentCommunicationsPlanModel.StakeholderReq[i - 1].InformationRequirement);
                         }
 
-                        documentStakeholderReq.SetWidths(new float[] { 394, 762, 419 });
+                        documentStakeholderReq.SetWidths(new float[] { 394, 762, 419, 762 });
                         document.InsertTable(documentStakeholderReq);
 
 
@@ -419,7 +425,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         CommunicationReqHeading.StyleId = "Heading1";
 
-                        var ComPlanHeading = document.InsertParagraph("2 Communications Plan")
+                        var ComPlanHeading = document.InsertParagraph("2.1 Assumption")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -502,9 +508,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         RolesHeading.StyleId = "Heading2";
-
-
-
                         
                         try
                         {
@@ -514,13 +517,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         {
                             MessageBox.Show("The selected File is open.", "Close File", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
-
-
                     }
-
-
                 }
-            }*/
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -531,6 +530,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            exportToWord();
         }
     }
 }

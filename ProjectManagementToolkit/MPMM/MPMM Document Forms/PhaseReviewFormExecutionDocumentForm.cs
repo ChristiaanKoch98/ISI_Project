@@ -22,6 +22,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         VersionControl<PhaseReviewFormExecutionModel> versionControl;
         PhaseReviewFormExecutionModel newPhaseReviewExeModel;
         PhaseReviewFormExecutionModel currentPhaseReviewExeModel;
+        Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
+        ProjectModel projectModel = new ProjectModel();
 
         public PhaseReviewFormExecutionDocumentForm()
         {
@@ -49,6 +51,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             List<string[]> documentInfo = new List<string[]>();
             newPhaseReviewExeModel = new PhaseReviewFormExecutionModel();
             currentPhaseReviewExeModel = new PhaseReviewFormExecutionModel();
+
+            string jsonWord = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsonWord);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
 
             if (json != "")
             {
@@ -129,7 +135,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void exportToWord()
         {
-          /*  string path;
+            string path;
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
                 saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -143,6 +149,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                     path = saveFileDialog.FileName;
                     using (var document = DocX.Create(path))
                     {
+                        document.InsertParagraph("Phase review form \nFor " + projectModel.ProjectName)
+                           .Font("Arial")
+                           .Bold(true)
+                           .FontSize(22d).Alignment = Alignment.left;
+                        document.InsertSectionPageBreak();
+
+
                         var p = document.InsertParagraph();
                         var title = p.InsertParagraphBeforeSelf("Table of Contents").Bold().FontSize(20);
 
@@ -262,7 +275,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         .Bold(true)
                         .Font("Arial");
 
-                        document.InsertParagraph(currentPhaseReviewExeModel.PreperationPeriod)
+                        document.InsertParagraph(currentPhaseReviewExeModel.eportingPeriod)
                              .FontSize(11d)
                              .Color(Color.Black)
                              .Font("Arial").Alignment = Alignment.left;
@@ -270,7 +283,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         rperHeading.StyleId = "Heading2";
 
-                        var recHeading = document.InsertParagraph("1.8 Reporting Recipients")
+                       /* var recHeading = document.InsertParagraph("1.8 Reporting Recipients")
                         .Bold()
                         .FontSize(12d)
                         .Color(Color.Black)
@@ -283,7 +296,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                              .Font("Arial").Alignment = Alignment.left;
 
 
-                        recHeading.StyleId = "Heading2";
+                        recHeading.StyleId = "Heading2"; */
 
                         var sumHeading = document.InsertParagraph("2 Overall status")
                             .Bold()
@@ -426,9 +439,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         sdHeading.StyleId = "Heading2";
 
-
-
-
                         var psSignature = document.InsertParagraph("3.2 Project signature")
                          .Bold()
                          .FontSize(12d)
@@ -458,9 +468,18 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         dateHeading.StyleId = "Heading2";
+
+                        try
+                        {
+                            document.Save();
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("The selected File is open.", "Close File", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
-            } */
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -476,6 +495,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private void Btn_Save_Document_Click(object sender, EventArgs e)
         {
             saveDocument();
+        }
+
+        private void btn_Export_Document_Click(object sender, EventArgs e)
+        {
+            exportToWord();
         }
     }
 }

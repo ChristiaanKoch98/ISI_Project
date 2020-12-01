@@ -38,6 +38,7 @@
             this.txtProjectSponsor = new System.Windows.Forms.TextBox();
             this.txtReportPreparedBy = new System.Windows.Forms.TextBox();
             this.txtReportPreperationDate = new System.Windows.Forms.TextBox();
+            this.txtReportingPeriod = new System.Windows.Forms.TextBox();
             this.txtProjectName2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -78,7 +79,7 @@
             this.txtProjectName = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtReportingPeriod = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabProjectDetails.SuspendLayout();
             this.tabExecutiveSummary.SuspendLayout();
@@ -198,6 +199,13 @@
             this.txtReportPreperationDate.Name = "txtReportPreperationDate";
             this.txtReportPreperationDate.Size = new System.Drawing.Size(309, 22);
             this.txtReportPreperationDate.TabIndex = 23;
+            // 
+            // txtReportingPeriod
+            // 
+            this.txtReportingPeriod.Location = new System.Drawing.Point(291, 487);
+            this.txtReportingPeriod.Name = "txtReportingPeriod";
+            this.txtReportingPeriod.Size = new System.Drawing.Size(309, 22);
+            this.txtReportingPeriod.TabIndex = 22;
             // 
             // txtProjectName2
             // 
@@ -704,12 +712,15 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txtReportingPeriod
+            // button2
             // 
-            this.txtReportingPeriod.Location = new System.Drawing.Point(291, 487);
-            this.txtReportingPeriod.Name = "txtReportingPeriod";
-            this.txtReportingPeriod.Size = new System.Drawing.Size(309, 22);
-            this.txtReportingPeriod.TabIndex = 22;
+            this.button2.Location = new System.Drawing.Point(445, 6);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // ProjectStatusReportDocumentForm
             // 
@@ -717,6 +728,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(1058, 790);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.label27);
@@ -795,5 +807,6 @@
         private System.Windows.Forms.DataGridView dgvProjectQuality;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtReportingPeriod;
+        private System.Windows.Forms.Button button2;
     }
 }

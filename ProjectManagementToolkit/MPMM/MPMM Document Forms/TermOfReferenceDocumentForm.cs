@@ -22,7 +22,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         VersionControl<TermsOfReferenceModel> versionControl;
         TermsOfReferenceModel newTermsOfReferenceModel;
         TermsOfReferenceModel currentTermsOfReferenceModel;
-        ProjectModel projectModel;
+        ProjectModel projectModel = new ProjectModel();
         Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
 
         public TermOfReferenceDocumentForm()
@@ -332,7 +332,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
             newTermsOfReferenceModel.Risk = Risk;
 
-            List<TermsOfReferenceModel.Issues> Issuess = new List<TermsOfReferenceModel.Issues>();
+            List<TermsOfReferenceModel.Issues> theIssuess = new List<TermsOfReferenceModel.Issues>();
 
             int issRowsCount = dgvIssues.Rows.Count;
 
@@ -347,9 +347,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 iss.IssuePriority = IssuePriority;
                 iss.Action = Action;
 
-                Issuess.Add(iss);
+                theIssuess.Add(iss);
             }
-            newTermsOfReferenceModel.Risk = Risk;
+            newTermsOfReferenceModel.theIssuess = theIssuess;
 
             newTermsOfReferenceModel.ExecutiveSummary = txtExecutiveSummary.Text;
 
@@ -364,6 +364,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newTermsOfReferenceModel.Assumptions = txtAssumptions.Text;
             newTermsOfReferenceModel.Constraints = txtConstraints.Text;
 
+            newTermsOfReferenceModel.DocumentID = dgvDocumentInformation.Rows[0].Cells[1].Value.ToString();
+            newTermsOfReferenceModel.DocumentOwner = dgvDocumentInformation.Rows[1].Cells[1].Value.ToString();
+            newTermsOfReferenceModel.IssueDate = dgvDocumentInformation.Rows[2].Cells[1].Value.ToString();
+            newTermsOfReferenceModel.LastSavedDate = dgvDocumentInformation.Rows[3].Cells[1].Value.ToString();
+            newTermsOfReferenceModel.FileName = dgvDocumentInformation.Rows[4].Cells[1].Value.ToString();
+
             List<VersionControl<TermsOfReferenceModel>.DocumentModel> documentModels = versionControl.DocumentModels;
             if (!versionControl.isEqual(currentTermsOfReferenceModel, newTermsOfReferenceModel))
             {
@@ -374,7 +380,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
-                JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ProjectPlan");
+                JsonHelper.saveDocument(json, Settings.Default.ProjectID, "TermOfReferenceDocument");
                 MessageBox.Show("Terms of reference saved successfully", "save", MessageBoxButtons.OK);
             }
         }
@@ -386,6 +392,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void loadDocument()
         {
+            dgvDocumentInformation.Columns.Add("colType", "Type");
+            dgvDocumentInformation.Columns.Add("colInformation", "Information");
+
             dgvDocumentHistory.Columns.Add("colVersion", "Version");
             dgvDocumentHistory.Columns.Add("colIssueDate", "Issue date");
             dgvDocumentHistory.Columns.Add("colChanges", "Changes");
@@ -449,20 +458,43 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             dgvIssues.Columns.Add("colAction", "Action");
 
 
-            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "TermsOfReference");
+            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "TermOfReferenceDocument");
             List<string[]> documentInfo = new List<string[]>();
             newTermsOfReferenceModel = new TermsOfReferenceModel();
             currentTermsOfReferenceModel = new TermsOfReferenceModel();
 
+            string jsonWord = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsonWord);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+
             if (json != "")
             {
-                newTermsOfReferenceModel.DocumentID = dgvDocumentInformation.Rows[0].Cells[1].Value.ToString();
-                newTermsOfReferenceModel.DocumentOwner = dgvDocumentInformation.Rows[1].Cells[1].Value.ToString();
-                newTermsOfReferenceModel.IssueDate = dgvDocumentInformation.Rows[2].Cells[1].Value.ToString();
-                newTermsOfReferenceModel.LastSavedDate = dgvDocumentInformation.Rows[3].Cells[1].Value.ToString();
-                newTermsOfReferenceModel.FileName = dgvDocumentInformation.Rows[4].Cells[1].Value.ToString();
-           
-               
+                versionControl = JsonConvert.DeserializeObject<VersionControl<TermsOfReferenceModel>>(json);
+                newTermsOfReferenceModel = JsonConvert.DeserializeObject<TermsOfReferenceModel>(versionControl.getLatest(versionControl.DocumentModels));
+                currentTermsOfReferenceModel = JsonConvert.DeserializeObject<TermsOfReferenceModel>(versionControl.getLatest(versionControl.DocumentModels));
+
+                documentInfo.Add(new string[] { "Document ID", currentTermsOfReferenceModel.DocumentID });
+                documentInfo.Add(new string[] { "Document Owner", currentTermsOfReferenceModel.DocumentOwner });
+                documentInfo.Add(new string[] { "Issue Date", currentTermsOfReferenceModel.IssueDate });
+                documentInfo.Add(new string[] { "Last Save Date", currentTermsOfReferenceModel.LastSavedDate });
+                documentInfo.Add(new string[] { "File Name", currentTermsOfReferenceModel.FileName });
+
+                foreach (var row in documentInfo)
+                {
+                    dgvDocumentInformation.Rows.Add(row);
+                }
+                dgvDocumentInformation.AllowUserToAddRows = false;
+
+                foreach (var row in currentTermsOfReferenceModel.DocumentHistories)
+                {
+                    dgvDocumentHistory.Rows.Add(new string[] { row.Version, row.IssueDate, row.Changes });
+                }
+
+                foreach (var row in currentTermsOfReferenceModel.DocumentApprovals)
+                {
+                    dgvDocumentApprovals.Rows.Add(new string[] { row.Role, row.Name, row.Signature, row.DateApproved });
+                }
+
                 txtExecutiveSummary.Text = currentTermsOfReferenceModel.ExecutiveSummary;
 
                 txtProjectDefinition.Text = currentTermsOfReferenceModel.ProjDefinition;
@@ -536,12 +568,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                     dgvRisks.Rows.Add(new string[] { row.RiskDesc, row.RiskLikelihood, row.RiskImpact, row.Action });
                 }
 
-                foreach (var row in currentTermsOfReferenceModel.Issuess)
+                foreach (var row in currentTermsOfReferenceModel.theIssuess)
                 {
                     dgvIssues.Rows.Add(new string[] { row.IssueDescription, row.IssuePriority, row.Action });
                 }
-
-
             }
             else
             {
@@ -563,13 +593,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void exportToWord()
         {
-           /* string path;
+            string path;
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
                 saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
                 saveFileDialog.Filter = "Word 97-2003 Documents (*.doc)|*.doc|Word 2007 Documents (*.docx)|*.docx";
                 saveFileDialog.FilterIndex = 2;
                 saveFileDialog.RestoreDirectory = true;
+                saveFileDialog.ShowDialog();
 
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
@@ -807,7 +838,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             deliverablesDocument.Rows[i].Cells[2].Paragraphs[0].Append(currentTermsOfReferenceModel.Deliv[i - 1].Description);
                         }
 
-                        deliverablesDocument.SetWidths(new float[] { 394, 762, 419 });
+                        deliverablesDocument.SetWidths(new float[] { 762, 762, 762 });
                         document.InsertTable(deliverablesDocument);
 
                         var CommunicationPlanHeading = document.InsertParagraph("3 Project Organization")
@@ -828,7 +859,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         CommunicationReqHeading.StyleId = "Heading2";
 
-                        var customersDoc = document.AddTable(currentTermsOfReferenceModel.Cust.Count + 1, 3);
+                        var customersDoc = document.AddTable(currentTermsOfReferenceModel.Cust.Count + 1, 2);
                         customersDoc.Rows[0].Cells[0].Paragraphs[0].Append("Customer group")
                             .Bold(true)
                             .Color(Color.White);
@@ -845,7 +876,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             customersDoc.Rows[i].Cells[1].Paragraphs[0].Append(currentTermsOfReferenceModel.Deliv[i - 1].Components);
                         }
 
-                        customersDoc.SetWidths(new float[] { 394, 762 });
+                        customersDoc.SetWidths(new float[] { 762, 762 });
                         document.InsertTable(customersDoc);
 
                         var custSubHeading1 = document.InsertParagraph("3.2 Stakeholders")
@@ -857,7 +888,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         CommunicationReqHeading.StyleId = "Heading2";
 
-                        var stakeholdersDoc = document.AddTable(currentTermsOfReferenceModel.Stake.Count + 1, 3);
+                        var stakeholdersDoc = document.AddTable(currentTermsOfReferenceModel.Stake.Count + 1, 2);
                         stakeholdersDoc.Rows[0].Cells[0].Paragraphs[0].Append("Stakeholders Group")
                             .Bold(true)
                             .Color(Color.White);
@@ -874,7 +905,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             stakeholdersDoc.Rows[i].Cells[1].Paragraphs[0].Append(currentTermsOfReferenceModel.Stake[i - 1].StakeholderInterest);
                         }
 
-                        stakeholdersDoc.SetWidths(new float[] { 394, 762 });
+                        stakeholdersDoc.SetWidths(new float[] { 762, 762 });
                         document.InsertTable(stakeholdersDoc);
 
                         var rolesSubHeading = document.InsertParagraph("3.3 Roles")
@@ -916,7 +947,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             documentRoles.Rows[i].Cells[3].Paragraphs[0].Append(currentTermsOfReferenceModel.Rol[i - 1].AssignmentStatus);
                             documentRoles.Rows[i].Cells[4].Paragraphs[0].Append(currentTermsOfReferenceModel.Rol[i - 1].AssignmentDate);
                         }
-                        documentRoles.SetWidths(new float[] { 493, 332, 508, 254 });
+                        documentRoles.SetWidths(new float[] { 762, 762, 762, 762, 762 });
                         document.InsertTable(documentRoles);
 
                         var resposibiitiesHeading = document.InsertParagraph("3.4 Responsibilities")
@@ -984,7 +1015,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             appDoc.Rows[i].Cells[1].Paragraphs[0].Append(currentTermsOfReferenceModel.Appr[i - 1].OverallApproach);
                         }
 
-                        appDoc.SetWidths(new float[] { 394, 762 });
+                        appDoc.SetWidths(new float[] { 762, 762 });
                         document.InsertTable(appDoc);
 
                         var scheduleHeading = document.InsertParagraph("4.2 Schedule")
@@ -1011,7 +1042,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         mileSubHeading.StyleId = "Heading2";
 
-                        var milestonesDoc = document.AddTable(currentTermsOfReferenceModel.Mile.Count + 1, 2);
+                        var milestonesDoc = document.AddTable(currentTermsOfReferenceModel.Mile.Count + 1, 3);
                         milestonesDoc.Rows[0].Cells[0].Paragraphs[0].Append("Milestone")
                             .Bold(true)
                             .Color(Color.White);
@@ -1033,7 +1064,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             milestonesDoc.Rows[i].Cells[2].Paragraphs[0].Append(currentTermsOfReferenceModel.Mile[i - 1].Description);
                         }
 
-                        milestonesDoc.SetWidths(new float[] { 394, 762, 762 });
+                        milestonesDoc.SetWidths(new float[] { 762, 762, 762 });
                         document.InsertTable(milestonesDoc);
 
                         var depSubHeading = document.InsertParagraph("4.4 Dependencies")
@@ -1045,7 +1076,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         depSubHeading.StyleId = "Heading2";
 
-                        var dependDoc = document.AddTable(currentTermsOfReferenceModel.Dep.Count + 1, 2);
+                        var dependDoc = document.AddTable(currentTermsOfReferenceModel.Dep.Count + 1, 5);
                         dependDoc.Rows[0].Cells[0].Paragraphs[0].Append("ProjectActivity")
                             .Bold(true)
                             .Color(Color.White);
@@ -1077,7 +1108,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             dependDoc.Rows[i].Cells[4].Paragraphs[0].Append(currentTermsOfReferenceModel.Dep[i - 1].Date);
                         }
 
-                        dependDoc.SetWidths(new float[] { 394, 762, 762, 762, 762 });
+                        dependDoc.SetWidths(new float[] { 762, 762, 762, 762, 762 });
                         document.InsertTable(dependDoc);
 
                         var resourcePlanSubHeading = document.InsertParagraph("4.5 Resource plan")
@@ -1089,11 +1120,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         resourcePlanSubHeading.StyleId = "Heading2";
 
-                        var resourcePlanDoc = document.AddTable(currentTermsOfReferenceModel.ResP.Count + 1, 2);
+                        var resourcePlanDoc = document.AddTable(currentTermsOfReferenceModel.ResP.Count + 1, 4);
                         resourcePlanDoc.Rows[0].Cells[0].Paragraphs[0].Append("Role")
                             .Bold(true)
                             .Color(Color.White);
-                        resourcePlanDoc.Rows[0].Cells[1].Paragraphs[0].Append("Star tDate")
+                        resourcePlanDoc.Rows[0].Cells[1].Paragraphs[0].Append("Start Date")
                             .Bold(true)
                             .Color(Color.White);
                         resourcePlanDoc.Rows[0].Cells[2].Paragraphs[0].Append("End Date")
@@ -1116,7 +1147,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             resourcePlanDoc.Rows[i].Cells[3].Paragraphs[0].Append(currentTermsOfReferenceModel.ResP[i - 1].Effort);
                         }
 
-                        resourcePlanDoc.SetWidths(new float[] { 394, 762, 762, 762 });
+                        resourcePlanDoc.SetWidths(new float[] { 762, 762, 762, 762 });
                         document.InsertTable(resourcePlanDoc);
 
                         var finPlanSubHeading = document.InsertParagraph("4.6 Financial plan")
@@ -1128,14 +1159,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         finPlanSubHeading.StyleId = "Heading2";
 
-                        var finPlanDoc = document.AddTable(currentTermsOfReferenceModel.FinP.Count + 1, 2);
-                        finPlanDoc.Rows[0].Cells[0].Paragraphs[0].Append("ExpenditureCategory")
+                        var finPlanDoc = document.AddTable(currentTermsOfReferenceModel.FinP.Count + 1, 3);
+                        finPlanDoc.Rows[0].Cells[0].Paragraphs[0].Append("Expenditure Category")
                             .Bold(true)
                             .Color(Color.White);
-                        finPlanDoc.Rows[0].Cells[1].Paragraphs[0].Append("ExpenditureItem")
+                        finPlanDoc.Rows[0].Cells[1].Paragraphs[0].Append("Expenditure Item")
                             .Bold(true)
                             .Color(Color.White);
-                        finPlanDoc.Rows[0].Cells[2].Paragraphs[0].Append("ExpenditureValue")
+                        finPlanDoc.Rows[0].Cells[2].Paragraphs[0].Append("Expenditure Value")
                             .Bold(true)
                             .Color(Color.White);
 
@@ -1152,7 +1183,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             finPlanDoc.Rows[i].Cells[2].Paragraphs[0].Append(currentTermsOfReferenceModel.FinP[i - 1].ExpenditureValue);
                         }
 
-                        finPlanDoc.SetWidths(new float[] { 394, 762, 762 });
+                        finPlanDoc.SetWidths(new float[] { 762, 762, 762 });
                         document.InsertTable(finPlanDoc);
 
                         var qpSubHeading = document.InsertParagraph("4.7 Quality plan")
@@ -1182,7 +1213,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             qPlanDoc.Rows[i].Cells[1].Paragraphs[0].Append(currentTermsOfReferenceModel.QuaP[i - 1].Description);
                         }
 
-                        qPlanDoc.SetWidths(new float[] { 394, 762 });
+                        qPlanDoc.SetWidths(new float[] { 762, 762 });
                         document.InsertTable(qPlanDoc);
 
                         var compcHeading = document.InsertParagraph("4.8 Completion Criteria")
@@ -1212,7 +1243,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             compcDoc.Rows[i].Cells[1].Paragraphs[0].Append(currentTermsOfReferenceModel.CompC[i - 1].Description);
                         }
 
-                        compcDoc.SetWidths(new float[] { 394, 762 });
+                        compcDoc.SetWidths(new float[] { 762, 762 });
                         document.InsertTable(compcDoc);
 
                         var considerationsHeading = document.InsertParagraph("5 Project considerations")
@@ -1233,11 +1264,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         riskSubHeading.StyleId = "Heading2";
 
-                        var riskDoc = document.AddTable(currentTermsOfReferenceModel.Risk.Count + 1, 2);
+                        var riskDoc = document.AddTable(currentTermsOfReferenceModel.Risk.Count + 1, 4);
                         riskDoc.Rows[0].Cells[0].Paragraphs[0].Append("Role")
                             .Bold(true)
                             .Color(Color.White);
-                        riskDoc.Rows[0].Cells[1].Paragraphs[0].Append("Star tDate")
+                        riskDoc.Rows[0].Cells[1].Paragraphs[0].Append("Start Date")
                             .Bold(true)
                             .Color(Color.White);
                         riskDoc.Rows[0].Cells[2].Paragraphs[0].Append("End Date")
@@ -1260,7 +1291,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             riskDoc.Rows[i].Cells[3].Paragraphs[0].Append(currentTermsOfReferenceModel.Risk[i - 1].Action);
                         }
 
-                        riskDoc.SetWidths(new float[] { 394, 762, 762, 762 });
+                        riskDoc.SetWidths(new float[] { 762, 762, 762, 762 });
                         document.InsertTable(riskDoc);
 
                         var issuesSubHeading = document.InsertParagraph("5.2 Issues")
@@ -1272,11 +1303,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         issuesSubHeading.StyleId = "Heading2";
 
-                        var issuesDoc = document.AddTable(currentTermsOfReferenceModel.Issuess.Count + 1, 2);
-                        issuesDoc.Rows[0].Cells[0].Paragraphs[0].Append("IssueDescription")
+                        var issuesDoc = document.AddTable(currentTermsOfReferenceModel.theIssuess.Count + 1, 3);
+                        issuesDoc.Rows[0].Cells[0].Paragraphs[0].Append("Issue Description")
                             .Bold(true)
                             .Color(Color.White);
-                        issuesDoc.Rows[0].Cells[1].Paragraphs[0].Append("IssuePriority")
+                        issuesDoc.Rows[0].Cells[1].Paragraphs[0].Append("Issue Priority")
                             .Bold(true)
                             .Color(Color.White);
                         issuesDoc.Rows[0].Cells[2].Paragraphs[0].Append("Action")
@@ -1289,15 +1320,15 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         issuesDoc.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
 
 
-                        for (int i = 1; i < currentTermsOfReferenceModel.Issuess.Count + 1; i++)
+                        for (int i = 1; i < currentTermsOfReferenceModel.theIssuess.Count + 1; i++)
                         {
-                            issuesDoc.Rows[i].Cells[0].Paragraphs[0].Append(currentTermsOfReferenceModel.Issuess[i - 1].IssueDescription);
-                            issuesDoc.Rows[i].Cells[1].Paragraphs[0].Append(currentTermsOfReferenceModel.Issuess[i - 1].IssuePriority);
-                            issuesDoc.Rows[i].Cells[2].Paragraphs[0].Append(currentTermsOfReferenceModel.Issuess[i - 1].Action);
+                            issuesDoc.Rows[i].Cells[0].Paragraphs[0].Append(currentTermsOfReferenceModel.theIssuess[i - 1].IssueDescription);
+                            issuesDoc.Rows[i].Cells[1].Paragraphs[0].Append(currentTermsOfReferenceModel.theIssuess[i - 1].IssuePriority);
+                            issuesDoc.Rows[i].Cells[2].Paragraphs[0].Append(currentTermsOfReferenceModel.theIssuess[i - 1].Action);
 
                         }
 
-                        issuesDoc.SetWidths(new float[] { 394, 762, 762, 762 });
+                        issuesDoc.SetWidths(new float[] { 762, 762, 762 });
                         document.InsertTable(issuesDoc);
 
                         var assHeading = document.InsertParagraph("5.3 Asssumptions")
@@ -1330,8 +1361,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         contHeading.StyleId = "Heading2";
 
-
-
                         try
                         {
                             document.Save();
@@ -1340,13 +1369,20 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         {
                             MessageBox.Show("The selected File is open.", "Close File", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
-
-
                     }
 
 
                 }
-            }*/
-        }    
+                else
+                {
+                    MessageBox.Show("Not saved");
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            exportToWord();
+        }
     }   
 }

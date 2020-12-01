@@ -23,6 +23,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string proSchedule { get; set; }
 
         public string NewProSchedule { get; set; }
+        public string ProEx { get; set; }
 
         public string ProjectDescription { get; set; }
         public string OverallStatus { get; set; }

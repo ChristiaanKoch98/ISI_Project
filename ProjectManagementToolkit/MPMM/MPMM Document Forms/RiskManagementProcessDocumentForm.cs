@@ -23,7 +23,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         RiskManagmentProcessModel newRiskManagmentProcessModel;
         RiskManagmentProcessModel currentRiskManagmentProcessModel;
         Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
-        ProjectModel projectModel;
+        ProjectModel projectModel = new ProjectModel();
         public RiskManagementProcessDocumentForm()
         {
             InitializeComponent();
@@ -52,6 +52,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             List<string[]> documentInfo = new List<string[]>();
             newRiskManagmentProcessModel = new RiskManagmentProcessModel();
             currentRiskManagmentProcessModel = new RiskManagmentProcessModel();
+
+            string jsonWord = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsonWord);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
 
             if (json != "")
             {
@@ -188,7 +192,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void exportToWord()
         {
-          /*  string path;
+            string path;
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
                 saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -208,7 +212,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                                 .Bold(true)
                                 .FontSize(22d).Alignment = Alignment.left;
                         }
-                        document.InsertParagraph("Communication Plan \nFor " + projectModel.ProjectName)
+                        document.InsertParagraph("Risk managment plan \nFor " + projectModel.ProjectName)
                             .Font("Arial")
                             .Bold(true)
                             .FontSize(22d).Alignment = Alignment.left;
@@ -474,14 +478,28 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         rregHeading.StyleId = "Heading2";
+
+                        try
+                        {
+                            document.Save();
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("The selected File is open.", "Close File", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
-            }*/
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             saveDocument();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            exportToWord();
         }
     }
 }

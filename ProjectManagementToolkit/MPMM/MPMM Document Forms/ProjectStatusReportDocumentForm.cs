@@ -23,6 +23,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         ProjectStatusReportModel newProjectStatusReportModel;
         ProjectStatusReportModel currentProjectStatusReportModel;
         Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
+        ProjectModel projectModel = new ProjectModel();
+
         public ProjectStatusReportDocumentForm()
         {
             InitializeComponent();
@@ -79,6 +81,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newProjectStatusReportModel = new ProjectStatusReportModel();
             currentProjectStatusReportModel = new ProjectStatusReportModel();
 
+            string jsonWord = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsonWord);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+
             if (json != "")
             {
                 versionControl = JsonConvert.DeserializeObject<VersionControl<ProjectStatusReportModel>>(json);
@@ -90,7 +96,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 txtProjectManager.Text = currentProjectStatusReportModel.ProjectManager;
                 txtProjectSponsor.Text = currentProjectStatusReportModel.ProjectSponsor;
                 txtReportPreparedBy.Text = currentProjectStatusReportModel.ReportPreparedBy;
-                txtReportPreperationDate.Text = currentProjectStatusReportModel.ReportPreparedBy;
+                txtReportPreperationDate.Text = currentProjectStatusReportModel.PrepDate;
                 txtProjectRecipients.Text = currentProjectStatusReportModel.Recipients;
 
                 txtReportingPeriod.Text = currentProjectStatusReportModel.RepPeriod;
@@ -100,7 +106,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 txtProjectDescription.Text = currentProjectStatusReportModel.ProjectDescription;
                 txtOverallStatus.Text = currentProjectStatusReportModel.OverallStatus;
-                txtProjectExpenses.Text = currentProjectStatusReportModel.ProjectDeliverables;
+                txtProjectExpenses.Text = currentProjectStatusReportModel.ProEx;
                 txtProjectRisks.Text = currentProjectStatusReportModel.ProjectRisks;
                 txtProjectChanges.Text = currentProjectStatusReportModel.ProjectChanges;
 
@@ -309,10 +315,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newProjectStatusReportModel.proSchedule = txtProjectSchedule.Text;
             newProjectStatusReportModel.ProjectDeliverables = txtProjectDeliverables.Text;
             newProjectStatusReportModel.textProjectIssues = txtProjectIssues.Text;
+            newProjectStatusReportModel.ProEx = txtProjectExpenses.Text;
 
             newProjectStatusReportModel.ProjectDescription = txtProjectDescription.Text;
             newProjectStatusReportModel.OverallStatus = txtOverallStatus.Text;
-            newProjectStatusReportModel.ProjectDeliverables = txtProjectExpenses.Text;
             newProjectStatusReportModel.ProjectRisks = txtProjectRisks.Text;
             newProjectStatusReportModel.ProjectChanges = txtProjectChanges.Text;
 
@@ -335,7 +341,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void exportToWord()
         {
-           /* string path;
+            string path;
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
                 saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -348,6 +354,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                     path = saveFileDialog.FileName;
                     using (var document = DocX.Create(path))
                     {
+                        document.InsertParagraph("Project status report \nFor " + projectModel.ProjectName)
+                           .Font("Arial")
+                           .Bold(true)
+                           .FontSize(22d).Alignment = Alignment.left;
+                        document.InsertSectionPageBreak();
+
                         var p = document.InsertParagraph();
                         var title = p.InsertParagraphBeforeSelf("Table of Contents").Bold().FontSize(20);
 
@@ -452,7 +464,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         .Bold(true)
                         .Font("Arial");
 
-                        document.InsertParagraph(currentProjectStatusReportModel.ReportPreparationDate)
+                        document.InsertParagraph(currentProjectStatusReportModel.PrepDate)
                              .FontSize(11d)
                              .Color(Color.Black)
                              .Font("Arial").Alignment = Alignment.left;
@@ -538,7 +550,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                          .Bold(true)
                          .Font("Arial");
 
-                        document.InsertParagraph(currentProjectStatusReportModel.NewProSchedule)
+                        document.InsertParagraph(currentProjectStatusReportModel.proSchedule)
                              .FontSize(11d)
                              .Color(Color.Black)
                              .Font("Arial").Alignment = Alignment.left;
@@ -553,13 +565,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                          .Bold(true)
                          .Font("Arial");
 
-                        document.InsertParagraph(currentProjectStatusReportModel.ProjExpenses)
+                        document.InsertParagraph(currentProjectStatusReportModel.ProEx)
                              .FontSize(11d)
                              .Color(Color.Black)
                              .Font("Arial").Alignment = Alignment.left;
 
 
-                        expensesHeading.StyleId = "Heading2";
+                        expensesHeading.StyleId = "Heading2"; 
 
                         var delivHeading = document.InsertParagraph("2.5 Project Deliverables")
                         .Bold()
@@ -598,7 +610,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         .Bold(true)
                         .Font("Arial");
 
-                        document.InsertParagraph(currentProjectStatusReportModel.ProjIssues)
+                        document.InsertParagraph(currentProjectStatusReportModel.textProjectIssues)
                              .FontSize(11d)
                              .Color(Color.Black)
                              .Font("Arial").Alignment = Alignment.left;
@@ -639,7 +651,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         scheSubHeading.StyleId = "Heading2";
 
-                        var scheDoc = document.AddTable(currentProjectStatusReportModel.ProSchedule.Count + 1, 2);
+                        var scheDoc = document.AddTable(currentProjectStatusReportModel.ProSchedule.Count + 1, 7);
                         scheDoc.Rows[0].Cells[0].Paragraphs[0].Append("Deliverable")
                             .Bold(true)
                             .Color(Color.White);
@@ -681,7 +693,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             scheDoc.Rows[i].Cells[6].Paragraphs[0].Append(currentProjectStatusReportModel.ProSchedule[i - 1].Summary);
                           
                         }
-                        scheDoc.SetWidths(new float[] { 394, 762, 762, 762, 762 });
+                        scheDoc.SetWidths(new float[] { 394, 762, 762, 762, 762, 762, 762 });
                         document.InsertTable(scheDoc);
 
                         var expsSubHeading = document.InsertParagraph("3.2 Project Expenses")
@@ -693,7 +705,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         expsSubHeading.StyleId = "Heading2";
 
-                        var expDoc = document.AddTable(currentProjectStatusReportModel.ProjExpenses.Count + 1, 2);
+                        var expDoc = document.AddTable(currentProjectStatusReportModel.ProjExpenses.Count + 1, 7);
                         expDoc.Rows[0].Cells[0].Paragraphs[0].Append("ExpenseType")
                             .Bold(true)
                             .Color(Color.White);
@@ -735,7 +747,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             expDoc.Rows[i].Cells[3].Paragraphs[0].Append(currentProjectStatusReportModel.ProjExpenses[i - 1].Summary);
 
                         }
-                        expDoc.SetWidths(new float[] { 394, 762, 762, 762, 762 });
+                        expDoc.SetWidths(new float[] { 394, 762, 762, 762, 762, 762, 762 });
                         document.InsertTable(expDoc);
 
                         var effSubHeading = document.InsertParagraph("3.3 Project Effort")
@@ -747,7 +759,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         expsSubHeading.StyleId = "Heading2";
 
-                        var effDoc = document.AddTable(currentProjectStatusReportModel.ProjEffort.Count + 1, 2);
+                        var effDoc = document.AddTable(currentProjectStatusReportModel.ProjEffort.Count + 1, 7);
                         effDoc.Rows[0].Cells[0].Paragraphs[0].Append("Activities")
                             .Bold(true)
                             .Color(Color.White);
@@ -789,7 +801,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             effDoc.Rows[i].Cells[3].Paragraphs[0].Append(currentProjectStatusReportModel.ProjEffort[i - 1].Summary);
 
                         }
-                        effDoc.SetWidths(new float[] { 394, 762, 762, 762, 762 });
+                        effDoc.SetWidths(new float[] { 394, 762, 762, 762, 762, 762, 762 });
                         document.InsertTable(effDoc);
 
                         var proqSubHeading = document.InsertParagraph("3.4 Project Quality")
@@ -801,7 +813,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         expsSubHeading.StyleId = "Heading2";
 
-                        var prqSubHeading = document.AddTable(currentProjectStatusReportModel.ProjQuality.Count + 1, 2);
+                        var prqSubHeading = document.AddTable(currentProjectStatusReportModel.ProjQuality.Count + 1, 5);
                         prqSubHeading.Rows[0].Cells[0].Paragraphs[0].Append("Deliverables")
                             .Bold(true)
                             .Color(Color.White);
@@ -847,7 +859,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         riskSubHeading.StyleId = "Heading2";
 
-                        var riSubHeading = document.AddTable(currentProjectStatusReportModel.ProjRisk.Count + 1, 2);
+                        var riSubHeading = document.AddTable(currentProjectStatusReportModel.ProjRisk.Count + 1, 4);
                         riSubHeading.Rows[0].Cells[0].Paragraphs[0].Append("Risks")
                             .Bold(true)
                             .Color(Color.White);
@@ -876,10 +888,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             riSubHeading.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectStatusReportModel.ProjRisk[i - 1].Likelihood);
                             riSubHeading.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectStatusReportModel.ProjRisk[i - 1].Impact);
                             riSubHeading.Rows[i].Cells[3].Paragraphs[0].Append(currentProjectStatusReportModel.ProjRisk[i - 1].Summary);
-                         
-
                         }
-                        riSubHeading.SetWidths(new float[] { 394, 762, 762, 762, });
+                        riSubHeading.SetWidths(new float[] { 394, 762, 762, 762 });
                         document.InsertTable(riSubHeading);
 
                         var issSubHeading = document.InsertParagraph("3.6 Project Issues")
@@ -891,7 +901,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         issSubHeading.StyleId = "Heading2";
 
-                        var issuesSubHeading = document.AddTable(currentProjectStatusReportModel.ProjIssues.Count + 1, 2);
+                        var issuesSubHeading = document.AddTable(currentProjectStatusReportModel.NProjIssues.Count + 1, 3);
                         issuesSubHeading.Rows[0].Cells[0].Paragraphs[0].Append("Risks")
                             .Bold(true)
                             .Color(Color.White);
@@ -902,31 +912,30 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .Bold(true)
                             .Color(Color.White);
 
-
-
-
                         issuesSubHeading.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
                         issuesSubHeading.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
                         issuesSubHeading.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
-                       
-
-
 
                         for (int i = 1; i < currentProjectStatusReportModel.ProSchedule.Count + 1; i++)
                         {
-                            issuesSubHeading.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectStatusReportModel.ProjIssues[i - 1].Issues);
-                            issuesSubHeading.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectStatusReportModel.ProjIssues[i - 1].Impact);
-                            issuesSubHeading.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectStatusReportModel.ProjIssues[i - 1].Summary);
-                          
-
-
+                            issuesSubHeading.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectStatusReportModel.NProjIssues[i - 1].Issues);
+                            issuesSubHeading.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectStatusReportModel.NProjIssues[i - 1].Impact);
+                            issuesSubHeading.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectStatusReportModel.NProjIssues[i - 1].Summary);
                         }
-                        issuesSubHeading.SetWidths(new float[] { 394, 762, 762, 762, });
+                        issuesSubHeading.SetWidths(new float[] { 394, 762, 762 });
                         document.InsertTable(issuesSubHeading);
 
+                        try
+                        {
+                            document.Save();
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("The selected File is open.", "Close File", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
-            } */
+            } 
         } 
 
 
@@ -943,6 +952,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private void tabExecutiveSummary_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            exportToWord();
         }
     }
 }

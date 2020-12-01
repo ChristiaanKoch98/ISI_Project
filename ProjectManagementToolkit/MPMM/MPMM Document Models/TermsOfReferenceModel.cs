@@ -45,7 +45,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public List<QualityPlan> QuaP { get; set; }
         public List<CompletionCriteria> CompC { get; set; }
         public List<Risks> Risk { get; set; }
-        public List<Issues> Issuess { get; set; }
+        public List<Issues> theIssuess { get; set; }
 
         public class Deliverables
         {

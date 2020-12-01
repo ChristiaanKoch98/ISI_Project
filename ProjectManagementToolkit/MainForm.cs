@@ -43,7 +43,7 @@ namespace ProjectManagementToolkit
                 item.ForeColor = Color.FromArgb(32, 32, 32);
                 foreach (ToolStripMenuItem children in item.DropDownItems)
                 {
-                    children.BackColor = Color.FromArgb(128,128,128);
+                    children.BackColor = Color.FromArgb(128, 128, 128);
                     children.ForeColor = Color.FromArgb(32, 32, 32);
                     foreach (ToolStripMenuItem child in children.DropDownItems)
                     {
@@ -384,5 +384,30 @@ namespace ProjectManagementToolkit
             form.Show();
             form.MdiParent = this;
         }
+
+        private void termOfReferenceDocumentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tempToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TermOfReferenceDocumentForm newTOR = new TermOfReferenceDocumentForm();
+            newTOR.Show();
+        }
+
+        private void formToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TermOfReferenceDocumentForm TOR = new TermOfReferenceDocumentForm();
+            TOR.Show();
+            TOR.MdiParent = this;
+        }
+    
     }
 }
+
