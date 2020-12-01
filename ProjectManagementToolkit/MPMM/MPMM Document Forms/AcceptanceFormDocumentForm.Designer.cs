@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Enter_btn = new System.Windows.Forms.Button();
             this.Acceptance_Form_Name_tbx = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -219,7 +220,7 @@
             this.Project_Manager_tbx.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Project_Manager_tbx.Multiline = true;
             this.Project_Manager_tbx.Name = "Project_Manager_tbx";
-            this.Project_Manager_tbx.Size = new System.Drawing.Size(1878, 355);
+            this.Project_Manager_tbx.Size = new System.Drawing.Size(1878, 356);
             this.Project_Manager_tbx.TabIndex = 10;
             // 
             // PROJECT_DETAILS_btn
@@ -309,7 +310,7 @@
             this.Requested_By_tbx.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Requested_By_tbx.Multiline = true;
             this.Requested_By_tbx.Name = "Requested_By_tbx";
-            this.Requested_By_tbx.Size = new System.Drawing.Size(1887, 412);
+            this.Requested_By_tbx.Size = new System.Drawing.Size(1887, 413);
             this.Requested_By_tbx.TabIndex = 17;
             // 
             // tabPage13
@@ -334,7 +335,7 @@
             this.Date_Requested_tbx.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Date_Requested_tbx.Multiline = true;
             this.Date_Requested_tbx.Name = "Date_Requested_tbx";
-            this.Date_Requested_tbx.Size = new System.Drawing.Size(1892, 407);
+            this.Date_Requested_tbx.Size = new System.Drawing.Size(1892, 408);
             this.Date_Requested_tbx.TabIndex = 15;
             // 
             // tabPage14
@@ -446,7 +447,7 @@
             this.Standards_tbx.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Standards_tbx.Multiline = true;
             this.Standards_tbx.Name = "Standards_tbx";
-            this.Standards_tbx.Size = new System.Drawing.Size(1880, 381);
+            this.Standards_tbx.Size = new System.Drawing.Size(1880, 382);
             this.Standards_tbx.TabIndex = 24;
             // 
             // ACCEPTANCE_CRITERIA_btn
@@ -498,20 +499,28 @@
             this.Reviewer,
             this.Date,
             this.Result});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ACCEPTANCE_RESULTS_dgv.DefaultCellStyle = dataGridViewCellStyle2;
             this.ACCEPTANCE_RESULTS_dgv.EnableHeadersVisualStyles = false;
             this.ACCEPTANCE_RESULTS_dgv.Location = new System.Drawing.Point(6, 7);
             this.ACCEPTANCE_RESULTS_dgv.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.ACCEPTANCE_RESULTS_dgv.Name = "ACCEPTANCE_RESULTS_dgv";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ACCEPTANCE_RESULTS_dgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ACCEPTANCE_RESULTS_dgv.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ACCEPTANCE_RESULTS_dgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ACCEPTANCE_RESULTS_dgv.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.ACCEPTANCE_RESULTS_dgv.Size = new System.Drawing.Size(1901, 438);
             this.ACCEPTANCE_RESULTS_dgv.TabIndex = 9;
             // 
