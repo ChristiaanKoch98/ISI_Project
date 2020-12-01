@@ -25,7 +25,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string ProjectIssues { get; set; }
         public string ProjectChanges { get; set; }
 
-        public string PreperationPeriod { get; set; }
+        public string eportingPeriod { get; set; }
 
         public List<ReviewDetial> ReviewDetials { get; set; }
         public string SupportingDocumentation { get; set; }

@@ -44,7 +44,7 @@
             this.txtStakeholderList = new System.Windows.Forms.TextBox();
             this.tabCommunicationsPlan = new System.Windows.Forms.TabPage();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtCommunicationsPlan = new System.Windows.Forms.TextBox();
+            this.txtAssumptions = new System.Windows.Forms.TextBox();
             this.dgvCommunicationsPlan = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.tabCommunicationsProcess = new System.Windows.Forms.TabPage();
@@ -246,7 +246,7 @@
             // 
             this.tabCommunicationsPlan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tabCommunicationsPlan.Controls.Add(this.label10);
-            this.tabCommunicationsPlan.Controls.Add(this.txtCommunicationsPlan);
+            this.tabCommunicationsPlan.Controls.Add(this.txtAssumptions);
             this.tabCommunicationsPlan.Controls.Add(this.dgvCommunicationsPlan);
             this.tabCommunicationsPlan.Controls.Add(this.label4);
             this.tabCommunicationsPlan.Location = new System.Drawing.Point(4, 25);
@@ -272,14 +272,14 @@
     "cess. ";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtCommunicationsPlan
+            // txtAssumptions
             // 
-            this.txtCommunicationsPlan.Location = new System.Drawing.Point(8, 460);
-            this.txtCommunicationsPlan.Multiline = true;
-            this.txtCommunicationsPlan.Name = "txtCommunicationsPlan";
-            this.txtCommunicationsPlan.Size = new System.Drawing.Size(1014, 240);
-            this.txtCommunicationsPlan.TabIndex = 50;
-            this.txtCommunicationsPlan.TextChanged += new System.EventHandler(this.txtScope_TextChanged);
+            this.txtAssumptions.Location = new System.Drawing.Point(8, 460);
+            this.txtAssumptions.Multiline = true;
+            this.txtAssumptions.Name = "txtAssumptions";
+            this.txtAssumptions.Size = new System.Drawing.Size(1014, 240);
+            this.txtAssumptions.TabIndex = 50;
+            this.txtAssumptions.TextChanged += new System.EventHandler(this.txtScope_TextChanged);
             // 
             // dgvCommunicationsPlan
             // 
@@ -503,7 +503,7 @@
         private System.Windows.Forms.TextBox txtStakeholderList;
         private System.Windows.Forms.TabPage tabCommunicationsPlan;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtCommunicationsPlan;
+        private System.Windows.Forms.TextBox txtAssumptions;
         private System.Windows.Forms.DataGridView dgvCommunicationsPlan;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TabPage tabCommunicationsProcess;

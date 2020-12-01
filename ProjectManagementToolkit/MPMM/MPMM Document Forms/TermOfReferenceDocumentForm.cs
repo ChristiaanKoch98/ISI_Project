@@ -138,7 +138,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<TermsOfReferenceModel.Stakeholders> Stake = new List<TermsOfReferenceModel.Stakeholders>();
 
-            int stakeRowsCount = dgvDeliverables.Rows.Count;
+            int stakeRowsCount = dgvStakeholders.Rows.Count;
 
             for (int i = 0; i < stakeRowsCount - 1; i++)
             {
@@ -156,7 +156,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<TermsOfReferenceModel.Roles> Rol = new List<TermsOfReferenceModel.Roles>();
 
-            int roleRowsCount = dgvDeliverables.Rows.Count;
+            int roleRowsCount = dgvRoles.Rows.Count;
 
             for (int i = 0; i < roleRowsCount - 1; i++)
             {
@@ -563,7 +563,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void exportToWord()
         {
-            string path;
+           /* string path;
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
                 saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -1346,7 +1346,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                 }
-            }
+            }*/
         }    
     }   
 }

@@ -279,6 +279,7 @@
             this.documentInformation.RowHeadersWidth = 51;
             this.documentInformation.Size = new System.Drawing.Size(921, 133);
             this.documentInformation.TabIndex = 6;
+            this.documentInformation.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.documentInformation_CellContentClick);
             // 
             // Type
             // 

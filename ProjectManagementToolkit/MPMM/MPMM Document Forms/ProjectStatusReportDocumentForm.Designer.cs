@@ -38,7 +38,6 @@
             this.txtProjectSponsor = new System.Windows.Forms.TextBox();
             this.txtReportPreparedBy = new System.Windows.Forms.TextBox();
             this.txtReportPreperationDate = new System.Windows.Forms.TextBox();
-            this.txtReportingPeriod = new System.Windows.Forms.TextBox();
             this.txtProjectName2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -79,6 +78,7 @@
             this.txtProjectName = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtReportingPeriod = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabProjectDetails.SuspendLayout();
             this.tabExecutiveSummary.SuspendLayout();
@@ -199,13 +199,6 @@
             this.txtReportPreperationDate.Size = new System.Drawing.Size(309, 22);
             this.txtReportPreperationDate.TabIndex = 23;
             // 
-            // txtReportingPeriod
-            // 
-            this.txtReportingPeriod.Location = new System.Drawing.Point(291, 487);
-            this.txtReportingPeriod.Name = "txtReportingPeriod";
-            this.txtReportingPeriod.Size = new System.Drawing.Size(309, 22);
-            this.txtReportingPeriod.TabIndex = 22;
-            // 
             // txtProjectName2
             // 
             this.txtProjectName2.Location = new System.Drawing.Point(291, 26);
@@ -322,6 +315,7 @@
             this.tabExecutiveSummary.Size = new System.Drawing.Size(1030, 706);
             this.tabExecutiveSummary.TabIndex = 1;
             this.tabExecutiveSummary.Text = "Executive Summary";
+            this.tabExecutiveSummary.Click += new System.EventHandler(this.tabExecutiveSummary_Click);
             // 
             // txtOverallStatus
             // 
@@ -710,6 +704,13 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // txtReportingPeriod
+            // 
+            this.txtReportingPeriod.Location = new System.Drawing.Point(291, 487);
+            this.txtReportingPeriod.Name = "txtReportingPeriod";
+            this.txtReportingPeriod.Size = new System.Drawing.Size(309, 22);
+            this.txtReportingPeriod.TabIndex = 22;
+            // 
             // ProjectStatusReportDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -758,7 +759,6 @@
         private System.Windows.Forms.TextBox txtProjectSponsor;
         private System.Windows.Forms.TextBox txtReportPreparedBy;
         private System.Windows.Forms.TextBox txtReportPreperationDate;
-        private System.Windows.Forms.TextBox txtReportingPeriod;
         private System.Windows.Forms.TextBox txtProjectName2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -794,5 +794,6 @@
         private System.Windows.Forms.DataGridView dgvProjectRisk;
         private System.Windows.Forms.DataGridView dgvProjectQuality;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtReportingPeriod;
     }
 }

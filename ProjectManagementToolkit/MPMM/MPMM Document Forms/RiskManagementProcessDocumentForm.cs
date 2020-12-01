@@ -36,6 +36,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void loadDocument()
         {
+            dgvDocumentInformation.Columns.Add("colType", "Type");
+            dgvDocumentInformation.Columns.Add("colInformation", "Information");
+
             dgvDocumentHistory.Columns.Add("colVersion", "Version");
             dgvDocumentHistory.Columns.Add("colIssueDate", "Issue date");
             dgvDocumentHistory.Columns.Add("colChanges", "Changes");
@@ -75,7 +78,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 foreach (var row in currentRiskManagmentProcessModel.DocumentApprovals)
                 {
-                    dgvDocumentApprovals.Rows.Add(new string[] { row.Role, row.Name, "", row.DateApproved });
+                    dgvDocumentApprovals.Rows.Add(new string[] { row.Role, row.Name, row.Signature, row.DateApproved });
                 }
 
 
@@ -100,6 +103,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 documentInfo.Add(new string[] { "Last Save Date", "" });
                 documentInfo.Add(new string[] { "File Name", "" });
                 newRiskManagmentProcessModel = new RiskManagmentProcessModel();
+
                 foreach (var row in documentInfo)
                 {
                     dgvDocumentInformation.Rows.Add(row);
@@ -126,6 +130,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newRiskManagmentProcessModel.IssueDate = dgvDocumentInformation.Rows[2].Cells[1].Value.ToString();
             newRiskManagmentProcessModel.LastSavedDate = dgvDocumentInformation.Rows[3].Cells[1].Value.ToString();
             newRiskManagmentProcessModel.FileName = dgvDocumentInformation.Rows[4].Cells[1].Value.ToString();
+
+
 
             List<RiskManagmentProcessModel.DocumentHistory> documentHistories = new List<RiskManagmentProcessModel.DocumentHistory>();
 
@@ -162,12 +168,27 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 documentApprovalsModel.Add(documentApproval);
             }
+        
             newRiskManagmentProcessModel.DocumentApprovals = documentApprovalsModel;
+
+            List<VersionControl<RiskManagmentProcessModel>.DocumentModel> documentModels = versionControl.DocumentModels;
+            if (!versionControl.isEqual(currentRiskManagmentProcessModel, newRiskManagmentProcessModel))
+            {
+                VersionControl<RiskManagmentProcessModel>.DocumentModel documentModel = new VersionControl<RiskManagmentProcessModel>.DocumentModel(newRiskManagmentProcessModel, DateTime.Now, VersionControl<ProjectModel>.generateID());
+
+                documentModels.Add(documentModel);
+
+                versionControl.DocumentModels = documentModels;
+
+                string json = JsonConvert.SerializeObject(versionControl);
+                JsonHelper.saveDocument(json, Settings.Default.ProjectID, "RiskManagamentProcess");
+                MessageBox.Show("Risk management saved successfully", "save", MessageBoxButtons.OK);
+            }
         }
 
         private void exportToWord()
         {
-            string path;
+          /*  string path;
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
                 saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -455,7 +476,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         rregHeading.StyleId = "Heading2";
                     }
                 }
-            }
+            }*/
         }
 
         private void button1_Click(object sender, EventArgs e)

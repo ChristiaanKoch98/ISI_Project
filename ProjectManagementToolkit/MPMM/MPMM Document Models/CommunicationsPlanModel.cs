@@ -16,16 +16,17 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string IssueDate { get; set; }
         public string LastSavedDate { get; set; }
         public string FileName { get; set; }
+        public string StakeholderList { get; set; }
         public List<DocumentHistory> DocumentHistories { get; set; }
         public List<DocumentApproval> DocumentApprovals { get; set; }
 
-        public string ComPlan;
-        public string Assumptions;
+        public string ComPlan { get; set; }
+        public string Assumptions { get; set; }
 
-        public string ComProcess;
-        public string Activities;
-        public string Roles;
-        public string Documents;
+        public string ComProcess { get; set; }
+        public string Activities { get; set; }
+        public string Roles { get; set; }
+        public string Documents { get; set; }
 
         public class DocumentHistory
         {

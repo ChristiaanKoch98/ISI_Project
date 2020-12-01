@@ -45,18 +45,23 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void loadDocument()
         {
-            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "PhaseReviewExecution");
+            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "PhaseReviewExe");
             List<string[]> documentInfo = new List<string[]>();
             newPhaseReviewExeModel = new PhaseReviewFormExecutionModel();
             currentPhaseReviewExeModel = new PhaseReviewFormExecutionModel();
 
             if (json != "")
             {
+                versionControl = JsonConvert.DeserializeObject<VersionControl<PhaseReviewFormExecutionModel>>(json);
+                newPhaseReviewExeModel = JsonConvert.DeserializeObject<PhaseReviewFormExecutionModel>(versionControl.getLatest(versionControl.DocumentModels));
+                currentPhaseReviewExeModel = JsonConvert.DeserializeObject<PhaseReviewFormExecutionModel>(versionControl.getLatest(versionControl.DocumentModels));
+
                 txtProjectName2.Text = currentPhaseReviewExeModel.ProjectName;
                 txtProjectManager.Text = currentPhaseReviewExeModel.ProjectManager;
                 txtProjectSponsor.Text = currentPhaseReviewExeModel.ProjectSponsor;
                 txtReportPreparedBy.Text = currentPhaseReviewExeModel.ReportPreparedBy;
-                txtReportPreperationDate.Text = currentPhaseReviewExeModel.ReportPreparationDate.ToString();
+                txtReportPreperationDate.Text = currentPhaseReviewExeModel.ReportPreparationDate;
+                txtReportingPeriod.Text = currentPhaseReviewExeModel.eportingPeriod;
 
                 txtSummary.Text = currentPhaseReviewExeModel.Summary;
                 txtProjectSchedule.Text = currentPhaseReviewExeModel.ProjectSchedule;
@@ -68,12 +73,20 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 txtSupportingDocumentation.Text = currentPhaseReviewExeModel.SupportingDocumentation;
                 txtSignature.Text = currentPhaseReviewExeModel.Signature;
-                txtDate.Text = currentPhaseReviewExeModel.SignatureDate.ToString();
+                txtDate.Text = currentPhaseReviewExeModel.SignatureDate;
 
             }
             else
             {
-     
+                versionControl = new VersionControl<PhaseReviewFormExecutionModel>();
+                versionControl.DocumentModels = new List<VersionControl<PhaseReviewFormExecutionModel>.DocumentModel>();
+                documentInfo.Add(new string[] { "Document ID", "" });
+                documentInfo.Add(new string[] { "Document Owner", "" });
+                documentInfo.Add(new string[] { "Issue Date", "" });
+                documentInfo.Add(new string[] { "Last Save Date", "" });
+                documentInfo.Add(new string[] { "File Name", "" });
+                newPhaseReviewExeModel = new PhaseReviewFormExecutionModel();
+                
             }            
         }
 
@@ -84,6 +97,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newPhaseReviewExeModel.ProjectSponsor = txtProjectSponsor.Text;
             newPhaseReviewExeModel.ReportPreparedBy = txtReportPreparedBy.Text;
             newPhaseReviewExeModel.ReportPreparationDate = txtReportPreperationDate.Text;
+            newPhaseReviewExeModel.eportingPeriod = txtReportingPeriod.Text;
 
             newPhaseReviewExeModel.Summary = txtSummary.Text;
             newPhaseReviewExeModel.ProjectSchedule = txtProjectSchedule.Text;
@@ -96,11 +110,26 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newPhaseReviewExeModel.SupportingDocumentation = txtSupportingDocumentation.Text;
             newPhaseReviewExeModel.Signature = txtSignature.Text;
             newPhaseReviewExeModel.SignatureDate = txtDate.Text;
+
+            List<VersionControl<PhaseReviewFormExecutionModel>.DocumentModel> documentModels = versionControl.DocumentModels;
+
+            if (!versionControl.isEqual(currentPhaseReviewExeModel, newPhaseReviewExeModel))
+            {
+                VersionControl<PhaseReviewFormExecutionModel>.DocumentModel documentModel = new VersionControl<PhaseReviewFormExecutionModel>.DocumentModel(newPhaseReviewExeModel, DateTime.Now, VersionControl<ProjectModel>.generateID());
+
+                documentModels.Add(documentModel);
+
+                versionControl.DocumentModels = documentModels;
+
+                string json = JsonConvert.SerializeObject(versionControl);
+                JsonHelper.saveDocument(json, Settings.Default.ProjectID, "PhaseReviewExe");
+                MessageBox.Show("Phase review execution saved successfully", "save", MessageBoxButtons.OK);
+            }
         }
 
         private void exportToWord()
         {
-            string path;
+          /*  string path;
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
                 saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -431,7 +460,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         dateHeading.StyleId = "Heading2";
                     }
                 }
-            }
+            } */
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -441,7 +470,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void PhaseReviewFormExecutionDocumentForm_Load_1(object sender, EventArgs e)
         {
+            loadDocument();
+        }
 
+        private void Btn_Save_Document_Click(object sender, EventArgs e)
+        {
+            saveDocument();
         }
     }
 }

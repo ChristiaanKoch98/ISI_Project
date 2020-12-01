@@ -66,23 +66,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             dgvDocumentInformation.Columns.Add("colLastSaveDate", "Last save date");
             dgvDocumentInformation.Columns.Add("colFileName", "File Name");
 
-            //Test 
-            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "Communications Plan");
+            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "CommunicationPlan");
             List<string[]> documentInfo = new List<string[]>();
             newCommunicationsPlanModel = new CommunicationsPlanModel();
             currentCommunicationsPlanModel = new CommunicationsPlanModel();
 
-            versionControl = JsonConvert.DeserializeObject<VersionControl<CommunicationsPlanModel>>(json);
-            newCommunicationsPlanModel = JsonConvert.DeserializeObject<CommunicationsPlanModel>(versionControl.getLatest(versionControl.DocumentModels));
-            currentCommunicationsPlanModel = JsonConvert.DeserializeObject<CommunicationsPlanModel>(versionControl.getLatest(versionControl.DocumentModels));
-
-
-            foreach (var row in currentCommunicationsPlanModel.StakeholderReq)
-            {
-                dgvStakeholderRequirements.Rows.Add(new string[] { row.StakeholderName, row.StakeholderRole, row.InformationRequirement, row.StakeholderOrganization });
-            }
-
-            if (json != "")
+           if (json != "")
             {
                 versionControl = JsonConvert.DeserializeObject<VersionControl<CommunicationsPlanModel>>(json);
                 newCommunicationsPlanModel = JsonConvert.DeserializeObject<CommunicationsPlanModel>(versionControl.getLatest(versionControl.DocumentModels));
@@ -107,14 +96,21 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 foreach (var row in currentCommunicationsPlanModel.DocumentApprovals)
                 {
-                    dgvDocumentApprovals.Rows.Add(new string[] { row.Role, row.Name, "", row.DateApproved });
+                    dgvDocumentApprovals.Rows.Add(new string[] { row.Role, row.Name, row.Signature, row.DateApproved });
                 }
 
-                
+                foreach (var row in currentCommunicationsPlanModel.StakeholderReq)
+                {
+                    dgvStakeholderRequirements.Rows.Add(new string[] { row.StakeholderName, row.StakeholderRole, row.StakeholderOrganization, row.InformationRequirement });
+                }
+
+
                 txtActivities.Text = currentCommunicationsPlanModel.Activities;
                 txtCommunicationsProcess.Text = currentCommunicationsPlanModel.ComProcess;
                 txtRoles.Text = currentCommunicationsPlanModel.Roles;
                 txtDocuments.Text = currentCommunicationsPlanModel.Documents;
+                txtStakeholderList.Text = currentCommunicationsPlanModel.StakeholderList;
+                txtAssumptions.Text = currentCommunicationsPlanModel.Assumptions;
             }
             else
             {
@@ -131,7 +127,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                     dgvDocumentInformation.Rows.Add(row);
                 }
                 dgvDocumentInformation.AllowUserToAddRows = false;
-            }
+            } 
         }
 
         private void saveDocument()
@@ -201,9 +197,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newCommunicationsPlanModel.StakeholderReq = Stake;
 
             newCommunicationsPlanModel.Activities = txtActivities.Text;
+            newCommunicationsPlanModel.Assumptions = txtAssumptions.Text;
             newCommunicationsPlanModel.ComProcess = txtCommunicationsProcess.Text;
             newCommunicationsPlanModel.Roles = txtRoles.Text;
             newCommunicationsPlanModel.Documents = txtDocuments.Text;
+            newCommunicationsPlanModel.StakeholderList = txtStakeholderList.Text;
 
             List<VersionControl<CommunicationsPlanModel>.DocumentModel> documentModels = versionControl.DocumentModels;
 
@@ -224,7 +222,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void exportToWord()
         {
-            string path;
+           /* string path;
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
                 saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -522,7 +520,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                 }
-            }
+            }*/
         }
 
         private void button2_Click(object sender, EventArgs e)

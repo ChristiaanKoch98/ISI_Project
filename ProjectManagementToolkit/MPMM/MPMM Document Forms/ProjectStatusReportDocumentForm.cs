@@ -74,15 +74,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             dgvProjectIssues.Columns.Add("colImpact", "Impact");
             dgvProjectIssues.Columns.Add("colSummary", "Summary");
 
-
-
-
-
-
             string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "ProjectStatusReport");
             List<string[]> documentInfo = new List<string[]>();
             newProjectStatusReportModel = new ProjectStatusReportModel();
             currentProjectStatusReportModel = new ProjectStatusReportModel();
+
             if (json != "")
             {
                 versionControl = JsonConvert.DeserializeObject<VersionControl<ProjectStatusReportModel>>(json);
@@ -95,15 +91,17 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 txtProjectSponsor.Text = currentProjectStatusReportModel.ProjectSponsor;
                 txtReportPreparedBy.Text = currentProjectStatusReportModel.ReportPreparedBy;
                 txtReportPreperationDate.Text = currentProjectStatusReportModel.ReportPreparedBy;
-                //txtReportingPeriod.Text = currentProjectStatusReportModel.ReportingPeriod;
                 txtProjectRecipients.Text = currentProjectStatusReportModel.Recipients;
+
+                txtReportingPeriod.Text = currentProjectStatusReportModel.RepPeriod;
+                txtProjectSchedule.Text = currentProjectStatusReportModel.proSchedule;
+                txtProjectDeliverables.Text = currentProjectStatusReportModel.ProjectDeliverables;
+                txtProjectIssues.Text = currentProjectStatusReportModel.textProjectIssues;
 
                 txtProjectDescription.Text = currentProjectStatusReportModel.ProjectDescription;
                 txtOverallStatus.Text = currentProjectStatusReportModel.OverallStatus;
-                //txtProjectSchedule.Text = currentProjectStatusReportModel.ProjectSchedule;
                 txtProjectExpenses.Text = currentProjectStatusReportModel.ProjectDeliverables;
                 txtProjectRisks.Text = currentProjectStatusReportModel.ProjectRisks;
-                //txtProjectIssues.Text = currentProjectStatusReportModel.ProjectIssues;
                 txtProjectChanges.Text = currentProjectStatusReportModel.ProjectChanges;
 
                 foreach (var row in currentProjectStatusReportModel.ProSchedule)
@@ -131,7 +129,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                     dgvProjectRisk.Rows.Add(new string[] { row.Risks, row.Likelihood, row.Impact, row.Summary });
                 }
 
-                foreach (var row in currentProjectStatusReportModel.NewProjIssues)
+                foreach (var row in currentProjectStatusReportModel.NProjIssues)
                 {
                     dgvProjectIssues.Rows.Add(new string[] { row.Issues, row.Impact, row.Summary });
                 }
@@ -140,7 +138,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
             else
             {
-      
+                versionControl = new VersionControl<ProjectStatusReportModel>();
+                versionControl.DocumentModels = new List<VersionControl<ProjectStatusReportModel>.DocumentModel>();
+                documentInfo.Add(new string[] { "Document ID", "" });
+                documentInfo.Add(new string[] { "Document Owner", "" });
+                documentInfo.Add(new string[] { "Issue Date", "" });
+                documentInfo.Add(new string[] { "Last Save Date", "" });
+                documentInfo.Add(new string[] { "File Name", "" });
+                newProjectStatusReportModel = new ProjectStatusReportModel();
             }
         }
 
@@ -205,7 +210,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             int effortRowsCount = dgvProjectEffort.Rows.Count;
 
-            for (int i = 0; i < expensesRowsCount - 1; i++)
+            for (int i = 0; i < effortRowsCount - 1; i++)
             {
                 ProjectStatusReportModel.ProjectEffort ProjectEff = new ProjectStatusReportModel.ProjectEffort();
                 var Activities = dgvProjectEffort.Rows[i].Cells[0].Value?.ToString() ?? "";
@@ -232,7 +237,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             int quaRowsCount = dgvProjectQuality.Rows.Count;
 
-            for (int i = 0; i < expensesRowsCount - 1; i++)
+            for (int i = 0; i < quaRowsCount - 1; i++)
             {
                 ProjectStatusReportModel.ProjectQuality ProjectQua = new ProjectStatusReportModel.ProjectQuality();
                 var Deliverables = dgvProjectQuality.Rows[i].Cells[0].Value?.ToString() ?? "";
@@ -255,7 +260,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             int risRowsCount = dgvProjectRisk.Rows.Count;
 
-            for (int i = 0; i < expensesRowsCount - 1; i++)
+            for (int i = 0; i < risRowsCount - 1; i++)
             {
                 ProjectStatusReportModel.ProjectRisk ProjectRis = new ProjectStatusReportModel.ProjectRisk();
                 var Risks = dgvProjectRisk.Rows[i].Cells[0].Value?.ToString() ?? "";
@@ -272,32 +277,38 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
             newProjectStatusReportModel.ProjRisk = ProjRisk;
 
-            List<ProjectStatusReportModel.ProjectIssues> ProjIssues = new List<ProjectStatusReportModel.ProjectIssues>();
+            List<ProjectStatusReportModel.ProjectIssues> ProjIss = new List<ProjectStatusReportModel.ProjectIssues>();
 
             int issRowsCount = dgvProjectIssues.Rows.Count;
 
-            for (int i = 0; i < expensesRowsCount - 1; i++)
+            for (int i = 0; i < issRowsCount - 1; i++)
             {
                 ProjectStatusReportModel.ProjectIssues ProjectISS = new ProjectStatusReportModel.ProjectIssues();
-                var Issues = dgvProjectIssues.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var Impact = dgvProjectIssues.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var Summary = dgvProjectIssues.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var Iss = dgvProjectIssues.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var Imp = dgvProjectIssues.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var Sum = dgvProjectIssues.Rows[i].Cells[2].Value?.ToString() ?? "";
 
-                ProjectISS.Issues = Issues;
-                ProjectISS.Impact = Impact;
-                ProjectISS.Summary = Summary;
+                ProjectISS.Issues = Iss;
+                ProjectISS.Impact = Imp;
+                ProjectISS.Summary = Sum;
 
-                ProjIssues.Add(ProjectISS);
+                ProjIss.Add(ProjectISS);
             }
-            newProjectStatusReportModel.ProjIssues = ProjIssues.ToString() ;
+            newProjectStatusReportModel.NProjIssues = ProjIss;
 
             newProjectStatusReportModel.ProjectName = txtProjectName2.Text;
             newProjectStatusReportModel.ProjectID = txtProjectID.Text;
             newProjectStatusReportModel.ProjectManager = txtProjectManager.Text;
             newProjectStatusReportModel.ProjectSponsor = txtProjectSponsor.Text;
             newProjectStatusReportModel.ReportPreparedBy = txtReportPreparedBy.Text;
-            newProjectStatusReportModel.ReportPreparedBy = txtReportPreperationDate.Text;
+            newProjectStatusReportModel.PrepDate = txtReportPreperationDate.Text;
+            newProjectStatusReportModel.PreperationPeriod = txtReportingPeriod.Text;
+            newProjectStatusReportModel.ESProjectSchedule = txtProjectSchedule.Text;
             newProjectStatusReportModel.Recipients = txtProjectRecipients.Text;
+            newProjectStatusReportModel.RepPeriod = txtReportingPeriod.Text;
+            newProjectStatusReportModel.proSchedule = txtProjectSchedule.Text;
+            newProjectStatusReportModel.ProjectDeliverables = txtProjectDeliverables.Text;
+            newProjectStatusReportModel.textProjectIssues = txtProjectIssues.Text;
 
             newProjectStatusReportModel.ProjectDescription = txtProjectDescription.Text;
             newProjectStatusReportModel.OverallStatus = txtOverallStatus.Text;
@@ -324,7 +335,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void exportToWord()
         {
-            string path;
+           /* string path;
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
                 saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -915,8 +926,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                     }
                 }
-            }
-        }
+            } */
+        } 
 
 
         private void txtProjectDescription_TextChanged(object sender, EventArgs e)
@@ -927,6 +938,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private void button1_Click(object sender, EventArgs e)
         {
             saveDocument();
+        }
+
+        private void tabExecutiveSummary_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

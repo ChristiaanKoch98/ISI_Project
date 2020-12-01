@@ -18,38 +18,27 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string ReportPreparationDate { get; set; }
         public string Recipients { get; set; }
         public string PreperationPeriod { get; set; }
+        public string PrepDate { get; set; }
+        public string RepPeriod { get; set; }
+        public string proSchedule { get; set; }
 
         public string NewProSchedule { get; set; }
 
-        public string ProjIssues { get; set; }
-
         public string ProjectDescription { get; set; }
         public string OverallStatus { get; set; }
-       // public string ProjectSchedule { get; set; }
-        //public string ProjectExpenses { get; set; }
+        public string ESProjectSchedule { get; set; }
         public string ProjectDeliverables { get; set; }
         public string ProjectRisks { get; set; }
-       // public string ProjectIssues { get; set; }
+        public string textProjectIssues { get; set; }
         public string ProjectChanges { get; set; }
 
-        public string DSSchedule { get; set; }
-        public string DSExpenses { get; set; }
-        public string DSEffort { get; set; }
-        public string DSRisks { get; set; }
-        public string DSIssues { get; set; }
-        public string DSQuality { get; set; }
-
-        public List<ReviewDetial> ReviewDetials { get; set; }
-        public string SupportingDocumentation { get; set; }
-        public string Signature { get; set; }
-        public DateTime SignatureDate { get; set; }
 
         public List<ProjectSchedule> ProSchedule { get; set; }
         public List<ProjectExpenses> ProjExpenses { get; set; }
         public List<ProjectEffort> ProjEffort { get; set; }
         public List<ProjectQuality> ProjQuality { get; set; }
         public List<ProjectRisk> ProjRisk { get; set; }
-        public List<ProjectIssues> NewProjIssues { get; set; }
+        public List<ProjectIssues> NProjIssues { get; set; }
 
         public class ProjectSchedule
         {

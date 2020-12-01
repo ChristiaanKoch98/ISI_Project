@@ -20,6 +20,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         VersionControl<ProjectPlanModel> versionControl;
         ProjectPlanModel newProjectPlanModel;
         ProjectPlanModel currentProjectPlanModel;
+
         public ProjectPlanDocumentForm()
         {
             InitializeComponent();
@@ -217,6 +218,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             List<string[]> documentInfo = new List<string[]>();
             newProjectPlanModel = new ProjectPlanModel();
             currentProjectPlanModel = new ProjectPlanModel();
+
             if (json != "")
             {
                 versionControl = JsonConvert.DeserializeObject<VersionControl<ProjectPlanModel>>(json);
@@ -295,6 +297,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 documentInformation.AllowUserToAddRows = false;
             }
         }
-       
+
+        private void documentInformation_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
