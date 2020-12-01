@@ -130,6 +130,12 @@
     <Compile Include="MPMM\MPMM Document Forms\CommunicationsPlanDocumentForm.Designer.cs">
       <DependentUpon>CommunicationsPlanDocumentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\CommunicationsRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\CommunicationsRegister.Designer.cs">
+      <DependentUpon>CommunicationsRegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="MPMM\MPMM Document Forms\CostManagementProcessDocumentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,18 @@
     </Compile>
     <Compile Include="MPMM\MPMM Document Forms\FinacialPlanDocumentForm.Designer.cs">
       <DependentUpon>FinacialPlanDocumentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\GeneralGuideForBuildingDeliverables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\GeneralGuideForBuildingDeliverables.Designer.cs">
+      <DependentUpon>GeneralGuideForBuildingDeliverables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\GeneralGuideForMonitorandControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\GeneralGuideForMonitorandControl.Designer.cs">
+      <DependentUpon>GeneralGuideForMonitorandControl.cs</DependentUpon>
     </Compile>
     <Compile Include="MPMM\MPMM Document Forms\IssueFormDocumentForm.cs">
       <SubType>Form</SubType>
@@ -303,6 +321,12 @@
     </Compile>
     <Compile Include="MPMM\MPMM Document Forms\RiskPlanDocumentForm.Designer.cs">
       <DependentUpon>RiskPlanDocumentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\SelectionProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\SelectionProcess.Designer.cs">
+      <DependentUpon>SelectionProcess.cs</DependentUpon>
     </Compile>
     <Compile Include="MPMM\MPMM Document Forms\StatementOfWorkDocumentForm.cs">
       <SubType>Form</SubType>
@@ -1203,6 +1227,9 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\CommunicationsPlanDocumentForm.resx">
       <DependentUpon>CommunicationsPlanDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\CommunicationsRegister.resx">
+      <DependentUpon>CommunicationsRegister.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\CostManagementProcessDocumentForm.resx">
       <DependentUpon>CostManagementProcessDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -1217,6 +1244,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\FinacialPlanDocumentForm.resx">
       <DependentUpon>FinacialPlanDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\GeneralGuideForBuildingDeliverables.resx">
+      <DependentUpon>GeneralGuideForBuildingDeliverables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\GeneralGuideForMonitorandControl.resx">
+      <DependentUpon>GeneralGuideForMonitorandControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\IssueManagementProcessDocumentForm.resx">
       <DependentUpon>IssueManagementProcessDocumentForm.cs</DependentUpon>
@@ -1280,6 +1313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\RiskPlanDocumentForm.resx">
       <DependentUpon>RiskPlanDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\SelectionProcess.resx">
+      <DependentUpon>SelectionProcess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\StatementOfWorkDocumentForm.resx">
       <DependentUpon>StatementOfWorkDocumentForm.cs</DependentUpon>
