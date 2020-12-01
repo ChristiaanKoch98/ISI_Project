@@ -58,6 +58,8 @@ namespace ProjectManagementToolkit.MPMM
             List<string> localDocuments = getLocalDocuments();
             List<string> serverDocuments = getServerCollections();
 
+            
+
             if (localDocuments == null && serverDocuments == null)
             {
                 MessageBox.Show("No documents to sync.");
@@ -65,17 +67,29 @@ namespace ProjectManagementToolkit.MPMM
             }
             serverDocuments.Remove("Config");
 
-            List<string> documentsToSync = new List<string>();
+            List<string> documentsToSync;
 
-            if (localDocuments == null)
+            //documentsToSync = localDocuments.Union(serverDocuments).ToList<string>();
+
+            //Documents server only
+            if(localDocuments == null && serverDocuments != null)
             {
                 documentsToSync = serverDocuments;
             }
-            else if (serverDocuments == null)
+            //Documents local only
+            else if(localDocuments != null && serverDocuments == null)
             {
                 documentsToSync = localDocuments;
             }
-            
+            else if(localDocuments != null && serverDocuments != null)
+            {
+                documentsToSync = localDocuments.Union(serverDocuments).ToList<string>();
+            }
+            else
+            {
+                MessageBox.Show("Error syncing documents.");
+                return;
+            }
 
             bool[] documentsSuccesful = new bool[documentsToSync.Count];
             
@@ -86,7 +100,6 @@ namespace ProjectManagementToolkit.MPMM
 
                 foreach (string item in documentsToSync)
                 {
-                    
                     bool syncSuccess = syncDocument(item);
 
                     documentsSuccesful[documentsToSync.IndexOf(item)] = syncSuccess;
@@ -138,8 +151,6 @@ namespace ProjectManagementToolkit.MPMM
             ProjectModel currentProject = ProjectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
             var currentProjectJson = JsonConvert.SerializeObject(currentProject);
 
-            MessageBox.Show(currentProjectJson);
-
             var body = new StringContent(currentProjectJson, Encoding.UTF8, "application/json");
             MessageBox.Show(Settings.Default.URI + "/project/" + Settings.Default.ProjectID);
             HttpResponseMessage httpResponseMessage = client.PostAsync(Settings.Default.URI + "/project/" + Settings.Default.ProjectID, body).Result;
@@ -190,7 +201,6 @@ namespace ProjectManagementToolkit.MPMM
                 MessageBox.Show("Error syncing " + document, "Sync Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
-
 
             //Get Latest Document Object from local and server
             var localLatest = localJson["DocumentModels"].OrderByDescending(x => x["DateModified"])
@@ -330,7 +340,6 @@ namespace ProjectManagementToolkit.MPMM
             try
             {
                 string uri = Settings.Default.URI + "/document/" + Settings.Default.ProjectID + "/" + document;
-                //MessageBox.Show(uri);
                 HttpResponseMessage responseMessage = client.GetAsync(uri).Result;
                 var jsonResponse = responseMessage.Content.ReadAsStringAsync().Result;
                 int statusCode = responseMessage.StatusCode.GetHashCode();
