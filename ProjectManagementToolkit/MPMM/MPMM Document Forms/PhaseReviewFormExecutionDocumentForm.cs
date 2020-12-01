@@ -160,6 +160,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentPhaseReviewExeModel = JsonConvert.DeserializeObject<PhaseReviewFormExecutionModel>(JsonConvert.SerializeObject(newPhaseReviewExeModel));
+
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "PhaseReviewExe");
                 MessageBox.Show("Phase review execution saved successfully", "save", MessageBoxButtons.OK);
             }

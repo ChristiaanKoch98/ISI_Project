@@ -185,6 +185,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentRiskManagmentProcessModel = JsonConvert.DeserializeObject<RiskManagmentProcessModel>(JsonConvert.SerializeObject(newRiskManagmentProcessModel));
+
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "RiskManagamentProcess");
                 MessageBox.Show("Risk management saved successfully", "save", MessageBoxButtons.OK);
             }

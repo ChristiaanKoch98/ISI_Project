@@ -334,6 +334,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentProjectStatusReportModel = JsonConvert.DeserializeObject<ProjectStatusReportModel>(JsonConvert.SerializeObject(newProjectStatusReportModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ProjectStatusReport");
                 MessageBox.Show("Project status report saved successfully", "save", MessageBoxButtons.OK);
             }
@@ -743,8 +744,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             expDoc.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectStatusReportModel.ProjExpenses[i - 1].ActualExpenditure);
                             expDoc.Rows[i].Cells[3].Paragraphs[0].Append(currentProjectStatusReportModel.ProjExpenses[i - 1].ActualVariance);
                             expDoc.Rows[i].Cells[4].Paragraphs[0].Append(currentProjectStatusReportModel.ProjExpenses[i - 1].ForecastExpenditure);
-                            expDoc.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectStatusReportModel.ProjExpenses[i - 1].ForecastVariance);
-                            expDoc.Rows[i].Cells[3].Paragraphs[0].Append(currentProjectStatusReportModel.ProjExpenses[i - 1].Summary);
+                            expDoc.Rows[i].Cells[5].Paragraphs[0].Append(currentProjectStatusReportModel.ProjExpenses[i - 1].ForecastVariance);
+                            expDoc.Rows[i].Cells[6].Paragraphs[0].Append(currentProjectStatusReportModel.ProjExpenses[i - 1].Summary);
 
                         }
                         expDoc.SetWidths(new float[] { 394, 762, 762, 762, 762, 762, 762 });
@@ -797,8 +798,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             effDoc.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectStatusReportModel.ProjEffort[i - 1].ActualEffort);
                             effDoc.Rows[i].Cells[3].Paragraphs[0].Append(currentProjectStatusReportModel.ProjEffort[i - 1].ActualVariance);
                             effDoc.Rows[i].Cells[4].Paragraphs[0].Append(currentProjectStatusReportModel.ProjEffort[i - 1].ForecastEffort);
-                            effDoc.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectStatusReportModel.ProjEffort[i - 1].ForecastVariance);
-                            effDoc.Rows[i].Cells[3].Paragraphs[0].Append(currentProjectStatusReportModel.ProjEffort[i - 1].Summary);
+                            effDoc.Rows[i].Cells[5].Paragraphs[0].Append(currentProjectStatusReportModel.ProjEffort[i - 1].ForecastVariance);
+                            effDoc.Rows[i].Cells[6].Paragraphs[0].Append(currentProjectStatusReportModel.ProjEffort[i - 1].Summary);
 
                         }
                         effDoc.SetWidths(new float[] { 394, 762, 762, 762, 762, 762, 762 });

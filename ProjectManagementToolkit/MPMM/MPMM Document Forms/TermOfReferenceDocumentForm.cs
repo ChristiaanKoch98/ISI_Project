@@ -381,6 +381,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentTermsOfReferenceModel = JsonConvert.DeserializeObject<TermsOfReferenceModel>(JsonConvert.SerializeObject(newTermsOfReferenceModel));
+
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "TermOfReferenceDocument");
                 currentTermsOfReferenceModel = JsonConvert.DeserializeObject<TermsOfReferenceModel>(JsonConvert.SerializeObject(newTermsOfReferenceModel));
                 MessageBox.Show("Terms of reference saved successfully", "save", MessageBoxButtons.OK);

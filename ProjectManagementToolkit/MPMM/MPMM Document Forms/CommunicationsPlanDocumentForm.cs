@@ -261,6 +261,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentCommunicationsPlanModel = JsonConvert.DeserializeObject<CommunicationsPlanModel>(JsonConvert.SerializeObject(newCommunicationsPlanModel));
+
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "CommunicationPlan");
                 MessageBox.Show("Communication plan saved successfully", "save", MessageBoxButtons.OK);
             }
@@ -356,7 +358,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         }
 
-                        documentHistoryTable.SetWidths(new float[] { 190, 303, 1094 });
+                        documentHistoryTable.SetWidths(new float[] { 190, 303, 104 });
                         document.InsertTable(documentHistoryTable);
 
                         document.InsertParagraph("\nDocument Approvals\n")
@@ -453,7 +455,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             documentStakeholderReq.Rows[i].Cells[3].Paragraphs[0].Append(currentCommunicationsPlanModel.StakeholderReq[i - 1].InformationRequirement);
                         }
 
-                        documentStakeholderReq.SetWidths(new float[] { 394, 762, 419, 762 });
+                        documentStakeholderReq.SetWidths(new float[] { 762, 762, 762, 762 });
                         document.InsertTable(documentStakeholderReq);
 
 
@@ -596,7 +598,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                           .Bold(true)
                           .Font("Arial");
 
-                        document.InsertParagraph(currentCommunicationsPlanModel.Roles)
+                        document.InsertParagraph(currentCommunicationsPlanModel.Documents)
                             .FontSize(11d)
                             .Color(Color.Black)
                             .Font("Arial").Alignment = Alignment.left;
