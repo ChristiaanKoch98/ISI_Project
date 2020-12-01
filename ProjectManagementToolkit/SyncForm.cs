@@ -40,7 +40,7 @@ namespace ProjectManagementToolkit.MPMM
             }
 
             bool projectExists = checkProjectConfig();
-            
+
             if (!projectExists)
             {
                 bool projectSynced = syncProjectConfig();
@@ -50,25 +50,32 @@ namespace ProjectManagementToolkit.MPMM
                 }
                 else
                 {
-                    MessageBox.Show("Error syncing project with server","Server Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    MessageBox.Show("Error syncing project with server", "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                
             }
 
             List<string> localDocuments = getLocalDocuments();
             List<string> serverDocuments = getServerCollections();
 
-            if(localDocuments == null && serverDocuments == null)
+            if (localDocuments == null && serverDocuments == null)
             {
                 MessageBox.Show("No documents to sync.");
                 return;
             }
-
-            //Remove Config from sync
             serverDocuments.Remove("Config");
 
-            List<string> documentsToSync = localDocuments.Union(serverDocuments).ToList<string>();
+            List<string> documentsToSync = new List<string>();
+
+            if (localDocuments == null)
+            {
+                documentsToSync = serverDocuments;
+            }
+            else if (serverDocuments == null)
+            {
+                documentsToSync = localDocuments;
+            }
+            
 
             bool[] documentsSuccesful = new bool[documentsToSync.Count];
             
@@ -101,25 +108,6 @@ namespace ProjectManagementToolkit.MPMM
             }
 
             Cursor.Current = Cursors.Default;
-
-            /* Old Temp Code 
-            syncProgressBar.Maximum = (documents.Count);
-            double progressValue = 0;
-            foreach(string item in documents)
-            {
-                progressValue++;
-                double progressPercentage = ((progressValue-1) / syncProgressBar.Maximum)*100;
-                lblProgress.Text = "Progress: " + item +" - "+ progressPercentage.ToString()+"%";
-                syncProgressBar.Value = (int)progressValue;
-                lblProgress.Refresh();
-                syncProgressBar.Refresh();
-                Thread.Sleep(1000);
-            }
-            syncProgressBar.Value = syncProgressBar.Maximum;
-            lblProgress.Text = "Progress: 100%";
-            MessageBox.Show("Sync completed");
-            this.Close();
-            */
         }
 
         private bool checkProjectConfig()
@@ -136,19 +124,6 @@ namespace ProjectManagementToolkit.MPMM
             {
                 return true;
             }
-            
-            /*JArray configJsonArray = JArray.Parse(jsonResponse);
-            JObject configJson = configJsonArray[0].ToObject<JObject>();
-
-            MessageBox.Show(configJson.ToString());
-            if(configJson.ToString() == "[]" || configJson.ToString() == "")
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }*/
         }
 
         private bool syncProjectConfig()
@@ -190,25 +165,30 @@ namespace ProjectManagementToolkit.MPMM
             string serverJsonString = getServerDocument(document);
 
             string documentJson = "";
-            
+
             JObject localJson, serverJson;
 
-            if (serverJsonString == null)
+            if (serverJsonString == null && localJsonString != "")
             {
                 serverJsonString = localJsonString;
                 localJson = JObject.Parse(localJsonString);
                 serverJson = localJson;
             }
-            else if(localJsonString == null || localJsonString == "")
+            else if (localJsonString == "" && serverJsonString != null)
             {
-                MessageBox.Show("No local documents to sync.", "Local Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
+                localJsonString = serverJsonString;
+                serverJson = JArray.Parse(serverJsonString)[0].ToObject<JObject>();
+                localJson = serverJson;
+            }
+            else if (localJsonString != "" && serverJsonString != null)
+            {
+                localJson = JObject.Parse(localJsonString);
+                serverJson = JArray.Parse(serverJsonString)[0].ToObject<JObject>();
             }
             else
             {
-                localJson = JObject.Parse(localJsonString);
-                JArray serverJsonArray = JArray.Parse(serverJsonString);
-                serverJson = serverJsonArray.First.ToObject<JObject>();
+                MessageBox.Show("Error syncing " + document, "Sync Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
 
 
