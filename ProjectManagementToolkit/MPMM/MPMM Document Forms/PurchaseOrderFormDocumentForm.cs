@@ -202,10 +202,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         purchaseOrderDetails.Rows[1].Cells[0].Paragraphs[0].Append($"Purchase Order #: {currentPurchaseOrderModel.PurchaseOrderNumber}\n" +
                             $"Purchase Order Date: {currentPurchaseOrderModel.PurchaseOrderDate}\n" +
                             $"Date Required By: {currentPurchaseOrderModel.DateRequired}\n");
-
+//
                         purchaseOrderDetails.SetWidths(new float[] { 1000 });
                         document.InsertTable(purchaseOrderDetails);
-
+//
                         var deliveryDetails = document.AddTable(3, 2);
                         deliveryDetails.Rows[0].Cells[0].Paragraphs[0].Append("DELIVERY DETAILS").Bold(true).Color(Color.White);
                         deliveryDetails.Rows[0].Cells[1].Paragraphs[0].Append("").Bold(true).Color(Color.White);
@@ -229,6 +229,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                            $"Contact Name: {currentPurchaseOrderModel.BillToContactName}\n" +
                            $"Contact Address: {currentPurchaseOrderModel.BillToContactAddress}\n");
                         
+                        //
                         deliveryDetails.SetWidths(new float[] { 1000 });
                         document.InsertTable(deliveryDetails);
 
