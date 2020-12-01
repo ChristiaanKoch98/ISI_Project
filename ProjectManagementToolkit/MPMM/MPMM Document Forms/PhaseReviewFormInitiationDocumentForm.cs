@@ -31,5 +31,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
 
         }
+
+        private void summary_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
