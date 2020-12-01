@@ -304,7 +304,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newFeasibilityStudyModel.SupportingDocumentation = Supporting_Documentation_btn.Text;
 
             List<VersionControl<FeasibilityStudyModel>.DocumentModel> documentModels = versionControl.DocumentModels;
-            MessageBox.Show(JsonConvert.SerializeObject(newFeasibilityStudyModel), "save", MessageBoxButtons.OK);
+            //MessageBox.Show(JsonConvert.SerializeObject(newFeasibilityStudyModel), "save", MessageBoxButtons.OK);
 
             if (!versionControl.isEqual(currentFeasibilityStudyModel, newFeasibilityStudyModel))
             {
@@ -314,7 +314,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 string json = JsonConvert.SerializeObject(versionControl);
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "FeasibilityStudy");
-                //MessageBox.Show("Feasibility study form saved successfully", "save", MessageBoxButtons.OK);
+                MessageBox.Show("Feasibility study form saved successfully", "save", MessageBoxButtons.OK);
             }
         }
 
