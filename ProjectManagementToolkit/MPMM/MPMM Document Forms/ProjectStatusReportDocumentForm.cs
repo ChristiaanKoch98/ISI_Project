@@ -373,6 +373,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         };
 
                         document.InsertTableOfContents(p, "", tocSwitches);
+
                         document.InsertParagraph().InsertPageBreakAfterSelf();
                         var CommunicationReqHeading = document.InsertParagraph("1 Project details")
                             .Bold()
@@ -503,17 +504,17 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         recHeading.StyleId = "Heading2";
 
-                        document.InsertTableOfContents(p, "", tocSwitches);
                         document.InsertParagraph().InsertPageBreakAfterSelf();
-                        var sumHeading = document.InsertParagraph("2 Executive summary")
+                        var ExecutiveSummaryHead = document.InsertParagraph("2 Executive summary")
                             .Bold()
                             .FontSize(14d)
                             .Color(Color.Black)
                             .Bold(true)
                             .Font("Arial");
 
-                        CommunicationReqHeading.StyleId = "Heading1";
+                        ExecutiveSummaryHead.StyleId = "Heading1";
 
+                        
                         var desHeading = document.InsertParagraph("2.1 Project description")
                      .Bold()
                      .FontSize(12d)
