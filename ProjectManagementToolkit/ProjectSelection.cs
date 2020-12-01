@@ -86,6 +86,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private void btnProjectCode_Click(object sender, EventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
+
+            if(txtProjectCode.Text.Contains(" ") || txtProjectCode.Text.Contains("."))
+            {
+                MessageBox.Show("Incorrect Project ID.", "Sync Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtProjectCode.Text = "";
+                return;
+            }
+
             bool connectionSuccessful = attemptHttpConnection();
             
             if (!connectionSuccessful)
@@ -103,17 +111,19 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 var jsonResponse = responseMessage.Content.ReadAsStringAsync().Result;
                 int statusCode = responseMessage.StatusCode.GetHashCode();
 
+                if (jsonResponse == "[]" || jsonResponse == "")
+                {
+                    MessageBox.Show("Incorrect Project ID", "Project Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 JObject projectModel = JArray.Parse(jsonResponse)[0].ToObject<JObject>();
 
                 MessageBox.Show(projectModel.ToString());
 
                 ProjectModel newProject = new ProjectModel();
 
-                if (jsonResponse == "[]" || jsonResponse == "")
-                {
-                    MessageBox.Show("Incorrect Project ID", "Project Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
+                
                 
                 newProject.ProjectID = projectModel["ProjectID"].ToString();
                 newProject.ProjectName = projectModel["ProjectName"].ToString();
