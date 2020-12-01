@@ -28,6 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.documentControl = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
@@ -150,16 +162,14 @@
             // 
             // tabControl2
             // 
-            this.tabControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl2.Controls.Add(this.tabPage1);
             this.tabControl2.Controls.Add(this.tabPage4);
             this.tabControl2.Controls.Add(this.tabPage5);
-            this.tabControl2.Location = new System.Drawing.Point(6, 2);
+            this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl2.Location = new System.Drawing.Point(3, 3);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1024, 462);
+            this.tabControl2.Size = new System.Drawing.Size(1030, 461);
             this.tabControl2.TabIndex = 2;
             // 
             // tabPage1
@@ -169,23 +179,41 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 23);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1016, 435);
+            this.tabPage1.Size = new System.Drawing.Size(1022, 434);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Document Information";
             // 
             // documentInformation
             // 
-            this.documentInformation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.documentInformation.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle49.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle49.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle49.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle49.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle49.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.documentInformation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle49;
             this.documentInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.documentInformation.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Type,
             this.Information});
-            this.documentInformation.Location = new System.Drawing.Point(3, 2);
+            this.documentInformation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.documentInformation.EnableHeadersVisualStyles = false;
+            this.documentInformation.Location = new System.Drawing.Point(3, 3);
             this.documentInformation.Name = "documentInformation";
+            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle50.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle50.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle50.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.documentInformation.RowHeadersDefaultCellStyle = dataGridViewCellStyle50;
             this.documentInformation.RowHeadersWidth = 51;
-            this.documentInformation.Size = new System.Drawing.Size(1008, 427);
+            dataGridViewCellStyle51.Font = new System.Drawing.Font("Helvetica", 10.8F);
+            this.documentInformation.RowsDefaultCellStyle = dataGridViewCellStyle51;
+            this.documentInformation.Size = new System.Drawing.Size(1016, 428);
             this.documentInformation.TabIndex = 16;
             // 
             // Type
@@ -209,24 +237,42 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 23);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1016, 435);
+            this.tabPage4.Size = new System.Drawing.Size(1022, 434);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Document History";
             // 
             // documentHistory
             // 
-            this.documentHistory.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.documentHistory.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle52.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle52.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle52.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle52.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle52.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.documentHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle52;
             this.documentHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.documentHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Version,
             this.historyIssueDate,
             this.historyChanges});
-            this.documentHistory.Location = new System.Drawing.Point(3, 2);
+            this.documentHistory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.documentHistory.EnableHeadersVisualStyles = false;
+            this.documentHistory.Location = new System.Drawing.Point(3, 3);
             this.documentHistory.Name = "documentHistory";
+            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle53.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle53.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle53.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle53.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle53.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.documentHistory.RowHeadersDefaultCellStyle = dataGridViewCellStyle53;
             this.documentHistory.RowHeadersWidth = 51;
-            this.documentHistory.Size = new System.Drawing.Size(1008, 425);
+            dataGridViewCellStyle54.Font = new System.Drawing.Font("Helvetica", 10.8F);
+            this.documentHistory.RowsDefaultCellStyle = dataGridViewCellStyle54;
+            this.documentHistory.Size = new System.Drawing.Size(1016, 428);
             this.documentHistory.TabIndex = 13;
             // 
             // Version
@@ -257,25 +303,43 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 23);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1016, 435);
+            this.tabPage5.Size = new System.Drawing.Size(1022, 434);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "Document Approval";
             // 
             // documentApprovals
             // 
-            this.documentApprovals.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.documentApprovals.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle55.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle55.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle55.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle55.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle55.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.documentApprovals.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle55;
             this.documentApprovals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.documentApprovals.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.approvalRole,
             this.approvalName,
             this.approvalSignature,
             this.approvalDate});
+            this.documentApprovals.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.documentApprovals.EnableHeadersVisualStyles = false;
             this.documentApprovals.Location = new System.Drawing.Point(3, 3);
             this.documentApprovals.Name = "documentApprovals";
+            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle56.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle56.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle56.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle56.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.documentApprovals.RowHeadersDefaultCellStyle = dataGridViewCellStyle56;
             this.documentApprovals.RowHeadersWidth = 51;
-            this.documentApprovals.Size = new System.Drawing.Size(1013, 421);
+            dataGridViewCellStyle57.Font = new System.Drawing.Font("Helvetica", 10.8F);
+            this.documentApprovals.RowsDefaultCellStyle = dataGridViewCellStyle57;
+            this.documentApprovals.Size = new System.Drawing.Size(1016, 428);
             this.documentApprovals.TabIndex = 18;
             // 
             // approvalRole
@@ -329,10 +393,11 @@
             this.tabControl3.Controls.Add(this.tabPage11);
             this.tabControl3.Controls.Add(this.tabPage12);
             this.tabControl3.Controls.Add(this.tabPage13);
-            this.tabControl3.Location = new System.Drawing.Point(3, 6);
+            this.tabControl3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl3.Location = new System.Drawing.Point(3, 3);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(1056, 463);
+            this.tabControl3.Size = new System.Drawing.Size(1030, 461);
             this.tabControl3.TabIndex = 0;
             // 
             // tabPage6
@@ -342,15 +407,12 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 23);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1048, 436);
+            this.tabPage6.Size = new System.Drawing.Size(1022, 434);
             this.tabPage6.TabIndex = 0;
             this.tabPage6.Text = "Project Details";
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.reportingPeriod);
             this.panel1.Controls.Add(this.reportPreparedBy);
             this.panel1.Controls.Add(this.reportPreparationDate);
@@ -363,10 +425,11 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Font = new System.Drawing.Font("Helvetica", 9F);
-            this.panel1.Location = new System.Drawing.Point(3, 18);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1032, 143);
+            this.panel1.Size = new System.Drawing.Size(1016, 428);
             this.panel1.TabIndex = 2;
             // 
             // reportingPeriod
@@ -490,19 +553,20 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 23);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1048, 436);
+            this.tabPage7.Size = new System.Drawing.Size(1022, 434);
             this.tabPage7.TabIndex = 1;
             this.tabPage7.Text = "Summary";
             // 
             // summary
             // 
             this.summary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.summary.Dock = System.Windows.Forms.DockStyle.Fill;
             this.summary.Font = new System.Drawing.Font("Helvetica", 9.75F);
             this.summary.ForeColor = System.Drawing.Color.Black;
-            this.summary.Location = new System.Drawing.Point(7, 6);
+            this.summary.Location = new System.Drawing.Point(3, 3);
             this.summary.Multiline = true;
             this.summary.Name = "summary";
-            this.summary.Size = new System.Drawing.Size(1035, 425);
+            this.summary.Size = new System.Drawing.Size(1016, 428);
             this.summary.TabIndex = 16;
             this.summary.Text = "Summary";
             // 
@@ -513,19 +577,20 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 23);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1048, 436);
+            this.tabPage8.Size = new System.Drawing.Size(1022, 434);
             this.tabPage8.TabIndex = 2;
             this.tabPage8.Text = "Project Expenses";
             // 
             // projectExpenses
             // 
             this.projectExpenses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.projectExpenses.Dock = System.Windows.Forms.DockStyle.Fill;
             this.projectExpenses.Font = new System.Drawing.Font("Helvetica", 9.75F);
             this.projectExpenses.ForeColor = System.Drawing.Color.Black;
-            this.projectExpenses.Location = new System.Drawing.Point(7, 6);
+            this.projectExpenses.Location = new System.Drawing.Point(3, 3);
             this.projectExpenses.Multiline = true;
             this.projectExpenses.Name = "projectExpenses";
-            this.projectExpenses.Size = new System.Drawing.Size(1032, 422);
+            this.projectExpenses.Size = new System.Drawing.Size(1016, 428);
             this.projectExpenses.TabIndex = 18;
             this.projectExpenses.Text = "Project Expenses";
             // 
@@ -536,19 +601,20 @@
             this.tabPage9.Location = new System.Drawing.Point(4, 23);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(1048, 436);
+            this.tabPage9.Size = new System.Drawing.Size(1022, 434);
             this.tabPage9.TabIndex = 3;
             this.tabPage9.Text = "Project Risks";
             // 
             // projectRisks
             // 
             this.projectRisks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.projectRisks.Dock = System.Windows.Forms.DockStyle.Fill;
             this.projectRisks.Font = new System.Drawing.Font("Helvetica", 9.75F);
             this.projectRisks.ForeColor = System.Drawing.Color.Black;
-            this.projectRisks.Location = new System.Drawing.Point(7, 6);
+            this.projectRisks.Location = new System.Drawing.Point(3, 3);
             this.projectRisks.Multiline = true;
             this.projectRisks.Name = "projectRisks";
-            this.projectRisks.Size = new System.Drawing.Size(1035, 422);
+            this.projectRisks.Size = new System.Drawing.Size(1016, 428);
             this.projectRisks.TabIndex = 19;
             this.projectRisks.Text = "Project Risks";
             // 
@@ -559,19 +625,20 @@
             this.tabPage10.Location = new System.Drawing.Point(4, 23);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(1048, 436);
+            this.tabPage10.Size = new System.Drawing.Size(1022, 434);
             this.tabPage10.TabIndex = 4;
             this.tabPage10.Text = "Project Changes";
             // 
             // projectChanges
             // 
             this.projectChanges.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.projectChanges.Dock = System.Windows.Forms.DockStyle.Fill;
             this.projectChanges.Font = new System.Drawing.Font("Helvetica", 9.75F);
             this.projectChanges.ForeColor = System.Drawing.Color.Black;
-            this.projectChanges.Location = new System.Drawing.Point(7, 6);
+            this.projectChanges.Location = new System.Drawing.Point(3, 3);
             this.projectChanges.Multiline = true;
             this.projectChanges.Name = "projectChanges";
-            this.projectChanges.Size = new System.Drawing.Size(1032, 423);
+            this.projectChanges.Size = new System.Drawing.Size(1016, 428);
             this.projectChanges.TabIndex = 23;
             this.projectChanges.Text = "Project Changes";
             // 
@@ -582,19 +649,20 @@
             this.tabPage11.Location = new System.Drawing.Point(4, 23);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(1048, 436);
+            this.tabPage11.Size = new System.Drawing.Size(1022, 434);
             this.tabPage11.TabIndex = 5;
             this.tabPage11.Text = "Project Schedule";
             // 
             // projectSchedule
             // 
             this.projectSchedule.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.projectSchedule.Dock = System.Windows.Forms.DockStyle.Fill;
             this.projectSchedule.Font = new System.Drawing.Font("Helvetica", 9.75F);
             this.projectSchedule.ForeColor = System.Drawing.Color.Black;
-            this.projectSchedule.Location = new System.Drawing.Point(3, 6);
+            this.projectSchedule.Location = new System.Drawing.Point(3, 3);
             this.projectSchedule.Multiline = true;
             this.projectSchedule.Name = "projectSchedule";
-            this.projectSchedule.Size = new System.Drawing.Size(1035, 422);
+            this.projectSchedule.Size = new System.Drawing.Size(1016, 428);
             this.projectSchedule.TabIndex = 21;
             this.projectSchedule.Text = "Project Schedule";
             // 
@@ -605,19 +673,20 @@
             this.tabPage12.Location = new System.Drawing.Point(4, 23);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(1048, 436);
+            this.tabPage12.Size = new System.Drawing.Size(1022, 434);
             this.tabPage12.TabIndex = 6;
             this.tabPage12.Text = "Project Deliverables";
             // 
             // projectDeliverables
             // 
             this.projectDeliverables.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.projectDeliverables.Dock = System.Windows.Forms.DockStyle.Fill;
             this.projectDeliverables.Font = new System.Drawing.Font("Helvetica", 9.75F);
             this.projectDeliverables.ForeColor = System.Drawing.Color.Black;
-            this.projectDeliverables.Location = new System.Drawing.Point(7, 6);
+            this.projectDeliverables.Location = new System.Drawing.Point(3, 3);
             this.projectDeliverables.Multiline = true;
             this.projectDeliverables.Name = "projectDeliverables";
-            this.projectDeliverables.Size = new System.Drawing.Size(1032, 425);
+            this.projectDeliverables.Size = new System.Drawing.Size(1016, 428);
             this.projectDeliverables.TabIndex = 20;
             this.projectDeliverables.Text = "Project Deliverables";
             // 
@@ -628,7 +697,7 @@
             this.tabPage13.Location = new System.Drawing.Point(4, 23);
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(1048, 436);
+            this.tabPage13.Size = new System.Drawing.Size(1022, 434);
             this.tabPage13.TabIndex = 7;
             this.tabPage13.Text = "Project Issues ";
             // 
@@ -643,6 +712,7 @@
             this.projectIssues.Size = new System.Drawing.Size(1035, 428);
             this.projectIssues.TabIndex = 22;
             this.projectIssues.Text = "Project Issues ";
+            this.projectIssues.TextChanged += new System.EventHandler(this.projectIssues_TextChanged);
             // 
             // tabPage3
             // 
@@ -660,10 +730,11 @@
             this.tabControl4.Controls.Add(this.tabPage14);
             this.tabControl4.Controls.Add(this.tabPage15);
             this.tabControl4.Controls.Add(this.tabPage16);
-            this.tabControl4.Location = new System.Drawing.Point(8, 8);
+            this.tabControl4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl4.Location = new System.Drawing.Point(3, 3);
             this.tabControl4.Name = "tabControl4";
             this.tabControl4.SelectedIndex = 0;
-            this.tabControl4.Size = new System.Drawing.Size(1051, 462);
+            this.tabControl4.Size = new System.Drawing.Size(1030, 461);
             this.tabControl4.TabIndex = 0;
             // 
             // tabPage14
@@ -673,25 +744,43 @@
             this.tabPage14.Location = new System.Drawing.Point(4, 23);
             this.tabPage14.Name = "tabPage14";
             this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage14.Size = new System.Drawing.Size(1043, 435);
+            this.tabPage14.Size = new System.Drawing.Size(1022, 434);
             this.tabPage14.TabIndex = 0;
             this.tabPage14.Text = "Review Details";
             // 
             // reviewDetails
             // 
-            this.reviewDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.reviewDetails.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle58.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle58.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle58.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle58.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle58.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle58.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.reviewDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle58;
             this.reviewDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.reviewDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.reviewCategory,
             this.reviewQuestions,
             this.answer,
             this.variance});
-            this.reviewDetails.Location = new System.Drawing.Point(3, 6);
+            this.reviewDetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reviewDetails.EnableHeadersVisualStyles = false;
+            this.reviewDetails.Location = new System.Drawing.Point(3, 3);
             this.reviewDetails.Name = "reviewDetails";
+            dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle59.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle59.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle59.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle59.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle59.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.reviewDetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle59;
             this.reviewDetails.RowHeadersWidth = 51;
-            this.reviewDetails.Size = new System.Drawing.Size(1011, 420);
+            dataGridViewCellStyle60.Font = new System.Drawing.Font("Helvetica", 10.8F);
+            this.reviewDetails.RowsDefaultCellStyle = dataGridViewCellStyle60;
+            this.reviewDetails.Size = new System.Drawing.Size(1016, 428);
             this.reviewDetails.TabIndex = 23;
             // 
             // reviewCategory
@@ -728,22 +817,20 @@
             this.tabPage15.Location = new System.Drawing.Point(4, 23);
             this.tabPage15.Name = "tabPage15";
             this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage15.Size = new System.Drawing.Size(1043, 435);
+            this.tabPage15.Size = new System.Drawing.Size(1022, 434);
             this.tabPage15.TabIndex = 1;
             this.tabPage15.Text = "Supporting Documentation";
             // 
             // supportingDetails
             // 
-            this.supportingDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.supportingDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.supportingDetails.Dock = System.Windows.Forms.DockStyle.Fill;
             this.supportingDetails.Font = new System.Drawing.Font("Helvetica", 9.75F);
             this.supportingDetails.ForeColor = System.Drawing.Color.Black;
-            this.supportingDetails.Location = new System.Drawing.Point(7, 6);
+            this.supportingDetails.Location = new System.Drawing.Point(3, 3);
             this.supportingDetails.Multiline = true;
             this.supportingDetails.Name = "supportingDetails";
-            this.supportingDetails.Size = new System.Drawing.Size(1007, 418);
+            this.supportingDetails.Size = new System.Drawing.Size(1016, 428);
             this.supportingDetails.TabIndex = 26;
             this.supportingDetails.Text = "Supporting Documentation";
             // 
@@ -758,7 +845,7 @@
             this.tabPage16.Location = new System.Drawing.Point(4, 23);
             this.tabPage16.Name = "tabPage16";
             this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage16.Size = new System.Drawing.Size(1043, 435);
+            this.tabPage16.Size = new System.Drawing.Size(1022, 434);
             this.tabPage16.TabIndex = 2;
             this.tabPage16.Text = "Signature & Date";
             // 
@@ -782,9 +869,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.signature.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.signature.Location = new System.Drawing.Point(175, 19);
+            this.signature.Location = new System.Drawing.Point(175, 23);
             this.signature.Name = "signature";
-            this.signature.Size = new System.Drawing.Size(190, 43);
+            this.signature.Size = new System.Drawing.Size(169, 43);
             this.signature.TabIndex = 39;
             this.signature.TabStop = false;
             // 
@@ -796,7 +883,7 @@
             this.signatureDate.Font = new System.Drawing.Font("Helvetica", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signatureDate.Location = new System.Drawing.Point(175, 130);
             this.signatureDate.Name = "signatureDate";
-            this.signatureDate.Size = new System.Drawing.Size(233, 22);
+            this.signatureDate.Size = new System.Drawing.Size(212, 22);
             this.signatureDate.TabIndex = 38;
             // 
             // label12

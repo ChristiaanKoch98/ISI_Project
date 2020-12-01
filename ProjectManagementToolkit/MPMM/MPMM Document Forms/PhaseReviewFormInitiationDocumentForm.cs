@@ -21,5 +21,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
 
         }
+
+        private void projectIssues_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
