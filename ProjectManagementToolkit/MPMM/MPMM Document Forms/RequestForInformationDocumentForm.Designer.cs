@@ -28,15 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label27 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewDocumentApprovals = new System.Windows.Forms.DataGridView();
             this.dataGridViewDocumentHistory = new System.Windows.Forms.DataGridView();
             this.dataGridViewDocumentInformation = new System.Windows.Forms.DataGridView();
@@ -84,6 +81,18 @@
             this.listBoxConfidentiality = new System.Windows.Forms.ListBox();
             this.txtProjectName = new System.Windows.Forms.TextBox();
             this.btnSaveProjectNameRequestForInfo = new System.Windows.Forms.Button();
+            this.tabControlDocumentControl = new System.Windows.Forms.TabControl();
+            this.tabPageDocumentInfo = new System.Windows.Forms.TabPage();
+            this.tabPageDocumentHistory = new System.Windows.Forms.TabPage();
+            this.tabPageDocumentApprovals = new System.Windows.Forms.TabPage();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPageOverview = new System.Windows.Forms.TabPage();
+            this.tabPagePurpose = new System.Windows.Forms.TabPage();
+            this.tabPageAcknowledgement = new System.Windows.Forms.TabPage();
+            this.tabPageRecipiants = new System.Windows.Forms.TabPage();
+            this.tabPageProcess = new System.Windows.Forms.TabPage();
+            this.tabPageRules = new System.Windows.Forms.TabPage();
+            this.tabPageQuestions = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentApprovals)).BeginInit();
@@ -93,6 +102,18 @@
             this.tabPage3.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.tabPage9.SuspendLayout();
+            this.tabControlDocumentControl.SuspendLayout();
+            this.tabPageDocumentInfo.SuspendLayout();
+            this.tabPageDocumentHistory.SuspendLayout();
+            this.tabPageDocumentApprovals.SuspendLayout();
+            this.tabControl2.SuspendLayout();
+            this.tabPageOverview.SuspendLayout();
+            this.tabPagePurpose.SuspendLayout();
+            this.tabPageAcknowledgement.SuspendLayout();
+            this.tabPageRecipiants.SuspendLayout();
+            this.tabPageProcess.SuspendLayout();
+            this.tabPageRules.SuspendLayout();
+            this.tabPageQuestions.SuspendLayout();
             this.SuspendLayout();
             // 
             // label27
@@ -122,12 +143,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.dataGridViewDocumentApprovals);
-            this.tabPage1.Controls.Add(this.dataGridViewDocumentHistory);
-            this.tabPage1.Controls.Add(this.dataGridViewDocumentInformation);
+            this.tabPage1.Controls.Add(this.tabControlDocumentControl);
             this.tabPage1.Location = new System.Drawing.Point(4, 23);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -135,66 +151,24 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Document Control";
             // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(8, 328);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 19);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Document Approvals";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(8, 190);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 19);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Document History";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(8, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 19);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Document Information";
-            // 
             // dataGridViewDocumentApprovals
             // 
             this.dataGridViewDocumentApprovals.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewDocumentApprovals.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentApprovals.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewDocumentApprovals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDocumentApprovals.EnableHeadersVisualStyles = false;
-            this.dataGridViewDocumentApprovals.Location = new System.Drawing.Point(196, 262);
+            this.dataGridViewDocumentApprovals.Location = new System.Drawing.Point(6, 6);
             this.dataGridViewDocumentApprovals.Name = "dataGridViewDocumentApprovals";
-            this.dataGridViewDocumentApprovals.Size = new System.Drawing.Size(693, 131);
+            this.dataGridViewDocumentApprovals.Size = new System.Drawing.Size(865, 351);
             this.dataGridViewDocumentApprovals.TabIndex = 2;
             // 
             // dataGridViewDocumentHistory
@@ -204,7 +178,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
@@ -212,9 +186,9 @@
             this.dataGridViewDocumentHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewDocumentHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDocumentHistory.EnableHeadersVisualStyles = false;
-            this.dataGridViewDocumentHistory.Location = new System.Drawing.Point(196, 129);
+            this.dataGridViewDocumentHistory.Location = new System.Drawing.Point(6, 6);
             this.dataGridViewDocumentHistory.Name = "dataGridViewDocumentHistory";
-            this.dataGridViewDocumentHistory.Size = new System.Drawing.Size(693, 125);
+            this.dataGridViewDocumentHistory.Size = new System.Drawing.Size(865, 351);
             this.dataGridViewDocumentHistory.TabIndex = 1;
             // 
             // dataGridViewDocumentInformation
@@ -222,32 +196,26 @@
             this.dataGridViewDocumentInformation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewDocumentInformation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentInformation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewDocumentInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDocumentInformation.EnableHeadersVisualStyles = false;
-            this.dataGridViewDocumentInformation.Location = new System.Drawing.Point(196, 7);
+            this.dataGridViewDocumentInformation.Location = new System.Drawing.Point(6, 6);
             this.dataGridViewDocumentInformation.Name = "dataGridViewDocumentInformation";
-            this.dataGridViewDocumentInformation.Size = new System.Drawing.Size(693, 115);
+            this.dataGridViewDocumentInformation.Size = new System.Drawing.Size(865, 351);
             this.dataGridViewDocumentInformation.TabIndex = 0;
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPage2.Controls.Add(this.tabControl2);
             this.tabPage2.Controls.Add(this.btnSaveIntroductionInfo);
-            this.tabPage2.Controls.Add(this.txtOverview);
-            this.tabPage2.Controls.Add(this.txtQuestions);
-            this.tabPage2.Controls.Add(this.txtRules);
-            this.tabPage2.Controls.Add(this.txtProcess);
-            this.tabPage2.Controls.Add(this.txtAcknowledgement);
-            this.tabPage2.Controls.Add(this.txtRecipiants);
-            this.tabPage2.Controls.Add(this.txtPurpose);
             this.tabPage2.Location = new System.Drawing.Point(4, 23);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -274,10 +242,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtOverview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtOverview.ForeColor = System.Drawing.Color.Black;
-            this.txtOverview.Location = new System.Drawing.Point(7, 7);
+            this.txtOverview.Location = new System.Drawing.Point(6, 6);
             this.txtOverview.Multiline = true;
             this.txtOverview.Name = "txtOverview";
-            this.txtOverview.Size = new System.Drawing.Size(880, 100);
+            this.txtOverview.Size = new System.Drawing.Size(864, 293);
             this.txtOverview.TabIndex = 6;
             this.txtOverview.Text = "Overview";
             this.txtOverview.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -289,10 +257,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtQuestions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtQuestions.ForeColor = System.Drawing.Color.Black;
-            this.txtQuestions.Location = new System.Drawing.Point(444, 268);
+            this.txtQuestions.Location = new System.Drawing.Point(6, 6);
             this.txtQuestions.Multiline = true;
             this.txtQuestions.Name = "txtQuestions";
-            this.txtQuestions.Size = new System.Drawing.Size(443, 66);
+            this.txtQuestions.Size = new System.Drawing.Size(861, 293);
             this.txtQuestions.TabIndex = 5;
             this.txtQuestions.Text = "Questions";
             this.txtQuestions.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -304,10 +272,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtRules.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtRules.ForeColor = System.Drawing.Color.Black;
-            this.txtRules.Location = new System.Drawing.Point(7, 268);
+            this.txtRules.Location = new System.Drawing.Point(6, 6);
             this.txtRules.Multiline = true;
             this.txtRules.Name = "txtRules";
-            this.txtRules.Size = new System.Drawing.Size(431, 66);
+            this.txtRules.Size = new System.Drawing.Size(861, 293);
             this.txtRules.TabIndex = 4;
             this.txtRules.Text = "Rules";
             this.txtRules.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -319,10 +287,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtProcess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtProcess.ForeColor = System.Drawing.Color.Black;
-            this.txtProcess.Location = new System.Drawing.Point(444, 192);
+            this.txtProcess.Location = new System.Drawing.Point(6, 6);
             this.txtProcess.Multiline = true;
             this.txtProcess.Name = "txtProcess";
-            this.txtProcess.Size = new System.Drawing.Size(443, 66);
+            this.txtProcess.Size = new System.Drawing.Size(861, 293);
             this.txtProcess.TabIndex = 3;
             this.txtProcess.Text = "Process";
             this.txtProcess.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -334,10 +302,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAcknowledgement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtAcknowledgement.ForeColor = System.Drawing.Color.Black;
-            this.txtAcknowledgement.Location = new System.Drawing.Point(444, 117);
+            this.txtAcknowledgement.Location = new System.Drawing.Point(6, 6);
             this.txtAcknowledgement.Multiline = true;
             this.txtAcknowledgement.Name = "txtAcknowledgement";
-            this.txtAcknowledgement.Size = new System.Drawing.Size(443, 66);
+            this.txtAcknowledgement.Size = new System.Drawing.Size(861, 293);
             this.txtAcknowledgement.TabIndex = 2;
             this.txtAcknowledgement.Text = "Acknowledgement";
             this.txtAcknowledgement.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -349,10 +317,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtRecipiants.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtRecipiants.ForeColor = System.Drawing.Color.Black;
-            this.txtRecipiants.Location = new System.Drawing.Point(6, 192);
+            this.txtRecipiants.Location = new System.Drawing.Point(6, 6);
             this.txtRecipiants.Multiline = true;
             this.txtRecipiants.Name = "txtRecipiants";
-            this.txtRecipiants.Size = new System.Drawing.Size(431, 66);
+            this.txtRecipiants.Size = new System.Drawing.Size(861, 293);
             this.txtRecipiants.TabIndex = 1;
             this.txtRecipiants.Text = "Recipiants";
             this.txtRecipiants.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -364,10 +332,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPurpose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtPurpose.ForeColor = System.Drawing.Color.Black;
-            this.txtPurpose.Location = new System.Drawing.Point(6, 117);
+            this.txtPurpose.Location = new System.Drawing.Point(6, 6);
             this.txtPurpose.Multiline = true;
             this.txtPurpose.Name = "txtPurpose";
-            this.txtPurpose.Size = new System.Drawing.Size(431, 66);
+            this.txtPurpose.Size = new System.Drawing.Size(861, 293);
             this.txtPurpose.TabIndex = 0;
             this.txtPurpose.Text = "Purpose";
             this.txtPurpose.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -923,6 +891,145 @@
             this.btnSaveProjectNameRequestForInfo.UseVisualStyleBackColor = false;
             this.btnSaveProjectNameRequestForInfo.Click += new System.EventHandler(this.btnSaveProjectNameRequestForInfo_Click);
             // 
+            // tabControlDocumentControl
+            // 
+            this.tabControlDocumentControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControlDocumentControl.Controls.Add(this.tabPageDocumentInfo);
+            this.tabControlDocumentControl.Controls.Add(this.tabPageDocumentHistory);
+            this.tabControlDocumentControl.Controls.Add(this.tabPageDocumentApprovals);
+            this.tabControlDocumentControl.Location = new System.Drawing.Point(6, 7);
+            this.tabControlDocumentControl.Name = "tabControlDocumentControl";
+            this.tabControlDocumentControl.SelectedIndex = 0;
+            this.tabControlDocumentControl.Size = new System.Drawing.Size(885, 390);
+            this.tabControlDocumentControl.TabIndex = 6;
+            // 
+            // tabPageDocumentInfo
+            // 
+            this.tabPageDocumentInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPageDocumentInfo.Controls.Add(this.dataGridViewDocumentInformation);
+            this.tabPageDocumentInfo.Location = new System.Drawing.Point(4, 23);
+            this.tabPageDocumentInfo.Name = "tabPageDocumentInfo";
+            this.tabPageDocumentInfo.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageDocumentInfo.Size = new System.Drawing.Size(877, 363);
+            this.tabPageDocumentInfo.TabIndex = 0;
+            this.tabPageDocumentInfo.Text = "Document Information";
+            // 
+            // tabPageDocumentHistory
+            // 
+            this.tabPageDocumentHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPageDocumentHistory.Controls.Add(this.dataGridViewDocumentHistory);
+            this.tabPageDocumentHistory.Location = new System.Drawing.Point(4, 23);
+            this.tabPageDocumentHistory.Name = "tabPageDocumentHistory";
+            this.tabPageDocumentHistory.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageDocumentHistory.Size = new System.Drawing.Size(877, 363);
+            this.tabPageDocumentHistory.TabIndex = 1;
+            this.tabPageDocumentHistory.Text = "Document History";
+            // 
+            // tabPageDocumentApprovals
+            // 
+            this.tabPageDocumentApprovals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPageDocumentApprovals.Controls.Add(this.dataGridViewDocumentApprovals);
+            this.tabPageDocumentApprovals.Location = new System.Drawing.Point(4, 23);
+            this.tabPageDocumentApprovals.Name = "tabPageDocumentApprovals";
+            this.tabPageDocumentApprovals.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageDocumentApprovals.Size = new System.Drawing.Size(877, 363);
+            this.tabPageDocumentApprovals.TabIndex = 2;
+            this.tabPageDocumentApprovals.Text = "Document Approvals";
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPageOverview);
+            this.tabControl2.Controls.Add(this.tabPagePurpose);
+            this.tabControl2.Controls.Add(this.tabPageAcknowledgement);
+            this.tabControl2.Controls.Add(this.tabPageRecipiants);
+            this.tabControl2.Controls.Add(this.tabPageProcess);
+            this.tabControl2.Controls.Add(this.tabPageRules);
+            this.tabControl2.Controls.Add(this.tabPageQuestions);
+            this.tabControl2.Location = new System.Drawing.Point(7, 6);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(881, 332);
+            this.tabControl2.TabIndex = 8;
+            // 
+            // tabPageOverview
+            // 
+            this.tabPageOverview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPageOverview.Controls.Add(this.txtOverview);
+            this.tabPageOverview.Location = new System.Drawing.Point(4, 23);
+            this.tabPageOverview.Name = "tabPageOverview";
+            this.tabPageOverview.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageOverview.Size = new System.Drawing.Size(873, 305);
+            this.tabPageOverview.TabIndex = 0;
+            this.tabPageOverview.Text = "Overview";
+            // 
+            // tabPagePurpose
+            // 
+            this.tabPagePurpose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPagePurpose.Controls.Add(this.txtPurpose);
+            this.tabPagePurpose.Location = new System.Drawing.Point(4, 23);
+            this.tabPagePurpose.Name = "tabPagePurpose";
+            this.tabPagePurpose.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPagePurpose.Size = new System.Drawing.Size(873, 305);
+            this.tabPagePurpose.TabIndex = 1;
+            this.tabPagePurpose.Text = "Purpose";
+            // 
+            // tabPageAcknowledgement
+            // 
+            this.tabPageAcknowledgement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPageAcknowledgement.Controls.Add(this.txtAcknowledgement);
+            this.tabPageAcknowledgement.Location = new System.Drawing.Point(4, 23);
+            this.tabPageAcknowledgement.Name = "tabPageAcknowledgement";
+            this.tabPageAcknowledgement.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageAcknowledgement.Size = new System.Drawing.Size(873, 305);
+            this.tabPageAcknowledgement.TabIndex = 2;
+            this.tabPageAcknowledgement.Text = "Acknowledgement";
+            // 
+            // tabPageRecipiants
+            // 
+            this.tabPageRecipiants.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPageRecipiants.Controls.Add(this.txtRecipiants);
+            this.tabPageRecipiants.Location = new System.Drawing.Point(4, 23);
+            this.tabPageRecipiants.Name = "tabPageRecipiants";
+            this.tabPageRecipiants.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageRecipiants.Size = new System.Drawing.Size(873, 305);
+            this.tabPageRecipiants.TabIndex = 3;
+            this.tabPageRecipiants.Text = "Recipiants";
+            // 
+            // tabPageProcess
+            // 
+            this.tabPageProcess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPageProcess.Controls.Add(this.txtProcess);
+            this.tabPageProcess.Location = new System.Drawing.Point(4, 23);
+            this.tabPageProcess.Name = "tabPageProcess";
+            this.tabPageProcess.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageProcess.Size = new System.Drawing.Size(873, 305);
+            this.tabPageProcess.TabIndex = 4;
+            this.tabPageProcess.Text = "Process";
+            // 
+            // tabPageRules
+            // 
+            this.tabPageRules.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPageRules.Controls.Add(this.txtRules);
+            this.tabPageRules.Location = new System.Drawing.Point(4, 23);
+            this.tabPageRules.Name = "tabPageRules";
+            this.tabPageRules.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageRules.Size = new System.Drawing.Size(873, 305);
+            this.tabPageRules.TabIndex = 5;
+            this.tabPageRules.Text = "Rules";
+            // 
+            // tabPageQuestions
+            // 
+            this.tabPageQuestions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tabPageQuestions.Controls.Add(this.txtQuestions);
+            this.tabPageQuestions.Location = new System.Drawing.Point(4, 23);
+            this.tabPageQuestions.Name = "tabPageQuestions";
+            this.tabPageQuestions.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageQuestions.Size = new System.Drawing.Size(873, 305);
+            this.tabPageQuestions.TabIndex = 6;
+            this.tabPageQuestions.Text = "Questions";
+            // 
             // RequestForInformationDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -940,18 +1047,35 @@
             this.Load += new System.EventHandler(this.RequestForInformationDocumentForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentApprovals)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentHistory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentInformation)).EndInit();
             this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
             this.tabPage9.ResumeLayout(false);
             this.tabPage9.PerformLayout();
+            this.tabControlDocumentControl.ResumeLayout(false);
+            this.tabPageDocumentInfo.ResumeLayout(false);
+            this.tabPageDocumentHistory.ResumeLayout(false);
+            this.tabPageDocumentApprovals.ResumeLayout(false);
+            this.tabControl2.ResumeLayout(false);
+            this.tabPageOverview.ResumeLayout(false);
+            this.tabPageOverview.PerformLayout();
+            this.tabPagePurpose.ResumeLayout(false);
+            this.tabPagePurpose.PerformLayout();
+            this.tabPageAcknowledgement.ResumeLayout(false);
+            this.tabPageAcknowledgement.PerformLayout();
+            this.tabPageRecipiants.ResumeLayout(false);
+            this.tabPageRecipiants.PerformLayout();
+            this.tabPageProcess.ResumeLayout(false);
+            this.tabPageProcess.PerformLayout();
+            this.tabPageRules.ResumeLayout(false);
+            this.tabPageRules.PerformLayout();
+            this.tabPageQuestions.ResumeLayout(false);
+            this.tabPageQuestions.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -962,9 +1086,6 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridViewDocumentApprovals;
         private System.Windows.Forms.DataGridView dataGridViewDocumentHistory;
         private System.Windows.Forms.DataGridView dataGridViewDocumentInformation;
@@ -1012,5 +1133,17 @@
         private System.Windows.Forms.ListBox listBoxConfidentiality;
         private System.Windows.Forms.Button btnSaveIntroductionInfo;
         private System.Windows.Forms.Button btnSaveProjectNameRequestForInfo;
+        private System.Windows.Forms.TabControl tabControlDocumentControl;
+        private System.Windows.Forms.TabPage tabPageDocumentInfo;
+        private System.Windows.Forms.TabPage tabPageDocumentHistory;
+        private System.Windows.Forms.TabPage tabPageDocumentApprovals;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage tabPageOverview;
+        private System.Windows.Forms.TabPage tabPagePurpose;
+        private System.Windows.Forms.TabPage tabPageAcknowledgement;
+        private System.Windows.Forms.TabPage tabPageRecipiants;
+        private System.Windows.Forms.TabPage tabPageProcess;
+        private System.Windows.Forms.TabPage tabPageRules;
+        private System.Windows.Forms.TabPage tabPageQuestions;
     }
 }
