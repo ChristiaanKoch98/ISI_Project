@@ -28,14 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.CommuncationsRegister = new System.Windows.Forms.TabPage();
-            this.projName = new System.Windows.Forms.TextBox();
-            this.projMan = new System.Windows.Forms.TextBox();
-            this.comMan = new System.Windows.Forms.TextBox();
-            this.ProjectName = new System.Windows.Forms.Label();
-            this.ProjectManager = new System.Windows.Forms.Label();
-            this.CommunicationsManager = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +45,12 @@
             this.Message = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FileLocation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Feedback = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CommunicationsManager = new System.Windows.Forms.Label();
+            this.ProjectManager = new System.Windows.Forms.Label();
+            this.ProjectName = new System.Windows.Forms.Label();
+            this.comMan = new System.Windows.Forms.TextBox();
+            this.projMan = new System.Windows.Forms.TextBox();
+            this.projName = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.CommuncationsRegister.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -56,14 +59,15 @@
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.CommuncationsRegister);
-            this.tabControl1.Location = new System.Drawing.Point(12, 34);
+            this.tabControl1.Location = new System.Drawing.Point(14, 37);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1128, 404);
+            this.tabControl1.Size = new System.Drawing.Size(1316, 435);
             this.tabControl1.TabIndex = 0;
             // 
             // CommuncationsRegister
             // 
+            this.CommuncationsRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.CommuncationsRegister.Controls.Add(this.dataGridView1);
             this.CommuncationsRegister.Controls.Add(this.CommunicationsManager);
             this.CommuncationsRegister.Controls.Add(this.ProjectManager);
@@ -71,64 +75,23 @@
             this.CommuncationsRegister.Controls.Add(this.comMan);
             this.CommuncationsRegister.Controls.Add(this.projMan);
             this.CommuncationsRegister.Controls.Add(this.projName);
-            this.CommuncationsRegister.Location = new System.Drawing.Point(4, 22);
+            this.CommuncationsRegister.Location = new System.Drawing.Point(4, 23);
             this.CommuncationsRegister.Name = "CommuncationsRegister";
             this.CommuncationsRegister.Padding = new System.Windows.Forms.Padding(3);
-            this.CommuncationsRegister.Size = new System.Drawing.Size(1120, 378);
+            this.CommuncationsRegister.Size = new System.Drawing.Size(1308, 408);
             this.CommuncationsRegister.TabIndex = 0;
             this.CommuncationsRegister.Text = "Communications Register";
-            this.CommuncationsRegister.UseVisualStyleBackColor = true;
-            // 
-            // projName
-            // 
-            this.projName.Location = new System.Drawing.Point(151, 6);
-            this.projName.Name = "projName";
-            this.projName.Size = new System.Drawing.Size(100, 20);
-            this.projName.TabIndex = 0;
-            // 
-            // projMan
-            // 
-            this.projMan.Location = new System.Drawing.Point(151, 43);
-            this.projMan.Name = "projMan";
-            this.projMan.Size = new System.Drawing.Size(100, 20);
-            this.projMan.TabIndex = 1;
-            // 
-            // comMan
-            // 
-            this.comMan.Location = new System.Drawing.Point(151, 84);
-            this.comMan.Name = "comMan";
-            this.comMan.Size = new System.Drawing.Size(100, 20);
-            this.comMan.TabIndex = 2;
-            // 
-            // ProjectName
-            // 
-            this.ProjectName.AutoSize = true;
-            this.ProjectName.Location = new System.Drawing.Point(7, 12);
-            this.ProjectName.Name = "ProjectName";
-            this.ProjectName.Size = new System.Drawing.Size(74, 13);
-            this.ProjectName.TabIndex = 3;
-            this.ProjectName.Text = "Project Name:";
-            // 
-            // ProjectManager
-            // 
-            this.ProjectManager.AutoSize = true;
-            this.ProjectManager.Location = new System.Drawing.Point(10, 49);
-            this.ProjectManager.Name = "ProjectManager";
-            this.ProjectManager.Size = new System.Drawing.Size(88, 13);
-            this.ProjectManager.TabIndex = 4;
-            this.ProjectManager.Text = "Project Manager:";
-            // 
-            // CommunicationsManager
-            // 
-            this.CommunicationsManager.AutoSize = true;
-            this.CommunicationsManager.Location = new System.Drawing.Point(10, 90);
-            this.CommunicationsManager.Name = "CommunicationsManager";
-            this.CommunicationsManager.Size = new System.Drawing.Size(132, 13);
-            this.CommunicationsManager.TabIndex = 5;
-            this.CommunicationsManager.Text = "Communications Manager:";
             // 
             // dataGridView1
             // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -142,9 +105,20 @@
             this.Message,
             this.FileLocation,
             this.Feedback});
-            this.dataGridView1.Location = new System.Drawing.Point(13, 200);
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.Location = new System.Drawing.Point(15, 215);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1101, 150);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.Size = new System.Drawing.Size(1284, 162);
             this.dataGridView1.TabIndex = 6;
             // 
             // ID
@@ -202,12 +176,65 @@
             this.Feedback.HeaderText = "Feedback";
             this.Feedback.Name = "Feedback";
             // 
+            // CommunicationsManager
+            // 
+            this.CommunicationsManager.AutoSize = true;
+            this.CommunicationsManager.Location = new System.Drawing.Point(12, 97);
+            this.CommunicationsManager.Name = "CommunicationsManager";
+            this.CommunicationsManager.Size = new System.Drawing.Size(146, 14);
+            this.CommunicationsManager.TabIndex = 5;
+            this.CommunicationsManager.Text = "Communications Manager:";
+            // 
+            // ProjectManager
+            // 
+            this.ProjectManager.AutoSize = true;
+            this.ProjectManager.Location = new System.Drawing.Point(12, 53);
+            this.ProjectManager.Name = "ProjectManager";
+            this.ProjectManager.Size = new System.Drawing.Size(99, 14);
+            this.ProjectManager.TabIndex = 4;
+            this.ProjectManager.Text = "Project Manager:";
+            // 
+            // ProjectName
+            // 
+            this.ProjectName.AutoSize = true;
+            this.ProjectName.Location = new System.Drawing.Point(8, 13);
+            this.ProjectName.Name = "ProjectName";
+            this.ProjectName.Size = new System.Drawing.Size(84, 14);
+            this.ProjectName.TabIndex = 3;
+            this.ProjectName.Text = "Project Name:";
+            // 
+            // comMan
+            // 
+            this.comMan.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.comMan.Location = new System.Drawing.Point(176, 90);
+            this.comMan.Name = "comMan";
+            this.comMan.Size = new System.Drawing.Size(116, 20);
+            this.comMan.TabIndex = 2;
+            // 
+            // projMan
+            // 
+            this.projMan.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.projMan.Location = new System.Drawing.Point(176, 46);
+            this.projMan.Name = "projMan";
+            this.projMan.Size = new System.Drawing.Size(116, 20);
+            this.projMan.TabIndex = 1;
+            // 
+            // projName
+            // 
+            this.projName.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.projName.Location = new System.Drawing.Point(176, 6);
+            this.projName.Name = "projName";
+            this.projName.Size = new System.Drawing.Size(116, 20);
+            this.projName.TabIndex = 0;
+            // 
             // CommunicationsRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1152, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.ClientSize = new System.Drawing.Size(1344, 485);
             this.Controls.Add(this.tabControl1);
+            this.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "CommunicationsRegister";
             this.Text = "CommunicationsRegister";
             this.tabControl1.ResumeLayout(false);
