@@ -28,6 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -48,7 +54,7 @@
             this.btnCalendarMonthly = new System.Windows.Forms.Button();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewBussLSM = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label4 = new System.Windows.Forms.Label();
             this.tabControl2 = new System.Windows.Forms.TabControl();
@@ -108,7 +114,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBussLSM)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage14.SuspendLayout();
@@ -133,7 +139,7 @@
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage8);
-            this.tabControl1.Font = new System.Drawing.Font("Helvetica Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(12, 26);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -311,7 +317,7 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(12, 8);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 14);
+            this.label3.Size = new System.Drawing.Size(134, 14);
             this.label3.TabIndex = 5;
             this.label3.Text = "Appointments Calendar";
             // 
@@ -360,7 +366,7 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage3.Controls.Add(this.dataGridView1);
+            this.tabPage3.Controls.Add(this.dataGridViewBussLSM);
             this.tabPage3.Location = new System.Drawing.Point(4, 23);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -368,14 +374,33 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Buss LSM View";
             // 
-            // dataGridView1
+            // dataGridViewBussLSM
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.dataGridView1.Location = new System.Drawing.Point(6, 6);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(756, 335);
-            this.dataGridView1.TabIndex = 0;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewBussLSM.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewBussLSM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewBussLSM.EnableHeadersVisualStyles = false;
+            this.dataGridViewBussLSM.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.dataGridViewBussLSM.Location = new System.Drawing.Point(6, 6);
+            this.dataGridViewBussLSM.Name = "dataGridViewBussLSM";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewBussLSM.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Helvetica", 10.8F);
+            this.dataGridViewBussLSM.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewBussLSM.Size = new System.Drawing.Size(756, 335);
+            this.dataGridViewBussLSM.TabIndex = 0;
             // 
             // tabPage4
             // 
@@ -396,7 +421,7 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(7, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(183, 14);
+            this.label4.Size = new System.Drawing.Size(199, 14);
             this.label4.TabIndex = 1;
             this.label4.Text = "Navigation Form: Business Planning";
             // 
@@ -479,10 +504,29 @@
             // 
             // dataGridView2
             // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.EnableHeadersVisualStyles = false;
             this.dataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.dataGridView2.Location = new System.Drawing.Point(7, 8);
             this.dataGridView2.Name = "dataGridView2";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Helvetica", 10.8F);
+            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView2.Size = new System.Drawing.Size(731, 279);
             this.dataGridView2.TabIndex = 0;
             // 
@@ -578,7 +622,7 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(6, 3);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(178, 14);
+            this.label5.Size = new System.Drawing.Size(196, 14);
             this.label5.TabIndex = 4;
             this.label5.Text = "Navigation Form: Decision Support";
             // 
@@ -635,7 +679,7 @@
             this.label16.ForeColor = System.Drawing.Color.Black;
             this.label16.Location = new System.Drawing.Point(221, 118);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(101, 14);
+            this.label16.Size = new System.Drawing.Size(113, 14);
             this.label16.TabIndex = 23;
             this.label16.Text = "Invoice Description";
             // 
@@ -645,7 +689,7 @@
             this.label17.ForeColor = System.Drawing.Color.Black;
             this.label17.Location = new System.Drawing.Point(221, 90);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(84, 14);
+            this.label17.Size = new System.Drawing.Size(89, 14);
             this.label17.TabIndex = 22;
             this.label17.Text = "Payment Terms";
             // 
@@ -655,7 +699,7 @@
             this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.Location = new System.Drawing.Point(221, 62);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(80, 14);
+            this.label18.Size = new System.Drawing.Size(88, 14);
             this.label18.TabIndex = 21;
             this.label18.Text = "Sales Tax Rate";
             // 
@@ -663,7 +707,7 @@
             // 
             this.txtInvoiceDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtInvoiceDescription.ForeColor = System.Drawing.Color.Black;
-            this.txtInvoiceDescription.Location = new System.Drawing.Point(325, 118);
+            this.txtInvoiceDescription.Location = new System.Drawing.Point(340, 115);
             this.txtInvoiceDescription.Name = "txtInvoiceDescription";
             this.txtInvoiceDescription.Size = new System.Drawing.Size(100, 21);
             this.txtInvoiceDescription.TabIndex = 20;
@@ -672,7 +716,7 @@
             // 
             this.txtPaymentTerms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtPaymentTerms.ForeColor = System.Drawing.Color.Black;
-            this.txtPaymentTerms.Location = new System.Drawing.Point(325, 90);
+            this.txtPaymentTerms.Location = new System.Drawing.Point(340, 87);
             this.txtPaymentTerms.Name = "txtPaymentTerms";
             this.txtPaymentTerms.Size = new System.Drawing.Size(100, 21);
             this.txtPaymentTerms.TabIndex = 19;
@@ -681,7 +725,7 @@
             // 
             this.txtSalesTaxRate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtSalesTaxRate.ForeColor = System.Drawing.Color.Black;
-            this.txtSalesTaxRate.Location = new System.Drawing.Point(325, 62);
+            this.txtSalesTaxRate.Location = new System.Drawing.Point(340, 59);
             this.txtSalesTaxRate.Name = "txtSalesTaxRate";
             this.txtSalesTaxRate.Size = new System.Drawing.Size(100, 21);
             this.txtSalesTaxRate.TabIndex = 18;
@@ -692,7 +736,7 @@
             this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(6, 258);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(68, 14);
+            this.label15.Size = new System.Drawing.Size(71, 14);
             this.label15.TabIndex = 17;
             this.label15.Text = "Fax Number";
             // 
@@ -702,7 +746,7 @@
             this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.Location = new System.Drawing.Point(7, 230);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(81, 14);
+            this.label14.Size = new System.Drawing.Size(85, 14);
             this.label14.TabIndex = 16;
             this.label14.Text = "Phone Number";
             // 
@@ -712,7 +756,7 @@
             this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(7, 202);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(46, 14);
+            this.label13.Size = new System.Drawing.Size(50, 14);
             this.label13.TabIndex = 15;
             this.label13.Text = "Country";
             // 
@@ -722,7 +766,7 @@
             this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(7, 174);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(67, 14);
+            this.label12.Size = new System.Drawing.Size(74, 14);
             this.label12.TabIndex = 14;
             this.label12.Text = "Postal Code";
             // 
@@ -732,7 +776,7 @@
             this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(7, 146);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(78, 14);
+            this.label11.Size = new System.Drawing.Size(89, 14);
             this.label11.TabIndex = 13;
             this.label11.Text = "State/Province";
             // 
@@ -742,7 +786,7 @@
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(7, 118);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(26, 14);
+            this.label10.Size = new System.Drawing.Size(30, 14);
             this.label10.TabIndex = 12;
             this.label10.Text = "City";
             // 
@@ -752,7 +796,7 @@
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(7, 90);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 14);
+            this.label9.Size = new System.Drawing.Size(53, 14);
             this.label9.TabIndex = 11;
             this.label9.Text = "Address";
             // 
@@ -762,7 +806,7 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(7, 62);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(87, 14);
+            this.label8.Size = new System.Drawing.Size(90, 14);
             this.label8.TabIndex = 10;
             this.label8.Text = "Company Name";
             // 
@@ -770,7 +814,7 @@
             // 
             this.txtFaxNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtFaxNumber.ForeColor = System.Drawing.Color.Black;
-            this.txtFaxNumber.Location = new System.Drawing.Point(95, 258);
+            this.txtFaxNumber.Location = new System.Drawing.Point(103, 258);
             this.txtFaxNumber.Name = "txtFaxNumber";
             this.txtFaxNumber.Size = new System.Drawing.Size(100, 21);
             this.txtFaxNumber.TabIndex = 9;
@@ -779,7 +823,7 @@
             // 
             this.txtPhoneNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtPhoneNumber.ForeColor = System.Drawing.Color.Black;
-            this.txtPhoneNumber.Location = new System.Drawing.Point(95, 230);
+            this.txtPhoneNumber.Location = new System.Drawing.Point(103, 230);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(100, 21);
             this.txtPhoneNumber.TabIndex = 8;
@@ -788,7 +832,7 @@
             // 
             this.txtCountry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtCountry.ForeColor = System.Drawing.Color.Black;
-            this.txtCountry.Location = new System.Drawing.Point(95, 202);
+            this.txtCountry.Location = new System.Drawing.Point(103, 202);
             this.txtCountry.Name = "txtCountry";
             this.txtCountry.Size = new System.Drawing.Size(100, 21);
             this.txtCountry.TabIndex = 7;
@@ -797,7 +841,7 @@
             // 
             this.txtPostalCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtPostalCode.ForeColor = System.Drawing.Color.Black;
-            this.txtPostalCode.Location = new System.Drawing.Point(95, 174);
+            this.txtPostalCode.Location = new System.Drawing.Point(103, 174);
             this.txtPostalCode.Name = "txtPostalCode";
             this.txtPostalCode.Size = new System.Drawing.Size(100, 21);
             this.txtPostalCode.TabIndex = 6;
@@ -806,7 +850,7 @@
             // 
             this.txtStateProvince.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtStateProvince.ForeColor = System.Drawing.Color.Black;
-            this.txtStateProvince.Location = new System.Drawing.Point(95, 146);
+            this.txtStateProvince.Location = new System.Drawing.Point(103, 146);
             this.txtStateProvince.Name = "txtStateProvince";
             this.txtStateProvince.Size = new System.Drawing.Size(100, 21);
             this.txtStateProvince.TabIndex = 5;
@@ -815,7 +859,7 @@
             // 
             this.txtCity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtCity.ForeColor = System.Drawing.Color.Black;
-            this.txtCity.Location = new System.Drawing.Point(95, 118);
+            this.txtCity.Location = new System.Drawing.Point(103, 118);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(100, 21);
             this.txtCity.TabIndex = 4;
@@ -824,7 +868,7 @@
             // 
             this.txtAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtAddress.ForeColor = System.Drawing.Color.Black;
-            this.txtAddress.Location = new System.Drawing.Point(95, 90);
+            this.txtAddress.Location = new System.Drawing.Point(103, 90);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(100, 21);
             this.txtAddress.TabIndex = 3;
@@ -833,7 +877,7 @@
             // 
             this.txtCompanyName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtCompanyName.ForeColor = System.Drawing.Color.Black;
-            this.txtCompanyName.Location = new System.Drawing.Point(95, 62);
+            this.txtCompanyName.Location = new System.Drawing.Point(103, 62);
             this.txtCompanyName.Name = "txtCompanyName";
             this.txtCompanyName.Size = new System.Drawing.Size(100, 21);
             this.txtCompanyName.TabIndex = 2;
@@ -844,7 +888,7 @@
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(7, 32);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(191, 14);
+            this.label7.Size = new System.Drawing.Size(207, 14);
             this.label7.TabIndex = 1;
             this.label7.Text = "Enter your company information here.";
             // 
@@ -854,7 +898,7 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(7, 8);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(169, 14);
+            this.label6.Size = new System.Drawing.Size(182, 14);
             this.label6.TabIndex = 0;
             this.label6.Text = "Change Organization Information";
             // 
@@ -876,7 +920,7 @@
             this.label19.ForeColor = System.Drawing.Color.Black;
             this.label19.Location = new System.Drawing.Point(7, 3);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(295, 14);
+            this.label19.Size = new System.Drawing.Size(316, 14);
             this.label19.TabIndex = 4;
             this.label19.Text = "Navigation Form: End of Procedures General Management";
             // 
@@ -971,7 +1015,7 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBussLSM)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.tabControl2.ResumeLayout(false);
@@ -1010,7 +1054,7 @@
         private System.Windows.Forms.Button btnCalendarMonthly;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewBussLSM;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;

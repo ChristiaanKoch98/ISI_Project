@@ -28,6 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label27 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageDocumentControl = new System.Windows.Forms.TabPage();
@@ -102,7 +120,7 @@
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Helvetica Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(11, 13);
+            this.label27.Location = new System.Drawing.Point(13, 13);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(167, 14);
             this.label27.TabIndex = 6;
@@ -116,10 +134,10 @@
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Controls.Add(this.tabPage9);
-            this.tabControl1.Location = new System.Drawing.Point(13, 44);
+            this.tabControl1.Location = new System.Drawing.Point(15, 44);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(776, 430);
+            this.tabControl1.Size = new System.Drawing.Size(905, 430);
             this.tabControl1.TabIndex = 5;
             // 
             // tabPageDocumentControl
@@ -134,7 +152,7 @@
             this.tabPageDocumentControl.Location = new System.Drawing.Point(4, 23);
             this.tabPageDocumentControl.Name = "tabPageDocumentControl";
             this.tabPageDocumentControl.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDocumentControl.Size = new System.Drawing.Size(768, 403);
+            this.tabPageDocumentControl.Size = new System.Drawing.Size(897, 403);
             this.tabPageDocumentControl.TabIndex = 0;
             this.tabPageDocumentControl.Text = "Document Control";
             // 
@@ -143,7 +161,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(7, 328);
+            this.label3.Location = new System.Drawing.Point(8, 328);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(148, 19);
             this.label3.TabIndex = 5;
@@ -154,7 +172,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(7, 190);
+            this.label2.Location = new System.Drawing.Point(8, 190);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 19);
             this.label2.TabIndex = 4;
@@ -165,7 +183,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(7, 49);
+            this.label1.Location = new System.Drawing.Point(8, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(152, 19);
             this.label1.TabIndex = 3;
@@ -173,26 +191,83 @@
             // 
             // dataGridViewDocumentApprovals
             // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentApprovals.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewDocumentApprovals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDocumentApprovals.Location = new System.Drawing.Point(168, 262);
+            this.dataGridViewDocumentApprovals.EnableHeadersVisualStyles = false;
+            this.dataGridViewDocumentApprovals.Location = new System.Drawing.Point(196, 262);
             this.dataGridViewDocumentApprovals.Name = "dataGridViewDocumentApprovals";
-            this.dataGridViewDocumentApprovals.Size = new System.Drawing.Size(594, 133);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentApprovals.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Helvetica", 10.8F);
+            this.dataGridViewDocumentApprovals.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewDocumentApprovals.Size = new System.Drawing.Size(693, 133);
             this.dataGridViewDocumentApprovals.TabIndex = 2;
             // 
             // dataGridViewDocumentHistory
             // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewDocumentHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDocumentHistory.Location = new System.Drawing.Point(168, 129);
+            this.dataGridViewDocumentHistory.EnableHeadersVisualStyles = false;
+            this.dataGridViewDocumentHistory.Location = new System.Drawing.Point(196, 129);
             this.dataGridViewDocumentHistory.Name = "dataGridViewDocumentHistory";
-            this.dataGridViewDocumentHistory.Size = new System.Drawing.Size(594, 127);
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentHistory.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Helvetica", 10.8F);
+            this.dataGridViewDocumentHistory.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridViewDocumentHistory.Size = new System.Drawing.Size(693, 127);
             this.dataGridViewDocumentHistory.TabIndex = 1;
             // 
             // dataGridViewDocumentInformation
             // 
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentInformation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewDocumentInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDocumentInformation.Location = new System.Drawing.Point(168, 7);
+            this.dataGridViewDocumentInformation.EnableHeadersVisualStyles = false;
+            this.dataGridViewDocumentInformation.Location = new System.Drawing.Point(196, 7);
             this.dataGridViewDocumentInformation.Name = "dataGridViewDocumentInformation";
-            this.dataGridViewDocumentInformation.Size = new System.Drawing.Size(594, 117);
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentInformation.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Helvetica", 10.8F);
+            this.dataGridViewDocumentInformation.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridViewDocumentInformation.Size = new System.Drawing.Size(693, 117);
             this.dataGridViewDocumentInformation.TabIndex = 0;
             // 
             // tabPage2
@@ -205,7 +280,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 23);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(768, 403);
+            this.tabPage2.Size = new System.Drawing.Size(897, 403);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Procurement Requirements";
             // 
@@ -214,7 +289,7 @@
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Helvetica Light", 10F);
             this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(6, 204);
+            this.label28.Location = new System.Drawing.Point(7, 204);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(117, 18);
             this.label28.TabIndex = 8;
@@ -226,7 +301,7 @@
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Helvetica Light", 10F);
             this.label29.ForeColor = System.Drawing.Color.Black;
-            this.label29.Location = new System.Drawing.Point(10, 7);
+            this.label29.Location = new System.Drawing.Point(12, 7);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(97, 18);
             this.label29.TabIndex = 7;
@@ -235,19 +310,57 @@
             // 
             // dataGridViewMarketResearch
             // 
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewMarketResearch.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewMarketResearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewMarketResearch.Location = new System.Drawing.Point(125, 204);
+            this.dataGridViewMarketResearch.EnableHeadersVisualStyles = false;
+            this.dataGridViewMarketResearch.Location = new System.Drawing.Point(146, 204);
             this.dataGridViewMarketResearch.Name = "dataGridViewMarketResearch";
-            this.dataGridViewMarketResearch.Size = new System.Drawing.Size(640, 191);
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewMarketResearch.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Helvetica", 10.8F);
+            this.dataGridViewMarketResearch.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            this.dataGridViewMarketResearch.Size = new System.Drawing.Size(747, 191);
             this.dataGridViewMarketResearch.TabIndex = 6;
             this.dataGridViewMarketResearch.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // dataGridViewRequirements
             // 
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewRequirements.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dataGridViewRequirements.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewRequirements.Location = new System.Drawing.Point(125, 7);
+            this.dataGridViewRequirements.EnableHeadersVisualStyles = false;
+            this.dataGridViewRequirements.Location = new System.Drawing.Point(146, 7);
             this.dataGridViewRequirements.Name = "dataGridViewRequirements";
-            this.dataGridViewRequirements.Size = new System.Drawing.Size(637, 191);
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewRequirements.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Helvetica", 10.8F);
+            this.dataGridViewRequirements.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            this.dataGridViewRequirements.Size = new System.Drawing.Size(743, 191);
             this.dataGridViewRequirements.TabIndex = 5;
             this.dataGridViewRequirements.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
@@ -268,7 +381,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 23);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(768, 403);
+            this.tabPage3.Size = new System.Drawing.Size(897, 403);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Procurement Plan";
             // 
@@ -277,7 +390,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Helvetica Light", 9F);
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(235, 337);
+            this.label6.Location = new System.Drawing.Point(274, 337);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(250, 15);
             this.label6.TabIndex = 16;
@@ -289,7 +402,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Helvetica Light", 9F);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(235, 308);
+            this.label5.Location = new System.Drawing.Point(274, 308);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(191, 15);
             this.label5.TabIndex = 15;
@@ -301,7 +414,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Helvetica Light", 9F);
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(235, 276);
+            this.label10.Location = new System.Drawing.Point(274, 276);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(300, 15);
             this.label10.TabIndex = 14;
@@ -315,9 +428,9 @@
             this.listBoxConstraints.ForeColor = System.Drawing.Color.Black;
             this.listBoxConstraints.FormattingEnabled = true;
             this.listBoxConstraints.ItemHeight = 19;
-            this.listBoxConstraints.Location = new System.Drawing.Point(541, 290);
+            this.listBoxConstraints.Location = new System.Drawing.Point(631, 290);
             this.listBoxConstraints.Name = "listBoxConstraints";
-            this.listBoxConstraints.Size = new System.Drawing.Size(221, 99);
+            this.listBoxConstraints.Size = new System.Drawing.Size(257, 99);
             this.listBoxConstraints.TabIndex = 11;
             // 
             // btnAddConstraints
@@ -325,9 +438,9 @@
             this.btnAddConstraints.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnAddConstraints.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddConstraints.ForeColor = System.Drawing.Color.Black;
-            this.btnAddConstraints.Location = new System.Drawing.Point(647, 263);
+            this.btnAddConstraints.Location = new System.Drawing.Point(755, 263);
             this.btnAddConstraints.Name = "btnAddConstraints";
-            this.btnAddConstraints.Size = new System.Drawing.Size(115, 24);
+            this.btnAddConstraints.Size = new System.Drawing.Size(134, 24);
             this.btnAddConstraints.TabIndex = 10;
             this.btnAddConstraints.Text = "Add Constraints";
             this.btnAddConstraints.UseVisualStyleBackColor = false;
@@ -338,9 +451,9 @@
             this.btnAddAssumptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnAddAssumptions.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddAssumptions.ForeColor = System.Drawing.Color.Black;
-            this.btnAddAssumptions.Location = new System.Drawing.Point(116, 263);
+            this.btnAddAssumptions.Location = new System.Drawing.Point(135, 263);
             this.btnAddAssumptions.Name = "btnAddAssumptions";
-            this.btnAddAssumptions.Size = new System.Drawing.Size(115, 24);
+            this.btnAddAssumptions.Size = new System.Drawing.Size(134, 24);
             this.btnAddAssumptions.TabIndex = 9;
             this.btnAddAssumptions.Text = "Add Assumptions";
             this.btnAddAssumptions.UseVisualStyleBackColor = false;
@@ -353,9 +466,9 @@
             this.listBoxAssumptions.ForeColor = System.Drawing.Color.Black;
             this.listBoxAssumptions.FormattingEnabled = true;
             this.listBoxAssumptions.ItemHeight = 19;
-            this.listBoxAssumptions.Location = new System.Drawing.Point(10, 290);
+            this.listBoxAssumptions.Location = new System.Drawing.Point(12, 290);
             this.listBoxAssumptions.Name = "listBoxAssumptions";
-            this.listBoxAssumptions.Size = new System.Drawing.Size(221, 99);
+            this.listBoxAssumptions.Size = new System.Drawing.Size(257, 99);
             this.listBoxAssumptions.TabIndex = 8;
             // 
             // txtConstraints
@@ -363,9 +476,9 @@
             this.txtConstraints.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtConstraints.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConstraints.ForeColor = System.Drawing.Color.Black;
-            this.txtConstraints.Location = new System.Drawing.Point(541, 261);
+            this.txtConstraints.Location = new System.Drawing.Point(631, 261);
             this.txtConstraints.Name = "txtConstraints";
-            this.txtConstraints.Size = new System.Drawing.Size(100, 26);
+            this.txtConstraints.Size = new System.Drawing.Size(116, 26);
             this.txtConstraints.TabIndex = 7;
             this.txtConstraints.Text = "Constraints";
             // 
@@ -374,9 +487,9 @@
             this.txtAssumptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtAssumptions.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAssumptions.ForeColor = System.Drawing.Color.Black;
-            this.txtAssumptions.Location = new System.Drawing.Point(10, 261);
+            this.txtAssumptions.Location = new System.Drawing.Point(12, 261);
             this.txtAssumptions.Name = "txtAssumptions";
-            this.txtAssumptions.Size = new System.Drawing.Size(100, 26);
+            this.txtAssumptions.Size = new System.Drawing.Size(116, 26);
             this.txtAssumptions.TabIndex = 6;
             this.txtAssumptions.Text = "Assumptions";
             // 
@@ -385,7 +498,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(344, 3);
+            this.label4.Location = new System.Drawing.Point(401, 3);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 19);
             this.label4.TabIndex = 1;
@@ -393,10 +506,29 @@
             // 
             // dataGridView1
             // 
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 33);
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.Location = new System.Drawing.Point(7, 33);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(756, 225);
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Helvetica", 10.8F);
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle18;
+            this.dataGridView1.Size = new System.Drawing.Size(882, 225);
             this.dataGridView1.TabIndex = 0;
             // 
             // tabPage7
@@ -417,7 +549,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 23);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(768, 403);
+            this.tabPage7.Size = new System.Drawing.Size(897, 403);
             this.tabPage7.TabIndex = 3;
             this.tabPage7.Text = "Tender Process";
             // 
@@ -430,7 +562,7 @@
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.label7.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(212, 265);
+            this.label7.Location = new System.Drawing.Point(247, 265);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(304, 19);
             this.label7.TabIndex = 21;
@@ -446,7 +578,7 @@
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.label8.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(212, 236);
+            this.label8.Location = new System.Drawing.Point(247, 236);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(235, 19);
             this.label8.TabIndex = 20;
@@ -462,7 +594,7 @@
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.label9.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(212, 204);
+            this.label9.Location = new System.Drawing.Point(247, 204);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(365, 19);
             this.label9.TabIndex = 19;
@@ -477,9 +609,9 @@
             this.btnTenderDocuments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnTenderDocuments.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTenderDocuments.ForeColor = System.Drawing.Color.Black;
-            this.btnTenderDocuments.Location = new System.Drawing.Point(647, 13);
+            this.btnTenderDocuments.Location = new System.Drawing.Point(755, 13);
             this.btnTenderDocuments.Name = "btnTenderDocuments";
-            this.btnTenderDocuments.Size = new System.Drawing.Size(115, 24);
+            this.btnTenderDocuments.Size = new System.Drawing.Size(134, 24);
             this.btnTenderDocuments.TabIndex = 18;
             this.btnTenderDocuments.Text = "Add Documents";
             this.btnTenderDocuments.UseVisualStyleBackColor = false;
@@ -495,9 +627,9 @@
             this.listBoxTenderDocuments.ForeColor = System.Drawing.Color.Black;
             this.listBoxTenderDocuments.FormattingEnabled = true;
             this.listBoxTenderDocuments.ItemHeight = 19;
-            this.listBoxTenderDocuments.Location = new System.Drawing.Point(541, 46);
+            this.listBoxTenderDocuments.Location = new System.Drawing.Point(631, 46);
             this.listBoxTenderDocuments.Name = "listBoxTenderDocuments";
-            this.listBoxTenderDocuments.Size = new System.Drawing.Size(221, 99);
+            this.listBoxTenderDocuments.Size = new System.Drawing.Size(257, 99);
             this.listBoxTenderDocuments.TabIndex = 17;
             // 
             // txtTenderDocuments
@@ -508,9 +640,9 @@
             this.txtTenderDocuments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtTenderDocuments.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenderDocuments.ForeColor = System.Drawing.Color.Black;
-            this.txtTenderDocuments.Location = new System.Drawing.Point(541, 14);
+            this.txtTenderDocuments.Location = new System.Drawing.Point(631, 14);
             this.txtTenderDocuments.Name = "txtTenderDocuments";
-            this.txtTenderDocuments.Size = new System.Drawing.Size(100, 26);
+            this.txtTenderDocuments.Size = new System.Drawing.Size(116, 26);
             this.txtTenderDocuments.TabIndex = 16;
             this.txtTenderDocuments.Text = "Documents";
             // 
@@ -522,9 +654,9 @@
             this.btnTenderRoles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnTenderRoles.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTenderRoles.ForeColor = System.Drawing.Color.Black;
-            this.btnTenderRoles.Location = new System.Drawing.Point(374, 13);
+            this.btnTenderRoles.Location = new System.Drawing.Point(436, 13);
             this.btnTenderRoles.Name = "btnTenderRoles";
-            this.btnTenderRoles.Size = new System.Drawing.Size(115, 24);
+            this.btnTenderRoles.Size = new System.Drawing.Size(134, 24);
             this.btnTenderRoles.TabIndex = 15;
             this.btnTenderRoles.Text = "Add Roles";
             this.btnTenderRoles.UseVisualStyleBackColor = false;
@@ -540,9 +672,9 @@
             this.listBoxTenderRoles.ForeColor = System.Drawing.Color.Black;
             this.listBoxTenderRoles.FormattingEnabled = true;
             this.listBoxTenderRoles.ItemHeight = 19;
-            this.listBoxTenderRoles.Location = new System.Drawing.Point(270, 46);
+            this.listBoxTenderRoles.Location = new System.Drawing.Point(315, 46);
             this.listBoxTenderRoles.Name = "listBoxTenderRoles";
-            this.listBoxTenderRoles.Size = new System.Drawing.Size(221, 99);
+            this.listBoxTenderRoles.Size = new System.Drawing.Size(257, 99);
             this.listBoxTenderRoles.TabIndex = 14;
             // 
             // txtTenderRoles
@@ -553,9 +685,9 @@
             this.txtTenderRoles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtTenderRoles.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenderRoles.ForeColor = System.Drawing.Color.Black;
-            this.txtTenderRoles.Location = new System.Drawing.Point(268, 14);
+            this.txtTenderRoles.Location = new System.Drawing.Point(313, 14);
             this.txtTenderRoles.Name = "txtTenderRoles";
-            this.txtTenderRoles.Size = new System.Drawing.Size(100, 26);
+            this.txtTenderRoles.Size = new System.Drawing.Size(116, 26);
             this.txtTenderRoles.TabIndex = 13;
             this.txtTenderRoles.Text = "Roles";
             // 
@@ -567,9 +699,9 @@
             this.btnTenderActivities.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnTenderActivities.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTenderActivities.ForeColor = System.Drawing.Color.Black;
-            this.btnTenderActivities.Location = new System.Drawing.Point(112, 13);
+            this.btnTenderActivities.Location = new System.Drawing.Point(131, 13);
             this.btnTenderActivities.Name = "btnTenderActivities";
-            this.btnTenderActivities.Size = new System.Drawing.Size(115, 24);
+            this.btnTenderActivities.Size = new System.Drawing.Size(134, 24);
             this.btnTenderActivities.TabIndex = 12;
             this.btnTenderActivities.Text = "Add Activities";
             this.btnTenderActivities.UseVisualStyleBackColor = false;
@@ -585,9 +717,9 @@
             this.listBoxTenderActivities.ForeColor = System.Drawing.Color.Black;
             this.listBoxTenderActivities.FormattingEnabled = true;
             this.listBoxTenderActivities.ItemHeight = 19;
-            this.listBoxTenderActivities.Location = new System.Drawing.Point(6, 46);
+            this.listBoxTenderActivities.Location = new System.Drawing.Point(7, 46);
             this.listBoxTenderActivities.Name = "listBoxTenderActivities";
-            this.listBoxTenderActivities.Size = new System.Drawing.Size(221, 99);
+            this.listBoxTenderActivities.Size = new System.Drawing.Size(257, 99);
             this.listBoxTenderActivities.TabIndex = 11;
             // 
             // txtTenderActivities
@@ -598,9 +730,9 @@
             this.txtTenderActivities.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtTenderActivities.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenderActivities.ForeColor = System.Drawing.Color.Black;
-            this.txtTenderActivities.Location = new System.Drawing.Point(6, 14);
+            this.txtTenderActivities.Location = new System.Drawing.Point(7, 14);
             this.txtTenderActivities.Name = "txtTenderActivities";
-            this.txtTenderActivities.Size = new System.Drawing.Size(100, 26);
+            this.txtTenderActivities.Size = new System.Drawing.Size(116, 26);
             this.txtTenderActivities.TabIndex = 10;
             this.txtTenderActivities.Text = "Activities";
             // 
@@ -624,7 +756,7 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 23);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(768, 403);
+            this.tabPage8.Size = new System.Drawing.Size(897, 403);
             this.tabPage8.TabIndex = 4;
             this.tabPage8.Text = "Procurement Process";
             // 
@@ -634,7 +766,7 @@
             this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.label11.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(213, 265);
+            this.label11.Location = new System.Drawing.Point(248, 265);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(304, 19);
             this.label11.TabIndex = 33;
@@ -647,7 +779,7 @@
             this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.label12.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(213, 236);
+            this.label12.Location = new System.Drawing.Point(248, 236);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(235, 19);
             this.label12.TabIndex = 32;
@@ -660,7 +792,7 @@
             this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.label13.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(213, 204);
+            this.label13.Location = new System.Drawing.Point(248, 204);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(365, 19);
             this.label13.TabIndex = 31;
@@ -672,9 +804,9 @@
             this.btnProcessDocuments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnProcessDocuments.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProcessDocuments.ForeColor = System.Drawing.Color.Black;
-            this.btnProcessDocuments.Location = new System.Drawing.Point(648, 13);
+            this.btnProcessDocuments.Location = new System.Drawing.Point(756, 13);
             this.btnProcessDocuments.Name = "btnProcessDocuments";
-            this.btnProcessDocuments.Size = new System.Drawing.Size(115, 24);
+            this.btnProcessDocuments.Size = new System.Drawing.Size(134, 24);
             this.btnProcessDocuments.TabIndex = 30;
             this.btnProcessDocuments.Text = "Add Documents";
             this.btnProcessDocuments.UseVisualStyleBackColor = false;
@@ -687,9 +819,9 @@
             this.listBoxProcessDocuments.ForeColor = System.Drawing.Color.Black;
             this.listBoxProcessDocuments.FormattingEnabled = true;
             this.listBoxProcessDocuments.ItemHeight = 19;
-            this.listBoxProcessDocuments.Location = new System.Drawing.Point(542, 46);
+            this.listBoxProcessDocuments.Location = new System.Drawing.Point(632, 46);
             this.listBoxProcessDocuments.Name = "listBoxProcessDocuments";
-            this.listBoxProcessDocuments.Size = new System.Drawing.Size(221, 99);
+            this.listBoxProcessDocuments.Size = new System.Drawing.Size(257, 99);
             this.listBoxProcessDocuments.TabIndex = 29;
             // 
             // txtProcessDocuments
@@ -697,9 +829,9 @@
             this.txtProcessDocuments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtProcessDocuments.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProcessDocuments.ForeColor = System.Drawing.Color.Black;
-            this.txtProcessDocuments.Location = new System.Drawing.Point(542, 14);
+            this.txtProcessDocuments.Location = new System.Drawing.Point(632, 14);
             this.txtProcessDocuments.Name = "txtProcessDocuments";
-            this.txtProcessDocuments.Size = new System.Drawing.Size(100, 26);
+            this.txtProcessDocuments.Size = new System.Drawing.Size(116, 26);
             this.txtProcessDocuments.TabIndex = 28;
             this.txtProcessDocuments.Text = "Documents";
             // 
@@ -708,9 +840,9 @@
             this.btnProcessRoles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnProcessRoles.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProcessRoles.ForeColor = System.Drawing.Color.Black;
-            this.btnProcessRoles.Location = new System.Drawing.Point(375, 13);
+            this.btnProcessRoles.Location = new System.Drawing.Point(437, 13);
             this.btnProcessRoles.Name = "btnProcessRoles";
-            this.btnProcessRoles.Size = new System.Drawing.Size(115, 24);
+            this.btnProcessRoles.Size = new System.Drawing.Size(134, 24);
             this.btnProcessRoles.TabIndex = 27;
             this.btnProcessRoles.Text = "Add Roles";
             this.btnProcessRoles.UseVisualStyleBackColor = false;
@@ -723,9 +855,9 @@
             this.listBoxProcessRoles.ForeColor = System.Drawing.Color.Black;
             this.listBoxProcessRoles.FormattingEnabled = true;
             this.listBoxProcessRoles.ItemHeight = 19;
-            this.listBoxProcessRoles.Location = new System.Drawing.Point(270, 46);
+            this.listBoxProcessRoles.Location = new System.Drawing.Point(315, 46);
             this.listBoxProcessRoles.Name = "listBoxProcessRoles";
-            this.listBoxProcessRoles.Size = new System.Drawing.Size(221, 99);
+            this.listBoxProcessRoles.Size = new System.Drawing.Size(257, 99);
             this.listBoxProcessRoles.TabIndex = 26;
             // 
             // txtProcessRoles
@@ -733,9 +865,9 @@
             this.txtProcessRoles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtProcessRoles.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProcessRoles.ForeColor = System.Drawing.Color.Black;
-            this.txtProcessRoles.Location = new System.Drawing.Point(269, 14);
+            this.txtProcessRoles.Location = new System.Drawing.Point(314, 14);
             this.txtProcessRoles.Name = "txtProcessRoles";
-            this.txtProcessRoles.Size = new System.Drawing.Size(100, 26);
+            this.txtProcessRoles.Size = new System.Drawing.Size(116, 26);
             this.txtProcessRoles.TabIndex = 25;
             this.txtProcessRoles.Text = "Roles";
             // 
@@ -744,9 +876,9 @@
             this.btnProcessActivities.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnProcessActivities.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProcessActivities.ForeColor = System.Drawing.Color.Black;
-            this.btnProcessActivities.Location = new System.Drawing.Point(113, 13);
+            this.btnProcessActivities.Location = new System.Drawing.Point(132, 13);
             this.btnProcessActivities.Name = "btnProcessActivities";
-            this.btnProcessActivities.Size = new System.Drawing.Size(115, 24);
+            this.btnProcessActivities.Size = new System.Drawing.Size(134, 24);
             this.btnProcessActivities.TabIndex = 24;
             this.btnProcessActivities.Text = "Add Activities";
             this.btnProcessActivities.UseVisualStyleBackColor = false;
@@ -759,9 +891,9 @@
             this.listBoxProcessActivities.ForeColor = System.Drawing.Color.Black;
             this.listBoxProcessActivities.FormattingEnabled = true;
             this.listBoxProcessActivities.ItemHeight = 19;
-            this.listBoxProcessActivities.Location = new System.Drawing.Point(7, 46);
+            this.listBoxProcessActivities.Location = new System.Drawing.Point(8, 46);
             this.listBoxProcessActivities.Name = "listBoxProcessActivities";
-            this.listBoxProcessActivities.Size = new System.Drawing.Size(221, 99);
+            this.listBoxProcessActivities.Size = new System.Drawing.Size(257, 99);
             this.listBoxProcessActivities.TabIndex = 23;
             // 
             // txtProcessActivities
@@ -769,9 +901,9 @@
             this.txtProcessActivities.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtProcessActivities.Font = new System.Drawing.Font("Helvetica Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProcessActivities.ForeColor = System.Drawing.Color.Black;
-            this.txtProcessActivities.Location = new System.Drawing.Point(7, 14);
+            this.txtProcessActivities.Location = new System.Drawing.Point(8, 14);
             this.txtProcessActivities.Name = "txtProcessActivities";
-            this.txtProcessActivities.Size = new System.Drawing.Size(100, 26);
+            this.txtProcessActivities.Size = new System.Drawing.Size(116, 26);
             this.txtProcessActivities.TabIndex = 22;
             this.txtProcessActivities.Text = "Activities";
             // 
@@ -781,7 +913,7 @@
             this.tabPage9.Location = new System.Drawing.Point(4, 23);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(768, 403);
+            this.tabPage9.Size = new System.Drawing.Size(897, 403);
             this.tabPage9.TabIndex = 5;
             this.tabPage9.Text = "Appendix";
             // 
@@ -790,9 +922,9 @@
             this.txtProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtProjectName.Font = new System.Drawing.Font("Helvetica Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProjectName.ForeColor = System.Drawing.Color.Black;
-            this.txtProjectName.Location = new System.Drawing.Point(181, 9);
+            this.txtProjectName.Location = new System.Drawing.Point(211, 9);
             this.txtProjectName.Name = "txtProjectName";
-            this.txtProjectName.Size = new System.Drawing.Size(100, 21);
+            this.txtProjectName.Size = new System.Drawing.Size(116, 21);
             this.txtProjectName.TabIndex = 4;
             this.txtProjectName.Text = "Project Name";
             // 
@@ -800,24 +932,24 @@
             // 
             this.btnSaveProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnSaveProjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSaveProjectName.Location = new System.Drawing.Point(287, 9);
+            this.btnSaveProjectName.Location = new System.Drawing.Point(335, 9);
             this.btnSaveProjectName.Name = "btnSaveProjectName";
-            this.btnSaveProjectName.Size = new System.Drawing.Size(105, 23);
+            this.btnSaveProjectName.Size = new System.Drawing.Size(122, 23);
             this.btnSaveProjectName.TabIndex = 7;
             this.btnSaveProjectName.Text = "Save Project Name";
             this.btnSaveProjectName.UseVisualStyleBackColor = false;
             // 
             // ProcurementPlanDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(800, 484);
+            this.ClientSize = new System.Drawing.Size(933, 484);
             this.Controls.Add(this.btnSaveProjectName);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.txtProjectName);
-            this.Font = new System.Drawing.Font("Helvetica Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "ProcurementPlanDocumentForm";
             this.Text = "ProcurementPlanDocumentForm";
