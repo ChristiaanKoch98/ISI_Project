@@ -20,6 +20,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
     public partial class TimesheetFormDocumentForm : Form
     {
         VersionControl<TimeSheetModel> versionControl;
+        ProjectPlanModel newProjectPlanModel;
+        ProjectPlanModel currentProjectPlanModel;
+        ProjectModel projectModel = new ProjectModel();
         TimeSheetModel newTimeSheetModel;
         TimeSheetModel currentTimeSheetModel;
 
@@ -35,6 +38,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void btnSaveTimesheetForm_Click(object sender, EventArgs e)
         {
+            /*
             string timesheetProjectName = txtTimesheetFormProjectName.Text; //Add an if statement to make sure project name on timesheet form matches project name above timesheet form
             string timesheetProjectManager = txtTimesheetFormProjectManager.Text;
             string timesheetTeamMember = txtTimesheetFormTeamMember.Text;
@@ -46,7 +50,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             string approvedbyProjectRole = txtApprovedByProjectRole.Text;
             string approvedbySignature = txtApprovedBySignature.Text;
             string approvedbyDate = dateTimePickerApprovedBy.Text;
-            //Grid view on this page i believe is used to showcase all inputed information that must be saved to database
+            //Grid view on this page i believe is used to showcase all inputed information that must be saved to database*/
 
         }
 
@@ -55,10 +59,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             string projectName = txtProjectName.Text;
             SaveDocument();
         }
-
-        private void TimesheetFormDocumentForm_Load(object sender, EventArgs e)
+        
+        private void TimesheetFormDocumentForm_Load_1(object sender, EventArgs e)
         {
             loadDocument();
+            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtProjectName.Text = projectModel.ProjectName;
         }
 
         //Back-End
@@ -134,6 +142,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentTimeSheetModel = JsonConvert.DeserializeObject<TimeSheetModel>(JsonConvert.SerializeObject(newTimeSheetModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "TimeSheet");
                 MessageBox.Show("Time sheet saved successfully", "save", MessageBoxButtons.OK);
             }
@@ -189,12 +198,16 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl = new VersionControl<TimeSheetModel>();
                 versionControl.DocumentModels = new List<VersionControl<TimeSheetModel>.DocumentModel>();
                 newTimeSheetModel = new TimeSheetModel();
+                newTimeSheetModel.timeSheetForm = new TimeSheetModel.TimeSheetForm();
             }
         }
-
-        private void btn_Export_Click(object sender, EventArgs e)
+        private void btnExportToWord_Click(object sender, EventArgs e)
         {
             exportToWord();
+        }
+        private void btn_Export_Click(object sender, EventArgs e)
+        {
+            
         }
 
         private void exportToWord()
@@ -298,7 +311,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         documentTimeSheet.Rows[3].Cells[7].FillColor = TABLE_SUBHEADER_THIRD_COLOR;
                         documentTimeSheet.Rows[3].Cells[8].FillColor = TABLE_SUBHEADER_THIRD_COLOR;
 
-                        for (int i = 0; i < currentTimeSheetModel.timeSheetForm.timeSpents.Count; i++)
+                        for (int i = 0; i < currentTimeSheetModel.timeSheetForm.timeSpents.Count - 1; i++)
                         {
                             documentTimeSheet.Rows[4 + i].Cells[0].Paragraphs[0].Append(currentTimeSheetModel.timeSheetForm.timeSpents[i].date);
                             documentTimeSheet.Rows[4 + i].Cells[1].Paragraphs[0].Append(currentTimeSheetModel.timeSheetForm.timeSpents[i].startTime);
@@ -306,13 +319,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             documentTimeSheet.Rows[4 + i].Cells[3].Paragraphs[0].Append(currentTimeSheetModel.timeSheetForm.timeSpents[i].duration);
                         }
 
-                        for (int i = 0; i < currentTimeSheetModel.timeSheetForm.tasksCompleted.Count; i++)
+                        for (int i = 0; i < currentTimeSheetModel.timeSheetForm.tasksCompleted.Count - 1; i++)
                         {
                             documentTimeSheet.Rows[4 + i].Cells[4].Paragraphs[0].Append(currentTimeSheetModel.timeSheetForm.tasksCompleted[i].activity);
                             documentTimeSheet.Rows[4 + i].Cells[5].Paragraphs[0].Append(currentTimeSheetModel.timeSheetForm.tasksCompleted[i].task);
                         }
 
-                        for (int i = 0; i < currentTimeSheetModel.timeSheetForm.deliverablesProduced.Count; i++)
+                        for (int i = 0; i < currentTimeSheetModel.timeSheetForm.deliverablesProduced.Count - 1; i++)
                         {
                             documentTimeSheet.Rows[4 + i].Cells[6].Paragraphs[0].Append(currentTimeSheetModel.timeSheetForm.deliverablesProduced[i].startPercentComplete);
                             documentTimeSheet.Rows[4 + i].Cells[7].Paragraphs[0].Append(currentTimeSheetModel.timeSheetForm.deliverablesProduced[i].endPercentComplete);
@@ -405,5 +418,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             return string.Format(format, list);
         }
+
+        
     }
 }
