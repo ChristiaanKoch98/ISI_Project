@@ -615,7 +615,5 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
         }
-
-       
     }
 }

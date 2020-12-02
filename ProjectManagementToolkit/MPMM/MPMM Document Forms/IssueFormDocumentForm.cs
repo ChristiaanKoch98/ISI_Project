@@ -28,12 +28,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             InitializeComponent();
         }
 
-        private void btnSave_Click_1(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
             saveDocument();
         }
 
-        private void IssueFormDocumentForm_Load_1(object sender, EventArgs e)
+        private void IssueFormDocumentForm_Load(object sender, EventArgs e)
         {
             loadDocument();
             string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
@@ -43,7 +43,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         }
 
-        private void btnExport_Click_1(object sender, EventArgs e)
+        private void btnExport_Click(object sender, EventArgs e)
         {
             exportToWord();
         }
@@ -266,9 +266,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                     }
                 }
             }
-
-
-
         }
     }
 }

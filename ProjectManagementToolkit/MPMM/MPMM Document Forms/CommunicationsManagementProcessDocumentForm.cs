@@ -77,8 +77,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                     .Add(new CommunicationsManagementProcessModel.DocumentApproval(role,name,signature,date));
             }
 
-            newCommunicationsManagementProcessModel.CommunicationsDocumentsIntro = txtIntro.Text;
-            newCommunicationsManagementProcessModel.Overview = txtOverview.Text;
+            //newCommunicationsManagementProcessModel.CommunicationsDocumentsIntro = .Text;
+            //newCommunicationsManagementProcessModel.Overview = txtOverview.Text;
             newCommunicationsManagementProcessModel.CreateMessage = createMessage.Text;
             newCommunicationsManagementProcessModel.CommunicateMessage = communicateMessage.Text;
             newCommunicationsManagementProcessModel.CommunicationsTeam = communicationsTeam.Text;
@@ -140,8 +140,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                     documentApprovals.Rows.Add(new string[] { row.Role, row.Name, "", row.DateApproved });
                 }
 
-                txtOverview.Text = currentCommunicationsManagementProcessModel.Overview;
-                txtIntro.Text = currentCommunicationsManagementProcessModel.CommunicationsDocumentsIntro;
+                //txtOverview.Text = currentCommunicationsManagementProcessModel.Overview;
+                //txtIntro.Text = currentCommunicationsManagementProcessModel.CommunicationsDocumentsIntro;
                 createMessage.Text = currentCommunicationsManagementProcessModel.CreateMessage;
                 communicateMessage.Text = currentCommunicationsManagementProcessModel.CommunicateMessage;
                 communicationsTeam.Text = currentCommunicationsManagementProcessModel.CommunicationsTeam;
@@ -451,6 +451,5 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 }
             }
         }
-      
     }
 }

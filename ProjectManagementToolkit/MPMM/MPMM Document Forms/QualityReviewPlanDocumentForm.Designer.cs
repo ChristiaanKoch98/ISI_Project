@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tbpQualityOfProcess = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -65,8 +65,8 @@
             this.txtQualityOfDeliverables = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.txtQualityReviewFormProjectName = new System.Windows.Forms.TextBox();
-            this.btnQualityReviewForm_MainMenue = new System.Windows.Forms.Button();
-            this.btnQualityReviewForm_EnterProjectName = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.tbpQualityOfProcess.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -86,10 +86,10 @@
             this.tbpQualityOfProcess.Controls.Add(this.panel1);
             this.tbpQualityOfProcess.Controls.Add(this.dataGridViewQualityOfProcess);
             this.tbpQualityOfProcess.Controls.Add(this.txtQualityOfProcess);
-            this.tbpQualityOfProcess.Location = new System.Drawing.Point(4, 21);
+            this.tbpQualityOfProcess.Location = new System.Drawing.Point(4, 25);
             this.tbpQualityOfProcess.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpQualityOfProcess.Name = "tbpQualityOfProcess";
-            this.tbpQualityOfProcess.Size = new System.Drawing.Size(1291, 594);
+            this.tbpQualityOfProcess.Size = new System.Drawing.Size(1291, 590);
             this.tbpQualityOfProcess.TabIndex = 3;
             this.tbpQualityOfProcess.Text = "Quality of Process";
             // 
@@ -110,7 +110,7 @@
             this.label2.Location = new System.Drawing.Point(136, 8);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 17);
+            this.label2.Size = new System.Drawing.Size(155, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Quality Achieved";
             // 
@@ -131,7 +131,7 @@
             this.label1.Location = new System.Drawing.Point(370, 8);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 17);
+            this.label1.Size = new System.Drawing.Size(146, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Project Process";
             // 
@@ -139,14 +139,14 @@
             // 
             this.dataGridViewQualityOfProcess.AllowUserToOrderColumns = true;
             this.dataGridViewQualityOfProcess.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewQualityOfProcess.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewQualityOfProcess.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dataGridViewQualityOfProcess.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewQualityOfProcess.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Process,
@@ -158,18 +158,18 @@
             this.dataGridViewQualityOfProcess.Location = new System.Drawing.Point(15, 136);
             this.dataGridViewQualityOfProcess.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dataGridViewQualityOfProcess.Name = "dataGridViewQualityOfProcess";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewQualityOfProcess.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewQualityOfProcess.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridViewQualityOfProcess.RowHeadersWidth = 51;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewQualityOfProcess.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewQualityOfProcess.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridViewQualityOfProcess.Size = new System.Drawing.Size(1259, 438);
             this.dataGridViewQualityOfProcess.TabIndex = 11;
             // 
@@ -243,10 +243,10 @@
             this.tbpQualityOfDeliverables.Controls.Add(this.panel3);
             this.tbpQualityOfDeliverables.Controls.Add(this.panel4);
             this.tbpQualityOfDeliverables.Controls.Add(this.txtQualityOfDeliverables);
-            this.tbpQualityOfDeliverables.Location = new System.Drawing.Point(4, 21);
+            this.tbpQualityOfDeliverables.Location = new System.Drawing.Point(4, 25);
             this.tbpQualityOfDeliverables.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpQualityOfDeliverables.Name = "tbpQualityOfDeliverables";
-            this.tbpQualityOfDeliverables.Size = new System.Drawing.Size(1291, 594);
+            this.tbpQualityOfDeliverables.Size = new System.Drawing.Size(1291, 590);
             this.tbpQualityOfDeliverables.TabIndex = 4;
             this.tbpQualityOfDeliverables.Text = "Quality of Deliverables";
             // 
@@ -254,14 +254,14 @@
             // 
             this.dataGridViewQualityOfDeliverables.AllowUserToOrderColumns = true;
             this.dataGridViewQualityOfDeliverables.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewQualityOfDeliverables.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewQualityOfDeliverables.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridViewQualityOfDeliverables.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewQualityOfDeliverables.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Requirement,
@@ -275,18 +275,18 @@
             this.dataGridViewQualityOfDeliverables.Location = new System.Drawing.Point(15, 136);
             this.dataGridViewQualityOfDeliverables.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dataGridViewQualityOfDeliverables.Name = "dataGridViewQualityOfDeliverables";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewQualityOfDeliverables.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewQualityOfDeliverables.RowHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridViewQualityOfDeliverables.RowHeadersWidth = 51;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewQualityOfDeliverables.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewQualityOfDeliverables.RowsDefaultCellStyle = dataGridViewCellStyle18;
             this.dataGridViewQualityOfDeliverables.Size = new System.Drawing.Size(1261, 442);
             this.dataGridViewQualityOfDeliverables.TabIndex = 19;
             // 
@@ -356,7 +356,7 @@
             this.label5.Location = new System.Drawing.Point(124, 12);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 17);
+            this.label5.Size = new System.Drawing.Size(155, 22);
             this.label5.TabIndex = 1;
             this.label5.Text = "Quality Achieved";
             // 
@@ -377,7 +377,7 @@
             this.label3.Location = new System.Drawing.Point(78, 12);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 17);
+            this.label3.Size = new System.Drawing.Size(129, 22);
             this.label3.TabIndex = 1;
             this.label3.Text = "Quality Target";
             // 
@@ -398,7 +398,7 @@
             this.label4.Location = new System.Drawing.Point(247, 11);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 17);
+            this.label4.Size = new System.Drawing.Size(172, 22);
             this.label4.TabIndex = 0;
             this.label4.Text = "Project Deliverable";
             // 
@@ -422,7 +422,7 @@
             this.label27.Location = new System.Drawing.Point(16, 21);
             this.label27.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(183, 14);
+            this.label27.Size = new System.Drawing.Size(239, 16);
             this.label27.TabIndex = 14;
             this.label27.Text = "Please Enter Your Project Name:";
             // 
@@ -431,46 +431,48 @@
             this.txtQualityReviewFormProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.txtQualityReviewFormProjectName.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQualityReviewFormProjectName.ForeColor = System.Drawing.Color.Black;
-            this.txtQualityReviewFormProjectName.Location = new System.Drawing.Point(209, 18);
+            this.txtQualityReviewFormProjectName.Location = new System.Drawing.Point(265, 18);
             this.txtQualityReviewFormProjectName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtQualityReviewFormProjectName.Name = "txtQualityReviewFormProjectName";
-            this.txtQualityReviewFormProjectName.Size = new System.Drawing.Size(383, 20);
+            this.txtQualityReviewFormProjectName.Size = new System.Drawing.Size(383, 24);
             this.txtQualityReviewFormProjectName.TabIndex = 13;
             this.txtQualityReviewFormProjectName.Text = "Project Name";
             // 
-            // btnQualityReviewForm_MainMenue
+            // btnExport
             // 
-            this.btnQualityReviewForm_MainMenue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnQualityReviewForm_MainMenue.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnQualityReviewForm_MainMenue.ForeColor = System.Drawing.Color.Black;
-            this.btnQualityReviewForm_MainMenue.Location = new System.Drawing.Point(716, 15);
-            this.btnQualityReviewForm_MainMenue.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnQualityReviewForm_MainMenue.Name = "btnQualityReviewForm_MainMenue";
-            this.btnQualityReviewForm_MainMenue.Size = new System.Drawing.Size(130, 26);
-            this.btnQualityReviewForm_MainMenue.TabIndex = 18;
-            this.btnQualityReviewForm_MainMenue.Text = "Back to Main Menu";
-            this.btnQualityReviewForm_MainMenue.UseVisualStyleBackColor = false;
+            this.btnExport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExport.ForeColor = System.Drawing.Color.Black;
+            this.btnExport.Location = new System.Drawing.Point(785, 16);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(130, 26);
+            this.btnExport.TabIndex = 18;
+            this.btnExport.Text = "Export to Word";
+            this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
-            // btnQualityReviewForm_EnterProjectName
+            // btnSave
             // 
-            this.btnQualityReviewForm_EnterProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnQualityReviewForm_EnterProjectName.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnQualityReviewForm_EnterProjectName.Location = new System.Drawing.Point(601, 15);
-            this.btnQualityReviewForm_EnterProjectName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnQualityReviewForm_EnterProjectName.Name = "btnQualityReviewForm_EnterProjectName";
-            this.btnQualityReviewForm_EnterProjectName.Size = new System.Drawing.Size(107, 26);
-            this.btnQualityReviewForm_EnterProjectName.TabIndex = 17;
-            this.btnQualityReviewForm_EnterProjectName.Text = "Enter";
-            this.btnQualityReviewForm_EnterProjectName.UseVisualStyleBackColor = false;
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSave.Location = new System.Drawing.Point(670, 16);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(107, 26);
+            this.btnSave.TabIndex = 17;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // QualityReviewPlanDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1332, 687);
-            this.Controls.Add(this.btnQualityReviewForm_MainMenue);
-            this.Controls.Add(this.btnQualityReviewForm_EnterProjectName);
+            this.Controls.Add(this.btnExport);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tbcQualityReviewForm);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.txtQualityReviewFormProjectName);
@@ -479,6 +481,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "QualityReviewPlanDocumentForm";
             this.Text = "Quality Review Form";
+            this.Load += new System.EventHandler(this.QualityReviewPlanDocumentForm_Load);
             this.tbpQualityOfProcess.ResumeLayout(false);
             this.tbpQualityOfProcess.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -509,8 +512,8 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox txtQualityReviewFormProjectName;
         private System.Windows.Forms.TabPage tbpQualityOfProcess;
-        private System.Windows.Forms.Button btnQualityReviewForm_MainMenue;
-        private System.Windows.Forms.Button btnQualityReviewForm_EnterProjectName;
+        private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
