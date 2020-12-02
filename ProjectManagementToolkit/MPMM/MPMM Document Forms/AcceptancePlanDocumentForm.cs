@@ -33,7 +33,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void AcceptancePlanDocumentForm_Load(object sender, EventArgs e)
         {
-            loadDocument();
             dataGridViewCriteria.Columns.Add("miName1", "Milestone Name");
             dataGridViewCriteria.Columns.Add("AcceptanceCriteria", "Acceptance Criteria");
             dataGridViewCriteria.Columns.Add("AcceptanceStandards", "Acceptance Standards");
@@ -42,13 +41,19 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             dataGridViewSchedule.Columns.Add("Deliverables", "Deliverables");
             dataGridViewSchedule.Columns.Add("MilDate", "Milestone Date");
             dataGridViewSchedule.Columns.Add("ReviewMethod", "Review Method");
+            dataGridViewSchedule.Columns.Add("ReviewMethod", "Reviewers");
             dataGridViewSchedule.Columns.Add("AccDate", "Acceptance Date");
+            loadDocument();
         }
 
-        private void btnSaveProjectName_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
-            string projectName = txtProjectName.Text;
             SaveDocument();
+        }
+
+        private void btnExportToWord_Click(object sender, EventArgs e)
+        {
+            exportToWord();
         }
 
         private void btnCompanyOverview_Click(object sender, EventArgs e)
@@ -93,7 +98,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<AcceptancePlanModel.DocumentHistory> documentHistories = new List<AcceptancePlanModel.DocumentHistory>();
 
-            int versionRowCount = dataGridViewDocumentHistory.Rows.Count;
+            int versionRowCount = dataGridViewDocumentHistory.Rows.Count-1;
 
             for (int i = 0; i < versionRowCount; i++)
             {
@@ -110,7 +115,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<AcceptancePlanModel.DocumentApprovals> documentApprovals = new List<AcceptancePlanModel.DocumentApprovals>();
 
-            int approvalRowsCount = dataGridViewDocumentApprovals.Rows.Count;
+            int approvalRowsCount = dataGridViewDocumentApprovals.Rows.Count-1;
 
             for (int i = 0; i < approvalRowsCount; i++)
             {
@@ -130,7 +135,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<AcceptancePlanModel.DocumentMilestones> documentMilestones = new List<AcceptancePlanModel.DocumentMilestones>();
 
-            int milstonesRowCount = dataGridViewMilestones.Rows.Count;
+            int milstonesRowCount = dataGridViewMilestones.Rows.Count - 1;
 
             for (int i = 0; i < milstonesRowCount; i++)
             {
@@ -148,7 +153,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<AcceptancePlanModel.DocumentCriteria> documentCriterias = new List<AcceptancePlanModel.DocumentCriteria>();
 
-            int criteriaRowCount = dataGridViewCriteria.Rows.Count;
+            int criteriaRowCount = dataGridViewCriteria.Rows.Count - 1;
 
             for (int i = 0; i < criteriaRowCount; i++)
             {
@@ -166,7 +171,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<AcceptancePlanModel.DocumentSchedule> documentSchedules = new List<AcceptancePlanModel.DocumentSchedule>();
 
-            int scheduleRowCount = dataGridViewSchedule.Rows.Count;
+            int scheduleRowCount = dataGridViewSchedule.Rows.Count - 1;
 
             for (int i = 0; i < scheduleRowCount; i++)
             {
@@ -202,7 +207,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 documentModels.Add(documentModel);
                 versionControl.DocumentModels = documentModels;
-
+                currentAcceptancePlanModel = JsonConvert.DeserializeObject<AcceptancePlanModel>(JsonConvert.SerializeObject(newAcceptancePlanModel));
                 string json = JsonConvert.SerializeObject(versionControl);
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "AcceptancePlan");
                 MessageBox.Show("Acceptance plan saved successfully", "save", MessageBoxButtons.OK);

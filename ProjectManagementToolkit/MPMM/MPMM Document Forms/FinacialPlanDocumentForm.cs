@@ -68,7 +68,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<FinancialPlanModel.DocumentHistory> documentHistories = new List<FinancialPlanModel.DocumentHistory>();
 
-            int versionRowCount = dataGridViewDocumentHistory.Rows.Count;
+            int versionRowCount = dataGridViewDocumentHistory.Rows.Count - 1;
 
             for (int i = 0; i < versionRowCount; i++)
             {
@@ -85,7 +85,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<FinancialPlanModel.DocumentApprovals> documentApprovals = new List<FinancialPlanModel.DocumentApprovals>();
 
-            int approvalRowsCount = dataGridViewDocumentApprovals.Rows.Count;
+            int approvalRowsCount = dataGridViewDocumentApprovals.Rows.Count - 1;
 
             for (int i = 0; i < approvalRowsCount; i++)
             {
@@ -105,7 +105,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<FinancialPlanModel.DocumentLabor> documentLabors = new List<FinancialPlanModel.DocumentLabor>();
 
-            int labourCount = dataGridViewLabour.Rows.Count;
+            int labourCount = dataGridViewLabour.Rows.Count - 1;
 
             for (int i = 0; i < labourCount; i++)
             {
@@ -121,7 +121,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<FinancialPlanModel.DocumentEquipment> documentEquipments = new List<FinancialPlanModel.DocumentEquipment>();
 
-            int equipmentCount = dataGridViewEquipment.Rows.Count;
+            int equipmentCount = dataGridViewEquipment.Rows.Count - 1;
 
             for (int i = 0; i < equipmentCount; i++)
             {
@@ -137,7 +137,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<FinancialPlanModel.DocumentMaterial> documentMaterials = new List<FinancialPlanModel.DocumentMaterial>();
 
-            int materialCount = dataGridViewMaterials.Rows.Count;
+            int materialCount = dataGridViewMaterials.Rows.Count - 1;
 
             for (int i = 0; i < materialCount; i++)
             {
@@ -153,7 +153,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<FinancialPlanModel.DocumentSupplier> documentSuppliers = new List<FinancialPlanModel.DocumentSupplier>();
 
-            int supplierCount = dataGridViewSuppliers.Rows.Count;
+            int supplierCount = dataGridViewSuppliers.Rows.Count - 1;
 
             for (int i = 0; i < supplierCount; i++)
             {
@@ -169,7 +169,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<FinancialPlanModel.DocumentAdministration> documentAdministrations = new List<FinancialPlanModel.DocumentAdministration>();
 
-            int adminCount = dataGridViewAdmin.Rows.Count;
+            int adminCount = dataGridViewAdmin.Rows.Count - 1;
 
             for (int i = 0; i < adminCount; i++)
             {
@@ -185,7 +185,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<FinancialPlanModel.DocumentOther> documentOthers = new List<FinancialPlanModel.DocumentOther>();
 
-            int otherCount = dataGridViewOther.Rows.Count;
+            int otherCount = dataGridViewOther.Rows.Count - 1;
 
             for (int i = 0; i < otherCount; i++)
             {
@@ -201,7 +201,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<FinancialPlanModel.DocumentSchedule.Expense> expenses = new List<FinancialPlanModel.DocumentSchedule.Expense>();
 
-            int scheduleCount = dataGridView1.Rows.Count;
+            int scheduleCount = dataGridView1.Rows.Count - 1;
 
             for (int i = 0; i < scheduleCount; i++)
             {
@@ -232,6 +232,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 documentModels.Add(documentModel);
                 versionControl.DocumentModels = documentModels;
+                currentFinancialPlanModel = JsonConvert.DeserializeObject<FinancialPlanModel>(JsonConvert.SerializeObject(newFinancialPlanModel));
 
                 string json = JsonConvert.SerializeObject(versionControl);
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "FinancialPlan");
@@ -961,6 +962,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             dataGridView1.Columns.Add("Nov", "Nov");
             dataGridView1.Columns.Add("Dec", "Dec");
             dataGridView1.Columns.Add("Total", "Total");
+            loadDocument();
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            exportToWord();
         }
     }
 }

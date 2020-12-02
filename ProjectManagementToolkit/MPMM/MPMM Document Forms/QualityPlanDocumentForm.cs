@@ -72,6 +72,21 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             listBoxQualityDocuments.Items.Add(addQualityDocs);
         }
 
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            SaveDocument();
+        }
+
+        private void btnExportToWord_Click(object sender, EventArgs e)
+        {
+            exportToWord();
+        }
+
+        private void QualityPlanDocumentForm_Load_1(object sender, EventArgs e)
+        {
+            loadDocument();
+        }
+
         //Back-End
         public void SaveDocument()
         {
@@ -83,7 +98,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<QualityPlanModel.DocumentHistory> documentHistories = new List<QualityPlanModel.DocumentHistory>();
 
-            int versionRowCount = dataGridViewDocumentHistory.Rows.Count;
+            int versionRowCount = dataGridViewDocumentHistory.Rows.Count-1;
 
             for (int i = 0; i < versionRowCount; i++)
             {
@@ -100,7 +115,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<QualityPlanModel.DocumentApprovals> documentApprovals = new List<QualityPlanModel.DocumentApprovals>();
 
-            int approvalRowsCount = dataGridViewDocumentApprovals.Rows.Count;
+            int approvalRowsCount = dataGridViewDocumentApprovals.Rows.Count-1;
 
             for (int i = 0; i < approvalRowsCount; i++)
             {
@@ -120,7 +135,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<QualityPlanModel.DocumentQualityTargets> documentQualityTargets = new List<QualityPlanModel.DocumentQualityTargets>();
 
-            int qualTargetCount = dataGridViewQualityTargets.Rows.Count;
+            int qualTargetCount = dataGridViewQualityTargets.Rows.Count-1;
 
             for (int i = 0; i < qualTargetCount; i++)
             {
@@ -140,7 +155,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<QualityPlanModel.DocumentQualityAssurance> documentQualityAssurances = new List<QualityPlanModel.DocumentQualityAssurance>();
 
-            int qualAssuranceCount = dataGridViewQAP.Rows.Count;
+            int qualAssuranceCount = dataGridViewQAP.Rows.Count-1;
 
             for (int i = 0; i < qualAssuranceCount; i++)
             {
@@ -189,7 +204,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 documentModels.Add(documentModel);
                 versionControl.DocumentModels = documentModels;
-
+                currentQualityPlanModel = JsonConvert.DeserializeObject<QualityPlanModel>(JsonConvert.SerializeObject(newQualityPlanModel));
                 string json = JsonConvert.SerializeObject(versionControl);
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "QualityPlan");
                 MessageBox.Show("Quality plan saved successfully", "save", MessageBoxButtons.OK);

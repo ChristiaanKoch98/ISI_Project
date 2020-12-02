@@ -127,9 +127,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             listBoxProcessDocuments.Items.Add(processDocuments);
         }
 
-        private void btnSaveProjectName_Click(object sender, EventArgs e)
+        private void btnSaveProjectName_Click_1(object sender, EventArgs e)
         {
             SaveDocument();
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            exportToWord();
         }
 
         public void SaveDocument()
@@ -142,7 +147,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<ProcurementPlanModel.DocumentHistory> documentHistories = new List<ProcurementPlanModel.DocumentHistory>();
 
-            int versionRowCount = dataGridViewDocumentHistory.Rows.Count;
+            int versionRowCount = dataGridViewDocumentHistory.Rows.Count-1;
 
             for (int i = 0; i < versionRowCount; i++)
             {
@@ -159,7 +164,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<ProcurementPlanModel.DocumentApprovals> documentApprovals = new List<ProcurementPlanModel.DocumentApprovals>();
 
-            int approvalRowsCount = dataGridViewDocumentApprovals.Rows.Count;
+            int approvalRowsCount = dataGridViewDocumentApprovals.Rows.Count-1;
 
             for (int i = 0; i < approvalRowsCount; i++)
             {
@@ -179,7 +184,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<ProcurementPlanModel.DocumentRequirements> documentRequirements = new List<ProcurementPlanModel.DocumentRequirements>();
 
-            int requirementsCount = dataGridViewRequirements.Rows.Count;
+            int requirementsCount = dataGridViewRequirements.Rows.Count-1;
 
             for (int i = 0; i < requirementsCount; i++)
             {
@@ -201,7 +206,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<ProcurementPlanModel.DocumentMarketResearch> documentMarketResearches = new List<ProcurementPlanModel.DocumentMarketResearch>();
 
-            int researchCount = dataGridViewMarketResearch.Rows.Count;
+            int researchCount = dataGridViewMarketResearch.Rows.Count-1;
 
             for (int i = 0; i < researchCount; i++)
             {

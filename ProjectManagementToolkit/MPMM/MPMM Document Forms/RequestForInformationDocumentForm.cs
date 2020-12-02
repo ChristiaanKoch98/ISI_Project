@@ -105,7 +105,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<RequestForInformationModel.DocumentHistory> documentHistories = new List<RequestForInformationModel.DocumentHistory>();
 
-            int versionRowCount = dataGridViewDocumentHistory.Rows.Count;
+            int versionRowCount = dataGridViewDocumentHistory.Rows.Count-1;
 
             for (int i = 0; i < versionRowCount; i++)
             {
@@ -122,7 +122,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<RequestForInformationModel.DocumentApprovals> documentApprovals = new List<RequestForInformationModel.DocumentApprovals>();
 
-            int approvalRowsCount = dataGridViewDocumentApprovals.Rows.Count;
+            int approvalRowsCount = dataGridViewDocumentApprovals.Rows.Count-1;
 
             for (int i = 0; i < approvalRowsCount; i++)
             {
