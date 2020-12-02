@@ -28,6 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProcurementManagementProcess));
             this.DocumentControlTab = new System.Windows.Forms.TabControl();
             this.DocumentControl = new System.Windows.Forms.TabPage();
@@ -36,16 +45,13 @@
             this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Signature = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DocumentApproval = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.Version = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Changes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DocumentHistory = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DocumentInformation = new System.Windows.Forms.Label();
             this.ProcurementProcess = new System.Windows.Forms.TabPage();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.ManageSupplierContract = new System.Windows.Forms.Label();
@@ -57,17 +63,21 @@
             this.Overview = new System.Windows.Forms.Label();
             this.procurement = new System.Windows.Forms.TextBox();
             this.ProcurementRoles = new System.Windows.Forms.TabPage();
-            this.ProcurementDocuments = new System.Windows.Forms.TabPage();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.ProcurementManager = new System.Windows.Forms.Label();
-            this.ProjectManager = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.PurchaseOrderForm = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.ProjectManager = new System.Windows.Forms.Label();
+            this.ProcurementManager = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.ProcurementDocuments = new System.Windows.Forms.TabPage();
             this.ProcurementRegister = new System.Windows.Forms.Label();
+            this.PurchaseOrderForm = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.documentInformationTab = new System.Windows.Forms.TabPage();
+            this.documentHistoryTab = new System.Windows.Forms.TabPage();
+            this.documentApprovalTab = new System.Windows.Forms.TabPage();
             this.DocumentControlTab.SuspendLayout();
             this.DocumentControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -76,6 +86,10 @@
             this.ProcurementProcess.SuspendLayout();
             this.ProcurementRoles.SuspendLayout();
             this.ProcurementDocuments.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.documentInformationTab.SuspendLayout();
+            this.documentHistoryTab.SuspendLayout();
+            this.documentApprovalTab.SuspendLayout();
             this.SuspendLayout();
             // 
             // DocumentControlTab
@@ -84,6 +98,7 @@
             this.DocumentControlTab.Controls.Add(this.ProcurementProcess);
             this.DocumentControlTab.Controls.Add(this.ProcurementRoles);
             this.DocumentControlTab.Controls.Add(this.ProcurementDocuments);
+            this.DocumentControlTab.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DocumentControlTab.Location = new System.Drawing.Point(27, 12);
             this.DocumentControlTab.Name = "DocumentControlTab";
             this.DocumentControlTab.SelectedIndex = 0;
@@ -92,32 +107,47 @@
             // 
             // DocumentControl
             // 
-            this.DocumentControl.Controls.Add(this.dataGridView3);
-            this.DocumentControl.Controls.Add(this.DocumentApproval);
-            this.DocumentControl.Controls.Add(this.dataGridView2);
-            this.DocumentControl.Controls.Add(this.DocumentHistory);
-            this.DocumentControl.Controls.Add(this.dataGridView1);
-            this.DocumentControl.Controls.Add(this.DocumentInformation);
+            this.DocumentControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.DocumentControl.Controls.Add(this.tabControl1);
             this.DocumentControl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.DocumentControl.Location = new System.Drawing.Point(4, 22);
+            this.DocumentControl.Location = new System.Drawing.Point(4, 23);
             this.DocumentControl.Name = "DocumentControl";
             this.DocumentControl.Padding = new System.Windows.Forms.Padding(3);
-            this.DocumentControl.Size = new System.Drawing.Size(612, 714);
+            this.DocumentControl.Size = new System.Drawing.Size(612, 713);
             this.DocumentControl.TabIndex = 0;
             this.DocumentControl.Text = "Document Control";
-            this.DocumentControl.UseVisualStyleBackColor = true;
             // 
             // dataGridView3
             // 
+            this.dataGridView3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Role,
             this.Name,
             this.Signature,
             this.Date});
-            this.dataGridView3.Location = new System.Drawing.Point(7, 395);
+            this.dataGridView3.EnableHeadersVisualStyles = false;
+            this.dataGridView3.Location = new System.Drawing.Point(0, 9);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(311, 150);
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView3.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridView3.Size = new System.Drawing.Size(465, 134);
             this.dataGridView3.TabIndex = 5;
             // 
             // Role
@@ -140,26 +170,36 @@
             this.Date.HeaderText = "Date";
             this.Date.Name = "Date";
             // 
-            // DocumentApproval
-            // 
-            this.DocumentApproval.AutoSize = true;
-            this.DocumentApproval.ForeColor = System.Drawing.Color.Blue;
-            this.DocumentApproval.Location = new System.Drawing.Point(9, 369);
-            this.DocumentApproval.Name = "DocumentApproval";
-            this.DocumentApproval.Size = new System.Drawing.Size(101, 13);
-            this.DocumentApproval.TabIndex = 4;
-            this.DocumentApproval.Text = "Document Approval";
-            // 
             // dataGridView2
             // 
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Version,
             this.IssueDate,
             this.Changes});
-            this.dataGridView2.Location = new System.Drawing.Point(6, 212);
+            this.dataGridView2.EnableHeadersVisualStyles = false;
+            this.dataGridView2.Location = new System.Drawing.Point(6, 16);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(312, 150);
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView2.Size = new System.Drawing.Size(362, 116);
             this.dataGridView2.TabIndex = 3;
             // 
             // Version
@@ -177,26 +217,36 @@
             this.Changes.HeaderText = "Changes";
             this.Changes.Name = "Changes";
             // 
-            // DocumentHistory
-            // 
-            this.DocumentHistory.AutoSize = true;
-            this.DocumentHistory.ForeColor = System.Drawing.Color.Blue;
-            this.DocumentHistory.Location = new System.Drawing.Point(6, 196);
-            this.DocumentHistory.Name = "DocumentHistory";
-            this.DocumentHistory.Size = new System.Drawing.Size(91, 13);
-            this.DocumentHistory.TabIndex = 2;
-            this.DocumentHistory.Text = "Document History";
-            // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Information});
-            this.dataGridView1.GridColor = System.Drawing.Color.Blue;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 43);
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.Location = new System.Drawing.Point(16, 6);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.Size = new System.Drawing.Size(310, 129);
             this.dataGridView1.TabIndex = 1;
             // 
             // Column1
@@ -209,16 +259,6 @@
             this.Information.HeaderText = "Information";
             this.Information.Name = "Information";
             // 
-            // DocumentInformation
-            // 
-            this.DocumentInformation.AutoSize = true;
-            this.DocumentInformation.ForeColor = System.Drawing.Color.Blue;
-            this.DocumentInformation.Location = new System.Drawing.Point(6, 18);
-            this.DocumentInformation.Name = "DocumentInformation";
-            this.DocumentInformation.Size = new System.Drawing.Size(111, 13);
-            this.DocumentInformation.TabIndex = 0;
-            this.DocumentInformation.Text = "Document Information";
-            // 
             // ProcurementProcess
             // 
             this.ProcurementProcess.Controls.Add(this.textBox4);
@@ -230,17 +270,18 @@
             this.ProcurementProcess.Controls.Add(this.textBox1);
             this.ProcurementProcess.Controls.Add(this.Overview);
             this.ProcurementProcess.Controls.Add(this.procurement);
-            this.ProcurementProcess.Location = new System.Drawing.Point(4, 22);
+            this.ProcurementProcess.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.ProcurementProcess.Location = new System.Drawing.Point(4, 23);
             this.ProcurementProcess.Name = "ProcurementProcess";
             this.ProcurementProcess.Padding = new System.Windows.Forms.Padding(3);
-            this.ProcurementProcess.Size = new System.Drawing.Size(612, 714);
+            this.ProcurementProcess.Size = new System.Drawing.Size(612, 713);
             this.ProcurementProcess.TabIndex = 1;
             this.ProcurementProcess.Text = "Procurement Process";
             this.ProcurementProcess.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
-            this.textBox4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.textBox4.ForeColor = System.Drawing.SystemColors.MenuText;
             this.textBox4.Location = new System.Drawing.Point(357, 35);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
@@ -251,15 +292,17 @@
             // ManageSupplierContract
             // 
             this.ManageSupplierContract.AutoSize = true;
+            this.ManageSupplierContract.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold);
             this.ManageSupplierContract.Location = new System.Drawing.Point(354, 19);
             this.ManageSupplierContract.Name = "ManageSupplierContract";
-            this.ManageSupplierContract.Size = new System.Drawing.Size(148, 13);
+            this.ManageSupplierContract.Size = new System.Drawing.Size(164, 14);
             this.ManageSupplierContract.TabIndex = 8;
             this.ManageSupplierContract.Text = "1.4 Manage Supplier Contract";
             // 
             // CompletePurchaseOrder
             // 
             this.CompletePurchaseOrder.AutoSize = true;
+            this.CompletePurchaseOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.CompletePurchaseOrder.Location = new System.Drawing.Point(3, 368);
             this.CompletePurchaseOrder.Name = "CompletePurchaseOrder";
             this.CompletePurchaseOrder.Size = new System.Drawing.Size(146, 13);
@@ -268,7 +311,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.textBox3.ForeColor = System.Drawing.SystemColors.WindowText;
             this.textBox3.Location = new System.Drawing.Point(0, 393);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
@@ -278,7 +321,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.textBox2.ForeColor = System.Drawing.SystemColors.InfoText;
             this.textBox2.Location = new System.Drawing.Point(6, 226);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -289,16 +332,17 @@
             // IssuePurchaseOrder
             // 
             this.IssuePurchaseOrder.AutoSize = true;
+            this.IssuePurchaseOrder.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold);
             this.IssuePurchaseOrder.Location = new System.Drawing.Point(9, 195);
             this.IssuePurchaseOrder.Name = "IssuePurchaseOrder";
-            this.IssuePurchaseOrder.Size = new System.Drawing.Size(127, 13);
+            this.IssuePurchaseOrder.Size = new System.Drawing.Size(141, 14);
             this.IssuePurchaseOrder.TabIndex = 4;
             this.IssuePurchaseOrder.Text = "1.2 Issue Purchase Order";
             this.IssuePurchaseOrder.Click += new System.EventHandler(this.IssuePurchaseOrder_Click);
             // 
             // textBox1
             // 
-            this.textBox1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.textBox1.ForeColor = System.Drawing.SystemColors.MenuText;
             this.textBox1.Location = new System.Drawing.Point(9, 155);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(326, 20);
@@ -308,15 +352,16 @@
             // Overview
             // 
             this.Overview.AutoSize = true;
+            this.Overview.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold);
             this.Overview.Location = new System.Drawing.Point(6, 138);
             this.Overview.Name = "Overview";
-            this.Overview.Size = new System.Drawing.Size(70, 13);
+            this.Overview.Size = new System.Drawing.Size(79, 14);
             this.Overview.TabIndex = 1;
             this.Overview.Text = "1.1 Overview";
             // 
             // procurement
             // 
-            this.procurement.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.procurement.ForeColor = System.Drawing.SystemColors.MenuText;
             this.procurement.Location = new System.Drawing.Point(6, 19);
             this.procurement.Multiline = true;
             this.procurement.Name = "procurement";
@@ -331,72 +376,18 @@
             this.ProcurementRoles.Controls.Add(this.ProjectManager);
             this.ProcurementRoles.Controls.Add(this.ProcurementManager);
             this.ProcurementRoles.Controls.Add(this.textBox5);
-            this.ProcurementRoles.Location = new System.Drawing.Point(4, 22);
+            this.ProcurementRoles.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.ProcurementRoles.Location = new System.Drawing.Point(4, 23);
             this.ProcurementRoles.Name = "ProcurementRoles";
             this.ProcurementRoles.Padding = new System.Windows.Forms.Padding(3);
-            this.ProcurementRoles.Size = new System.Drawing.Size(612, 714);
+            this.ProcurementRoles.Size = new System.Drawing.Size(612, 713);
             this.ProcurementRoles.TabIndex = 2;
             this.ProcurementRoles.Text = "Procurement Roles";
             this.ProcurementRoles.UseVisualStyleBackColor = true;
             // 
-            // ProcurementDocuments
-            // 
-            this.ProcurementDocuments.Controls.Add(this.ProcurementRegister);
-            this.ProcurementDocuments.Controls.Add(this.PurchaseOrderForm);
-            this.ProcurementDocuments.Controls.Add(this.textBox10);
-            this.ProcurementDocuments.Controls.Add(this.textBox9);
-            this.ProcurementDocuments.Controls.Add(this.textBox8);
-            this.ProcurementDocuments.Location = new System.Drawing.Point(4, 22);
-            this.ProcurementDocuments.Name = "ProcurementDocuments";
-            this.ProcurementDocuments.Padding = new System.Windows.Forms.Padding(3);
-            this.ProcurementDocuments.Size = new System.Drawing.Size(612, 714);
-            this.ProcurementDocuments.TabIndex = 3;
-            this.ProcurementDocuments.Text = "Procurement Documents";
-            this.ProcurementDocuments.UseVisualStyleBackColor = true;
-            // 
-            // textBox5
-            // 
-            this.textBox5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox5.Location = new System.Drawing.Point(30, 30);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(247, 54);
-            this.textBox5.TabIndex = 0;
-            this.textBox5.Text = "In this section, describe the key roles and responsibilities involved in the Proc" +
-    "urement Management Process.";
-            // 
-            // ProcurementManager
-            // 
-            this.ProcurementManager.AutoSize = true;
-            this.ProcurementManager.Location = new System.Drawing.Point(30, 106);
-            this.ProcurementManager.Name = "ProcurementManager";
-            this.ProcurementManager.Size = new System.Drawing.Size(130, 13);
-            this.ProcurementManager.TabIndex = 1;
-            this.ProcurementManager.Text = "2.1 Procurement Manager";
-            // 
-            // ProjectManager
-            // 
-            this.ProjectManager.AutoSize = true;
-            this.ProjectManager.Location = new System.Drawing.Point(30, 230);
-            this.ProjectManager.Name = "ProjectManager";
-            this.ProjectManager.Size = new System.Drawing.Size(103, 13);
-            this.ProjectManager.TabIndex = 2;
-            this.ProjectManager.Text = "2.2 Project Manager";
-            // 
-            // textBox6
-            // 
-            this.textBox6.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox6.Location = new System.Drawing.Point(33, 150);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(227, 57);
-            this.textBox6.TabIndex = 3;
-            this.textBox6.Text = "List the responsibilities of the Procurement Manager in the Procurement Managemen" +
-    "t Process.";
-            // 
             // textBox7
             // 
-            this.textBox7.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.textBox7.ForeColor = System.Drawing.SystemColors.WindowText;
             this.textBox7.Location = new System.Drawing.Point(33, 268);
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
@@ -405,31 +396,87 @@
             this.textBox7.Text = "List the responsibilities of the Project Manager in the Procurement Management Pr" +
     "ocess.";
             // 
-            // textBox8
+            // textBox6
             // 
-            this.textBox8.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox8.Location = new System.Drawing.Point(20, 17);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(221, 74);
-            this.textBox8.TabIndex = 0;
-            this.textBox8.Text = "In this section, identify the documents that are used to successfully undertake t" +
-    "he Procurement Management Process.";
+            this.textBox6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textBox6.Location = new System.Drawing.Point(33, 150);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(227, 57);
+            this.textBox6.TabIndex = 3;
+            this.textBox6.Text = "List the responsibilities of the Procurement Manager in the Procurement Managemen" +
+    "t Process.";
             // 
-            // textBox9
+            // ProjectManager
             // 
-            this.textBox9.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox9.Location = new System.Drawing.Point(20, 147);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(169, 71);
-            this.textBox9.TabIndex = 1;
-            this.textBox9.Text = "Describe the purpose of the Purchase Order Form and provide a template for its co" +
-    "mpletion.";
+            this.ProjectManager.AutoSize = true;
+            this.ProjectManager.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ProjectManager.Location = new System.Drawing.Point(30, 230);
+            this.ProjectManager.Name = "ProjectManager";
+            this.ProjectManager.Size = new System.Drawing.Size(113, 14);
+            this.ProjectManager.TabIndex = 2;
+            this.ProjectManager.Text = "2.2 Project Manager";
+            // 
+            // ProcurementManager
+            // 
+            this.ProcurementManager.AutoSize = true;
+            this.ProcurementManager.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ProcurementManager.Location = new System.Drawing.Point(30, 106);
+            this.ProcurementManager.Name = "ProcurementManager";
+            this.ProcurementManager.Size = new System.Drawing.Size(142, 14);
+            this.ProcurementManager.TabIndex = 1;
+            this.ProcurementManager.Text = "2.1 Procurement Manager";
+            // 
+            // textBox5
+            // 
+            this.textBox5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textBox5.Location = new System.Drawing.Point(30, 30);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(247, 54);
+            this.textBox5.TabIndex = 0;
+            this.textBox5.Text = "In this section, describe the key roles and responsibilities involved in the Proc" +
+    "urement Management Process.";
+            // 
+            // ProcurementDocuments
+            // 
+            this.ProcurementDocuments.Controls.Add(this.ProcurementRegister);
+            this.ProcurementDocuments.Controls.Add(this.PurchaseOrderForm);
+            this.ProcurementDocuments.Controls.Add(this.textBox10);
+            this.ProcurementDocuments.Controls.Add(this.textBox9);
+            this.ProcurementDocuments.Controls.Add(this.textBox8);
+            this.ProcurementDocuments.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.ProcurementDocuments.Location = new System.Drawing.Point(4, 23);
+            this.ProcurementDocuments.Name = "ProcurementDocuments";
+            this.ProcurementDocuments.Padding = new System.Windows.Forms.Padding(3);
+            this.ProcurementDocuments.Size = new System.Drawing.Size(612, 713);
+            this.ProcurementDocuments.TabIndex = 3;
+            this.ProcurementDocuments.Text = "Procurement Documents";
+            this.ProcurementDocuments.UseVisualStyleBackColor = true;
+            // 
+            // ProcurementRegister
+            // 
+            this.ProcurementRegister.AutoSize = true;
+            this.ProcurementRegister.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProcurementRegister.Location = new System.Drawing.Point(23, 263);
+            this.ProcurementRegister.Name = "ProcurementRegister";
+            this.ProcurementRegister.Size = new System.Drawing.Size(145, 14);
+            this.ProcurementRegister.TabIndex = 4;
+            this.ProcurementRegister.Text = "3.2 Procurement Register";
+            // 
+            // PurchaseOrderForm
+            // 
+            this.PurchaseOrderForm.AutoSize = true;
+            this.PurchaseOrderForm.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PurchaseOrderForm.Location = new System.Drawing.Point(20, 116);
+            this.PurchaseOrderForm.Name = "PurchaseOrderForm";
+            this.PurchaseOrderForm.Size = new System.Drawing.Size(139, 14);
+            this.PurchaseOrderForm.TabIndex = 3;
+            this.PurchaseOrderForm.Text = "3.1 Purchase Order From";
             // 
             // textBox10
             // 
-            this.textBox10.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.textBox10.ForeColor = System.Drawing.SystemColors.WindowText;
             this.textBox10.Location = new System.Drawing.Point(20, 282);
             this.textBox10.Multiline = true;
             this.textBox10.Name = "textBox10";
@@ -438,36 +485,84 @@
             this.textBox10.Text = "Describe the purpose of the Procurement Register and provide a template for its c" +
     "ompletion.";
             // 
-            // PurchaseOrderForm
+            // textBox9
             // 
-            this.PurchaseOrderForm.AutoSize = true;
-            this.PurchaseOrderForm.Location = new System.Drawing.Point(20, 116);
-            this.PurchaseOrderForm.Name = "PurchaseOrderForm";
-            this.PurchaseOrderForm.Size = new System.Drawing.Size(125, 13);
-            this.PurchaseOrderForm.TabIndex = 3;
-            this.PurchaseOrderForm.Text = "3.1 Purchase Order From";
+            this.textBox9.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textBox9.Location = new System.Drawing.Point(20, 147);
+            this.textBox9.Multiline = true;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(169, 71);
+            this.textBox9.TabIndex = 1;
+            this.textBox9.Text = "Describe the purpose of the Purchase Order Form and provide a template for its co" +
+    "mpletion.";
             // 
-            // ProcurementRegister
+            // textBox8
             // 
-            this.ProcurementRegister.AutoSize = true;
-            this.ProcurementRegister.Location = new System.Drawing.Point(23, 263);
-            this.ProcurementRegister.Name = "ProcurementRegister";
-            this.ProcurementRegister.Size = new System.Drawing.Size(127, 13);
-            this.ProcurementRegister.TabIndex = 4;
-            this.ProcurementRegister.Text = "3.2 Procurement Register";
+            this.textBox8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textBox8.Location = new System.Drawing.Point(20, 17);
+            this.textBox8.Multiline = true;
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(221, 74);
+            this.textBox8.TabIndex = 0;
+            this.textBox8.Text = "In this section, identify the documents that are used to successfully undertake t" +
+    "he Procurement Management Process.";
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.documentInformationTab);
+            this.tabControl1.Controls.Add(this.documentHistoryTab);
+            this.tabControl1.Controls.Add(this.documentApprovalTab);
+            this.tabControl1.Location = new System.Drawing.Point(6, 6);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(487, 242);
+            this.tabControl1.TabIndex = 6;
+            // 
+            // documentInformationTab
+            // 
+            this.documentInformationTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.documentInformationTab.Controls.Add(this.dataGridView1);
+            this.documentInformationTab.Location = new System.Drawing.Point(4, 23);
+            this.documentInformationTab.Name = "documentInformationTab";
+            this.documentInformationTab.Padding = new System.Windows.Forms.Padding(3);
+            this.documentInformationTab.Size = new System.Drawing.Size(479, 215);
+            this.documentInformationTab.TabIndex = 0;
+            this.documentInformationTab.Text = "Document Information";
+            // 
+            // documentHistoryTab
+            // 
+            this.documentHistoryTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.documentHistoryTab.Controls.Add(this.dataGridView2);
+            this.documentHistoryTab.Location = new System.Drawing.Point(4, 23);
+            this.documentHistoryTab.Name = "documentHistoryTab";
+            this.documentHistoryTab.Padding = new System.Windows.Forms.Padding(3);
+            this.documentHistoryTab.Size = new System.Drawing.Size(479, 215);
+            this.documentHistoryTab.TabIndex = 1;
+            this.documentHistoryTab.Text = "Document History";
+            // 
+            // documentApprovalTab
+            // 
+            this.documentApprovalTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.documentApprovalTab.Controls.Add(this.dataGridView3);
+            this.documentApprovalTab.Location = new System.Drawing.Point(4, 23);
+            this.documentApprovalTab.Name = "documentApprovalTab";
+            this.documentApprovalTab.Padding = new System.Windows.Forms.Padding(3);
+            this.documentApprovalTab.Size = new System.Drawing.Size(479, 215);
+            this.documentApprovalTab.TabIndex = 2;
+            this.documentApprovalTab.Text = "Document Approval";
             // 
             // ProcurementManagementProcess
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(685, 749);
             this.Controls.Add(this.DocumentControlTab);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Name = "ProcurementManagementProcess";
             this.Text = "ProcurementManagementProcess";
             this.DocumentControlTab.ResumeLayout(false);
             this.DocumentControl.ResumeLayout(false);
-            this.DocumentControl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -477,6 +572,10 @@
             this.ProcurementRoles.PerformLayout();
             this.ProcurementDocuments.ResumeLayout(false);
             this.ProcurementDocuments.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.documentInformationTab.ResumeLayout(false);
+            this.documentHistoryTab.ResumeLayout(false);
+            this.documentApprovalTab.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -490,17 +589,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Version;
         private System.Windows.Forms.DataGridViewTextBoxColumn IssueDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn Changes;
-        private System.Windows.Forms.Label DocumentHistory;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Information;
-        private System.Windows.Forms.Label DocumentInformation;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Role;
         private System.Windows.Forms.DataGridViewTextBoxColumn Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn Signature;
         private System.Windows.Forms.DataGridViewTextBoxColumn Date;
-        private System.Windows.Forms.Label DocumentApproval;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label IssuePurchaseOrder;
         private System.Windows.Forms.TextBox textBox1;
@@ -522,5 +618,9 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label ProcurementRegister;
         private System.Windows.Forms.Label PurchaseOrderForm;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage documentInformationTab;
+        private System.Windows.Forms.TabPage documentHistoryTab;
+        private System.Windows.Forms.TabPage documentApprovalTab;
     }
 }
