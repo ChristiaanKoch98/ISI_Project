@@ -66,6 +66,8 @@
             this.signatureDate = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.signature = new System.Windows.Forms.PictureBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnExportWord = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.projectDeatailsAndRiskDetails.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -536,9 +538,31 @@
             this.signature.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.signature.Location = new System.Drawing.Point(112, 23);
             this.signature.Name = "signature";
-            this.signature.Size = new System.Drawing.Size(160, 50);
+            this.signature.Size = new System.Drawing.Size(160, 51);
             this.signature.TabIndex = 39;
             this.signature.TabStop = false;
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Location = new System.Drawing.Point(571, 2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(98, 30);
+            this.btnSave.TabIndex = 1;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            // 
+            // btnExportWord
+            // 
+            this.btnExportWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnExportWord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExportWord.Location = new System.Drawing.Point(700, 2);
+            this.btnExportWord.Name = "btnExportWord";
+            this.btnExportWord.Size = new System.Drawing.Size(98, 30);
+            this.btnExportWord.TabIndex = 2;
+            this.btnExportWord.Text = "Export to Word";
+            this.btnExportWord.UseVisualStyleBackColor = false;
             // 
             // RiskFormDocumentForm
             // 
@@ -546,6 +570,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(946, 492);
+            this.Controls.Add(this.btnExportWord);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "RiskFormDocumentForm";
@@ -620,5 +646,7 @@
         private System.Windows.Forms.DateTimePicker signatureDate;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox signature;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnExportWord;
     }
 }
