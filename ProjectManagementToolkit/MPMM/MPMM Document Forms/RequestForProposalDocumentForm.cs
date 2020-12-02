@@ -84,7 +84,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newRequestForProposalModel.introductionQuestions = txtQuestions.Text;
 
             newRequestForProposalModel.companyDescription = txtCompany.Text;
-            newRequestForProposalModel.companyVisionObjectivesSizeLocation = txtVision.Text;
+            newRequestForProposalModel.companyVision = txtVision.Text;
+            newRequestForProposalModel.companyObjectives = txtObjectives.Text;
+            newRequestForProposalModel.companySize = txtSize.Text;
+            newRequestForProposalModel.companyLocation = txtLocation.Text;
+
             newRequestForProposalModel.companyTypeAndNumberOfCustomers = txtTypeAndNumberOfCustomers.Text;
             newRequestForProposalModel.companyMarketSegment = txtMarketSegment.Text;
             newRequestForProposalModel.companyKnowledgeOfIndustryAndExpertise = txtKnowledgeOfIndustryAndExpertise.Text;
@@ -168,9 +172,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 txtQuestions.Text = currentRequestForProposalModel.introductionQuestions;
 
                 txtCompany.Text = currentRequestForProposalModel.companyDescription;
-                txtVision.Text = currentRequestForProposalModel.companyVisionObjectivesSizeLocation;
+                txtVision.Text = currentRequestForProposalModel.companyVision;
+                txtObjectives.Text = currentRequestForProposalModel.companyObjectives;
+                txtSize.Text = currentRequestForProposalModel.companySize;
+                txtLocation.Text = currentRequestForProposalModel.companyLocation;
+
                 txtTypeAndNumberOfCustomers.Text = currentRequestForProposalModel.companyTypeAndNumberOfCustomers;
-                //txtMarketSegment.Text = currentRequestForProposalModel.companyMarketSegment;
+                txtMarketSegment.Text = currentRequestForProposalModel.companyMarketSegment;
                 txtKnowledgeOfIndustryAndExpertise.Text = currentRequestForProposalModel.companyKnowledgeOfIndustryAndExpertise;
 
                 txtSolution.Text = currentRequestForProposalModel.solutionDescription;
@@ -454,15 +462,63 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .Color(Color.Black)
                             .Font("Arial").Alignment = Alignment.left;
 
-
-                        var vision = document.InsertParagraph("2.1\tVision, objectives, size, location")
+                        var visionHeading = document.InsertParagraph("2.1\tVision, objectives, size, location")
                             .FontSize(12d)
                             .Color(Color.Black)
                             .Bold(true)
                             .Font("Arial");
 
-                        vision.StyleId = "Heading2";
-                        document.InsertParagraph(currentRequestForProposalModel.companyVisionObjectivesSizeLocation)
+                        visionHeading.StyleId = "Heading2";
+
+                        var vision = document.InsertParagraph("2.1.1\tVision")
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        vision.StyleId = "Heading3";
+
+                        document.InsertParagraph(currentRequestForProposalModel.companyVision)
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial");
+
+                        var objectives = document.InsertParagraph("2.1.2\tObjectives")
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        objectives.StyleId = "Heading3";
+
+                        document.InsertParagraph(currentRequestForProposalModel.companyObjectives)
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial");
+
+
+                        var size = document.InsertParagraph("2.1.3\tSize")
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        size.StyleId = "Heading3";
+
+                        document.InsertParagraph(currentRequestForProposalModel.companySize)
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial");
+
+                        var location = document.InsertParagraph("2.1.4\tLocation")
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        location.StyleId = "Heading3";
+
+                        document.InsertParagraph(currentRequestForProposalModel.companyLocation)
                             .FontSize(11d)
                             .Color(Color.Black)
                             .Font("Arial");

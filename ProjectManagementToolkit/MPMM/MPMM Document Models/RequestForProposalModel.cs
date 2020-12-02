@@ -24,7 +24,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         
         //Company Tab
         public string companyDescription { get; set; }
-        public string companyVisionObjectivesSizeLocation { get; set; }
+        public string companyVision { get; set; }
+        public string companyObjectives { get; set; }
+        public string companySize { get; set; }
+        public string companyLocation { get; set; }
         public string companyTypeAndNumberOfCustomers { get; set; }
         public string companyMarketSegment { get; set; }
         public string companyKnowledgeOfIndustryAndExpertise { get; set; }

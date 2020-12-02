@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tbpSolution = new System.Windows.Forms.TabPage();
             this.dataGridViewSolution = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxSolutionComponents = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -154,10 +154,10 @@
             this.tbpSolution.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpSolution.Controls.Add(this.dataGridViewSolution);
             this.tbpSolution.Controls.Add(this.txtSolution);
-            this.tbpSolution.Location = new System.Drawing.Point(4, 25);
+            this.tbpSolution.Location = new System.Drawing.Point(4, 23);
             this.tbpSolution.Margin = new System.Windows.Forms.Padding(2);
             this.tbpSolution.Name = "tbpSolution";
-            this.tbpSolution.Size = new System.Drawing.Size(1109, 442);
+            this.tbpSolution.Size = new System.Drawing.Size(1109, 444);
             this.tbpSolution.TabIndex = 3;
             this.tbpSolution.Text = "Solution";
             // 
@@ -165,14 +165,14 @@
             // 
             this.dataGridViewSolution.AllowUserToOrderColumns = true;
             this.dataGridViewSolution.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewSolution.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewSolution.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewSolution.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSolution.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxSolutionComponents,
@@ -181,18 +181,18 @@
             this.dataGridViewSolution.EnableHeadersVisualStyles = false;
             this.dataGridViewSolution.Location = new System.Drawing.Point(12, 68);
             this.dataGridViewSolution.Name = "dataGridViewSolution";
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewSolution.RowHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewSolution.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewSolution.RowHeadersWidth = 51;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewSolution.RowsDefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewSolution.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewSolution.Size = new System.Drawing.Size(1088, 366);
             this.dataGridViewSolution.TabIndex = 8;
             // 
@@ -249,10 +249,10 @@
             this.tbpDocumentControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpDocumentControl.Controls.Add(this.tabControl4);
             this.tbpDocumentControl.ForeColor = System.Drawing.Color.Black;
-            this.tbpDocumentControl.Location = new System.Drawing.Point(4, 25);
+            this.tbpDocumentControl.Location = new System.Drawing.Point(4, 23);
             this.tbpDocumentControl.Name = "tbpDocumentControl";
             this.tbpDocumentControl.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpDocumentControl.Size = new System.Drawing.Size(1109, 442);
+            this.tbpDocumentControl.Size = new System.Drawing.Size(1109, 444);
             this.tbpDocumentControl.TabIndex = 0;
             this.tbpDocumentControl.Text = "Document Control";
             // 
@@ -273,25 +273,25 @@
             this.tbpDocumentInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpDocumentInformation.Controls.Add(this.dataGridViewDocumentInformation);
             this.tbpDocumentInformation.ForeColor = System.Drawing.Color.Gray;
-            this.tbpDocumentInformation.Location = new System.Drawing.Point(4, 25);
+            this.tbpDocumentInformation.Location = new System.Drawing.Point(4, 23);
             this.tbpDocumentInformation.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpDocumentInformation.Name = "tbpDocumentInformation";
             this.tbpDocumentInformation.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tbpDocumentInformation.Size = new System.Drawing.Size(1087, 405);
+            this.tbpDocumentInformation.Size = new System.Drawing.Size(1087, 407);
             this.tbpDocumentInformation.TabIndex = 0;
             this.tbpDocumentInformation.Text = "Document Information";
             // 
             // dataGridViewDocumentInformation
             // 
             this.dataGridViewDocumentInformation.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewDocumentInformation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentInformation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewDocumentInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDocumentInformation.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Type,
@@ -299,18 +299,18 @@
             this.dataGridViewDocumentInformation.EnableHeadersVisualStyles = false;
             this.dataGridViewDocumentInformation.Location = new System.Drawing.Point(7, 6);
             this.dataGridViewDocumentInformation.Name = "dataGridViewDocumentInformation";
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewDocumentInformation.RowHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentInformation.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewDocumentInformation.RowHeadersWidth = 51;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewDocumentInformation.RowsDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewDocumentInformation.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewDocumentInformation.Size = new System.Drawing.Size(1073, 397);
             this.dataGridViewDocumentInformation.TabIndex = 1;
             // 
@@ -333,25 +333,25 @@
             this.tbpDocumentHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpDocumentHistory.Controls.Add(this.dataGridViewDocumentHistory);
             this.tbpDocumentHistory.ForeColor = System.Drawing.Color.DimGray;
-            this.tbpDocumentHistory.Location = new System.Drawing.Point(4, 25);
+            this.tbpDocumentHistory.Location = new System.Drawing.Point(4, 23);
             this.tbpDocumentHistory.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpDocumentHistory.Name = "tbpDocumentHistory";
             this.tbpDocumentHistory.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tbpDocumentHistory.Size = new System.Drawing.Size(1087, 405);
+            this.tbpDocumentHistory.Size = new System.Drawing.Size(1087, 407);
             this.tbpDocumentHistory.TabIndex = 1;
             this.tbpDocumentHistory.Text = "Document History";
             // 
             // dataGridViewDocumentHistory
             // 
             this.dataGridViewDocumentHistory.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewDocumentHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewDocumentHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDocumentHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Version,
@@ -360,18 +360,18 @@
             this.dataGridViewDocumentHistory.EnableHeadersVisualStyles = false;
             this.dataGridViewDocumentHistory.Location = new System.Drawing.Point(7, 6);
             this.dataGridViewDocumentHistory.Name = "dataGridViewDocumentHistory";
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewDocumentHistory.RowHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentHistory.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewDocumentHistory.RowHeadersWidth = 51;
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewDocumentHistory.RowsDefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewDocumentHistory.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridViewDocumentHistory.Size = new System.Drawing.Size(1073, 397);
             this.dataGridViewDocumentHistory.TabIndex = 1;
             // 
@@ -401,24 +401,24 @@
             this.tbpDocumentApprovals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpDocumentApprovals.Controls.Add(this.dataGridViewDocumentApprovals);
             this.tbpDocumentApprovals.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.tbpDocumentApprovals.Location = new System.Drawing.Point(4, 25);
+            this.tbpDocumentApprovals.Location = new System.Drawing.Point(4, 23);
             this.tbpDocumentApprovals.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpDocumentApprovals.Name = "tbpDocumentApprovals";
-            this.tbpDocumentApprovals.Size = new System.Drawing.Size(1087, 405);
+            this.tbpDocumentApprovals.Size = new System.Drawing.Size(1087, 407);
             this.tbpDocumentApprovals.TabIndex = 2;
             this.tbpDocumentApprovals.Text = "Document Approvals";
             // 
             // dataGridViewDocumentApprovals
             // 
             this.dataGridViewDocumentApprovals.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewDocumentApprovals.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentApprovals.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewDocumentApprovals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDocumentApprovals.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.approvalRole,
@@ -428,18 +428,18 @@
             this.dataGridViewDocumentApprovals.EnableHeadersVisualStyles = false;
             this.dataGridViewDocumentApprovals.Location = new System.Drawing.Point(9, 9);
             this.dataGridViewDocumentApprovals.Name = "dataGridViewDocumentApprovals";
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewDocumentApprovals.RowHeadersDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentApprovals.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridViewDocumentApprovals.RowHeadersWidth = 51;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewDocumentApprovals.RowsDefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewDocumentApprovals.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridViewDocumentApprovals.Size = new System.Drawing.Size(1069, 387);
             this.dataGridViewDocumentApprovals.TabIndex = 2;
             // 
@@ -479,10 +479,10 @@
             this.tbpIntroduction.Controls.Add(this.tabControl1);
             this.tbpIntroduction.Controls.Add(this.txtChangeProcess);
             this.tbpIntroduction.ForeColor = System.Drawing.Color.White;
-            this.tbpIntroduction.Location = new System.Drawing.Point(4, 25);
+            this.tbpIntroduction.Location = new System.Drawing.Point(4, 23);
             this.tbpIntroduction.Margin = new System.Windows.Forms.Padding(2);
             this.tbpIntroduction.Name = "tbpIntroduction";
-            this.tbpIntroduction.Size = new System.Drawing.Size(1109, 442);
+            this.tbpIntroduction.Size = new System.Drawing.Size(1109, 444);
             this.tbpIntroduction.TabIndex = 1;
             this.tbpIntroduction.Text = "Introduction";
             // 
@@ -505,10 +505,10 @@
             // 
             this.tbpOverview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpOverview.Controls.Add(this.txtOverview);
-            this.tbpOverview.Location = new System.Drawing.Point(4, 25);
+            this.tbpOverview.Location = new System.Drawing.Point(4, 23);
             this.tbpOverview.Name = "tbpOverview";
             this.tbpOverview.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpOverview.Size = new System.Drawing.Size(1083, 344);
+            this.tbpOverview.Size = new System.Drawing.Size(1083, 346);
             this.tbpOverview.TabIndex = 0;
             this.tbpOverview.Text = "Overview";
             // 
@@ -526,10 +526,10 @@
             // 
             this.tbpPurpose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpPurpose.Controls.Add(this.txtPurpose);
-            this.tbpPurpose.Location = new System.Drawing.Point(4, 25);
+            this.tbpPurpose.Location = new System.Drawing.Point(4, 23);
             this.tbpPurpose.Name = "tbpPurpose";
             this.tbpPurpose.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpPurpose.Size = new System.Drawing.Size(1083, 344);
+            this.tbpPurpose.Size = new System.Drawing.Size(1083, 346);
             this.tbpPurpose.TabIndex = 1;
             this.tbpPurpose.Text = "Purpose";
             // 
@@ -547,10 +547,10 @@
             // 
             this.tbpAcknowledgement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpAcknowledgement.Controls.Add(this.txtAcknowledgement);
-            this.tbpAcknowledgement.Location = new System.Drawing.Point(4, 25);
+            this.tbpAcknowledgement.Location = new System.Drawing.Point(4, 23);
             this.tbpAcknowledgement.Name = "tbpAcknowledgement";
             this.tbpAcknowledgement.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpAcknowledgement.Size = new System.Drawing.Size(1083, 344);
+            this.tbpAcknowledgement.Size = new System.Drawing.Size(1083, 346);
             this.tbpAcknowledgement.TabIndex = 2;
             this.tbpAcknowledgement.Text = "Acknowledgement";
             // 
@@ -568,10 +568,10 @@
             // 
             this.tbpRecipients.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpRecipients.Controls.Add(this.txtRecipients);
-            this.tbpRecipients.Location = new System.Drawing.Point(4, 25);
+            this.tbpRecipients.Location = new System.Drawing.Point(4, 23);
             this.tbpRecipients.Name = "tbpRecipients";
             this.tbpRecipients.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpRecipients.Size = new System.Drawing.Size(1083, 344);
+            this.tbpRecipients.Size = new System.Drawing.Size(1083, 346);
             this.tbpRecipients.TabIndex = 3;
             this.tbpRecipients.Text = "Recipients";
             // 
@@ -589,10 +589,10 @@
             // 
             this.tbpProcess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpProcess.Controls.Add(this.txtProcess);
-            this.tbpProcess.Location = new System.Drawing.Point(4, 25);
+            this.tbpProcess.Location = new System.Drawing.Point(4, 23);
             this.tbpProcess.Name = "tbpProcess";
             this.tbpProcess.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpProcess.Size = new System.Drawing.Size(1083, 344);
+            this.tbpProcess.Size = new System.Drawing.Size(1083, 346);
             this.tbpProcess.TabIndex = 4;
             this.tbpProcess.Text = "Process";
             // 
@@ -610,10 +610,10 @@
             // 
             this.tbpRules.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpRules.Controls.Add(this.txtRules);
-            this.tbpRules.Location = new System.Drawing.Point(4, 25);
+            this.tbpRules.Location = new System.Drawing.Point(4, 23);
             this.tbpRules.Name = "tbpRules";
             this.tbpRules.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpRules.Size = new System.Drawing.Size(1083, 344);
+            this.tbpRules.Size = new System.Drawing.Size(1083, 346);
             this.tbpRules.TabIndex = 5;
             this.tbpRules.Text = "Rules";
             // 
@@ -631,10 +631,10 @@
             // 
             this.tbpQuestions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpQuestions.Controls.Add(this.txtQuestions);
-            this.tbpQuestions.Location = new System.Drawing.Point(4, 25);
+            this.tbpQuestions.Location = new System.Drawing.Point(4, 23);
             this.tbpQuestions.Name = "tbpQuestions";
             this.tbpQuestions.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpQuestions.Size = new System.Drawing.Size(1083, 344);
+            this.tbpQuestions.Size = new System.Drawing.Size(1083, 346);
             this.tbpQuestions.TabIndex = 6;
             this.tbpQuestions.Text = "Questions";
             // 
@@ -665,10 +665,10 @@
             this.tbpCompany.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpCompany.Controls.Add(this.tabControl2);
             this.tbpCompany.Controls.Add(this.txtCompany);
-            this.tbpCompany.Location = new System.Drawing.Point(4, 25);
+            this.tbpCompany.Location = new System.Drawing.Point(4, 23);
             this.tbpCompany.Margin = new System.Windows.Forms.Padding(2);
             this.tbpCompany.Name = "tbpCompany";
-            this.tbpCompany.Size = new System.Drawing.Size(1109, 442);
+            this.tbpCompany.Size = new System.Drawing.Size(1109, 444);
             this.tbpCompany.TabIndex = 2;
             this.tbpCompany.Text = "Company";
             // 
@@ -691,10 +691,10 @@
             // 
             this.tbpVision.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpVision.Controls.Add(this.txtVision);
-            this.tbpVision.Location = new System.Drawing.Point(4, 25);
+            this.tbpVision.Location = new System.Drawing.Point(4, 23);
             this.tbpVision.Name = "tbpVision";
             this.tbpVision.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpVision.Size = new System.Drawing.Size(1081, 358);
+            this.tbpVision.Size = new System.Drawing.Size(1081, 360);
             this.tbpVision.TabIndex = 0;
             this.tbpVision.Text = "Vision";
             // 
@@ -712,10 +712,10 @@
             // 
             this.tbpObjectives.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpObjectives.Controls.Add(this.txtObjectives);
-            this.tbpObjectives.Location = new System.Drawing.Point(4, 25);
+            this.tbpObjectives.Location = new System.Drawing.Point(4, 23);
             this.tbpObjectives.Name = "tbpObjectives";
             this.tbpObjectives.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpObjectives.Size = new System.Drawing.Size(1081, 358);
+            this.tbpObjectives.Size = new System.Drawing.Size(1081, 360);
             this.tbpObjectives.TabIndex = 1;
             this.tbpObjectives.Text = "Objectives";
             // 
@@ -733,10 +733,10 @@
             // 
             this.tbpSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpSize.Controls.Add(this.txtSize);
-            this.tbpSize.Location = new System.Drawing.Point(4, 25);
+            this.tbpSize.Location = new System.Drawing.Point(4, 23);
             this.tbpSize.Name = "tbpSize";
             this.tbpSize.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpSize.Size = new System.Drawing.Size(1081, 358);
+            this.tbpSize.Size = new System.Drawing.Size(1081, 360);
             this.tbpSize.TabIndex = 2;
             this.tbpSize.Text = "Size";
             // 
@@ -754,10 +754,10 @@
             // 
             this.tbpLocation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpLocation.Controls.Add(this.txtLocation);
-            this.tbpLocation.Location = new System.Drawing.Point(4, 25);
+            this.tbpLocation.Location = new System.Drawing.Point(4, 23);
             this.tbpLocation.Name = "tbpLocation";
             this.tbpLocation.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpLocation.Size = new System.Drawing.Size(1081, 358);
+            this.tbpLocation.Size = new System.Drawing.Size(1081, 360);
             this.tbpLocation.TabIndex = 3;
             this.tbpLocation.Text = "Location";
             // 
@@ -775,9 +775,9 @@
             // 
             this.tbpTypeAndNumberOfCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpTypeAndNumberOfCustomers.Controls.Add(this.txtTypeAndNumberOfCustomers);
-            this.tbpTypeAndNumberOfCustomers.Location = new System.Drawing.Point(4, 25);
+            this.tbpTypeAndNumberOfCustomers.Location = new System.Drawing.Point(4, 23);
             this.tbpTypeAndNumberOfCustomers.Name = "tbpTypeAndNumberOfCustomers";
-            this.tbpTypeAndNumberOfCustomers.Size = new System.Drawing.Size(1081, 358);
+            this.tbpTypeAndNumberOfCustomers.Size = new System.Drawing.Size(1081, 360);
             this.tbpTypeAndNumberOfCustomers.TabIndex = 4;
             this.tbpTypeAndNumberOfCustomers.Text = "Type and Number of Customers";
             // 
@@ -795,9 +795,9 @@
             // 
             this.tbpMarketSegmentOfOperation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpMarketSegmentOfOperation.Controls.Add(this.txtMarketSegment);
-            this.tbpMarketSegmentOfOperation.Location = new System.Drawing.Point(4, 25);
+            this.tbpMarketSegmentOfOperation.Location = new System.Drawing.Point(4, 23);
             this.tbpMarketSegmentOfOperation.Name = "tbpMarketSegmentOfOperation";
-            this.tbpMarketSegmentOfOperation.Size = new System.Drawing.Size(1081, 358);
+            this.tbpMarketSegmentOfOperation.Size = new System.Drawing.Size(1081, 360);
             this.tbpMarketSegmentOfOperation.TabIndex = 5;
             this.tbpMarketSegmentOfOperation.Text = "Market segment of operation";
             // 
@@ -815,9 +815,9 @@
             // 
             this.tbpKnowledgeOfIndustryAndExpertise.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpKnowledgeOfIndustryAndExpertise.Controls.Add(this.txtKnowledgeOfIndustryAndExpertise);
-            this.tbpKnowledgeOfIndustryAndExpertise.Location = new System.Drawing.Point(4, 25);
+            this.tbpKnowledgeOfIndustryAndExpertise.Location = new System.Drawing.Point(4, 23);
             this.tbpKnowledgeOfIndustryAndExpertise.Name = "tbpKnowledgeOfIndustryAndExpertise";
-            this.tbpKnowledgeOfIndustryAndExpertise.Size = new System.Drawing.Size(1081, 358);
+            this.tbpKnowledgeOfIndustryAndExpertise.Size = new System.Drawing.Size(1081, 360);
             this.tbpKnowledgeOfIndustryAndExpertise.TabIndex = 6;
             this.tbpKnowledgeOfIndustryAndExpertise.Text = "Knowledge of Industry and Expertise";
             // 
@@ -847,10 +847,10 @@
             // 
             this.tbpImplementation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpImplementation.Controls.Add(this.txtImplementation);
-            this.tbpImplementation.Location = new System.Drawing.Point(4, 25);
+            this.tbpImplementation.Location = new System.Drawing.Point(4, 23);
             this.tbpImplementation.Margin = new System.Windows.Forms.Padding(2);
             this.tbpImplementation.Name = "tbpImplementation";
-            this.tbpImplementation.Size = new System.Drawing.Size(1109, 442);
+            this.tbpImplementation.Size = new System.Drawing.Size(1109, 444);
             this.tbpImplementation.TabIndex = 4;
             this.tbpImplementation.Text = "Implementation";
             // 
@@ -870,10 +870,10 @@
             // 
             this.tbpOtherInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpOtherInformation.Controls.Add(this.tabControl3);
-            this.tbpOtherInformation.Location = new System.Drawing.Point(4, 25);
+            this.tbpOtherInformation.Location = new System.Drawing.Point(4, 23);
             this.tbpOtherInformation.Margin = new System.Windows.Forms.Padding(2);
             this.tbpOtherInformation.Name = "tbpOtherInformation";
-            this.tbpOtherInformation.Size = new System.Drawing.Size(1109, 442);
+            this.tbpOtherInformation.Size = new System.Drawing.Size(1109, 444);
             this.tbpOtherInformation.TabIndex = 5;
             this.tbpOtherInformation.Text = "Other Information";
             // 
@@ -892,10 +892,10 @@
             // 
             this.tbpOtherInformation2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpOtherInformation2.Controls.Add(this.txtOtherInformation);
-            this.tbpOtherInformation2.Location = new System.Drawing.Point(4, 25);
+            this.tbpOtherInformation2.Location = new System.Drawing.Point(4, 23);
             this.tbpOtherInformation2.Name = "tbpOtherInformation2";
             this.tbpOtherInformation2.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpOtherInformation2.Size = new System.Drawing.Size(1071, 386);
+            this.tbpOtherInformation2.Size = new System.Drawing.Size(1071, 388);
             this.tbpOtherInformation2.TabIndex = 0;
             this.tbpOtherInformation2.Text = "Other Information";
             // 
@@ -913,10 +913,10 @@
             // 
             this.tbpConfidentiality.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpConfidentiality.Controls.Add(this.txtConfidentiality);
-            this.tbpConfidentiality.Location = new System.Drawing.Point(4, 25);
+            this.tbpConfidentiality.Location = new System.Drawing.Point(4, 23);
             this.tbpConfidentiality.Name = "tbpConfidentiality";
             this.tbpConfidentiality.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpConfidentiality.Size = new System.Drawing.Size(1071, 386);
+            this.tbpConfidentiality.Size = new System.Drawing.Size(1071, 388);
             this.tbpConfidentiality.TabIndex = 1;
             this.tbpConfidentiality.Text = "Confidentiality";
             // 
@@ -934,10 +934,10 @@
             // 
             this.tbpDocumentation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpDocumentation.Controls.Add(this.txtDocumentation);
-            this.tbpDocumentation.Location = new System.Drawing.Point(4, 25);
+            this.tbpDocumentation.Location = new System.Drawing.Point(4, 23);
             this.tbpDocumentation.Name = "tbpDocumentation";
             this.tbpDocumentation.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpDocumentation.Size = new System.Drawing.Size(1071, 386);
+            this.tbpDocumentation.Size = new System.Drawing.Size(1071, 388);
             this.tbpDocumentation.TabIndex = 2;
             this.tbpDocumentation.Text = "Documentation";
             // 
@@ -954,22 +954,22 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.Black;
             this.label27.Location = new System.Drawing.Point(20, 26);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(239, 16);
+            this.label27.Size = new System.Drawing.Size(183, 14);
             this.label27.TabIndex = 8;
             this.label27.Text = "Please Enter Your Project Name:";
             // 
             // txtRequestForProposalProcessProject
             // 
             this.txtRequestForProposalProcessProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.txtRequestForProposalProcessProject.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRequestForProposalProcessProject.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRequestForProposalProcessProject.ForeColor = System.Drawing.Color.Black;
             this.txtRequestForProposalProcessProject.Location = new System.Drawing.Point(265, 23);
             this.txtRequestForProposalProcessProject.Name = "txtRequestForProposalProcessProject";
-            this.txtRequestForProposalProcessProject.Size = new System.Drawing.Size(320, 24);
+            this.txtRequestForProposalProcessProject.Size = new System.Drawing.Size(320, 20);
             this.txtRequestForProposalProcessProject.TabIndex = 7;
             this.txtRequestForProposalProcessProject.Text = "Project Name";
             // 
@@ -1001,7 +1001,7 @@
             // 
             // RequestForProposalDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1148, 545);
@@ -1010,7 +1010,7 @@
             this.Controls.Add(this.tbcRequestForProposal);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.txtRequestForProposalProcessProject);
-            this.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Maroon;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RequestForProposalDocumentForm";
