@@ -87,7 +87,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             Cursor.Current = Cursors.WaitCursor;
 
-            if(txtProjectCode.Text.Contains(" ") || txtProjectCode.Text.Contains("."))
+            if(txtProjectCode.Text.Contains(" ") || txtProjectCode.Text.Contains(".") || txtProjectCode.Text == "")
             {
                 MessageBox.Show("Incorrect Project ID.", "Sync Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtProjectCode.Text = "";
@@ -118,8 +118,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 }
 
                 JObject projectModel = JArray.Parse(jsonResponse)[0].ToObject<JObject>();
-
-                MessageBox.Show(projectModel.ToString());
 
                 ProjectModel newProject = new ProjectModel();
 

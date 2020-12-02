@@ -152,7 +152,7 @@ namespace ProjectManagementToolkit.MPMM
             var currentProjectJson = JsonConvert.SerializeObject(currentProject);
 
             var body = new StringContent(currentProjectJson, Encoding.UTF8, "application/json");
-            MessageBox.Show(Settings.Default.URI + "/project/" + Settings.Default.ProjectID);
+
             HttpResponseMessage httpResponseMessage = client.PostAsync(Settings.Default.URI + "/project/" + Settings.Default.ProjectID, body).Result;
 
             int statusCode = httpResponseMessage.StatusCode.GetHashCode();
@@ -380,7 +380,7 @@ namespace ProjectManagementToolkit.MPMM
 
                 return false;
             }
-            catch (AggregateException)
+            catch (HttpRequestException)
             {
                 return false;
             }
