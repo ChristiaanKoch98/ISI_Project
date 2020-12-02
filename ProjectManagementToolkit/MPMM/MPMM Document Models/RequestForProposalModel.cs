@@ -30,6 +30,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string companyKnowledgeOfIndustryAndExpertise { get; set; }
 
         //Solution Tab
+        public string solutionDescription { get; set; }
 
         public List<Solution> solutions { get; set; }
 

@@ -46,40 +46,32 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newRequestForProposalModel.documentInformations = new List<RequestForProposalModel.DocumentInformation>();
             foreach (DataGridViewRow row in dataGridViewDocumentInformation.Rows)
             {
-                if(row.Index != dataGridViewDocumentInformation.Rows.Count)
-                {
-                    RequestForProposalModel.DocumentInformation newInfo = new RequestForProposalModel.DocumentInformation();
-                    newInfo.type = row.Cells[0].Value?.ToString() ?? "";
-                    newInfo.information = row.Cells[1].Value?.ToString() ?? "";
-                    newRequestForProposalModel.documentInformations.Add(newInfo);
-                }
+                RequestForProposalModel.DocumentInformation newInfo = new RequestForProposalModel.DocumentInformation();
+                newInfo.type = row.Cells[0].Value?.ToString() ?? "";
+                newInfo.information = row.Cells[1].Value?.ToString() ?? "";
+                newRequestForProposalModel.documentInformations.Add(newInfo);
             }
 
             newRequestForProposalModel.documentHistories = new List<RequestForProposalModel.DocumentHistory>();
             foreach (DataGridViewRow row in dataGridViewDocumentHistory.Rows)
             {
-                if(row.Index != dataGridViewDocumentHistory.Rows.Count)
-                {
-                    RequestForProposalModel.DocumentHistory newHistory = new RequestForProposalModel.DocumentHistory();
-                    newHistory.version = row.Cells[0].Value?.ToString() ?? "";
-                    newHistory.issueDate = row.Cells[1].Value?.ToString() ?? "";
-                    newHistory.changes = row.Cells[2].Value?.ToString() ?? "";
-                    newRequestForProposalModel.documentHistories.Add(newHistory);
-                }
+                RequestForProposalModel.DocumentHistory newHistory = new RequestForProposalModel.DocumentHistory();
+                newHistory.version = row.Cells[0].Value?.ToString() ?? "";
+                newHistory.issueDate = row.Cells[1].Value?.ToString() ?? "";
+                newHistory.changes = row.Cells[2].Value?.ToString() ?? "";
+                newRequestForProposalModel.documentHistories.Add(newHistory);
             }
 
             newRequestForProposalModel.documentApprovals = new List<RequestForProposalModel.DocumentApproval>();
             foreach (DataGridViewRow row in dataGridViewDocumentApprovals.Rows)
             {
-                if(row.Index != dataGridViewDocumentApprovals.Rows.Count)
-                {
-                    RequestForProposalModel.DocumentApproval newApproval = new RequestForProposalModel.DocumentApproval();
-                    newApproval.role = row.Cells[0].Value?.ToString() ?? "";
-                    newApproval.name = row.Cells[1].Value?.ToString() ?? "";
-                    newApproval.signature = row.Cells[2].Value?.ToString() ?? "";
-                    newApproval.approvalDate = row.Cells[3].Value?.ToString() ?? "";
-                    newRequestForProposalModel.documentApprovals.Add(newApproval);
-                }
+                RequestForProposalModel.DocumentApproval newApproval = new RequestForProposalModel.DocumentApproval();
+                newApproval.role = row.Cells[0].Value?.ToString() ?? "";
+                newApproval.name = row.Cells[1].Value?.ToString() ?? "";
+                newApproval.signature = row.Cells[2].Value?.ToString() ?? "";
+                newApproval.approvalDate = row.Cells[3].Value?.ToString() ?? "";
+                newRequestForProposalModel.documentApprovals.Add(newApproval);
+                
             }
 
             newRequestForProposalModel.introductionDescription = txtChangeProcess.Text;
@@ -96,6 +88,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newRequestForProposalModel.companyTypeAndNumberOfCustomers = txtTypeAndNumberOfCustomers.Text;
             newRequestForProposalModel.companyMarketSegment = txtMarketSegment.Text;
             newRequestForProposalModel.companyKnowledgeOfIndustryAndExpertise = txtKnowledgeOfIndustryAndExpertise.Text;
+
+            newRequestForProposalModel.solutionDescription = txtSolution.Text;
 
             newRequestForProposalModel.solutions = new List<RequestForProposalModel.Solution>();
             foreach (DataGridViewRow row  in dataGridViewSolution.Rows)
@@ -178,6 +172,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 txtTypeAndNumberOfCustomers.Text = currentRequestForProposalModel.companyTypeAndNumberOfCustomers;
                 //txtMarketSegment.Text = currentRequestForProposalModel.companyMarketSegment;
                 txtKnowledgeOfIndustryAndExpertise.Text = currentRequestForProposalModel.companyKnowledgeOfIndustryAndExpertise;
+
+                txtSolution.Text = currentRequestForProposalModel.solutionDescription;
 
                 foreach (RequestForProposalModel.Solution row in currentRequestForProposalModel.solutions)
                 {
@@ -517,6 +513,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .Font("Arial");
 
                         solutionHeading.StyleId = "Heading1";
+                        document.InsertParagraph(currentRequestForProposalModel.solutionDescription)
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial");
+
 
                         var documentSolutions = document.AddTable(currentRequestForProposalModel.solutions.Count + 1, 3);
                         documentSolutions.Rows[0].Cells[0].Paragraphs[0].Append("Solution and Components")

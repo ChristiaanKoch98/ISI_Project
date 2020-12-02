@@ -128,6 +128,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             List<string[]> documentInfo = new List<string[]>();
             newQualityReviewPlanModel = new QualityReviewPlanModel();
             currentQualityReviewPlanModel = new QualityReviewPlanModel();
+            
             if (json != "")
             {
                 versionControl = JsonConvert.DeserializeObject<VersionControl<QualityReviewPlanModel>>(json);
@@ -199,29 +200,195 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                            .Color(Color.Black)
                            .Font("Arial").Alignment = Alignment.left;
 
-                        var splitProcess = document.AddTable(1, 2);
 
-                        splitProcess.Rows[0].Cells[0].Paragraphs[0].Append("Project Process")
+                        var qualityProcess = document.AddTable(currentQualityReviewPlanModel.QualityOfProcesses.Count + 2, 5);
+
+                        qualityProcess.Rows[0].MergeCells(0, 1);
+                        qualityProcess.Rows[0].MergeCells(1, 3);
+
+                        qualityProcess.Rows[0].Cells[0].Paragraphs[0].Append("Project Process")
                              .Bold(true)
                              .Color(Color.White)
                              .SpacingBefore(6d)
                              .SpacingAfter(6d);
-                        splitProcess.Rows[0].Cells[1].Paragraphs[0].Append("Quality Achieved")
+                        qualityProcess.Rows[0].Cells[1].Paragraphs[0].Append("Quality Achieved")
                             .Bold(true)
                             .Color(Color.White)
                             .SpacingBefore(6d)
                             .SpacingAfter(6d);
 
-                        splitProcess.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
-                        splitProcess.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
-                        splitProcess.SetWidths(new float[] {643,1943});
-                        document.InsertTable(splitProcess);
+                        qualityProcess.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        qualityProcess.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
 
-                        var qualityProcess = document.AddTable(currentQualityReviewPlanModel.QualityOfProcesses.Count + 1, 5);
-                        { 
+                        qualityProcess.Rows[1].Cells[0].Paragraphs[0].Append("Process")
+                             .Bold(true)
+                             .Color(Color.Black)
+                             .SpacingBefore(6d)
+                             .SpacingAfter(6d);
+                        qualityProcess.Rows[1].Cells[1].Paragraphs[0].Append("Procedure")
+                            .Bold(true)
+                            .Color(Color.Black)
+                            .SpacingBefore(6d)
+                            .SpacingAfter(6d);
+                        qualityProcess.Rows[1].Cells[2].Paragraphs[0].Append("Standard Met?")
+                             .Bold(true)
+                             .Color(Color.Black)
+                             .SpacingBefore(6d)
+                             .SpacingAfter(6d);
+                        qualityProcess.Rows[1].Cells[3].Paragraphs[0].Append("Deviation")
+                            .Bold(true)
+                            .Color(Color.Black)
+                            .SpacingBefore(6d)
+                            .SpacingAfter(6d);
+                        qualityProcess.Rows[1].Cells[4].Paragraphs[0].Append("Corrective Action")
+                             .Bold(true)
+                             .Color(Color.Black)
+                             .SpacingBefore(6d)
+                             .SpacingAfter(6d);
 
+                        
+
+                        for (int i = 2; i < currentQualityReviewPlanModel.QualityOfProcesses.Count + 2; i++)
+                        {
+                            qualityProcess.Rows[i].Cells[0].Paragraphs[0].Append(currentQualityReviewPlanModel.QualityOfProcesses[i - 2].Process);
+                            qualityProcess.Rows[i].Cells[1].Paragraphs[0].Append(currentQualityReviewPlanModel.QualityOfProcesses[i - 2].Procedure);
+                            qualityProcess.Rows[i].Cells[2].Paragraphs[0].Append(currentQualityReviewPlanModel.QualityOfProcesses[i - 2].StandardMet);
+                            qualityProcess.Rows[i].Cells[3].Paragraphs[0].Append(currentQualityReviewPlanModel.QualityOfProcesses[i - 2].Deviation);
+                            qualityProcess.Rows[i].Cells[4].Paragraphs[0].Append(currentQualityReviewPlanModel.QualityOfProcesses[i - 2].CorrectiveAction);
                         }
+                        
+                        qualityProcess.AutoFit = AutoFit.Window;
+                        document.InsertTable(qualityProcess);
 
+                        //////
+
+
+                        var QualityDeliverables = document.InsertParagraph("2\tQuality of Deliverables")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+                        QualityDeliverables.StyleId = "Heading1";
+
+                        document.InsertParagraph(currentQualityReviewPlanModel.QualityOfDeliverablesDescription)
+                           .FontSize(11d)
+                           .Color(Color.Black)
+                           .Font("Arial").Alignment = Alignment.left;
+
+
+                        /*var splitDeliverable = document.AddTable(1, 3);
+
+                        splitDeliverable.Rows[0].Cells[0].Paragraphs[0].Append("Project Deliverable")
+                             .Bold(true)
+                             .Color(Color.White)
+                             .SpacingBefore(6d)
+                             .SpacingAfter(6d);
+                        splitDeliverable.Rows[0].Cells[1].Paragraphs[0].Append("Quality Target")
+                            .Bold(true)
+                            .Color(Color.White)
+                            .SpacingBefore(6d)
+                            .SpacingAfter(6d);
+                        splitDeliverable.Rows[0].Cells[2].Paragraphs[0].Append("Quality Achieved")
+                            .Bold(true)
+                            .Color(Color.White)
+                            .SpacingBefore(6d)
+                            .SpacingAfter(6d);
+
+
+                        splitDeliverable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        splitDeliverable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        splitDeliverable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+
+                        float QoDwidth_1 = 3000;
+                        float QoDwidth_2 = 2500;
+                        float QoDwidth_3 = 3000;
+
+
+                        splitDeliverable.SetWidths(new float[] { QoDwidth_1, QoDwidth_2, QoDwidth_3 });
+
+             
+
+                        document.InsertTable(splitDeliverable);*/
+
+
+                        var qualityDeliverable = document.AddTable(currentQualityReviewPlanModel.QualityOfDeliverables.Count + 2, 7);
+
+                        qualityDeliverable.Rows[0].MergeCells(0, 1);
+                        qualityDeliverable.Rows[0].MergeCells(1, 2);
+                        qualityDeliverable.Rows[0].MergeCells(2, 4);
+
+                        qualityDeliverable.Rows[0].Cells[0].Paragraphs[0].Append("Project Deliverable")
+                             .Bold(true)
+                             .Color(Color.White)
+                             .SpacingBefore(6d)
+                             .SpacingAfter(6d);
+                        qualityDeliverable.Rows[0].Cells[1].Paragraphs[0].Append("Quality Target")
+                            .Bold(true)
+                            .Color(Color.White)
+                            .SpacingBefore(6d)
+                            .SpacingAfter(6d);
+                        qualityDeliverable.Rows[0].Cells[2].Paragraphs[0].Append("Quality Achieved")
+                            .Bold(true)
+                            .Color(Color.White)
+                            .SpacingBefore(6d)
+                            .SpacingAfter(6d);
+
+                        qualityDeliverable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        qualityDeliverable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        qualityDeliverable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+
+
+                        qualityDeliverable.Rows[1].Cells[0].Paragraphs[0].Append("Requirement")
+                             .Bold(true)
+                             .Color(Color.Black)
+                             .SpacingBefore(6d)
+                             .SpacingAfter(6d);
+                        qualityDeliverable.Rows[1].Cells[1].Paragraphs[0].Append("Deliverable")
+                            .Bold(true)
+                            .Color(Color.Black)
+                            .SpacingBefore(6d)
+                            .SpacingAfter(6d);
+                        qualityDeliverable.Rows[1].Cells[2].Paragraphs[0].Append("Quality Criteria")
+                             .Bold(true)
+                             .Color(Color.Black)
+                             .SpacingBefore(6d)
+                             .SpacingAfter(6d);
+                        qualityDeliverable.Rows[1].Cells[3].Paragraphs[0].Append("Quality Standards")
+                            .Bold(true)
+                            .Color(Color.Black)
+                            .SpacingBefore(6d)
+                            .SpacingAfter(6d);
+                        qualityDeliverable.Rows[1].Cells[4].Paragraphs[0].Append("Standard Met?")
+                             .Bold(true)
+                             .Color(Color.Black)
+                             .SpacingBefore(6d)
+                             .SpacingAfter(6d);
+                        qualityDeliverable.Rows[1].Cells[5].Paragraphs[0].Append("Quality Deviation")
+                             .Bold(true)
+                             .Color(Color.Black)
+                             .SpacingBefore(6d)
+                             .SpacingAfter(6d);
+                        qualityDeliverable.Rows[1].Cells[6].Paragraphs[0].Append("Corrective Actions Required")
+                             .Bold(true)
+                             .Color(Color.Black)
+                             .SpacingBefore(6d)
+                             .SpacingAfter(6d);
+
+                        for (int i = 2; i < currentQualityReviewPlanModel.QualityOfDeliverables.Count + 2; i++)
+                        {
+                            qualityDeliverable.Rows[i].Cells[0].Paragraphs[0].Append(currentQualityReviewPlanModel.QualityOfDeliverables[i - 2].Requirement);
+                            qualityDeliverable.Rows[i].Cells[1].Paragraphs[0].Append(currentQualityReviewPlanModel.QualityOfDeliverables[i - 2].Deliverable);
+                            qualityDeliverable.Rows[i].Cells[2].Paragraphs[0].Append(currentQualityReviewPlanModel.QualityOfDeliverables[i - 2].QualityCriteria);
+                            qualityDeliverable.Rows[i].Cells[3].Paragraphs[0].Append(currentQualityReviewPlanModel.QualityOfDeliverables[i - 2].QualityStandard);
+                            qualityDeliverable.Rows[i].Cells[4].Paragraphs[0].Append(currentQualityReviewPlanModel.QualityOfDeliverables[i - 2].StandardMet);
+                            qualityDeliverable.Rows[i].Cells[5].Paragraphs[0].Append(currentQualityReviewPlanModel.QualityOfDeliverables[i - 2].QualityDeviation);
+                            qualityDeliverable.Rows[i].Cells[6].Paragraphs[0].Append(currentQualityReviewPlanModel.QualityOfDeliverables[i - 2].CorrectiveActionsRequired);
+                        }
+                        //qualityDeliverable.SetWidths(new float[] { (float)QoDwidth_1 / 2, (float)QoDwidth_1 / 2, (float)QoDwidth_2 / 2, (float)QoDwidth_2 / 2, (float)QoDwidth_3 / 3, (float)QoDwidth_3 / 3, (float)QoDwidth_3 / 3 });
+                        qualityDeliverable.AutoFit = AutoFit.Window;
+                        
+                        document.InsertTable(qualityDeliverable);
 
 
 
