@@ -384,5 +384,12 @@ namespace ProjectManagementToolkit
             form.Show();
             form.MdiParent = this;
         }
+
+        private void exampleToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            ProjectCharterForm form = new ProjectCharterForm();
+            form.Show();
+            form.MdiParent = this;
+        }
     }
 }

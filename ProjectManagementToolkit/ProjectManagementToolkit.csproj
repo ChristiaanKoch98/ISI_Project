@@ -238,6 +238,17 @@
     <Compile Include="MPMM\MPMM Document Forms\ProcurementRegister.Designer.cs">
       <DependentUpon>ProcurementRegister.cs</DependentUpon>
     </Compile>
+
+    <Compile Include="MPMM\MPMM Document Forms\projectCharterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\projectCharterForm.Designer.cs">
+      <DependentUpon>projectCharterForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\projectCharterForm.resx">
+      <DependentUpon>projectCharterForm.cs</DependentUpon>
+    </EmbeddedResource>
+
     <Compile Include="MPMM\MPMM Document Forms\ProjectClosureReportDocumentForm.cs">
       <SubType>Form</SubType>
     </Compile>
