@@ -269,9 +269,17 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
         }
 
-        private void btn_Export_Click(object sender, EventArgs e)
+       
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            SaveDocument();
+        }
+
+        private void btnExportToWord_Click(object sender, EventArgs e)
         {
             exportToWord();
+
         }
 
         private void exportToWord()

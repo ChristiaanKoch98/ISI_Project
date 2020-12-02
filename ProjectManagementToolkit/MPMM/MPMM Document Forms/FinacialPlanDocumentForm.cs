@@ -54,11 +54,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             SaveDocument();
         }
 
-        private void FinacialPlanDocumentForm_Load(object sender, EventArgs e)
-        {
-            loadDocument();
-        }
-
         //Back-End
         public void SaveDocument()
         {
