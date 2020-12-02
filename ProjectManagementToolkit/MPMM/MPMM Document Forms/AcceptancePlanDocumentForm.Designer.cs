@@ -873,7 +873,6 @@
             this.Controls.Add(this.txtProjectName);
             this.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
-            this.Name = "AcceptancePlanDocumentForm";
             this.Text = "AcceptancePlanDocumentForm";
             this.Load += new System.EventHandler(this.AcceptancePlanDocumentForm_Load);
             this.tabControl1.ResumeLayout(false);
