@@ -28,6 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label27 = new System.Windows.Forms.Label();
             this.tbpDocumentControl = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -41,13 +71,24 @@
             this.historyIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.historyChanges = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbpDocumentApprovals = new System.Windows.Forms.TabPage();
-            this.dataGridViewDocumentApprovals = new System.Windows.Forms.DataGridView();
-            this.approvalRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.approvalName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.approvalSignature = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.approvalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbcProjectClosureReport = new System.Windows.Forms.TabControl();
+            this.tbpProjectCompletion = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtProjectCompletion = new System.Windows.Forms.TextBox();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tbpCompletionCriteria = new System.Windows.Forms.TabPage();
+            this.dataGridViewCompletionCriteria = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxCompletionCatagory = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxCompletionCriteria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxSatisfied = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tbpOutstandingItems = new System.Windows.Forms.TabPage();
+            this.dataGridViewOutstandingItems = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxOutstandingItems = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxActionRequired1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxCompletionDate1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbpProjectClosure = new System.Windows.Forms.TabPage();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtProjectClosure = new System.Windows.Forms.TextBox();
             this.tbcProjectClosure = new System.Windows.Forms.TabControl();
             this.tbpDeliverables = new System.Windows.Forms.TabPage();
             this.dataGridViewDeliverables = new System.Windows.Forms.DataGridView();
@@ -90,22 +131,11 @@
             this.btnRequestForProposal_MainMenue = new System.Windows.Forms.Button();
             this.btnRequestForProposal_EnterProjectName = new System.Windows.Forms.Button();
             this.txtRequestForProposalProcessProject = new System.Windows.Forms.TextBox();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.dataGridViewOutstandingItems = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxCompletionDate1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxActionRequired1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxOutstandingItems = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tbpOutstandingItems = new System.Windows.Forms.TabPage();
-            this.tbpCompletionCriteria = new System.Windows.Forms.TabPage();
-            this.txtProjectCompletion = new System.Windows.Forms.TextBox();
-            this.tbpProjectCompletion = new System.Windows.Forms.TabPage();
-            this.dataGridViewCompletionCriteria = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxCompletionCatagory = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxCompletionCriteria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxSatisfied = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtProjectClosure = new System.Windows.Forms.TextBox();
+            this.dataGridViewDocumentApprovals = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbpDocumentControl.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tbpDocumentInformation.SuspendLayout();
@@ -113,8 +143,13 @@
             this.tbpDocumentHistory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentHistory)).BeginInit();
             this.tbpDocumentApprovals.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentApprovals)).BeginInit();
             this.tbcProjectClosureReport.SuspendLayout();
+            this.tbpProjectCompletion.SuspendLayout();
+            this.tabControl2.SuspendLayout();
+            this.tbpCompletionCriteria.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCompletionCriteria)).BeginInit();
+            this.tbpOutstandingItems.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOutstandingItems)).BeginInit();
             this.tbpProjectClosure.SuspendLayout();
             this.tbcProjectClosure.SuspendLayout();
             this.tbpDeliverables.SuspendLayout();
@@ -128,12 +163,7 @@
             this.tbpCommunication.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCommunications)).BeginInit();
             this.tbpApproval.SuspendLayout();
-            this.tabControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOutstandingItems)).BeginInit();
-            this.tbpOutstandingItems.SuspendLayout();
-            this.tbpCompletionCriteria.SuspendLayout();
-            this.tbpProjectCompletion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCompletionCriteria)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentApprovals)).BeginInit();
             this.SuspendLayout();
             // 
             // label27
@@ -165,37 +195,58 @@
             this.tabControl1.Controls.Add(this.tbpDocumentInformation);
             this.tabControl1.Controls.Add(this.tbpDocumentHistory);
             this.tabControl1.Controls.Add(this.tbpDocumentApprovals);
-            this.tabControl1.Location = new System.Drawing.Point(14, 16);
+            this.tabControl1.Location = new System.Drawing.Point(4, 7);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1268, 566);
+            this.tabControl1.Size = new System.Drawing.Size(1290, 585);
             this.tabControl1.TabIndex = 9;
             // 
             // tbpDocumentInformation
             // 
-            this.tbpDocumentInformation.BackColor = System.Drawing.Color.Gray;
+            this.tbpDocumentInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpDocumentInformation.Controls.Add(this.dataGridViewDocumentInformation);
             this.tbpDocumentInformation.ForeColor = System.Drawing.Color.Gray;
             this.tbpDocumentInformation.Location = new System.Drawing.Point(4, 21);
             this.tbpDocumentInformation.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpDocumentInformation.Name = "tbpDocumentInformation";
             this.tbpDocumentInformation.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tbpDocumentInformation.Size = new System.Drawing.Size(1260, 541);
+            this.tbpDocumentInformation.Size = new System.Drawing.Size(1282, 560);
             this.tbpDocumentInformation.TabIndex = 0;
             this.tbpDocumentInformation.Text = "Document Information";
             // 
             // dataGridViewDocumentInformation
             // 
+            this.dataGridViewDocumentInformation.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentInformation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewDocumentInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDocumentInformation.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Type,
             this.Information});
-            this.dataGridViewDocumentInformation.Location = new System.Drawing.Point(5, 5);
+            this.dataGridViewDocumentInformation.EnableHeadersVisualStyles = false;
+            this.dataGridViewDocumentInformation.Location = new System.Drawing.Point(9, 7);
             this.dataGridViewDocumentInformation.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dataGridViewDocumentInformation.Name = "dataGridViewDocumentInformation";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentInformation.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewDocumentInformation.RowHeadersWidth = 51;
-            this.dataGridViewDocumentInformation.Size = new System.Drawing.Size(1246, 233);
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewDocumentInformation.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewDocumentInformation.Size = new System.Drawing.Size(1264, 546);
             this.dataGridViewDocumentInformation.TabIndex = 1;
             // 
             // Type
@@ -214,29 +265,50 @@
             // 
             // tbpDocumentHistory
             // 
-            this.tbpDocumentHistory.BackColor = System.Drawing.Color.Gray;
+            this.tbpDocumentHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpDocumentHistory.Controls.Add(this.dataGridViewDocumentHistory);
-            this.tbpDocumentHistory.ForeColor = System.Drawing.Color.Gray;
+            this.tbpDocumentHistory.ForeColor = System.Drawing.Color.DimGray;
             this.tbpDocumentHistory.Location = new System.Drawing.Point(4, 21);
             this.tbpDocumentHistory.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpDocumentHistory.Name = "tbpDocumentHistory";
             this.tbpDocumentHistory.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tbpDocumentHistory.Size = new System.Drawing.Size(1260, 541);
+            this.tbpDocumentHistory.Size = new System.Drawing.Size(1282, 560);
             this.tbpDocumentHistory.TabIndex = 1;
             this.tbpDocumentHistory.Text = "Document History";
             // 
             // dataGridViewDocumentHistory
             // 
+            this.dataGridViewDocumentHistory.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewDocumentHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDocumentHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Version,
             this.historyIssueDate,
             this.historyChanges});
-            this.dataGridViewDocumentHistory.Location = new System.Drawing.Point(5, 5);
+            this.dataGridViewDocumentHistory.EnableHeadersVisualStyles = false;
+            this.dataGridViewDocumentHistory.Location = new System.Drawing.Point(9, 7);
             this.dataGridViewDocumentHistory.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dataGridViewDocumentHistory.Name = "dataGridViewDocumentHistory";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentHistory.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewDocumentHistory.RowHeadersWidth = 51;
-            this.dataGridViewDocumentHistory.Size = new System.Drawing.Size(1250, 233);
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewDocumentHistory.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridViewDocumentHistory.Size = new System.Drawing.Size(1264, 546);
             this.dataGridViewDocumentHistory.TabIndex = 1;
             // 
             // Version
@@ -262,60 +334,15 @@
             // 
             // tbpDocumentApprovals
             // 
-            this.tbpDocumentApprovals.BackColor = System.Drawing.Color.Gray;
+            this.tbpDocumentApprovals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpDocumentApprovals.Controls.Add(this.dataGridViewDocumentApprovals);
             this.tbpDocumentApprovals.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.tbpDocumentApprovals.Location = new System.Drawing.Point(4, 21);
             this.tbpDocumentApprovals.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbpDocumentApprovals.Name = "tbpDocumentApprovals";
-            this.tbpDocumentApprovals.Size = new System.Drawing.Size(1260, 541);
+            this.tbpDocumentApprovals.Size = new System.Drawing.Size(1282, 560);
             this.tbpDocumentApprovals.TabIndex = 2;
             this.tbpDocumentApprovals.Text = "Document Approvals";
-            // 
-            // dataGridViewDocumentApprovals
-            // 
-            this.dataGridViewDocumentApprovals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDocumentApprovals.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.approvalRole,
-            this.approvalName,
-            this.approvalSignature,
-            this.approvalDate});
-            this.dataGridViewDocumentApprovals.Location = new System.Drawing.Point(5, 4);
-            this.dataGridViewDocumentApprovals.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.dataGridViewDocumentApprovals.Name = "dataGridViewDocumentApprovals";
-            this.dataGridViewDocumentApprovals.RowHeadersWidth = 51;
-            this.dataGridViewDocumentApprovals.Size = new System.Drawing.Size(1250, 231);
-            this.dataGridViewDocumentApprovals.TabIndex = 2;
-            // 
-            // approvalRole
-            // 
-            this.approvalRole.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.approvalRole.HeaderText = "Role";
-            this.approvalRole.MinimumWidth = 6;
-            this.approvalRole.Name = "approvalRole";
-            // 
-            // approvalName
-            // 
-            this.approvalName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.approvalName.HeaderText = "Name";
-            this.approvalName.MinimumWidth = 6;
-            this.approvalName.Name = "approvalName";
-            // 
-            // approvalSignature
-            // 
-            this.approvalSignature.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.approvalSignature.DataPropertyName = "(none)";
-            this.approvalSignature.HeaderText = "Signature";
-            this.approvalSignature.MinimumWidth = 6;
-            this.approvalSignature.Name = "approvalSignature";
-            this.approvalSignature.ReadOnly = true;
-            // 
-            // approvalDate
-            // 
-            this.approvalDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.approvalDate.HeaderText = "Date";
-            this.approvalDate.MinimumWidth = 6;
-            this.approvalDate.Name = "approvalDate";
             // 
             // tbcProjectClosureReport
             // 
@@ -331,6 +358,187 @@
             this.tbcProjectClosureReport.Size = new System.Drawing.Size(1306, 624);
             this.tbcProjectClosureReport.TabIndex = 12;
             // 
+            // tbpProjectCompletion
+            // 
+            this.tbpProjectCompletion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tbpProjectCompletion.Controls.Add(this.label7);
+            this.tbpProjectCompletion.Controls.Add(this.txtProjectCompletion);
+            this.tbpProjectCompletion.Controls.Add(this.tabControl2);
+            this.tbpProjectCompletion.Location = new System.Drawing.Point(4, 21);
+            this.tbpProjectCompletion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tbpProjectCompletion.Name = "tbpProjectCompletion";
+            this.tbpProjectCompletion.Size = new System.Drawing.Size(1298, 599);
+            this.tbpProjectCompletion.TabIndex = 3;
+            this.tbpProjectCompletion.Text = "Project Completion";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(17, 13);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(182, 14);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Project Completion Description:";
+            // 
+            // txtProjectCompletion
+            // 
+            this.txtProjectCompletion.BackColor = System.Drawing.SystemColors.Control;
+            this.txtProjectCompletion.Location = new System.Drawing.Point(20, 30);
+            this.txtProjectCompletion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtProjectCompletion.Multiline = true;
+            this.txtProjectCompletion.Name = "txtProjectCompletion";
+            this.txtProjectCompletion.Size = new System.Drawing.Size(1260, 43);
+            this.txtProjectCompletion.TabIndex = 5;
+            this.txtProjectCompletion.Text = "Before you undertake project closure, this section identifies the criteria requir" +
+    "ed to ensure that the project is complete, and lists any outstanding items.";
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tbpCompletionCriteria);
+            this.tabControl2.Controls.Add(this.tbpOutstandingItems);
+            this.tabControl2.Location = new System.Drawing.Point(16, 79);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(1268, 506);
+            this.tabControl2.TabIndex = 16;
+            // 
+            // tbpCompletionCriteria
+            // 
+            this.tbpCompletionCriteria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tbpCompletionCriteria.Controls.Add(this.dataGridViewCompletionCriteria);
+            this.tbpCompletionCriteria.Location = new System.Drawing.Point(4, 21);
+            this.tbpCompletionCriteria.Name = "tbpCompletionCriteria";
+            this.tbpCompletionCriteria.Padding = new System.Windows.Forms.Padding(3);
+            this.tbpCompletionCriteria.Size = new System.Drawing.Size(1260, 481);
+            this.tbpCompletionCriteria.TabIndex = 0;
+            this.tbpCompletionCriteria.Text = "Completion Criteria";
+            // 
+            // dataGridViewCompletionCriteria
+            // 
+            this.dataGridViewCompletionCriteria.AllowUserToOrderColumns = true;
+            this.dataGridViewCompletionCriteria.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCompletionCriteria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridViewCompletionCriteria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCompletionCriteria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxCompletionCatagory,
+            this.dataGridViewTextBoxCompletionCriteria,
+            this.dataGridViewTextBoxSatisfied});
+            this.dataGridViewCompletionCriteria.EnableHeadersVisualStyles = false;
+            this.dataGridViewCompletionCriteria.Location = new System.Drawing.Point(8, 7);
+            this.dataGridViewCompletionCriteria.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.dataGridViewCompletionCriteria.Name = "dataGridViewCompletionCriteria";
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCompletionCriteria.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.dataGridViewCompletionCriteria.RowHeadersWidth = 51;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewCompletionCriteria.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            this.dataGridViewCompletionCriteria.Size = new System.Drawing.Size(1244, 464);
+            this.dataGridViewCompletionCriteria.TabIndex = 8;
+            // 
+            // dataGridViewTextBoxCompletionCatagory
+            // 
+            this.dataGridViewTextBoxCompletionCatagory.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxCompletionCatagory.HeaderText = "Completion Catagory";
+            this.dataGridViewTextBoxCompletionCatagory.MinimumWidth = 6;
+            this.dataGridViewTextBoxCompletionCatagory.Name = "dataGridViewTextBoxCompletionCatagory";
+            // 
+            // dataGridViewTextBoxCompletionCriteria
+            // 
+            this.dataGridViewTextBoxCompletionCriteria.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxCompletionCriteria.HeaderText = "Completion Criteria";
+            this.dataGridViewTextBoxCompletionCriteria.MinimumWidth = 6;
+            this.dataGridViewTextBoxCompletionCriteria.Name = "dataGridViewTextBoxCompletionCriteria";
+            // 
+            // dataGridViewTextBoxSatisfied
+            // 
+            this.dataGridViewTextBoxSatisfied.HeaderText = "Satisfied?";
+            this.dataGridViewTextBoxSatisfied.MinimumWidth = 6;
+            this.dataGridViewTextBoxSatisfied.Name = "dataGridViewTextBoxSatisfied";
+            this.dataGridViewTextBoxSatisfied.Width = 125;
+            // 
+            // tbpOutstandingItems
+            // 
+            this.tbpOutstandingItems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tbpOutstandingItems.Controls.Add(this.dataGridViewOutstandingItems);
+            this.tbpOutstandingItems.Location = new System.Drawing.Point(4, 21);
+            this.tbpOutstandingItems.Name = "tbpOutstandingItems";
+            this.tbpOutstandingItems.Padding = new System.Windows.Forms.Padding(3);
+            this.tbpOutstandingItems.Size = new System.Drawing.Size(1260, 481);
+            this.tbpOutstandingItems.TabIndex = 1;
+            this.tbpOutstandingItems.Text = "Outstanding Items";
+            // 
+            // dataGridViewOutstandingItems
+            // 
+            this.dataGridViewOutstandingItems.AllowUserToOrderColumns = true;
+            this.dataGridViewOutstandingItems.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewOutstandingItems.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            this.dataGridViewOutstandingItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewOutstandingItems.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxOutstandingItems,
+            this.dataGridViewTextBoxActionRequired1,
+            this.dataGridViewTextBoxCompletionDate1});
+            this.dataGridViewOutstandingItems.EnableHeadersVisualStyles = false;
+            this.dataGridViewOutstandingItems.Location = new System.Drawing.Point(8, 5);
+            this.dataGridViewOutstandingItems.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.dataGridViewOutstandingItems.Name = "dataGridViewOutstandingItems";
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewOutstandingItems.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.dataGridViewOutstandingItems.RowHeadersWidth = 51;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewOutstandingItems.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            this.dataGridViewOutstandingItems.Size = new System.Drawing.Size(1244, 470);
+            this.dataGridViewOutstandingItems.TabIndex = 7;
+            // 
+            // dataGridViewTextBoxOutstandingItems
+            // 
+            this.dataGridViewTextBoxOutstandingItems.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxOutstandingItems.HeaderText = "Outstanding Items";
+            this.dataGridViewTextBoxOutstandingItems.MinimumWidth = 6;
+            this.dataGridViewTextBoxOutstandingItems.Name = "dataGridViewTextBoxOutstandingItems";
+            // 
+            // dataGridViewTextBoxActionRequired1
+            // 
+            this.dataGridViewTextBoxActionRequired1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxActionRequired1.HeaderText = "Action Required";
+            this.dataGridViewTextBoxActionRequired1.MinimumWidth = 6;
+            this.dataGridViewTextBoxActionRequired1.Name = "dataGridViewTextBoxActionRequired1";
+            // 
+            // dataGridViewTextBoxCompletionDate1
+            // 
+            this.dataGridViewTextBoxCompletionDate1.HeaderText = "Completion Date";
+            this.dataGridViewTextBoxCompletionDate1.MinimumWidth = 6;
+            this.dataGridViewTextBoxCompletionDate1.Name = "dataGridViewTextBoxCompletionDate1";
+            this.dataGridViewTextBoxCompletionDate1.Width = 125;
+            // 
             // tbpProjectClosure
             // 
             this.tbpProjectClosure.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
@@ -344,6 +552,26 @@
             this.tbpProjectClosure.TabIndex = 4;
             this.tbpProjectClosure.Text = "Project Closure";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(18, 13);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(161, 14);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Project Closure Description:";
+            // 
+            // txtProjectClosure
+            // 
+            this.txtProjectClosure.BackColor = System.Drawing.SystemColors.Control;
+            this.txtProjectClosure.Location = new System.Drawing.Point(20, 30);
+            this.txtProjectClosure.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtProjectClosure.Multiline = true;
+            this.txtProjectClosure.Name = "txtProjectClosure";
+            this.txtProjectClosure.Size = new System.Drawing.Size(1257, 48);
+            this.txtProjectClosure.TabIndex = 16;
+            // 
             // tbcProjectClosure
             // 
             this.tbcProjectClosure.Controls.Add(this.tbpDeliverables);
@@ -351,7 +579,7 @@
             this.tbcProjectClosure.Controls.Add(this.tbpSuppliers);
             this.tbcProjectClosure.Controls.Add(this.tbpResources);
             this.tbcProjectClosure.Controls.Add(this.tbpCommunication);
-            this.tbcProjectClosure.Location = new System.Drawing.Point(18, 84);
+            this.tbcProjectClosure.Location = new System.Drawing.Point(20, 84);
             this.tbcProjectClosure.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbcProjectClosure.Name = "tbcProjectClosure";
             this.tbcProjectClosure.SelectedIndex = 0;
@@ -360,7 +588,7 @@
             // 
             // tbpDeliverables
             // 
-            this.tbpDeliverables.BackColor = System.Drawing.Color.LightGray;
+            this.tbpDeliverables.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpDeliverables.Controls.Add(this.dataGridViewDeliverables);
             this.tbpDeliverables.Location = new System.Drawing.Point(4, 21);
             this.tbpDeliverables.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -373,16 +601,36 @@
             // dataGridViewDeliverables
             // 
             this.dataGridViewDeliverables.AllowUserToOrderColumns = true;
+            this.dataGridViewDeliverables.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDeliverables.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridViewDeliverables.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDeliverables.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxProjectDeliverables,
             this.dataGridViewTextBoxActionRequired2,
             this.dataGridViewTextBoxCompletionDate2});
-            this.dataGridViewDeliverables.Location = new System.Drawing.Point(5, 4);
+            this.dataGridViewDeliverables.EnableHeadersVisualStyles = false;
+            this.dataGridViewDeliverables.Location = new System.Drawing.Point(9, 7);
             this.dataGridViewDeliverables.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dataGridViewDeliverables.Name = "dataGridViewDeliverables";
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDeliverables.RowHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridViewDeliverables.RowHeadersWidth = 51;
-            this.dataGridViewDeliverables.Size = new System.Drawing.Size(1246, 466);
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewDeliverables.RowsDefaultCellStyle = dataGridViewCellStyle18;
+            this.dataGridViewDeliverables.Size = new System.Drawing.Size(1237, 460);
             this.dataGridViewDeliverables.TabIndex = 9;
             // 
             // dataGridViewTextBoxProjectDeliverables
@@ -408,7 +656,7 @@
             // 
             // tbpDocumentation
             // 
-            this.tbpDocumentation.BackColor = System.Drawing.Color.LightGray;
+            this.tbpDocumentation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpDocumentation.Controls.Add(this.dataGridViewDocumentation);
             this.tbpDocumentation.Location = new System.Drawing.Point(4, 21);
             this.tbpDocumentation.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -421,16 +669,36 @@
             // dataGridViewDocumentation
             // 
             this.dataGridViewDocumentation.AllowUserToOrderColumns = true;
+            this.dataGridViewDocumentation.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
             this.dataGridViewDocumentation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDocumentation.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxProjectDocument,
             this.dataGridViewTextBoxActionRequired3,
             this.dataGridViewTextBoxCompletionDate3});
-            this.dataGridViewDocumentation.Location = new System.Drawing.Point(5, 4);
+            this.dataGridViewDocumentation.EnableHeadersVisualStyles = false;
+            this.dataGridViewDocumentation.Location = new System.Drawing.Point(9, 7);
             this.dataGridViewDocumentation.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dataGridViewDocumentation.Name = "dataGridViewDocumentation";
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentation.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.dataGridViewDocumentation.RowHeadersWidth = 51;
-            this.dataGridViewDocumentation.Size = new System.Drawing.Size(1685, 490);
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewDocumentation.RowsDefaultCellStyle = dataGridViewCellStyle21;
+            this.dataGridViewDocumentation.Size = new System.Drawing.Size(1237, 460);
             this.dataGridViewDocumentation.TabIndex = 10;
             // 
             // dataGridViewTextBoxProjectDocument
@@ -456,7 +724,7 @@
             // 
             // tbpSuppliers
             // 
-            this.tbpSuppliers.BackColor = System.Drawing.Color.LightGray;
+            this.tbpSuppliers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpSuppliers.Controls.Add(this.dataGridViewSippliers);
             this.tbpSuppliers.Location = new System.Drawing.Point(4, 21);
             this.tbpSuppliers.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -468,16 +736,36 @@
             // dataGridViewSippliers
             // 
             this.dataGridViewSippliers.AllowUserToOrderColumns = true;
+            this.dataGridViewSippliers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewSippliers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.dataGridViewSippliers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSippliers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxSupplierContract,
             this.dataGridViewTextBoxActionRequired4,
             this.dataGridViewTextBoxCompletionDate4});
-            this.dataGridViewSippliers.Location = new System.Drawing.Point(5, 4);
+            this.dataGridViewSippliers.EnableHeadersVisualStyles = false;
+            this.dataGridViewSippliers.Location = new System.Drawing.Point(8, 7);
             this.dataGridViewSippliers.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dataGridViewSippliers.Name = "dataGridViewSippliers";
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewSippliers.RowHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this.dataGridViewSippliers.RowHeadersWidth = 51;
-            this.dataGridViewSippliers.Size = new System.Drawing.Size(1685, 490);
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewSippliers.RowsDefaultCellStyle = dataGridViewCellStyle24;
+            this.dataGridViewSippliers.Size = new System.Drawing.Size(1239, 454);
             this.dataGridViewSippliers.TabIndex = 11;
             // 
             // dataGridViewTextBoxSupplierContract
@@ -503,7 +791,7 @@
             // 
             // tbpResources
             // 
-            this.tbpResources.BackColor = System.Drawing.Color.LightGray;
+            this.tbpResources.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpResources.Controls.Add(this.dataGridViewResources);
             this.tbpResources.Location = new System.Drawing.Point(4, 21);
             this.tbpResources.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -515,16 +803,36 @@
             // dataGridViewResources
             // 
             this.dataGridViewResources.AllowUserToOrderColumns = true;
+            this.dataGridViewResources.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewResources.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
             this.dataGridViewResources.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewResources.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxProjectResource,
             this.dataGridViewTextBoxActionRequired5,
             this.dataGridViewTextBoxCompletionDate5});
-            this.dataGridViewResources.Location = new System.Drawing.Point(5, 4);
+            this.dataGridViewResources.EnableHeadersVisualStyles = false;
+            this.dataGridViewResources.Location = new System.Drawing.Point(7, 4);
             this.dataGridViewResources.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dataGridViewResources.Name = "dataGridViewResources";
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewResources.RowHeadersDefaultCellStyle = dataGridViewCellStyle26;
             this.dataGridViewResources.RowHeadersWidth = 51;
-            this.dataGridViewResources.Size = new System.Drawing.Size(1685, 490);
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewResources.RowsDefaultCellStyle = dataGridViewCellStyle27;
+            this.dataGridViewResources.Size = new System.Drawing.Size(1240, 466);
             this.dataGridViewResources.TabIndex = 12;
             // 
             // dataGridViewTextBoxProjectResource
@@ -550,7 +858,7 @@
             // 
             // tbpCommunication
             // 
-            this.tbpCommunication.BackColor = System.Drawing.Color.LightGray;
+            this.tbpCommunication.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tbpCommunication.Controls.Add(this.dataGridViewCommunications);
             this.tbpCommunication.Location = new System.Drawing.Point(4, 21);
             this.tbpCommunication.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -562,17 +870,37 @@
             // dataGridViewCommunications
             // 
             this.dataGridViewCommunications.AllowUserToOrderColumns = true;
+            this.dataGridViewCommunications.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCommunications.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle28;
             this.dataGridViewCommunications.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCommunications.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxAudience,
             this.dataGridViewTextBoxMessage,
             this.dataGridViewTextBoxMethod,
             this.DataGridViewTextBoxDate});
-            this.dataGridViewCommunications.Location = new System.Drawing.Point(5, 4);
+            this.dataGridViewCommunications.EnableHeadersVisualStyles = false;
+            this.dataGridViewCommunications.Location = new System.Drawing.Point(8, 6);
             this.dataGridViewCommunications.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dataGridViewCommunications.Name = "dataGridViewCommunications";
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCommunications.RowHeadersDefaultCellStyle = dataGridViewCellStyle29;
             this.dataGridViewCommunications.RowHeadersWidth = 51;
-            this.dataGridViewCommunications.Size = new System.Drawing.Size(1685, 490);
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewCommunications.RowsDefaultCellStyle = dataGridViewCellStyle30;
+            this.dataGridViewCommunications.Size = new System.Drawing.Size(1240, 463);
             this.dataGridViewCommunications.TabIndex = 13;
             // 
             // dataGridViewTextBoxAudience
@@ -779,164 +1107,71 @@
             this.txtRequestForProposalProcessProject.TabIndex = 13;
             this.txtRequestForProposalProcessProject.Text = "Project Name";
             // 
-            // tabControl2
+            // dataGridViewDocumentApprovals
             // 
-            this.tabControl2.Controls.Add(this.tbpCompletionCriteria);
-            this.tabControl2.Controls.Add(this.tbpOutstandingItems);
-            this.tabControl2.Location = new System.Drawing.Point(16, 79);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1268, 503);
-            this.tabControl2.TabIndex = 16;
+            this.dataGridViewDocumentApprovals.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentApprovals.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridViewDocumentApprovals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDocumentApprovals.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            this.dataGridViewDocumentApprovals.EnableHeadersVisualStyles = false;
+            this.dataGridViewDocumentApprovals.Location = new System.Drawing.Point(5, 4);
+            this.dataGridViewDocumentApprovals.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.dataGridViewDocumentApprovals.Name = "dataGridViewDocumentApprovals";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDocumentApprovals.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridViewDocumentApprovals.RowHeadersWidth = 51;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewDocumentApprovals.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridViewDocumentApprovals.Size = new System.Drawing.Size(1272, 552);
+            this.dataGridViewDocumentApprovals.TabIndex = 10;
             // 
-            // dataGridViewOutstandingItems
+            // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewOutstandingItems.AllowUserToOrderColumns = true;
-            this.dataGridViewOutstandingItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewOutstandingItems.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxOutstandingItems,
-            this.dataGridViewTextBoxActionRequired1,
-            this.dataGridViewTextBoxCompletionDate1});
-            this.dataGridViewOutstandingItems.Location = new System.Drawing.Point(8, 7);
-            this.dataGridViewOutstandingItems.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.dataGridViewOutstandingItems.Name = "dataGridViewOutstandingItems";
-            this.dataGridViewOutstandingItems.RowHeadersWidth = 51;
-            this.dataGridViewOutstandingItems.Size = new System.Drawing.Size(1244, 220);
-            this.dataGridViewOutstandingItems.TabIndex = 7;
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Role";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
-            // dataGridViewTextBoxCompletionDate1
+            // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxCompletionDate1.HeaderText = "Completion Date";
-            this.dataGridViewTextBoxCompletionDate1.MinimumWidth = 6;
-            this.dataGridViewTextBoxCompletionDate1.Name = "dataGridViewTextBoxCompletionDate1";
-            this.dataGridViewTextBoxCompletionDate1.Width = 125;
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // dataGridViewTextBoxActionRequired1
+            // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxActionRequired1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxActionRequired1.HeaderText = "Action Required";
-            this.dataGridViewTextBoxActionRequired1.MinimumWidth = 6;
-            this.dataGridViewTextBoxActionRequired1.Name = "dataGridViewTextBoxActionRequired1";
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "(none)";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Signature";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
-            // dataGridViewTextBoxOutstandingItems
+            // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxOutstandingItems.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxOutstandingItems.HeaderText = "Outstanding Items";
-            this.dataGridViewTextBoxOutstandingItems.MinimumWidth = 6;
-            this.dataGridViewTextBoxOutstandingItems.Name = "dataGridViewTextBoxOutstandingItems";
-            // 
-            // tbpOutstandingItems
-            // 
-            this.tbpOutstandingItems.BackColor = System.Drawing.Color.Gray;
-            this.tbpOutstandingItems.Controls.Add(this.dataGridViewOutstandingItems);
-            this.tbpOutstandingItems.Location = new System.Drawing.Point(4, 21);
-            this.tbpOutstandingItems.Name = "tbpOutstandingItems";
-            this.tbpOutstandingItems.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpOutstandingItems.Size = new System.Drawing.Size(1260, 478);
-            this.tbpOutstandingItems.TabIndex = 1;
-            this.tbpOutstandingItems.Text = "Outstanding Items";
-            // 
-            // tbpCompletionCriteria
-            // 
-            this.tbpCompletionCriteria.BackColor = System.Drawing.Color.Gray;
-            this.tbpCompletionCriteria.Controls.Add(this.dataGridViewCompletionCriteria);
-            this.tbpCompletionCriteria.Location = new System.Drawing.Point(4, 21);
-            this.tbpCompletionCriteria.Name = "tbpCompletionCriteria";
-            this.tbpCompletionCriteria.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpCompletionCriteria.Size = new System.Drawing.Size(1260, 478);
-            this.tbpCompletionCriteria.TabIndex = 0;
-            this.tbpCompletionCriteria.Text = "Completion Criteria";
-            // 
-            // txtProjectCompletion
-            // 
-            this.txtProjectCompletion.BackColor = System.Drawing.SystemColors.Control;
-            this.txtProjectCompletion.Location = new System.Drawing.Point(20, 30);
-            this.txtProjectCompletion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtProjectCompletion.Multiline = true;
-            this.txtProjectCompletion.Name = "txtProjectCompletion";
-            this.txtProjectCompletion.Size = new System.Drawing.Size(1260, 43);
-            this.txtProjectCompletion.TabIndex = 5;
-            this.txtProjectCompletion.Text = "Before you undertake project closure, this section identifies the criteria requir" +
-    "ed to ensure that the project is complete, and lists any outstanding items.";
-            // 
-            // tbpProjectCompletion
-            // 
-            this.tbpProjectCompletion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tbpProjectCompletion.Controls.Add(this.label7);
-            this.tbpProjectCompletion.Controls.Add(this.txtProjectCompletion);
-            this.tbpProjectCompletion.Controls.Add(this.tabControl2);
-            this.tbpProjectCompletion.Location = new System.Drawing.Point(4, 21);
-            this.tbpProjectCompletion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tbpProjectCompletion.Name = "tbpProjectCompletion";
-            this.tbpProjectCompletion.Size = new System.Drawing.Size(1298, 599);
-            this.tbpProjectCompletion.TabIndex = 3;
-            this.tbpProjectCompletion.Text = "Project Completion";
-            // 
-            // dataGridViewCompletionCriteria
-            // 
-            this.dataGridViewCompletionCriteria.AllowUserToOrderColumns = true;
-            this.dataGridViewCompletionCriteria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCompletionCriteria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxCompletionCatagory,
-            this.dataGridViewTextBoxCompletionCriteria,
-            this.dataGridViewTextBoxSatisfied});
-            this.dataGridViewCompletionCriteria.Location = new System.Drawing.Point(8, 7);
-            this.dataGridViewCompletionCriteria.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.dataGridViewCompletionCriteria.Name = "dataGridViewCompletionCriteria";
-            this.dataGridViewCompletionCriteria.RowHeadersWidth = 51;
-            this.dataGridViewCompletionCriteria.Size = new System.Drawing.Size(1244, 220);
-            this.dataGridViewCompletionCriteria.TabIndex = 8;
-            // 
-            // dataGridViewTextBoxCompletionCatagory
-            // 
-            this.dataGridViewTextBoxCompletionCatagory.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxCompletionCatagory.HeaderText = "Completion Catagory";
-            this.dataGridViewTextBoxCompletionCatagory.MinimumWidth = 6;
-            this.dataGridViewTextBoxCompletionCatagory.Name = "dataGridViewTextBoxCompletionCatagory";
-            // 
-            // dataGridViewTextBoxCompletionCriteria
-            // 
-            this.dataGridViewTextBoxCompletionCriteria.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxCompletionCriteria.HeaderText = "Completion Criteria";
-            this.dataGridViewTextBoxCompletionCriteria.MinimumWidth = 6;
-            this.dataGridViewTextBoxCompletionCriteria.Name = "dataGridViewTextBoxCompletionCriteria";
-            // 
-            // dataGridViewTextBoxSatisfied
-            // 
-            this.dataGridViewTextBoxSatisfied.HeaderText = "Satisfied?";
-            this.dataGridViewTextBoxSatisfied.MinimumWidth = 6;
-            this.dataGridViewTextBoxSatisfied.Name = "dataGridViewTextBoxSatisfied";
-            this.dataGridViewTextBoxSatisfied.Width = 125;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(17, 13);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(182, 14);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "Project Completion Description:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(18, 13);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(161, 14);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Project Closure Description:";
-            // 
-            // txtProjectClosure
-            // 
-            this.txtProjectClosure.BackColor = System.Drawing.SystemColors.Control;
-            this.txtProjectClosure.Location = new System.Drawing.Point(20, 30);
-            this.txtProjectClosure.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtProjectClosure.Multiline = true;
-            this.txtProjectClosure.Name = "txtProjectClosure";
-            this.txtProjectClosure.Size = new System.Drawing.Size(1257, 48);
-            this.txtProjectClosure.TabIndex = 16;
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn4.HeaderText = "Date";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // ProjectClosureReportDocumentForm
             // 
@@ -961,8 +1196,14 @@
             this.tbpDocumentHistory.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentHistory)).EndInit();
             this.tbpDocumentApprovals.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentApprovals)).EndInit();
             this.tbcProjectClosureReport.ResumeLayout(false);
+            this.tbpProjectCompletion.ResumeLayout(false);
+            this.tbpProjectCompletion.PerformLayout();
+            this.tabControl2.ResumeLayout(false);
+            this.tbpCompletionCriteria.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCompletionCriteria)).EndInit();
+            this.tbpOutstandingItems.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOutstandingItems)).EndInit();
             this.tbpProjectClosure.ResumeLayout(false);
             this.tbpProjectClosure.PerformLayout();
             this.tbcProjectClosure.ResumeLayout(false);
@@ -978,13 +1219,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCommunications)).EndInit();
             this.tbpApproval.ResumeLayout(false);
             this.tbpApproval.PerformLayout();
-            this.tabControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOutstandingItems)).EndInit();
-            this.tbpOutstandingItems.ResumeLayout(false);
-            this.tbpCompletionCriteria.ResumeLayout(false);
-            this.tbpProjectCompletion.ResumeLayout(false);
-            this.tbpProjectCompletion.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCompletionCriteria)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumentApprovals)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -994,11 +1229,6 @@
 
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TabPage tbpDocumentControl;
-        private System.Windows.Forms.DataGridView dataGridViewDocumentApprovals;
-        private System.Windows.Forms.DataGridViewTextBoxColumn approvalRole;
-        private System.Windows.Forms.DataGridViewTextBoxColumn approvalName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn approvalSignature;
-        private System.Windows.Forms.DataGridViewTextBoxColumn approvalDate;
         private System.Windows.Forms.DataGridView dataGridViewDocumentHistory;
         private System.Windows.Forms.DataGridViewTextBoxColumn Version;
         private System.Windows.Forms.DataGridViewTextBoxColumn historyIssueDate;
@@ -1070,5 +1300,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxCompletionDate1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtProjectClosure;
+        private System.Windows.Forms.DataGridView dataGridViewDocumentApprovals;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }
