@@ -30,6 +30,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string companyKnowledgeOfIndustryAndExpertise { get; set; }
 
         //Solution Tab
+        public string solutionDescription { get; set; }
 
         public List<Solution> solutions { get; set; }
 
@@ -43,33 +44,32 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 
         public class DocumentInformation
         {
-            private string type { get; set; }
-            private string information { get; set; }
+            public string type { get; set; }
+            public string information { get; set; }
 
         }
 
         public class DocumentHistory
         {
-            private string version { get; set; }
-            private DateTime issueDate { get; set; }
-            private string changes { get; set; }
+            public string version { get; set; }
+            public string issueDate { get; set; }
+            public string changes { get; set; }
         }
         
         public class DocumentApproval
         {
-            private string role { get; set; }
-            private string name { get; set; }
-            private string signature { get; set; }
-            private DateTime approvalDate { get; set; }
+            public string role { get; set; }
+            public string name { get; set; }
+            public string signature { get; set; }
+            public string approvalDate { get; set; }
 
         }
 
         public class Solution
         {
-            private string solutionAndComponents { get; set; }
-            private string quantity { get; set; }
-            private string price { get; set; }
-
+            public string solutionAndComponents { get; set; }
+            public string quantity { get; set; }
+            public string price { get; set; }
         }
         
     }

@@ -8,48 +8,58 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 {
     class ChangeManagementProcessModel
     {
-        public string projectName { get; set; }
-        public List<DocumentInformation> documentInformations { get; set; }
-        public List<DocumentHistory> documentHistories { get; set; }
-        public List<DocumentApproval> documentApprovals { get; set; }
+        public string ProjectName { get; set; }
+        public string DocumentID { get; set; }
+        public string DocumentOwner { get; set; }
+        public string IssueDate { get; set; }
+        public string LastSavedDate { get; set; }
+        public string FileName { get; set; }
+        public List<DocumentHistory> DocumentHistories { get; set; }
+        public List<DocumentApproval> DocumentApprovals { get; set; }
         //Change Process tab
-        public string changeProcessDescription { get; set; }
-        public string changeProcessOverview { get; set; }
-        public string changeProcessIdentifyChange { get; set; }
-        public string changeProcessReviewChange { get; set; }
-        public string changeProcessApproveChange { get; set; }
-        public string changeProcessImplementChange { get; set; }
+        public string ChangeProcessDescription { get; set; }
+        public string ChangeProcessOverview { get; set; }
+        public string ChangeProcessIdentifyChange { get; set; }
+        public string ChangeProcessReviewChange { get; set; }
+        public string ChangeProcessApproveChange { get; set; }
+        public string ChangeProcessImplementChange { get; set; }
         //Change Roles
-        public string changeRolesDescription { get; set; }
-        public string changeRolesTeamMember { get; set; }
-        public string changeRolesProjectManager { get; set; }
-        public string changeRolesProjectBoard { get; set; }
+        public string ChangeRolesDescription { get; set; }
+        public string ChangeRolesTeamMember { get; set; }
+        public string ChangeRolesProjectManager { get; set; }
+        public string ChangeRolesProjectBoard { get; set; }
         //Change Document
-        public string changeDocumentDescription { get; set; }
-        public string changeDocumentChangeRequestForm { get; set; }
-        public string changeDocumentChangeRegister { get; set; }
-
-        public class DocumentInformation
-        {
-            private string type { get; set; }
-            private string information { get; set; }
-
-        }
+        public string ChangeDocumentDescription { get; set; }
+        public string ChangeDocumentChangeRequestForm { get; set; }
+        public string ChangeDocumentChangeRegister { get; set; }
 
         public class DocumentHistory
         {
-            private string version { get; set; }
-            private DateTime issueDate { get; set; }
-            private string changes { get; set; }
-        }
+            public string Version { get; set; }
+            public string IssueDate { get; set; }
+            public string Changes { get; set; }
 
+            public DocumentHistory(string version, string date, string changes)
+            {
+                this.Changes = changes;
+                this.Version = version;
+                this.IssueDate = date;
+            }
+        }
         public class DocumentApproval
         {
-            private string role { get; set; }
-            private string name { get; set; }
-            private string signature { get; set; }
-            private DateTime approvalDate { get; set; }
+            public string Role { get; set; }
+            public string Name { get; set; }
+            public string Signature { get; set; }
+            public string DateApproved { get; set; }
 
+            public DocumentApproval(string role, string name, string signature, string date)
+            {
+                this.Role = role;
+                this.Name = name;
+                this.Signature = signature;
+                this.DateApproved = date;
+            }
         }
     }
 }
