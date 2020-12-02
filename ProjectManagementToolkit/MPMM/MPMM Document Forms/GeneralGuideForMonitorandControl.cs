@@ -16,5 +16,16 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             InitializeComponent();
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+
+
+        }
     }
 }
