@@ -19,7 +19,15 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void AcceptancePlanDocumentForm_Load(object sender, EventArgs e)
         {
+            dataGridViewCriteria.Columns.Add("miName1", "Milestone Name");
+            dataGridViewCriteria.Columns.Add("AcceptanceCriteria", "Acceptance Criteria");
+            dataGridViewCriteria.Columns.Add("AcceptanceStandards", "Acceptance Standards");
 
+            dataGridViewSchedule.Columns.Add("milestone1", "Milestone");
+            dataGridViewSchedule.Columns.Add("Deliverables", "Deliverables");
+            dataGridViewSchedule.Columns.Add("MilDate", "Milestone Date");
+            dataGridViewSchedule.Columns.Add("ReviewMethod", "Review Method");
+            dataGridViewSchedule.Columns.Add("AccDate", "Acceptance Date");
         }
 
         private void btnSaveProjectName_Click(object sender, EventArgs e)

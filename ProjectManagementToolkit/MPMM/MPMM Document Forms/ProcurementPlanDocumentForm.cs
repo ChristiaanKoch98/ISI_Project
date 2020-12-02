@@ -39,6 +39,29 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void ProcurementPlanDocumentForm_Load(object sender, EventArgs e)
         {
+            dataGridViewDocumentInformation.Columns.Add("type", "Type");
+            dataGridViewDocumentInformation.Columns.Add("info", "Information");
+
+            dataGridViewDocumentHistory.Columns.Add("Version", "Version");
+            dataGridViewDocumentHistory.Columns.Add("IssueDate", "Issue Date");
+            dataGridViewDocumentHistory.Columns.Add("Changes", "Changes");
+
+            dataGridViewDocumentApprovals.Columns.Add("Role1", "Role");
+            dataGridViewDocumentApprovals.Columns.Add("Name1", "Name");
+            dataGridViewDocumentApprovals.Columns.Add("Signature1", "Signature");
+            dataGridViewDocumentApprovals.Columns.Add("Date1", "Date");
+
+            dataGridViewRequirements.Columns.Add("Item1", "Item");
+            dataGridViewRequirements.Columns.Add("Description1", "Description");
+            dataGridViewRequirements.Columns.Add("Justification1", "Justification");
+            dataGridViewRequirements.Columns.Add("Quantity1", "Quantity");
+            dataGridViewRequirements.Columns.Add("Budget1", "Budget");
+
+            dataGridViewMarketResearch.Columns.Add("Item2", "Item");
+            dataGridViewMarketResearch.Columns.Add("Supplier", "Supplier");
+            dataGridViewMarketResearch.Columns.Add("Offering", "Offering");
+            dataGridViewMarketResearch.Columns.Add("Price", "Price");
+            dataGridViewMarketResearch.Columns.Add("Availability", "Availability");
 
         }
 
