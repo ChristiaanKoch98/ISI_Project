@@ -57,12 +57,12 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightGray;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.dataGridViewSolutionRaiseRaised);
-            this.panel1.Location = new System.Drawing.Point(20, 74);
+            this.panel1.Location = new System.Drawing.Point(21, 82);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1098, 509);
+            this.panel1.Size = new System.Drawing.Size(1254, 498);
             this.panel1.TabIndex = 26;
             // 
             // dataGridViewSolutionRaiseRaised
@@ -85,10 +85,10 @@
             this.Contingency_Actions,
             this.Contingency_ActionsOwner,
             this.Contingency_ActionsData});
-            this.dataGridViewSolutionRaiseRaised.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewSolutionRaiseRaised.Location = new System.Drawing.Point(4, 4);
             this.dataGridViewSolutionRaiseRaised.Name = "dataGridViewSolutionRaiseRaised";
             this.dataGridViewSolutionRaiseRaised.RowHeadersWidth = 51;
-            this.dataGridViewSolutionRaiseRaised.Size = new System.Drawing.Size(1088, 499);
+            this.dataGridViewSolutionRaiseRaised.Size = new System.Drawing.Size(1242, 488);
             this.dataGridViewSolutionRaiseRaised.TabIndex = 22;
             // 
             // ID
@@ -169,75 +169,79 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(16, 41);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(26, 46);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 12);
+            this.label1.Size = new System.Drawing.Size(99, 14);
             this.label1.TabIndex = 25;
             this.label1.Text = "Project Manager:";
             // 
             // txtRiskRegisterProjectManager
             // 
-            this.txtRiskRegisterProjectManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtRiskRegisterProjectManager.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRiskRegisterProjectManager.ForeColor = System.Drawing.Color.White;
-            this.txtRiskRegisterProjectManager.Location = new System.Drawing.Point(109, 38);
-            this.txtRiskRegisterProjectManager.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRiskRegisterProjectManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.txtRiskRegisterProjectManager.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRiskRegisterProjectManager.ForeColor = System.Drawing.Color.Black;
+            this.txtRiskRegisterProjectManager.Location = new System.Drawing.Point(150, 44);
+            this.txtRiskRegisterProjectManager.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtRiskRegisterProjectManager.Name = "txtRiskRegisterProjectManager";
-            this.txtRiskRegisterProjectManager.Size = new System.Drawing.Size(116, 20);
+            this.txtRiskRegisterProjectManager.Size = new System.Drawing.Size(323, 20);
             this.txtRiskRegisterProjectManager.TabIndex = 24;
             this.txtRiskRegisterProjectManager.Text = "Project Manager";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(18, 13);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Black;
+            this.label27.Location = new System.Drawing.Point(26, 23);
+            this.label27.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(70, 12);
+            this.label27.Size = new System.Drawing.Size(84, 14);
             this.label27.TabIndex = 23;
             this.label27.Text = "Project Name:";
             // 
             // txtRiskRegisterProjectName
             // 
-            this.txtRiskRegisterProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtRiskRegisterProjectName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRiskRegisterProjectName.ForeColor = System.Drawing.Color.White;
-            this.txtRiskRegisterProjectName.Location = new System.Drawing.Point(109, 10);
-            this.txtRiskRegisterProjectName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRiskRegisterProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.txtRiskRegisterProjectName.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRiskRegisterProjectName.ForeColor = System.Drawing.Color.Black;
+            this.txtRiskRegisterProjectName.Location = new System.Drawing.Point(150, 17);
+            this.txtRiskRegisterProjectName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtRiskRegisterProjectName.Name = "txtRiskRegisterProjectName";
-            this.txtRiskRegisterProjectName.Size = new System.Drawing.Size(116, 20);
+            this.txtRiskRegisterProjectName.Size = new System.Drawing.Size(323, 20);
             this.txtRiskRegisterProjectName.TabIndex = 22;
             this.txtRiskRegisterProjectName.Text = "Project Name";
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(235, 35);
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSearch.Location = new System.Drawing.Point(512, 12);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(144, 25);
+            this.btnSearch.Size = new System.Drawing.Size(165, 25);
             this.btnSearch.TabIndex = 27;
             this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.UseVisualStyleBackColor = false;
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(974, 35);
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBack.Location = new System.Drawing.Point(512, 44);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(144, 25);
+            this.btnBack.Size = new System.Drawing.Size(165, 25);
             this.btnBack.TabIndex = 28;
             this.btnBack.Text = "Back to Main Menu";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.UseVisualStyleBackColor = false;
             // 
             // frmRiskRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(1135, 598);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.ClientSize = new System.Drawing.Size(1297, 598);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.panel1);
@@ -245,7 +249,7 @@
             this.Controls.Add(this.txtRiskRegisterProjectManager);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.txtRiskRegisterProjectName);
-            this.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmRiskRegister";
             this.Text = "Risk Register";
             this.panel1.ResumeLayout(false);

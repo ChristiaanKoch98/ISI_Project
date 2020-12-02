@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace Welmari_Issue_And_Riks_Register
 {
-    public partial class frmRiskRegister : Form
+    public partial class frmIssueRegister : Form
     {
-        public frmRiskRegister()
+        public frmIssueRegister()
         {
             InitializeComponent();
         }
-
     }
 }

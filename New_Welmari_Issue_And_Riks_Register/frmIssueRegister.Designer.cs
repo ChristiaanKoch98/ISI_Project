@@ -55,59 +55,60 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(14, 14);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Black;
+            this.label27.Location = new System.Drawing.Point(30, 23);
+            this.label27.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(70, 12);
+            this.label27.Size = new System.Drawing.Size(84, 14);
             this.label27.TabIndex = 18;
             this.label27.Text = "Project Name:";
             // 
             // txtIssueRegisterProjectName
             // 
-            this.txtIssueRegisterProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtIssueRegisterProjectName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIssueRegisterProjectName.ForeColor = System.Drawing.Color.White;
-            this.txtIssueRegisterProjectName.Location = new System.Drawing.Point(107, 11);
-            this.txtIssueRegisterProjectName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIssueRegisterProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.txtIssueRegisterProjectName.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIssueRegisterProjectName.ForeColor = System.Drawing.Color.Black;
+            this.txtIssueRegisterProjectName.Location = new System.Drawing.Point(171, 17);
+            this.txtIssueRegisterProjectName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtIssueRegisterProjectName.Name = "txtIssueRegisterProjectName";
-            this.txtIssueRegisterProjectName.Size = new System.Drawing.Size(116, 20);
+            this.txtIssueRegisterProjectName.Size = new System.Drawing.Size(369, 20);
             this.txtIssueRegisterProjectName.TabIndex = 17;
             this.txtIssueRegisterProjectName.Text = "Project Name";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(14, 42);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(30, 46);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 12);
+            this.label1.Size = new System.Drawing.Size(99, 14);
             this.label1.TabIndex = 20;
             this.label1.Text = "Project Manager:";
             // 
             // txtIssueRegisterProjectManager
             // 
-            this.txtIssueRegisterProjectManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtIssueRegisterProjectManager.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIssueRegisterProjectManager.ForeColor = System.Drawing.Color.White;
-            this.txtIssueRegisterProjectManager.Location = new System.Drawing.Point(107, 39);
-            this.txtIssueRegisterProjectManager.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIssueRegisterProjectManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.txtIssueRegisterProjectManager.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIssueRegisterProjectManager.ForeColor = System.Drawing.Color.Black;
+            this.txtIssueRegisterProjectManager.Location = new System.Drawing.Point(171, 46);
+            this.txtIssueRegisterProjectManager.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtIssueRegisterProjectManager.Name = "txtIssueRegisterProjectManager";
-            this.txtIssueRegisterProjectManager.Size = new System.Drawing.Size(116, 20);
+            this.txtIssueRegisterProjectManager.Size = new System.Drawing.Size(369, 20);
             this.txtIssueRegisterProjectManager.TabIndex = 19;
             this.txtIssueRegisterProjectManager.Text = "Project Manager";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightGray;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.dataGridViewSolutionRaiseRaised);
-            this.panel1.Location = new System.Drawing.Point(18, 72);
+            this.panel1.Location = new System.Drawing.Point(21, 82);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1098, 509);
+            this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.panel1.Size = new System.Drawing.Size(1254, 498);
             this.panel1.TabIndex = 21;
             // 
             // dataGridViewSolutionRaiseRaised
@@ -127,10 +128,10 @@
             this.Outcome,
             this.Date_for_Resolution,
             this.Date_Resolved});
-            this.dataGridViewSolutionRaiseRaised.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewSolutionRaiseRaised.Location = new System.Drawing.Point(4, 3);
             this.dataGridViewSolutionRaiseRaised.Name = "dataGridViewSolutionRaiseRaised";
             this.dataGridViewSolutionRaiseRaised.RowHeadersWidth = 51;
-            this.dataGridViewSolutionRaiseRaised.Size = new System.Drawing.Size(1088, 499);
+            this.dataGridViewSolutionRaiseRaised.Size = new System.Drawing.Size(1243, 488);
             this.dataGridViewSolutionRaiseRaised.TabIndex = 22;
             // 
             // ID
@@ -195,28 +196,32 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(971, 37);
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBack.Location = new System.Drawing.Point(581, 46);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(144, 25);
+            this.btnBack.Size = new System.Drawing.Size(165, 25);
             this.btnBack.TabIndex = 30;
             this.btnBack.Text = "Back to Main Menu";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.UseVisualStyleBackColor = false;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(232, 37);
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSearch.Location = new System.Drawing.Point(581, 12);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(144, 25);
+            this.btnSearch.Size = new System.Drawing.Size(165, 25);
             this.btnSearch.TabIndex = 29;
             this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.UseVisualStyleBackColor = false;
             // 
             // frmIssueRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(1135, 598);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.ClientSize = new System.Drawing.Size(1297, 598);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.panel1);
@@ -224,7 +229,7 @@
             this.Controls.Add(this.txtIssueRegisterProjectManager);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.txtIssueRegisterProjectName);
-            this.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmIssueRegister";
             this.Text = "Issue Register";
             this.panel1.ResumeLayout(false);
