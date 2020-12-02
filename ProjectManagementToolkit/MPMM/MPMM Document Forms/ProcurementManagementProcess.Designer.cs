@@ -559,7 +559,6 @@
             this.ClientSize = new System.Drawing.Size(685, 749);
             this.Controls.Add(this.DocumentControlTab);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.Name = "ProcurementManagementProcess";
             this.Text = "ProcurementManagementProcess";
             this.DocumentControlTab.ResumeLayout(false);
             this.DocumentControl.ResumeLayout(false);
