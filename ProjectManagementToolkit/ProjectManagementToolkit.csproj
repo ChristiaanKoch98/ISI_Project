@@ -222,11 +222,13 @@
     <Compile Include="MPMM\MPMM Document Forms\QualityPlanDocumentForm.Designer.cs">
       <DependentUpon>QualityPlanDocumentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MPMM\MPMM Document Forms\QualityReviewPlanDocumentForm.cs">
+    <Compile Include="..\..\..\..\..\..\Desktop\Forms\QualityReviewPlanDocumentForm.cs">
       <SubType>Form</SubType>
+      <Link>MPMM\MPMM Document Forms\QualityReviewPlanDocumentForm.cs</Link>
     </Compile>
-    <Compile Include="MPMM\MPMM Document Forms\QualityReviewPlanDocumentForm.Designer.cs">
+    <Compile Include="..\..\..\..\..\..\Desktop\Forms\QualityReviewPlanDocumentForm.Designer.cs">
       <DependentUpon>QualityReviewPlanDocumentForm.cs</DependentUpon>
+      <Link>MPMM\MPMM Document Forms\QualityReviewPlanDocumentForm.Designer.cs</Link>
     </Compile>
     <Compile Include="MPMM\MPMM Document Forms\RequestForInformationDocumentForm.cs">
       <SubType>Form</SubType>
@@ -509,8 +511,9 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\QualityPlanDocumentForm.resx">
       <DependentUpon>QualityPlanDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MPMM\MPMM Document Forms\QualityReviewPlanDocumentForm.resx">
+    <EmbeddedResource Include="..\..\..\..\..\..\Desktop\Forms\QualityReviewPlanDocumentForm.resx">
       <DependentUpon>QualityReviewPlanDocumentForm.cs</DependentUpon>
+      <Link>MPMM\MPMM Document Forms\QualityReviewPlanDocumentForm.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\RequestForInformationDocumentForm.resx">
       <DependentUpon>RequestForInformationDocumentForm.cs</DependentUpon>
