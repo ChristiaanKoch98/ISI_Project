@@ -54,7 +54,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newIssueFormModel.ProjectManagerName = txtProjectManagerName.Text;
             newIssueFormModel.IssueID = txtIssueID.Text;
             newIssueFormModel.RaisedBy = txtRaisedBy.Text;
-            newIssueFormModel.DateRaised = dateTimePicker1.ToString();
+            newIssueFormModel.DateRaised = dateTimePicker1.Value.ToString();
             newIssueFormModel.IssueDescription = txtIssueDescription.Text;
             newIssueFormModel.IssueImpact = txtIssueImpact.Text;
             newIssueFormModel.IssueResolution = txtIssueResolution.Text;
