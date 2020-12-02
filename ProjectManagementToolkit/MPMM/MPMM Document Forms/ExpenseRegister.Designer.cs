@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtProjectName = new System.Windows.Forms.TextBox();
@@ -43,9 +46,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 17);
+            this.label1.Location = new System.Drawing.Point(14, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 14);
+            this.label1.Size = new System.Drawing.Size(84, 14);
             this.label1.TabIndex = 0;
             this.label1.Text = "Project Name:";
             // 
@@ -55,9 +58,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 63);
+            this.label2.Location = new System.Drawing.Point(14, 63);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 14);
+            this.label2.Size = new System.Drawing.Size(102, 14);
             this.label2.TabIndex = 1;
             this.label2.Text = "Project Manager: ";
             // 
@@ -68,9 +71,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtProjectName.ForeColor = System.Drawing.Color.Black;
-            this.txtProjectName.Location = new System.Drawing.Point(104, 14);
+            this.txtProjectName.Location = new System.Drawing.Point(121, 14);
             this.txtProjectName.Name = "txtProjectName";
-            this.txtProjectName.Size = new System.Drawing.Size(100, 21);
+            this.txtProjectName.Size = new System.Drawing.Size(116, 21);
             this.txtProjectName.TabIndex = 2;
             this.txtProjectName.Text = "Project Name";
             // 
@@ -81,9 +84,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtProjectManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtProjectManager.ForeColor = System.Drawing.Color.Black;
-            this.txtProjectManager.Location = new System.Drawing.Point(104, 59);
+            this.txtProjectManager.Location = new System.Drawing.Point(121, 59);
             this.txtProjectManager.Name = "txtProjectManager";
-            this.txtProjectManager.Size = new System.Drawing.Size(100, 21);
+            this.txtProjectManager.Size = new System.Drawing.Size(116, 21);
             this.txtProjectManager.TabIndex = 3;
             this.txtProjectManager.Text = "Project Manager";
             // 
@@ -92,19 +95,38 @@
             this.dataGridViewExpenseRegister.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewExpenseRegister.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewExpenseRegister.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewExpenseRegister.Location = new System.Drawing.Point(12, 100);
+            this.dataGridViewExpenseRegister.EnableHeadersVisualStyles = false;
+            this.dataGridViewExpenseRegister.Location = new System.Drawing.Point(14, 100);
             this.dataGridViewExpenseRegister.Name = "dataGridViewExpenseRegister";
-            this.dataGridViewExpenseRegister.Size = new System.Drawing.Size(775, 370);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewExpenseRegister.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Helvetica", 10.8F);
+            this.dataGridViewExpenseRegister.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewExpenseRegister.Size = new System.Drawing.Size(904, 370);
             this.dataGridViewExpenseRegister.TabIndex = 4;
             // 
             // btnEnterData
             // 
             this.btnEnterData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnEnterData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnEnterData.Location = new System.Drawing.Point(712, 40);
+            this.btnEnterData.Location = new System.Drawing.Point(831, 40);
             this.btnEnterData.Name = "btnEnterData";
-            this.btnEnterData.Size = new System.Drawing.Size(75, 27);
+            this.btnEnterData.Size = new System.Drawing.Size(87, 27);
             this.btnEnterData.TabIndex = 5;
             this.btnEnterData.Text = "Enter Data";
             this.btnEnterData.UseVisualStyleBackColor = false;
@@ -112,17 +134,17 @@
             // 
             // ExpenseRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(800, 484);
+            this.ClientSize = new System.Drawing.Size(933, 484);
             this.Controls.Add(this.btnEnterData);
             this.Controls.Add(this.dataGridViewExpenseRegister);
             this.Controls.Add(this.txtProjectManager);
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Helvetica Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ExpenseRegister";
             this.Text = "ExpenseRegister";
