@@ -31,5 +31,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
 
         }
+
+        private void AcceptanceManagementProcessDocumentForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
