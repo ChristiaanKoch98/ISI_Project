@@ -223,6 +223,7 @@
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage7);
+            this.tabControl1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(12, 28);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -249,7 +250,7 @@
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
             this.linkLabel1.Location = new System.Drawing.Point(594, 64);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(72, 14);
+            this.linkLabel1.Size = new System.Drawing.Size(79, 14);
             this.linkLabel1.TabIndex = 3;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Report Name";
@@ -280,7 +281,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(592, 45);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 14);
+            this.label2.Size = new System.Drawing.Size(94, 14);
             this.label2.TabIndex = 0;
             this.label2.Text = "Select a Report";
             // 
@@ -701,7 +702,7 @@
             this.linkLabelAct.LinkColor = System.Drawing.Color.Black;
             this.linkLabelAct.Location = new System.Drawing.Point(504, 329);
             this.linkLabelAct.Name = "linkLabelAct";
-            this.linkLabelAct.Size = new System.Drawing.Size(23, 14);
+            this.linkLabelAct.Size = new System.Drawing.Size(27, 14);
             this.linkLabelAct.TabIndex = 71;
             this.linkLabelAct.TabStop = true;
             this.linkLabelAct.Text = "Act";
@@ -712,7 +713,7 @@
             this.linkLabelAct55of1998.LinkColor = System.Drawing.Color.Black;
             this.linkLabelAct55of1998.Location = new System.Drawing.Point(39, 138);
             this.linkLabelAct55of1998.Name = "linkLabelAct55of1998";
-            this.linkLabelAct55of1998.Size = new System.Drawing.Size(178, 14);
+            this.linkLabelAct55of1998.Size = new System.Drawing.Size(194, 14);
             this.linkLabelAct55of1998.TabIndex = 70;
             this.linkLabelAct55of1998.TabStop = true;
             this.linkLabelAct55of1998.Text = "Employment Equity Act, 55 of 1998";
@@ -723,7 +724,7 @@
             this.linkLabelEmploymentServicesActno4of2014.LinkColor = System.Drawing.Color.Black;
             this.linkLabelEmploymentServicesActno4of2014.Location = new System.Drawing.Point(39, 168);
             this.linkLabelEmploymentServicesActno4of2014.Name = "linkLabelEmploymentServicesActno4of2014";
-            this.linkLabelEmploymentServicesActno4of2014.Size = new System.Drawing.Size(196, 14);
+            this.linkLabelEmploymentServicesActno4of2014.Size = new System.Drawing.Size(214, 14);
             this.linkLabelEmploymentServicesActno4of2014.TabIndex = 69;
             this.linkLabelEmploymentServicesActno4of2014.TabStop = true;
             this.linkLabelEmploymentServicesActno4of2014.Text = "Employment Services Act no 4 of 2014";
@@ -734,7 +735,7 @@
             this.linkLabelLabourRelationsactno66of1995.LinkColor = System.Drawing.Color.Black;
             this.linkLabelLabourRelationsactno66of1995.Location = new System.Drawing.Point(39, 198);
             this.linkLabelLabourRelationsactno66of1995.Name = "linkLabelLabourRelationsactno66of1995";
-            this.linkLabelLabourRelationsactno66of1995.Size = new System.Drawing.Size(176, 14);
+            this.linkLabelLabourRelationsactno66of1995.Size = new System.Drawing.Size(191, 14);
             this.linkLabelLabourRelationsactno66of1995.TabIndex = 68;
             this.linkLabelLabourRelationsactno66of1995.TabStop = true;
             this.linkLabelLabourRelationsactno66of1995.Text = "Labour Relations act no 66 of 1995";
@@ -745,7 +746,7 @@
             this.linkLabelact78of1973ODIMWA.LinkColor = System.Drawing.Color.Black;
             this.linkLabelact78of1973ODIMWA.Location = new System.Drawing.Point(417, 107);
             this.linkLabelact78of1973ODIMWA.Name = "linkLabelact78of1973ODIMWA";
-            this.linkLabelact78of1973ODIMWA.Size = new System.Drawing.Size(340, 14);
+            this.linkLabelact78of1973ODIMWA.Size = new System.Drawing.Size(363, 14);
             this.linkLabelact78of1973ODIMWA.TabIndex = 67;
             this.linkLabelact78of1973ODIMWA.TabStop = true;
             this.linkLabelact78of1973ODIMWA.Text = "Occupational Diseases in mines and works act 78 of 1973 ODIMWA";
@@ -756,7 +757,7 @@
             this.linkLabelActno85of1993.LinkColor = System.Drawing.Color.Black;
             this.linkLabelActno85of1993.Location = new System.Drawing.Point(417, 138);
             this.linkLabelActno85of1993.Name = "linkLabelActno85of1993";
-            this.linkLabelActno85of1993.Size = new System.Drawing.Size(250, 14);
+            this.linkLabelActno85of1993.Size = new System.Drawing.Size(273, 14);
             this.linkLabelActno85of1993.TabIndex = 66;
             this.linkLabelActno85of1993.TabStop = true;
             this.linkLabelActno85of1993.Text = "Occupational Health and Safety Act no 85 of 1993";
@@ -767,7 +768,7 @@
             this.linkLabelActno97of1998.LinkColor = System.Drawing.Color.Black;
             this.linkLabelActno97of1998.Location = new System.Drawing.Point(417, 168);
             this.linkLabelActno97of1998.Name = "linkLabelActno97of1998";
-            this.linkLabelActno97of1998.Size = new System.Drawing.Size(188, 14);
+            this.linkLabelActno97of1998.Size = new System.Drawing.Size(207, 14);
             this.linkLabelActno97of1998.TabIndex = 65;
             this.linkLabelActno97of1998.TabStop = true;
             this.linkLabelActno97of1998.Text = "Skills Development Act no 97 of 1998";
@@ -778,7 +779,7 @@
             this.linkLabelActnoof1999.LinkColor = System.Drawing.Color.Black;
             this.linkLabelActnoof1999.Location = new System.Drawing.Point(417, 198);
             this.linkLabelActnoof1999.Name = "linkLabelActnoof1999";
-            this.linkLabelActnoof1999.Size = new System.Drawing.Size(208, 14);
+            this.linkLabelActnoof1999.Size = new System.Drawing.Size(232, 14);
             this.linkLabelActnoof1999.TabIndex = 64;
             this.linkLabelActnoof1999.TabStop = true;
             this.linkLabelActnoof1999.Text = "Skills Development Levies Act no of 1999";
@@ -789,7 +790,7 @@
             this.linkLabelActNo63of2001.LinkColor = System.Drawing.Color.Black;
             this.linkLabelActNo63of2001.Location = new System.Drawing.Point(417, 227);
             this.linkLabelActNo63of2001.Name = "linkLabelActNo63of2001";
-            this.linkLabelActNo63of2001.Size = new System.Drawing.Size(226, 14);
+            this.linkLabelActNo63of2001.Size = new System.Drawing.Size(242, 14);
             this.linkLabelActNo63of2001.TabIndex = 63;
             this.linkLabelActNo63of2001.TabStop = true;
             this.linkLabelActNo63of2001.Text = "Unemployment Insurance Act No. 63 of 2001";
@@ -800,7 +801,7 @@
             this.linkLabelActno4of2002.LinkColor = System.Drawing.Color.Black;
             this.linkLabelActno4of2002.Location = new System.Drawing.Point(417, 258);
             this.linkLabelActno4of2002.Name = "linkLabelActno4of2002";
-            this.linkLabelActno4of2002.Size = new System.Drawing.Size(283, 14);
+            this.linkLabelActno4of2002.Size = new System.Drawing.Size(307, 14);
             this.linkLabelActno4of2002.TabIndex = 62;
             this.linkLabelActno4of2002.TabStop = true;
             this.linkLabelActno4of2002.Text = "Unemployment Insurance Contributions Act no 4 of 2002";
@@ -811,7 +812,7 @@
             this.linkLabelRelevantForms.LinkColor = System.Drawing.Color.Black;
             this.linkLabelRelevantForms.Location = new System.Drawing.Point(623, 359);
             this.linkLabelRelevantForms.Name = "linkLabelRelevantForms";
-            this.linkLabelRelevantForms.Size = new System.Drawing.Size(83, 14);
+            this.linkLabelRelevantForms.Size = new System.Drawing.Size(93, 14);
             this.linkLabelRelevantForms.TabIndex = 61;
             this.linkLabelRelevantForms.TabStop = true;
             this.linkLabelRelevantForms.Text = "Relevant Forms";
@@ -822,7 +823,7 @@
             this.linkLabelProcedures.LinkColor = System.Drawing.Color.Black;
             this.linkLabelProcedures.Location = new System.Drawing.Point(623, 329);
             this.linkLabelProcedures.Name = "linkLabelProcedures";
-            this.linkLabelProcedures.Size = new System.Drawing.Size(65, 14);
+            this.linkLabelProcedures.Size = new System.Drawing.Size(69, 14);
             this.linkLabelProcedures.TabIndex = 60;
             this.linkLabelProcedures.TabStop = true;
             this.linkLabelProcedures.Text = "Procedures";
@@ -833,7 +834,7 @@
             this.linkLabelMiningAct.LinkColor = System.Drawing.Color.Black;
             this.linkLabelMiningAct.Location = new System.Drawing.Point(417, 16);
             this.linkLabelMiningAct.Name = "linkLabelMiningAct";
-            this.linkLabelMiningAct.Size = new System.Drawing.Size(58, 14);
+            this.linkLabelMiningAct.Size = new System.Drawing.Size(64, 14);
             this.linkLabelMiningAct.TabIndex = 59;
             this.linkLabelMiningAct.TabStop = true;
             this.linkLabelMiningAct.Text = "Mining Act";
@@ -844,7 +845,7 @@
             this.linkLabelNationalEnvironmentalManagementAct.LinkColor = System.Drawing.Color.Black;
             this.linkLabelNationalEnvironmentalManagementAct.Location = new System.Drawing.Point(417, 47);
             this.linkLabelNationalEnvironmentalManagementAct.Name = "linkLabelNationalEnvironmentalManagementAct";
-            this.linkLabelNationalEnvironmentalManagementAct.Size = new System.Drawing.Size(204, 14);
+            this.linkLabelNationalEnvironmentalManagementAct.Size = new System.Drawing.Size(224, 14);
             this.linkLabelNationalEnvironmentalManagementAct.TabIndex = 58;
             this.linkLabelNationalEnvironmentalManagementAct.TabStop = true;
             this.linkLabelNationalEnvironmentalManagementAct.Text = "National Environmental Management Act";
@@ -855,7 +856,7 @@
             this.linkLabelGuides.LinkColor = System.Drawing.Color.Black;
             this.linkLabelGuides.Location = new System.Drawing.Point(623, 299);
             this.linkLabelGuides.Name = "linkLabelGuides";
-            this.linkLabelGuides.Size = new System.Drawing.Size(43, 14);
+            this.linkLabelGuides.Size = new System.Drawing.Size(44, 14);
             this.linkLabelGuides.TabIndex = 57;
             this.linkLabelGuides.TabStop = true;
             this.linkLabelGuides.Text = "Guides";
@@ -866,7 +867,7 @@
             this.linkLabelNationalWaterAct36of1998.LinkColor = System.Drawing.Color.Black;
             this.linkLabelNationalWaterAct36of1998.Location = new System.Drawing.Point(417, 77);
             this.linkLabelNationalWaterAct36of1998.Name = "linkLabelNationalWaterAct36of1998";
-            this.linkLabelNationalWaterAct36of1998.Size = new System.Drawing.Size(151, 14);
+            this.linkLabelNationalWaterAct36of1998.Size = new System.Drawing.Size(166, 14);
             this.linkLabelNationalWaterAct36of1998.TabIndex = 56;
             this.linkLabelNationalWaterAct36of1998.TabStop = true;
             this.linkLabelNationalWaterAct36of1998.Text = "National Water Act 36 of 1998";
@@ -877,7 +878,7 @@
             this.linkLabelAct28of2002.LinkColor = System.Drawing.Color.Black;
             this.linkLabelAct28of2002.Location = new System.Drawing.Point(39, 318);
             this.linkLabelAct28of2002.Name = "linkLabelAct28of2002";
-            this.linkLabelAct28of2002.Size = new System.Drawing.Size(316, 14);
+            this.linkLabelAct28of2002.Size = new System.Drawing.Size(346, 14);
             this.linkLabelAct28of2002.TabIndex = 55;
             this.linkLabelAct28of2002.TabStop = true;
             this.linkLabelAct28of2002.Text = "Minerals and Petroleum Resource Development Act, 28 of 2002";
@@ -888,7 +889,7 @@
             this.linkLabelMineralsAct50of1991.LinkColor = System.Drawing.Color.Black;
             this.linkLabelMineralsAct50of1991.Location = new System.Drawing.Point(39, 288);
             this.linkLabelMineralsAct50of1991.Name = "linkLabelMineralsAct50of1991";
-            this.linkLabelMineralsAct50of1991.Size = new System.Drawing.Size(121, 14);
+            this.linkLabelMineralsAct50of1991.Size = new System.Drawing.Size(130, 14);
             this.linkLabelMineralsAct50of1991.TabIndex = 54;
             this.linkLabelMineralsAct50of1991.TabStop = true;
             this.linkLabelMineralsAct50of1991.Text = "Minerals Act 50 of 1991";
@@ -899,7 +900,7 @@
             this.linkLabelMineHealthandSafetyAct1996.LinkColor = System.Drawing.Color.Black;
             this.linkLabelMineHealthandSafetyAct1996.Location = new System.Drawing.Point(39, 258);
             this.linkLabelMineHealthandSafetyAct1996.Name = "linkLabelMineHealthandSafetyAct1996";
-            this.linkLabelMineHealthandSafetyAct1996.Size = new System.Drawing.Size(166, 14);
+            this.linkLabelMineHealthandSafetyAct1996.Size = new System.Drawing.Size(182, 14);
             this.linkLabelMineHealthandSafetyAct1996.TabIndex = 53;
             this.linkLabelMineHealthandSafetyAct1996.TabStop = true;
             this.linkLabelMineHealthandSafetyAct1996.Text = "Mine Health and Safety Act 1996";
@@ -910,7 +911,7 @@
             this.linkLabelManpowerTrainingActno56of1981.LinkColor = System.Drawing.Color.Black;
             this.linkLabelManpowerTrainingActno56of1981.Location = new System.Drawing.Point(39, 227);
             this.linkLabelManpowerTrainingActno56of1981.Name = "linkLabelManpowerTrainingActno56of1981";
-            this.linkLabelManpowerTrainingActno56of1981.Size = new System.Drawing.Size(189, 14);
+            this.linkLabelManpowerTrainingActno56of1981.Size = new System.Drawing.Size(200, 14);
             this.linkLabelManpowerTrainingActno56of1981.TabIndex = 52;
             this.linkLabelManpowerTrainingActno56of1981.TabStop = true;
             this.linkLabelManpowerTrainingActno56of1981.Text = "Manpower Training Act no 56 of 1981";
@@ -921,7 +922,7 @@
             this.linkLabelConstitutionofSouthAfrica.LinkColor = System.Drawing.Color.Black;
             this.linkLabelConstitutionofSouthAfrica.Location = new System.Drawing.Point(39, 107);
             this.linkLabelConstitutionofSouthAfrica.Name = "linkLabelConstitutionofSouthAfrica";
-            this.linkLabelConstitutionofSouthAfrica.Size = new System.Drawing.Size(138, 14);
+            this.linkLabelConstitutionofSouthAfrica.Size = new System.Drawing.Size(158, 14);
             this.linkLabelConstitutionofSouthAfrica.TabIndex = 51;
             this.linkLabelConstitutionofSouthAfrica.TabStop = true;
             this.linkLabelConstitutionofSouthAfrica.Text = "Constitution of South Africa";
@@ -932,7 +933,7 @@
             this.linkLabelCompensationforOccupationalInjuriesandDiseasesAct.LinkColor = System.Drawing.Color.Black;
             this.linkLabelCompensationforOccupationalInjuriesandDiseasesAct.Location = new System.Drawing.Point(39, 77);
             this.linkLabelCompensationforOccupationalInjuriesandDiseasesAct.Name = "linkLabelCompensationforOccupationalInjuriesandDiseasesAct";
-            this.linkLabelCompensationforOccupationalInjuriesandDiseasesAct.Size = new System.Drawing.Size(290, 14);
+            this.linkLabelCompensationforOccupationalInjuriesandDiseasesAct.Size = new System.Drawing.Size(316, 14);
             this.linkLabelCompensationforOccupationalInjuriesandDiseasesAct.TabIndex = 50;
             this.linkLabelCompensationforOccupationalInjuriesandDiseasesAct.TabStop = true;
             this.linkLabelCompensationforOccupationalInjuriesandDiseasesAct.Text = "Compensation for Occupational Injuries and Diseases Act";
@@ -943,7 +944,7 @@
             this.linkLabelAct71of2008.LinkColor = System.Drawing.Color.Black;
             this.linkLabelAct71of2008.Location = new System.Drawing.Point(39, 47);
             this.linkLabelAct71of2008.Name = "linkLabelAct71of2008";
-            this.linkLabelAct71of2008.Size = new System.Drawing.Size(136, 14);
+            this.linkLabelAct71of2008.Size = new System.Drawing.Size(145, 14);
             this.linkLabelAct71of2008.TabIndex = 49;
             this.linkLabelAct71of2008.TabStop = true;
             this.linkLabelAct71of2008.Text = "Companies Act 71 of 2008";
@@ -954,7 +955,7 @@
             this.linkLabelAct75of1997.LinkColor = System.Drawing.Color.Black;
             this.linkLabelAct75of1997.Location = new System.Drawing.Point(39, 16);
             this.linkLabelAct75of1997.Name = "linkLabelAct75of1997";
-            this.linkLabelAct75of1997.Size = new System.Drawing.Size(238, 14);
+            this.linkLabelAct75of1997.Size = new System.Drawing.Size(261, 14);
             this.linkLabelAct75of1997.TabIndex = 48;
             this.linkLabelAct75of1997.TabStop = true;
             this.linkLabelAct75of1997.Text = "Basic Conditions of Employment Act 75 of 1997";
@@ -1222,7 +1223,7 @@
             this.label27.ForeColor = System.Drawing.Color.Black;
             this.label27.Location = new System.Drawing.Point(44, 94);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(45, 14);
+            this.label27.Size = new System.Drawing.Size(50, 14);
             this.label27.TabIndex = 32;
             this.label27.Text = "Policy 3";
             // 
@@ -1232,7 +1233,7 @@
             this.label28.ForeColor = System.Drawing.Color.Black;
             this.label28.Location = new System.Drawing.Point(44, 50);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(45, 14);
+            this.label28.Size = new System.Drawing.Size(50, 14);
             this.label28.TabIndex = 31;
             this.label28.Text = "Policy 2";
             // 
@@ -1242,7 +1243,7 @@
             this.label29.ForeColor = System.Drawing.Color.Black;
             this.label29.Location = new System.Drawing.Point(44, 7);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(45, 14);
+            this.label29.Size = new System.Drawing.Size(50, 14);
             this.label29.TabIndex = 30;
             this.label29.Text = "Policy 1";
             // 
@@ -1323,7 +1324,7 @@
             this.label44.ForeColor = System.Drawing.Color.Black;
             this.label44.Location = new System.Drawing.Point(44, 272);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(229, 14);
+            this.label44.Size = new System.Drawing.Size(255, 14);
             this.label44.TabIndex = 62;
             this.label44.Text = "International Integrated Reporting Framework";
             // 
@@ -1333,7 +1334,7 @@
             this.label42.ForeColor = System.Drawing.Color.Black;
             this.label42.Location = new System.Drawing.Point(322, 315);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(403, 14);
+            this.label42.Size = new System.Drawing.Size(442, 14);
             this.label42.TabIndex = 60;
             this.label42.Text = "GO 8 Terms of Reference Environment Health and Safety committee of the board";
             // 
@@ -1343,7 +1344,7 @@
             this.label43.ForeColor = System.Drawing.Color.Black;
             this.label43.Location = new System.Drawing.Point(322, 272);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(394, 14);
+            this.label43.Size = new System.Drawing.Size(427, 14);
             this.label43.TabIndex = 59;
             this.label43.Text = "GO 7 Terms of Reference Risk, Capital and compliance committee of the board";
             // 
@@ -1353,7 +1354,7 @@
             this.label36.ForeColor = System.Drawing.Color.Black;
             this.label36.Location = new System.Drawing.Point(322, 227);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(258, 14);
+            this.label36.Size = new System.Drawing.Size(283, 14);
             this.label36.TabIndex = 56;
             this.label36.Text = "GO 6 Terms of Reference Remuneration Committee";
             // 
@@ -1363,7 +1364,7 @@
             this.label37.ForeColor = System.Drawing.Color.Black;
             this.label37.Location = new System.Drawing.Point(322, 183);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(266, 14);
+            this.label37.Size = new System.Drawing.Size(290, 14);
             this.label37.TabIndex = 55;
             this.label37.Text = "Go 5 Terms of Reference ITC committee of the board";
             // 
@@ -1373,7 +1374,7 @@
             this.label38.ForeColor = System.Drawing.Color.Black;
             this.label38.Location = new System.Drawing.Point(322, 139);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(213, 14);
+            this.label38.Size = new System.Drawing.Size(235, 14);
             this.label38.TabIndex = 54;
             this.label38.Text = "Go 4 Terms of Reference Audit Committee";
             // 
@@ -1383,7 +1384,7 @@
             this.label39.ForeColor = System.Drawing.Color.Black;
             this.label39.Location = new System.Drawing.Point(322, 94);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(319, 14);
+            this.label39.Size = new System.Drawing.Size(348, 14);
             this.label39.TabIndex = 50;
             this.label39.Text = "GO 3 Terms of Reference Fair practices committee of the board";
             // 
@@ -1393,7 +1394,7 @@
             this.label40.ForeColor = System.Drawing.Color.Black;
             this.label40.Location = new System.Drawing.Point(322, 50);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(306, 14);
+            this.label40.Size = new System.Drawing.Size(335, 14);
             this.label40.TabIndex = 49;
             this.label40.Text = "GO 2 Terms of Reference Nomination committee of the board";
             // 
@@ -1403,7 +1404,7 @@
             this.label41.ForeColor = System.Drawing.Color.Black;
             this.label41.Location = new System.Drawing.Point(322, 7);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(317, 14);
+            this.label41.Size = new System.Drawing.Size(341, 14);
             this.label41.TabIndex = 48;
             this.label41.Text = "GO 1 Terms of Reference Overarching Governance Committee";
             // 
@@ -1413,7 +1414,7 @@
             this.label33.ForeColor = System.Drawing.Color.Black;
             this.label33.Location = new System.Drawing.Point(44, 227);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(81, 14);
+            this.label33.Size = new System.Drawing.Size(88, 14);
             this.label33.TabIndex = 44;
             this.label33.Text = "Process Matrix";
             // 
@@ -1423,7 +1424,7 @@
             this.label34.ForeColor = System.Drawing.Color.Black;
             this.label34.Location = new System.Drawing.Point(44, 183);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(81, 14);
+            this.label34.Size = new System.Drawing.Size(88, 14);
             this.label34.TabIndex = 43;
             this.label34.Text = "Process Matrix";
             // 
@@ -1433,7 +1434,7 @@
             this.label35.ForeColor = System.Drawing.Color.Black;
             this.label35.Location = new System.Drawing.Point(44, 139);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(140, 14);
+            this.label35.Size = new System.Drawing.Size(152, 14);
             this.label35.TabIndex = 42;
             this.label35.Text = "Board Meeting Procedures";
             // 
@@ -1443,7 +1444,7 @@
             this.label30.ForeColor = System.Drawing.Color.Black;
             this.label30.Location = new System.Drawing.Point(44, 94);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(126, 14);
+            this.label30.Size = new System.Drawing.Size(131, 14);
             this.label30.TabIndex = 38;
             this.label30.Text = "Board Chairmans Guide";
             // 
@@ -1453,7 +1454,7 @@
             this.label31.ForeColor = System.Drawing.Color.Black;
             this.label31.Location = new System.Drawing.Point(44, 50);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(126, 14);
+            this.label31.Size = new System.Drawing.Size(138, 14);
             this.label31.TabIndex = 37;
             this.label31.Text = "Board Meetings Minutes";
             // 
@@ -1463,13 +1464,12 @@
             this.label32.ForeColor = System.Drawing.Color.Black;
             this.label32.Location = new System.Drawing.Point(44, 7);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(118, 14);
+            this.label32.Size = new System.Drawing.Size(130, 14);
             this.label32.TabIndex = 36;
             this.label32.Text = "Board Metting Agenda";
             // 
             // pictureBox48
             // 
-            this.pictureBox48.Image = global::ProjectManagementToolkit.Properties.Resources.excel;
             this.pictureBox48.Location = new System.Drawing.Point(6, 272);
             this.pictureBox48.Name = "pictureBox48";
             this.pictureBox48.Size = new System.Drawing.Size(32, 37);
@@ -1559,7 +1559,6 @@
             // 
             // pictureBox37
             // 
-            this.pictureBox37.Image = global::ProjectManagementToolkit.Properties.Resources.Powerpoint;
             this.pictureBox37.Location = new System.Drawing.Point(6, 227);
             this.pictureBox37.Name = "pictureBox37";
             this.pictureBox37.Size = new System.Drawing.Size(32, 37);
@@ -1569,7 +1568,6 @@
             // 
             // pictureBox38
             // 
-            this.pictureBox38.Image = global::ProjectManagementToolkit.Properties.Resources.excel;
             this.pictureBox38.Location = new System.Drawing.Point(6, 183);
             this.pictureBox38.Name = "pictureBox38";
             this.pictureBox38.Size = new System.Drawing.Size(32, 37);
