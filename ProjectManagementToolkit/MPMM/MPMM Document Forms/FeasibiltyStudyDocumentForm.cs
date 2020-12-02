@@ -313,6 +313,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentFeasibilityStudyModel = JsonConvert.DeserializeObject<FeasibilityStudyModel>(JsonConvert.SerializeObject(newFeasibilityStudyModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "FeasibilityStudy");
                 MessageBox.Show("Feasibility study form saved successfully", "save", MessageBoxButtons.OK);
             }

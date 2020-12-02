@@ -216,6 +216,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentRiskPlanModel = JsonConvert.DeserializeObject<RiskPlanModel>(JsonConvert.SerializeObject(newRiskPlanModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "RiskPlan");
                 MessageBox.Show("Risk plan saved successfully", "save", MessageBoxButtons.OK);
             }

@@ -88,6 +88,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 string json = JsonConvert.SerializeObject(versionControl);
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "AcceptanceForm");
+                currentAcceptanceFormModel = JsonConvert.DeserializeObject<AcceptanceFormModel>(JsonConvert.SerializeObject(newAcceptanceFormModel));
                 MessageBox.Show("Acceptance form saved successfully", "save", MessageBoxButtons.OK);
             }
         }
@@ -255,6 +256,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         //acceptanceResultsTable.SetWidths(new float[] { 190, 303, 1094 });
                         document.InsertTable(acceptanceResultsTable);
+
+                        document.InsertParagraph("\nCUSTOMER APPROVAL\n")
+                           .Font("Arial")
+                           .Bold(true)
+                           .FontSize(14d).Alignment = Alignment.left;
 
                         var caustomerApproval = document.AddTable(2, 2);
                         caustomerApproval.Rows[0].Cells[0].Paragraphs[0].Append("\nCUSTOMER APPROVAL\n").Bold(true).Color(Color.White);

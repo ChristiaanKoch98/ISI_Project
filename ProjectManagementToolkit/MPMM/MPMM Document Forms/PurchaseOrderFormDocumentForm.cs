@@ -97,6 +97,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentPurchaseOrderModel = JsonConvert.DeserializeObject<PurchaseOrderModel>(JsonConvert.SerializeObject(newPurchaseOrderModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "PurchaseOrder");
                 MessageBox.Show("Purchase Order Form saved successfully", "save", MessageBoxButtons.OK);
             }

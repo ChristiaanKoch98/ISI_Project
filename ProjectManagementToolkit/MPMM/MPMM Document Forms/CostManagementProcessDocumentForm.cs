@@ -113,6 +113,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentCostManagementProcessModel = JsonConvert.DeserializeObject<CostManagementProcessModel>(JsonConvert.SerializeObject(newCostManagementProcessModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "CostManagementProcess");
                 MessageBox.Show("Risk plan saved successfully", "save", MessageBoxButtons.OK);
             }
