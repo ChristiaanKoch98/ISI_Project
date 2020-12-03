@@ -30,6 +30,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             InitializeComponent();
 
+            Document_Information_dgv.ForeColor = Color.Black;
+            Document_History_dgv.ForeColor = Color.Black;
+            Document_Approvals_dgv.ForeColor = Color.Black;
+            Impact_dgv.ForeColor = Color.Black;
+            Likelihood_dgv.ForeColor = Color.Black;
+            Priority_dgv.ForeColor = Color.Black;
+            Risks_dgv.ForeColor = Color.Black;
+            Schedule_dgv.ForeColor = Color.Black;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
