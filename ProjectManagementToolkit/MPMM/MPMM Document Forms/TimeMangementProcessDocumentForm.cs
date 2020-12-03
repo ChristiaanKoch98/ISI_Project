@@ -31,22 +31,22 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         public void saveDocument()
         {
-            newTimeMangementProcessModel.DocumentID = dataGridView1.Rows[0].Cells[1].Value.ToString();
-            newTimeMangementProcessModel.DocumentOwner = dataGridView1.Rows[1].Cells[1].Value.ToString();
-            newTimeMangementProcessModel.IssueDate = dataGridView1.Rows[2].Cells[1].Value.ToString();
-            newTimeMangementProcessModel.LastSavedDate = dataGridView1.Rows[3].Cells[1].Value.ToString();
-            newTimeMangementProcessModel.FileName = dataGridView1.Rows[4].Cells[1].Value.ToString();
+            newTimeMangementProcessModel.DocumentID = documentInformation.Rows[0].Cells[1].Value.ToString();
+            newTimeMangementProcessModel.DocumentOwner = documentInformation.Rows[1].Cells[1].Value.ToString();
+            newTimeMangementProcessModel.IssueDate = documentInformation.Rows[2].Cells[1].Value.ToString();
+            newTimeMangementProcessModel.LastSavedDate = documentInformation.Rows[3].Cells[1].Value.ToString();
+            newTimeMangementProcessModel.FileName = documentInformation.Rows[4].Cells[1].Value.ToString();
 
             List<TimeMangementProcessModel.DocumentHistory> documentHistories = new List<TimeMangementProcessModel.DocumentHistory>();
 
-            int versionRowsCount = dataGridView2.Rows.Count;
+            int versionRowsCount = dgvDocumentHistory.Rows.Count;
 
             for (int i = 0; i < versionRowsCount - 1; i++)
             {
                 TimeMangementProcessModel.DocumentHistory documentHistoryModel = new TimeMangementProcessModel.DocumentHistory();
-                var version = dataGridView2.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var issueDate = dataGridView2.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var changes = dataGridView2.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var version = dgvDocumentHistory.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var issueDate = dgvDocumentHistory.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var changes = dgvDocumentHistory.Rows[i].Cells[2].Value?.ToString() ?? "";
                 documentHistoryModel.Version = version;
                 documentHistoryModel.IssueDate = issueDate;
                 documentHistoryModel.Changes = changes;
@@ -56,15 +56,15 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<TimeMangementProcessModel.DocumentApproval> documentApprovalsModel = new List<TimeMangementProcessModel.DocumentApproval>();
 
-            int approvalRowsCount = dataGridView3.Rows.Count;
+            int approvalRowsCount = dgvDocumentApproval.Rows.Count;
 
             for (int i = 0; i < approvalRowsCount - 1; i++)
             {
                 TimeMangementProcessModel.DocumentApproval documentApproval = new TimeMangementProcessModel.DocumentApproval();
-                var role = dataGridView3.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var name = dataGridView3.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var signature = dataGridView3.Rows[i].Cells[2].Value?.ToString() ?? "";
-                var date = dataGridView3.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var role = dgvDocumentApproval.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var name = dgvDocumentApproval.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var signature = dgvDocumentApproval.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var date = dgvDocumentApproval.Rows[i].Cells[3].Value?.ToString() ?? "";
                 documentApproval.Role = role;
                 documentApproval.Name = name;
                 documentApproval.Signature = signature;
@@ -142,18 +142,18 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 foreach (var row in documentInfo)
                 {
-                    dataGridView1.Rows.Add(row);
+                    dgvDocumentHistory.Rows.Add(row);
                 }
-                dataGridView1.AllowUserToAddRows = false;
+                dgvDocumentHistory.AllowUserToAddRows = false;
 
                 foreach (var row in currentTimeMangementProcessModel.DocumentHistories)
                 {
-                    dataGridView2.Rows.Add(new string[] { row.Version, row.IssueDate, row.Changes });
+                    dgvDocumentHistory.Rows.Add(new string[] { row.Version, row.IssueDate, row.Changes });
                 }
 
                 foreach (var row in currentTimeMangementProcessModel.DocumentApprovals)
                 {
-                    dataGridView3.Rows.Add(new string[] { row.Role, row.Name, "", row.DateApproved });
+                    dgvDocumentApproval.Rows.Add(new string[] { row.Role, row.Name, "", row.DateApproved });
                 }
 
 
@@ -194,9 +194,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 newTimeMangementProcessModel = new TimeMangementProcessModel();
                 foreach (var row in documentInfo)
                 {
-                    dataGridView1.Rows.Add(row);
+                    dgvDocumentHistory.Rows.Add(row);
                 }
-                dataGridView1.AllowUserToAddRows = false;
+                dgvDocumentHistory.AllowUserToAddRows = false;
             }
         }
 
@@ -645,5 +645,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             exportToWord();
         }
+
+
     }
 }

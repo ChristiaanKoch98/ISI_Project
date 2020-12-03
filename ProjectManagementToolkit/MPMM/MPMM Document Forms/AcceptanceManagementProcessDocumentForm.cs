@@ -31,22 +31,22 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         public void saveDocument()
         {
-            newAcceptanceManagementProcessModel.DocumentID = dataGridView1.Rows[0].Cells[1].Value.ToString();
-            newAcceptanceManagementProcessModel.DocumentOwner = dataGridView1.Rows[1].Cells[1].Value.ToString();
-            newAcceptanceManagementProcessModel.IssueDate = dataGridView1.Rows[2].Cells[1].Value.ToString();
-            newAcceptanceManagementProcessModel.LastSavedDate = dataGridView1.Rows[3].Cells[1].Value.ToString();
-            newAcceptanceManagementProcessModel.FileName = dataGridView1.Rows[4].Cells[1].Value.ToString();
+            newAcceptanceManagementProcessModel.DocumentID = documentInformation.Rows[0].Cells[1].Value.ToString();
+            newAcceptanceManagementProcessModel.DocumentOwner = documentInformation.Rows[1].Cells[1].Value.ToString();
+            newAcceptanceManagementProcessModel.IssueDate = documentInformation.Rows[2].Cells[1].Value.ToString();
+            newAcceptanceManagementProcessModel.LastSavedDate = documentInformation.Rows[3].Cells[1].Value.ToString();
+            newAcceptanceManagementProcessModel.FileName = documentInformation.Rows[4].Cells[1].Value.ToString();
 
             List<AcceptanceManagementProcessModel.DocumentHistory> documentHistories = new List<AcceptanceManagementProcessModel.DocumentHistory>();
 
-            int versionRowsCount = dataGridView2.Rows.Count;
+            int versionRowsCount = dataGridView7.Rows.Count;
 
             for (int i = 0; i < versionRowsCount - 1; i++)
             {
                 AcceptanceManagementProcessModel.DocumentHistory documentHistoryModel = new AcceptanceManagementProcessModel.DocumentHistory();
-                var version = dataGridView2.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var issueDate = dataGridView2.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var changes = dataGridView2.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var version = dataGridView7.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var issueDate = dataGridView7.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var changes = dataGridView7.Rows[i].Cells[2].Value?.ToString() ?? "";
                 documentHistoryModel.Version = version;
                 documentHistoryModel.IssueDate = issueDate;
                 documentHistoryModel.Changes = changes;
@@ -56,15 +56,15 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<AcceptanceManagementProcessModel.DocumentApproval> documentApprovalsModel = new List<AcceptanceManagementProcessModel.DocumentApproval>();
 
-            int approvalRowsCount = dataGridView3.Rows.Count;
+            int approvalRowsCount = dataGridView8.Rows.Count;
 
             for (int i = 0; i < approvalRowsCount - 1; i++)
             {
                 AcceptanceManagementProcessModel.DocumentApproval documentApproval = new AcceptanceManagementProcessModel.DocumentApproval();
-                var role = dataGridView3.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var name = dataGridView3.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var signature = dataGridView3.Rows[i].Cells[2].Value?.ToString() ?? "";
-                var date = dataGridView3.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var role = dataGridView8.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var name = dataGridView8.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var signature = dataGridView8.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var date = dataGridView8.Rows[i].Cells[3].Value?.ToString() ?? "";
                 documentApproval.Role = role;
                 documentApproval.Name = name;
                 documentApproval.Signature = signature;
@@ -142,18 +142,18 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 foreach (var row in documentInfo)
                 {
-                    dataGridView1.Rows.Add(row);
+                    documentInformation.Rows.Add(row);
                 }
-                dataGridView1.AllowUserToAddRows = false;
+                documentInformation.AllowUserToAddRows = false;
 
                 foreach (var row in currentAcceptanceManagementProcessModel.DocumentHistories)
                 {
-                    dataGridView2.Rows.Add(new string[] { row.Version, row.IssueDate, row.Changes });
+                    dataGridView7.Rows.Add(new string[] { row.Version, row.IssueDate, row.Changes });
                 }
 
                 foreach (var row in currentAcceptanceManagementProcessModel.DocumentApprovals)
                 {
-                    dataGridView3.Rows.Add(new string[] { row.Role, row.Name, "", row.DateApproved });
+                    dataGridView8.Rows.Add(new string[] { row.Role, row.Name, "", row.DateApproved });
                 }
 
 
@@ -194,9 +194,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 newAcceptanceManagementProcessModel = new AcceptanceManagementProcessModel();
                 foreach (var row in documentInfo)
                 {
-                    dataGridView1.Rows.Add(row);
+                    documentInformation.Rows.Add(row);
                 }
-                dataGridView1.AllowUserToAddRows = false;
+                documentInformation.AllowUserToAddRows = false;
             }
         }
 
@@ -651,11 +651,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private void btnExportWord_Click(object sender, EventArgs e)
         {
             exportToWord();
-        }
-
-        private void AcceptanceManagementProcessDocumentForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

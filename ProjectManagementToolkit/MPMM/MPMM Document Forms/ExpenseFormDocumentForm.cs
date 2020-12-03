@@ -33,7 +33,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         public void saveDocument()
         {
-            newExpenseFormModel.ProjectDetails = txtprojectdetailsContent.Text;
+            //newExpenseFormModel.ProjectDetails = txtprojectdetailsContent.Text;
 
 
             List<ExpenseFormModel.ExpenseDetail> expenseDetail = new List<ExpenseFormModel.ExpenseDetail>();
@@ -66,7 +66,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newExpenseFormModel.ExpenseDetails = expenseDetail;
 
 
-            newExpenseFormModel.Approvaldetails = txtapprovaldetails.Text;
+            //newExpenseFormModel.Approvaldetails = txtapprovaldetails.Text;
 
 
             List<VersionControl<ExpenseFormModel>.DocumentModel> documentModels = versionControl.DocumentModels;
@@ -100,7 +100,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                     newExpenseFormModel = JsonConvert.DeserializeObject<ExpenseFormModel>(versionControl.getLatest(versionControl.DocumentModels));
                     currentExpenseFormModel = JsonConvert.DeserializeObject<ExpenseFormModel>(versionControl.getLatest(versionControl.DocumentModels));
 
-                    txtprojectdetailsContent.Text = currentExpenseFormModel.ProjectDetails;
+                    //txtprojectdetailsContent.Text = currentExpenseFormModel.ProjectDetails;
 
                     foreach (var row in currentExpenseFormModel.ExpenseDetails)
                     {

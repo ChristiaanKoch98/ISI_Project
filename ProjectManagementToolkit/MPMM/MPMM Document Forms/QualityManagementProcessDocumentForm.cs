@@ -31,22 +31,22 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         public void saveDocument()
         {
-            newQualityManagementProcessModel.DocumentID = dataGridView1.Rows[0].Cells[1].Value.ToString();
-            newQualityManagementProcessModel.DocumentOwner = dataGridView1.Rows[1].Cells[1].Value.ToString();
-            newQualityManagementProcessModel.IssueDate = dataGridView1.Rows[2].Cells[1].Value.ToString();
-            newQualityManagementProcessModel.LastSavedDate = dataGridView1.Rows[3].Cells[1].Value.ToString();
-            newQualityManagementProcessModel.FileName = dataGridView1.Rows[4].Cells[1].Value.ToString();
+            newQualityManagementProcessModel.DocumentID = documentInformation.Rows[0].Cells[1].Value.ToString();
+            newQualityManagementProcessModel.DocumentOwner = documentInformation.Rows[1].Cells[1].Value.ToString();
+            newQualityManagementProcessModel.IssueDate = documentInformation.Rows[2].Cells[1].Value.ToString();
+            newQualityManagementProcessModel.LastSavedDate = documentInformation.Rows[3].Cells[1].Value.ToString();
+            newQualityManagementProcessModel.FileName = documentInformation.Rows[4].Cells[1].Value.ToString();
 
             List<QualityManagementProcessModel.DocumentHistory> documentHistories = new List<QualityManagementProcessModel.DocumentHistory>();
 
-            int versionRowsCount = dataGridView2.Rows.Count;
+            int versionRowsCount = dgvDocumentHistory.Rows.Count;
 
             for (int i = 0; i < versionRowsCount - 1; i++)
             {
                 QualityManagementProcessModel.DocumentHistory documentHistoryModel = new QualityManagementProcessModel.DocumentHistory();
-                var version = dataGridView2.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var issueDate = dataGridView2.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var changes = dataGridView2.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var version = dgvDocumentHistory.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var issueDate = dgvDocumentHistory.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var changes = dgvDocumentHistory.Rows[i].Cells[2].Value?.ToString() ?? "";
                 documentHistoryModel.Version = version;
                 documentHistoryModel.IssueDate = issueDate;
                 documentHistoryModel.Changes = changes;
@@ -56,15 +56,15 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<QualityManagementProcessModel.DocumentApproval> documentApprovalsModel = new List<QualityManagementProcessModel.DocumentApproval>();
 
-            int approvalRowsCount = dataGridView3.Rows.Count;
+            int approvalRowsCount = dgvApproval.Rows.Count;
 
             for (int i = 0; i < approvalRowsCount - 1; i++)
             {
                 QualityManagementProcessModel.DocumentApproval documentApproval = new QualityManagementProcessModel.DocumentApproval();
-                var role = dataGridView3.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var name = dataGridView3.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var signature = dataGridView3.Rows[i].Cells[2].Value?.ToString() ?? "";
-                var date = dataGridView3.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var role = dgvApproval.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var name = dgvApproval.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var signature = dgvApproval.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var date = dgvApproval.Rows[i].Cells[3].Value?.ToString() ?? "";
                 documentApproval.Role = role;
                 documentApproval.Name = name;
                 documentApproval.Signature = signature;
@@ -137,18 +137,18 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 foreach (var row in documentInfo)
                 {
-                    dataGridView1.Rows.Add(row);
+                    documentInformation.Rows.Add(row);
                 }
-                dataGridView1.AllowUserToAddRows = false;
+                documentInformation.AllowUserToAddRows = false;
 
                 foreach (var row in currentQualityManagementProcessModel.DocumentHistories)
                 {
-                    dataGridView2.Rows.Add(new string[] { row.Version, row.IssueDate, row.Changes });
+                    dgvDocumentHistory.Rows.Add(new string[] { row.Version, row.IssueDate, row.Changes });
                 }
 
                 foreach (var row in currentQualityManagementProcessModel.DocumentApprovals)
                 {
-                    dataGridView3.Rows.Add(new string[] { row.Role, row.Name, "", row.DateApproved });
+                    dgvApproval.Rows.Add(new string[] { row.Role, row.Name, "", row.DateApproved });
                 }
 
 
@@ -185,9 +185,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 newQualityManagementProcessModel = new QualityManagementProcessModel();
                 foreach (var row in documentInfo)
                 {
-                    dataGridView1.Rows.Add(row);
+                    documentInformation.Rows.Add(row);
                 }
-                dataGridView1.AllowUserToAddRows = false;
+                documentInformation.AllowUserToAddRows = false;
             }
         }
 

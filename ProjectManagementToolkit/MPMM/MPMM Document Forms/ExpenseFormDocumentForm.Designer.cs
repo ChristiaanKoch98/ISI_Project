@@ -167,7 +167,6 @@
             this.txtexecutivesummaryDescription.TabIndex = 2;
             this.txtexecutivesummaryDescription.Text = "Any invoices relating to this Expense Form should be attached to this document.\r\n" +
     "PLEASE FOWARD THIS FORM TO THE PROJECT MANAGER FOR APPROVAL.";
-            this.txtexecutivesummaryDescription.TextChanged += new System.EventHandler(this.txtexecutivesummaryDescription_TextChanged);
             // 
             // tabPage11
             // 
