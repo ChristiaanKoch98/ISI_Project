@@ -32,6 +32,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         public void saveDocument()
         {
+            newResourcePlanModel.ProjectName = textBoxProjectName.Text;
             newResourcePlanModel.DocumentID = docInfodataGridView.Rows[0].Cells[1].Value.ToString();
             newResourcePlanModel.DocumentOwner = docInfodataGridView.Rows[1].Cells[1].Value.ToString();
             newResourcePlanModel.IssueDate = docInfodataGridView.Rows[2].Cells[1].Value.ToString();
@@ -188,9 +189,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
             newResourcePlanModel.Schedules = documentSchedulelModel;
 
-            newResourcePlanModel.Assumption = txtRPAssumptions.Text;
+            newResourcePlanModel.Assumptions = txtRPAssumptions.Text;
 
-            newResourcePlanModel.Constraint = txtRPConstraints.Text;
+            newResourcePlanModel.Constraints = txtRPConstraints.Text;
 
             List<VersionControl<ResourcePlanModel>.DocumentModel> documentModels = versionControl.DocumentModels;
 
@@ -266,7 +267,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 }
 
                 txtRPAssumptions.Text = currentResourcePlanModel.Assumptions;
-
+                textBoxProjectName.Text = currentResourcePlanModel.ProjectName;
                 txtRPConstraints.Text = currentResourcePlanModel.Constraints;
             }
             else
