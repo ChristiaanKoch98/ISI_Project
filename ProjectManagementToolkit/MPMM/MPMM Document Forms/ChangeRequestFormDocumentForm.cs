@@ -60,11 +60,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newChangeRequestModel.ChangeDrivers = txtChangeDrivers.Text;
             newChangeRequestModel.ChangeBenefits = txtChangeBenefits.Text;
             newChangeRequestModel.ChangeCost = txtChangeCosts.Text;
-            newChangeRequestModel.ProjectImpact = textBox1.Text;
+            newChangeRequestModel.ProjectImpact = txtProjectName.Text;
 
             //newChangeRequestModel.SupportingDocumentation = approvalDetailsTextBox.Text;
 
-            newChangeRequestModel.SubmittedName = txtName.Text;
+            /*newChangeRequestModel.SubmittedName = txtName.Text;
             newChangeRequestModel.SubmittedRole = txtProjectRole.Text;
             newChangeRequestModel.SubmittedSignature = txtSignature.Text;
             newChangeRequestModel.SubmittedDate = dateTimePickerSubmittedBy.Text;
@@ -72,9 +72,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newChangeRequestModel.ApprovedName = txtApprovedByName.Text;
             newChangeRequestModel.ApprovedRole = txtApprovedByProjectRole.Text;
             newChangeRequestModel.ApprovedSignature = txtApprovedBySignature.Text;
-            newChangeRequestModel.ApprovedDate = dateTimePickerApprovedBy.Text;
+            newChangeRequestModel.ApprovedDate = dateTimePickerApprovedBy.Text;*/
 
-            List<ChangeRequestModel.SupportingDocument> supportingDocuments = new List<ChangeRequestModel.SupportingDocument>();
+            /*List<ChangeRequestModel.SupportingDocument> supportingDocuments = new List<ChangeRequestModel.SupportingDocument>();
 
             int versionRowsCount = dataGridViewSupportingDocuments.Rows.Count;
 
@@ -89,7 +89,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 supportingDocuments.Add(supportDocumentModel);
             }
-            newChangeRequestModel.SupportingDocuments = supportingDocuments;
+            newChangeRequestModel.SupportingDocuments = supportingDocuments;*/
 
 
             List<VersionControl<ChangeRequestModel>.DocumentModel> documentModels = versionControl.DocumentModels; //Error here
@@ -134,9 +134,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 txtChangeDrivers.Text = currentChangeRequestModel.ChangeDrivers;
                 txtChangeBenefits.Text = currentChangeRequestModel.ChangeBenefits;
                 txtChangeCosts.Text = currentChangeRequestModel.ChangeCost;
-                textBox1.Text = currentChangeRequestModel.ProjectImpact;
+                txtProjectName.Text = currentChangeRequestModel.ProjectImpact;
 
-                foreach (var row in currentChangeRequestModel.SupportingDocuments)
+                /*foreach (var row in currentChangeRequestModel.SupportingDocuments)
                 {
                     dataGridViewSupportingDocuments.Rows.Add(new string[] { row.DocumentName, row.DocumentDescription});
                 }
@@ -149,7 +149,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 txtApprovedByName.Text = currentChangeRequestModel.ApprovedName;
                 txtApprovedByProjectRole.Text = currentChangeRequestModel.ApprovedRole;
                 txtApprovedBySignature.Text = currentChangeRequestModel.ApprovedSignature;
-                dateTimePickerApprovedBy.Text = currentChangeRequestModel.ApprovedDate;
+                dateTimePickerApprovedBy.Text = currentChangeRequestModel.ApprovedDate;*/
 
             }
             else 
@@ -272,6 +272,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private void btnSaveProjectDetails_Click(object sender, EventArgs e)
         {
             saveDocument();
+        }
+
+        private void ChangeRequestFormDocumentForm_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

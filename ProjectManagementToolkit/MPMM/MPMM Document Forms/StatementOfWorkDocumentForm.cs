@@ -73,11 +73,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         public void saveDocument()
         {
-            newStatementOfWorkModel.DocumentID = docInfoGridData.Rows[0].Cells[1].Value.ToString();
-            newStatementOfWorkModel.DocumentOwner = docInfoGridData.Rows[1].Cells[1].Value.ToString();
-            newStatementOfWorkModel.IssueDate = docInfoGridData.Rows[2].Cells[1].Value.ToString();
-            newStatementOfWorkModel.LastSavedDate = docInfoGridData.Rows[3].Cells[1].Value.ToString();
-            newStatementOfWorkModel.FileName = docInfoGridData.Rows[4].Cells[1].Value.ToString();
+            newStatementOfWorkModel.DocumentID = dgvInfo.Rows[0].Cells[1].Value.ToString();
+            newStatementOfWorkModel.DocumentOwner = dgvInfo.Rows[1].Cells[1].Value.ToString();
+            newStatementOfWorkModel.IssueDate = dgvInfo.Rows[2].Cells[1].Value.ToString();
+            newStatementOfWorkModel.LastSavedDate = dgvInfo.Rows[3].Cells[1].Value.ToString();
+            newStatementOfWorkModel.FileName = dgvInfo.Rows[4].Cells[1].Value.ToString();
 
             List<StatementOfWorkModel.DocumentHistory> documentHistories = new List<StatementOfWorkModel.DocumentHistory>();
 
@@ -189,9 +189,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 foreach (var row in documentInfo)
                 {
-                    docInfoGridData.Rows.Add(row);
+                    dgvInfo.Rows.Add(row);
                 }
-                docInfoGridData.AllowUserToAddRows = false;
+                dgvInfo.AllowUserToAddRows = false;
 
                 foreach (var row in currentStatementOfWorkModel.DocumentHistories)
                 {
@@ -237,9 +237,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 newStatementOfWorkModel = new StatementOfWorkModel();
                 foreach (var row in documentInfo)
                 {
-                    docInfoGridData.Rows.Add(row);
+                    dataGridViewDocApprovals.Rows.Add(row);
                 }
-                docInfoGridData.AllowUserToAddRows = false;
+                dataGridViewDocApprovals.AllowUserToAddRows = false;
             }
         }
 

@@ -90,7 +90,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newIssueManagementProcessModel.DocumentApprovals = documentApprovalsModel;
 
             newIssueManagementProcessModel.Overview = overviewTextBox.Text;
-            newIssueManagementProcessModel.RaiseIssue = raiseIssueLabel.Text;
+            newIssueManagementProcessModel.RaiseIssue = raiseTextBox.Text;
             newIssueManagementProcessModel.ReviewIssue = reviewIssueLabel.Text;
             newIssueManagementProcessModel.IssueAction = assgnActTextBox.Text;
             newIssueManagementProcessModel.TeamMember = textBox1.Text;
@@ -152,7 +152,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 }
 
                 overviewTextBox.Text = currentIssueManagementProcessModel.Overview;
-                raiseIssueLabel.Text = currentIssueManagementProcessModel.RaiseIssue;
+                raiseTextBox.Text = currentIssueManagementProcessModel.RaiseIssue;
                 reviewIssueLabel.Text = currentIssueManagementProcessModel.ReviewIssue;
                 assgnActTextBox.Text = currentIssueManagementProcessModel.IssueAction;
                 textBox1.Text = currentIssueManagementProcessModel.TeamMember;

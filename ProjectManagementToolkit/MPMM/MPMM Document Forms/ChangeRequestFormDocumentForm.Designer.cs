@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangeRequestFormDocumentForm));
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.signatureTextBox = new System.Windows.Forms.TextBox();
@@ -43,22 +40,22 @@
             this.impactlDetailsPanel = new System.Windows.Forms.Panel();
             this.impactDetailsLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.chngDscrpTextBox = new System.Windows.Forms.TextBox();
-            this.chngBnftsTextBox = new System.Windows.Forms.TextBox();
-            this.changeDriversTextField = new System.Windows.Forms.TextBox();
-            this.chngCostsTextBox = new System.Windows.Forms.TextBox();
-            this.chngeUrgencyTextBox = new System.Windows.Forms.TextBox();
-            this.chngRqstDateTextField = new System.Windows.Forms.TextBox();
-            this.chngRqstTextBox = new System.Windows.Forms.TextBox();
-            this.chngNumTextBox = new System.Windows.Forms.Label();
+            this.txtChangeDescription = new System.Windows.Forms.TextBox();
+            this.txtChangeBenefits = new System.Windows.Forms.TextBox();
+            this.txtChangeDrivers = new System.Windows.Forms.TextBox();
+            this.txtChangeCosts = new System.Windows.Forms.TextBox();
+            this.txtChangeUrgency = new System.Windows.Forms.TextBox();
+            this.txtChangeRequestDate = new System.Windows.Forms.TextBox();
+            this.txtChangeRequester = new System.Windows.Forms.TextBox();
+            this.txtChangeDetails = new System.Windows.Forms.Label();
             this.chngeUrgencyLabel = new System.Windows.Forms.Label();
             this.chngRqstDateLabel = new System.Windows.Forms.Label();
             this.chngRequesterLabel = new System.Windows.Forms.Label();
             this.chngNumLabel = new System.Windows.Forms.Label();
             this.changeDetailsPanel = new System.Windows.Forms.Panel();
             this.changeDetailsLabel = new System.Windows.Forms.Label();
-            this.projectMamagerTextBox = new System.Windows.Forms.TextBox();
-            this.projectNameTextBox = new System.Windows.Forms.TextBox();
+            this.txtProjectManager = new System.Windows.Forms.TextBox();
+            this.txtProjectName = new System.Windows.Forms.TextBox();
             this.projectManagerLabel = new System.Windows.Forms.Label();
             this.projectNmaeLabel = new System.Windows.Forms.Label();
             this.projectDetailsPanel = new System.Windows.Forms.Panel();
@@ -71,33 +68,14 @@
             this.projectDetailsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 19);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Change Request Form For";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(243, 7);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(161, 26);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Project Name";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(24, 48);
+            this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(186, 19);
+            this.label2.Size = new System.Drawing.Size(229, 24);
             this.label2.TabIndex = 2;
             this.label2.Text = "Change Request Form";
             // 
@@ -113,21 +91,21 @@
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.impactlDetailsPanel);
             this.panel1.Controls.Add(this.tableLayoutPanel1);
-            this.panel1.Controls.Add(this.chngeUrgencyTextBox);
-            this.panel1.Controls.Add(this.chngRqstDateTextField);
-            this.panel1.Controls.Add(this.chngRqstTextBox);
-            this.panel1.Controls.Add(this.chngNumTextBox);
+            this.panel1.Controls.Add(this.txtChangeUrgency);
+            this.panel1.Controls.Add(this.txtChangeRequestDate);
+            this.panel1.Controls.Add(this.txtChangeRequester);
+            this.panel1.Controls.Add(this.txtChangeDetails);
             this.panel1.Controls.Add(this.chngeUrgencyLabel);
             this.panel1.Controls.Add(this.chngRqstDateLabel);
             this.panel1.Controls.Add(this.chngRequesterLabel);
             this.panel1.Controls.Add(this.chngNumLabel);
             this.panel1.Controls.Add(this.changeDetailsPanel);
-            this.panel1.Controls.Add(this.projectMamagerTextBox);
-            this.panel1.Controls.Add(this.projectNameTextBox);
+            this.panel1.Controls.Add(this.txtProjectManager);
+            this.panel1.Controls.Add(this.txtProjectName);
             this.panel1.Controls.Add(this.projectManagerLabel);
             this.panel1.Controls.Add(this.projectNmaeLabel);
             this.panel1.Controls.Add(this.projectDetailsPanel);
-            this.panel1.Location = new System.Drawing.Point(20, 70);
+            this.panel1.Location = new System.Drawing.Point(8, 31);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(696, 677);
             this.panel1.TabIndex = 3;
@@ -141,7 +119,6 @@
             this.signatureTextBox.Name = "signatureTextBox";
             this.signatureTextBox.Size = new System.Drawing.Size(696, 169);
             this.signatureTextBox.TabIndex = 26;
-            this.signatureTextBox.Text = resources.GetString("signatureTextBox.Text");
             // 
             // approvalDetailsTextBox
             // 
@@ -160,7 +137,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(5, 453);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 16);
+            this.label3.Size = new System.Drawing.Size(198, 20);
             this.label3.TabIndex = 24;
             this.label3.Text = "Supporting Documention:";
             // 
@@ -181,7 +158,7 @@
             this.approvalDetailsLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.approvalDetailsLabel.Location = new System.Drawing.Point(12, 4);
             this.approvalDetailsLabel.Name = "approvalDetailsLabel";
-            this.approvalDetailsLabel.Size = new System.Drawing.Size(209, 24);
+            this.approvalDetailsLabel.Size = new System.Drawing.Size(260, 29);
             this.approvalDetailsLabel.TabIndex = 0;
             this.approvalDetailsLabel.Text = "APPROVAL DETAILS";
             // 
@@ -191,7 +168,7 @@
             this.projectImpactLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.projectImpactLabel.Location = new System.Drawing.Point(0, 370);
             this.projectImpactLabel.Name = "projectImpactLabel";
-            this.projectImpactLabel.Size = new System.Drawing.Size(96, 16);
+            this.projectImpactLabel.Size = new System.Drawing.Size(122, 20);
             this.projectImpactLabel.TabIndex = 22;
             this.projectImpactLabel.Text = "Project Impact:";
             // 
@@ -223,7 +200,7 @@
             this.impactDetailsLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.impactDetailsLabel.Location = new System.Drawing.Point(4, 1);
             this.impactDetailsLabel.Name = "impactDetailsLabel";
-            this.impactDetailsLabel.Size = new System.Drawing.Size(176, 24);
+            this.impactDetailsLabel.Size = new System.Drawing.Size(222, 29);
             this.impactDetailsLabel.TabIndex = 0;
             this.impactDetailsLabel.Text = "IMPACT DETAILS";
             // 
@@ -233,10 +210,10 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.chngDscrpTextBox, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.chngBnftsTextBox, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.changeDriversTextField, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.chngCostsTextBox, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtChangeDescription, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtChangeBenefits, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtChangeDrivers, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtChangeCosts, 1, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-1, 217);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
@@ -245,88 +222,88 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(695, 114);
             this.tableLayoutPanel1.TabIndex = 19;
             // 
-            // chngDscrpTextBox
+            // txtChangeDescription
             // 
-            this.chngDscrpTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.chngDscrpTextBox.Location = new System.Drawing.Point(4, 4);
-            this.chngDscrpTextBox.Multiline = true;
-            this.chngDscrpTextBox.Name = "chngDscrpTextBox";
-            this.chngDscrpTextBox.Size = new System.Drawing.Size(340, 49);
-            this.chngDscrpTextBox.TabIndex = 0;
-            this.chngDscrpTextBox.Text = "Change Description:\r\nProvide a complete description of the requested change \r\n";
+            this.txtChangeDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtChangeDescription.Location = new System.Drawing.Point(4, 4);
+            this.txtChangeDescription.Multiline = true;
+            this.txtChangeDescription.Name = "txtChangeDescription";
+            this.txtChangeDescription.Size = new System.Drawing.Size(340, 49);
+            this.txtChangeDescription.TabIndex = 0;
+            this.txtChangeDescription.Text = "Change Description:\r\nProvide a complete description of the requested change \r\n";
             // 
-            // chngBnftsTextBox
+            // txtChangeBenefits
             // 
-            this.chngBnftsTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.chngBnftsTextBox.Location = new System.Drawing.Point(4, 60);
-            this.chngBnftsTextBox.Multiline = true;
-            this.chngBnftsTextBox.Name = "chngBnftsTextBox";
-            this.chngBnftsTextBox.Size = new System.Drawing.Size(340, 50);
-            this.chngBnftsTextBox.TabIndex = 18;
-            this.chngBnftsTextBox.Text = "Change Benefits:\r\nDescribe the benefits associated with implementing this change\r" +
+            this.txtChangeBenefits.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtChangeBenefits.Location = new System.Drawing.Point(4, 60);
+            this.txtChangeBenefits.Multiline = true;
+            this.txtChangeBenefits.Name = "txtChangeBenefits";
+            this.txtChangeBenefits.Size = new System.Drawing.Size(340, 50);
+            this.txtChangeBenefits.TabIndex = 18;
+            this.txtChangeBenefits.Text = "Change Benefits:\r\nDescribe the benefits associated with implementing this change\r" +
     "\n";
             // 
-            // changeDriversTextField
+            // txtChangeDrivers
             // 
-            this.changeDriversTextField.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.changeDriversTextField.Location = new System.Drawing.Point(351, 4);
-            this.changeDriversTextField.Multiline = true;
-            this.changeDriversTextField.Name = "changeDriversTextField";
-            this.changeDriversTextField.Size = new System.Drawing.Size(340, 49);
-            this.changeDriversTextField.TabIndex = 17;
-            this.changeDriversTextField.Text = "Change Drivers:\r\nList any project, business, market or environmental factors that" +
+            this.txtChangeDrivers.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtChangeDrivers.Location = new System.Drawing.Point(351, 4);
+            this.txtChangeDrivers.Multiline = true;
+            this.txtChangeDrivers.Name = "txtChangeDrivers";
+            this.txtChangeDrivers.Size = new System.Drawing.Size(340, 49);
+            this.txtChangeDrivers.TabIndex = 17;
+            this.txtChangeDrivers.Text = "Change Drivers:\r\nList any project, business, market or environmental factors that" +
     " necessitate a specific time limit for this change\r\n";
             // 
-            // chngCostsTextBox
+            // txtChangeCosts
             // 
-            this.chngCostsTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.chngCostsTextBox.Location = new System.Drawing.Point(351, 60);
-            this.chngCostsTextBox.Multiline = true;
-            this.chngCostsTextBox.Name = "chngCostsTextBox";
-            this.chngCostsTextBox.Size = new System.Drawing.Size(340, 50);
-            this.chngCostsTextBox.TabIndex = 19;
-            this.chngCostsTextBox.Text = "Change Costs:\r\nDescribe the costs associated with implementing this change\r\n";
+            this.txtChangeCosts.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtChangeCosts.Location = new System.Drawing.Point(351, 60);
+            this.txtChangeCosts.Multiline = true;
+            this.txtChangeCosts.Name = "txtChangeCosts";
+            this.txtChangeCosts.Size = new System.Drawing.Size(340, 50);
+            this.txtChangeCosts.TabIndex = 19;
+            this.txtChangeCosts.Text = "Change Costs:\r\nDescribe the costs associated with implementing this change\r\n";
             // 
-            // chngeUrgencyTextBox
+            // txtChangeUrgency
             // 
-            this.chngeUrgencyTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.chngeUrgencyTextBox.ForeColor = System.Drawing.Color.Blue;
-            this.chngeUrgencyTextBox.Location = new System.Drawing.Point(168, 198);
-            this.chngeUrgencyTextBox.Name = "chngeUrgencyTextBox";
-            this.chngeUrgencyTextBox.Size = new System.Drawing.Size(252, 13);
-            this.chngeUrgencyTextBox.TabIndex = 13;
-            this.chngeUrgencyTextBox.Text = "Level of urgency for undertaking the change";
+            this.txtChangeUrgency.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtChangeUrgency.ForeColor = System.Drawing.Color.Blue;
+            this.txtChangeUrgency.Location = new System.Drawing.Point(189, 198);
+            this.txtChangeUrgency.Name = "txtChangeUrgency";
+            this.txtChangeUrgency.Size = new System.Drawing.Size(252, 16);
+            this.txtChangeUrgency.TabIndex = 13;
+            this.txtChangeUrgency.Text = "Level of urgency for undertaking the change";
             // 
-            // chngRqstDateTextField
+            // txtChangeRequestDate
             // 
-            this.chngRqstDateTextField.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.chngRqstDateTextField.ForeColor = System.Drawing.Color.Blue;
-            this.chngRqstDateTextField.Location = new System.Drawing.Point(168, 183);
-            this.chngRqstDateTextField.Name = "chngRqstDateTextField";
-            this.chngRqstDateTextField.Size = new System.Drawing.Size(283, 13);
-            this.chngRqstDateTextField.TabIndex = 12;
-            this.chngRqstDateTextField.Text = "Date of completion of this form ";
+            this.txtChangeRequestDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtChangeRequestDate.ForeColor = System.Drawing.Color.Blue;
+            this.txtChangeRequestDate.Location = new System.Drawing.Point(189, 182);
+            this.txtChangeRequestDate.Name = "txtChangeRequestDate";
+            this.txtChangeRequestDate.Size = new System.Drawing.Size(283, 16);
+            this.txtChangeRequestDate.TabIndex = 12;
+            this.txtChangeRequestDate.Text = "Date of completion of this form ";
             // 
-            // chngRqstTextBox
+            // txtChangeRequester
             // 
-            this.chngRqstTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.chngRqstTextBox.ForeColor = System.Drawing.Color.Blue;
-            this.chngRqstTextBox.Location = new System.Drawing.Point(168, 167);
-            this.chngRqstTextBox.Name = "chngRqstTextBox";
-            this.chngRqstTextBox.Size = new System.Drawing.Size(283, 13);
-            this.chngRqstTextBox.TabIndex = 11;
-            this.chngRqstTextBox.Text = "Name of person requesting the change";
+            this.txtChangeRequester.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtChangeRequester.ForeColor = System.Drawing.Color.Blue;
+            this.txtChangeRequester.Location = new System.Drawing.Point(189, 165);
+            this.txtChangeRequester.Name = "txtChangeRequester";
+            this.txtChangeRequester.Size = new System.Drawing.Size(283, 16);
+            this.txtChangeRequester.TabIndex = 11;
+            this.txtChangeRequester.Text = "Name of person requesting the change";
             // 
-            // chngNumTextBox
+            // txtChangeDetails
             // 
-            this.chngNumTextBox.AutoSize = true;
-            this.chngNumTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.chngNumTextBox.ForeColor = System.Drawing.Color.Blue;
-            this.chngNumTextBox.Location = new System.Drawing.Point(165, 151);
-            this.chngNumTextBox.Name = "chngNumTextBox";
-            this.chngNumTextBox.Size = new System.Drawing.Size(255, 13);
-            this.chngNumTextBox.TabIndex = 10;
-            this.chngNumTextBox.Text = "Unique identifier for the change per Change Register";
+            this.txtChangeDetails.AutoSize = true;
+            this.txtChangeDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.txtChangeDetails.ForeColor = System.Drawing.Color.Blue;
+            this.txtChangeDetails.Location = new System.Drawing.Point(186, 149);
+            this.txtChangeDetails.Name = "txtChangeDetails";
+            this.txtChangeDetails.Size = new System.Drawing.Size(342, 17);
+            this.txtChangeDetails.TabIndex = 10;
+            this.txtChangeDetails.Text = "Unique identifier for the change per Change Register";
             // 
             // chngeUrgencyLabel
             // 
@@ -334,7 +311,7 @@
             this.chngeUrgencyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chngeUrgencyLabel.Location = new System.Drawing.Point(4, 196);
             this.chngeUrgencyLabel.Name = "chngeUrgencyLabel";
-            this.chngeUrgencyLabel.Size = new System.Drawing.Size(112, 16);
+            this.chngeUrgencyLabel.Size = new System.Drawing.Size(138, 20);
             this.chngeUrgencyLabel.TabIndex = 9;
             this.chngeUrgencyLabel.Text = "Change Urgency:";
             // 
@@ -344,7 +321,7 @@
             this.chngRqstDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chngRqstDateLabel.Location = new System.Drawing.Point(4, 180);
             this.chngRqstDateLabel.Name = "chngRqstDateLabel";
-            this.chngRqstDateLabel.Size = new System.Drawing.Size(144, 16);
+            this.chngRqstDateLabel.Size = new System.Drawing.Size(179, 20);
             this.chngRqstDateLabel.TabIndex = 8;
             this.chngRqstDateLabel.Text = "Change Request Date:";
             // 
@@ -354,7 +331,7 @@
             this.chngRequesterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chngRequesterLabel.Location = new System.Drawing.Point(3, 163);
             this.chngRequesterLabel.Name = "chngRequesterLabel";
-            this.chngRequesterLabel.Size = new System.Drawing.Size(127, 16);
+            this.chngRequesterLabel.Size = new System.Drawing.Size(158, 20);
             this.chngRequesterLabel.TabIndex = 7;
             this.chngRequesterLabel.Text = "Change Requester: ";
             // 
@@ -364,7 +341,7 @@
             this.chngNumLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chngNumLabel.Location = new System.Drawing.Point(4, 147);
             this.chngNumLabel.Name = "chngNumLabel";
-            this.chngNumLabel.Size = new System.Drawing.Size(112, 16);
+            this.chngNumLabel.Size = new System.Drawing.Size(140, 20);
             this.chngNumLabel.TabIndex = 6;
             this.chngNumLabel.Text = "Change Number: ";
             // 
@@ -386,30 +363,30 @@
             this.changeDetailsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.changeDetailsLabel.Location = new System.Drawing.Point(8, 4);
             this.changeDetailsLabel.Name = "changeDetailsLabel";
-            this.changeDetailsLabel.Size = new System.Drawing.Size(164, 20);
+            this.changeDetailsLabel.Size = new System.Drawing.Size(200, 25);
             this.changeDetailsLabel.TabIndex = 0;
             this.changeDetailsLabel.Text = "CHANGE DETAILS";
             // 
-            // projectMamagerTextBox
+            // txtProjectManager
             // 
-            this.projectMamagerTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.projectMamagerTextBox.ForeColor = System.Drawing.Color.Blue;
-            this.projectMamagerTextBox.Location = new System.Drawing.Point(165, 76);
-            this.projectMamagerTextBox.Name = "projectMamagerTextBox";
-            this.projectMamagerTextBox.Size = new System.Drawing.Size(473, 13);
-            this.projectMamagerTextBox.TabIndex = 4;
-            this.projectMamagerTextBox.Text = "Name of the Project Manager responsible for implementing the change";
+            this.txtProjectManager.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtProjectManager.ForeColor = System.Drawing.Color.Blue;
+            this.txtProjectManager.Location = new System.Drawing.Point(165, 76);
+            this.txtProjectManager.Name = "txtProjectManager";
+            this.txtProjectManager.Size = new System.Drawing.Size(473, 16);
+            this.txtProjectManager.TabIndex = 4;
+            this.txtProjectManager.Text = "Name of the Project Manager responsible for implementing the change";
             // 
-            // projectNameTextBox
+            // txtProjectName
             // 
-            this.projectNameTextBox.BackColor = System.Drawing.Color.White;
-            this.projectNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.projectNameTextBox.ForeColor = System.Drawing.Color.Blue;
-            this.projectNameTextBox.Location = new System.Drawing.Point(165, 47);
-            this.projectNameTextBox.Name = "projectNameTextBox";
-            this.projectNameTextBox.Size = new System.Drawing.Size(473, 13);
-            this.projectNameTextBox.TabIndex = 3;
-            this.projectNameTextBox.Text = "Name of the project for which the change is being requested";
+            this.txtProjectName.BackColor = System.Drawing.Color.White;
+            this.txtProjectName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtProjectName.ForeColor = System.Drawing.Color.Blue;
+            this.txtProjectName.Location = new System.Drawing.Point(165, 47);
+            this.txtProjectName.Name = "txtProjectName";
+            this.txtProjectName.Size = new System.Drawing.Size(473, 16);
+            this.txtProjectName.TabIndex = 3;
+            this.txtProjectName.Text = "Name of the project for which the change is being requested";
             // 
             // projectManagerLabel
             // 
@@ -417,7 +394,7 @@
             this.projectManagerLabel.Font = new System.Drawing.Font("Helvetica", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.projectManagerLabel.Location = new System.Drawing.Point(3, 76);
             this.projectManagerLabel.Name = "projectManagerLabel";
-            this.projectManagerLabel.Size = new System.Drawing.Size(103, 14);
+            this.projectManagerLabel.Size = new System.Drawing.Size(124, 17);
             this.projectManagerLabel.TabIndex = 2;
             this.projectManagerLabel.Text = "Project Manager: ";
             // 
@@ -427,7 +404,7 @@
             this.projectNmaeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.projectNmaeLabel.Location = new System.Drawing.Point(4, 51);
             this.projectNmaeLabel.Name = "projectNmaeLabel";
-            this.projectNmaeLabel.Size = new System.Drawing.Size(96, 16);
+            this.projectNmaeLabel.Size = new System.Drawing.Size(121, 20);
             this.projectNmaeLabel.TabIndex = 1;
             this.projectNmaeLabel.Text = "Project Name: ";
             // 
@@ -448,23 +425,22 @@
             this.projectDetailslabel.ForeColor = System.Drawing.Color.White;
             this.projectDetailslabel.Location = new System.Drawing.Point(4, 12);
             this.projectDetailslabel.Name = "projectDetailslabel";
-            this.projectDetailslabel.Size = new System.Drawing.Size(169, 20);
+            this.projectDetailslabel.Size = new System.Drawing.Size(210, 25);
             this.projectDetailslabel.TabIndex = 0;
             this.projectDetailslabel.Text = "PROJECT DETAILS";
             // 
             // ChangeRequestFormDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(734, 749);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.Name = "ChangeRequestFormDocumentForm";
             this.Text = "Change Request Form Document Form";
+            this.Load += new System.EventHandler(this.ChangeRequestFormDocumentForm_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -483,9 +459,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label chngeUrgencyLabel;
@@ -494,23 +467,23 @@
         private System.Windows.Forms.Label chngNumLabel;
         private System.Windows.Forms.Panel changeDetailsPanel;
         private System.Windows.Forms.Label changeDetailsLabel;
-        private System.Windows.Forms.TextBox projectMamagerTextBox;
-        private System.Windows.Forms.TextBox projectNameTextBox;
+        private System.Windows.Forms.TextBox txtProjectManager;
+        private System.Windows.Forms.TextBox txtProjectName;
         private System.Windows.Forms.Label projectManagerLabel;
         private System.Windows.Forms.Label projectNmaeLabel;
         private System.Windows.Forms.Panel projectDetailsPanel;
         private System.Windows.Forms.Label projectDetailslabel;
-        private System.Windows.Forms.TextBox chngeUrgencyTextBox;
-        private System.Windows.Forms.TextBox chngRqstDateTextField;
-        private System.Windows.Forms.TextBox chngRqstTextBox;
-        private System.Windows.Forms.Label chngNumTextBox;
+        private System.Windows.Forms.TextBox txtChangeUrgency;
+        private System.Windows.Forms.TextBox txtChangeRequestDate;
+        private System.Windows.Forms.TextBox txtChangeRequester;
+        private System.Windows.Forms.Label txtChangeDetails;
         private System.Windows.Forms.Panel impactlDetailsPanel;
         private System.Windows.Forms.Label impactDetailsLabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox chngDscrpTextBox;
-        private System.Windows.Forms.TextBox chngBnftsTextBox;
-        private System.Windows.Forms.TextBox changeDriversTextField;
-        private System.Windows.Forms.TextBox chngCostsTextBox;
+        private System.Windows.Forms.TextBox txtChangeDescription;
+        private System.Windows.Forms.TextBox txtChangeBenefits;
+        private System.Windows.Forms.TextBox txtChangeDrivers;
+        private System.Windows.Forms.TextBox txtChangeCosts;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox signatureTextBox;
         private System.Windows.Forms.TextBox approvalDetailsTextBox;
