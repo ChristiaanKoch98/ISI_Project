@@ -28,12 +28,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         public PhaseReviewFormPlanningDocumentForm()
         {
             InitializeComponent();
-            LoadDocument();
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            SaveDocument();
         }
 
         public void SaveDocument()
@@ -90,7 +84,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 documentModels.Add(documentModel);
 
                 versionControl.DocumentModels = documentModels;
-
+                currentPhaseReviewPlanningModel = JsonConvert.DeserializeObject<PhaseReviewPlanningModel>(JsonConvert.SerializeObject(newPhaseReviewPlanningModel));
                 string json = JsonConvert.SerializeObject(versionControl);
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "PhaseReviewPlanning");
                 MessageBox.Show("Phase Review Planning Form saved successfully", "save", MessageBoxButtons.OK);
@@ -282,14 +276,21 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
         }
 
-        private void btnExportToWord_Click(object sender, EventArgs e)
+
+
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+            SaveDocument();
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
         {
             ExportToWord();
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void PhaseReviewFormPlanningDocumentForm_Load(object sender, EventArgs e)
         {
-
+            LoadDocument();
         }
     }
 }

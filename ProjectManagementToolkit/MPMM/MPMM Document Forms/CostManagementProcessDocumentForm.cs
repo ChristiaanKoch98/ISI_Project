@@ -35,6 +35,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             SaveDocument();
         }
 
+        private void CostManagementProcessDocumentForm_Load_1(object sender, EventArgs e)
+        {
+            LoadDocument();
+        }
+
         public void SaveDocument()
         {
             newCostManagementProcessModel.CostManagementProcess = Cost_Management_Process_tbx.Text;
@@ -71,7 +76,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<Approval> approvals = new List<Approval>();
             int approvalCount = Document_Approvals_dgv.RowCount;
-            for (int i = 0; i < Document_HistoryRowCount - 1; i++)
+            for (int i = 0; i < approvalCount - 1; i++)
             {
                 Approval approval = new Approval();
                 var Role = Document_Approvals_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
@@ -498,7 +503,5 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             LoadDocument();
         }
-
-        //BLANK COMMIT FOR TESTING PURPOSE
     }
 }

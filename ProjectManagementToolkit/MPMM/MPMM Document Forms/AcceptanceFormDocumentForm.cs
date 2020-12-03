@@ -29,9 +29,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         public AcceptanceFormDocumentForm()
         {
             InitializeComponent();
-            LoadDocument();
         }
 
+        private void AcceptanceFormDocumentForm_Load(object sender, EventArgs e)
+        {
+            LoadDocument();
+        }
         private void btnSave_Click(object sender, EventArgs e)
         {
             SaveDocument();
@@ -132,7 +135,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnExport_Click(object sender, EventArgs e)
         {
             ExportToWord();
         }

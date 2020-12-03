@@ -28,12 +28,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         public PurchaseOrderFormDocumentForm()
         {
             InitializeComponent();
-            LoadDocument();
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            SaveDocument();
         }
 
         public void SaveDocument()
@@ -152,11 +146,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = new List<VersionControl<PurchaseOrderModel>.DocumentModel>();
                 newPurchaseOrderModel = new PurchaseOrderModel();
             }
-        }
-
-        private void btnExportToWord_Click(object sender, EventArgs e)
-        {
-            ExportToWord();
         }
 
         public void ExportToWord()
@@ -314,6 +303,22 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                     }
                 }
             }
+        }
+
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+            SaveDocument();
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            ExportToWord();
+        }
+
+        private void PurchaseOrderFormDocumentForm_Load(object sender, EventArgs e)
+        {
+            LoadDocument();
+            cmbxPaymentMethod.SelectedIndex = 0;
         }
     }
 }

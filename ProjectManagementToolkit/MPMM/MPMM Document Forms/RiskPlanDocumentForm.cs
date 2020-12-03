@@ -312,11 +312,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
         }
 
-        private void RiskPlanDocumentForm_Load(object sender, EventArgs e)
-        {
-            loadDocument();
-        }
-
         private void ExportToWord()
         {
             string path;
@@ -798,6 +793,21 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 //-------------------------------------------------------------
             }
 
+        }
+
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+            saveDocument();
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            ExportToWord();
+        }
+
+        private void RiskPlanForm_Load(object sender, EventArgs e)
+        {
+            loadDocument();
         }
     }
 }

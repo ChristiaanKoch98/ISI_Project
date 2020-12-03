@@ -28,12 +28,22 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         public FeasibiltyStudyDocumentForm()
         {
             InitializeComponent();
-            LoadDocument();
+            
         }
-        
-        private void btnSave_Click(object sender, EventArgs e)
+
+        private void btnSave_Click_1(object sender, EventArgs e)
         {
             SaveDocument();
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            ExportToWord();
+        }
+
+        private void FeasibiltyStudyDocumentForm_Load(object sender, EventArgs e)
+        {
+            LoadDocument();
         }
 
         public void SaveDocument()
@@ -448,16 +458,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 }
                 Document_Information_dgv.AllowUserToAddRows = false;
             }
-        }
-
-        private void Risks_dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void btnExportToWord_Click(object sender, EventArgs e)
-        {
-            ExportToWord();
         }
 
         public void ExportToWord()
@@ -1348,7 +1348,5 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 }
             }
         }
-
-
     }
 }
