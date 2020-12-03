@@ -32,7 +32,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void ProjectStatusReportDocumentForm_Load(object sender, EventArgs e)
         {
-            loadDocument();
+            
         }
 
         private void loadDocument()
@@ -737,8 +737,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         expDoc.Rows[0].Cells[4].FillColor = TABLE_HEADER_COLOR;
                         expDoc.Rows[0].Cells[5].FillColor = TABLE_HEADER_COLOR;
                         expDoc.Rows[0].Cells[6].FillColor = TABLE_HEADER_COLOR;
-
-                        for (int i = 1; i < currentProjectStatusReportModel.ProSchedule.Count + 1; i++)
+                        
+                        for (int i = 1; i < currentProjectStatusReportModel.ProjExpenses.Count + 1; i++)
                         {
                             expDoc.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectStatusReportModel.ProjExpenses[i - 1].ExpenseType);
                             expDoc.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectStatusReportModel.ProjExpenses[i - 1].BudgetedExpenditure);
@@ -792,7 +792,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         effDoc.Rows[0].Cells[5].FillColor = TABLE_HEADER_COLOR;
                         effDoc.Rows[0].Cells[6].FillColor = TABLE_HEADER_COLOR;
 
-                        for (int i = 1; i < currentProjectStatusReportModel.ProSchedule.Count + 1; i++)
+                        for (int i = 1; i < currentProjectStatusReportModel.ProjEffort.Count + 1; i++)
                         {
                             effDoc.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectStatusReportModel.ProjEffort[i - 1].Activities);
                             effDoc.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectStatusReportModel.ProjEffort[i - 1].BudgetedEffort);
@@ -840,7 +840,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         prqSubHeading.Rows[0].Cells[4].FillColor = TABLE_HEADER_COLOR;
 
 
-                        for (int i = 1; i < currentProjectStatusReportModel.ProSchedule.Count + 1; i++)
+                        for (int i = 1; i < currentProjectStatusReportModel.ProjQuality.Count + 1; i++)
                         {
                             prqSubHeading.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectStatusReportModel.ProjQuality[i - 1].Deliverables);
                             prqSubHeading.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectStatusReportModel.ProjQuality[i - 1].QualityTarget);
@@ -884,7 +884,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                        
 
 
-                        for (int i = 1; i < currentProjectStatusReportModel.ProSchedule.Count + 1; i++)
+                        for (int i = 1; i < currentProjectStatusReportModel.ProjRisk.Count + 1; i++)
                         {
                             riSubHeading.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectStatusReportModel.ProjRisk[i - 1].Risks);
                             riSubHeading.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectStatusReportModel.ProjRisk[i - 1].Likelihood);
@@ -918,7 +918,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         issuesSubHeading.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
                         issuesSubHeading.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
 
-                        for (int i = 1; i < currentProjectStatusReportModel.ProSchedule.Count + 1; i++)
+                        for (int i = 1; i < currentProjectStatusReportModel.NProjIssues.Count + 1; i++)
                         {
                             issuesSubHeading.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectStatusReportModel.NProjIssues[i - 1].Issues);
                             issuesSubHeading.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectStatusReportModel.NProjIssues[i - 1].Impact);
@@ -948,7 +948,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            saveDocument();
+            
         }
 
         private void tabExecutiveSummary_Click(object sender, EventArgs e)
@@ -957,6 +957,21 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void ProjectStatusReportDocumentForm_Load_1(object sender, EventArgs e)
+        {
+            loadDocument();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            saveDocument();
+        }
+
+        private void btnExportWord_Click(object sender, EventArgs e)
         {
             exportToWord();
         }

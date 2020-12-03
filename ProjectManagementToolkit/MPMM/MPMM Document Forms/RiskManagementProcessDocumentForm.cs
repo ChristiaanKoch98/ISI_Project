@@ -31,7 +31,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void RiskManagementProcessDocumentForm_Load(object sender, EventArgs e)
         {
-            loadDocument();
+            
         }
 
         private void loadDocument()
@@ -496,10 +496,25 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            saveDocument();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void RiskManagementProcessDocumentForm_Load_1(object sender, EventArgs e)
+        {
+            loadDocument();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            saveDocument();
+        }
+
+        private void btnExportWord_Click(object sender, EventArgs e)
         {
             exportToWord();
         }

@@ -562,17 +562,32 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void PhaseReviewFormExecutionDocumentForm_Load_1(object sender, EventArgs e)
         {
-            loadDocument();
+            
         }
 
         private void Btn_Save_Document_Click(object sender, EventArgs e)
         {
-            saveDocument();
+            
         }
 
         private void btn_Export_Document_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            saveDocument();
+        }
+
+        private void btnExportWord_Click(object sender, EventArgs e)
+        {
             exportToWord();
+        }
+
+        private void PhaseReviewFormExecutionDocumentForm_Load_2(object sender, EventArgs e)
+        {
+            loadDocument();
         }
     }
 }
