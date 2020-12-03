@@ -42,28 +42,36 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void btnCreateProject_Click(object sender, EventArgs e)
         {
-            ProjectModel newProject = new ProjectModel();
-            string projectID = newProject.generateID();
-            Settings.Default.ProjectID = projectID;
+            if(!string.IsNullOrEmpty(txtProjectName.Text) && !string.IsNullOrEmpty(txtProjectSponsor.Text) && !string.IsNullOrEmpty(txtProjectManager.Text))
+            {
+                ProjectModel newProject = new ProjectModel();
+                string projectID = newProject.generateID();
+                Settings.Default.ProjectID = projectID;
 
-            newProject.ProjectID = projectID;
-            newProject.ProjectName = txtProjectName.Text;
-            newProject.ProjectSponsor = txtProjectSponsor.Text;
-            newProject.ProjectReviewGroup = txtProjectReviewGroup.Text;
-            newProject.ProjectManager = txtProjectManager.Text;
-            newProject.QualityManager = txtQualityManager.Text;
-            newProject.ProcurementManager = txtProcurementManager.Text;
-            newProject.CommunicationsManager = txtCommunicationsManager.Text;
-            newProject.OfficeManager = txtProjectOfficeManager.Text;
+                newProject.ProjectID = projectID;
+                newProject.ProjectName = txtProjectName.Text;
+                newProject.ProjectSponsor = txtProjectSponsor.Text;
+                newProject.ProjectReviewGroup = txtProjectReviewGroup.Text;
+                newProject.ProjectManager = txtProjectManager.Text;
+                newProject.QualityManager = txtQualityManager.Text;
+                newProject.ProcurementManager = txtProcurementManager.Text;
+                newProject.CommunicationsManager = txtCommunicationsManager.Text;
+                newProject.OfficeManager = txtProjectOfficeManager.Text;
 
-            projectListModel.Add(newProject);
-            Settings.Default.ProjectID = newProject.ProjectID;
-            string json = JsonConvert.SerializeObject(projectListModel);
-            JsonHelper.saveProjectInfo(json,Settings.Default.Username);
-            MainForm mainForm = new MainForm();
-            mainForm.WindowState = FormWindowState.Maximized;
-            mainForm.Show();
-            this.Visible = false;
+                projectListModel.Add(newProject);
+                Settings.Default.ProjectID = newProject.ProjectID;
+                string json = JsonConvert.SerializeObject(projectListModel);
+                JsonHelper.saveProjectInfo(json, Settings.Default.Username);
+                MainForm mainForm = new MainForm();
+                mainForm.WindowState = FormWindowState.Maximized;
+                mainForm.Show();
+                this.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Please ensure that you enter a project Name,ProjectSponsor and a Project Manager before continuing");
+            }
+           
 
         }
 
