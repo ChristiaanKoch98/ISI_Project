@@ -186,7 +186,7 @@
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.MenuText;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 27);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // projectSelectionToolStripMenuItem
@@ -219,7 +219,7 @@
             this.mPMMToolStripMenuItem.ForeColor = System.Drawing.SystemColors.MenuText;
             this.mPMMToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.mPMMToolStripMenuItem.Name = "mPMMToolStripMenuItem";
-            this.mPMMToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
+            this.mPMMToolStripMenuItem.Size = new System.Drawing.Size(132, 27);
             this.mPMMToolStripMenuItem.Text = "Project Initiation";
             // 
             // developABusinessCaseToolStripMenuItem
@@ -391,7 +391,7 @@
             this.contractTheSuppliersToolStripMenuItem,
             this.performPhaseReviewToolStripMenuItem});
             this.projectPlanningToolStripMenuItem.Name = "projectPlanningToolStripMenuItem";
-            this.projectPlanningToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
+            this.projectPlanningToolStripMenuItem.Size = new System.Drawing.Size(130, 27);
             this.projectPlanningToolStripMenuItem.Text = "Project Planning";
             // 
             // createAProjectPlanToolStripMenuItem
@@ -654,7 +654,7 @@
             // 
             this.exampleToolStripMenuItem15.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem15.Name = "exampleToolStripMenuItem15";
-            this.exampleToolStripMenuItem15.Size = new System.Drawing.Size(122, 22);
+            this.exampleToolStripMenuItem15.Size = new System.Drawing.Size(154, 26);
             this.exampleToolStripMenuItem15.Text = "Example";
             this.exampleToolStripMenuItem15.Click += new System.EventHandler(this.exampleToolStripMenuItem15_Click);
             // 
@@ -662,7 +662,7 @@
             // 
             this.templateToolStripMenuItem13.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem13.Name = "templateToolStripMenuItem13";
-            this.templateToolStripMenuItem13.Size = new System.Drawing.Size(122, 22);
+            this.templateToolStripMenuItem13.Size = new System.Drawing.Size(154, 26);
             this.templateToolStripMenuItem13.Text = "Template";
             // 
             // issueARequestForInfToolStripMenuItem
@@ -679,7 +679,7 @@
             // 
             this.templateToolStripMenuItem14.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem14.Name = "templateToolStripMenuItem14";
-            this.templateToolStripMenuItem14.Size = new System.Drawing.Size(122, 22);
+            this.templateToolStripMenuItem14.Size = new System.Drawing.Size(154, 26);
             this.templateToolStripMenuItem14.Text = "Template";
             this.templateToolStripMenuItem14.Click += new System.EventHandler(this.templateToolStripMenuItem14_Click);
             // 
@@ -704,7 +704,7 @@
             // 
             this.templateToolStripMenuItem16.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem16.Name = "templateToolStripMenuItem16";
-            this.templateToolStripMenuItem16.Size = new System.Drawing.Size(122, 22);
+            this.templateToolStripMenuItem16.Size = new System.Drawing.Size(154, 26);
             this.templateToolStripMenuItem16.Text = "Template";
             this.templateToolStripMenuItem16.Click += new System.EventHandler(this.templateToolStripMenuItem16_Click);
             // 
@@ -729,7 +729,7 @@
             // 
             this.templateToolStripMenuItem15.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem15.Name = "templateToolStripMenuItem15";
-            this.templateToolStripMenuItem15.Size = new System.Drawing.Size(125, 22);
+            this.templateToolStripMenuItem15.Size = new System.Drawing.Size(158, 26);
             this.templateToolStripMenuItem15.Text = "Template ";
             this.templateToolStripMenuItem15.Click += new System.EventHandler(this.templateToolStripMenuItem15_Click);
             // 
@@ -755,7 +755,7 @@
             // 
             this.reviewFormToolStripMenuItem1.BackColor = System.Drawing.Color.Gainsboro;
             this.reviewFormToolStripMenuItem1.Name = "reviewFormToolStripMenuItem1";
-            this.reviewFormToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
+            this.reviewFormToolStripMenuItem1.Size = new System.Drawing.Size(177, 26);
             this.reviewFormToolStripMenuItem1.Text = "Review Form";
             this.reviewFormToolStripMenuItem1.Click += new System.EventHandler(this.reviewFormToolStripMenuItem1_Click);
             // 
@@ -782,7 +782,7 @@
             this.performCommunicationsManagementToolStripMenuItem,
             this.executionPhaseReviewToolStripMenuItem});
             this.projectExecutionToolStripMenuItem.Name = "projectExecutionToolStripMenuItem";
-            this.projectExecutionToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
+            this.projectExecutionToolStripMenuItem.Size = new System.Drawing.Size(137, 27);
             this.projectExecutionToolStripMenuItem.Text = "Project Execution";
             // 
             // buildDeliverablesToolStripMenuItem
@@ -1181,7 +1181,7 @@
             // reviewFormToolStripMenuItem2
             // 
             this.reviewFormToolStripMenuItem2.Name = "reviewFormToolStripMenuItem2";
-            this.reviewFormToolStripMenuItem2.Size = new System.Drawing.Size(142, 22);
+            this.reviewFormToolStripMenuItem2.Size = new System.Drawing.Size(177, 26);
             this.reviewFormToolStripMenuItem2.Text = "Review Form";
             this.reviewFormToolStripMenuItem2.Click += new System.EventHandler(this.reviewFormToolStripMenuItem2_Click);
             // 
@@ -1197,7 +1197,7 @@
             this.performProjectClosureToolStripMenuItem,
             this.reviewProjectCompletionToolStripMenuItem});
             this.projectToolStripMenuItem.Name = "projectToolStripMenuItem";
-            this.projectToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
+            this.projectToolStripMenuItem.Size = new System.Drawing.Size(122, 27);
             this.projectToolStripMenuItem.Text = "Project Closure";
             // 
             // performProjectClosureToolStripMenuItem
@@ -1214,7 +1214,7 @@
             // templateToolStripMenuItem17
             // 
             this.templateToolStripMenuItem17.Name = "templateToolStripMenuItem17";
-            this.templateToolStripMenuItem17.Size = new System.Drawing.Size(122, 22);
+            this.templateToolStripMenuItem17.Size = new System.Drawing.Size(154, 26);
             this.templateToolStripMenuItem17.Text = "Template";
             this.templateToolStripMenuItem17.Click += new System.EventHandler(this.templateToolStripMenuItem17_Click);
             // 
@@ -1238,7 +1238,7 @@
             // templateToolStripMenuItem18
             // 
             this.templateToolStripMenuItem18.Name = "templateToolStripMenuItem18";
-            this.templateToolStripMenuItem18.Size = new System.Drawing.Size(122, 22);
+            this.templateToolStripMenuItem18.Size = new System.Drawing.Size(154, 26);
             this.templateToolStripMenuItem18.Text = "Template";
             this.templateToolStripMenuItem18.Click += new System.EventHandler(this.templateToolStripMenuItem18_Click);
             // 
@@ -1252,7 +1252,7 @@
             // 
             this.helpToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(143)))), ((int)(((byte)(149)))));
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 27);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // syncToolStripMenuItem

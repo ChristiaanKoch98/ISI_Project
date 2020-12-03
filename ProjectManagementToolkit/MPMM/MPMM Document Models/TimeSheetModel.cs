@@ -18,10 +18,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 
             public class TimeSpent
             {
-                public DateTime date { get; set; }
-                public DateTime startTime { get; set; }
-                public DateTime endTime { get; set; }
-                public double duration { get; set; }
+                public string date { get; set; }
+                public string startTime { get; set; }
+                public string endTime { get; set; }
+                public string duration { get; set; }
             }
 
             public class TasksCompleted
@@ -44,12 +44,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
             public string submittedName { get; set; }
             public string submittedRole { get; set; }
             public string submittedSignature { get; set; }
-            public DateTime submittedDate { get; set; }
+            public string submittedDate { get; set; }
 
             public string approvedName { get; set; }
             public string approvedRole { get; set; }
             public string approvedSignature { get; set; }
-            public DateTime approvedDate { get; set; }
+            public string approvedDate { get; set; }
         }
+
+        public TimeSheetForm timeSheetForm;
     }
 }

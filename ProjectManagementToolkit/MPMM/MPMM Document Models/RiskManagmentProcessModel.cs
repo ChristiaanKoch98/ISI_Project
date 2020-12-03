@@ -11,8 +11,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string ProjectName { get; set; }
         public string DocumentID { get; set; }
         public string DocumentOwner { get; set; }
-        public DateTime IssueDate { get; set; }
-        public DateTime LastSavedDate { get; set; }
+        public string IssueDate { get; set; }
+        public string LastSavedDate { get; set; }
         public string FileName { get; set; }
         public List<DocumentHistory> DocumentHistories { get; set; }
         public List<DocumentApproval> DocumentApprovals { get; set; }
@@ -32,7 +32,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public class DocumentHistory
         {
             public string Version { get; set; }
-            public DateTime IssueDate { get; set; }
+            public string IssueDate { get; set; }
             public string Changes { get; set; }
         }
         public class DocumentApproval
@@ -40,7 +40,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
             public string Role { get; set; }
             public string Name { get; set; }
             public string Signature { get; set; }
-            public DateTime DateApproved { get; set; }
+            public string DateApproved { get; set; }
         }
     }
 }
