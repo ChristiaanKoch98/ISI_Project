@@ -36,6 +36,7 @@ namespace ProjectManagementToolkit.Classes
         public string CardName { get; set; }
 
         public string TermsAndConditions { get; set; }
+        public List<OrderDetails> Orders { get; set; }
 
     }
     class OrderDetails
