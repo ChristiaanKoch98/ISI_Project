@@ -462,7 +462,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var AcceptDeliverableHeading = document.InsertParagraph("1.4 Accept Deliverable")
+                        var AcceptDeliverableHeading = document.InsertParagraph("1.4 Acceptance Deliverable")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -475,6 +475,28 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         //Code for a sentence
                         document.InsertParagraph(currentAcceptanceManagementProcessModel.AcceptanceprocessAcceptDeliverable)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+
+                        //Code for a heading 2
+                        var AcceptProcessDescHeading = document.InsertParagraph("1.5 Acceptance Process Description")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        AcceptProcessDescHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentAcceptanceManagementProcessModel.AcceptanceprocessDescription)
                                .FontSize(11d)
                                .Color(Color.Black)
                                .Font("Arial").Alignment = Alignment.left;
@@ -539,6 +561,28 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
 
+                        //Code for a heading 2
+                        var AcceptRoleDescHeading = document.InsertParagraph("2.3 Acceptance Roles Description")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        AcceptRoleDescHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentAcceptanceManagementProcessModel.AcceptancerolesDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+
                         // Code for a heading 1
 
                         var AcceptanceDocumentsHeading = document.InsertParagraph("3 Acceptance Documents")
@@ -590,6 +634,34 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                                .Color(Color.Black)
                                .Font("Arial").Alignment = Alignment.left;
                         //Code for a sentence
+
+
+
+
+
+
+
+                        //Code for a heading 2
+                        var AcceptDocumentDescHeading = document.InsertParagraph("3.3 Acceptance Documents Description")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        AcceptDocumentDescHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentAcceptanceManagementProcessModel.AcceptancedocumentsDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
 
 
 
