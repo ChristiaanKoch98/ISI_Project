@@ -37,10 +37,17 @@ namespace ProjectManagementToolkit.Classes
 
         public string TermsAndConditions { get; set; }
 
-        public PurchaseOrderModel()
-        {
+    }
+    class OrderDetails
+    {
+        public string Item { get; set; }
+        public string Description { get; set; }
+        public string Quanlity { get; set; }
+        public string UnitPrice { get; set; }
+        public string TotalPrice { get; set; }
 
-        }
-
+        public decimal SubTotal { get; set; }
+        public decimal Other { get; set; }
+        public decimal Total { get; set; }
     }
 }

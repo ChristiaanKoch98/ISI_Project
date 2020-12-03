@@ -50,7 +50,7 @@
             this.btnQualityManagement = new System.Windows.Forms.Button();
             this.btnBackToPLCMFrontEND = new System.Windows.Forms.Button();
             this.btnIssueManagement = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnlHideTabControl = new System.Windows.Forms.Panel();
             this.tbcProcesses = new System.Windows.Forms.TabControl();
             this.tbp_GovernanceProcess = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -175,7 +175,11 @@
             this.tbp_Projects = new System.Windows.Forms.TabPage();
             this.dataGridProjects = new System.Windows.Forms.DataGridView();
             this.tbp_PGMO = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox67 = new System.Windows.Forms.PictureBox();
             this.tbp_Execution_Methodology = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox68 = new System.Windows.Forms.PictureBox();
             this.tbp_PLSMs = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.tbcPLSMsSubProcesses = new System.Windows.Forms.TabControl();
@@ -364,6 +368,7 @@
             this.tbpOwnerPLSM = new System.Windows.Forms.TabPage();
             this.tbpConstructorPLSM = new System.Windows.Forms.TabPage();
             this.tbpCommunityProject = new System.Windows.Forms.TabPage();
+            this.tbpProcessGroupingGovernance = new System.Windows.Forms.TabPage();
             this.tbp_Documentation = new System.Windows.Forms.TabPage();
             this.btnDocumentBack = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -492,11 +497,7 @@
             this.tbp_Policies_and_Procedures = new System.Windows.Forms.TabPage();
             this.timerReportCenter = new System.Windows.Forms.Timer(this.components);
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox67 = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox68 = new System.Windows.Forms.PictureBox();
-            this.tbpProcessGroupingGovernance = new System.Windows.Forms.TabPage();
+            this.lblType = new System.Windows.Forms.Label();
             this.tbp_Project_Management.SuspendLayout();
             this.tbp_Report_Center.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -569,7 +570,11 @@
             this.tbp_Projects.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridProjects)).BeginInit();
             this.tbp_PGMO.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox67)).BeginInit();
             this.tbp_Execution_Methodology.SuspendLayout();
+            this.flowLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox68)).BeginInit();
             this.tbp_PLSMs.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.tbcPLSMsSubProcesses.SuspendLayout();
@@ -669,10 +674,6 @@
             this.panel23.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
-            this.flowLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox67)).BeginInit();
-            this.flowLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox68)).BeginInit();
             this.SuspendLayout();
             // 
             // tbp_Project_Management
@@ -691,7 +692,7 @@
             this.tbp_Project_Management.Location = new System.Drawing.Point(12, 11);
             this.tbp_Project_Management.Name = "tbp_Project_Management";
             this.tbp_Project_Management.SelectedIndex = 0;
-            this.tbp_Project_Management.Size = new System.Drawing.Size(966, 650);
+            this.tbp_Project_Management.Size = new System.Drawing.Size(1083, 650);
             this.tbp_Project_Management.TabIndex = 0;
             // 
             // tbp_Report_Center
@@ -701,7 +702,7 @@
             this.tbp_Report_Center.Location = new System.Drawing.Point(4, 21);
             this.tbp_Report_Center.Name = "tbp_Report_Center";
             this.tbp_Report_Center.Padding = new System.Windows.Forms.Padding(3);
-            this.tbp_Report_Center.Size = new System.Drawing.Size(958, 625);
+            this.tbp_Report_Center.Size = new System.Drawing.Size(1075, 625);
             this.tbp_Report_Center.TabIndex = 0;
             this.tbp_Report_Center.Text = "Report Center";
             // 
@@ -827,7 +828,7 @@
             this.tbp_Processes.Controls.Add(this.btnQualityManagement);
             this.tbp_Processes.Controls.Add(this.btnBackToPLCMFrontEND);
             this.tbp_Processes.Controls.Add(this.btnIssueManagement);
-            this.tbp_Processes.Controls.Add(this.panel3);
+            this.tbp_Processes.Controls.Add(this.pnlHideTabControl);
             this.tbp_Processes.Controls.Add(this.tbcProcesses);
             this.tbp_Processes.Controls.Add(this.btnRiskManagement);
             this.tbp_Processes.Controls.Add(this.label1);
@@ -847,7 +848,7 @@
             this.tbp_Processes.Location = new System.Drawing.Point(4, 21);
             this.tbp_Processes.Name = "tbp_Processes";
             this.tbp_Processes.Padding = new System.Windows.Forms.Padding(3);
-            this.tbp_Processes.Size = new System.Drawing.Size(958, 625);
+            this.tbp_Processes.Size = new System.Drawing.Size(1075, 625);
             this.tbp_Processes.TabIndex = 1;
             this.tbp_Processes.Text = "Processes";
             // 
@@ -909,6 +910,7 @@
             this.btnBackToPLCMFrontEND.TabIndex = 2;
             this.btnBackToPLCMFrontEND.Text = "Back to PLCM Front END";
             this.btnBackToPLCMFrontEND.UseVisualStyleBackColor = true;
+            this.btnBackToPLCMFrontEND.Click += new System.EventHandler(this.btnBackToPLCMFrontEND_Click);
             // 
             // btnIssueManagement
             // 
@@ -920,12 +922,12 @@
             this.btnIssueManagement.UseVisualStyleBackColor = true;
             this.btnIssueManagement.Click += new System.EventHandler(this.btnIssueManagement_Click);
             // 
-            // panel3
+            // pnlHideTabControl
             // 
-            this.panel3.Location = new System.Drawing.Point(6, 98);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(948, 20);
-            this.panel3.TabIndex = 37;
+            this.pnlHideTabControl.Location = new System.Drawing.Point(969, 91);
+            this.pnlHideTabControl.Name = "pnlHideTabControl";
+            this.pnlHideTabControl.Size = new System.Drawing.Size(948, 20);
+            this.pnlHideTabControl.TabIndex = 37;
             // 
             // tbcProcesses
             // 
@@ -2223,7 +2225,7 @@
             this.tbp_Projects.Controls.Add(this.dataGridProjects);
             this.tbp_Projects.Location = new System.Drawing.Point(4, 21);
             this.tbp_Projects.Name = "tbp_Projects";
-            this.tbp_Projects.Size = new System.Drawing.Size(958, 625);
+            this.tbp_Projects.Size = new System.Drawing.Size(1075, 625);
             this.tbp_Projects.TabIndex = 2;
             this.tbp_Projects.Text = "Projects";
             this.tbp_Projects.UseVisualStyleBackColor = true;
@@ -2241,20 +2243,60 @@
             this.tbp_PGMO.Controls.Add(this.flowLayoutPanel3);
             this.tbp_PGMO.Location = new System.Drawing.Point(4, 21);
             this.tbp_PGMO.Name = "tbp_PGMO";
-            this.tbp_PGMO.Size = new System.Drawing.Size(958, 625);
+            this.tbp_PGMO.Size = new System.Drawing.Size(1075, 625);
             this.tbp_PGMO.TabIndex = 3;
             this.tbp_PGMO.Text = "PGMO";
             this.tbp_PGMO.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.AutoScroll = true;
+            this.flowLayoutPanel3.AutoScrollMargin = new System.Drawing.Size(2, 2);
+            this.flowLayoutPanel3.AutoScrollMinSize = new System.Drawing.Size(2, 2);
+            this.flowLayoutPanel3.Controls.Add(this.pictureBox67);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(-2, 0);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(957, 490);
+            this.flowLayoutPanel3.TabIndex = 2;
+            // 
+            // pictureBox67
+            // 
+            this.pictureBox67.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox67.Image")));
+            this.pictureBox67.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox67.Name = "pictureBox67";
+            this.pictureBox67.Size = new System.Drawing.Size(1183, 476);
+            this.pictureBox67.TabIndex = 0;
+            this.pictureBox67.TabStop = false;
             // 
             // tbp_Execution_Methodology
             // 
             this.tbp_Execution_Methodology.Controls.Add(this.flowLayoutPanel4);
             this.tbp_Execution_Methodology.Location = new System.Drawing.Point(4, 21);
             this.tbp_Execution_Methodology.Name = "tbp_Execution_Methodology";
-            this.tbp_Execution_Methodology.Size = new System.Drawing.Size(958, 625);
+            this.tbp_Execution_Methodology.Size = new System.Drawing.Size(1075, 625);
             this.tbp_Execution_Methodology.TabIndex = 4;
             this.tbp_Execution_Methodology.Text = "Execution Methodology";
             this.tbp_Execution_Methodology.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.AutoScroll = true;
+            this.flowLayoutPanel4.AutoScrollMargin = new System.Drawing.Size(2, 2);
+            this.flowLayoutPanel4.AutoScrollMinSize = new System.Drawing.Size(2, 2);
+            this.flowLayoutPanel4.Controls.Add(this.pictureBox68);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(-4, 0);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(959, 473);
+            this.flowLayoutPanel4.TabIndex = 3;
+            // 
+            // pictureBox68
+            // 
+            this.pictureBox68.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox68.Image")));
+            this.pictureBox68.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox68.Name = "pictureBox68";
+            this.pictureBox68.Size = new System.Drawing.Size(1155, 463);
+            this.pictureBox68.TabIndex = 1;
+            this.pictureBox68.TabStop = false;
             // 
             // tbp_PLSMs
             // 
@@ -2262,7 +2304,7 @@
             this.tbp_PLSMs.Controls.Add(this.flowLayoutPanel2);
             this.tbp_PLSMs.Location = new System.Drawing.Point(4, 21);
             this.tbp_PLSMs.Name = "tbp_PLSMs";
-            this.tbp_PLSMs.Size = new System.Drawing.Size(958, 625);
+            this.tbp_PLSMs.Size = new System.Drawing.Size(1075, 625);
             this.tbp_PLSMs.TabIndex = 5;
             this.tbp_PLSMs.Text = "PLSM\'s";
             // 
@@ -2274,7 +2316,7 @@
             this.flowLayoutPanel2.Controls.Add(this.tbcPLSMsSubProcesses);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(958, 629);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1072, 629);
             this.flowLayoutPanel2.TabIndex = 1;
             // 
             // tbcPLSMsSubProcesses
@@ -2287,7 +2329,7 @@
             this.tbcPLSMsSubProcesses.Location = new System.Drawing.Point(3, 3);
             this.tbcPLSMsSubProcesses.Name = "tbcPLSMsSubProcesses";
             this.tbcPLSMsSubProcesses.SelectedIndex = 0;
-            this.tbcPLSMsSubProcesses.Size = new System.Drawing.Size(952, 590);
+            this.tbcPLSMsSubProcesses.Size = new System.Drawing.Size(1058, 590);
             this.tbcPLSMsSubProcesses.TabIndex = 2;
             // 
             // tbpReferencePLSM
@@ -2321,7 +2363,7 @@
             this.tbpReferencePLSM.Location = new System.Drawing.Point(4, 21);
             this.tbpReferencePLSM.Name = "tbpReferencePLSM";
             this.tbpReferencePLSM.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpReferencePLSM.Size = new System.Drawing.Size(944, 565);
+            this.tbpReferencePLSM.Size = new System.Drawing.Size(1050, 565);
             this.tbpReferencePLSM.TabIndex = 0;
             this.tbpReferencePLSM.Text = "Reference PLSM";
             // 
@@ -3764,6 +3806,7 @@
             this.btnStakeholders.TabIndex = 70;
             this.btnStakeholders.Text = "Stakeholders";
             this.btnStakeholders.UseVisualStyleBackColor = true;
+            this.btnStakeholders.Click += new System.EventHandler(this.btnStakeholders_Click);
             // 
             // pictureBox47
             // 
@@ -3785,6 +3828,7 @@
             this.btnQuality.TabIndex = 68;
             this.btnQuality.Text = "Quality";
             this.btnQuality.UseVisualStyleBackColor = true;
+            this.btnQuality.Click += new System.EventHandler(this.btnQuality_Click);
             // 
             // pictureBox48
             // 
@@ -3806,6 +3850,7 @@
             this.btnComms.TabIndex = 66;
             this.btnComms.Text = "Comms";
             this.btnComms.UseVisualStyleBackColor = true;
+            this.btnComms.Click += new System.EventHandler(this.btnComms_Click);
             // 
             // pictureBox49
             // 
@@ -3827,6 +3872,7 @@
             this.btnCost.TabIndex = 64;
             this.btnCost.Text = "Cost";
             this.btnCost.UseVisualStyleBackColor = true;
+            this.btnCost.Click += new System.EventHandler(this.btnCost_Click);
             // 
             // pictureBox50
             // 
@@ -3848,6 +3894,7 @@
             this.btnIssues.TabIndex = 62;
             this.btnIssues.Text = "Issues";
             this.btnIssues.UseVisualStyleBackColor = true;
+            this.btnIssues.Click += new System.EventHandler(this.btnIssues_Click);
             // 
             // pictureBox51
             // 
@@ -3869,6 +3916,7 @@
             this.btnProcurement.TabIndex = 60;
             this.btnProcurement.Text = "Procurement";
             this.btnProcurement.UseVisualStyleBackColor = true;
+            this.btnProcurement.Click += new System.EventHandler(this.btnProcurement_Click);
             // 
             // pictureBox52
             // 
@@ -3890,6 +3938,7 @@
             this.btnChanges.TabIndex = 58;
             this.btnChanges.Text = "Changes";
             this.btnChanges.UseVisualStyleBackColor = true;
+            this.btnChanges.Click += new System.EventHandler(this.btnChanges_Click);
             // 
             // pictureBox53
             // 
@@ -3911,6 +3960,7 @@
             this.btnTimeAllocation2.TabIndex = 56;
             this.btnTimeAllocation2.Text = "Time Allocation";
             this.btnTimeAllocation2.UseVisualStyleBackColor = true;
+            this.btnTimeAllocation2.Click += new System.EventHandler(this.btnTimeAllocation2_Click);
             // 
             // pictureBox54
             // 
@@ -3932,6 +3982,7 @@
             this.btnAcceptance.TabIndex = 54;
             this.btnAcceptance.Text = "Acceptance";
             this.btnAcceptance.UseVisualStyleBackColor = true;
+            this.btnAcceptance.Click += new System.EventHandler(this.btnAcceptance_Click);
             // 
             // pictureBox55
             // 
@@ -3953,6 +4004,7 @@
             this.btnRisk.TabIndex = 52;
             this.btnRisk.Text = "Risk";
             this.btnRisk.UseVisualStyleBackColor = true;
+            this.btnRisk.Click += new System.EventHandler(this.btnRisk_Click);
             // 
             // pictureBox56
             // 
@@ -4003,6 +4055,7 @@
             this.btnControllingAStage.TabIndex = 62;
             this.btnControllingAStage.Text = "Controlling a Stage";
             this.btnControllingAStage.UseVisualStyleBackColor = true;
+            this.btnControllingAStage.Click += new System.EventHandler(this.btnControllingAStage_Click);
             // 
             // pictureBox57
             // 
@@ -4024,6 +4077,7 @@
             this.btnPlanningAProject.TabIndex = 60;
             this.btnPlanningAProject.Text = "Planning a Project";
             this.btnPlanningAProject.UseVisualStyleBackColor = true;
+            this.btnPlanningAProject.Click += new System.EventHandler(this.btnPlanningAProject_Click);
             // 
             // pictureBox58
             // 
@@ -4045,6 +4099,7 @@
             this.btnClosingAProject.TabIndex = 58;
             this.btnClosingAProject.Text = "Closing a Project";
             this.btnClosingAProject.UseVisualStyleBackColor = true;
+            this.btnClosingAProject.Click += new System.EventHandler(this.btnClosingAProject_Click);
             // 
             // pictureBox59
             // 
@@ -4066,6 +4121,7 @@
             this.btnManagingStageBoundaries.TabIndex = 56;
             this.btnManagingStageBoundaries.Text = "Managing Stage Boundaries";
             this.btnManagingStageBoundaries.UseVisualStyleBackColor = true;
+            this.btnManagingStageBoundaries.Click += new System.EventHandler(this.btnManagingStageBoundaries_Click);
             // 
             // pictureBox60
             // 
@@ -4087,6 +4143,7 @@
             this.btnInitiatingAProject.TabIndex = 54;
             this.btnInitiatingAProject.Text = "Initiating a Project";
             this.btnInitiatingAProject.UseVisualStyleBackColor = true;
+            this.btnInitiatingAProject.Click += new System.EventHandler(this.btnInitiatingAProject_Click);
             // 
             // pictureBox61
             // 
@@ -4108,6 +4165,7 @@
             this.btnManagingProductDelivery.TabIndex = 52;
             this.btnManagingProductDelivery.Text = "Managing Product Delivery";
             this.btnManagingProductDelivery.UseVisualStyleBackColor = true;
+            this.btnManagingProductDelivery.Click += new System.EventHandler(this.btnManagingProductDelivery_Click);
             // 
             // pictureBox62
             // 
@@ -4129,6 +4187,7 @@
             this.btnStartingUpAProject.TabIndex = 50;
             this.btnStartingUpAProject.Text = "Starting up a Project";
             this.btnStartingUpAProject.UseVisualStyleBackColor = true;
+            this.btnStartingUpAProject.Click += new System.EventHandler(this.btnStartingUpAProject_Click);
             // 
             // pictureBox63
             // 
@@ -4191,6 +4250,7 @@
             this.btnDirectingAProject.TabIndex = 40;
             this.btnDirectingAProject.Text = "Directing a Project";
             this.btnDirectingAProject.UseVisualStyleBackColor = true;
+            this.btnDirectingAProject.Click += new System.EventHandler(this.btnDirectingAProject_Click);
             // 
             // pictureBox66
             // 
@@ -4209,7 +4269,7 @@
             this.tbpOwnerPLSM.Location = new System.Drawing.Point(4, 21);
             this.tbpOwnerPLSM.Name = "tbpOwnerPLSM";
             this.tbpOwnerPLSM.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpOwnerPLSM.Size = new System.Drawing.Size(1048, 565);
+            this.tbpOwnerPLSM.Size = new System.Drawing.Size(1050, 565);
             this.tbpOwnerPLSM.TabIndex = 1;
             this.tbpOwnerPLSM.Text = "Owner PLSM";
             // 
@@ -4218,7 +4278,7 @@
             this.tbpConstructorPLSM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbpConstructorPLSM.Location = new System.Drawing.Point(4, 21);
             this.tbpConstructorPLSM.Name = "tbpConstructorPLSM";
-            this.tbpConstructorPLSM.Size = new System.Drawing.Size(1048, 565);
+            this.tbpConstructorPLSM.Size = new System.Drawing.Size(1050, 565);
             this.tbpConstructorPLSM.TabIndex = 2;
             this.tbpConstructorPLSM.Text = "Constructor PLSM";
             // 
@@ -4227,9 +4287,19 @@
             this.tbpCommunityProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbpCommunityProject.Location = new System.Drawing.Point(4, 21);
             this.tbpCommunityProject.Name = "tbpCommunityProject";
-            this.tbpCommunityProject.Size = new System.Drawing.Size(1048, 565);
+            this.tbpCommunityProject.Size = new System.Drawing.Size(1050, 565);
             this.tbpCommunityProject.TabIndex = 3;
             this.tbpCommunityProject.Text = "Community Project";
+            // 
+            // tbpProcessGroupingGovernance
+            // 
+            this.tbpProcessGroupingGovernance.Location = new System.Drawing.Point(4, 21);
+            this.tbpProcessGroupingGovernance.Name = "tbpProcessGroupingGovernance";
+            this.tbpProcessGroupingGovernance.Padding = new System.Windows.Forms.Padding(3);
+            this.tbpProcessGroupingGovernance.Size = new System.Drawing.Size(1050, 565);
+            this.tbpProcessGroupingGovernance.TabIndex = 4;
+            this.tbpProcessGroupingGovernance.Text = "(ReferencePLSM-Interfaces)";
+            this.tbpProcessGroupingGovernance.UseVisualStyleBackColor = true;
             // 
             // tbp_Documentation
             // 
@@ -4240,7 +4310,7 @@
             this.tbp_Documentation.Controls.Add(this.panel24);
             this.tbp_Documentation.Location = new System.Drawing.Point(4, 21);
             this.tbp_Documentation.Name = "tbp_Documentation";
-            this.tbp_Documentation.Size = new System.Drawing.Size(958, 625);
+            this.tbp_Documentation.Size = new System.Drawing.Size(1075, 625);
             this.tbp_Documentation.TabIndex = 6;
             this.tbp_Documentation.Text = "Documentation";
             // 
@@ -5892,7 +5962,7 @@
             this.tbp_RolesAndJobDescription.Controls.Add(this.panel22);
             this.tbp_RolesAndJobDescription.Location = new System.Drawing.Point(4, 21);
             this.tbp_RolesAndJobDescription.Name = "tbp_RolesAndJobDescription";
-            this.tbp_RolesAndJobDescription.Size = new System.Drawing.Size(958, 625);
+            this.tbp_RolesAndJobDescription.Size = new System.Drawing.Size(1075, 625);
             this.tbp_RolesAndJobDescription.TabIndex = 7;
             this.tbp_RolesAndJobDescription.Text = "Roles and Job description";
             // 
@@ -5943,7 +6013,7 @@
             this.tbp_EndOfProcedures.Controls.Add(this.panel23);
             this.tbp_EndOfProcedures.Location = new System.Drawing.Point(4, 21);
             this.tbp_EndOfProcedures.Name = "tbp_EndOfProcedures";
-            this.tbp_EndOfProcedures.Size = new System.Drawing.Size(958, 625);
+            this.tbp_EndOfProcedures.Size = new System.Drawing.Size(1075, 625);
             this.tbp_EndOfProcedures.TabIndex = 8;
             this.tbp_EndOfProcedures.Text = "End of Procedures";
             // 
@@ -6053,7 +6123,7 @@
             // 
             this.tbp_Policies_and_Procedures.Location = new System.Drawing.Point(4, 21);
             this.tbp_Policies_and_Procedures.Name = "tbp_Policies_and_Procedures";
-            this.tbp_Policies_and_Procedures.Size = new System.Drawing.Size(958, 625);
+            this.tbp_Policies_and_Procedures.Size = new System.Drawing.Size(1075, 625);
             this.tbp_Policies_and_Procedures.TabIndex = 9;
             this.tbp_Policies_and_Procedures.Text = "Policies and Procedures";
             this.tbp_Policies_and_Procedures.UseVisualStyleBackColor = true;
@@ -6063,55 +6133,15 @@
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
-            // flowLayoutPanel3
+            // lblType
             // 
-            this.flowLayoutPanel3.AutoScroll = true;
-            this.flowLayoutPanel3.AutoScrollMargin = new System.Drawing.Size(2, 2);
-            this.flowLayoutPanel3.AutoScrollMinSize = new System.Drawing.Size(2, 2);
-            this.flowLayoutPanel3.Controls.Add(this.pictureBox67);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(-2, 0);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(957, 490);
-            this.flowLayoutPanel3.TabIndex = 2;
-            // 
-            // pictureBox67
-            // 
-            this.pictureBox67.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox67.Image")));
-            this.pictureBox67.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox67.Name = "pictureBox67";
-            this.pictureBox67.Size = new System.Drawing.Size(1183, 476);
-            this.pictureBox67.TabIndex = 0;
-            this.pictureBox67.TabStop = false;
-            // 
-            // flowLayoutPanel4
-            // 
-            this.flowLayoutPanel4.AutoScroll = true;
-            this.flowLayoutPanel4.AutoScrollMargin = new System.Drawing.Size(2, 2);
-            this.flowLayoutPanel4.AutoScrollMinSize = new System.Drawing.Size(2, 2);
-            this.flowLayoutPanel4.Controls.Add(this.pictureBox68);
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(-4, 0);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(959, 473);
-            this.flowLayoutPanel4.TabIndex = 3;
-            // 
-            // pictureBox68
-            // 
-            this.pictureBox68.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox68.Image")));
-            this.pictureBox68.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox68.Name = "pictureBox68";
-            this.pictureBox68.Size = new System.Drawing.Size(1155, 463);
-            this.pictureBox68.TabIndex = 1;
-            this.pictureBox68.TabStop = false;
-            // 
-            // tbpProcessGroupingGovernance
-            // 
-            this.tbpProcessGroupingGovernance.Location = new System.Drawing.Point(4, 21);
-            this.tbpProcessGroupingGovernance.Name = "tbpProcessGroupingGovernance";
-            this.tbpProcessGroupingGovernance.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpProcessGroupingGovernance.Size = new System.Drawing.Size(944, 565);
-            this.tbpProcessGroupingGovernance.TabIndex = 4;
-            this.tbpProcessGroupingGovernance.Text = "(ReferencePLSM-Interfaces)";
-            this.tbpProcessGroupingGovernance.UseVisualStyleBackColor = true;
+            this.lblType.AutoSize = true;
+            this.lblType.Location = new System.Drawing.Point(899, 0);
+            this.lblType.Name = "lblType";
+            this.lblType.Size = new System.Drawing.Size(7, 12);
+            this.lblType.TabIndex = 1;
+            this.lblType.Text = ".";
+            this.lblType.Visible = false;
             // 
             // frmProjectManagement
             // 
@@ -6121,11 +6151,13 @@
             this.AutoScrollMargin = new System.Drawing.Size(2, 2);
             this.AutoScrollMinSize = new System.Drawing.Size(2, 2);
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(998, 606);
+            this.ClientSize = new System.Drawing.Size(1124, 606);
+            this.Controls.Add(this.lblType);
             this.Controls.Add(this.tbp_Project_Management);
             this.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmProjectManagement";
             this.Text = "Project Management";
+            this.Activated += new System.EventHandler(this.frmProjectManagement_Activated);
             this.Load += new System.EventHandler(this.timer1_Tick);
             this.tbp_Project_Management.ResumeLayout(false);
             this.tbp_Report_Center.ResumeLayout(false);
@@ -6212,7 +6244,11 @@
             this.tbp_Projects.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridProjects)).EndInit();
             this.tbp_PGMO.ResumeLayout(false);
+            this.flowLayoutPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox67)).EndInit();
             this.tbp_Execution_Methodology.ResumeLayout(false);
+            this.flowLayoutPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox68)).EndInit();
             this.tbp_PLSMs.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.tbcPLSMsSubProcesses.ResumeLayout(false);
@@ -6344,11 +6380,8 @@
             this.panel23.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
-            this.flowLayoutPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox67)).EndInit();
-            this.flowLayoutPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox68)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -6409,7 +6442,6 @@
         private System.Windows.Forms.TabPage tbp_ProcurementManagement;
         private System.Windows.Forms.TabPage tbp_TimeAllocation;
         private System.Windows.Forms.TabPage tbp_ExceptionManagement;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox10;
@@ -6821,6 +6853,8 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.PictureBox pictureBox68;
         private System.Windows.Forms.TabPage tbpProcessGroupingGovernance;
+        private System.Windows.Forms.Panel pnlHideTabControl;
+        private System.Windows.Forms.Label lblType;
     }
 }
 

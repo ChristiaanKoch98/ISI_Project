@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="checkedListBox1.Items" xml:space="preserve">
+    <value>Does the project team have the required office equipment and application software available to manage the project (e.g. computer hardware, project planning and financial software, projectors, fax machines, printers, scanners, copiers)?</value>
+  </data>
 </root>

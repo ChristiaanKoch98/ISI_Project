@@ -28,647 +28,455 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnSaveProjectDetails = new System.Windows.Forms.Button();
-            this.label27 = new System.Windows.Forms.Label();
-            this.txtProjectName = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangeRequestFormDocumentForm));
             this.label1 = new System.Windows.Forms.Label();
-            this.txtProjectManager = new System.Windows.Forms.TextBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPageChangeDetails = new System.Windows.Forms.TabPage();
-            this.btnSaveChangeDetails = new System.Windows.Forms.Button();
-            this.txtChangeCosts = new System.Windows.Forms.TextBox();
-            this.txtChangeDrivers = new System.Windows.Forms.TextBox();
-            this.txtChangeBenefits = new System.Windows.Forms.TextBox();
-            this.txtChangeDescription = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtChangeUrgency = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtChangeRequestDate = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtChangeRequester = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtChangeDetails = new System.Windows.Forms.TextBox();
-            this.tabPageImpactDetails = new System.Windows.Forms.TabPage();
-            this.btnSaveImpactDetails = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tabPageApprovalDetails = new System.Windows.Forms.TabPage();
-            this.btnSaveApprovalDetailInfo = new System.Windows.Forms.Button();
-            this.dataGridViewSupportingDocuments = new System.Windows.Forms.DataGridView();
-            this.DocumentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DocumentDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label14 = new System.Windows.Forms.Label();
-            this.dateTimePickerApprovedBy = new System.Windows.Forms.DateTimePicker();
-            this.txtApprovedBySignature = new System.Windows.Forms.TextBox();
-            this.txtApprovedByProjectRole = new System.Windows.Forms.TextBox();
-            this.txtApprovedByName = new System.Windows.Forms.TextBox();
-            this.lblApprovedBy = new System.Windows.Forms.Label();
-            this.dateTimePickerSubmittedBy = new System.Windows.Forms.DateTimePicker();
-            this.txtSignature = new System.Windows.Forms.TextBox();
-            this.txtProjectRole = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.lblSubmittedBy = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.btnExportChanges = new System.Windows.Forms.Button();
-            this.tabControl1.SuspendLayout();
-            this.tabPageChangeDetails.SuspendLayout();
-            this.tabPageImpactDetails.SuspendLayout();
-            this.tabPageApprovalDetails.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSupportingDocuments)).BeginInit();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.signatureTextBox = new System.Windows.Forms.TextBox();
+            this.approvalDetailsTextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.approvalDetailsLabel = new System.Windows.Forms.Label();
+            this.projectImpactLabel = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.impactlDetailsPanel = new System.Windows.Forms.Panel();
+            this.impactDetailsLabel = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.chngDscrpTextBox = new System.Windows.Forms.TextBox();
+            this.chngBnftsTextBox = new System.Windows.Forms.TextBox();
+            this.changeDriversTextField = new System.Windows.Forms.TextBox();
+            this.chngCostsTextBox = new System.Windows.Forms.TextBox();
+            this.chngeUrgencyTextBox = new System.Windows.Forms.TextBox();
+            this.chngRqstDateTextField = new System.Windows.Forms.TextBox();
+            this.chngRqstTextBox = new System.Windows.Forms.TextBox();
+            this.chngNumTextBox = new System.Windows.Forms.Label();
+            this.chngeUrgencyLabel = new System.Windows.Forms.Label();
+            this.chngRqstDateLabel = new System.Windows.Forms.Label();
+            this.chngRequesterLabel = new System.Windows.Forms.Label();
+            this.chngNumLabel = new System.Windows.Forms.Label();
+            this.changeDetailsPanel = new System.Windows.Forms.Panel();
+            this.changeDetailsLabel = new System.Windows.Forms.Label();
+            this.projectMamagerTextBox = new System.Windows.Forms.TextBox();
+            this.projectNameTextBox = new System.Windows.Forms.TextBox();
+            this.projectManagerLabel = new System.Windows.Forms.Label();
+            this.projectNmaeLabel = new System.Windows.Forms.Label();
+            this.projectDetailsPanel = new System.Windows.Forms.Panel();
+            this.projectDetailslabel = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.impactlDetailsPanel.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.changeDetailsPanel.SuspendLayout();
+            this.projectDetailsPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnSaveProjectDetails
-            // 
-            this.btnSaveProjectDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnSaveProjectDetails.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveProjectDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSaveProjectDetails.Location = new System.Drawing.Point(758, 14);
-            this.btnSaveProjectDetails.Name = "btnSaveProjectDetails";
-            this.btnSaveProjectDetails.Size = new System.Drawing.Size(85, 41);
-            this.btnSaveProjectDetails.TabIndex = 19;
-            this.btnSaveProjectDetails.Text = "Save Project Details";
-            this.btnSaveProjectDetails.UseVisualStyleBackColor = false;
-            this.btnSaveProjectDetails.Click += new System.EventHandler(this.btnSaveProjectDetails_Click);
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(15, 17);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(164, 12);
-            this.label27.TabIndex = 18;
-            this.label27.Text = "Please Enter Your Project Name:";
-            // 
-            // txtProjectName
-            // 
-            this.txtProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.txtProjectName.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProjectName.ForeColor = System.Drawing.Color.Black;
-            this.txtProjectName.Location = new System.Drawing.Point(184, 14);
-            this.txtProjectName.Name = "txtProjectName";
-            this.txtProjectName.Size = new System.Drawing.Size(113, 20);
-            this.txtProjectName.TabIndex = 17;
-            this.txtProjectName.Text = "Project Name";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(323, 17);
+            this.label1.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 12);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Please Enter Your Project Manager:";
+            this.label1.Size = new System.Drawing.Size(216, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Change Request Form For";
             // 
-            // txtProjectManager
+            // textBox1
             // 
-            this.txtProjectManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.txtProjectManager.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProjectManager.ForeColor = System.Drawing.Color.Black;
-            this.txtProjectManager.Location = new System.Drawing.Point(520, 14);
-            this.txtProjectManager.Name = "txtProjectManager";
-            this.txtProjectManager.Size = new System.Drawing.Size(113, 20);
-            this.txtProjectManager.TabIndex = 20;
-            this.txtProjectManager.Text = "Project Manager";
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPageChangeDetails);
-            this.tabControl1.Controls.Add(this.tabPageImpactDetails);
-            this.tabControl1.Controls.Add(this.tabPageApprovalDetails);
-            this.tabControl1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(12, 62);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(836, 419);
-            this.tabControl1.TabIndex = 22;
-            // 
-            // tabPageChangeDetails
-            // 
-            this.tabPageChangeDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPageChangeDetails.Controls.Add(this.btnSaveChangeDetails);
-            this.tabPageChangeDetails.Controls.Add(this.txtChangeCosts);
-            this.tabPageChangeDetails.Controls.Add(this.txtChangeDrivers);
-            this.tabPageChangeDetails.Controls.Add(this.txtChangeBenefits);
-            this.tabPageChangeDetails.Controls.Add(this.txtChangeDescription);
-            this.tabPageChangeDetails.Controls.Add(this.label4);
-            this.tabPageChangeDetails.Controls.Add(this.txtChangeUrgency);
-            this.tabPageChangeDetails.Controls.Add(this.label13);
-            this.tabPageChangeDetails.Controls.Add(this.txtChangeRequestDate);
-            this.tabPageChangeDetails.Controls.Add(this.label3);
-            this.tabPageChangeDetails.Controls.Add(this.txtChangeRequester);
-            this.tabPageChangeDetails.Controls.Add(this.label2);
-            this.tabPageChangeDetails.Controls.Add(this.label5);
-            this.tabPageChangeDetails.Controls.Add(this.txtChangeDetails);
-            this.tabPageChangeDetails.Location = new System.Drawing.Point(4, 23);
-            this.tabPageChangeDetails.Name = "tabPageChangeDetails";
-            this.tabPageChangeDetails.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageChangeDetails.Size = new System.Drawing.Size(828, 392);
-            this.tabPageChangeDetails.TabIndex = 3;
-            this.tabPageChangeDetails.Text = "Change Details";
-            // 
-            // btnSaveChangeDetails
-            // 
-            this.btnSaveChangeDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnSaveChangeDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSaveChangeDetails.Location = new System.Drawing.Point(721, 7);
-            this.btnSaveChangeDetails.Name = "btnSaveChangeDetails";
-            this.btnSaveChangeDetails.Size = new System.Drawing.Size(101, 55);
-            this.btnSaveChangeDetails.TabIndex = 35;
-            this.btnSaveChangeDetails.Text = "Save Change Details";
-            this.btnSaveChangeDetails.UseVisualStyleBackColor = false;
-            // 
-            // txtChangeCosts
-            // 
-            this.txtChangeCosts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.txtChangeCosts.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChangeCosts.ForeColor = System.Drawing.Color.Black;
-            this.txtChangeCosts.Location = new System.Drawing.Point(413, 279);
-            this.txtChangeCosts.Multiline = true;
-            this.txtChangeCosts.Name = "txtChangeCosts";
-            this.txtChangeCosts.Size = new System.Drawing.Size(409, 97);
-            this.txtChangeCosts.TabIndex = 34;
-            this.txtChangeCosts.Text = "Change Costs";
-            // 
-            // txtChangeDrivers
-            // 
-            this.txtChangeDrivers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.txtChangeDrivers.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChangeDrivers.ForeColor = System.Drawing.Color.Black;
-            this.txtChangeDrivers.Location = new System.Drawing.Point(413, 174);
-            this.txtChangeDrivers.Multiline = true;
-            this.txtChangeDrivers.Name = "txtChangeDrivers";
-            this.txtChangeDrivers.Size = new System.Drawing.Size(409, 97);
-            this.txtChangeDrivers.TabIndex = 33;
-            this.txtChangeDrivers.Text = "Change Drivers";
-            // 
-            // txtChangeBenefits
-            // 
-            this.txtChangeBenefits.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.txtChangeBenefits.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChangeBenefits.ForeColor = System.Drawing.Color.Black;
-            this.txtChangeBenefits.Location = new System.Drawing.Point(12, 279);
-            this.txtChangeBenefits.Multiline = true;
-            this.txtChangeBenefits.Name = "txtChangeBenefits";
-            this.txtChangeBenefits.Size = new System.Drawing.Size(395, 97);
-            this.txtChangeBenefits.TabIndex = 32;
-            this.txtChangeBenefits.Text = "Change Benefits";
-            // 
-            // txtChangeDescription
-            // 
-            this.txtChangeDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.txtChangeDescription.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChangeDescription.ForeColor = System.Drawing.Color.Black;
-            this.txtChangeDescription.Location = new System.Drawing.Point(12, 174);
-            this.txtChangeDescription.Multiline = true;
-            this.txtChangeDescription.Name = "txtChangeDescription";
-            this.txtChangeDescription.Size = new System.Drawing.Size(395, 97);
-            this.txtChangeDescription.TabIndex = 31;
-            this.txtChangeDescription.Text = "Change Description";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(10, 101);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(181, 12);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "Please Enter Your Change Urgency:";
-            // 
-            // txtChangeUrgency
-            // 
-            this.txtChangeUrgency.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.txtChangeUrgency.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChangeUrgency.ForeColor = System.Drawing.Color.Black;
-            this.txtChangeUrgency.Location = new System.Drawing.Point(197, 98);
-            this.txtChangeUrgency.Name = "txtChangeUrgency";
-            this.txtChangeUrgency.Size = new System.Drawing.Size(113, 20);
-            this.txtChangeUrgency.TabIndex = 29;
-            this.txtChangeUrgency.Text = "Change Urgency";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(10, 71);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(206, 12);
-            this.label13.TabIndex = 28;
-            this.label13.Text = "Please Enter Your Change Request Date:";
-            // 
-            // txtChangeRequestDate
-            // 
-            this.txtChangeRequestDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.txtChangeRequestDate.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChangeRequestDate.ForeColor = System.Drawing.Color.Black;
-            this.txtChangeRequestDate.Location = new System.Drawing.Point(197, 68);
-            this.txtChangeRequestDate.Name = "txtChangeRequestDate";
-            this.txtChangeRequestDate.Size = new System.Drawing.Size(113, 20);
-            this.txtChangeRequestDate.TabIndex = 27;
-            this.txtChangeRequestDate.Text = "Change Request Date";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(10, 41);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(190, 12);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "Please Enter Your Change Requester:";
-            // 
-            // txtChangeRequester
-            // 
-            this.txtChangeRequester.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.txtChangeRequester.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChangeRequester.ForeColor = System.Drawing.Color.Black;
-            this.txtChangeRequester.Location = new System.Drawing.Point(197, 37);
-            this.txtChangeRequester.Name = "txtChangeRequester";
-            this.txtChangeRequester.Size = new System.Drawing.Size(113, 20);
-            this.txtChangeRequester.TabIndex = 25;
-            this.txtChangeRequester.Text = "Change Requester";
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(243, 7);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(161, 26);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.Text = "Project Name";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(10, 10);
+            this.label2.Location = new System.Drawing.Point(24, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(178, 12);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "Please Enter Your Change Number:";
+            this.label2.Size = new System.Drawing.Size(186, 19);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Change Request Form";
             // 
-            // label5
+            // panel1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label5.Location = new System.Drawing.Point(6, 14);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 17);
-            this.label5.TabIndex = 8;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.signatureTextBox);
+            this.panel1.Controls.Add(this.approvalDetailsTextBox);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.projectImpactLabel);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.impactlDetailsPanel);
+            this.panel1.Controls.Add(this.tableLayoutPanel1);
+            this.panel1.Controls.Add(this.chngeUrgencyTextBox);
+            this.panel1.Controls.Add(this.chngRqstDateTextField);
+            this.panel1.Controls.Add(this.chngRqstTextBox);
+            this.panel1.Controls.Add(this.chngNumTextBox);
+            this.panel1.Controls.Add(this.chngeUrgencyLabel);
+            this.panel1.Controls.Add(this.chngRqstDateLabel);
+            this.panel1.Controls.Add(this.chngRequesterLabel);
+            this.panel1.Controls.Add(this.chngNumLabel);
+            this.panel1.Controls.Add(this.changeDetailsPanel);
+            this.panel1.Controls.Add(this.projectMamagerTextBox);
+            this.panel1.Controls.Add(this.projectNameTextBox);
+            this.panel1.Controls.Add(this.projectManagerLabel);
+            this.panel1.Controls.Add(this.projectNmaeLabel);
+            this.panel1.Controls.Add(this.projectDetailsPanel);
+            this.panel1.Location = new System.Drawing.Point(20, 70);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(696, 677);
+            this.panel1.TabIndex = 3;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // txtChangeDetails
+            // signatureTextBox
             // 
-            this.txtChangeDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.txtChangeDetails.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChangeDetails.ForeColor = System.Drawing.Color.Black;
-            this.txtChangeDetails.Location = new System.Drawing.Point(197, 7);
-            this.txtChangeDetails.Name = "txtChangeDetails";
-            this.txtChangeDetails.Size = new System.Drawing.Size(113, 20);
-            this.txtChangeDetails.TabIndex = 23;
-            this.txtChangeDetails.Text = "Change Number";
+            this.signatureTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.signatureTextBox.Location = new System.Drawing.Point(0, 498);
+            this.signatureTextBox.Multiline = true;
+            this.signatureTextBox.Name = "signatureTextBox";
+            this.signatureTextBox.Size = new System.Drawing.Size(696, 169);
+            this.signatureTextBox.TabIndex = 26;
+            this.signatureTextBox.Text = resources.GetString("signatureTextBox.Text");
             // 
-            // tabPageImpactDetails
+            // approvalDetailsTextBox
             // 
-            this.tabPageImpactDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPageImpactDetails.Controls.Add(this.btnSaveImpactDetails);
-            this.tabPageImpactDetails.Controls.Add(this.textBox1);
-            this.tabPageImpactDetails.Controls.Add(this.label8);
-            this.tabPageImpactDetails.Controls.Add(this.label7);
-            this.tabPageImpactDetails.Controls.Add(this.label6);
-            this.tabPageImpactDetails.Location = new System.Drawing.Point(4, 23);
-            this.tabPageImpactDetails.Name = "tabPageImpactDetails";
-            this.tabPageImpactDetails.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageImpactDetails.Size = new System.Drawing.Size(828, 392);
-            this.tabPageImpactDetails.TabIndex = 4;
-            this.tabPageImpactDetails.Text = "Impact Details";
+            this.approvalDetailsTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.approvalDetailsTextBox.ForeColor = System.Drawing.Color.Blue;
+            this.approvalDetailsTextBox.Location = new System.Drawing.Point(3, 472);
+            this.approvalDetailsTextBox.Multiline = true;
+            this.approvalDetailsTextBox.Name = "approvalDetailsTextBox";
+            this.approvalDetailsTextBox.Size = new System.Drawing.Size(688, 20);
+            this.approvalDetailsTextBox.TabIndex = 25;
+            this.approvalDetailsTextBox.Text = "Reference any supporting documentation used to substantiate this change";
             // 
-            // btnSaveImpactDetails
+            // label3
             // 
-            this.btnSaveImpactDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnSaveImpactDetails.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveImpactDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSaveImpactDetails.Location = new System.Drawing.Point(363, 342);
-            this.btnSaveImpactDetails.Name = "btnSaveImpactDetails";
-            this.btnSaveImpactDetails.Size = new System.Drawing.Size(111, 41);
-            this.btnSaveImpactDetails.TabIndex = 23;
-            this.btnSaveImpactDetails.Text = "Save Impact Details";
-            this.btnSaveImpactDetails.UseVisualStyleBackColor = false;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(5, 453);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(158, 16);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Supporting Documention:";
             // 
-            // textBox1
+            // panel2
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.textBox1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(6, 7);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(816, 327);
-            this.textBox1.TabIndex = 32;
-            this.textBox1.Text = "Project Impact";
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.approvalDetailsLabel);
+            this.panel2.Location = new System.Drawing.Point(0, 414);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(695, 36);
+            this.panel2.TabIndex = 23;
             // 
-            // label8
+            // approvalDetailsLabel
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Cambria", 9F);
-            this.label8.Location = new System.Drawing.Point(557, 8);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 14);
-            this.label8.TabIndex = 19;
+            this.approvalDetailsLabel.AutoSize = true;
+            this.approvalDetailsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.approvalDetailsLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.approvalDetailsLabel.Location = new System.Drawing.Point(12, 4);
+            this.approvalDetailsLabel.Name = "approvalDetailsLabel";
+            this.approvalDetailsLabel.Size = new System.Drawing.Size(209, 24);
+            this.approvalDetailsLabel.TabIndex = 0;
+            this.approvalDetailsLabel.Text = "APPROVAL DETAILS";
             // 
-            // label7
+            // projectImpactLabel
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cambria", 9F);
-            this.label7.Location = new System.Drawing.Point(7, 27);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 14);
-            this.label7.TabIndex = 1;
+            this.projectImpactLabel.AutoSize = true;
+            this.projectImpactLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.projectImpactLabel.Location = new System.Drawing.Point(0, 370);
+            this.projectImpactLabel.Name = "projectImpactLabel";
+            this.projectImpactLabel.Size = new System.Drawing.Size(96, 16);
+            this.projectImpactLabel.TabIndex = 22;
+            this.projectImpactLabel.Text = "Project Impact:";
             // 
-            // label6
+            // textBox2
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 9F);
-            this.label6.Location = new System.Drawing.Point(7, 8);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 14);
-            this.label6.TabIndex = 0;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.ForeColor = System.Drawing.Color.Blue;
+            this.textBox2.Location = new System.Drawing.Point(3, 389);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(692, 19);
+            this.textBox2.TabIndex = 21;
+            this.textBox2.Text = "Describe the impact on the project if this change is / is not implemented";
             // 
-            // tabPageApprovalDetails
+            // impactlDetailsPanel
             // 
-            this.tabPageApprovalDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPageApprovalDetails.Controls.Add(this.btnSaveApprovalDetailInfo);
-            this.tabPageApprovalDetails.Controls.Add(this.dataGridViewSupportingDocuments);
-            this.tabPageApprovalDetails.Controls.Add(this.label14);
-            this.tabPageApprovalDetails.Controls.Add(this.dateTimePickerApprovedBy);
-            this.tabPageApprovalDetails.Controls.Add(this.txtApprovedBySignature);
-            this.tabPageApprovalDetails.Controls.Add(this.txtApprovedByProjectRole);
-            this.tabPageApprovalDetails.Controls.Add(this.txtApprovedByName);
-            this.tabPageApprovalDetails.Controls.Add(this.lblApprovedBy);
-            this.tabPageApprovalDetails.Controls.Add(this.dateTimePickerSubmittedBy);
-            this.tabPageApprovalDetails.Controls.Add(this.txtSignature);
-            this.tabPageApprovalDetails.Controls.Add(this.txtProjectRole);
-            this.tabPageApprovalDetails.Controls.Add(this.txtName);
-            this.tabPageApprovalDetails.Controls.Add(this.lblSubmittedBy);
-            this.tabPageApprovalDetails.Controls.Add(this.label12);
-            this.tabPageApprovalDetails.Controls.Add(this.label11);
-            this.tabPageApprovalDetails.Controls.Add(this.label10);
-            this.tabPageApprovalDetails.Controls.Add(this.label9);
-            this.tabPageApprovalDetails.Location = new System.Drawing.Point(4, 23);
-            this.tabPageApprovalDetails.Name = "tabPageApprovalDetails";
-            this.tabPageApprovalDetails.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageApprovalDetails.Size = new System.Drawing.Size(828, 392);
-            this.tabPageApprovalDetails.TabIndex = 5;
-            this.tabPageApprovalDetails.Text = "Approval Details";
+            this.impactlDetailsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.impactlDetailsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.impactlDetailsPanel.Controls.Add(this.impactDetailsLabel);
+            this.impactlDetailsPanel.Location = new System.Drawing.Point(-1, 333);
+            this.impactlDetailsPanel.Name = "impactlDetailsPanel";
+            this.impactlDetailsPanel.Size = new System.Drawing.Size(695, 34);
+            this.impactlDetailsPanel.TabIndex = 20;
             // 
-            // btnSaveApprovalDetailInfo
+            // impactDetailsLabel
             // 
-            this.btnSaveApprovalDetailInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnSaveApprovalDetailInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSaveApprovalDetailInfo.Location = new System.Drawing.Point(363, 342);
-            this.btnSaveApprovalDetailInfo.Name = "btnSaveApprovalDetailInfo";
-            this.btnSaveApprovalDetailInfo.Size = new System.Drawing.Size(111, 41);
-            this.btnSaveApprovalDetailInfo.TabIndex = 23;
-            this.btnSaveApprovalDetailInfo.Text = "Save Approval Details";
-            this.btnSaveApprovalDetailInfo.UseVisualStyleBackColor = false;
+            this.impactDetailsLabel.AutoSize = true;
+            this.impactDetailsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.impactDetailsLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.impactDetailsLabel.Location = new System.Drawing.Point(4, 1);
+            this.impactDetailsLabel.Name = "impactDetailsLabel";
+            this.impactDetailsLabel.Size = new System.Drawing.Size(176, 24);
+            this.impactDetailsLabel.TabIndex = 0;
+            this.impactDetailsLabel.Text = "IMPACT DETAILS";
             // 
-            // dataGridViewSupportingDocuments
+            // tableLayoutPanel1
             // 
-            this.dataGridViewSupportingDocuments.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewSupportingDocuments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSupportingDocuments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.DocumentName,
-            this.DocumentDescription});
-            this.dataGridViewSupportingDocuments.Location = new System.Drawing.Point(9, 27);
-            this.dataGridViewSupportingDocuments.Name = "dataGridViewSupportingDocuments";
-            this.dataGridViewSupportingDocuments.Size = new System.Drawing.Size(813, 189);
-            this.dataGridViewSupportingDocuments.TabIndex = 43;
+            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.chngDscrpTextBox, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.chngBnftsTextBox, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.changeDriversTextField, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.chngCostsTextBox, 1, 1);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(-1, 217);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(695, 114);
+            this.tableLayoutPanel1.TabIndex = 19;
             // 
-            // DocumentName
+            // chngDscrpTextBox
             // 
-            this.DocumentName.HeaderText = "Name";
-            this.DocumentName.Name = "DocumentName";
+            this.chngDscrpTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.chngDscrpTextBox.Location = new System.Drawing.Point(4, 4);
+            this.chngDscrpTextBox.Multiline = true;
+            this.chngDscrpTextBox.Name = "chngDscrpTextBox";
+            this.chngDscrpTextBox.Size = new System.Drawing.Size(340, 49);
+            this.chngDscrpTextBox.TabIndex = 0;
+            this.chngDscrpTextBox.Text = "Change Description:\r\nProvide a complete description of the requested change \r\n";
             // 
-            // DocumentDescription
+            // chngBnftsTextBox
             // 
-            this.DocumentDescription.HeaderText = "Description";
-            this.DocumentDescription.Name = "DocumentDescription";
+            this.chngBnftsTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.chngBnftsTextBox.Location = new System.Drawing.Point(4, 60);
+            this.chngBnftsTextBox.Multiline = true;
+            this.chngBnftsTextBox.Name = "chngBnftsTextBox";
+            this.chngBnftsTextBox.Size = new System.Drawing.Size(340, 50);
+            this.chngBnftsTextBox.TabIndex = 18;
+            this.chngBnftsTextBox.Text = "Change Benefits:\r\nDescribe the benefits associated with implementing this change\r" +
+    "\n";
             // 
-            // label14
+            // changeDriversTextField
             // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(166, 9);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(559, 14);
-            this.label14.TabIndex = 42;
-            this.label14.Text = "ONCE COMPLETED, PLEASE FORWARD THIS FORM TO THE PROJECT MANAGER FOR APPROVAL";
+            this.changeDriversTextField.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.changeDriversTextField.Location = new System.Drawing.Point(351, 4);
+            this.changeDriversTextField.Multiline = true;
+            this.changeDriversTextField.Name = "changeDriversTextField";
+            this.changeDriversTextField.Size = new System.Drawing.Size(340, 49);
+            this.changeDriversTextField.TabIndex = 17;
+            this.changeDriversTextField.Text = "Change Drivers:\r\nList any project, business, market or environmental factors that" +
+    " necessitate a specific time limit for this change\r\n";
             // 
-            // dateTimePickerApprovedBy
+            // chngCostsTextBox
             // 
-            this.dateTimePickerApprovedBy.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePickerApprovedBy.Location = new System.Drawing.Point(582, 287);
-            this.dateTimePickerApprovedBy.Name = "dateTimePickerApprovedBy";
-            this.dateTimePickerApprovedBy.Size = new System.Drawing.Size(200, 21);
-            this.dateTimePickerApprovedBy.TabIndex = 41;
+            this.chngCostsTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.chngCostsTextBox.Location = new System.Drawing.Point(351, 60);
+            this.chngCostsTextBox.Multiline = true;
+            this.chngCostsTextBox.Name = "chngCostsTextBox";
+            this.chngCostsTextBox.Size = new System.Drawing.Size(340, 50);
+            this.chngCostsTextBox.TabIndex = 19;
+            this.chngCostsTextBox.Text = "Change Costs:\r\nDescribe the costs associated with implementing this change\r\n";
             // 
-            // txtApprovedBySignature
+            // chngeUrgencyTextBox
             // 
-            this.txtApprovedBySignature.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtApprovedBySignature.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.txtApprovedBySignature.ForeColor = System.Drawing.Color.Black;
-            this.txtApprovedBySignature.Location = new System.Drawing.Point(476, 289);
-            this.txtApprovedBySignature.Name = "txtApprovedBySignature";
-            this.txtApprovedBySignature.Size = new System.Drawing.Size(100, 21);
-            this.txtApprovedBySignature.TabIndex = 40;
-            this.txtApprovedBySignature.Text = "Signature";
+            this.chngeUrgencyTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.chngeUrgencyTextBox.ForeColor = System.Drawing.Color.Blue;
+            this.chngeUrgencyTextBox.Location = new System.Drawing.Point(168, 198);
+            this.chngeUrgencyTextBox.Name = "chngeUrgencyTextBox";
+            this.chngeUrgencyTextBox.Size = new System.Drawing.Size(252, 13);
+            this.chngeUrgencyTextBox.TabIndex = 13;
+            this.chngeUrgencyTextBox.Text = "Level of urgency for undertaking the change";
             // 
-            // txtApprovedByProjectRole
+            // chngRqstDateTextField
             // 
-            this.txtApprovedByProjectRole.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtApprovedByProjectRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.txtApprovedByProjectRole.ForeColor = System.Drawing.Color.Black;
-            this.txtApprovedByProjectRole.Location = new System.Drawing.Point(476, 259);
-            this.txtApprovedByProjectRole.Name = "txtApprovedByProjectRole";
-            this.txtApprovedByProjectRole.Size = new System.Drawing.Size(100, 21);
-            this.txtApprovedByProjectRole.TabIndex = 39;
-            this.txtApprovedByProjectRole.Text = "Project Role";
+            this.chngRqstDateTextField.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.chngRqstDateTextField.ForeColor = System.Drawing.Color.Blue;
+            this.chngRqstDateTextField.Location = new System.Drawing.Point(168, 183);
+            this.chngRqstDateTextField.Name = "chngRqstDateTextField";
+            this.chngRqstDateTextField.Size = new System.Drawing.Size(283, 13);
+            this.chngRqstDateTextField.TabIndex = 12;
+            this.chngRqstDateTextField.Text = "Date of completion of this form ";
             // 
-            // txtApprovedByName
+            // chngRqstTextBox
             // 
-            this.txtApprovedByName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtApprovedByName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.txtApprovedByName.ForeColor = System.Drawing.Color.Black;
-            this.txtApprovedByName.Location = new System.Drawing.Point(476, 229);
-            this.txtApprovedByName.Name = "txtApprovedByName";
-            this.txtApprovedByName.Size = new System.Drawing.Size(100, 21);
-            this.txtApprovedByName.TabIndex = 38;
-            this.txtApprovedByName.Text = "Name";
+            this.chngRqstTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.chngRqstTextBox.ForeColor = System.Drawing.Color.Blue;
+            this.chngRqstTextBox.Location = new System.Drawing.Point(168, 167);
+            this.chngRqstTextBox.Name = "chngRqstTextBox";
+            this.chngRqstTextBox.Size = new System.Drawing.Size(283, 13);
+            this.chngRqstTextBox.TabIndex = 11;
+            this.chngRqstTextBox.Text = "Name of person requesting the change";
             // 
-            // lblApprovedBy
+            // chngNumTextBox
             // 
-            this.lblApprovedBy.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblApprovedBy.AutoSize = true;
-            this.lblApprovedBy.Location = new System.Drawing.Point(382, 229);
-            this.lblApprovedBy.Name = "lblApprovedBy";
-            this.lblApprovedBy.Size = new System.Drawing.Size(88, 14);
-            this.lblApprovedBy.TabIndex = 37;
-            this.lblApprovedBy.Text = "Approved By: ";
+            this.chngNumTextBox.AutoSize = true;
+            this.chngNumTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.chngNumTextBox.ForeColor = System.Drawing.Color.Blue;
+            this.chngNumTextBox.Location = new System.Drawing.Point(165, 151);
+            this.chngNumTextBox.Name = "chngNumTextBox";
+            this.chngNumTextBox.Size = new System.Drawing.Size(255, 13);
+            this.chngNumTextBox.TabIndex = 10;
+            this.chngNumTextBox.Text = "Unique identifier for the change per Change Register";
             // 
-            // dateTimePickerSubmittedBy
+            // chngeUrgencyLabel
             // 
-            this.dateTimePickerSubmittedBy.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePickerSubmittedBy.Location = new System.Drawing.Point(199, 293);
-            this.dateTimePickerSubmittedBy.Name = "dateTimePickerSubmittedBy";
-            this.dateTimePickerSubmittedBy.Size = new System.Drawing.Size(200, 21);
-            this.dateTimePickerSubmittedBy.TabIndex = 36;
+            this.chngeUrgencyLabel.AutoSize = true;
+            this.chngeUrgencyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chngeUrgencyLabel.Location = new System.Drawing.Point(4, 196);
+            this.chngeUrgencyLabel.Name = "chngeUrgencyLabel";
+            this.chngeUrgencyLabel.Size = new System.Drawing.Size(112, 16);
+            this.chngeUrgencyLabel.TabIndex = 9;
+            this.chngeUrgencyLabel.Text = "Change Urgency:";
             // 
-            // txtSignature
+            // chngRqstDateLabel
             // 
-            this.txtSignature.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSignature.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.txtSignature.ForeColor = System.Drawing.Color.Black;
-            this.txtSignature.Location = new System.Drawing.Point(93, 293);
-            this.txtSignature.Name = "txtSignature";
-            this.txtSignature.Size = new System.Drawing.Size(100, 21);
-            this.txtSignature.TabIndex = 35;
-            this.txtSignature.Text = "Signature";
+            this.chngRqstDateLabel.AutoSize = true;
+            this.chngRqstDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chngRqstDateLabel.Location = new System.Drawing.Point(4, 180);
+            this.chngRqstDateLabel.Name = "chngRqstDateLabel";
+            this.chngRqstDateLabel.Size = new System.Drawing.Size(144, 16);
+            this.chngRqstDateLabel.TabIndex = 8;
+            this.chngRqstDateLabel.Text = "Change Request Date:";
             // 
-            // txtProjectRole
+            // chngRequesterLabel
             // 
-            this.txtProjectRole.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtProjectRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.txtProjectRole.ForeColor = System.Drawing.Color.Black;
-            this.txtProjectRole.Location = new System.Drawing.Point(93, 262);
-            this.txtProjectRole.Name = "txtProjectRole";
-            this.txtProjectRole.Size = new System.Drawing.Size(100, 21);
-            this.txtProjectRole.TabIndex = 34;
-            this.txtProjectRole.Text = "Project Role";
+            this.chngRequesterLabel.AutoSize = true;
+            this.chngRequesterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chngRequesterLabel.Location = new System.Drawing.Point(3, 163);
+            this.chngRequesterLabel.Name = "chngRequesterLabel";
+            this.chngRequesterLabel.Size = new System.Drawing.Size(127, 16);
+            this.chngRequesterLabel.TabIndex = 7;
+            this.chngRequesterLabel.Text = "Change Requester: ";
             // 
-            // txtName
+            // chngNumLabel
             // 
-            this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.txtName.ForeColor = System.Drawing.Color.Black;
-            this.txtName.Location = new System.Drawing.Point(93, 232);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(100, 21);
-            this.txtName.TabIndex = 33;
-            this.txtName.Text = "Name";
+            this.chngNumLabel.AutoSize = true;
+            this.chngNumLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chngNumLabel.Location = new System.Drawing.Point(4, 147);
+            this.chngNumLabel.Name = "chngNumLabel";
+            this.chngNumLabel.Size = new System.Drawing.Size(112, 16);
+            this.chngNumLabel.TabIndex = 6;
+            this.chngNumLabel.Text = "Change Number: ";
             // 
-            // lblSubmittedBy
+            // changeDetailsPanel
             // 
-            this.lblSubmittedBy.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSubmittedBy.AutoSize = true;
-            this.lblSubmittedBy.Location = new System.Drawing.Point(7, 232);
-            this.lblSubmittedBy.Name = "lblSubmittedBy";
-            this.lblSubmittedBy.Size = new System.Drawing.Size(90, 14);
-            this.lblSubmittedBy.TabIndex = 32;
-            this.lblSubmittedBy.Text = "Submitted By: ";
+            this.changeDetailsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.changeDetailsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.changeDetailsPanel.Controls.Add(this.changeDetailsLabel);
+            this.changeDetailsPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changeDetailsPanel.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.changeDetailsPanel.Location = new System.Drawing.Point(-1, 110);
+            this.changeDetailsPanel.Name = "changeDetailsPanel";
+            this.changeDetailsPanel.Size = new System.Drawing.Size(695, 34);
+            this.changeDetailsPanel.TabIndex = 5;
             // 
-            // label12
+            // changeDetailsLabel
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label12.Location = new System.Drawing.Point(576, 3);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(0, 17);
-            this.label12.TabIndex = 31;
+            this.changeDetailsLabel.AutoSize = true;
+            this.changeDetailsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changeDetailsLabel.Location = new System.Drawing.Point(8, 4);
+            this.changeDetailsLabel.Name = "changeDetailsLabel";
+            this.changeDetailsLabel.Size = new System.Drawing.Size(164, 20);
+            this.changeDetailsLabel.TabIndex = 0;
+            this.changeDetailsLabel.Text = "CHANGE DETAILS";
             // 
-            // label11
+            // projectMamagerTextBox
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label11.Location = new System.Drawing.Point(172, 3);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(0, 17);
-            this.label11.TabIndex = 25;
+            this.projectMamagerTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.projectMamagerTextBox.ForeColor = System.Drawing.Color.Blue;
+            this.projectMamagerTextBox.Location = new System.Drawing.Point(165, 76);
+            this.projectMamagerTextBox.Name = "projectMamagerTextBox";
+            this.projectMamagerTextBox.Size = new System.Drawing.Size(473, 13);
+            this.projectMamagerTextBox.TabIndex = 4;
+            this.projectMamagerTextBox.Text = "Name of the Project Manager responsible for implementing the change";
             // 
-            // label10
+            // projectNameTextBox
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label10.Location = new System.Drawing.Point(336, 3);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 17);
-            this.label10.TabIndex = 19;
+            this.projectNameTextBox.BackColor = System.Drawing.Color.White;
+            this.projectNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.projectNameTextBox.ForeColor = System.Drawing.Color.Blue;
+            this.projectNameTextBox.Location = new System.Drawing.Point(165, 47);
+            this.projectNameTextBox.Name = "projectNameTextBox";
+            this.projectNameTextBox.Size = new System.Drawing.Size(473, 13);
+            this.projectNameTextBox.TabIndex = 3;
+            this.projectNameTextBox.Text = "Name of the project for which the change is being requested";
             // 
-            // label9
+            // projectManagerLabel
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Cambria", 11F);
-            this.label9.Location = new System.Drawing.Point(6, 3);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 17);
-            this.label9.TabIndex = 13;
+            this.projectManagerLabel.AutoSize = true;
+            this.projectManagerLabel.Font = new System.Drawing.Font("Helvetica", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.projectManagerLabel.Location = new System.Drawing.Point(3, 76);
+            this.projectManagerLabel.Name = "projectManagerLabel";
+            this.projectManagerLabel.Size = new System.Drawing.Size(103, 14);
+            this.projectManagerLabel.TabIndex = 2;
+            this.projectManagerLabel.Text = "Project Manager: ";
             // 
-            // btnExportChanges
+            // projectNmaeLabel
             // 
-            this.btnExportChanges.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnExportChanges.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExportChanges.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnExportChanges.Location = new System.Drawing.Point(654, 14);
-            this.btnExportChanges.Name = "btnExportChanges";
-            this.btnExportChanges.Size = new System.Drawing.Size(87, 41);
-            this.btnExportChanges.TabIndex = 23;
-            this.btnExportChanges.Text = "Export Project Details";
-            this.btnExportChanges.UseVisualStyleBackColor = false;
-            this.btnExportChanges.Click += new System.EventHandler(this.btnExportChanges_Click);
+            this.projectNmaeLabel.AutoSize = true;
+            this.projectNmaeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.projectNmaeLabel.Location = new System.Drawing.Point(4, 51);
+            this.projectNmaeLabel.Name = "projectNmaeLabel";
+            this.projectNmaeLabel.Size = new System.Drawing.Size(96, 16);
+            this.projectNmaeLabel.TabIndex = 1;
+            this.projectNmaeLabel.Text = "Project Name: ";
+            // 
+            // projectDetailsPanel
+            // 
+            this.projectDetailsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.projectDetailsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.projectDetailsPanel.Controls.Add(this.projectDetailslabel);
+            this.projectDetailsPanel.Location = new System.Drawing.Point(-1, -1);
+            this.projectDetailsPanel.Name = "projectDetailsPanel";
+            this.projectDetailsPanel.Size = new System.Drawing.Size(695, 35);
+            this.projectDetailsPanel.TabIndex = 0;
+            // 
+            // projectDetailslabel
+            // 
+            this.projectDetailslabel.AutoSize = true;
+            this.projectDetailslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.projectDetailslabel.ForeColor = System.Drawing.Color.White;
+            this.projectDetailslabel.Location = new System.Drawing.Point(4, 12);
+            this.projectDetailslabel.Name = "projectDetailslabel";
+            this.projectDetailslabel.Size = new System.Drawing.Size(169, 20);
+            this.projectDetailslabel.TabIndex = 0;
+            this.projectDetailslabel.Text = "PROJECT DETAILS";
             // 
             // ChangeRequestFormDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(855, 495);
-            this.Controls.Add(this.btnExportChanges);
-            this.Controls.Add(this.tabControl1);
+            this.ClientSize = new System.Drawing.Size(734, 749);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtProjectManager);
-            this.Controls.Add(this.btnSaveProjectDetails);
-            this.Controls.Add(this.label27);
-            this.Controls.Add(this.txtProjectName);
-            this.Font = new System.Drawing.Font("Helvetica Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.Black;
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.Name = "ChangeRequestFormDocumentForm";
-            this.Text = "ChangeRequestFormDocumentForm";
-            this.Load += new System.EventHandler(this.ChangeRequestFormDocumentForm_Load);
-            this.tabControl1.ResumeLayout(false);
-            this.tabPageChangeDetails.ResumeLayout(false);
-            this.tabPageChangeDetails.PerformLayout();
-            this.tabPageImpactDetails.ResumeLayout(false);
-            this.tabPageImpactDetails.PerformLayout();
-            this.tabPageApprovalDetails.ResumeLayout(false);
-            this.tabPageApprovalDetails.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSupportingDocuments)).EndInit();
+            this.Text = "Change Request Form Document Form";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.impactlDetailsPanel.ResumeLayout(false);
+            this.impactlDetailsPanel.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.changeDetailsPanel.ResumeLayout(false);
+            this.changeDetailsPanel.PerformLayout();
+            this.projectDetailsPanel.ResumeLayout(false);
+            this.projectDetailsPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -676,53 +484,39 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnSaveProjectDetails;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox txtProjectName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtProjectManager;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPageChangeDetails;
-        private System.Windows.Forms.Button btnSaveChangeDetails;
-        private System.Windows.Forms.TextBox txtChangeCosts;
-        private System.Windows.Forms.TextBox txtChangeDrivers;
-        private System.Windows.Forms.TextBox txtChangeBenefits;
-        private System.Windows.Forms.TextBox txtChangeDescription;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtChangeUrgency;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txtChangeRequestDate;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtChangeRequester;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtChangeDetails;
-        private System.Windows.Forms.TabPage tabPageImpactDetails;
-        private System.Windows.Forms.Button btnSaveImpactDetails;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TabPage tabPageApprovalDetails;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DateTimePicker dateTimePickerApprovedBy;
-        private System.Windows.Forms.TextBox txtApprovedBySignature;
-        private System.Windows.Forms.TextBox txtApprovedByProjectRole;
-        private System.Windows.Forms.TextBox txtApprovedByName;
-        private System.Windows.Forms.Label lblApprovedBy;
-        private System.Windows.Forms.DateTimePicker dateTimePickerSubmittedBy;
-        private System.Windows.Forms.TextBox txtSignature;
-        private System.Windows.Forms.TextBox txtProjectRole;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Label lblSubmittedBy;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.DataGridView dataGridViewSupportingDocuments;
-        private System.Windows.Forms.Button btnSaveApprovalDetailInfo;
-        private System.Windows.Forms.Button btnExportChanges;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DocumentName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DocumentDescription;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label chngeUrgencyLabel;
+        private System.Windows.Forms.Label chngRqstDateLabel;
+        private System.Windows.Forms.Label chngRequesterLabel;
+        private System.Windows.Forms.Label chngNumLabel;
+        private System.Windows.Forms.Panel changeDetailsPanel;
+        private System.Windows.Forms.Label changeDetailsLabel;
+        private System.Windows.Forms.TextBox projectMamagerTextBox;
+        private System.Windows.Forms.TextBox projectNameTextBox;
+        private System.Windows.Forms.Label projectManagerLabel;
+        private System.Windows.Forms.Label projectNmaeLabel;
+        private System.Windows.Forms.Panel projectDetailsPanel;
+        private System.Windows.Forms.Label projectDetailslabel;
+        private System.Windows.Forms.TextBox chngeUrgencyTextBox;
+        private System.Windows.Forms.TextBox chngRqstDateTextField;
+        private System.Windows.Forms.TextBox chngRqstTextBox;
+        private System.Windows.Forms.Label chngNumTextBox;
+        private System.Windows.Forms.Panel impactlDetailsPanel;
+        private System.Windows.Forms.Label impactDetailsLabel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TextBox chngDscrpTextBox;
+        private System.Windows.Forms.TextBox chngBnftsTextBox;
+        private System.Windows.Forms.TextBox changeDriversTextField;
+        private System.Windows.Forms.TextBox chngCostsTextBox;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox signatureTextBox;
+        private System.Windows.Forms.TextBox approvalDetailsTextBox;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label approvalDetailsLabel;
+        private System.Windows.Forms.Label projectImpactLabel;
     }
 }

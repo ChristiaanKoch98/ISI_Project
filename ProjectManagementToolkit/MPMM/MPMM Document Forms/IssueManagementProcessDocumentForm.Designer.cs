@@ -28,76 +28,108 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
             this.issueMngmntLabel = new System.Windows.Forms.Label();
             this.projectNameLabel = new System.Windows.Forms.TextBox();
             this.i = new System.Windows.Forms.TabControl();
             this.dcmntControlTab = new System.Windows.Forms.TabPage();
+            this.docCtrlTabControl = new System.Windows.Forms.TabControl();
+            this.DocInfotabPage = new System.Windows.Forms.TabPage();
+            this.DocumentInfoGrid = new System.Windows.Forms.DataGridView();
+            this.documentNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.informationLabel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.docHistTabPage = new System.Windows.Forms.TabPage();
+            this.docHistDataGrid = new System.Windows.Forms.DataGridView();
+            this.versionColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.issueDateColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.changesColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.docApprovalsTabPage = new System.Windows.Forms.TabPage();
             this.docApprovalsDataGrid = new System.Windows.Forms.DataGridView();
             this.roleColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.signatureColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.docHistDataGrid = new System.Windows.Forms.DataGridView();
-            this.versionColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.issueDateColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.changesColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DocumentInfoGrid = new System.Windows.Forms.DataGridView();
-            this.documentNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.informationLabel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.docApprovalsLabel = new System.Windows.Forms.Label();
-            this.docHistLabel = new System.Windows.Forms.Label();
-            this.docInfoLabel = new System.Windows.Forms.Label();
             this.issueProcessTab = new System.Windows.Forms.TabPage();
-            this.assignActionsLabel = new System.Windows.Forms.Label();
-            this.reviewIssueLabel = new System.Windows.Forms.Label();
-            this.raiseIssueLabel = new System.Windows.Forms.Label();
-            this.assgnActTextBox = new System.Windows.Forms.TextBox();
-            this.reviewTextBox = new System.Windows.Forms.TextBox();
-            this.raiseTextBox = new System.Windows.Forms.TextBox();
-            this.overviewLabel = new System.Windows.Forms.Label();
+            this.issueProcesstabControl = new System.Windows.Forms.TabControl();
+            this.OverviewabPage = new System.Windows.Forms.TabPage();
             this.overviewTextBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.raiseIssuetabPage = new System.Windows.Forms.TabPage();
+            this.raiseTextBox = new System.Windows.Forms.TextBox();
+            this.reviewIssueTabPage = new System.Windows.Forms.TabPage();
+            this.reviewTextBox = new System.Windows.Forms.TextBox();
+            this.assignIssuesTabPage = new System.Windows.Forms.TabPage();
+            this.assgnActTextBox = new System.Windows.Forms.TextBox();
+            this.reviewIssueLabel = new System.Windows.Forms.Label();
             this.IssueRolesTab = new System.Windows.Forms.TabPage();
-            this.prjctBoardLabel = new System.Windows.Forms.Label();
-            this.projMnagerLabel = new System.Windows.Forms.Label();
-            this.teamMamberLabel = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.IssueRolesTabControl = new System.Windows.Forms.TabControl();
+            this.teamMemberTabPage = new System.Windows.Forms.TabPage();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.projectManagertabPage = new System.Windows.Forms.TabPage();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.projBoardTabPage = new System.Windows.Forms.TabPage();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.issueDocumentsTab = new System.Windows.Forms.TabPage();
-            this.issueRegisterLabel = new System.Windows.Forms.Label();
-            this.issueFormLabel = new System.Windows.Forms.Label();
-            this.issueRegisterTextBox = new System.Windows.Forms.TextBox();
+            this.issueDocsTabControl = new System.Windows.Forms.TabControl();
+            this.issueFormTabPage = new System.Windows.Forms.TabPage();
             this.issueFormTextBox = new System.Windows.Forms.TextBox();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnExportIssueManagememnt = new System.Windows.Forms.Button();
+            this.issueRegisterTabPage = new System.Windows.Forms.TabPage();
+            this.issueRegisterTextBox = new System.Windows.Forms.TextBox();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.exportButton = new System.Windows.Forms.Button();
             this.i.SuspendLayout();
             this.dcmntControlTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.docApprovalsDataGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.docHistDataGrid)).BeginInit();
+            this.docCtrlTabControl.SuspendLayout();
+            this.DocInfotabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DocumentInfoGrid)).BeginInit();
+            this.docHistTabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.docHistDataGrid)).BeginInit();
+            this.docApprovalsTabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.docApprovalsDataGrid)).BeginInit();
             this.issueProcessTab.SuspendLayout();
+            this.issueProcesstabControl.SuspendLayout();
+            this.OverviewabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.raiseIssuetabPage.SuspendLayout();
+            this.reviewIssueTabPage.SuspendLayout();
+            this.assignIssuesTabPage.SuspendLayout();
             this.IssueRolesTab.SuspendLayout();
+            this.IssueRolesTabControl.SuspendLayout();
+            this.teamMemberTabPage.SuspendLayout();
+            this.projectManagertabPage.SuspendLayout();
+            this.projBoardTabPage.SuspendLayout();
             this.issueDocumentsTab.SuspendLayout();
+            this.issueDocsTabControl.SuspendLayout();
+            this.issueFormTabPage.SuspendLayout();
+            this.issueRegisterTabPage.SuspendLayout();
             this.SuspendLayout();
             // 
             // issueMngmntLabel
             // 
             this.issueMngmntLabel.AutoSize = true;
-            this.issueMngmntLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.issueMngmntLabel.Location = new System.Drawing.Point(2, 9);
+            this.issueMngmntLabel.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.issueMngmntLabel.Location = new System.Drawing.Point(3, 13);
+            this.issueMngmntLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.issueMngmntLabel.Name = "issueMngmntLabel";
-            this.issueMngmntLabel.Size = new System.Drawing.Size(235, 20);
+            this.issueMngmntLabel.Size = new System.Drawing.Size(261, 19);
             this.issueMngmntLabel.TabIndex = 0;
             this.issueMngmntLabel.Text = "Issue Management Process For";
             // 
             // projectNameLabel
             // 
-            this.projectNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.projectNameLabel.Location = new System.Drawing.Point(244, 8);
+            this.projectNameLabel.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.projectNameLabel.Location = new System.Drawing.Point(286, 7);
+            this.projectNameLabel.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.projectNameLabel.Name = "projectNameLabel";
-            this.projectNameLabel.Size = new System.Drawing.Size(198, 26);
+            this.projectNameLabel.Size = new System.Drawing.Size(125, 26);
             this.projectNameLabel.TabIndex = 1;
             this.projectNameLabel.Text = "Project Name";
             // 
@@ -107,71 +139,140 @@
             this.i.Controls.Add(this.issueProcessTab);
             this.i.Controls.Add(this.IssueRolesTab);
             this.i.Controls.Add(this.issueDocumentsTab);
-            this.i.Location = new System.Drawing.Point(6, 33);
+            this.i.Location = new System.Drawing.Point(7, 64);
+            this.i.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.i.Name = "i";
             this.i.SelectedIndex = 0;
-            this.i.Size = new System.Drawing.Size(793, 501);
+            this.i.Size = new System.Drawing.Size(665, 380);
             this.i.TabIndex = 2;
             // 
             // dcmntControlTab
             // 
-            this.dcmntControlTab.Controls.Add(this.docApprovalsDataGrid);
-            this.dcmntControlTab.Controls.Add(this.docHistDataGrid);
-            this.dcmntControlTab.Controls.Add(this.DocumentInfoGrid);
-            this.dcmntControlTab.Controls.Add(this.docApprovalsLabel);
-            this.dcmntControlTab.Controls.Add(this.docHistLabel);
-            this.dcmntControlTab.Controls.Add(this.docInfoLabel);
-            this.dcmntControlTab.Location = new System.Drawing.Point(4, 22);
+            this.dcmntControlTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.dcmntControlTab.Controls.Add(this.docCtrlTabControl);
+            this.dcmntControlTab.Location = new System.Drawing.Point(4, 28);
+            this.dcmntControlTab.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dcmntControlTab.Name = "dcmntControlTab";
-            this.dcmntControlTab.Padding = new System.Windows.Forms.Padding(3);
-            this.dcmntControlTab.Size = new System.Drawing.Size(785, 475);
+            this.dcmntControlTab.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.dcmntControlTab.Size = new System.Drawing.Size(657, 348);
             this.dcmntControlTab.TabIndex = 0;
             this.dcmntControlTab.Text = "Document Control";
-            this.dcmntControlTab.UseVisualStyleBackColor = true;
             // 
-            // docApprovalsDataGrid
+            // docCtrlTabControl
             // 
-            this.docApprovalsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.docApprovalsDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.roleColumn,
-            this.nameColumn,
-            this.signatureColumn,
-            this.dateColumn});
-            this.docApprovalsDataGrid.Location = new System.Drawing.Point(145, 297);
-            this.docApprovalsDataGrid.Name = "docApprovalsDataGrid";
-            this.docApprovalsDataGrid.Size = new System.Drawing.Size(443, 208);
-            this.docApprovalsDataGrid.TabIndex = 5;
+            this.docCtrlTabControl.Controls.Add(this.DocInfotabPage);
+            this.docCtrlTabControl.Controls.Add(this.docHistTabPage);
+            this.docCtrlTabControl.Controls.Add(this.docApprovalsTabPage);
+            this.docCtrlTabControl.Location = new System.Drawing.Point(0, 3);
+            this.docCtrlTabControl.Name = "docCtrlTabControl";
+            this.docCtrlTabControl.SelectedIndex = 0;
+            this.docCtrlTabControl.Size = new System.Drawing.Size(657, 311);
+            this.docCtrlTabControl.TabIndex = 6;
             // 
-            // roleColumn
+            // DocInfotabPage
             // 
-            this.roleColumn.HeaderText = "Role";
-            this.roleColumn.Name = "roleColumn";
+            this.DocInfotabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.DocInfotabPage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DocInfotabPage.Controls.Add(this.DocumentInfoGrid);
+            this.DocInfotabPage.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DocInfotabPage.Location = new System.Drawing.Point(4, 28);
+            this.DocInfotabPage.Name = "DocInfotabPage";
+            this.DocInfotabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.DocInfotabPage.Size = new System.Drawing.Size(649, 279);
+            this.DocInfotabPage.TabIndex = 0;
+            this.DocInfotabPage.Text = "Document Information";
             // 
-            // nameColumn
+            // DocumentInfoGrid
             // 
-            this.nameColumn.HeaderText = "Name";
-            this.nameColumn.Name = "nameColumn";
+            this.DocumentInfoGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DocumentInfoGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            this.DocumentInfoGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DocumentInfoGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.documentNameColumn,
+            this.informationLabel});
+            this.DocumentInfoGrid.EnableHeadersVisualStyles = false;
+            this.DocumentInfoGrid.Location = new System.Drawing.Point(0, 0);
+            this.DocumentInfoGrid.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.DocumentInfoGrid.Name = "DocumentInfoGrid";
+            this.DocumentInfoGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DocumentInfoGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Helvetica", 10.8F);
+            this.DocumentInfoGrid.RowsDefaultCellStyle = dataGridViewCellStyle21;
+            this.DocumentInfoGrid.Size = new System.Drawing.Size(529, 193);
+            this.DocumentInfoGrid.TabIndex = 3;
             // 
-            // signatureColumn
+            // documentNameColumn
             // 
-            this.signatureColumn.HeaderText = "Signature";
-            this.signatureColumn.Name = "signatureColumn";
+            this.documentNameColumn.HeaderText = "Type";
+            this.documentNameColumn.Name = "documentNameColumn";
+            this.documentNameColumn.Width = 200;
             // 
-            // dateColumn
+            // informationLabel
             // 
-            this.dateColumn.HeaderText = "Date";
-            this.dateColumn.Name = "dateColumn";
+            this.informationLabel.HeaderText = "Information";
+            this.informationLabel.Name = "informationLabel";
+            this.informationLabel.Width = 200;
+            // 
+            // docHistTabPage
+            // 
+            this.docHistTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.docHistTabPage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.docHistTabPage.Controls.Add(this.docHistDataGrid);
+            this.docHistTabPage.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.docHistTabPage.Location = new System.Drawing.Point(4, 28);
+            this.docHistTabPage.Name = "docHistTabPage";
+            this.docHistTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.docHistTabPage.Size = new System.Drawing.Size(649, 279);
+            this.docHistTabPage.TabIndex = 1;
+            this.docHistTabPage.Text = "Document History";
             // 
             // docHistDataGrid
             // 
+            this.docHistDataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.docHistDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.docHistDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.docHistDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.docHistDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.versionColumn,
             this.issueDateColumn,
             this.changesColumn});
-            this.docHistDataGrid.Location = new System.Drawing.Point(145, 163);
+            this.docHistDataGrid.EnableHeadersVisualStyles = false;
+            this.docHistDataGrid.Location = new System.Drawing.Point(0, 0);
+            this.docHistDataGrid.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.docHistDataGrid.Name = "docHistDataGrid";
-            this.docHistDataGrid.Size = new System.Drawing.Size(443, 103);
+            this.docHistDataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.docHistDataGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Helvetica", 10.8F);
+            this.docHistDataGrid.RowsDefaultCellStyle = dataGridViewCellStyle24;
+            this.docHistDataGrid.Size = new System.Drawing.Size(443, 194);
             this.docHistDataGrid.TabIndex = 4;
             // 
             // versionColumn
@@ -192,349 +293,467 @@
             this.changesColumn.Name = "changesColumn";
             this.changesColumn.Width = 130;
             // 
-            // DocumentInfoGrid
+            // docApprovalsTabPage
             // 
-            this.DocumentInfoGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DocumentInfoGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.documentNameColumn,
-            this.informationLabel});
-            this.DocumentInfoGrid.Location = new System.Drawing.Point(145, 17);
-            this.DocumentInfoGrid.Name = "DocumentInfoGrid";
-            this.DocumentInfoGrid.Size = new System.Drawing.Size(443, 112);
-            this.DocumentInfoGrid.TabIndex = 3;
+            this.docApprovalsTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.docApprovalsTabPage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.docApprovalsTabPage.Controls.Add(this.docApprovalsDataGrid);
+            this.docApprovalsTabPage.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.docApprovalsTabPage.Location = new System.Drawing.Point(4, 28);
+            this.docApprovalsTabPage.Name = "docApprovalsTabPage";
+            this.docApprovalsTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.docApprovalsTabPage.Size = new System.Drawing.Size(649, 279);
+            this.docApprovalsTabPage.TabIndex = 2;
+            this.docApprovalsTabPage.Text = "Document Approvals";
             // 
-            // documentNameColumn
+            // docApprovalsDataGrid
             // 
-            this.documentNameColumn.HeaderText = "";
-            this.documentNameColumn.Name = "documentNameColumn";
-            this.documentNameColumn.Width = 200;
+            this.docApprovalsDataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.docApprovalsDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.docApprovalsDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
+            this.docApprovalsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.docApprovalsDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.roleColumn,
+            this.nameColumn,
+            this.signatureColumn,
+            this.dateColumn});
+            this.docApprovalsDataGrid.EnableHeadersVisualStyles = false;
+            this.docApprovalsDataGrid.Location = new System.Drawing.Point(2, 4);
+            this.docApprovalsDataGrid.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.docApprovalsDataGrid.Name = "docApprovalsDataGrid";
+            this.docApprovalsDataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.docApprovalsDataGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Helvetica", 10.8F);
+            this.docApprovalsDataGrid.RowsDefaultCellStyle = dataGridViewCellStyle27;
+            this.docApprovalsDataGrid.Size = new System.Drawing.Size(659, 216);
+            this.docApprovalsDataGrid.TabIndex = 5;
             // 
-            // informationLabel
+            // roleColumn
             // 
-            this.informationLabel.HeaderText = "Information";
-            this.informationLabel.Name = "informationLabel";
-            this.informationLabel.Width = 200;
+            this.roleColumn.HeaderText = "Role";
+            this.roleColumn.Name = "roleColumn";
+            this.roleColumn.Width = 150;
             // 
-            // docApprovalsLabel
+            // nameColumn
             // 
-            this.docApprovalsLabel.AutoSize = true;
-            this.docApprovalsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.docApprovalsLabel.ForeColor = System.Drawing.Color.Navy;
-            this.docApprovalsLabel.Location = new System.Drawing.Point(2, 388);
-            this.docApprovalsLabel.Name = "docApprovalsLabel";
-            this.docApprovalsLabel.Size = new System.Drawing.Size(134, 16);
-            this.docApprovalsLabel.TabIndex = 2;
-            this.docApprovalsLabel.Text = "Document Approvals";
+            this.nameColumn.HeaderText = "Name";
+            this.nameColumn.Name = "nameColumn";
+            this.nameColumn.Width = 150;
             // 
-            // docHistLabel
+            // signatureColumn
             // 
-            this.docHistLabel.AutoSize = true;
-            this.docHistLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.docHistLabel.ForeColor = System.Drawing.Color.Navy;
-            this.docHistLabel.Location = new System.Drawing.Point(3, 206);
-            this.docHistLabel.Name = "docHistLabel";
-            this.docHistLabel.Size = new System.Drawing.Size(114, 16);
-            this.docHistLabel.TabIndex = 1;
-            this.docHistLabel.Text = "Document History";
+            this.signatureColumn.HeaderText = "Signature";
+            this.signatureColumn.Name = "signatureColumn";
+            this.signatureColumn.Width = 150;
             // 
-            // docInfoLabel
+            // dateColumn
             // 
-            this.docInfoLabel.AutoSize = true;
-            this.docInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.docInfoLabel.ForeColor = System.Drawing.Color.Navy;
-            this.docInfoLabel.Location = new System.Drawing.Point(2, 49);
-            this.docInfoLabel.Name = "docInfoLabel";
-            this.docInfoLabel.Size = new System.Drawing.Size(137, 16);
-            this.docInfoLabel.TabIndex = 0;
-            this.docInfoLabel.Text = "Document Information";
+            this.dateColumn.HeaderText = "Date";
+            this.dateColumn.Name = "dateColumn";
+            this.dateColumn.Width = 150;
             // 
             // issueProcessTab
             // 
-            this.issueProcessTab.Controls.Add(this.assignActionsLabel);
+            this.issueProcessTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.issueProcessTab.Controls.Add(this.issueProcesstabControl);
             this.issueProcessTab.Controls.Add(this.reviewIssueLabel);
-            this.issueProcessTab.Controls.Add(this.raiseIssueLabel);
-            this.issueProcessTab.Controls.Add(this.assgnActTextBox);
-            this.issueProcessTab.Controls.Add(this.reviewTextBox);
-            this.issueProcessTab.Controls.Add(this.raiseTextBox);
-            this.issueProcessTab.Controls.Add(this.overviewLabel);
-            this.issueProcessTab.Controls.Add(this.overviewTextBox);
-            this.issueProcessTab.Controls.Add(this.pictureBox1);
-            this.issueProcessTab.Location = new System.Drawing.Point(4, 22);
+            this.issueProcessTab.Location = new System.Drawing.Point(4, 28);
+            this.issueProcessTab.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.issueProcessTab.Name = "issueProcessTab";
-            this.issueProcessTab.Padding = new System.Windows.Forms.Padding(3);
-            this.issueProcessTab.Size = new System.Drawing.Size(785, 475);
+            this.issueProcessTab.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.issueProcessTab.Size = new System.Drawing.Size(657, 348);
             this.issueProcessTab.TabIndex = 1;
             this.issueProcessTab.Text = "Issue Process";
-            this.issueProcessTab.UseVisualStyleBackColor = true;
             // 
-            // assignActionsLabel
+            // issueProcesstabControl
             // 
-            this.assignActionsLabel.AutoSize = true;
-            this.assignActionsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.assignActionsLabel.Location = new System.Drawing.Point(310, 268);
-            this.assignActionsLabel.Name = "assignActionsLabel";
-            this.assignActionsLabel.Size = new System.Drawing.Size(151, 16);
-            this.assignActionsLabel.TabIndex = 8;
-            this.assignActionsLabel.Text = "Assign Issue Actions";
+            this.issueProcesstabControl.Controls.Add(this.OverviewabPage);
+            this.issueProcesstabControl.Controls.Add(this.raiseIssuetabPage);
+            this.issueProcesstabControl.Controls.Add(this.reviewIssueTabPage);
+            this.issueProcesstabControl.Controls.Add(this.assignIssuesTabPage);
+            this.issueProcesstabControl.Location = new System.Drawing.Point(3, 3);
+            this.issueProcesstabControl.Name = "issueProcesstabControl";
+            this.issueProcesstabControl.SelectedIndex = 0;
+            this.issueProcesstabControl.Size = new System.Drawing.Size(651, 345);
+            this.issueProcesstabControl.TabIndex = 9;
             // 
-            // reviewIssueLabel
+            // OverviewabPage
             // 
-            this.reviewIssueLabel.AutoSize = true;
-            this.reviewIssueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reviewIssueLabel.Location = new System.Drawing.Point(542, 12);
-            this.reviewIssueLabel.Name = "reviewIssueLabel";
-            this.reviewIssueLabel.Size = new System.Drawing.Size(100, 16);
-            this.reviewIssueLabel.TabIndex = 7;
-            this.reviewIssueLabel.Text = "Review Issue";
-            // 
-            // raiseIssueLabel
-            // 
-            this.raiseIssueLabel.AutoSize = true;
-            this.raiseIssueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.raiseIssueLabel.Location = new System.Drawing.Point(307, 12);
-            this.raiseIssueLabel.Name = "raiseIssueLabel";
-            this.raiseIssueLabel.Size = new System.Drawing.Size(90, 16);
-            this.raiseIssueLabel.TabIndex = 6;
-            this.raiseIssueLabel.Text = "Raise Issue";
-            // 
-            // assgnActTextBox
-            // 
-            this.assgnActTextBox.ForeColor = System.Drawing.Color.Blue;
-            this.assgnActTextBox.Location = new System.Drawing.Point(307, 287);
-            this.assgnActTextBox.Multiline = true;
-            this.assgnActTextBox.Name = "assgnActTextBox";
-            this.assgnActTextBox.Size = new System.Drawing.Size(472, 188);
-            this.assgnActTextBox.TabIndex = 5;
-            // 
-            // reviewTextBox
-            // 
-            this.reviewTextBox.ForeColor = System.Drawing.Color.Blue;
-            this.reviewTextBox.Location = new System.Drawing.Point(542, 31);
-            this.reviewTextBox.Multiline = true;
-            this.reviewTextBox.Name = "reviewTextBox";
-            this.reviewTextBox.Size = new System.Drawing.Size(240, 223);
-            this.reviewTextBox.TabIndex = 4;
-            // 
-            // raiseTextBox
-            // 
-            this.raiseTextBox.ForeColor = System.Drawing.Color.Blue;
-            this.raiseTextBox.Location = new System.Drawing.Point(307, 31);
-            this.raiseTextBox.Multiline = true;
-            this.raiseTextBox.Name = "raiseTextBox";
-            this.raiseTextBox.Size = new System.Drawing.Size(228, 223);
-            this.raiseTextBox.TabIndex = 3;
-            this.raiseTextBox.Text = "List the steps needed to identify project issues and document their details on an" +
-    " Issue Form. ";
-            // 
-            // overviewLabel
-            // 
-            this.overviewLabel.AutoSize = true;
-            this.overviewLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.overviewLabel.Location = new System.Drawing.Point(6, 12);
-            this.overviewLabel.Name = "overviewLabel";
-            this.overviewLabel.Size = new System.Drawing.Size(72, 16);
-            this.overviewLabel.TabIndex = 1;
-            this.overviewLabel.Text = "Overview";
+            this.OverviewabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.OverviewabPage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.OverviewabPage.Controls.Add(this.overviewTextBox);
+            this.OverviewabPage.Controls.Add(this.pictureBox1);
+            this.OverviewabPage.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OverviewabPage.Location = new System.Drawing.Point(4, 28);
+            this.OverviewabPage.Name = "OverviewabPage";
+            this.OverviewabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.OverviewabPage.Size = new System.Drawing.Size(643, 313);
+            this.OverviewabPage.TabIndex = 0;
+            this.OverviewabPage.Text = "Overview";
             // 
             // overviewTextBox
             // 
-            this.overviewTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.overviewTextBox.ForeColor = System.Drawing.Color.Blue;
-            this.overviewTextBox.Location = new System.Drawing.Point(7, 31);
-            this.overviewTextBox.Multiline = true;
+            this.overviewTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.overviewTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.overviewTextBox.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.overviewTextBox.ForeColor = System.Drawing.Color.Black;
+            this.overviewTextBox.Location = new System.Drawing.Point(-1, 3);
+            this.overviewTextBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.overviewTextBox.Name = "overviewTextBox";
-            this.overviewTextBox.Size = new System.Drawing.Size(294, 586);
+            this.overviewTextBox.Size = new System.Drawing.Size(453, 13);
             this.overviewTextBox.TabIndex = 0;
             this.overviewTextBox.Text = "Provide an overview of the IssueManagement Process, depicted as follows:";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(18, 70);
+            this.pictureBox1.Location = new System.Drawing.Point(8, 24);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(225, 225);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // raiseIssuetabPage
+            // 
+            this.raiseIssuetabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.raiseIssuetabPage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.raiseIssuetabPage.Controls.Add(this.raiseTextBox);
+            this.raiseIssuetabPage.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.raiseIssuetabPage.Location = new System.Drawing.Point(4, 28);
+            this.raiseIssuetabPage.Name = "raiseIssuetabPage";
+            this.raiseIssuetabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.raiseIssuetabPage.Size = new System.Drawing.Size(643, 313);
+            this.raiseIssuetabPage.TabIndex = 1;
+            this.raiseIssuetabPage.Text = "Raise Issue";
+            // 
+            // raiseTextBox
+            // 
+            this.raiseTextBox.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.raiseTextBox.ForeColor = System.Drawing.Color.Black;
+            this.raiseTextBox.Location = new System.Drawing.Point(-1, 3);
+            this.raiseTextBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.raiseTextBox.Multiline = true;
+            this.raiseTextBox.Name = "raiseTextBox";
+            this.raiseTextBox.Size = new System.Drawing.Size(377, 293);
+            this.raiseTextBox.TabIndex = 3;
+            this.raiseTextBox.Text = "List the steps needed to identify project issues and document their details on an" +
+    " Issue Form. ";
+            // 
+            // reviewIssueTabPage
+            // 
+            this.reviewIssueTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.reviewIssueTabPage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.reviewIssueTabPage.Controls.Add(this.reviewTextBox);
+            this.reviewIssueTabPage.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reviewIssueTabPage.Location = new System.Drawing.Point(4, 28);
+            this.reviewIssueTabPage.Name = "reviewIssueTabPage";
+            this.reviewIssueTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.reviewIssueTabPage.Size = new System.Drawing.Size(643, 313);
+            this.reviewIssueTabPage.TabIndex = 2;
+            this.reviewIssueTabPage.Text = "Review Issue";
+            // 
+            // reviewTextBox
+            // 
+            this.reviewTextBox.ForeColor = System.Drawing.Color.Blue;
+            this.reviewTextBox.Location = new System.Drawing.Point(0, 0);
+            this.reviewTextBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.reviewTextBox.Multiline = true;
+            this.reviewTextBox.Name = "reviewTextBox";
+            this.reviewTextBox.Size = new System.Drawing.Size(309, 279);
+            this.reviewTextBox.TabIndex = 4;
+            // 
+            // assignIssuesTabPage
+            // 
+            this.assignIssuesTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.assignIssuesTabPage.Controls.Add(this.assgnActTextBox);
+            this.assignIssuesTabPage.Location = new System.Drawing.Point(4, 28);
+            this.assignIssuesTabPage.Name = "assignIssuesTabPage";
+            this.assignIssuesTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.assignIssuesTabPage.Size = new System.Drawing.Size(643, 313);
+            this.assignIssuesTabPage.TabIndex = 3;
+            this.assignIssuesTabPage.Text = "Assign Issues Actions";
+            // 
+            // assgnActTextBox
+            // 
+            this.assgnActTextBox.ForeColor = System.Drawing.Color.Blue;
+            this.assgnActTextBox.Location = new System.Drawing.Point(3, 0);
+            this.assgnActTextBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.assgnActTextBox.Multiline = true;
+            this.assgnActTextBox.Name = "assgnActTextBox";
+            this.assgnActTextBox.Size = new System.Drawing.Size(432, 273);
+            this.assgnActTextBox.TabIndex = 5;
+            // 
+            // reviewIssueLabel
+            // 
+            this.reviewIssueLabel.AutoSize = true;
+            this.reviewIssueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reviewIssueLabel.Location = new System.Drawing.Point(903, 18);
+            this.reviewIssueLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.reviewIssueLabel.Name = "reviewIssueLabel";
+            this.reviewIssueLabel.Size = new System.Drawing.Size(100, 16);
+            this.reviewIssueLabel.TabIndex = 7;
+            this.reviewIssueLabel.Text = "Review Issue";
+            // 
             // IssueRolesTab
             // 
-            this.IssueRolesTab.Controls.Add(this.prjctBoardLabel);
-            this.IssueRolesTab.Controls.Add(this.projMnagerLabel);
-            this.IssueRolesTab.Controls.Add(this.teamMamberLabel);
-            this.IssueRolesTab.Controls.Add(this.textBox3);
-            this.IssueRolesTab.Controls.Add(this.textBox2);
-            this.IssueRolesTab.Controls.Add(this.textBox1);
-            this.IssueRolesTab.Location = new System.Drawing.Point(4, 22);
+            this.IssueRolesTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.IssueRolesTab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.IssueRolesTab.Controls.Add(this.IssueRolesTabControl);
+            this.IssueRolesTab.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IssueRolesTab.Location = new System.Drawing.Point(4, 28);
+            this.IssueRolesTab.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.IssueRolesTab.Name = "IssueRolesTab";
-            this.IssueRolesTab.Padding = new System.Windows.Forms.Padding(3);
-            this.IssueRolesTab.Size = new System.Drawing.Size(785, 475);
+            this.IssueRolesTab.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.IssueRolesTab.Size = new System.Drawing.Size(657, 348);
             this.IssueRolesTab.TabIndex = 2;
             this.IssueRolesTab.Text = "Issue Roles";
-            this.IssueRolesTab.UseVisualStyleBackColor = true;
             // 
-            // prjctBoardLabel
+            // IssueRolesTabControl
             // 
-            this.prjctBoardLabel.AutoSize = true;
-            this.prjctBoardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prjctBoardLabel.Location = new System.Drawing.Point(7, 274);
-            this.prjctBoardLabel.Name = "prjctBoardLabel";
-            this.prjctBoardLabel.Size = new System.Drawing.Size(103, 16);
-            this.prjctBoardLabel.TabIndex = 5;
-            this.prjctBoardLabel.Text = "Project Board";
+            this.IssueRolesTabControl.Controls.Add(this.teamMemberTabPage);
+            this.IssueRolesTabControl.Controls.Add(this.projectManagertabPage);
+            this.IssueRolesTabControl.Controls.Add(this.projBoardTabPage);
+            this.IssueRolesTabControl.Location = new System.Drawing.Point(-1, -1);
+            this.IssueRolesTabControl.Name = "IssueRolesTabControl";
+            this.IssueRolesTabControl.SelectedIndex = 0;
+            this.IssueRolesTabControl.Size = new System.Drawing.Size(633, 307);
+            this.IssueRolesTabControl.TabIndex = 6;
             // 
-            // projMnagerLabel
+            // teamMemberTabPage
             // 
-            this.projMnagerLabel.AutoSize = true;
-            this.projMnagerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.projMnagerLabel.Location = new System.Drawing.Point(395, 29);
-            this.projMnagerLabel.Name = "projMnagerLabel";
-            this.projMnagerLabel.Size = new System.Drawing.Size(122, 16);
-            this.projMnagerLabel.TabIndex = 4;
-            this.projMnagerLabel.Text = "Project Manager";
-            // 
-            // teamMamberLabel
-            // 
-            this.teamMamberLabel.AutoSize = true;
-            this.teamMamberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teamMamberLabel.Location = new System.Drawing.Point(7, 29);
-            this.teamMamberLabel.Name = "teamMamberLabel";
-            this.teamMamberLabel.Size = new System.Drawing.Size(108, 16);
-            this.teamMamberLabel.TabIndex = 3;
-            this.teamMamberLabel.Text = "Team Member";
-            // 
-            // textBox3
-            // 
-            this.textBox3.ForeColor = System.Drawing.Color.Blue;
-            this.textBox3.Location = new System.Drawing.Point(7, 293);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(760, 172);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.Text = "List the responsibilities of the Project Board in the Issue Management Process.";
-            // 
-            // textBox2
-            // 
-            this.textBox2.ForeColor = System.Drawing.Color.Blue;
-            this.textBox2.Location = new System.Drawing.Point(394, 48);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(373, 195);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "List the responsibilities of the Project Manager in the Issue Management Process." +
-    "";
+            this.teamMemberTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.teamMemberTabPage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.teamMemberTabPage.Controls.Add(this.textBox1);
+            this.teamMemberTabPage.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teamMemberTabPage.Location = new System.Drawing.Point(4, 28);
+            this.teamMemberTabPage.Name = "teamMemberTabPage";
+            this.teamMemberTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.teamMemberTabPage.Size = new System.Drawing.Size(625, 275);
+            this.teamMemberTabPage.TabIndex = 0;
+            this.teamMemberTabPage.Text = "Team Member";
             // 
             // textBox1
             // 
-            this.textBox1.ForeColor = System.Drawing.Color.Blue;
-            this.textBox1.Location = new System.Drawing.Point(7, 48);
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
+            this.textBox1.Location = new System.Drawing.Point(-1, -1);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(381, 195);
+            this.textBox1.Size = new System.Drawing.Size(561, 186);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "In this section, describe the key roles and responsibilities involved in the Issu" +
     "e Management Process.";
             // 
+            // projectManagertabPage
+            // 
+            this.projectManagertabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.projectManagertabPage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.projectManagertabPage.Controls.Add(this.textBox2);
+            this.projectManagertabPage.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.projectManagertabPage.Location = new System.Drawing.Point(4, 28);
+            this.projectManagertabPage.Name = "projectManagertabPage";
+            this.projectManagertabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.projectManagertabPage.Size = new System.Drawing.Size(625, 275);
+            this.projectManagertabPage.TabIndex = 1;
+            this.projectManagertabPage.Text = "Project Manager";
+            // 
+            // textBox2
+            // 
+            this.textBox2.ForeColor = System.Drawing.Color.Black;
+            this.textBox2.Location = new System.Drawing.Point(1, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(540, 198);
+            this.textBox2.TabIndex = 1;
+            this.textBox2.Text = "List the responsibilities of the Project Manager in the Issue Management Process." +
+    "";
+            // 
+            // projBoardTabPage
+            // 
+            this.projBoardTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.projBoardTabPage.Controls.Add(this.textBox3);
+            this.projBoardTabPage.Location = new System.Drawing.Point(4, 28);
+            this.projBoardTabPage.Name = "projBoardTabPage";
+            this.projBoardTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.projBoardTabPage.Size = new System.Drawing.Size(625, 275);
+            this.projBoardTabPage.TabIndex = 2;
+            this.projBoardTabPage.Text = "Project Board";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.ForeColor = System.Drawing.Color.Black;
+            this.textBox3.Location = new System.Drawing.Point(-4, 0);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(621, 197);
+            this.textBox3.TabIndex = 2;
+            this.textBox3.Text = "List the responsibilities of the Project Board in the Issue Management Process.";
+            // 
             // issueDocumentsTab
             // 
-            this.issueDocumentsTab.Controls.Add(this.issueRegisterLabel);
-            this.issueDocumentsTab.Controls.Add(this.issueFormLabel);
-            this.issueDocumentsTab.Controls.Add(this.issueRegisterTextBox);
-            this.issueDocumentsTab.Controls.Add(this.issueFormTextBox);
-            this.issueDocumentsTab.Location = new System.Drawing.Point(4, 22);
+            this.issueDocumentsTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.issueDocumentsTab.Controls.Add(this.issueDocsTabControl);
+            this.issueDocumentsTab.Location = new System.Drawing.Point(4, 28);
+            this.issueDocumentsTab.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.issueDocumentsTab.Name = "issueDocumentsTab";
-            this.issueDocumentsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.issueDocumentsTab.Size = new System.Drawing.Size(785, 475);
+            this.issueDocumentsTab.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.issueDocumentsTab.Size = new System.Drawing.Size(657, 348);
             this.issueDocumentsTab.TabIndex = 3;
             this.issueDocumentsTab.Text = "Issue Documents";
-            this.issueDocumentsTab.UseVisualStyleBackColor = true;
             // 
-            // issueRegisterLabel
+            // issueDocsTabControl
             // 
-            this.issueRegisterLabel.AutoSize = true;
-            this.issueRegisterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.issueRegisterLabel.Location = new System.Drawing.Point(395, 22);
-            this.issueRegisterLabel.Name = "issueRegisterLabel";
-            this.issueRegisterLabel.Size = new System.Drawing.Size(108, 16);
-            this.issueRegisterLabel.TabIndex = 3;
-            this.issueRegisterLabel.Text = "Issue Register";
+            this.issueDocsTabControl.Controls.Add(this.issueFormTabPage);
+            this.issueDocsTabControl.Controls.Add(this.issueRegisterTabPage);
+            this.issueDocsTabControl.Location = new System.Drawing.Point(3, 0);
+            this.issueDocsTabControl.Name = "issueDocsTabControl";
+            this.issueDocsTabControl.SelectedIndex = 0;
+            this.issueDocsTabControl.Size = new System.Drawing.Size(603, 348);
+            this.issueDocsTabControl.TabIndex = 4;
             // 
-            // issueFormLabel
+            // issueFormTabPage
             // 
-            this.issueFormLabel.AutoSize = true;
-            this.issueFormLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.issueFormLabel.Location = new System.Drawing.Point(7, 23);
-            this.issueFormLabel.Name = "issueFormLabel";
-            this.issueFormLabel.Size = new System.Drawing.Size(84, 16);
-            this.issueFormLabel.TabIndex = 2;
-            this.issueFormLabel.Text = "Issue Form";
+            this.issueFormTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.issueFormTabPage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.issueFormTabPage.Controls.Add(this.issueFormTextBox);
+            this.issueFormTabPage.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.issueFormTabPage.Location = new System.Drawing.Point(4, 28);
+            this.issueFormTabPage.Name = "issueFormTabPage";
+            this.issueFormTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.issueFormTabPage.Size = new System.Drawing.Size(595, 316);
+            this.issueFormTabPage.TabIndex = 0;
+            this.issueFormTabPage.Text = "Issue Form";
+            // 
+            // issueFormTextBox
+            // 
+            this.issueFormTextBox.Font = new System.Drawing.Font("Helvetica", 8F);
+            this.issueFormTextBox.ForeColor = System.Drawing.Color.Black;
+            this.issueFormTextBox.Location = new System.Drawing.Point(-1, 3);
+            this.issueFormTextBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.issueFormTextBox.Multiline = true;
+            this.issueFormTextBox.Name = "issueFormTextBox";
+            this.issueFormTextBox.Size = new System.Drawing.Size(596, 291);
+            this.issueFormTextBox.TabIndex = 0;
+            this.issueFormTextBox.Text = "Describe the purpose of the Issue Form and provide a template for its completion";
+            // 
+            // issueRegisterTabPage
+            // 
+            this.issueRegisterTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.issueRegisterTabPage.Controls.Add(this.issueRegisterTextBox);
+            this.issueRegisterTabPage.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.issueRegisterTabPage.Location = new System.Drawing.Point(4, 28);
+            this.issueRegisterTabPage.Name = "issueRegisterTabPage";
+            this.issueRegisterTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.issueRegisterTabPage.Size = new System.Drawing.Size(595, 316);
+            this.issueRegisterTabPage.TabIndex = 1;
+            this.issueRegisterTabPage.Text = "Issue Register";
             // 
             // issueRegisterTextBox
             // 
-            this.issueRegisterTextBox.ForeColor = System.Drawing.Color.Blue;
-            this.issueRegisterTextBox.Location = new System.Drawing.Point(395, 42);
+            this.issueRegisterTextBox.ForeColor = System.Drawing.Color.Black;
+            this.issueRegisterTextBox.Location = new System.Drawing.Point(0, 4);
+            this.issueRegisterTextBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.issueRegisterTextBox.Multiline = true;
             this.issueRegisterTextBox.Name = "issueRegisterTextBox";
-            this.issueRegisterTextBox.Size = new System.Drawing.Size(383, 427);
+            this.issueRegisterTextBox.Size = new System.Drawing.Size(557, 305);
             this.issueRegisterTextBox.TabIndex = 1;
             this.issueRegisterTextBox.Text = "Describe the purpose of the Issue Register and provide a template for its complet" +
     "ion.";
             // 
-            // issueFormTextBox
+            // saveButton
             // 
-            this.issueFormTextBox.ForeColor = System.Drawing.Color.Blue;
-            this.issueFormTextBox.Location = new System.Drawing.Point(6, 42);
-            this.issueFormTextBox.Multiline = true;
-            this.issueFormTextBox.Name = "issueFormTextBox";
-            this.issueFormTextBox.Size = new System.Drawing.Size(359, 427);
-            this.issueFormTextBox.TabIndex = 0;
-            this.issueFormTextBox.Text = "Describe the purpose of the Issue Form and provide a template for its completion";
+            this.saveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveButton.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveButton.ForeColor = System.Drawing.Color.Black;
+            this.saveButton.Location = new System.Drawing.Point(431, 3);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 29);
+            this.saveButton.TabIndex = 4;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = false;
             // 
-            // btnSave
+            // exportButton
             // 
-            this.btnSave.Location = new System.Drawing.Point(484, 13);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 3;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnExportIssueManagememnt
-            // 
-            this.btnExportIssueManagememnt.Location = new System.Drawing.Point(602, 13);
-            this.btnExportIssueManagememnt.Name = "btnExportIssueManagememnt";
-            this.btnExportIssueManagememnt.Size = new System.Drawing.Size(75, 23);
-            this.btnExportIssueManagememnt.TabIndex = 4;
-            this.btnExportIssueManagememnt.Text = "Export";
-            this.btnExportIssueManagememnt.UseVisualStyleBackColor = true;
-            this.btnExportIssueManagememnt.Click += new System.EventHandler(this.btnExportIssueManagememnt_Click);
+            this.exportButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.exportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exportButton.ForeColor = System.Drawing.Color.Black;
+            this.exportButton.Location = new System.Drawing.Point(512, 3);
+            this.exportButton.Name = "exportButton";
+            this.exportButton.Size = new System.Drawing.Size(137, 29);
+            this.exportButton.TabIndex = 5;
+            this.exportButton.Text = "Export to Word";
+            this.exportButton.UseVisualStyleBackColor = false;
             // 
             // IssueManagementProcessDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 532);
-            this.Controls.Add(this.btnExportIssueManagememnt);
-            this.Controls.Add(this.btnSave);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.ClientSize = new System.Drawing.Size(672, 444);
+            this.Controls.Add(this.exportButton);
+            this.Controls.Add(this.saveButton);
             this.Controls.Add(this.i);
             this.Controls.Add(this.projectNameLabel);
             this.Controls.Add(this.issueMngmntLabel);
+            this.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "IssueManagementProcessDocumentForm";
-            this.Text = "IssueManagementProcessDocumentForm";
+            this.Text = "Issue Management Process Document Form";
             this.Load += new System.EventHandler(this.IssueManagementProcessDocumentForm_Load);
             this.i.ResumeLayout(false);
             this.dcmntControlTab.ResumeLayout(false);
-            this.dcmntControlTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.docApprovalsDataGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.docHistDataGrid)).EndInit();
+            this.docCtrlTabControl.ResumeLayout(false);
+            this.DocInfotabPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DocumentInfoGrid)).EndInit();
+            this.docHistTabPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.docHistDataGrid)).EndInit();
+            this.docApprovalsTabPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.docApprovalsDataGrid)).EndInit();
             this.issueProcessTab.ResumeLayout(false);
             this.issueProcessTab.PerformLayout();
+            this.issueProcesstabControl.ResumeLayout(false);
+            this.OverviewabPage.ResumeLayout(false);
+            this.OverviewabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.raiseIssuetabPage.ResumeLayout(false);
+            this.raiseIssuetabPage.PerformLayout();
+            this.reviewIssueTabPage.ResumeLayout(false);
+            this.reviewIssueTabPage.PerformLayout();
+            this.assignIssuesTabPage.ResumeLayout(false);
+            this.assignIssuesTabPage.PerformLayout();
             this.IssueRolesTab.ResumeLayout(false);
-            this.IssueRolesTab.PerformLayout();
+            this.IssueRolesTabControl.ResumeLayout(false);
+            this.teamMemberTabPage.ResumeLayout(false);
+            this.teamMemberTabPage.PerformLayout();
+            this.projectManagertabPage.ResumeLayout(false);
+            this.projectManagertabPage.PerformLayout();
+            this.projBoardTabPage.ResumeLayout(false);
+            this.projBoardTabPage.PerformLayout();
             this.issueDocumentsTab.ResumeLayout(false);
-            this.issueDocumentsTab.PerformLayout();
+            this.issueDocsTabControl.ResumeLayout(false);
+            this.issueFormTabPage.ResumeLayout(false);
+            this.issueFormTabPage.PerformLayout();
+            this.issueRegisterTabPage.ResumeLayout(false);
+            this.issueRegisterTabPage.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -547,43 +766,48 @@
         private System.Windows.Forms.TabControl i;
         private System.Windows.Forms.TabPage dcmntControlTab;
         private System.Windows.Forms.DataGridView docApprovalsDataGrid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn roleColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn signatureColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dateColumn;
         private System.Windows.Forms.DataGridView docHistDataGrid;
         private System.Windows.Forms.DataGridViewTextBoxColumn versionColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn issueDateColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn changesColumn;
         private System.Windows.Forms.DataGridView DocumentInfoGrid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn documentNameColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn informationLabel;
-        private System.Windows.Forms.Label docApprovalsLabel;
-        private System.Windows.Forms.Label docHistLabel;
-        private System.Windows.Forms.Label docInfoLabel;
         private System.Windows.Forms.TabPage issueProcessTab;
-        private System.Windows.Forms.Label overviewLabel;
         private System.Windows.Forms.TextBox overviewTextBox;
         private System.Windows.Forms.TabPage IssueRolesTab;
         private System.Windows.Forms.TabPage issueDocumentsTab;
-        private System.Windows.Forms.Label assignActionsLabel;
         private System.Windows.Forms.Label reviewIssueLabel;
-        private System.Windows.Forms.Label raiseIssueLabel;
         private System.Windows.Forms.TextBox assgnActTextBox;
         private System.Windows.Forms.TextBox reviewTextBox;
         private System.Windows.Forms.TextBox raiseTextBox;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label prjctBoardLabel;
-        private System.Windows.Forms.Label projMnagerLabel;
-        private System.Windows.Forms.Label teamMamberLabel;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label issueRegisterLabel;
-        private System.Windows.Forms.Label issueFormLabel;
         private System.Windows.Forms.TextBox issueRegisterTextBox;
         private System.Windows.Forms.TextBox issueFormTextBox;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnExportIssueManagememnt;
+        private System.Windows.Forms.TabControl docCtrlTabControl;
+        private System.Windows.Forms.TabPage DocInfotabPage;
+        private System.Windows.Forms.DataGridViewTextBoxColumn documentNameColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn informationLabel;
+        private System.Windows.Forms.TabPage docHistTabPage;
+        private System.Windows.Forms.TabPage docApprovalsTabPage;
+        private System.Windows.Forms.DataGridViewTextBoxColumn roleColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn signatureColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateColumn;
+        private System.Windows.Forms.TabControl issueProcesstabControl;
+        private System.Windows.Forms.TabPage OverviewabPage;
+        private System.Windows.Forms.TabPage raiseIssuetabPage;
+        private System.Windows.Forms.TabPage reviewIssueTabPage;
+        private System.Windows.Forms.TabPage assignIssuesTabPage;
+        private System.Windows.Forms.TabControl IssueRolesTabControl;
+        private System.Windows.Forms.TabPage teamMemberTabPage;
+        private System.Windows.Forms.TabPage projectManagertabPage;
+        private System.Windows.Forms.TabPage projBoardTabPage;
+        private System.Windows.Forms.TabControl issueDocsTabControl;
+        private System.Windows.Forms.TabPage issueFormTabPage;
+        private System.Windows.Forms.TabPage issueRegisterTabPage;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button exportButton;
     }
 }

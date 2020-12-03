@@ -21,4 +21,12 @@ namespace ProjectManagementToolkit.Classes
         public string ProjectChanges { get; set; }
         public string SupportingDocumentation { get; set; }
     }
+
+    class ReviewDetails
+    {
+        public string ReviewCategory { get; set; }
+        public string ReviewQuestion { get; set; }
+        public string Answer { get; set; }
+        public string Variance { get; set; }
+    }
 }

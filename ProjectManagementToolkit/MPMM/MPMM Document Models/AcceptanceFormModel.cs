@@ -26,10 +26,16 @@ namespace ProjectManagementToolkit.Classes
         //Customer approval
         public string SupportingDocumentation { get; set; }
 
-        public AcceptanceFormModel()
-        {
+       
+    }
 
-        }
-        
+    class ChildAcceptanceFormModel
+    {
+        public string Acceptance { get; set; }
+        public string Method { get; set; }
+        public string Reviewer { get; set; }
+        public string Date { get; set; }
+        public string Result { get; set; }
+
     }
 }

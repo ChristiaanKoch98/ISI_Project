@@ -15,8 +15,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         #region Document information
         public string documentID { get; set; }
         public string documentOwner { get; set; }
-        public DateTime issueDate { get; set; }
-        public DateTime lastSavedDate { get; set; }
+        public string issueDate { get; set; }
+        public string lastSavedDate { get; set; }
         public string fileName { get; set; }
         #endregion
 
@@ -24,7 +24,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public class DocumentHistory
         {
             public string version { get; set; }
-            public DateTime issueDate { get; set; }
+            public string issueDate { get; set; }
             public string changes { get; set; }
         }
 
@@ -35,9 +35,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public class DocumentApprovals
         {
             public string role { get; set; }
-            public string mame { get; set; }
+            public string name { get; set; }
             public string changes { get; set; }
-            public DateTime date { get; set; }
+            public string date { get; set; }
 
         }
 
@@ -48,7 +48,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public class DocumentLabor
         {
             public string role { get; set; }
-            public double unitCost { get; set; }
+            public string unitCost { get; set; }
         }
 
         public List<DocumentLabor> documentLabors { get; set; }
@@ -56,7 +56,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public class DocumentEquipment
         {
             public string equipment { get; set; }
-            public double unitCost { get; set; }
+            public string unitCost { get; set; }
         }
 
         public List<DocumentEquipment> documentEquipments { get; set; }
@@ -64,7 +64,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public class DocumentMaterial
         {
             public string material { get; set; }
-            public double unitCost { get; set; }
+            public string unitCost { get; set; }
         }
 
         public List<DocumentMaterial> documentMaterials { get; set; }
@@ -72,7 +72,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public class DocumentSupplier
         {
             public string deliverableItem { get; set; }
-            public double unitCost { get; set; }
+            public string unitCost { get; set; }
         }
 
         public List<DocumentSupplier> documentSuppliers { get; set; }
@@ -80,7 +80,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public class DocumentAdministration
         {
             public string administrativeItem { get; set; }
-            public double unitCost { get; set; }
+            public string unitCost { get; set; }
         }
 
         public List<DocumentAdministration> documentAdministrations { get; set; }
@@ -88,7 +88,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public class DocumentOther
         {
             public string otherExpenseItem { get; set; }
-            public double unitCost { get; set; }
+            public string unitCost { get; set; }
         }
 
         public List<DocumentOther> documentOthers { get; set; }
@@ -101,42 +101,29 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
             {
                 public string expenseType { get; set; }
                 //Creates an array with 12 indexes, which correlates to each month of the year
-                public double[] expensePerMonth { get; set; }
+                public string[] expensePerMonth { get; set; }
 
                 public Expense()
                 {
                     //Resets prices of expense for each month of the year
-                    this.expensePerMonth = new double[12];
+                    this.expensePerMonth = new string[12];
                     for (int i = 0; i < this.expensePerMonth.Length; i++)
                     {
-                        this.expensePerMonth[i] = 0.0;
+                        this.expensePerMonth[i] = "0.0";
                     }
                 }
             }
 
             public List<Expense> expenses { get; set; }
-
-            //Returns the total expenses for an entire month
-            //A month correlates to the index
-            //Eg Jan is month index 0
-            public double GetTotalForMonth(int month)
-            {
-                double total = 0;
-                for (int i = 0; i < this.expenses.Count; i++)
-                {
-                    total += this.expenses[i].expensePerMonth[month];
-                }
-
-                return total;
-            }
         }
+
+        public DocumentSchedule schedule { get; set; }
 
         public string assumptions { get; set; }
         public string constraints { get; set; }
         #endregion
 
         #region Financial Process
-        public string financialProcess { get; set; }
         public string financialActivities { get; set; }
         public string financialRoles { get; set; }
         public string financialDocuments { get; set; }

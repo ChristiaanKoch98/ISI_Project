@@ -57,7 +57,24 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             {
                 phaseReview.SupportingDocumentation = Supporting_Documentation_tbx.Text;
             }
-        }
+
+            List<ReviewDetails> reviews = new List<ReviewDetails>();
+            int RowCount = REVIEW_DETAILS_dgv.RowCount;
+            for (int i = 0; i < RowCount - 1; i++) 
+            {
+                ReviewDetails review = new ReviewDetails();
+                var ReviewCategory = REVIEW_DETAILS_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var ReviewQuestion = REVIEW_DETAILS_dgv.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var Answer = REVIEW_DETAILS_dgv.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var Variance = REVIEW_DETAILS_dgv.Rows[i].Cells[3].Value?.ToString() ?? "";
+                review.ReviewCategory = ReviewCategory;
+                review.ReviewQuestion = ReviewQuestion;
+                review.Answer = Answer;
+                review.Variance = Variance;
+                reviews.Add(review);
+            }
+             
+    }
 
         private void Enter_btn_Click(object sender, EventArgs e)
         {
