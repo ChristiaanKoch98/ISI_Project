@@ -57,7 +57,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void TermOfReferenceDocumentForm_Load(object sender, EventArgs e)
         {
-            loadDocument();
+            
         }
 
         public void saveDocument()
@@ -122,7 +122,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             int cusRowsCount = dgvDeliverables.Rows.Count;
 
-            for (int i = 0; i < delivRowsCount - 1; i++)
+            for (int i = 0; i < cusRowsCount - 1; i++)
             {
                 TermsOfReferenceModel.Customers custo = new TermsOfReferenceModel.Customers();
                 var CustomerGroup = dgvCustomers.Rows[i].Cells[0].Value?.ToString() ?? "";
@@ -298,7 +298,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             int comRowsCount = dgvCompletionCriteria.Rows.Count;
 
-            for (int i = 0; i < quaRowsCount - 1; i++)
+            for (int i = 0; i < comRowsCount - 1; i++)
             {
                 TermsOfReferenceModel.CompletionCriteria com = new TermsOfReferenceModel.CompletionCriteria();
                 var Process = dgvCompletionCriteria.Rows[i].Cells[0].Value?.ToString() ?? "";
@@ -382,16 +382,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 string json = JsonConvert.SerializeObject(versionControl);
                 currentTermsOfReferenceModel = JsonConvert.DeserializeObject<TermsOfReferenceModel>(JsonConvert.SerializeObject(newTermsOfReferenceModel));
-
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "TermOfReferenceDocument");
-                currentTermsOfReferenceModel = JsonConvert.DeserializeObject<TermsOfReferenceModel>(JsonConvert.SerializeObject(newTermsOfReferenceModel));
                 MessageBox.Show("Terms of reference saved successfully", "save", MessageBoxButtons.OK);
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            saveDocument();
+            
         }
 
         private void loadDocument()
@@ -468,6 +466,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             currentTermsOfReferenceModel = new TermsOfReferenceModel();
 
             string jsonWord = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsonWord);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
 
@@ -605,7 +604,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 saveFileDialog.Filter = "Word 97-2003 Documents (*.doc)|*.doc|Word 2007 Documents (*.docx)|*.docx";
                 saveFileDialog.FilterIndex = 2;
                 saveFileDialog.RestoreDirectory = true;
-                saveFileDialog.ShowDialog();
+                //saveFileDialog.ShowDialog();
 
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
@@ -1384,6 +1383,21 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void TermOfReferenceDocumentForm_Load_1(object sender, EventArgs e)
+        {
+            loadDocument();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            saveDocument();
+        }
+
+        private void btnExportWord_Click(object sender, EventArgs e)
         {
             exportToWord();
         }
