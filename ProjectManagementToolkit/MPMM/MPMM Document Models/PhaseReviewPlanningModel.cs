@@ -11,8 +11,11 @@ namespace ProjectManagementToolkit.Classes
         public string PlanningPhase { get; set; }
         public string ProjectName { get; set; }
         public string ProjectManager { get; set; }
+        public string RepportPreparedBy { get; set; }
+        public string ReportPrepDate { get; set; }
+        public string ReportingPeriod { get; set; }
         public string ProjectSponsor { get; set; }
-        public string Suummary { get; set; }
+        public string Summary { get; set; }
         public string ProjectSchedule { get; set; }
         public string ProjectExpense { get; set; }
         public string ProjectDeliverables { get; set; }
@@ -20,6 +23,7 @@ namespace ProjectManagementToolkit.Classes
         public string ProjectIssues { get; set; }
         public string ProjectChanges { get; set; }
         public string SupportingDocumentation { get; set; }
+        public List<ReviewDetails> Reviews { get; set; }
     }
 
     class ReviewDetails

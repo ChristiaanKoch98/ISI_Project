@@ -16,12 +16,19 @@ namespace ProjectManagementToolkit.Classes
         public string Roles { get; set; }
         public string Documents { get; set; }
         public string Appendix { get; set; }
-        public string Schedule { get; internal set; }
-        public string Risks { get; internal set; }
+        public List<Schedule> Schedules { get; set; }
+        public List<Risk> Risks { get; set; }
+        public List<Likelihood> Likelihoods { get; set; }
+        public List<Impact> Impacts { get; set; }
+        public Information Information { get; set; }
+        public List<History> Histories { get; set; }
+        public List<Priority> Priorities { get; set; }
+        public List<Approval> Approvals { get; set; }
+
 
     }
 
-    class Risks
+    class Risk
     {
         public string RiskCategory { get; set; }
         public string RiskDescription { get; set; }
@@ -46,6 +53,7 @@ namespace ProjectManagementToolkit.Classes
         public string LikelihoodScore { get; set; }
         public string ImpactScore { get; set; }
         public string PriorityScore { get; set; }
+        public string PriorityRating { get; set; }
     }
     class Schedule
     {
@@ -57,7 +65,8 @@ namespace ProjectManagementToolkit.Classes
         public string ContingentActions { get; set; }
         public string ActionResource2 { get; set; }
         public string ActionDate2 { get; set; }
-        
+        public Information Information { get; set; }
+
     }
 
     class Information{
@@ -75,14 +84,11 @@ namespace ProjectManagementToolkit.Classes
         public string Changes { get; set; }
     }
 
-    class Approvals
+    class Approval
     {
-        public string ProjectSponsor { get; set; }
-        public string ProjectReviewGroup { get; set; }
-        public string ProjectManager { get; set; }
-        public string QualityManager { get; set; }
-        public string ProcumentManager { get; set; }
-        public string CommunicationsManager { get; set; }
-        public string ProjectOfficeManager { get; set; }
+        public string Name { get; set; }
+        public string Role { get; set; }
+        public string Signature { get; set; }
+        public string Date { get; set; }
     }
 }
