@@ -33,7 +33,27 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         public void saveDocument()
         {
-            //newExpenseFormModel.ProjectDetails = txtprojectdetailsContent.Text;
+            List<ExpenseFormModel.ProjectDetail> projectDetail = new List<ExpenseFormModel.ProjectDetail>();
+
+            int projectInformationRowsCount = projectInformation.Rows.Count;
+
+            for (int i = 0; i < projectInformationRowsCount - 1; i++)
+            {
+                ExpenseFormModel.ProjectDetail projectDetailModel = new ExpenseFormModel.ProjectDetail();
+                var projectName = documentInformation.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var projectManager = documentInformation.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var teamMember = documentInformation.Rows[i].Cells[2].Value?.ToString() ?? "";
+
+                projectDetailModel.ProjectName = projectName;
+                projectDetailModel.ProjectManager = projectManager;
+                projectDetailModel.TeamMember = teamMember;
+
+                projectDetail.Add(projectDetailModel);
+            }
+            newExpenseFormModel.ProjectDetails = projectDetail;
+
+
+
 
 
             List<ExpenseFormModel.ExpenseDetail> expenseDetail = new List<ExpenseFormModel.ExpenseDetail>();
@@ -66,7 +86,57 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newExpenseFormModel.ExpenseDetails = expenseDetail;
 
 
-            //newExpenseFormModel.Approvaldetails = txtapprovaldetails.Text;
+
+
+
+
+
+            List<ExpenseFormModel.SubmittedBy> submittedBy = new List<ExpenseFormModel.SubmittedBy>();
+
+            int submittedByRowsCount = submitedBy.Rows.Count;
+
+            for (int i = 0; i < submittedByRowsCount - 1; i++)
+            {
+                ExpenseFormModel.SubmittedBy submittedByModel = new ExpenseFormModel.SubmittedBy();
+                var name = submitedBy.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var Signature = submitedBy.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var date = submitedBy.Rows[i].Cells[2].Value?.ToString() ?? "";
+
+                submittedByModel.Name = name;
+                submittedByModel.Signature = Signature;
+                submittedByModel.Date = date;
+
+                submittedBy.Add(submittedByModel);
+            }
+            newExpenseFormModel.SubmittedByDetails = submittedBy;
+
+
+
+
+            List<ExpenseFormModel.ApprovedBy> approvedBy = new List<ExpenseFormModel.ApprovedBy>();
+
+            int approvedByRowsCount = approvedByGV.Rows.Count;
+
+            for (int i = 0; i < approvedByRowsCount - 1; i++)
+            {
+                ExpenseFormModel.ApprovedBy approvedByModel = new ExpenseFormModel.ApprovedBy();
+                var name = approvedByGV.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var Signature = approvedByGV.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var date = approvedByGV.Rows[i].Cells[2].Value?.ToString() ?? "";
+
+                approvedByModel.Name = name;
+                approvedByModel.Signature = Signature;
+                approvedByModel.Date = date;
+
+                approvedBy.Add(approvedByModel);
+            }
+            newExpenseFormModel.ApprovedByDetails = approvedBy;
+
+
+
+
+
+            newExpenseFormModel.ApprovalDetails = txtexecutivesummaryDescription.Text;
 
 
             List<VersionControl<ExpenseFormModel>.DocumentModel> documentModels = versionControl.DocumentModels;
@@ -101,13 +171,31 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                     newExpenseFormModel = JsonConvert.DeserializeObject<ExpenseFormModel>(versionControl.getLatest(versionControl.DocumentModels));
                     currentExpenseFormModel = JsonConvert.DeserializeObject<ExpenseFormModel>(versionControl.getLatest(versionControl.DocumentModels));
 
-                    //txtprojectdetailsContent.Text = currentExpenseFormModel.ProjectDetails;
-
-                    foreach (var row in currentExpenseFormModel.ExpenseDetails)
+                    foreach (var row in currentExpenseFormModel.ProjectDetails)
                     {
-                        dataGridView2.Rows.Add(new string[] { row.ActivityID, row.TaskID, row.ExpenseDate, row.ExpenseType, row.ExpenseDescription, row.ExpenseAmount, row.PayeeName, row.InvoiceNumber});
+                        projectInformation.Rows.Add(new string[] { row.ProjectName, row.ProjectManager, row.TeamMember });
                     }
-                }
+
+
+                foreach (var row in currentExpenseFormModel.ExpenseDetails)
+                    {
+                        documentInformation.Rows.Add(new string[] { row.ActivityID, row.TaskID, row.ExpenseDate, row.ExpenseType, row.ExpenseDescription, row.ExpenseAmount, row.PayeeName, row.InvoiceNumber});
+                    }
+
+
+                    foreach (var row in currentExpenseFormModel.SubmittedByDetails)
+                    {
+                        submitedBy.Rows.Add(new string[] { row.Name, row.Signature, row.Date });
+                    }
+
+
+                    foreach (var row in currentExpenseFormModel.ApprovedByDetails)
+                    {
+                        approvedByGV.Rows.Add(new string[] { row.Name, row.Signature, row.Date });
+                    }
+
+                    txtexecutivesummaryDescription.Text = currentExpenseFormModel.ApprovalDetails;
+            }
                 else
                 {
                     versionControl = new VersionControl<ExpenseFormModel>();
@@ -164,16 +252,45 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         //Code for a space
 
 
-                        //Code for a table
-                        var projectDetailsTable = document.AddTable(2, 1);
-                        projectDetailsTable.Rows[0].Cells[0].Paragraphs[0].Append("PROJECT DETAILS").Bold(true).Color(Color.White);
-                        projectDetailsTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
-                        projectDetailsTable.Rows[1].Cells[0].Paragraphs[0].Append(currentExpenseFormModel.ProjectDetails);
+                        //Code for a sentence
+                        document.InsertParagraph("PROJECT DETAILS")
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
 
-                        projectDetailsTable.SetWidthsPercentage(new float[] { 100});
-                        document.InsertTable(projectDetailsTable);
+
+
+
                         //Code for a table
+                        var projectDetailsTableTable = document.AddTable(currentExpenseFormModel.ProjectDetails.Count + 2, 3);
+                        projectDetailsTableTable.Rows[0].Cells[0].Paragraphs[0].Append("Project Name").Bold(true).Color(Color.White);
+                        projectDetailsTableTable.Rows[0].Cells[1].Paragraphs[0].Append("Project Manager").Bold(true).Color(Color.White);
+                        projectDetailsTableTable.Rows[0].Cells[2].Paragraphs[0].Append("Team Member").Bold(true).Color(Color.White);
+
+
+                        projectDetailsTableTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        projectDetailsTableTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        projectDetailsTableTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+
+
+                        for (int i = 1; i < currentExpenseFormModel.ProjectDetails.Count + 1; i++)
+                        {
+                            projectDetailsTableTable.Rows[i].Cells[0].Paragraphs[0].Append(currentExpenseFormModel.ProjectDetails[i - 1].ProjectName);
+                            projectDetailsTableTable.Rows[i].Cells[1].Paragraphs[0].Append(currentExpenseFormModel.ProjectDetails[i - 1].ProjectManager);
+                            projectDetailsTableTable.Rows[i].Cells[2].Paragraphs[0].Append(currentExpenseFormModel.ProjectDetails[i - 1].TeamMember);
+                        }
+
+
+                        projectDetailsTableTable.SetWidths(new float[] { 300, 300, 300});
+                        document.InsertTable(projectDetailsTableTable);
+                        //Code for a table
+
+
+
+
+
 
 
                         //Code for a space
@@ -185,17 +302,24 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
 
+                        //Code for a sentence
+                        document.InsertParagraph("EXPENSE DETAILS")
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
 
                         //Code for a table
                         var exspenseDetailsTableTable = document.AddTable(currentExpenseFormModel.ExpenseDetails.Count + 2, 8);
-                        exspenseDetailsTableTable.Rows[0].Cells[0].Paragraphs[0].Append("EXPENSE DETAILS").Bold(true).Color(Color.White);
-                        exspenseDetailsTableTable.Rows[0].Cells[1].Paragraphs[0].Append("").Bold(true).Color(Color.White);
-                        exspenseDetailsTableTable.Rows[0].Cells[2].Paragraphs[0].Append("").Bold(true).Color(Color.White);
-                        exspenseDetailsTableTable.Rows[0].Cells[3].Paragraphs[0].Append("").Bold(true).Color(Color.White);
-                        exspenseDetailsTableTable.Rows[0].Cells[4].Paragraphs[0].Append("").Bold(true).Color(Color.White);
-                        exspenseDetailsTableTable.Rows[0].Cells[5].Paragraphs[0].Append("").Bold(true).Color(Color.White);
-                        exspenseDetailsTableTable.Rows[0].Cells[6].Paragraphs[0].Append("").Bold(true).Color(Color.White);
-                        exspenseDetailsTableTable.Rows[0].Cells[7].Paragraphs[0].Append("").Bold(true).Color(Color.White);
+                        exspenseDetailsTableTable.Rows[0].Cells[0].Paragraphs[0].Append("Activity ID").Bold(true).Color(Color.White); ;
+                        exspenseDetailsTableTable.Rows[0].Cells[1].Paragraphs[0].Append("Task ID").Bold(true).Color(Color.White); ;
+                        exspenseDetailsTableTable.Rows[0].Cells[2].Paragraphs[0].Append("Expense Date").Bold(true).Color(Color.White); ;
+                        exspenseDetailsTableTable.Rows[0].Cells[3].Paragraphs[0].Append("Expense Type").Bold(true).Color(Color.White); ;
+                        exspenseDetailsTableTable.Rows[0].Cells[4].Paragraphs[0].Append("Expense Description").Bold(true).Color(Color.White); ;
+                        exspenseDetailsTableTable.Rows[0].Cells[5].Paragraphs[0].Append("Expense Amount").Bold(true).Color(Color.White); ;
+                        exspenseDetailsTableTable.Rows[0].Cells[6].Paragraphs[0].Append("Payee Name").Bold(true).Color(Color.White); ;
+                        exspenseDetailsTableTable.Rows[0].Cells[7].Paragraphs[0].Append("Invoice Number").Bold(true).Color(Color.White); ;
 
 
                         exspenseDetailsTableTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
@@ -207,25 +331,18 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         exspenseDetailsTableTable.Rows[0].Cells[6].FillColor = TABLE_HEADER_COLOR;
                         exspenseDetailsTableTable.Rows[0].Cells[7].FillColor = TABLE_HEADER_COLOR;
 
-                        exspenseDetailsTableTable.Rows[1].Cells[0].Paragraphs[0].Append("Activity ID");
-                        exspenseDetailsTableTable.Rows[1].Cells[1].Paragraphs[0].Append("Task ID");
-                        exspenseDetailsTableTable.Rows[1].Cells[2].Paragraphs[0].Append("Expense Date");
-                        exspenseDetailsTableTable.Rows[1].Cells[3].Paragraphs[0].Append("Expense Type");
-                        exspenseDetailsTableTable.Rows[1].Cells[4].Paragraphs[0].Append("Expense Description");
-                        exspenseDetailsTableTable.Rows[1].Cells[5].Paragraphs[0].Append("Expense Amount");
-                        exspenseDetailsTableTable.Rows[1].Cells[6].Paragraphs[0].Append("Payee Name");
-                        exspenseDetailsTableTable.Rows[1].Cells[7].Paragraphs[0].Append("Invoice Number");
+
 
                         for (int i = 1; i < currentExpenseFormModel.ExpenseDetails.Count + 1; i++)
                         {
-                            exspenseDetailsTableTable.Rows[i + 1].Cells[0].Paragraphs[0].Append(currentExpenseFormModel.ExpenseDetails[i - 1].ActivityID);
-                            exspenseDetailsTableTable.Rows[i + 1].Cells[1].Paragraphs[0].Append(currentExpenseFormModel.ExpenseDetails[i - 1].TaskID);
-                            exspenseDetailsTableTable.Rows[i + 1].Cells[2].Paragraphs[0].Append(currentExpenseFormModel.ExpenseDetails[i - 1].ExpenseDate);
-                            exspenseDetailsTableTable.Rows[i + 1].Cells[3].Paragraphs[0].Append(currentExpenseFormModel.ExpenseDetails[i - 1].ExpenseType);
-                            exspenseDetailsTableTable.Rows[i + 1].Cells[4].Paragraphs[0].Append(currentExpenseFormModel.ExpenseDetails[i - 1].ExpenseDescription);
-                            exspenseDetailsTableTable.Rows[i + 1].Cells[5].Paragraphs[0].Append(currentExpenseFormModel.ExpenseDetails[i - 1].ExpenseAmount);
-                            exspenseDetailsTableTable.Rows[i + 1].Cells[6].Paragraphs[0].Append(currentExpenseFormModel.ExpenseDetails[i - 1].PayeeName);
-                            exspenseDetailsTableTable.Rows[i + 1].Cells[7].Paragraphs[0].Append(currentExpenseFormModel.ExpenseDetails[i - 1].InvoiceNumber);
+                            exspenseDetailsTableTable.Rows[i].Cells[0].Paragraphs[0].Append(currentExpenseFormModel.ExpenseDetails[i - 1].ActivityID);
+                            exspenseDetailsTableTable.Rows[i].Cells[1].Paragraphs[0].Append(currentExpenseFormModel.ExpenseDetails[i - 1].TaskID);
+                            exspenseDetailsTableTable.Rows[i].Cells[2].Paragraphs[0].Append(currentExpenseFormModel.ExpenseDetails[i - 1].ExpenseDate);
+                            exspenseDetailsTableTable.Rows[i].Cells[3].Paragraphs[0].Append(currentExpenseFormModel.ExpenseDetails[i - 1].ExpenseType);
+                            exspenseDetailsTableTable.Rows[i].Cells[4].Paragraphs[0].Append(currentExpenseFormModel.ExpenseDetails[i - 1].ExpenseDescription);
+                            exspenseDetailsTableTable.Rows[i].Cells[5].Paragraphs[0].Append(currentExpenseFormModel.ExpenseDetails[i - 1].ExpenseAmount);
+                            exspenseDetailsTableTable.Rows[i].Cells[6].Paragraphs[0].Append(currentExpenseFormModel.ExpenseDetails[i - 1].PayeeName);
+                            exspenseDetailsTableTable.Rows[i].Cells[7].Paragraphs[0].Append(currentExpenseFormModel.ExpenseDetails[i - 1].InvoiceNumber);
                         }
 
 
@@ -242,16 +359,95 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         //Code for a space
 
 
-                        //Code for a table
-                        var approvalDetailsTable = document.AddTable(2, 1);
-                        approvalDetailsTable.Rows[0].Cells[0].Paragraphs[0].Append("APPROVAL DETAILS").Bold(true).Color(Color.White);
-                        approvalDetailsTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
-                        approvalDetailsTable.Rows[1].Cells[0].Paragraphs[0].Append(currentExpenseFormModel.ProjectDetails);
+                        //Code for a sentence
+                        document.InsertParagraph("SUBMITTED BY")
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
 
-                        approvalDetailsTable.SetWidthsPercentage(new float[] { 100});
-                        document.InsertTable(approvalDetailsTable);
+
+
                         //Code for a table
+                        var submittedByTable = document.AddTable(currentExpenseFormModel.SubmittedByDetails.Count + 2, 3);
+                        submittedByTable.Rows[0].Cells[0].Paragraphs[0].Append("Name").Bold(true).Color(Color.White); ;
+                        submittedByTable.Rows[0].Cells[1].Paragraphs[0].Append("Signature").Bold(true).Color(Color.White); ;
+                        submittedByTable.Rows[0].Cells[2].Paragraphs[0].Append("Date").Bold(true).Color(Color.White); ;
+
+
+                        submittedByTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        submittedByTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        submittedByTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+
+
+
+
+
+                        for (int i = 1; i < currentExpenseFormModel.SubmittedByDetails.Count + 1; i++)
+                        {
+                            submittedByTable.Rows[i].Cells[0].Paragraphs[0].Append(currentExpenseFormModel.SubmittedByDetails[i - 1].Name);
+                            submittedByTable.Rows[i].Cells[1].Paragraphs[0].Append(currentExpenseFormModel.SubmittedByDetails[i - 1].Signature);
+                            submittedByTable.Rows[i].Cells[2].Paragraphs[0].Append(currentExpenseFormModel.SubmittedByDetails[i - 1].Date);
+                        }
+
+
+                        submittedByTable.SetWidths(new float[] { 300, 300, 300 });
+                        document.InsertTable(submittedByTable);
+                        //Code for a table
+
+
+
+                        //Code for a space
+                        document.InsertParagraph("")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        //Code for a space
+
+
+
+
+                        //Code for a sentence
+                        document.InsertParagraph("APPROVED BY")
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+                        //Code for a table
+                        var approvedByTable = document.AddTable(currentExpenseFormModel.ApprovedByDetails.Count + 2, 3);
+
+                        approvedByTable.Rows[0].Cells[0].Paragraphs[0].Append("Name").Bold(true).Color(Color.White); ;
+                        approvedByTable.Rows[0].Cells[1].Paragraphs[0].Append("Signature").Bold(true).Color(Color.White); ;
+                        approvedByTable.Rows[0].Cells[2].Paragraphs[0].Append("Date").Bold(true).Color(Color.White); ;
+
+
+                        approvedByTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        approvedByTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        approvedByTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+
+
+
+
+                        for (int i = 1; i < currentExpenseFormModel.ApprovedByDetails.Count + 1; i++)
+                        {
+                            approvedByTable.Rows[i].Cells[0].Paragraphs[0].Append(currentExpenseFormModel.ApprovedByDetails[i - 1].Name);
+                            approvedByTable.Rows[i].Cells[1].Paragraphs[0].Append(currentExpenseFormModel.ApprovedByDetails[i - 1].Signature);
+                            approvedByTable.Rows[i].Cells[2].Paragraphs[0].Append(currentExpenseFormModel.ApprovedByDetails[i - 1].Date);
+                        }
+
+
+                        approvedByTable.SetWidths(new float[] { 300, 300, 300 });
+                        document.InsertTable(approvedByTable);
+                        //Code for a table
+
+
+
+
+
 
 
                         //Code for saving
