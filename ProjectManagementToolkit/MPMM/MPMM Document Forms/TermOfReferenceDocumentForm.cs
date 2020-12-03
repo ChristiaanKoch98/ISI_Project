@@ -604,7 +604,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 saveFileDialog.Filter = "Word 97-2003 Documents (*.doc)|*.doc|Word 2007 Documents (*.docx)|*.docx";
                 saveFileDialog.FilterIndex = 2;
                 saveFileDialog.RestoreDirectory = true;
-                saveFileDialog.ShowDialog();
+                //saveFileDialog.ShowDialog();
 
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
