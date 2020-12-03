@@ -17,7 +17,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="URI" Type="System.String" Scope="User">
-      <Value Profile="(Default)">http://localhost:3000</Value>
+      <Value Profile="(Default)">http://137.117.194.119:3000</Value>
     </Setting>
   </Settings>
 </SettingsFile>

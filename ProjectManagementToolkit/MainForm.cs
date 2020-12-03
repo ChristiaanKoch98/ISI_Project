@@ -75,14 +75,13 @@ namespace ProjectManagementToolkit
             string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
             ProjectModel projectModel = new ProjectModel();
-            projectModel = ProjectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
             DialogResult result;
             if (projectModel.LastDateTimeSynced.Year == 1)
             {
                 result = MessageBox.Show("Do you want to sync with the server for the first time?", "Sync Now", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
-                    //add sync method here
                     SyncForm syncForm = new SyncForm();
                     syncForm.Show();
                     syncForm.MdiParent = this;
@@ -90,7 +89,6 @@ namespace ProjectManagementToolkit
                     projectListModel = projectModel.updateProjectList(projectListModel, projectModel);
                     json = JsonConvert.SerializeObject(projectListModel);
                     JsonHelper.saveProjectInfo(json, Settings.Default.Username);
-
                 }
             }
             else

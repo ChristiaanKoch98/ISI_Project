@@ -60,7 +60,7 @@ namespace ProjectManagementToolkit.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:3000")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://137.117.194.119:3000")]
         public string URI {
             get {
                 return ((string)(this["URI"]));

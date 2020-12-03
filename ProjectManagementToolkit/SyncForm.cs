@@ -100,7 +100,17 @@ namespace ProjectManagementToolkit.MPMM
 
                 foreach (string item in documentsToSync)
                 {
-                    bool syncSuccess = syncDocument(item);
+                    bool syncSuccess = false;
+                    try
+                    {
+                        syncSuccess = syncDocument(item);
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("An unexpected sync error occurred.", "Sync Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                    
 
                     documentsSuccesful[documentsToSync.IndexOf(item)] = syncSuccess;
 
@@ -125,8 +135,11 @@ namespace ProjectManagementToolkit.MPMM
             
             for (int i = 0; i < documentsSuccesful.Length; i++)
             {
-                errorFound = true;
-                errorMessage += documentsToSync[i] + "\n";
+                if (!documentsSuccesful[i])
+                {
+                    errorFound = true;
+                    errorMessage += documentsToSync[i] + "\n";
+                }
             }
 
             if(errorFound)
@@ -169,8 +182,10 @@ namespace ProjectManagementToolkit.MPMM
                 projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
             }
 
-            ProjectModel currentProject = ProjectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            ProjectModel currentProject = new ProjectModel();
+            currentProject = currentProject.getProjectModel(Settings.Default.ProjectID, projectListModel);
             var currentProjectJson = JsonConvert.SerializeObject(currentProject);
+
 
             var body = new StringContent(currentProjectJson, Encoding.UTF8, "application/json");
             try

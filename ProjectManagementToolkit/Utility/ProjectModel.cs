@@ -19,7 +19,7 @@ namespace ProjectManagementToolkit.Utility
         public string OfficeManager { get; set; }
         public DateTime LastDateTimeSynced { get; set; }
 
-        public static ProjectModel getProjectModel(string ProjectID, List<ProjectModel> projectModels)
+        public ProjectModel getProjectModel(string ProjectID, List<ProjectModel> projectModels)
         {
             ProjectModel projectModel = new ProjectModel();
             projectModel = projectModels.Find(project => project.ProjectID == ProjectID);

@@ -72,16 +72,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             {
                 MessageBox.Show("Please ensure that you enter a project Name,ProjectSponsor and a Project Manager before continuing");
             }
-           
-
-            projectListModel.Add(newProject);
-            Settings.Default.ProjectID = newProject.ProjectID;
-            string json = JsonConvert.SerializeObject(projectListModel);
-            JsonHelper.saveProjectInfo(json,Settings.Default.Username);
-            MainForm mainForm = new MainForm();
-            mainForm.WindowState = FormWindowState.Maximized;
-            mainForm.Show();
-            this.Visible = false;
         }
 
         
