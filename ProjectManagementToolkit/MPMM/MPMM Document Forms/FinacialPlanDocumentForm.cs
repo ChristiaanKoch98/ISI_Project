@@ -933,13 +933,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             dataGridViewLabour.Columns.Add("Role2", "Role");
             dataGridViewLabour.Columns.Add("UnitCost", "Unit Cost");
 
-            dataGridViewEquipment.Columns.Add("Equipment ", "Equipment ");
+            dataGridViewEquipment.Columns.Add("Equipment", "Equipment");
             dataGridViewEquipment.Columns.Add("UnitCost1", "Unit Cost");
 
-            dataGridViewMaterials.Columns.Add("Material ", "Material ");
+            dataGridViewMaterials.Columns.Add("Material", "Material");
             dataGridViewMaterials.Columns.Add("UnitCost2", "Unit Cost");
 
-            dataGridViewSuppliers.Columns.Add("DeliverableItem ", "Deliverable Item ");
+            dataGridViewSuppliers.Columns.Add("DeliverableItem", "Deliverable Item");
             dataGridViewSuppliers.Columns.Add("UnitCost3", "Unit Cost");
 
             dataGridViewAdmin.Columns.Add("Administrative", "Administrative Item");
@@ -968,6 +968,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private void btnExport_Click(object sender, EventArgs e)
         {
             exportToWord();
+        }
+
+        private void tabPageFinancialExpenses_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
