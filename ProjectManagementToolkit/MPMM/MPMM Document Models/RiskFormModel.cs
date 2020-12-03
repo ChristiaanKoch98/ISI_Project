@@ -12,7 +12,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string ProjectManager { get; set; }
         public string RiskID { get; set; }
         public string RaisedBy { get; set; }
-        public DateTime DateRaised { get; set; }
+        public string DateRaised { get; set; }
         public string RiskDescription { get; set; }
         public string RiskLikelihood { get; set; }
         public string RiskImpact { get; set; }

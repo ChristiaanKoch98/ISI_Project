@@ -12,6 +12,8 @@ using Newtonsoft.Json;
 using System.Runtime.InteropServices;
 using ProjectManagementToolkit.Utility;
 using ProjectManagementToolkit.Properties;
+using Xceed.Document.NET;
+using Xceed.Words.NET;
 
 namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
@@ -20,19 +22,46 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         VersionControl<ProjectPlanModel> versionControl;
         ProjectPlanModel newProjectPlanModel;
         ProjectPlanModel currentProjectPlanModel;
+        Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
+        ProjectModel projectModel = new ProjectModel();
         public ProjectPlanDocumentForm()
         {
             InitializeComponent();
         }
 
+
+
         private void ProjectPlanDocumentForm_Load(object sender, EventArgs e)
         {
             loadDocument();
+            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+
+            //tabControl collor
+            tabControl1.DrawMode = TabDrawMode.OwnerDrawFixed;
+            tabControl1.SizeMode = TabSizeMode.Fixed;
+            Size tab_size = tabControl1.ItemSize;
+            tab_size.Width = 100;
+            tab_size.Height += 15;
+            tabControl1.ItemSize = tab_size;
+
+            tabControl3.DrawMode = TabDrawMode.OwnerDrawFixed;
+            tabControl3.SizeMode = TabSizeMode.Fixed;
+            Size tab_size2 = tabControl3.ItemSize;
+            tab_size2.Width = 100;
+            tab_size2.Height += 15;
+            tabControl3.ItemSize = tab_size2;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
             saveDocument();
+        }
+
+        private void btnExportWord_Click(object sender, EventArgs e)
+        {
+            exportToWord();
         }
 
         public void saveDocument()
@@ -204,10 +233,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 documentModels.Add(documentModel);
 
                 versionControl.DocumentModels = documentModels;
-
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentProjectPlanModel = JsonConvert.DeserializeObject<ProjectPlanModel>(JsonConvert.SerializeObject(newProjectPlanModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ProjectPlan");
                 MessageBox.Show("Project plan saved successfully", "save", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MessageBox.Show("No changes was made!", "save", MessageBoxButtons.OK);
             }
         }
 
@@ -295,6 +328,549 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 documentInformation.AllowUserToAddRows = false;
             }
         }
-       
+
+        private void exportToWord()
+        {
+            string path;
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                saveFileDialog.Filter = "Word 97-2003 Documents (*.doc)|*.doc|Word 2007 Documents (*.docx)|*.docx";
+                saveFileDialog.FilterIndex = 2;
+                saveFileDialog.RestoreDirectory = true;
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    path = saveFileDialog.FileName;
+                    using (var document = DocX.Create(path))
+                    {
+                        for (int i = 0; i < 11; i++)
+                        {
+                            document.InsertParagraph("")
+                                .Font("Arial")
+                                .Bold(true)
+                                .FontSize(22d).Alignment = Alignment.left;
+                        }
+                        document.InsertParagraph("Project Plan \nFor " + projectModel.ProjectName)
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(22d).Alignment = Alignment.left;
+                        document.InsertSectionPageBreak();
+                        document.InsertParagraph("Document Control\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        document.InsertParagraph("")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+                        document.InsertParagraph("Document Information\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+
+                        var documentInfoTable = document.AddTable(6, 2);
+                        documentInfoTable.Rows[0].Cells[0].Paragraphs[0].Append("").Bold(true).Color(Color.White);
+                        documentInfoTable.Rows[0].Cells[1].Paragraphs[0].Append("Information").Bold(true).Color(Color.White);
+                        documentInfoTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentInfoTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+
+                        documentInfoTable.Rows[1].Cells[0].Paragraphs[0].Append("Document ID");
+                        documentInfoTable.Rows[1].Cells[1].Paragraphs[0].Append(currentProjectPlanModel.DocumentID);
+
+                        documentInfoTable.Rows[2].Cells[0].Paragraphs[0].Append("Document Owner");
+                        documentInfoTable.Rows[2].Cells[1].Paragraphs[0].Append(currentProjectPlanModel.DocumentOwner);
+
+                        documentInfoTable.Rows[3].Cells[0].Paragraphs[0].Append("Issue Date");
+                        documentInfoTable.Rows[3].Cells[1].Paragraphs[0].Append(currentProjectPlanModel.IssueDate);
+
+                        documentInfoTable.Rows[4].Cells[0].Paragraphs[0].Append("Last Saved Date");
+                        documentInfoTable.Rows[4].Cells[1].Paragraphs[0].Append(currentProjectPlanModel.LastSavedDate);
+
+                        documentInfoTable.Rows[5].Cells[0].Paragraphs[0].Append("File Name");
+                        documentInfoTable.Rows[5].Cells[1].Paragraphs[0].Append(currentProjectPlanModel.FileName);
+                        documentInfoTable.SetWidths(new float[] { 493, 1094 });
+                        document.InsertTable(documentInfoTable);
+
+                        document.InsertParagraph("\nDocument History\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
+
+                        var documentHistoryTable = document.AddTable(currentProjectPlanModel.DocumentHistories.Count + 1, 3);
+                        documentHistoryTable.Rows[0].Cells[0].Paragraphs[0].Append("Version")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[1].Paragraphs[0].Append("Issue Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[2].Paragraphs[0].Append("Changes")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentHistoryTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentHistoryTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentHistoryTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        for (int i = 1; i < currentProjectPlanModel.DocumentHistories.Count + 1; i++)
+                        {
+                            documentHistoryTable.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectPlanModel.DocumentHistories[i - 1].Version);
+                            documentHistoryTable.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectPlanModel.DocumentHistories[i - 1].IssueDate);
+                            documentHistoryTable.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectPlanModel.DocumentHistories[i - 1].Changes);
+
+                        }
+
+                        documentHistoryTable.SetWidths(new float[] { 190, 303, 1094 });
+                        document.InsertTable(documentHistoryTable);
+
+                        document.InsertParagraph("\nDocument Approvals\n")
+                           .Font("Arial")
+                           .Bold(true)
+                           .FontSize(14d).Alignment = Alignment.left;
+
+                        var documentApprovalTable = document.AddTable(currentProjectPlanModel.DocumentApprovals.Count + 1, 4);
+                        documentApprovalTable.Rows[0].Cells[0].Paragraphs[0].Append("Role")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[1].Paragraphs[0].Append("Name")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[2].Paragraphs[0].Append("Signature")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[3].Paragraphs[0].Append("Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentApprovalTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentProjectPlanModel.DocumentApprovals.Count + 1; i++)
+                        {
+                            documentApprovalTable.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectPlanModel.DocumentApprovals[i - 1].Role);
+                            documentApprovalTable.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectPlanModel.DocumentApprovals[i - 1].Name);
+                            documentApprovalTable.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectPlanModel.DocumentApprovals[i - 1].Signature);
+                            documentApprovalTable.Rows[i].Cells[3].Paragraphs[0].Append(currentProjectPlanModel.DocumentApprovals[i - 1].DateApproved);
+                        }
+                        documentApprovalTable.SetWidths(new float[] { 493, 332, 508, 254 });
+                        document.InsertTable(documentApprovalTable);
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
+
+
+                        var p = document.InsertParagraph();
+                        var title = p.InsertParagraphBeforeSelf("Table of Contents").Bold().FontSize(20);
+
+                        var tocSwitches = new Dictionary<TableOfContentsSwitches, string>()
+                        {
+                            { TableOfContentsSwitches.O, "1-3"},
+                            { TableOfContentsSwitches.U, ""},
+                            { TableOfContentsSwitches.Z, ""},
+                            { TableOfContentsSwitches.H, ""}
+                        };
+
+
+                        document.InsertTableOfContents(p, "", tocSwitches);
+                        document.InsertParagraph().InsertPageBreakAfterSelf();
+                        var WorkBreakdownHeading = document.InsertParagraph("1 Work Breakdown Structure")
+                            .Bold()
+                            .FontSize(14d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        WorkBreakdownHeading.StyleId = "Heading1";
+
+                        var PhasesSubHeading = WorkBreakdownHeading.InsertParagraphAfterSelf("1.1 Phases")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        PhasesSubHeading.StyleId = "Heading2";
+
+                        var documentPhaseTable = document.AddTable(currentProjectPlanModel.Phases.Count + 1, 3);
+                        documentPhaseTable.Rows[0].Cells[0].Paragraphs[0].Append("Phase Title")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentPhaseTable.Rows[0].Cells[1].Paragraphs[0].Append("Phase Description")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentPhaseTable.Rows[0].Cells[2].Paragraphs[0].Append("Phase Sequence")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        documentPhaseTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentPhaseTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentPhaseTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentProjectPlanModel.Phases.Count + 1; i++)
+                        {
+                            documentPhaseTable.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectPlanModel.Phases[i - 1].PhaseTitle);
+                            documentPhaseTable.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectPlanModel.Phases[i - 1].PhaseDescription);
+                            documentPhaseTable.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectPlanModel.Phases[i - 1].PhaseSequence);
+                        }
+
+                        documentPhaseTable.SetWidths(new float[] { 394, 762, 419 });
+                        document.InsertTable(documentPhaseTable);
+
+
+                        var activitiesSubHeading = document.InsertParagraph("1.2 Activities")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        activitiesSubHeading.StyleId = "Heading2";
+
+                        var documentActivitiesTable = document.AddTable(currentProjectPlanModel.Activities.Count + 1, 4);
+
+                        documentActivitiesTable.Rows[0].Cells[0].Paragraphs[0].Append("Phase Title")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentActivitiesTable.Rows[0].Cells[1].Paragraphs[0].Append("Activity Title")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentActivitiesTable.Rows[0].Cells[2].Paragraphs[0].Append("Activity Description")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentActivitiesTable.Rows[0].Cells[3].Paragraphs[0].Append("Activity Sequence")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        documentActivitiesTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentActivitiesTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentActivitiesTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentActivitiesTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentProjectPlanModel.Activities.Count + 1; i++)
+                        {
+
+                            documentActivitiesTable.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectPlanModel.Activities[i - 1].PhaseTitle);
+                            documentActivitiesTable.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectPlanModel.Activities[i - 1].ActivityTitle);
+                            documentActivitiesTable.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectPlanModel.Activities[i - 1].ActivityDescription);
+                            documentActivitiesTable.Rows[i].Cells[3].Paragraphs[0].Append(currentProjectPlanModel.Activities[i - 1].ActivitySequence);
+                        }
+
+                        documentActivitiesTable.SetWidths(new float[] { 250, 279, 626, 420 });
+                        document.InsertTable(documentActivitiesTable);
+
+
+                        var taskSubHeading = document.InsertParagraph("1.3 Tasks")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        taskSubHeading.StyleId = "Heading2";
+
+                        var documentTasksTable = document.AddTable(currentProjectPlanModel.Tasks.Count + 1, 4);
+
+                        documentTasksTable.Rows[0].Cells[0].Paragraphs[0].Append("Activity Title")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentTasksTable.Rows[0].Cells[1].Paragraphs[0].Append("Task Title")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentTasksTable.Rows[0].Cells[2].Paragraphs[0].Append("Task Description")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentTasksTable.Rows[0].Cells[3].Paragraphs[0].Append("Task Sequence")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        documentTasksTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentTasksTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentTasksTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentTasksTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentProjectPlanModel.Tasks.Count + 1; i++)
+                        {
+
+                            documentTasksTable.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectPlanModel.Tasks[i - 1].ActivityTitle);
+                            documentTasksTable.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectPlanModel.Tasks[i - 1].TaskTitle);
+                            documentTasksTable.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectPlanModel.Tasks[i - 1].TaskDescription);
+                            documentTasksTable.Rows[i].Cells[3].Paragraphs[0].Append(currentProjectPlanModel.Tasks[i - 1].TaskSequence);
+                        }
+
+                        documentTasksTable.SetWidths(new float[] { 250, 279, 626, 420 });
+                        document.InsertTable(documentTasksTable);
+
+                        var milstoneSubHeading = document.InsertParagraph("1.4 Milestones")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        milstoneSubHeading.StyleId = "Heading2";
+
+                        var documentMilestonesTable = document.AddTable(currentProjectPlanModel.Milestones.Count + 1, 3);
+                        documentMilestonesTable.Rows[0].Cells[0].Paragraphs[0].Append("Milestone Title")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentMilestonesTable.Rows[0].Cells[1].Paragraphs[0].Append("Milestone Description")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentMilestonesTable.Rows[0].Cells[2].Paragraphs[0].Append("Milestone Date")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        documentMilestonesTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentMilestonesTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentMilestonesTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentProjectPlanModel.Milestones.Count + 1; i++)
+                        {
+                            documentMilestonesTable.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectPlanModel.Milestones[i - 1].MilestoneTitle);
+                            documentMilestonesTable.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectPlanModel.Milestones[i - 1].MilestoneDescription);
+                            documentMilestonesTable.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectPlanModel.Milestones[i - 1].MilestoneDate);
+                        }
+
+                        documentMilestonesTable.SetWidths(new float[] { 394, 762, 419 });
+                        document.InsertTable(documentMilestonesTable);
+
+                        var effortSubHeading = document.InsertParagraph("1.5 Effort")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        effortSubHeading.StyleId = "Heading2";
+
+                        var documentEffortsTable = document.AddTable(currentProjectPlanModel.Efforts.Count + 1, 3);
+                        documentEffortsTable.Rows[0].Cells[0].Paragraphs[0].Append("Task Title")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentEffortsTable.Rows[0].Cells[1].Paragraphs[0].Append("Resource")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentEffortsTable.Rows[0].Cells[2].Paragraphs[0].Append("Effort")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        documentEffortsTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentEffortsTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentEffortsTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentProjectPlanModel.Efforts.Count + 1; i++)
+                        {
+                            documentEffortsTable.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectPlanModel.Efforts[i - 1].TaskTitle);
+                            documentEffortsTable.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectPlanModel.Efforts[i - 1].Resource);
+                            documentEffortsTable.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectPlanModel.Efforts[i - 1].EffortMade);
+                        }
+
+                        documentEffortsTable.SetWidths(new float[] { 394, 762, 419 });
+                        document.InsertTable(documentEffortsTable);
+
+                        var projectPLanHeading = document.InsertParagraph("2 Project Plan")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        projectPLanHeading.StyleId = "Heading1";
+
+                        var scheduleSubHeading = document.InsertParagraph("2.1 Schedule")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        scheduleSubHeading.StyleId = "Heading2";
+
+                        var dependancySubHeading = document.InsertParagraph("2.2 Dependencies")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        dependancySubHeading.StyleId = "Heading2";
+
+                        var documentDependenciesTable = document.AddTable(currentProjectPlanModel.Dependencies.Count + 1, 3);
+                        documentDependenciesTable.Rows[0].Cells[0].Paragraphs[0].Append("Task Title")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentDependenciesTable.Rows[0].Cells[1].Paragraphs[0].Append("Resource")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentDependenciesTable.Rows[0].Cells[2].Paragraphs[0].Append("Effort")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        documentDependenciesTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentDependenciesTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentDependenciesTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+
+                        for (int i = 1; i < currentProjectPlanModel.Dependencies.Count + 1; i++)
+                        {
+                            documentDependenciesTable.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectPlanModel.Dependencies[i - 1].ActivityTitle);
+                            documentDependenciesTable.Rows[i].Cells[1].Paragraphs[0].Append(currentProjectPlanModel.Dependencies[i - 1].DependsOn);
+                            documentDependenciesTable.Rows[i].Cells[2].Paragraphs[0].Append(currentProjectPlanModel.Dependencies[i - 1].DependencyType);
+                        }
+
+                        documentDependenciesTable.SetWidths(new float[] { 394, 540, 667 });
+                        document.InsertTable(documentDependenciesTable);
+
+
+                        var assumptionsSubheading = document.InsertParagraph("2.3 Assumptions")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        document.InsertParagraph(currentProjectPlanModel.Asssumptions)
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+
+                        assumptionsSubheading.StyleId = "Heading2";
+
+                        var constrainstSubHeading = document.InsertParagraph("2.4 Constraints")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        document.InsertParagraph(currentProjectPlanModel.Constraints)
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+                        constrainstSubHeading.StyleId = "Heading2";
+
+                        var appendixHeading = document.InsertParagraph("3 Appendix")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        appendixHeading.StyleId = "Heading1";
+
+                        try
+                        {
+                            document.Save();
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("The selected File is open.", "Close File", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+
+
+                    }
+
+
+                }
+            }
+        }
+
+        private int Xwid = 8;
+        private const int tab_margin = 3;
+
+        private void tabControl1_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            Brush txt_brush, box_brush;
+            Pen box_pen;
+
+            Rectangle tab_rect = tabControl1.GetTabRect(e.Index);
+
+            if (e.State == DrawItemState.Selected)
+            {
+                e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(209,237,242)), tab_rect);
+                e.DrawFocusRectangle();
+
+                txt_brush = Brushes.Black;
+                box_brush = Brushes.Black;
+                box_pen = Pens.DarkBlue;
+            }
+            else
+            {
+                e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(73, 173, 252)), tab_rect);
+
+                txt_brush = Brushes.Black;
+                box_brush = Brushes.Black;
+                box_pen = Pens.DarkBlue;
+            }
+
+            RectangleF layout_rect = new RectangleF(
+            tab_rect.Left + tab_margin,
+            tab_rect.Y + tab_margin,
+            tab_rect.Width - 2 * tab_margin,
+            tab_rect.Height - 2 * tab_margin);
+
+            using (StringFormat string_format = new StringFormat())
+            {
+                using (System.Drawing.Font big_font = new System.Drawing.Font(this.Font, FontStyle.Bold))
+                {
+                    string_format.Alignment = StringAlignment.Center;
+                    string_format.LineAlignment = StringAlignment.Center;
+                    e.Graphics.DrawString(
+                        tabControl1.TabPages[e.Index].Text,
+                        big_font,
+                        txt_brush,
+                        layout_rect,
+                        string_format);
+                }
+            }
+        }
+
+        private void tabControl3_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            Brush txt_brush, box_brush;
+            Pen box_pen;
+
+            Rectangle tab_rect = tabControl3.GetTabRect(e.Index);
+
+           
+
+            if (e.State == DrawItemState.Selected)
+            {
+                e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(209, 237, 242)), tab_rect);
+                e.DrawFocusRectangle();
+
+                txt_brush = Brushes.Black;
+                box_brush = Brushes.Black;
+                box_pen = Pens.DarkBlue;
+            }
+            else
+            {
+                e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(73, 173, 252)), tab_rect);
+
+                txt_brush = Brushes.Black;
+                box_brush = Brushes.Black;
+                box_pen = Pens.DarkBlue;
+            }
+
+            RectangleF layout_rect = new RectangleF(
+            tab_rect.Left + tab_margin,
+            tab_rect.Y + tab_margin,
+            tab_rect.Width - 2 * tab_margin,
+            tab_rect.Height - 2 * tab_margin);
+
+
+            using (StringFormat string_format = new StringFormat())
+            {
+                using (System.Drawing.Font big_font = new System.Drawing.Font(this.Font, FontStyle.Bold))
+                {
+                    string_format.Alignment = StringAlignment.Center;
+                    string_format.LineAlignment = StringAlignment.Center;
+                    e.Graphics.DrawString(
+                        tabControl3.TabPages[e.Index].Text,
+                        big_font,
+                        txt_brush,
+                        layout_rect,
+                        string_format);
+                }
+            }
+        }
     }
 }
