@@ -24,397 +24,430 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         ProjectOfficeChecklistModel currentProjectOfficeChecklistModel;
         Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
         ProjectModel projectModel = new ProjectModel();
+        string serviceText = "";
 
         public ProjectOfficeChecklistDocumentForm()
         {
             InitializeComponent();
         }
 
-        /*
-
-        private void ProjectOfficeChecklistDocumentForm_Load(object sender, EventArgs e)
-        {
-            loadDocument();
-            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
-            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
-            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
-        }
-
-        private void btnSaveProjectDetails_Click(object sender, EventArgs e)
-        {
-            saveDocument();
-        }
 
         public void saveDocument()
         {
-            //Premises
-            newProjectOfficeChecklistModel.PremisesProjectOfficeDocumented = checkBoxProjectOfficeRequirements.Checked;
-            newProjectOfficeChecklistModel.PremisesProjectOfficeProcured = checkBoxProjectOfficePremisesProcured.Checked;
-            newProjectOfficeChecklistModel.PremisesPracticalLocation = checkBoxPremisesPracticalLocation.Checked;
-            newProjectOfficeChecklistModel.PremisesRequiredDocumted = checkBoxPremisesMeetRequirements.Checked;
-            newProjectOfficeChecklistModel.PremisesFormalContract = checkBoxFormalContract.Checked;
-            newProjectOfficeChecklistModel.PremisesSufficientSpace = checkBoxPremisesProvideSufficient.Checked;
-            newProjectOfficeChecklistModel.PremisesContinueAvailible = checkBoxPremisesContinueAvaliable.Checked;
-            newProjectOfficeChecklistModel.PremisesAdditionalFitOut = checkBoxAdditionalFitOut.Checked;
-            newProjectOfficeChecklistModel.PremisesOnSiteFacilities = checkBoxOnSiteFacilities.Checked;
+            newProjectOfficeChecklistModel.ProjectName = txtProjectName.Text;
+            newProjectOfficeChecklistModel.ProjectManager = txtProjectManager.Text;
+            newProjectOfficeChecklistModel.ProjectOfficeManager = txtProjectOfficeManager.Text;
 
-            //Equipment
-            newProjectOfficeChecklistModel.EquipmentRequiredOffice = checkBoxProjectTeamRequiredEquipment.Checked;
-            newProjectOfficeChecklistModel.EquipmentMaintananceCOntracts = checkBoxMaintanenceContractsInPlace.Checked;
-            newProjectOfficeChecklistModel.EquipmentSpareEquipment = checkBoxSpareEquipmentAvaliable.Checked;
-            newProjectOfficeChecklistModel.EquipmentOfficeFunctioning = checkBoxOfficeEquipmentFunctioning.Checked;
-            newProjectOfficeChecklistModel.EquipmentSufficientCommunication = checkBoxSufficientCommunicationsTechnologies.Checked;
-            newProjectOfficeChecklistModel.EquipmentVideoCOnferensing = checkBoxVideoConferencingAvaliable.Checked;
-            newProjectOfficeChecklistModel.EquipmentFunctioningAsRequired = checkBoxEquipmentFunctioningAsRequired.Checked;
+            newProjectOfficeChecklistModel.Premises = new List<ProjectOfficeChecklistModel.Questionare>();
+            int premisesCount = dataGridViewPremises.Rows.Count-1;
 
-            //Roles
-            newProjectOfficeChecklistModel.RolesAppointedProjectSponsor = checkBoxProjectSponser.Checked;
-            newProjectOfficeChecklistModel.RolesAppointedProjectManager = checkBoxProjectManager.Checked;
-            newProjectOfficeChecklistModel.RolesAppointedProjectOfficeManager = checkBoxProjectOfficeManager.Checked;
-            newProjectOfficeChecklistModel.RolesAppointedProcurementManager = checkBoxProcurementManager.Checked;
-            newProjectOfficeChecklistModel.RolesAppointedCommunicationsManager = checkBoxCommManager.Checked;
-            newProjectOfficeChecklistModel.RolesAppointedQualityManager = checkBoxQualityManager.Checked;
-            newProjectOfficeChecklistModel.RolesAppointedRiskManager = checkBoxRiskManager.Checked;
-            newProjectOfficeChecklistModel.RolesAppointedTeamLeader = checkBoxTeamLeader.Checked;
-            newProjectOfficeChecklistModel.RolesJobDescriptionsDocumented = checkBoxJobDescriptionDocumented.Checked;
-            newProjectOfficeChecklistModel.RolesJobDescriptionsResponsibilities = checkBoxJobDescriptionDescribeResponsibilities.Checked;
-            newProjectOfficeChecklistModel.RolesSkilledPeopleAppointed = checkBoxSuitablySkilledPeopleAppointed.Checked;
+            for (int i = 0; i < premisesCount; i++)
+            {
+                var question = dataGridViewPremises.Rows[i].Cells[0].Value?.ToString() ?? "";
+                bool answer = Convert.ToBoolean(dataGridViewPremises.Rows[i].Cells[1].Value);
+                newProjectOfficeChecklistModel.Premises.Add(new ProjectOfficeChecklistModel.Questionare(question, answer));
+            }
 
-            //Standards and Processes
-            newProjectOfficeChecklistModel.StandardsIndustyStandards = checkBoxISO.Checked;
-            newProjectOfficeChecklistModel.StandardsHealthAndSafety = checkBoxHealthSafetyStandard.Checked;
-            newProjectOfficeChecklistModel.StandardsProjectPlanning = checkBoxProjectPlanning.Checked;
-            newProjectOfficeChecklistModel.StandardsPMI = checkBoxPMBOK.Checked;
-            newProjectOfficeChecklistModel.StandardSuitableProjManMethod = checkBoxSuitableProjectManagementMethodology.Checked;
+            newProjectOfficeChecklistModel.Equipment = new List<ProjectOfficeChecklistModel.Questionare>();
+            int equipmentCount = dataGridViewEquipment.Rows.Count - 1;
 
-            newProjectOfficeChecklistModel.ProcessesTimeManagement = checkBoxTimeMP.Checked;
-            newProjectOfficeChecklistModel.ProcessesCostManagement = checkBoxCostMP.Checked;
-            newProjectOfficeChecklistModel.ProcessesQualityManagement = checkBoxQualityMP.Checked;
-            newProjectOfficeChecklistModel.ProcessesChangeManagement = checkBoxChangeMP.Checked;
-            newProjectOfficeChecklistModel.ProcessesRiskManagement = checkBoxRiskMP.Checked;
-            newProjectOfficeChecklistModel.ProcessesIssueManagement = checkBoxIssueMP.Checked;
-            newProjectOfficeChecklistModel.ProcessesProcurementManagement = checkBoxProcurementMP.Checked;
-            newProjectOfficeChecklistModel.ProcessesAcceptanceManagement = checkBoxAcceptanceMP.Checked;
-            newProjectOfficeChecklistModel.ProcessesCommunicationsManagement = checkBoxCommunicationsMP.Checked;
+            for (int i = 0; i < equipmentCount; i++)
+            {
+                var question = dataGridViewEquipment.Rows[i].Cells[0].Value?.ToString() ?? "";
+                bool answer = Convert.ToBoolean(dataGridViewEquipment.Rows[i].Cells[1].Value);
+                newProjectOfficeChecklistModel.Equipment.Add(new ProjectOfficeChecklistModel.Questionare(question, answer));
+            }
 
-            //Templates
-            newProjectOfficeChecklistModel.TemplatesInitiationBusinessCase = checkBoxBusinessCase.Checked;
-            newProjectOfficeChecklistModel.TemplatesInitiationFeasibilityStudy = checkBoxFeasibilityStudy.Checked;
-            newProjectOfficeChecklistModel.TemplatesInitiationTermsOfReference = checkBoxTermsofReference.Checked;
-            newProjectOfficeChecklistModel.TemplatesInitiationJobDescription = checkBoxJobDescription.Checked;
-            newProjectOfficeChecklistModel.TemplatesInitiationStageGate = checkBoxStageGateReviewForm.Checked;
+            newProjectOfficeChecklistModel.Roles = new List<ProjectOfficeChecklistModel.Questionare>();
 
-            newProjectOfficeChecklistModel.TemplatesPlanningProjectPlan = checkBoxProjectPlan.Checked;
-            newProjectOfficeChecklistModel.TemplatesPlanningResourcePlan = checkBoxResourcePlan.Checked;
-            newProjectOfficeChecklistModel.TemplatesPlanningFinancialPlan = checkBoxFinancialPlan.Checked;
-            newProjectOfficeChecklistModel.TemplatesPlanningQualityPlan = checkBoxQualityPlan.Checked;
-            newProjectOfficeChecklistModel.TemplatesPlanningRiskPlan = checkBoxTemplatesRiskPlan.Checked;
-            newProjectOfficeChecklistModel.TemplatesPlanningAcceptancePlan = checkBoxAcceptancePlan.Checked;
-            newProjectOfficeChecklistModel.TemplatesPlanningCommunicationsPlan = checkBoxCommunicationsPlan.Checked;
-            newProjectOfficeChecklistModel.TemplatesPlanningProcurementPlan = checkBoxProcurementPlan.Checked;
-            newProjectOfficeChecklistModel.TemplatesPlanningSupplierPlan = checkBoxSupplierContract.Checked;
-            newProjectOfficeChecklistModel.TemplatesPlanningTenderPlan = checkBoxTenderRegister.Checked;
+            int rolesCount = dataGridViewRoles.Rows.Count - 1;
 
-            newProjectOfficeChecklistModel.TemplatesExecutionTimesheet = checkBoxTFTR.Checked;
-            newProjectOfficeChecklistModel.TemplatesExecutionExpense = checkBoxEFER.Checked;
-            newProjectOfficeChecklistModel.TemplatesExecutionQuality = checkBoxQFDR.Checked;
-            newProjectOfficeChecklistModel.TemplatesExecutionChange = checkBoxCFCR.Checked;
-            newProjectOfficeChecklistModel.TemplatesExecutionRisk = checkBoxRFRR.Checked;
-            newProjectOfficeChecklistModel.TemplatesExecutionIssue = checkBoxIFIR.Checked;
-            newProjectOfficeChecklistModel.TemplatesExecutionPurchase = checkBoxPOF.Checked;
-            newProjectOfficeChecklistModel.TemplatesExecutionProcurement = checkBoxPR.Checked;
-            newProjectOfficeChecklistModel.TemplatesExecutionProject = checkBoxPSR.Checked;
-            newProjectOfficeChecklistModel.TemplatesExecutionCommunication = checkBoxCR.Checked;
-            newProjectOfficeChecklistModel.TemplatesExecutionAcceptanceForm = checkBoxAF.Checked;
-            newProjectOfficeChecklistModel.TemplatesExecutionAcceptanceRegister = checkBoxAR.Checked;
+            for (int i = 0; i < rolesCount; i++)
+            {
+                var question = dataGridViewRoles.Rows[i].Cells[0].Value?.ToString() ?? "";
+                bool answer = Convert.ToBoolean(dataGridViewRoles.Rows[i].Cells[1].Value);
+                newProjectOfficeChecklistModel.Roles.Add(new ProjectOfficeChecklistModel.Questionare(question, answer));
+            }
 
-            newProjectOfficeChecklistModel.TemplatesClosureProjectReport = checkBoxProjectClosureReport.Checked;
-            newProjectOfficeChecklistModel.TemplatesClosurePostReview = checkBoxPostImplementationReview.Checked;
 
-            //Services(Time, Cost, Quality,Change, Risk,Issue)
-            newProjectOfficeChecklistModel.ServicesTimeMonitoring = checkBoxTM1.Checked;
-            newProjectOfficeChecklistModel.ServicesTimeProjectPlan = checkBoxTM2.Checked;
-            newProjectOfficeChecklistModel.ServicesTimeTimesheet = checkBoxTM3.Checked;
+            newProjectOfficeChecklistModel.StandardsProcesses = new List<ProjectOfficeChecklistModel.Questionare>();
 
-            newProjectOfficeChecklistModel.ServicesCostMonitoring = checkBoxCM1.Checked;
-            newProjectOfficeChecklistModel.ServicesCostProjectPlan = checkBoxCM2.Checked;
-            newProjectOfficeChecklistModel.ServicesCostExpense = checkBoxCM3.Checked;
+            int standardsProcessesCount = dataGridViewStandardsProcesses.Rows.Count - 1;
 
-            newProjectOfficeChecklistModel.ServicesQualityAssurance = checkBoxQM1.Checked;
-            newProjectOfficeChecklistModel.ServicesQualityControl = checkBoxQM2.Checked;
-            newProjectOfficeChecklistModel.ServicesQualityDeliverables = checkBoxQM3.Checked;
+            for (int i = 0; i < standardsProcessesCount; i++)
+            {
+                var question = dataGridViewStandardsProcesses.Rows[i].Cells[0].Value?.ToString() ?? "";
+                bool answer = Convert.ToBoolean(dataGridViewStandardsProcesses.Rows[i].Cells[1].Value);
+                newProjectOfficeChecklistModel.StandardsProcesses.Add(new ProjectOfficeChecklistModel.Questionare(question, answer));
+            }
 
-            newProjectOfficeChecklistModel.ServicesChangeRequests = checkBoxChangeM1.Checked;
-            newProjectOfficeChecklistModel.ServicesChangeSheduling = checkBoxChangeM2.Checked;
-            newProjectOfficeChecklistModel.ServicesChangeKeeping = checkBoxChangeM3.Checked;
+            newProjectOfficeChecklistModel.TemplatesInitiation = new List<ProjectOfficeChecklistModel.Questionare>();
+            int initiationProcessesCount = dataGridViewInit.Rows.Count - 1;
 
-            newProjectOfficeChecklistModel.ServicesRiskForms = checkBoxRM1.Checked;
-            newProjectOfficeChecklistModel.ServicesRiskSheduling = checkBoxRM2.Checked;
-            newProjectOfficeChecklistModel.ServicesRiskKeeping = checkBoxRM3.Checked;
+            for (int i = 0; i < initiationProcessesCount; i++)
+            {
+                var question = dataGridViewInit.Rows[i].Cells[0].Value?.ToString() ?? "";
+                bool answer = Convert.ToBoolean(dataGridViewInit.Rows[i].Cells[1].Value);
+                newProjectOfficeChecklistModel.TemplatesInitiation.Add(new ProjectOfficeChecklistModel.Questionare(question, answer));
+            }
 
-            newProjectOfficeChecklistModel.ServicesIssueForms = checkBoxIM1.Checked;
-            newProjectOfficeChecklistModel.ServicesIssueScheduling = checkBoxIM2.Checked;
-            newProjectOfficeChecklistModel.ServicesIssueKeeping = checkBoxIM3.Checked;
+            newProjectOfficeChecklistModel.TemplatesPlanning = new List<ProjectOfficeChecklistModel.Questionare>();
+            int planningRowCount = dataGridViewPlanning.Rows.Count - 1;
 
-            //Services(Procuremenm, Acceptance, communication)
-            newProjectOfficeChecklistModel.ServicesProcurementPurchase = checkBoxPM1.Checked;
-            newProjectOfficeChecklistModel.ServicesProcurementGoodsAndServices = checkBoxPM2.Checked;
-            newProjectOfficeChecklistModel.ServicesProcurementKeeping = checkBoxPM3.Checked;
-            newProjectOfficeChecklistModel.ServicesProcurementPayement = checkBoxPM4.Checked;
-            newProjectOfficeChecklistModel.ServicesProcurementManaging = checkBoxPM5.Checked;
+            for (int i = 0; i < planningRowCount; i++)
+            {
+                var question = dataGridViewPlanning.Rows[i].Cells[0].Value?.ToString() ?? "";
+                bool answer = Convert.ToBoolean(dataGridViewPlanning.Rows[i].Cells[1].Value);
+                newProjectOfficeChecklistModel.TemplatesPlanning.Add(new ProjectOfficeChecklistModel.Questionare(question, answer));
+            }
 
-            newProjectOfficeChecklistModel.ServicesAcceptanceInitiating = checkBoxAM1.Checked;
-            newProjectOfficeChecklistModel.ServicesAcceptanceDocumenting = checkBoxAM2.Checked;
-            newProjectOfficeChecklistModel.ServicesAcceptanceGainingFinalAcceptance = checkBoxAM3.Checked;
-            newProjectOfficeChecklistModel.ServicesAcceptanceKeeping = checkBoxAM4.Checked;
+            newProjectOfficeChecklistModel.TemplatesExecution= new List<ProjectOfficeChecklistModel.Questionare>();
+            int executionRowCount = dataGridViewExecution.Rows.Count - 1;
 
-            newProjectOfficeChecklistModel.ServicesCommunicationsUndertaking = checkBoxCommsM1.Checked;
-            newProjectOfficeChecklistModel.ServicesCommunicationsCreating = checkBoxCommsM2.Checked;
-            newProjectOfficeChecklistModel.ServicesCommunicationsDistributing = checkBoxCommsM3.Checked;
-            newProjectOfficeChecklistModel.ServicesCommunicationsKeeping = checkBoxCommsM4.Checked;
+            for (int i = 0; i < executionRowCount; i++)
+            {
+                var question = dataGridViewExecution.Rows[i].Cells[0].Value?.ToString() ?? "";
+                bool answer = Convert.ToBoolean(dataGridViewExecution.Rows[i].Cells[1].Value);
+                newProjectOfficeChecklistModel.TemplatesExecution.Add(new ProjectOfficeChecklistModel.Questionare(question, answer));
+            }
 
-            //Service(StageGAte, Auditing, Supporting, Providing)
-            newProjectOfficeChecklistModel.ServicesStageGateIdentifying = checkBoxSGR1.Checked;
-            newProjectOfficeChecklistModel.ServicesStageGateOrganizing = checkBoxSGR2.Checked;
+            newProjectOfficeChecklistModel.TemplatesClosure = new List<ProjectOfficeChecklistModel.Questionare>();
+            int closureRowCount = dataGridViewClosure.Rows.Count - 1;
 
-            newProjectOfficeChecklistModel.ServicesAuditingEnsuringConforms = checkBoxAandC1.Checked;
-            newProjectOfficeChecklistModel.ServicesAuditingInforming = checkBoxAandC2.Checked;
-
-            newProjectOfficeChecklistModel.ServicesSupportingAssisting = checkBoxSS1.Checked;
-            newProjectOfficeChecklistModel.ServicesSupportingAdvising = checkBoxSS2.Checked;
-            newProjectOfficeChecklistModel.ServicesSupportingPaying = checkBoxSS3.Checked;
-
-            newProjectOfficeChecklistModel.ServicesProvidingProjectManagement = checkBoxPT1.Checked;
-            newProjectOfficeChecklistModel.ServicesProvidingToolsForMonitoring = checkBoxPT2.Checked;
-            newProjectOfficeChecklistModel.ServicesProvidingTraining = checkBoxPT3.Checked;
-
-            //Service(Filling, Performing, Undertaking)
-            newProjectOfficeChecklistModel.ServicesPerformingAdministration = checkBoxFD1.Checked;
-            newProjectOfficeChecklistModel.ServicesPerformingPurchasing = checkBoxFD2.Checked;
-
-            newProjectOfficeChecklistModel.ServicesFilingLibrary = checkBoxPA1.Checked;
-            newProjectOfficeChecklistModel.ServicesFilingImplementing = checkBoxPA2.Checked;
-
-            newProjectOfficeChecklistModel.ServicesClosureOrganizing = checkBoxUCR1.Checked;
-            newProjectOfficeChecklistModel.ServicesComminicating = checkBoxUCR2.Checked;
+            for (int i = 0; i < closureRowCount; i++)
+            {
+                var question = dataGridViewClosure.Rows[i].Cells[0].Value?.ToString() ?? "";
+                bool answer = Convert.ToBoolean(dataGridViewClosure.Rows[i].Cells[1].Value);
+                newProjectOfficeChecklistModel.TemplatesClosure.Add(new ProjectOfficeChecklistModel.Questionare(question, answer));
+            }
 
             List<VersionControl<ProjectOfficeChecklistModel>.DocumentModel> documentModels = versionControl.DocumentModels;
 
-
             if (!versionControl.isEqual(currentProjectOfficeChecklistModel, newProjectOfficeChecklistModel))
             {
-                VersionControl<ProjectOfficeChecklistModel>.DocumentModel documentModel = new VersionControl<ProjectOfficeChecklistModel>.DocumentModel(newProjectOfficeChecklistModel, DateTime.Now, VersionControl<ProjectModel>.generateID());
+                VersionControl<ProjectOfficeChecklistModel>.DocumentModel documentModel = new VersionControl<ProjectOfficeChecklistModel>.DocumentModel(newProjectOfficeChecklistModel, DateTime.Now, VersionControl<ProjectOfficeChecklistModel>.generateID());
 
                 documentModels.Add(documentModel);
 
                 versionControl.DocumentModels = documentModels;
-
                 string json = JsonConvert.SerializeObject(versionControl);
-                JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ProjectOfficeChecklist");
+                currentProjectOfficeChecklistModel = JsonConvert.DeserializeObject<ProjectOfficeChecklistModel>(JsonConvert.SerializeObject(newProjectOfficeChecklistModel));
+                JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ProjectOfficeCheckList");
                 MessageBox.Show("Project Office Checklist saved successfully", "save", MessageBoxButtons.OK);
             }
+            else
+            {
+                MessageBox.Show("No changes was made!", "save", MessageBoxButtons.OK);
+            }
+
+
         }
-
-
         public void loadDocument()
         {
             string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "ProjectOfficeChecklist");
-            List<string[]> documentInfo = new List<string[]>();
             newProjectOfficeChecklistModel = new ProjectOfficeChecklistModel();
             currentProjectOfficeChecklistModel = new ProjectOfficeChecklistModel();
+
             if (json != "")
             {
                 versionControl = JsonConvert.DeserializeObject<VersionControl<ProjectOfficeChecklistModel>>(json);
                 newProjectOfficeChecklistModel = JsonConvert.DeserializeObject<ProjectOfficeChecklistModel>(versionControl.getLatest(versionControl.DocumentModels));
                 currentProjectOfficeChecklistModel = JsonConvert.DeserializeObject<ProjectOfficeChecklistModel>(versionControl.getLatest(versionControl.DocumentModels));
 
-                //Premises
-                checkBoxProjectOfficeRequirements.Checked = currentProjectOfficeChecklistModel.PremisesProjectOfficeDocumented;
-                checkBoxProjectOfficePremisesProcured.Checked = currentProjectOfficeChecklistModel.PremisesProjectOfficeProcured;
-                checkBoxPremisesPracticalLocation.Checked = currentProjectOfficeChecklistModel.PremisesPracticalLocation;
-                checkBoxPremisesMeetRequirements.Checked = currentProjectOfficeChecklistModel.PremisesRequiredDocumted;
-                checkBoxFormalContract.Checked = currentProjectOfficeChecklistModel.PremisesFormalContract;
-                checkBoxPremisesProvideSufficient.Checked = currentProjectOfficeChecklistModel.PremisesSufficientSpace;
-                checkBoxPremisesContinueAvaliable.Checked = currentProjectOfficeChecklistModel.PremisesContinueAvailible;
-                checkBoxAdditionalFitOut.Checked = currentProjectOfficeChecklistModel.PremisesAdditionalFitOut;
-                checkBoxOnSiteFacilities.Checked = currentProjectOfficeChecklistModel.PremisesOnSiteFacilities;
+                for (int i = 0; i < currentProjectOfficeChecklistModel.Premises.Count; i++)
+                {
+                    dataGridViewPremises.Rows.Add();
+                    dataGridViewPremises.Rows[i].Cells[0].Value = currentProjectOfficeChecklistModel.Premises[i].Question;
+                    dataGridViewPremises.Rows[i].Cells[1].Value = currentProjectOfficeChecklistModel.Premises[i].Answer;
+                }
 
-                //Equipment
-                checkBoxProjectTeamRequiredEquipment.Checked = currentProjectOfficeChecklistModel.EquipmentRequiredOffice;
-                checkBoxMaintanenceContractsInPlace.Checked = currentProjectOfficeChecklistModel.EquipmentMaintananceCOntracts;
-                checkBoxSpareEquipmentAvaliable.Checked = currentProjectOfficeChecklistModel.EquipmentSpareEquipment;
-                checkBoxOfficeEquipmentFunctioning.Checked = currentProjectOfficeChecklistModel.EquipmentOfficeFunctioning;
-                checkBoxSufficientCommunicationsTechnologies.Checked = currentProjectOfficeChecklistModel.EquipmentSufficientCommunication;
-                checkBoxVideoConferencingAvaliable.Checked = currentProjectOfficeChecklistModel.EquipmentVideoCOnferensing;
-                checkBoxEquipmentFunctioningAsRequired.Checked = currentProjectOfficeChecklistModel.EquipmentFunctioningAsRequired;
 
-                //Roles
-                checkBoxProjectSponser.Checked = currentProjectOfficeChecklistModel.RolesAppointedProjectSponsor;
-                checkBoxProjectManager.Checked = currentProjectOfficeChecklistModel.RolesAppointedProjectManager;
-                checkBoxProjectOfficeManager.Checked = currentProjectOfficeChecklistModel.RolesAppointedProjectOfficeManager;
-                checkBoxProcurementManager.Checked = currentProjectOfficeChecklistModel.RolesAppointedProcurementManager;
-                checkBoxCommManager.Checked = currentProjectOfficeChecklistModel.RolesAppointedCommunicationsManager;
-                checkBoxQualityManager.Checked = currentProjectOfficeChecklistModel.RolesAppointedQualityManager;
-                checkBoxRiskManager.Checked = currentProjectOfficeChecklistModel.RolesAppointedRiskManager;
-                checkBoxTeamLeader.Checked = currentProjectOfficeChecklistModel.RolesAppointedTeamLeader;
-                checkBoxJobDescriptionDocumented.Checked = currentProjectOfficeChecklistModel.RolesJobDescriptionsDocumented;
-                checkBoxJobDescriptionDescribeResponsibilities.Checked = currentProjectOfficeChecklistModel.RolesJobDescriptionsResponsibilities;
-                checkBoxSuitablySkilledPeopleAppointed.Checked = currentProjectOfficeChecklistModel.RolesSkilledPeopleAppointed;
+                for (int i = 0; i < currentProjectOfficeChecklistModel.Equipment.Count; i++)
+                {
+                    dataGridViewEquipment.Rows.Add();
+                    dataGridViewEquipment.Rows[i].Cells[0].Value = currentProjectOfficeChecklistModel.Equipment[i].Question;
+                    dataGridViewEquipment.Rows[i].Cells[1].Value = currentProjectOfficeChecklistModel.Equipment[i].Answer;
+                }
 
-                //Standards and Processes
-                checkBoxISO.Checked = currentProjectOfficeChecklistModel.StandardsIndustyStandards;
-                checkBoxHealthSafetyStandard.Checked = currentProjectOfficeChecklistModel.StandardsHealthAndSafety;
-                checkBoxProjectPlanning.Checked = currentProjectOfficeChecklistModel.StandardsProjectPlanning;
-                checkBoxPMBOK.Checked = currentProjectOfficeChecklistModel.StandardsPMI;
-                checkBoxSuitableProjectManagementMethodology.Checked = currentProjectOfficeChecklistModel.StandardSuitableProjManMethod;
+                for (int i = 0; i < currentProjectOfficeChecklistModel.Roles.Count; i++)
+                {
+                    dataGridViewRoles.Rows.Add();
+                    dataGridViewRoles.Rows[i].Cells[0].Value = currentProjectOfficeChecklistModel.Roles[i].Question;
+                    dataGridViewRoles.Rows[i].Cells[1].Value = currentProjectOfficeChecklistModel.Roles[i].Answer;
+                }
 
-                checkBoxTimeMP.Checked = currentProjectOfficeChecklistModel.ProcessesTimeManagement;
-                checkBoxCostMP.Checked = currentProjectOfficeChecklistModel.ProcessesCostManagement;
-                checkBoxQualityMP.Checked = currentProjectOfficeChecklistModel.ProcessesQualityManagement;
-                checkBoxChangeMP.Checked = currentProjectOfficeChecklistModel.ProcessesChangeManagement;
-                checkBoxRiskMP.Checked = currentProjectOfficeChecklistModel.ProcessesRiskManagement;
-                checkBoxIssueMP.Checked = currentProjectOfficeChecklistModel.ProcessesIssueManagement;
-                checkBoxProcurementMP.Checked = currentProjectOfficeChecklistModel.ProcessesProcurementManagement;
-                checkBoxAcceptanceMP.Checked = currentProjectOfficeChecklistModel.ProcessesAcceptanceManagement;
-                checkBoxCommunicationsMP.Checked = currentProjectOfficeChecklistModel.ProcessesCommunicationsManagement;
+                for (int i = 0; i < currentProjectOfficeChecklistModel.StandardsProcesses.Count; i++)
+                {
+                    dataGridViewStandardsProcesses.Rows.Add();
+                    dataGridViewStandardsProcesses.Rows[i].Cells[0].Value = currentProjectOfficeChecklistModel.StandardsProcesses[i].Question;
+                    dataGridViewStandardsProcesses.Rows[i].Cells[1].Value = currentProjectOfficeChecklistModel.StandardsProcesses[i].Answer;
+                }
 
-                //Templates
-                checkBoxBusinessCase.Checked = currentProjectOfficeChecklistModel.TemplatesInitiationBusinessCase;
-                checkBoxFeasibilityStudy.Checked = currentProjectOfficeChecklistModel.TemplatesInitiationFeasibilityStudy;
-                checkBoxTermsofReference.Checked = currentProjectOfficeChecklistModel.TemplatesInitiationTermsOfReference;
-                checkBoxJobDescription.Checked = currentProjectOfficeChecklistModel.TemplatesInitiationJobDescription;
-                checkBoxStageGateReviewForm.Checked = currentProjectOfficeChecklistModel.TemplatesInitiationStageGate;
+                for (int i = 0; i < currentProjectOfficeChecklistModel.TemplatesInitiation.Count; i++)
+                {
+                    dataGridViewInit.Rows.Add();
+                    dataGridViewInit.Rows[i].Cells[0].Value = currentProjectOfficeChecklistModel.TemplatesInitiation[i].Question;
+                    dataGridViewInit.Rows[i].Cells[1].Value = currentProjectOfficeChecklistModel.TemplatesInitiation[i].Answer;
+                }
 
-                checkBoxProjectPlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningProjectPlan;
-                checkBoxResourcePlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningResourcePlan;
-                checkBoxFinancialPlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningFinancialPlan;
-                checkBoxQualityPlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningQualityPlan;
-                checkBoxTemplatesRiskPlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningRiskPlan;
-                checkBoxAcceptancePlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningAcceptancePlan;
-                checkBoxCommunicationsPlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningCommunicationsPlan;
-                checkBoxProcurementPlan.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningProcurementPlan;
-                checkBoxSupplierContract.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningSupplierPlan;
-                checkBoxTenderRegister.Checked = currentProjectOfficeChecklistModel.TemplatesPlanningTenderPlan;
+                for (int i = 0; i < currentProjectOfficeChecklistModel.TemplatesPlanning.Count; i++)
+                {
+                    dataGridViewPlanning.Rows.Add();
+                    dataGridViewPlanning.Rows[i].Cells[0].Value = currentProjectOfficeChecklistModel.TemplatesPlanning[i].Question;
+                    dataGridViewPlanning.Rows[i].Cells[1].Value = currentProjectOfficeChecklistModel.TemplatesPlanning[i].Answer;
+                }
 
-                checkBoxTFTR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionTimesheet;
-                checkBoxEFER.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionExpense;
-                checkBoxQFDR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionQuality;
-                checkBoxCFCR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionChange;
-                checkBoxRFRR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionRisk;
-                checkBoxIFIR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionIssue;
-                checkBoxPOF.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionPurchase;
-                checkBoxPR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionProcurement;
-                checkBoxPSR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionProject;
-                checkBoxCR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionCommunication;
-                checkBoxAF.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionAcceptanceForm;
-                checkBoxAR.Checked = currentProjectOfficeChecklistModel.TemplatesExecutionAcceptanceRegister;
+                for (int i = 0; i < currentProjectOfficeChecklistModel.TemplatesExecution.Count; i++)
+                {
+                    dataGridViewExecution.Rows.Add();
+                    dataGridViewExecution.Rows[i].Cells[0].Value = currentProjectOfficeChecklistModel.TemplatesExecution[i].Question;
+                    dataGridViewExecution.Rows[i].Cells[1].Value = currentProjectOfficeChecklistModel.TemplatesExecution[i].Answer;
+                }
 
-                checkBoxProjectClosureReport.Checked = currentProjectOfficeChecklistModel.TemplatesClosureProjectReport;
-                checkBoxPostImplementationReview.Checked = currentProjectOfficeChecklistModel.TemplatesClosurePostReview;
-
-                //Services(Time, Cost, Quality,Change, Risk,Issue)
-                checkBoxTM1.Checked = currentProjectOfficeChecklistModel.ServicesTimeMonitoring;
-                checkBoxTM2.Checked = currentProjectOfficeChecklistModel.ServicesTimeProjectPlan;
-                checkBoxTM3.Checked = currentProjectOfficeChecklistModel.ServicesTimeTimesheet;
-
-                checkBoxCM1.Checked = currentProjectOfficeChecklistModel.ServicesCostMonitoring;
-                checkBoxCM2.Checked = currentProjectOfficeChecklistModel.ServicesCostProjectPlan;
-                checkBoxCM3.Checked = currentProjectOfficeChecklistModel.ServicesCostExpense;
-
-                checkBoxQM1.Checked = currentProjectOfficeChecklistModel.ServicesQualityAssurance;
-                checkBoxQM2.Checked = currentProjectOfficeChecklistModel.ServicesQualityControl;
-                checkBoxQM3.Checked = currentProjectOfficeChecklistModel.ServicesQualityDeliverables;
-
-                checkBoxChangeM1.Checked = currentProjectOfficeChecklistModel.ServicesChangeRequests;
-                checkBoxChangeM2.Checked = currentProjectOfficeChecklistModel.ServicesChangeSheduling;
-                checkBoxChangeM3.Checked = currentProjectOfficeChecklistModel.ServicesChangeKeeping;
-
-                checkBoxRM1.Checked = currentProjectOfficeChecklistModel.ServicesRiskForms;
-                checkBoxRM2.Checked = currentProjectOfficeChecklistModel.ServicesRiskSheduling;
-                checkBoxRM3.Checked = currentProjectOfficeChecklistModel.ServicesRiskKeeping;
-
-                checkBoxIM1.Checked = currentProjectOfficeChecklistModel.ServicesIssueForms;
-                checkBoxIM2.Checked = currentProjectOfficeChecklistModel.ServicesIssueScheduling;
-                checkBoxIM3.Checked = currentProjectOfficeChecklistModel.ServicesIssueKeeping;
-
-                //Services(Procuremenm, Acceptance, communication)
-                checkBoxPM1.Checked = currentProjectOfficeChecklistModel.ServicesProcurementPurchase;
-                checkBoxPM2.Checked = currentProjectOfficeChecklistModel.ServicesProcurementGoodsAndServices;
-                checkBoxPM3.Checked = currentProjectOfficeChecklistModel.ServicesProcurementKeeping;
-                checkBoxPM4.Checked = currentProjectOfficeChecklistModel.ServicesProcurementPayement;
-                checkBoxPM5.Checked = currentProjectOfficeChecklistModel.ServicesProcurementManaging;
-
-                checkBoxAM1.Checked = currentProjectOfficeChecklistModel.ServicesAcceptanceInitiating;
-                checkBoxAM2.Checked = currentProjectOfficeChecklistModel.ServicesAcceptanceDocumenting;
-                checkBoxAM3.Checked = currentProjectOfficeChecklistModel.ServicesAcceptanceGainingFinalAcceptance;
-                checkBoxAM4.Checked = currentProjectOfficeChecklistModel.ServicesAcceptanceKeeping;
-
-                checkBoxCommsM1.Checked = currentProjectOfficeChecklistModel.ServicesCommunicationsUndertaking;
-                checkBoxCommsM2.Checked = currentProjectOfficeChecklistModel.ServicesCommunicationsCreating;
-                checkBoxCommsM3.Checked = currentProjectOfficeChecklistModel.ServicesCommunicationsDistributing;
-                checkBoxCommsM4.Checked = currentProjectOfficeChecklistModel.ServicesCommunicationsKeeping;
-
-                //Service(StageGAte, Auditing, Supporting, Providing)
-                checkBoxSGR1.Checked = currentProjectOfficeChecklistModel.ServicesStageGateIdentifying;
-                checkBoxSGR2.Checked = currentProjectOfficeChecklistModel.ServicesStageGateOrganizing;
-
-                checkBoxAandC1.Checked = currentProjectOfficeChecklistModel.ServicesAuditingEnsuringConforms;
-                checkBoxAandC2.Checked = currentProjectOfficeChecklistModel.ServicesAuditingInforming;
-
-                checkBoxSS1.Checked = currentProjectOfficeChecklistModel.ServicesSupportingAssisting;
-                checkBoxSS2.Checked = currentProjectOfficeChecklistModel.ServicesSupportingAdvising;
-                checkBoxSS3.Checked = currentProjectOfficeChecklistModel.ServicesSupportingPaying;
-
-                checkBoxPT1.Checked = currentProjectOfficeChecklistModel.ServicesProvidingProjectManagement;
-                checkBoxPT2.Checked = currentProjectOfficeChecklistModel.ServicesProvidingToolsForMonitoring;
-                checkBoxPT3.Checked = currentProjectOfficeChecklistModel.ServicesProvidingTraining;
-
-                //Service(Filling, Performing, Undertaking)
-                checkBoxFD1.Checked = currentProjectOfficeChecklistModel.ServicesPerformingAdministration;
-                checkBoxFD2.Checked = currentProjectOfficeChecklistModel.ServicesPerformingPurchasing;
-
-                checkBoxPA1.Checked = currentProjectOfficeChecklistModel.ServicesFilingLibrary;
-                checkBoxPA2.Checked = currentProjectOfficeChecklistModel.ServicesFilingImplementing;
-
-                checkBoxUCR1.Checked = currentProjectOfficeChecklistModel.ServicesClosureOrganizing;
-                checkBoxUCR2.Checked = currentProjectOfficeChecklistModel.ServicesComminicating;
-
+                for (int i = 0; i < currentProjectOfficeChecklistModel.TemplatesClosure.Count; i++)
+                {
+                    dataGridViewClosure.Rows.Add();
+                    dataGridViewClosure.Rows[i].Cells[0].Value = currentProjectOfficeChecklistModel.TemplatesClosure[i].Question;
+                    dataGridViewClosure.Rows[i].Cells[1].Value = currentProjectOfficeChecklistModel.TemplatesClosure[i].Answer;
+                }
 
             }
             else
             {
                 versionControl = new VersionControl<ProjectOfficeChecklistModel>();
                 versionControl.DocumentModels = new List<VersionControl<ProjectOfficeChecklistModel>.DocumentModel>();
+                List<string> premisesQuestion = new List<string>();
+                premisesQuestion.Add("Were the Project Office requirements documented?");
+                premisesQuestion.Add("Have the Project Office premises been procured?");
+                premisesQuestion.Add("Are the premises in a practical location?");
+                premisesQuestion.Add("Do the premises meet the requirements documented?");
+                premisesQuestion.Add("Is there a formal contract for the lease / purchase / use of the premises?");
+                premisesQuestion.Add("Do the premises provide sufficient space for the project team?");
+                premisesQuestion.Add("Will the premises continue to be available if the project is delayed?");
+                premisesQuestion.Add("Do the premises require additional fit-out (e.g. partitions, cabling, air conditioning)?");
+                premisesQuestion.Add("Are the on-site facilities sufficient (e.g. number of meeting rooms, bathrooms)?");
+                for (int i = 0; i < premisesQuestion.Count; i++)
+                {
+                    dataGridViewPremises.Rows.Add();
+                    dataGridViewPremises.Rows[i].Cells[0].Value = premisesQuestion[i];
+                    dataGridViewPremises.Rows[i].Cells[1].Value = false;
+                }
+
+                List<string> equipmentQuestion = new List<string>();
+                equipmentQuestion.Add("Does the project team have the required office equipment and application software available to manage the project (e.g. computer hardware, project planning and financial software, projectors, fax machines, printers, scanners, copiers)?");
+                equipmentQuestion.Add("Is spare equipment available in case of a shortage?");
+                equipmentQuestion.Add("Is office equipment functioning as required?");
+                equipmentQuestion.Add("Are sufficient communications technologies available (e.g. computer networks, email, internet access, remote network dial-up software, mobile phones, laptops and hand-held devices)?");
+                equipmentQuestion.Add("Is video conferencing equipment available?");
+                equipmentQuestion.Add("Is the equipment functioning as required?");
+                for (int i = 0; i < equipmentQuestion.Count; i++)
+                {
+                    dataGridViewEquipment.Rows.Add();
+                    dataGridViewEquipment.Rows[i].Cells[0].Value = equipmentQuestion[i];
+                    dataGridViewEquipment.Rows[i].Cells[1].Value = false;
+                }
+
+                List<string> rolesQuestion = new List<string>();
+                rolesQuestion.Add("Have the Project Sponsor been established?");
+                rolesQuestion.Add("Have the Project Manager been appointed?");
+                rolesQuestion.Add("Have the Project Office Manager been appointed?");
+                rolesQuestion.Add("Have the Procurement Manager been appointed?");
+                rolesQuestion.Add("Have the Communications Manager been appointed?");
+                rolesQuestion.Add("Have the Quality Manager been appointed?");
+                rolesQuestion.Add("Have the Risk Manager been appointed?");
+                rolesQuestion.Add("Have the Team Leader(s) been appointed?");
+                rolesQuestion.Add("Have Job Descriptions been documented for all the project roles?");
+                rolesQuestion.Add("Do all Job Descriptions describe the responsibilities and performance criteria?");
+                rolesQuestion.Add("Were suitably skilled people appointed to all the project roles?");
+
+                for (int i = 0; i < rolesQuestion.Count; i++)
+                {
+                    dataGridViewRoles.Rows.Add();
+                    dataGridViewRoles.Rows[i].Cells[0].Value = rolesQuestion[i];
+                    dataGridViewRoles.Rows[i].Cells[1].Value = false;
+                }
+
+                List<string> standardsProcesses = new List<string>();
+                standardsProcesses.Add("Have the required Industry standards (ISO) been identified?");
+                standardsProcesses.Add("Have the required Health & Safety Standards been identified?");
+                standardsProcesses.Add("Have the required Project Planning & Reporting Standards been identified?");
+                standardsProcesses.Add("Have PMI® & PMBOK® been established?");
+                standardsProcesses.Add("Has a suitable Project Management methodology been implemented?");
+
+                standardsProcesses.Add("Have the Time Management Process been defined?");
+                standardsProcesses.Add("Have the Cost Management Process been defined?");
+                standardsProcesses.Add("Have the Quality Management Process been defined?");
+                standardsProcesses.Add("Have the Change Management Process been defined?");
+                standardsProcesses.Add("Have the Risk Management Process been defined?");
+                standardsProcesses.Add("Have the Issue Management Process been defined?");
+                standardsProcesses.Add("Have the Procurement Management Process been defined?");
+                standardsProcesses.Add("Have the Acceptance Management Process been defined?");
+                standardsProcesses.Add("Have the Communications Management Process been defined?");
+
+                for (int i = 0; i < standardsProcesses.Count; i++)
+                {
+                    dataGridViewStandardsProcesses.Rows.Add();
+                    dataGridViewStandardsProcesses.Rows[i].Cells[0].Value = standardsProcesses[i];
+                    dataGridViewStandardsProcesses.Rows[i].Cells[1].Value = false;
+                }
+
+                List<string> templatesInit = new List<string>();
+                templatesInit.Add("Is the Business Case template available?");
+                templatesInit.Add("Is the Feasibility Study template available?");
+                templatesInit.Add("Is the Terms of Reference template available?");
+                templatesInit.Add("Is the Job Description template available?");
+                templatesInit.Add("Is the Stage Gate Review Form template available?");
+                for (int i = 0; i < templatesInit.Count; i++)
+                {
+                    dataGridViewInit.Rows.Add();
+                    dataGridViewInit.Rows[i].Cells[0].Value = templatesInit[i];
+                    dataGridViewInit.Rows[i].Cells[1].Value = false;
+                }
+
+                List<string> templatesPlans = new List<string>();
+                templatesPlans.Add("Is the Project Plan template available?");
+                templatesPlans.Add("Is the Resource Plan template available?");
+                templatesPlans.Add("Is the Financial Plan template available?");
+                templatesPlans.Add("Is the Quality Plan template available?");
+                templatesPlans.Add("Is the Risk Plan template available?");
+                templatesPlans.Add("Is the Acceptance Plan template available?");
+                templatesPlans.Add("Is the Communications Plan template available?");
+                templatesPlans.Add("Is the Procurement Plan template available?");
+                templatesPlans.Add("Is the Supplier Contract template available?");
+                templatesPlans.Add("Is the Tender Register template available?");
+                for (int i = 0; i < templatesPlans.Count; i++)
+                {
+                    dataGridViewPlanning.Rows.Add();
+                    dataGridViewPlanning.Rows[i].Cells[0].Value = templatesPlans[i];
+                    dataGridViewPlanning.Rows[i].Cells[1].Value = false;
+                }
+
+                List<string> templatesExecution = new List<string>();
+                templatesExecution.Add("Is the Acceptance Register template available?");
+                templatesExecution.Add("Is the Timesheet Form and Timesheet Register template available?");
+                templatesExecution.Add("Is the Expense Form and Expense Register template available?");
+                templatesExecution.Add("Is the Quality Form and Deliverables Register template available?");
+                templatesExecution.Add("Is the Change Form and Change Register template available?");
+                templatesExecution.Add("Is the Risk Form and Risk Register template available?");
+                templatesExecution.Add("Is the Issue Form and Issue Register template available?");
+                templatesExecution.Add("Is the Purchase Order Form template available?");
+                templatesExecution.Add("Is the Procurement Register template available?");
+                templatesExecution.Add("Is the Project Status Report template available?");
+                templatesExecution.Add("Is the Communications Register template available?");
+                templatesExecution.Add("Is the Acceptance Form template available?");
+                for (int i = 0; i < templatesExecution.Count; i++)
+                {
+                    dataGridViewExecution.Rows.Add();
+                    dataGridViewExecution.Rows[i].Cells[0].Value = templatesExecution[i];
+                    dataGridViewExecution.Rows[i].Cells[1].Value = false;
+                }
+
+                List<string> templatesClosure = new List<string>();
+                templatesClosure.Add("Is the Project Closure Report template available?");
+                templatesClosure.Add("Is the Post Implementation Review© template available?");
+                for (int i = 0; i < templatesClosure.Count; i++)
+                {
+                    dataGridViewClosure.Rows.Add();
+                    dataGridViewClosure.Rows[i].Cells[0].Value = templatesClosure[i];
+                    dataGridViewClosure.Rows[i].Cells[1].Value = false;
+                }
             }
         }
 
-        private void checkBoxQualityManager_CheckedChanged(object sender, EventArgs e)
+        private void ProjectOfficeChecklistDocumentForm_Load(object sender, EventArgs e)
         {
+            serviceText = "Time Management\n" +
+            "	Monitoring the project progress by identifying time and effort spent vs. budgeted\n" +
+            "	Keeping the Project Plan up-to-date and identifying any delivery date slippage\n" +
+            "	Keeping the Timesheet Register up-to-date at all times\n" +
+            "Cost Management\n" +
+            "	Monitoring the project progress by identifying the budget spent vs. forecast\n" +
+            "	Keeping the Project Plan up-to-date and identifying any overspending\n" +
+            "	Keeping the Expense Register up-to-date at all times\n" +
+            "Quality Management\n" +
+            "	Performing Quality Assurance to improve the chances of delivering quality\n" +
+            "	Ensuring that Quality Control is implemented to measure the actual level of quality\n" +
+            "	Keeping the Deliverables Register up-to-date at all times\n" +
+            "Change Management\n" +
+            "	Receiving Change Requests and managing the change approval process\n" +
+            "	Scheduling Change Requests and measuring the impact of changes implemented\n" +
+            "	Keeping the Change Register up-to-date at all times\n" +
+            "Risk Management\n" +
+            "	Receiving Risk Forms and managing the risk review process\n" +
+            "	Scheduling actions to mitigate risks and measuring the impact of such actions\n" +
+            "	Keeping the Risk Register up-to-date at all times\n" +
+            "Issue Management\n" +
+            "	Receiving Issue Forms and managing the issue review process\n" +
+            "	Scheduling actions to resolve issues and measuring the impact of such actions\n" +
+            "	Keeping the Issue Register up-to-date at all times\n" +
+            "Procurement Management\n" +
+            "	Issuing Purchase Orders for the provision of goods and services from suppliers\n" +
+            "	Receiving and accepting goods and services ordered from suppliers\n" +
+            "	Keeping the Procurement Register up-to-date at all times\n" +
+            "	Making payment to suppliers for goods and services delivered\n" +
+            "	Managing the overall performance of suppliers to ensure that they complete their responsibilities as contracted\n" +
+            "Acceptance Management\n" +
+            "	Initiating Acceptance Reviews, as scheduled in the Acceptance Plan\n" +
+            "	Documenting the results of each review by completing Acceptance Forms\n" +
+            "	Gaining final acceptance from the customer for each deliverable produced\n" +
+            "	Keeping the Acceptance Register up-to-date at all times\n" +
+            "Communications Management\n" +
+            "	Undertaking the communications tasks and events as listed in the Communications Plan\n" +
+            "	Creating and releasing regular Project Status Reports\n" +
+            "	Distributing press releases and managing Public Relations\n" +
+            "	Keeping the Communications Register up-to-date at all times\n" +
+            "Stage Gate Reviews\n" +
+            "	Identifying the point in time when a Stage Gate must be undertaken\n" +
+            "	Organizing the Stage Gate and recording the results on a Stage Gate Form\n" +
+            "Auditing and Compliance\n" +
+            "	Ensuring that the project conforms to appropriate industry and business policies, processes, standards and guidelines\n" +
+            "	Informing the Project Manager of any deviations and monitoring the results of any actions taken to correct them\n" +
+            "Supporting Staff\n" +
+            "	Assisting the Project Manager with the recruitment of new staff\n" +
+            "	Supporting and advising staff, resolving staff issues and providing staff training\n" +
+            "	Paying staff in accordance with their contracts and administering leave\n" +
+            "Providing Tools\n" +
+            "	Procuring a suitable Project Management methodology\n" +
+            "	Procuring tools for project planning, monitoring, controlling and reporting\n" +
+            "	Training staff in the use of these tools and methodology Filing Documents\n" +
+            "	Keeping a library of all project documents, reports, job descriptions, correspondence, standards, processes, registers, forms and templates\n" +
+            "	Implementing an indexing method to ensure that project documentation may be easily sourced when required\n" +
+             "Performing Administration\n" +
+            "	Providing administration services such as the organization of travel bookings, room bookings, photocopying, secretarial, mail and correspondence\n" +
+            "	Purchasing all office equipment and materials needed by the project\n" +
+            "Undertaking Closure Reviews\n" +
+            "	Organizing the completion of a Post Implementation Review after Project Closure\n" +
+            "	Communicating the results of the review to the appropriate project stakeholders\n";
 
+            loadDocument();
+            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            richTextBoxServices.Text = serviceText;
         }
 
-        private void btnExportProjectDetails_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            saveDocument();
+        }
+
+        private void btnExportWord_Click(object sender, EventArgs e)
         {
             exportToWord();
         }
 
-        static string DisplayYesNo(bool answer)
+        public string returnYesNo(bool answer) 
         {
-            string yn = "";
-
-            if (answer == true)
+            if (answer)
             {
-                yn = "Yes";
-                return yn;
+                return "Yes";
             }
             else
             {
-                yn = "No";
-                return yn;
+                return "No";
             }
         }
-
-        private void exportToWord()
+        public void exportToWord()
         {
             string path;
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
@@ -423,7 +456,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 saveFileDialog.Filter = "Word 97-2003 Documents (*.doc)|*.doc|Word 2007 Documents (*.docx)|*.docx";
                 saveFileDialog.FilterIndex = 2;
                 saveFileDialog.RestoreDirectory = true;
-
 
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
@@ -443,224 +475,261 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .FontSize(22d).Alignment = Alignment.left;
                         document.InsertSectionPageBreak();
 
+                        document.InsertParagraph("Project Office Checklist\n")
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(14d).Alignment = Alignment.left;
 
-                        var checklistTable = document.AddTable(15, 1);
+                        var documentTable = document.AddTable(18, 1);
 
-                        //Project details///
-                        checklistTable.Rows[0].Cells[0].Paragraphs[0].Append("Project Details").Bold(true).Color(Color.White).FontSize(14d);
+                        documentTable.Rows[0].Cells[0].Paragraphs[0]
+                            .Append("Project Details")
+                            .Bold(true)
+                            .Font("Arial")
+                            .FontSize(11d)
+                            .Color(Color.White)
+                            .SpacingBefore(6d)
+                            .SpacingAfter(6d);
+                        documentTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
-                        checklistTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
-                        checklistTable.Rows[1].Cells[0].Paragraphs[0].Append("Project Name: \t\t" + currentProjectOfficeChecklistModel.ProjectName
-                            + "\nProject Manager: \t" + currentProjectOfficeChecklistModel.ProjectManager
-                            + "\nProject Office Manager: \t" + currentProjectOfficeChecklistModel.ProjectOfficeManager);
+                        documentTable.Rows[1].Cells[0].Paragraphs[0]
+                          .Append("Project Name: " + projectModel.ProjectName + "\nProject Manager: " + currentProjectOfficeChecklistModel.ProjectManager +
+                          "\nProject Office Manager: "+currentProjectOfficeChecklistModel.ProjectOfficeManager)
+                          .Font("Arial")
+                          .FontSize(11d)
+                          .SpacingBefore(12d)
+                          .SpacingAfter(12d);
 
-                        //Premises//////
-                        checklistTable.Rows[2].Cells[0].Paragraphs[0].Append("Premises").Bold(true).Color(Color.White).FontSize(14d);
-                        checklistTable.Rows[2].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentTable.Rows[2].Cells[0].Paragraphs[0]
+                            .Append("Premises")
+                            .Bold(true)
+                            .Font("Arial")
+                            .FontSize(11d)
+                            .Color(Color.White)
+                            .SpacingBefore(6d)
+                            .SpacingAfter(6d);
+                        documentTable.Rows[2].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
-                        checklistTable.Rows[3].Cells[0].Paragraphs[0].Append("Were the Project Office requirements documented? \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.PremisesProjectOfficeDocumented)
-                            + "\nHave the Project Office premises been procured? \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.PremisesProjectOfficeProcured)
-                            + "\nAre the premises in a practical location? \t\t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.PremisesPracticalLocation)
-                            + "\nDo the premises meet the requirements documented? \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.PremisesRequiredDocumted)
-                            + "\nIs there a formal contract for the lease / purchase / use of the premises? \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.PremisesFormalContract)
-                            + "\nDo the premises provide sufficient space for the project team? \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.PremisesSufficientSpace)
-                            + "\nWill the premises continue to be available if the project is delayed? \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.PremisesContinueAvailible)
-                            + "\nDo the premises require additional fit-out (e.g. partitions, cabling, air conditioning)? \t" + DisplayYesNo(currentProjectOfficeChecklistModel.PremisesAdditionalFitOut)
-                            + "\nAre the on-site facilities sufficient (e.g. number of meeting rooms, bathrooms \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.PremisesOnSiteFacilities));
+                       
+                       
 
-                        //Equipment/////////
-                        checklistTable.Rows[4].Cells[0].Paragraphs[0].Append("Equipment").Bold(true).Color(Color.White).FontSize(14d);
-                        checklistTable.Rows[4].Cells[0].FillColor = TABLE_HEADER_COLOR;
-
-                        checklistTable.Rows[5].Cells[0].Paragraphs[0].Append("Office Equipment\n \t" 
-                           + "\nDoes the project team have the required office equipment and application software available to manage the project (e.g. computer hardware, project planning and financial software, projectors, fax machines, printers, scanners, copiers)? \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.EquipmentRequiredOffice)
-                           + "\nAre maintenance contracts in place to ensure that equipment remains operational throughout the project? \t\t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.EquipmentMaintananceCOntracts)
-                           + "\nIs spare equipment available in case of a shortage? \t" + DisplayYesNo(currentProjectOfficeChecklistModel.EquipmentSpareEquipment)
-                           + "\nIs office equipment functioning as required? \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.EquipmentFunctioningAsRequired)
-
-                           + "\n\nCommunications Equipment\n \t"  
-                           + "\nAre sufficient communications technologies available (e.g. computer networks, email, internet access, remote network dial-up software, mobile phones, laptops and hand-held devices)? \t\t\t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.EquipmentSufficientCommunication)
-                           + "\nIs video conferencing equipment available? \t" + DisplayYesNo(currentProjectOfficeChecklistModel.EquipmentVideoCOnferensing)
-                           + "\nIs the equipment functioning as required?  \t" + DisplayYesNo(currentProjectOfficeChecklistModel.EquipmentFunctioningAsRequired));
-
-
-
-
-                        //Roles/////////////////
-                        checklistTable.Rows[6].Cells[0].Paragraphs[0].Append("Roles").Bold(true).Color(Color.White).FontSize(14d);
-                        checklistTable.Rows[6].Cells[0].FillColor = TABLE_HEADER_COLOR;
-
-                        checklistTable.Rows[7].Cells[0].Paragraphs[0].Append("Have the following key roles been appointed?\n "
-                           + "\n\tProject Sponsor \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesAppointedProjectSponsor)
-                           + "\n\tProject Manager \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesAppointedProjectManager)
-                           + "\n\tProject Office Manager \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesAppointedProjectOfficeManager)
-                           + "\n\tProcurement Manager \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesAppointedProcurementManager)
-                           + "\n\tCommunications Manager \t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesAppointedCommunicationsManager)
-                           + "\n\tQuality Manager \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesAppointedQualityManager)
-                           + "\n\tRisk Manager \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesAppointedRiskManager)
-                           + "\n\tTeam Leader(s)\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesAppointedTeamLeader)
-                           + "\n\nHave Job Descriptions been documented for all the project roles?  \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesJobDescriptionsDocumented)
-                           + "\nDo all Job Descriptions describe the responsibilities and performance criteria?  \t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesJobDescriptionsResponsibilities)
-                           + "\nWere suitably skilled people appointed to all the project roles? \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.RolesSkilledPeopleAppointed));
-
-                        //Standards and Process///////////
-                        checklistTable.Rows[8].Cells[0].Paragraphs[0].Append("Standards and Process").Bold(true).Color(Color.White).FontSize(14d);
-                        checklistTable.Rows[8].Cells[0].FillColor = TABLE_HEADER_COLOR;
-
-                        checklistTable.Rows[9].Cells[0].Paragraphs[0].Append("Have all required industry, business and project management standards been identified? For example:\n "
-                           + "\nIndustry standards (ISO):\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.StandardsIndustyStandards)
-                           + "\nHealth & Safety Standards:\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.StandardsHealthAndSafety)
-                           + "\nProject Planning & Reporting Standards:\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.StandardsProjectPlanning)
-                           + "\nPMI® & PMBOK®:\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.StandardsPMI)
-                           + "\n\nHas a suitable Project Management methodology been implemented?\t" + DisplayYesNo(currentProjectOfficeChecklistModel.StandardSuitableProjManMethod));
-
-                        
-                        checklistTable.Rows[10].Cells[0].Paragraphs[0].Append("Have the following processes been defined?\n "
-                           + "\n\nTime Management Process: \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ProcessesTimeManagement)
-                           + "\nCost Management Process: \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ProcessesCostManagement)
-                           + "\nQuality Management Process: \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ProcessesQualityManagement)
-                           + "\nChange Management Process: \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ProcessesChangeManagement)
-                           + "\nRisk Management Process: \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ProcessesRiskManagement)
-                           + "\nIssue Management Process: \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ProcessesIssueManagement)
-                           + "\nProcurement Management Process: \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ProcessesProcurementManagement)
-                           + "\nAcceptance Management Process:  \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ProcessesAcceptanceManagement)
-                           + "\nCommunications Management Process:  \t" + DisplayYesNo(currentProjectOfficeChecklistModel.ProcessesCommunicationsManagement));
-
-                        //Templates////////////
-                        checklistTable.Rows[11].Cells[0].Paragraphs[0].Append("Templates").Bold(true).Color(Color.White).FontSize(14d);
-                        checklistTable.Rows[11].Cells[0].FillColor = TABLE_HEADER_COLOR;
-
-                        checklistTable.Rows[12].Cells[0].Paragraphs[0].Append("Are the following templates available?\n\n "
-                           + "\nInitiation \t\t" 
-                           + "\nBusiness Case \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesInitiationBusinessCase)
-                           + "\nFeasibility Study \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesInitiationFeasibilityStudy)
-                           + "\nTerms of Reference \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesInitiationTermsOfReference)
-                           + "\nJob Description \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesInitiationJobDescription)
-                           + "\nStage Gate Review Form \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesInitiationStageGate)
-
-                           + "\n\nPlanning \n" 
-                           + "\nProject Plan \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesPlanningProjectPlan)
-                           + "\nResource Plan \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesPlanningResourcePlan)
-                           + "\nFinancial Plan \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesPlanningFinancialPlan)
-                           + "\nQuality Plan \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesPlanningQualityPlan)
-                           + "\nRisk Plan \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesPlanningRiskPlan)
-                           + "\nAcceptance Plan\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesPlanningAcceptancePlan)
-                           + "\nCommunications Plan \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesPlanningCommunicationsPlan)
-                           + "\nProcurement Plan \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesPlanningProcurementPlan)
-                           + "\nSupplier Contract \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesPlanningSupplierPlan)
-                           + "\nTender Register  \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesPlanningTenderPlan)
-
-                           + "\n\nExecution  \t\t" 
-                           + "\nTimesheet Form, Timesheet Register \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionTimesheet)
-                           + "\nExpense Form, Expense Register \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionExpense)
-                           + "\nQuality Form, Deliverables Register \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionQuality)
-                           + "\nChange Form, Change Register \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionChange)
-                           + "\nRisk Form, Risk Register \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionRisk)
-                           + "\nIssue Form, Issue Register \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionIssue)
-                           + "\nPurchase Order Form \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionPurchase)
-                           + "\nProcurement Register  \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionProcurement)
-                           + "\nProject Status Report  \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionProject)
-                           + "\nCommunications Register \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionCommunication)
-                           + "\nAcceptance Form \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionAcceptanceForm)
-                           + "\nAcceptance Register \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesExecutionAcceptanceRegister)
-
-                           + "\n\nClosure  \t\t" 
-                           + "\nProject Closure Report  \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesClosureProjectReport)
-                           + "\nPost Implementation Review  \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.TemplatesClosurePostReview));
+                        var premisesTable = document.AddTable(currentProjectOfficeChecklistModel.Premises.Count, 2);
+                        for (int i = 0; i < currentProjectOfficeChecklistModel.Premises.Count; i++)
+                        {
+                            premisesTable.Rows[i].Cells[0].Paragraphs[0]
+                                .Append(currentProjectOfficeChecklistModel.Premises[i].Question)
+                                .Font("Arial")
+                                .FontSize(11d)
+                                .SpacingBefore(12d)
+                                .SpacingAfter(12d);
+                            premisesTable.Rows[i].Cells[1].Paragraphs[0]
+                                .Append(returnYesNo(currentProjectOfficeChecklistModel.Premises[i].Answer))
+                                .Font("Arial")
+                                .FontSize(11d)
+                                .SpacingBefore(12d)
+                                .SpacingAfter(12d);
+                        }
+                        premisesTable.SetWidths(new float [] {1399, 125}); 
+                        documentTable.Rows[3].Cells[0].InsertTable(premisesTable);
 
 
+                        documentTable.SetWidths(new float[] { 1690 });
 
-                        //Services///////
-                        checklistTable.Rows[13].Cells[0].Paragraphs[0].Append("Services").Bold(true).Color(Color.White).FontSize(14d);
-                        checklistTable.Rows[13].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentTable.Rows[4].Cells[0].Paragraphs[0]
+                            .Append("Equipment")
+                            .Bold(true)
+                            .Font("Arial")
+                            .FontSize(11d)
+                            .Color(Color.White)
+                            .SpacingBefore(6d)
+                            .SpacingAfter(6d);
+                        documentTable.Rows[4].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
-                        checklistTable.Rows[14].Cells[0].Paragraphs[0].Append("Time Management\n "
-                           + "\nMonitoring the project progress by identifying time and effort spent vs. budgeted \t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesTimeMonitoring)
-                           + "\nKeeping the Project Plan up-to-date and identifying any delivery date slippage \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesTimeProjectPlan)
-                           + "\nKeeping the Timesheet Register up-to-date at all times \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesTimeTimesheet)
+                        var EquipmentTable = document.AddTable(currentProjectOfficeChecklistModel.Equipment.Count, 2);
+                        for (int i = 0; i < currentProjectOfficeChecklistModel.Equipment.Count; i++)
+                        {
+                            EquipmentTable.Rows[i].Cells[0].Paragraphs[0]
+                                .Append(currentProjectOfficeChecklistModel.Equipment[i].Question)
+                                .Font("Arial")
+                                .FontSize(11d)
+                                .SpacingBefore(12d)
+                                .SpacingAfter(12d);
+                            EquipmentTable.Rows[i].Cells[1].Paragraphs[0]
+                                .Append(returnYesNo(currentProjectOfficeChecklistModel.Equipment[i].Answer))
+                                .Font("Arial")
+                                .FontSize(11d)
+                                .SpacingBefore(12d)
+                                .SpacingAfter(12d);
+                        }
+                        EquipmentTable.SetWidths(new float[] { 1399, 125 });
+                        documentTable.Rows[5].Cells[0].InsertTable(EquipmentTable);
 
-                           + "\n\nCost Management \t\t"
-                           + "\nMonitoring the project progress by identifying the budget spent vs. forecast \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesCostMonitoring)
-                           + "\nKeeping the Project Plan up-to-date and identifying any overspending \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesCostProjectPlan)
-                           + "\nKeeping the Expense Register up-to-date at all times \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesCostExpense)
+                        documentTable.Rows[6].Cells[0].Paragraphs[0]
+                           .Append("Standards & Processes")
+                           .Bold(true)
+                           .Font("Arial")
+                           .FontSize(11d)
+                           .Color(Color.White)
+                           .SpacingBefore(6d)
+                           .SpacingAfter(6d);
+                        documentTable.Rows[6].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
-                           + "\n\nQuality Management  \t\t"
-                           + "\nPerforming Quality Assurance to improve the chances of delivering quality  \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesQualityAssurance)
-                           + "\nEnsuring that Quality Control is implemented to measure the actual level of quality\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesQualityControl)
-                           + "\nKeeping the Deliverables Register up-to-date at all times\t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesQualityDeliverables)
+                        var StandardsTable = document.AddTable(currentProjectOfficeChecklistModel.StandardsProcesses.Count, 2);
+                        for (int i = 0; i < currentProjectOfficeChecklistModel.StandardsProcesses.Count; i++)
+                        {
+                            StandardsTable.Rows[i].Cells[0].Paragraphs[0]
+                                .Append(currentProjectOfficeChecklistModel.StandardsProcesses[i].Question)
+                                .Font("Arial")
+                                .FontSize(11d)
+                                .SpacingBefore(12d)
+                                .SpacingAfter(12d);
+                            StandardsTable.Rows[i].Cells[1].Paragraphs[0]
+                                .Append(returnYesNo(currentProjectOfficeChecklistModel.StandardsProcesses[i].Answer))
+                                .Font("Arial")
+                                .FontSize(11d)
+                                .SpacingBefore(12d)
+                                .SpacingAfter(12d);
+                        }
+                        StandardsTable.SetWidths(new float[] { 1399, 125 });
+                        documentTable.Rows[7].Cells[0].InsertTable(StandardsTable);
 
-                           + "\n\nChange Management\t\t"
-                           + "\nReceiving Change Requests and managing the change approval process\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesChangeRequests)
-                           + "\nScheduling Change Requests and measuring the impact of changes implemented \t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesChangeSheduling)
-                           + "\nKeeping the Change Register up-to-date at all times \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesChangeKeeping)
+                        documentTable.Rows[8].Cells[0].Paragraphs[0]
+                          .Append("Templates - Initiation")
+                          .Bold(true)
+                          .Font("Arial")
+                          .FontSize(11d)
+                          .Color(Color.White)
+                          .SpacingBefore(6d)
+                          .SpacingAfter(6d);
+                        documentTable.Rows[8].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
-                           + "\n\nRisk Management \t\t\t"
-                           + "\nReceiving Risk Forms and managing the risk review process  \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesRiskForms)
-                           + "\nScheduling actions to mitigate risks and measuring the impact of such actions  \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesRiskSheduling)
-                           + "\nKeeping the Risk Register up-to-date at all times \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesRiskKeeping)
+                        var initTable = document.AddTable(currentProjectOfficeChecklistModel.TemplatesInitiation.Count, 2);
+                        for (int i = 0; i < currentProjectOfficeChecklistModel.TemplatesInitiation.Count; i++)
+                        {
+                            initTable.Rows[i].Cells[0].Paragraphs[0]
+                                .Append(currentProjectOfficeChecklistModel.TemplatesInitiation[i].Question)
+                                .Font("Arial")
+                                .FontSize(11d)
+                                .SpacingBefore(12d)
+                                .SpacingAfter(12d);
+                            initTable.Rows[i].Cells[1].Paragraphs[0]
+                                .Append(returnYesNo(currentProjectOfficeChecklistModel.TemplatesInitiation[i].Answer))
+                                .Font("Arial")
+                                .FontSize(11d)
+                                .SpacingBefore(12d)
+                                .SpacingAfter(12d);
+                        }
+                        initTable.SetWidths(new float[] { 1399, 125 });
+                        documentTable.Rows[9].Cells[0].InsertTable(initTable);
 
-                           + "\n\nIssue Management \t\t"
-                           + "\nReceiving Issue Forms and managing the issue review process \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesIssueForms)
-                           + "\nScheduling actions to resolve issues and measuring the impact of such actions \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesIssueScheduling)
-                           + "\nKeeping the Issue Register up-to-date at all times \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesIssueKeeping)
+                        documentTable.Rows[10].Cells[0].Paragraphs[0]
+                           .Append("Templates - Planning")
+                           .Bold(true)
+                           .Font("Arial")
+                           .FontSize(11d)
+                           .Color(Color.White)
+                           .SpacingBefore(6d)
+                           .SpacingAfter(6d);
+                        documentTable.Rows[10].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
-                           + "\n\nProcurement Management \t\t"
-                           + "\nIssuing Purchase Orders for the provision of goods and services from suppliers \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesProcurementPurchase)
-                           + "\nReceiving and accepting goods and services ordered from suppliers  \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesProcurementGoodsAndServices)
-                           + "\nKeeping the Procurement Register up-to-date at all times  \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesProcurementKeeping)
-                           + "\nMaking payment to suppliers for goods and services delivered \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesProcurementPayement)
-                           + "\nManaging the overall performance of suppliers to ensure that they complete their responsibilities as contracted \t\t\t\t\t\t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesProcurementManaging)
+                        var planningTable = document.AddTable(currentProjectOfficeChecklistModel.TemplatesPlanning.Count, 2);
+                        for (int i = 0; i < currentProjectOfficeChecklistModel.TemplatesPlanning.Count; i++)
+                        {
+                            planningTable.Rows[i].Cells[0].Paragraphs[0]
+                                .Append(currentProjectOfficeChecklistModel.TemplatesPlanning[i].Question)
+                                .Font("Arial")
+                                .FontSize(11d)
+                                .SpacingBefore(12d)
+                                .SpacingAfter(12d);
+                            planningTable.Rows[i].Cells[1].Paragraphs[0]
+                                .Append(returnYesNo(currentProjectOfficeChecklistModel.TemplatesPlanning[i].Answer))
+                                .Font("Arial")
+                                .FontSize(11d)
+                                .SpacingBefore(12d)
+                                .SpacingAfter(12d);
+                        }
+                        planningTable.SetWidths(new float[] { 1399, 125 });
+                        documentTable.Rows[11].Cells[0].InsertTable(planningTable);
 
-                           + "\n\nAcceptance Management \t\t\t"
-                           + "\nInitiating Acceptance Reviews, as scheduled in the Acceptance Plan \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesAcceptanceInitiating)
-                           + "\nDocumenting the results of each review by completing Acceptance Forms  \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesAcceptanceDocumenting)
-                           + "\nGaining final acceptance from the customer for each deliverable produced  \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesAcceptanceGainingFinalAcceptance)
-                           + "\nKeeping the Acceptance Register up-to-date at all times \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesAcceptanceKeeping)
+                        documentTable.Rows[12].Cells[0].Paragraphs[0]
+                           .Append("Templates - Execution")
+                           .Bold(true)
+                           .Font("Arial")
+                           .FontSize(11d)
+                           .Color(Color.White)
+                           .SpacingBefore(6d)
+                           .SpacingAfter(6d);
+                        documentTable.Rows[12].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
-                           + "\n\nCommunications Management \t\t"
-                           + "\nUndertaking the communications tasks and events as listed in the Communications Plan " + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesCommunicationsUndertaking)
-                           + "\nCreating and releasing regular Project Status Reports  \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesCommunicationsCreating)
-                           + "\nDistributing press releases and managing Public Relations  \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesCommunicationsDistributing)
-                           + "\nKeeping the Communications Register up-to-date at all times \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesCommunicationsKeeping)
+                        var executionTable = document.AddTable(currentProjectOfficeChecklistModel.TemplatesExecution.Count, 2);
+                        for (int i = 0; i < currentProjectOfficeChecklistModel.TemplatesExecution.Count; i++)
+                        {
+                            executionTable.Rows[i].Cells[0].Paragraphs[0]
+                                .Append(currentProjectOfficeChecklistModel.TemplatesExecution[i].Question)
+                                .Font("Arial")
+                                .FontSize(11d)
+                                .SpacingBefore(12d)
+                                .SpacingAfter(12d);
+                            executionTable.Rows[i].Cells[1].Paragraphs[0]
+                                .Append(returnYesNo(currentProjectOfficeChecklistModel.TemplatesExecution[i].Answer))
+                                .Font("Arial")
+                                .FontSize(11d)
+                                .SpacingBefore(12d)
+                                .SpacingAfter(12d);
+                        }
+                        executionTable.SetWidths(new float[] { 1399, 125 });
+                        documentTable.Rows[13].Cells[0].InsertTable(executionTable);
 
-                           + "\n\nStage Gate Reviews  \t\t"
-                           + "\nIdentifying the point in time when a Stage Gate must be undertaken  \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesStageGateIdentifying)
-                           + "\nOrganizing the Stage Gate and recording the results on a Stage Gate Form  \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesStageGateOrganizing)
+                        documentTable.Rows[14].Cells[0].Paragraphs[0]
+                           .Append("Templates - Closure")
+                           .Bold(true)
+                           .Font("Arial")
+                           .FontSize(11d)
+                           .Color(Color.White)
+                           .SpacingBefore(6d)
+                           .SpacingAfter(6d);
+                        documentTable.Rows[14].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
-                           + "\n\nAuditing and Compliance  \t\t\t"
-                           + "\nEnsuring that the project conforms to appropriate industry and business policies, processes, standards and guidelines  \t\t\t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesAuditingEnsuringConforms)
-                           + "\nInforming the Project Manager of any deviations and monitoring the results of any actions taken to correct them  \t\t\t\t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesAuditingInforming)
+                        var closureTable = document.AddTable(currentProjectOfficeChecklistModel.TemplatesClosure.Count, 2);
+                        for (int i = 0; i < currentProjectOfficeChecklistModel.TemplatesClosure.Count; i++)
+                        {
+                            closureTable.Rows[i].Cells[0].Paragraphs[0]
+                                .Append(currentProjectOfficeChecklistModel.TemplatesClosure[i].Question)
+                                .Font("Arial")
+                                .FontSize(11d)
+                                .SpacingBefore(12d)
+                                .SpacingAfter(12d);
+                            closureTable.Rows[i].Cells[1].Paragraphs[0]
+                                .Append(returnYesNo(currentProjectOfficeChecklistModel.TemplatesClosure[i].Answer))
+                                .Font("Arial")
+                                .FontSize(11d)
+                                .SpacingBefore(12d)
+                                .SpacingAfter(12d);
+                        }
+                        closureTable.SetWidths(new float[] { 1399, 125 });
+                        documentTable.Rows[15].Cells[0].InsertTable(closureTable);
 
-                           + "\n\nSupporting Staff  \t\t"
-                           + "\nAssisting the Project Manager with the recruitment of new staff \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesSupportingAssisting)
-                           + "\nSupporting and advising staff, resolving staff issues and providing staff training \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesSupportingAdvising)
-                           + "\nPaying staff in accordance with their contracts and administering leave  \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesSupportingPaying)
+                        documentTable.Rows[16].Cells[0].Paragraphs[0]
+                           .Append("Services")
+                           .Bold(true)
+                           .Font("Arial")
+                           .FontSize(11d)
+                           .Color(Color.White)
+                           .SpacingBefore(6d)
+                           .SpacingAfter(6d);
+                        documentTable.Rows[16].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
-                           + "\n\nProviding Tools  \t\t"
-                           + "\nProcuring a suitable Project Management methodology  \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesProvidingProjectManagement)
-                           + "\nProcuring tools for project planning, monitoring, controlling and reporting  \t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesProvidingToolsForMonitoring)
-                           + "\nTraining staff in the use of these tools and methodology  \t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesProvidingTraining)
 
-                           + "\n\nFiling Documents  \t\t"
-                           + "\nKeeping a library of all project documents, reports, job descriptions, correspondence, standards, processes, registers, forms and templates  \t\t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesFilingLibrary)
-                           + "\nImplementing an indexing method to ensure that project documentation may be easily sourced when required  \t\t\t\t\t\t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesFilingImplementing)
-
-                           + "\n\nPerforming Administration  \t\t"
-                           + "\nProviding administration services such as the organization of travel bookings, room bookings, photocopying, secretarial, mail and correspondence  \t\t\t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesPerformingAdministration)
-                           + "\nPurchasing all office equipment and materials needed by the project  \t\t\t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesPerformingPurchasing)
-
-                           + "\n\nUndertaking Closure Reviews  \t\t" 
-                           + "\nOrganizing the completion of a Post Implementation Review after Project Closure  \t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesClosureOrganizing)
-                           + "\nCommunicating the results of the review to the appropriate project stakeholders  \t" + DisplayYesNo(currentProjectOfficeChecklistModel.ServicesComminicating));
+                        documentTable.Rows[17].Cells[0].Paragraphs[0].Append(serviceText)
+                           .FontSize(11d)
+                           .Color(Color.Black)
+                           .Font("Arial").Alignment = Alignment.left;
 
 
 
 
 
-                        checklistTable.SetWidths(new float[] { 1000 });
-                        document.InsertTable(checklistTable);
-
-                        //Save the document
+                        document.InsertTable(documentTable);
                         try
                         {
                             document.Save();
@@ -669,11 +738,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         {
                             MessageBox.Show("The selected File is open.", "Close File", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
-
                     }
                 }
             }
         }
-        */
     }
 }
