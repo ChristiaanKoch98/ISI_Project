@@ -95,7 +95,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 txtProjectBoard.Text = currentRiskManagmentProcessModel.ProjectBoard;
 
                 txtRiskForm.Text = currentRiskManagmentProcessModel.RiskForm;
-                txtRiskRegister.Text = currentRiskManagmentProcessModel.RiskRegister;
+                txtRiskManager.Text = currentRiskManagmentProcessModel.RiskRegister;
             }
             else
             {
@@ -127,7 +127,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newRiskManagmentProcessModel.ProjectBoard = txtProjectBoard.Text;
 
             newRiskManagmentProcessModel.RiskForm = txtRiskForm.Text;
-            newRiskManagmentProcessModel.RiskRegister = txtRiskRegister.Text;
+            newRiskManagmentProcessModel.RiskRegister = txtRiskManager.Text;
 
             newRiskManagmentProcessModel.DocumentID = dgvDocumentInformation.Rows[0].Cells[1].Value.ToString();
             newRiskManagmentProcessModel.DocumentOwner = dgvDocumentInformation.Rows[1].Cells[1].Value.ToString();

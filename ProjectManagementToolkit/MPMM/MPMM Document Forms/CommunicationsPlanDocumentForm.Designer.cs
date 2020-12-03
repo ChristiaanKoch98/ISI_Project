@@ -113,7 +113,7 @@
             this.tabCtrlCommunicationsPlanDocumentForm.Margin = new System.Windows.Forms.Padding(2);
             this.tabCtrlCommunicationsPlanDocumentForm.Name = "tabCtrlCommunicationsPlanDocumentForm";
             this.tabCtrlCommunicationsPlanDocumentForm.SelectedIndex = 0;
-            this.tabCtrlCommunicationsPlanDocumentForm.Size = new System.Drawing.Size(833, 643);
+            this.tabCtrlCommunicationsPlanDocumentForm.Size = new System.Drawing.Size(980, 657);
             this.tabCtrlCommunicationsPlanDocumentForm.TabIndex = 13;
             // 
             // tabDocumentControl
@@ -335,7 +335,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
@@ -348,7 +348,7 @@
             this.dgvStakeholderRequirements.Name = "dgvStakeholderRequirements";
             dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
@@ -371,7 +371,7 @@
             this.tabCommunicationsPlan.Margin = new System.Windows.Forms.Padding(2);
             this.tabCommunicationsPlan.Name = "tabCommunicationsPlan";
             this.tabCommunicationsPlan.Padding = new System.Windows.Forms.Padding(2);
-            this.tabCommunicationsPlan.Size = new System.Drawing.Size(825, 614);
+            this.tabCommunicationsPlan.Size = new System.Drawing.Size(972, 628);
             this.tabCommunicationsPlan.TabIndex = 2;
             this.tabCommunicationsPlan.Text = "Communications Plan";
             // 
@@ -394,11 +394,11 @@
             // 
             // txtCommunicationsPlan
             // 
-            this.txtCommunicationsPlan.Location = new System.Drawing.Point(6, 403);
+            this.txtCommunicationsPlan.Location = new System.Drawing.Point(6, 413);
             this.txtCommunicationsPlan.Margin = new System.Windows.Forms.Padding(2);
             this.txtCommunicationsPlan.Multiline = true;
             this.txtCommunicationsPlan.Name = "txtCommunicationsPlan";
-            this.txtCommunicationsPlan.Size = new System.Drawing.Size(762, 211);
+            this.txtCommunicationsPlan.Size = new System.Drawing.Size(964, 211);
             this.txtCommunicationsPlan.TabIndex = 50;
             this.txtCommunicationsPlan.TextChanged += new System.EventHandler(this.txtScope_TextChanged);
             // 
@@ -409,7 +409,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
@@ -422,7 +422,7 @@
             this.dgvCommunicationsPlan.Name = "dgvCommunicationsPlan";
             dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
@@ -431,7 +431,7 @@
             this.dgvCommunicationsPlan.RowHeadersWidth = 51;
             dataGridViewCellStyle15.Font = new System.Drawing.Font("Helvetica", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvCommunicationsPlan.RowsDefaultCellStyle = dataGridViewCellStyle15;
-            this.dgvCommunicationsPlan.Size = new System.Drawing.Size(817, 258);
+            this.dgvCommunicationsPlan.Size = new System.Drawing.Size(964, 272);
             this.dgvCommunicationsPlan.TabIndex = 45;
             // 
             // label4
@@ -565,7 +565,7 @@
             this.tabAppendix.Location = new System.Drawing.Point(4, 25);
             this.tabAppendix.Margin = new System.Windows.Forms.Padding(2);
             this.tabAppendix.Name = "tabAppendix";
-            this.tabAppendix.Size = new System.Drawing.Size(770, 614);
+            this.tabAppendix.Size = new System.Drawing.Size(825, 614);
             this.tabAppendix.TabIndex = 7;
             this.tabAppendix.Text = "Appendix";
             // 
@@ -598,7 +598,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(843, 672);
+            this.ClientSize = new System.Drawing.Size(1099, 743);
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.tabCtrlCommunicationsPlanDocumentForm);

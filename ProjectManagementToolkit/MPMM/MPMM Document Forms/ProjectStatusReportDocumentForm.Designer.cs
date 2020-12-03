@@ -777,7 +777,6 @@
             this.dgvProjectRisk.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.dgvProjectRisk.Size = new System.Drawing.Size(1009, 651);
             this.dgvProjectRisk.TabIndex = 47;
-            this.dgvProjectRisk.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProjectRisk_CellContentClick);
             // 
             // tabProjectIssues2
             // 

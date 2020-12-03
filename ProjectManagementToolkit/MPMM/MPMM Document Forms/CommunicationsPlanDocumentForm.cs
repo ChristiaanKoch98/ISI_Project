@@ -129,7 +129,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 txtRoles.Text = currentCommunicationsPlanModel.Roles;
                 txtDocuments.Text = currentCommunicationsPlanModel.Documents;
                 txtStakeholderList.Text = currentCommunicationsPlanModel.StakeholderList;
-                txtAssumptions.Text = currentCommunicationsPlanModel.Assumptions;
+                txtCommunicationsPlan.Text = currentCommunicationsPlanModel.Assumptions;
             }
             else
             {
@@ -244,7 +244,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
             newCommunicationsPlanModel.Activities = txtActivities.Text;
-            newCommunicationsPlanModel.Assumptions = txtAssumptions.Text;
+            newCommunicationsPlanModel.Assumptions = txtCommunicationsPlan.Text;
             newCommunicationsPlanModel.ComProcess = txtCommunicationsProcess.Text;
             newCommunicationsPlanModel.Roles = txtRoles.Text;
             newCommunicationsPlanModel.Documents = txtDocuments.Text;
