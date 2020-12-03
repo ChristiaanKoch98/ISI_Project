@@ -28,15 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.TabPage tbpClosingAProject;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PLSM_ProcessGroupingGovernance_Interfaces));
-            System.Windows.Forms.TabPage tabPage9;
+            this.tabControl10 = new System.Windows.Forms.TabControl();
+            this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.pictureBox106 = new System.Windows.Forms.PictureBox();
+            this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.btnIdentifyingFollowOnActions = new System.Windows.Forms.Button();
+            this.btnEvaluateAProject = new System.Windows.Forms.Button();
+            this.btnDecommissionongAProject = new System.Windows.Forms.Button();
+            this.pictureBox107 = new System.Windows.Forms.PictureBox();
+            this.label150 = new System.Windows.Forms.Label();
+            this.pictureBox108 = new System.Windows.Forms.PictureBox();
+            this.tabPage15 = new System.Windows.Forms.TabPage();
+            this.label151 = new System.Windows.Forms.Label();
+            this.pictureBox109 = new System.Windows.Forms.PictureBox();
+            this.tabPage16 = new System.Windows.Forms.TabPage();
+            this.panel122 = new System.Windows.Forms.Panel();
+            this.label152 = new System.Windows.Forms.Label();
+            this.panel123 = new System.Windows.Forms.Panel();
+            this.label153 = new System.Windows.Forms.Label();
+            this.pictureBox110 = new System.Windows.Forms.PictureBox();
+            this.tabPage17 = new System.Windows.Forms.TabPage();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.label154 = new System.Windows.Forms.Label();
+            this.tabPage18 = new System.Windows.Forms.TabPage();
+            this.txtRolesAndResponsabilities = new System.Windows.Forms.TextBox();
+            this.label155 = new System.Windows.Forms.Label();
+            this.tabPage19 = new System.Windows.Forms.TabPage();
+            this.txtChechklist1 = new System.Windows.Forms.TextBox();
+            this.label156 = new System.Windows.Forms.Label();
             this.tbcProcessOverview = new System.Windows.Forms.TabControl();
             this.tbpStartingUpAProject = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage20 = new System.Windows.Forms.TabPage();
             this.pictureBox69 = new System.Windows.Forms.PictureBox();
-            this.pictureBox70 = new System.Windows.Forms.PictureBox();
             this.tabPage21 = new System.Windows.Forms.TabPage();
             this.pictureBox71 = new System.Windows.Forms.PictureBox();
             this.label47 = new System.Windows.Forms.Label();
@@ -79,7 +107,7 @@
             this.tabPage26 = new System.Windows.Forms.TabPage();
             this.txtChecklist1 = new System.Windows.Forms.TextBox();
             this.label53 = new System.Windows.Forms.Label();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tbpDirectingAProject = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
             this.tabControl5 = new System.Windows.Forms.TabControl();
             this.tbpProcessOverview1 = new System.Windows.Forms.TabPage();
@@ -140,12 +168,11 @@
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.label69 = new System.Windows.Forms.Label();
             this.pictureBox82 = new System.Windows.Forms.PictureBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tbpInitiatingAProject = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
             this.tabControl6 = new System.Windows.Forms.TabControl();
             this.tabPage27 = new System.Windows.Forms.TabPage();
             this.pictureBox83 = new System.Windows.Forms.PictureBox();
-            this.pictureBox84 = new System.Windows.Forms.PictureBox();
             this.tabPage28 = new System.Windows.Forms.TabPage();
             this.txtProcessSteps = new System.Windows.Forms.TextBox();
             this.label70 = new System.Windows.Forms.Label();
@@ -288,7 +315,7 @@
             this.tabPage47 = new System.Windows.Forms.TabPage();
             this.txtChecklist4 = new System.Windows.Forms.TextBox();
             this.label109 = new System.Windows.Forms.Label();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.tbpControllingAStage = new System.Windows.Forms.TabPage();
             this.tabControl8 = new System.Windows.Forms.TabControl();
             this.tabPage48 = new System.Windows.Forms.TabPage();
             this.pictureBox94 = new System.Windows.Forms.PictureBox();
@@ -415,35 +442,6 @@
             this.tabPage40 = new System.Windows.Forms.TabPage();
             this.txtChecklist3 = new System.Windows.Forms.TextBox();
             this.label149 = new System.Windows.Forms.Label();
-            this.tabControl10 = new System.Windows.Forms.TabControl();
-            this.tabPage13 = new System.Windows.Forms.TabPage();
-            this.pictureBox106 = new System.Windows.Forms.PictureBox();
-            this.tabPage14 = new System.Windows.Forms.TabPage();
-            this.btnIdentifyingFollowOnActions = new System.Windows.Forms.Button();
-            this.btnEvaluateAProject = new System.Windows.Forms.Button();
-            this.btnDecommissionongAProject = new System.Windows.Forms.Button();
-            this.pictureBox107 = new System.Windows.Forms.PictureBox();
-            this.label150 = new System.Windows.Forms.Label();
-            this.pictureBox108 = new System.Windows.Forms.PictureBox();
-            this.tabPage15 = new System.Windows.Forms.TabPage();
-            this.label151 = new System.Windows.Forms.Label();
-            this.pictureBox109 = new System.Windows.Forms.PictureBox();
-            this.tabPage16 = new System.Windows.Forms.TabPage();
-            this.panel122 = new System.Windows.Forms.Panel();
-            this.label152 = new System.Windows.Forms.Label();
-            this.panel123 = new System.Windows.Forms.Panel();
-            this.label153 = new System.Windows.Forms.Label();
-            this.pictureBox110 = new System.Windows.Forms.PictureBox();
-            this.tabPage17 = new System.Windows.Forms.TabPage();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.label154 = new System.Windows.Forms.Label();
-            this.tabPage18 = new System.Windows.Forms.TabPage();
-            this.txtRolesAndResponsabilities = new System.Windows.Forms.TextBox();
-            this.label155 = new System.Windows.Forms.Label();
-            this.tabPage19 = new System.Windows.Forms.TabPage();
-            this.txtChechklist1 = new System.Windows.Forms.TextBox();
-            this.label156 = new System.Windows.Forms.Label();
             this.tbpPlanningAProject = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
             this.tabControl11 = new System.Windows.Forms.TabControl();
@@ -478,14 +476,35 @@
             this.tabPage58 = new System.Windows.Forms.TabPage();
             this.txtChecklist = new System.Windows.Forms.TextBox();
             this.label164 = new System.Windows.Forms.Label();
-            tabPage9 = new System.Windows.Forms.TabPage();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnBackToPLSM = new System.Windows.Forms.Button();
+            this.lblType = new System.Windows.Forms.Label();
+            this.pnlHideTabPages = new System.Windows.Forms.Panel();
+            this.pictureBox84 = new System.Windows.Forms.PictureBox();
+            this.pictureBox70 = new System.Windows.Forms.PictureBox();
+            tbpClosingAProject = new System.Windows.Forms.TabPage();
+            tbpClosingAProject.SuspendLayout();
+            this.tabControl10.SuspendLayout();
+            this.tabPage13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox106)).BeginInit();
+            this.tabPage14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox107)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox108)).BeginInit();
+            this.tabPage15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox109)).BeginInit();
+            this.tabPage16.SuspendLayout();
+            this.panel122.SuspendLayout();
+            this.panel123.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox110)).BeginInit();
+            this.tabPage17.SuspendLayout();
+            this.tabPage18.SuspendLayout();
+            this.tabPage19.SuspendLayout();
             this.tbcProcessOverview.SuspendLayout();
             this.tbpStartingUpAProject.SuspendLayout();
             this.flowLayoutPanel6.SuspendLayout();
             this.tabControl4.SuspendLayout();
             this.tabPage20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox69)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).BeginInit();
             this.tabPage21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox72)).BeginInit();
@@ -504,7 +523,7 @@
             this.groupBox11.SuspendLayout();
             this.tabPage25.SuspendLayout();
             this.tabPage26.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.tbpDirectingAProject.SuspendLayout();
             this.flowLayoutPanel7.SuspendLayout();
             this.tabControl5.SuspendLayout();
             this.tbpProcessOverview1.SuspendLayout();
@@ -529,12 +548,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).BeginInit();
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).BeginInit();
-            this.tabPage4.SuspendLayout();
+            this.tbpInitiatingAProject.SuspendLayout();
             this.flowLayoutPanel8.SuspendLayout();
             this.tabControl6.SuspendLayout();
             this.tabPage27.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).BeginInit();
             this.tabPage28.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).BeginInit();
             this.tabPage29.SuspendLayout();
@@ -594,7 +612,7 @@
             this.tabPage46.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox93)).BeginInit();
             this.tabPage47.SuspendLayout();
-            this.tabPage8.SuspendLayout();
+            this.tbpControllingAStage.SuspendLayout();
             this.tabControl8.SuspendLayout();
             this.tabPage48.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox94)).BeginInit();
@@ -659,22 +677,6 @@
             this.tabPage38.SuspendLayout();
             this.tabPage39.SuspendLayout();
             this.tabPage40.SuspendLayout();
-            tabPage9.SuspendLayout();
-            this.tabControl10.SuspendLayout();
-            this.tabPage13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox106)).BeginInit();
-            this.tabPage14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox107)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox108)).BeginInit();
-            this.tabPage15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox109)).BeginInit();
-            this.tabPage16.SuspendLayout();
-            this.panel122.SuspendLayout();
-            this.panel123.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox110)).BeginInit();
-            this.tabPage17.SuspendLayout();
-            this.tabPage18.SuspendLayout();
-            this.tabPage19.SuspendLayout();
             this.tbpPlanningAProject.SuspendLayout();
             this.flowLayoutPanel11.SuspendLayout();
             this.tabControl11.SuspendLayout();
@@ -696,23 +698,344 @@
             this.tabPage57.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox118)).BeginInit();
             this.tabPage58.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).BeginInit();
             this.SuspendLayout();
+            // 
+            // tbpClosingAProject
+            // 
+            tbpClosingAProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            tbpClosingAProject.Controls.Add(this.tabControl10);
+            tbpClosingAProject.Location = new System.Drawing.Point(4, 21);
+            tbpClosingAProject.Name = "tbpClosingAProject";
+            tbpClosingAProject.Size = new System.Drawing.Size(958, 521);
+            tbpClosingAProject.TabIndex = 6;
+            tbpClosingAProject.Text = "Closing a Project";
+            // 
+            // tabControl10
+            // 
+            this.tabControl10.Controls.Add(this.tabPage13);
+            this.tabControl10.Controls.Add(this.tabPage14);
+            this.tabControl10.Controls.Add(this.tabPage15);
+            this.tabControl10.Controls.Add(this.tabPage16);
+            this.tabControl10.Controls.Add(this.tabPage17);
+            this.tabControl10.Controls.Add(this.tabPage18);
+            this.tabControl10.Controls.Add(this.tabPage19);
+            this.tabControl10.Location = new System.Drawing.Point(16, 11);
+            this.tabControl10.Name = "tabControl10";
+            this.tabControl10.SelectedIndex = 0;
+            this.tabControl10.Size = new System.Drawing.Size(927, 506);
+            this.tabControl10.TabIndex = 2;
+            // 
+            // tabPage13
+            // 
+            this.tabPage13.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPage13.Controls.Add(this.pictureBox106);
+            this.tabPage13.Location = new System.Drawing.Point(4, 21);
+            this.tabPage13.Name = "tabPage13";
+            this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage13.Size = new System.Drawing.Size(919, 481);
+            this.tabPage13.TabIndex = 0;
+            this.tabPage13.Text = "Process Overview";
+            // 
+            // pictureBox106
+            // 
+            this.pictureBox106.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox106.BackgroundImage")));
+            this.pictureBox106.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox106.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox106.Image")));
+            this.pictureBox106.Location = new System.Drawing.Point(16, 13);
+            this.pictureBox106.Name = "pictureBox106";
+            this.pictureBox106.Size = new System.Drawing.Size(489, 267);
+            this.pictureBox106.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox106.TabIndex = 0;
+            this.pictureBox106.TabStop = false;
+            // 
+            // tabPage14
+            // 
+            this.tabPage14.Controls.Add(this.btnIdentifyingFollowOnActions);
+            this.tabPage14.Controls.Add(this.btnEvaluateAProject);
+            this.tabPage14.Controls.Add(this.btnDecommissionongAProject);
+            this.tabPage14.Controls.Add(this.pictureBox107);
+            this.tabPage14.Controls.Add(this.label150);
+            this.tabPage14.Controls.Add(this.pictureBox108);
+            this.tabPage14.Location = new System.Drawing.Point(4, 21);
+            this.tabPage14.Name = "tabPage14";
+            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage14.Size = new System.Drawing.Size(919, 481);
+            this.tabPage14.TabIndex = 1;
+            this.tabPage14.Text = "Process Streps";
+            this.tabPage14.UseVisualStyleBackColor = true;
+            // 
+            // btnIdentifyingFollowOnActions
+            // 
+            this.btnIdentifyingFollowOnActions.Location = new System.Drawing.Point(22, 79);
+            this.btnIdentifyingFollowOnActions.Name = "btnIdentifyingFollowOnActions";
+            this.btnIdentifyingFollowOnActions.Size = new System.Drawing.Size(223, 30);
+            this.btnIdentifyingFollowOnActions.TabIndex = 6;
+            this.btnIdentifyingFollowOnActions.Text = "Identifying Follow on Actions";
+            this.btnIdentifyingFollowOnActions.UseVisualStyleBackColor = true;
+            // 
+            // btnEvaluateAProject
+            // 
+            this.btnEvaluateAProject.Location = new System.Drawing.Point(22, 115);
+            this.btnEvaluateAProject.Name = "btnEvaluateAProject";
+            this.btnEvaluateAProject.Size = new System.Drawing.Size(223, 30);
+            this.btnEvaluateAProject.TabIndex = 5;
+            this.btnEvaluateAProject.Text = "Evaluate A Project";
+            this.btnEvaluateAProject.UseVisualStyleBackColor = true;
+            // 
+            // btnDecommissionongAProject
+            // 
+            this.btnDecommissionongAProject.Location = new System.Drawing.Point(22, 43);
+            this.btnDecommissionongAProject.Name = "btnDecommissionongAProject";
+            this.btnDecommissionongAProject.Size = new System.Drawing.Size(223, 30);
+            this.btnDecommissionongAProject.TabIndex = 4;
+            this.btnDecommissionongAProject.Text = "Decommissionong a Project";
+            this.btnDecommissionongAProject.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox107
+            // 
+            this.pictureBox107.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox107.BackgroundImage")));
+            this.pictureBox107.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox107.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox107.Image")));
+            this.pictureBox107.Location = new System.Drawing.Point(264, 233);
+            this.pictureBox107.Name = "pictureBox107";
+            this.pictureBox107.Size = new System.Drawing.Size(331, 85);
+            this.pictureBox107.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox107.TabIndex = 3;
+            this.pictureBox107.TabStop = false;
+            // 
+            // label150
+            // 
+            this.label150.AutoSize = true;
+            this.label150.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label150.Location = new System.Drawing.Point(18, 13);
+            this.label150.Name = "label150";
+            this.label150.Size = new System.Drawing.Size(227, 19);
+            this.label150.TabIndex = 2;
+            this.label150.Text = "Closing a Project Process Steps:";
+            // 
+            // pictureBox108
+            // 
+            this.pictureBox108.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox108.BackgroundImage")));
+            this.pictureBox108.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox108.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox108.Image")));
+            this.pictureBox108.Location = new System.Drawing.Point(264, 13);
+            this.pictureBox108.Name = "pictureBox108";
+            this.pictureBox108.Size = new System.Drawing.Size(331, 214);
+            this.pictureBox108.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox108.TabIndex = 1;
+            this.pictureBox108.TabStop = false;
+            // 
+            // tabPage15
+            // 
+            this.tabPage15.Controls.Add(this.label151);
+            this.tabPage15.Controls.Add(this.pictureBox109);
+            this.tabPage15.Location = new System.Drawing.Point(4, 21);
+            this.tabPage15.Name = "tabPage15";
+            this.tabPage15.Size = new System.Drawing.Size(919, 481);
+            this.tabPage15.TabIndex = 2;
+            this.tabPage15.Text = "Required Information";
+            this.tabPage15.UseVisualStyleBackColor = true;
+            // 
+            // label151
+            // 
+            this.label151.AutoSize = true;
+            this.label151.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label151.Location = new System.Drawing.Point(18, 13);
+            this.label151.Name = "label151";
+            this.label151.Size = new System.Drawing.Size(211, 19);
+            this.label151.TabIndex = 3;
+            this.label151.Text = "Closing a Project Information";
+            // 
+            // pictureBox109
+            // 
+            this.pictureBox109.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox109.BackgroundImage")));
+            this.pictureBox109.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox109.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox109.Image")));
+            this.pictureBox109.Location = new System.Drawing.Point(22, 33);
+            this.pictureBox109.Name = "pictureBox109";
+            this.pictureBox109.Size = new System.Drawing.Size(207, 178);
+            this.pictureBox109.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox109.TabIndex = 1;
+            this.pictureBox109.TabStop = false;
+            // 
+            // tabPage16
+            // 
+            this.tabPage16.Controls.Add(this.panel122);
+            this.tabPage16.Controls.Add(this.panel123);
+            this.tabPage16.Controls.Add(this.pictureBox110);
+            this.tabPage16.Location = new System.Drawing.Point(4, 21);
+            this.tabPage16.Name = "tabPage16";
+            this.tabPage16.Size = new System.Drawing.Size(919, 481);
+            this.tabPage16.TabIndex = 3;
+            this.tabPage16.Text = "Inputs and Outputs Matrix";
+            this.tabPage16.UseVisualStyleBackColor = true;
+            // 
+            // panel122
+            // 
+            this.panel122.BackColor = System.Drawing.Color.LightGray;
+            this.panel122.Controls.Add(this.label152);
+            this.panel122.Location = new System.Drawing.Point(16, 246);
+            this.panel122.Name = "panel122";
+            this.panel122.Size = new System.Drawing.Size(247, 224);
+            this.panel122.TabIndex = 3;
+            // 
+            // label152
+            // 
+            this.label152.AutoSize = true;
+            this.label152.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label152.Location = new System.Drawing.Point(3, 5);
+            this.label152.Name = "label152";
+            this.label152.Size = new System.Drawing.Size(186, 19);
+            this.label152.TabIndex = 0;
+            this.label152.Text = "Closing a Project Outputs:";
+            // 
+            // panel123
+            // 
+            this.panel123.BackColor = System.Drawing.Color.LightGray;
+            this.panel123.Controls.Add(this.label153);
+            this.panel123.Location = new System.Drawing.Point(16, 15);
+            this.panel123.Name = "panel123";
+            this.panel123.Size = new System.Drawing.Size(247, 222);
+            this.panel123.TabIndex = 2;
+            // 
+            // label153
+            // 
+            this.label153.AutoSize = true;
+            this.label153.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label153.Location = new System.Drawing.Point(3, 5);
+            this.label153.Name = "label153";
+            this.label153.Size = new System.Drawing.Size(176, 19);
+            this.label153.TabIndex = 0;
+            this.label153.Text = "Closing a Project Inputs:";
+            // 
+            // pictureBox110
+            // 
+            this.pictureBox110.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox110.BackgroundImage")));
+            this.pictureBox110.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox110.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox110.Image")));
+            this.pictureBox110.Location = new System.Drawing.Point(269, 15);
+            this.pictureBox110.Name = "pictureBox110";
+            this.pictureBox110.Size = new System.Drawing.Size(632, 455);
+            this.pictureBox110.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox110.TabIndex = 1;
+            this.pictureBox110.TabStop = false;
+            // 
+            // tabPage17
+            // 
+            this.tabPage17.Controls.Add(this.button10);
+            this.tabPage17.Controls.Add(this.button11);
+            this.tabPage17.Controls.Add(this.label154);
+            this.tabPage17.Location = new System.Drawing.Point(4, 21);
+            this.tabPage17.Name = "tabPage17";
+            this.tabPage17.Size = new System.Drawing.Size(919, 481);
+            this.tabPage17.TabIndex = 4;
+            this.tabPage17.Text = "Templates, Tools and Techniques";
+            this.tabPage17.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(19, 76);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(223, 30);
+            this.button10.TabIndex = 10;
+            this.button10.Text = "Post Implementation Review";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(19, 40);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(223, 30);
+            this.button11.TabIndex = 8;
+            this.button11.Text = "Project Closure Report";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // label154
+            // 
+            this.label154.AutoSize = true;
+            this.label154.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label154.Location = new System.Drawing.Point(15, 9);
+            this.label154.Name = "label154";
+            this.label154.Size = new System.Drawing.Size(131, 19);
+            this.label154.TabIndex = 7;
+            this.label154.Text = "Project Close Out:";
+            // 
+            // tabPage18
+            // 
+            this.tabPage18.Controls.Add(this.txtRolesAndResponsabilities);
+            this.tabPage18.Controls.Add(this.label155);
+            this.tabPage18.Location = new System.Drawing.Point(4, 21);
+            this.tabPage18.Name = "tabPage18";
+            this.tabPage18.Size = new System.Drawing.Size(919, 481);
+            this.tabPage18.TabIndex = 5;
+            this.tabPage18.Text = "Roles and Responsibilities ";
+            this.tabPage18.UseVisualStyleBackColor = true;
+            // 
+            // txtRolesAndResponsabilities
+            // 
+            this.txtRolesAndResponsabilities.Location = new System.Drawing.Point(7, 25);
+            this.txtRolesAndResponsabilities.Multiline = true;
+            this.txtRolesAndResponsabilities.Name = "txtRolesAndResponsabilities";
+            this.txtRolesAndResponsabilities.Size = new System.Drawing.Size(318, 359);
+            this.txtRolesAndResponsabilities.TabIndex = 10;
+            // 
+            // label155
+            // 
+            this.label155.AutoSize = true;
+            this.label155.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label155.Location = new System.Drawing.Point(3, 5);
+            this.label155.Name = "label155";
+            this.label155.Size = new System.Drawing.Size(312, 19);
+            this.label155.TabIndex = 6;
+            this.label155.Text = "Closing a Project Roles and Responsibilities:";
+            // 
+            // tabPage19
+            // 
+            this.tabPage19.Controls.Add(this.txtChechklist1);
+            this.tabPage19.Controls.Add(this.label156);
+            this.tabPage19.Location = new System.Drawing.Point(4, 21);
+            this.tabPage19.Name = "tabPage19";
+            this.tabPage19.Size = new System.Drawing.Size(919, 481);
+            this.tabPage19.TabIndex = 6;
+            this.tabPage19.Text = "Checklist";
+            this.tabPage19.UseVisualStyleBackColor = true;
+            // 
+            // txtChechklist1
+            // 
+            this.txtChechklist1.Location = new System.Drawing.Point(7, 25);
+            this.txtChechklist1.Multiline = true;
+            this.txtChechklist1.Name = "txtChechklist1";
+            this.txtChechklist1.Size = new System.Drawing.Size(240, 365);
+            this.txtChechklist1.TabIndex = 9;
+            // 
+            // label156
+            // 
+            this.label156.AutoSize = true;
+            this.label156.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label156.Location = new System.Drawing.Point(3, 5);
+            this.label156.Name = "label156";
+            this.label156.Size = new System.Drawing.Size(235, 19);
+            this.label156.TabIndex = 8;
+            this.label156.Text = "Closing a Project Roles Checklist:";
             // 
             // tbcProcessOverview
             // 
             this.tbcProcessOverview.Controls.Add(this.tbpStartingUpAProject);
-            this.tbcProcessOverview.Controls.Add(this.tabPage1);
-            this.tbcProcessOverview.Controls.Add(this.tabPage4);
+            this.tbcProcessOverview.Controls.Add(this.tbpDirectingAProject);
+            this.tbcProcessOverview.Controls.Add(this.tbpInitiatingAProject);
             this.tbcProcessOverview.Controls.Add(this.tbpManagingAStageBoundary);
-            this.tbcProcessOverview.Controls.Add(this.tabPage8);
+            this.tbcProcessOverview.Controls.Add(this.tbpControllingAStage);
             this.tbcProcessOverview.Controls.Add(this.tbpManagingProductDelivery);
-            this.tbcProcessOverview.Controls.Add(tabPage9);
+            this.tbcProcessOverview.Controls.Add(tbpClosingAProject);
             this.tbcProcessOverview.Controls.Add(this.tbpPlanningAProject);
             this.tbcProcessOverview.Location = new System.Drawing.Point(10, 5);
             this.tbcProcessOverview.Name = "tbcProcessOverview";
             this.tbcProcessOverview.SelectedIndex = 0;
             this.tbcProcessOverview.Size = new System.Drawing.Size(966, 546);
             this.tbcProcessOverview.TabIndex = 5;
+            this.tbcProcessOverview.Visible = false;
             // 
             // tbpStartingUpAProject
             // 
@@ -751,8 +1074,8 @@
             // tabPage20
             // 
             this.tabPage20.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPage20.Controls.Add(this.pictureBox84);
             this.tabPage20.Controls.Add(this.pictureBox69);
-            this.tabPage20.Controls.Add(this.pictureBox70);
             this.tabPage20.Location = new System.Drawing.Point(4, 21);
             this.tabPage20.Name = "tabPage20";
             this.tabPage20.Padding = new System.Windows.Forms.Padding(3);
@@ -772,27 +1095,15 @@
             this.pictureBox69.TabIndex = 1;
             this.pictureBox69.TabStop = false;
             // 
-            // pictureBox70
-            // 
-            this.pictureBox70.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox70.BackgroundImage")));
-            this.pictureBox70.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox70.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox70.Image")));
-            this.pictureBox70.Location = new System.Drawing.Point(16, 13);
-            this.pictureBox70.Name = "pictureBox70";
-            this.pictureBox70.Size = new System.Drawing.Size(489, 267);
-            this.pictureBox70.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox70.TabIndex = 0;
-            this.pictureBox70.TabStop = false;
-            // 
             // tabPage21
             // 
             this.tabPage21.Controls.Add(this.pictureBox71);
             this.tabPage21.Controls.Add(this.label47);
             this.tabPage21.Controls.Add(this.pictureBox72);
-            this.tabPage21.Location = new System.Drawing.Point(4, 22);
+            this.tabPage21.Location = new System.Drawing.Point(4, 21);
             this.tabPage21.Name = "tabPage21";
             this.tabPage21.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage21.Size = new System.Drawing.Size(919, 480);
+            this.tabPage21.Size = new System.Drawing.Size(919, 481);
             this.tabPage21.TabIndex = 1;
             this.tabPage21.Text = "Process Streps";
             this.tabPage21.UseVisualStyleBackColor = true;
@@ -835,9 +1146,9 @@
             // 
             this.tabPage22.Controls.Add(this.label48);
             this.tabPage22.Controls.Add(this.pictureBox73);
-            this.tabPage22.Location = new System.Drawing.Point(4, 22);
+            this.tabPage22.Location = new System.Drawing.Point(4, 21);
             this.tabPage22.Name = "tabPage22";
-            this.tabPage22.Size = new System.Drawing.Size(919, 480);
+            this.tabPage22.Size = new System.Drawing.Size(919, 481);
             this.tabPage22.TabIndex = 2;
             this.tabPage22.Text = "Required Information";
             this.tabPage22.UseVisualStyleBackColor = true;
@@ -869,9 +1180,9 @@
             this.tabPage23.Controls.Add(this.panel64);
             this.tabPage23.Controls.Add(this.panel65);
             this.tabPage23.Controls.Add(this.pictureBox74);
-            this.tabPage23.Location = new System.Drawing.Point(4, 22);
+            this.tabPage23.Location = new System.Drawing.Point(4, 21);
             this.tabPage23.Name = "tabPage23";
-            this.tabPage23.Size = new System.Drawing.Size(919, 480);
+            this.tabPage23.Size = new System.Drawing.Size(919, 481);
             this.tabPage23.TabIndex = 3;
             this.tabPage23.Text = "Inputs and Outputs Matrix";
             this.tabPage23.UseVisualStyleBackColor = true;
@@ -934,9 +1245,9 @@
             this.tabPage24.Controls.Add(this.groupBox7);
             this.tabPage24.Controls.Add(this.groupBox9);
             this.tabPage24.Controls.Add(this.groupBox11);
-            this.tabPage24.Location = new System.Drawing.Point(4, 22);
+            this.tabPage24.Location = new System.Drawing.Point(4, 21);
             this.tabPage24.Name = "tabPage24";
-            this.tabPage24.Size = new System.Drawing.Size(919, 480);
+            this.tabPage24.Size = new System.Drawing.Size(919, 481);
             this.tabPage24.TabIndex = 4;
             this.tabPage24.Text = "Templates, Tools and Techniques";
             this.tabPage24.UseVisualStyleBackColor = true;
@@ -970,6 +1281,7 @@
             this.btnJobDescriptions1.TabIndex = 42;
             this.btnJobDescriptions1.Text = "Job Descriptions.doc";
             this.btnJobDescriptions1.UseVisualStyleBackColor = true;
+            this.btnJobDescriptions1.Click += new System.EventHandler(this.btnJobDescriptions1_Click);
             // 
             // label51
             // 
@@ -1159,9 +1471,9 @@
             // 
             this.tabPage25.Controls.Add(this.txtRolesAndResponsabilities1);
             this.tabPage25.Controls.Add(this.label52);
-            this.tabPage25.Location = new System.Drawing.Point(4, 22);
+            this.tabPage25.Location = new System.Drawing.Point(4, 21);
             this.tabPage25.Name = "tabPage25";
-            this.tabPage25.Size = new System.Drawing.Size(919, 480);
+            this.tabPage25.Size = new System.Drawing.Size(919, 481);
             this.tabPage25.TabIndex = 5;
             this.tabPage25.Text = "Roles and Responsibilities ";
             this.tabPage25.UseVisualStyleBackColor = true;
@@ -1188,9 +1500,9 @@
             // 
             this.tabPage26.Controls.Add(this.txtChecklist1);
             this.tabPage26.Controls.Add(this.label53);
-            this.tabPage26.Location = new System.Drawing.Point(4, 22);
+            this.tabPage26.Location = new System.Drawing.Point(4, 21);
             this.tabPage26.Name = "tabPage26";
-            this.tabPage26.Size = new System.Drawing.Size(919, 480);
+            this.tabPage26.Size = new System.Drawing.Size(919, 481);
             this.tabPage26.TabIndex = 6;
             this.tabPage26.Text = "Checklist";
             this.tabPage26.UseVisualStyleBackColor = true;
@@ -1213,16 +1525,16 @@
             this.label53.TabIndex = 8;
             this.label53.Text = "Starting up Project Checklist:";
             // 
-            // tabPage1
+            // tbpDirectingAProject
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage1.Controls.Add(this.flowLayoutPanel7);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(958, 520);
-            this.tabPage1.TabIndex = 1;
-            this.tabPage1.Text = "Directing a Project";
+            this.tbpDirectingAProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tbpDirectingAProject.Controls.Add(this.flowLayoutPanel7);
+            this.tbpDirectingAProject.Location = new System.Drawing.Point(4, 21);
+            this.tbpDirectingAProject.Name = "tbpDirectingAProject";
+            this.tbpDirectingAProject.Padding = new System.Windows.Forms.Padding(3);
+            this.tbpDirectingAProject.Size = new System.Drawing.Size(958, 521);
+            this.tbpDirectingAProject.TabIndex = 1;
+            this.tbpDirectingAProject.Text = "Directing a Project";
             // 
             // flowLayoutPanel7
             // 
@@ -1287,10 +1599,10 @@
             // 
             this.tabPage2.Controls.Add(this.label54);
             this.tabPage2.Controls.Add(this.pictureBox77);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 21);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(919, 480);
+            this.tabPage2.Size = new System.Drawing.Size(919, 481);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Process Streps";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1322,9 +1634,9 @@
             this.tabPage3.Controls.Add(this.pictureBox78);
             this.tabPage3.Controls.Add(this.label55);
             this.tabPage3.Controls.Add(this.pictureBox79);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Location = new System.Drawing.Point(4, 21);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(919, 480);
+            this.tabPage3.Size = new System.Drawing.Size(919, 481);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Required Information";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1368,9 +1680,9 @@
             this.tbpInputsAndOutputsMatrix.Controls.Add(this.panel66);
             this.tbpInputsAndOutputsMatrix.Controls.Add(this.panel67);
             this.tbpInputsAndOutputsMatrix.Controls.Add(this.pictureBox80);
-            this.tbpInputsAndOutputsMatrix.Location = new System.Drawing.Point(4, 22);
+            this.tbpInputsAndOutputsMatrix.Location = new System.Drawing.Point(4, 21);
             this.tbpInputsAndOutputsMatrix.Name = "tbpInputsAndOutputsMatrix";
-            this.tbpInputsAndOutputsMatrix.Size = new System.Drawing.Size(919, 480);
+            this.tbpInputsAndOutputsMatrix.Size = new System.Drawing.Size(919, 481);
             this.tbpInputsAndOutputsMatrix.TabIndex = 3;
             this.tbpInputsAndOutputsMatrix.Text = "Inputs and Outputs Matrix";
             this.tbpInputsAndOutputsMatrix.UseVisualStyleBackColor = true;
@@ -1432,9 +1744,9 @@
             this.tabPage5.Controls.Add(this.groupBox3);
             this.tabPage5.Controls.Add(this.groupBox10);
             this.tabPage5.Controls.Add(this.groupBox13);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Location = new System.Drawing.Point(4, 21);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(919, 480);
+            this.tabPage5.Size = new System.Drawing.Size(919, 481);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Templates, Tools and Techniques";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1852,9 +2164,9 @@
             // 
             this.tabPage6.Controls.Add(this.label68);
             this.tabPage6.Controls.Add(this.pictureBox81);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Location = new System.Drawing.Point(4, 21);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(919, 480);
+            this.tabPage6.Size = new System.Drawing.Size(919, 481);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Roles and Responsibilities ";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -1885,9 +2197,9 @@
             // 
             this.tabPage7.Controls.Add(this.label69);
             this.tabPage7.Controls.Add(this.pictureBox82);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Location = new System.Drawing.Point(4, 21);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(919, 480);
+            this.tabPage7.Size = new System.Drawing.Size(919, 481);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Checklist";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -1914,15 +2226,15 @@
             this.pictureBox82.TabIndex = 7;
             this.pictureBox82.TabStop = false;
             // 
-            // tabPage4
+            // tbpInitiatingAProject
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage4.Controls.Add(this.flowLayoutPanel8);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(958, 520);
-            this.tabPage4.TabIndex = 2;
-            this.tabPage4.Text = "Initiating a Project";
+            this.tbpInitiatingAProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tbpInitiatingAProject.Controls.Add(this.flowLayoutPanel8);
+            this.tbpInitiatingAProject.Location = new System.Drawing.Point(4, 21);
+            this.tbpInitiatingAProject.Name = "tbpInitiatingAProject";
+            this.tbpInitiatingAProject.Size = new System.Drawing.Size(958, 521);
+            this.tbpInitiatingAProject.TabIndex = 2;
+            this.tbpInitiatingAProject.Text = "Initiating a Project";
             // 
             // flowLayoutPanel8
             // 
@@ -1953,12 +2265,12 @@
             // tabPage27
             // 
             this.tabPage27.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPage27.Controls.Add(this.pictureBox70);
             this.tabPage27.Controls.Add(this.pictureBox83);
-            this.tabPage27.Controls.Add(this.pictureBox84);
-            this.tabPage27.Location = new System.Drawing.Point(4, 22);
+            this.tabPage27.Location = new System.Drawing.Point(4, 21);
             this.tabPage27.Name = "tabPage27";
             this.tabPage27.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage27.Size = new System.Drawing.Size(1222, 520);
+            this.tabPage27.Size = new System.Drawing.Size(1222, 521);
             this.tabPage27.TabIndex = 0;
             this.tabPage27.Text = "Process Overview";
             // 
@@ -1974,27 +2286,15 @@
             this.pictureBox83.TabIndex = 1;
             this.pictureBox83.TabStop = false;
             // 
-            // pictureBox84
-            // 
-            this.pictureBox84.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox84.BackgroundImage")));
-            this.pictureBox84.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox84.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox84.Image")));
-            this.pictureBox84.Location = new System.Drawing.Point(16, 13);
-            this.pictureBox84.Name = "pictureBox84";
-            this.pictureBox84.Size = new System.Drawing.Size(489, 267);
-            this.pictureBox84.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox84.TabIndex = 0;
-            this.pictureBox84.TabStop = false;
-            // 
             // tabPage28
             // 
             this.tabPage28.Controls.Add(this.txtProcessSteps);
             this.tabPage28.Controls.Add(this.label70);
             this.tabPage28.Controls.Add(this.pictureBox85);
-            this.tabPage28.Location = new System.Drawing.Point(4, 22);
+            this.tabPage28.Location = new System.Drawing.Point(4, 21);
             this.tabPage28.Name = "tabPage28";
             this.tabPage28.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage28.Size = new System.Drawing.Size(1222, 520);
+            this.tabPage28.Size = new System.Drawing.Size(1222, 521);
             this.tabPage28.TabIndex = 1;
             this.tabPage28.Text = "Process Streps";
             this.tabPage28.UseVisualStyleBackColor = true;
@@ -2034,9 +2334,9 @@
             // 
             this.tabPage29.Controls.Add(this.label71);
             this.tabPage29.Controls.Add(this.pictureBox86);
-            this.tabPage29.Location = new System.Drawing.Point(4, 22);
+            this.tabPage29.Location = new System.Drawing.Point(4, 21);
             this.tabPage29.Name = "tabPage29";
-            this.tabPage29.Size = new System.Drawing.Size(1222, 520);
+            this.tabPage29.Size = new System.Drawing.Size(1222, 521);
             this.tabPage29.TabIndex = 2;
             this.tabPage29.Text = "Required Information";
             this.tabPage29.UseVisualStyleBackColor = true;
@@ -2068,9 +2368,9 @@
             this.tabPage30.Controls.Add(this.panel68);
             this.tabPage30.Controls.Add(this.panel74);
             this.tabPage30.Controls.Add(this.pictureBox87);
-            this.tabPage30.Location = new System.Drawing.Point(4, 22);
+            this.tabPage30.Location = new System.Drawing.Point(4, 21);
             this.tabPage30.Name = "tabPage30";
-            this.tabPage30.Size = new System.Drawing.Size(1222, 520);
+            this.tabPage30.Size = new System.Drawing.Size(1222, 521);
             this.tabPage30.TabIndex = 3;
             this.tabPage30.Text = "Inputs and Outputs Matrix";
             this.tabPage30.UseVisualStyleBackColor = true;
@@ -2649,9 +2949,9 @@
             // 
             this.tabPage32.Controls.Add(this.textBox1);
             this.tabPage32.Controls.Add(this.label83);
-            this.tabPage32.Location = new System.Drawing.Point(4, 22);
+            this.tabPage32.Location = new System.Drawing.Point(4, 21);
             this.tabPage32.Name = "tabPage32";
-            this.tabPage32.Size = new System.Drawing.Size(1222, 520);
+            this.tabPage32.Size = new System.Drawing.Size(1222, 521);
             this.tabPage32.TabIndex = 5;
             this.tabPage32.Text = "Roles and Responsibilities ";
             this.tabPage32.UseVisualStyleBackColor = true;
@@ -2678,9 +2978,9 @@
             // 
             this.tabPage33.Controls.Add(this.textBox2);
             this.tabPage33.Controls.Add(this.label84);
-            this.tabPage33.Location = new System.Drawing.Point(4, 22);
+            this.tabPage33.Location = new System.Drawing.Point(4, 21);
             this.tabPage33.Name = "tabPage33";
-            this.tabPage33.Size = new System.Drawing.Size(1222, 520);
+            this.tabPage33.Size = new System.Drawing.Size(1222, 521);
             this.tabPage33.TabIndex = 6;
             this.tabPage33.Text = "Checklist";
             this.tabPage33.UseVisualStyleBackColor = true;
@@ -2707,9 +3007,9 @@
             // 
             this.tbpManagingAStageBoundary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbpManagingAStageBoundary.Controls.Add(this.flowLayoutPanel9);
-            this.tbpManagingAStageBoundary.Location = new System.Drawing.Point(4, 22);
+            this.tbpManagingAStageBoundary.Location = new System.Drawing.Point(4, 21);
             this.tbpManagingAStageBoundary.Name = "tbpManagingAStageBoundary";
-            this.tbpManagingAStageBoundary.Size = new System.Drawing.Size(958, 520);
+            this.tbpManagingAStageBoundary.Size = new System.Drawing.Size(958, 521);
             this.tbpManagingAStageBoundary.TabIndex = 3;
             this.tbpManagingAStageBoundary.Text = "Managing a Stage Boundary";
             // 
@@ -2777,10 +3077,10 @@
             this.tabPage42.Controls.Add(this.panel79);
             this.tabPage42.Controls.Add(this.label89);
             this.tabPage42.Controls.Add(this.pictureBox90);
-            this.tabPage42.Location = new System.Drawing.Point(4, 22);
+            this.tabPage42.Location = new System.Drawing.Point(4, 21);
             this.tabPage42.Name = "tabPage42";
             this.tabPage42.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage42.Size = new System.Drawing.Size(919, 480);
+            this.tabPage42.Size = new System.Drawing.Size(919, 481);
             this.tabPage42.TabIndex = 1;
             this.tabPage42.Text = "Process Streps";
             this.tabPage42.UseVisualStyleBackColor = true;
@@ -2939,9 +3239,9 @@
             // 
             this.tabPage43.Controls.Add(this.label86);
             this.tabPage43.Controls.Add(this.pictureBox91);
-            this.tabPage43.Location = new System.Drawing.Point(4, 22);
+            this.tabPage43.Location = new System.Drawing.Point(4, 21);
             this.tabPage43.Name = "tabPage43";
-            this.tabPage43.Size = new System.Drawing.Size(919, 480);
+            this.tabPage43.Size = new System.Drawing.Size(919, 481);
             this.tabPage43.TabIndex = 2;
             this.tabPage43.Text = "Required Information";
             this.tabPage43.UseVisualStyleBackColor = true;
@@ -2973,9 +3273,9 @@
             this.tabPage44.Controls.Add(this.panel86);
             this.tabPage44.Controls.Add(this.panel92);
             this.tabPage44.Controls.Add(this.pictureBox92);
-            this.tabPage44.Location = new System.Drawing.Point(4, 22);
+            this.tabPage44.Location = new System.Drawing.Point(4, 21);
             this.tabPage44.Name = "tabPage44";
-            this.tabPage44.Size = new System.Drawing.Size(919, 480);
+            this.tabPage44.Size = new System.Drawing.Size(919, 481);
             this.tabPage44.TabIndex = 3;
             this.tabPage44.Text = "Inputs and Outputs Matrix";
             this.tabPage44.UseVisualStyleBackColor = true;
@@ -3197,9 +3497,9 @@
             this.tabPage45.Controls.Add(this.groupBox24);
             this.tabPage45.Controls.Add(this.groupBox25);
             this.tabPage45.Controls.Add(this.groupBox26);
-            this.tabPage45.Location = new System.Drawing.Point(4, 22);
+            this.tabPage45.Location = new System.Drawing.Point(4, 21);
             this.tabPage45.Name = "tabPage45";
-            this.tabPage45.Size = new System.Drawing.Size(919, 480);
+            this.tabPage45.Size = new System.Drawing.Size(919, 481);
             this.tabPage45.TabIndex = 4;
             this.tabPage45.Text = "Templates, Tools and Techniques";
             this.tabPage45.UseVisualStyleBackColor = true;
@@ -3480,9 +3780,9 @@
             // 
             this.tabPage46.Controls.Add(this.label108);
             this.tabPage46.Controls.Add(this.pictureBox93);
-            this.tabPage46.Location = new System.Drawing.Point(4, 22);
+            this.tabPage46.Location = new System.Drawing.Point(4, 21);
             this.tabPage46.Name = "tabPage46";
-            this.tabPage46.Size = new System.Drawing.Size(919, 480);
+            this.tabPage46.Size = new System.Drawing.Size(919, 481);
             this.tabPage46.TabIndex = 5;
             this.tabPage46.Text = "Roles and Responsibilities ";
             this.tabPage46.UseVisualStyleBackColor = true;
@@ -3513,9 +3813,9 @@
             // 
             this.tabPage47.Controls.Add(this.txtChecklist4);
             this.tabPage47.Controls.Add(this.label109);
-            this.tabPage47.Location = new System.Drawing.Point(4, 22);
+            this.tabPage47.Location = new System.Drawing.Point(4, 21);
             this.tabPage47.Name = "tabPage47";
-            this.tabPage47.Size = new System.Drawing.Size(919, 480);
+            this.tabPage47.Size = new System.Drawing.Size(919, 481);
             this.tabPage47.TabIndex = 6;
             this.tabPage47.Text = "Checklist";
             this.tabPage47.UseVisualStyleBackColor = true;
@@ -3538,15 +3838,15 @@
             this.label109.TabIndex = 8;
             this.label109.Text = "Managing Stage Boundaries Checklist:";
             // 
-            // tabPage8
+            // tbpControllingAStage
             // 
-            this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.tabPage8.Controls.Add(this.tabControl8);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(958, 520);
-            this.tabPage8.TabIndex = 4;
-            this.tabPage8.Text = "Controlling a Stage";
+            this.tbpControllingAStage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tbpControllingAStage.Controls.Add(this.tabControl8);
+            this.tbpControllingAStage.Location = new System.Drawing.Point(4, 21);
+            this.tbpControllingAStage.Name = "tbpControllingAStage";
+            this.tbpControllingAStage.Size = new System.Drawing.Size(958, 521);
+            this.tbpControllingAStage.TabIndex = 4;
+            this.tbpControllingAStage.Text = "Controlling a Stage";
             // 
             // tabControl8
             // 
@@ -3604,10 +3904,10 @@
             this.tabPage49.Controls.Add(this.panel96);
             this.tabPage49.Controls.Add(this.label116);
             this.tabPage49.Controls.Add(this.pictureBox96);
-            this.tabPage49.Location = new System.Drawing.Point(4, 22);
+            this.tabPage49.Location = new System.Drawing.Point(4, 21);
             this.tabPage49.Name = "tabPage49";
             this.tabPage49.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage49.Size = new System.Drawing.Size(919, 480);
+            this.tabPage49.Size = new System.Drawing.Size(919, 481);
             this.tabPage49.TabIndex = 1;
             this.tabPage49.Text = "Process Streps:";
             this.tabPage49.UseVisualStyleBackColor = true;
@@ -3826,9 +4126,9 @@
             // 
             this.tabPage50.Controls.Add(this.label117);
             this.tabPage50.Controls.Add(this.pictureBox97);
-            this.tabPage50.Location = new System.Drawing.Point(4, 22);
+            this.tabPage50.Location = new System.Drawing.Point(4, 21);
             this.tabPage50.Name = "tabPage50";
-            this.tabPage50.Size = new System.Drawing.Size(919, 480);
+            this.tabPage50.Size = new System.Drawing.Size(919, 481);
             this.tabPage50.TabIndex = 2;
             this.tabPage50.Text = "Required Information";
             this.tabPage50.UseVisualStyleBackColor = true;
@@ -3860,9 +4160,9 @@
             this.tabPage51.Controls.Add(this.panel106);
             this.tabPage51.Controls.Add(this.panel107);
             this.tabPage51.Controls.Add(this.pictureBox98);
-            this.tabPage51.Location = new System.Drawing.Point(4, 22);
+            this.tabPage51.Location = new System.Drawing.Point(4, 21);
             this.tabPage51.Name = "tabPage51";
-            this.tabPage51.Size = new System.Drawing.Size(919, 480);
+            this.tabPage51.Size = new System.Drawing.Size(919, 481);
             this.tabPage51.TabIndex = 3;
             this.tabPage51.Text = "Inputs and Outputs Matrix";
             this.tabPage51.UseVisualStyleBackColor = true;
@@ -3927,9 +4227,9 @@
             this.tabPage52.Controls.Add(this.groupBox39);
             this.tabPage52.Controls.Add(this.groupBox40);
             this.tabPage52.Controls.Add(this.groupBox41);
-            this.tabPage52.Location = new System.Drawing.Point(4, 22);
+            this.tabPage52.Location = new System.Drawing.Point(4, 21);
             this.tabPage52.Name = "tabPage52";
-            this.tabPage52.Size = new System.Drawing.Size(919, 480);
+            this.tabPage52.Size = new System.Drawing.Size(919, 481);
             this.tabPage52.TabIndex = 4;
             this.tabPage52.Text = "Templates, Tools and Techniques";
             this.tabPage52.UseVisualStyleBackColor = true;
@@ -4368,9 +4668,9 @@
             // 
             this.tabPage53.Controls.Add(this.label129);
             this.tabPage53.Controls.Add(this.pictureBox99);
-            this.tabPage53.Location = new System.Drawing.Point(4, 22);
+            this.tabPage53.Location = new System.Drawing.Point(4, 21);
             this.tabPage53.Name = "tabPage53";
-            this.tabPage53.Size = new System.Drawing.Size(919, 480);
+            this.tabPage53.Size = new System.Drawing.Size(919, 481);
             this.tabPage53.TabIndex = 5;
             this.tabPage53.Text = "Roles and Responsibilities ";
             this.tabPage53.UseVisualStyleBackColor = true;
@@ -4401,9 +4701,9 @@
             // 
             this.tabPage54.Controls.Add(this.txtChecklist2);
             this.tabPage54.Controls.Add(this.label130);
-            this.tabPage54.Location = new System.Drawing.Point(4, 22);
+            this.tabPage54.Location = new System.Drawing.Point(4, 21);
             this.tabPage54.Name = "tabPage54";
-            this.tabPage54.Size = new System.Drawing.Size(919, 480);
+            this.tabPage54.Size = new System.Drawing.Size(919, 481);
             this.tabPage54.TabIndex = 6;
             this.tabPage54.Text = "Checklist";
             this.tabPage54.UseVisualStyleBackColor = true;
@@ -4430,9 +4730,9 @@
             // 
             this.tbpManagingProductDelivery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbpManagingProductDelivery.Controls.Add(this.flowLayoutPanel10);
-            this.tbpManagingProductDelivery.Location = new System.Drawing.Point(4, 22);
+            this.tbpManagingProductDelivery.Location = new System.Drawing.Point(4, 21);
             this.tbpManagingProductDelivery.Name = "tbpManagingProductDelivery";
-            this.tbpManagingProductDelivery.Size = new System.Drawing.Size(958, 520);
+            this.tbpManagingProductDelivery.Size = new System.Drawing.Size(958, 521);
             this.tbpManagingProductDelivery.TabIndex = 5;
             this.tbpManagingProductDelivery.Text = "Managing Product Delivery";
             // 
@@ -4504,10 +4804,10 @@
             this.tabPage35.Controls.Add(this.pictureBox102);
             this.tabPage35.Controls.Add(this.label125);
             this.tabPage35.Controls.Add(this.pictureBox103);
-            this.tabPage35.Location = new System.Drawing.Point(4, 22);
+            this.tabPage35.Location = new System.Drawing.Point(4, 21);
             this.tabPage35.Name = "tabPage35";
             this.tabPage35.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage35.Size = new System.Drawing.Size(911, 520);
+            this.tabPage35.Size = new System.Drawing.Size(911, 521);
             this.tabPage35.TabIndex = 1;
             this.tabPage35.Text = "Process Streps";
             this.tabPage35.UseVisualStyleBackColor = true;
@@ -4618,9 +4918,9 @@
             // 
             this.tabPage36.Controls.Add(this.label126);
             this.tabPage36.Controls.Add(this.pictureBox104);
-            this.tabPage36.Location = new System.Drawing.Point(4, 22);
+            this.tabPage36.Location = new System.Drawing.Point(4, 21);
             this.tabPage36.Name = "tabPage36";
-            this.tabPage36.Size = new System.Drawing.Size(911, 520);
+            this.tabPage36.Size = new System.Drawing.Size(911, 521);
             this.tabPage36.TabIndex = 2;
             this.tabPage36.Text = "Required Information";
             this.tabPage36.UseVisualStyleBackColor = true;
@@ -4652,9 +4952,9 @@
             this.tabPage37.Controls.Add(this.panel112);
             this.tabPage37.Controls.Add(this.panel118);
             this.tabPage37.Controls.Add(this.pictureBox105);
-            this.tabPage37.Location = new System.Drawing.Point(4, 22);
+            this.tabPage37.Location = new System.Drawing.Point(4, 21);
             this.tabPage37.Name = "tabPage37";
-            this.tabPage37.Size = new System.Drawing.Size(911, 520);
+            this.tabPage37.Size = new System.Drawing.Size(911, 521);
             this.tabPage37.TabIndex = 3;
             this.tabPage37.Text = "Inputs and Outputs Matrix";
             this.tabPage37.UseVisualStyleBackColor = true;
@@ -4874,9 +5174,9 @@
             this.tabPage38.Controls.Add(this.button7);
             this.tabPage38.Controls.Add(this.button8);
             this.tabPage38.Controls.Add(this.button9);
-            this.tabPage38.Location = new System.Drawing.Point(4, 22);
+            this.tabPage38.Location = new System.Drawing.Point(4, 21);
             this.tabPage38.Name = "tabPage38";
-            this.tabPage38.Size = new System.Drawing.Size(911, 520);
+            this.tabPage38.Size = new System.Drawing.Size(911, 521);
             this.tabPage38.TabIndex = 4;
             this.tabPage38.Text = "Templates, Tools and Techniques";
             this.tabPage38.UseVisualStyleBackColor = true;
@@ -4915,9 +5215,9 @@
             // 
             this.tabPage39.Controls.Add(this.txtRolesAndResponsabilities3);
             this.tabPage39.Controls.Add(this.label148);
-            this.tabPage39.Location = new System.Drawing.Point(4, 22);
+            this.tabPage39.Location = new System.Drawing.Point(4, 21);
             this.tabPage39.Name = "tabPage39";
-            this.tabPage39.Size = new System.Drawing.Size(911, 520);
+            this.tabPage39.Size = new System.Drawing.Size(911, 521);
             this.tabPage39.TabIndex = 5;
             this.tabPage39.Text = "Roles and Responsibilities ";
             this.tabPage39.UseVisualStyleBackColor = true;
@@ -4944,9 +5244,9 @@
             // 
             this.tabPage40.Controls.Add(this.txtChecklist3);
             this.tabPage40.Controls.Add(this.label149);
-            this.tabPage40.Location = new System.Drawing.Point(4, 22);
+            this.tabPage40.Location = new System.Drawing.Point(4, 21);
             this.tabPage40.Name = "tabPage40";
-            this.tabPage40.Size = new System.Drawing.Size(911, 520);
+            this.tabPage40.Size = new System.Drawing.Size(911, 521);
             this.tabPage40.TabIndex = 6;
             this.tabPage40.Text = "Checklist";
             this.tabPage40.UseVisualStyleBackColor = true;
@@ -4969,331 +5269,13 @@
             this.label149.TabIndex = 8;
             this.label149.Text = "Managing Product Delivery Checklist:";
             // 
-            // tabPage9
-            // 
-            tabPage9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            tabPage9.Controls.Add(this.tabControl10);
-            tabPage9.Location = new System.Drawing.Point(4, 21);
-            tabPage9.Name = "tabPage9";
-            tabPage9.Size = new System.Drawing.Size(958, 521);
-            tabPage9.TabIndex = 6;
-            tabPage9.Text = "Closing a Project";
-            // 
-            // tabControl10
-            // 
-            this.tabControl10.Controls.Add(this.tabPage13);
-            this.tabControl10.Controls.Add(this.tabPage14);
-            this.tabControl10.Controls.Add(this.tabPage15);
-            this.tabControl10.Controls.Add(this.tabPage16);
-            this.tabControl10.Controls.Add(this.tabPage17);
-            this.tabControl10.Controls.Add(this.tabPage18);
-            this.tabControl10.Controls.Add(this.tabPage19);
-            this.tabControl10.Location = new System.Drawing.Point(16, 11);
-            this.tabControl10.Name = "tabControl10";
-            this.tabControl10.SelectedIndex = 0;
-            this.tabControl10.Size = new System.Drawing.Size(927, 506);
-            this.tabControl10.TabIndex = 2;
-            // 
-            // tabPage13
-            // 
-            this.tabPage13.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tabPage13.Controls.Add(this.pictureBox106);
-            this.tabPage13.Location = new System.Drawing.Point(4, 21);
-            this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(919, 481);
-            this.tabPage13.TabIndex = 0;
-            this.tabPage13.Text = "Process Overview";
-            // 
-            // pictureBox106
-            // 
-            this.pictureBox106.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox106.BackgroundImage")));
-            this.pictureBox106.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox106.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox106.Image")));
-            this.pictureBox106.Location = new System.Drawing.Point(16, 13);
-            this.pictureBox106.Name = "pictureBox106";
-            this.pictureBox106.Size = new System.Drawing.Size(489, 267);
-            this.pictureBox106.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox106.TabIndex = 0;
-            this.pictureBox106.TabStop = false;
-            // 
-            // tabPage14
-            // 
-            this.tabPage14.Controls.Add(this.btnIdentifyingFollowOnActions);
-            this.tabPage14.Controls.Add(this.btnEvaluateAProject);
-            this.tabPage14.Controls.Add(this.btnDecommissionongAProject);
-            this.tabPage14.Controls.Add(this.pictureBox107);
-            this.tabPage14.Controls.Add(this.label150);
-            this.tabPage14.Controls.Add(this.pictureBox108);
-            this.tabPage14.Location = new System.Drawing.Point(4, 21);
-            this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage14.Size = new System.Drawing.Size(919, 481);
-            this.tabPage14.TabIndex = 1;
-            this.tabPage14.Text = "Process Streps";
-            this.tabPage14.UseVisualStyleBackColor = true;
-            // 
-            // btnIdentifyingFollowOnActions
-            // 
-            this.btnIdentifyingFollowOnActions.Location = new System.Drawing.Point(22, 79);
-            this.btnIdentifyingFollowOnActions.Name = "btnIdentifyingFollowOnActions";
-            this.btnIdentifyingFollowOnActions.Size = new System.Drawing.Size(223, 30);
-            this.btnIdentifyingFollowOnActions.TabIndex = 6;
-            this.btnIdentifyingFollowOnActions.Text = "Identifying Follow on Actions";
-            this.btnIdentifyingFollowOnActions.UseVisualStyleBackColor = true;
-            // 
-            // btnEvaluateAProject
-            // 
-            this.btnEvaluateAProject.Location = new System.Drawing.Point(22, 115);
-            this.btnEvaluateAProject.Name = "btnEvaluateAProject";
-            this.btnEvaluateAProject.Size = new System.Drawing.Size(223, 30);
-            this.btnEvaluateAProject.TabIndex = 5;
-            this.btnEvaluateAProject.Text = "Evaluate A Project";
-            this.btnEvaluateAProject.UseVisualStyleBackColor = true;
-            // 
-            // btnDecommissionongAProject
-            // 
-            this.btnDecommissionongAProject.Location = new System.Drawing.Point(22, 43);
-            this.btnDecommissionongAProject.Name = "btnDecommissionongAProject";
-            this.btnDecommissionongAProject.Size = new System.Drawing.Size(223, 30);
-            this.btnDecommissionongAProject.TabIndex = 4;
-            this.btnDecommissionongAProject.Text = "Decommissionong a Project";
-            this.btnDecommissionongAProject.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox107
-            // 
-            this.pictureBox107.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox107.BackgroundImage")));
-            this.pictureBox107.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox107.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox107.Image")));
-            this.pictureBox107.Location = new System.Drawing.Point(264, 233);
-            this.pictureBox107.Name = "pictureBox107";
-            this.pictureBox107.Size = new System.Drawing.Size(331, 85);
-            this.pictureBox107.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox107.TabIndex = 3;
-            this.pictureBox107.TabStop = false;
-            // 
-            // label150
-            // 
-            this.label150.AutoSize = true;
-            this.label150.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label150.Location = new System.Drawing.Point(18, 13);
-            this.label150.Name = "label150";
-            this.label150.Size = new System.Drawing.Size(227, 19);
-            this.label150.TabIndex = 2;
-            this.label150.Text = "Closing a Project Process Steps:";
-            // 
-            // pictureBox108
-            // 
-            this.pictureBox108.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox108.BackgroundImage")));
-            this.pictureBox108.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox108.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox108.Image")));
-            this.pictureBox108.Location = new System.Drawing.Point(264, 13);
-            this.pictureBox108.Name = "pictureBox108";
-            this.pictureBox108.Size = new System.Drawing.Size(331, 214);
-            this.pictureBox108.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox108.TabIndex = 1;
-            this.pictureBox108.TabStop = false;
-            // 
-            // tabPage15
-            // 
-            this.tabPage15.Controls.Add(this.label151);
-            this.tabPage15.Controls.Add(this.pictureBox109);
-            this.tabPage15.Location = new System.Drawing.Point(4, 21);
-            this.tabPage15.Name = "tabPage15";
-            this.tabPage15.Size = new System.Drawing.Size(919, 481);
-            this.tabPage15.TabIndex = 2;
-            this.tabPage15.Text = "Required Information";
-            this.tabPage15.UseVisualStyleBackColor = true;
-            // 
-            // label151
-            // 
-            this.label151.AutoSize = true;
-            this.label151.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label151.Location = new System.Drawing.Point(18, 13);
-            this.label151.Name = "label151";
-            this.label151.Size = new System.Drawing.Size(211, 19);
-            this.label151.TabIndex = 3;
-            this.label151.Text = "Closing a Project Information";
-            // 
-            // pictureBox109
-            // 
-            this.pictureBox109.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox109.BackgroundImage")));
-            this.pictureBox109.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox109.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox109.Image")));
-            this.pictureBox109.Location = new System.Drawing.Point(22, 33);
-            this.pictureBox109.Name = "pictureBox109";
-            this.pictureBox109.Size = new System.Drawing.Size(207, 178);
-            this.pictureBox109.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox109.TabIndex = 1;
-            this.pictureBox109.TabStop = false;
-            // 
-            // tabPage16
-            // 
-            this.tabPage16.Controls.Add(this.panel122);
-            this.tabPage16.Controls.Add(this.panel123);
-            this.tabPage16.Controls.Add(this.pictureBox110);
-            this.tabPage16.Location = new System.Drawing.Point(4, 21);
-            this.tabPage16.Name = "tabPage16";
-            this.tabPage16.Size = new System.Drawing.Size(919, 481);
-            this.tabPage16.TabIndex = 3;
-            this.tabPage16.Text = "Inputs and Outputs Matrix";
-            this.tabPage16.UseVisualStyleBackColor = true;
-            // 
-            // panel122
-            // 
-            this.panel122.BackColor = System.Drawing.Color.LightGray;
-            this.panel122.Controls.Add(this.label152);
-            this.panel122.Location = new System.Drawing.Point(16, 246);
-            this.panel122.Name = "panel122";
-            this.panel122.Size = new System.Drawing.Size(247, 224);
-            this.panel122.TabIndex = 3;
-            // 
-            // label152
-            // 
-            this.label152.AutoSize = true;
-            this.label152.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label152.Location = new System.Drawing.Point(3, 5);
-            this.label152.Name = "label152";
-            this.label152.Size = new System.Drawing.Size(186, 19);
-            this.label152.TabIndex = 0;
-            this.label152.Text = "Closing a Project Outputs:";
-            // 
-            // panel123
-            // 
-            this.panel123.BackColor = System.Drawing.Color.LightGray;
-            this.panel123.Controls.Add(this.label153);
-            this.panel123.Location = new System.Drawing.Point(16, 15);
-            this.panel123.Name = "panel123";
-            this.panel123.Size = new System.Drawing.Size(247, 222);
-            this.panel123.TabIndex = 2;
-            // 
-            // label153
-            // 
-            this.label153.AutoSize = true;
-            this.label153.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label153.Location = new System.Drawing.Point(3, 5);
-            this.label153.Name = "label153";
-            this.label153.Size = new System.Drawing.Size(176, 19);
-            this.label153.TabIndex = 0;
-            this.label153.Text = "Closing a Project Inputs:";
-            // 
-            // pictureBox110
-            // 
-            this.pictureBox110.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox110.BackgroundImage")));
-            this.pictureBox110.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox110.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox110.Image")));
-            this.pictureBox110.Location = new System.Drawing.Point(269, 15);
-            this.pictureBox110.Name = "pictureBox110";
-            this.pictureBox110.Size = new System.Drawing.Size(632, 455);
-            this.pictureBox110.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox110.TabIndex = 1;
-            this.pictureBox110.TabStop = false;
-            // 
-            // tabPage17
-            // 
-            this.tabPage17.Controls.Add(this.button10);
-            this.tabPage17.Controls.Add(this.button11);
-            this.tabPage17.Controls.Add(this.label154);
-            this.tabPage17.Location = new System.Drawing.Point(4, 21);
-            this.tabPage17.Name = "tabPage17";
-            this.tabPage17.Size = new System.Drawing.Size(919, 481);
-            this.tabPage17.TabIndex = 4;
-            this.tabPage17.Text = "Templates, Tools and Techniques";
-            this.tabPage17.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(19, 76);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(223, 30);
-            this.button10.TabIndex = 10;
-            this.button10.Text = "Post Implementation Review";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(19, 40);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(223, 30);
-            this.button11.TabIndex = 8;
-            this.button11.Text = "Project Closure Report";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // label154
-            // 
-            this.label154.AutoSize = true;
-            this.label154.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label154.Location = new System.Drawing.Point(15, 9);
-            this.label154.Name = "label154";
-            this.label154.Size = new System.Drawing.Size(131, 19);
-            this.label154.TabIndex = 7;
-            this.label154.Text = "Project Close Out:";
-            // 
-            // tabPage18
-            // 
-            this.tabPage18.Controls.Add(this.txtRolesAndResponsabilities);
-            this.tabPage18.Controls.Add(this.label155);
-            this.tabPage18.Location = new System.Drawing.Point(4, 21);
-            this.tabPage18.Name = "tabPage18";
-            this.tabPage18.Size = new System.Drawing.Size(919, 481);
-            this.tabPage18.TabIndex = 5;
-            this.tabPage18.Text = "Roles and Responsibilities ";
-            this.tabPage18.UseVisualStyleBackColor = true;
-            // 
-            // txtRolesAndResponsabilities
-            // 
-            this.txtRolesAndResponsabilities.Location = new System.Drawing.Point(7, 25);
-            this.txtRolesAndResponsabilities.Multiline = true;
-            this.txtRolesAndResponsabilities.Name = "txtRolesAndResponsabilities";
-            this.txtRolesAndResponsabilities.Size = new System.Drawing.Size(318, 359);
-            this.txtRolesAndResponsabilities.TabIndex = 10;
-            // 
-            // label155
-            // 
-            this.label155.AutoSize = true;
-            this.label155.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label155.Location = new System.Drawing.Point(3, 5);
-            this.label155.Name = "label155";
-            this.label155.Size = new System.Drawing.Size(312, 19);
-            this.label155.TabIndex = 6;
-            this.label155.Text = "Closing a Project Roles and Responsibilities:";
-            // 
-            // tabPage19
-            // 
-            this.tabPage19.Controls.Add(this.txtChechklist1);
-            this.tabPage19.Controls.Add(this.label156);
-            this.tabPage19.Location = new System.Drawing.Point(4, 21);
-            this.tabPage19.Name = "tabPage19";
-            this.tabPage19.Size = new System.Drawing.Size(919, 481);
-            this.tabPage19.TabIndex = 6;
-            this.tabPage19.Text = "Checklist";
-            this.tabPage19.UseVisualStyleBackColor = true;
-            // 
-            // txtChechklist1
-            // 
-            this.txtChechklist1.Location = new System.Drawing.Point(7, 25);
-            this.txtChechklist1.Multiline = true;
-            this.txtChechklist1.Name = "txtChechklist1";
-            this.txtChechklist1.Size = new System.Drawing.Size(240, 365);
-            this.txtChechklist1.TabIndex = 9;
-            // 
-            // label156
-            // 
-            this.label156.AutoSize = true;
-            this.label156.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label156.Location = new System.Drawing.Point(3, 5);
-            this.label156.Name = "label156";
-            this.label156.Size = new System.Drawing.Size(235, 19);
-            this.label156.TabIndex = 8;
-            this.label156.Text = "Closing a Project Roles Checklist:";
-            // 
             // tbpPlanningAProject
             // 
             this.tbpPlanningAProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbpPlanningAProject.Controls.Add(this.flowLayoutPanel11);
-            this.tbpPlanningAProject.Location = new System.Drawing.Point(4, 22);
+            this.tbpPlanningAProject.Location = new System.Drawing.Point(4, 21);
             this.tbpPlanningAProject.Name = "tbpPlanningAProject";
-            this.tbpPlanningAProject.Size = new System.Drawing.Size(958, 520);
+            this.tbpPlanningAProject.Size = new System.Drawing.Size(958, 521);
             this.tbpPlanningAProject.TabIndex = 7;
             this.tbpPlanningAProject.Text = "Planning a Project";
             // 
@@ -5361,10 +5343,10 @@
             this.tabPage11.Controls.Add(this.pictureBox113);
             this.tabPage11.Controls.Add(this.label157);
             this.tabPage11.Controls.Add(this.pictureBox114);
-            this.tabPage11.Location = new System.Drawing.Point(4, 22);
+            this.tabPage11.Location = new System.Drawing.Point(4, 21);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(919, 480);
+            this.tabPage11.Size = new System.Drawing.Size(919, 481);
             this.tabPage11.TabIndex = 1;
             this.tabPage11.Text = "Process Streps";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -5408,9 +5390,9 @@
             this.tabPage12.Controls.Add(this.pictureBox115);
             this.tabPage12.Controls.Add(this.label158);
             this.tabPage12.Controls.Add(this.pictureBox116);
-            this.tabPage12.Location = new System.Drawing.Point(4, 22);
+            this.tabPage12.Location = new System.Drawing.Point(4, 21);
             this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Size = new System.Drawing.Size(919, 480);
+            this.tabPage12.Size = new System.Drawing.Size(919, 481);
             this.tabPage12.TabIndex = 2;
             this.tabPage12.Text = "Required Information";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -5454,9 +5436,9 @@
             this.tabPage55.Controls.Add(this.panel124);
             this.tabPage55.Controls.Add(this.panel125);
             this.tabPage55.Controls.Add(this.pictureBox117);
-            this.tabPage55.Location = new System.Drawing.Point(4, 22);
+            this.tabPage55.Location = new System.Drawing.Point(4, 21);
             this.tabPage55.Name = "tabPage55";
-            this.tabPage55.Size = new System.Drawing.Size(919, 480);
+            this.tabPage55.Size = new System.Drawing.Size(919, 481);
             this.tabPage55.TabIndex = 3;
             this.tabPage55.Text = "Inputs and Outputs Matrix";
             this.tabPage55.UseVisualStyleBackColor = true;
@@ -5514,9 +5496,9 @@
             // tabPage56
             // 
             this.tabPage56.Controls.Add(this.groupBox27);
-            this.tabPage56.Location = new System.Drawing.Point(4, 22);
+            this.tabPage56.Location = new System.Drawing.Point(4, 21);
             this.tabPage56.Name = "tabPage56";
-            this.tabPage56.Size = new System.Drawing.Size(919, 480);
+            this.tabPage56.Size = new System.Drawing.Size(919, 481);
             this.tabPage56.TabIndex = 4;
             this.tabPage56.Text = "Templates, Tools and Techniques";
             this.tabPage56.UseVisualStyleBackColor = true;
@@ -5616,9 +5598,9 @@
             // 
             this.tabPage57.Controls.Add(this.label163);
             this.tabPage57.Controls.Add(this.pictureBox118);
-            this.tabPage57.Location = new System.Drawing.Point(4, 22);
+            this.tabPage57.Location = new System.Drawing.Point(4, 21);
             this.tabPage57.Name = "tabPage57";
-            this.tabPage57.Size = new System.Drawing.Size(919, 480);
+            this.tabPage57.Size = new System.Drawing.Size(919, 481);
             this.tabPage57.TabIndex = 5;
             this.tabPage57.Text = "Roles and Responsibilities ";
             this.tabPage57.UseVisualStyleBackColor = true;
@@ -5649,9 +5631,9 @@
             // 
             this.tabPage58.Controls.Add(this.txtChecklist);
             this.tabPage58.Controls.Add(this.label164);
-            this.tabPage58.Location = new System.Drawing.Point(4, 22);
+            this.tabPage58.Location = new System.Drawing.Point(4, 21);
             this.tabPage58.Name = "tabPage58";
-            this.tabPage58.Size = new System.Drawing.Size(919, 480);
+            this.tabPage58.Size = new System.Drawing.Size(919, 481);
             this.tabPage58.TabIndex = 6;
             this.tabPage58.Text = "Checklist";
             this.tabPage58.UseVisualStyleBackColor = true;
@@ -5674,23 +5656,111 @@
             this.label164.TabIndex = 8;
             this.label164.Text = "Planning a Project Roles Checklist:";
             // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(582, 559);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(194, 27);
+            this.btnClose.TabIndex = 6;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnBackToPLSM
+            // 
+            this.btnBackToPLSM.Location = new System.Drawing.Point(782, 559);
+            this.btnBackToPLSM.Name = "btnBackToPLSM";
+            this.btnBackToPLSM.Size = new System.Drawing.Size(194, 27);
+            this.btnBackToPLSM.TabIndex = 7;
+            this.btnBackToPLSM.Text = "Back to PLSM";
+            this.btnBackToPLSM.UseVisualStyleBackColor = true;
+            this.btnBackToPLSM.Click += new System.EventHandler(this.btnBackToPLSM_Click);
+            // 
+            // lblType
+            // 
+            this.lblType.AutoSize = true;
+            this.lblType.Location = new System.Drawing.Point(988, 5);
+            this.lblType.Name = "lblType";
+            this.lblType.Size = new System.Drawing.Size(7, 12);
+            this.lblType.TabIndex = 8;
+            this.lblType.Text = ".";
+            this.lblType.Visible = false;
+            // 
+            // pnlHideTabPages
+            // 
+            this.pnlHideTabPages.Location = new System.Drawing.Point(1013, 55);
+            this.pnlHideTabPages.Name = "pnlHideTabPages";
+            this.pnlHideTabPages.Size = new System.Drawing.Size(1006, 27);
+            this.pnlHideTabPages.TabIndex = 12;
+            // 
+            // pictureBox84
+            // 
+            this.pictureBox84.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox84.BackgroundImage")));
+            this.pictureBox84.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox84.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox84.Image")));
+            this.pictureBox84.Location = new System.Drawing.Point(18, 13);
+            this.pictureBox84.Name = "pictureBox84";
+            this.pictureBox84.Size = new System.Drawing.Size(489, 267);
+            this.pictureBox84.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox84.TabIndex = 2;
+            this.pictureBox84.TabStop = false;
+            // 
+            // pictureBox70
+            // 
+            this.pictureBox70.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox70.BackgroundImage")));
+            this.pictureBox70.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox70.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox70.Image")));
+            this.pictureBox70.Location = new System.Drawing.Point(18, 13);
+            this.pictureBox70.Name = "pictureBox70";
+            this.pictureBox70.Size = new System.Drawing.Size(489, 267);
+            this.pictureBox70.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox70.TabIndex = 2;
+            this.pictureBox70.TabStop = false;
+            // 
             // PLSM_ProcessGroupingGovernance_Interfaces
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(1148, 557);
+            this.ClientSize = new System.Drawing.Size(1148, 593);
+            this.Controls.Add(this.pnlHideTabPages);
+            this.Controls.Add(this.lblType);
+            this.Controls.Add(this.btnBackToPLSM);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.tbcProcessOverview);
             this.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "PLSM_ProcessGroupingGovernance_Interfaces";
             this.Text = "PLSM_ProcessGroupingGovernance_Interfaces";
+            this.Activated += new System.EventHandler(this.PLSM_ProcessGroupingGovernance_Interfaces_Activated);
+            tbpClosingAProject.ResumeLayout(false);
+            this.tabControl10.ResumeLayout(false);
+            this.tabPage13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox106)).EndInit();
+            this.tabPage14.ResumeLayout(false);
+            this.tabPage14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox107)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox108)).EndInit();
+            this.tabPage15.ResumeLayout(false);
+            this.tabPage15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox109)).EndInit();
+            this.tabPage16.ResumeLayout(false);
+            this.panel122.ResumeLayout(false);
+            this.panel122.PerformLayout();
+            this.panel123.ResumeLayout(false);
+            this.panel123.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox110)).EndInit();
+            this.tabPage17.ResumeLayout(false);
+            this.tabPage17.PerformLayout();
+            this.tabPage18.ResumeLayout(false);
+            this.tabPage18.PerformLayout();
+            this.tabPage19.ResumeLayout(false);
+            this.tabPage19.PerformLayout();
             this.tbcProcessOverview.ResumeLayout(false);
             this.tbpStartingUpAProject.ResumeLayout(false);
             this.flowLayoutPanel6.ResumeLayout(false);
             this.tabControl4.ResumeLayout(false);
             this.tabPage20.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox69)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).EndInit();
             this.tabPage21.ResumeLayout(false);
             this.tabPage21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).EndInit();
@@ -5716,7 +5786,7 @@
             this.tabPage25.PerformLayout();
             this.tabPage26.ResumeLayout(false);
             this.tabPage26.PerformLayout();
-            this.tabPage1.ResumeLayout(false);
+            this.tbpDirectingAProject.ResumeLayout(false);
             this.flowLayoutPanel7.ResumeLayout(false);
             this.tabControl5.ResumeLayout(false);
             this.tbpProcessOverview1.ResumeLayout(false);
@@ -5752,12 +5822,11 @@
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).EndInit();
-            this.tabPage4.ResumeLayout(false);
+            this.tbpInitiatingAProject.ResumeLayout(false);
             this.flowLayoutPanel8.ResumeLayout(false);
             this.tabControl6.ResumeLayout(false);
             this.tabPage27.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).EndInit();
             this.tabPage28.ResumeLayout(false);
             this.tabPage28.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).EndInit();
@@ -5857,7 +5926,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox93)).EndInit();
             this.tabPage47.ResumeLayout(false);
             this.tabPage47.PerformLayout();
-            this.tabPage8.ResumeLayout(false);
+            this.tbpControllingAStage.ResumeLayout(false);
             this.tabControl8.ResumeLayout(false);
             this.tabPage48.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox94)).EndInit();
@@ -5962,29 +6031,6 @@
             this.tabPage39.PerformLayout();
             this.tabPage40.ResumeLayout(false);
             this.tabPage40.PerformLayout();
-            tabPage9.ResumeLayout(false);
-            this.tabControl10.ResumeLayout(false);
-            this.tabPage13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox106)).EndInit();
-            this.tabPage14.ResumeLayout(false);
-            this.tabPage14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox107)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox108)).EndInit();
-            this.tabPage15.ResumeLayout(false);
-            this.tabPage15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox109)).EndInit();
-            this.tabPage16.ResumeLayout(false);
-            this.panel122.ResumeLayout(false);
-            this.panel122.PerformLayout();
-            this.panel123.ResumeLayout(false);
-            this.panel123.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox110)).EndInit();
-            this.tabPage17.ResumeLayout(false);
-            this.tabPage17.PerformLayout();
-            this.tabPage18.ResumeLayout(false);
-            this.tabPage18.PerformLayout();
-            this.tabPage19.ResumeLayout(false);
-            this.tabPage19.PerformLayout();
             this.tbpPlanningAProject.ResumeLayout(false);
             this.flowLayoutPanel11.ResumeLayout(false);
             this.tabControl11.ResumeLayout(false);
@@ -6013,7 +6059,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox118)).EndInit();
             this.tabPage58.ResumeLayout(false);
             this.tabPage58.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -6025,7 +6074,6 @@
         private System.Windows.Forms.TabControl tabControl4;
         private System.Windows.Forms.TabPage tabPage20;
         private System.Windows.Forms.PictureBox pictureBox69;
-        private System.Windows.Forms.PictureBox pictureBox70;
         private System.Windows.Forms.TabPage tabPage21;
         private System.Windows.Forms.PictureBox pictureBox71;
         private System.Windows.Forms.Label label47;
@@ -6068,7 +6116,7 @@
         private System.Windows.Forms.TabPage tabPage26;
         private System.Windows.Forms.TextBox txtChecklist1;
         private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tbpDirectingAProject;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
         private System.Windows.Forms.TabControl tabControl5;
         private System.Windows.Forms.TabPage tbpProcessOverview1;
@@ -6129,12 +6177,11 @@
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.PictureBox pictureBox82;
-        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tbpInitiatingAProject;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
         private System.Windows.Forms.TabControl tabControl6;
         private System.Windows.Forms.TabPage tabPage27;
         private System.Windows.Forms.PictureBox pictureBox83;
-        private System.Windows.Forms.PictureBox pictureBox84;
         private System.Windows.Forms.TabPage tabPage28;
         private System.Windows.Forms.TextBox txtProcessSteps;
         private System.Windows.Forms.Label label70;
@@ -6277,7 +6324,7 @@
         private System.Windows.Forms.TabPage tabPage47;
         private System.Windows.Forms.TextBox txtChecklist4;
         private System.Windows.Forms.Label label109;
-        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.TabPage tbpControllingAStage;
         private System.Windows.Forms.TabControl tabControl8;
         private System.Windows.Forms.TabPage tabPage48;
         private System.Windows.Forms.PictureBox pictureBox94;
@@ -6467,5 +6514,11 @@
         private System.Windows.Forms.TabPage tabPage58;
         private System.Windows.Forms.TextBox txtChecklist;
         private System.Windows.Forms.Label label164;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnBackToPLSM;
+        private System.Windows.Forms.Label lblType;
+        private System.Windows.Forms.Panel pnlHideTabPages;
+        private System.Windows.Forms.PictureBox pictureBox84;
+        private System.Windows.Forms.PictureBox pictureBox70;
     }
 }

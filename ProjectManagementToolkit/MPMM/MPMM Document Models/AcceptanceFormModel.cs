@@ -14,7 +14,7 @@ namespace ProjectManagementToolkit.Classes
         public string ProjectName { get; set; }
         public string ProjectManager { get; set; }
         //Acceptance details
-        public int AcceptanceId { get; set; }
+        public string AcceptanceId { get; set; }
         public string RequestedBy { get; set; }
         public string DateRequired { get; set; }
         public string Description { get; set; }
@@ -25,11 +25,18 @@ namespace ProjectManagementToolkit.Classes
         public string AcceptanceResults { get; set; }
         //Customer approval
         public string SupportingDocumentation { get; set; }
+        public List<Acceptance> acceptances { get; set; } = new List<Acceptance>();
 
-        public AcceptanceFormModel()
-        {
 
-        }
-        
+    }
+
+    class Acceptance
+    {
+        public string AcceptanceResults { get; set; }
+        public string Method { get; set; }
+        public string Reviewer { get; set; }
+        public string Date { get; set; }
+        public string Result { get; set; }
+
     }
 }

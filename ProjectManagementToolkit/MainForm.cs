@@ -27,6 +27,7 @@ namespace ProjectManagementToolkit
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            
             foreach (Control control in this.Controls)
             {
                 MdiClient client = control as MdiClient;
@@ -57,6 +58,19 @@ namespace ProjectManagementToolkit
                     }
                 }
             }
+
+            ToolStripLabel toolStripLabel = new ToolStripLabel();
+            toolStripLabel.Text = "Project ID: ";
+            menuStrip1.Items.Add(toolStripLabel);
+
+            ToolStripTextBox txtProjectID = new ToolStripTextBox();
+            txtProjectID.Text = Settings.Default.ProjectID;
+            txtProjectID.AutoSize = false;
+            Size size = TextRenderer.MeasureText(txtProjectID.Text, txtProjectID.Font);
+            txtProjectID.Width = size.Width+10;
+            txtProjectID.ReadOnly = true;
+            txtProjectID.Padding = new Padding(5);
+            menuStrip1.Items.Add(txtProjectID);
 
             string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
@@ -175,7 +189,7 @@ namespace ProjectManagementToolkit
 
         private void templateToolStripMenuItem8_Click(object sender, EventArgs e)
         {
-            RiskPlanDocumentForm form = new RiskPlanDocumentForm();
+            RiskPlanForm form = new RiskPlanForm();
             form.Show();
             form.MdiParent = this;
         }
@@ -381,6 +395,13 @@ namespace ProjectManagementToolkit
         private void reviewFormToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             PhaseReviewFormPlanningDocumentForm form = new PhaseReviewFormPlanningDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void exampleToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            ProjectCharterForm form = new ProjectCharterForm();
             form.Show();
             form.MdiParent = this;
         }
