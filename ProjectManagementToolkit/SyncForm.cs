@@ -62,7 +62,7 @@ namespace ProjectManagementToolkit.MPMM
 
             if (localDocuments == null && serverDocuments == null)
             {
-                MessageBox.Show("No documents to sync.");
+                MessageBox.Show("No documents to sync.", "Sync Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             serverDocuments.Remove("Config");
@@ -87,7 +87,7 @@ namespace ProjectManagementToolkit.MPMM
             }
             else
             {
-                MessageBox.Show("Error syncing documents.");
+                MessageBox.Show("Error syncing documents.","Sync Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -120,22 +120,43 @@ namespace ProjectManagementToolkit.MPMM
                 lblProgress.Text = "Sync Failed...";
             }
 
+            bool errorFound = false;
+            string errorMessage = "Error syncing the following forms:\n";
+            
+            for (int i = 0; i < documentsSuccesful.Length; i++)
+            {
+                errorFound = true;
+                errorMessage += documentsToSync[i] + "\n";
+            }
+
+            if(errorFound)
+            {
+                MessageBox.Show(errorMessage, "Sync Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
             Cursor.Current = Cursors.Default;
         }
 
         private bool checkProjectConfig()
         {
-            HttpResponseMessage httpResponseMessage = client.GetAsync(Settings.Default.URI + "/project/" + Settings.Default.ProjectID).Result;
-            var jsonResponse = httpResponseMessage.Content.ReadAsStringAsync().Result;
+            try
+            {
+                HttpResponseMessage httpResponseMessage = client.GetAsync(Settings.Default.URI + "/project/" + Settings.Default.ProjectID).Result;
+                var jsonResponse = httpResponseMessage.Content.ReadAsStringAsync().Result;
 
-            if(jsonResponse == "[]")
-            {
-                MessageBox.Show("Syncing Project for the first time.");
-                return false;
+                if (jsonResponse == "[]")
+                {
+                    MessageBox.Show("Syncing Project for the first time.");
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
             }
-            else
+            catch (AggregateException)
             {
-                return true;
+                return false;
             }
         }
 
@@ -152,20 +173,28 @@ namespace ProjectManagementToolkit.MPMM
             var currentProjectJson = JsonConvert.SerializeObject(currentProject);
 
             var body = new StringContent(currentProjectJson, Encoding.UTF8, "application/json");
-
-            HttpResponseMessage httpResponseMessage = client.PostAsync(Settings.Default.URI + "/project/" + Settings.Default.ProjectID, body).Result;
-
-            int statusCode = httpResponseMessage.StatusCode.GetHashCode();
-
-            switch (statusCode)
+            try
             {
-                case 200:
-                    return true;
-                case 404:
-                    return false;
-                default:
-                    break;
+                HttpResponseMessage httpResponseMessage = client.PostAsync(Settings.Default.URI + "/project/" + Settings.Default.ProjectID, body).Result;
+
+                int statusCode = httpResponseMessage.StatusCode.GetHashCode();
+
+                switch (statusCode)
+                {
+                    case 200:
+                        return true;
+                    case 404:
+                        return false;
+                    default:
+                        break;
+                }
             }
+            catch (AggregateException)
+            {
+                MessageBox.Show("An unexpected server error occurred.","Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            
 
             return false;
         }
@@ -275,20 +304,28 @@ namespace ProjectManagementToolkit.MPMM
 
             //Save to server
             var body = new StringContent(documentJson, Encoding.UTF8, "application/json");
-
-            Task<HttpResponseMessage> responseMessage = client.PutAsync(Settings.Default.URI + "/document/" + Settings.Default.ProjectID + "/" + document, body);
-            HttpResponseMessage response = responseMessage.Result;
-            int statusCode = response.StatusCode.GetHashCode();
-
-            switch (statusCode)
+            try
             {
-                case 200:
-                    return true;
-                case 404:
-                    return false;
-                default:
-                    break;
+                Task<HttpResponseMessage> responseMessage = client.PutAsync(Settings.Default.URI + "/document/" + Settings.Default.ProjectID + "/" + document, body);
+                HttpResponseMessage response = responseMessage.Result;
+                int statusCode = response.StatusCode.GetHashCode();
+
+                switch (statusCode)
+                {
+                    case 200:
+                        return true;
+                    case 404:
+                        return false;
+                    default:
+                        break;
+                }
             }
+            catch (AggregateException)
+            {
+                MessageBox.Show("An unexpected server error ocurred.", "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            
 
             return false;
         }
@@ -309,7 +346,8 @@ namespace ProjectManagementToolkit.MPMM
             }
             catch (AggregateException)
             {
-                MessageBox.Show("An unexpected server ocurred.", "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
+                MessageBox.Show("An unexpected server error ocurred.", "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
         }
@@ -355,7 +393,7 @@ namespace ProjectManagementToolkit.MPMM
             }
             catch (AggregateException)
             {
-                MessageBox.Show("An unexpected server ocurred.", "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("An unexpected server error ocurred.", "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return "";
             }
         }
@@ -380,7 +418,7 @@ namespace ProjectManagementToolkit.MPMM
 
                 return false;
             }
-            catch (HttpRequestException)
+            catch (AggregateException)
             {
                 return false;
             }
