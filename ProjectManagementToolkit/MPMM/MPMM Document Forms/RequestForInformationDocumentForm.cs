@@ -56,7 +56,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             string CompanyOverview = txtCompanyOverview.Text;
             listBoxCompanyOverview.Items.Add(txtCompanyOverview.Text);
-            txtCompanyOffering.Clear();
+            txtCompanyOverview.Clear();
         }
 
         private void btnCompanyOffering_Click(object sender, EventArgs e)

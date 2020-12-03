@@ -921,7 +921,6 @@
             this.Controls.Add(this.label27);
             this.Controls.Add(this.txtProjectName);
             this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "QualityPlanDocumentForm";
             this.Text = "QualityPlanDocumentForm";
             this.Load += new System.EventHandler(this.QualityPlanDocumentForm_Load_1);
             this.tabControl1.ResumeLayout(false);

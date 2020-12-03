@@ -1129,7 +1129,6 @@
             this.Controls.Add(this.txtProjectName);
             this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
-            this.Name = "RequestForInformationDocumentForm";
             this.Text = "RequestForInformationDocumentForm";
             this.Load += new System.EventHandler(this.RequestForInformationDocumentForm_Load);
             this.tabControl1.ResumeLayout(false);
