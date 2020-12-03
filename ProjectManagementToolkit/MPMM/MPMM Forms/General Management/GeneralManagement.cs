@@ -44,5 +44,10 @@ namespace ProjectManagementToolkit
             string paymentTerms = txtPaymentTerms.Text;
             string invoiceDescription = txtInvoiceDescription.Text;
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

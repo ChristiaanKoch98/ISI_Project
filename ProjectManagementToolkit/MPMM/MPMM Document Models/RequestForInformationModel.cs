@@ -15,8 +15,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         #region Document information
         public string documentID { get; set; }
         public string documentOwner { get; set; }
-        public DateTime issueDate { get; set; }
-        public DateTime lastSavedDate { get; set; }
+        public string issueDate { get; set; }
+        public string lastSavedDate { get; set; }
         public string fileName { get; set; }
         #endregion
 
@@ -24,7 +24,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public class DocumentHistory
         {
             public string version { get; set; }
-            public DateTime issueDate { get; set; }
+            public string issueDate { get; set; }
             public string changes { get; set; }
         }
 
@@ -35,9 +35,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public class DocumentApprovals
         {
             public string role { get; set; }
-            public string mame { get; set; }
+            public string name { get; set; }
             public string changes { get; set; }
-            public DateTime date { get; set; }
+            public string date { get; set; }
 
         }
 
@@ -55,19 +55,19 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         #endregion
 
         #region Company
-        public string companyOverview { get; set; }
-        public string companyOffering { get; set; }
+        public List<string> companyOverview { get; set; }
+        public List<string> companyOffering { get; set; }
         #endregion
 
         #region Approach
-        public string approachMethod { get; set; }
-        public string approachTimeframes { get; set; }
-        public string approachPricing { get; set; }
+        public List<string> approachMethod { get; set; }
+        public List<string> approachTimeframes { get; set; }
+        public List<string> approachPricing { get; set; }
         #endregion
 
         #region Other
-        public string otherConfidentiality { get; set; }
-        public string otherDocumentation { get; set; }
+        public List<string> otherConfidentiality { get; set; }
+        public List<string> otherDocumentation { get; set; }
         #endregion
     }
 }

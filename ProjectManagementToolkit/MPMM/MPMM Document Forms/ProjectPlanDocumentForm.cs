@@ -12,7 +12,6 @@ using Newtonsoft.Json;
 using System.Runtime.InteropServices;
 using ProjectManagementToolkit.Utility;
 using ProjectManagementToolkit.Properties;
-using MoreLinq;
 using Xceed.Document.NET;
 using Xceed.Words.NET;
 
@@ -25,20 +24,44 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         ProjectPlanModel currentProjectPlanModel;
         Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
         ProjectModel projectModel = new ProjectModel();
-
         public ProjectPlanDocumentForm()
         {
             InitializeComponent();
         }
 
+
+
         private void ProjectPlanDocumentForm_Load(object sender, EventArgs e)
         {
             loadDocument();
+            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+
+            //tabControl collor
+            tabControl1.DrawMode = TabDrawMode.OwnerDrawFixed;
+            tabControl1.SizeMode = TabSizeMode.Fixed;
+            Size tab_size = tabControl1.ItemSize;
+            tab_size.Width = 100;
+            tab_size.Height += 15;
+            tabControl1.ItemSize = tab_size;
+
+            tabControl3.DrawMode = TabDrawMode.OwnerDrawFixed;
+            tabControl3.SizeMode = TabSizeMode.Fixed;
+            Size tab_size2 = tabControl3.ItemSize;
+            tab_size2.Width = 100;
+            tab_size2.Height += 15;
+            tabControl3.ItemSize = tab_size2;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
             saveDocument();
+        }
+
+        private void btnExportWord_Click(object sender, EventArgs e)
+        {
+            exportToWord();
         }
 
         public void saveDocument()
@@ -210,10 +233,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 documentModels.Add(documentModel);
 
                 versionControl.DocumentModels = documentModels;
-
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentProjectPlanModel = JsonConvert.DeserializeObject<ProjectPlanModel>(JsonConvert.SerializeObject(newProjectPlanModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ProjectPlan");
                 MessageBox.Show("Project plan saved successfully", "save", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MessageBox.Show("No changes was made!", "save", MessageBoxButtons.OK);
             }
         }
 
@@ -223,15 +250,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             List<string[]> documentInfo = new List<string[]>();
             newProjectPlanModel = new ProjectPlanModel();
             currentProjectPlanModel = new ProjectPlanModel();
-
             if (json != "")
             {
                 versionControl = JsonConvert.DeserializeObject<VersionControl<ProjectPlanModel>>(json);
                 newProjectPlanModel = JsonConvert.DeserializeObject<ProjectPlanModel>(versionControl.getLatest(versionControl.DocumentModels));
                 currentProjectPlanModel = JsonConvert.DeserializeObject<ProjectPlanModel>(versionControl.getLatest(versionControl.DocumentModels));
-
-                List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
-                projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
 
                 documentInfo.Add(new string[] { "Document ID", currentProjectPlanModel.DocumentID });
                 documentInfo.Add(new string[] { "Document Owner", currentProjectPlanModel.DocumentOwner });
@@ -328,10 +351,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                                 .Bold(true)
                                 .FontSize(22d).Alignment = Alignment.left;
                         }
-                       // document.InsertParagraph("Project Plan \nFor " + projectModel.ProjectName)
-                            //.Font("Arial")
-                            //.Bold(true)
-                            //.FontSize(22d).Alignment = Alignment.left;
+                        document.InsertParagraph("Project Plan \nFor " + projectModel.ProjectName)
+                            .Font("Arial")
+                            .Bold(true)
+                            .FontSize(22d).Alignment = Alignment.left;
                         document.InsertSectionPageBreak();
                         document.InsertParagraph("Document Control\n")
                             .Font("Arial")
@@ -349,8 +372,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         var documentInfoTable = document.AddTable(6, 2);
                         documentInfoTable.Rows[0].Cells[0].Paragraphs[0].Append("").Bold(true).Color(Color.White);
                         documentInfoTable.Rows[0].Cells[1].Paragraphs[0].Append("Information").Bold(true).Color(Color.White);
-                       // documentInfoTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
-                        //documentInfoTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentInfoTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentInfoTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
 
                         documentInfoTable.Rows[1].Cells[0].Paragraphs[0].Append("Document ID");
                         documentInfoTable.Rows[1].Cells[1].Paragraphs[0].Append(currentProjectPlanModel.DocumentID);
@@ -384,9 +407,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         documentHistoryTable.Rows[0].Cells[2].Paragraphs[0].Append("Changes")
                             .Bold(true)
                             .Color(Color.White);
-                        //documentHistoryTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
-                        //documentHistoryTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
-                        //documentHistoryTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentHistoryTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentHistoryTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentHistoryTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
                         for (int i = 1; i < currentProjectPlanModel.DocumentHistories.Count + 1; i++)
                         {
                             documentHistoryTable.Rows[i].Cells[0].Paragraphs[0].Append(currentProjectPlanModel.DocumentHistories[i - 1].Version);
@@ -416,10 +439,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         documentApprovalTable.Rows[0].Cells[3].Paragraphs[0].Append("Date")
                             .Bold(true)
                             .Color(Color.White);
-                       // documentApprovalTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
-                        //documentApprovalTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
-                        //documentApprovalTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
-                        //documentApprovalTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentApprovalTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
 
                         for (int i = 1; i < currentProjectPlanModel.DocumentApprovals.Count + 1; i++)
                         {
@@ -476,9 +499,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .Bold(true)
                             .Color(Color.White);
 
-                        //documentPhaseTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
-                        //documentPhaseTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
-                        //documentPhaseTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentPhaseTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentPhaseTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentPhaseTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
 
                         for (int i = 1; i < currentProjectPlanModel.Phases.Count + 1; i++)
                         {
@@ -515,10 +538,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .Bold(true)
                             .Color(Color.White);
 
-                        //documentActivitiesTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
-                        //documentActivitiesTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
-                        //documentActivitiesTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
-                        //documentActivitiesTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+                        documentActivitiesTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentActivitiesTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentActivitiesTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentActivitiesTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
 
                         for (int i = 1; i < currentProjectPlanModel.Activities.Count + 1; i++)
                         {
@@ -557,10 +580,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .Bold(true)
                             .Color(Color.White);
 
-                        //documentTasksTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
-                        //documentTasksTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
-                        //documentTasksTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
-                        //documentTasksTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+                        documentTasksTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentTasksTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentTasksTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentTasksTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
 
                         for (int i = 1; i < currentProjectPlanModel.Tasks.Count + 1; i++)
                         {
@@ -594,9 +617,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .Bold(true)
                             .Color(Color.White);
 
-                       // documentMilestonesTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
-                       // documentMilestonesTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
-                       // documentMilestonesTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentMilestonesTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentMilestonesTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentMilestonesTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
 
                         for (int i = 1; i < currentProjectPlanModel.Milestones.Count + 1; i++)
                         {
@@ -628,9 +651,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .Bold(true)
                             .Color(Color.White);
 
-                       // documentEffortsTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
-                       // documentEffortsTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
-                       // documentEffortsTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentEffortsTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentEffortsTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentEffortsTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
 
                         for (int i = 1; i < currentProjectPlanModel.Efforts.Count + 1; i++)
                         {
@@ -680,9 +703,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .Bold(true)
                             .Color(Color.White);
 
-                        //documentDependenciesTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
-                        //documentDependenciesTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
-                        //documentDependenciesTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
+                        documentDependenciesTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentDependenciesTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
+                        documentDependenciesTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
 
                         for (int i = 1; i < currentProjectPlanModel.Dependencies.Count + 1; i++)
                         {
@@ -762,7 +785,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             if (e.State == DrawItemState.Selected)
             {
-                e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(209, 237, 242)), tab_rect);
+                e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(209,237,242)), tab_rect);
                 e.DrawFocusRectangle();
 
                 txt_brush = Brushes.Black;
@@ -805,11 +828,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             Brush txt_brush, box_brush;
             Pen box_pen;
 
-           // Rectangle tab_rect = tabControl3.GetTabRect(e.Index);
+            Rectangle tab_rect = tabControl3.GetTabRect(e.Index);
 
+           
 
-
-          /*  if (e.State == DrawItemState.Selected)
+            if (e.State == DrawItemState.Selected)
             {
                 e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(209, 237, 242)), tab_rect);
                 e.DrawFocusRectangle();
@@ -831,7 +854,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             tab_rect.Left + tab_margin,
             tab_rect.Y + tab_margin,
             tab_rect.Width - 2 * tab_margin,
-            tab_rect.Height - 2 * tab_margin); */
+            tab_rect.Height - 2 * tab_margin);
 
 
             using (StringFormat string_format = new StringFormat())
@@ -840,18 +863,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 {
                     string_format.Alignment = StringAlignment.Center;
                     string_format.LineAlignment = StringAlignment.Center;
-                    //e.Graphics.DrawString(
-                       // tabControl3.TabPages[e.Index].Text,
-                       // big_font,
-                       // txt_brush,
-                       // layout_rect,
-                       // string_format);
+                    e.Graphics.DrawString(
+                        tabControl3.TabPages[e.Index].Text,
+                        big_font,
+                        txt_brush,
+                        layout_rect,
+                        string_format);
                 }
             }
-        }
-        private void documentInformation_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

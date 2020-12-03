@@ -22,7 +22,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 
             public string TaskID { get; set; }
 
-            public DateTime ExpenseDate { get; set; }
+            public string ExpenseDate { get; set; }
 
             public string ExpenseType { get; set; }
 

@@ -30,16 +30,15 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 rows.Add(new string[] { "File Name", "" });
                 foreach (var row in rows)
                 {
-                    docInfoGridData.Rows.Add(row);
+                    docInfodataGridView.Rows.Add(row);
                 }
-                docInfoGridData.AllowUserToAddRows = false;
+                docInfodataGridView.AllowUserToAddRows = false;
 
             }
 
-        private void ResourcePlanDocumentForm_Load_1(object sender, EventArgs e)
-        {
-           
-        }
+       
+
+        
     }
     }
 

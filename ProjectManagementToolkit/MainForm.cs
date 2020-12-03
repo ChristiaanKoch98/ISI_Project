@@ -27,6 +27,7 @@ namespace ProjectManagementToolkit
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            
             foreach (Control control in this.Controls)
             {
                 MdiClient client = control as MdiClient;
@@ -43,7 +44,7 @@ namespace ProjectManagementToolkit
                 item.ForeColor = Color.FromArgb(32, 32, 32);
                 foreach (ToolStripMenuItem children in item.DropDownItems)
                 {
-                    children.BackColor = Color.FromArgb(128, 128, 128);
+                    children.BackColor = Color.FromArgb(128,128,128);
                     children.ForeColor = Color.FromArgb(32, 32, 32);
                     foreach (ToolStripMenuItem child in children.DropDownItems)
                     {
@@ -57,6 +58,19 @@ namespace ProjectManagementToolkit
                     }
                 }
             }
+
+            ToolStripLabel toolStripLabel = new ToolStripLabel();
+            toolStripLabel.Text = "Project ID: ";
+            menuStrip1.Items.Add(toolStripLabel);
+
+            ToolStripTextBox txtProjectID = new ToolStripTextBox();
+            txtProjectID.Text = Settings.Default.ProjectID;
+            txtProjectID.AutoSize = false;
+            Size size = TextRenderer.MeasureText(txtProjectID.Text, txtProjectID.Font);
+            txtProjectID.Width = size.Width+10;
+            txtProjectID.ReadOnly = true;
+            txtProjectID.Padding = new Padding(5);
+            menuStrip1.Items.Add(txtProjectID);
 
             string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
@@ -385,29 +399,11 @@ namespace ProjectManagementToolkit
             form.MdiParent = this;
         }
 
-        private void termOfReferenceDocumentToolStripMenuItem_Click(object sender, EventArgs e)
+        private void exampleToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-
+            ProjectCharterForm form = new ProjectCharterForm();
+            form.Show();
+            form.MdiParent = this;
         }
-
-        private void tempToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            TermOfReferenceDocumentForm newTOR = new TermOfReferenceDocumentForm();
-            newTOR.Show();
-        }
-
-        private void formToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TermOfReferenceDocumentForm TOR = new TermOfReferenceDocumentForm();
-            TOR.Show();
-            TOR.MdiParent = this;
-        }
-    
     }
 }
-

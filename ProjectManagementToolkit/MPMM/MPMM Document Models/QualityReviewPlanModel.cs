@@ -8,31 +8,31 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 {
     class QualityReviewPlanModel
     {
-        public string projectName { get; set; }
-        public string qualityOfProcessDescription { get; set; }
+        public string ProjectName { get; set; }
+        public string QualityOfProcessDescription { get; set; }
 
-        public List<QualityOfProcess> qualityOfProcesses { get; set; }
+        public List<QualityOfProcess> QualityOfProcesses { get; set; }
 
-        public string qualityOfDeliverablesDescription { get; set; }
-        public List<QualityOfDeliverable> qualityOfDeliverables { get; set; }
+        public string QualityOfDeliverablesDescription { get; set; }
+        public List<QualityOfDeliverable> QualityOfDeliverables { get; set; }
         public class QualityOfProcess
         {
-            private string process { get; set; }
-            private string procedure { get; set; }
-            private bool standardMet { get; set; }
-            private string deviation { get; set; }
-            private string correctiveAction { get; set; }
+            public string Process { get; set; }
+            public string Procedure { get; set; }
+            public string StandardMet { get; set; }
+            public string Deviation { get; set; }
+            public string CorrectiveAction { get; set; }
         }
 
         public class QualityOfDeliverable
-        { 
-            private string requirement { get; set; }
-            private string deliverable { get; set; }
-            private string qualityCriteria { get; set; }
-            private string qualityStandard { get; set; }
-            private bool standardMet { get; set; }
-            private string qualityDeviation { get; set; }
-            private string correctiveActionsRequired { get; set; }
+        {
+            public string Requirement { get; set; }
+            public string Deliverable { get; set; }
+            public string QualityCriteria { get; set; }
+            public string QualityStandard { get; set; }
+            public string StandardMet { get; set; }
+            public string QualityDeviation { get; set; }
+            public string CorrectiveActionsRequired { get; set; }
 
         }
 
