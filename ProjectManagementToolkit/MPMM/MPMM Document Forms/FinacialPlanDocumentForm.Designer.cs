@@ -88,8 +88,6 @@
             this.tabPageAdmin = new System.Windows.Forms.TabPage();
             this.tabPageOther = new System.Windows.Forms.TabPage();
             this.tabPageFinancialPlan = new System.Windows.Forms.TabPage();
-            this.btnSaveConstraints = new System.Windows.Forms.Button();
-            this.btnSaveAssumptions = new System.Windows.Forms.Button();
             this.lblAssumption = new System.Windows.Forms.Label();
             this.lblConstraints = new System.Windows.Forms.Label();
             this.txtAssumptions = new System.Windows.Forms.TextBox();
@@ -571,8 +569,6 @@
             // 
             this.tabPageFinancialPlan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPageFinancialPlan.Controls.Add(this.dataGridView1);
-            this.tabPageFinancialPlan.Controls.Add(this.btnSaveConstraints);
-            this.tabPageFinancialPlan.Controls.Add(this.btnSaveAssumptions);
             this.tabPageFinancialPlan.Controls.Add(this.lblAssumption);
             this.tabPageFinancialPlan.Controls.Add(this.lblConstraints);
             this.tabPageFinancialPlan.Controls.Add(this.txtAssumptions);
@@ -586,32 +582,6 @@
             this.tabPageFinancialPlan.TabIndex = 2;
             this.tabPageFinancialPlan.Text = "Financial Plan";
             // 
-            // btnSaveConstraints
-            // 
-            this.btnSaveConstraints.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnSaveConstraints.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveConstraints.ForeColor = System.Drawing.Color.Black;
-            this.btnSaveConstraints.Location = new System.Drawing.Point(546, 399);
-            this.btnSaveConstraints.Name = "btnSaveConstraints";
-            this.btnSaveConstraints.Size = new System.Drawing.Size(341, 27);
-            this.btnSaveConstraints.TabIndex = 7;
-            this.btnSaveConstraints.Text = "Save Constraints";
-            this.btnSaveConstraints.UseVisualStyleBackColor = false;
-            this.btnSaveConstraints.Click += new System.EventHandler(this.btnSaveConstraints_Click);
-            // 
-            // btnSaveAssumptions
-            // 
-            this.btnSaveAssumptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnSaveAssumptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveAssumptions.ForeColor = System.Drawing.Color.Black;
-            this.btnSaveAssumptions.Location = new System.Drawing.Point(90, 399);
-            this.btnSaveAssumptions.Name = "btnSaveAssumptions";
-            this.btnSaveAssumptions.Size = new System.Drawing.Size(341, 27);
-            this.btnSaveAssumptions.TabIndex = 6;
-            this.btnSaveAssumptions.Text = "Save Assumptions";
-            this.btnSaveAssumptions.UseVisualStyleBackColor = false;
-            this.btnSaveAssumptions.Click += new System.EventHandler(this.btnSaveAssumptions_Click);
-            // 
             // lblAssumption
             // 
             this.lblAssumption.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -621,7 +591,7 @@
             this.lblAssumption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.lblAssumption.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAssumption.ForeColor = System.Drawing.Color.Black;
-            this.lblAssumption.Location = new System.Drawing.Point(3, 248);
+            this.lblAssumption.Location = new System.Drawing.Point(3, 287);
             this.lblAssumption.Name = "lblAssumption";
             this.lblAssumption.Size = new System.Drawing.Size(66, 13);
             this.lblAssumption.TabIndex = 5;
@@ -636,7 +606,7 @@
             this.lblConstraints.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.lblConstraints.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConstraints.ForeColor = System.Drawing.Color.Black;
-            this.lblConstraints.Location = new System.Drawing.Point(462, 248);
+            this.lblConstraints.Location = new System.Drawing.Point(462, 287);
             this.lblConstraints.Name = "lblConstraints";
             this.lblConstraints.Size = new System.Drawing.Size(59, 13);
             this.lblConstraints.TabIndex = 4;
@@ -650,7 +620,7 @@
             this.txtAssumptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtAssumptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAssumptions.ForeColor = System.Drawing.Color.Black;
-            this.txtAssumptions.Location = new System.Drawing.Point(90, 248);
+            this.txtAssumptions.Location = new System.Drawing.Point(75, 287);
             this.txtAssumptions.Multiline = true;
             this.txtAssumptions.Name = "txtAssumptions";
             this.txtAssumptions.Size = new System.Drawing.Size(340, 141);
@@ -665,7 +635,7 @@
             this.txtConstraints.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.txtConstraints.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConstraints.ForeColor = System.Drawing.Color.Black;
-            this.txtConstraints.Location = new System.Drawing.Point(546, 248);
+            this.txtConstraints.Location = new System.Drawing.Point(546, 287);
             this.txtConstraints.Multiline = true;
             this.txtConstraints.Name = "txtConstraints";
             this.txtConstraints.Size = new System.Drawing.Size(340, 141);
@@ -825,11 +795,11 @@
             // 
             this.btnSaveProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnSaveProjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSaveProjectName.Location = new System.Drawing.Point(349, 10);
+            this.btnSaveProjectName.Location = new System.Drawing.Point(637, 6);
             this.btnSaveProjectName.Name = "btnSaveProjectName";
             this.btnSaveProjectName.Size = new System.Drawing.Size(128, 23);
             this.btnSaveProjectName.TabIndex = 3;
-            this.btnSaveProjectName.Text = "Save Project Name";
+            this.btnSaveProjectName.Text = "Save";
             this.btnSaveProjectName.UseVisualStyleBackColor = false;
             this.btnSaveProjectName.Click += new System.EventHandler(this.btnSaveProjectName_Click);
             // 
@@ -837,7 +807,7 @@
             // 
             this.btnExport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnExport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnExport.Location = new System.Drawing.Point(499, 10);
+            this.btnExport.Location = new System.Drawing.Point(787, 6);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(128, 23);
             this.btnExport.TabIndex = 4;
@@ -1063,7 +1033,7 @@
             dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle23;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(90, 8);
+            this.dataGridView1.Location = new System.Drawing.Point(75, 8);
             this.dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
@@ -1076,7 +1046,7 @@
             this.dataGridView1.RowHeadersWidth = 51;
             dataGridViewCellStyle25.Font = new System.Drawing.Font("Arial", 10.8F);
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle25;
-            this.dataGridView1.Size = new System.Drawing.Size(796, 234);
+            this.dataGridView1.Size = new System.Drawing.Size(811, 273);
             this.dataGridView1.TabIndex = 9;
             // 
             // ExpenseCol
@@ -1215,8 +1185,6 @@
         private System.Windows.Forms.TextBox txtRoles;
         private System.Windows.Forms.TextBox txtActivities;
         private System.Windows.Forms.TabPage tabPageAppendix;
-        private System.Windows.Forms.Button btnSaveConstraints;
-        private System.Windows.Forms.Button btnSaveAssumptions;
         private System.Windows.Forms.Button btnSaveActivitiesRolesDocuments;
         private System.Windows.Forms.Button btnSaveProjectName;
         private System.Windows.Forms.TabControl tabControlFinancialExpense;
