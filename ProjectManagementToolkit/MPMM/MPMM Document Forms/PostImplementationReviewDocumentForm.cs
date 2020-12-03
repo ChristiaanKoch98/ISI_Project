@@ -27,9 +27,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
         ProjectModel projectModel = new ProjectModel();
 
-
-
-
         public void saveDocument()
         {
             newPostImplementationReviewModel.DocumentID = documentInformation.Rows[0].Cells[1].Value.ToString();
@@ -337,19 +334,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentPostImplementationReviewModel = JsonConvert.DeserializeObject<PostImplementationReviewModel>(JsonConvert.SerializeObject(newPostImplementationReviewModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "PostImplementationReview");
-                MessageBox.Show("Post Implementation Review saved successfully", "save", MessageBoxButtons.OK);
+                MessageBox.Show("Post Implementation Review saved successfully", "Save", MessageBoxButtons.OK);
             }
         }
-
-
-
-
-
-
-
-
-
 
         private void loadDocument()
         {
@@ -484,9 +473,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 newPostImplementationReviewModel = new PostImplementationReviewModel();
                 foreach (var row in documentInfo)
                 {
-                    dgvBenefit.Rows.Add(row);
+                    documentInformation.Rows.Add(row);
                 }
-                dgvBenefit.AllowUserToAddRows = false;
+                documentInformation.AllowUserToAddRows = false;
             }
         }
 
@@ -1429,10 +1418,20 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            saveDocument();
+            
         }
 
         private void PostImplementationReviewDocumentForm_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnExportWord_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void PostImplementationReviewDocumentForm_Load_1(object sender, EventArgs e)
         {
             loadDocument();
             string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
@@ -1440,7 +1439,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
         }
 
-        private void btnExportWord_Click(object sender, EventArgs e)
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+            saveDocument();
+        }
+
+        private void btnExportWord_Click_1(object sender, EventArgs e)
         {
             exportToWord();
         }

@@ -19,9 +19,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
     public partial class ExpenseFormDocumentForm : Form
     {
-/// <summary>
-/// ///////////////////////////////////////////////////////////////////Zander Added Code
-/// </summary>
+        /// <summary>
+        /// ///////////////////////////////////////////////////////////////////Zander Added Code
+        /// </summary>
         VersionControl<ExpenseFormModel> versionControl;
         ExpenseFormModel newExpenseFormModel;
         ExpenseFormModel currentExpenseFormModel;
@@ -38,19 +38,19 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             List<ExpenseFormModel.ExpenseDetail> expenseDetail = new List<ExpenseFormModel.ExpenseDetail>();
 
-            int dataGridView2RowsCount = dataGridView2.Rows.Count;
+            int documentInformationRowsCount = documentInformation.Rows.Count;
 
-            for (int i = 0; i < dataGridView2RowsCount - 1; i++)
+            for (int i = 0; i < documentInformationRowsCount - 1; i++)
             {
                 ExpenseFormModel.ExpenseDetail expenseDetailModel = new ExpenseFormModel.ExpenseDetail();
-                var activityID = dataGridView2.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var taskID = dataGridView2.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var expenseDate = dataGridView2.Rows[i].Cells[2].Value?.ToString() ?? "";
-                var expenseType = dataGridView2.Rows[i].Cells[3].Value?.ToString() ?? "";
-                var expenseDescription = dataGridView2.Rows[i].Cells[4].Value?.ToString() ?? "";
-                var expenseAmount = dataGridView2.Rows[i].Cells[5].Value?.ToString() ?? "";
-                var payeeName = dataGridView2.Rows[i].Cells[6].Value?.ToString() ?? "";
-                var invoiceNumber = dataGridView2.Rows[i].Cells[7].Value?.ToString() ?? "";
+                var activityID = documentInformation.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var taskID = documentInformation.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var expenseDate = documentInformation.Rows[i].Cells[2].Value?.ToString() ?? "";
+                var expenseType = documentInformation.Rows[i].Cells[3].Value?.ToString() ?? "";
+                var expenseDescription = documentInformation.Rows[i].Cells[4].Value?.ToString() ?? "";
+                var expenseAmount = documentInformation.Rows[i].Cells[5].Value?.ToString() ?? "";
+                var payeeName = documentInformation.Rows[i].Cells[6].Value?.ToString() ?? "";
+                var invoiceNumber = documentInformation.Rows[i].Cells[7].Value?.ToString() ?? "";
 
                 expenseDetailModel.ActivityID = activityID;
                 expenseDetailModel.TaskID = taskID;
@@ -81,6 +81,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentExpenseFormModel = JsonConvert.DeserializeObject<ExpenseFormModel>(JsonConvert.SerializeObject(newExpenseFormModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ExpenseForm");
                 MessageBox.Show("Expense form saved successfully", "save", MessageBoxButtons.OK);
             }
@@ -300,20 +301,35 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            saveDocument();
+            
         }
 
         private void ExpenseFormDocumentForm_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnExportWord_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+            saveDocument();
+        }
+
+        private void btnExportWord_Click_1(object sender, EventArgs e)
+        {
+            exportToWord();
+        }
+
+        private void ExpenseFormDocumentForm_Load_1(object sender, EventArgs e)
         {
             loadDocument();
             string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
-        }
-
-        private void btnExportWord_Click(object sender, EventArgs e)
-        {
-            exportToWord();
         }
     }
 }

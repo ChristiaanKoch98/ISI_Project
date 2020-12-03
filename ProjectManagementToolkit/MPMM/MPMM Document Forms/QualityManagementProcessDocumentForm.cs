@@ -109,10 +109,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentQualityManagementProcessModel = JsonConvert.DeserializeObject<QualityManagementProcessModel>(JsonConvert.SerializeObject(newQualityManagementProcessModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "QualityManagement");
                 MessageBox.Show("Quality Management Process saved successfully", "save", MessageBoxButtons.OK);
             }
-
         }
 
 
@@ -605,10 +605,20 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            saveDocument();
+            
         }
 
         private void QualityManagementProcessDocumentForm_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnExportWord_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void QualityManagementProcessDocumentForm_Load_1(object sender, EventArgs e)
         {
             loadDocument();
             string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
@@ -616,7 +626,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
         }
 
-        private void btnExportWord_Click(object sender, EventArgs e)
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+            saveDocument();
+        }
+
+        private void btnExportWord_Click_1(object sender, EventArgs e)
         {
             exportToWord();
         }

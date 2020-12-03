@@ -113,6 +113,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentAcceptanceManagementProcessModel = JsonConvert.DeserializeObject<AcceptanceManagementProcessModel>(JsonConvert.SerializeObject(newAcceptanceManagementProcessModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "AcceptanceManagementProcess");
                 MessageBox.Show("Acceptance Management Process saved successfully", "save", MessageBoxButtons.OK);
             }
@@ -637,7 +638,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            saveDocument();
+            
         }
 
         private void AcceptanceManagementProcessDocumentForm_Load(object sender, EventArgs e)
@@ -650,7 +651,22 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void btnExportWord_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+            saveDocument();
+        }
+
+        private void btnExportWord_Click_1(object sender, EventArgs e)
+        {
             exportToWord();
+        }
+
+        private void dataGridView8_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
