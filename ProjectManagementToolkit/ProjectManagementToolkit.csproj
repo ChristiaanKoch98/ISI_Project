@@ -267,6 +267,12 @@
     <Compile Include="MPMM\MPMM Document Forms\RiskPlanDocumentForm.Designer.cs">
       <DependentUpon>RiskPlanDocumentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\SelectionProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\SelectionProcess.Designer.cs">
+      <DependentUpon>SelectionProcess.cs</DependentUpon>
+    </Compile>
     <Compile Include="MPMM\MPMM Document Forms\StatementOfWorkDocumentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -383,7 +389,9 @@
     <Compile Include="MPMM\MPMM Forms\Governance\Governance.Designer.cs">
       <DependentUpon>Governance.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProjectSelection.cs" />
+    <Compile Include="ProjectSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ProjectSelection.Designer.cs">
       <DependentUpon>ProjectSelection.cs</DependentUpon>
     </Compile>
@@ -555,6 +563,9 @@
     <EmbeddedResource Include="MPMM\MPMM Document Forms\RiskPlanDocumentForm.resx">
       <DependentUpon>RiskPlanDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\SelectionProcess.resx">
+      <DependentUpon>SelectionProcess.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\StatementOfWorkDocumentForm.resx">
       <DependentUpon>StatementOfWorkDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -679,6 +690,7 @@
     <Content Include="ISI_DB_log.ldf">
       <DependentUpon>ISI_DB.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\selectionProcess.PNG" />
     <None Include="Resources\Powerpoint.jpg" />
     <None Include="Resources\excel.png" />
     <None Include="Resources\word.png" />
