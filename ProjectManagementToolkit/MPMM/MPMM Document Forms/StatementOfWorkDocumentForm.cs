@@ -31,46 +31,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void StatementOfWorkDocumentForm_Load(object sender, EventArgs e)
-        {
-            loadDocument();
-            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
-            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
-            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
-        }
-
-        private void btnStatementSave_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-
-
         public void saveDocument()
         {
             newStatementOfWorkModel.DocumentID = dgvInfo.Rows[0].Cells[1].Value.ToString();
@@ -162,7 +122,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 documentModels.Add(documentModel);
 
                 versionControl.DocumentModels = documentModels;
-
+                currentStatementOfWorkModel = JsonConvert.DeserializeObject<StatementOfWorkModel>(JsonConvert.SerializeObject(newStatementOfWorkModel));
                 string json = JsonConvert.SerializeObject(versionControl);
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "StatementOfWork");
                 MessageBox.Show("Statement of Work saved successfully", "save", MessageBoxButtons.OK);
@@ -237,30 +197,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 newStatementOfWorkModel = new StatementOfWorkModel();
                 foreach (var row in documentInfo)
                 {
-                    dataGridViewDocApprovals.Rows.Add(row);
+                    dgvInfo.Rows.Add(row);
                 }
-                dataGridViewDocApprovals.AllowUserToAddRows = false;
+                dgvInfo.AllowUserToAddRows = false;
             }
-        }
-
-        private void btnResourceSave_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSaveProjectName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSaveIntro_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnExportStatementOfWork_Click(object sender, EventArgs e)
-        {
-            exportToWord();
         }
 
         private void exportToWord()
@@ -597,10 +537,22 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
         }
-
-        private void btnStatementSave_Click_1(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
             saveDocument();
+        }
+
+        private void StatementOfWorkDocumentForm_Load_1(object sender, EventArgs e)
+        {
+            loadDocument();
+            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            exportToWord();
         }
     }
 }

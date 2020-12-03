@@ -30,25 +30,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             InitializeComponent();
         }
 
-        private void ResourcePlanDocumentForm_Load(object sender, EventArgs e)
-        {
-
-            loadDocument();
-            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
-            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
-            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
-        }
-
-        private void ResourcePlanDocumentForm_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnResourceSave_Click(object sender, EventArgs e)
-        {
-            saveDocument();
-        }
-
         public void saveDocument()
         {
             newResourcePlanModel.DocumentID = docInfodataGridView.Rows[0].Cells[1].Value.ToString();
@@ -221,7 +202,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 documentModels.Add(documentModel);
 
                 versionControl.DocumentModels = documentModels;
-
+                currentResourcePlanModel = JsonConvert.DeserializeObject<ResourcePlanModel>(JsonConvert.SerializeObject(newResourcePlanModel));
                 string json = JsonConvert.SerializeObject(versionControl);
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ResourcePlan");
                 MessageBox.Show("Resource Plan saved successfully", "save", MessageBoxButtons.OK);
@@ -304,11 +285,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 }
                 docInfodataGridView.AllowUserToAddRows = false;
             }
-        }
-
-        private void btnExportResourcePlan_Click(object sender, EventArgs e)
-        {
-            exportToWord();
         }
 
         private void exportToWord()
@@ -777,6 +753,24 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                     }
                 }
             }
+        }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            saveDocument();
+        }
+
+        private void exportButton_Click(object sender, EventArgs e)
+        {
+            exportToWord();
+        }
+
+        private void ResourcePlanDocumentForm_Load_2(object sender, EventArgs e)
+        {
+            loadDocument();
+            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
         }
     }
 }

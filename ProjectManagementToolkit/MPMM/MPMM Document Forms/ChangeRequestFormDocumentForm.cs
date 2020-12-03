@@ -30,24 +30,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnChangeSave_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void ChangeRequestFormDocumentForm_Load(object sender, EventArgs e)
-        {
-            loadDocument();
-            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
-            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
-            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
-        }
-
         public void saveDocument()
         {
             newChangeRequestModel.ProjectName = txtProjectName.Text;
@@ -160,17 +142,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             }
         }
-
-        private void signatureTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnExportChanges_Click(object sender, EventArgs e)
-        {
-            exportToWord();
-        }
-
         private void exportToWord()
         {
             string path;
@@ -233,7 +204,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                            .Bold(true)
                            .FontSize(14d).Alignment = Alignment.left;
 
-                        var supportDocumentTable = document.AddTable(currentChangeRequestModel.SupportingDocuments.Count + 1, 2);
+                        /*var supportDocumentTable = document.AddTable(currentChangeRequestModel.SupportingDocuments.Count + 1, 2);
                         supportDocumentTable.Rows[0].Cells[0].Paragraphs[0].Append("Document Name")
                             .Bold(true)
                             .Color(Color.White);
@@ -250,7 +221,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         }
 
                         supportDocumentTable.SetWidths(new float[] { 500, 500});
-                        document.InsertTable(supportDocumentTable);
+                        document.InsertTable(supportDocumentTable);*/
 
 
 
@@ -269,14 +240,24 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
         }
 
-        private void btnSaveProjectDetails_Click(object sender, EventArgs e)
+        
+
+        private void ChangeRequestFormDocumentForm_Load_1(object sender, EventArgs e)
+        {
+            loadDocument();
+            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
         {
             saveDocument();
         }
 
-        private void ChangeRequestFormDocumentForm_Load_1(object sender, EventArgs e)
+        private void btnExport_Click(object sender, EventArgs e)
         {
-
+            exportToWord();
         }
     }
 }

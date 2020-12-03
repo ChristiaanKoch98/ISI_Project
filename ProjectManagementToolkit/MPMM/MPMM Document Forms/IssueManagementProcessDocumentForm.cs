@@ -38,12 +38,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            saveDocument();
-        }
-
-
         public void saveDocument()
         {
             newIssueManagementProcessModel.DocumentID = DocumentInfoGrid.Rows[0].Cells[1].Value.ToString();
@@ -178,11 +172,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 DocumentInfoGrid.AllowUserToAddRows = false;
 
             }
-        }
-
-        private void btnExportIssueManagememnt_Click(object sender, EventArgs e)
-        {
-            exportToWord();
         }
 
         private void exportToWord()
@@ -494,13 +483,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .Font("Arial").Alignment = Alignment.left;
 
                         issueResisterSubHeading.StyleId = "Heading2";
-
-
-
-
-
-
-
                         //Save Document
                         try
                         {
@@ -515,6 +497,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
         }
 
-       
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            saveDocument();
+        }
+
+        private void exportButton_Click(object sender, EventArgs e)
+        {
+            exportToWord();
+        }
     }
 }
