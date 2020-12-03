@@ -74,7 +74,7 @@
             // 
             this.txtConfirmPassword.Cursor = System.Windows.Forms.Cursors.PanWest;
             this.txtConfirmPassword.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmPassword.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtConfirmPassword.ForeColor = System.Drawing.Color.Black;
             this.txtConfirmPassword.Location = new System.Drawing.Point(111, 181);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.PasswordChar = '*';
@@ -84,7 +84,7 @@
             // txtUsername
             // 
             this.txtUsername.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtUsername.ForeColor = System.Drawing.Color.Black;
             this.txtUsername.Location = new System.Drawing.Point(111, 89);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(164, 20);
@@ -104,7 +104,7 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtPassword.ForeColor = System.Drawing.Color.Black;
             this.txtPassword.Location = new System.Drawing.Point(111, 135);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(164, 20);

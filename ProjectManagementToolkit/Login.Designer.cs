@@ -47,7 +47,7 @@
             // 
             this.txtUsername.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtUsername.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.ForeColor = System.Drawing.Color.White;
+            this.txtUsername.ForeColor = System.Drawing.Color.Black;
             this.txtUsername.Location = new System.Drawing.Point(136, 76);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(164, 20);
@@ -58,7 +58,7 @@
             this.txtPassword.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtPassword.Cursor = System.Windows.Forms.Cursors.PanWest;
             this.txtPassword.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.ForeColor = System.Drawing.Color.White;
+            this.txtPassword.ForeColor = System.Drawing.Color.Black;
             this.txtPassword.Location = new System.Drawing.Point(136, 117);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
