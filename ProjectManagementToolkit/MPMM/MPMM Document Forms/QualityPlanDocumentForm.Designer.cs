@@ -142,10 +142,10 @@
             this.tabPage1.Controls.Add(this.tabControlDocumentControl);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.ForeColor = System.Drawing.Color.Black;
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 23);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(897, 401);
+            this.tabPage1.Size = new System.Drawing.Size(897, 403);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Document Control";
             // 
@@ -168,10 +168,10 @@
             // 
             this.tabPageDocumentInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPageDocumentInfo.Controls.Add(this.dataGridViewDocumentInformation);
-            this.tabPageDocumentInfo.Location = new System.Drawing.Point(4, 25);
+            this.tabPageDocumentInfo.Location = new System.Drawing.Point(4, 23);
             this.tabPageDocumentInfo.Name = "tabPageDocumentInfo";
             this.tabPageDocumentInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDocumentInfo.Size = new System.Drawing.Size(877, 362);
+            this.tabPageDocumentInfo.Size = new System.Drawing.Size(877, 364);
             this.tabPageDocumentInfo.TabIndex = 0;
             this.tabPageDocumentInfo.Text = "Document Information";
             // 
@@ -199,7 +199,7 @@
             this.dataGridViewDocumentInformation.RowHeadersWidth = 51;
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewDocumentInformation.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewDocumentInformation.Size = new System.Drawing.Size(865, 351);
+            this.dataGridViewDocumentInformation.Size = new System.Drawing.Size(865, 353);
             this.dataGridViewDocumentInformation.TabIndex = 0;
             // 
             // Type
@@ -218,10 +218,10 @@
             // 
             this.tabPageDocumentHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPageDocumentHistory.Controls.Add(this.dataGridViewDocumentHistory);
-            this.tabPageDocumentHistory.Location = new System.Drawing.Point(4, 25);
+            this.tabPageDocumentHistory.Location = new System.Drawing.Point(4, 23);
             this.tabPageDocumentHistory.Name = "tabPageDocumentHistory";
             this.tabPageDocumentHistory.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDocumentHistory.Size = new System.Drawing.Size(877, 362);
+            this.tabPageDocumentHistory.Size = new System.Drawing.Size(877, 364);
             this.tabPageDocumentHistory.TabIndex = 1;
             this.tabPageDocumentHistory.Text = "Document History";
             // 
@@ -250,7 +250,7 @@
             this.dataGridViewDocumentHistory.RowHeadersWidth = 51;
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewDocumentHistory.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridViewDocumentHistory.Size = new System.Drawing.Size(865, 351);
+            this.dataGridViewDocumentHistory.Size = new System.Drawing.Size(865, 353);
             this.dataGridViewDocumentHistory.TabIndex = 1;
             // 
             // Version
@@ -275,10 +275,10 @@
             // 
             this.tabPageDocumentApprovals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabPageDocumentApprovals.Controls.Add(this.dataGridViewDocumentApprovals);
-            this.tabPageDocumentApprovals.Location = new System.Drawing.Point(4, 25);
+            this.tabPageDocumentApprovals.Location = new System.Drawing.Point(4, 23);
             this.tabPageDocumentApprovals.Name = "tabPageDocumentApprovals";
             this.tabPageDocumentApprovals.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDocumentApprovals.Size = new System.Drawing.Size(877, 362);
+            this.tabPageDocumentApprovals.Size = new System.Drawing.Size(877, 364);
             this.tabPageDocumentApprovals.TabIndex = 2;
             this.tabPageDocumentApprovals.Text = "Document Approvals";
             // 
@@ -308,7 +308,7 @@
             this.dataGridViewDocumentApprovals.RowHeadersWidth = 51;
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewDocumentApprovals.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridViewDocumentApprovals.Size = new System.Drawing.Size(865, 351);
+            this.dataGridViewDocumentApprovals.Size = new System.Drawing.Size(865, 353);
             this.dataGridViewDocumentApprovals.TabIndex = 2;
             // 
             // Role
@@ -342,10 +342,10 @@
             this.tabPage2.Controls.Add(this.label28);
             this.tabPage2.Controls.Add(this.dataGridViewQualityTargets);
             this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 23);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(897, 401);
+            this.tabPage2.Size = new System.Drawing.Size(897, 403);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Quality Targets";
             // 
@@ -357,7 +357,7 @@
             this.label28.ForeColor = System.Drawing.Color.Black;
             this.label28.Location = new System.Drawing.Point(386, 10);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(105, 17);
+            this.label28.Size = new System.Drawing.Size(78, 13);
             this.label28.TabIndex = 1;
             this.label28.Text = "Quality Targets";
             // 
@@ -390,7 +390,7 @@
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewQualityTargets.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewQualityTargets.RowHeadersWidth = 51;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Helvetica", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewQualityTargets.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridViewQualityTargets.Size = new System.Drawing.Size(883, 370);
@@ -438,10 +438,10 @@
             this.tabPage3.Controls.Add(this.label4);
             this.tabPage3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage3.ForeColor = System.Drawing.Color.Black;
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Location = new System.Drawing.Point(4, 23);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(897, 401);
+            this.tabPage3.Size = new System.Drawing.Size(897, 403);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Quality Plans";
             // 
@@ -453,7 +453,7 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(281, 332);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(292, 17);
+            this.label6.Size = new System.Drawing.Size(219, 13);
             this.label6.TabIndex = 25;
             this.label6.Text = "3. And your data will then be added to the list";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -466,7 +466,7 @@
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(281, 303);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(225, 17);
+            this.label7.Size = new System.Drawing.Size(169, 13);
             this.label7.TabIndex = 24;
             this.label7.Text = "2. Press the respective add button";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -479,7 +479,7 @@
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(281, 273);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(351, 17);
+            this.label10.Size = new System.Drawing.Size(263, 13);
             this.label10.TabIndex = 23;
             this.label10.Text = "1. Please enter your data into the respective textboxes";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -490,10 +490,9 @@
             this.listBoxConstraints.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxConstraints.ForeColor = System.Drawing.Color.Black;
             this.listBoxConstraints.FormattingEnabled = true;
-            this.listBoxConstraints.ItemHeight = 17;
             this.listBoxConstraints.Location = new System.Drawing.Point(628, 288);
             this.listBoxConstraints.Name = "listBoxConstraints";
-            this.listBoxConstraints.Size = new System.Drawing.Size(257, 89);
+            this.listBoxConstraints.Size = new System.Drawing.Size(257, 82);
             this.listBoxConstraints.TabIndex = 22;
             // 
             // btnAddConstraints
@@ -528,10 +527,9 @@
             this.listBoxAssumptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxAssumptions.ForeColor = System.Drawing.Color.Black;
             this.listBoxAssumptions.FormattingEnabled = true;
-            this.listBoxAssumptions.ItemHeight = 17;
             this.listBoxAssumptions.Location = new System.Drawing.Point(8, 288);
             this.listBoxAssumptions.Name = "listBoxAssumptions";
-            this.listBoxAssumptions.Size = new System.Drawing.Size(257, 89);
+            this.listBoxAssumptions.Size = new System.Drawing.Size(257, 82);
             this.listBoxAssumptions.TabIndex = 19;
             // 
             // txtConstraints
@@ -541,9 +539,9 @@
             this.txtConstraints.ForeColor = System.Drawing.Color.Black;
             this.txtConstraints.Location = new System.Drawing.Point(628, 262);
             this.txtConstraints.Name = "txtConstraints";
-            this.txtConstraints.Size = new System.Drawing.Size(116, 23);
+            this.txtConstraints.Size = new System.Drawing.Size(116, 20);
             this.txtConstraints.TabIndex = 18;
-            this.txtConstraints.Text = "Constraints";
+            this.txtConstraints.Text = "<Type Here>";
             // 
             // txtAssumptions
             // 
@@ -552,9 +550,9 @@
             this.txtAssumptions.ForeColor = System.Drawing.Color.Black;
             this.txtAssumptions.Location = new System.Drawing.Point(8, 262);
             this.txtAssumptions.Name = "txtAssumptions";
-            this.txtAssumptions.Size = new System.Drawing.Size(116, 23);
+            this.txtAssumptions.Size = new System.Drawing.Size(116, 20);
             this.txtAssumptions.TabIndex = 17;
-            this.txtAssumptions.Text = "Assumptions";
+            this.txtAssumptions.Text = "<Type Here>";
             // 
             // dataGridViewQCP
             // 
@@ -584,7 +582,7 @@
             dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewQCP.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridViewQCP.RowHeadersWidth = 51;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Helvetica", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewQCP.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridViewQCP.Size = new System.Drawing.Size(882, 98);
@@ -636,7 +634,7 @@
             dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewQAP.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridViewQAP.RowHeadersWidth = 51;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Helvetica", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewQAP.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridViewQAP.Size = new System.Drawing.Size(878, 96);
@@ -668,7 +666,7 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(366, 126);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(140, 17);
+            this.label5.Size = new System.Drawing.Size(104, 13);
             this.label5.TabIndex = 3;
             this.label5.Text = "Quality Control Plans";
             // 
@@ -680,7 +678,7 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(353, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(162, 17);
+            this.label4.Size = new System.Drawing.Size(121, 13);
             this.label4.TabIndex = 2;
             this.label4.Text = "Quality Assurance Plans";
             // 
@@ -701,10 +699,10 @@
             this.tabPage7.Controls.Add(this.listBoxQualityActivities);
             this.tabPage7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage7.ForeColor = System.Drawing.Color.Black;
-            this.tabPage7.Location = new System.Drawing.Point(4, 25);
+            this.tabPage7.Location = new System.Drawing.Point(4, 23);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(897, 401);
+            this.tabPage7.Size = new System.Drawing.Size(897, 403);
             this.tabPage7.TabIndex = 3;
             this.tabPage7.Text = "Quality Process";
             // 
@@ -716,7 +714,7 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(247, 259);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(292, 17);
+            this.label8.Size = new System.Drawing.Size(219, 13);
             this.label8.TabIndex = 33;
             this.label8.Text = "3. And your data will then be added to the list";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -729,7 +727,7 @@
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(247, 231);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(225, 17);
+            this.label9.Size = new System.Drawing.Size(169, 13);
             this.label9.TabIndex = 32;
             this.label9.Text = "2. Press the respective add button";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -742,7 +740,7 @@
             this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(247, 199);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(351, 17);
+            this.label11.Size = new System.Drawing.Size(263, 13);
             this.label11.TabIndex = 31;
             this.label11.Text = "1. Please enter your data into the respective textboxes";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -766,10 +764,9 @@
             this.listBoxQualityDocuments.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxQualityDocuments.ForeColor = System.Drawing.Color.Black;
             this.listBoxQualityDocuments.FormattingEnabled = true;
-            this.listBoxQualityDocuments.ItemHeight = 17;
             this.listBoxQualityDocuments.Location = new System.Drawing.Point(631, 35);
             this.listBoxQualityDocuments.Name = "listBoxQualityDocuments";
-            this.listBoxQualityDocuments.Size = new System.Drawing.Size(257, 89);
+            this.listBoxQualityDocuments.Size = new System.Drawing.Size(257, 82);
             this.listBoxQualityDocuments.TabIndex = 29;
             // 
             // txtQualityDocuments
@@ -779,9 +776,9 @@
             this.txtQualityDocuments.ForeColor = System.Drawing.Color.Black;
             this.txtQualityDocuments.Location = new System.Drawing.Point(631, 8);
             this.txtQualityDocuments.Name = "txtQualityDocuments";
-            this.txtQualityDocuments.Size = new System.Drawing.Size(116, 23);
+            this.txtQualityDocuments.Size = new System.Drawing.Size(116, 20);
             this.txtQualityDocuments.TabIndex = 28;
-            this.txtQualityDocuments.Text = "Documents";
+            this.txtQualityDocuments.Text = "<Type Here>";
             // 
             // txtQualityRoles
             // 
@@ -790,9 +787,9 @@
             this.txtQualityRoles.ForeColor = System.Drawing.Color.Black;
             this.txtQualityRoles.Location = new System.Drawing.Point(313, 8);
             this.txtQualityRoles.Name = "txtQualityRoles";
-            this.txtQualityRoles.Size = new System.Drawing.Size(116, 23);
+            this.txtQualityRoles.Size = new System.Drawing.Size(116, 20);
             this.txtQualityRoles.TabIndex = 25;
-            this.txtQualityRoles.Text = "Roles";
+            this.txtQualityRoles.Text = "<Type Here>";
             // 
             // txtQualityActivities
             // 
@@ -801,9 +798,9 @@
             this.txtQualityActivities.ForeColor = System.Drawing.Color.Black;
             this.txtQualityActivities.Location = new System.Drawing.Point(7, 8);
             this.txtQualityActivities.Name = "txtQualityActivities";
-            this.txtQualityActivities.Size = new System.Drawing.Size(116, 23);
+            this.txtQualityActivities.Size = new System.Drawing.Size(116, 20);
             this.txtQualityActivities.TabIndex = 22;
-            this.txtQualityActivities.Text = "Activities";
+            this.txtQualityActivities.Text = "<Type Here>";
             // 
             // btnQualityRoles
             // 
@@ -824,10 +821,9 @@
             this.listBoxQualityRoles.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxQualityRoles.ForeColor = System.Drawing.Color.Black;
             this.listBoxQualityRoles.FormattingEnabled = true;
-            this.listBoxQualityRoles.ItemHeight = 17;
             this.listBoxQualityRoles.Location = new System.Drawing.Point(313, 35);
             this.listBoxQualityRoles.Name = "listBoxQualityRoles";
-            this.listBoxQualityRoles.Size = new System.Drawing.Size(257, 89);
+            this.listBoxQualityRoles.Size = new System.Drawing.Size(257, 82);
             this.listBoxQualityRoles.TabIndex = 26;
             // 
             // btnQualityActivities
@@ -849,19 +845,18 @@
             this.listBoxQualityActivities.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxQualityActivities.ForeColor = System.Drawing.Color.Black;
             this.listBoxQualityActivities.FormattingEnabled = true;
-            this.listBoxQualityActivities.ItemHeight = 17;
             this.listBoxQualityActivities.Location = new System.Drawing.Point(7, 35);
             this.listBoxQualityActivities.Name = "listBoxQualityActivities";
-            this.listBoxQualityActivities.Size = new System.Drawing.Size(257, 89);
+            this.listBoxQualityActivities.Size = new System.Drawing.Size(257, 82);
             this.listBoxQualityActivities.TabIndex = 23;
             // 
             // tabPage9
             // 
             this.tabPage9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage9.Location = new System.Drawing.Point(4, 25);
+            this.tabPage9.Location = new System.Drawing.Point(4, 23);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(897, 401);
+            this.tabPage9.Size = new System.Drawing.Size(897, 403);
             this.tabPage9.TabIndex = 5;
             this.tabPage9.Text = "Appendix";
             // 
@@ -872,7 +867,7 @@
             this.label27.ForeColor = System.Drawing.Color.Black;
             this.label27.Location = new System.Drawing.Point(13, 13);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(216, 17);
+            this.label27.Size = new System.Drawing.Size(162, 13);
             this.label27.TabIndex = 9;
             this.label27.Text = "Please Enter Your Project Name:";
             // 
@@ -883,7 +878,7 @@
             this.txtProjectName.ForeColor = System.Drawing.Color.Black;
             this.txtProjectName.Location = new System.Drawing.Point(235, 7);
             this.txtProjectName.Name = "txtProjectName";
-            this.txtProjectName.Size = new System.Drawing.Size(116, 23);
+            this.txtProjectName.Size = new System.Drawing.Size(116, 20);
             this.txtProjectName.TabIndex = 7;
             this.txtProjectName.Text = "Project Name";
             // 
@@ -915,7 +910,7 @@
             // 
             // QualityPlanDocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(933, 484);

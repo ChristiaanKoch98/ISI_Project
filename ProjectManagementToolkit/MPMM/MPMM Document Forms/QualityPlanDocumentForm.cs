@@ -46,30 +46,35 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             string addAssumptions = txtAssumptions.Text;
             listBoxAssumptions.Items.Add(addAssumptions);
+            txtAssumptions.Clear();
         }
 
         private void btnAddConstraints_Click(object sender, EventArgs e)
         {
             string addConstraints = txtConstraints.Text;
             listBoxConstraints.Items.Add(addConstraints);
+            txtConstraints.Clear();
         }
 
         private void btnQualityActivities_Click(object sender, EventArgs e)
         {
             string addQualityAct = txtQualityActivities.Text;
             listBoxQualityActivities.Items.Add(addQualityAct);
+            txtQualityActivities.Clear();
         }
 
         private void btnQualityRoles_Click(object sender, EventArgs e)
         {
             string addQualityRoles = txtQualityRoles.Text;
             listBoxQualityRoles.Items.Add(addQualityRoles);
+            txtQualityRoles.Clear();
         }
 
         private void btnQualityDocuments_Click(object sender, EventArgs e)
         {
             string addQualityDocs = txtQualityDocuments.Text;
             listBoxQualityDocuments.Items.Add(addQualityDocs);
+            txtQualityDocuments.Clear();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
