@@ -255,6 +255,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentProcurementPlanModel = JsonConvert.DeserializeObject<ProcurementPlanModel>(JsonConvert.SerializeObject(newProcurementPlanModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ProcurementPlan");
                 MessageBox.Show("Procurement Plan saved successfully", "save", MessageBoxButtons.OK);
             }

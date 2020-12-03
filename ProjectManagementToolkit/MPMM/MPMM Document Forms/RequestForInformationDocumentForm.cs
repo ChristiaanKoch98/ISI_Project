@@ -175,6 +175,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentRequestForInformationModel = JsonConvert.DeserializeObject<RequestForInformationModel>(JsonConvert.SerializeObject(newRequestForInformationModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "RequestForInformation");
                 MessageBox.Show("Request for information saved successfully", "save", MessageBoxButtons.OK);
             }
