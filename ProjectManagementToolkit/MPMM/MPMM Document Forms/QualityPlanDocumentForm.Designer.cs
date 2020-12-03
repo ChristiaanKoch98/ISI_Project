@@ -48,8 +48,6 @@
             this.tabControlDocumentControl = new System.Windows.Forms.TabControl();
             this.tabPageDocumentInfo = new System.Windows.Forms.TabPage();
             this.dataGridViewDocumentInformation = new System.Windows.Forms.DataGridView();
-            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPageDocumentHistory = new System.Windows.Forms.TabPage();
             this.dataGridViewDocumentHistory = new System.Windows.Forms.DataGridView();
             this.Version = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -106,6 +104,8 @@
             this.txtProjectName = new System.Windows.Forms.TextBox();
             this.btnExportToWord = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControlDocumentControl.SuspendLayout();
@@ -201,18 +201,6 @@
             this.dataGridViewDocumentInformation.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewDocumentInformation.Size = new System.Drawing.Size(865, 353);
             this.dataGridViewDocumentInformation.TabIndex = 0;
-            // 
-            // Type
-            // 
-            this.Type.HeaderText = "Type";
-            this.Type.MinimumWidth = 6;
-            this.Type.Name = "Type";
-            // 
-            // Information
-            // 
-            this.Information.HeaderText = "Information";
-            this.Information.MinimumWidth = 6;
-            this.Information.Name = "Information";
             // 
             // tabPageDocumentHistory
             // 
@@ -908,6 +896,19 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // Type
+            // 
+            this.Type.HeaderText = "Type";
+            this.Type.MinimumWidth = 6;
+            this.Type.Name = "Type";
+            this.Type.ReadOnly = true;
+            // 
+            // Information
+            // 
+            this.Information.HeaderText = "Information";
+            this.Information.MinimumWidth = 6;
+            this.Information.Name = "Information";
+            // 
             // QualityPlanDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -920,6 +921,7 @@
             this.Controls.Add(this.label27);
             this.Controls.Add(this.txtProjectName);
             this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name = "QualityPlanDocumentForm";
             this.Text = "QualityPlanDocumentForm";
             this.Load += new System.EventHandler(this.QualityPlanDocumentForm_Load_1);
             this.tabControl1.ResumeLayout(false);
@@ -989,8 +991,6 @@
         private System.Windows.Forms.DataGridView dataGridViewDocumentHistory;
         private System.Windows.Forms.TabPage tabPageDocumentApprovals;
         private System.Windows.Forms.DataGridView dataGridViewDocumentApprovals;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Information;
         private System.Windows.Forms.DataGridViewTextBoxColumn Version;
         private System.Windows.Forms.DataGridViewTextBoxColumn IssueDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn Changes;
@@ -1010,5 +1010,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Frequency;
         private System.Windows.Forms.Button btnExportToWord;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Information;
     }
 }
