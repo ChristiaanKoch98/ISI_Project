@@ -12,8 +12,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string ProjectName { get; set; }
         public string DocumentID { get; set; }
         public string DocumentOwner { get; set; }
-        public DateTime IssueDate { get; set; }
-        public DateTime LastSavedDate { get; set; }
+        public string IssueDate { get; set; }
+        public string LastSavedDate { get; set; }
         public string FileName { get; set; }
         public List<DocumentHistory> DocumentHistories { get; set; }
         public List<DocumentApproval> DocumentApprovals { get; set; }
@@ -34,6 +34,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string Invoicing { get; set; }
         public string Confidentiality { get; set; }
         public string Termination { get; set; }
+
+        public string Disputes { get; set; }
         public string Indemnity { get; set; }
         public string Law { get; set; }
         public string Agreement { get; set; }
@@ -42,15 +44,30 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public class DocumentHistory
         {
             public string Version { get; set; }
-            public DateTime IssueDate { get; set; }
+            public string IssueDate { get; set; }
             public string Changes { get; set; }
+
+            public DocumentHistory(string version, string issueDate, string changes) 
+            {
+                this.Changes = changes;
+                this.Version = version;
+                this.IssueDate = issueDate;
+            }
         }
         public class DocumentApproval
         {
             public string Role { get; set; }
             public string Name { get; set; }
             public string Signature { get; set; }
-            public DateTime DateApproved { get; set; }
+            public string DateApproved { get; set; }
+
+            public DocumentApproval(string role, string name, string signature, string date)
+            {
+                this.Role = role;
+                this.Name = name;
+                this.Signature = signature;
+                this.DateApproved = date;
+            }
         }
 
         public class Definition
@@ -58,6 +75,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
             public string Term { get; set; }
             public string definition { get; set; }
 
+            public Definition(string term, string definition) 
+            {
+                this.Term = term;
+                this.definition = definition;
+            }
         }
 
         public class ProcurementItem
@@ -66,12 +88,26 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
             public string ItemDescription { get; set; }
             public string ItemQuantity { get; set; }
             public string ItemPrice { get; set; }
+
+            public ProcurementItem(string itemName, string itemDescription, string itemQuantity, string itemPrice)
+            {
+                this.ItemName = itemName;
+                this.ItemDescription = itemDescription;
+                this.ItemQuantity = itemQuantity;
+                this.ItemPrice = itemPrice;
+            }
         }
 
         public class ReviewCriteria
         {
             public string Criteria { get; set; }
             public string Description { get; set; }
+
+            public ReviewCriteria(string criteria, string description)
+            {
+                this.Criteria = criteria;
+                this.Description = description;
+            }
         }
     }
 }

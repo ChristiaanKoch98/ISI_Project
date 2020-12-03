@@ -13,7 +13,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string ProjectManager { get; set; }
         public string ProjectSponsor { get; set; }
         public string ReportPreparedBy { get; set; }
-        public DateTime ReportPreparationDate { get; set; }
+        public string ReportPreparationDate { get; set; }
+
+        public string Recipients { get; set; }
 
         public string Summary { get; set; }
         public string ProjectSchedule { get; set; }
@@ -23,10 +25,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public string ProjectIssues { get; set; }
         public string ProjectChanges { get; set; }
 
+        public string eportingPeriod { get; set; }
+
         public List<ReviewDetial> ReviewDetials { get; set; }
         public string SupportingDocumentation { get; set; }
         public string Signature { get; set; }
-        public DateTime SignatureDate { get; set; } 
+        public string SignatureDate { get; set; } 
 
         public class ReportingPeriod 
         {
@@ -38,7 +42,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         {
             public string ReviewCategory { get; set; }
             public string ReviewQuestion { get; set; }
-            public bool Answer { get; set; }
+            public string Answer { get; set; }
             public string Varaince { get; set; }
         }
     }

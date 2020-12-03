@@ -71,6 +71,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public Boolean StandardsHealthAndSafety { get; set; }
         public Boolean StandardsProjectPlanning { get; set; }
         public Boolean StandardsPMI { get; set; }
+        public Boolean StandardSuitableProjManMethod { get; set; }
+
+
 
         //Processes
         public Boolean ProcessesTimeManagement { get; set; }
@@ -115,7 +118,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public Boolean TemplatesExecutionProcurement { get; set; }
         public Boolean TemplatesExecutionProject { get; set; }
         public Boolean TemplatesExecutionCommunication { get; set; }
-        public Boolean TemplatesExecutionAcceptance { get; set; }
+        public Boolean TemplatesExecutionAcceptanceForm { get; set; }
+        public Boolean TemplatesExecutionAcceptanceRegister { get; set; }
+        
 
         //Closure
         public Boolean TemplatesClosureProjectReport { get; set; }

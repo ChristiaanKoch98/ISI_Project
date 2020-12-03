@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabCtrlPhaseReviewFormExeDocumentForm = new System.Windows.Forms.TabControl();
             this.tabProjectDetails = new System.Windows.Forms.TabPage();
             this.txtProjectManager = new System.Windows.Forms.TextBox();
@@ -70,6 +73,8 @@
             this.txtDate = new System.Windows.Forms.TextBox();
             this.txtProjectName = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
+            this.btnExportWord = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.tabCtrlPhaseReviewFormExeDocumentForm.SuspendLayout();
             this.tabProjectDetails.SuspendLayout();
             this.tabOverallStatus.SuspendLayout();
@@ -96,7 +101,7 @@
             this.tabCtrlPhaseReviewFormExeDocumentForm.Controls.Add(this.tabOverallStatus);
             this.tabCtrlPhaseReviewFormExeDocumentForm.Controls.Add(this.tabReviewDetails);
             this.tabCtrlPhaseReviewFormExeDocumentForm.Controls.Add(this.tabApprovalDetails);
-            this.tabCtrlPhaseReviewFormExeDocumentForm.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabCtrlPhaseReviewFormExeDocumentForm.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabCtrlPhaseReviewFormExeDocumentForm.Location = new System.Drawing.Point(9, 32);
             this.tabCtrlPhaseReviewFormExeDocumentForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabCtrlPhaseReviewFormExeDocumentForm.Name = "tabCtrlPhaseReviewFormExeDocumentForm";
@@ -129,7 +134,7 @@
             // 
             // txtProjectManager
             // 
-            this.txtProjectManager.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProjectManager.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProjectManager.Location = new System.Drawing.Point(160, 79);
             this.txtProjectManager.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtProjectManager.Name = "txtProjectManager";
@@ -138,7 +143,7 @@
             // 
             // txtProjectSponsor
             // 
-            this.txtProjectSponsor.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProjectSponsor.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProjectSponsor.Location = new System.Drawing.Point(160, 142);
             this.txtProjectSponsor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtProjectSponsor.Name = "txtProjectSponsor";
@@ -147,7 +152,7 @@
             // 
             // txtReportPreparedBy
             // 
-            this.txtReportPreparedBy.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReportPreparedBy.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtReportPreparedBy.Location = new System.Drawing.Point(160, 197);
             this.txtReportPreparedBy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtReportPreparedBy.Name = "txtReportPreparedBy";
@@ -156,7 +161,7 @@
             // 
             // txtReportPreperationDate
             // 
-            this.txtReportPreperationDate.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReportPreperationDate.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtReportPreperationDate.Location = new System.Drawing.Point(160, 249);
             this.txtReportPreperationDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtReportPreperationDate.Name = "txtReportPreperationDate";
@@ -165,7 +170,7 @@
             // 
             // txtReportingPeriod
             // 
-            this.txtReportingPeriod.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReportingPeriod.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtReportingPeriod.Location = new System.Drawing.Point(160, 308);
             this.txtReportingPeriod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtReportingPeriod.Name = "txtReportingPeriod";
@@ -174,7 +179,7 @@
             // 
             // txtProjectName2
             // 
-            this.txtProjectName2.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProjectName2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProjectName2.Location = new System.Drawing.Point(160, 25);
             this.txtProjectName2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtProjectName2.Name = "txtProjectName2";
@@ -187,12 +192,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(23, 311);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 12);
+            this.label7.Size = new System.Drawing.Size(89, 14);
             this.label7.TabIndex = 8;
             this.label7.Text = "Reporting Period:";
             // 
@@ -202,12 +207,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(23, 252);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(126, 12);
+            this.label6.Size = new System.Drawing.Size(125, 14);
             this.label6.TabIndex = 7;
             this.label6.Text = "Report Preperation Date:";
             // 
@@ -217,12 +222,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(23, 199);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 12);
+            this.label5.Size = new System.Drawing.Size(105, 14);
             this.label5.TabIndex = 6;
             this.label5.Text = "Report Prepared By:";
             // 
@@ -232,12 +237,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(23, 145);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 12);
+            this.label3.Size = new System.Drawing.Size(87, 14);
             this.label3.TabIndex = 5;
             this.label3.Text = "Project Sponsor:";
             // 
@@ -247,12 +252,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(20, 82);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 12);
+            this.label2.Size = new System.Drawing.Size(88, 14);
             this.label2.TabIndex = 4;
             this.label2.Text = "Project Manager:";
             // 
@@ -262,12 +267,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(20, 28);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 12);
+            this.label1.Size = new System.Drawing.Size(73, 14);
             this.label1.TabIndex = 3;
             this.label1.Text = "Project Name:";
             // 
@@ -458,11 +463,30 @@
             this.dgvReviewDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvReviewDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvReviewDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReviewDetails.EnableHeadersVisualStyles = false;
             this.dgvReviewDetails.Location = new System.Drawing.Point(4, 5);
             this.dgvReviewDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvReviewDetails.Name = "dgvReviewDetails";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvReviewDetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvReviewDetails.RowHeadersWidth = 51;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvReviewDetails.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvReviewDetails.Size = new System.Drawing.Size(762, 562);
             this.dgvReviewDetails.TabIndex = 45;
             // 
@@ -557,26 +581,54 @@
             // txtProjectName
             // 
             this.txtProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.txtProjectName.Font = new System.Drawing.Font("Helvetica Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProjectName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProjectName.ForeColor = System.Drawing.Color.Black;
             this.txtProjectName.Location = new System.Drawing.Point(253, 4);
             this.txtProjectName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtProjectName.Name = "txtProjectName";
-            this.txtProjectName.Size = new System.Drawing.Size(76, 21);
+            this.txtProjectName.Size = new System.Drawing.Size(76, 20);
             this.txtProjectName.TabIndex = 17;
             this.txtProjectName.Text = "Project Name";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Helvetica Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.Black;
             this.label27.Location = new System.Drawing.Point(10, 7);
             this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(239, 14);
+            this.label27.Size = new System.Drawing.Size(233, 13);
             this.label27.TabIndex = 16;
             this.label27.Text = "Execution Phase Stage Gate Review Form For: ";
+            // 
+            // btnExportWord
+            // 
+            this.btnExportWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnExportWord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExportWord.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportWord.Location = new System.Drawing.Point(671, 7);
+            this.btnExportWord.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExportWord.Name = "btnExportWord";
+            this.btnExportWord.Size = new System.Drawing.Size(110, 28);
+            this.btnExportWord.TabIndex = 19;
+            this.btnExportWord.Text = "Export to Word";
+            this.btnExportWord.UseVisualStyleBackColor = false;
+            this.btnExportWord.Click += new System.EventHandler(this.btnExportWord_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(513, 6);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(110, 28);
+            this.btnSave.TabIndex = 18;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // PhaseReviewFormExecutionDocumentForm
             // 
@@ -584,12 +636,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(794, 609);
+            this.Controls.Add(this.btnExportWord);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.tabCtrlPhaseReviewFormExeDocumentForm);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "PhaseReviewFormExecutionDocumentForm";
             this.Text = "PhaseReviewFormExecutionDocumentForm";
+            this.Load += new System.EventHandler(this.PhaseReviewFormExecutionDocumentForm_Load_2);
             this.tabCtrlPhaseReviewFormExeDocumentForm.ResumeLayout(false);
             this.tabProjectDetails.ResumeLayout(false);
             this.tabProjectDetails.PerformLayout();
@@ -668,5 +723,7 @@
         private System.Windows.Forms.TabPage tabSupportingDocumentation;
         private System.Windows.Forms.TabPage tabSignature;
         private System.Windows.Forms.TabPage tabDate;
+        private System.Windows.Forms.Button btnExportWord;
+        private System.Windows.Forms.Button btnSave;
     }
 }

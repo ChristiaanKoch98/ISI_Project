@@ -9,11 +9,33 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 {
     class ExpenseFormModel
     {
-        public string ProjectDetails { get; set; }
+        public List<ProjectDetail> ProjectDetails { get; set; }
 
         public List<ExpenseDetail> ExpenseDetails { get; set; }
 
-        public string Approvaldetails { get; set; }
+        public List<SubmittedBy> SubmittedByDetails { get; set; }
+        public List<ApprovedBy> ApprovedByDetails { get; set; }
+
+        public string ApprovalDetails { get; set; }
+
+
+
+
+        public class ProjectDetail
+        {
+
+            public string ProjectName { get; set; }
+
+            public string ProjectManager { get; set; }
+
+            public string TeamMember { get; set; }
+
+        }
+
+
+
+
+
 
         public class ExpenseDetail
         {
@@ -22,7 +44,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 
             public string TaskID { get; set; }
 
-            public DateTime ExpenseDate { get; set; }
+            public string ExpenseDate { get; set; }
 
             public string ExpenseType { get; set; }
 
@@ -33,6 +55,34 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
             public string PayeeName { get; set; }
 
             public string InvoiceNumber { get; set; }
+        }
+
+
+
+
+        public class SubmittedBy
+        {
+
+            public string Name { get; set; }
+
+            public string Signature { get; set; }
+
+            public string Date { get; set; }
+
+        }
+
+
+
+
+        public class ApprovedBy
+        {
+
+            public string Name { get; set; }
+
+            public string Signature { get; set; }
+
+            public string Date { get; set; }
+
         }
     }
 }
