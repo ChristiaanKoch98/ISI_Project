@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabCtrlProjectStatusDocumentForm = new System.Windows.Forms.TabControl();
             this.tabProjectDetails = new System.Windows.Forms.TabPage();
             this.txtProjectRecipients = new System.Windows.Forms.TextBox();
@@ -135,10 +135,10 @@
             this.tabCtrlProjectStatusDocumentForm.Controls.Add(this.tabDetailedStatusReport);
             this.tabCtrlProjectStatusDocumentForm.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabCtrlProjectStatusDocumentForm.Location = new System.Drawing.Point(6, 35);
-            this.tabCtrlProjectStatusDocumentForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabCtrlProjectStatusDocumentForm.Margin = new System.Windows.Forms.Padding(2);
             this.tabCtrlProjectStatusDocumentForm.Name = "tabCtrlProjectStatusDocumentForm";
             this.tabCtrlProjectStatusDocumentForm.SelectedIndex = 0;
-            this.tabCtrlProjectStatusDocumentForm.Size = new System.Drawing.Size(778, 597);
+            this.tabCtrlProjectStatusDocumentForm.Size = new System.Drawing.Size(853, 614);
             this.tabCtrlProjectStatusDocumentForm.TabIndex = 14;
             // 
             // tabProjectDetails
@@ -161,17 +161,17 @@
             this.tabProjectDetails.Controls.Add(this.label2);
             this.tabProjectDetails.Controls.Add(this.label1);
             this.tabProjectDetails.Location = new System.Drawing.Point(4, 23);
-            this.tabProjectDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectDetails.Margin = new System.Windows.Forms.Padding(2);
             this.tabProjectDetails.Name = "tabProjectDetails";
-            this.tabProjectDetails.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabProjectDetails.Size = new System.Drawing.Size(770, 570);
+            this.tabProjectDetails.Padding = new System.Windows.Forms.Padding(2);
+            this.tabProjectDetails.Size = new System.Drawing.Size(845, 587);
             this.tabProjectDetails.TabIndex = 0;
             this.tabProjectDetails.Text = "Project Details";
             // 
             // txtProjectRecipients
             // 
             this.txtProjectRecipients.Location = new System.Drawing.Point(218, 464);
-            this.txtProjectRecipients.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectRecipients.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectRecipients.Multiline = true;
             this.txtProjectRecipients.Name = "txtProjectRecipients";
             this.txtProjectRecipients.Size = new System.Drawing.Size(233, 54);
@@ -195,7 +195,7 @@
             // txtProjectID
             // 
             this.txtProjectID.Location = new System.Drawing.Point(218, 78);
-            this.txtProjectID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectID.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectID.Name = "txtProjectID";
             this.txtProjectID.Size = new System.Drawing.Size(233, 20);
             this.txtProjectID.TabIndex = 28;
@@ -218,7 +218,7 @@
             // txtProjectManager
             // 
             this.txtProjectManager.Location = new System.Drawing.Point(218, 140);
-            this.txtProjectManager.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectManager.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectManager.Name = "txtProjectManager";
             this.txtProjectManager.Size = new System.Drawing.Size(233, 20);
             this.txtProjectManager.TabIndex = 26;
@@ -226,7 +226,7 @@
             // txtProjectSponsor
             // 
             this.txtProjectSponsor.Location = new System.Drawing.Point(218, 203);
-            this.txtProjectSponsor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectSponsor.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectSponsor.Name = "txtProjectSponsor";
             this.txtProjectSponsor.Size = new System.Drawing.Size(233, 20);
             this.txtProjectSponsor.TabIndex = 25;
@@ -234,7 +234,7 @@
             // txtReportPreparedBy
             // 
             this.txtReportPreparedBy.Location = new System.Drawing.Point(218, 266);
-            this.txtReportPreparedBy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtReportPreparedBy.Margin = new System.Windows.Forms.Padding(2);
             this.txtReportPreparedBy.Name = "txtReportPreparedBy";
             this.txtReportPreparedBy.Size = new System.Drawing.Size(233, 20);
             this.txtReportPreparedBy.TabIndex = 24;
@@ -242,7 +242,7 @@
             // txtReportPreperationDate
             // 
             this.txtReportPreperationDate.Location = new System.Drawing.Point(218, 331);
-            this.txtReportPreperationDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtReportPreperationDate.Margin = new System.Windows.Forms.Padding(2);
             this.txtReportPreperationDate.Name = "txtReportPreperationDate";
             this.txtReportPreperationDate.Size = new System.Drawing.Size(233, 20);
             this.txtReportPreperationDate.TabIndex = 23;
@@ -250,7 +250,7 @@
             // txtReportingPeriod
             // 
             this.txtReportingPeriod.Location = new System.Drawing.Point(218, 396);
-            this.txtReportingPeriod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtReportingPeriod.Margin = new System.Windows.Forms.Padding(2);
             this.txtReportingPeriod.Name = "txtReportingPeriod";
             this.txtReportingPeriod.Size = new System.Drawing.Size(233, 20);
             this.txtReportingPeriod.TabIndex = 22;
@@ -258,7 +258,7 @@
             // txtProjectName2
             // 
             this.txtProjectName2.Location = new System.Drawing.Point(218, 21);
-            this.txtProjectName2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectName2.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectName2.Name = "txtProjectName2";
             this.txtProjectName2.Size = new System.Drawing.Size(233, 20);
             this.txtProjectName2.TabIndex = 21;
@@ -358,10 +358,10 @@
             this.tabExecutiveSummary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabExecutiveSummary.Controls.Add(this.tabCtrlExecutiveSummary);
             this.tabExecutiveSummary.Location = new System.Drawing.Point(4, 23);
-            this.tabExecutiveSummary.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabExecutiveSummary.Margin = new System.Windows.Forms.Padding(2);
             this.tabExecutiveSummary.Name = "tabExecutiveSummary";
-            this.tabExecutiveSummary.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabExecutiveSummary.Size = new System.Drawing.Size(770, 570);
+            this.tabExecutiveSummary.Padding = new System.Windows.Forms.Padding(2);
+            this.tabExecutiveSummary.Size = new System.Drawing.Size(845, 587);
             this.tabExecutiveSummary.TabIndex = 1;
             this.tabExecutiveSummary.Text = "Executive Summary";
             // 
@@ -376,20 +376,20 @@
             this.tabCtrlExecutiveSummary.Controls.Add(this.tabProjectIssues);
             this.tabCtrlExecutiveSummary.Controls.Add(this.tabProjectChanges);
             this.tabCtrlExecutiveSummary.Location = new System.Drawing.Point(2, 2);
-            this.tabCtrlExecutiveSummary.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabCtrlExecutiveSummary.Margin = new System.Windows.Forms.Padding(2);
             this.tabCtrlExecutiveSummary.Name = "tabCtrlExecutiveSummary";
             this.tabCtrlExecutiveSummary.SelectedIndex = 0;
-            this.tabCtrlExecutiveSummary.Size = new System.Drawing.Size(768, 569);
+            this.tabCtrlExecutiveSummary.Size = new System.Drawing.Size(839, 581);
             this.tabCtrlExecutiveSummary.TabIndex = 52;
             // 
             // tabProjectDiscription
             // 
             this.tabProjectDiscription.Controls.Add(this.txtProjectDescription);
             this.tabProjectDiscription.Location = new System.Drawing.Point(4, 23);
-            this.tabProjectDiscription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectDiscription.Margin = new System.Windows.Forms.Padding(2);
             this.tabProjectDiscription.Name = "tabProjectDiscription";
-            this.tabProjectDiscription.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabProjectDiscription.Size = new System.Drawing.Size(760, 542);
+            this.tabProjectDiscription.Padding = new System.Windows.Forms.Padding(2);
+            this.tabProjectDiscription.Size = new System.Drawing.Size(831, 554);
             this.tabProjectDiscription.TabIndex = 0;
             this.tabProjectDiscription.Text = "Project Description";
             this.tabProjectDiscription.UseVisualStyleBackColor = true;
@@ -397,20 +397,20 @@
             // txtProjectDescription
             // 
             this.txtProjectDescription.Location = new System.Drawing.Point(0, 0);
-            this.txtProjectDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectDescription.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectDescription.Multiline = true;
             this.txtProjectDescription.Name = "txtProjectDescription";
-            this.txtProjectDescription.Size = new System.Drawing.Size(763, 544);
+            this.txtProjectDescription.Size = new System.Drawing.Size(829, 554);
             this.txtProjectDescription.TabIndex = 42;
             // 
             // tabOverallStatus
             // 
             this.tabOverallStatus.Controls.Add(this.txtOverallStatus);
             this.tabOverallStatus.Location = new System.Drawing.Point(4, 23);
-            this.tabOverallStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabOverallStatus.Margin = new System.Windows.Forms.Padding(2);
             this.tabOverallStatus.Name = "tabOverallStatus";
-            this.tabOverallStatus.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabOverallStatus.Size = new System.Drawing.Size(760, 542);
+            this.tabOverallStatus.Padding = new System.Windows.Forms.Padding(2);
+            this.tabOverallStatus.Size = new System.Drawing.Size(831, 554);
             this.tabOverallStatus.TabIndex = 1;
             this.tabOverallStatus.Text = "Overall Status";
             this.tabOverallStatus.UseVisualStyleBackColor = true;
@@ -418,19 +418,19 @@
             // txtOverallStatus
             // 
             this.txtOverallStatus.Location = new System.Drawing.Point(0, 0);
-            this.txtOverallStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtOverallStatus.Margin = new System.Windows.Forms.Padding(2);
             this.txtOverallStatus.Multiline = true;
             this.txtOverallStatus.Name = "txtOverallStatus";
-            this.txtOverallStatus.Size = new System.Drawing.Size(761, 544);
+            this.txtOverallStatus.Size = new System.Drawing.Size(829, 552);
             this.txtOverallStatus.TabIndex = 51;
             // 
             // tabProjectSchedule
             // 
             this.tabProjectSchedule.Controls.Add(this.txtProjectSchedule);
             this.tabProjectSchedule.Location = new System.Drawing.Point(4, 23);
-            this.tabProjectSchedule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectSchedule.Margin = new System.Windows.Forms.Padding(2);
             this.tabProjectSchedule.Name = "tabProjectSchedule";
-            this.tabProjectSchedule.Size = new System.Drawing.Size(760, 542);
+            this.tabProjectSchedule.Size = new System.Drawing.Size(831, 554);
             this.tabProjectSchedule.TabIndex = 2;
             this.tabProjectSchedule.Text = "Project Schedule";
             this.tabProjectSchedule.UseVisualStyleBackColor = true;
@@ -438,19 +438,19 @@
             // txtProjectSchedule
             // 
             this.txtProjectSchedule.Location = new System.Drawing.Point(0, 0);
-            this.txtProjectSchedule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectSchedule.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectSchedule.Multiline = true;
             this.txtProjectSchedule.Name = "txtProjectSchedule";
-            this.txtProjectSchedule.Size = new System.Drawing.Size(761, 544);
+            this.txtProjectSchedule.Size = new System.Drawing.Size(829, 552);
             this.txtProjectSchedule.TabIndex = 44;
             // 
             // tabProjectExpenses
             // 
             this.tabProjectExpenses.Controls.Add(this.txtProjectExpenses);
             this.tabProjectExpenses.Location = new System.Drawing.Point(4, 23);
-            this.tabProjectExpenses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectExpenses.Margin = new System.Windows.Forms.Padding(2);
             this.tabProjectExpenses.Name = "tabProjectExpenses";
-            this.tabProjectExpenses.Size = new System.Drawing.Size(760, 542);
+            this.tabProjectExpenses.Size = new System.Drawing.Size(831, 554);
             this.tabProjectExpenses.TabIndex = 3;
             this.tabProjectExpenses.Text = "Project Expenses";
             this.tabProjectExpenses.UseVisualStyleBackColor = true;
@@ -458,19 +458,19 @@
             // txtProjectExpenses
             // 
             this.txtProjectExpenses.Location = new System.Drawing.Point(0, 0);
-            this.txtProjectExpenses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectExpenses.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectExpenses.Multiline = true;
             this.txtProjectExpenses.Name = "txtProjectExpenses";
-            this.txtProjectExpenses.Size = new System.Drawing.Size(761, 544);
+            this.txtProjectExpenses.Size = new System.Drawing.Size(829, 552);
             this.txtProjectExpenses.TabIndex = 45;
             // 
             // tabProjectDeliverables
             // 
             this.tabProjectDeliverables.Controls.Add(this.txtProjectDeliverables);
             this.tabProjectDeliverables.Location = new System.Drawing.Point(4, 23);
-            this.tabProjectDeliverables.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectDeliverables.Margin = new System.Windows.Forms.Padding(2);
             this.tabProjectDeliverables.Name = "tabProjectDeliverables";
-            this.tabProjectDeliverables.Size = new System.Drawing.Size(760, 542);
+            this.tabProjectDeliverables.Size = new System.Drawing.Size(831, 554);
             this.tabProjectDeliverables.TabIndex = 4;
             this.tabProjectDeliverables.Text = "Project Deliverables";
             this.tabProjectDeliverables.UseVisualStyleBackColor = true;
@@ -478,19 +478,19 @@
             // txtProjectDeliverables
             // 
             this.txtProjectDeliverables.Location = new System.Drawing.Point(0, 0);
-            this.txtProjectDeliverables.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectDeliverables.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectDeliverables.Multiline = true;
             this.txtProjectDeliverables.Name = "txtProjectDeliverables";
-            this.txtProjectDeliverables.Size = new System.Drawing.Size(761, 544);
+            this.txtProjectDeliverables.Size = new System.Drawing.Size(829, 552);
             this.txtProjectDeliverables.TabIndex = 46;
             // 
             // tabProjectRisks
             // 
             this.tabProjectRisks.Controls.Add(this.txtProjectRisks);
             this.tabProjectRisks.Location = new System.Drawing.Point(4, 23);
-            this.tabProjectRisks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectRisks.Margin = new System.Windows.Forms.Padding(2);
             this.tabProjectRisks.Name = "tabProjectRisks";
-            this.tabProjectRisks.Size = new System.Drawing.Size(760, 542);
+            this.tabProjectRisks.Size = new System.Drawing.Size(831, 554);
             this.tabProjectRisks.TabIndex = 5;
             this.tabProjectRisks.Text = "Project Risks";
             this.tabProjectRisks.UseVisualStyleBackColor = true;
@@ -498,19 +498,19 @@
             // txtProjectRisks
             // 
             this.txtProjectRisks.Location = new System.Drawing.Point(0, 0);
-            this.txtProjectRisks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectRisks.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectRisks.Multiline = true;
             this.txtProjectRisks.Name = "txtProjectRisks";
-            this.txtProjectRisks.Size = new System.Drawing.Size(761, 546);
+            this.txtProjectRisks.Size = new System.Drawing.Size(829, 552);
             this.txtProjectRisks.TabIndex = 47;
             // 
             // tabProjectIssues
             // 
             this.tabProjectIssues.Controls.Add(this.txtProjectIssues);
             this.tabProjectIssues.Location = new System.Drawing.Point(4, 23);
-            this.tabProjectIssues.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectIssues.Margin = new System.Windows.Forms.Padding(2);
             this.tabProjectIssues.Name = "tabProjectIssues";
-            this.tabProjectIssues.Size = new System.Drawing.Size(760, 542);
+            this.tabProjectIssues.Size = new System.Drawing.Size(831, 554);
             this.tabProjectIssues.TabIndex = 6;
             this.tabProjectIssues.Text = "Project Issues";
             this.tabProjectIssues.UseVisualStyleBackColor = true;
@@ -518,19 +518,19 @@
             // txtProjectIssues
             // 
             this.txtProjectIssues.Location = new System.Drawing.Point(0, 0);
-            this.txtProjectIssues.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectIssues.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectIssues.Multiline = true;
             this.txtProjectIssues.Name = "txtProjectIssues";
-            this.txtProjectIssues.Size = new System.Drawing.Size(761, 544);
+            this.txtProjectIssues.Size = new System.Drawing.Size(829, 552);
             this.txtProjectIssues.TabIndex = 48;
             // 
             // tabProjectChanges
             // 
             this.tabProjectChanges.Controls.Add(this.txtProjectChanges);
             this.tabProjectChanges.Location = new System.Drawing.Point(4, 23);
-            this.tabProjectChanges.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectChanges.Margin = new System.Windows.Forms.Padding(2);
             this.tabProjectChanges.Name = "tabProjectChanges";
-            this.tabProjectChanges.Size = new System.Drawing.Size(760, 542);
+            this.tabProjectChanges.Size = new System.Drawing.Size(831, 554);
             this.tabProjectChanges.TabIndex = 7;
             this.tabProjectChanges.Text = "Project Changes";
             this.tabProjectChanges.UseVisualStyleBackColor = true;
@@ -538,10 +538,10 @@
             // txtProjectChanges
             // 
             this.txtProjectChanges.Location = new System.Drawing.Point(0, 0);
-            this.txtProjectChanges.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectChanges.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectChanges.Multiline = true;
             this.txtProjectChanges.Name = "txtProjectChanges";
-            this.txtProjectChanges.Size = new System.Drawing.Size(761, 544);
+            this.txtProjectChanges.Size = new System.Drawing.Size(831, 552);
             this.txtProjectChanges.TabIndex = 49;
             // 
             // tabDetailedStatusReport
@@ -549,10 +549,10 @@
             this.tabDetailedStatusReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.tabDetailedStatusReport.Controls.Add(this.tabCtrlDetailedStatusReport);
             this.tabDetailedStatusReport.Location = new System.Drawing.Point(4, 23);
-            this.tabDetailedStatusReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabDetailedStatusReport.Margin = new System.Windows.Forms.Padding(2);
             this.tabDetailedStatusReport.Name = "tabDetailedStatusReport";
-            this.tabDetailedStatusReport.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabDetailedStatusReport.Size = new System.Drawing.Size(770, 570);
+            this.tabDetailedStatusReport.Padding = new System.Windows.Forms.Padding(2);
+            this.tabDetailedStatusReport.Size = new System.Drawing.Size(845, 587);
             this.tabDetailedStatusReport.TabIndex = 2;
             this.tabDetailedStatusReport.Text = "Detailed Status Report";
             // 
@@ -565,20 +565,20 @@
             this.tabCtrlDetailedStatusReport.Controls.Add(this.tabProjectRisk2);
             this.tabCtrlDetailedStatusReport.Controls.Add(this.tabProjectIssues2);
             this.tabCtrlDetailedStatusReport.Location = new System.Drawing.Point(2, 2);
-            this.tabCtrlDetailedStatusReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabCtrlDetailedStatusReport.Margin = new System.Windows.Forms.Padding(2);
             this.tabCtrlDetailedStatusReport.Name = "tabCtrlDetailedStatusReport";
             this.tabCtrlDetailedStatusReport.SelectedIndex = 0;
-            this.tabCtrlDetailedStatusReport.Size = new System.Drawing.Size(765, 549);
+            this.tabCtrlDetailedStatusReport.Size = new System.Drawing.Size(839, 581);
             this.tabCtrlDetailedStatusReport.TabIndex = 57;
             // 
             // tabProjectSchedule2
             // 
             this.tabProjectSchedule2.Controls.Add(this.dgvProjectSchedule);
             this.tabProjectSchedule2.Location = new System.Drawing.Point(4, 23);
-            this.tabProjectSchedule2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectSchedule2.Margin = new System.Windows.Forms.Padding(2);
             this.tabProjectSchedule2.Name = "tabProjectSchedule2";
-            this.tabProjectSchedule2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabProjectSchedule2.Size = new System.Drawing.Size(757, 522);
+            this.tabProjectSchedule2.Padding = new System.Windows.Forms.Padding(2);
+            this.tabProjectSchedule2.Size = new System.Drawing.Size(831, 554);
             this.tabProjectSchedule2.TabIndex = 0;
             this.tabProjectSchedule2.Text = "Project Schedule";
             this.tabProjectSchedule2.UseVisualStyleBackColor = true;
@@ -588,41 +588,42 @@
             this.dgvProjectSchedule.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle37.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProjectSchedule.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle37;
+            this.dgvProjectSchedule.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProjectSchedule.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvProjectSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProjectSchedule.EnableHeadersVisualStyles = false;
             this.dgvProjectSchedule.Location = new System.Drawing.Point(0, 0);
-            this.dgvProjectSchedule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvProjectSchedule.Margin = new System.Windows.Forms.Padding(2);
             this.dgvProjectSchedule.Name = "dgvProjectSchedule";
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProjectSchedule.RowHeadersDefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProjectSchedule.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvProjectSchedule.RowHeadersWidth = 51;
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvProjectSchedule.RowsDefaultCellStyle = dataGridViewCellStyle39;
-            this.dgvProjectSchedule.Size = new System.Drawing.Size(755, 522);
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvProjectSchedule.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvProjectSchedule.Size = new System.Drawing.Size(829, 554);
             this.dgvProjectSchedule.TabIndex = 45;
             // 
             // tabProjectExpenses2
             // 
             this.tabProjectExpenses2.Controls.Add(this.dgvProjectExpense);
             this.tabProjectExpenses2.Location = new System.Drawing.Point(4, 23);
-            this.tabProjectExpenses2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectExpenses2.Margin = new System.Windows.Forms.Padding(2);
             this.tabProjectExpenses2.Name = "tabProjectExpenses2";
-            this.tabProjectExpenses2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabProjectExpenses2.Size = new System.Drawing.Size(757, 522);
+            this.tabProjectExpenses2.Padding = new System.Windows.Forms.Padding(2);
+            this.tabProjectExpenses2.Size = new System.Drawing.Size(831, 554);
             this.tabProjectExpenses2.TabIndex = 1;
             this.tabProjectExpenses2.Text = "Project Expenses";
             this.tabProjectExpenses2.UseVisualStyleBackColor = true;
@@ -632,40 +633,41 @@
             this.dgvProjectExpense.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle40.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProjectExpense.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle40;
+            this.dgvProjectExpense.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProjectExpense.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvProjectExpense.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProjectExpense.EnableHeadersVisualStyles = false;
             this.dgvProjectExpense.Location = new System.Drawing.Point(0, 0);
-            this.dgvProjectExpense.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvProjectExpense.Margin = new System.Windows.Forms.Padding(2);
             this.dgvProjectExpense.Name = "dgvProjectExpense";
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle41.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProjectExpense.RowHeadersDefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProjectExpense.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvProjectExpense.RowHeadersWidth = 51;
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvProjectExpense.RowsDefaultCellStyle = dataGridViewCellStyle42;
-            this.dgvProjectExpense.Size = new System.Drawing.Size(757, 524);
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvProjectExpense.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvProjectExpense.Size = new System.Drawing.Size(831, 557);
             this.dgvProjectExpense.TabIndex = 50;
             // 
             // tabProjectEffort
             // 
             this.tabProjectEffort.Controls.Add(this.dgvProjectEffort);
             this.tabProjectEffort.Location = new System.Drawing.Point(4, 23);
-            this.tabProjectEffort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectEffort.Margin = new System.Windows.Forms.Padding(2);
             this.tabProjectEffort.Name = "tabProjectEffort";
-            this.tabProjectEffort.Size = new System.Drawing.Size(757, 522);
+            this.tabProjectEffort.Size = new System.Drawing.Size(831, 554);
             this.tabProjectEffort.TabIndex = 2;
             this.tabProjectEffort.Text = "Project Effort";
             this.tabProjectEffort.UseVisualStyleBackColor = true;
@@ -675,40 +677,41 @@
             this.dgvProjectEffort.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle43.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle43.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProjectEffort.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle43;
+            this.dgvProjectEffort.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProjectEffort.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvProjectEffort.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProjectEffort.EnableHeadersVisualStyles = false;
             this.dgvProjectEffort.Location = new System.Drawing.Point(0, 0);
-            this.dgvProjectEffort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvProjectEffort.Margin = new System.Windows.Forms.Padding(2);
             this.dgvProjectEffort.Name = "dgvProjectEffort";
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle44.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProjectEffort.RowHeadersDefaultCellStyle = dataGridViewCellStyle44;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProjectEffort.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvProjectEffort.RowHeadersWidth = 51;
-            dataGridViewCellStyle45.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvProjectEffort.RowsDefaultCellStyle = dataGridViewCellStyle45;
-            this.dgvProjectEffort.Size = new System.Drawing.Size(757, 531);
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvProjectEffort.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.dgvProjectEffort.Size = new System.Drawing.Size(831, 564);
             this.dgvProjectEffort.TabIndex = 49;
             // 
             // tabProjectQuality
             // 
             this.tabProjectQuality.Controls.Add(this.dgvProjectQuality);
             this.tabProjectQuality.Location = new System.Drawing.Point(4, 23);
-            this.tabProjectQuality.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectQuality.Margin = new System.Windows.Forms.Padding(2);
             this.tabProjectQuality.Name = "tabProjectQuality";
-            this.tabProjectQuality.Size = new System.Drawing.Size(757, 522);
+            this.tabProjectQuality.Size = new System.Drawing.Size(831, 554);
             this.tabProjectQuality.TabIndex = 3;
             this.tabProjectQuality.Text = "Project Quality";
             this.tabProjectQuality.UseVisualStyleBackColor = true;
@@ -718,40 +721,41 @@
             this.dgvProjectQuality.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle46.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle46.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProjectQuality.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle46;
+            this.dgvProjectQuality.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProjectQuality.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvProjectQuality.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProjectQuality.EnableHeadersVisualStyles = false;
             this.dgvProjectQuality.Location = new System.Drawing.Point(0, 0);
-            this.dgvProjectQuality.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvProjectQuality.Margin = new System.Windows.Forms.Padding(2);
             this.dgvProjectQuality.Name = "dgvProjectQuality";
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle47.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle47.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProjectQuality.RowHeadersDefaultCellStyle = dataGridViewCellStyle47;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProjectQuality.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dgvProjectQuality.RowHeadersWidth = 51;
-            dataGridViewCellStyle48.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvProjectQuality.RowsDefaultCellStyle = dataGridViewCellStyle48;
-            this.dgvProjectQuality.Size = new System.Drawing.Size(755, 531);
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvProjectQuality.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            this.dgvProjectQuality.Size = new System.Drawing.Size(829, 564);
             this.dgvProjectQuality.TabIndex = 46;
             // 
             // tabProjectRisk2
             // 
             this.tabProjectRisk2.Controls.Add(this.dgvProjectRisk);
             this.tabProjectRisk2.Location = new System.Drawing.Point(4, 23);
-            this.tabProjectRisk2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectRisk2.Margin = new System.Windows.Forms.Padding(2);
             this.tabProjectRisk2.Name = "tabProjectRisk2";
-            this.tabProjectRisk2.Size = new System.Drawing.Size(757, 522);
+            this.tabProjectRisk2.Size = new System.Drawing.Size(831, 554);
             this.tabProjectRisk2.TabIndex = 4;
             this.tabProjectRisk2.Text = "Project Risk";
             this.tabProjectRisk2.UseVisualStyleBackColor = true;
@@ -761,40 +765,41 @@
             this.dgvProjectRisk.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle49.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle49.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle49.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle49.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle49.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProjectRisk.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle49;
+            this.dgvProjectRisk.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProjectRisk.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvProjectRisk.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProjectRisk.EnableHeadersVisualStyles = false;
             this.dgvProjectRisk.Location = new System.Drawing.Point(0, 0);
-            this.dgvProjectRisk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvProjectRisk.Margin = new System.Windows.Forms.Padding(2);
             this.dgvProjectRisk.Name = "dgvProjectRisk";
-            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle50.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle50.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle50.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProjectRisk.RowHeadersDefaultCellStyle = dataGridViewCellStyle50;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProjectRisk.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dgvProjectRisk.RowHeadersWidth = 51;
-            dataGridViewCellStyle51.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvProjectRisk.RowsDefaultCellStyle = dataGridViewCellStyle51;
-            this.dgvProjectRisk.Size = new System.Drawing.Size(757, 531);
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvProjectRisk.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            this.dgvProjectRisk.Size = new System.Drawing.Size(831, 564);
             this.dgvProjectRisk.TabIndex = 47;
             // 
             // tabProjectIssues2
             // 
             this.tabProjectIssues2.Controls.Add(this.dgvProjectIssues);
             this.tabProjectIssues2.Location = new System.Drawing.Point(4, 23);
-            this.tabProjectIssues2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProjectIssues2.Margin = new System.Windows.Forms.Padding(2);
             this.tabProjectIssues2.Name = "tabProjectIssues2";
-            this.tabProjectIssues2.Size = new System.Drawing.Size(757, 522);
+            this.tabProjectIssues2.Size = new System.Drawing.Size(831, 554);
             this.tabProjectIssues2.TabIndex = 5;
             this.tabProjectIssues2.Text = "Project Issues";
             this.tabProjectIssues2.UseVisualStyleBackColor = true;
@@ -804,31 +809,32 @@
             this.dgvProjectIssues.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle52.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle52.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle52.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle52.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle52.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProjectIssues.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle52;
+            this.dgvProjectIssues.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProjectIssues.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.dgvProjectIssues.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProjectIssues.EnableHeadersVisualStyles = false;
             this.dgvProjectIssues.Location = new System.Drawing.Point(0, 0);
-            this.dgvProjectIssues.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvProjectIssues.Margin = new System.Windows.Forms.Padding(2);
             this.dgvProjectIssues.Name = "dgvProjectIssues";
-            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle53.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle53.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle53.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle53.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle53.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProjectIssues.RowHeadersDefaultCellStyle = dataGridViewCellStyle53;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProjectIssues.RowHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dgvProjectIssues.RowHeadersWidth = 51;
-            dataGridViewCellStyle54.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvProjectIssues.RowsDefaultCellStyle = dataGridViewCellStyle54;
-            this.dgvProjectIssues.Size = new System.Drawing.Size(757, 524);
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvProjectIssues.RowsDefaultCellStyle = dataGridViewCellStyle18;
+            this.dgvProjectIssues.Size = new System.Drawing.Size(831, 557);
             this.dgvProjectIssues.TabIndex = 48;
             // 
             // txtProjectName
@@ -837,7 +843,7 @@
             this.txtProjectName.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProjectName.ForeColor = System.Drawing.Color.Black;
             this.txtProjectName.Location = new System.Drawing.Point(153, 5);
-            this.txtProjectName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProjectName.Margin = new System.Windows.Forms.Padding(2);
             this.txtProjectName.Name = "txtProjectName";
             this.txtProjectName.Size = new System.Drawing.Size(76, 20);
             this.txtProjectName.TabIndex = 17;
@@ -888,13 +894,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(794, 609);
+            this.ClientSize = new System.Drawing.Size(870, 660);
             this.Controls.Add(this.btnExportWord);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.tabCtrlProjectStatusDocumentForm);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ProjectStatusReportDocumentForm";
             this.Text = "ProjectStatusReportDocumentForm";
             this.Load += new System.EventHandler(this.ProjectStatusReportDocumentForm_Load_1);
