@@ -126,7 +126,6 @@
             this.Enter_btn.TabIndex = 9;
             this.Enter_btn.Text = "Enter";
             this.Enter_btn.UseVisualStyleBackColor = false;
-            this.Enter_btn.Click += new System.EventHandler(this.Enter_btn_Click);
             // 
             // Cost_Management_Process_tbx
             // 
@@ -537,7 +536,6 @@
             this.Cost_Management_Roles.TabIndex = 7;
             this.Cost_Management_Roles.Text = "Enter";
             this.Cost_Management_Roles.UseVisualStyleBackColor = false;
-            this.Cost_Management_Roles.Click += new System.EventHandler(this.Cost_Management_Roles_Click);
             // 
             // tabPage3
             // 
@@ -642,7 +640,6 @@
             this.Cost_Management_Roles_btn.TabIndex = 15;
             this.Cost_Management_Roles_btn.Text = "Enter";
             this.Cost_Management_Roles_btn.UseVisualStyleBackColor = false;
-            this.Cost_Management_Roles_btn.Click += new System.EventHandler(this.Cost_Management_Roles_btn_Click);
             // 
             // tabPage4
             // 
@@ -723,7 +720,6 @@
             this.Cost_Management_Documents_btn.TabIndex = 20;
             this.Cost_Management_Documents_btn.Text = "Enter";
             this.Cost_Management_Documents_btn.UseVisualStyleBackColor = false;
-            this.Cost_Management_Documents_btn.Click += new System.EventHandler(this.Cost_Management_Documents_btn_Click);
             // 
             // CostManagementProcessDocumentForm
             // 

@@ -1,6 +1,6 @@
 ﻿namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
-    partial class RiskPlanDocumentForm
+    partial class RiskPlanForm
     {
         /// <summary>
         /// Required designer variable.
@@ -186,7 +186,6 @@
             this.Enter_btn.TabIndex = 6;
             this.Enter_btn.Text = "Enter";
             this.Enter_btn.UseVisualStyleBackColor = false;
-            this.Enter_btn.Click += new System.EventHandler(this.Enter_btn_Click);
             // 
             // Project_Name_tbx
             // 
@@ -587,7 +586,6 @@
             this.Risk_Identification_btn.TabIndex = 17;
             this.Risk_Identification_btn.Text = "Enter";
             this.Risk_Identification_btn.UseVisualStyleBackColor = false;
-            this.Risk_Identification_btn.Click += new System.EventHandler(this.Risk_Identification_btn_Click);
             // 
             // tabPage3
             // 
@@ -1013,7 +1011,6 @@
             this.Risk_Plan_btn.TabIndex = 26;
             this.Risk_Plan_btn.Text = "Enter";
             this.Risk_Plan_btn.UseVisualStyleBackColor = false;
-            this.Risk_Plan_btn.Click += new System.EventHandler(this.Risk_Plan_btn_Click);
             // 
             // tabPage5
             // 
@@ -1118,7 +1115,6 @@
             this.Risk_Process_btn.TabIndex = 32;
             this.Risk_Process_btn.Text = "Enter";
             this.Risk_Process_btn.UseVisualStyleBackColor = false;
-            this.Risk_Process_btn.Click += new System.EventHandler(this.Risk_Process_btn_Click);
             // 
             // tabPage6
             // 
@@ -1143,7 +1139,6 @@
             this.Appendix_btn.TabIndex = 35;
             this.Appendix_btn.Text = "Enter";
             this.Appendix_btn.UseVisualStyleBackColor = false;
-            this.Appendix_btn.Click += new System.EventHandler(this.Appendix_btn_Click);
             // 
             // Appendix_tbx
             // 

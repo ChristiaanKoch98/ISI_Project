@@ -43,9 +43,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newPhaseReviewPlanningModel.ProjectManager = Project_Manager_tbx.Text;
             newPhaseReviewPlanningModel.ProjectSponsor = Project_Sponsor_tbx.Text;
 
-            newPhaseReviewPlanningModel.RepportPreparedBy = txtPreparedBy.Text;
+            /*newPhaseReviewPlanningModel.RepportPreparedBy = txtPreparedBy.Text;
             newPhaseReviewPlanningModel.ReportPrepDate = txtPrepDate.Text;
-            newPhaseReviewPlanningModel.ReportingPeriod = txtReportingPeriod.Text;
+            newPhaseReviewPlanningModel.ReportingPeriod = txtReportingPeriod.Text;*/
 
             newPhaseReviewPlanningModel.Summary = Summary_tbx.Text;
             newPhaseReviewPlanningModel.ProjectSchedule = Project_Schedule_tbx.Text;
@@ -115,9 +115,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 Project_Manager_tbx.Text = currentPhaseReviewPlanningModel.ProjectManager;
                 Project_Sponsor_tbx.Text = currentPhaseReviewPlanningModel.ProjectSponsor;
 
-                txtPreparedBy.Text = currentPhaseReviewPlanningModel.RepportPreparedBy;
+                /*txtPreparedBy.Text = currentPhaseReviewPlanningModel.RepportPreparedBy;
                 txtPrepDate.Text = currentPhaseReviewPlanningModel.ReportPrepDate;
-                txtReportingPeriod.Text = currentPhaseReviewPlanningModel.ReportingPeriod;
+                txtReportingPeriod.Text = currentPhaseReviewPlanningModel.ReportingPeriod;*/
 
                 Summary_tbx.Text = currentPhaseReviewPlanningModel.Summary;
                 Project_Schedule_tbx.Text = currentPhaseReviewPlanningModel.ProjectSchedule;

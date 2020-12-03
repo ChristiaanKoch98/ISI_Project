@@ -124,7 +124,6 @@
             this.Enter_btn.TabIndex = 12;
             this.Enter_btn.Text = "Enter";
             this.Enter_btn.UseVisualStyleBackColor = false;
-            this.Enter_btn.Click += new System.EventHandler(this.Enter_btn_Click);
             // 
             // Purchase_Order_Form_tbx
             // 
@@ -220,7 +219,6 @@
             this.PROJECT_DETAILS_btn.TabIndex = 19;
             this.PROJECT_DETAILS_btn.Text = "Enter";
             this.PROJECT_DETAILS_btn.UseVisualStyleBackColor = false;
-            this.PROJECT_DETAILS_btn.Click += new System.EventHandler(this.PROJECT_DETAILS_btn_Click);
             // 
             // label3
             // 
@@ -551,7 +549,6 @@
             this.DELIVERY_DETAILS_btn.TabIndex = 61;
             this.DELIVERY_DETAILS_btn.Text = "Enter";
             this.DELIVERY_DETAILS_btn.UseVisualStyleBackColor = false;
-            this.DELIVERY_DETAILS_btn.Click += new System.EventHandler(this.DELIVERY_DETAILS_btn_Click);
             // 
             // tabPage3
             // 
@@ -669,7 +666,6 @@
             this.PAYMENT_DETAILS_btn.TabIndex = 62;
             this.PAYMENT_DETAILS_btn.Text = "Enter";
             this.PAYMENT_DETAILS_btn.UseVisualStyleBackColor = false;
-            this.PAYMENT_DETAILS_btn.Click += new System.EventHandler(this.PAYMENT_DETAILS_btn_Click);
             // 
             // cmbxPaymentMethod
             // 
@@ -790,7 +786,6 @@
             this.TERMS_AND_CONDITIONS_btn.TabIndex = 65;
             this.TERMS_AND_CONDITIONS_btn.Text = "Enter";
             this.TERMS_AND_CONDITIONS_btn.UseVisualStyleBackColor = false;
-            this.TERMS_AND_CONDITIONS_btn.Click += new System.EventHandler(this.TERMS_AND_CONDITIONS_btn_Click);
             // 
             // Terms_and_Conditions_tbx
             // 
