@@ -45,6 +45,8 @@
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.Document_Information_dgv = new System.Windows.Forms.DataGridView();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.Document_History_dgv = new System.Windows.Forms.DataGridView();
             this.Version = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,9 +54,6 @@
             this.Changes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.Document_Approvals_dgv = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage8 = new System.Windows.Forms.TabPage();
@@ -84,8 +83,10 @@
             this.Expense_Register_tbx = new System.Windows.Forms.TextBox();
             this.Cost_Management_Documents_btn = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -238,6 +239,19 @@
             this.Document_Information_dgv.Size = new System.Drawing.Size(873, 432);
             this.Document_Information_dgv.TabIndex = 8;
             // 
+            // Name
+            // 
+            this.Name.HeaderText = "Name";
+            this.Name.MinimumWidth = 6;
+            this.Name.Name = "Name";
+            this.Name.ReadOnly = true;
+            // 
+            // Information
+            // 
+            this.Information.HeaderText = "Information";
+            this.Information.MinimumWidth = 6;
+            this.Information.Name = "Information";
+            // 
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.Document_History_dgv);
@@ -287,7 +301,7 @@
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
             this.Document_History_dgv.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.Document_History_dgv.Size = new System.Drawing.Size(871, 439);
+            this.Document_History_dgv.Size = new System.Drawing.Size(871, 440);
             this.Document_History_dgv.TabIndex = 4;
             // 
             // Version
@@ -339,7 +353,8 @@
             this.Document_Approvals_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3});
+            this.dataGridViewTextBoxColumn3,
+            this.Date});
             this.Document_Approvals_dgv.EnableHeadersVisualStyles = false;
             this.Document_Approvals_dgv.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Document_Approvals_dgv.Location = new System.Drawing.Point(0, 0);
@@ -357,26 +372,8 @@
             dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
             this.Document_Approvals_dgv.RowsDefaultCellStyle = dataGridViewCellStyle9;
-            this.Document_Approvals_dgv.Size = new System.Drawing.Size(873, 440);
+            this.Document_Approvals_dgv.Size = new System.Drawing.Size(873, 441);
             this.Document_Approvals_dgv.TabIndex = 4;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Version";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Issue Date";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Changes";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // tabPage2
             // 
@@ -452,7 +449,7 @@
             this.Document_Expense_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.Document_Expense_tbx.Multiline = true;
             this.Document_Expense_tbx.Name = "Document_Expense_tbx";
-            this.Document_Expense_tbx.Size = new System.Drawing.Size(554, 402);
+            this.Document_Expense_tbx.Size = new System.Drawing.Size(554, 403);
             this.Document_Expense_tbx.TabIndex = 10;
             // 
             // tabPage10
@@ -477,7 +474,7 @@
             this.Approve_Expense_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.Approve_Expense_tbx.Multiline = true;
             this.Approve_Expense_tbx.Name = "Approve_Expense_tbx";
-            this.Approve_Expense_tbx.Size = new System.Drawing.Size(552, 400);
+            this.Approve_Expense_tbx.Size = new System.Drawing.Size(552, 401);
             this.Approve_Expense_tbx.TabIndex = 12;
             // 
             // tabPage11
@@ -502,7 +499,7 @@
             this.Update_Project_Plan_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.Update_Project_Plan_tbx.Multiline = true;
             this.Update_Project_Plan_tbx.Name = "Update_Project_Plan_tbx";
-            this.Update_Project_Plan_tbx.Size = new System.Drawing.Size(552, 402);
+            this.Update_Project_Plan_tbx.Size = new System.Drawing.Size(552, 403);
             this.Update_Project_Plan_tbx.TabIndex = 12;
             // 
             // pictureBox1
@@ -599,7 +596,7 @@
             this.Project_Administrator_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.Project_Administrator_tbx.Multiline = true;
             this.Project_Administrator_tbx.Name = "Project_Administrator_tbx";
-            this.Project_Administrator_tbx.Size = new System.Drawing.Size(872, 390);
+            this.Project_Administrator_tbx.Size = new System.Drawing.Size(872, 391);
             this.Project_Administrator_tbx.TabIndex = 17;
             // 
             // tabPage14
@@ -624,7 +621,7 @@
             this.Project_Manager_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.Project_Manager_tbx.Multiline = true;
             this.Project_Manager_tbx.Name = "Project_Manager_tbx";
-            this.Project_Manager_tbx.Size = new System.Drawing.Size(874, 390);
+            this.Project_Manager_tbx.Size = new System.Drawing.Size(874, 391);
             this.Project_Manager_tbx.TabIndex = 21;
             // 
             // Cost_Management_Roles_btn
@@ -711,7 +708,7 @@
             this.Expense_Register_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.Expense_Register_tbx.Multiline = true;
             this.Expense_Register_tbx.Name = "Expense_Register_tbx";
-            this.Expense_Register_tbx.Size = new System.Drawing.Size(872, 371);
+            this.Expense_Register_tbx.Size = new System.Drawing.Size(872, 372);
             this.Expense_Register_tbx.TabIndex = 22;
             // 
             // Cost_Management_Documents_btn
@@ -741,18 +738,28 @@
             this.btnExport.UseVisualStyleBackColor = false;
             this.btnExport.Click += new System.EventHandler(this.btnExportToWord_Click);
             // 
-            // Name
+            // dataGridViewTextBoxColumn1
             // 
-            this.Name.HeaderText = "Name";
-            this.Name.MinimumWidth = 6;
-            this.Name.Name = "Name";
-            this.Name.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Role";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
-            // Information
+            // dataGridViewTextBoxColumn2
             // 
-            this.Information.HeaderText = "Information";
-            this.Information.MinimumWidth = 6;
-            this.Information.Name = "Information";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Signature";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
             // 
             // CostManagementProcessDocumentForm
             // 
@@ -842,9 +849,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Issue_Date;
         private System.Windows.Forms.DataGridViewTextBoxColumn Changes;
         private System.Windows.Forms.DataGridView Document_Approvals_dgv;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.TabPage tabPage9;
@@ -860,5 +864,9 @@
         private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.DataGridViewTextBoxColumn Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn Information;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
     }
 }
