@@ -94,6 +94,7 @@ namespace ProjectManagementToolkit.MPMM
             bool[] documentsSuccesful = new bool[documentsToSync.Count];
             
             syncProgressBar.Maximum = (documentsToSync.Count);
+            
             double progressValue = 0;
             if (connectionSuccessful)
             {
@@ -118,11 +119,18 @@ namespace ProjectManagementToolkit.MPMM
                     double progressPercentage = ((progressValue - 1) / syncProgressBar.Maximum) * 100;
                     syncProgressBar.Value = (int)progressValue;
                     lblProgress.Text = "Progress: " + item + " - " + Math.Round(progressPercentage,2).ToString() + "%";
-                    lblProgress.Refresh();
                     syncProgressBar.Refresh();
+                    lblProgress.Refresh();
+                    
+                }
+                if(documentsToSync.Count == 0)
+                {
+                    syncProgressBar.Maximum = 1;
                 }
                 syncProgressBar.Value = syncProgressBar.Maximum;
                 lblProgress.Text = "Progress: 100%";
+                syncProgressBar.Refresh();
+                lblProgress.Refresh();
                 MessageBox.Show("Sync completed");
             }
             else
@@ -148,6 +156,7 @@ namespace ProjectManagementToolkit.MPMM
             }
 
             Cursor.Current = Cursors.Default;
+            this.Close();
         }
 
         private bool checkProjectConfig()
@@ -273,6 +282,7 @@ namespace ProjectManagementToolkit.MPMM
 
                 //Add document to serverJson
                 JArray documentModels = serverJson["DocumentModels"].ToObject<JArray>();
+                documentModels.Clear();
                 documentModels.Add(updatedDocument);
 
                 serverJson["DocumentModels"] = documentModels;
@@ -307,6 +317,7 @@ namespace ProjectManagementToolkit.MPMM
 
                 //Add document to serverJson
                 JArray documentModels = serverJson["DocumentModels"].ToObject<JArray>();
+                documentModels.Clear();
                 documentModels.Add(updatedDocument);
 
                 serverJson["DocumentModels"] = documentModels;
