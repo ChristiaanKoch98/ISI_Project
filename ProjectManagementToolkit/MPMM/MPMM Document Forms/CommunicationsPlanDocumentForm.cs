@@ -62,11 +62,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             dgvStakeholderRequirements.Columns.Add("colStakeOrg", "Stakeholder organization");
             dgvStakeholderRequirements.Columns.Add("colInfoReq", "Information required"); 
 
-            dgvDocumentInformation.Columns.Add("colDocID", "Document ID");
-            dgvDocumentInformation.Columns.Add("colDocOwner", "Stakeholder Document owner");
-            dgvDocumentInformation.Columns.Add("colIssueDate", "Issue date");
-            dgvDocumentInformation.Columns.Add("colLastSaveDate", "Last save date");
-            dgvDocumentInformation.Columns.Add("colFileName", "File Name");
+            dgvDocumentInformation.Columns.Add("colType", "Type");
+            dgvDocumentInformation.Columns.Add("colInfo", "Information");
 
             dgvCommunicationsPlan.Columns.Add("colDeliverable", "Deliverable");
             dgvCommunicationsPlan.Columns.Add("colScheduledCompletionDate", "Scheduled Completion Date");
@@ -410,7 +407,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         document.InsertTableOfContents(p, "", tocSwitches);
                         document.InsertParagraph().InsertPageBreakAfterSelf();
-                        var CommunicationReqHeading = document.InsertParagraph("1 Communication requirement")
+                        var CommunicationReqHeading = document.InsertParagraph("1 Communication Requirements")
                             .Bold()
                             .FontSize(14d)
                             .Color(Color.Black)
@@ -419,7 +416,22 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         CommunicationReqHeading.StyleId = "Heading1";
 
-                        var CommunicationReqSubHeading = CommunicationReqHeading.InsertParagraphAfterSelf("1.1 Communication requirement")
+                        var CommunicationListSubHeading = document.InsertParagraph("1.1 Stakeholder List")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        CommunicationListSubHeading.StyleId = "Heading2";
+
+                        document.InsertParagraph(currentCommunicationsPlanModel.StakeholderList)
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
+
+                        var CommunicationReqSubHeading = document.InsertParagraph("1.2 Stakeholder Requirement")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -435,10 +447,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         documentStakeholderReq.Rows[0].Cells[1].Paragraphs[0].Append("Stakeholder Role")
                             .Bold(true)
                             .Color(Color.White);
-                        documentStakeholderReq.Rows[0].Cells[2].Paragraphs[0].Append("Stakeholder organization")
+                        documentStakeholderReq.Rows[0].Cells[2].Paragraphs[0].Append("Stakeholder Organization")
                             .Bold(true)
                             .Color(Color.White);
-                        documentStakeholderReq.Rows[0].Cells[3].Paragraphs[0].Append("Information required")
+                        documentStakeholderReq.Rows[0].Cells[3].Paragraphs[0].Append("Information Required")
                            .Bold(true)
                            .Color(Color.White);
 
@@ -466,9 +478,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .Bold(true)
                             .Font("Arial");
 
-                        CommunicationReqHeading.StyleId = "Heading1";
+                        CommunicationPlanHeading.StyleId = "Heading1";
 
-                        var scheSubHeading = document.InsertParagraph("3.1 Project Schedule")
+                        var scheSubHeading = document.InsertParagraph("2.1 Project Schedule")
                            .Bold()
                            .FontSize(14d)
                            .Color(Color.Black)
@@ -481,19 +493,19 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         scheDoc.Rows[0].Cells[0].Paragraphs[0].Append("Deliverable")
                             .Bold(true)
                             .Color(Color.White);
-                        scheDoc.Rows[0].Cells[1].Paragraphs[0].Append("ScheduledCompletionDate")
+                        scheDoc.Rows[0].Cells[1].Paragraphs[0].Append("Scheduled Completion Date")
                             .Bold(true)
                             .Color(Color.White);
-                        scheDoc.Rows[0].Cells[2].Paragraphs[0].Append("ActualCompletionDate")
+                        scheDoc.Rows[0].Cells[2].Paragraphs[0].Append("Actual Completion Date")
                             .Bold(true)
                             .Color(Color.White);
-                        scheDoc.Rows[0].Cells[3].Paragraphs[0].Append("ActualVariance")
+                        scheDoc.Rows[0].Cells[3].Paragraphs[0].Append("Actual Variance")
                             .Bold(true)
                             .Color(Color.White);
-                        scheDoc.Rows[0].Cells[4].Paragraphs[0].Append("ForecastCompletionDate")
+                        scheDoc.Rows[0].Cells[4].Paragraphs[0].Append("Forecast Completion Date")
                             .Bold(true)
                             .Color(Color.White);
-                        scheDoc.Rows[0].Cells[5].Paragraphs[0].Append("ForecastVariance")
+                        scheDoc.Rows[0].Cells[5].Paragraphs[0].Append("Forecast Variance")
                             .Bold(true)
                             .Color(Color.White);
                         scheDoc.Rows[0].Cells[6].Paragraphs[0].Append("Summary")
@@ -647,6 +659,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private void btnExportWord_Click(object sender, EventArgs e)
         {
             exportToWord();
+        }
+
+        private void tabDocumentInformation_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

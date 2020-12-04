@@ -85,7 +85,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
             newIssueManagementProcessModel.Overview = overviewTextBox.Text;
             newIssueManagementProcessModel.RaiseIssue = raiseTextBox.Text;
-            newIssueManagementProcessModel.ReviewIssue = reviewIssueLabel.Text;
+            newIssueManagementProcessModel.ReviewIssue = reviewTextBox.Text;
             newIssueManagementProcessModel.IssueAction = assgnActTextBox.Text;
             newIssueManagementProcessModel.TeamMember = textBox1.Text;
             newIssueManagementProcessModel.ProjectManager = textBox2.Text;
@@ -147,7 +147,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 overviewTextBox.Text = currentIssueManagementProcessModel.Overview;
                 raiseTextBox.Text = currentIssueManagementProcessModel.RaiseIssue;
-                reviewIssueLabel.Text = currentIssueManagementProcessModel.ReviewIssue;
+                reviewTextBox.Text = currentIssueManagementProcessModel.ReviewIssue;
                 assgnActTextBox.Text = currentIssueManagementProcessModel.IssueAction;
                 textBox1.Text = currentIssueManagementProcessModel.TeamMember;
                 textBox2.Text = currentIssueManagementProcessModel.ProjectManager;
@@ -505,6 +505,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private void exportButton_Click(object sender, EventArgs e)
         {
             exportToWord();
+        }
+
+        private void overviewTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

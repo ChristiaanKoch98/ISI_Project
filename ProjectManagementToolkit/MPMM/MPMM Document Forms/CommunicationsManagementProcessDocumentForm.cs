@@ -451,5 +451,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 }
             }
         }
+
+        private void documentInformation_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

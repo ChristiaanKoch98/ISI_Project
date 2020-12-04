@@ -28,6 +28,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         public PhaseReviewFormPlanningDocumentForm()
         {
             InitializeComponent();
+            REVIEW_DETAILS_dgv.ForeColor = Color.Black;
         }
 
         public void SaveDocument()
@@ -36,6 +37,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newPhaseReviewPlanningModel.ProjectName = Project_Name_tbx.Text;
             newPhaseReviewPlanningModel.ProjectManager = Project_Manager_tbx.Text;
             newPhaseReviewPlanningModel.ProjectSponsor = Project_Sponsor_tbx.Text;
+            newPhaseReviewPlanningModel.ReportingPeriod = txtReportingPeriod.Text;
+            newPhaseReviewPlanningModel.ReportPrepDate = txtReportPreparationDate.Text;
+            newPhaseReviewPlanningModel.RepportPreparedBy = txtReportPreparedBy.Text;
 
             /*newPhaseReviewPlanningModel.RepportPreparedBy = txtPreparedBy.Text;
             newPhaseReviewPlanningModel.ReportPrepDate = txtPrepDate.Text;
@@ -109,9 +113,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 Project_Manager_tbx.Text = currentPhaseReviewPlanningModel.ProjectManager;
                 Project_Sponsor_tbx.Text = currentPhaseReviewPlanningModel.ProjectSponsor;
 
-                /*txtPreparedBy.Text = currentPhaseReviewPlanningModel.RepportPreparedBy;
-                txtPrepDate.Text = currentPhaseReviewPlanningModel.ReportPrepDate;
-                txtReportingPeriod.Text = currentPhaseReviewPlanningModel.ReportingPeriod;*/
+                txtReportPreparedBy.Text = currentPhaseReviewPlanningModel.RepportPreparedBy;
+                txtReportPreparationDate.Text = currentPhaseReviewPlanningModel.ReportPrepDate;
+                txtReportingPeriod.Text = currentPhaseReviewPlanningModel.ReportingPeriod;
 
                 Summary_tbx.Text = currentPhaseReviewPlanningModel.Summary;
                 Project_Schedule_tbx.Text = currentPhaseReviewPlanningModel.ProjectSchedule;
@@ -291,6 +295,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private void PhaseReviewFormPlanningDocumentForm_Load(object sender, EventArgs e)
         {
             LoadDocument();
+        }
+
+        private void REVIEW_DETAILS_dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

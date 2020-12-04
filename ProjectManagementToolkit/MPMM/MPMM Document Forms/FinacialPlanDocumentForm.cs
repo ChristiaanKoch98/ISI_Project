@@ -918,6 +918,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void FinacialPlanDocumentForm_Load(object sender, EventArgs e)
         {
+            /*
             dataGridViewDocumentInformation.Columns.Add("type", "Type");
             dataGridViewDocumentInformation.Columns.Add("info", "Information");
 
@@ -962,6 +963,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             dataGridView1.Columns.Add("Nov", "Nov");
             dataGridView1.Columns.Add("Dec", "Dec");
             dataGridView1.Columns.Add("Total", "Total");
+            */
             loadDocument();
         }
 

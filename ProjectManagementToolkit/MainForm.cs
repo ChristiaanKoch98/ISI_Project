@@ -410,5 +410,12 @@ namespace ProjectManagementToolkit
             form.Show();
             form.MdiParent = this;
         }
+
+        private void exampleToolStripMenuItem32_Click(object sender, EventArgs e)
+        {
+            TermOfReferenceDocumentForm form = new TermOfReferenceDocumentForm();
+            form.Show();
+            form.MdiParent = this;
+        }
     }
 }

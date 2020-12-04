@@ -28,6 +28,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         public PurchaseOrderFormDocumentForm()
         {
             InitializeComponent();
+            ORDER_DETAILS_dgv.ForeColor = Color.Black;
         }
 
         public void SaveDocument()
