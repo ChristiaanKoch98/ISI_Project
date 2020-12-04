@@ -198,6 +198,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtProjectName = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
             this.tabPage7.SuspendLayout();
             this.tabRecommendedSolution.SuspendLayout();
             this.tabPage40.SuspendLayout();
@@ -478,7 +480,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabExecSumAndBusCase.Location = new System.Drawing.Point(3, 3);
             this.tabExecSumAndBusCase.Name = "tabExecSumAndBusCase";
             this.tabExecSumAndBusCase.SelectedIndex = 0;
-            this.tabExecSumAndBusCase.Size = new System.Drawing.Size(832, 586);
+            this.tabExecSumAndBusCase.Size = new System.Drawing.Size(885, 448);
             this.tabExecSumAndBusCase.TabIndex = 6;
             // 
             // tabPage31
@@ -534,7 +536,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage33.Controls.Add(this.txtEnvirAnalysis);
             this.tabPage33.Location = new System.Drawing.Point(4, 24);
             this.tabPage33.Name = "tabPage33";
-            this.tabPage33.Size = new System.Drawing.Size(824, 558);
+            this.tabPage33.Size = new System.Drawing.Size(877, 420);
             this.tabPage33.TabIndex = 2;
             this.tabPage33.Text = "Environmental Analysis";
             this.tabPage33.UseVisualStyleBackColor = true;
@@ -548,7 +550,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtEnvirAnalysis.Location = new System.Drawing.Point(0, 0);
             this.txtEnvirAnalysis.Multiline = true;
             this.txtEnvirAnalysis.Name = "txtEnvirAnalysis";
-            this.txtEnvirAnalysis.Size = new System.Drawing.Size(824, 558);
+            this.txtEnvirAnalysis.Size = new System.Drawing.Size(877, 420);
             this.txtEnvirAnalysis.TabIndex = 4;
             this.txtEnvirAnalysis.Text = "Environmental Analysis";
             // 
@@ -630,7 +632,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabDocControl.Location = new System.Drawing.Point(3, 3);
             this.tabDocControl.Name = "tabDocControl";
             this.tabDocControl.SelectedIndex = 0;
-            this.tabDocControl.Size = new System.Drawing.Size(832, 586);
+            this.tabDocControl.Size = new System.Drawing.Size(589, 369);
             this.tabDocControl.TabIndex = 6;
             // 
             // tabPage37
@@ -722,7 +724,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage39.Controls.Add(this.dgvDocApprovals);
             this.tabPage39.Location = new System.Drawing.Point(4, 24);
             this.tabPage39.Name = "tabPage39";
-            this.tabPage39.Size = new System.Drawing.Size(824, 558);
+            this.tabPage39.Size = new System.Drawing.Size(581, 341);
             this.tabPage39.TabIndex = 2;
             this.tabPage39.Text = "Document Approvals";
             this.tabPage39.UseVisualStyleBackColor = true;
@@ -739,7 +741,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvDocApprovals.Location = new System.Drawing.Point(0, 0);
             this.dgvDocApprovals.Name = "dgvDocApprovals";
             this.dgvDocApprovals.RowHeadersWidth = 51;
-            this.dgvDocApprovals.Size = new System.Drawing.Size(824, 558);
+            this.dgvDocApprovals.Size = new System.Drawing.Size(581, 341);
             this.dgvDocApprovals.TabIndex = 3;
             // 
             // approvalRole
@@ -1631,12 +1633,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Controls.Add(this.tabPage9);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Location = new System.Drawing.Point(-48, 81);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(846, 620);
+            this.tabControl1.Size = new System.Drawing.Size(603, 403);
             this.tabControl1.TabIndex = 5;
             // 
             // tabPage1
@@ -1647,7 +1648,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(838, 592);
+            this.tabPage1.Size = new System.Drawing.Size(595, 375);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Document Control";
             // 
@@ -1659,7 +1660,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(838, 592);
+            this.tabPage2.Size = new System.Drawing.Size(891, 454);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Executive Summary & Business Problem";
             // 
@@ -2004,12 +2005,36 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtProjectName.TabIndex = 4;
             this.txtProjectName.Text = "Project Name";
             // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Location = new System.Drawing.Point(442, 12);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(87, 35);
+            this.btnSave.TabIndex = 7;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            // 
+            // btnExport
+            // 
+            this.btnExport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExport.Location = new System.Drawing.Point(590, 12);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(108, 35);
+            this.btnExport.TabIndex = 8;
+            this.btnExport.Text = "Export to Word";
+            this.btnExport.UseVisualStyleBackColor = false;
+            // 
             // BusinessCaseDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(846, 620);
+            this.Controls.Add(this.btnExport);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.txtProjectName);
@@ -2288,5 +2313,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn36;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn37;
         private System.Windows.Forms.TextBox txtProjectName;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnExport;
     }
 }

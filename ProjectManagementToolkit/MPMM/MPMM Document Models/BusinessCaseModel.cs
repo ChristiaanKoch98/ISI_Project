@@ -156,7 +156,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 
             public List<int> SolutionScore { get; set; }
         }
-
     }
 }
 
