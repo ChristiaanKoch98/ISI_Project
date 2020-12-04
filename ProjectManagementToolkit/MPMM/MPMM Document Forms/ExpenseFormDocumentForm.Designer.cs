@@ -99,10 +99,10 @@
             this.tabControl3.Controls.Add(this.tabPage6);
             this.tabControl3.Controls.Add(this.tabPage18);
             this.tabControl3.Controls.Add(this.tabPage23);
-            this.tabControl3.Location = new System.Drawing.Point(12, 47);
+            this.tabControl3.Location = new System.Drawing.Point(12, 56);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(1052, 486);
+            this.tabControl3.Size = new System.Drawing.Size(1092, 477);
             this.tabControl3.TabIndex = 4;
             // 
             // tabPage6
@@ -112,7 +112,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 23);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1044, 459);
+            this.tabPage6.Size = new System.Drawing.Size(1084, 450);
             this.tabPage6.TabIndex = 0;
             this.tabPage6.Text = "Project Details";
             // 
@@ -152,7 +152,7 @@
             this.projectInformation.RowHeadersWidth = 51;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 10.8F);
             this.projectInformation.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.projectInformation.Size = new System.Drawing.Size(1038, 453);
+            this.projectInformation.Size = new System.Drawing.Size(1078, 444);
             this.projectInformation.TabIndex = 8;
             // 
             // dataGridViewTextBoxColumn1
@@ -481,7 +481,7 @@
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(19, 2);
+            this.btnSave.Location = new System.Drawing.Point(884, 11);
             this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(92, 40);
@@ -495,7 +495,7 @@
             this.btnExportWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnExportWord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExportWord.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExportWord.Location = new System.Drawing.Point(115, 2);
+            this.btnExportWord.Location = new System.Drawing.Point(980, 11);
             this.btnExportWord.Margin = new System.Windows.Forms.Padding(2);
             this.btnExportWord.Name = "btnExportWord";
             this.btnExportWord.Size = new System.Drawing.Size(125, 40);

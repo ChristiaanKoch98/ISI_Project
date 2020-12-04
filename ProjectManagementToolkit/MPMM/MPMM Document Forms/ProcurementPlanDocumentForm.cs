@@ -83,48 +83,56 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             string addAssumptions = txtAssumptions.Text;
             listBoxAssumptions.Items.Add(addAssumptions);
+            txtAssumptions.Clear();
         }
 
         private void btnAddConstraints_Click(object sender, EventArgs e)
         {
             string addConstraints = txtConstraints.Text;
             listBoxConstraints.Items.Add(addConstraints);
+            txtConstraints.Clear();
         }
 
         private void btnTenderActivities_Click(object sender, EventArgs e)
         {
             string tenderActivities = txtTenderActivities.Text;
             listBoxTenderActivities.Items.Add(tenderActivities);
+            txtTenderActivities.Clear();
         }
 
         private void btnTenderRoles_Click(object sender, EventArgs e)
         {
             string tenderRoles = txtTenderRoles.Text;
             listBoxTenderRoles.Items.Add(tenderRoles);
+            txtTenderRoles.Clear();
         }
 
         private void btnTenderDocuments_Click(object sender, EventArgs e)
         {
             string tenderDocuments = txtTenderDocuments.Text;
             listBoxTenderDocuments.Items.Add(tenderDocuments);
+            txtTenderDocuments.Clear();
         }
 
         private void btnProcessActivities_Click(object sender, EventArgs e)
         {
             string processActivities = txtProcessActivities.Text;
             listBoxProcessActivities.Items.Add(processActivities);
+            txtProcessActivities.Clear();
         }
 
         private void btnProcessRoles_Click(object sender, EventArgs e)
         {
             string processRoles = txtProcessRoles.Text;
             listBoxProcessRoles.Items.Add(processRoles);
+            txtProcessRoles.Clear();
         }
 
         private void btnProcessDocuments_Click(object sender, EventArgs e)
         {
             string processDocuments = txtProcessDocuments.Text;
             listBoxProcessDocuments.Items.Add(processDocuments);
+            txtProcessDocuments.Clear();
         }
 
         private void btnSaveProjectName_Click_1(object sender, EventArgs e)
@@ -247,6 +255,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentProcurementPlanModel = JsonConvert.DeserializeObject<ProcurementPlanModel>(JsonConvert.SerializeObject(newProcurementPlanModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ProcurementPlan");
                 MessageBox.Show("Procurement Plan saved successfully", "save", MessageBoxButtons.OK);
             }

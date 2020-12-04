@@ -182,7 +182,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         projectDetailsTable.Rows[1].Cells[0].Paragraphs[0].Append("Project Name:");
                         projectDetailsTable.Rows[1].Cells[1].Paragraphs[0].Append(currentAcceptanceFormModel.ProjectName);
                         projectDetailsTable.Rows[2].Cells[0].Paragraphs[0].Append("Project Manager:");
-                        projectDetailsTable.Rows[2].Cells[1].Paragraphs[0].Append(currentAcceptanceFormModel.ProjectName);
+                        projectDetailsTable.Rows[2].Cells[1].Paragraphs[0].Append(currentAcceptanceFormModel.ProjectManager);
 
                         projectDetailsTable.SetWidths(new float[] { 493, 1094 });
                         document.InsertTable(projectDetailsTable);
@@ -290,6 +290,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                     }
                 }
             }
+        }
+
+        private void ACCEPTANCE_RESULTS_dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

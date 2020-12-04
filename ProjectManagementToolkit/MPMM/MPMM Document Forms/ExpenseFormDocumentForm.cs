@@ -167,7 +167,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 currentExpenseFormModel = new ExpenseFormModel();
                 if (json != "")
                 {
-                    versionControl = JsonConvert.DeserializeObject<VersionControl<ExpenseFormModel>>(json);
+                    versionControl = JsonConvert.DeserializeObject<VersionControl<ExpenseFormModel>>(json);                 
                     newExpenseFormModel = JsonConvert.DeserializeObject<ExpenseFormModel>(versionControl.getLatest(versionControl.DocumentModels));
                     currentExpenseFormModel = JsonConvert.DeserializeObject<ExpenseFormModel>(versionControl.getLatest(versionControl.DocumentModels));
 
