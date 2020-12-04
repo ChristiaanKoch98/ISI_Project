@@ -61,32 +61,32 @@
             this.btnExportWord = new System.Windows.Forms.Button();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage14 = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtOverviewDescriptions = new System.Windows.Forms.TextBox();
             this.tabPage15 = new System.Windows.Forms.TabPage();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtpurposeDescriptions = new System.Windows.Forms.TextBox();
             this.tabPage16 = new System.Windows.Forms.TabPage();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtresponsibilitiesDescriptions = new System.Windows.Forms.TextBox();
             this.tabPage17 = new System.Windows.Forms.TabPage();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtorganizationDescriptions = new System.Windows.Forms.TextBox();
             this.tabPage18 = new System.Windows.Forms.TabPage();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtrelationshipsDescriptions = new System.Windows.Forms.TextBox();
             this.tabPage19 = new System.Windows.Forms.TabPage();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtskillsDescriptions = new System.Windows.Forms.TextBox();
             this.tabPage20 = new System.Windows.Forms.TabPage();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtexperienceDescriptions = new System.Windows.Forms.TextBox();
             this.tabPage21 = new System.Windows.Forms.TabPage();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtqualificationsDescriptions = new System.Windows.Forms.TextBox();
             this.tabPage22 = new System.Windows.Forms.TabPage();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtpersonalityDescriptions = new System.Windows.Forms.TextBox();
             this.tabPage23 = new System.Windows.Forms.TabPage();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtperformancecriteriaDescriptions = new System.Windows.Forms.TextBox();
             this.tabPage24 = new System.Windows.Forms.TabPage();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtworkenvironmentDescriptions = new System.Windows.Forms.TextBox();
             this.tabPage25 = new System.Windows.Forms.TabPage();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtsalaryDescriptions = new System.Windows.Forms.TextBox();
             this.tabPage26 = new System.Windows.Forms.TabPage();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txtspecialconditionsDescriptions = new System.Windows.Forms.TextBox();
+            this.txtProjectNames = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -518,7 +518,7 @@
             // tabPage14
             // 
             this.tabPage14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage14.Controls.Add(this.textBox1);
+            this.tabPage14.Controls.Add(this.txtOverviewDescriptions);
             this.tabPage14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tabPage14.Location = new System.Drawing.Point(4, 21);
             this.tabPage14.Name = "tabPage14";
@@ -527,25 +527,25 @@
             this.tabPage14.TabIndex = 0;
             this.tabPage14.Text = "Overview";
             // 
-            // textBox1
+            // txtOverviewDescriptions
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtOverviewDescriptions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.textBox1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(3, 6);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1104, 245);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "Description";
+            this.txtOverviewDescriptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.txtOverviewDescriptions.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOverviewDescriptions.ForeColor = System.Drawing.Color.Black;
+            this.txtOverviewDescriptions.Location = new System.Drawing.Point(3, 6);
+            this.txtOverviewDescriptions.Multiline = true;
+            this.txtOverviewDescriptions.Name = "txtOverviewDescriptions";
+            this.txtOverviewDescriptions.Size = new System.Drawing.Size(1104, 245);
+            this.txtOverviewDescriptions.TabIndex = 2;
+            this.txtOverviewDescriptions.Text = "Description";
             // 
             // tabPage15
             // 
             this.tabPage15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage15.Controls.Add(this.textBox2);
+            this.tabPage15.Controls.Add(this.txtpurposeDescriptions);
             this.tabPage15.Location = new System.Drawing.Point(4, 21);
             this.tabPage15.Name = "tabPage15";
             this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
@@ -553,25 +553,25 @@
             this.tabPage15.TabIndex = 1;
             this.tabPage15.Text = " Purpose";
             // 
-            // textBox2
+            // txtpurposeDescriptions
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtpurposeDescriptions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.textBox2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(7, 6);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(1104, 245);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.Text = "Description";
+            this.txtpurposeDescriptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.txtpurposeDescriptions.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpurposeDescriptions.ForeColor = System.Drawing.Color.Black;
+            this.txtpurposeDescriptions.Location = new System.Drawing.Point(7, 6);
+            this.txtpurposeDescriptions.Multiline = true;
+            this.txtpurposeDescriptions.Name = "txtpurposeDescriptions";
+            this.txtpurposeDescriptions.Size = new System.Drawing.Size(1104, 245);
+            this.txtpurposeDescriptions.TabIndex = 3;
+            this.txtpurposeDescriptions.Text = "Description";
             // 
             // tabPage16
             // 
             this.tabPage16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage16.Controls.Add(this.textBox3);
+            this.tabPage16.Controls.Add(this.txtresponsibilitiesDescriptions);
             this.tabPage16.Location = new System.Drawing.Point(4, 21);
             this.tabPage16.Name = "tabPage16";
             this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
@@ -579,25 +579,25 @@
             this.tabPage16.TabIndex = 2;
             this.tabPage16.Text = "Responsibilities";
             // 
-            // textBox3
+            // txtresponsibilitiesDescriptions
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtresponsibilitiesDescriptions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.textBox3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Black;
-            this.textBox3.Location = new System.Drawing.Point(3, 3);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(1095, 245);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "Description";
+            this.txtresponsibilitiesDescriptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.txtresponsibilitiesDescriptions.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtresponsibilitiesDescriptions.ForeColor = System.Drawing.Color.Black;
+            this.txtresponsibilitiesDescriptions.Location = new System.Drawing.Point(3, 3);
+            this.txtresponsibilitiesDescriptions.Multiline = true;
+            this.txtresponsibilitiesDescriptions.Name = "txtresponsibilitiesDescriptions";
+            this.txtresponsibilitiesDescriptions.Size = new System.Drawing.Size(1095, 245);
+            this.txtresponsibilitiesDescriptions.TabIndex = 3;
+            this.txtresponsibilitiesDescriptions.Text = "Description";
             // 
             // tabPage17
             // 
             this.tabPage17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage17.Controls.Add(this.textBox4);
+            this.tabPage17.Controls.Add(this.txtorganizationDescriptions);
             this.tabPage17.Location = new System.Drawing.Point(4, 21);
             this.tabPage17.Name = "tabPage17";
             this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
@@ -605,22 +605,22 @@
             this.tabPage17.TabIndex = 3;
             this.tabPage17.Text = "Organization";
             // 
-            // textBox4
+            // txtorganizationDescriptions
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.textBox4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.Black;
-            this.textBox4.Location = new System.Drawing.Point(7, 6);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(1095, 245);
-            this.textBox4.TabIndex = 3;
-            this.textBox4.Text = "Description";
+            this.txtorganizationDescriptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.txtorganizationDescriptions.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtorganizationDescriptions.ForeColor = System.Drawing.Color.Black;
+            this.txtorganizationDescriptions.Location = new System.Drawing.Point(7, 6);
+            this.txtorganizationDescriptions.Multiline = true;
+            this.txtorganizationDescriptions.Name = "txtorganizationDescriptions";
+            this.txtorganizationDescriptions.Size = new System.Drawing.Size(1095, 245);
+            this.txtorganizationDescriptions.TabIndex = 3;
+            this.txtorganizationDescriptions.Text = "Description";
             // 
             // tabPage18
             // 
             this.tabPage18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage18.Controls.Add(this.textBox5);
+            this.tabPage18.Controls.Add(this.txtrelationshipsDescriptions);
             this.tabPage18.Location = new System.Drawing.Point(4, 21);
             this.tabPage18.Name = "tabPage18";
             this.tabPage18.Padding = new System.Windows.Forms.Padding(3);
@@ -628,22 +628,22 @@
             this.tabPage18.TabIndex = 4;
             this.tabPage18.Text = "Relationships";
             // 
-            // textBox5
+            // txtrelationshipsDescriptions
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.textBox5.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.Black;
-            this.textBox5.Location = new System.Drawing.Point(7, 6);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(1101, 245);
-            this.textBox5.TabIndex = 3;
-            this.textBox5.Text = "Description";
+            this.txtrelationshipsDescriptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.txtrelationshipsDescriptions.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtrelationshipsDescriptions.ForeColor = System.Drawing.Color.Black;
+            this.txtrelationshipsDescriptions.Location = new System.Drawing.Point(7, 6);
+            this.txtrelationshipsDescriptions.Multiline = true;
+            this.txtrelationshipsDescriptions.Name = "txtrelationshipsDescriptions";
+            this.txtrelationshipsDescriptions.Size = new System.Drawing.Size(1101, 245);
+            this.txtrelationshipsDescriptions.TabIndex = 3;
+            this.txtrelationshipsDescriptions.Text = "Description";
             // 
             // tabPage19
             // 
             this.tabPage19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage19.Controls.Add(this.textBox6);
+            this.tabPage19.Controls.Add(this.txtskillsDescriptions);
             this.tabPage19.Location = new System.Drawing.Point(4, 21);
             this.tabPage19.Name = "tabPage19";
             this.tabPage19.Padding = new System.Windows.Forms.Padding(3);
@@ -651,22 +651,22 @@
             this.tabPage19.TabIndex = 5;
             this.tabPage19.Text = "Skills";
             // 
-            // textBox6
+            // txtskillsDescriptions
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.textBox6.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.Black;
-            this.textBox6.Location = new System.Drawing.Point(7, 6);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(1095, 245);
-            this.textBox6.TabIndex = 3;
-            this.textBox6.Text = "Description";
+            this.txtskillsDescriptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.txtskillsDescriptions.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtskillsDescriptions.ForeColor = System.Drawing.Color.Black;
+            this.txtskillsDescriptions.Location = new System.Drawing.Point(7, 6);
+            this.txtskillsDescriptions.Multiline = true;
+            this.txtskillsDescriptions.Name = "txtskillsDescriptions";
+            this.txtskillsDescriptions.Size = new System.Drawing.Size(1095, 245);
+            this.txtskillsDescriptions.TabIndex = 3;
+            this.txtskillsDescriptions.Text = "Description";
             // 
             // tabPage20
             // 
             this.tabPage20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage20.Controls.Add(this.textBox7);
+            this.tabPage20.Controls.Add(this.txtexperienceDescriptions);
             this.tabPage20.Location = new System.Drawing.Point(4, 21);
             this.tabPage20.Name = "tabPage20";
             this.tabPage20.Padding = new System.Windows.Forms.Padding(3);
@@ -674,22 +674,22 @@
             this.tabPage20.TabIndex = 6;
             this.tabPage20.Text = "Experience";
             // 
-            // textBox7
+            // txtexperienceDescriptions
             // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.textBox7.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.Color.Black;
-            this.textBox7.Location = new System.Drawing.Point(7, 6);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(1097, 248);
-            this.textBox7.TabIndex = 3;
-            this.textBox7.Text = "Description";
+            this.txtexperienceDescriptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.txtexperienceDescriptions.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtexperienceDescriptions.ForeColor = System.Drawing.Color.Black;
+            this.txtexperienceDescriptions.Location = new System.Drawing.Point(7, 6);
+            this.txtexperienceDescriptions.Multiline = true;
+            this.txtexperienceDescriptions.Name = "txtexperienceDescriptions";
+            this.txtexperienceDescriptions.Size = new System.Drawing.Size(1097, 248);
+            this.txtexperienceDescriptions.TabIndex = 3;
+            this.txtexperienceDescriptions.Text = "Description";
             // 
             // tabPage21
             // 
             this.tabPage21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage21.Controls.Add(this.textBox8);
+            this.tabPage21.Controls.Add(this.txtqualificationsDescriptions);
             this.tabPage21.Location = new System.Drawing.Point(4, 21);
             this.tabPage21.Name = "tabPage21";
             this.tabPage21.Padding = new System.Windows.Forms.Padding(3);
@@ -697,139 +697,139 @@
             this.tabPage21.TabIndex = 7;
             this.tabPage21.Text = "Qualifications";
             // 
-            // textBox8
+            // txtqualificationsDescriptions
             // 
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.textBox8.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.ForeColor = System.Drawing.Color.Black;
-            this.textBox8.Location = new System.Drawing.Point(7, 6);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(1101, 245);
-            this.textBox8.TabIndex = 3;
-            this.textBox8.Text = "Description";
+            this.txtqualificationsDescriptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.txtqualificationsDescriptions.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtqualificationsDescriptions.ForeColor = System.Drawing.Color.Black;
+            this.txtqualificationsDescriptions.Location = new System.Drawing.Point(7, 6);
+            this.txtqualificationsDescriptions.Multiline = true;
+            this.txtqualificationsDescriptions.Name = "txtqualificationsDescriptions";
+            this.txtqualificationsDescriptions.Size = new System.Drawing.Size(1101, 245);
+            this.txtqualificationsDescriptions.TabIndex = 3;
+            this.txtqualificationsDescriptions.Text = "Description";
             // 
             // tabPage22
             // 
             this.tabPage22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage22.Controls.Add(this.textBox9);
+            this.tabPage22.Controls.Add(this.txtpersonalityDescriptions);
             this.tabPage22.Location = new System.Drawing.Point(4, 21);
             this.tabPage22.Name = "tabPage22";
             this.tabPage22.Size = new System.Drawing.Size(1113, 257);
             this.tabPage22.TabIndex = 8;
             this.tabPage22.Text = "Personality";
             // 
-            // textBox9
+            // txtpersonalityDescriptions
             // 
-            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.textBox9.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.ForeColor = System.Drawing.Color.Black;
-            this.textBox9.Location = new System.Drawing.Point(3, 2);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(1088, 252);
-            this.textBox9.TabIndex = 3;
-            this.textBox9.Text = "Description";
+            this.txtpersonalityDescriptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.txtpersonalityDescriptions.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpersonalityDescriptions.ForeColor = System.Drawing.Color.Black;
+            this.txtpersonalityDescriptions.Location = new System.Drawing.Point(3, 2);
+            this.txtpersonalityDescriptions.Multiline = true;
+            this.txtpersonalityDescriptions.Name = "txtpersonalityDescriptions";
+            this.txtpersonalityDescriptions.Size = new System.Drawing.Size(1088, 252);
+            this.txtpersonalityDescriptions.TabIndex = 3;
+            this.txtpersonalityDescriptions.Text = "Description";
             // 
             // tabPage23
             // 
             this.tabPage23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage23.Controls.Add(this.textBox10);
+            this.tabPage23.Controls.Add(this.txtperformancecriteriaDescriptions);
             this.tabPage23.Location = new System.Drawing.Point(4, 21);
             this.tabPage23.Name = "tabPage23";
             this.tabPage23.Size = new System.Drawing.Size(1113, 257);
             this.tabPage23.TabIndex = 9;
             this.tabPage23.Text = "Performance Criteria";
             // 
-            // textBox10
+            // txtperformancecriteriaDescriptions
             // 
-            this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.textBox10.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.ForeColor = System.Drawing.Color.Black;
-            this.textBox10.Location = new System.Drawing.Point(3, 3);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(1104, 252);
-            this.textBox10.TabIndex = 3;
-            this.textBox10.Text = "Description";
+            this.txtperformancecriteriaDescriptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.txtperformancecriteriaDescriptions.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtperformancecriteriaDescriptions.ForeColor = System.Drawing.Color.Black;
+            this.txtperformancecriteriaDescriptions.Location = new System.Drawing.Point(3, 3);
+            this.txtperformancecriteriaDescriptions.Multiline = true;
+            this.txtperformancecriteriaDescriptions.Name = "txtperformancecriteriaDescriptions";
+            this.txtperformancecriteriaDescriptions.Size = new System.Drawing.Size(1104, 252);
+            this.txtperformancecriteriaDescriptions.TabIndex = 3;
+            this.txtperformancecriteriaDescriptions.Text = "Description";
             // 
             // tabPage24
             // 
             this.tabPage24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage24.Controls.Add(this.textBox11);
+            this.tabPage24.Controls.Add(this.txtworkenvironmentDescriptions);
             this.tabPage24.Location = new System.Drawing.Point(4, 21);
             this.tabPage24.Name = "tabPage24";
             this.tabPage24.Size = new System.Drawing.Size(1113, 257);
             this.tabPage24.TabIndex = 10;
             this.tabPage24.Text = "Work Environment ";
             // 
-            // textBox11
+            // txtworkenvironmentDescriptions
             // 
-            this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.textBox11.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.ForeColor = System.Drawing.Color.Black;
-            this.textBox11.Location = new System.Drawing.Point(3, 3);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(1104, 252);
-            this.textBox11.TabIndex = 3;
-            this.textBox11.Text = "Description";
-            this.textBox11.TextChanged += new System.EventHandler(this.txtworkenvironmentDescription_TextChanged);
+            this.txtworkenvironmentDescriptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.txtworkenvironmentDescriptions.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtworkenvironmentDescriptions.ForeColor = System.Drawing.Color.Black;
+            this.txtworkenvironmentDescriptions.Location = new System.Drawing.Point(3, 3);
+            this.txtworkenvironmentDescriptions.Multiline = true;
+            this.txtworkenvironmentDescriptions.Name = "txtworkenvironmentDescriptions";
+            this.txtworkenvironmentDescriptions.Size = new System.Drawing.Size(1104, 252);
+            this.txtworkenvironmentDescriptions.TabIndex = 3;
+            this.txtworkenvironmentDescriptions.Text = "Description";
+            this.txtworkenvironmentDescriptions.TextChanged += new System.EventHandler(this.txtworkenvironmentDescription_TextChanged);
             // 
             // tabPage25
             // 
             this.tabPage25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage25.Controls.Add(this.textBox12);
+            this.tabPage25.Controls.Add(this.txtsalaryDescriptions);
             this.tabPage25.Location = new System.Drawing.Point(4, 21);
             this.tabPage25.Name = "tabPage25";
             this.tabPage25.Size = new System.Drawing.Size(1113, 257);
             this.tabPage25.TabIndex = 11;
             this.tabPage25.Text = "Salary";
             // 
-            // textBox12
+            // txtsalaryDescriptions
             // 
-            this.textBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.textBox12.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.ForeColor = System.Drawing.Color.Black;
-            this.textBox12.Location = new System.Drawing.Point(3, 3);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(1104, 252);
-            this.textBox12.TabIndex = 3;
-            this.textBox12.Text = "Description";
+            this.txtsalaryDescriptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.txtsalaryDescriptions.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsalaryDescriptions.ForeColor = System.Drawing.Color.Black;
+            this.txtsalaryDescriptions.Location = new System.Drawing.Point(3, 3);
+            this.txtsalaryDescriptions.Multiline = true;
+            this.txtsalaryDescriptions.Name = "txtsalaryDescriptions";
+            this.txtsalaryDescriptions.Size = new System.Drawing.Size(1104, 252);
+            this.txtsalaryDescriptions.TabIndex = 3;
+            this.txtsalaryDescriptions.Text = "Description";
             // 
             // tabPage26
             // 
             this.tabPage26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tabPage26.Controls.Add(this.textBox13);
+            this.tabPage26.Controls.Add(this.txtspecialconditionsDescriptions);
             this.tabPage26.Location = new System.Drawing.Point(4, 21);
             this.tabPage26.Name = "tabPage26";
             this.tabPage26.Size = new System.Drawing.Size(1113, 257);
             this.tabPage26.TabIndex = 12;
             this.tabPage26.Text = "Special Conditions";
             // 
-            // textBox13
+            // txtspecialconditionsDescriptions
             // 
-            this.textBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.textBox13.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.ForeColor = System.Drawing.Color.Black;
-            this.textBox13.Location = new System.Drawing.Point(3, 3);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(1088, 241);
-            this.textBox13.TabIndex = 4;
-            this.textBox13.Text = "Description";
+            this.txtspecialconditionsDescriptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.txtspecialconditionsDescriptions.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtspecialconditionsDescriptions.ForeColor = System.Drawing.Color.Black;
+            this.txtspecialconditionsDescriptions.Location = new System.Drawing.Point(3, 3);
+            this.txtspecialconditionsDescriptions.Multiline = true;
+            this.txtspecialconditionsDescriptions.Name = "txtspecialconditionsDescriptions";
+            this.txtspecialconditionsDescriptions.Size = new System.Drawing.Size(1088, 241);
+            this.txtspecialconditionsDescriptions.TabIndex = 4;
+            this.txtspecialconditionsDescriptions.Text = "Description";
             // 
-            // textBox14
+            // txtProjectNames
             // 
-            this.textBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.textBox14.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.ForeColor = System.Drawing.Color.Black;
-            this.textBox14.Location = new System.Drawing.Point(194, 2);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(116, 20);
-            this.textBox14.TabIndex = 4;
-            this.textBox14.Text = "Project Name";
+            this.txtProjectNames.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.txtProjectNames.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProjectNames.ForeColor = System.Drawing.Color.Black;
+            this.txtProjectNames.Location = new System.Drawing.Point(194, 2);
+            this.txtProjectNames.Name = "txtProjectNames";
+            this.txtProjectNames.Size = new System.Drawing.Size(116, 20);
+            this.txtProjectNames.TabIndex = 4;
+            this.txtProjectNames.Text = "Project Name";
             // 
             // label2
             // 
@@ -883,7 +883,7 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.txtProjectNames);
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.tabControl2);
             this.Controls.Add(this.tabControl1);
@@ -986,32 +986,32 @@
         private System.Windows.Forms.Button btnExportWord;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage14;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtOverviewDescriptions;
         private System.Windows.Forms.TabPage tabPage15;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtpurposeDescriptions;
         private System.Windows.Forms.TabPage tabPage16;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtresponsibilitiesDescriptions;
         private System.Windows.Forms.TabPage tabPage17;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtorganizationDescriptions;
         private System.Windows.Forms.TabPage tabPage18;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtrelationshipsDescriptions;
         private System.Windows.Forms.TabPage tabPage19;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtskillsDescriptions;
         private System.Windows.Forms.TabPage tabPage20;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtexperienceDescriptions;
         private System.Windows.Forms.TabPage tabPage21;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtqualificationsDescriptions;
         private System.Windows.Forms.TabPage tabPage22;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtpersonalityDescriptions;
         private System.Windows.Forms.TabPage tabPage23;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtperformancecriteriaDescriptions;
         private System.Windows.Forms.TabPage tabPage24;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtworkenvironmentDescriptions;
         private System.Windows.Forms.TabPage tabPage25;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtsalaryDescriptions;
         private System.Windows.Forms.TabPage tabPage26;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox txtspecialconditionsDescriptions;
+        private System.Windows.Forms.TextBox txtProjectNames;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
