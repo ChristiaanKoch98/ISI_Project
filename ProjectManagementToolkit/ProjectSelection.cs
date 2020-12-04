@@ -21,7 +21,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
     public partial class ProjectSelection : Form
     {
         List<ProjectModel> projectListModel = new List<ProjectModel>();
-       
+        private static readonly HttpClient client = new HttpClient();
+
         public ProjectSelection()
         {
             InitializeComponent();
@@ -71,9 +72,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             {
                 MessageBox.Show("Please ensure that you enter a project Name,ProjectSponsor and a Project Manager before continuing");
             }
-           
-
         }
+
+        
 
         private void ProjectSelection_Load(object sender, EventArgs e)
         {
@@ -88,5 +89,106 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 lstboxProject.Items.Add(project.ProjectName);
             }
         }
+
+        private void btnProjectCode_Click(object sender, EventArgs e)
+        {
+            Cursor.Current = Cursors.WaitCursor;
+
+            if(txtProjectCode.Text.Contains(" ") || txtProjectCode.Text.Contains(".") || txtProjectCode.Text == "")
+            {
+                MessageBox.Show("Incorrect Project ID.", "Sync Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtProjectCode.Text = "";
+                return;
+            }
+
+            bool connectionSuccessful = attemptHttpConnection();
+            
+            if (!connectionSuccessful)
+            {
+                MessageBox.Show("Unable to connect to server.", "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            
+            string projectID = txtProjectCode.Text;
+
+            //Get Project Config from server.
+            try
+            {
+                HttpResponseMessage responseMessage = client.GetAsync(Settings.Default.URI + "/project/" + projectID).Result;
+                var jsonResponse = responseMessage.Content.ReadAsStringAsync().Result;
+                int statusCode = responseMessage.StatusCode.GetHashCode();
+
+                if (jsonResponse == "[]" || jsonResponse == "")
+                {
+                    MessageBox.Show("Incorrect Project ID", "Project Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                JObject projectModel = JArray.Parse(jsonResponse)[0].ToObject<JObject>();
+
+                ProjectModel newProject = new ProjectModel();
+
+                
+                
+                newProject.ProjectID = projectModel["ProjectID"].ToString();
+                newProject.ProjectName = projectModel["ProjectName"].ToString();
+                newProject.ProjectSponsor = projectModel["ProjectSponsor"].ToString();
+                newProject.ProjectReviewGroup = projectModel["ProjectReviewGroup"].ToString();
+                newProject.ProjectManager = projectModel["ProjectManager"].ToString();
+                newProject.QualityManager = projectModel["QualityManager"].ToString();
+                newProject.ProcurementManager = projectModel["ProcurementManager"].ToString();
+                newProject.CommunicationsManager = projectModel["CommunicationsManager"].ToString();
+                newProject.OfficeManager = projectModel["OfficeManager"].ToString();
+                newProject.LastDateTimeSynced = projectModel["LastDateTimeSynced"].ToObject<DateTime>();
+
+                projectListModel.Add(newProject);
+                
+                string json = JsonConvert.SerializeObject(projectListModel);
+
+                JsonHelper.saveProjectInfo(json, Settings.Default.Username);
+
+                lstboxProject.Items.Clear();
+                foreach (var project in projectListModel)
+                {
+                    lstboxProject.Items.Add(project.ProjectName);
+                }
+
+                Cursor.Current = Cursors.Default;
+            }
+            catch (AggregateException)
+            {
+                MessageBox.Show("An unexpected server error occurred.", "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            
+        }
+
+        private bool attemptHttpConnection()
+        {
+            
+            try
+            {
+                Task<HttpResponseMessage> responseMessage = client.GetAsync(Settings.Default.URI + "/");
+                HttpResponseMessage response = responseMessage.Result;
+                int statusCode = response.StatusCode.GetHashCode();
+
+                switch (statusCode)
+                {
+                    case 200:
+                        return true;
+                    case 404:
+                        return false;
+                    default:
+                        break;
+                }
+
+                return false;
+            }
+            catch (AggregateException)
+            {
+                return false;
+            }
+        }
+
     }
 }

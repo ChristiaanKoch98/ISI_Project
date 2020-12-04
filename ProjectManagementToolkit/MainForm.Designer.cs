@@ -159,6 +159,7 @@
             this.termsOfReferenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exampleToolStripMenuItem32 = new System.Windows.Forms.ToolStripMenuItem();
             this.templateToolStripMenuItem19 = new System.Windows.Forms.ToolStripMenuItem();
+            this.syncToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -184,6 +185,7 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.projectSelectionToolStripMenuItem,
+            this.syncToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.MenuText;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
@@ -1279,6 +1281,13 @@
             this.templateToolStripMenuItem19.Size = new System.Drawing.Size(180, 22);
             this.templateToolStripMenuItem19.Text = "Template";
             // 
+            // syncToolStripMenuItem
+            // 
+            this.syncToolStripMenuItem.Name = "syncToolStripMenuItem";
+            this.syncToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.syncToolStripMenuItem.Text = "Sync";
+            this.syncToolStripMenuItem.Click += new System.EventHandler(this.syncToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1430,6 +1439,7 @@
         private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem30;
         private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem18;
         private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem31;
+        private System.Windows.Forms.ToolStripMenuItem syncToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem termsOfReferenceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem32;
         private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem19;
