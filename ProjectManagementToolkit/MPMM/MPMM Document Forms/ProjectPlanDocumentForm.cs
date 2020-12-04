@@ -234,7 +234,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 versionControl.DocumentModels = documentModels;
                 string json = JsonConvert.SerializeObject(versionControl);
+                MessageBox.Show(json);
                 currentProjectPlanModel = JsonConvert.DeserializeObject<ProjectPlanModel>(JsonConvert.SerializeObject(newProjectPlanModel));
+                newProjectPlanModel = new ProjectPlanModel();
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ProjectPlan");
                 MessageBox.Show("Project plan saved successfully", "save", MessageBoxButtons.OK);
             }
