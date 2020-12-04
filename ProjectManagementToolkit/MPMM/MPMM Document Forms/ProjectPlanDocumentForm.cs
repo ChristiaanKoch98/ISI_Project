@@ -681,6 +681,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .Bold(true)
                             .Font("Arial");
 
+                        document.InsertParagraph("< Please add your schedule here >")
+                            .FontSize(11d)
+                            .Color(Color.Red)
+                            .Font("Arial").Alignment = Alignment.left;
+
+
                         scheduleSubHeading.StyleId = "Heading2";
 
                         var dependancySubHeading = document.InsertParagraph("2.2 Dependencies")
