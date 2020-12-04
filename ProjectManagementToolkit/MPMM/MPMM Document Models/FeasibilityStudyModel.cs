@@ -22,6 +22,7 @@ namespace ProjectManagementToolkit.Classes
         public string Solution2Description { get; set; }
         public string Solution2Assessment { get; set; }
         public string Solution2Assumption { get; set; }
+        public string Criteria { get; set; }
         public string Solution3Description { get; set; }
         public string Solution3Assessment { get; set; }
         public string Solution3Assumption { get; set; }
@@ -39,6 +40,7 @@ namespace ProjectManagementToolkit.Classes
         public List<Issue3> Issues3 { get; set; }
         public List<BusinessRequirements> Requirements { get; set; }
         public Information Information { get; set; }
+        public RankingScore Ranking { get; set; }
         public List<History> Histories { get; set; }
         public List<Approval> Approvals { get; set; }
         public List<RankingScore> RankingScores { get; set; }
@@ -118,11 +120,11 @@ namespace ProjectManagementToolkit.Classes
 
     class RankingScore
     {
-        public string Criteria { get; set; }
+        
 
-        public string Score1 { get; set; }
-        public string Weight1 { get; set; }
-        public string Total1 { get; set; }
+        public string Solution1Score { get; set; }
+        public string Solution2Score { get; set; }
+        public string Solution3Score { get; set; }
 
         public string Score2 { get; set; }
         public string Weight2 { get; set; }
