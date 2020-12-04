@@ -872,5 +872,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 }
             }
         }
+
+        private void btnVersions_Click(object sender, EventArgs e)
+        {
+            ProjectPlanVC projectPlanVC = new ProjectPlanVC();
+            projectPlanVC.MdiParent = this.MdiParent;
+            projectPlanVC.Show();
+        }
     }
 }

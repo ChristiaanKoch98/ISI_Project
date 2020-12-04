@@ -190,5 +190,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
         }
 
+        private void ProjectSelection_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

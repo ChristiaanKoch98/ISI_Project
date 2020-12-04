@@ -1134,6 +1134,12 @@
     <Compile Include="MPMM\MPMM Forms\Governance\Governance.Designer.cs">
       <DependentUpon>Governance.cs</DependentUpon>
     </Compile>
+    <Compile Include="MPMM\MPMM Version Control\ProjectPlanVC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Version Control\ProjectPlanVC.Designer.cs">
+      <DependentUpon>ProjectPlanVC.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProjectSelection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1742,6 +1748,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Forms\Processes\Processes.resx">
       <DependentUpon>Processes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Version Control\ProjectPlanVC.resx">
+      <DependentUpon>ProjectPlanVC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProjectSelection.resx">
       <DependentUpon>ProjectSelection.cs</DependentUpon>
