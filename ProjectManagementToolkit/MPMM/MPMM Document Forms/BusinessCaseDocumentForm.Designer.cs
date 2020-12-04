@@ -1722,7 +1722,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage17.Location = new System.Drawing.Point(4, 24);
             this.tabPage17.Name = "tabPage17";
             this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage17.Size = new System.Drawing.Size(968, 524);
+            this.tabPage17.Size = new System.Drawing.Size(810, 524);
             this.tabPage17.TabIndex = 0;
             this.tabPage17.Text = "Description";
             this.tabPage17.UseVisualStyleBackColor = true;
@@ -1736,7 +1736,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtOp1_Desc.Location = new System.Drawing.Point(3, 3);
             this.txtOp1_Desc.Multiline = true;
             this.txtOp1_Desc.Name = "txtOp1_Desc";
-            this.txtOp1_Desc.Size = new System.Drawing.Size(962, 518);
+            this.txtOp1_Desc.Size = new System.Drawing.Size(804, 518);
             this.txtOp1_Desc.TabIndex = 17;
             this.txtOp1_Desc.Text = "Description";
             // 
@@ -1746,7 +1746,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage18.Location = new System.Drawing.Point(4, 24);
             this.tabPage18.Name = "tabPage18";
             this.tabPage18.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage18.Size = new System.Drawing.Size(968, 524);
+            this.tabPage18.Size = new System.Drawing.Size(810, 524);
             this.tabPage18.TabIndex = 1;
             this.tabPage18.Text = "Benefits";
             this.tabPage18.UseVisualStyleBackColor = true;
@@ -1770,7 +1770,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvOp1_Benefits.Location = new System.Drawing.Point(3, 3);
             this.dgvOp1_Benefits.Name = "dgvOp1_Benefits";
             this.dgvOp1_Benefits.RowHeadersWidth = 51;
-            this.dgvOp1_Benefits.Size = new System.Drawing.Size(962, 518);
+            this.dgvOp1_Benefits.Size = new System.Drawing.Size(804, 518);
             this.dgvOp1_Benefits.TabIndex = 13;
             // 
             // tabPage19
