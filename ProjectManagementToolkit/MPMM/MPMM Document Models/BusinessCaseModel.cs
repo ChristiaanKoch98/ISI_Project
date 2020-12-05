@@ -8,6 +8,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 {
     class BusinessCaseModel
     {
+        public string ProjectName { get; set; }
         public string DocumentID { get; set; }
 
         public string DocumentOwner { get; set; }
