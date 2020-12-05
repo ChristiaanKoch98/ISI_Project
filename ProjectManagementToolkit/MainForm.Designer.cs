@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.projectSelectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dashboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.syncToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mPMMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -85,8 +86,8 @@
             this.templateToolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
             this.exampleToolStripMenuItem14 = new System.Windows.Forms.ToolStripMenuItem();
             this.issueAStatementOfWorkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exampleToolStripMenuItem15 = new System.Windows.Forms.ToolStripMenuItem();
             this.templateToolStripMenuItem13 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleToolStripMenuItem15 = new System.Windows.Forms.ToolStripMenuItem();
             this.issueARequestForInfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.templateToolStripMenuItem14 = new System.Windows.Forms.ToolStripMenuItem();
             this.exampleToolStripMenuItem16 = new System.Windows.Forms.ToolStripMenuItem();
@@ -188,6 +189,7 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.projectSelectionToolStripMenuItem,
+            this.dashboardToolStripMenuItem,
             this.printFilesToolStripMenuItem,
             this.syncToolStripMenuItem,
             this.exitToolStripMenuItem});
@@ -207,12 +209,17 @@
             this.projectSelectionToolStripMenuItem.Text = "Project Selection";
             this.projectSelectionToolStripMenuItem.Click += new System.EventHandler(this.projectSelectionToolStripMenuItem_Click);
             // 
+            // dashboardToolStripMenuItem
+            // 
+            this.dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
+            this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.dashboardToolStripMenuItem.Text = "Project Dashboard";
+            this.dashboardToolStripMenuItem.Click += new System.EventHandler(this.dashboardToolStripMenuItem_Click);
+            // 
             // syncToolStripMenuItem
             // 
             this.syncToolStripMenuItem.Name = "syncToolStripMenuItem";
-
-            this.syncToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
-
+            this.syncToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.syncToolStripMenuItem.Text = "Sync";
             this.syncToolStripMenuItem.Click += new System.EventHandler(this.syncToolStripMenuItem_Click);
             // 
@@ -693,11 +700,18 @@
             // 
             this.issueAStatementOfWorkToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
             this.issueAStatementOfWorkToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exampleToolStripMenuItem15,
-            this.templateToolStripMenuItem13});
+            this.templateToolStripMenuItem13,
+            this.exampleToolStripMenuItem15});
             this.issueAStatementOfWorkToolStripMenuItem.Name = "issueAStatementOfWorkToolStripMenuItem";
             this.issueAStatementOfWorkToolStripMenuItem.Size = new System.Drawing.Size(298, 26);
             this.issueAStatementOfWorkToolStripMenuItem.Text = "Issue a Statement of Work";
+            // 
+            // templateToolStripMenuItem13
+            // 
+            this.templateToolStripMenuItem13.BackColor = System.Drawing.Color.Gainsboro;
+            this.templateToolStripMenuItem13.Name = "templateToolStripMenuItem13";
+            this.templateToolStripMenuItem13.Size = new System.Drawing.Size(122, 22);
+            this.templateToolStripMenuItem13.Text = "Template";
             // 
             // exampleToolStripMenuItem15
             // 
@@ -1472,5 +1486,6 @@
         private System.Windows.Forms.ToolStripMenuItem exampleToolStripMenuItem32;
         private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem19;
         private System.Windows.Forms.ToolStripMenuItem printFilesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dashboardToolStripMenuItem;
     }
 }
