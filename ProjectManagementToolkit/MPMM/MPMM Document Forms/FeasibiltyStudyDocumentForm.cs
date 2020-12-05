@@ -223,6 +223,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newFeasibilityStudyModel.Solution3Description = Description3_tbx.Text;
             newFeasibilityStudyModel.Solution3Assessment = Assessment3_tbx.Text;
             newFeasibilityStudyModel.Solution3Assumption = Assumptions3_tbx.Text;
+            newFeasibilityStudyModel.Criteria = Ranking_Criteria_tbx.Text;
 
             List<Result3> results3 = new List<Result3>();
             int ResultsrowCount3 = Results_dgv.RowCount;
@@ -279,31 +280,31 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             for (int i = 0; i < Ranking_Scores - 1; i++)
             {
                 RankingScore rankingScore = new RankingScore();
-                var Criteria = Ranking_Scores_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var Score1 = Ranking_Scores_dgv.Rows[i].Cells[1].Value?.ToString() ?? "";
-                var Weight1 = Ranking_Scores_dgv.Rows[i].Cells[2].Value?.ToString() ?? "";
-                var Total1 = Ranking_Scores_dgv.Rows[i].Cells[3].Value?.ToString() ?? "";
+                //var Criteria = Ranking_Scores_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var Solution1Score = Ranking_Scores_dgv.Rows[i].Cells[0].Value?.ToString() ?? "";
+                var Solution2Score = Ranking_Scores_dgv.Rows[i].Cells[1].Value?.ToString() ?? "";
+                var Solution3Score = Ranking_Scores_dgv.Rows[i].Cells[2].Value?.ToString() ?? "";
 
-                var Score2 = Ranking_Scores_dgv.Rows[i].Cells[4].Value?.ToString() ?? "";
-                var Weight2 = Ranking_Scores_dgv.Rows[i].Cells[5].Value?.ToString() ?? "";
-                var Total2 = Ranking_Scores_dgv.Rows[i].Cells[6].Value?.ToString() ?? "";
+                //var Score2 = Ranking_Scores_dgv.Rows[i].Cells[4].Value?.ToString() ?? "";
+                //var Weight2 = Ranking_Scores_dgv.Rows[i].Cells[5].Value?.ToString() ?? "";
+                //var Total2 = Ranking_Scores_dgv.Rows[i].Cells[6].Value?.ToString() ?? "";
 
-                var Score3 = Ranking_Scores_dgv.Rows[i].Cells[7].Value?.ToString() ?? "";
-                var Weight3 = Ranking_Scores_dgv.Rows[i].Cells[8].Value?.ToString() ?? "";
-                var Total3 = Ranking_Scores_dgv.Rows[i].Cells[9].Value?.ToString() ?? "";
+                //var Score3 = Ranking_Scores_dgv.Rows[i].Cells[7].Value?.ToString() ?? "";
+                //var Weight3 = Ranking_Scores_dgv.Rows[i].Cells[8].Value?.ToString() ?? "";
+                //var Total3 = Ranking_Scores_dgv.Rows[i].Cells[9].Value?.ToString() ?? "";
 
-                rankingScore.Criteria = Criteria;
-                rankingScore.Score1 = Score1;
-                rankingScore.Weight1 = Weight1;
-                rankingScore.Total1 = Total1;
-               
-                rankingScore.Score2 = Score2;
-                rankingScore.Weight2 = Weight2;
-                rankingScore.Total2 = Total2;
-            
-                rankingScore.Score3 = Score3;
-                rankingScore.Weight3 = Weight3;
-                rankingScore.Total3 = Total3;
+                //rankingScore.Criteria = Criteria;
+                rankingScore.Solution1Score = Solution1Score;
+                rankingScore.Solution2Score = Solution2Score;
+                rankingScore.Solution3Score = Solution3Score;
+
+                //rankingScore.Score2 = Score2;
+                //rankingScore.Weight2 = Weight2;
+                //rankingScore.Total2 = Total2;
+
+                //rankingScore.Score3 = Score3;
+                //rankingScore.Weight3 = Weight3;
+                //rankingScore.Total3 = Total3;
 
                 rankingScores.Add(rankingScore);
             }
@@ -322,7 +323,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
-                currentFeasibilityStudyModel = JsonConvert.DeserializeObject<FeasibilityStudyModel>(JsonConvert.SerializeObject(newFeasibilityStudyModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "FeasibilityStudy");
                 MessageBox.Show("Feasibility study form saved successfully", "save", MessageBoxButtons.OK);
             }
@@ -366,13 +366,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 foreach (var row in currentFeasibilityStudyModel.Results1)
                 {
                     Results_dgv.Rows.Add(new string[] { row.Solution, row.FeasibilityScore, row.AssessmentMethod });
-                 
+
                 }
                 foreach (var row in currentFeasibilityStudyModel.Risks1)
                 {
-                   
-                    Risks_dgv.Rows.Add(new string[] { row.RiskDescription, row.RiskLikelihood, row.RiskImpact });
-                   
+
+                    Risks_dgv.Rows.Add(new string[] { row.RiskDescription, row.RiskLikelihood, row.RiskImpact, row.ActionRequiredToMinRisk });
+
                 }
                 foreach (var row in currentFeasibilityStudyModel.Issues1)
                 {
@@ -387,7 +387,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 foreach (var row in currentFeasibilityStudyModel.Risks2)
                 {
 
-                    Risks2_dgv.Rows.Add(new string[] { row.RiskDescription, row.RiskLikelihood, row.RiskImpact });
+                    Risks2_dgv.Rows.Add(new string[] { row.RiskDescription, row.RiskLikelihood, row.RiskImpact, row.ActionRequiredToMinRisk });
 
                 }
                 foreach (var row in currentFeasibilityStudyModel.Issues2)
@@ -403,7 +403,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 foreach (var row in currentFeasibilityStudyModel.Risks3)
                 {
 
-                    Risks3_dgv.Rows.Add(new string[] { row.RiskDescription, row.RiskLikelihood, row.RiskImpact });
+                    Risks3_dgv.Rows.Add(new string[] { row.RiskDescription, row.RiskLikelihood, row.RiskImpact, row.ActionRequiredToMinRisk });
 
                 }
                 foreach (var row in currentFeasibilityStudyModel.Issues3)
@@ -412,11 +412,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 }
                 foreach (var row in currentFeasibilityStudyModel.Requirements)
                 {
-                   Business_Requirements_dgv.Rows.Add(new string[] { row.BusinessProblem, row.ProjectRequirement });
+                    Business_Requirements_dgv.Rows.Add(new string[] { row.BusinessProblem, row.ProjectRequirement });
                 }
                 foreach (var row in currentFeasibilityStudyModel.RankingScores)
                 {
-                    Ranking_Scores_dgv.Rows.Add(new string[] { row.Criteria, row.Score1, row.Weight1, row.Total1, row.Score2, row.Weight2, row.Total2, row.Score3, row.Weight3, row.Total3 });
+                    Ranking_Scores_dgv.Rows.Add(new string[] { row.Solution1Score, row.Solution2Score, row.Solution3Score});
                 }
 
                 Project_Name_tbx.Text = currentFeasibilityStudyModel.ProjectName;
@@ -433,6 +433,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 Description2_tbx.Text = currentFeasibilityStudyModel.Solution2Description;
                 Assessment2_tbx.Text = currentFeasibilityStudyModel.Solution2Assessment;
                 Assumptions2_tbx.Text = currentFeasibilityStudyModel.Solution2Assumption;
+                Ranking_Criteria_tbx.Text = currentFeasibilityStudyModel.Criteria;
+
                 Description3_tbx.Text = currentFeasibilityStudyModel.Solution3Description;
                 Assessment3_tbx.Text = currentFeasibilityStudyModel.Solution3Assessment;
                 Assumptions3_tbx.Text = currentFeasibilityStudyModel.Solution3Assumption;
@@ -458,7 +460,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 Document_Information_dgv.AllowUserToAddRows = false;
             }
         }
-
         public void ExportToWord()
         {
             string path;
@@ -682,7 +683,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .Color(Color.Black)
                             .Bold(true)
                             .Font("Arial");
-                        
+
                         businessRequirementsSubheading.StyleId = "Heading2";
 
                         var businessRequirementsTable = document.AddTable(currentFeasibilityStudyModel.Requirements.Count + 1, 2);
@@ -695,7 +696,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         businessRequirementsTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
                         businessRequirementsTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
-                       
+
 
                         for (int i = 1; i < currentFeasibilityStudyModel.Requirements.Count + 1; i++)
                         {
@@ -1240,61 +1241,61 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                            .Font("Arial");
                         rankingScoresSubHeading.StyleId = "Heading2";
 
-                        var rankingScoresTable = document.AddTable(currentFeasibilityStudyModel.RankingScores.Count + 1, 10);
-                        rankingScoresTable.Rows[0].Cells[0].Paragraphs[0].Append("Criteria")
+                        var rankingScoresTable = document.AddTable(currentFeasibilityStudyModel.RankingScores.Count + 1, 3);
+                        rankingScoresTable.Rows[0].Cells[0].Paragraphs[0].Append("Solution 1")
                             .Bold(true)
                             .Color(Color.White);
-                        rankingScoresTable.Rows[0].Cells[1].Paragraphs[0].Append("Score")
+                        rankingScoresTable.Rows[0].Cells[1].Paragraphs[0].Append("Solution 2")
                             .Bold(true)
                             .Color(Color.White);
-                        rankingScoresTable.Rows[0].Cells[2].Paragraphs[0].Append("Weight")
+                        rankingScoresTable.Rows[0].Cells[2].Paragraphs[0].Append("Solution 3")
                             .Bold(true)
                             .Color(Color.White);
-                        rankingScoresTable.Rows[0].Cells[3].Paragraphs[0].Append("Total")
-                            .Bold(true)
-                            .Color(Color.White);
-                        rankingScoresTable.Rows[0].Cells[4].Paragraphs[0].Append("Score")
-                            .Bold(true)
-                            .Color(Color.White);
-                        rankingScoresTable.Rows[0].Cells[5].Paragraphs[0].Append("Weight")
-                            .Bold(true)
-                            .Color(Color.White);
-                        rankingScoresTable.Rows[0].Cells[6].Paragraphs[0].Append("Total")
-                            .Bold(true)
-                            .Color(Color.White);
-                        rankingScoresTable.Rows[0].Cells[7].Paragraphs[0].Append("Score")
-                            .Bold(true)
-                            .Color(Color.White);
-                        rankingScoresTable.Rows[0].Cells[8].Paragraphs[0].Append("Weight")
-                            .Bold(true)
-                            .Color(Color.White);
-                        rankingScoresTable.Rows[0].Cells[9].Paragraphs[0].Append("Total")
-                            .Bold(true)
-                            .Color(Color.White);
-                        
+                        //rankingScoresTable.Rows[0].Cells[3].Paragraphs[0].Append("Total")
+                        //    .Bold(true)
+                        //    .Color(Color.White);
+                        //rankingScoresTable.Rows[0].Cells[4].Paragraphs[0].Append("Score")
+                        //    .Bold(true)
+                        //    .Color(Color.White);
+                        //rankingScoresTable.Rows[0].Cells[5].Paragraphs[0].Append("Weight")
+                        //    .Bold(true)
+                        //    .Color(Color.White);
+                        //rankingScoresTable.Rows[0].Cells[6].Paragraphs[0].Append("Total")
+                        //    .Bold(true)
+                        //    .Color(Color.White);
+                        //rankingScoresTable.Rows[0].Cells[7].Paragraphs[0].Append("Score")
+                        //    .Bold(true)
+                        //    .Color(Color.White);
+                        //rankingScoresTable.Rows[0].Cells[8].Paragraphs[0].Append("Weight")
+                        //    .Bold(true)
+                        //    .Color(Color.White);
+                        //rankingScoresTable.Rows[0].Cells[9].Paragraphs[0].Append("Total")
+                        //    .Bold(true)
+                        //    .Color(Color.White);
+
                         rankingScoresTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
                         rankingScoresTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
                         rankingScoresTable.Rows[0].Cells[2].FillColor = TABLE_HEADER_COLOR;
-                        rankingScoresTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
-                        rankingScoresTable.Rows[0].Cells[4].FillColor = TABLE_HEADER_COLOR;
-                        rankingScoresTable.Rows[0].Cells[5].FillColor = TABLE_HEADER_COLOR;
-                        rankingScoresTable.Rows[0].Cells[6].FillColor = TABLE_HEADER_COLOR;
-                        rankingScoresTable.Rows[0].Cells[7].FillColor = TABLE_HEADER_COLOR;
-                        rankingScoresTable.Rows[0].Cells[8].FillColor = TABLE_HEADER_COLOR;
-                        rankingScoresTable.Rows[0].Cells[9].FillColor = TABLE_HEADER_COLOR;
+                        //rankingScoresTable.Rows[0].Cells[3].FillColor = TABLE_HEADER_COLOR;
+                        //rankingScoresTable.Rows[0].Cells[4].FillColor = TABLE_HEADER_COLOR;
+                        //rankingScoresTable.Rows[0].Cells[5].FillColor = TABLE_HEADER_COLOR;
+                        //rankingScoresTable.Rows[0].Cells[6].FillColor = TABLE_HEADER_COLOR;
+                        //rankingScoresTable.Rows[0].Cells[7].FillColor = TABLE_HEADER_COLOR;
+                        //rankingScoresTable.Rows[0].Cells[8].FillColor = TABLE_HEADER_COLOR;
+                        //rankingScoresTable.Rows[0].Cells[9].FillColor = TABLE_HEADER_COLOR;
 
                         for (int i = 1; i < currentFeasibilityStudyModel.RankingScores.Count + 1; i++)
                         {
-                            rankingScoresTable.Rows[i].Cells[0].Paragraphs[0].Append(currentFeasibilityStudyModel.RankingScores[i - 1].Criteria);
-                            rankingScoresTable.Rows[i].Cells[1].Paragraphs[0].Append(currentFeasibilityStudyModel.RankingScores[i - 1].Score1);
-                            rankingScoresTable.Rows[i].Cells[2].Paragraphs[0].Append(currentFeasibilityStudyModel.RankingScores[i - 1].Weight1);
-                            rankingScoresTable.Rows[i].Cells[3].Paragraphs[0].Append(currentFeasibilityStudyModel.RankingScores[i - 1].Total1);
-                            rankingScoresTable.Rows[i].Cells[4].Paragraphs[0].Append(currentFeasibilityStudyModel.RankingScores[i - 1].Score2);
-                            rankingScoresTable.Rows[i].Cells[5].Paragraphs[0].Append(currentFeasibilityStudyModel.RankingScores[i - 1].Weight2);
-                            rankingScoresTable.Rows[i].Cells[6].Paragraphs[0].Append(currentFeasibilityStudyModel.RankingScores[i - 1].Total2);
-                            rankingScoresTable.Rows[i].Cells[7].Paragraphs[0].Append(currentFeasibilityStudyModel.RankingScores[i - 1].Score3);
-                            rankingScoresTable.Rows[i].Cells[8].Paragraphs[0].Append(currentFeasibilityStudyModel.RankingScores[i - 1].Weight3);
-                            rankingScoresTable.Rows[i].Cells[9].Paragraphs[0].Append(currentFeasibilityStudyModel.RankingScores[i - 1].Total3);
+                            rankingScoresTable.Rows[i].Cells[0].Paragraphs[0].Append(currentFeasibilityStudyModel.RankingScores[i - 1].Solution1Score);
+                            rankingScoresTable.Rows[i].Cells[1].Paragraphs[0].Append(currentFeasibilityStudyModel.RankingScores[i - 1].Solution2Score);
+                            rankingScoresTable.Rows[i].Cells[2].Paragraphs[0].Append(currentFeasibilityStudyModel.RankingScores[i - 1].Solution3Score);
+                            //rankingScoresTable.Rows[i].Cells[3].Paragraphs[0].Append(currentFeasibilityStudyModel.RankingScores[i - 1].Total1);
+                            //rankingScoresTable.Rows[i].Cells[4].Paragraphs[0].Append(currentFeasibilityStudyModel.RankingScores[i - 1].Score2);
+                            //rankingScoresTable.Rows[i].Cells[5].Paragraphs[0].Append(currentFeasibilityStudyModel.RankingScores[i - 1].Weight2);
+                            //rankingScoresTable.Rows[i].Cells[6].Paragraphs[0].Append(currentFeasibilityStudyModel.RankingScores[i - 1].Total2);
+                            //rankingScoresTable.Rows[i].Cells[7].Paragraphs[0].Append(currentFeasibilityStudyModel.RankingScores[i - 1].Score3);
+                            //rankingScoresTable.Rows[i].Cells[8].Paragraphs[0].Append(currentFeasibilityStudyModel.RankingScores[i - 1].Weight3);
+                            //rankingScoresTable.Rows[i].Cells[9].Paragraphs[0].Append(currentFeasibilityStudyModel.RankingScores[i - 1].Total3);
                         }
 
                         //rankingScoresTable.SetWidths(new float[] { 190, 303, 1094 });
