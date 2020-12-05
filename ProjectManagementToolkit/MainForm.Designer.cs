@@ -698,7 +698,6 @@
             this.templateToolStripMenuItem13.Name = "templateToolStripMenuItem13";
             this.templateToolStripMenuItem13.Size = new System.Drawing.Size(122, 22);
             this.templateToolStripMenuItem13.Text = "Template";
-            this.templateToolStripMenuItem13.Click += new System.EventHandler(this.templateToolStripMenuItem13_Click);
             // 
             // exampleToolStripMenuItem15
             // 
@@ -841,7 +840,7 @@
             // guideToolStripMenuItem
             // 
             this.guideToolStripMenuItem.Name = "guideToolStripMenuItem";
-            this.guideToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.guideToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.guideToolStripMenuItem.Text = "Guide";
             // 
             // monitorControlToolStripMenuItem
@@ -857,7 +856,7 @@
             // guideToolStripMenuItem1
             // 
             this.guideToolStripMenuItem1.Name = "guideToolStripMenuItem1";
-            this.guideToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.guideToolStripMenuItem1.Size = new System.Drawing.Size(105, 22);
             this.guideToolStripMenuItem1.Text = "Guide";
             // 
             // peformTimeManagementToolStripMenuItem

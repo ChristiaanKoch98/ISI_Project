@@ -51,34 +51,36 @@
             this.DoneInitation = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.lblInitiationProgress = new System.Windows.Forms.Label();
             this.tbpPlanning = new System.Windows.Forms.TabPage();
-            this.tbpExecution = new System.Windows.Forms.TabPage();
-            this.tbpClosure = new System.Windows.Forms.TabPage();
             this.dgvPlanning = new System.Windows.Forms.DataGridView();
+            this.PlanningDocument = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonePlanning = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.lblPlanningProgress = new System.Windows.Forms.Label();
             this.pbarPlanning = new System.Windows.Forms.ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
+            this.tbpExecution = new System.Windows.Forms.TabPage();
             this.dgvExecution = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.lblExecutionProgress = new System.Windows.Forms.Label();
             this.pbarExecution = new System.Windows.Forms.ProgressBar();
             this.label5 = new System.Windows.Forms.Label();
+            this.tbpClosure = new System.Windows.Forms.TabPage();
             this.dgvClosing = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.lblClosingProgress = new System.Windows.Forms.Label();
             this.pbarClosing = new System.Windows.Forms.ProgressBar();
             this.label7 = new System.Windows.Forms.Label();
-            this.PlanningDocument = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonePlanning = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.pbarOverall = new System.Windows.Forms.ProgressBar();
+            this.lblOverallProgress = new System.Windows.Forms.Label();
             this.tabInitiation.SuspendLayout();
             this.tbpInitiation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInitiation)).BeginInit();
             this.tbpPlanning.SuspendLayout();
-            this.tbpExecution.SuspendLayout();
-            this.tbpClosure.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlanning)).BeginInit();
+            this.tbpExecution.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExecution)).BeginInit();
+            this.tbpClosure.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClosing)).BeginInit();
             this.SuspendLayout();
             // 
@@ -226,33 +228,6 @@
             this.tbpPlanning.TabIndex = 1;
             this.tbpPlanning.Text = "Planning Phase";
             // 
-            // tbpExecution
-            // 
-            this.tbpExecution.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tbpExecution.Controls.Add(this.dgvExecution);
-            this.tbpExecution.Controls.Add(this.lblExecutionProgress);
-            this.tbpExecution.Controls.Add(this.pbarExecution);
-            this.tbpExecution.Controls.Add(this.label5);
-            this.tbpExecution.Location = new System.Drawing.Point(4, 21);
-            this.tbpExecution.Margin = new System.Windows.Forms.Padding(2);
-            this.tbpExecution.Name = "tbpExecution";
-            this.tbpExecution.Size = new System.Drawing.Size(712, 470);
-            this.tbpExecution.TabIndex = 2;
-            this.tbpExecution.Text = "Execution Phase";
-            // 
-            // tbpClosure
-            // 
-            this.tbpClosure.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.tbpClosure.Controls.Add(this.dgvClosing);
-            this.tbpClosure.Controls.Add(this.lblClosingProgress);
-            this.tbpClosure.Controls.Add(this.pbarClosing);
-            this.tbpClosure.Controls.Add(this.label7);
-            this.tbpClosure.Location = new System.Drawing.Point(4, 21);
-            this.tbpClosure.Name = "tbpClosure";
-            this.tbpClosure.Size = new System.Drawing.Size(712, 470);
-            this.tbpClosure.TabIndex = 3;
-            this.tbpClosure.Text = "Closing Phase";
-            // 
             // dgvPlanning
             // 
             this.dgvPlanning.AllowUserToAddRows = false;
@@ -289,6 +264,20 @@
             this.dgvPlanning.Size = new System.Drawing.Size(687, 376);
             this.dgvPlanning.TabIndex = 21;
             // 
+            // PlanningDocument
+            // 
+            this.PlanningDocument.HeaderText = "Planning Document";
+            this.PlanningDocument.Name = "PlanningDocument";
+            this.PlanningDocument.ReadOnly = true;
+            // 
+            // DonePlanning
+            // 
+            this.DonePlanning.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.DonePlanning.HeaderText = "Done?";
+            this.DonePlanning.Name = "DonePlanning";
+            this.DonePlanning.ReadOnly = true;
+            this.DonePlanning.Width = 48;
+            // 
             // lblPlanningProgress
             // 
             this.lblPlanningProgress.AutoSize = true;
@@ -316,6 +305,20 @@
             this.label2.Size = new System.Drawing.Size(103, 22);
             this.label2.TabIndex = 18;
             this.label2.Text = "Progress:";
+            // 
+            // tbpExecution
+            // 
+            this.tbpExecution.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tbpExecution.Controls.Add(this.dgvExecution);
+            this.tbpExecution.Controls.Add(this.lblExecutionProgress);
+            this.tbpExecution.Controls.Add(this.pbarExecution);
+            this.tbpExecution.Controls.Add(this.label5);
+            this.tbpExecution.Location = new System.Drawing.Point(4, 21);
+            this.tbpExecution.Margin = new System.Windows.Forms.Padding(2);
+            this.tbpExecution.Name = "tbpExecution";
+            this.tbpExecution.Size = new System.Drawing.Size(712, 470);
+            this.tbpExecution.TabIndex = 2;
+            this.tbpExecution.Text = "Execution Phase";
             // 
             // dgvExecution
             // 
@@ -353,6 +356,20 @@
             this.dgvExecution.Size = new System.Drawing.Size(687, 376);
             this.dgvExecution.TabIndex = 21;
             // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Execution Document";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewCheckBoxColumn2
+            // 
+            this.dataGridViewCheckBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewCheckBoxColumn2.HeaderText = "Done?";
+            this.dataGridViewCheckBoxColumn2.Name = "dataGridViewCheckBoxColumn2";
+            this.dataGridViewCheckBoxColumn2.ReadOnly = true;
+            this.dataGridViewCheckBoxColumn2.Width = 48;
+            // 
             // lblExecutionProgress
             // 
             this.lblExecutionProgress.AutoSize = true;
@@ -380,6 +397,19 @@
             this.label5.Size = new System.Drawing.Size(103, 22);
             this.label5.TabIndex = 18;
             this.label5.Text = "Progress:";
+            // 
+            // tbpClosure
+            // 
+            this.tbpClosure.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.tbpClosure.Controls.Add(this.dgvClosing);
+            this.tbpClosure.Controls.Add(this.lblClosingProgress);
+            this.tbpClosure.Controls.Add(this.pbarClosing);
+            this.tbpClosure.Controls.Add(this.label7);
+            this.tbpClosure.Location = new System.Drawing.Point(4, 21);
+            this.tbpClosure.Name = "tbpClosure";
+            this.tbpClosure.Size = new System.Drawing.Size(712, 470);
+            this.tbpClosure.TabIndex = 3;
+            this.tbpClosure.Text = "Closing Phase";
             // 
             // dgvClosing
             // 
@@ -417,6 +447,20 @@
             this.dgvClosing.Size = new System.Drawing.Size(687, 376);
             this.dgvClosing.TabIndex = 25;
             // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Closing Document";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewCheckBoxColumn3
+            // 
+            this.dataGridViewCheckBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewCheckBoxColumn3.HeaderText = "Done?";
+            this.dataGridViewCheckBoxColumn3.Name = "dataGridViewCheckBoxColumn3";
+            this.dataGridViewCheckBoxColumn3.ReadOnly = true;
+            this.dataGridViewCheckBoxColumn3.Width = 48;
+            // 
             // lblClosingProgress
             // 
             this.lblClosingProgress.AutoSize = true;
@@ -445,47 +489,23 @@
             this.label7.TabIndex = 22;
             this.label7.Text = "Progress:";
             // 
-            // PlanningDocument
+            // pbarOverall
             // 
-            this.PlanningDocument.HeaderText = "Planning Document";
-            this.PlanningDocument.Name = "PlanningDocument";
-            this.PlanningDocument.ReadOnly = true;
+            this.pbarOverall.Location = new System.Drawing.Point(15, 40);
+            this.pbarOverall.Margin = new System.Windows.Forms.Padding(2);
+            this.pbarOverall.Name = "pbarOverall";
+            this.pbarOverall.Size = new System.Drawing.Size(699, 40);
+            this.pbarOverall.TabIndex = 18;
             // 
-            // DonePlanning
+            // lblOverallProgress
             // 
-            this.DonePlanning.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.DonePlanning.HeaderText = "Done?";
-            this.DonePlanning.Name = "DonePlanning";
-            this.DonePlanning.ReadOnly = true;
-            this.DonePlanning.Width = 48;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Execution Document";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewCheckBoxColumn2
-            // 
-            this.dataGridViewCheckBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.dataGridViewCheckBoxColumn2.HeaderText = "Done?";
-            this.dataGridViewCheckBoxColumn2.Name = "dataGridViewCheckBoxColumn2";
-            this.dataGridViewCheckBoxColumn2.ReadOnly = true;
-            this.dataGridViewCheckBoxColumn2.Width = 48;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Closing Document";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewCheckBoxColumn3
-            // 
-            this.dataGridViewCheckBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.dataGridViewCheckBoxColumn3.HeaderText = "Done?";
-            this.dataGridViewCheckBoxColumn3.Name = "dataGridViewCheckBoxColumn3";
-            this.dataGridViewCheckBoxColumn3.ReadOnly = true;
-            this.dataGridViewCheckBoxColumn3.Width = 48;
+            this.lblOverallProgress.AutoSize = true;
+            this.lblOverallProgress.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold);
+            this.lblOverallProgress.Location = new System.Drawing.Point(14, 82);
+            this.lblOverallProgress.Name = "lblOverallProgress";
+            this.lblOverallProgress.Size = new System.Drawing.Size(106, 14);
+            this.lblOverallProgress.TabIndex = 18;
+            this.lblOverallProgress.Text = "Overall Progress: ";
             // 
             // ProjectDashboard
             // 
@@ -493,6 +513,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(747, 693);
+            this.Controls.Add(this.lblOverallProgress);
+            this.Controls.Add(this.pbarOverall);
             this.Controls.Add(this.tabInitiation);
             this.Controls.Add(this.lblProjectName);
             this.Controls.Add(this.label3);
@@ -505,12 +527,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvInitiation)).EndInit();
             this.tbpPlanning.ResumeLayout(false);
             this.tbpPlanning.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPlanning)).EndInit();
             this.tbpExecution.ResumeLayout(false);
             this.tbpExecution.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvExecution)).EndInit();
             this.tbpClosure.ResumeLayout(false);
             this.tbpClosure.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPlanning)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvExecution)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClosing)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -550,5 +572,7 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn3;
+        private System.Windows.Forms.ProgressBar pbarOverall;
+        private System.Windows.Forms.Label lblOverallProgress;
     }
 }

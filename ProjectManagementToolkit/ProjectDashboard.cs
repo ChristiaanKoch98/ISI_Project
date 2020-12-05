@@ -43,7 +43,7 @@ namespace ProjectManagementToolkit
 
             lblInitiationProgress.Text = "Progress: ";
             pbarInitiation.Value = 0;
-            pbarInitiation.Maximum = initiationDocuments.Count - 1;
+            pbarInitiation.Maximum = initiationDocuments.Count;
             double initationProgressVal = 0;
             for (int i = 0; i < initiationDocuments.Count; i++)
             {
@@ -81,7 +81,7 @@ namespace ProjectManagementToolkit
 
             lblPlanningProgress.Text = "Progress: ";
             pbarPlanning.Value = 0;
-            pbarPlanning.Maximum = planningDocuments.Count - 1;
+            pbarPlanning.Maximum = planningDocuments.Count;
             double planningProgressVal = 0;
             for (int i = 0; i < planningDocuments.Count; i++)
             {
@@ -102,24 +102,31 @@ namespace ProjectManagementToolkit
             }
 
             List<string> executionDocuments = new List<string>();
+            executionDocuments.Add("BuildDeliverables");
+            executionDocuments.Add("MonitorAndControl");
             executionDocuments.Add("TimeMangement");
             executionDocuments.Add("TimeSheet");
             executionDocuments.Add("TimeSheetRegister");
-            executionDocuments.Add("QualityPlan");
-            executionDocuments.Add("RiskPlan");
-            executionDocuments.Add("AcceptancePlan");
-            executionDocuments.Add("CommunicationPlan");
-            executionDocuments.Add("ProcurementPlan");
-            executionDocuments.Add("SelectionProcess");
-            executionDocuments.Add("StatementOfWork");
-            executionDocuments.Add("RequestForInformation");
-            executionDocuments.Add("SupplierContract");
-            executionDocuments.Add("RequestForProposal");
-            executionDocuments.Add("PhaseReviewPlanning");
+            executionDocuments.Add("CostManagementProcess");
+            executionDocuments.Add("ExpenseForm");
+            executionDocuments.Add("QualityManagement");
+            executionDocuments.Add("QualityReviewPlan");
+            executionDocuments.Add("ChangeManagementProcess");
+            executionDocuments.Add("ChangeRequestForm");
+            executionDocuments.Add("RiskManagamentProcess");
+            executionDocuments.Add("RiskForm");
+            executionDocuments.Add("IssueManagementProcess");
+            executionDocuments.Add("IssueForm");
+            executionDocuments.Add("PurchaseOrder");
+            executionDocuments.Add("AcceptanceManagementProcess");
+            executionDocuments.Add("AcceptanceForm");
+            executionDocuments.Add("CommunicationsManagementProcess");
+            executionDocuments.Add("ProjectStatusReport");
+            executionDocuments.Add("PhaseReviewExe");
 
             lblExecutionProgress.Text = "Progress: ";
             pbarExecution.Value = 0;
-            pbarExecution.Maximum = executionDocuments.Count - 1;
+            pbarExecution.Maximum = executionDocuments.Count;
             double executionProgressVal = 0;
             for (int i = 0; i < executionDocuments.Count; i++)
             {
@@ -131,13 +138,45 @@ namespace ProjectManagementToolkit
                     dgvExecution.Rows[i].Cells[1].Value = true;
                     pbarExecution.Value = (int)executionProgressVal;
                     double executionPercentage = ((executionProgressVal) / executionDocuments.Count) * 100;
-                    lblPlanningProgress.Text = "Progress: " + Math.Round(executionPercentage, 2) + "%";
+                    lblExecutionProgress.Text = "Progress: " + Math.Round(executionPercentage, 2) + "%";
                 }
                 else
                 {
                     dgvExecution.Rows[i].Cells[1].Value = false;
                 }
             }
+
+            List<string> closingDocuments = new List<string>();
+            closingDocuments.Add("ProjectClosureReport");
+            closingDocuments.Add("PostImplementationReview");
+
+            lblClosingProgress.Text = "Progress: ";
+            pbarClosing.Value = 0;
+            pbarClosing.Maximum = closingDocuments.Count;
+            double closingProgressVal = 0;
+            for (int i = 0; i < closingDocuments.Count; i++)
+            {
+                dgvClosing.Rows.Add();
+                dgvClosing.Rows[i].Cells[0].Value = closingDocuments[i];
+                if (localDocuments.Contains(closingDocuments[i]))
+                {
+                    closingProgressVal++;
+                    dgvClosing.Rows[i].Cells[1].Value = true;
+                    pbarClosing.Value = (int)closingProgressVal;
+                    double closingPercentage = ((closingProgressVal) / closingDocuments.Count) * 100;
+                    lblClosingProgress.Text = "Progress: " + Math.Round(closingPercentage, 2) + "%";
+                }
+                else
+                {
+                    dgvClosing.Rows[i].Cells[1].Value = false;
+                }
+            }
+
+            double overallProgressVal = (initationProgressVal + planningProgressVal + executionProgressVal + closingProgressVal);
+            pbarOverall.Value = (int)overallProgressVal;
+            pbarOverall.Maximum = initiationDocuments.Count + planningDocuments.Count + executionDocuments.Count + closingDocuments.Count;
+            double overallPercentage = ((closingProgressVal) / pbarOverall.Maximum) * 100;
+            lblOverallProgress.Text = "Overall Progress: " + Math.Round(overallPercentage, 2) + "%";
         }
 
         private List<string> getLocalDocuments()

@@ -424,10 +424,5 @@ namespace ProjectManagementToolkit
             form.Show();
             form.MdiParent = this;
         }
-
-        private void templateToolStripMenuItem13_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
