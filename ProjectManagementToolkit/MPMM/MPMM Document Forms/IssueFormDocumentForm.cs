@@ -349,18 +349,32 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete the current form?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if(dialogResult == DialogResult.Yes)
+            if (cmbIssueForms.SelectedIndex != -1)
             {
-                currentIssueFormModel.RemoveAt(cmbIssueForms.SelectedIndex);
-                cmbIssueForms.Items.RemoveAt(cmbIssueForms.SelectedIndex);
-                cmbIssueForms_SelectedIndexChanged(this, EventArgs.Empty);
-                versionControl.DocumentModels.Add(
-                   new VersionControl<List<IssueFormModel>>
-                   .DocumentModel(currentIssueFormModel, DateTime.Now, VersionControl<List<IssueFormModel>>.generateID()));
+                DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete the current form?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (dialogResult == DialogResult.Yes)
+                {
+                
+                    currentIssueFormModel.RemoveAt(cmbIssueForms.SelectedIndex);
+                    newRegisterModel.IssueEntries.RemoveAt(cmbIssueForms.SelectedIndex);
+                    cmbIssueForms.Items.RemoveAt(cmbIssueForms.SelectedIndex);
+                    cmbIssueForms_SelectedIndexChanged(this, EventArgs.Empty);
 
-                string json = JsonConvert.SerializeObject(versionControl);
-                JsonHelper.saveDocument(json, Settings.Default.ProjectID, "IssueForm");
+                    versionControl.DocumentModels.Add(
+                       new VersionControl<List<IssueFormModel>>
+                       .DocumentModel(currentIssueFormModel, DateTime.Now, VersionControl<List<IssueFormModel>>.generateID()));
+
+                    string json = JsonConvert.SerializeObject(versionControl);
+                    JsonHelper.saveDocument(json, Settings.Default.ProjectID, "IssueForm");
+
+                    versionControlRegister.DocumentModels.Add(new VersionControl<IssueRegisterModel>
+                      .DocumentModel(newRegisterModel, DateTime.Now, VersionControl<IssueRegisterModel>
+                      .generateID()));
+
+                    string jsonIssueRegister = JsonConvert.SerializeObject(versionControlRegister);
+
+                    JsonHelper.saveDocument(jsonIssueRegister, Settings.Default.ProjectID, "IssueRegister");
+                }
             }
         }
     }
