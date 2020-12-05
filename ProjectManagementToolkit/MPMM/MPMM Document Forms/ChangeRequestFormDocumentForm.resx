@@ -117,4 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Submitted by 						Approved by
+
+Name: 							Name:
+
+Signature:                              Date: 			Signature:                           Date:
+
+__________________           ___/___/____         	__________________        ___/___/____    
+
+
+Any documentation to support this change should be attached to this document.
+
+PLEASE FORWARD THIS FORM TO THE PROJECT MANAGER FOR APPROVAL
+</value>
+  </data>
 </root>
