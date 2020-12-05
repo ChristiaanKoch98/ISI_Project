@@ -6,17 +6,15 @@ using System.Threading.Tasks;
 
 namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 {
-    public class BusinessCaseDocument
+    class BusinessCaseModel
     {
-        public string ProjectName { get; set; }
-
         public string DocumentID { get; set; }
 
         public string DocumentOwner { get; set; }
+        
+        public string IssueDate { get; set; }
 
-        public DateTime IssueDate { get; set; }
-
-        public DateTime LastSavedDate { get; set; }
+        public string LastSavedDate { get; set; }
 
         public string FileName { get; set; }
 
@@ -26,13 +24,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 
         public string ExecutiveSummary { get; set; }
 
-        public string BusinessProblemMain { get; set; }
-
-        public string BusinessProblemSub { get; set; }
+        public string BusinessProblemDescription { get; set; }
 
         public string EnvironmentalAnalysis { get; set; }
 
         public string ProblemAnalysis { get; set; }
+
+        public string BusinessProblem{ get; set; }
 
         public string BusinessOpportunity { get; set; }
 
@@ -44,10 +42,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 
         public List<SolutionRating> SolutionRatings { get; set; }
 
-        public string RecommendedSolutionSummary { get; set; }
+        public string RecommendedSolutionChosen { get; set; }
 
         public string ImplementationApproachDescription { get; set; }
 
+        public string ProjectDescription { get; set; }
         public string ProjectInitiation { get; set; }
 
         public string ProjectPlanning { get; set; }
@@ -58,12 +57,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 
         public string ProjectManagement { get; set; }
 
-
+        public string Appendix { get; set; }
         public class DocumentHistory
         {
             public string Version { get; set; }
 
-            public DateTime IssueDate { get; set; }
+            public string IssueDate { get; set; }
 
             public string Changes { get; set; }
         }
@@ -76,7 +75,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
 
             public string Signature { get; set; }
 
-            public DateTime DateApproved { get; set; }
+            public string DateApproved { get; set; }
         }
 
         public class AlternativeSolution
@@ -88,13 +87,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
             public List<Cost> Costs { get; set; }
 
             public List<Feasibility> Feasibilities { get; set; }
+
+            public List<Risk> Risks { get; set; }
+
+            public List<Issue> Issues { get; set; }
+
+            public string Assumptions { get; set; }
         }
-
-        public List<Risk> Risks { get; set; }
-
-        public List<Issue> Issues { get; set; }
-
-        public string Assumptions { get; set; }
 
         public class Benefit
         {
@@ -152,9 +151,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         {
             public string AssementCriteria { get; set; }
 
-            public List<string> SolutionName { get; set; }
+            public string Solution1_Score { get; set; }
 
-            public List<int> SolutionScore { get; set; }
+            public string Solution2_Score { get; set; }
+
+            public string Solution3_Score { get; set; }
         }
     }
 }

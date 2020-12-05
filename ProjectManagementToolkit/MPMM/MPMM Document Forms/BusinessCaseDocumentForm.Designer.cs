@@ -29,7 +29,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabRecommendedSolution = new System.Windows.Forms.TabControl();
             this.tabPage40 = new System.Windows.Forms.TabPage();
@@ -286,7 +286,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage7.Location = new System.Drawing.Point(4, 24);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(838, 592);
+            this.tabPage7.Size = new System.Drawing.Size(918, 524);
             this.tabPage7.TabIndex = 3;
             this.tabPage7.Text = "Recommended Solution";
             // 
@@ -299,7 +299,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabRecommendedSolution.Location = new System.Drawing.Point(3, 3);
             this.tabRecommendedSolution.Name = "tabRecommendedSolution";
             this.tabRecommendedSolution.SelectedIndex = 0;
-            this.tabRecommendedSolution.Size = new System.Drawing.Size(832, 586);
+            this.tabRecommendedSolution.Size = new System.Drawing.Size(912, 518);
             this.tabRecommendedSolution.TabIndex = 7;
             // 
             // tabPage40
@@ -308,7 +308,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage40.Location = new System.Drawing.Point(4, 24);
             this.tabPage40.Name = "tabPage40";
             this.tabPage40.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage40.Size = new System.Drawing.Size(824, 558);
+            this.tabPage40.Size = new System.Drawing.Size(904, 490);
             this.tabPage40.TabIndex = 0;
             this.tabPage40.Text = "Description";
             this.tabPage40.UseVisualStyleBackColor = true;
@@ -322,7 +322,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtRecommendedSolutionDescription.Location = new System.Drawing.Point(3, 3);
             this.txtRecommendedSolutionDescription.Multiline = true;
             this.txtRecommendedSolutionDescription.Name = "txtRecommendedSolutionDescription";
-            this.txtRecommendedSolutionDescription.Size = new System.Drawing.Size(818, 552);
+            this.txtRecommendedSolutionDescription.Size = new System.Drawing.Size(898, 484);
             this.txtRecommendedSolutionDescription.TabIndex = 1;
             this.txtRecommendedSolutionDescription.Text = "Description";
             // 
@@ -332,7 +332,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage41.Location = new System.Drawing.Point(4, 24);
             this.tabPage41.Name = "tabPage41";
             this.tabPage41.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage41.Size = new System.Drawing.Size(824, 558);
+            this.tabPage41.Size = new System.Drawing.Size(904, 490);
             this.tabPage41.TabIndex = 1;
             this.tabPage41.Text = "Solution Rating";
             this.tabPage41.UseVisualStyleBackColor = true;
@@ -349,7 +349,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvSolutionRating.Location = new System.Drawing.Point(3, 3);
             this.dgvSolutionRating.Name = "dgvSolutionRating";
             this.dgvSolutionRating.RowHeadersWidth = 51;
-            this.dgvSolutionRating.Size = new System.Drawing.Size(818, 552);
+            this.dgvSolutionRating.Size = new System.Drawing.Size(898, 484);
             this.dgvSolutionRating.TabIndex = 2;
             // 
             // AssessmentCriteria
@@ -389,7 +389,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage42.Controls.Add(this.radSolution1);
             this.tabPage42.Location = new System.Drawing.Point(4, 24);
             this.tabPage42.Name = "tabPage42";
-            this.tabPage42.Size = new System.Drawing.Size(824, 558);
+            this.tabPage42.Size = new System.Drawing.Size(904, 490);
             this.tabPage42.TabIndex = 2;
             this.tabPage42.Text = "Prefered Solution";
             // 
@@ -399,7 +399,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(13, 13);
+            this.label21.Location = new System.Drawing.Point(12, 14);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(243, 17);
             this.label21.TabIndex = 10;
@@ -411,7 +411,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.radSolution3.AutoSize = true;
             this.radSolution3.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radSolution3.ForeColor = System.Drawing.Color.Black;
-            this.radSolution3.Location = new System.Drawing.Point(16, 92);
+            this.radSolution3.Location = new System.Drawing.Point(32, 93);
             this.radSolution3.Name = "radSolution3";
             this.radSolution3.Size = new System.Drawing.Size(81, 19);
             this.radSolution3.TabIndex = 9;
@@ -425,7 +425,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.radSolution2.AutoSize = true;
             this.radSolution2.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radSolution2.ForeColor = System.Drawing.Color.Black;
-            this.radSolution2.Location = new System.Drawing.Point(16, 67);
+            this.radSolution2.Location = new System.Drawing.Point(32, 68);
             this.radSolution2.Name = "radSolution2";
             this.radSolution2.Size = new System.Drawing.Size(81, 19);
             this.radSolution2.TabIndex = 8;
@@ -439,7 +439,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.radSolution1.AutoSize = true;
             this.radSolution1.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radSolution1.ForeColor = System.Drawing.Color.Black;
-            this.radSolution1.Location = new System.Drawing.Point(16, 43);
+            this.radSolution1.Location = new System.Drawing.Point(32, 43);
             this.radSolution1.Name = "radSolution1";
             this.radSolution1.Size = new System.Drawing.Size(81, 19);
             this.radSolution1.TabIndex = 7;
@@ -465,7 +465,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtAppendix.Location = new System.Drawing.Point(3, 3);
             this.txtAppendix.Multiline = true;
             this.txtAppendix.Name = "txtAppendix";
-            this.txtAppendix.Size = new System.Drawing.Size(832, 586);
+            this.txtAppendix.Size = new System.Drawing.Size(912, 518);
             this.txtAppendix.TabIndex = 0;
             // 
             // tabExecSumAndBusCase
@@ -480,7 +480,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabExecSumAndBusCase.Location = new System.Drawing.Point(3, 3);
             this.tabExecSumAndBusCase.Name = "tabExecSumAndBusCase";
             this.tabExecSumAndBusCase.SelectedIndex = 0;
-            this.tabExecSumAndBusCase.Size = new System.Drawing.Size(885, 448);
+            this.tabExecSumAndBusCase.Size = new System.Drawing.Size(912, 518);
             this.tabExecSumAndBusCase.TabIndex = 6;
             // 
             // tabPage31
@@ -489,7 +489,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage31.Location = new System.Drawing.Point(4, 24);
             this.tabPage31.Name = "tabPage31";
             this.tabPage31.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage31.Size = new System.Drawing.Size(982, 558);
+            this.tabPage31.Size = new System.Drawing.Size(904, 490);
             this.tabPage31.TabIndex = 0;
             this.tabPage31.Text = "Executive Summary";
             this.tabPage31.UseVisualStyleBackColor = true;
@@ -503,7 +503,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtExecutiveSummary.Location = new System.Drawing.Point(3, 3);
             this.txtExecutiveSummary.Multiline = true;
             this.txtExecutiveSummary.Name = "txtExecutiveSummary";
-            this.txtExecutiveSummary.Size = new System.Drawing.Size(976, 552);
+            this.txtExecutiveSummary.Size = new System.Drawing.Size(898, 484);
             this.txtExecutiveSummary.TabIndex = 1;
             this.txtExecutiveSummary.Text = "Executive Summary";
             // 
@@ -513,7 +513,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage32.Location = new System.Drawing.Point(4, 24);
             this.tabPage32.Name = "tabPage32";
             this.tabPage32.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage32.Size = new System.Drawing.Size(982, 558);
+            this.tabPage32.Size = new System.Drawing.Size(904, 490);
             this.tabPage32.TabIndex = 1;
             this.tabPage32.Text = "Business Problem Description";
             this.tabPage32.UseVisualStyleBackColor = true;
@@ -527,7 +527,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtBusinessProblemDescription.Location = new System.Drawing.Point(3, 3);
             this.txtBusinessProblemDescription.Multiline = true;
             this.txtBusinessProblemDescription.Name = "txtBusinessProblemDescription";
-            this.txtBusinessProblemDescription.Size = new System.Drawing.Size(976, 552);
+            this.txtBusinessProblemDescription.Size = new System.Drawing.Size(898, 484);
             this.txtBusinessProblemDescription.TabIndex = 2;
             this.txtBusinessProblemDescription.Text = "Business Problem Description";
             // 
@@ -536,7 +536,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage33.Controls.Add(this.txtEnvirAnalysis);
             this.tabPage33.Location = new System.Drawing.Point(4, 24);
             this.tabPage33.Name = "tabPage33";
-            this.tabPage33.Size = new System.Drawing.Size(877, 420);
+            this.tabPage33.Size = new System.Drawing.Size(904, 490);
             this.tabPage33.TabIndex = 2;
             this.tabPage33.Text = "Environmental Analysis";
             this.tabPage33.UseVisualStyleBackColor = true;
@@ -550,16 +550,16 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtEnvirAnalysis.Location = new System.Drawing.Point(0, 0);
             this.txtEnvirAnalysis.Multiline = true;
             this.txtEnvirAnalysis.Name = "txtEnvirAnalysis";
-            this.txtEnvirAnalysis.Size = new System.Drawing.Size(877, 420);
+            this.txtEnvirAnalysis.Size = new System.Drawing.Size(904, 490);
             this.txtEnvirAnalysis.TabIndex = 4;
             this.txtEnvirAnalysis.Text = "Environmental Analysis";
             // 
             // tabPage34
             // 
             this.tabPage34.Controls.Add(this.txtProblemAnalysis);
-            this.tabPage34.Location = new System.Drawing.Point(4, 22);
+            this.tabPage34.Location = new System.Drawing.Point(4, 24);
             this.tabPage34.Name = "tabPage34";
-            this.tabPage34.Size = new System.Drawing.Size(877, 422);
+            this.tabPage34.Size = new System.Drawing.Size(904, 490);
             this.tabPage34.TabIndex = 3;
             this.tabPage34.Text = "Problem Analysis";
             this.tabPage34.UseVisualStyleBackColor = true;
@@ -573,16 +573,16 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtProblemAnalysis.Location = new System.Drawing.Point(0, 0);
             this.txtProblemAnalysis.Multiline = true;
             this.txtProblemAnalysis.Name = "txtProblemAnalysis";
-            this.txtProblemAnalysis.Size = new System.Drawing.Size(877, 422);
+            this.txtProblemAnalysis.Size = new System.Drawing.Size(904, 490);
             this.txtProblemAnalysis.TabIndex = 4;
             this.txtProblemAnalysis.Text = "Problem Analysis";
             // 
             // tabPage35
             // 
             this.tabPage35.Controls.Add(this.txtBusinessProblem);
-            this.tabPage35.Location = new System.Drawing.Point(4, 22);
+            this.tabPage35.Location = new System.Drawing.Point(4, 24);
             this.tabPage35.Name = "tabPage35";
-            this.tabPage35.Size = new System.Drawing.Size(877, 422);
+            this.tabPage35.Size = new System.Drawing.Size(904, 490);
             this.tabPage35.TabIndex = 4;
             this.tabPage35.Text = "Business Problem";
             this.tabPage35.UseVisualStyleBackColor = true;
@@ -596,16 +596,16 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtBusinessProblem.Location = new System.Drawing.Point(0, 0);
             this.txtBusinessProblem.Multiline = true;
             this.txtBusinessProblem.Name = "txtBusinessProblem";
-            this.txtBusinessProblem.Size = new System.Drawing.Size(877, 422);
+            this.txtBusinessProblem.Size = new System.Drawing.Size(904, 490);
             this.txtBusinessProblem.TabIndex = 5;
             this.txtBusinessProblem.Text = "Business Problem";
             // 
             // tabPage36
             // 
             this.tabPage36.Controls.Add(this.txtBusinessOppurtunity);
-            this.tabPage36.Location = new System.Drawing.Point(4, 22);
+            this.tabPage36.Location = new System.Drawing.Point(4, 24);
             this.tabPage36.Name = "tabPage36";
-            this.tabPage36.Size = new System.Drawing.Size(877, 422);
+            this.tabPage36.Size = new System.Drawing.Size(904, 490);
             this.tabPage36.TabIndex = 5;
             this.tabPage36.Text = "Business Opportunity";
             this.tabPage36.UseVisualStyleBackColor = true;
@@ -619,7 +619,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtBusinessOppurtunity.Location = new System.Drawing.Point(0, 0);
             this.txtBusinessOppurtunity.Multiline = true;
             this.txtBusinessOppurtunity.Name = "txtBusinessOppurtunity";
-            this.txtBusinessOppurtunity.Size = new System.Drawing.Size(877, 422);
+            this.txtBusinessOppurtunity.Size = new System.Drawing.Size(904, 490);
             this.txtBusinessOppurtunity.TabIndex = 6;
             this.txtBusinessOppurtunity.Text = "Business Oppurtunity";
             // 
@@ -632,7 +632,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabDocControl.Location = new System.Drawing.Point(3, 3);
             this.tabDocControl.Name = "tabDocControl";
             this.tabDocControl.SelectedIndex = 0;
-            this.tabDocControl.Size = new System.Drawing.Size(589, 369);
+            this.tabDocControl.Size = new System.Drawing.Size(912, 518);
             this.tabDocControl.TabIndex = 6;
             // 
             // tabPage37
@@ -641,7 +641,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage37.Location = new System.Drawing.Point(4, 24);
             this.tabPage37.Name = "tabPage37";
             this.tabPage37.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage37.Size = new System.Drawing.Size(824, 558);
+            this.tabPage37.Size = new System.Drawing.Size(904, 490);
             this.tabPage37.TabIndex = 0;
             this.tabPage37.Text = "Document Information";
             this.tabPage37.UseVisualStyleBackColor = true;
@@ -656,8 +656,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvDocInfo.Location = new System.Drawing.Point(3, 3);
             this.dgvDocInfo.Name = "dgvDocInfo";
             this.dgvDocInfo.RowHeadersWidth = 51;
-            this.dgvDocInfo.Size = new System.Drawing.Size(818, 552);
+            this.dgvDocInfo.Size = new System.Drawing.Size(898, 484);
             this.dgvDocInfo.TabIndex = 1;
+            this.dgvDocInfo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDocInfo_CellContentClick);
             // 
             // Type
             // 
@@ -679,7 +680,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage38.Location = new System.Drawing.Point(4, 24);
             this.tabPage38.Name = "tabPage38";
             this.tabPage38.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage38.Size = new System.Drawing.Size(824, 558);
+            this.tabPage38.Size = new System.Drawing.Size(904, 490);
             this.tabPage38.TabIndex = 1;
             this.tabPage38.Text = "Document History";
             this.tabPage38.UseVisualStyleBackColor = true;
@@ -695,7 +696,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvDocHistory.Location = new System.Drawing.Point(3, 3);
             this.dgvDocHistory.Name = "dgvDocHistory";
             this.dgvDocHistory.RowHeadersWidth = 51;
-            this.dgvDocHistory.Size = new System.Drawing.Size(818, 552);
+            this.dgvDocHistory.Size = new System.Drawing.Size(898, 484);
             this.dgvDocHistory.TabIndex = 2;
             // 
             // Version
@@ -724,7 +725,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage39.Controls.Add(this.dgvDocApprovals);
             this.tabPage39.Location = new System.Drawing.Point(4, 24);
             this.tabPage39.Name = "tabPage39";
-            this.tabPage39.Size = new System.Drawing.Size(581, 341);
+            this.tabPage39.Size = new System.Drawing.Size(904, 490);
             this.tabPage39.TabIndex = 2;
             this.tabPage39.Text = "Document Approvals";
             this.tabPage39.UseVisualStyleBackColor = true;
@@ -741,7 +742,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvDocApprovals.Location = new System.Drawing.Point(0, 0);
             this.dgvDocApprovals.Name = "dgvDocApprovals";
             this.dgvDocApprovals.RowHeadersWidth = 51;
-            this.dgvDocApprovals.Size = new System.Drawing.Size(581, 341);
+            this.dgvDocApprovals.Size = new System.Drawing.Size(904, 490);
             this.dgvDocApprovals.TabIndex = 3;
             // 
             // approvalRole
@@ -785,7 +786,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvOp3_Feasibility.Location = new System.Drawing.Point(0, 0);
             this.dgvOp3_Feasibility.Name = "dgvOp3_Feasibility";
             this.dgvOp3_Feasibility.RowHeadersWidth = 51;
-            this.dgvOp3_Feasibility.Size = new System.Drawing.Size(863, 388);
+            this.dgvOp3_Feasibility.Size = new System.Drawing.Size(890, 458);
             this.dgvOp3_Feasibility.TabIndex = 15;
             // 
             // dataGridViewTextBoxColumn39
@@ -816,7 +817,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage8.Location = new System.Drawing.Point(4, 24);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(838, 592);
+            this.tabPage8.Size = new System.Drawing.Size(918, 524);
             this.tabPage8.TabIndex = 4;
             this.tabPage8.Text = "Implementation Approach";
             // 
@@ -832,7 +833,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabImplementationApp.Location = new System.Drawing.Point(3, 3);
             this.tabImplementationApp.Name = "tabImplementationApp";
             this.tabImplementationApp.SelectedIndex = 0;
-            this.tabImplementationApp.Size = new System.Drawing.Size(832, 586);
+            this.tabImplementationApp.Size = new System.Drawing.Size(912, 518);
             this.tabImplementationApp.TabIndex = 15;
             // 
             // tabPage43
@@ -841,7 +842,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage43.Location = new System.Drawing.Point(4, 24);
             this.tabPage43.Name = "tabPage43";
             this.tabPage43.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage43.Size = new System.Drawing.Size(824, 558);
+            this.tabPage43.Size = new System.Drawing.Size(904, 490);
             this.tabPage43.TabIndex = 0;
             this.tabPage43.Text = "Project Description";
             this.tabPage43.UseVisualStyleBackColor = true;
@@ -855,7 +856,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtIprojDescription.Location = new System.Drawing.Point(3, 3);
             this.txtIprojDescription.Multiline = true;
             this.txtIprojDescription.Name = "txtIprojDescription";
-            this.txtIprojDescription.Size = new System.Drawing.Size(818, 552);
+            this.txtIprojDescription.Size = new System.Drawing.Size(898, 484);
             this.txtIprojDescription.TabIndex = 1;
             this.txtIprojDescription.Text = "Description";
             // 
@@ -865,7 +866,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage44.Location = new System.Drawing.Point(4, 24);
             this.tabPage44.Name = "tabPage44";
             this.tabPage44.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage44.Size = new System.Drawing.Size(824, 558);
+            this.tabPage44.Size = new System.Drawing.Size(904, 490);
             this.tabPage44.TabIndex = 1;
             this.tabPage44.Text = "Project Initiation";
             this.tabPage44.UseVisualStyleBackColor = true;
@@ -879,7 +880,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtIAProjectInitiation.Location = new System.Drawing.Point(3, 3);
             this.txtIAProjectInitiation.Multiline = true;
             this.txtIAProjectInitiation.Name = "txtIAProjectInitiation";
-            this.txtIAProjectInitiation.Size = new System.Drawing.Size(818, 552);
+            this.txtIAProjectInitiation.Size = new System.Drawing.Size(898, 484);
             this.txtIAProjectInitiation.TabIndex = 2;
             // 
             // tabPage45
@@ -887,7 +888,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage45.Controls.Add(this.txtIAProjectPlanning);
             this.tabPage45.Location = new System.Drawing.Point(4, 24);
             this.tabPage45.Name = "tabPage45";
-            this.tabPage45.Size = new System.Drawing.Size(824, 558);
+            this.tabPage45.Size = new System.Drawing.Size(904, 490);
             this.tabPage45.TabIndex = 2;
             this.tabPage45.Text = "Project Planning";
             this.tabPage45.UseVisualStyleBackColor = true;
@@ -901,7 +902,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtIAProjectPlanning.Location = new System.Drawing.Point(0, 0);
             this.txtIAProjectPlanning.Multiline = true;
             this.txtIAProjectPlanning.Name = "txtIAProjectPlanning";
-            this.txtIAProjectPlanning.Size = new System.Drawing.Size(824, 558);
+            this.txtIAProjectPlanning.Size = new System.Drawing.Size(904, 490);
             this.txtIAProjectPlanning.TabIndex = 12;
             // 
             // tabPage46
@@ -909,7 +910,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage46.Controls.Add(this.txtIAProjectExecution);
             this.tabPage46.Location = new System.Drawing.Point(4, 24);
             this.tabPage46.Name = "tabPage46";
-            this.tabPage46.Size = new System.Drawing.Size(824, 558);
+            this.tabPage46.Size = new System.Drawing.Size(904, 490);
             this.tabPage46.TabIndex = 3;
             this.tabPage46.Text = "Project Execution";
             this.tabPage46.UseVisualStyleBackColor = true;
@@ -923,7 +924,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtIAProjectExecution.Location = new System.Drawing.Point(0, 0);
             this.txtIAProjectExecution.Multiline = true;
             this.txtIAProjectExecution.Name = "txtIAProjectExecution";
-            this.txtIAProjectExecution.Size = new System.Drawing.Size(824, 558);
+            this.txtIAProjectExecution.Size = new System.Drawing.Size(904, 490);
             this.txtIAProjectExecution.TabIndex = 13;
             // 
             // tabPage47
@@ -931,7 +932,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage47.Controls.Add(this.txtIAProjectClosure);
             this.tabPage47.Location = new System.Drawing.Point(4, 24);
             this.tabPage47.Name = "tabPage47";
-            this.tabPage47.Size = new System.Drawing.Size(824, 558);
+            this.tabPage47.Size = new System.Drawing.Size(904, 490);
             this.tabPage47.TabIndex = 4;
             this.tabPage47.Text = "Project Closure";
             this.tabPage47.UseVisualStyleBackColor = true;
@@ -945,7 +946,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtIAProjectClosure.Location = new System.Drawing.Point(0, 0);
             this.txtIAProjectClosure.Multiline = true;
             this.txtIAProjectClosure.Name = "txtIAProjectClosure";
-            this.txtIAProjectClosure.Size = new System.Drawing.Size(824, 558);
+            this.txtIAProjectClosure.Size = new System.Drawing.Size(904, 490);
             this.txtIAProjectClosure.TabIndex = 14;
             // 
             // tabPage48
@@ -953,7 +954,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage48.Controls.Add(this.txtIAProjectManagement);
             this.tabPage48.Location = new System.Drawing.Point(4, 24);
             this.tabPage48.Name = "tabPage48";
-            this.tabPage48.Size = new System.Drawing.Size(824, 558);
+            this.tabPage48.Size = new System.Drawing.Size(904, 490);
             this.tabPage48.TabIndex = 5;
             this.tabPage48.Text = "Project Management";
             this.tabPage48.UseVisualStyleBackColor = true;
@@ -967,15 +968,15 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtIAProjectManagement.Location = new System.Drawing.Point(0, 0);
             this.txtIAProjectManagement.Multiline = true;
             this.txtIAProjectManagement.Name = "txtIAProjectManagement";
-            this.txtIAProjectManagement.Size = new System.Drawing.Size(824, 558);
+            this.txtIAProjectManagement.Size = new System.Drawing.Size(904, 490);
             this.txtIAProjectManagement.TabIndex = 15;
             // 
             // tabPage27
             // 
             this.tabPage27.Controls.Add(this.dgvOp3_Feasibility);
-            this.tabPage27.Location = new System.Drawing.Point(4, 22);
+            this.tabPage27.Location = new System.Drawing.Point(4, 24);
             this.tabPage27.Name = "tabPage27";
-            this.tabPage27.Size = new System.Drawing.Size(863, 388);
+            this.tabPage27.Size = new System.Drawing.Size(890, 458);
             this.tabPage27.TabIndex = 3;
             this.tabPage27.Text = "Feasibility";
             this.tabPage27.UseVisualStyleBackColor = true;
@@ -983,9 +984,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             // tabPage28
             // 
             this.tabPage28.Controls.Add(this.dgvOp3_Risks);
-            this.tabPage28.Location = new System.Drawing.Point(4, 22);
+            this.tabPage28.Location = new System.Drawing.Point(4, 24);
             this.tabPage28.Name = "tabPage28";
-            this.tabPage28.Size = new System.Drawing.Size(863, 388);
+            this.tabPage28.Size = new System.Drawing.Size(890, 458);
             this.tabPage28.TabIndex = 4;
             this.tabPage28.Text = "Risks";
             this.tabPage28.UseVisualStyleBackColor = true;
@@ -1002,7 +1003,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvOp3_Risks.Location = new System.Drawing.Point(0, 0);
             this.dgvOp3_Risks.Name = "dgvOp3_Risks";
             this.dgvOp3_Risks.RowHeadersWidth = 51;
-            this.dgvOp3_Risks.Size = new System.Drawing.Size(863, 388);
+            this.dgvOp3_Risks.Size = new System.Drawing.Size(890, 458);
             this.dgvOp3_Risks.TabIndex = 16;
             // 
             // dataGridViewTextBoxColumn42
@@ -1036,9 +1037,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             // tabPage29
             // 
             this.tabPage29.Controls.Add(this.dgvOp3_Issues);
-            this.tabPage29.Location = new System.Drawing.Point(4, 22);
+            this.tabPage29.Location = new System.Drawing.Point(4, 24);
             this.tabPage29.Name = "tabPage29";
-            this.tabPage29.Size = new System.Drawing.Size(863, 388);
+            this.tabPage29.Size = new System.Drawing.Size(890, 458);
             this.tabPage29.TabIndex = 5;
             this.tabPage29.Text = "Issues";
             this.tabPage29.UseVisualStyleBackColor = true;
@@ -1054,7 +1055,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvOp3_Issues.Location = new System.Drawing.Point(0, 0);
             this.dgvOp3_Issues.Name = "dgvOp3_Issues";
             this.dgvOp3_Issues.RowHeadersWidth = 51;
-            this.dgvOp3_Issues.Size = new System.Drawing.Size(863, 388);
+            this.dgvOp3_Issues.Size = new System.Drawing.Size(890, 458);
             this.dgvOp3_Issues.TabIndex = 22;
             // 
             // dataGridViewTextBoxColumn46
@@ -1081,9 +1082,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             // tabPage30
             // 
             this.tabPage30.Controls.Add(this.txtOp3_Assumptions);
-            this.tabPage30.Location = new System.Drawing.Point(4, 22);
+            this.tabPage30.Location = new System.Drawing.Point(4, 24);
             this.tabPage30.Name = "tabPage30";
-            this.tabPage30.Size = new System.Drawing.Size(863, 388);
+            this.tabPage30.Size = new System.Drawing.Size(890, 458);
             this.tabPage30.TabIndex = 6;
             this.tabPage30.Text = "Assumptions";
             this.tabPage30.UseVisualStyleBackColor = true;
@@ -1097,7 +1098,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtOp3_Assumptions.Location = new System.Drawing.Point(0, 0);
             this.txtOp3_Assumptions.Multiline = true;
             this.txtOp3_Assumptions.Name = "txtOp3_Assumptions";
-            this.txtOp3_Assumptions.Size = new System.Drawing.Size(863, 388);
+            this.txtOp3_Assumptions.Size = new System.Drawing.Size(890, 458);
             this.txtOp3_Assumptions.TabIndex = 25;
             this.txtOp3_Assumptions.Text = "Assumptions";
             // 
@@ -1135,7 +1136,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage9.Location = new System.Drawing.Point(4, 24);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(838, 592);
+            this.tabPage9.Size = new System.Drawing.Size(918, 524);
             this.tabPage9.TabIndex = 5;
             this.tabPage9.Text = "Appendix";
             // 
@@ -1176,7 +1177,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtOp2_Desc.Location = new System.Drawing.Point(3, 3);
             this.txtOp2_Desc.Multiline = true;
             this.txtOp2_Desc.Name = "txtOp2_Desc";
-            this.txtOp2_Desc.Size = new System.Drawing.Size(804, 518);
+            this.txtOp2_Desc.Size = new System.Drawing.Size(884, 450);
             this.txtOp2_Desc.TabIndex = 17;
             this.txtOp2_Desc.Text = "Description";
             // 
@@ -1190,9 +1191,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             // tabPage21
             // 
             this.tabPage21.Controls.Add(this.dgvOp1_Risks);
-            this.tabPage21.Location = new System.Drawing.Point(4, 22);
+            this.tabPage21.Location = new System.Drawing.Point(4, 24);
             this.tabPage21.Name = "tabPage21";
-            this.tabPage21.Size = new System.Drawing.Size(863, 388);
+            this.tabPage21.Size = new System.Drawing.Size(890, 456);
             this.tabPage21.TabIndex = 4;
             this.tabPage21.Text = "Risks";
             this.tabPage21.UseVisualStyleBackColor = true;
@@ -1209,7 +1210,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvOp1_Risks.Location = new System.Drawing.Point(0, 0);
             this.dgvOp1_Risks.Name = "dgvOp1_Risks";
             this.dgvOp1_Risks.RowHeadersWidth = 51;
-            this.dgvOp1_Risks.Size = new System.Drawing.Size(863, 388);
+            this.dgvOp1_Risks.Size = new System.Drawing.Size(890, 456);
             this.dgvOp1_Risks.TabIndex = 16;
             // 
             // dataGridViewTextBoxColumn25
@@ -1243,9 +1244,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             // tabPage22
             // 
             this.tabPage22.Controls.Add(this.dgvOp1_Issues);
-            this.tabPage22.Location = new System.Drawing.Point(4, 22);
+            this.tabPage22.Location = new System.Drawing.Point(4, 24);
             this.tabPage22.Name = "tabPage22";
-            this.tabPage22.Size = new System.Drawing.Size(863, 388);
+            this.tabPage22.Size = new System.Drawing.Size(890, 456);
             this.tabPage22.TabIndex = 5;
             this.tabPage22.Text = "Issues";
             this.tabPage22.UseVisualStyleBackColor = true;
@@ -1261,7 +1262,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvOp1_Issues.Location = new System.Drawing.Point(0, 0);
             this.dgvOp1_Issues.Name = "dgvOp1_Issues";
             this.dgvOp1_Issues.RowHeadersWidth = 51;
-            this.dgvOp1_Issues.Size = new System.Drawing.Size(863, 388);
+            this.dgvOp1_Issues.Size = new System.Drawing.Size(890, 456);
             this.dgvOp1_Issues.TabIndex = 22;
             // 
             // dataGridViewTextBoxColumn29
@@ -1288,9 +1289,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             // tabPage23
             // 
             this.tabPage23.Controls.Add(this.txtOp1_Assumptions);
-            this.tabPage23.Location = new System.Drawing.Point(4, 22);
+            this.tabPage23.Location = new System.Drawing.Point(4, 24);
             this.tabPage23.Name = "tabPage23";
-            this.tabPage23.Size = new System.Drawing.Size(863, 388);
+            this.tabPage23.Size = new System.Drawing.Size(890, 456);
             this.tabPage23.TabIndex = 6;
             this.tabPage23.Text = "Assumptions";
             this.tabPage23.UseVisualStyleBackColor = true;
@@ -1304,7 +1305,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtOp1_Assumptions.Location = new System.Drawing.Point(0, 0);
             this.txtOp1_Assumptions.Multiline = true;
             this.txtOp1_Assumptions.Name = "txtOp1_Assumptions";
-            this.txtOp1_Assumptions.Size = new System.Drawing.Size(863, 388);
+            this.txtOp1_Assumptions.Size = new System.Drawing.Size(890, 456);
             this.txtOp1_Assumptions.TabIndex = 25;
             this.txtOp1_Assumptions.Text = "Assumptions";
             // 
@@ -1315,7 +1316,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage5.Location = new System.Drawing.Point(4, 24);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(824, 558);
+            this.tabPage5.Size = new System.Drawing.Size(904, 490);
             this.tabPage5.TabIndex = 1;
             this.tabPage5.Text = "Option 2";
             // 
@@ -1332,7 +1333,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabOption2.Location = new System.Drawing.Point(3, 3);
             this.tabOption2.Name = "tabOption2";
             this.tabOption2.SelectedIndex = 0;
-            this.tabOption2.Size = new System.Drawing.Size(818, 552);
+            this.tabOption2.Size = new System.Drawing.Size(898, 484);
             this.tabOption2.TabIndex = 23;
             // 
             // tabPage10
@@ -1341,7 +1342,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage10.Location = new System.Drawing.Point(4, 24);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(810, 524);
+            this.tabPage10.Size = new System.Drawing.Size(890, 456);
             this.tabPage10.TabIndex = 0;
             this.tabPage10.Text = "Description";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -1349,10 +1350,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             // tabPage11
             // 
             this.tabPage11.Controls.Add(this.dgvOp2_Benefits);
-            this.tabPage11.Location = new System.Drawing.Point(4, 22);
+            this.tabPage11.Location = new System.Drawing.Point(4, 24);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(863, 388);
+            this.tabPage11.Size = new System.Drawing.Size(890, 458);
             this.tabPage11.TabIndex = 1;
             this.tabPage11.Text = "Benefits";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -1368,7 +1369,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvOp2_Benefits.Location = new System.Drawing.Point(3, 3);
             this.dgvOp2_Benefits.Name = "dgvOp2_Benefits";
             this.dgvOp2_Benefits.RowHeadersWidth = 51;
-            this.dgvOp2_Benefits.Size = new System.Drawing.Size(857, 382);
+            this.dgvOp2_Benefits.Size = new System.Drawing.Size(884, 452);
             this.dgvOp2_Benefits.TabIndex = 13;
             // 
             // dataGridViewTextBoxColumn1
@@ -1395,9 +1396,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             // tabPage12
             // 
             this.tabPage12.Controls.Add(this.dgvOp2_Costs);
-            this.tabPage12.Location = new System.Drawing.Point(4, 22);
+            this.tabPage12.Location = new System.Drawing.Point(4, 24);
             this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Size = new System.Drawing.Size(863, 388);
+            this.tabPage12.Size = new System.Drawing.Size(890, 458);
             this.tabPage12.TabIndex = 2;
             this.tabPage12.Text = "Costs";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -1414,7 +1415,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvOp2_Costs.Location = new System.Drawing.Point(0, 0);
             this.dgvOp2_Costs.Name = "dgvOp2_Costs";
             this.dgvOp2_Costs.RowHeadersWidth = 51;
-            this.dgvOp2_Costs.Size = new System.Drawing.Size(863, 388);
+            this.dgvOp2_Costs.Size = new System.Drawing.Size(890, 458);
             this.dgvOp2_Costs.TabIndex = 14;
             // 
             // dataGridViewTextBoxColumn4
@@ -1448,9 +1449,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             // tabPage13
             // 
             this.tabPage13.Controls.Add(this.dgvOp2_Feas);
-            this.tabPage13.Location = new System.Drawing.Point(4, 22);
+            this.tabPage13.Location = new System.Drawing.Point(4, 24);
             this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Size = new System.Drawing.Size(863, 388);
+            this.tabPage13.Size = new System.Drawing.Size(890, 458);
             this.tabPage13.TabIndex = 3;
             this.tabPage13.Text = "Feasibility";
             this.tabPage13.UseVisualStyleBackColor = true;
@@ -1466,7 +1467,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvOp2_Feas.Location = new System.Drawing.Point(0, 0);
             this.dgvOp2_Feas.Name = "dgvOp2_Feas";
             this.dgvOp2_Feas.RowHeadersWidth = 51;
-            this.dgvOp2_Feas.Size = new System.Drawing.Size(863, 388);
+            this.dgvOp2_Feas.Size = new System.Drawing.Size(890, 458);
             this.dgvOp2_Feas.TabIndex = 15;
             // 
             // Solution
@@ -1493,9 +1494,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             // tabPage14
             // 
             this.tabPage14.Controls.Add(this.dgvOp2_Risks);
-            this.tabPage14.Location = new System.Drawing.Point(4, 22);
+            this.tabPage14.Location = new System.Drawing.Point(4, 24);
             this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Size = new System.Drawing.Size(863, 388);
+            this.tabPage14.Size = new System.Drawing.Size(890, 458);
             this.tabPage14.TabIndex = 4;
             this.tabPage14.Text = "Risks";
             this.tabPage14.UseVisualStyleBackColor = true;
@@ -1512,7 +1513,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvOp2_Risks.Location = new System.Drawing.Point(0, 0);
             this.dgvOp2_Risks.Name = "dgvOp2_Risks";
             this.dgvOp2_Risks.RowHeadersWidth = 51;
-            this.dgvOp2_Risks.Size = new System.Drawing.Size(863, 388);
+            this.dgvOp2_Risks.Size = new System.Drawing.Size(890, 458);
             this.dgvOp2_Risks.TabIndex = 16;
             // 
             // dataGridViewTextBoxColumn8
@@ -1546,9 +1547,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             // tabPage15
             // 
             this.tabPage15.Controls.Add(this.dgvOp2_Issues);
-            this.tabPage15.Location = new System.Drawing.Point(4, 22);
+            this.tabPage15.Location = new System.Drawing.Point(4, 24);
             this.tabPage15.Name = "tabPage15";
-            this.tabPage15.Size = new System.Drawing.Size(863, 388);
+            this.tabPage15.Size = new System.Drawing.Size(890, 458);
             this.tabPage15.TabIndex = 5;
             this.tabPage15.Text = "Issues";
             this.tabPage15.UseVisualStyleBackColor = true;
@@ -1564,7 +1565,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvOp2_Issues.Location = new System.Drawing.Point(0, 0);
             this.dgvOp2_Issues.Name = "dgvOp2_Issues";
             this.dgvOp2_Issues.RowHeadersWidth = 51;
-            this.dgvOp2_Issues.Size = new System.Drawing.Size(863, 388);
+            this.dgvOp2_Issues.Size = new System.Drawing.Size(890, 458);
             this.dgvOp2_Issues.TabIndex = 22;
             // 
             // dataGridViewTextBoxColumn12
@@ -1591,9 +1592,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             // tabPage16
             // 
             this.tabPage16.Controls.Add(this.txtOp2_Assumptions);
-            this.tabPage16.Location = new System.Drawing.Point(4, 22);
+            this.tabPage16.Location = new System.Drawing.Point(4, 24);
             this.tabPage16.Name = "tabPage16";
-            this.tabPage16.Size = new System.Drawing.Size(863, 388);
+            this.tabPage16.Size = new System.Drawing.Size(890, 458);
             this.tabPage16.TabIndex = 6;
             this.tabPage16.Text = "Assumptions";
             this.tabPage16.UseVisualStyleBackColor = true;
@@ -1607,7 +1608,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtOp2_Assumptions.Location = new System.Drawing.Point(0, 0);
             this.txtOp2_Assumptions.Multiline = true;
             this.txtOp2_Assumptions.Name = "txtOp2_Assumptions";
-            this.txtOp2_Assumptions.Size = new System.Drawing.Size(863, 388);
+            this.txtOp2_Assumptions.Size = new System.Drawing.Size(890, 458);
             this.txtOp2_Assumptions.TabIndex = 25;
             this.txtOp2_Assumptions.Text = "Assumptions";
             // 
@@ -1627,6 +1628,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             // 
             // tabControl1
             // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
@@ -1634,10 +1638,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Controls.Add(this.tabPage9);
             this.tabControl1.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(-48, 81);
+            this.tabControl1.Location = new System.Drawing.Point(12, 67);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(603, 403);
+            this.tabControl1.Size = new System.Drawing.Size(926, 552);
             this.tabControl1.TabIndex = 5;
             // 
             // tabPage1
@@ -1648,7 +1652,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(595, 375);
+            this.tabPage1.Size = new System.Drawing.Size(918, 524);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Document Control";
             // 
@@ -1660,7 +1664,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(891, 454);
+            this.tabPage2.Size = new System.Drawing.Size(918, 524);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Executive Summary & Business Problem";
             // 
@@ -1673,7 +1677,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(838, 592);
+            this.tabPage3.Size = new System.Drawing.Size(918, 524);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Alternative Solutions";
             // 
@@ -1686,7 +1690,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabOptions.Location = new System.Drawing.Point(3, 3);
             this.tabOptions.Name = "tabOptions";
             this.tabOptions.SelectedIndex = 0;
-            this.tabOptions.Size = new System.Drawing.Size(832, 586);
+            this.tabOptions.Size = new System.Drawing.Size(912, 518);
             this.tabOptions.TabIndex = 3;
             // 
             // tabPage4
@@ -1697,7 +1701,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage4.Location = new System.Drawing.Point(4, 24);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(824, 558);
+            this.tabPage4.Size = new System.Drawing.Size(904, 490);
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "Option 1";
             // 
@@ -1714,7 +1718,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabOption1.Location = new System.Drawing.Point(3, 3);
             this.tabOption1.Name = "tabOption1";
             this.tabOption1.SelectedIndex = 0;
-            this.tabOption1.Size = new System.Drawing.Size(818, 552);
+            this.tabOption1.Size = new System.Drawing.Size(898, 484);
             this.tabOption1.TabIndex = 24;
             // 
             // tabPage17
@@ -1723,7 +1727,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage17.Location = new System.Drawing.Point(4, 24);
             this.tabPage17.Name = "tabPage17";
             this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage17.Size = new System.Drawing.Size(810, 524);
+            this.tabPage17.Size = new System.Drawing.Size(890, 456);
             this.tabPage17.TabIndex = 0;
             this.tabPage17.Text = "Description";
             this.tabPage17.UseVisualStyleBackColor = true;
@@ -1737,7 +1741,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtOp1_Desc.Location = new System.Drawing.Point(3, 3);
             this.txtOp1_Desc.Multiline = true;
             this.txtOp1_Desc.Name = "txtOp1_Desc";
-            this.txtOp1_Desc.Size = new System.Drawing.Size(804, 518);
+            this.txtOp1_Desc.Size = new System.Drawing.Size(884, 450);
             this.txtOp1_Desc.TabIndex = 17;
             this.txtOp1_Desc.Text = "Description";
             // 
@@ -1747,21 +1751,21 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage18.Location = new System.Drawing.Point(4, 24);
             this.tabPage18.Name = "tabPage18";
             this.tabPage18.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage18.Size = new System.Drawing.Size(810, 524);
+            this.tabPage18.Size = new System.Drawing.Size(890, 456);
             this.tabPage18.TabIndex = 1;
             this.tabPage18.Text = "Benefits";
             this.tabPage18.UseVisualStyleBackColor = true;
             // 
             // dgvOp1_Benefits
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvOp1_Benefits.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvOp1_Benefits.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvOp1_Benefits.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvOp1_Benefits.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn15,
@@ -1771,7 +1775,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvOp1_Benefits.Location = new System.Drawing.Point(3, 3);
             this.dgvOp1_Benefits.Name = "dgvOp1_Benefits";
             this.dgvOp1_Benefits.RowHeadersWidth = 51;
-            this.dgvOp1_Benefits.Size = new System.Drawing.Size(804, 518);
+            this.dgvOp1_Benefits.Size = new System.Drawing.Size(884, 450);
             this.dgvOp1_Benefits.TabIndex = 13;
             // 
             // tabPage19
@@ -1779,7 +1783,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage19.Controls.Add(this.dgvOp1_Costs);
             this.tabPage19.Location = new System.Drawing.Point(4, 24);
             this.tabPage19.Name = "tabPage19";
-            this.tabPage19.Size = new System.Drawing.Size(810, 524);
+            this.tabPage19.Size = new System.Drawing.Size(890, 456);
             this.tabPage19.TabIndex = 2;
             this.tabPage19.Text = "Costs";
             this.tabPage19.UseVisualStyleBackColor = true;
@@ -1796,7 +1800,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvOp1_Costs.Location = new System.Drawing.Point(0, 0);
             this.dgvOp1_Costs.Name = "dgvOp1_Costs";
             this.dgvOp1_Costs.RowHeadersWidth = 51;
-            this.dgvOp1_Costs.Size = new System.Drawing.Size(810, 524);
+            this.dgvOp1_Costs.Size = new System.Drawing.Size(890, 456);
             this.dgvOp1_Costs.TabIndex = 14;
             // 
             // dataGridViewTextBoxColumn18
@@ -1830,9 +1834,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             // tabPage20
             // 
             this.tabPage20.Controls.Add(this.dgvOp1_Feas);
-            this.tabPage20.Location = new System.Drawing.Point(4, 22);
+            this.tabPage20.Location = new System.Drawing.Point(4, 24);
             this.tabPage20.Name = "tabPage20";
-            this.tabPage20.Size = new System.Drawing.Size(863, 388);
+            this.tabPage20.Size = new System.Drawing.Size(890, 456);
             this.tabPage20.TabIndex = 3;
             this.tabPage20.Text = "Feasibility";
             this.tabPage20.UseVisualStyleBackColor = true;
@@ -1848,7 +1852,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvOp1_Feas.Location = new System.Drawing.Point(0, 0);
             this.dgvOp1_Feas.Name = "dgvOp1_Feas";
             this.dgvOp1_Feas.RowHeadersWidth = 51;
-            this.dgvOp1_Feas.Size = new System.Drawing.Size(863, 388);
+            this.dgvOp1_Feas.Size = new System.Drawing.Size(890, 456);
             this.dgvOp1_Feas.TabIndex = 15;
             // 
             // tabPage6
@@ -1858,7 +1862,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage6.Location = new System.Drawing.Point(4, 24);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(824, 558);
+            this.tabPage6.Size = new System.Drawing.Size(904, 490);
             this.tabPage6.TabIndex = 2;
             this.tabPage6.Text = "Option 3";
             // 
@@ -1875,7 +1879,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabOption3.Location = new System.Drawing.Point(3, 3);
             this.tabOption3.Name = "tabOption3";
             this.tabOption3.SelectedIndex = 0;
-            this.tabOption3.Size = new System.Drawing.Size(818, 552);
+            this.tabOption3.Size = new System.Drawing.Size(898, 484);
             this.tabOption3.TabIndex = 24;
             // 
             // tabPage24
@@ -1884,7 +1888,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabPage24.Location = new System.Drawing.Point(4, 24);
             this.tabPage24.Name = "tabPage24";
             this.tabPage24.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage24.Size = new System.Drawing.Size(810, 524);
+            this.tabPage24.Size = new System.Drawing.Size(890, 456);
             this.tabPage24.TabIndex = 0;
             this.tabPage24.Text = "Description";
             this.tabPage24.UseVisualStyleBackColor = true;
@@ -1898,17 +1902,17 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtOp3_Desc.Location = new System.Drawing.Point(3, 3);
             this.txtOp3_Desc.Multiline = true;
             this.txtOp3_Desc.Name = "txtOp3_Desc";
-            this.txtOp3_Desc.Size = new System.Drawing.Size(804, 518);
+            this.txtOp3_Desc.Size = new System.Drawing.Size(884, 450);
             this.txtOp3_Desc.TabIndex = 17;
             this.txtOp3_Desc.Text = "Description";
             // 
             // tabPage25
             // 
             this.tabPage25.Controls.Add(this.dgvOp3_Benefits);
-            this.tabPage25.Location = new System.Drawing.Point(4, 22);
+            this.tabPage25.Location = new System.Drawing.Point(4, 24);
             this.tabPage25.Name = "tabPage25";
             this.tabPage25.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage25.Size = new System.Drawing.Size(863, 388);
+            this.tabPage25.Size = new System.Drawing.Size(890, 458);
             this.tabPage25.TabIndex = 1;
             this.tabPage25.Text = "Benefits";
             this.tabPage25.UseVisualStyleBackColor = true;
@@ -1924,7 +1928,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvOp3_Benefits.Location = new System.Drawing.Point(3, 3);
             this.dgvOp3_Benefits.Name = "dgvOp3_Benefits";
             this.dgvOp3_Benefits.RowHeadersWidth = 51;
-            this.dgvOp3_Benefits.Size = new System.Drawing.Size(857, 382);
+            this.dgvOp3_Benefits.Size = new System.Drawing.Size(884, 452);
             this.dgvOp3_Benefits.TabIndex = 13;
             // 
             // dataGridViewTextBoxColumn32
@@ -1951,9 +1955,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             // tabPage26
             // 
             this.tabPage26.Controls.Add(this.dgvOp3_Costs);
-            this.tabPage26.Location = new System.Drawing.Point(4, 22);
+            this.tabPage26.Location = new System.Drawing.Point(4, 24);
             this.tabPage26.Name = "tabPage26";
-            this.tabPage26.Size = new System.Drawing.Size(863, 388);
+            this.tabPage26.Size = new System.Drawing.Size(890, 458);
             this.tabPage26.TabIndex = 2;
             this.tabPage26.Text = "Costs";
             this.tabPage26.UseVisualStyleBackColor = true;
@@ -1970,7 +1974,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.dgvOp3_Costs.Location = new System.Drawing.Point(0, 0);
             this.dgvOp3_Costs.Name = "dgvOp3_Costs";
             this.dgvOp3_Costs.RowHeadersWidth = 51;
-            this.dgvOp3_Costs.Size = new System.Drawing.Size(863, 388);
+            this.dgvOp3_Costs.Size = new System.Drawing.Size(890, 458);
             this.dgvOp3_Costs.TabIndex = 14;
             // 
             // dataGridViewTextBoxColumn35
@@ -2009,18 +2013,19 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             // 
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Location = new System.Drawing.Point(442, 12);
+            this.btnSave.Location = new System.Drawing.Point(420, 12);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(87, 35);
             this.btnSave.TabIndex = 7;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnExport
             // 
             this.btnExport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExport.Location = new System.Drawing.Point(590, 12);
+            this.btnExport.Location = new System.Drawing.Point(524, 12);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(108, 35);
             this.btnExport.TabIndex = 8;
@@ -2032,7 +2037,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(846, 620);
+            this.ClientSize = new System.Drawing.Size(950, 631);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label27);
@@ -2040,6 +2045,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.Controls.Add(this.txtProjectName);
             this.Name = "BusinessCaseDocumentForm";
             this.Text = "BusinessCaseDocumentForm";
+            this.Load += new System.EventHandler(this.BusinessCaseDocumentForm_Load);
             this.tabPage7.ResumeLayout(false);
             this.tabRecommendedSolution.ResumeLayout(false);
             this.tabPage40.ResumeLayout(false);

@@ -128,7 +128,9 @@ namespace ProjectManagementToolkit
 
         private void templateToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            BusinessCaseDocumentForm businessCaseDocumentForm = new BusinessCaseDocumentForm();
+            businessCaseDocumentForm.Show();
+            businessCaseDocumentForm.MdiParent = this;
         }
 
         private void templateToolStripMenuItem1_Click(object sender, EventArgs e)
