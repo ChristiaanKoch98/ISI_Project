@@ -417,5 +417,17 @@ namespace ProjectManagementToolkit
             form.Show();
             form.MdiParent = this;
         }
+
+        private void dashboardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProjectDashboard form = new ProjectDashboard();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void templateToolStripMenuItem13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
