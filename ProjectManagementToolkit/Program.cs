@@ -17,7 +17,7 @@ namespace ProjectManagementToolkit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FeasibiltyStudyDocumentForm());
+            Application.Run(new Login());
         }
     }
 }
