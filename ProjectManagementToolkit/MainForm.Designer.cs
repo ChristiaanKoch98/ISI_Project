@@ -1078,6 +1078,7 @@
             this.issueRegisterToolStripMenuItem.Name = "issueRegisterToolStripMenuItem";
             this.issueRegisterToolStripMenuItem.Size = new System.Drawing.Size(269, 26);
             this.issueRegisterToolStripMenuItem.Text = "Issue Register";
+            this.issueRegisterToolStripMenuItem.Click += new System.EventHandler(this.issueRegisterToolStripMenuItem_Click);
             // 
             // exampleToolStripMenuItem25
             // 

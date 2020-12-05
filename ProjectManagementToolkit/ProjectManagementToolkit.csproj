@@ -424,6 +424,7 @@
     <Compile Include="MPMM\MPMM Document Models\FinancialPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\IssueFormModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\IssueManagementProcessModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\IssueRegisterModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\JobDescriptionModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\PhaseReviewFormExecutionModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\PhaseReviewFormInitiationModel.cs" />

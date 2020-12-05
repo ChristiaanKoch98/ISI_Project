@@ -420,5 +420,12 @@ namespace ProjectManagementToolkit
             form.Show();
             form.MdiParent = this;
         }
+
+        private void issueRegisterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IssueRegisterForm issueRegisterForm = new IssueRegisterForm();
+            issueRegisterForm.Show();
+            issueRegisterForm.MdiParent = this;
+        }
     }
 }

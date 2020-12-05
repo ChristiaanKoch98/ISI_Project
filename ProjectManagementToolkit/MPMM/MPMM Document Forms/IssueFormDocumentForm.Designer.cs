@@ -55,10 +55,11 @@
             this.txtSignature = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtDate = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.txtIssueFormProjectName = new System.Windows.Forms.TextBox();
             this.btnExport = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnNewForm = new System.Windows.Forms.Button();
+            this.cmbIssueForms = new System.Windows.Forms.ComboBox();
             this.tbpIssueDescription.SuspendLayout();
             this.tbcQualityReviewForm.SuspendLayout();
             this.tbpInformation.SuspendLayout();
@@ -392,42 +393,18 @@
             this.txtDate.Size = new System.Drawing.Size(227, 24);
             this.txtDate.TabIndex = 23;
             // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(15, 27);
-            this.label27.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(239, 16);
-            this.label27.TabIndex = 17;
-            this.label27.Text = "Please Enter Your Project Name:";
-            // 
-            // txtIssueFormProjectName
-            // 
-            this.txtIssueFormProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.txtIssueFormProjectName.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIssueFormProjectName.ForeColor = System.Drawing.Color.Black;
-            this.txtIssueFormProjectName.Location = new System.Drawing.Point(264, 24);
-            this.txtIssueFormProjectName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txtIssueFormProjectName.Name = "txtIssueFormProjectName";
-            this.txtIssueFormProjectName.Size = new System.Drawing.Size(314, 24);
-            this.txtIssueFormProjectName.TabIndex = 16;
-            this.txtIssueFormProjectName.Text = "Project Name";
-            // 
             // btnExport
             // 
             this.btnExport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnExport.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExport.ForeColor = System.Drawing.Color.Black;
-            this.btnExport.Location = new System.Drawing.Point(767, 21);
+            this.btnExport.Location = new System.Drawing.Point(778, 12);
             this.btnExport.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(130, 27);
+            this.btnExport.Size = new System.Drawing.Size(130, 44);
             this.btnExport.TabIndex = 29;
-            this.btnExport.Text = "Export to Word";
+            this.btnExport.Text = "Export Current Form to Word";
             this.btnExport.UseVisualStyleBackColor = false;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
@@ -437,14 +414,54 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSave.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSave.Location = new System.Drawing.Point(616, 21);
+            this.btnSave.Location = new System.Drawing.Point(20, 12);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(130, 27);
+            this.btnSave.Size = new System.Drawing.Size(130, 44);
             this.btnSave.TabIndex = 28;
-            this.btnSave.Text = "Save";
+            this.btnSave.Text = "Save Current Form";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDelete.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnDelete.Location = new System.Drawing.Point(173, 12);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(130, 44);
+            this.btnDelete.TabIndex = 30;
+            this.btnDelete.Text = "Delete Current Form";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnNewForm
+            // 
+            this.btnNewForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnNewForm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNewForm.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewForm.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnNewForm.Location = new System.Drawing.Point(324, 12);
+            this.btnNewForm.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnNewForm.Name = "btnNewForm";
+            this.btnNewForm.Size = new System.Drawing.Size(130, 44);
+            this.btnNewForm.TabIndex = 31;
+            this.btnNewForm.Text = "Add New Form";
+            this.btnNewForm.UseVisualStyleBackColor = false;
+            this.btnNewForm.Click += new System.EventHandler(this.btnNewForm_Click);
+            // 
+            // cmbIssueForms
+            // 
+            this.cmbIssueForms.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbIssueForms.FormattingEnabled = true;
+            this.cmbIssueForms.Location = new System.Drawing.Point(461, 12);
+            this.cmbIssueForms.Name = "cmbIssueForms";
+            this.cmbIssueForms.Size = new System.Drawing.Size(310, 24);
+            this.cmbIssueForms.TabIndex = 32;
+            this.cmbIssueForms.SelectedIndexChanged += new System.EventHandler(this.cmbIssueForms_SelectedIndexChanged);
             // 
             // IssueFormDocumentForm
             // 
@@ -452,16 +469,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1332, 687);
+            this.Controls.Add(this.cmbIssueForms);
+            this.Controls.Add(this.btnNewForm);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tbcQualityReviewForm);
-            this.Controls.Add(this.label27);
-            this.Controls.Add(this.txtIssueFormProjectName);
             this.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "IssueFormDocumentForm";
-            this.Text = "Issue Form";
+            this.Text = "Add New Form";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.IssueFormDocumentForm_Load);
             this.tbpIssueDescription.ResumeLayout(false);
@@ -478,7 +496,6 @@
             this.pnlSupportingDocumentation.ResumeLayout(false);
             this.pnlSupportingDocumentation.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -488,8 +505,6 @@
         private System.Windows.Forms.TabPage tbpIssueImpact;
         private System.Windows.Forms.TabPage tbpIssueResolution;
         private System.Windows.Forms.TabPage tbpApprovalDetails;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox txtIssueFormProjectName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtRaisedBy;
@@ -515,5 +530,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel pnlSupportingDocumentation;
         private System.Windows.Forms.TextBox txtSupportingDocumentation;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnNewForm;
+        private System.Windows.Forms.ComboBox cmbIssueForms;
     }
 }
