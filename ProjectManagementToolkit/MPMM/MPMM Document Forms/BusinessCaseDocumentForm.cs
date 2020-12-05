@@ -512,14 +512,14 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 currentBusinessCaseModel = JsonConvert.DeserializeObject<BusinessCaseModel>(JsonConvert.SerializeObject(newBusinessCaseModel));
 
                 string json = JsonConvert.SerializeObject(versionControl);
-                JsonHelper.saveDocument(json, Settings.Default.ProjectID, "FinancialPlan");
+                JsonHelper.saveDocument(json, Settings.Default.ProjectID, "BusinessCase");
                 MessageBox.Show("Business case document saved successfully", "save", MessageBoxButtons.OK);
             }
         }
 
         public void LoadDoc()
         {
-            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "FinancialPlan");
+            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "BusinessCase");
             List<string[]> documentInfo = new List<string[]>();
             newBusinessCaseModel = new BusinessCaseModel();
             currentBusinessCaseModel = new BusinessCaseModel();
