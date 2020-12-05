@@ -100,6 +100,12 @@
     <Compile Include="MPMM\MPMM Document Forms\AcceptanceRegister.Designer.cs">
       <DependentUpon>AcceptanceRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\BusinessCaseDocumentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\BusinessCaseDocumentForm.Designer.cs">
+      <DependentUpon>BusinessCaseDocumentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MPMM\MPMM Document Forms\ChangeManagementProcessDocumentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,6 +256,9 @@
     <Compile Include="MPMM\MPMM Document Forms\projectCharterForm.Designer.cs">
       <DependentUpon>projectCharterForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\BusinessCaseDocumentForm.resx">
+      <DependentUpon>BusinessCaseDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\IssueFormDocumentForm.resx">
       <DependentUpon>IssueFormDocumentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -400,6 +409,7 @@
     <Compile Include="MPMM\MPMM Document Models\AcceptanceFormModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\AcceptanceManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\AcceptancePlanModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\BusinessCaseModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ChangeManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ChangeRequestModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\CommunicationsManagementProcessModel.cs" />

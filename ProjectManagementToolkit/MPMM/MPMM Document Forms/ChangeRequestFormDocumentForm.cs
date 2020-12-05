@@ -250,14 +250,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            saveDocument();
-        }
-
-        private void btnExport_Click(object sender, EventArgs e)
-        {
-            exportToWord();
-        }
+        
     }
 }
