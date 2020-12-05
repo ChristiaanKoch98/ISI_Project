@@ -33,26 +33,26 @@ namespace ProjectManagementToolkit
                 MdiClient client = control as MdiClient;
                 if (!(client == null))
                 {
-                    client.BackColor = Color.FromArgb(34, 36, 49);
+                    client.BackColor = Color.FromArgb(209, 237, 242);
                     break;
                 }
             }
 
             foreach (ToolStripMenuItem item in menuStrip1.Items)
             {
-                item.BackColor = Color.FromArgb(141, 143, 149);
+                item.BackColor = Color.FromArgb(73, 173, 252);
                 item.ForeColor = Color.FromArgb(32, 32, 32);
                 foreach (ToolStripMenuItem children in item.DropDownItems)
                 {
-                    children.BackColor = Color.FromArgb(128,128,128);
+                    children.BackColor = Color.FromArgb(73, 173, 252);
                     children.ForeColor = Color.FromArgb(32, 32, 32);
                     foreach (ToolStripMenuItem child in children.DropDownItems)
                     {
-                        child.BackColor = Color.FromArgb(128, 128, 128);
+                        child.BackColor = Color.FromArgb(73, 173, 252);
                         child.ForeColor = Color.FromArgb(32, 32, 32);
                         foreach (ToolStripMenuItem InnerChild in child.DropDownItems)
                         {
-                            InnerChild.BackColor = Color.FromArgb(128, 128, 128);
+                            InnerChild.BackColor = Color.FromArgb(73, 173, 252);
                             InnerChild.ForeColor = Color.FromArgb(32, 32, 32);
                         }
                     }
@@ -61,6 +61,7 @@ namespace ProjectManagementToolkit
 
             ToolStripLabel toolStripLabel = new ToolStripLabel();
             toolStripLabel.Text = "Project ID: ";
+            toolStripLabel.BackColor = Color.FromArgb(73, 173, 252);
             menuStrip1.Items.Add(toolStripLabel);
 
             ToolStripTextBox txtProjectID = new ToolStripTextBox();
@@ -126,7 +127,9 @@ namespace ProjectManagementToolkit
 
         private void templateToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            BusinessCaseDocumentForm businessCaseDocumentForm = new BusinessCaseDocumentForm();
+            businessCaseDocumentForm.Show();
+            businessCaseDocumentForm.MdiParent = this;
         }
 
         private void templateToolStripMenuItem1_Click(object sender, EventArgs e)

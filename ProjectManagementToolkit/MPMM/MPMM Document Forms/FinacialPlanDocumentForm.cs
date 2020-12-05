@@ -81,6 +81,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 documentHistory.changes = tempChanges;
                 documentHistories.Add(documentHistory);
             }
+
             newFinancialPlanModel.documentHistories = documentHistories;
 
             List<FinancialPlanModel.DocumentApprovals> documentApprovals = new List<FinancialPlanModel.DocumentApprovals>();
