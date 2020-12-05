@@ -69,6 +69,8 @@
             this.btnProjectCode.Size = new System.Drawing.Size(319, 28);
             this.btnProjectCode.TabIndex = 15;
             this.btnProjectCode.Text = "Add Existing Project";
+            this.btnProjectCode.UseVisualStyleBackColor = true;
+            this.btnProjectCode.Click += new System.EventHandler(this.btnProjectCode_Click);
             this.btnProjectCode.UseVisualStyleBackColor = false;
             // 
             // txtProjectCode
@@ -157,7 +159,7 @@
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(11, 237);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(144, 16);
+            this.label10.Size = new System.Drawing.Size(109, 12);
             this.label10.TabIndex = 19;
             this.label10.Text = "Project Office Manager";
             // 
@@ -171,7 +173,7 @@
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(11, 205);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(166, 16);
+            this.label9.Size = new System.Drawing.Size(126, 12);
             this.label9.TabIndex = 17;
             this.label9.Text = "Communications Manager";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -186,7 +188,7 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(11, 175);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(144, 16);
+            this.label8.Size = new System.Drawing.Size(109, 12);
             this.label8.TabIndex = 15;
             this.label8.Text = "Procurement Manager";
             // 
@@ -210,7 +212,7 @@
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(11, 144);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 16);
+            this.label7.Size = new System.Drawing.Size(81, 12);
             this.label7.TabIndex = 13;
             this.label7.Text = "Quality Manager";
             // 
@@ -224,7 +226,7 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(11, 113);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 16);
+            this.label6.Size = new System.Drawing.Size(81, 12);
             this.label6.TabIndex = 11;
             this.label6.Text = "Project Manager";
             // 
@@ -238,7 +240,7 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(11, 82);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(140, 16);
+            this.label5.Size = new System.Drawing.Size(108, 12);
             this.label5.TabIndex = 9;
             this.label5.Text = "Project Review Group";
             // 
@@ -262,7 +264,7 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(11, 51);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 16);
+            this.label4.Size = new System.Drawing.Size(80, 12);
             this.label4.TabIndex = 7;
             this.label4.Text = "Project Sponsor";
             // 
@@ -326,7 +328,7 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(10, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 16);
+            this.label1.Size = new System.Drawing.Size(67, 12);
             this.label1.TabIndex = 0;
             this.label1.Text = "Project Name";
             // 

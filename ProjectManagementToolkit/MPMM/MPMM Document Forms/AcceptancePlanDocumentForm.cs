@@ -60,30 +60,35 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             string addAssumptions = txtAssumptions.Text;
             listBoxAssumptions.Items.Add(addAssumptions);
+            txtAssumptions.Clear();
         }
 
         private void btnConstraints_Click(object sender, EventArgs e)
         {
             string addConstraints = txtConstraints.Text;
             listBoxConstraints.Items.Add(addConstraints);
+            txtConstraints.Clear();
         }
 
         private void btnActivities_Click(object sender, EventArgs e)
         {
             string activities = txtActivities.Text;
             listBoxActivities.Items.Add(activities);
+            txtActivities.Clear();
         }
 
         private void btnRoles_Click(object sender, EventArgs e)
         {
             string roles = txtRoles.Text;
             listBoxRoles.Items.Add(roles);
+            txtRoles.Clear();
         }
 
         private void btnDocuments_Click(object sender, EventArgs e)
         {
             string documents = txtDocuments.Text;
             listBoxDocuments.Items.Add(documents);
+            txtRoles.Clear();
         }
 
 
@@ -724,6 +729,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                     }
                 }
             }
+        }
+
+        private void txtAssumptions_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

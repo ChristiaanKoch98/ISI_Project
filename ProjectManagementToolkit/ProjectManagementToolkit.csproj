@@ -196,6 +196,12 @@
     <Compile Include="MPMM\MPMM Document Forms\IssueManagementProcessDocumentForm.Designer.cs">
       <DependentUpon>IssueManagementProcessDocumentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\IssueRegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\IssueRegisterForm.Designer.cs">
+      <DependentUpon>IssueRegisterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MPMM\MPMM Document Forms\JobDescriptionDocumentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -255,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\IssueFormDocumentForm.resx">
       <DependentUpon>IssueFormDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\IssueRegisterForm.resx">
+      <DependentUpon>IssueRegisterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\projectCharterForm.resx">
       <DependentUpon>projectCharterForm.cs</DependentUpon>
@@ -348,6 +357,12 @@
     </Compile>
     <Compile Include="MPMM\MPMM Document Forms\RiskPlanDocumentForm.Designer.cs">
       <DependentUpon>RiskPlanDocumentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\RiskRegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\RiskRegisterForm.Designer.cs">
+      <DependentUpon>RiskRegisterForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MPMM\MPMM Document Forms\SelectionProcess.cs">
       <SubType>Form</SubType>
@@ -1350,6 +1365,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\RiskPlanDocumentForm.resx">
       <DependentUpon>RiskPlanDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\RiskRegisterForm.resx">
+      <DependentUpon>RiskRegisterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\SelectionProcess.resx">
       <DependentUpon>SelectionProcess.cs</DependentUpon>

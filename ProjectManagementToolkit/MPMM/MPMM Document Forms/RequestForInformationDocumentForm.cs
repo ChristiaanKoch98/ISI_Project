@@ -56,42 +56,49 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             string CompanyOverview = txtCompanyOverview.Text;
             listBoxCompanyOverview.Items.Add(txtCompanyOverview.Text);
+            txtCompanyOverview.Clear();
         }
 
         private void btnCompanyOffering_Click(object sender, EventArgs e)
         {
             string CompanyOffering = txtCompanyOffering.Text;
             listBoxCompanyOffering.Items.Add(txtCompanyOffering.Text);
+            txtCompanyOffering.Clear();
         }
 
         private void btnMethod_Click(object sender, EventArgs e)
         {
             string method = txtMethod.Text;
             listBoxMethods.Items.Add(txtMethod.Text);
+            txtMethod.Clear();
         }
 
         private void btnTimeframes_Click(object sender, EventArgs e)
         {
             string timeframes = txtTimeframes.Text;
             listBoxTimeframes.Items.Add(txtTimeframes.Text);
+            txtTimeframes.Clear();
         }
 
         private void btnPricing_Click(object sender, EventArgs e)
         {
             string pricing = txtPricing.Text;
             listBoxPricing.Items.Add(txtPricing.Text);
+            txtPricing.Clear();
         }
 
         private void btnConfidentiality_Click(object sender, EventArgs e)
         {
             string confidentiality = txtConfidentiality.Text;
             listBoxConfidentiality.Items.Add(txtConfidentiality.Text);
+            txtConfidentiality.Clear();
         }
 
         private void btnDocumentation_Click(object sender, EventArgs e)
         {
             string documentation = txtDocumentation.Text;
             listBoxDocumentation.Items.Add(txtDocumentation.Text);
+            txtDocumentation.Clear();
         }
 
         //Back-End
@@ -168,6 +175,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentRequestForInformationModel = JsonConvert.DeserializeObject<RequestForInformationModel>(JsonConvert.SerializeObject(newRequestForInformationModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "RequestForInformation");
                 MessageBox.Show("Request for information saved successfully", "save", MessageBoxButtons.OK);
             }

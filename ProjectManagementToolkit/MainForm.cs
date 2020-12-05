@@ -82,7 +82,6 @@ namespace ProjectManagementToolkit
                 result = MessageBox.Show("Do you want to sync with the server for the first time?", "Sync Now", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
-                    //add sync method here
                     SyncForm syncForm = new SyncForm();
                     syncForm.Show();
                     syncForm.MdiParent = this;
@@ -90,7 +89,6 @@ namespace ProjectManagementToolkit
                     projectListModel = projectModel.updateProjectList(projectListModel, projectModel);
                     json = JsonConvert.SerializeObject(projectListModel);
                     JsonHelper.saveProjectInfo(json, Settings.Default.Username);
-
                 }
             }
             else
@@ -401,9 +399,23 @@ namespace ProjectManagementToolkit
             form.MdiParent = this;
         }
 
+        private void syncToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SyncForm syncForm = new SyncForm();
+            syncForm.Show();
+            syncForm.MdiParent = this;
+        }
+
         private void exampleToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             ProjectCharterForm form = new ProjectCharterForm();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void exampleToolStripMenuItem32_Click(object sender, EventArgs e)
+        {
+            TermOfReferenceDocumentForm form = new TermOfReferenceDocumentForm();
             form.Show();
             form.MdiParent = this;
         }
