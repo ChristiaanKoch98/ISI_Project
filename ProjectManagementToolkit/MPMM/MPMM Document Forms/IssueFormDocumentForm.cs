@@ -18,9 +18,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
     public partial class IssueFormDocumentForm : Form
     {
-        VersionControl<IssueFormModel> versionControl;
-        IssueFormModel newIssueFormModel;
-        IssueFormModel currentIssueFormModel;
+        VersionControl<List<IssueFormModel>> versionControl;
+        List<IssueFormModel> newIssueFormModel;
+        List<IssueFormModel> currentIssueFormModel;
+
+        VersionControl<IssueRegisterModel> versionControlRegister;
+        IssueRegisterModel newRegisterModel;
         Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
         ProjectModel projectModel = new ProjectModel();
         public IssueFormDocumentForm()
@@ -30,17 +33,21 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            saveDocument();
+            saveCurrentDocument();
         }
 
         private void IssueFormDocumentForm_Load(object sender, EventArgs e)
         {
-            loadDocument();
-            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
-            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
-            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
-            txtIssueFormProjectName.Text = projectModel.ProjectName;
+            if (cmbIssueForms.SelectedIndex == -1)
+            {
+                tbcQualityReviewForm.Hide();
+            }
+            loadDocuments();
 
+            for (int i = 0; i < currentIssueFormModel.Count; i++)
+            {
+                cmbIssueForms.Items.Add("Issue Request: " + (i + 1));
+            }
         }
 
         private void btnExport_Click(object sender, EventArgs e)
@@ -48,32 +55,84 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             exportToWord();
         }
 
-        public void saveDocument()
+        public void loadDocuments()
         {
-            newIssueFormModel.ProjectName = projectModel.ProjectName;
-            newIssueFormModel.ProjectManagerName = txtProjectManagerName.Text;
-            newIssueFormModel.IssueID = txtIssueID.Text;
-            newIssueFormModel.RaisedBy = txtRaisedBy.Text;
-            newIssueFormModel.DateRaised = dateTimePicker1.Value.ToString();
-            newIssueFormModel.IssueDescription = txtIssueDescription.Text;
-            newIssueFormModel.IssueImpact = txtIssueImpact.Text;
-            newIssueFormModel.IssueResolution = txtIssueResolution.Text;
-            newIssueFormModel.SupportingDocumentation = txtSupportingDocumentation.Text;
+            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "IssueForm");
+            string jsonRegister = JsonHelper.loadDocument(Settings.Default.ProjectID, "IssueRegister");
+            newIssueFormModel = new List<IssueFormModel>();
+            currentIssueFormModel = new List<IssueFormModel>();
+            newRegisterModel = new IssueRegisterModel(); 
+            if (json != "")
+            {
+                versionControl = JsonConvert.DeserializeObject<VersionControl<List<IssueFormModel>>>(json);
+                versionControlRegister = JsonConvert.DeserializeObject<VersionControl<IssueRegisterModel>>(jsonRegister);
+                newIssueFormModel = JsonConvert.DeserializeObject<List<IssueFormModel>>(versionControl.getLatest(versionControl.DocumentModels));
+                currentIssueFormModel = JsonConvert.DeserializeObject<List<IssueFormModel>>(versionControl.getLatest(versionControl.DocumentModels));
+                newRegisterModel = JsonConvert.DeserializeObject<IssueRegisterModel>(versionControlRegister.getLatest(versionControlRegister.DocumentModels));
+            }
+            else
+            {
+                versionControl = new VersionControl<List<IssueFormModel>>();
+                versionControl.DocumentModels = new List<VersionControl<List<IssueFormModel>>.DocumentModel>();
+
+                versionControlRegister = new VersionControl<IssueRegisterModel>();
+                versionControlRegister.DocumentModels = new List<VersionControl<IssueRegisterModel>.DocumentModel>();
+                newRegisterModel.IssueEntries = new List<IssueRegisterModel.IssueEntry>();
+            }
+        }
+
+        public void saveCurrentDocument()
+        {
+            IssueFormModel tempIssueFormModel = new IssueFormModel();
+            tempIssueFormModel.ProjectName = projectModel.ProjectName;
+            tempIssueFormModel.ProjectManagerName = txtProjectManagerName.Text;
+            tempIssueFormModel.IssueID = txtIssueID.Text;
+            tempIssueFormModel.RaisedBy = txtRaisedBy.Text;
+            tempIssueFormModel.DateRaised = dateTimePicker1.Value.ToString();
+            tempIssueFormModel.IssueDescription = txtIssueDescription.Text;
+            tempIssueFormModel.IssueImpact = txtIssueImpact.Text;
+            tempIssueFormModel.IssueResolution = txtIssueResolution.Text;
+            tempIssueFormModel.SupportingDocumentation = txtSupportingDocumentation.Text;
+
+            IssueRegisterModel.IssueEntry issueEntry = new IssueRegisterModel.IssueEntry();
+            issueEntry.ID = cmbIssueForms.SelectedIndex+1;
+            issueEntry.DateRaised = dateTimePicker1.Value.ToString();
+            issueEntry.RaisedBy = txtRaisedBy.Text;
+            issueEntry.ReceivedBy = txtProjectManagerName.Text;
+            issueEntry.Description = txtIssueDescription.Text;
+            issueEntry.Impact = txtIssueImpact.Text;
+            issueEntry.Action = txtIssueResolution.Text;
 
 
-            List<VersionControl<IssueFormModel>.DocumentModel> documentModels = versionControl.DocumentModels;
+            newIssueFormModel[cmbIssueForms.SelectedIndex] = tempIssueFormModel;
+            newRegisterModel.IssueEntries[cmbIssueForms.SelectedIndex] = issueEntry;
+
+            List<VersionControl<List<IssueFormModel>>.DocumentModel> documentModels = versionControl.DocumentModels;
+            List<VersionControl<IssueRegisterModel>.DocumentModel> documentModelsReg = versionControlRegister.DocumentModels;
             if (!versionControl.isEqual(currentIssueFormModel, newIssueFormModel))
             {
-                VersionControl<IssueFormModel>.DocumentModel documentModel = new VersionControl<IssueFormModel>
-                    .DocumentModel(newIssueFormModel, DateTime.Now, VersionControl<IssueFormModel>
+                VersionControl<List<IssueFormModel>>.DocumentModel documentModel = new VersionControl<List<IssueFormModel>>
+                    .DocumentModel(newIssueFormModel, DateTime.Now, VersionControl<List<IssueFormModel>>
                     .generateID());
+
+                VersionControl<IssueRegisterModel>.DocumentModel documentModelReg = new VersionControl<IssueRegisterModel>
+                    .DocumentModel(newRegisterModel, DateTime.Now, VersionControl<IssueRegisterModel>
+                    .generateID());
+
 
                 documentModels.Add(documentModel);
                 versionControl.DocumentModels = documentModels;
-                string json = JsonConvert.SerializeObject(versionControl);
+                string jsonIssueForm = JsonConvert.SerializeObject(versionControl);
                 currentIssueFormModel = JsonConvert
-                    .DeserializeObject<IssueFormModel>(JsonConvert.SerializeObject(newIssueFormModel));
-                JsonHelper.saveDocument(json, Settings.Default.ProjectID, "IssueForm");
+                    .DeserializeObject<List<IssueFormModel>>(JsonConvert.SerializeObject(newIssueFormModel));
+                JsonHelper.saveDocument(jsonIssueForm, Settings.Default.ProjectID, "IssueForm");
+
+                documentModelsReg.Add(documentModelReg);
+                versionControlRegister.DocumentModels = documentModelsReg;
+                string jsonIssueRegister = JsonConvert.SerializeObject(versionControlRegister);
+                JsonHelper.saveDocument(jsonIssueRegister, Settings.Default.ProjectID, "IssueRegister");
+                currentIssueFormModel = JsonConvert
+                    .DeserializeObject<List<IssueFormModel>>(JsonConvert.SerializeObject(newIssueFormModel));
                 MessageBox.Show("Issue Form saved successfully", "save", MessageBoxButtons.OK);
             }
             else
@@ -83,34 +142,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         }
 
-        public void loadDocument()
-        {
-            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "IssueForm");
-            newIssueFormModel = new IssueFormModel();
-            currentIssueFormModel = new IssueFormModel();
-
-            if (json != "")
-            {
-                versionControl = JsonConvert.DeserializeObject<VersionControl<IssueFormModel>>(json);
-                newIssueFormModel = JsonConvert.DeserializeObject<IssueFormModel>(versionControl.getLatest(versionControl.DocumentModels));
-                currentIssueFormModel = JsonConvert.DeserializeObject<IssueFormModel>(versionControl.getLatest(versionControl.DocumentModels));
-
-                txtProjectManagerName.Text = newIssueFormModel.ProjectManagerName;
-                txtIssueID.Text = newIssueFormModel.IssueID;
-                txtRaisedBy.Text = newIssueFormModel.RaisedBy;
-                dateTimePicker1.Value = Convert.ToDateTime(newIssueFormModel.DateRaised);
-                txtIssueDescription.Text = newIssueFormModel.IssueDescription;
-                txtIssueImpact.Text = newIssueFormModel.IssueImpact;
-                txtIssueResolution.Text = newIssueFormModel.IssueResolution;
-                txtSupportingDocumentation.Text = newIssueFormModel.SupportingDocumentation;
-
-            }
-            else
-            {
-                versionControl = new VersionControl<IssueFormModel>();
-                versionControl.DocumentModels = new List<VersionControl<IssueFormModel>.DocumentModel>();
-            }
-        }
+        
 
         private void exportToWord()
         {
@@ -155,7 +187,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         IssueFormTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
                         IssueFormTable.Rows[1].Cells[0].Paragraphs[0]
-                          .Append("Project Name: " + projectModel.ProjectName + "\nProject Manager: " + currentIssueFormModel.ProjectManagerName)
+                          .Append("Project Name: " + projectModel.ProjectName + "\nProject Manager: " + currentIssueFormModel[cmbIssueForms.SelectedIndex].ProjectManagerName)
                           .Font("Arial")
                           .FontSize(11d)
                           .SpacingBefore(12d)
@@ -172,23 +204,23 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         IssueFormTable.Rows[2].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
                         IssueFormTable.Rows[3].Cells[0].Paragraphs[0]
-                         .Append("Issue ID:\t " + currentIssueFormModel.IssueID
-                          + "\nRaised By:\t " + currentIssueFormModel.RaisedBy
-                          + "\nDate Raised:\t " + currentIssueFormModel.DateRaised)
+                         .Append("Issue ID:\t " + currentIssueFormModel[cmbIssueForms.SelectedIndex].IssueID
+                          + "\nRaised By:\t " + currentIssueFormModel[cmbIssueForms.SelectedIndex].RaisedBy
+                          + "\nDate Raised:\t " + currentIssueFormModel[cmbIssueForms.SelectedIndex].DateRaised)
                          .Font("Arial")
                          .FontSize(11d)
                          .SpacingBefore(12d)
                          .SpacingAfter(12d);
 
                         IssueFormTable.Rows[4].Cells[0].Paragraphs[0]
-                           .Append("Issue Description: " + currentIssueFormModel.IssueDescription)
+                           .Append("Issue Description: " + currentIssueFormModel[cmbIssueForms.SelectedIndex].IssueDescription)
                            .Font("Arial")
                            .FontSize(11d)
                            .SpacingBefore(12d)
                            .SpacingAfter(12d);
 
                         IssueFormTable.Rows[5].Cells[0].Paragraphs[0]
-                          .Append("Issue Impact: " + currentIssueFormModel.IssueImpact)
+                          .Append("Issue Impact: " + currentIssueFormModel[cmbIssueForms.SelectedIndex].IssueImpact)
                           .Font("Arial")
                           .FontSize(11d)
                           .SpacingBefore(12d)
@@ -205,7 +237,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         IssueFormTable.Rows[6].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
                         IssueFormTable.Rows[7].Cells[0].Paragraphs[0]
-                          .Append("Recommended Actions: " + currentIssueFormModel.IssueResolution)
+                          .Append("Recommended Actions: " + currentIssueFormModel[cmbIssueForms.SelectedIndex].IssueResolution)
                           .Font("Arial")
                           .FontSize(11d)
                           .SpacingBefore(12d)
@@ -222,7 +254,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         IssueFormTable.Rows[8].Cells[0].FillColor = TABLE_HEADER_COLOR;
 
                         IssueFormTable.Rows[9].Cells[0].Paragraphs[0]
-                           .Append("Supporting Documentation:\n" + currentIssueFormModel.SupportingDocumentation)
+                           .Append("Supporting Documentation:\n" + currentIssueFormModel[cmbIssueForms.SelectedIndex].SupportingDocumentation)
                            .Font("Arial")
                            .FontSize(11d)
                            .SpacingBefore(12d)
@@ -264,6 +296,84 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                     }
+                }
+            }
+        }
+
+        private void btnNewForm_Click(object sender, EventArgs e)
+        {
+            int index = cmbIssueForms.Items.Count + 1;
+            cmbIssueForms.Items.Add("Issue Request: " + index);
+            newIssueFormModel.Add(new IssueFormModel());
+            currentIssueFormModel.Add(new IssueFormModel());
+            cmbIssueForms.SelectedIndex = cmbIssueForms.Items.Count - 1;
+            newRegisterModel.IssueEntries.Add(new IssueRegisterModel.IssueEntry());
+
+
+            versionControl.DocumentModels.Add(
+                new VersionControl<List<IssueFormModel>>
+                .DocumentModel(currentIssueFormModel, DateTime.Now, VersionControl<List<IssueFormModel>>.generateID()));
+
+            versionControlRegister.DocumentModels.Add(
+               new VersionControl<IssueRegisterModel>
+               .DocumentModel(newRegisterModel, DateTime.Now, VersionControl<List<IssueRegisterModel>>.generateID()));
+
+            string json = JsonConvert.SerializeObject(versionControl);
+            JsonHelper.saveDocument(json, Settings.Default.ProjectID, "IssueForm");
+
+            string jsonIssueRegister = JsonConvert.SerializeObject(versionControlRegister);
+            JsonHelper.saveDocument(jsonIssueRegister, Settings.Default.ProjectID, "IssueRegister");
+        }
+
+        private void cmbIssueForms_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbIssueForms.SelectedIndex != -1)
+            {
+                tbcQualityReviewForm.Show();
+
+                txtProjectManagerName.Text = currentIssueFormModel[cmbIssueForms.SelectedIndex].ProjectManagerName;
+                txtIssueID.Text = currentIssueFormModel[cmbIssueForms.SelectedIndex].IssueID;
+                txtRaisedBy.Text = currentIssueFormModel[cmbIssueForms.SelectedIndex].RaisedBy;
+                dateTimePicker1.Value = Convert.ToDateTime(currentIssueFormModel[cmbIssueForms.SelectedIndex].DateRaised);
+                txtIssueDescription.Text = currentIssueFormModel[cmbIssueForms.SelectedIndex].IssueDescription;
+                txtIssueImpact.Text = currentIssueFormModel[cmbIssueForms.SelectedIndex].IssueImpact;
+                txtIssueResolution.Text = currentIssueFormModel[cmbIssueForms.SelectedIndex].IssueResolution;
+                txtSupportingDocumentation.Text = currentIssueFormModel[cmbIssueForms.SelectedIndex].SupportingDocumentation;
+            }
+            else
+            {
+                tbcQualityReviewForm.Hide();
+            }
+            
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (cmbIssueForms.SelectedIndex != -1)
+            {
+                DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete the current form?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (dialogResult == DialogResult.Yes)
+                {
+                
+                    currentIssueFormModel.RemoveAt(cmbIssueForms.SelectedIndex);
+                    newRegisterModel.IssueEntries.RemoveAt(cmbIssueForms.SelectedIndex);
+                    cmbIssueForms.Items.RemoveAt(cmbIssueForms.SelectedIndex);
+                    cmbIssueForms_SelectedIndexChanged(this, EventArgs.Empty);
+
+                    versionControl.DocumentModels.Add(
+                       new VersionControl<List<IssueFormModel>>
+                       .DocumentModel(currentIssueFormModel, DateTime.Now, VersionControl<List<IssueFormModel>>.generateID()));
+
+                    string json = JsonConvert.SerializeObject(versionControl);
+                    JsonHelper.saveDocument(json, Settings.Default.ProjectID, "IssueForm");
+
+                    versionControlRegister.DocumentModels.Add(new VersionControl<IssueRegisterModel>
+                      .DocumentModel(newRegisterModel, DateTime.Now, VersionControl<IssueRegisterModel>
+                      .generateID()));
+
+                    string jsonIssueRegister = JsonConvert.SerializeObject(versionControlRegister);
+
+                    JsonHelper.saveDocument(jsonIssueRegister, Settings.Default.ProjectID, "IssueRegister");
                 }
             }
         }
