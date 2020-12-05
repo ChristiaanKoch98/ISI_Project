@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -421,11 +422,35 @@ namespace ProjectManagementToolkit
             form.MdiParent = this;
         }
 
+
+        private void printFilesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (PrintDialog pd = new PrintDialog())
+            {
+                pd.ShowDialog();
+                using (OpenFileDialog of = new OpenFileDialog())
+                {
+                    if (of.ShowDialog() == DialogResult.Yes)
+                    {
+                        ProcessStartInfo info = new ProcessStartInfo(of.FileName);
+                        info.Verb = "PrintTo";
+                        info.Arguments = pd.PrinterSettings.PrinterName;
+                        info.CreateNoWindow = true;
+                        info.WindowStyle = ProcessWindowStyle.Hidden;
+                        Process.Start(info);
+                    }
+
+                }
+
+            }
+         }
+
         private void issueRegisterToolStripMenuItem_Click(object sender, EventArgs e)
         {
             IssueRegisterForm issueRegisterForm = new IssueRegisterForm();
             issueRegisterForm.Show();
             issueRegisterForm.MdiParent = this;
+
         }
     }
 }
