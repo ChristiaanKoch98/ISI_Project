@@ -235,8 +235,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
                 string json = JsonConvert.SerializeObject(versionControl);
                 currentProjectPlanModel = JsonConvert.DeserializeObject<ProjectPlanModel>(JsonConvert.SerializeObject(newProjectPlanModel));
-                JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ProjectPlan");
-                MessageBox.Show("Project plan saved successfully", "save", MessageBoxButtons.OK);
+                JsonHelper.saveDocument(json, Settings.Default.ProjectID, "SelectionProcess");
+                MessageBox.Show("Selection Process saved successfully", "save", MessageBoxButtons.OK);
             }
             else
             {
@@ -246,7 +246,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void loadDocument()
         {
-            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "ProjectPlan");
+            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "SelectionProcess");
             List<string[]> documentInfo = new List<string[]>();
             newProjectPlanModel = new ProjectPlanModel();
             currentProjectPlanModel = new ProjectPlanModel();

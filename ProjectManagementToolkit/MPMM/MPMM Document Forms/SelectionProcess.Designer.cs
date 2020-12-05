@@ -208,11 +208,11 @@
             // OverviewTabPage
             // 
             this.OverviewTabPage.Controls.Add(this.selectionProcessImage);
-            this.OverviewTabPage.Location = new System.Drawing.Point(4, 33);
+            this.OverviewTabPage.Location = new System.Drawing.Point(4, 28);
             this.OverviewTabPage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.OverviewTabPage.Name = "OverviewTabPage";
             this.OverviewTabPage.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.OverviewTabPage.Size = new System.Drawing.Size(965, 338);
+            this.OverviewTabPage.Size = new System.Drawing.Size(965, 343);
             this.OverviewTabPage.TabIndex = 0;
             this.OverviewTabPage.Text = "Overview";
             this.OverviewTabPage.UseVisualStyleBackColor = true;
@@ -223,11 +223,11 @@
             this.periodicmeasureTabPage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.periodicmeasureTabPage.Controls.Add(this.periodicMeasurementTabControl);
             this.periodicmeasureTabPage.ForeColor = System.Drawing.Color.Black;
-            this.periodicmeasureTabPage.Location = new System.Drawing.Point(4, 33);
+            this.periodicmeasureTabPage.Location = new System.Drawing.Point(4, 28);
             this.periodicmeasureTabPage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.periodicmeasureTabPage.Name = "periodicmeasureTabPage";
             this.periodicmeasureTabPage.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.periodicmeasureTabPage.Size = new System.Drawing.Size(965, 338);
+            this.periodicmeasureTabPage.Size = new System.Drawing.Size(965, 343);
             this.periodicmeasureTabPage.TabIndex = 1;
             this.periodicmeasureTabPage.Text = "Periodic Measurement";
             // 
@@ -248,10 +248,10 @@
             this.scheduleTabPage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.scheduleTabPage.Controls.Add(this.scheduleDataGridView);
             this.scheduleTabPage.ForeColor = System.Drawing.Color.Black;
-            this.scheduleTabPage.Location = new System.Drawing.Point(4, 33);
+            this.scheduleTabPage.Location = new System.Drawing.Point(4, 28);
             this.scheduleTabPage.Name = "scheduleTabPage";
             this.scheduleTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.scheduleTabPage.Size = new System.Drawing.Size(957, 303);
+            this.scheduleTabPage.Size = new System.Drawing.Size(957, 308);
             this.scheduleTabPage.TabIndex = 0;
             this.scheduleTabPage.Text = "Schedule";
             // 
@@ -325,10 +325,10 @@
             this.costTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.costTabPage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.costTabPage.Controls.Add(this.costTextBox);
-            this.costTabPage.Location = new System.Drawing.Point(4, 33);
+            this.costTabPage.Location = new System.Drawing.Point(4, 28);
             this.costTabPage.Name = "costTabPage";
             this.costTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.costTabPage.Size = new System.Drawing.Size(957, 303);
+            this.costTabPage.Size = new System.Drawing.Size(957, 308);
             this.costTabPage.TabIndex = 1;
             this.costTabPage.Text = "Cost";
             // 
@@ -348,10 +348,10 @@
             this.resourcesTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.resourcesTabPage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.resourcesTabPage.Controls.Add(this.resoucesTabControl);
-            this.resourcesTabPage.Location = new System.Drawing.Point(4, 33);
+            this.resourcesTabPage.Location = new System.Drawing.Point(4, 28);
             this.resourcesTabPage.Name = "resourcesTabPage";
             this.resourcesTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.resourcesTabPage.Size = new System.Drawing.Size(957, 303);
+            this.resourcesTabPage.Size = new System.Drawing.Size(957, 308);
             this.resourcesTabPage.TabIndex = 2;
             this.resourcesTabPage.Text = "Resources";
             // 
@@ -371,10 +371,10 @@
             // 
             this.laborTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.laborTabPage.Controls.Add(this.laborDataGridView);
-            this.laborTabPage.Location = new System.Drawing.Point(4, 33);
+            this.laborTabPage.Location = new System.Drawing.Point(4, 28);
             this.laborTabPage.Name = "laborTabPage";
             this.laborTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.laborTabPage.Size = new System.Drawing.Size(938, 266);
+            this.laborTabPage.Size = new System.Drawing.Size(938, 271);
             this.laborTabPage.TabIndex = 0;
             this.laborTabPage.Text = "Labor";
             // 
@@ -465,10 +465,10 @@
             this.Equipment_TabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.Equipment_TabPage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Equipment_TabPage.Controls.Add(this.EquipmentDataGridView);
-            this.Equipment_TabPage.Location = new System.Drawing.Point(4, 33);
+            this.Equipment_TabPage.Location = new System.Drawing.Point(4, 28);
             this.Equipment_TabPage.Name = "Equipment_TabPage";
             this.Equipment_TabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.Equipment_TabPage.Size = new System.Drawing.Size(938, 266);
+            this.Equipment_TabPage.Size = new System.Drawing.Size(938, 271);
             this.Equipment_TabPage.TabIndex = 1;
             this.Equipment_TabPage.Text = "Equipment";
             // 
@@ -560,10 +560,10 @@
             this.materialTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.materialTabPage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.materialTabPage.Controls.Add(this.materialdDataGridView);
-            this.materialTabPage.Location = new System.Drawing.Point(4, 33);
+            this.materialTabPage.Location = new System.Drawing.Point(4, 28);
             this.materialTabPage.Name = "materialTabPage";
             this.materialTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.materialTabPage.Size = new System.Drawing.Size(938, 266);
+            this.materialTabPage.Size = new System.Drawing.Size(938, 271);
             this.materialTabPage.TabIndex = 2;
             this.materialTabPage.Text = "Material";
             // 
@@ -637,10 +637,10 @@
             this.resourceScheduleTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.resourceScheduleTabPage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.resourceScheduleTabPage.Controls.Add(this.echeduleDataGridView);
-            this.resourceScheduleTabPage.Location = new System.Drawing.Point(4, 33);
+            this.resourceScheduleTabPage.Location = new System.Drawing.Point(4, 28);
             this.resourceScheduleTabPage.Name = "resourceScheduleTabPage";
             this.resourceScheduleTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.resourceScheduleTabPage.Size = new System.Drawing.Size(938, 266);
+            this.resourceScheduleTabPage.Size = new System.Drawing.Size(938, 271);
             this.resourceScheduleTabPage.TabIndex = 3;
             this.resourceScheduleTabPage.Text = "Schedule";
             // 
@@ -795,11 +795,11 @@
             this.riskTabPage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.riskTabPage.Controls.Add(this.riskAssessment_TabControl);
             this.riskTabPage.ForeColor = System.Drawing.Color.Black;
-            this.riskTabPage.Location = new System.Drawing.Point(4, 33);
+            this.riskTabPage.Location = new System.Drawing.Point(4, 28);
             this.riskTabPage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.riskTabPage.Name = "riskTabPage";
             this.riskTabPage.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.riskTabPage.Size = new System.Drawing.Size(965, 338);
+            this.riskTabPage.Size = new System.Drawing.Size(965, 343);
             this.riskTabPage.TabIndex = 2;
             this.riskTabPage.Text = "Risk Assessment";
             // 
@@ -819,10 +819,10 @@
             this.riskIdentificationTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.riskIdentificationTabPage.Controls.Add(this.RiskDataGridView);
             this.riskIdentificationTabPage.ForeColor = System.Drawing.Color.Black;
-            this.riskIdentificationTabPage.Location = new System.Drawing.Point(4, 33);
+            this.riskIdentificationTabPage.Location = new System.Drawing.Point(4, 28);
             this.riskIdentificationTabPage.Name = "riskIdentificationTabPage";
             this.riskIdentificationTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.riskIdentificationTabPage.Size = new System.Drawing.Size(954, 302);
+            this.riskIdentificationTabPage.Size = new System.Drawing.Size(954, 307);
             this.riskIdentificationTabPage.TabIndex = 0;
             this.riskIdentificationTabPage.Text = "Risk Identification";
             // 
@@ -862,7 +862,7 @@
             this.RiskDataGridView.RowHeadersWidth = 51;
             dataGridViewCellStyle48.Font = new System.Drawing.Font("Helvetica", 10.8F);
             this.RiskDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle48;
-            this.RiskDataGridView.Size = new System.Drawing.Size(842, 178);
+            this.RiskDataGridView.Size = new System.Drawing.Size(935, 178);
             this.RiskDataGridView.TabIndex = 0;
             // 
             // riskIdenColumn
@@ -911,10 +911,10 @@
             // 
             this.riskResponsePlanTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.riskResponsePlanTabPage.Controls.Add(this.riskResponseDataGridView);
-            this.riskResponsePlanTabPage.Location = new System.Drawing.Point(4, 33);
+            this.riskResponsePlanTabPage.Location = new System.Drawing.Point(4, 28);
             this.riskResponsePlanTabPage.Name = "riskResponsePlanTabPage";
             this.riskResponsePlanTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.riskResponsePlanTabPage.Size = new System.Drawing.Size(954, 302);
+            this.riskResponsePlanTabPage.Size = new System.Drawing.Size(954, 307);
             this.riskResponsePlanTabPage.TabIndex = 1;
             this.riskResponsePlanTabPage.Text = "Risk Response Planning";
             // 
@@ -949,7 +949,7 @@
             this.riskResponseDataGridView.RowHeadersWidth = 51;
             dataGridViewCellStyle51.Font = new System.Drawing.Font("Helvetica", 10.8F);
             this.riskResponseDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle51;
-            this.riskResponseDataGridView.Size = new System.Drawing.Size(550, 150);
+            this.riskResponseDataGridView.Size = new System.Drawing.Size(555, 150);
             this.riskResponseDataGridView.TabIndex = 0;
             // 
             // riskDescription
@@ -977,10 +977,10 @@
             // 
             this.riskMonitoringTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.riskMonitoringTabPage.Controls.Add(this.riskMonitorigTextBox);
-            this.riskMonitoringTabPage.Location = new System.Drawing.Point(4, 33);
+            this.riskMonitoringTabPage.Location = new System.Drawing.Point(4, 28);
             this.riskMonitoringTabPage.Name = "riskMonitoringTabPage";
             this.riskMonitoringTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.riskMonitoringTabPage.Size = new System.Drawing.Size(954, 302);
+            this.riskMonitoringTabPage.Size = new System.Drawing.Size(954, 307);
             this.riskMonitoringTabPage.TabIndex = 2;
             this.riskMonitoringTabPage.Text = "Risk Monitring and Control";
             // 
@@ -1000,11 +1000,11 @@
             this.resourceTabPage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.resourceTabPage.Controls.Add(this.ResourceDataGridView);
             this.resourceTabPage.ForeColor = System.Drawing.Color.Black;
-            this.resourceTabPage.Location = new System.Drawing.Point(4, 33);
+            this.resourceTabPage.Location = new System.Drawing.Point(4, 28);
             this.resourceTabPage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.resourceTabPage.Name = "resourceTabPage";
             this.resourceTabPage.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.resourceTabPage.Size = new System.Drawing.Size(965, 338);
+            this.resourceTabPage.Size = new System.Drawing.Size(965, 343);
             this.resourceTabPage.TabIndex = 3;
             this.resourceTabPage.Text = "Resource Availability and Allocation";
             // 
@@ -1071,11 +1071,11 @@
             this.strategyTabPage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.strategyTabPage.Controls.Add(this.strategyDataGridView);
             this.strategyTabPage.ForeColor = System.Drawing.Color.Black;
-            this.strategyTabPage.Location = new System.Drawing.Point(4, 33);
+            this.strategyTabPage.Location = new System.Drawing.Point(4, 28);
             this.strategyTabPage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.strategyTabPage.Name = "strategyTabPage";
             this.strategyTabPage.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.strategyTabPage.Size = new System.Drawing.Size(965, 338);
+            this.strategyTabPage.Size = new System.Drawing.Size(965, 343);
             this.strategyTabPage.TabIndex = 4;
             this.strategyTabPage.Text = "Strategy Alignment";
             // 
@@ -1113,7 +1113,7 @@
             this.strategyDataGridView.RowHeadersWidth = 51;
             dataGridViewCellStyle57.Font = new System.Drawing.Font("Helvetica", 10.8F);
             this.strategyDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle57;
-            this.strategyDataGridView.Size = new System.Drawing.Size(541, 150);
+            this.strategyDataGridView.Size = new System.Drawing.Size(682, 150);
             this.strategyDataGridView.TabIndex = 1;
             // 
             // strategyPlanParamColumn
@@ -1157,10 +1157,10 @@
             this.balancingtabPage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.balancingtabPage.Controls.Add(this.balancingDataGridView);
             this.balancingtabPage.ForeColor = System.Drawing.Color.Black;
-            this.balancingtabPage.Location = new System.Drawing.Point(4, 33);
+            this.balancingtabPage.Location = new System.Drawing.Point(4, 28);
             this.balancingtabPage.Name = "balancingtabPage";
             this.balancingtabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.balancingtabPage.Size = new System.Drawing.Size(965, 338);
+            this.balancingtabPage.Size = new System.Drawing.Size(965, 343);
             this.balancingtabPage.TabIndex = 5;
             this.balancingtabPage.Text = "Balancing";
             // 
@@ -1240,6 +1240,7 @@
             this.savebutton.TabIndex = 2;
             this.savebutton.Text = "Save";
             this.savebutton.UseVisualStyleBackColor = false;
+            this.savebutton.Click += new System.EventHandler(this.savebutton_Click);
             // 
             // exportToWordbutton
             // 
@@ -1252,10 +1253,11 @@
             this.exportToWordbutton.TabIndex = 3;
             this.exportToWordbutton.Text = "Export To Word";
             this.exportToWordbutton.UseVisualStyleBackColor = false;
+            this.exportToWordbutton.Click += new System.EventHandler(this.exportToWordbutton_Click);
             // 
             // SelectionProcess
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1000, 489);
@@ -1267,6 +1269,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "SelectionProcess";
             this.Text = " Selection Process";
+            this.Load += new System.EventHandler(this.SelectionProcess_Load);
             ((System.ComponentModel.ISupportInitialize)(this.selectionProcessImage)).EndInit();
             this.selectionProcessTabControl.ResumeLayout(false);
             this.OverviewTabPage.ResumeLayout(false);
