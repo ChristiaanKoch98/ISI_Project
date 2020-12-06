@@ -416,6 +416,7 @@
     <Compile Include="MPMM\MPMM Document Models\AcceptanceRegisterModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\BusinessCaseModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ChangeManagementProcessModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\ChangeRegisterModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ChangeRequestModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\CommunicationsManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\CommunicationsPlanModel.cs" />
@@ -432,6 +433,7 @@
     <Compile Include="MPMM\MPMM Document Models\PhaseReviewPlanningModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\PostImplementationReviewModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProcurementPlanModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\ProcurementRegisterModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectClosureReportModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectOfficeChecklistModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectPlanModel.cs" />

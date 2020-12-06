@@ -1138,6 +1138,7 @@
             this.procurementRegisterToolStripMenuItem1.Name = "procurementRegisterToolStripMenuItem1";
             this.procurementRegisterToolStripMenuItem1.Size = new System.Drawing.Size(188, 22);
             this.procurementRegisterToolStripMenuItem1.Text = "Procurement Register";
+            this.procurementRegisterToolStripMenuItem1.Click += new System.EventHandler(this.procurementRegisterToolStripMenuItem1_Click);
             // 
             // exampleToolStripMenuItem26
             // 
