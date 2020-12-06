@@ -21,7 +21,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         VersionControl<RiskPlanModel> versionControl;
         RiskPlanModel newRiskPlanModel;
         RiskPlanModel currentRiskPlanModel;
-
+        ProjectModel projectModel = new ProjectModel();
         Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
         RiskPlanModel riskModel = new RiskPlanModel();
 
@@ -815,6 +815,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void RiskPlanForm_Load(object sender, EventArgs e)
         {
+            string jsoni = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            Project_Name_tbx.Text = projectModel.ProjectName;
+
             loadDocument();
         }
     }

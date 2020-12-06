@@ -521,11 +521,16 @@ namespace ProjectManagementToolkit
             postImplementationReviewDocumentForm.MdiParent = this;
         }
 
-        private void expenseRegisterToolStripMenuItem_Click(object sender, EventArgs e)
+        private void projectDashboardToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ExpenseRegister form = new ExpenseRegister();
+            ProjectDashboard form = new ProjectDashboard();
             form.Show();
             form.MdiParent = this;
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

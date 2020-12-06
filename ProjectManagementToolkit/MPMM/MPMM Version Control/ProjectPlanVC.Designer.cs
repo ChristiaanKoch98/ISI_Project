@@ -2,7 +2,7 @@
 
 namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
-    partial class ProjectPlanDocumentForm
+    partial class ProjectPlanVC
     {
         /// <summary>
         /// Required designer variable.
@@ -121,9 +121,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtAppendix = new System.Windows.Forms.TextBox();
             this.schedule = new System.Windows.Forms.TabPage();
             this.txtSchedule = new System.Windows.Forms.TextBox();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnExportWord = new System.Windows.Forms.Button();
-            this.btnVersions = new System.Windows.Forms.Button();
+            this.cmbVersions = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.documentControl.SuspendLayout();
             this.tabControl3.SuspendLayout();
@@ -172,7 +170,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1251, 647);
             this.tabControl1.TabIndex = 0;
-            //this.tabControl1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl1_DrawItem);
+            this.tabControl1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl1_DrawItem);
             // 
             // documentControl
             // 
@@ -199,7 +197,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabControl3.SelectedIndex = 0;
             this.tabControl3.Size = new System.Drawing.Size(1235, 611);
             this.tabControl3.TabIndex = 12;
-            //this.tabControl3.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl3_DrawItem);
+            this.tabControl3.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl3_DrawItem);
             // 
             // tabPage6
             // 
@@ -1004,59 +1002,25 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.txtSchedule.TabIndex = 27;
             this.txtSchedule.Text = "Schedule";
             // 
-            // btnSave
+            // cmbVersions
             // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(711, 1);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(147, 34);
-            this.btnSave.TabIndex = 12;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.cmbVersions.FormattingEnabled = true;
+            this.cmbVersions.Location = new System.Drawing.Point(743, 10);
+            this.cmbVersions.Name = "cmbVersions";
+            this.cmbVersions.Size = new System.Drawing.Size(288, 24);
+            this.cmbVersions.TabIndex = 1;
+            this.cmbVersions.SelectedIndexChanged += new System.EventHandler(this.cmbVersions_SelectedIndexChanged);
             // 
-            // btnExportWord
-            // 
-            this.btnExportWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnExportWord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExportWord.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExportWord.Location = new System.Drawing.Point(921, 2);
-            this.btnExportWord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnExportWord.Name = "btnExportWord";
-            this.btnExportWord.Size = new System.Drawing.Size(147, 34);
-            this.btnExportWord.TabIndex = 13;
-            this.btnExportWord.Text = "Export to Word";
-            this.btnExportWord.UseVisualStyleBackColor = false;
-            this.btnExportWord.Click += new System.EventHandler(this.btnExportWord_Click);
-            // 
-            // btnVersions
-            // 
-            this.btnVersions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnVersions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVersions.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVersions.Location = new System.Drawing.Point(1084, 3);
-            this.btnVersions.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnVersions.Name = "btnVersions";
-            this.btnVersions.Size = new System.Drawing.Size(147, 34);
-            this.btnVersions.TabIndex = 14;
-            this.btnVersions.Text = "Versions";
-            this.btnVersions.Click += new System.EventHandler(this.btnVersions_Click);
-            // 
-            // ProjectPlanDocumentForm
+            // ProjectPlanVC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1279, 676);
-            this.Controls.Add(this.btnVersions);
-            this.Controls.Add(this.btnExportWord);
-            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.cmbVersions);
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "ProjectPlanDocumentForm";
+            this.Name = "ProjectPlanVC";
             this.Text = "ProjectPlanDocumentForm";
             this.Load += new System.EventHandler(this.ProjectPlanDocumentForm_Load);
             this.tabControl1.ResumeLayout(false);
@@ -1134,10 +1098,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn dependencyActivityTitle;
         private System.Windows.Forms.DataGridViewTextBoxColumn dependsOn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dependencyType;
-        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.DataGridViewTextBoxColumn Type;
         private System.Windows.Forms.DataGridViewTextBoxColumn Information;
-        private System.Windows.Forms.Button btnExportWord;
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.TabPage tabPage7;
@@ -1164,6 +1126,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn taskSequence;
         private TextBox txtAppendix;
         private TextBox txtSchedule;
-        private Button btnVersions;
+        private ComboBox cmbVersions;
     }
 }

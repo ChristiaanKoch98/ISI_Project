@@ -21,7 +21,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         VersionControl<FeasibilityStudyModel> versionControl;
         FeasibilityStudyModel newFeasibilityStudyModel;
         FeasibilityStudyModel currentFeasibilityStudyModel;
-
+        ProjectModel projectModel = new ProjectModel();
         Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
         FeasibilityStudyModel feasibilityModel = new FeasibilityStudyModel();
 
@@ -42,6 +42,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void FeasibiltyStudyDocumentForm_Load(object sender, EventArgs e)
         {
+            string jsoni = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            Project_Name_tbx.Text = projectModel.ProjectName;
+
             LoadDocument();
         }
 

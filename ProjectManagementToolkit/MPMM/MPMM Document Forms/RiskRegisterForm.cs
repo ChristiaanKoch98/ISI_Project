@@ -110,6 +110,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void RiskRegisterForm_Load(object sender, EventArgs e)
         {
+            string jsoni = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtRiskRegisterProjectName.Text = projectModel.ProjectName;
+
             string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "RiskRegister");
             newRiskRegisterModel = new RiskRegisterModel();
             currentRiskRegisterModel = new RiskRegisterModel();
@@ -133,6 +138,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl = new VersionControl<RiskRegisterModel>();
                 versionControl.DocumentModels = new List<VersionControl<RiskRegisterModel>.DocumentModel>();
             }
+        }
+
+        private void txtRiskRegisterProjectName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

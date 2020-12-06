@@ -61,6 +61,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentChangeRequestModel = JsonConvert.DeserializeObject<ChangeRequestModel>(JsonConvert.SerializeObject(newChangeRequestModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ChangeRequestForm");
                 MessageBox.Show("Change Request saved successfully", "save", MessageBoxButtons.OK);
             }
@@ -209,9 +210,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private void ChangeRequestFormDocumentForm_Load_1(object sender, EventArgs e)
         {
             loadDocument();
-            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
-            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            string jsoni = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtProjectName.Text = projectModel.ProjectName;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
