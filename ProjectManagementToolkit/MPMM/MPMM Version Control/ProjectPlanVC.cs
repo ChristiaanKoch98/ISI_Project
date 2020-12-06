@@ -35,6 +35,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
             string projectPlanJson = JsonHelper.loadDocument(Settings.Default.ProjectID, "ProjectPlan");
+            
             versionControl = JsonConvert.DeserializeObject<VersionControl<ProjectPlanModel>>(projectPlanJson);
             for (int i = 0; i < versionControl.DocumentModels.Count; i++)
             {

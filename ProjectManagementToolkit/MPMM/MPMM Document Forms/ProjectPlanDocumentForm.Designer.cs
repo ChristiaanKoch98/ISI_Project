@@ -172,7 +172,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1251, 647);
             this.tabControl1.TabIndex = 0;
-            this.tabControl1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl1_DrawItem);
+            //this.tabControl1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl1_DrawItem);
             // 
             // documentControl
             // 
@@ -199,7 +199,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             this.tabControl3.SelectedIndex = 0;
             this.tabControl3.Size = new System.Drawing.Size(1235, 611);
             this.tabControl3.TabIndex = 12;
-            this.tabControl3.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl3_DrawItem);
+            //this.tabControl3.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl3_DrawItem);
             // 
             // tabPage6
             // 
