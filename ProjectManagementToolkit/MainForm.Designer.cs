@@ -1058,6 +1058,7 @@
             this.riskRegisterToolStripMenuItem.Name = "riskRegisterToolStripMenuItem";
             this.riskRegisterToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.riskRegisterToolStripMenuItem.Text = "Risk Register ";
+            this.riskRegisterToolStripMenuItem.Click += new System.EventHandler(this.riskRegisterToolStripMenuItem_Click);
             // 
             // exampleToolStripMenuItem24
             // 
@@ -1177,6 +1178,7 @@
             this.acceptanceRegisterToolStripMenuItem.Name = "acceptanceRegisterToolStripMenuItem";
             this.acceptanceRegisterToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
             this.acceptanceRegisterToolStripMenuItem.Text = "Acceptance Register";
+            this.acceptanceRegisterToolStripMenuItem.Click += new System.EventHandler(this.acceptanceRegisterToolStripMenuItem_Click);
             // 
             // exampleToolStripMenuItem27
             // 
@@ -1319,7 +1321,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
             this.Text = "Main Menu";
             this.Load += new System.EventHandler(this.MainForm_Load);
