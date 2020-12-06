@@ -413,6 +413,7 @@
     <Compile Include="MPMM\MPMM Document Models\AcceptanceFormModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\AcceptanceManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\AcceptancePlanModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\AcceptanceRegisterModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\BusinessCaseModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ChangeManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ChangeRegisterModel.cs" />
@@ -434,6 +435,7 @@
     <Compile Include="MPMM\MPMM Document Models\PostImplementationReviewModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProcurementPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProcurementRegisterModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\ProjectCharterModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectClosureReportModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectOfficeChecklistModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectPlanModel.cs" />
@@ -449,6 +451,7 @@
     <Compile Include="MPMM\MPMM Document Models\RiskFormModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\RiskManagmentProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\RiskPlanModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\RiskRegisterModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\StatementOfWorkModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\SupplierContractModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\TermsOfReferenceModel.cs" />

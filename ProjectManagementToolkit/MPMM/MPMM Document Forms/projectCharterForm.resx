@@ -144,14 +144,14 @@
   <metadata name="dateColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="visionTextBox.Text" xml:space="preserve">
+  <data name="txtVision.Text" xml:space="preserve">
     <value>Describe the vision of the project by creating a concise and achievable statement about what the project will achieve. Examples of vision statements include:
 - “To procure and relocate to new work premises with the capacity for 50 additional staff.”
 - “To deliver a reliable, functional financial management system to the customer.”
 - “To successfully introduce new financial products and services to the marketplace.”
 </value>
   </data>
-  <data name="objectivesTextBox.Text" xml:space="preserve">
+  <data name="txtObjectives.Text" xml:space="preserve">
     <value>List three to five specific objectives to be achieved by the delivery of this project. Each objective listed should be Specific, Measurable, Achievable, Realistic, and Time-bound (SMART). Examples include:
 
 - “To deliver new financial accounts payable and receivable processes, reducing processing timescales by at least 30%.”
@@ -161,15 +161,6 @@
 - “To install new accounts payable and receivable and payroll system modules within the existing accounting system, thereby achieving 99.5% system up-time.”
 </value>
   </data>
-  <metadata name="deliverable.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="componemetsColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="descriptionColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="deliverable.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -191,24 +182,9 @@
   <metadata name="stakeholderInterestColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="rolesTextBox.Text" xml:space="preserve">
+  <data name="txtRoles.Text" xml:space="preserve">
     <value>List the key roles involved in project delivery, such as the Project Sponsor, Project Manager, and Review Group. Then identify the resource likely to fill each of those roles by listing their names, organizations, and assignment details where possible</value>
   </data>
-  <metadata name="roleColum.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="ResourceNameColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="OrganizationColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="assignmentStatusColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="assignmentdateColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="roleColum.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -230,7 +206,7 @@
   <metadata name="OverallApproachColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="scheduleTextBox.Text" xml:space="preserve">
+  <data name="txtSchedule.Text" xml:space="preserve">
     <value>To provide the Customer and Project Stakeholders with confidence that the project implementation has been well planned, depict a summarized Project Plan that lists the phases, activities, and timeframes involved in undertaking the project. See MPMM for a detailed example.</value>
   </data>
   <data name="milestoneTextBox.Text" xml:space="preserve">
@@ -299,27 +275,6 @@
   <metadata name="descripCol.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="processCol.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="descripCol.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="projectactivityColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="impactsColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="isImpactedByColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="criticallyColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="daTECol.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="projectactivityColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -356,14 +311,4 @@
   <metadata name="actionResolColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="apendixTextBox.Text" xml:space="preserve">
-    <value>-Curricula Vitae (CVs) for key project staff
--Completed and approved Business Case
--Completed and approved Feasibility Study 
--Research materials
--Supplier quotes
--Detailed financial planning spreadsheets
--Other relevant information or correspondence
-</value>
-  </data>
 </root>
