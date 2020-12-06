@@ -31,7 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.Conformance_of_Processes_dgv = new System.Windows.Forms.DataGridView();
+            this.dgvChangeRegister = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date_Raised = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Raised_By = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,29 +48,30 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Project_Manager_tbx = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.Enter_btn = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.Project_Name_tbx = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.Conformance_of_Processes_dgv)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvChangeRegister)).BeginInit();
             this.SuspendLayout();
             // 
-            // Conformance_of_Processes_dgv
+            // dgvChangeRegister
             // 
-            this.Conformance_of_Processes_dgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvChangeRegister.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Conformance_of_Processes_dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.Conformance_of_Processes_dgv.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.dgvChangeRegister.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvChangeRegister.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Conformance_of_Processes_dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.Conformance_of_Processes_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Conformance_of_Processes_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvChangeRegister.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvChangeRegister.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvChangeRegister.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.Date_Raised,
             this.Raised_By,
@@ -84,21 +85,21 @@
             this.Implementation_Resource,
             this.Implementation_Status,
             this.Implementation_Date});
-            this.Conformance_of_Processes_dgv.EnableHeadersVisualStyles = false;
-            this.Conformance_of_Processes_dgv.Location = new System.Drawing.Point(0, 209);
-            this.Conformance_of_Processes_dgv.Name = "Conformance_of_Processes_dgv";
+            this.dgvChangeRegister.EnableHeadersVisualStyles = false;
+            this.dgvChangeRegister.Location = new System.Drawing.Point(0, 209);
+            this.dgvChangeRegister.Name = "dgvChangeRegister";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Conformance_of_Processes_dgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Conformance_of_Processes_dgv.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.Conformance_of_Processes_dgv.Size = new System.Drawing.Size(1218, 341);
-            this.Conformance_of_Processes_dgv.TabIndex = 27;
+            this.dgvChangeRegister.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvChangeRegister.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvChangeRegister.Size = new System.Drawing.Size(1252, 341);
+            this.dgvChangeRegister.TabIndex = 27;
             // 
             // ID
             // 
@@ -168,10 +169,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Helvetica", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(11, 27);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(298, 42);
+            this.label4.Size = new System.Drawing.Size(290, 41);
             this.label4.TabIndex = 25;
             this.label4.Text = "Change Register";
             // 
@@ -192,18 +193,19 @@
             this.label2.TabIndex = 21;
             this.label2.Text = "Project Manager:";
             // 
-            // Enter_btn
+            // btnSave
             // 
-            this.Enter_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.Enter_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Enter_btn.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Enter_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.Enter_btn.Location = new System.Drawing.Point(509, 96);
-            this.Enter_btn.Name = "Enter_btn";
-            this.Enter_btn.Size = new System.Drawing.Size(75, 27);
-            this.Enter_btn.TabIndex = 20;
-            this.Enter_btn.Text = "Enter";
-            this.Enter_btn.UseVisualStyleBackColor = false;
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSave.Location = new System.Drawing.Point(509, 96);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 27);
+            this.btnSave.TabIndex = 20;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // Project_Name_tbx
             // 
@@ -222,24 +224,40 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Project Name:";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.button1.Location = new System.Drawing.Point(617, 96);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(108, 27);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "Export to Word";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ChangeRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(1215, 547);
-            this.Controls.Add(this.Conformance_of_Processes_dgv);
+            this.ClientSize = new System.Drawing.Size(1249, 547);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dgvChangeRegister);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Project_Manager_tbx);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.Enter_btn);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.Project_Name_tbx);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ChangeRegister";
             this.Text = "ChangeRegister";
-            ((System.ComponentModel.ISupportInitialize)(this.Conformance_of_Processes_dgv)).EndInit();
+            this.Load += new System.EventHandler(this.ChangeRegister_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvChangeRegister)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,11 +265,11 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView Conformance_of_Processes_dgv;
+        private System.Windows.Forms.DataGridView dgvChangeRegister;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox Project_Manager_tbx;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button Enter_btn;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox Project_Name_tbx;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
@@ -267,5 +285,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Implementation_Resource;
         private System.Windows.Forms.DataGridViewTextBoxColumn Implementation_Status;
         private System.Windows.Forms.DataGridViewTextBoxColumn Implementation_Date;
+        private System.Windows.Forms.Button button1;
     }
 }
