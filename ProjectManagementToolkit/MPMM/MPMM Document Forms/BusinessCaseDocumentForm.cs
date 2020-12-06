@@ -22,7 +22,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         VersionControl<BusinessCaseModel> versionControl = new VersionControl<BusinessCaseModel>();
         BusinessCaseModel newBusinessCaseModel = new BusinessCaseModel();
         BusinessCaseModel currentBusinessCaseModel = new BusinessCaseModel();
-
+        ProjectModel projectModel = new ProjectModel();
         Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
         Color TABLE_SUBHEADER_COLOR = Color.FromArgb(255, 255, 0);
 
@@ -1923,6 +1923,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void BusinessCaseDocumentForm_Load(object sender, EventArgs e)
         {
+            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtProjectName.Text = projectModel.ProjectName;
+
             LoadDoc();
         }
 

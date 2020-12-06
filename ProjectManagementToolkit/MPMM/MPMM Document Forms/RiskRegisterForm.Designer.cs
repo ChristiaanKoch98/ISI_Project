@@ -32,12 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvRiskRegister = new System.Windows.Forms.DataGridView();
-            this.btnExport = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.txtRiskRegisterProjectManager = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.txtRiskRegisterProjectName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date_Raised = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Raised_By = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,6 +47,12 @@
             this.Contingency_Actions = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Contingency_ActionsOwner = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Contingency_ActionsData = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.txtRiskRegisterProjectManager = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.txtRiskRegisterProjectName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRiskRegister)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,80 +107,6 @@
             this.dgvRiskRegister.Size = new System.Drawing.Size(962, 410);
             this.dgvRiskRegister.TabIndex = 36;
             this.dgvRiskRegister.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSolutionRaiseRaised_CellContentClick);
-            // 
-            // btnExport
-            // 
-            this.btnExport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnExport.Location = new System.Drawing.Point(539, 2);
-            this.btnExport.Margin = new System.Windows.Forms.Padding(2);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(103, 45);
-            this.btnExport.TabIndex = 35;
-            this.btnExport.Text = "Export to Word";
-            this.btnExport.UseVisualStyleBackColor = false;
-            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSave.Location = new System.Drawing.Point(384, 5);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(124, 42);
-            this.btnSave.TabIndex = 34;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // txtRiskRegisterProjectManager
-            // 
-            this.txtRiskRegisterProjectManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.txtRiskRegisterProjectManager.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRiskRegisterProjectManager.ForeColor = System.Drawing.Color.Black;
-            this.txtRiskRegisterProjectManager.Location = new System.Drawing.Point(124, 29);
-            this.txtRiskRegisterProjectManager.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtRiskRegisterProjectManager.Name = "txtRiskRegisterProjectManager";
-            this.txtRiskRegisterProjectManager.Size = new System.Drawing.Size(243, 20);
-            this.txtRiskRegisterProjectManager.TabIndex = 32;
-            this.txtRiskRegisterProjectManager.Text = "Project Manager";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(20, 11);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(83, 14);
-            this.label27.TabIndex = 31;
-            this.label27.Text = "Project Name:";
-            // 
-            // txtRiskRegisterProjectName
-            // 
-            this.txtRiskRegisterProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.txtRiskRegisterProjectName.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRiskRegisterProjectName.ForeColor = System.Drawing.Color.Black;
-            this.txtRiskRegisterProjectName.Location = new System.Drawing.Point(125, 5);
-            this.txtRiskRegisterProjectName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtRiskRegisterProjectName.Name = "txtRiskRegisterProjectName";
-            this.txtRiskRegisterProjectName.Size = new System.Drawing.Size(243, 20);
-            this.txtRiskRegisterProjectName.TabIndex = 30;
-            this.txtRiskRegisterProjectName.Text = "Project Name";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(20, 30);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 14);
-            this.label1.TabIndex = 33;
-            this.label1.Text = "Project Manager:";
             // 
             // ID
             // 
@@ -301,6 +227,81 @@
             this.Contingency_ActionsData.MinimumWidth = 6;
             this.Contingency_ActionsData.Name = "Contingency_ActionsData";
             this.Contingency_ActionsData.Width = 183;
+            // 
+            // btnExport
+            // 
+            this.btnExport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExport.Location = new System.Drawing.Point(539, 2);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(103, 45);
+            this.btnExport.TabIndex = 35;
+            this.btnExport.Text = "Export to Word";
+            this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSave.Location = new System.Drawing.Point(384, 5);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(124, 42);
+            this.btnSave.TabIndex = 34;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // txtRiskRegisterProjectManager
+            // 
+            this.txtRiskRegisterProjectManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.txtRiskRegisterProjectManager.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRiskRegisterProjectManager.ForeColor = System.Drawing.Color.Black;
+            this.txtRiskRegisterProjectManager.Location = new System.Drawing.Point(124, 29);
+            this.txtRiskRegisterProjectManager.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtRiskRegisterProjectManager.Name = "txtRiskRegisterProjectManager";
+            this.txtRiskRegisterProjectManager.Size = new System.Drawing.Size(243, 20);
+            this.txtRiskRegisterProjectManager.TabIndex = 32;
+            this.txtRiskRegisterProjectManager.Text = "Project Manager";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Black;
+            this.label27.Location = new System.Drawing.Point(20, 11);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(83, 14);
+            this.label27.TabIndex = 31;
+            this.label27.Text = "Project Name:";
+            // 
+            // txtRiskRegisterProjectName
+            // 
+            this.txtRiskRegisterProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.txtRiskRegisterProjectName.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRiskRegisterProjectName.ForeColor = System.Drawing.Color.Black;
+            this.txtRiskRegisterProjectName.Location = new System.Drawing.Point(125, 5);
+            this.txtRiskRegisterProjectName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtRiskRegisterProjectName.Name = "txtRiskRegisterProjectName";
+            this.txtRiskRegisterProjectName.Size = new System.Drawing.Size(243, 20);
+            this.txtRiskRegisterProjectName.TabIndex = 30;
+            this.txtRiskRegisterProjectName.Text = "Project Name";
+            this.txtRiskRegisterProjectName.TextChanged += new System.EventHandler(this.txtRiskRegisterProjectName_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(20, 30);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 14);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "Project Manager:";
             // 
             // RiskRegisterForm
             // 

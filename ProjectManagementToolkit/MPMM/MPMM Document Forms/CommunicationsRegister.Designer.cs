@@ -81,12 +81,13 @@
             this.CommuncationsRegister.Size = new System.Drawing.Size(1308, 408);
             this.CommuncationsRegister.TabIndex = 0;
             this.CommuncationsRegister.Text = "Communications Register";
+            this.CommuncationsRegister.Click += new System.EventHandler(this.CommuncationsRegister_Click);
             // 
             // dataGridView1
             // 
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
@@ -110,13 +111,13 @@
             this.dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.Size = new System.Drawing.Size(1284, 162);
             this.dataGridView1.TabIndex = 6;
@@ -181,7 +182,7 @@
             this.CommunicationsManager.AutoSize = true;
             this.CommunicationsManager.Location = new System.Drawing.Point(12, 97);
             this.CommunicationsManager.Name = "CommunicationsManager";
-            this.CommunicationsManager.Size = new System.Drawing.Size(146, 14);
+            this.CommunicationsManager.Size = new System.Drawing.Size(155, 14);
             this.CommunicationsManager.TabIndex = 5;
             this.CommunicationsManager.Text = "Communications Manager:";
             // 
@@ -190,7 +191,7 @@
             this.ProjectManager.AutoSize = true;
             this.ProjectManager.Location = new System.Drawing.Point(12, 53);
             this.ProjectManager.Name = "ProjectManager";
-            this.ProjectManager.Size = new System.Drawing.Size(99, 14);
+            this.ProjectManager.Size = new System.Drawing.Size(100, 14);
             this.ProjectManager.TabIndex = 4;
             this.ProjectManager.Text = "Project Manager:";
             // 
@@ -199,13 +200,13 @@
             this.ProjectName.AutoSize = true;
             this.ProjectName.Location = new System.Drawing.Point(8, 13);
             this.ProjectName.Name = "ProjectName";
-            this.ProjectName.Size = new System.Drawing.Size(84, 14);
+            this.ProjectName.Size = new System.Drawing.Size(83, 14);
             this.ProjectName.TabIndex = 3;
             this.ProjectName.Text = "Project Name:";
             // 
             // comMan
             // 
-            this.comMan.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.comMan.Font = new System.Drawing.Font("Arial", 8.25F);
             this.comMan.Location = new System.Drawing.Point(176, 90);
             this.comMan.Name = "comMan";
             this.comMan.Size = new System.Drawing.Size(116, 20);
@@ -213,7 +214,7 @@
             // 
             // projMan
             // 
-            this.projMan.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.projMan.Font = new System.Drawing.Font("Arial", 8.25F);
             this.projMan.Location = new System.Drawing.Point(176, 46);
             this.projMan.Name = "projMan";
             this.projMan.Size = new System.Drawing.Size(116, 20);
@@ -221,7 +222,7 @@
             // 
             // projName
             // 
-            this.projName.Font = new System.Drawing.Font("Helvetica", 8.25F);
+            this.projName.Font = new System.Drawing.Font("Arial", 8.25F);
             this.projName.Location = new System.Drawing.Point(176, 6);
             this.projName.Name = "projName";
             this.projName.Size = new System.Drawing.Size(116, 20);
@@ -234,7 +235,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1344, 485);
             this.Controls.Add(this.tabControl1);
-            this.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "CommunicationsRegister";
             this.Text = "CommunicationsRegister";
             this.tabControl1.ResumeLayout(false);
