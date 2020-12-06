@@ -49,7 +49,16 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 var implementationStatus = dgvChangeRegister.Rows[i].Cells[11].Value?.ToString() ?? "";
                 var implementationDate = dgvChangeRegister.Rows[i].Cells[12].Value?.ToString() ?? "";
 
-                changeEntry.ID = int.Parse(id);
+                try
+                {
+                    changeEntry.ID = int.Parse(id);
+                }
+                catch
+                {
+                    MessageBox.Show("The ID field must contain only numbers.");
+                    return;
+                }
+                
                 changeEntry.DateRaised = dateRaised;
                 changeEntry.RaisedBy = raisedBy;
                 changeEntry.ReceivedBy = receivedBy;
@@ -79,7 +88,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 string json = JsonConvert.SerializeObject(versionControl);
                 currentChangeRegisterModel = JsonConvert.DeserializeObject<ChangeRegisterModel>(JsonConvert.SerializeObject(newChangeRegisterModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ChangeRegister");
-                MessageBox.Show("Chnage register saved successfully", "save", MessageBoxButtons.OK);
+                MessageBox.Show("Change register saved successfully", "save", MessageBoxButtons.OK);
             }
             else
             {

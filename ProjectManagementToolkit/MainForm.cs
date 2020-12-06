@@ -461,5 +461,12 @@ namespace ProjectManagementToolkit
             form.Show();
             form.MdiParent = this;
         }
+
+        private void procurementRegisterToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ProcurementRegister pr = new ProcurementRegister();
+            pr.Show();
+            pr.MdiParent = this;
+        }
     }
 }
