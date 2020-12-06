@@ -19,7 +19,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
     {
         VersionControl<RiskRegisterModel> versionControl;
         RiskRegisterModel newRiskRegisterModel;
-        RiskRegisterModel currentIssueRegisterModel;
+        RiskRegisterModel currentRiskRegisterModel;
         Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
         ProjectModel projectModel = new ProjectModel();
         public RiskRegisterForm()
@@ -76,13 +76,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newRiskRegisterModel.IssueEntries = issueEntries;
             List<VersionControl<RiskRegisterModel>.DocumentModel> documentModels = versionControl.DocumentModels;
 
-            if (!versionControl.isEqual(currentIssueRegisterModel, newRiskRegisterModel))
+            if (!versionControl.isEqual(currentRiskRegisterModel, newRiskRegisterModel))
             {
                 VersionControl<RiskRegisterModel>.DocumentModel documentModel = new VersionControl<RiskRegisterModel>.DocumentModel(newRiskRegisterModel, DateTime.Now, VersionControl<IssueRegisterModel>.generateID());
 
                 documentModels.Add(documentModel);
                 string json = JsonConvert.SerializeObject(versionControl);
-                currentIssueRegisterModel = JsonConvert.DeserializeObject<RiskRegisterModel>(JsonConvert.SerializeObject(newRiskRegisterModel));
+                currentRiskRegisterModel = JsonConvert.DeserializeObject<RiskRegisterModel>(JsonConvert.SerializeObject(newRiskRegisterModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "RiskRegister");
                 MessageBox.Show("Risk Register saved successfully", "save", MessageBoxButtons.OK);
             }
@@ -96,6 +96,32 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private void btnExport_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void RiskRegisterForm_Load(object sender, EventArgs e)
+        {
+            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "RiskRegister");
+            newRiskRegisterModel = new RiskRegisterModel();
+            currentRiskRegisterModel = new RiskRegisterModel();
+
+            if (json != "")
+            {
+                versionControl = JsonConvert.DeserializeObject<VersionControl<RiskRegisterModel>>(json);
+                newRiskRegisterModel = JsonConvert.DeserializeObject<RiskRegisterModel>(versionControl.getLatest(versionControl.DocumentModels));
+                currentRiskRegisterModel = JsonConvert.DeserializeObject<RiskRegisterModel>(versionControl.getLatest(versionControl.DocumentModels));
+
+                foreach (var row in currentRiskRegisterModel.IssueEntries)
+                {
+                    dgvRiskRegister.Rows.Add(new string[] { row.ID.ToString(), row.DateRaised, row.RaisedBy,
+                    row.ReceivedBy,row.DescriptionRisk,row.DescriptionImpact,row.LikelyHoodRating,row.PriorityRating,row.PreventionAction,row.PreventionOwner,row.PreventionDate,
+                    row.ContingencyActions,row.ContingencyOwner,row.ContingencyDate});
+                }
+            }
+            else
+            {
+                versionControl = new VersionControl<RiskRegisterModel>();
+                versionControl.DocumentModels = new List<VersionControl<RiskRegisterModel>.DocumentModel>();
+            }
         }
     }
 }
