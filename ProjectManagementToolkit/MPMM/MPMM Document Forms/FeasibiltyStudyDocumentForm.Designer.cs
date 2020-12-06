@@ -150,6 +150,8 @@
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage12 = new System.Windows.Forms.TabPage();
             this.Document_Information_dgv = new System.Windows.Forms.DataGridView();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage13 = new System.Windows.Forms.TabPage();
             this.Document_History_dgv = new System.Windows.Forms.DataGridView();
             this.Version = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -213,8 +215,6 @@
             this.tabPage43 = new System.Windows.Forms.TabPage();
             this.Assumptions3_tbx = new System.Windows.Forms.TextBox();
             this.btnExport = new System.Windows.Forms.Button();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Information = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage11.SuspendLayout();
             this.tabControl10.SuspendLayout();
             this.tabPage29.SuspendLayout();
@@ -368,7 +368,7 @@
             this.Supporting_Documentation_btn.Margin = new System.Windows.Forms.Padding(2);
             this.Supporting_Documentation_btn.Multiline = true;
             this.Supporting_Documentation_btn.Name = "Supporting_Documentation_btn";
-            this.Supporting_Documentation_btn.Size = new System.Drawing.Size(894, 329);
+            this.Supporting_Documentation_btn.Size = new System.Drawing.Size(894, 328);
             this.Supporting_Documentation_btn.TabIndex = 12;
             // 
             // Appendix_btn
@@ -429,7 +429,7 @@
             this.Feasibility_Result_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.Feasibility_Result_tbx.Multiline = true;
             this.Feasibility_Result_tbx.Name = "Feasibility_Result_tbx";
-            this.Feasibility_Result_tbx.Size = new System.Drawing.Size(896, 340);
+            this.Feasibility_Result_tbx.Size = new System.Drawing.Size(896, 339);
             this.Feasibility_Result_tbx.TabIndex = 9;
             // 
             // Feasibility_Result_btn
@@ -491,7 +491,7 @@
             this.Ranking_Criteria_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.Ranking_Criteria_tbx.Multiline = true;
             this.Ranking_Criteria_tbx.Name = "Ranking_Criteria_tbx";
-            this.Ranking_Criteria_tbx.Size = new System.Drawing.Size(816, 299);
+            this.Ranking_Criteria_tbx.Size = new System.Drawing.Size(816, 298);
             this.Ranking_Criteria_tbx.TabIndex = 16;
             // 
             // tabPage8
@@ -626,7 +626,7 @@
             this.Description_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.Description_tbx.Multiline = true;
             this.Description_tbx.Name = "Description_tbx";
-            this.Description_tbx.Size = new System.Drawing.Size(894, 317);
+            this.Description_tbx.Size = new System.Drawing.Size(894, 316);
             this.Description_tbx.TabIndex = 12;
             // 
             // tabPage23
@@ -1263,7 +1263,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(903, 404);
+            this.tabPage1.Size = new System.Drawing.Size(905, 404);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Document Control";
             // 
@@ -1279,7 +1279,7 @@
             this.tabControl2.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(901, 392);
+            this.tabControl2.Size = new System.Drawing.Size(903, 392);
             this.tabControl2.TabIndex = 6;
             // 
             // tabPage12
@@ -1289,7 +1289,7 @@
             this.tabPage12.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage12.Size = new System.Drawing.Size(893, 365);
+            this.tabPage12.Size = new System.Drawing.Size(895, 365);
             this.tabPage12.TabIndex = 0;
             this.tabPage12.Text = "Document Information";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -1329,8 +1329,21 @@
             dataGridViewCellStyle18.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
             this.Document_Information_dgv.RowsDefaultCellStyle = dataGridViewCellStyle18;
-            this.Document_Information_dgv.Size = new System.Drawing.Size(892, 361);
+            this.Document_Information_dgv.Size = new System.Drawing.Size(894, 360);
             this.Document_Information_dgv.TabIndex = 1;
+            // 
+            // Name
+            // 
+            this.Name.HeaderText = "Name";
+            this.Name.MinimumWidth = 6;
+            this.Name.Name = "Name";
+            this.Name.ReadOnly = true;
+            // 
+            // Information
+            // 
+            this.Information.HeaderText = "Information";
+            this.Information.MinimumWidth = 6;
+            this.Information.Name = "Information";
             // 
             // tabPage13
             // 
@@ -1501,7 +1514,7 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(911, 431);
+            this.tabControl1.Size = new System.Drawing.Size(913, 431);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage30
@@ -1592,7 +1605,7 @@
             this.Assessment2_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.Assessment2_tbx.Multiline = true;
             this.Assessment2_tbx.Name = "Assessment2_tbx";
-            this.Assessment2_tbx.Size = new System.Drawing.Size(913, 353);
+            this.Assessment2_tbx.Size = new System.Drawing.Size(913, 354);
             this.Assessment2_tbx.TabIndex = 14;
             // 
             // tabPage34
@@ -1642,7 +1655,7 @@
             this.Results2_dgv.RowHeadersWidth = 51;
             dataGridViewCellStyle27.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Results2_dgv.RowsDefaultCellStyle = dataGridViewCellStyle27;
-            this.Results2_dgv.Size = new System.Drawing.Size(892, 338);
+            this.Results2_dgv.Size = new System.Drawing.Size(892, 339);
             this.Results2_dgv.TabIndex = 17;
             // 
             // dataGridViewTextBoxColumn1
@@ -1711,7 +1724,7 @@
             this.Risks2_dgv.RowHeadersWidth = 51;
             dataGridViewCellStyle30.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Risks2_dgv.RowsDefaultCellStyle = dataGridViewCellStyle30;
-            this.Risks2_dgv.Size = new System.Drawing.Size(892, 332);
+            this.Risks2_dgv.Size = new System.Drawing.Size(892, 333);
             this.Risks2_dgv.TabIndex = 18;
             // 
             // dataGridViewTextBoxColumn4
@@ -1785,7 +1798,7 @@
             this.Issues2_dgv.RowHeadersWidth = 51;
             dataGridViewCellStyle33.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Issues2_dgv.RowsDefaultCellStyle = dataGridViewCellStyle33;
-            this.Issues2_dgv.Size = new System.Drawing.Size(896, 341);
+            this.Issues2_dgv.Size = new System.Drawing.Size(896, 342);
             this.Issues2_dgv.TabIndex = 22;
             // 
             // dataGridViewTextBoxColumn8
@@ -1828,7 +1841,7 @@
             this.Assumptions2_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.Assumptions2_tbx.Multiline = true;
             this.Assumptions2_tbx.Name = "Assumptions2_tbx";
-            this.Assumptions2_tbx.Size = new System.Drawing.Size(908, 353);
+            this.Assumptions2_tbx.Size = new System.Drawing.Size(908, 354);
             this.Assumptions2_tbx.TabIndex = 20;
             // 
             // tabPage31
@@ -1919,7 +1932,7 @@
             this.Assessment3_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.Assessment3_tbx.Multiline = true;
             this.Assessment3_tbx.Name = "Assessment3_tbx";
-            this.Assessment3_tbx.Size = new System.Drawing.Size(894, 332);
+            this.Assessment3_tbx.Size = new System.Drawing.Size(894, 333);
             this.Assessment3_tbx.TabIndex = 14;
             // 
             // tabPage40
@@ -1969,7 +1982,7 @@
             this.Results3_dgv.RowHeadersWidth = 51;
             dataGridViewCellStyle36.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Results3_dgv.RowsDefaultCellStyle = dataGridViewCellStyle36;
-            this.Results3_dgv.Size = new System.Drawing.Size(874, 318);
+            this.Results3_dgv.Size = new System.Drawing.Size(874, 319);
             this.Results3_dgv.TabIndex = 17;
             // 
             // dataGridViewTextBoxColumn11
@@ -2038,7 +2051,7 @@
             this.Risks3_dgv.RowHeadersWidth = 51;
             dataGridViewCellStyle39.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Risks3_dgv.RowsDefaultCellStyle = dataGridViewCellStyle39;
-            this.Risks3_dgv.Size = new System.Drawing.Size(874, 311);
+            this.Risks3_dgv.Size = new System.Drawing.Size(874, 312);
             this.Risks3_dgv.TabIndex = 18;
             // 
             // dataGridViewTextBoxColumn14
@@ -2112,7 +2125,7 @@
             this.Issues3_dgv.RowHeadersWidth = 51;
             dataGridViewCellStyle42.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Issues3_dgv.RowsDefaultCellStyle = dataGridViewCellStyle42;
-            this.Issues3_dgv.Size = new System.Drawing.Size(877, 314);
+            this.Issues3_dgv.Size = new System.Drawing.Size(877, 315);
             this.Issues3_dgv.TabIndex = 22;
             // 
             // dataGridViewTextBoxColumn18
@@ -2155,7 +2168,7 @@
             this.Assumptions3_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.Assumptions3_tbx.Multiline = true;
             this.Assumptions3_tbx.Name = "Assumptions3_tbx";
-            this.Assumptions3_tbx.Size = new System.Drawing.Size(889, 332);
+            this.Assumptions3_tbx.Size = new System.Drawing.Size(889, 333);
             this.Assumptions3_tbx.TabIndex = 20;
             // 
             // btnExport
@@ -2173,25 +2186,12 @@
             this.btnExport.UseVisualStyleBackColor = false;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
-            // Name
-            // 
-            this.Name.HeaderText = "Name";
-            this.Name.MinimumWidth = 6;
-            this.Name.Name = "Name";
-            this.Name.ReadOnly = true;
-            // 
-            // Information
-            // 
-            this.Information.HeaderText = "Information";
-            this.Information.MinimumWidth = 6;
-            this.Information.Name = "Information";
-            // 
             // FeasibiltyStudyDocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(964, 503);
+            this.ClientSize = new System.Drawing.Size(966, 503);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.Project_Name_tbx);
