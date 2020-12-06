@@ -380,16 +380,356 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             { TableOfContentsSwitches.Z, ""},
                             { TableOfContentsSwitches.H, ""}
                         };
+
                         document.InsertTableOfContents(p, "", tocSwitches);
                         document.InsertParagraph().InsertPageBreakAfterSelf();
-                        var WorkBreakdownHeading = document.InsertParagraph("1 Overview")
+                        var OverviewHeading = document.InsertParagraph("1 Overview")
                             .Bold()
                             .FontSize(14d)
                             .Color(Color.Black)
                             .Bold(true)
                             .Font("Arial");
 
-                        WorkBreakdownHeading.StyleId = "Heading1";
+                        OverviewHeading.StyleId = "Heading1";
+
+                        var PeriodicMeasurementHeading = document.InsertParagraph("2 Periodic Measurement")
+                           .Bold()
+                           .FontSize(12d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        PeriodicMeasurementHeading.StyleId = "Heading1";
+
+                        var PMSchedule = document.InsertParagraph("2.1 Schedule")
+                           .Bold()
+                           .FontSize(12d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        PMSchedule.StyleId = "Heading2";
+
+                        var documentPmScheduleTable = document.AddTable(currentSelectionProcessModel.Schedules.Count + 1, 3);
+                        documentPmScheduleTable.Rows[0].Cells[0].Paragraphs[0].Append("Phase")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentPmScheduleTable.Rows[0].Cells[1].Paragraphs[0].Append("Activity")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentPmScheduleTable.Rows[0].Cells[2].Paragraphs[0].Append("Task")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentPmScheduleTable.Rows[0].Cells[3].Paragraphs[0].Append("Date")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        var PMCost = document.InsertParagraph("2.2 Cost")
+                           .Bold()
+                           .FontSize(12d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        document.InsertParagraph(currentSelectionProcessModel.Cost)
+                           .FontSize(11d)
+                           .Color(Color.Black)
+                           .Font("Arial").Alignment = Alignment.left;
+
+                        PMCost.StyleId = "Heading2";
+
+                        var PMResource = document.InsertParagraph("2.3 Resource")
+                           .Bold()
+                           .FontSize(12d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        PMResource.StyleId = "Heading2";
+
+                        var PMResourceLabour = document.InsertParagraph("2.3.1 Resource Labour")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        PMResourceLabour.StyleId = "Heading3";
+
+                        var documentResourceLabourTable = document.AddTable(currentSelectionProcessModel.Labours.Count + 1, 3);
+                        documentResourceLabourTable.Rows[0].Cells[0].Paragraphs[0].Append("Role")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceLabourTable.Rows[0].Cells[1].Paragraphs[0].Append("Number")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceLabourTable.Rows[0].Cells[2].Paragraphs[0].Append("Responsibilities")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceLabourTable.Rows[0].Cells[3].Paragraphs[0].Append("Skills")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceLabourTable.Rows[0].Cells[4].Paragraphs[0].Append("Start Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceLabourTable.Rows[0].Cells[5].Paragraphs[0].Append("End Date")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        var PMResourceEquipment = document.InsertParagraph("2.3.2 Resource Equipment")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        PMResourceEquipment.StyleId = "Heading3";
+
+                        var documentResourceEquipmentTable = document.AddTable(currentSelectionProcessModel.Equipments.Count + 1, 3);
+                        documentResourceEquipmentTable.Rows[0].Cells[0].Paragraphs[0].Append("Item")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceEquipmentTable.Rows[0].Cells[1].Paragraphs[0].Append("Amount")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceEquipmentTable.Rows[0].Cells[2].Paragraphs[0].Append("Purpose")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceEquipmentTable.Rows[0].Cells[3].Paragraphs[0].Append("Specification")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceEquipmentTable.Rows[0].Cells[4].Paragraphs[0].Append("Start Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceEquipmentTable.Rows[0].Cells[5].Paragraphs[0].Append("End Date")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        var PMResourceMaterial = document.InsertParagraph("2.3.3 Resource Material")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        PMResourceMaterial.StyleId = "Heading3";
+
+                        var documentResourceMaterialTable = document.AddTable(currentSelectionProcessModel.Materials.Count + 1, 3);
+                        documentResourceMaterialTable.Rows[0].Cells[0].Paragraphs[0].Append("Item")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceMaterialTable.Rows[0].Cells[1].Paragraphs[0].Append("Amount")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceMaterialTable.Rows[0].Cells[2].Paragraphs[0].Append("Start Date")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceMaterialTable.Rows[0].Cells[3].Paragraphs[0].Append("End Date")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        var PMResourceSchedule = document.InsertParagraph("2.3.4 Resource Schedule")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        PMResourceSchedule.StyleId = "Heading3";
+
+                        var documentResourceScheduleTable = document.AddTable(currentSelectionProcessModel.ResourcesSchedules.Count + 1, 3);
+                        documentResourceScheduleTable.Rows[0].Cells[0].Paragraphs[0].Append("Resource")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceScheduleTable.Rows[0].Cells[1].Paragraphs[0].Append("Jan")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceScheduleTable.Rows[0].Cells[2].Paragraphs[0].Append("Feb")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceScheduleTable.Rows[0].Cells[3].Paragraphs[0].Append("Mar")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceScheduleTable.Rows[0].Cells[4].Paragraphs[0].Append("Apr")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceScheduleTable.Rows[0].Cells[5].Paragraphs[0].Append("May")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceScheduleTable.Rows[0].Cells[6].Paragraphs[0].Append("Jun")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceScheduleTable.Rows[0].Cells[7].Paragraphs[0].Append("Jul")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceScheduleTable.Rows[0].Cells[8].Paragraphs[0].Append("Aug")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceScheduleTable.Rows[0].Cells[9].Paragraphs[0].Append("Sep")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceScheduleTable.Rows[0].Cells[10].Paragraphs[0].Append("Oct")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceScheduleTable.Rows[0].Cells[11].Paragraphs[0].Append("Nov")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceScheduleTable.Rows[0].Cells[12].Paragraphs[0].Append("Dec")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceScheduleTable.Rows[0].Cells[13].Paragraphs[0].Append("Total")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        var RiskASsessmentHeading = document.InsertParagraph("3 Risk Assessment")
+                           .Bold()
+                           .FontSize(12d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        RiskASsessmentHeading.StyleId = "Heading1";
+
+                        var RARiskIdentification = document.InsertParagraph("3.1 Risk Identification")
+                           .Bold()
+                           .FontSize(12d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        RARiskIdentification.StyleId = "Heading2";
+
+                        var documentRiskIdentificationTable = document.AddTable(currentSelectionProcessModel.RiskIdentifications.Count + 1, 3);
+                        documentRiskIdentificationTable.Rows[0].Cells[0].Paragraphs[0].Append("Risk Description")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentRiskIdentificationTable.Rows[0].Cells[1].Paragraphs[0].Append("Probability(0-1)")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentRiskIdentificationTable.Rows[0].Cells[2].Paragraphs[0].Append("Likelihood(Low/Med/High)")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentRiskIdentificationTable.Rows[0].Cells[3].Paragraphs[0].Append("Impact of risk if it occurs")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentRiskIdentificationTable.Rows[0].Cells[4].Paragraphs[0].Append("Qualitative/Quantitative Assessment")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentRiskIdentificationTable.Rows[0].Cells[5].Paragraphs[0].Append("Risk Owner")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        var RARiskResponsePlanning = document.InsertParagraph("3.2 Risk Response Planning")
+                           .Bold()
+                           .FontSize(12d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        RARiskResponsePlanning.StyleId = "Heading2";
+
+                        var documentRiskResponsePlanningTable = document.AddTable(currentSelectionProcessModel.RiskResponsePlannings.Count + 1, 3);
+                        documentRiskResponsePlanningTable.Rows[0].Cells[0].Paragraphs[0].Append("Risk Description")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentRiskResponsePlanningTable.Rows[0].Cells[1].Paragraphs[0].Append("Risk Category")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentRiskResponsePlanningTable.Rows[0].Cells[2].Paragraphs[0].Append("Risk Response Strategy")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        var RARiskMonitoringandControl = document.InsertParagraph("3.3 Risk Monitoring and Control")
+                           .Bold()
+                           .FontSize(12d)
+                           .Color(Color.Black)
+                           .Bold(true)
+                           .Font("Arial");
+
+                        document.InsertParagraph(currentSelectionProcessModel.RiskMonitoringandControl)
+                           .FontSize(11d)
+                           .Color(Color.Black)
+                           .Font("Arial").Alignment = Alignment.left;
+
+                        RARiskMonitoringandControl.StyleId = "Heading2";
+
+                        var ResourceAvaliabilityandAllocationHeading = document.InsertParagraph("4 Resource Avaliability and Allocation")
+                          .Bold()
+                          .FontSize(12d)
+                          .Color(Color.Black)
+                          .Bold(true)
+                          .Font("Arial");
+
+                        ResourceAvaliabilityandAllocationHeading.StyleId = "Heading1";
+
+                        var documentResourceAvaliabilityandAllocationTable = document.AddTable(currentSelectionProcessModel.ResourceAvaliabilityandAllocations.Count + 1, 3);
+                        documentResourceAvaliabilityandAllocationTable.Rows[0].Cells[0].Paragraphs[0].Append("Avaliability(In-House, Outsourced)")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceAvaliabilityandAllocationTable.Rows[0].Cells[1].Paragraphs[0].Append("Allocation(Committed, Soft Allocation)")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentResourceAvaliabilityandAllocationTable.Rows[0].Cells[2].Paragraphs[0].Append("Optimal or Acceptable size of project")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        var StrategyAlignmentHeading = document.InsertParagraph("5 Strategy Alignment")
+                          .Bold()
+                          .FontSize(12d)
+                          .Color(Color.Black)
+                          .Bold(true)
+                          .Font("Arial");
+
+                        StrategyAlignmentHeading.StyleId = "Heading1";
+
+                        var documentStrategyAlignmentTable = document.AddTable(currentSelectionProcessModel.StrategyAlingments.Count + 1, 3);
+                        documentStrategyAlignmentTable.Rows[0].Cells[0].Paragraphs[0].Append("Strategy Plan Parameters")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentStrategyAlignmentTable.Rows[0].Cells[1].Paragraphs[0].Append("Needs/Oppurtunities")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentStrategyAlignmentTable.Rows[0].Cells[2].Paragraphs[0].Append("Set Resource")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentStrategyAlignmentTable.Rows[0].Cells[3].Paragraphs[0].Append("Set Budget Need")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentStrategyAlignmentTable.Rows[0].Cells[4].Paragraphs[0].Append("Set Risk Posture")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        var BalancingHeading = document.InsertParagraph("6 Balancing")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        BalancingHeading.StyleId = "Heading1";
+
+                        var documentBalancingTable = document.AddTable(currentSelectionProcessModel.Balancings.Count + 1, 3);
+                        documentBalancingTable.Rows[0].Cells[0].Paragraphs[0].Append("Balancing different types of projects by")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentBalancingTable.Rows[0].Cells[1].Paragraphs[0].Append("Purpose and Benefit")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentBalancingTable.Rows[0].Cells[2].Paragraphs[0].Append("Oppurtunities, benefits and risk")
+                            .Bold(true)
+                            .Color(Color.White);
+                        documentBalancingTable.Rows[0].Cells[3].Paragraphs[0].Append("Purpose and Benefit")
+                            .Bold(true)
+                            .Color(Color.White);
+
+                        try
+                        {
+                            document.Save();
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("The selected File is open.", "Close File", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
             }
