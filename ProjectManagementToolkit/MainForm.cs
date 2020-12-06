@@ -466,5 +466,12 @@ namespace ProjectManagementToolkit
             riskRegisterForm.Show();
             riskRegisterForm.MdiParent = this;
         }
+
+        private void acceptanceRegisterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AcceptanceRegister acceptanceregisterForm = new AcceptanceRegister();
+            acceptanceregisterForm.Show();
+            acceptanceregisterForm.MdiParent = this;
+        }
     }
 }
