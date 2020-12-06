@@ -75,7 +75,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 foreach (var item in currentProjectCharterModel.DocumentApprovals)
                 {
-                    dgvDocumentHistories.Rows.Add(new string[] { item.Role, item.Name, item.Signature, item.DateApproved });
+                    dgvDocumentApprovals.Rows.Add(new string[] { item.Role, item.Name, item.Signature, item.DateApproved });
                 }
 
                 txtExecutiveSummary.Text = currentProjectCharterModel.ExecutiveSummary;
@@ -98,6 +98,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 txtRoles.Text = currentProjectCharterModel.Roles;
                 txtResponsibilities.Text = currentProjectCharterModel.Responsibilities;
                 txtStructure.Text = currentProjectCharterModel.Structure;
+
+                foreach (var item in currentProjectCharterModel.Approaches)
+                {
+                    dgvApproach.Rows.Add(new string[] { item.Phase, item.OverallApproach });
+                }
+
                 txtSchedule.Text = currentProjectCharterModel.Schedule;
                 
                 foreach (var item in currentProjectCharterModel.Milestones)
@@ -228,6 +234,17 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newProjectCharterModel.Roles = txtRoles.Text;
             newProjectCharterModel.Responsibilities = txtResponsibilities.Text;
             newProjectCharterModel.Structure = txtStructure.Text;
+
+            List<ProjectCharterModel.Approach> approaches = new List<ProjectCharterModel.Approach>();
+            for (int i = 0; i < dgvApproach.Rows.Count - 1; i++)
+            {
+                ProjectCharterModel.Approach approach = new ProjectCharterModel.Approach();
+                approach.Phase = dgvApproach.Rows[i].Cells[0].Value?.ToString() ?? "";
+                approach.OverallApproach = dgvApproach.Rows[i].Cells[1].Value?.ToString() ?? "";
+                approaches.Add(approach);
+            }
+            newProjectCharterModel.Approaches = approaches;
+
             newProjectCharterModel.Schedule = txtSchedule.Text;
 
             List<ProjectCharterModel.Milestone> newMilestones = new List<ProjectCharterModel.Milestone>();
