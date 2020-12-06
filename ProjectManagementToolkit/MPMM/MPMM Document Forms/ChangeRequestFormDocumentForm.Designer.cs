@@ -164,7 +164,6 @@
             this.projectDetailsTabPage.Size = new System.Drawing.Size(880, 498);
             this.projectDetailsTabPage.TabIndex = 0;
             this.projectDetailsTabPage.Text = "PROJECT DETAILS";
-            this.projectDetailsTabPage.Click += new System.EventHandler(this.projectDetailsTabPage_Click);
             // 
             // txtProjectManager
             // 
