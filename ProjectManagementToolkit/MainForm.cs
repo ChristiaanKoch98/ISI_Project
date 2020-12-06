@@ -492,5 +492,12 @@ namespace ProjectManagementToolkit
             timeregister.MdiParent = this;
 
         }
+
+        private void communicationsRegisterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CommunicationsRegister Commregister = new CommunicationsRegister();
+            Commregister.Show();
+            Commregister.MdiParent = this;
+        }
     }
 }

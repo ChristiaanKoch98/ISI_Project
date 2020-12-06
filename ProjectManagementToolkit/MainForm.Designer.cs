@@ -1218,6 +1218,7 @@
             this.communicationsRegisterToolStripMenuItem.Name = "communicationsRegisterToolStripMenuItem";
             this.communicationsRegisterToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
             this.communicationsRegisterToolStripMenuItem.Text = "Communications Register";
+            this.communicationsRegisterToolStripMenuItem.Click += new System.EventHandler(this.communicationsRegisterToolStripMenuItem_Click);
             // 
             // exampleToolStripMenuItem28
             // 
