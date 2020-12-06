@@ -303,7 +303,9 @@ namespace ProjectManagementToolkit
 
         private void changeRegisterToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            ChangeRegister form = new ChangeRegister();
+            form.Show();
+            form.MdiParent = this;
         }
 
         private void riskManagementProcessToolStripMenuItem_Click(object sender, EventArgs e)
@@ -460,6 +462,13 @@ namespace ProjectManagementToolkit
             form.MdiParent = this;
         }
 
+        private void procurementRegisterToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ProcurementRegister pr = new ProcurementRegister();
+            pr.Show();
+            pr.MdiParent = this;
+        }
+        
         private void qualityRegisterToolStripMenuItem_Click(object sender, EventArgs e)
         {
             QualityRegister form = new QualityRegister();
