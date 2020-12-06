@@ -978,6 +978,7 @@
             this.qualityRegisterToolStripMenuItem.Name = "qualityRegisterToolStripMenuItem";
             this.qualityRegisterToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
             this.qualityRegisterToolStripMenuItem.Text = "Quality Register ";
+            this.qualityRegisterToolStripMenuItem.Click += new System.EventHandler(this.qualityRegisterToolStripMenuItem_Click);
             // 
             // exampleToolStripMenuItem22
             // 

@@ -440,6 +440,7 @@
     <Compile Include="MPMM\MPMM Document Models\PurchaseOrderModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\QualityManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\QualityPlanModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\QualityRegisterModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\QualityReviewPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\RequestForInformationModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\RequestForProposalModel.cs" />
