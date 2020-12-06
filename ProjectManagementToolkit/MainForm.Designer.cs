@@ -1178,7 +1178,7 @@
             this.acceptanceRegisterToolStripMenuItem.Name = "acceptanceRegisterToolStripMenuItem";
             this.acceptanceRegisterToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
             this.acceptanceRegisterToolStripMenuItem.Text = "Acceptance Register";
-            this.acceptanceRegisterToolStripMenuItem.Click += new System.EventHandler(this.acceptanceRegisterToolStripMenuItem_Click);
+            //this.acceptanceRegisterToolStripMenuItem.Click += new System.EventHandler(this.acceptanceRegisterToolStripMenuItem_Click);
             // 
             // exampleToolStripMenuItem27
             // 

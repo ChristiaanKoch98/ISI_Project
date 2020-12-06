@@ -455,6 +455,7 @@
     <Compile Include="MPMM\MPMM Document Models\TermsOfReferenceModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\TimeMangementProcess.cs" />
     <Compile Include="MPMM\MPMM Document Models\TimeSheetModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\TimesheetRegisterModel.cs" />
     <Compile Include="MPMM\MPMM Forms\Academic and Training\Academic_and_Training.cs">
       <SubType>Form</SubType>
     </Compile>
