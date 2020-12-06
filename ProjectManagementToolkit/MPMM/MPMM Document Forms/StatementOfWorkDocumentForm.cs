@@ -472,8 +472,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         acceptanceSubHeading.StyleId = "Heading2";
 
-                        
-
                         var payementSubHeading = document.InsertParagraph("5.2 Payment terms")
                            .Bold()
                            .FontSize(12d)
