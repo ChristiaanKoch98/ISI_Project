@@ -31,11 +31,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         public void saveDocument()
         {
-            newTimeMangementProcessModel.DocumentID = documentInformation.Rows[0].Cells[1].Value.ToString();
-            newTimeMangementProcessModel.DocumentOwner = documentInformation.Rows[1].Cells[1].Value.ToString();
-            newTimeMangementProcessModel.IssueDate = documentInformation.Rows[2].Cells[1].Value.ToString();
-            newTimeMangementProcessModel.LastSavedDate = documentInformation.Rows[3].Cells[1].Value.ToString();
-            newTimeMangementProcessModel.FileName = documentInformation.Rows[4].Cells[1].Value.ToString();
+            newTimeMangementProcessModel.DocumentID = dgvDocumentInformation.Rows[0].Cells[1].Value.ToString();
+            newTimeMangementProcessModel.DocumentOwner = dgvDocumentInformation.Rows[1].Cells[1].Value.ToString();
+            newTimeMangementProcessModel.IssueDate = dgvDocumentInformation.Rows[2].Cells[1].Value.ToString();
+            newTimeMangementProcessModel.LastSavedDate = dgvDocumentInformation.Rows[3].Cells[1].Value.ToString();
+            newTimeMangementProcessModel.FileName = dgvDocumentInformation.Rows[4].Cells[1].Value.ToString();
 
             List<TimeMangementProcessModel.DocumentHistory> documentHistories = new List<TimeMangementProcessModel.DocumentHistory>();
 
@@ -107,7 +107,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             if (!versionControl.isEqual(currentTimeMangementProcessModel, newTimeMangementProcessModel))
             {
                 VersionControl<TimeMangementProcessModel>.DocumentModel documentModel = new VersionControl<TimeMangementProcessModel>.DocumentModel(newTimeMangementProcessModel, DateTime.Now, VersionControl<ProjectModel>.generateID());
-
+                currentTimeMangementProcessModel = JsonConvert.DeserializeObject<TimeMangementProcessModel>(JsonConvert.SerializeObject(newTimeMangementProcessModel));
                 documentModels.Add(documentModel);
 
                 versionControl.DocumentModels = documentModels;
@@ -142,9 +142,15 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                 foreach (var row in documentInfo)
                 {
-                    dgvDocumentHistory.Rows.Add(row);
+                    dgvDocumentInformation.Rows.Add(row);
                 }
-                dgvDocumentHistory.AllowUserToAddRows = false;
+                dgvDocumentInformation.AllowUserToAddRows = false;
+
+                //foreach (var row in documentInfo)
+                //{
+                //    dgvDocumentHistory.Rows.Add(row);
+                //}
+                //dgvDocumentHistory.AllowUserToAddRows = false;
 
                 foreach (var row in currentTimeMangementProcessModel.DocumentHistories)
                 {
@@ -194,7 +200,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 newTimeMangementProcessModel = new TimeMangementProcessModel();
                 foreach (var row in documentInfo)
                 {
-                    dgvDocumentHistory.Rows.Add(row);
+                    dgvDocumentInformation.Rows.Add(row);
                 }
                 dgvDocumentHistory.AllowUserToAddRows = false;
             }
@@ -393,9 +399,27 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         TimeManagementProcessHeading.StyleId = "Heading1";
                         //Code for a heading 1
 
+                        //Code for a heading 2
+                        var DescriptionSubHeading = document.InsertParagraph("1.1 Description")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        DescriptionSubHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentTimeMangementProcessModel.TimemanagementprocessDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
 
                         //Code for a heading 2
-                        var OverviewSubHeading = document.InsertParagraph("1.1 Overview")
+                        var OverviewSubHeading = document.InsertParagraph("1.2 Overview")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -415,7 +439,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var DocumentTimesheetHeading = document.InsertParagraph("1.2 Document Timesheet")
+                        var DocumentTimesheetHeading = document.InsertParagraph("1.3 Document Timesheet")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -435,7 +459,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var ApproveTimesheetHeading = document.InsertParagraph("1.3 Approve Timesheet")
+                        var ApproveTimesheetHeading = document.InsertParagraph("1.4 Approve Timesheet")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -455,7 +479,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var UpdateProjectPlanHeading = document.InsertParagraph("1.4 Update Project Plan")
+                        var UpdateProjectPlanHeading = document.InsertParagraph("1.5 Update Project Plan")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -489,7 +513,27 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var TeamMemberHeading = document.InsertParagraph("2.1 Team Member")
+                        var DescriptionSubHeadingRoles = document.InsertParagraph("2.1 Description")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        DescriptionSubHeadingRoles.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentTimeMangementProcessModel.TimemanagementrolesDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+                        //Code for a heading 2
+                        var TeamMemberHeading = document.InsertParagraph("2.2 Team Member")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -509,7 +553,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var ProjectManagerHeading = document.InsertParagraph("2.2 Project Manager")
+                        var ProjectManagerHeading = document.InsertParagraph("2.3 Project Manager")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -529,7 +573,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var ProjectAdministratorHeading = document.InsertParagraph("2.3 Project Administrator")
+                        var ProjectAdministratorHeading = document.InsertParagraph("2.4 Project Administrator")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -561,10 +605,27 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         TimeManagementDocumentsHeading.StyleId = "Heading1";
                         //Code for a heading 1
+                        //Code for a heading 2
+                        var DescriptionSubHeadingDocument = document.InsertParagraph("3.1 Description")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
 
+                        DescriptionSubHeadingDocument.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentTimeMangementProcessModel.TimemanagementdocumentsDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
 
                         //Code for a heading 2
-                        var TimesheetHeading = document.InsertParagraph("3.1 Timesheet")
+                        var TimesheetHeading = document.InsertParagraph("3.2 Timesheet")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -584,7 +645,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var TimesheetRegisterHeading = document.InsertParagraph("3.2 Timesheet Register")
+                        var TimesheetRegisterHeading = document.InsertParagraph("3.3 Timesheet Register")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -646,6 +707,29 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             exportToWord();
         }
 
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+            saveDocument();
+        }
 
+        private void btnExportWord_Click_1(object sender, EventArgs e)
+        {
+            exportToWord();
+        }
+
+        private void TimeMangementProcessDocumentForm_Load_1(object sender, EventArgs e)
+        {
+            string jsoni = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtProjectName.Text = projectModel.ProjectName;
+            loadDocument();
+
+        }
+
+        private void dgvDocumentInformation_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

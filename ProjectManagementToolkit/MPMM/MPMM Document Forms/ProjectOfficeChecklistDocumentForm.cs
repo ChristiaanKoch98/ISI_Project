@@ -355,7 +355,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         }
 
         private void ProjectOfficeChecklistDocumentForm_Load(object sender, EventArgs e)
-        {
+        {   
             serviceText = "Time Management\n" +
             "	Monitoring the project progress by identifying time and effort spent vs. budgeted\n" +
             "	Keeping the Project Plan up-to-date and identifying any delivery date slippage\n" +
@@ -418,12 +418,16 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             "Undertaking Closure Reviews\n" +
             "	Organizing the completion of a Post Implementation Review after Project Closure\n" +
             "	Communicating the results of the review to the appropriate project stakeholders\n";
-
-            loadDocument();
             string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            textBox1.Text = projectModel.ProjectName;
+            txtProjectName.Text = projectModel.ProjectName;
+            txtProjectManager.Text = projectModel.ProjectManager;
+            txtProjectOfficeManager.Text = projectModel.QualityManager;
             richTextBoxServices.Text = serviceText;
+
+            loadDocument();
         }
 
         private void btnSave_Click(object sender, EventArgs e)

@@ -59,7 +59,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
@@ -71,13 +71,13 @@
             this.dataGridViewTimesheetRegister.Name = "dataGridViewTimesheetRegister";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Helvetica", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewTimesheetRegister.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Helvetica", 10.8F);
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 10.8F);
             this.dataGridViewTimesheetRegister.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewTimesheetRegister.Size = new System.Drawing.Size(904, 370);
             this.dataGridViewTimesheetRegister.TabIndex = 10;
@@ -91,7 +91,7 @@
             this.txtProjectManager.ForeColor = System.Drawing.Color.Black;
             this.txtProjectManager.Location = new System.Drawing.Point(122, 59);
             this.txtProjectManager.Name = "txtProjectManager";
-            this.txtProjectManager.Size = new System.Drawing.Size(116, 21);
+            this.txtProjectManager.Size = new System.Drawing.Size(116, 20);
             this.txtProjectManager.TabIndex = 9;
             this.txtProjectManager.Text = "Project Manager";
             // 
@@ -104,7 +104,7 @@
             this.txtProjectName.ForeColor = System.Drawing.Color.Black;
             this.txtProjectName.Location = new System.Drawing.Point(122, 14);
             this.txtProjectName.Name = "txtProjectName";
-            this.txtProjectName.Size = new System.Drawing.Size(116, 21);
+            this.txtProjectName.Size = new System.Drawing.Size(116, 20);
             this.txtProjectName.TabIndex = 8;
             this.txtProjectName.Text = "Project Name";
             // 
@@ -116,7 +116,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(15, 63);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 14);
+            this.label2.Size = new System.Drawing.Size(103, 14);
             this.label2.TabIndex = 7;
             this.label2.Text = "Project Manager: ";
             // 
@@ -128,7 +128,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(15, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 14);
+            this.label1.Size = new System.Drawing.Size(83, 14);
             this.label1.TabIndex = 6;
             this.label1.Text = "Project Name:";
             // 
@@ -144,10 +144,11 @@
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "TimesheetRegister";
             this.Text = "TimesheetRegister";
+            this.Load += new System.EventHandler(this.TimesheetRegister_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTimesheetRegister)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

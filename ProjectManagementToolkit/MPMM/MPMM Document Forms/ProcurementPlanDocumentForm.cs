@@ -22,7 +22,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         VersionControl<ProcurementPlanModel> versionControl;
         ProcurementPlanModel newProcurementPlanModel;
         ProcurementPlanModel currentProcurementPlanModel;
-
+        ProjectModel projectModel = new ProjectModel();
         Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
 
         public ProcurementPlanDocumentForm()
@@ -75,6 +75,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             dataGridViewMarketResearch.Columns.Add("Offering", "Offering");
             dataGridViewMarketResearch.Columns.Add("Price", "Price");
             dataGridViewMarketResearch.Columns.Add("Availability", "Availability");
+
+            string jsoni = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtProjectName.Text = projectModel.ProjectName;
 
             loadDocument();
         }

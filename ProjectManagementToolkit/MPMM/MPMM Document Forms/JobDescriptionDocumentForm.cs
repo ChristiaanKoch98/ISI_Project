@@ -32,33 +32,33 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         public void saveDocument()
         {
 
-            newJobDescriptionDocumentModel.ProjectName = txtProjectName.Text;
+            newJobDescriptionDocumentModel.ProjectName = txtProjectNames.Text;
 
-            newJobDescriptionDocumentModel.ProjectNaOverviewDescriptionme = txtOverviewDescription.Text;
+            newJobDescriptionDocumentModel.ProjectNaOverviewDescriptionme = txtOverviewDescriptions.Text;
 
-            newJobDescriptionDocumentModel.PurposeDescription = txtpurposeDescription.Text;
+            newJobDescriptionDocumentModel.PurposeDescription = txtpurposeDescriptions.Text;
 
-            newJobDescriptionDocumentModel.ResponsibilitiesDescription = txtresponsibilitiesDescription.Text;
+            newJobDescriptionDocumentModel.ResponsibilitiesDescription = txtresponsibilitiesDescriptions.Text;
 
-            newJobDescriptionDocumentModel.OrganizationDescription = txtorganizationDescription.Text;
+            newJobDescriptionDocumentModel.OrganizationDescription = txtorganizationDescriptions.Text;
 
-            newJobDescriptionDocumentModel.RelationshipsDescription = txtrelationshipsDescription.Text;
+            newJobDescriptionDocumentModel.RelationshipsDescription = txtrelationshipsDescriptions.Text;
 
-            newJobDescriptionDocumentModel.SkillsDescription = txtskillsDescription.Text;
+            newJobDescriptionDocumentModel.SkillsDescription = txtskillsDescriptions.Text;
 
-            newJobDescriptionDocumentModel.ExperienceDescription = txtexperienceDescription.Text;
+            newJobDescriptionDocumentModel.ExperienceDescription = txtexperienceDescriptions.Text;
 
-            newJobDescriptionDocumentModel.QualificationsDescription = txtqualificationsDescription.Text;
+            newJobDescriptionDocumentModel.QualificationsDescription = txtqualificationsDescriptions.Text;
 
-            newJobDescriptionDocumentModel.PersonalityDescription = txtpersonalityDescription.Text;
+            newJobDescriptionDocumentModel.PersonalityDescription = txtpersonalityDescriptions.Text;
 
-            newJobDescriptionDocumentModel.PerformancecriteriaDescription = txtperformancecriteriaDescription.Text;
+            newJobDescriptionDocumentModel.PerformancecriteriaDescription = txtperformancecriteriaDescriptions.Text;
 
-            newJobDescriptionDocumentModel.WorkenvironmentDescription = txtworkenvironmentDescription.Text;
+            newJobDescriptionDocumentModel.WorkenvironmentDescription = txtworkenvironmentDescriptions.Text;
 
-            newJobDescriptionDocumentModel.SalaryDescription = txtsalaryDescription.Text;
+            newJobDescriptionDocumentModel.SalaryDescription = txtsalaryDescriptions.Text;
 
-            newJobDescriptionDocumentModel.SpecialconditionsDescription = txtspecialconditionsDescription.Text;
+            newJobDescriptionDocumentModel.SpecialconditionsDescription = txtspecialconditionsDescriptions.Text;
 
 
 
@@ -95,33 +95,33 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 currentJobDescriptionDocumentModel = JsonConvert.DeserializeObject<JobDescriptionModel>(versionControl.getLatest(versionControl.DocumentModels));
 
 
-                txtProjectName.Text = currentJobDescriptionDocumentModel.ProjectName  ;
+                txtProjectNames.Text = currentJobDescriptionDocumentModel.ProjectName  ;
 
-                txtOverviewDescription.Text = currentJobDescriptionDocumentModel.ProjectNaOverviewDescriptionme  ;
+                txtOverviewDescriptions.Text = currentJobDescriptionDocumentModel.ProjectNaOverviewDescriptionme  ;
 
-                txtpurposeDescription.Text = currentJobDescriptionDocumentModel.PurposeDescription  ;
+                txtpurposeDescriptions.Text = currentJobDescriptionDocumentModel.PurposeDescription  ;
 
-                txtresponsibilitiesDescription.Text = currentJobDescriptionDocumentModel.ResponsibilitiesDescription  ;
+                txtresponsibilitiesDescriptions.Text = currentJobDescriptionDocumentModel.ResponsibilitiesDescription  ;
 
-                txtorganizationDescription.Text = currentJobDescriptionDocumentModel.OrganizationDescription  ;
+                txtorganizationDescriptions.Text = currentJobDescriptionDocumentModel.OrganizationDescription  ;
 
-                txtrelationshipsDescription.Text = currentJobDescriptionDocumentModel.RelationshipsDescription  ;
+                txtrelationshipsDescriptions.Text = currentJobDescriptionDocumentModel.RelationshipsDescription  ;
 
-                txtskillsDescription.Text = currentJobDescriptionDocumentModel.SkillsDescription  ;
+                txtskillsDescriptions.Text = currentJobDescriptionDocumentModel.SkillsDescription  ;
 
-                txtexperienceDescription.Text = currentJobDescriptionDocumentModel.ExperienceDescription  ;
+                txtexperienceDescriptions.Text = currentJobDescriptionDocumentModel.ExperienceDescription  ;
 
-                txtqualificationsDescription.Text = currentJobDescriptionDocumentModel.QualificationsDescription  ;
+                txtqualificationsDescriptions.Text = currentJobDescriptionDocumentModel.QualificationsDescription  ;
 
-                txtpersonalityDescription.Text = currentJobDescriptionDocumentModel.PersonalityDescription  ;
+                txtpersonalityDescriptions.Text = currentJobDescriptionDocumentModel.PersonalityDescription  ;
 
-                txtperformancecriteriaDescription.Text = currentJobDescriptionDocumentModel.PerformancecriteriaDescription  ;
+                txtperformancecriteriaDescriptions.Text = currentJobDescriptionDocumentModel.PerformancecriteriaDescription  ;
 
-                txtworkenvironmentDescription.Text = currentJobDescriptionDocumentModel.WorkenvironmentDescription  ;
+                txtworkenvironmentDescriptions.Text = currentJobDescriptionDocumentModel.WorkenvironmentDescription  ;
 
-                txtsalaryDescription.Text = currentJobDescriptionDocumentModel.SalaryDescription  ;
+                txtsalaryDescriptions.Text = currentJobDescriptionDocumentModel.SalaryDescription  ;
 
-                txtspecialconditionsDescription.Text = currentJobDescriptionDocumentModel.SpecialconditionsDescription  ;
+                txtspecialconditionsDescriptions.Text = currentJobDescriptionDocumentModel.SpecialconditionsDescription  ;
 
             }
             else
@@ -450,9 +450,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private void JobDescriptionDocumentForm_Load(object sender, EventArgs e)
         {
             loadDocument();
-            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
-            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            string jsoni = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtProjectNames.Text = projectModel.ProjectName;
         }
 
         private void btnSave_Click(object sender, EventArgs e)

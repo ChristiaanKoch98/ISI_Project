@@ -61,19 +61,21 @@
             // 
             // btnProjectCode
             // 
-            this.btnProjectCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnProjectCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnProjectCode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProjectCode.ForeColor = System.Drawing.Color.Black;
             this.btnProjectCode.Location = new System.Drawing.Point(14, 83);
             this.btnProjectCode.Name = "btnProjectCode";
-            this.btnProjectCode.Size = new System.Drawing.Size(319, 22);
+            this.btnProjectCode.Size = new System.Drawing.Size(319, 28);
             this.btnProjectCode.TabIndex = 15;
             this.btnProjectCode.Text = "Add Existing Project";
-            this.btnProjectCode.UseVisualStyleBackColor = true;
+            this.btnProjectCode.UseVisualStyleBackColor = false;
             this.btnProjectCode.Click += new System.EventHandler(this.btnProjectCode_Click);
             // 
             // txtProjectCode
             // 
-            this.txtProjectCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProjectCode.ForeColor = System.Drawing.Color.White;
+            this.txtProjectCode.BackColor = System.Drawing.Color.White;
+            this.txtProjectCode.ForeColor = System.Drawing.Color.Black;
             this.txtProjectCode.Location = new System.Drawing.Point(13, 23);
             this.txtProjectCode.Multiline = true;
             this.txtProjectCode.Name = "txtProjectCode";
@@ -83,17 +85,20 @@
             // 
             // btnSelectProject
             // 
-            this.btnSelectProject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSelectProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnSelectProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectProject.ForeColor = System.Drawing.Color.Black;
             this.btnSelectProject.Location = new System.Drawing.Point(19, 388);
             this.btnSelectProject.Name = "btnSelectProject";
-            this.btnSelectProject.Size = new System.Drawing.Size(319, 22);
+            this.btnSelectProject.Size = new System.Drawing.Size(319, 28);
             this.btnSelectProject.TabIndex = 12;
             this.btnSelectProject.Text = "Select Project";
-            this.btnSelectProject.UseVisualStyleBackColor = true;
+            this.btnSelectProject.UseVisualStyleBackColor = false;
             this.btnSelectProject.Click += new System.EventHandler(this.btnSelectProject_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.groupBox1.Controls.Add(this.btnCreateProject);
             this.groupBox1.Controls.Add(this.txtProjectOfficeManager);
             this.groupBox1.Controls.Add(this.label10);
@@ -111,7 +116,8 @@
             this.groupBox1.Controls.Add(this.txtProjectReviewGroup);
             this.groupBox1.Controls.Add(this.txtProjectName);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Font = new System.Drawing.Font("Cambria", 10F);
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(17, 33);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(350, 299);
@@ -121,19 +127,21 @@
             // 
             // btnCreateProject
             // 
-            this.btnCreateProject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnCreateProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnCreateProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreateProject.ForeColor = System.Drawing.Color.Black;
             this.btnCreateProject.Location = new System.Drawing.Point(14, 267);
             this.btnCreateProject.Name = "btnCreateProject";
-            this.btnCreateProject.Size = new System.Drawing.Size(319, 22);
+            this.btnCreateProject.Size = new System.Drawing.Size(319, 26);
             this.btnCreateProject.TabIndex = 21;
             this.btnCreateProject.Text = "Create New Project";
-            this.btnCreateProject.UseVisualStyleBackColor = true;
+            this.btnCreateProject.UseVisualStyleBackColor = false;
             this.btnCreateProject.Click += new System.EventHandler(this.btnCreateProject_Click);
             // 
             // txtProjectOfficeManager
             // 
-            this.txtProjectOfficeManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProjectOfficeManager.ForeColor = System.Drawing.Color.White;
+            this.txtProjectOfficeManager.BackColor = System.Drawing.Color.White;
+            this.txtProjectOfficeManager.ForeColor = System.Drawing.Color.Black;
             this.txtProjectOfficeManager.Location = new System.Drawing.Point(183, 233);
             this.txtProjectOfficeManager.Multiline = true;
             this.txtProjectOfficeManager.Name = "txtProjectOfficeManager";
@@ -146,10 +154,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Cambria", 8F);
+            this.label10.Font = new System.Drawing.Font("Cambria", 10F);
+            this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(11, 237);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(144, 16);
+            this.label10.Size = new System.Drawing.Size(174, 20);
             this.label10.TabIndex = 19;
             this.label10.Text = "Project Office Manager";
             // 
@@ -159,10 +168,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Cambria", 8F);
+            this.label9.Font = new System.Drawing.Font("Cambria", 10F);
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(11, 205);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(166, 16);
+            this.label9.Size = new System.Drawing.Size(197, 20);
             this.label9.TabIndex = 17;
             this.label9.Text = "Communications Manager";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -173,17 +183,18 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Cambria", 8F);
+            this.label8.Font = new System.Drawing.Font("Cambria", 10F);
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(11, 175);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(144, 16);
+            this.label8.Size = new System.Drawing.Size(170, 20);
             this.label8.TabIndex = 15;
             this.label8.Text = "Procurement Manager";
             // 
             // txtCommunicationsManager
             // 
-            this.txtCommunicationsManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtCommunicationsManager.ForeColor = System.Drawing.Color.White;
+            this.txtCommunicationsManager.BackColor = System.Drawing.Color.White;
+            this.txtCommunicationsManager.ForeColor = System.Drawing.Color.Black;
             this.txtCommunicationsManager.Location = new System.Drawing.Point(183, 202);
             this.txtCommunicationsManager.Multiline = true;
             this.txtCommunicationsManager.Name = "txtCommunicationsManager";
@@ -196,10 +207,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cambria", 8F);
+            this.label7.Font = new System.Drawing.Font("Cambria", 10F);
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(11, 144);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 16);
+            this.label7.Size = new System.Drawing.Size(128, 20);
             this.label7.TabIndex = 13;
             this.label7.Text = "Quality Manager";
             // 
@@ -209,10 +221,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 8F);
+            this.label6.Font = new System.Drawing.Font("Cambria", 10F);
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(11, 113);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 16);
+            this.label6.Size = new System.Drawing.Size(128, 20);
             this.label6.TabIndex = 11;
             this.label6.Text = "Project Manager";
             // 
@@ -222,17 +235,18 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 8F);
+            this.label5.Font = new System.Drawing.Font("Cambria", 10F);
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(11, 82);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(140, 16);
+            this.label5.Size = new System.Drawing.Size(168, 20);
             this.label5.TabIndex = 9;
             this.label5.Text = "Project Review Group";
             // 
             // txtProcurementManager
             // 
-            this.txtProcurementManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProcurementManager.ForeColor = System.Drawing.Color.White;
+            this.txtProcurementManager.BackColor = System.Drawing.Color.White;
+            this.txtProcurementManager.ForeColor = System.Drawing.Color.Black;
             this.txtProcurementManager.Location = new System.Drawing.Point(183, 171);
             this.txtProcurementManager.Multiline = true;
             this.txtProcurementManager.Name = "txtProcurementManager";
@@ -245,17 +259,18 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cambria", 8F);
+            this.label4.Font = new System.Drawing.Font("Cambria", 10F);
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(11, 51);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 16);
+            this.label4.Size = new System.Drawing.Size(124, 20);
             this.label4.TabIndex = 7;
             this.label4.Text = "Project Sponsor";
             // 
             // txtQualityManager
             // 
-            this.txtQualityManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtQualityManager.ForeColor = System.Drawing.Color.White;
+            this.txtQualityManager.BackColor = System.Drawing.Color.White;
+            this.txtQualityManager.ForeColor = System.Drawing.Color.Black;
             this.txtQualityManager.Location = new System.Drawing.Point(183, 140);
             this.txtQualityManager.Multiline = true;
             this.txtQualityManager.Name = "txtQualityManager";
@@ -264,8 +279,8 @@
             // 
             // txtProjectSponsor
             // 
-            this.txtProjectSponsor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProjectSponsor.ForeColor = System.Drawing.Color.White;
+            this.txtProjectSponsor.BackColor = System.Drawing.Color.White;
+            this.txtProjectSponsor.ForeColor = System.Drawing.Color.Black;
             this.txtProjectSponsor.Location = new System.Drawing.Point(183, 47);
             this.txtProjectSponsor.Multiline = true;
             this.txtProjectSponsor.Name = "txtProjectSponsor";
@@ -274,8 +289,8 @@
             // 
             // txtProjectManager
             // 
-            this.txtProjectManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProjectManager.ForeColor = System.Drawing.Color.White;
+            this.txtProjectManager.BackColor = System.Drawing.Color.White;
+            this.txtProjectManager.ForeColor = System.Drawing.Color.Black;
             this.txtProjectManager.Location = new System.Drawing.Point(183, 109);
             this.txtProjectManager.Multiline = true;
             this.txtProjectManager.Name = "txtProjectManager";
@@ -284,8 +299,8 @@
             // 
             // txtProjectReviewGroup
             // 
-            this.txtProjectReviewGroup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProjectReviewGroup.ForeColor = System.Drawing.Color.White;
+            this.txtProjectReviewGroup.BackColor = System.Drawing.Color.White;
+            this.txtProjectReviewGroup.ForeColor = System.Drawing.Color.Black;
             this.txtProjectReviewGroup.Location = new System.Drawing.Point(183, 78);
             this.txtProjectReviewGroup.Multiline = true;
             this.txtProjectReviewGroup.Name = "txtProjectReviewGroup";
@@ -294,8 +309,8 @@
             // 
             // txtProjectName
             // 
-            this.txtProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtProjectName.ForeColor = System.Drawing.Color.White;
+            this.txtProjectName.BackColor = System.Drawing.Color.White;
+            this.txtProjectName.ForeColor = System.Drawing.Color.Black;
             this.txtProjectName.Location = new System.Drawing.Point(183, 16);
             this.txtProjectName.Multiline = true;
             this.txtProjectName.Name = "txtProjectName";
@@ -308,18 +323,20 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cambria", 8F);
+            this.label1.Font = new System.Drawing.Font("Cambria", 10F);
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(10, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 16);
+            this.label1.Size = new System.Drawing.Size(108, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Project Name";
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.groupBox2.Controls.Add(this.txtProjectCode);
             this.groupBox2.Controls.Add(this.btnProjectCode);
-            this.groupBox2.ForeColor = System.Drawing.Color.White;
+            this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(17, 338);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(350, 117);
@@ -329,9 +346,10 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.groupBox3.Controls.Add(this.lstboxProject);
             this.groupBox3.Controls.Add(this.btnSelectProject);
-            this.groupBox3.ForeColor = System.Drawing.Color.White;
+            this.groupBox3.ForeColor = System.Drawing.Color.Black;
             this.groupBox3.Location = new System.Drawing.Point(381, 33);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(354, 422);
@@ -341,9 +359,9 @@
             // 
             // lstboxProject
             // 
-            this.lstboxProject.BackColor = System.Drawing.Color.Gray;
+            this.lstboxProject.BackColor = System.Drawing.Color.White;
             this.lstboxProject.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstboxProject.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lstboxProject.ForeColor = System.Drawing.Color.Black;
             this.lstboxProject.FormattingEnabled = true;
             this.lstboxProject.ItemHeight = 23;
             this.lstboxProject.Location = new System.Drawing.Point(19, 20);
@@ -354,10 +372,12 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.groupBox4.Controls.Add(this.groupBox2);
             this.groupBox4.Controls.Add(this.groupBox3);
             this.groupBox4.Controls.Add(this.groupBox1);
-            this.groupBox4.ForeColor = System.Drawing.Color.White;
+            this.groupBox4.Font = new System.Drawing.Font("Cambria", 10F);
+            this.groupBox4.ForeColor = System.Drawing.Color.Black;
             this.groupBox4.Location = new System.Drawing.Point(12, 12);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(757, 470);
@@ -369,7 +389,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(787, 495);
             this.Controls.Add(this.groupBox4);
             this.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

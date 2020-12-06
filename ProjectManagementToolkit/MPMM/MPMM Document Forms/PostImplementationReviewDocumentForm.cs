@@ -692,9 +692,29 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         ProjectPerformanceHeading.StyleId = "Heading1";
                         //Code for a heading 1
 
+                        //Code for a heading 2
+                        var ProjectperformanceDescriptionSubHeading = document.InsertParagraph("2.1 Description")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        ProjectperformanceDescriptionSubHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentPostImplementationReviewModel.ProjectperformanceDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
 
                         //Code for a heading 2
-                        var BenefitsHeading = document.InsertParagraph("2.1 Benefits")
+                        var BenefitsHeading = document.InsertParagraph("2.2 Benefits")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -743,7 +763,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var ObjectivesHeading = document.InsertParagraph("2.2 Objectives")
+                        var ObjectivesHeading = document.InsertParagraph("2.3 Objectives")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -786,7 +806,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var ScopeHeading = document.InsertParagraph("2.3 Scope")
+                        var ScopeHeading = document.InsertParagraph("2.4 Scope")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -829,7 +849,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var DeliverablesHeading = document.InsertParagraph("2.4 Deliverables")
+                        var DeliverablesHeading = document.InsertParagraph("2.5 Deliverables")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -878,7 +898,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var ScheduleHeading = document.InsertParagraph("2.5 Schedule")
+                        var ScheduleHeading = document.InsertParagraph("2.6 Schedule")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -898,7 +918,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var ExpensesHeading = document.InsertParagraph("2.6 Expenses")
+                        var ExpensesHeading = document.InsertParagraph("2.7 Expenses")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -946,7 +966,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var ResourcesHeading = document.InsertParagraph("2.7 Resources")
+                        var ResourcesHeading = document.InsertParagraph("2.8 Resources")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -1005,9 +1025,27 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         ProjectConformanceHeading.StyleId = "Heading1";
                         //Code for a heading 1
 
+                        //Code for a heading 2
+                        var ProjectComformanceDescriptionSubHeading = document.InsertParagraph("3.1 Description")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        ProjectComformanceDescriptionSubHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentPostImplementationReviewModel.ProjectComformanceDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
 
                         //Code for a heading 2
-                        var TimeManagementHeading = document.InsertParagraph("3.1 Time Management")
+                        var TimeManagementHeading = document.InsertParagraph("3.2 Time Management")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -1027,7 +1065,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var CostManagementHeading = document.InsertParagraph("3.2 Cost Management")
+                        var CostManagementHeading = document.InsertParagraph("3.3 Cost Management")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -1047,7 +1085,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var QualityManagementHeading = document.InsertParagraph("3.3 Quality Management")
+                        var QualityManagementHeading = document.InsertParagraph("3.4 Quality Management")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -1067,7 +1105,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var ChangeManagementHeading = document.InsertParagraph("3.4 Change Management")
+                        var ChangeManagementHeading = document.InsertParagraph("3.5 Change Management")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -1087,7 +1125,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var RiskManagementHeading = document.InsertParagraph("3.5 Risk Management")
+                        var RiskManagementHeading = document.InsertParagraph("3.6 Risk Management")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -1107,7 +1145,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var IssueManagementHeading = document.InsertParagraph("3.6 Issue Management")
+                        var IssueManagementHeading = document.InsertParagraph("3.7 Issue Management")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -1128,7 +1166,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var ProcurementManagementHeading = document.InsertParagraph("3.7 Procurement Management")
+                        var ProcurementManagementHeading = document.InsertParagraph("3.8 Procurement Management")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -1148,7 +1186,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var AcceptanceManagementHeading = document.InsertParagraph("3.8 Acceptance Management")
+                        var AcceptanceManagementHeading = document.InsertParagraph("3.9 Acceptance Management")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -1168,7 +1206,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var CommunicationsManagementHeading = document.InsertParagraph("3.9 Communications Management")
+                        var CommunicationsManagementHeading = document.InsertParagraph("3.10 Communications Management")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -1184,6 +1222,24 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                                .Font("Arial").Alignment = Alignment.left;
                         //Code for a sentence
 
+                        //Code for a heading 2
+                        var AcceptanceManagmentHeading = document.InsertParagraph("3.11 Acceptance Management")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        AcceptanceManagmentHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+                        //Code for a sentence
+                        document.InsertParagraph(currentPostImplementationReviewModel.ProjectcomformanceAcceptanceManagement)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
 
 
 
@@ -1197,6 +1253,17 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         ProjectAchievementsHeading.StyleId = "Heading1";
                         //Code for a heading 1
+                        
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentPostImplementationReviewModel.ProjectachievementDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
                         //Code for a table
                         var documentProjectAchievementsTable = document.AddTable(currentPostImplementationReviewModel.ProjectAchievements.Count + 1, 2);
                         documentProjectAchievementsTable.Rows[0].Cells[0].Paragraphs[0].Append("Achievement")
@@ -1234,6 +1301,17 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         ProjectFailuresHeading.StyleId = "Heading1";
                         //Code for a heading 1
+                        //Code for a heading 2
+                        
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentPostImplementationReviewModel.ProjectfailureDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
                         //Code for a table
                         var documentProjectFailuresHeadingTable = document.AddTable(currentPostImplementationReviewModel.ProjectFailures.Count + 1, 2);
                         documentProjectFailuresHeadingTable.Rows[0].Cells[0].Paragraphs[0].Append("Failure")
@@ -1269,7 +1347,16 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                             .Font("Arial");
 
                         ProjectLessonsLearnedHeading.StyleId = "Heading1";
-                        //Code for a heading 1
+                        //Code for a heading
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentPostImplementationReviewModel.ProjectlessonslearneDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
                         //Code for a table
                         var documentProjectLessonsLearnedTable = document.AddTable(currentPostImplementationReviewModel.ProjectLessonsLearneds.Count + 1, 2);
                         documentProjectLessonsLearnedTable.Rows[0].Cells[0].Paragraphs[0].Append("Failure")
@@ -1433,10 +1520,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void PostImplementationReviewDocumentForm_Load_1(object sender, EventArgs e)
         {
-            loadDocument();
-            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
-            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            string jsoni = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtProjectName.Text = projectModel.ProjectName;
+
+            loadDocument();
+             
         }
 
         private void btnSave_Click_1(object sender, EventArgs e)

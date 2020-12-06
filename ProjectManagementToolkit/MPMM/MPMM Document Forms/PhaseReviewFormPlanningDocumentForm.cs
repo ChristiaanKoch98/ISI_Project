@@ -21,7 +21,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         VersionControl<PhaseReviewPlanningModel> versionControl;
         PhaseReviewPlanningModel newPhaseReviewPlanningModel;
         PhaseReviewPlanningModel currentPhaseReviewPlanningModel;
-
+        ProjectModel projectModel = new ProjectModel();
         Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
         PhaseReviewPlanningModel PhaseReviewPlanning = new PhaseReviewPlanningModel();
 
@@ -294,6 +294,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void PhaseReviewFormPlanningDocumentForm_Load(object sender, EventArgs e)
         {
+            string jsoni = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            Planning_Phase_tbx.Text = projectModel.ProjectName;
             LoadDocument();
         }
 

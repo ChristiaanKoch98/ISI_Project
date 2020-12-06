@@ -34,45 +34,20 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             newChangeRequestModel.ProjectName = txtProjectName.Text;
             newChangeRequestModel.ProjectManager = txtProjectManager.Text;
-            newChangeRequestModel.ChangeNumber = txtChangeDetails.Text;
+
+            newChangeRequestModel.ChangeNumber = txtChangeNumber.Text;
             newChangeRequestModel.ChangeRequester = txtChangeRequester.Text;
             newChangeRequestModel.ChangeRequestDate = txtChangeRequestDate.Text;
             newChangeRequestModel.ChangeUrgancy = txtChangeUrgency.Text;
+            
             newChangeRequestModel.ChangeDescription = txtChangeDescription.Text;
             newChangeRequestModel.ChangeDrivers = txtChangeDrivers.Text;
             newChangeRequestModel.ChangeBenefits = txtChangeBenefits.Text;
             newChangeRequestModel.ChangeCost = txtChangeCosts.Text;
-            newChangeRequestModel.ProjectImpact = txtProjectName.Text;
+            newChangeRequestModel.ProjectImpact = txtImpactDetails.Text;
 
-            //newChangeRequestModel.SupportingDocumentation = approvalDetailsTextBox.Text;
-
-            /*newChangeRequestModel.SubmittedName = txtName.Text;
-            newChangeRequestModel.SubmittedRole = txtProjectRole.Text;
-            newChangeRequestModel.SubmittedSignature = txtSignature.Text;
-            newChangeRequestModel.SubmittedDate = dateTimePickerSubmittedBy.Text;
-
-            newChangeRequestModel.ApprovedName = txtApprovedByName.Text;
-            newChangeRequestModel.ApprovedRole = txtApprovedByProjectRole.Text;
-            newChangeRequestModel.ApprovedSignature = txtApprovedBySignature.Text;
-            newChangeRequestModel.ApprovedDate = dateTimePickerApprovedBy.Text;*/
-
-            /*List<ChangeRequestModel.SupportingDocument> supportingDocuments = new List<ChangeRequestModel.SupportingDocument>();
-
-            int versionRowsCount = dataGridViewSupportingDocuments.Rows.Count;
-
-            for (int i = 0; i < versionRowsCount - 1; i++)
-            {
-                ChangeRequestModel.SupportingDocument supportDocumentModel = new ChangeRequestModel.SupportingDocument();
-                var documentName = dataGridViewSupportingDocuments.Rows[i].Cells[0].Value?.ToString() ?? "";
-                var documentDescription = dataGridViewSupportingDocuments.Rows[i].Cells[1].Value?.ToString() ?? "";
-
-                supportDocumentModel.DocumentName = documentName;
-                supportDocumentModel.DocumentDescription = documentDescription;
-
-                supportingDocuments.Add(supportDocumentModel);
-            }
-            newChangeRequestModel.SupportingDocuments = supportingDocuments;*/
-
+            newChangeRequestModel.SupportingDocuments = txtSupportingDocumentation.Text;
+            newChangeRequestModel.Signature = txtSignature.Text;
 
             List<VersionControl<ChangeRequestModel>.DocumentModel> documentModels = versionControl.DocumentModels; //Error here
 
@@ -86,6 +61,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
 
                 string json = JsonConvert.SerializeObject(versionControl);
+                currentChangeRequestModel = JsonConvert.DeserializeObject<ChangeRequestModel>(JsonConvert.SerializeObject(newChangeRequestModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ChangeRequestForm");
                 MessageBox.Show("Change Request saved successfully", "save", MessageBoxButtons.OK);
             }
@@ -103,12 +79,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 newChangeRequestModel = JsonConvert.DeserializeObject<ChangeRequestModel>(versionControl.getLatest(versionControl.DocumentModels));
                 currentChangeRequestModel = JsonConvert.DeserializeObject<ChangeRequestModel>(versionControl.getLatest(versionControl.DocumentModels));
 
-
-
-
                 txtProjectName.Text = currentChangeRequestModel.ProjectName;
                 txtProjectManager.Text = currentChangeRequestModel.ProjectManager;
-                txtChangeDetails.Text = currentChangeRequestModel.ChangeNumber;
+                txtChangeNumber.Text = currentChangeRequestModel.ChangeNumber;
                 txtChangeRequester.Text = currentChangeRequestModel.ChangeRequester;
                 txtChangeRequestDate.Text = currentChangeRequestModel.ChangeRequestDate;
                 txtChangeUrgency.Text = currentChangeRequestModel.ChangeUrgancy;
@@ -116,23 +89,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 txtChangeDrivers.Text = currentChangeRequestModel.ChangeDrivers;
                 txtChangeBenefits.Text = currentChangeRequestModel.ChangeBenefits;
                 txtChangeCosts.Text = currentChangeRequestModel.ChangeCost;
-                txtProjectName.Text = currentChangeRequestModel.ProjectImpact;
-
-                /*foreach (var row in currentChangeRequestModel.SupportingDocuments)
-                {
-                    dataGridViewSupportingDocuments.Rows.Add(new string[] { row.DocumentName, row.DocumentDescription});
-                }
-
-                txtName.Text = currentChangeRequestModel.SubmittedName;
-                txtProjectRole.Text = currentChangeRequestModel.SubmittedRole;
-                txtSignature.Text = currentChangeRequestModel.SubmittedSignature;
-                dateTimePickerSubmittedBy.Text = currentChangeRequestModel.SubmittedDate;
-
-                txtApprovedByName.Text = currentChangeRequestModel.ApprovedName;
-                txtApprovedByProjectRole.Text = currentChangeRequestModel.ApprovedRole;
-                txtApprovedBySignature.Text = currentChangeRequestModel.ApprovedSignature;
-                dateTimePickerApprovedBy.Text = currentChangeRequestModel.ApprovedDate;*/
-
+                txtImpactDetails.Text = currentChangeRequestModel.ProjectImpact;
+                txtSupportingDocumentation.Text = currentChangeRequestModel.SupportingDocuments;
+                txtSignature.Text = currentChangeRequestModel.Signature;
             }
             else 
             {
@@ -173,59 +132,65 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         //Change details
 
-                        var documentInfoTable = document.AddTable(13, 1);
+                        var documentInfoTable = document.AddTable(14, 1);
                         documentInfoTable.Rows[0].Cells[0].Paragraphs[0].Append("Project Details").Bold(true).Color(Color.White).FontSize(14d);
                
                         documentInfoTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
                         documentInfoTable.Rows[2].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentInfoTable.Rows[4].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentInfoTable.Rows[6].Cells[0].FillColor = TABLE_HEADER_COLOR;
                         documentInfoTable.Rows[8].Cells[0].FillColor = TABLE_HEADER_COLOR;
                         documentInfoTable.Rows[10].Cells[0].FillColor = TABLE_HEADER_COLOR;
+                        documentInfoTable.Rows[12].Cells[0].FillColor = TABLE_HEADER_COLOR;
                         documentInfoTable.Rows[1].Cells[0].Paragraphs[0].Append("Project Name: \t\t"+ currentChangeRequestModel.ProjectName+"\nProject Manager: \t"+ currentChangeRequestModel.ProjectManager);
-                        documentInfoTable.Rows[2].Cells[0].Paragraphs[0].Append("Change Details").Bold(true).Color(Color.White).FontSize(14d);
-                        documentInfoTable.Rows[3].Cells[0].Paragraphs[0].Append("Change Number: \t" + currentChangeRequestModel.ChangeNumber + "\nRequester: \t\t" + currentChangeRequestModel.ChangeRequester + " \nDate: \t\t\t" + currentChangeRequestModel.ChangeRequestDate + " \nUrgency: \t\t" + currentChangeRequestModel.ChangeUrgancy);
-                        documentInfoTable.Rows[4].Cells[0].Paragraphs[0].Append("Change Description: \t" + currentChangeRequestModel.ChangeDescription);
-                        documentInfoTable.Rows[5].Cells[0].Paragraphs[0].Append("Change Drivers: \t" + currentChangeRequestModel.ChangeDrivers);
-                        documentInfoTable.Rows[6].Cells[0].Paragraphs[0].Append("Change Benefits: \t" + currentChangeRequestModel.ChangeBenefits);
-                        documentInfoTable.Rows[7].Cells[0].Paragraphs[0].Append("Change Costs: \t\t" + currentChangeRequestModel.ChangeCost);
-                        documentInfoTable.Rows[8].Cells[0].Paragraphs[0].Append("Impact Details").Bold(true).Color(Color.White).FontSize(14d);
-                        documentInfoTable.Rows[9].Cells[0].Paragraphs[0].Append(currentChangeRequestModel.ProjectImpact);
-                        documentInfoTable.Rows[10].Cells[0].Paragraphs[0].Append("Approval Details").Bold(true).Color(Color.White).FontSize(14d);
-                        documentInfoTable.Rows[11].Cells[0].Paragraphs[0].Append("See below for supporting documentation");
-                        documentInfoTable.Rows[12].Cells[0].Paragraphs[0].Append("Submitted by: \t\t\t\t\tApproved by: \nName: " + currentChangeRequestModel.SubmittedName+"\t\t\t\t\tName: " + currentChangeRequestModel.ApprovedName 
-                            +"\nSignitaure: " + currentChangeRequestModel.SubmittedSignature + "\t\t\t\tSignature: "+ currentChangeRequestModel.ApprovedSignature
-                            +"\nDate :" + currentChangeRequestModel.SubmittedDate + "\t\t\t\t\t\tDate: " + currentChangeRequestModel.ApprovedDate);
-
+                        documentInfoTable.Rows[2].Cells[0].Paragraphs[0].Append("Change Details").Bold().Color(Color.White).FontSize(14d);
+                        documentInfoTable.Rows[3].Cells[0].Paragraphs[0].Append("Change Number: \t").Bold()
+                                                                        .Append(currentChangeRequestModel.ChangeNumber)
+                                                                        .Append("\nRequester: \t\t").Bold()
+                                                                        .Append(currentChangeRequestModel.ChangeRequester)
+                                                                        .Append("\nDate: \t\t\t").Bold()
+                                                                        .Append(currentChangeRequestModel.ChangeRequestDate)
+                                                                        .Append("\nUrgency: \t\t").Bold()
+                                                                        .Append(currentChangeRequestModel.ChangeUrgancy);
+                        documentInfoTable.Rows[4].Cells[0].Paragraphs[0].Append("Change Description: \n").Bold(true).Color(Color.White).FontSize(14d);
+                        documentInfoTable.Rows[5].Cells[0].Paragraphs[0].Append(currentChangeRequestModel.ChangeDescription);
+                        documentInfoTable.Rows[6].Cells[0].Paragraphs[0].Append("Change Drivers: \n").Bold().Color(Color.White).FontSize(14d);
+                        documentInfoTable.Rows[7].Cells[0].Paragraphs[0].Append(currentChangeRequestModel.ChangeDrivers);
+                        documentInfoTable.Rows[8].Cells[0].Paragraphs[0].Append("Change Benefits: \n").Bold().FontSize(14d).Color(Color.White);
+                        documentInfoTable.Rows[9].Cells[0].Paragraphs[0].Append(currentChangeRequestModel.ChangeBenefits);
+                        documentInfoTable.Rows[10].Cells[0].Paragraphs[0].Append("Change Costs: \n").Bold().FontSize(14d).Color(Color.White);
+                        documentInfoTable.Rows[11].Cells[0].Paragraphs[0].Append(currentChangeRequestModel.ChangeCost);
+                        documentInfoTable.Rows[12].Cells[0].Paragraphs[0].Append("Impact Details\n").Bold().FontSize(14d).Color(Color.White);
+                        documentInfoTable.Rows[13].Cells[0].Paragraphs[0].Append(currentChangeRequestModel.ProjectImpact);
+                        
                         documentInfoTable.SetWidths(new float[] { 1000});
                         document.InsertTable(documentInfoTable);
 
                         //Supporting documents table
+                        document.InsertParagraph("\nApproval Details\n")
+                           .Font("Arial")
+                           .Bold()
+                           .FontSize(14d).Alignment = Alignment.left;
+                        
                         document.InsertParagraph("\nSupporting documents\n")
                            .Font("Arial")
-                           .Bold(true)
-                           .FontSize(14d).Alignment = Alignment.left;
+                           .Bold()
+                           .FontSize(11d).Alignment = Alignment.left;
 
-                        /*var supportDocumentTable = document.AddTable(currentChangeRequestModel.SupportingDocuments.Count + 1, 2);
-                        supportDocumentTable.Rows[0].Cells[0].Paragraphs[0].Append("Document Name")
-                            .Bold(true)
-                            .Color(Color.White);
-                        supportDocumentTable.Rows[0].Cells[1].Paragraphs[0].Append("Document Description")
-                            .Bold(true)
-                            .Color(Color.White);
-                        supportDocumentTable.Rows[0].Cells[0].FillColor = TABLE_HEADER_COLOR;
-                        supportDocumentTable.Rows[0].Cells[1].FillColor = TABLE_HEADER_COLOR;
-                        for (int i = 1; i < currentChangeRequestModel.SupportingDocuments.Count + 1; i++)
-                        {
-                            supportDocumentTable.Rows[i].Cells[0].Paragraphs[0].Append(currentChangeRequestModel.SupportingDocuments[i - 1].DocumentName);
-                            supportDocumentTable.Rows[i].Cells[1].Paragraphs[0].Append(currentChangeRequestModel.SupportingDocuments[i - 1].DocumentDescription);
+                        document.InsertParagraph(currentChangeRequestModel.SupportingDocuments)
+                           .Font("Arial")
+                           .FontSize(11).Alignment = Alignment.left;
 
-                        }
+                        document.InsertParagraph("\nSignature\n")
+                            .Font("Arial")
+                            .FontSize(11d)
+                            .Bold()
+                            .Alignment = Alignment.left;
 
-                        supportDocumentTable.SetWidths(new float[] { 500, 500});
-                        document.InsertTable(supportDocumentTable);*/
+                        document.InsertParagraph(currentChangeRequestModel.Signature)
+                           .Font("Arial")
+                           .FontSize(11).Alignment = Alignment.left;
 
-
-
-                        //Save the document
                         try
                         {
                             document.Save();
@@ -245,9 +210,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private void ChangeRequestFormDocumentForm_Load_1(object sender, EventArgs e)
         {
             loadDocument();
-            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
-            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            string jsoni = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtProjectName.Text = projectModel.ProjectName;
         }
 
         private void btnSave_Click(object sender, EventArgs e)

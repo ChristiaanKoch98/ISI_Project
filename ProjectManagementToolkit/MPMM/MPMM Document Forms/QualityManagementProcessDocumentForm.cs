@@ -385,8 +385,36 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         //Code for a heading 1
 
 
+
+
+
                         //Code for a heading 2
-                        var OverviewSubHeading = document.InsertParagraph("1.1 Overview")
+                        var QPDescHeading = document.InsertParagraph("1.1 Quality Process Description")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        QPDescHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentQualityManagementProcessModel.QualityprocessDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+
+
+
+
+                        //Code for a heading 2
+                        var OverviewSubHeading = document.InsertParagraph("1.2 Overview")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -406,7 +434,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var MeasureQualityAchievedHeading = document.InsertParagraph("1.2 Measure Quality Achieved")
+                        var MeasureQualityAchievedHeading = document.InsertParagraph("1.3 Measure Quality Achieved")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -426,7 +454,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var EnhanceQualityAchievedHeading = document.InsertParagraph("1.3 Enhance Quality Achieved")
+                        var EnhanceQualityAchievedHeading = document.InsertParagraph("1.4 Enhance Quality Achieved")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -459,8 +487,31 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         //Code for a heading 1
 
 
+
                         //Code for a heading 2
-                        var QualityManagerHeading = document.InsertParagraph("2.1 Quality Manager")
+                        var QMDescHeading = document.InsertParagraph("2.1 Quality Management Description")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        QMDescHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentQualityManagementProcessModel.QualitymanagementrolesDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+
+                        //Code for a heading 2
+                        var QualityManagerHeading = document.InsertParagraph("2.2 Quality Manager")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -480,7 +531,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var ProjectManagerHeading = document.InsertParagraph("2.2 Project Manager")
+                        var ProjectManagerHeading = document.InsertParagraph("2.3 Project Manager")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -501,6 +552,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
 
+
+
+
                         //Code for a heading 1
                         var QualityManagementDocumentsHeading = document.InsertParagraph("3 Quality Management Documents")
                             .Bold()
@@ -513,8 +567,35 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         //Code for a heading 1
 
 
+
+
                         //Code for a heading 2
-                        var QualityRegisterHeading = document.InsertParagraph("3.1 Quality Register")
+                        var QqMmDescHeading = document.InsertParagraph("3.1 Quality Management Document Description")
+                            .Bold()
+                            .FontSize(12d)
+                            .Color(Color.Black)
+                            .Bold(true)
+                            .Font("Arial");
+
+                        QqMmDescHeading.StyleId = "Heading2";
+                        //Code for a heading 2
+
+
+                        //Code for a sentence
+                        document.InsertParagraph(currentQualityManagementProcessModel.QualitymanagementdocumentsDescription)
+                               .FontSize(11d)
+                               .Color(Color.Black)
+                               .Font("Arial").Alignment = Alignment.left;
+                        //Code for a sentence
+
+
+
+
+
+
+
+                        //Code for a heading 2
+                        var QualityRegisterHeading = document.InsertParagraph("3.2 Quality Register")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -534,7 +615,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
 
                         //Code for a heading 2
-                        var QualityReviewFormHeading = document.InsertParagraph("3.2 Quality Review Form")
+                        var QualityReviewFormHeading = document.InsertParagraph("3.3 Quality Review Form")
                             .Bold()
                             .FontSize(12d)
                             .Color(Color.Black)
@@ -620,10 +701,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void QualityManagementProcessDocumentForm_Load_1(object sender, EventArgs e)
         {
-            loadDocument();
-            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
-            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            string jsoni = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtProjectName.Text = projectModel.ProjectName;
+
+            loadDocument();
+            
         }
 
         private void btnSave_Click_1(object sender, EventArgs e)
