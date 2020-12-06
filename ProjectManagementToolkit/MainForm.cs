@@ -462,6 +462,14 @@ namespace ProjectManagementToolkit
             form.MdiParent = this;
         }
 
+
+        private void riskRegisterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RiskRegisterForm riskRegisterForm = new RiskRegisterForm();
+            riskRegisterForm.Show();
+            riskRegisterForm.MdiParent = this;
+        }
+
         private void procurementRegisterToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             ProcurementRegister pr = new ProcurementRegister();
@@ -474,6 +482,14 @@ namespace ProjectManagementToolkit
             QualityRegister form = new QualityRegister();
             form.Show();
             form.MdiParent = this;
+
+        }
+
+        private void acceptanceRegisterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AcceptanceRegister acceptanceRegister = new AcceptanceRegister();
+            acceptanceRegister.Show();
+            acceptanceRegister.MdiParent = this;
         }
 
         private void exampleToolStripMenuItem2_Click_1(object sender, EventArgs e)
