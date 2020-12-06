@@ -303,7 +303,9 @@ namespace ProjectManagementToolkit
 
         private void changeRegisterToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            ChangeRegister form = new ChangeRegister();
+            form.Show();
+            form.MdiParent = this;
         }
 
         private void riskManagementProcessToolStripMenuItem_Click(object sender, EventArgs e)
