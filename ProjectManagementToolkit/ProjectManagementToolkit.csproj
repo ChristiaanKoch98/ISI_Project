@@ -421,6 +421,7 @@
     <Compile Include="MPMM\MPMM Document Models\CommunicationsPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\CostManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ExpenseFormModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\ExpenseRegister.cs" />
     <Compile Include="MPMM\MPMM Document Models\FeasibilityStudyModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\FinancialPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\IssueFormModel.cs" />
