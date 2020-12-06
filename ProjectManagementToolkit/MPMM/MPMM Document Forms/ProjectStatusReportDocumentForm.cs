@@ -963,6 +963,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void ProjectStatusReportDocumentForm_Load_1(object sender, EventArgs e)
         {
+            string jsoni = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtProjectName.Text = projectModel.ProjectName;
+
             loadDocument();
         }
 

@@ -665,11 +665,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         }
 
         private void RequestForProposalDocumentForm_Load(object sender, EventArgs e)
-        {
-            loadDocument();
-            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
-            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+        {   
+            string jsoni = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtRequestForProposalProcessProject.Text = projectModel.ProjectName;
+            loadDocument();
+            
         }
     }
 }

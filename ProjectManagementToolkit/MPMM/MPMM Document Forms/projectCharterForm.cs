@@ -17,6 +17,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             InitializeComponent();
         }
 
-        
+        private void ProjectCharterForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

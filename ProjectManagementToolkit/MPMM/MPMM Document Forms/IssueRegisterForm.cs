@@ -88,6 +88,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void IssueRegisterForm_Load(object sender, EventArgs e)
         {
+            string jsoni = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtIssueRegisterProjectName.Text = projectModel.ProjectName;
+
             string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "IssueRegister");
             newIssueRegisterModel = new IssueRegisterModel();
             currentIssueRegisterModel = new IssueRegisterModel();

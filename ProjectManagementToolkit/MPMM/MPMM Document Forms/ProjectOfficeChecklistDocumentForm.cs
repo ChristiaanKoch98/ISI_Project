@@ -421,11 +421,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
-            richTextBoxServices.Text = serviceText;
+            textBox1.Text = projectModel.ProjectName;
             txtProjectName.Text = projectModel.ProjectName;
             txtProjectManager.Text = projectModel.ProjectManager;
             txtProjectOfficeManager.Text = projectModel.QualityManager;
-            textBox1.Text = projectModel.ProjectName;
+            richTextBoxServices.Text = serviceText;
 
             loadDocument();
         }

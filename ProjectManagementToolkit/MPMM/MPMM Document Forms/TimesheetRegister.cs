@@ -22,5 +22,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             string projectName = txtProjectName.Text;
             string projectManager = txtProjectManager.Text;
         }
+
+        private void TimesheetRegister_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
