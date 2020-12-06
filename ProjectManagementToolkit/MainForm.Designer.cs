@@ -900,6 +900,7 @@
             this.timesheetRegisterToolStripMenuItem.Name = "timesheetRegisterToolStripMenuItem";
             this.timesheetRegisterToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.timesheetRegisterToolStripMenuItem.Text = "Timesheet Register";
+            this.timesheetRegisterToolStripMenuItem.Click += new System.EventHandler(this.timesheetRegisterToolStripMenuItem_Click);
             // 
             // exampleToolStripMenuItem20
             // 
@@ -1178,7 +1179,6 @@
             this.acceptanceRegisterToolStripMenuItem.Name = "acceptanceRegisterToolStripMenuItem";
             this.acceptanceRegisterToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
             this.acceptanceRegisterToolStripMenuItem.Text = "Acceptance Register";
-            //this.acceptanceRegisterToolStripMenuItem.Click += new System.EventHandler(this.acceptanceRegisterToolStripMenuItem_Click);
             // 
             // exampleToolStripMenuItem27
             // 

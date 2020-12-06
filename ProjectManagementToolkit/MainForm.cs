@@ -484,5 +484,13 @@ namespace ProjectManagementToolkit
             form.MdiParent = this;
 
         }
+
+        private void timesheetRegisterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TimesheetRegister timeregister = new TimesheetRegister();
+            timeregister.Show();
+            timeregister.MdiParent = this;
+
+        }
     }
 }
