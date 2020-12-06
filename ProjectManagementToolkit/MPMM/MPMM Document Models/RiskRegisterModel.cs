@@ -21,8 +21,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
             public string ImpactRating { get; set; } = "";
             public string PriorityRating { get; set; } = "";
             public string PreventionAction { get; set; } = "";
-            public string Owner { get; set; } = "";
-            public string PrventionDate { get; set; } = "";
+            public string PreventionOwner { get; set; } = "";
+            public string PreventionDate { get; set; } = "";
             public string ContingencyActions { get; set; } = "";
             public string ContingencyOwner { get; set; } = "";
             public string ContingencyDate { get; set; } = "";
