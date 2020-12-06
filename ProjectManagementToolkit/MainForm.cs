@@ -459,5 +459,12 @@ namespace ProjectManagementToolkit
             form.Show();
             form.MdiParent = this;
         }
+
+        private void qualityRegisterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QualityRegister form = new QualityRegister();
+            form.Show();
+            form.MdiParent = this;
+        }
     }
 }

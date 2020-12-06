@@ -47,7 +47,7 @@ namespace ProjectManagementToolkit
                 initiationDocuments.Add("PhaseReviewFormInitiation");
                 initiationDocuments.Add("TermOfReferenceDocument");
 
-                lblInitiationProgress.Text = "Progress: ";
+                lblInitiationProgress.Text = "Progress: 0%";
                 pbarInitiation.Value = 0;
                 pbarInitiation.Maximum = initiationDocuments.Count;
                 double initationProgressVal = 0;
@@ -85,7 +85,7 @@ namespace ProjectManagementToolkit
                 planningDocuments.Add("RequestForProposal");
                 planningDocuments.Add("PhaseReviewPlanning");
 
-                lblPlanningProgress.Text = "Progress: ";
+                lblPlanningProgress.Text = "Progress: 0%";
                 pbarPlanning.Value = 0;
                 pbarPlanning.Maximum = planningDocuments.Count;
                 double planningProgressVal = 0;
@@ -130,7 +130,7 @@ namespace ProjectManagementToolkit
                 executionDocuments.Add("ProjectStatusReport");
                 executionDocuments.Add("PhaseReviewExe");
 
-                lblExecutionProgress.Text = "Progress: ";
+                lblExecutionProgress.Text = "Progress: 0%";
                 pbarExecution.Value = 0;
                 pbarExecution.Maximum = executionDocuments.Count;
                 double executionProgressVal = 0;
@@ -156,7 +156,7 @@ namespace ProjectManagementToolkit
                 closingDocuments.Add("ProjectClosureReport");
                 closingDocuments.Add("PostImplementationReview");
 
-                lblClosingProgress.Text = "Progress: ";
+                lblClosingProgress.Text = "Progress: 0%";
                 pbarClosing.Value = 0;
                 pbarClosing.Maximum = closingDocuments.Count;
                 double closingProgressVal = 0;
@@ -181,12 +181,9 @@ namespace ProjectManagementToolkit
                 double overallProgressVal = (initationProgressVal + planningProgressVal + executionProgressVal + closingProgressVal);
                 pbarOverall.Value = (int)overallProgressVal;
                 pbarOverall.Maximum = initiationDocuments.Count + planningDocuments.Count + executionDocuments.Count + closingDocuments.Count;
-                double overallPercentage = ((closingProgressVal) / pbarOverall.Maximum) * 100;
+                double overallPercentage = ((overallProgressVal) / pbarOverall.Maximum) * 100;
                 lblOverallProgress.Text = "Overall Progress: " + Math.Round(overallPercentage, 2) + "%";
             }
-            
-
-            
         }
 
         private List<string> getLocalDocuments()
