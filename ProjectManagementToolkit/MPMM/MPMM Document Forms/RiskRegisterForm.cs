@@ -56,8 +56,16 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 var contingencyOwner = dgvRiskRegister.Rows[i].Cells[13].Value?.ToString() ?? "";
                 var contingencyDate = dgvRiskRegister.Rows[i].Cells[14].Value?.ToString() ?? "";
 
-
-                RiskEntry.ID = int.Parse(id);
+                try
+                {
+                    RiskEntry.ID = int.Parse(id);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Please ensure that you provide a number for the ID otherwise the changes wil not e saved.");
+                    return;
+                }
+                
                 RiskEntry.DateRaised = dateRaised;
                 RiskEntry.RaisedBy = raisedBy;
                 RiskEntry.ReceivedBy = receivedBy;
