@@ -34,12 +34,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            List<RiskRegisterModel.RiskEntry> issueEntries = new List<RiskRegisterModel.RiskEntry>();
+            List<RiskRegisterModel.RiskEntry> RiskEntries = new List<RiskRegisterModel.RiskEntry>();
             int issueEntryCount = dgvRiskRegister.Rows.Count;
 
             for (int i = 0; i < issueEntryCount - 1; i++)
             {
-                RiskRegisterModel.RiskEntry issueEntry = new RiskRegisterModel.RiskEntry();
+                RiskRegisterModel.RiskEntry RiskEntry = new RiskRegisterModel.RiskEntry();
                 var id = dgvRiskRegister.Rows[i].Cells[0].Value?.ToString() ?? "";
                 var dateRaised = dgvRiskRegister.Rows[i].Cells[1].Value?.ToString() ?? "";
                 var raisedBy = dgvRiskRegister.Rows[i].Cells[2].Value?.ToString() ?? "";
@@ -56,29 +56,30 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 var contingencyOwner = dgvRiskRegister.Rows[i].Cells[13].Value?.ToString() ?? "";
                 var contingencyDate = dgvRiskRegister.Rows[i].Cells[14].Value?.ToString() ?? "";
 
-                issueEntry.ID = int.Parse(id);
-                issueEntry.DateRaised = dateRaised;
-                issueEntry.RaisedBy = raisedBy;
-                issueEntry.ReceivedBy = receivedBy;
-                issueEntry.DescriptionRisk = descriptionRisk;
-                issueEntry.DescriptionImpact = descriptionImpact;
-                issueEntry.LikelyHoodRating = likelyhoodRating;
-                issueEntry.ImpactRating = impactRating;
-                issueEntry.PriorityRating = priorityRating;
-                issueEntry.PreventionAction = preventionActions;
-                issueEntry.PreventionOwner = preventionOwner;
-                issueEntry.PreventionDate = preventionDate;
-                issueEntry.ContingencyActions = contingencyActions;
-                issueEntry.ContingencyOwner = contingencyOwner;
-                issueEntry.ContingencyDate = contingencyDate;
+
+                RiskEntry.ID = int.Parse(id);
+                RiskEntry.DateRaised = dateRaised;
+                RiskEntry.RaisedBy = raisedBy;
+                RiskEntry.ReceivedBy = receivedBy;
+                RiskEntry.DescriptionRisk = descriptionRisk;
+                RiskEntry.DescriptionImpact = descriptionImpact;
+                RiskEntry.LikelyHoodRating = likelyhoodRating;
+                RiskEntry.ImpactRating = impactRating;
+                RiskEntry.PriorityRating = priorityRating;
+                RiskEntry.PreventionAction = preventionActions;
+                RiskEntry.PreventionOwner = preventionOwner;
+                RiskEntry.PreventionDate = preventionDate;
+                RiskEntry.ContingencyActions = contingencyActions;
+                RiskEntry.ContingencyOwner = contingencyOwner;
+                RiskEntry.ContingencyDate = contingencyDate;
             }
 
-            newRiskRegisterModel.IssueEntries = issueEntries;
+            newRiskRegisterModel.RiskEntries = RiskEntries;
             List<VersionControl<RiskRegisterModel>.DocumentModel> documentModels = versionControl.DocumentModels;
 
             if (!versionControl.isEqual(currentRiskRegisterModel, newRiskRegisterModel))
             {
-                VersionControl<RiskRegisterModel>.DocumentModel documentModel = new VersionControl<RiskRegisterModel>.DocumentModel(newRiskRegisterModel, DateTime.Now, VersionControl<IssueRegisterModel>.generateID());
+                VersionControl<RiskRegisterModel>.DocumentModel documentModel = new VersionControl<RiskRegisterModel>.DocumentModel(newRiskRegisterModel, DateTime.Now, VersionControl<RiskRegisterModel>.generateID());
 
                 documentModels.Add(documentModel);
                 string json = JsonConvert.SerializeObject(versionControl);
@@ -110,7 +111,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 newRiskRegisterModel = JsonConvert.DeserializeObject<RiskRegisterModel>(versionControl.getLatest(versionControl.DocumentModels));
                 currentRiskRegisterModel = JsonConvert.DeserializeObject<RiskRegisterModel>(versionControl.getLatest(versionControl.DocumentModels));
 
-                foreach (var row in currentRiskRegisterModel.IssueEntries)
+                foreach (var row in currentRiskRegisterModel.RiskEntries)
                 {
                     dgvRiskRegister.Rows.Add(new string[] { row.ID.ToString(), row.DateRaised, row.RaisedBy,
                     row.ReceivedBy,row.DescriptionRisk,row.DescriptionImpact,row.LikelyHoodRating,row.PriorityRating,row.PreventionAction,row.PreventionOwner,row.PreventionDate,
@@ -119,6 +120,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             }
             else
             {
+                
                 versionControl = new VersionControl<RiskRegisterModel>();
                 versionControl.DocumentModels = new List<VersionControl<RiskRegisterModel>.DocumentModel>();
             }
