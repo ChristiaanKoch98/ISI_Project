@@ -37,7 +37,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
-
+            /*
             //tabControl collor
             tabControl1.DrawMode = TabDrawMode.OwnerDrawFixed;
             tabControl1.SizeMode = TabSizeMode.Fixed;
@@ -51,7 +51,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             Size tab_size2 = tabControl3.ItemSize;
             tab_size2.Width = 100;
             tab_size2.Height += 15;
-            tabControl3.ItemSize = tab_size2;
+            tabControl3.ItemSize = tab_size2;*/
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -235,6 +235,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = documentModels;
                 string json = JsonConvert.SerializeObject(versionControl);
                 currentProjectPlanModel = JsonConvert.DeserializeObject<ProjectPlanModel>(JsonConvert.SerializeObject(newProjectPlanModel));
+                newProjectPlanModel = new ProjectPlanModel();
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ProjectPlan");
                 MessageBox.Show("Project plan saved successfully", "save", MessageBoxButtons.OK);
             }
@@ -779,10 +780,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 }
             }
         }
-
+        /*
         private int Xwid = 8;
         private const int tab_margin = 3;
-
+        
         private void tabControl1_DrawItem(object sender, DrawItemEventArgs e)
         {
             Brush txt_brush, box_brush;
@@ -877,6 +878,22 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                         layout_rect,
                         string_format);
                 }
+            }
+        }*/
+
+        private void btnVersions_Click(object sender, EventArgs e)
+        {
+            string projectPlanJson = JsonHelper.loadDocument(Settings.Default.ProjectID, "ProjectPlan");
+            
+            if (projectPlanJson == "")
+            {
+                MessageBox.Show("No versions stored.", "Version Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                ProjectPlanVC projectPlanVC = new ProjectPlanVC();
+                projectPlanVC.MdiParent = this.MdiParent;
+                projectPlanVC.Show();
             }
         }
     }
