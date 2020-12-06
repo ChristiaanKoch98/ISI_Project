@@ -21,5 +21,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
 
         }
+
+        private void ProcurementManagementProcess_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

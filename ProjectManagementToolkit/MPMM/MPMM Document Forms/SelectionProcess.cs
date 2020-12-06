@@ -19,11 +19,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 {
     public partial class SelectionProcess : Form
     {
-        ProjectManagementToolkit.Utility.VersionControl<ProjectManagementToolkit.MPMM.MPMM_Document_Models.SelectionProcessModel> versionControl;
-        ProjectManagementToolkit.MPMM.MPMM_Document_Models.SelectionProcessModel newSelectionProcessModel;
-        ProjectManagementToolkit.MPMM.MPMM_Document_Models.SelectionProcessModel currentSelectionProcessModel;
+        VersionControl<SelectionProcessModel> versionControl;
+        SelectionProcessModel newSelectionProcessModel;
+        SelectionProcessModel currentSelectionProcessModel;
         Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
-        ProjectManagementToolkit.Utility.ProjectModel projectModel = new ProjectManagementToolkit.Utility.ProjectModel();
+        ProjectModel projectModel = new ProjectModel();
         public SelectionProcess()
         {
             InitializeComponent();
@@ -234,25 +234,25 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             newSelectionProcessModel.Cost = costTextBox.Text;
             newSelectionProcessModel.RiskMonitoringandControl = riskMonitorigTextBox.Text;
 
-            /*List<VersionControl<SelectionProcessModel>.DocumentModel> documentModels = versionControl.DocumentModels;
+            List<VersionControl<SelectionProcessModel>.DocumentModel> documentModels = versionControl.DocumentModels;
 
 
             if (!versionControl.isEqual(currentSelectionProcessModel, newSelectionProcessModel))
             {
-                VersionControl<SelectionProcessModel>.DocumentModel documentModel = new VersionControl<ProjectPlanModel>.DocumentModel(newSelectionProcessModel, DateTime.Now, VersionControl<ProjectModel>.generateID());
+                VersionControl<SelectionProcessModel>.DocumentModel documentModel = new VersionControl<SelectionProcessModel>.DocumentModel(newSelectionProcessModel, DateTime.Now, VersionControl<ProjectModel>.generateID());
 
                 documentModels.Add(documentModel);
 
                 versionControl.DocumentModels = documentModels;
                 string json = JsonConvert.SerializeObject(versionControl);
-                currentSelectionProcessModel = JsonConvert.DeserializeObject<ProjectPlanModel>(JsonConvert.SerializeObject(newSelectionProcessModel));
+                currentSelectionProcessModel = JsonConvert.DeserializeObject<SelectionProcessModel>(JsonConvert.SerializeObject(newSelectionProcessModel));
                 JsonHelper.saveDocument(json, Settings.Default.ProjectID, "ProjectPlan");
                 MessageBox.Show("Project plan saved successfully", "save", MessageBoxButtons.OK);
             }
             else
             {
                 MessageBox.Show("No changes was made!", "save", MessageBoxButtons.OK);
-            }*/
+            }
 
         }
         private void loadDocument()
