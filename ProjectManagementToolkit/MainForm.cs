@@ -484,5 +484,10 @@ namespace ProjectManagementToolkit
             form.MdiParent = this;
 
         }
+
+        private void acceptanceRegisterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
