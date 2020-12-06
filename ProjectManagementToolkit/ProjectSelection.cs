@@ -101,6 +101,21 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 return;
             }
 
+            string projectCodeToAdd = txtProjectCode.Text;
+            
+            bool containsItem = projectListModel.Any(item => item.ProjectID == projectCodeToAdd);
+            
+
+            if (containsItem)
+            {
+                ProjectModel projectItem = projectListModel.Find(item => item.ProjectID == projectCodeToAdd);
+                string projectName = projectItem.ProjectName;
+
+                MessageBox.Show("Project Already added as " + projectName, "Project ID Error.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Cursor.Current = Cursors.Default;
+                return;
+            }
+
             bool connectionSuccessful = attemptHttpConnection();
             
             if (!connectionSuccessful)
@@ -151,8 +166,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 foreach (var project in projectListModel)
                 {
                     lstboxProject.Items.Add(project.ProjectName);
+                    
                 }
-
+                txtProjectCode.Text = "";
+                MessageBox.Show("Successfully added Project: " + projectModel["ProjectName"].ToString());
                 Cursor.Current = Cursors.Default;
             }
             catch (AggregateException)
