@@ -475,5 +475,12 @@ namespace ProjectManagementToolkit
             form.Show();
             form.MdiParent = this;
         }
+
+        private void expenseRegisterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ExpenseRegister form = new ExpenseRegister();
+            form.Show();
+            form.MdiParent = this;
+        }
     }
 }

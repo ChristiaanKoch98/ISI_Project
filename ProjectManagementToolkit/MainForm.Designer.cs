@@ -939,6 +939,7 @@
             this.expenseRegisterToolStripMenuItem.Name = "expenseRegisterToolStripMenuItem";
             this.expenseRegisterToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.expenseRegisterToolStripMenuItem.Text = "Expense Register";
+            this.expenseRegisterToolStripMenuItem.Click += new System.EventHandler(this.expenseRegisterToolStripMenuItem_Click);
             // 
             // exampleToolStripMenuItem21
             // 
@@ -1268,14 +1269,14 @@
             // templateToolStripMenuItem17
             // 
             this.templateToolStripMenuItem17.Name = "templateToolStripMenuItem17";
-            this.templateToolStripMenuItem17.Size = new System.Drawing.Size(122, 22);
+            this.templateToolStripMenuItem17.Size = new System.Drawing.Size(180, 22);
             this.templateToolStripMenuItem17.Text = "Template";
             this.templateToolStripMenuItem17.Click += new System.EventHandler(this.templateToolStripMenuItem17_Click);
             // 
             // exampleToolStripMenuItem30
             // 
             this.exampleToolStripMenuItem30.Name = "exampleToolStripMenuItem30";
-            this.exampleToolStripMenuItem30.Size = new System.Drawing.Size(122, 22);
+            this.exampleToolStripMenuItem30.Size = new System.Drawing.Size(180, 22);
             this.exampleToolStripMenuItem30.Text = "Example";
             // 
             // reviewProjectCompletionToolStripMenuItem
@@ -1319,7 +1320,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
             this.Text = "Main Menu";
             this.Load += new System.EventHandler(this.MainForm_Load);

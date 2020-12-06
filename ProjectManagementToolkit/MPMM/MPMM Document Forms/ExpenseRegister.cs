@@ -28,8 +28,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void btnEnterData_Click(object sender, EventArgs e)
         {
-            string projectName = txtProjectName.Text;
-            string projectManager = txtProjectManager.Text;
+            
         }
 
         private void ExpenseRegister_Load(object sender, EventArgs e)
