@@ -78,7 +78,6 @@ namespace ProjectManagementToolkit
                 planningDocuments.Add("AcceptancePlan");
                 planningDocuments.Add("CommunicationPlan");
                 planningDocuments.Add("ProcurementPlan");
-                planningDocuments.Add("SelectionProcess");
                 planningDocuments.Add("StatementOfWork");
                 planningDocuments.Add("RequestForInformation");
                 planningDocuments.Add("SupplierContract");
@@ -129,7 +128,6 @@ namespace ProjectManagementToolkit
                 executionDocuments.Add("IssueManagementProcess");
                 executionDocuments.Add("IssueForm");
                 executionDocuments.Add("IssueRegister");
-                executionDocuments.Add("ProcurementProcess");
                 executionDocuments.Add("PurchaseOrder");
                 executionDocuments.Add("ProcurementRegister");
                 executionDocuments.Add("AcceptanceManagementProcess");

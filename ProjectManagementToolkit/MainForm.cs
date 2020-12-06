@@ -520,5 +520,12 @@ namespace ProjectManagementToolkit
             postImplementationReviewDocumentForm.Show();
             postImplementationReviewDocumentForm.MdiParent = this;
         }
+
+        private void projectDashboardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProjectDashboard form = new ProjectDashboard();
+            form.Show();
+            form.MdiParent = this;
+        }
     }
 }
