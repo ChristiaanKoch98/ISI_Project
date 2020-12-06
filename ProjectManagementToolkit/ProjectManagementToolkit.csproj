@@ -445,6 +445,7 @@
     <Compile Include="MPMM\MPMM Document Models\RiskFormModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\RiskManagmentProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\RiskPlanModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\RiskRegisterModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\StatementOfWorkModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\SupplierContractModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\TermsOfReferenceModel.cs" />

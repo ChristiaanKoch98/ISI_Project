@@ -31,7 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dataGridViewSolutionRaiseRaised = new System.Windows.Forms.DataGridView();
+            this.dgvRiskRegister = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date_Raised = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Raised_By = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,16 +53,16 @@
             this.label27 = new System.Windows.Forms.Label();
             this.txtRiskRegisterProjectName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSolutionRaiseRaised)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRiskRegister)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridViewSolutionRaiseRaised
+            // dgvRiskRegister
             // 
-            this.dataGridViewSolutionRaiseRaised.AllowUserToOrderColumns = true;
-            this.dataGridViewSolutionRaiseRaised.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvRiskRegister.AllowUserToOrderColumns = true;
+            this.dgvRiskRegister.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewSolutionRaiseRaised.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.dgvRiskRegister.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -70,9 +70,9 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewSolutionRaiseRaised.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewSolutionRaiseRaised.ColumnHeadersHeight = 29;
-            this.dataGridViewSolutionRaiseRaised.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvRiskRegister.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvRiskRegister.ColumnHeadersHeight = 29;
+            this.dgvRiskRegister.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.Date_Raised,
             this.Raised_By,
@@ -88,10 +88,10 @@
             this.Contingency_Actions,
             this.Contingency_ActionsOwner,
             this.Contingency_ActionsData});
-            this.dataGridViewSolutionRaiseRaised.EnableHeadersVisualStyles = false;
-            this.dataGridViewSolutionRaiseRaised.Location = new System.Drawing.Point(11, 54);
-            this.dataGridViewSolutionRaiseRaised.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridViewSolutionRaiseRaised.Name = "dataGridViewSolutionRaiseRaised";
+            this.dgvRiskRegister.EnableHeadersVisualStyles = false;
+            this.dgvRiskRegister.Location = new System.Drawing.Point(11, 54);
+            this.dgvRiskRegister.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvRiskRegister.Name = "dgvRiskRegister";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -99,14 +99,14 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewSolutionRaiseRaised.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewSolutionRaiseRaised.RowHeadersWidth = 51;
+            this.dgvRiskRegister.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvRiskRegister.RowHeadersWidth = 51;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewSolutionRaiseRaised.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridViewSolutionRaiseRaised.Size = new System.Drawing.Size(962, 410);
-            this.dataGridViewSolutionRaiseRaised.TabIndex = 36;
-            this.dataGridViewSolutionRaiseRaised.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSolutionRaiseRaised_CellContentClick);
+            this.dgvRiskRegister.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvRiskRegister.Size = new System.Drawing.Size(962, 410);
+            this.dgvRiskRegister.TabIndex = 36;
+            this.dgvRiskRegister.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSolutionRaiseRaised_CellContentClick);
             // 
             // ID
             // 
@@ -222,24 +222,26 @@
             this.btnExport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnExport.Location = new System.Drawing.Point(539, 2);
-            this.btnExport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(2);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(103, 45);
             this.btnExport.TabIndex = 35;
             this.btnExport.Text = "Export to Word";
             this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSave.Location = new System.Drawing.Point(384, 5);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(124, 42);
             this.btnSave.TabIndex = 34;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtRiskRegisterProjectManager
             // 
@@ -295,17 +297,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(985, 507);
-            this.Controls.Add(this.dataGridViewSolutionRaiseRaised);
+            this.Controls.Add(this.dgvRiskRegister);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtRiskRegisterProjectManager);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.txtRiskRegisterProjectName);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RiskRegisterForm";
             this.Text = "RiskRegisterForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSolutionRaiseRaised)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRiskRegister)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -313,7 +315,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridViewSolutionRaiseRaised;
+        private System.Windows.Forms.DataGridView dgvRiskRegister;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Date_Raised;
         private System.Windows.Forms.DataGridViewTextBoxColumn Raised_By;
