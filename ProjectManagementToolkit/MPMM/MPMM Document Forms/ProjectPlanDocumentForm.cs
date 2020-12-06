@@ -315,12 +315,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             {
                 versionControl = new VersionControl<ProjectPlanModel>();
                 versionControl.DocumentModels = new List<VersionControl<ProjectPlanModel>.DocumentModel>();
+                newProjectPlanModel = new ProjectPlanModel();
                 documentInfo.Add(new string[] { "Document ID", "" });
                 documentInfo.Add(new string[] { "Document Owner", "" });
                 documentInfo.Add(new string[] { "Issue Date", "" });
                 documentInfo.Add(new string[] { "Last Save Date", "" });
                 documentInfo.Add(new string[] { "File Name", "" });
-                newProjectPlanModel = new ProjectPlanModel();
+                
                 foreach (var row in documentInfo)
                 {
                     documentInformation.Rows.Add(row);
