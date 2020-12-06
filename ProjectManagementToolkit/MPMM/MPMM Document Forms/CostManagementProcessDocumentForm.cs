@@ -349,6 +349,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
                         overviewSubHeading.StyleId = "Heading2";
 
+                        document.InsertParagraph(currentCostManagementProcessModel.Overview)
+                            .FontSize(11d)
+                            .Color(Color.Black)
+                            .Font("Arial").Alignment = Alignment.left;
+
                         var documentExpenseSubHeading = document.InsertParagraph("1.2 DocumentExpense")
                                 .Bold()
                                 .FontSize(12d)
