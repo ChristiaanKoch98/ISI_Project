@@ -487,7 +487,9 @@ namespace ProjectManagementToolkit
 
         private void acceptanceRegisterToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            AcceptanceRegister acceptanceRegister = new AcceptanceRegister();
+            acceptanceRegister.Show();
+            acceptanceRegister.MdiParent = this;
         }
     }
 }
