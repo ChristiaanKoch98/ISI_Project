@@ -491,5 +491,12 @@ namespace ProjectManagementToolkit
             acceptanceRegister.Show();
             acceptanceRegister.MdiParent = this;
         }
+
+        private void exampleToolStripMenuItem2_Click_1(object sender, EventArgs e)
+        {
+            ProjectCharterForm form = new ProjectCharterForm();
+            form.Show();
+            form.MdiParent = this;
+        }
     }
 }
