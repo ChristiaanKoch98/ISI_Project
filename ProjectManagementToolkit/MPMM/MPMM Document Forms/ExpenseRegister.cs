@@ -117,10 +117,5 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 MessageBox.Show("No changes were made.", "save", MessageBoxButtons.OK);
             }
         }
-
-        private void ExpenseRegister_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
