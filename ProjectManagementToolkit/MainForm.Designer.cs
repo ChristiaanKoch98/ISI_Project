@@ -312,20 +312,21 @@
             this.establishTheProjectChaterToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.establishTheProjectChaterToolStripMenuItem.Name = "establishTheProjectChaterToolStripMenuItem";
             this.establishTheProjectChaterToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
-            this.establishTheProjectChaterToolStripMenuItem.Text = "Establish the Project Chater";
+            this.establishTheProjectChaterToolStripMenuItem.Text = "Establish the Project Charter";
             // 
             // exampleToolStripMenuItem2
             // 
             this.exampleToolStripMenuItem2.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem2.Name = "exampleToolStripMenuItem2";
-            this.exampleToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
+            this.exampleToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.exampleToolStripMenuItem2.Text = "Example";
+            this.exampleToolStripMenuItem2.Click += new System.EventHandler(this.exampleToolStripMenuItem2_Click_1);
             // 
             // templateToolStripMenuItem2
             // 
             this.templateToolStripMenuItem2.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem2.Name = "templateToolStripMenuItem2";
-            this.templateToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
+            this.templateToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.templateToolStripMenuItem2.Text = "Template";
             // 
             // appointAProjectTeamToolStripMenuItem
@@ -343,7 +344,7 @@
             // 
             this.templateToolStripMenuItem3.BackColor = System.Drawing.Color.Gainsboro;
             this.templateToolStripMenuItem3.Name = "templateToolStripMenuItem3";
-            this.templateToolStripMenuItem3.Size = new System.Drawing.Size(122, 22);
+            this.templateToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.templateToolStripMenuItem3.Text = "Template";
             this.templateToolStripMenuItem3.Click += new System.EventHandler(this.templateToolStripMenuItem3_Click);
             // 
@@ -351,7 +352,7 @@
             // 
             this.exampleToolStripMenuItem3.BackColor = System.Drawing.Color.Gainsboro;
             this.exampleToolStripMenuItem3.Name = "exampleToolStripMenuItem3";
-            this.exampleToolStripMenuItem3.Size = new System.Drawing.Size(122, 22);
+            this.exampleToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.exampleToolStripMenuItem3.Text = "Example";
             // 
             // setupAProjectOfficeToolStripMenuItem
@@ -1319,7 +1320,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
             this.Text = "Main Menu";
             this.Load += new System.EventHandler(this.MainForm_Load);

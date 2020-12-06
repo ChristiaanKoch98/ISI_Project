@@ -433,6 +433,7 @@
     <Compile Include="MPMM\MPMM Document Models\PostImplementationReviewModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProcurementPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProcurementRegisterModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\ProjectCharterModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectClosureReportModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectOfficeChecklistModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectPlanModel.cs" />
