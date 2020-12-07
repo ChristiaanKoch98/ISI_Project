@@ -115,5 +115,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = new List<VersionControl<TimesheetRegisterModel>.DocumentModel>();
             }
         }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            ExcelAppend.ExportNotQualityRegister((int)ExcelAppend.DocumentType.TimesheetRegister, dataGridViewTimesheetRegister);
+        }
     }
 }

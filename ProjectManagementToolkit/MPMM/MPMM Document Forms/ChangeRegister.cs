@@ -98,7 +98,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            ExcelAppend.ExportNotQualityRegister((int)ExcelAppend.DocumentType.ChangeRegister, dgvChangeRegister);
         }
 
         private void ChangeRegister_Load(object sender, EventArgs e)

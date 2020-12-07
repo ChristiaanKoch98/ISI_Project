@@ -105,7 +105,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void btnExport_Click(object sender, EventArgs e)
         {
-
+            ExcelAppend.ExportNotQualityRegister((int)ExcelAppend.DocumentType.RiskRegister, dgvRiskRegister);
         }
 
         private void RiskRegisterForm_Load(object sender, EventArgs e)

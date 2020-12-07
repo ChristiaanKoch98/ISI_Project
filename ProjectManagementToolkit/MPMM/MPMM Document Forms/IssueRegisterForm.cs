@@ -83,7 +83,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void btnExport_Click(object sender, EventArgs e)
         {
-
+            ExcelAppend.ExportNotQualityRegister((int)ExcelAppend.DocumentType.IssueRegister, dataGridViewSolutionRaiseRaised);
         }
 
         private void IssueRegisterForm_Load(object sender, EventArgs e)

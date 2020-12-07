@@ -48,6 +48,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -1197,6 +1201,7 @@
     <Compile Include="SyncForm.designer.cs">
       <DependentUpon>SyncForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utility\ExcelAppend.cs" />
     <Compile Include="Utility\Hashing.cs" />
     <Compile Include="MPMM\MPMM Forms\Human Resources\Human_Resources.cs">
       <SubType>Form</SubType>
@@ -1827,6 +1832,16 @@
     <None Include="ISI_DB.xss">
       <DependentUpon>ISI_DB.xsd</DependentUpon>
     </None>
+    <None Include="MPMM\Template Excel Sheets\Acceptance Register.xls" />
+    <None Include="MPMM\Template Excel Sheets\Change Register.xls" />
+    <None Include="MPMM\Template Excel Sheets\Communications Register.xls" />
+    <None Include="MPMM\Template Excel Sheets\Expense Register.xls" />
+    <None Include="MPMM\Template Excel Sheets\Issue Register.xls" />
+    <None Include="MPMM\Template Excel Sheets\Procurement Register.xls" />
+    <None Include="MPMM\Template Excel Sheets\Quality Register.xls" />
+    <None Include="MPMM\Template Excel Sheets\Risk Register.xls" />
+    <None Include="MPMM\Template Excel Sheets\Tender Register.xls" />
+    <None Include="MPMM\Template Excel Sheets\Timesheet Register.xls" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

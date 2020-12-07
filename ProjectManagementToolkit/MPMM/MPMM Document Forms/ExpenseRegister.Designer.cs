@@ -32,11 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewExpenseRegister = new System.Windows.Forms.DataGridView();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtIssueRegisterProjectManager = new System.Windows.Forms.TextBox();
-            this.txtIssueRegisterProjectName = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
             this.ActivityID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ActivityDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TaskIID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,6 +47,12 @@
             this.PaymentDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Payee = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Method = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtIssueRegisterProjectManager = new System.Windows.Forms.TextBox();
+            this.txtIssueRegisterProjectName = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.btnExport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExpenseRegister)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,67 +101,6 @@
             this.dataGridViewExpenseRegister.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewExpenseRegister.Size = new System.Drawing.Size(904, 370);
             this.dataGridViewExpenseRegister.TabIndex = 4;
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSave.Location = new System.Drawing.Point(408, 24);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(120, 37);
-            this.btnSave.TabIndex = 37;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(11, 41);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 14);
-            this.label1.TabIndex = 41;
-            this.label1.Text = "Project Manager:";
-            // 
-            // txtIssueRegisterProjectManager
-            // 
-            this.txtIssueRegisterProjectManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.txtIssueRegisterProjectManager.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIssueRegisterProjectManager.ForeColor = System.Drawing.Color.Black;
-            this.txtIssueRegisterProjectManager.Location = new System.Drawing.Point(116, 41);
-            this.txtIssueRegisterProjectManager.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtIssueRegisterProjectManager.Name = "txtIssueRegisterProjectManager";
-            this.txtIssueRegisterProjectManager.Size = new System.Drawing.Size(274, 20);
-            this.txtIssueRegisterProjectManager.TabIndex = 40;
-            this.txtIssueRegisterProjectManager.Text = "Project Manager";
-            // 
-            // txtIssueRegisterProjectName
-            // 
-            this.txtIssueRegisterProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
-            this.txtIssueRegisterProjectName.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIssueRegisterProjectName.ForeColor = System.Drawing.Color.Black;
-            this.txtIssueRegisterProjectName.Location = new System.Drawing.Point(116, 17);
-            this.txtIssueRegisterProjectName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtIssueRegisterProjectName.Name = "txtIssueRegisterProjectName";
-            this.txtIssueRegisterProjectName.Size = new System.Drawing.Size(274, 20);
-            this.txtIssueRegisterProjectName.TabIndex = 38;
-            this.txtIssueRegisterProjectName.Text = "Project Name";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(11, 22);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(83, 14);
-            this.label27.TabIndex = 39;
-            this.label27.Text = "Project Name:";
             // 
             // ActivityID
             // 
@@ -237,12 +177,87 @@
             this.Method.HeaderText = "Method";
             this.Method.Name = "Method";
             // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSave.Location = new System.Drawing.Point(408, 24);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(120, 37);
+            this.btnSave.TabIndex = 37;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(11, 41);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 14);
+            this.label1.TabIndex = 41;
+            this.label1.Text = "Project Manager:";
+            // 
+            // txtIssueRegisterProjectManager
+            // 
+            this.txtIssueRegisterProjectManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.txtIssueRegisterProjectManager.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIssueRegisterProjectManager.ForeColor = System.Drawing.Color.Black;
+            this.txtIssueRegisterProjectManager.Location = new System.Drawing.Point(116, 41);
+            this.txtIssueRegisterProjectManager.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtIssueRegisterProjectManager.Name = "txtIssueRegisterProjectManager";
+            this.txtIssueRegisterProjectManager.Size = new System.Drawing.Size(274, 20);
+            this.txtIssueRegisterProjectManager.TabIndex = 40;
+            this.txtIssueRegisterProjectManager.Text = "Project Manager";
+            // 
+            // txtIssueRegisterProjectName
+            // 
+            this.txtIssueRegisterProjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.txtIssueRegisterProjectName.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIssueRegisterProjectName.ForeColor = System.Drawing.Color.Black;
+            this.txtIssueRegisterProjectName.Location = new System.Drawing.Point(116, 17);
+            this.txtIssueRegisterProjectName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtIssueRegisterProjectName.Name = "txtIssueRegisterProjectName";
+            this.txtIssueRegisterProjectName.Size = new System.Drawing.Size(274, 20);
+            this.txtIssueRegisterProjectName.TabIndex = 38;
+            this.txtIssueRegisterProjectName.Text = "Project Name";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Black;
+            this.label27.Location = new System.Drawing.Point(11, 22);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(83, 14);
+            this.label27.TabIndex = 39;
+            this.label27.Text = "Project Name:";
+            // 
+            // btnExport
+            // 
+            this.btnExport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExport.Location = new System.Drawing.Point(552, 24);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(120, 37);
+            this.btnExport.TabIndex = 43;
+            this.btnExport.Text = "Export to Excel";
+            this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
             // ExpenseRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(933, 484);
+            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtIssueRegisterProjectManager);
             this.Controls.Add(this.txtIssueRegisterProjectName);
@@ -282,5 +297,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PaymentDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn Payee;
         private System.Windows.Forms.DataGridViewTextBoxColumn Method;
+        private System.Windows.Forms.Button btnExport;
     }
 }

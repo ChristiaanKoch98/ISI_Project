@@ -380,7 +380,7 @@
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(139, 41);
             this.btnExport.TabIndex = 21;
-            this.btnExport.Text = "Export to Word";
+            this.btnExport.Text = "Export to Excel";
             this.btnExport.UseVisualStyleBackColor = false;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
