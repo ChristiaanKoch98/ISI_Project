@@ -41,7 +41,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             dgvAcceptanceRegister.Columns.Add("colResults", "Results");
             dgvAcceptanceRegister.Columns.Add("colStatus", "Status");
             */
-            
+
+            string jsoni = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtAcceptanceRegisterProjectName.Text = projectModel.ProjectName;
+            txtProjectManagerName.Text = projectModel.ProjectManager;
+
             string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "AcceptanceRegister");
             newAcceptanceRegisterModel = new AcceptanceRegisterModel();
             currentAcceptanceRegisterModel = new AcceptanceRegisterModel();

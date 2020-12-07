@@ -107,6 +107,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
             Project_Name_tbx.Text = projectModel.ProjectName;
+            Project_Manager_tbx.Text = projectModel.ProjectManager;
 
             string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "ChangeRegister");
             newChangeRegisterModel = new ChangeRegisterModel();

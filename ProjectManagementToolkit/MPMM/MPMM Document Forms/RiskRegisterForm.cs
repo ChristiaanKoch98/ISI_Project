@@ -114,6 +114,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
             txtRiskRegisterProjectName.Text = projectModel.ProjectName;
+            txtRiskRegisterProjectManager.Text = projectModel.ProjectManager;
 
             string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "RiskRegister");
             newRiskRegisterModel = new RiskRegisterModel();
