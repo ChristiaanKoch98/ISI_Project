@@ -532,5 +532,20 @@ namespace ProjectManagementToolkit
         {
             Application.Exit();
         }
+
+        private void timesheetRegisterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TimesheetRegister timeregister = new TimesheetRegister();
+            timeregister.Show();
+            timeregister.MdiParent = this;
+
+        }
+
+        private void communicationsRegisterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CommunicationsRegister Commregister = new CommunicationsRegister();
+            Commregister.Show();
+            Commregister.MdiParent = this;
+        }
     }
 }

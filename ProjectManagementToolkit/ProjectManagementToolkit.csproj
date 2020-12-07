@@ -418,6 +418,7 @@
     <Compile Include="MPMM\MPMM Document Models\ChangeManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ChangeRegisterModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ChangeRequestModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\CommunicationRegisterModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\CommunicationsManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\CommunicationsPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\CostManagementProcessModel.cs" />
@@ -457,6 +458,7 @@
     <Compile Include="MPMM\MPMM Document Models\TermsOfReferenceModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\TimeMangementProcess.cs" />
     <Compile Include="MPMM\MPMM Document Models\TimeSheetModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\TimesheetRegisterModel.cs" />
     <Compile Include="MPMM\MPMM Forms\Academic and Training\Academic_and_Training.cs">
       <SubType>Form</SubType>
     </Compile>
