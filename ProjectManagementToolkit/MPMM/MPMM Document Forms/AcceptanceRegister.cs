@@ -28,10 +28,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void AcceptanceRegister_Load(object sender, EventArgs e)
         {
-            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
-            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
-            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
-            txtAcceptanceRegisterProjectName.Text = projectModel.ProjectName;
             /*
             dgvAcceptanceRegister.Columns.Add("colID", "ID");
             dgvAcceptanceRegister.Columns.Add("colDeliveryName", "Delivery Name");
@@ -45,13 +41,20 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             dgvAcceptanceRegister.Columns.Add("colResults", "Results");
             dgvAcceptanceRegister.Columns.Add("colStatus", "Status");
             */
-            string jsoni = JsonHelper.loadDocument(Settings.Default.ProjectID, "AcceptanceRegister");
+
+            string jsoni = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtAcceptanceRegisterProjectName.Text = projectModel.ProjectName;
+            txtProjectManagerName.Text = projectModel.ProjectManager;
+
+            string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "AcceptanceRegister");
             newAcceptanceRegisterModel = new AcceptanceRegisterModel();
             currentAcceptanceRegisterModel = new AcceptanceRegisterModel();
 
-            if (jsoni != "")
+            if (json != "")
             {
-                versionControl = JsonConvert.DeserializeObject<VersionControl<AcceptanceRegisterModel>>(jsoni);
+                versionControl = JsonConvert.DeserializeObject<VersionControl<AcceptanceRegisterModel>>(json);
                 newAcceptanceRegisterModel = JsonConvert.DeserializeObject<AcceptanceRegisterModel>(versionControl.getLatest(versionControl.DocumentModels));
                 currentAcceptanceRegisterModel = JsonConvert.DeserializeObject<AcceptanceRegisterModel>(versionControl.getLatest(versionControl.DocumentModels));
 
@@ -125,6 +128,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             {
                 MessageBox.Show("No changes were made.", "save", MessageBoxButtons.OK);
             }
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            ExcelAppend.ExportNotQualityRegister((int)ExcelAppend.DocumentType.AcceptanceRegister, dgvAcceptanceRegister);
         }
     }
 }

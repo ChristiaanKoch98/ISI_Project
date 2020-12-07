@@ -95,7 +95,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             tempIssueFormModel.SupportingDocumentation = txtSupportingDocumentation.Text;
 
             IssueRegisterModel.IssueEntry issueEntry = new IssueRegisterModel.IssueEntry();
-            issueEntry.ID = cmbIssueForms.SelectedIndex+1;
+            issueEntry.ID = (cmbIssueForms.SelectedIndex+1).ToString();
             issueEntry.DateRaised = dateTimePicker1.Value.ToString();
             issueEntry.RaisedBy = txtRaisedBy.Text;
             issueEntry.ReceivedBy = txtProjectManagerName.Text;

@@ -81,7 +81,7 @@
             this.Date_Resolved});
             this.dataGridViewSolutionRaiseRaised.EnableHeadersVisualStyles = false;
             this.dataGridViewSolutionRaiseRaised.Location = new System.Drawing.Point(9, 51);
-            this.dataGridViewSolutionRaiseRaised.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewSolutionRaiseRaised.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewSolutionRaiseRaised.Name = "dataGridViewSolutionRaiseRaised";
             this.dataGridViewSolutionRaiseRaised.RightToLeft = System.Windows.Forms.RightToLeft.No;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -192,11 +192,11 @@
             this.btnExport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnExport.Location = new System.Drawing.Point(547, 2);
-            this.btnExport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(2);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(120, 37);
             this.btnExport.TabIndex = 37;
-            this.btnExport.Text = "Export to Word";
+            this.btnExport.Text = "Export to Excel";
             this.btnExport.UseVisualStyleBackColor = false;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
@@ -205,7 +205,7 @@
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSave.Location = new System.Drawing.Point(410, 2);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(120, 37);
             this.btnSave.TabIndex = 36;
@@ -274,7 +274,7 @@
             this.Controls.Add(this.txtIssueRegisterProjectManager);
             this.Controls.Add(this.txtIssueRegisterProjectName);
             this.Controls.Add(this.label27);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "IssueRegisterForm";
             this.Text = "IssueRegisterForm";
             this.Load += new System.EventHandler(this.IssueRegisterForm_Load);

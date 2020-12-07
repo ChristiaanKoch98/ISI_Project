@@ -47,7 +47,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 var dateBeingResolved = dataGridViewSolutionRaiseRaised.Rows[i].Cells[10].Value?.ToString() ?? "";
                 var dateResolved = dataGridViewSolutionRaiseRaised.Rows[i].Cells[11].Value?.ToString() ?? "";
 
-                issueEntry.ID = int.Parse(id);
+                issueEntry.ID = (id);
                 issueEntry.DateRaised = dateRaised;
                 issueEntry.RaisedBy = raisedBy;
                 issueEntry.ReceivedBy = receivedBy;
@@ -83,7 +83,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void btnExport_Click(object sender, EventArgs e)
         {
-
+            ExcelAppend.ExportNotQualityRegister((int)ExcelAppend.DocumentType.IssueRegister, dataGridViewSolutionRaiseRaised);
         }
 
         private void IssueRegisterForm_Load(object sender, EventArgs e)
@@ -92,6 +92,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
             txtIssueRegisterProjectName.Text = projectModel.ProjectName;
+            txtIssueRegisterProjectManager.Text = projectModel.ProjectManager;
 
             string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "IssueRegister");
             newIssueRegisterModel = new IssueRegisterModel();

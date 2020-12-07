@@ -40,6 +40,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
             txtProcurementRegisterProjectName.Text = projectModel.ProjectName;
+            txtProjectManagerName.Text = projectModel.ProjectManager;
+            txtProcurementManager.Text = projectModel.ProcurementManager;
+
 
             dgvProcurementRegister.Columns.Add("colPO","PO #" );
             dgvProcurementRegister.Columns.Add("colItemTitle", "Item Title");
@@ -206,6 +209,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             {
                 MessageBox.Show("No changes were made.", "save", MessageBoxButtons.OK);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ExcelAppend.ExportNotQualityRegister((int)ExcelAppend.DocumentType.ProcurementRegister, dgvProcurementRegister);
         }
     }
 }

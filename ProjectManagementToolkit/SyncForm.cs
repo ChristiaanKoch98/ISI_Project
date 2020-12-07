@@ -94,6 +94,7 @@ namespace ProjectManagementToolkit.MPMM
             bool[] documentsSuccesful = new bool[documentsToSync.Count];
             
             syncProgressBar.Maximum = (documentsToSync.Count);
+            
             double progressValue = 0;
             if (connectionSuccessful)
             {
@@ -118,11 +119,18 @@ namespace ProjectManagementToolkit.MPMM
                     double progressPercentage = ((progressValue - 1) / syncProgressBar.Maximum) * 100;
                     syncProgressBar.Value = (int)progressValue;
                     lblProgress.Text = "Progress: " + item + " - " + Math.Round(progressPercentage,2).ToString() + "%";
-                    lblProgress.Refresh();
                     syncProgressBar.Refresh();
+                    lblProgress.Refresh();
+                    
+                }
+                if(documentsToSync.Count == 0)
+                {
+                    syncProgressBar.Maximum = 1;
                 }
                 syncProgressBar.Value = syncProgressBar.Maximum;
                 lblProgress.Text = "Progress: 100%";
+                syncProgressBar.Refresh();
+                lblProgress.Refresh();
                 MessageBox.Show("Sync completed");
             }
             else
@@ -148,6 +156,7 @@ namespace ProjectManagementToolkit.MPMM
             }
 
             Cursor.Current = Cursors.Default;
+            this.Close();
         }
 
         private bool checkProjectConfig()
@@ -220,6 +229,7 @@ namespace ProjectManagementToolkit.MPMM
             string serverJsonString = getServerDocument(document);
 
             string documentJson = "";
+            string documentLocalJson = "";
 
             JObject localJson, serverJson;
 
@@ -259,42 +269,68 @@ namespace ProjectManagementToolkit.MPMM
             //Merge Server with Local version and save locally
             if (serverLatest["DateModified"].ToObject<DateTime>() > localLatest["DateModified"].ToObject<DateTime>())
             {
-                localLatest.Merge(serverLatest, new JsonMergeSettings
+                JObject tempServerLatest = serverLatest.DeepClone().ToObject<JObject>();
+                JObject tempLocalLatest = localLatest.DeepClone().ToObject<JObject>();
+                tempLocalLatest.Merge(tempServerLatest, new JsonMergeSettings
                 {
                     MergeArrayHandling = MergeArrayHandling.Union
                 });
                 JObject updatedDocument = new JObject();
-                updatedDocument.Add("DocumentObject", localLatest["DocumentObject"]);
+                updatedDocument.Add("DocumentObject", tempServerLatest["DocumentObject"]);
                 updatedDocument.Add("VersionID", generateID());
                 updatedDocument.Add("DateModified", DateTime.Now);
 
+                //Add document to serverJson
                 JArray documentModels = serverJson["DocumentModels"].ToObject<JArray>();
+                documentModels.Clear();
                 documentModels.Add(updatedDocument);
 
                 serverJson["DocumentModels"] = documentModels;
 
                 documentJson = JsonConvert.SerializeObject(serverJson);
+
+                //Add document to localJson
+                JArray documentLocalModels = localJson["DocumentModels"].ToObject<JArray>();
+                documentLocalModels.Add(updatedDocument);
+
+                localJson["DocumentModels"] = documentLocalModels;
+
+                documentLocalJson = JsonConvert.SerializeObject(localJson);
+
+
             }
             //Local ahead of Server
             //Merge Local version with server version and PUT
             else if (localLatest["DateModified"].ToObject<DateTime>() > serverLatest["DateModified"].ToObject<DateTime>())
             {
-                serverLatest.Merge(localLatest, new JsonMergeSettings
+                JObject tempServerLatest = serverLatest.DeepClone().ToObject<JObject>();
+                JObject tempLocalLatest = localLatest.DeepClone().ToObject<JObject>();
+                tempServerLatest.Merge(tempLocalLatest, new JsonMergeSettings
                 {
                     MergeArrayHandling = MergeArrayHandling.Union
                 });
 
                 JObject updatedDocument = new JObject();
-                updatedDocument.Add("DocumentObject", localLatest["DocumentObject"]);
+                updatedDocument.Add("DocumentObject", tempLocalLatest["DocumentObject"]);
                 updatedDocument.Add("VersionID", generateID());
                 updatedDocument.Add("DateModified", DateTime.Now);
 
+                //Add document to serverJson
                 JArray documentModels = serverJson["DocumentModels"].ToObject<JArray>();
+                documentModels.Clear();
                 documentModels.Add(updatedDocument);
 
                 serverJson["DocumentModels"] = documentModels;
 
                 documentJson = JsonConvert.SerializeObject(serverJson);
+
+                //Add document to localJson
+                JArray documentLocalModels = localJson["DocumentModels"].ToObject<JArray>();
+                documentLocalModels.Add(updatedDocument);
+
+                localJson["DocumentModels"] = documentLocalModels;
+
+                documentLocalJson = JsonConvert.SerializeObject(localJson);
             }
             //Server = Local
             //Keep same
@@ -307,7 +343,7 @@ namespace ProjectManagementToolkit.MPMM
                 serverJson["DocumentModels"] = documentModels;
 
                 documentJson = JsonConvert.SerializeObject(serverJson);
-
+                documentLocalJson = JsonConvert.SerializeObject(localJson);
             }
             else
             {
@@ -315,7 +351,9 @@ namespace ProjectManagementToolkit.MPMM
             }
 
             //Save to local
-            JsonHelper.saveDocument(documentJson, Settings.Default.ProjectID, document);
+            //Load local
+
+            JsonHelper.saveDocument(documentLocalJson, Settings.Default.ProjectID, document);
 
             //Save to server
             var body = new StringContent(documentJson, Encoding.UTF8, "application/json");

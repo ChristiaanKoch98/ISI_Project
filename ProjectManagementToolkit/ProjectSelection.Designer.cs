@@ -399,6 +399,7 @@
             this.MinimizeBox = false;
             this.Name = "ProjectSelection";
             this.Text = "ProjectSelection";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ProjectSelection_FormClosing);
             this.Load += new System.EventHandler(this.ProjectSelection_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -48,6 +48,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -418,10 +422,12 @@
     <Compile Include="MPMM\MPMM Document Models\ChangeManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ChangeRegisterModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ChangeRequestModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\CommunicationRegisterModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\CommunicationsManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\CommunicationsPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\CostManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ExpenseFormModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\ExpenseRegister.cs" />
     <Compile Include="MPMM\MPMM Document Models\FeasibilityStudyModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\FinancialPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\IssueFormModel.cs" />
@@ -456,6 +462,7 @@
     <Compile Include="MPMM\MPMM Document Models\TermsOfReferenceModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\TimeMangementProcess.cs" />
     <Compile Include="MPMM\MPMM Document Models\TimeSheetModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\TimesheetRegisterModel.cs" />
     <Compile Include="MPMM\MPMM Forms\Academic and Training\Academic_and_Training.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1176,6 +1183,12 @@
     <Compile Include="ProjectDashboard.Designer.cs">
       <DependentUpon>ProjectDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="MPMM\MPMM Version Control\ProjectPlanVC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Version Control\ProjectPlanVC.Designer.cs">
+      <DependentUpon>ProjectPlanVC.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProjectSelection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1188,6 +1201,7 @@
     <Compile Include="SyncForm.designer.cs">
       <DependentUpon>SyncForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utility\ExcelAppend.cs" />
     <Compile Include="Utility\Hashing.cs" />
     <Compile Include="MPMM\MPMM Forms\Human Resources\Human_Resources.cs">
       <SubType>Form</SubType>
@@ -1791,6 +1805,9 @@
     <EmbeddedResource Include="ProjectDashboard.resx">
       <DependentUpon>ProjectDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Version Control\ProjectPlanVC.resx">
+      <DependentUpon>ProjectPlanVC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProjectSelection.resx">
       <DependentUpon>ProjectSelection.cs</DependentUpon>
     </EmbeddedResource>
@@ -1815,6 +1832,17 @@
     <None Include="ISI_DB.xss">
       <DependentUpon>ISI_DB.xsd</DependentUpon>
     </None>
+    <None Include="MPMM\Template Excel Sheets\Acceptance Register.xls" />
+    <None Include="MPMM\Template Excel Sheets\Change Register.xls" />
+    <None Include="MPMM\Template Excel Sheets\Communications Register.xls" />
+    <None Include="MPMM\Template Excel Sheets\Expense Register.xls" />
+    <None Include="MPMM\Template Excel Sheets\Issue Register.xls" />
+    <None Include="MPMM\Template Excel Sheets\Procurement Register.xls" />
+    <None Include="MPMM\Template Excel Sheets\Quality Register.xls" />
+    <None Include="MPMM\Template Excel Sheets\Risk Register.xls" />
+    <None Include="MPMM\Template Excel Sheets\Tender Register.xls" />
+    <None Include="MPMM\Template Excel Sheets\Timesheet Register.xls" />
+    <None Include="MPMM\Template Excel Sheets\User_Manual Project Management Toolkit.docx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

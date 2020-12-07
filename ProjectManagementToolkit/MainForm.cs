@@ -520,5 +520,25 @@ namespace ProjectManagementToolkit
             postImplementationReviewDocumentForm.Show();
             postImplementationReviewDocumentForm.MdiParent = this;
         }
+
+        private void projectDashboardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProjectDashboard form = new ProjectDashboard();
+            form.Show();
+            form.MdiParent = this;
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string tempString = System.Windows.Forms.Application.StartupPath;
+            tempString = tempString.Remove(tempString.LastIndexOf('\\'));
+            tempString = tempString.Remove(tempString.LastIndexOf('\\'));
+            System.Diagnostics.Process.Start($@"{tempString}\MPMM\Template Excel Sheets\User_Manual Project Management Toolkit.docx");
+        }
     }
 }
