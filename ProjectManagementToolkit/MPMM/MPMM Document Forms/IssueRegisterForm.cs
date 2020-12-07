@@ -47,7 +47,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 var dateBeingResolved = dataGridViewSolutionRaiseRaised.Rows[i].Cells[10].Value?.ToString() ?? "";
                 var dateResolved = dataGridViewSolutionRaiseRaised.Rows[i].Cells[11].Value?.ToString() ?? "";
 
-                issueEntry.ID = int.Parse(id);
+                issueEntry.ID = (id);
                 issueEntry.DateRaised = dateRaised;
                 issueEntry.RaisedBy = raisedBy;
                 issueEntry.ReceivedBy = receivedBy;

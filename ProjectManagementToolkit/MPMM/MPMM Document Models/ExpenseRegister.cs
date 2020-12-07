@@ -11,11 +11,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public List<ExpenseEntry> ExpenseEntries { get; set; }
         public class ExpenseEntry
         {
-            public int ActivityID { get; set; }
+            public string ActivityID { get; set; }
             public string ActivityDescription { get; set; } = "";
-            public int TaskId { get; set; }
+            public string TaskId { get; set; }
             public string TaskDescription { get; set; } = "";
-            public int ExpenseID { get; set; }
+            public string ExpenseID { get; set; }
             public string ExpenseType { get; set; } = "";
             public string ExpenseDescription { get; set; } = "";
             public string ExpenseAmount { get; set; } = "";

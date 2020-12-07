@@ -11,7 +11,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Models
         public List<IssueEntry> IssueEntries { get; set; }
         public class IssueEntry
         {
-            public int ID { get; set; }
+            public string ID { get; set; }
             public string DateRaised { get; set; } = "";
             public string RaisedBy { get; set; } = "";
             public string ReceivedBy { get; set; } = "";

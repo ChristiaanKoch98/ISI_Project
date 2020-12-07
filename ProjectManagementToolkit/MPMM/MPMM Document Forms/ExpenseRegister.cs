@@ -81,11 +81,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 var payee = dataGridViewExpenseRegister.Rows[i].Cells[13].Value?.ToString() ?? "";
                 var method = dataGridViewExpenseRegister.Rows[i].Cells[14].Value?.ToString() ?? "";
 
-                expenseEntry.ActivityID = int.Parse(activityid);
+                expenseEntry.ActivityID = (activityid);
                 expenseEntry.ActivityDescription = activitydescription;
-                expenseEntry.TaskId = int.Parse(taskid);
+                expenseEntry.TaskId = (taskid);
                 expenseEntry.TaskDescription = taskdescription;
-                expenseEntry.ExpenseID = int.Parse(expenseid);
+                expenseEntry.ExpenseID = (expenseid);
                 expenseEntry.ExpenseType = expensetype;
                 expenseEntry.ExpenseDescription = expensedescription;
                 expenseEntry.ExpenseAmount = expenseamount;
