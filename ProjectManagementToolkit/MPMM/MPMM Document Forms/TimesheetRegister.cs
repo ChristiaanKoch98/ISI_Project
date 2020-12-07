@@ -109,5 +109,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl.DocumentModels = new List<VersionControl<TimesheetRegisterModel>.DocumentModel>();
             }
         }
+
+        private void TimesheetRegister_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

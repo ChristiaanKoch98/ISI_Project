@@ -78,7 +78,6 @@ namespace ProjectManagementToolkit
                 planningDocuments.Add("AcceptancePlan");
                 planningDocuments.Add("CommunicationPlan");
                 planningDocuments.Add("ProcurementPlan");
-                planningDocuments.Add("SelectionProcess");
                 planningDocuments.Add("StatementOfWork");
                 planningDocuments.Add("RequestForInformation");
                 planningDocuments.Add("SupplierContract");
@@ -115,19 +114,28 @@ namespace ProjectManagementToolkit
                 executionDocuments.Add("TimeSheetRegister");
                 executionDocuments.Add("CostManagementProcess");
                 executionDocuments.Add("ExpenseForm");
+                executionDocuments.Add("ExpenseRegister");
                 executionDocuments.Add("QualityManagement");
                 executionDocuments.Add("QualityReviewPlan");
+                executionDocuments.Add("QualityReviewForm");
+                executionDocuments.Add("QualityReviewRegister");
                 executionDocuments.Add("ChangeManagementProcess");
                 executionDocuments.Add("ChangeRequestForm");
+                executionDocuments.Add("ChangeRequestRegister");
                 executionDocuments.Add("RiskManagamentProcess");
                 executionDocuments.Add("RiskForm");
+                executionDocuments.Add("RiskRegister");
                 executionDocuments.Add("IssueManagementProcess");
                 executionDocuments.Add("IssueForm");
+                executionDocuments.Add("IssueRegister");
                 executionDocuments.Add("PurchaseOrder");
+                executionDocuments.Add("ProcurementRegister");
                 executionDocuments.Add("AcceptanceManagementProcess");
                 executionDocuments.Add("AcceptanceForm");
+                executionDocuments.Add("AcceptanceRegister");
                 executionDocuments.Add("CommunicationsManagementProcess");
                 executionDocuments.Add("ProjectStatusReport");
+                executionDocuments.Add("CommunicationsRegister");
                 executionDocuments.Add("PhaseReviewExe");
 
                 lblExecutionProgress.Text = "Progress: 0%";

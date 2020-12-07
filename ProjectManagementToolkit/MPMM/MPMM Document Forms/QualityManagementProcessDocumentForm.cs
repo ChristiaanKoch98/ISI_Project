@@ -701,10 +701,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void QualityManagementProcessDocumentForm_Load_1(object sender, EventArgs e)
         {
-            loadDocument();
-            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
-            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            string jsoni = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtProjectName.Text = projectModel.ProjectName;
+
+            loadDocument();
+            
         }
 
         private void btnSave_Click_1(object sender, EventArgs e)

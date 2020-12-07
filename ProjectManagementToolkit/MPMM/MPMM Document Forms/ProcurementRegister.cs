@@ -36,6 +36,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void ProcurementRegister_Load(object sender, EventArgs e)
         {
+            string jsoni = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtProcurementRegisterProjectName.Text = projectModel.ProjectName;
+
             dgvProcurementRegister.Columns.Add("colPO","PO #" );
             dgvProcurementRegister.Columns.Add("colItemTitle", "Item Title");
             dgvProcurementRegister.Columns.Add("colItemDesc", "Item Description");

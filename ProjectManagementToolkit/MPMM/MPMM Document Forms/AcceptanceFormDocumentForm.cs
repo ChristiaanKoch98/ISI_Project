@@ -21,7 +21,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         VersionControl<AcceptanceFormModel> versionControl;
         AcceptanceFormModel newAcceptanceFormModel;
         AcceptanceFormModel currentAcceptanceFormModel;
-
+        ProjectModel projectModel = new ProjectModel();
         Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
         AcceptanceFormModel AcceptanceModel = new AcceptanceFormModel();
 
@@ -33,6 +33,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void AcceptanceFormDocumentForm_Load(object sender, EventArgs e)
         {
+            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            Acceptance_Form_Name_tbx.Text = projectModel.ProjectName;
+
             LoadDocument();
         }
         private void btnSave_Click(object sender, EventArgs e)

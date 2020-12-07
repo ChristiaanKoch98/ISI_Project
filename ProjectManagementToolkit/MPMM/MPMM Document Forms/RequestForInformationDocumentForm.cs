@@ -22,7 +22,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         VersionControl<RequestForInformationModel> versionControl;
         RequestForInformationModel newRequestForInformationModel;
         RequestForInformationModel currentRequestForInformationModel;
-
+        ProjectModel projectModel = new ProjectModel();
         Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
 
         public RequestForInformationDocumentForm()
@@ -38,6 +38,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void RequestForInformationDocumentForm_Load(object sender, EventArgs e)
         {
+            string jsoni = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtProjectName.Text = projectModel.ProjectName;
+
             loadDocument();
         }
 

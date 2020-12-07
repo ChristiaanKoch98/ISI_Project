@@ -709,10 +709,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void AcceptanceManagementProcessDocumentForm_Load(object sender, EventArgs e)
         {
-            loadDocument();
             string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtProjectName.Text = projectModel.ProjectName;
+
+            loadDocument();
+            
         }
 
         private void btnExportWord_Click(object sender, EventArgs e)

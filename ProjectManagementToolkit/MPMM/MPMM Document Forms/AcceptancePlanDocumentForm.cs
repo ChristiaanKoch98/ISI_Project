@@ -22,7 +22,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         VersionControl<AcceptancePlanModel> versionControl;
         AcceptancePlanModel newAcceptancePlanModel;
         AcceptancePlanModel currentAcceptancePlanModel;
-
+        ProjectModel projectModel = new ProjectModel();
         Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
         Color TABLE_SUBHEADER_COLOR = Color.FromArgb(255, 255, 0);
 
@@ -43,6 +43,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             dataGridViewSchedule.Columns.Add("ReviewMethod", "Review Method");
             dataGridViewSchedule.Columns.Add("ReviewMethod", "Reviewers");
             dataGridViewSchedule.Columns.Add("AccDate", "Acceptance Date");
+
+            string json = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtProjectName.Text = projectModel.ProjectName;
+
+
             loadDocument();
         }
 

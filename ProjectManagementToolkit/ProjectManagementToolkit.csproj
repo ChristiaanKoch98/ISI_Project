@@ -423,6 +423,7 @@
     <Compile Include="MPMM\MPMM Document Models\CommunicationsPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\CostManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ExpenseFormModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\ExpenseRegister.cs" />
     <Compile Include="MPMM\MPMM Document Models\FeasibilityStudyModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\FinancialPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\IssueFormModel.cs" />
@@ -435,6 +436,7 @@
     <Compile Include="MPMM\MPMM Document Models\PostImplementationReviewModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProcurementPlanModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProcurementRegisterModel.cs" />
+    <Compile Include="MPMM\MPMM Document Models\ProjectCharterModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectClosureReportModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectOfficeChecklistModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\ProjectPlanModel.cs" />
@@ -1177,6 +1179,12 @@
     <Compile Include="ProjectDashboard.Designer.cs">
       <DependentUpon>ProjectDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="MPMM\MPMM Version Control\ProjectPlanVC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Version Control\ProjectPlanVC.Designer.cs">
+      <DependentUpon>ProjectPlanVC.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProjectSelection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1791,6 +1799,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProjectDashboard.resx">
       <DependentUpon>ProjectDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Version Control\ProjectPlanVC.resx">
+      <DependentUpon>ProjectPlanVC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProjectSelection.resx">
       <DependentUpon>ProjectSelection.cs</DependentUpon>
