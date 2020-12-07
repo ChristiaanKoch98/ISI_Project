@@ -214,6 +214,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
             txtProjectName.Text = projectModel.ProjectName;
+            txtProjectManager.Text = projectModel.ProjectManager;
         }
 
         private void btnSave_Click(object sender, EventArgs e)

@@ -40,6 +40,9 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
             txtProcurementRegisterProjectName.Text = projectModel.ProjectName;
+            txtProjectManagerName.Text = projectModel.ProjectManager;
+            txtProcurementManager.Text = projectModel.ProcurementManager;
+
 
             dgvProcurementRegister.Columns.Add("colPO","PO #" );
             dgvProcurementRegister.Columns.Add("colItemTitle", "Item Title");

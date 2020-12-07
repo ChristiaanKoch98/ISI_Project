@@ -67,6 +67,8 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
             List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(json);
             projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
             txtProjectName.Text = projectModel.ProjectName;
+            txtTimesheetFormProjectName.Text = projectModel.ProjectName;
+            txtTimesheetFormProjectManager.Text = projectModel.ProjectManager;
         }
 
         //Back-End

@@ -19,6 +19,7 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         VersionControl<CommunicationRegisterModel> versionControl;
         CommunicationRegisterModel newCommunicationRegisterModel;
         CommunicationRegisterModel currentCommunicationRegisterModel;
+        ProjectModel projectModel = new ProjectModel();
         Color TABLE_HEADER_COLOR = Color.FromArgb(73, 173, 252);
         public CommunicationsRegister()
         {
@@ -91,6 +92,13 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
 
         private void CommunicationsRegister_Load(object sender, EventArgs e)
         {
+            string jsoni = JsonHelper.loadProjectInfo(Settings.Default.Username);
+            List<ProjectModel> projectListModel = JsonConvert.DeserializeObject<List<ProjectModel>>(jsoni);
+            projectModel = projectModel.getProjectModel(Settings.Default.ProjectID, projectListModel);
+            txtIssueRegisterProjectName.Text = projectModel.ProjectName;
+            txtIssueRegisterProjectManager.Text = projectModel.ProjectManager;
+
+
             string json = JsonHelper.loadDocument(Settings.Default.ProjectID, "CommunicationRegister");
             newCommunicationRegisterModel = new CommunicationRegisterModel();
             currentCommunicationRegisterModel = new CommunicationRegisterModel();
@@ -112,6 +120,11 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 versionControl = new VersionControl<CommunicationRegisterModel>();
                 versionControl.DocumentModels = new List<VersionControl<CommunicationRegisterModel>.DocumentModel>();
             }
+        }
+
+        private void CommuncationsRegister_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
