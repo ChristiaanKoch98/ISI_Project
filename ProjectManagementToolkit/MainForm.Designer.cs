@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.projectSelectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.projectDashboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.syncToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -102,7 +103,6 @@
             this.performProjectClosureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reviewProjectCompletionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.projectDashboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -142,21 +142,28 @@
             this.projectSelectionToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
             this.projectSelectionToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.projectSelectionToolStripMenuItem.Name = "projectSelectionToolStripMenuItem";
-            this.projectSelectionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.projectSelectionToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.projectSelectionToolStripMenuItem.Text = "Project Selection";
             this.projectSelectionToolStripMenuItem.Click += new System.EventHandler(this.projectSelectionToolStripMenuItem_Click);
+            // 
+            // projectDashboardToolStripMenuItem
+            // 
+            this.projectDashboardToolStripMenuItem.Name = "projectDashboardToolStripMenuItem";
+            this.projectDashboardToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.projectDashboardToolStripMenuItem.Text = "Project Dashboard";
+            this.projectDashboardToolStripMenuItem.Click += new System.EventHandler(this.projectDashboardToolStripMenuItem_Click);
             // 
             // printFilesToolStripMenuItem
             // 
             this.printFilesToolStripMenuItem.Name = "printFilesToolStripMenuItem";
-            this.printFilesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.printFilesToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.printFilesToolStripMenuItem.Text = "Print files";
             this.printFilesToolStripMenuItem.Click += new System.EventHandler(this.printFilesToolStripMenuItem_Click);
             // 
             // syncToolStripMenuItem
             // 
             this.syncToolStripMenuItem.Name = "syncToolStripMenuItem";
-            this.syncToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.syncToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.syncToolStripMenuItem.Text = "Sync";
             this.syncToolStripMenuItem.Click += new System.EventHandler(this.syncToolStripMenuItem_Click);
             // 
@@ -165,7 +172,7 @@
             this.exitToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro;
             this.exitToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -771,13 +778,7 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // projectDashboardToolStripMenuItem
-            // 
-            this.projectDashboardToolStripMenuItem.Name = "projectDashboardToolStripMenuItem";
-            this.projectDashboardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.projectDashboardToolStripMenuItem.Text = "Project Dashboard";
-            this.projectDashboardToolStripMenuItem.Click += new System.EventHandler(this.projectDashboardToolStripMenuItem_Click);
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -789,7 +790,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
             this.Text = "Main Menu";
             this.Load += new System.EventHandler(this.MainForm_Load);

@@ -1842,6 +1842,7 @@
     <None Include="MPMM\Template Excel Sheets\Risk Register.xls" />
     <None Include="MPMM\Template Excel Sheets\Tender Register.xls" />
     <None Include="MPMM\Template Excel Sheets\Timesheet Register.xls" />
+    <None Include="MPMM\Template Excel Sheets\User_Manual Project Management Toolkit.docx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
