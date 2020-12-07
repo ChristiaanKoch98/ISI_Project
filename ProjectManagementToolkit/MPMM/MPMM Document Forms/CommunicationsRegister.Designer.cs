@@ -109,8 +109,9 @@
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(120, 37);
             this.btnExport.TabIndex = 42;
-            this.btnExport.Text = "Export to Word";
+            this.btnExport.Text = "Export to Excel";
             this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // label2
             // 

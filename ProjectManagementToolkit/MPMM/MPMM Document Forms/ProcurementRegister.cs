@@ -210,5 +210,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
                 MessageBox.Show("No changes were made.", "save", MessageBoxButtons.OK);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ExcelAppend.ExportNotQualityRegister((int)ExcelAppend.DocumentType.ProcurementRegister, dgvProcurementRegister);
+        }
     }
 }

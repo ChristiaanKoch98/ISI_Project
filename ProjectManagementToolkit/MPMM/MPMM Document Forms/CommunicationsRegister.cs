@@ -126,5 +126,10 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
 
         }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            ExcelAppend.ExportNotQualityRegister((int)ExcelAppend.DocumentType.CommunicationsRegister, dgvCommunicationsRegister);
+        }
     }
 }
