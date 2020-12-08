@@ -103,6 +103,8 @@
             this.performProjectClosureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reviewProjectCompletionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pDFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -775,10 +777,27 @@
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pDFToolStripMenuItem,
+            this.wordToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
+            // 
+            // pDFToolStripMenuItem
+            // 
+            this.pDFToolStripMenuItem.Name = "pDFToolStripMenuItem";
+            this.pDFToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pDFToolStripMenuItem.Text = "PDF";
+            this.pDFToolStripMenuItem.Click += new System.EventHandler(this.pDFToolStripMenuItem_Click);
+            // 
+            // wordToolStripMenuItem
+            // 
+            this.wordToolStripMenuItem.Name = "wordToolStripMenuItem";
+            this.wordToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.wordToolStripMenuItem.Text = "Word";
+            this.wordToolStripMenuItem.Click += new System.EventHandler(this.wordToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -878,5 +897,7 @@
         private System.Windows.Forms.ToolStripMenuItem termsOfReferenceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem printFilesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem projectDashboardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pDFToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem wordToolStripMenuItem;
     }
 }

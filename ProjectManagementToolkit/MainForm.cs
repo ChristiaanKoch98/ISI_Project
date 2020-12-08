@@ -535,10 +535,23 @@ namespace ProjectManagementToolkit
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void wordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             string tempString = System.Windows.Forms.Application.StartupPath;
             tempString = tempString.Remove(tempString.LastIndexOf('\\'));
             tempString = tempString.Remove(tempString.LastIndexOf('\\'));
             System.Diagnostics.Process.Start($@"{tempString}\MPMM\Template Excel Sheets\User_Manual Project Management Toolkit.docx");
+        }
+
+        private void pDFToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string tempString = System.Windows.Forms.Application.StartupPath;
+            tempString = tempString.Remove(tempString.LastIndexOf('\\'));
+            tempString = tempString.Remove(tempString.LastIndexOf('\\'));
+            System.Diagnostics.Process.Start($@"{tempString}\MPMM\Template Excel Sheets\User_Manual Project Management Toolkit.pdf");
         }
     }
 }
