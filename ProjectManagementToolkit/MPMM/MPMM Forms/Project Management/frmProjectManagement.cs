@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProjectManagementToolkit.MPMM.MPMM_Document_Forms;
 
 namespace ProjectManagementToolkit
 {
@@ -216,6 +217,18 @@ namespace ProjectManagementToolkit
         {
             tbp_Project_Management.SelectTab("tbp_Processes");
             btnCommunicationAndStakeholderManagement_Click(sender, e);
+        }
+
+        private void btnRiskManagementTemplate_Click(object sender, EventArgs e)
+        {
+            RiskFormDocumentForm RiskForm = new RiskFormDocumentForm();
+            RiskForm.Show();
+        }
+
+        private void btnRiskManagementRegister_Click(object sender, EventArgs e)
+        {
+            RiskRegisterForm RiskRegister = new RiskRegisterForm();
+            RiskRegister.Show();
         }
     }
 }

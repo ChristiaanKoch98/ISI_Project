@@ -64,6 +64,7 @@
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage20 = new System.Windows.Forms.TabPage();
+            this.pictureBox84 = new System.Windows.Forms.PictureBox();
             this.pictureBox69 = new System.Windows.Forms.PictureBox();
             this.tabPage21 = new System.Windows.Forms.TabPage();
             this.pictureBox71 = new System.Windows.Forms.PictureBox();
@@ -172,6 +173,7 @@
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
             this.tabControl6 = new System.Windows.Forms.TabControl();
             this.tabPage27 = new System.Windows.Forms.TabPage();
+            this.pictureBox70 = new System.Windows.Forms.PictureBox();
             this.pictureBox83 = new System.Windows.Forms.PictureBox();
             this.tabPage28 = new System.Windows.Forms.TabPage();
             this.txtProcessSteps = new System.Windows.Forms.TextBox();
@@ -480,8 +482,6 @@
             this.btnBackToPLSM = new System.Windows.Forms.Button();
             this.lblType = new System.Windows.Forms.Label();
             this.pnlHideTabPages = new System.Windows.Forms.Panel();
-            this.pictureBox84 = new System.Windows.Forms.PictureBox();
-            this.pictureBox70 = new System.Windows.Forms.PictureBox();
             tbpClosingAProject = new System.Windows.Forms.TabPage();
             tbpClosingAProject.SuspendLayout();
             this.tabControl10.SuspendLayout();
@@ -504,6 +504,7 @@
             this.flowLayoutPanel6.SuspendLayout();
             this.tabControl4.SuspendLayout();
             this.tabPage20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox69)).BeginInit();
             this.tabPage21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).BeginInit();
@@ -552,6 +553,7 @@
             this.flowLayoutPanel8.SuspendLayout();
             this.tabControl6.SuspendLayout();
             this.tabPage27.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).BeginInit();
             this.tabPage28.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).BeginInit();
@@ -698,17 +700,15 @@
             this.tabPage57.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox118)).BeginInit();
             this.tabPage58.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).BeginInit();
             this.SuspendLayout();
             // 
             // tbpClosingAProject
             // 
             tbpClosingAProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             tbpClosingAProject.Controls.Add(this.tabControl10);
-            tbpClosingAProject.Location = new System.Drawing.Point(4, 21);
+            tbpClosingAProject.Location = new System.Drawing.Point(4, 25);
             tbpClosingAProject.Name = "tbpClosingAProject";
-            tbpClosingAProject.Size = new System.Drawing.Size(958, 521);
+            tbpClosingAProject.Size = new System.Drawing.Size(958, 517);
             tbpClosingAProject.TabIndex = 6;
             tbpClosingAProject.Text = "Closing a Project";
             // 
@@ -731,10 +731,10 @@
             // 
             this.tabPage13.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tabPage13.Controls.Add(this.pictureBox106);
-            this.tabPage13.Location = new System.Drawing.Point(4, 21);
+            this.tabPage13.Location = new System.Drawing.Point(4, 25);
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(919, 481);
+            this.tabPage13.Size = new System.Drawing.Size(919, 477);
             this.tabPage13.TabIndex = 0;
             this.tabPage13.Text = "Process Overview";
             // 
@@ -758,10 +758,10 @@
             this.tabPage14.Controls.Add(this.pictureBox107);
             this.tabPage14.Controls.Add(this.label150);
             this.tabPage14.Controls.Add(this.pictureBox108);
-            this.tabPage14.Location = new System.Drawing.Point(4, 21);
+            this.tabPage14.Location = new System.Drawing.Point(4, 25);
             this.tabPage14.Name = "tabPage14";
             this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage14.Size = new System.Drawing.Size(919, 481);
+            this.tabPage14.Size = new System.Drawing.Size(919, 477);
             this.tabPage14.TabIndex = 1;
             this.tabPage14.Text = "Process Streps";
             this.tabPage14.UseVisualStyleBackColor = true;
@@ -811,7 +811,7 @@
             this.label150.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label150.Location = new System.Drawing.Point(18, 13);
             this.label150.Name = "label150";
-            this.label150.Size = new System.Drawing.Size(227, 19);
+            this.label150.Size = new System.Drawing.Size(279, 23);
             this.label150.TabIndex = 2;
             this.label150.Text = "Closing a Project Process Steps:";
             // 
@@ -831,9 +831,9 @@
             // 
             this.tabPage15.Controls.Add(this.label151);
             this.tabPage15.Controls.Add(this.pictureBox109);
-            this.tabPage15.Location = new System.Drawing.Point(4, 21);
+            this.tabPage15.Location = new System.Drawing.Point(4, 25);
             this.tabPage15.Name = "tabPage15";
-            this.tabPage15.Size = new System.Drawing.Size(919, 481);
+            this.tabPage15.Size = new System.Drawing.Size(919, 477);
             this.tabPage15.TabIndex = 2;
             this.tabPage15.Text = "Required Information";
             this.tabPage15.UseVisualStyleBackColor = true;
@@ -844,7 +844,7 @@
             this.label151.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label151.Location = new System.Drawing.Point(18, 13);
             this.label151.Name = "label151";
-            this.label151.Size = new System.Drawing.Size(211, 19);
+            this.label151.Size = new System.Drawing.Size(260, 23);
             this.label151.TabIndex = 3;
             this.label151.Text = "Closing a Project Information";
             // 
@@ -865,9 +865,9 @@
             this.tabPage16.Controls.Add(this.panel122);
             this.tabPage16.Controls.Add(this.panel123);
             this.tabPage16.Controls.Add(this.pictureBox110);
-            this.tabPage16.Location = new System.Drawing.Point(4, 21);
+            this.tabPage16.Location = new System.Drawing.Point(4, 25);
             this.tabPage16.Name = "tabPage16";
-            this.tabPage16.Size = new System.Drawing.Size(919, 481);
+            this.tabPage16.Size = new System.Drawing.Size(919, 477);
             this.tabPage16.TabIndex = 3;
             this.tabPage16.Text = "Inputs and Outputs Matrix";
             this.tabPage16.UseVisualStyleBackColor = true;
@@ -887,7 +887,7 @@
             this.label152.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label152.Location = new System.Drawing.Point(3, 5);
             this.label152.Name = "label152";
-            this.label152.Size = new System.Drawing.Size(186, 19);
+            this.label152.Size = new System.Drawing.Size(230, 23);
             this.label152.TabIndex = 0;
             this.label152.Text = "Closing a Project Outputs:";
             // 
@@ -906,7 +906,7 @@
             this.label153.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label153.Location = new System.Drawing.Point(3, 5);
             this.label153.Name = "label153";
-            this.label153.Size = new System.Drawing.Size(176, 19);
+            this.label153.Size = new System.Drawing.Size(216, 23);
             this.label153.TabIndex = 0;
             this.label153.Text = "Closing a Project Inputs:";
             // 
@@ -927,9 +927,9 @@
             this.tabPage17.Controls.Add(this.button10);
             this.tabPage17.Controls.Add(this.button11);
             this.tabPage17.Controls.Add(this.label154);
-            this.tabPage17.Location = new System.Drawing.Point(4, 21);
+            this.tabPage17.Location = new System.Drawing.Point(4, 25);
             this.tabPage17.Name = "tabPage17";
-            this.tabPage17.Size = new System.Drawing.Size(919, 481);
+            this.tabPage17.Size = new System.Drawing.Size(919, 477);
             this.tabPage17.TabIndex = 4;
             this.tabPage17.Text = "Templates, Tools and Techniques";
             this.tabPage17.UseVisualStyleBackColor = true;
@@ -958,7 +958,7 @@
             this.label154.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label154.Location = new System.Drawing.Point(15, 9);
             this.label154.Name = "label154";
-            this.label154.Size = new System.Drawing.Size(131, 19);
+            this.label154.Size = new System.Drawing.Size(161, 23);
             this.label154.TabIndex = 7;
             this.label154.Text = "Project Close Out:";
             // 
@@ -966,9 +966,9 @@
             // 
             this.tabPage18.Controls.Add(this.txtRolesAndResponsabilities);
             this.tabPage18.Controls.Add(this.label155);
-            this.tabPage18.Location = new System.Drawing.Point(4, 21);
+            this.tabPage18.Location = new System.Drawing.Point(4, 25);
             this.tabPage18.Name = "tabPage18";
-            this.tabPage18.Size = new System.Drawing.Size(919, 481);
+            this.tabPage18.Size = new System.Drawing.Size(919, 477);
             this.tabPage18.TabIndex = 5;
             this.tabPage18.Text = "Roles and Responsibilities ";
             this.tabPage18.UseVisualStyleBackColor = true;
@@ -987,7 +987,7 @@
             this.label155.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label155.Location = new System.Drawing.Point(3, 5);
             this.label155.Name = "label155";
-            this.label155.Size = new System.Drawing.Size(312, 19);
+            this.label155.Size = new System.Drawing.Size(387, 23);
             this.label155.TabIndex = 6;
             this.label155.Text = "Closing a Project Roles and Responsibilities:";
             // 
@@ -995,9 +995,9 @@
             // 
             this.tabPage19.Controls.Add(this.txtChechklist1);
             this.tabPage19.Controls.Add(this.label156);
-            this.tabPage19.Location = new System.Drawing.Point(4, 21);
+            this.tabPage19.Location = new System.Drawing.Point(4, 25);
             this.tabPage19.Name = "tabPage19";
-            this.tabPage19.Size = new System.Drawing.Size(919, 481);
+            this.tabPage19.Size = new System.Drawing.Size(919, 477);
             this.tabPage19.TabIndex = 6;
             this.tabPage19.Text = "Checklist";
             this.tabPage19.UseVisualStyleBackColor = true;
@@ -1016,7 +1016,7 @@
             this.label156.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label156.Location = new System.Drawing.Point(3, 5);
             this.label156.Name = "label156";
-            this.label156.Size = new System.Drawing.Size(235, 19);
+            this.label156.Size = new System.Drawing.Size(290, 23);
             this.label156.TabIndex = 8;
             this.label156.Text = "Closing a Project Roles Checklist:";
             // 
@@ -1030,21 +1030,20 @@
             this.tbcProcessOverview.Controls.Add(this.tbpManagingProductDelivery);
             this.tbcProcessOverview.Controls.Add(tbpClosingAProject);
             this.tbcProcessOverview.Controls.Add(this.tbpPlanningAProject);
-            this.tbcProcessOverview.Location = new System.Drawing.Point(10, 5);
+            this.tbcProcessOverview.Location = new System.Drawing.Point(13, 22);
             this.tbcProcessOverview.Name = "tbcProcessOverview";
             this.tbcProcessOverview.SelectedIndex = 0;
             this.tbcProcessOverview.Size = new System.Drawing.Size(966, 546);
             this.tbcProcessOverview.TabIndex = 5;
-            this.tbcProcessOverview.Visible = false;
             // 
             // tbpStartingUpAProject
             // 
             this.tbpStartingUpAProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbpStartingUpAProject.Controls.Add(this.flowLayoutPanel6);
-            this.tbpStartingUpAProject.Location = new System.Drawing.Point(4, 21);
+            this.tbpStartingUpAProject.Location = new System.Drawing.Point(4, 25);
             this.tbpStartingUpAProject.Name = "tbpStartingUpAProject";
             this.tbpStartingUpAProject.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpStartingUpAProject.Size = new System.Drawing.Size(958, 521);
+            this.tbpStartingUpAProject.Size = new System.Drawing.Size(958, 517);
             this.tbpStartingUpAProject.TabIndex = 0;
             this.tbpStartingUpAProject.Text = "Starting up a Project";
             // 
@@ -1076,12 +1075,24 @@
             this.tabPage20.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tabPage20.Controls.Add(this.pictureBox84);
             this.tabPage20.Controls.Add(this.pictureBox69);
-            this.tabPage20.Location = new System.Drawing.Point(4, 21);
+            this.tabPage20.Location = new System.Drawing.Point(4, 25);
             this.tabPage20.Name = "tabPage20";
             this.tabPage20.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage20.Size = new System.Drawing.Size(919, 481);
+            this.tabPage20.Size = new System.Drawing.Size(919, 477);
             this.tabPage20.TabIndex = 0;
             this.tabPage20.Text = "Process Overview";
+            // 
+            // pictureBox84
+            // 
+            this.pictureBox84.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox84.BackgroundImage")));
+            this.pictureBox84.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox84.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox84.Image")));
+            this.pictureBox84.Location = new System.Drawing.Point(18, 13);
+            this.pictureBox84.Name = "pictureBox84";
+            this.pictureBox84.Size = new System.Drawing.Size(489, 267);
+            this.pictureBox84.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox84.TabIndex = 2;
+            this.pictureBox84.TabStop = false;
             // 
             // pictureBox69
             // 
@@ -1100,10 +1111,10 @@
             this.tabPage21.Controls.Add(this.pictureBox71);
             this.tabPage21.Controls.Add(this.label47);
             this.tabPage21.Controls.Add(this.pictureBox72);
-            this.tabPage21.Location = new System.Drawing.Point(4, 21);
+            this.tabPage21.Location = new System.Drawing.Point(4, 25);
             this.tabPage21.Name = "tabPage21";
             this.tabPage21.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage21.Size = new System.Drawing.Size(919, 481);
+            this.tabPage21.Size = new System.Drawing.Size(919, 477);
             this.tabPage21.TabIndex = 1;
             this.tabPage21.Text = "Process Streps";
             this.tabPage21.UseVisualStyleBackColor = true;
@@ -1126,7 +1137,7 @@
             this.label47.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label47.Location = new System.Drawing.Point(18, 13);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(385, 19);
+            this.label47.Size = new System.Drawing.Size(474, 23);
             this.label47.TabIndex = 2;
             this.label47.Text = "Establish a Project Charter: Project Management Work";
             // 
@@ -1146,9 +1157,9 @@
             // 
             this.tabPage22.Controls.Add(this.label48);
             this.tabPage22.Controls.Add(this.pictureBox73);
-            this.tabPage22.Location = new System.Drawing.Point(4, 21);
+            this.tabPage22.Location = new System.Drawing.Point(4, 25);
             this.tabPage22.Name = "tabPage22";
-            this.tabPage22.Size = new System.Drawing.Size(919, 481);
+            this.tabPage22.Size = new System.Drawing.Size(919, 477);
             this.tabPage22.TabIndex = 2;
             this.tabPage22.Text = "Required Information";
             this.tabPage22.UseVisualStyleBackColor = true;
@@ -1159,7 +1170,7 @@
             this.label48.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label48.Location = new System.Drawing.Point(18, 13);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(229, 19);
+            this.label48.Size = new System.Drawing.Size(283, 23);
             this.label48.TabIndex = 3;
             this.label48.Text = "Starting up Project Information:";
             // 
@@ -1180,9 +1191,9 @@
             this.tabPage23.Controls.Add(this.panel64);
             this.tabPage23.Controls.Add(this.panel65);
             this.tabPage23.Controls.Add(this.pictureBox74);
-            this.tabPage23.Location = new System.Drawing.Point(4, 21);
+            this.tabPage23.Location = new System.Drawing.Point(4, 25);
             this.tabPage23.Name = "tabPage23";
-            this.tabPage23.Size = new System.Drawing.Size(919, 481);
+            this.tabPage23.Size = new System.Drawing.Size(919, 477);
             this.tabPage23.TabIndex = 3;
             this.tabPage23.Text = "Inputs and Outputs Matrix";
             this.tabPage23.UseVisualStyleBackColor = true;
@@ -1202,7 +1213,7 @@
             this.label49.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label49.Location = new System.Drawing.Point(3, 5);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(200, 19);
+            this.label49.Size = new System.Drawing.Size(248, 23);
             this.label49.TabIndex = 0;
             this.label49.Text = "Starting up Project Outputs:";
             // 
@@ -1221,7 +1232,7 @@
             this.label50.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label50.Location = new System.Drawing.Point(3, 5);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(190, 19);
+            this.label50.Size = new System.Drawing.Size(234, 23);
             this.label50.TabIndex = 0;
             this.label50.Text = "Starting up Project Inputs:";
             // 
@@ -1245,9 +1256,9 @@
             this.tabPage24.Controls.Add(this.groupBox7);
             this.tabPage24.Controls.Add(this.groupBox9);
             this.tabPage24.Controls.Add(this.groupBox11);
-            this.tabPage24.Location = new System.Drawing.Point(4, 21);
+            this.tabPage24.Location = new System.Drawing.Point(4, 25);
             this.tabPage24.Name = "tabPage24";
-            this.tabPage24.Size = new System.Drawing.Size(919, 481);
+            this.tabPage24.Size = new System.Drawing.Size(919, 477);
             this.tabPage24.TabIndex = 4;
             this.tabPage24.Text = "Templates, Tools and Techniques";
             this.tabPage24.UseVisualStyleBackColor = true;
@@ -1289,7 +1300,7 @@
             this.label51.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label51.Location = new System.Drawing.Point(5, 19);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(0, 12);
+            this.label51.Size = new System.Drawing.Size(0, 16);
             this.label51.TabIndex = 25;
             // 
             // groupBox12
@@ -1471,9 +1482,9 @@
             // 
             this.tabPage25.Controls.Add(this.txtRolesAndResponsabilities1);
             this.tabPage25.Controls.Add(this.label52);
-            this.tabPage25.Location = new System.Drawing.Point(4, 21);
+            this.tabPage25.Location = new System.Drawing.Point(4, 25);
             this.tabPage25.Name = "tabPage25";
-            this.tabPage25.Size = new System.Drawing.Size(919, 481);
+            this.tabPage25.Size = new System.Drawing.Size(919, 477);
             this.tabPage25.TabIndex = 5;
             this.tabPage25.Text = "Roles and Responsibilities ";
             this.tabPage25.UseVisualStyleBackColor = true;
@@ -1492,7 +1503,7 @@
             this.label52.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label52.Location = new System.Drawing.Point(6, 5);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(277, 19);
+            this.label52.Size = new System.Drawing.Size(344, 23);
             this.label52.TabIndex = 10;
             this.label52.Text = "Starting up Roles and Responsabilities:";
             // 
@@ -1500,9 +1511,9 @@
             // 
             this.tabPage26.Controls.Add(this.txtChecklist1);
             this.tabPage26.Controls.Add(this.label53);
-            this.tabPage26.Location = new System.Drawing.Point(4, 21);
+            this.tabPage26.Location = new System.Drawing.Point(4, 25);
             this.tabPage26.Name = "tabPage26";
-            this.tabPage26.Size = new System.Drawing.Size(919, 481);
+            this.tabPage26.Size = new System.Drawing.Size(919, 477);
             this.tabPage26.TabIndex = 6;
             this.tabPage26.Text = "Checklist";
             this.tabPage26.UseVisualStyleBackColor = true;
@@ -1521,7 +1532,7 @@
             this.label53.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label53.Location = new System.Drawing.Point(3, 5);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(207, 19);
+            this.label53.Size = new System.Drawing.Size(257, 23);
             this.label53.TabIndex = 8;
             this.label53.Text = "Starting up Project Checklist:";
             // 
@@ -1529,10 +1540,10 @@
             // 
             this.tbpDirectingAProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbpDirectingAProject.Controls.Add(this.flowLayoutPanel7);
-            this.tbpDirectingAProject.Location = new System.Drawing.Point(4, 21);
+            this.tbpDirectingAProject.Location = new System.Drawing.Point(4, 25);
             this.tbpDirectingAProject.Name = "tbpDirectingAProject";
             this.tbpDirectingAProject.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpDirectingAProject.Size = new System.Drawing.Size(958, 521);
+            this.tbpDirectingAProject.Size = new System.Drawing.Size(958, 517);
             this.tbpDirectingAProject.TabIndex = 1;
             this.tbpDirectingAProject.Text = "Directing a Project";
             // 
@@ -1564,10 +1575,10 @@
             this.tbpProcessOverview1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tbpProcessOverview1.Controls.Add(this.pictureBox75);
             this.tbpProcessOverview1.Controls.Add(this.pictureBox76);
-            this.tbpProcessOverview1.Location = new System.Drawing.Point(4, 21);
+            this.tbpProcessOverview1.Location = new System.Drawing.Point(4, 25);
             this.tbpProcessOverview1.Name = "tbpProcessOverview1";
             this.tbpProcessOverview1.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpProcessOverview1.Size = new System.Drawing.Size(919, 481);
+            this.tbpProcessOverview1.Size = new System.Drawing.Size(919, 477);
             this.tbpProcessOverview1.TabIndex = 0;
             this.tbpProcessOverview1.Text = "Process Overview";
             // 
@@ -1599,10 +1610,10 @@
             // 
             this.tabPage2.Controls.Add(this.label54);
             this.tabPage2.Controls.Add(this.pictureBox77);
-            this.tabPage2.Location = new System.Drawing.Point(4, 21);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(919, 481);
+            this.tabPage2.Size = new System.Drawing.Size(919, 477);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Process Streps";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1613,7 +1624,7 @@
             this.label54.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label54.Location = new System.Drawing.Point(18, 13);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(240, 19);
+            this.label54.Size = new System.Drawing.Size(296, 23);
             this.label54.TabIndex = 2;
             this.label54.Text = "Directing a Project Process Steps:";
             // 
@@ -1634,9 +1645,9 @@
             this.tabPage3.Controls.Add(this.pictureBox78);
             this.tabPage3.Controls.Add(this.label55);
             this.tabPage3.Controls.Add(this.pictureBox79);
-            this.tabPage3.Location = new System.Drawing.Point(4, 21);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(919, 481);
+            this.tabPage3.Size = new System.Drawing.Size(919, 477);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Required Information";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1659,7 +1670,7 @@
             this.label55.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label55.Location = new System.Drawing.Point(18, 13);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(296, 19);
+            this.label55.Size = new System.Drawing.Size(365, 23);
             this.label55.TabIndex = 3;
             this.label55.Text = "Directing a Project Required Information:";
             // 
@@ -1680,9 +1691,9 @@
             this.tbpInputsAndOutputsMatrix.Controls.Add(this.panel66);
             this.tbpInputsAndOutputsMatrix.Controls.Add(this.panel67);
             this.tbpInputsAndOutputsMatrix.Controls.Add(this.pictureBox80);
-            this.tbpInputsAndOutputsMatrix.Location = new System.Drawing.Point(4, 21);
+            this.tbpInputsAndOutputsMatrix.Location = new System.Drawing.Point(4, 25);
             this.tbpInputsAndOutputsMatrix.Name = "tbpInputsAndOutputsMatrix";
-            this.tbpInputsAndOutputsMatrix.Size = new System.Drawing.Size(919, 481);
+            this.tbpInputsAndOutputsMatrix.Size = new System.Drawing.Size(919, 477);
             this.tbpInputsAndOutputsMatrix.TabIndex = 3;
             this.tbpInputsAndOutputsMatrix.Text = "Inputs and Outputs Matrix";
             this.tbpInputsAndOutputsMatrix.UseVisualStyleBackColor = true;
@@ -1702,7 +1713,7 @@
             this.label56.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label56.Location = new System.Drawing.Point(3, 5);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(199, 19);
+            this.label56.Size = new System.Drawing.Size(247, 23);
             this.label56.TabIndex = 0;
             this.label56.Text = "Directing a Project Outputs:";
             // 
@@ -1721,7 +1732,7 @@
             this.label57.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label57.Location = new System.Drawing.Point(3, 5);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(189, 19);
+            this.label57.Size = new System.Drawing.Size(233, 23);
             this.label57.TabIndex = 0;
             this.label57.Text = "Directing a Project Inputs:";
             // 
@@ -1744,9 +1755,9 @@
             this.tabPage5.Controls.Add(this.groupBox3);
             this.tabPage5.Controls.Add(this.groupBox10);
             this.tabPage5.Controls.Add(this.groupBox13);
-            this.tabPage5.Location = new System.Drawing.Point(4, 21);
+            this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(919, 481);
+            this.tabPage5.Size = new System.Drawing.Size(919, 477);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Templates, Tools and Techniques";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1777,7 +1788,7 @@
             "Reports"});
             this.cbbDirectingAProjectToolTechnique5.Location = new System.Drawing.Point(7, 126);
             this.cbbDirectingAProjectToolTechnique5.Name = "cbbDirectingAProjectToolTechnique5";
-            this.cbbDirectingAProjectToolTechnique5.Size = new System.Drawing.Size(163, 20);
+            this.cbbDirectingAProjectToolTechnique5.Size = new System.Drawing.Size(163, 24);
             this.cbbDirectingAProjectToolTechnique5.TabIndex = 35;
             this.cbbDirectingAProjectToolTechnique5.Text = "Please select a Tool/Technique...";
             // 
@@ -1809,7 +1820,7 @@
             "PID Overview.doc"});
             this.cbbDirectingAProjectDoc5.Location = new System.Drawing.Point(7, 33);
             this.cbbDirectingAProjectDoc5.Name = "cbbDirectingAProjectDoc5";
-            this.cbbDirectingAProjectDoc5.Size = new System.Drawing.Size(163, 20);
+            this.cbbDirectingAProjectDoc5.Size = new System.Drawing.Size(163, 24);
             this.cbbDirectingAProjectDoc5.TabIndex = 30;
             this.cbbDirectingAProjectDoc5.Text = "Please select a document...";
             // 
@@ -1819,7 +1830,7 @@
             this.label58.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label58.Location = new System.Drawing.Point(5, 19);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(53, 12);
+            this.label58.Size = new System.Drawing.Size(71, 16);
             this.label58.TabIndex = 31;
             this.label58.Text = "Templates";
             // 
@@ -1829,7 +1840,7 @@
             this.label59.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label59.Location = new System.Drawing.Point(5, 113);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(105, 12);
+            this.label59.Size = new System.Drawing.Size(137, 16);
             this.label59.TabIndex = 32;
             this.label59.Text = "Tools and Techniques";
             // 
@@ -1859,7 +1870,7 @@
             "Reports"});
             this.cbbDirectingAProjectToolTechnique4.Location = new System.Drawing.Point(7, 126);
             this.cbbDirectingAProjectToolTechnique4.Name = "cbbDirectingAProjectToolTechnique4";
-            this.cbbDirectingAProjectToolTechnique4.Size = new System.Drawing.Size(163, 20);
+            this.cbbDirectingAProjectToolTechnique4.Size = new System.Drawing.Size(163, 24);
             this.cbbDirectingAProjectToolTechnique4.TabIndex = 35;
             this.cbbDirectingAProjectToolTechnique4.Text = "Please select a Tool/Technique...";
             // 
@@ -1891,7 +1902,7 @@
             "PID Overview.doc"});
             this.cbbDirectingAProjectDoc4.Location = new System.Drawing.Point(7, 33);
             this.cbbDirectingAProjectDoc4.Name = "cbbDirectingAProjectDoc4";
-            this.cbbDirectingAProjectDoc4.Size = new System.Drawing.Size(163, 20);
+            this.cbbDirectingAProjectDoc4.Size = new System.Drawing.Size(163, 24);
             this.cbbDirectingAProjectDoc4.TabIndex = 30;
             this.cbbDirectingAProjectDoc4.Text = "Please select a document...";
             // 
@@ -1901,7 +1912,7 @@
             this.label60.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label60.Location = new System.Drawing.Point(5, 19);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(53, 12);
+            this.label60.Size = new System.Drawing.Size(71, 16);
             this.label60.TabIndex = 31;
             this.label60.Text = "Templates";
             // 
@@ -1911,7 +1922,7 @@
             this.label61.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label61.Location = new System.Drawing.Point(5, 113);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(105, 12);
+            this.label61.Size = new System.Drawing.Size(137, 16);
             this.label61.TabIndex = 32;
             this.label61.Text = "Tools and Techniques";
             // 
@@ -1941,7 +1952,7 @@
             "Reports"});
             this.cbbDirectingAProjectToolTechnique3.Location = new System.Drawing.Point(7, 126);
             this.cbbDirectingAProjectToolTechnique3.Name = "cbbDirectingAProjectToolTechnique3";
-            this.cbbDirectingAProjectToolTechnique3.Size = new System.Drawing.Size(163, 20);
+            this.cbbDirectingAProjectToolTechnique3.Size = new System.Drawing.Size(163, 24);
             this.cbbDirectingAProjectToolTechnique3.TabIndex = 29;
             this.cbbDirectingAProjectToolTechnique3.Text = "Please select a Tool/Technique...";
             // 
@@ -1973,7 +1984,7 @@
             "PID Overview.doc"});
             this.cbbDirectingAProjectDoc3.Location = new System.Drawing.Point(7, 33);
             this.cbbDirectingAProjectDoc3.Name = "cbbDirectingAProjectDoc3";
-            this.cbbDirectingAProjectDoc3.Size = new System.Drawing.Size(163, 20);
+            this.cbbDirectingAProjectDoc3.Size = new System.Drawing.Size(163, 24);
             this.cbbDirectingAProjectDoc3.TabIndex = 24;
             this.cbbDirectingAProjectDoc3.Text = "Please select a document...";
             // 
@@ -1983,7 +1994,7 @@
             this.label62.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label62.Location = new System.Drawing.Point(5, 19);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(53, 12);
+            this.label62.Size = new System.Drawing.Size(71, 16);
             this.label62.TabIndex = 25;
             this.label62.Text = "Templates";
             // 
@@ -1993,7 +2004,7 @@
             this.label63.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label63.Location = new System.Drawing.Point(5, 113);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(105, 12);
+            this.label63.Size = new System.Drawing.Size(137, 16);
             this.label63.TabIndex = 26;
             this.label63.Text = "Tools and Techniques";
             // 
@@ -2023,7 +2034,7 @@
             "Reports"});
             this.cbbDirectingAProjectToolTechnique2.Location = new System.Drawing.Point(7, 126);
             this.cbbDirectingAProjectToolTechnique2.Name = "cbbDirectingAProjectToolTechnique2";
-            this.cbbDirectingAProjectToolTechnique2.Size = new System.Drawing.Size(163, 20);
+            this.cbbDirectingAProjectToolTechnique2.Size = new System.Drawing.Size(163, 24);
             this.cbbDirectingAProjectToolTechnique2.TabIndex = 23;
             this.cbbDirectingAProjectToolTechnique2.Text = "Please select a Tool/Technique...";
             // 
@@ -2055,7 +2066,7 @@
             "PID Overview.doc"});
             this.cbbDirectingAProjectDoc2.Location = new System.Drawing.Point(7, 33);
             this.cbbDirectingAProjectDoc2.Name = "cbbDirectingAProjectDoc2";
-            this.cbbDirectingAProjectDoc2.Size = new System.Drawing.Size(163, 20);
+            this.cbbDirectingAProjectDoc2.Size = new System.Drawing.Size(163, 24);
             this.cbbDirectingAProjectDoc2.TabIndex = 18;
             this.cbbDirectingAProjectDoc2.Text = "Please select a document...";
             // 
@@ -2065,7 +2076,7 @@
             this.label64.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label64.Location = new System.Drawing.Point(5, 19);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(53, 12);
+            this.label64.Size = new System.Drawing.Size(71, 16);
             this.label64.TabIndex = 19;
             this.label64.Text = "Templates";
             // 
@@ -2075,7 +2086,7 @@
             this.label65.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label65.Location = new System.Drawing.Point(5, 113);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(105, 12);
+            this.label65.Size = new System.Drawing.Size(137, 16);
             this.label65.TabIndex = 20;
             this.label65.Text = "Tools and Techniques";
             // 
@@ -2104,7 +2115,7 @@
             "Reports"});
             this.cbbDirectingAProjectToolTechnique1.Location = new System.Drawing.Point(6, 125);
             this.cbbDirectingAProjectToolTechnique1.Name = "cbbDirectingAProjectToolTechnique1";
-            this.cbbDirectingAProjectToolTechnique1.Size = new System.Drawing.Size(163, 20);
+            this.cbbDirectingAProjectToolTechnique1.Size = new System.Drawing.Size(163, 24);
             this.cbbDirectingAProjectToolTechnique1.TabIndex = 17;
             this.cbbDirectingAProjectToolTechnique1.Text = "Please select a Tool/Technique...";
             // 
@@ -2136,7 +2147,7 @@
             "Initiation Stage Plan.doc"});
             this.cbbDirectingAProjectDoc1.Location = new System.Drawing.Point(6, 31);
             this.cbbDirectingAProjectDoc1.Name = "cbbDirectingAProjectDoc1";
-            this.cbbDirectingAProjectDoc1.Size = new System.Drawing.Size(163, 20);
+            this.cbbDirectingAProjectDoc1.Size = new System.Drawing.Size(163, 24);
             this.cbbDirectingAProjectDoc1.TabIndex = 12;
             this.cbbDirectingAProjectDoc1.Text = "Please select a document...";
             // 
@@ -2146,7 +2157,7 @@
             this.label66.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label66.Location = new System.Drawing.Point(4, 18);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(53, 12);
+            this.label66.Size = new System.Drawing.Size(71, 16);
             this.label66.TabIndex = 13;
             this.label66.Text = "Templates";
             // 
@@ -2156,7 +2167,7 @@
             this.label67.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label67.Location = new System.Drawing.Point(4, 111);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(105, 12);
+            this.label67.Size = new System.Drawing.Size(137, 16);
             this.label67.TabIndex = 14;
             this.label67.Text = "Tools and Techniques";
             // 
@@ -2164,9 +2175,9 @@
             // 
             this.tabPage6.Controls.Add(this.label68);
             this.tabPage6.Controls.Add(this.pictureBox81);
-            this.tabPage6.Location = new System.Drawing.Point(4, 21);
+            this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(919, 481);
+            this.tabPage6.Size = new System.Drawing.Size(919, 477);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Roles and Responsibilities ";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -2177,7 +2188,7 @@
             this.label68.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label68.Location = new System.Drawing.Point(3, 5);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(325, 19);
+            this.label68.Size = new System.Drawing.Size(404, 23);
             this.label68.TabIndex = 6;
             this.label68.Text = "Directing a Project Roles and Responsibilities:";
             // 
@@ -2197,9 +2208,9 @@
             // 
             this.tabPage7.Controls.Add(this.label69);
             this.tabPage7.Controls.Add(this.pictureBox82);
-            this.tabPage7.Location = new System.Drawing.Point(4, 21);
+            this.tabPage7.Location = new System.Drawing.Point(4, 25);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(919, 481);
+            this.tabPage7.Size = new System.Drawing.Size(919, 477);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Checklist";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -2210,7 +2221,7 @@
             this.label69.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label69.Location = new System.Drawing.Point(3, 5);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(244, 19);
+            this.label69.Size = new System.Drawing.Size(302, 23);
             this.label69.TabIndex = 8;
             this.label69.Text = "Directing a Project Roles Checklist";
             // 
@@ -2230,9 +2241,9 @@
             // 
             this.tbpInitiatingAProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbpInitiatingAProject.Controls.Add(this.flowLayoutPanel8);
-            this.tbpInitiatingAProject.Location = new System.Drawing.Point(4, 21);
+            this.tbpInitiatingAProject.Location = new System.Drawing.Point(4, 25);
             this.tbpInitiatingAProject.Name = "tbpInitiatingAProject";
-            this.tbpInitiatingAProject.Size = new System.Drawing.Size(958, 521);
+            this.tbpInitiatingAProject.Size = new System.Drawing.Size(958, 517);
             this.tbpInitiatingAProject.TabIndex = 2;
             this.tbpInitiatingAProject.Text = "Initiating a Project";
             // 
@@ -2267,12 +2278,24 @@
             this.tabPage27.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tabPage27.Controls.Add(this.pictureBox70);
             this.tabPage27.Controls.Add(this.pictureBox83);
-            this.tabPage27.Location = new System.Drawing.Point(4, 21);
+            this.tabPage27.Location = new System.Drawing.Point(4, 25);
             this.tabPage27.Name = "tabPage27";
             this.tabPage27.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage27.Size = new System.Drawing.Size(1222, 521);
+            this.tabPage27.Size = new System.Drawing.Size(1222, 517);
             this.tabPage27.TabIndex = 0;
             this.tabPage27.Text = "Process Overview";
+            // 
+            // pictureBox70
+            // 
+            this.pictureBox70.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox70.BackgroundImage")));
+            this.pictureBox70.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox70.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox70.Image")));
+            this.pictureBox70.Location = new System.Drawing.Point(18, 13);
+            this.pictureBox70.Name = "pictureBox70";
+            this.pictureBox70.Size = new System.Drawing.Size(489, 267);
+            this.pictureBox70.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox70.TabIndex = 2;
+            this.pictureBox70.TabStop = false;
             // 
             // pictureBox83
             // 
@@ -2291,10 +2314,10 @@
             this.tabPage28.Controls.Add(this.txtProcessSteps);
             this.tabPage28.Controls.Add(this.label70);
             this.tabPage28.Controls.Add(this.pictureBox85);
-            this.tabPage28.Location = new System.Drawing.Point(4, 21);
+            this.tabPage28.Location = new System.Drawing.Point(4, 25);
             this.tabPage28.Name = "tabPage28";
             this.tabPage28.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage28.Size = new System.Drawing.Size(1222, 521);
+            this.tabPage28.Size = new System.Drawing.Size(1222, 517);
             this.tabPage28.TabIndex = 1;
             this.tabPage28.Text = "Process Streps";
             this.tabPage28.UseVisualStyleBackColor = true;
@@ -2314,7 +2337,7 @@
             this.label70.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label70.Location = new System.Drawing.Point(6, 6);
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(238, 19);
+            this.label70.Size = new System.Drawing.Size(296, 23);
             this.label70.TabIndex = 5;
             this.label70.Text = "Initiating a Project Process Steps:";
             // 
@@ -2334,9 +2357,9 @@
             // 
             this.tabPage29.Controls.Add(this.label71);
             this.tabPage29.Controls.Add(this.pictureBox86);
-            this.tabPage29.Location = new System.Drawing.Point(4, 21);
+            this.tabPage29.Location = new System.Drawing.Point(4, 25);
             this.tabPage29.Name = "tabPage29";
-            this.tabPage29.Size = new System.Drawing.Size(1222, 521);
+            this.tabPage29.Size = new System.Drawing.Size(1222, 517);
             this.tabPage29.TabIndex = 2;
             this.tabPage29.Text = "Required Information";
             this.tabPage29.UseVisualStyleBackColor = true;
@@ -2347,7 +2370,7 @@
             this.label71.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label71.Location = new System.Drawing.Point(18, 13);
             this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(343, 19);
+            this.label71.Size = new System.Drawing.Size(426, 23);
             this.label71.TabIndex = 3;
             this.label71.Text = "Initiating a Project Information: Project Mandate";
             // 
@@ -2368,9 +2391,9 @@
             this.tabPage30.Controls.Add(this.panel68);
             this.tabPage30.Controls.Add(this.panel74);
             this.tabPage30.Controls.Add(this.pictureBox87);
-            this.tabPage30.Location = new System.Drawing.Point(4, 21);
+            this.tabPage30.Location = new System.Drawing.Point(4, 25);
             this.tabPage30.Name = "tabPage30";
-            this.tabPage30.Size = new System.Drawing.Size(1222, 521);
+            this.tabPage30.Size = new System.Drawing.Size(1222, 517);
             this.tabPage30.TabIndex = 3;
             this.tabPage30.Text = "Inputs and Outputs Matrix";
             this.tabPage30.UseVisualStyleBackColor = true;
@@ -2404,7 +2427,7 @@
             this.label72.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label72.Location = new System.Drawing.Point(-3, 8);
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(231, 15);
+            this.label72.Size = new System.Drawing.Size(309, 20);
             this.label72.TabIndex = 0;
             this.label72.Text = "SU 2 Project Management Team Structure";
             // 
@@ -2423,7 +2446,7 @@
             this.label73.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label73.Location = new System.Drawing.Point(42, 8);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(151, 15);
+            this.label73.Size = new System.Drawing.Size(197, 20);
             this.label73.TabIndex = 0;
             this.label73.Text = "SU 2 Draft Job Description";
             // 
@@ -2442,7 +2465,7 @@
             this.label74.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label74.Location = new System.Drawing.Point(51, 8);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(122, 15);
+            this.label74.Size = new System.Drawing.Size(164, 20);
             this.label74.TabIndex = 0;
             this.label74.Text = "SU 1 Project Mandate";
             // 
@@ -2461,7 +2484,7 @@
             this.label75.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label75.Location = new System.Drawing.Point(8, 8);
             this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(212, 15);
+            this.label75.Size = new System.Drawing.Size(280, 20);
             this.label75.TabIndex = 0;
             this.label75.Text = "SU 1 Appointments Executive and PM";
             // 
@@ -2480,7 +2503,7 @@
             this.label76.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label76.Location = new System.Drawing.Point(32, 7);
             this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(161, 15);
+            this.label76.Size = new System.Drawing.Size(211, 20);
             this.label76.TabIndex = 0;
             this.label76.Text = "SU 1 Agreed Job Description";
             // 
@@ -2490,7 +2513,7 @@
             this.label77.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label77.Location = new System.Drawing.Point(3, 5);
             this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(189, 19);
+            this.label77.Size = new System.Drawing.Size(237, 23);
             this.label77.TabIndex = 0;
             this.label77.Text = "Initiatin a Project Outputs:";
             // 
@@ -2521,7 +2544,7 @@
             this.label78.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label78.Location = new System.Drawing.Point(51, 8);
             this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(122, 15);
+            this.label78.Size = new System.Drawing.Size(164, 20);
             this.label78.TabIndex = 0;
             this.label78.Text = "SU 2 Project Mandate";
             // 
@@ -2540,7 +2563,7 @@
             this.label79.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label79.Location = new System.Drawing.Point(32, 8);
             this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(161, 15);
+            this.label79.Size = new System.Drawing.Size(211, 20);
             this.label79.TabIndex = 0;
             this.label79.Text = "SU 2 Agreed Job Description";
             // 
@@ -2559,7 +2582,7 @@
             this.label80.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label80.Location = new System.Drawing.Point(51, 8);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(122, 15);
+            this.label80.Size = new System.Drawing.Size(164, 20);
             this.label80.TabIndex = 0;
             this.label80.Text = "SU 1 Project Mandate";
             // 
@@ -2569,7 +2592,7 @@
             this.label81.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label81.Location = new System.Drawing.Point(3, 5);
             this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(179, 19);
+            this.label81.Size = new System.Drawing.Size(223, 23);
             this.label81.TabIndex = 0;
             this.label81.Text = "Initiatin a Project Inputs:";
             // 
@@ -2617,9 +2640,9 @@
             this.tabPage31.Controls.Add(this.groupBox18);
             this.tabPage31.Controls.Add(this.groupBox17);
             this.tabPage31.Controls.Add(this.groupBox21);
-            this.tabPage31.Location = new System.Drawing.Point(4, 21);
+            this.tabPage31.Location = new System.Drawing.Point(4, 25);
             this.tabPage31.Name = "tabPage31";
-            this.tabPage31.Size = new System.Drawing.Size(1222, 521);
+            this.tabPage31.Size = new System.Drawing.Size(1222, 517);
             this.tabPage31.TabIndex = 4;
             this.tabPage31.Text = "Templates, Tools and Techniques";
             this.tabPage31.UseVisualStyleBackColor = true;
@@ -2881,7 +2904,7 @@
             this.label82.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label82.Location = new System.Drawing.Point(5, 19);
             this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(0, 11);
+            this.label82.Size = new System.Drawing.Size(0, 14);
             this.label82.TabIndex = 25;
             // 
             // groupBox15
@@ -2949,9 +2972,9 @@
             // 
             this.tabPage32.Controls.Add(this.textBox1);
             this.tabPage32.Controls.Add(this.label83);
-            this.tabPage32.Location = new System.Drawing.Point(4, 21);
+            this.tabPage32.Location = new System.Drawing.Point(4, 25);
             this.tabPage32.Name = "tabPage32";
-            this.tabPage32.Size = new System.Drawing.Size(1222, 521);
+            this.tabPage32.Size = new System.Drawing.Size(1222, 517);
             this.tabPage32.TabIndex = 5;
             this.tabPage32.Text = "Roles and Responsibilities ";
             this.tabPage32.UseVisualStyleBackColor = true;
@@ -2970,7 +2993,7 @@
             this.label83.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label83.Location = new System.Drawing.Point(6, 5);
             this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(302, 19);
+            this.label83.Size = new System.Drawing.Size(377, 23);
             this.label83.TabIndex = 10;
             this.label83.Text = "Initiate Project Roles and Responsabilities:";
             // 
@@ -2978,9 +3001,9 @@
             // 
             this.tabPage33.Controls.Add(this.textBox2);
             this.tabPage33.Controls.Add(this.label84);
-            this.tabPage33.Location = new System.Drawing.Point(4, 21);
+            this.tabPage33.Location = new System.Drawing.Point(4, 25);
             this.tabPage33.Name = "tabPage33";
-            this.tabPage33.Size = new System.Drawing.Size(1222, 521);
+            this.tabPage33.Size = new System.Drawing.Size(1222, 517);
             this.tabPage33.TabIndex = 6;
             this.tabPage33.Text = "Checklist";
             this.tabPage33.UseVisualStyleBackColor = true;
@@ -2999,7 +3022,7 @@
             this.label84.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label84.Location = new System.Drawing.Point(3, 5);
             this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(191, 19);
+            this.label84.Size = new System.Drawing.Size(239, 23);
             this.label84.TabIndex = 8;
             this.label84.Text = "Initiate a Project Checklist:";
             // 
@@ -3007,9 +3030,9 @@
             // 
             this.tbpManagingAStageBoundary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbpManagingAStageBoundary.Controls.Add(this.flowLayoutPanel9);
-            this.tbpManagingAStageBoundary.Location = new System.Drawing.Point(4, 21);
+            this.tbpManagingAStageBoundary.Location = new System.Drawing.Point(4, 25);
             this.tbpManagingAStageBoundary.Name = "tbpManagingAStageBoundary";
-            this.tbpManagingAStageBoundary.Size = new System.Drawing.Size(958, 521);
+            this.tbpManagingAStageBoundary.Size = new System.Drawing.Size(958, 517);
             this.tbpManagingAStageBoundary.TabIndex = 3;
             this.tbpManagingAStageBoundary.Text = "Managing a Stage Boundary";
             // 
@@ -3041,10 +3064,10 @@
             this.tabPage41.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tabPage41.Controls.Add(this.pictureBox88);
             this.tabPage41.Controls.Add(this.pictureBox89);
-            this.tabPage41.Location = new System.Drawing.Point(4, 21);
+            this.tabPage41.Location = new System.Drawing.Point(4, 25);
             this.tabPage41.Name = "tabPage41";
             this.tabPage41.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage41.Size = new System.Drawing.Size(919, 481);
+            this.tabPage41.Size = new System.Drawing.Size(919, 477);
             this.tabPage41.TabIndex = 0;
             this.tabPage41.Text = "Process Overview";
             // 
@@ -3077,10 +3100,10 @@
             this.tabPage42.Controls.Add(this.panel79);
             this.tabPage42.Controls.Add(this.label89);
             this.tabPage42.Controls.Add(this.pictureBox90);
-            this.tabPage42.Location = new System.Drawing.Point(4, 21);
+            this.tabPage42.Location = new System.Drawing.Point(4, 25);
             this.tabPage42.Name = "tabPage42";
             this.tabPage42.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage42.Size = new System.Drawing.Size(919, 481);
+            this.tabPage42.Size = new System.Drawing.Size(919, 477);
             this.tabPage42.TabIndex = 1;
             this.tabPage42.Text = "Process Streps";
             this.tabPage42.UseVisualStyleBackColor = true;
@@ -3114,7 +3137,7 @@
             this.label90.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label90.Location = new System.Drawing.Point(104, 5);
             this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(153, 15);
+            this.label90.Size = new System.Drawing.Size(203, 20);
             this.label90.TabIndex = 0;
             this.label90.Text = "Produce an Exceprion Plan";
             // 
@@ -3133,7 +3156,7 @@
             this.label91.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label91.Location = new System.Drawing.Point(119, 5);
             this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(119, 15);
+            this.label91.Size = new System.Drawing.Size(160, 20);
             this.label91.TabIndex = 0;
             this.label91.Text = "Report the Stage End";
             // 
@@ -3152,7 +3175,7 @@
             this.label92.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label92.Location = new System.Drawing.Point(116, 5);
             this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(116, 15);
+            this.label92.Size = new System.Drawing.Size(153, 20);
             this.label92.TabIndex = 0;
             this.label92.Text = "Update the Risk Log";
             // 
@@ -3171,7 +3194,7 @@
             this.label85.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label85.Location = new System.Drawing.Point(100, 5);
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(146, 15);
+            this.label85.Size = new System.Drawing.Size(190, 20);
             this.label85.TabIndex = 0;
             this.label85.Text = "Update the Business Case";
             // 
@@ -3190,7 +3213,7 @@
             this.label87.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label87.Location = new System.Drawing.Point(104, 5);
             this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(133, 15);
+            this.label87.Size = new System.Drawing.Size(180, 20);
             this.label87.TabIndex = 0;
             this.label87.Text = "Update the Project Plan";
             // 
@@ -3209,7 +3232,7 @@
             this.label88.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label88.Location = new System.Drawing.Point(134, 5);
             this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(71, 15);
+            this.label88.Size = new System.Drawing.Size(95, 20);
             this.label88.TabIndex = 0;
             this.label88.Text = "Plan a Stage";
             // 
@@ -3219,7 +3242,7 @@
             this.label89.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label89.Location = new System.Drawing.Point(6, 13);
             this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(304, 19);
+            this.label89.Size = new System.Drawing.Size(375, 23);
             this.label89.TabIndex = 10;
             this.label89.Text = "Managing Stage Boundaries Process Steps:";
             // 
@@ -3239,9 +3262,9 @@
             // 
             this.tabPage43.Controls.Add(this.label86);
             this.tabPage43.Controls.Add(this.pictureBox91);
-            this.tabPage43.Location = new System.Drawing.Point(4, 21);
+            this.tabPage43.Location = new System.Drawing.Point(4, 25);
             this.tabPage43.Name = "tabPage43";
-            this.tabPage43.Size = new System.Drawing.Size(919, 481);
+            this.tabPage43.Size = new System.Drawing.Size(919, 477);
             this.tabPage43.TabIndex = 2;
             this.tabPage43.Text = "Required Information";
             this.tabPage43.UseVisualStyleBackColor = true;
@@ -3252,7 +3275,7 @@
             this.label86.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label86.Location = new System.Drawing.Point(18, 13);
             this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(409, 19);
+            this.label86.Size = new System.Drawing.Size(505, 23);
             this.label86.TabIndex = 3;
             this.label86.Text = "Managing Stage Boundaries Information: Project Mandate";
             // 
@@ -3273,9 +3296,9 @@
             this.tabPage44.Controls.Add(this.panel86);
             this.tabPage44.Controls.Add(this.panel92);
             this.tabPage44.Controls.Add(this.pictureBox92);
-            this.tabPage44.Location = new System.Drawing.Point(4, 21);
+            this.tabPage44.Location = new System.Drawing.Point(4, 25);
             this.tabPage44.Name = "tabPage44";
-            this.tabPage44.Size = new System.Drawing.Size(919, 481);
+            this.tabPage44.Size = new System.Drawing.Size(919, 477);
             this.tabPage44.TabIndex = 3;
             this.tabPage44.Text = "Inputs and Outputs Matrix";
             this.tabPage44.UseVisualStyleBackColor = true;
@@ -3309,7 +3332,7 @@
             this.label93.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label93.Location = new System.Drawing.Point(-3, 8);
             this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(231, 15);
+            this.label93.Size = new System.Drawing.Size(309, 20);
             this.label93.TabIndex = 0;
             this.label93.Text = "SU 2 Project Management Team Structure";
             // 
@@ -3328,7 +3351,7 @@
             this.label94.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label94.Location = new System.Drawing.Point(42, 8);
             this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(151, 15);
+            this.label94.Size = new System.Drawing.Size(197, 20);
             this.label94.TabIndex = 0;
             this.label94.Text = "SU 2 Draft Job Description";
             // 
@@ -3347,7 +3370,7 @@
             this.label95.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label95.Location = new System.Drawing.Point(51, 8);
             this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(122, 15);
+            this.label95.Size = new System.Drawing.Size(164, 20);
             this.label95.TabIndex = 0;
             this.label95.Text = "SU 1 Project Mandate";
             // 
@@ -3366,7 +3389,7 @@
             this.label96.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label96.Location = new System.Drawing.Point(8, 8);
             this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(212, 15);
+            this.label96.Size = new System.Drawing.Size(280, 20);
             this.label96.TabIndex = 0;
             this.label96.Text = "SU 1 Appointments Executive and PM";
             // 
@@ -3385,7 +3408,7 @@
             this.label97.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label97.Location = new System.Drawing.Point(32, 7);
             this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(161, 15);
+            this.label97.Size = new System.Drawing.Size(211, 20);
             this.label97.TabIndex = 0;
             this.label97.Text = "SU 1 Agreed Job Description";
             // 
@@ -3395,7 +3418,7 @@
             this.label98.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label98.Location = new System.Drawing.Point(3, 5);
             this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(235, 17);
+            this.label98.Size = new System.Drawing.Size(307, 22);
             this.label98.TabIndex = 0;
             this.label98.Text = "Managing Stage Boundaries Outputs:\r\n";
             // 
@@ -3426,7 +3449,7 @@
             this.label99.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label99.Location = new System.Drawing.Point(51, 8);
             this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(122, 15);
+            this.label99.Size = new System.Drawing.Size(164, 20);
             this.label99.TabIndex = 0;
             this.label99.Text = "SU 2 Project Mandate";
             // 
@@ -3445,7 +3468,7 @@
             this.label100.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label100.Location = new System.Drawing.Point(32, 8);
             this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(161, 15);
+            this.label100.Size = new System.Drawing.Size(211, 20);
             this.label100.TabIndex = 0;
             this.label100.Text = "SU 2 Agreed Job Description";
             // 
@@ -3464,7 +3487,7 @@
             this.label101.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label101.Location = new System.Drawing.Point(51, 8);
             this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(122, 15);
+            this.label101.Size = new System.Drawing.Size(164, 20);
             this.label101.TabIndex = 0;
             this.label101.Text = "SU 1 Project Mandate";
             // 
@@ -3474,7 +3497,7 @@
             this.label102.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label102.Location = new System.Drawing.Point(3, 5);
             this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(225, 17);
+            this.label102.Size = new System.Drawing.Size(295, 22);
             this.label102.TabIndex = 0;
             this.label102.Text = "Managing Stage Boundaries Inputs:";
             // 
@@ -3497,9 +3520,9 @@
             this.tabPage45.Controls.Add(this.groupBox24);
             this.tabPage45.Controls.Add(this.groupBox25);
             this.tabPage45.Controls.Add(this.groupBox26);
-            this.tabPage45.Location = new System.Drawing.Point(4, 21);
+            this.tabPage45.Location = new System.Drawing.Point(4, 25);
             this.tabPage45.Name = "tabPage45";
-            this.tabPage45.Size = new System.Drawing.Size(919, 481);
+            this.tabPage45.Size = new System.Drawing.Size(919, 477);
             this.tabPage45.TabIndex = 4;
             this.tabPage45.Text = "Templates, Tools and Techniques";
             this.tabPage45.UseVisualStyleBackColor = true;
@@ -3546,7 +3569,7 @@
             "Reports"});
             this.cbbTemplates5.Location = new System.Drawing.Point(7, 33);
             this.cbbTemplates5.Name = "cbbTemplates5";
-            this.cbbTemplates5.Size = new System.Drawing.Size(163, 20);
+            this.cbbTemplates5.Size = new System.Drawing.Size(163, 24);
             this.cbbTemplates5.TabIndex = 30;
             this.cbbTemplates5.Text = "Please select a document...";
             // 
@@ -3556,7 +3579,7 @@
             this.label103.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label103.Location = new System.Drawing.Point(5, 19);
             this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(53, 12);
+            this.label103.Size = new System.Drawing.Size(71, 16);
             this.label103.TabIndex = 31;
             this.label103.Text = "Templates";
             // 
@@ -3599,7 +3622,7 @@
             "Reports"});
             this.cbbTemplates4.Location = new System.Drawing.Point(7, 33);
             this.cbbTemplates4.Name = "cbbTemplates4";
-            this.cbbTemplates4.Size = new System.Drawing.Size(163, 20);
+            this.cbbTemplates4.Size = new System.Drawing.Size(163, 24);
             this.cbbTemplates4.TabIndex = 30;
             this.cbbTemplates4.Text = "Please select a document...";
             // 
@@ -3609,7 +3632,7 @@
             this.label104.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label104.Location = new System.Drawing.Point(5, 19);
             this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(53, 12);
+            this.label104.Size = new System.Drawing.Size(71, 16);
             this.label104.TabIndex = 31;
             this.label104.Text = "Templates";
             // 
@@ -3652,7 +3675,7 @@
             "Report"});
             this.cbbTemplates3.Location = new System.Drawing.Point(7, 33);
             this.cbbTemplates3.Name = "cbbTemplates3";
-            this.cbbTemplates3.Size = new System.Drawing.Size(163, 20);
+            this.cbbTemplates3.Size = new System.Drawing.Size(163, 24);
             this.cbbTemplates3.TabIndex = 24;
             this.cbbTemplates3.Text = "Please select a document...";
             // 
@@ -3662,7 +3685,7 @@
             this.label105.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label105.Location = new System.Drawing.Point(5, 19);
             this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(53, 12);
+            this.label105.Size = new System.Drawing.Size(71, 16);
             this.label105.TabIndex = 25;
             this.label105.Text = "Templates";
             // 
@@ -3705,7 +3728,7 @@
             "Reports"});
             this.cbbTemplates2.Location = new System.Drawing.Point(7, 33);
             this.cbbTemplates2.Name = "cbbTemplates2";
-            this.cbbTemplates2.Size = new System.Drawing.Size(163, 20);
+            this.cbbTemplates2.Size = new System.Drawing.Size(163, 24);
             this.cbbTemplates2.TabIndex = 18;
             this.cbbTemplates2.Text = "Please select a document...";
             // 
@@ -3715,7 +3738,7 @@
             this.label106.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label106.Location = new System.Drawing.Point(5, 19);
             this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(53, 12);
+            this.label106.Size = new System.Drawing.Size(71, 16);
             this.label106.TabIndex = 19;
             this.label106.Text = "Templates";
             // 
@@ -3762,7 +3785,7 @@
             "Report stage End"});
             this.cbbTemplates1.Location = new System.Drawing.Point(6, 31);
             this.cbbTemplates1.Name = "cbbTemplates1";
-            this.cbbTemplates1.Size = new System.Drawing.Size(163, 20);
+            this.cbbTemplates1.Size = new System.Drawing.Size(163, 24);
             this.cbbTemplates1.TabIndex = 12;
             this.cbbTemplates1.Text = "Please select a document...";
             // 
@@ -3772,7 +3795,7 @@
             this.label107.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label107.Location = new System.Drawing.Point(4, 18);
             this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(53, 12);
+            this.label107.Size = new System.Drawing.Size(71, 16);
             this.label107.TabIndex = 13;
             this.label107.Text = "Templates";
             // 
@@ -3780,9 +3803,9 @@
             // 
             this.tabPage46.Controls.Add(this.label108);
             this.tabPage46.Controls.Add(this.pictureBox93);
-            this.tabPage46.Location = new System.Drawing.Point(4, 21);
+            this.tabPage46.Location = new System.Drawing.Point(4, 25);
             this.tabPage46.Name = "tabPage46";
-            this.tabPage46.Size = new System.Drawing.Size(919, 481);
+            this.tabPage46.Size = new System.Drawing.Size(919, 477);
             this.tabPage46.TabIndex = 5;
             this.tabPage46.Text = "Roles and Responsibilities ";
             this.tabPage46.UseVisualStyleBackColor = true;
@@ -3793,7 +3816,7 @@
             this.label108.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label108.Location = new System.Drawing.Point(3, 5);
             this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(389, 19);
+            this.label108.Size = new System.Drawing.Size(483, 23);
             this.label108.TabIndex = 6;
             this.label108.Text = "Managing Stage Boundaries Roles and Responsibilities:";
             // 
@@ -3813,9 +3836,9 @@
             // 
             this.tabPage47.Controls.Add(this.txtChecklist4);
             this.tabPage47.Controls.Add(this.label109);
-            this.tabPage47.Location = new System.Drawing.Point(4, 21);
+            this.tabPage47.Location = new System.Drawing.Point(4, 25);
             this.tabPage47.Name = "tabPage47";
-            this.tabPage47.Size = new System.Drawing.Size(919, 481);
+            this.tabPage47.Size = new System.Drawing.Size(919, 477);
             this.tabPage47.TabIndex = 6;
             this.tabPage47.Text = "Checklist";
             this.tabPage47.UseVisualStyleBackColor = true;
@@ -3834,7 +3857,7 @@
             this.label109.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label109.Location = new System.Drawing.Point(3, 5);
             this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(270, 19);
+            this.label109.Size = new System.Drawing.Size(335, 23);
             this.label109.TabIndex = 8;
             this.label109.Text = "Managing Stage Boundaries Checklist:";
             // 
@@ -3842,9 +3865,9 @@
             // 
             this.tbpControllingAStage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbpControllingAStage.Controls.Add(this.tabControl8);
-            this.tbpControllingAStage.Location = new System.Drawing.Point(4, 21);
+            this.tbpControllingAStage.Location = new System.Drawing.Point(4, 25);
             this.tbpControllingAStage.Name = "tbpControllingAStage";
-            this.tbpControllingAStage.Size = new System.Drawing.Size(958, 521);
+            this.tbpControllingAStage.Size = new System.Drawing.Size(958, 517);
             this.tbpControllingAStage.TabIndex = 4;
             this.tbpControllingAStage.Text = "Controlling a Stage";
             // 
@@ -3868,10 +3891,10 @@
             this.tabPage48.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tabPage48.Controls.Add(this.pictureBox94);
             this.tabPage48.Controls.Add(this.pictureBox95);
-            this.tabPage48.Location = new System.Drawing.Point(4, 21);
+            this.tabPage48.Location = new System.Drawing.Point(4, 25);
             this.tabPage48.Name = "tabPage48";
             this.tabPage48.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage48.Size = new System.Drawing.Size(919, 481);
+            this.tabPage48.Size = new System.Drawing.Size(919, 477);
             this.tabPage48.TabIndex = 0;
             this.tabPage48.Text = "Process Overview";
             // 
@@ -3904,10 +3927,10 @@
             this.tabPage49.Controls.Add(this.panel96);
             this.tabPage49.Controls.Add(this.label116);
             this.tabPage49.Controls.Add(this.pictureBox96);
-            this.tabPage49.Location = new System.Drawing.Point(4, 21);
+            this.tabPage49.Location = new System.Drawing.Point(4, 25);
             this.tabPage49.Name = "tabPage49";
             this.tabPage49.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage49.Size = new System.Drawing.Size(919, 481);
+            this.tabPage49.Size = new System.Drawing.Size(919, 477);
             this.tabPage49.TabIndex = 1;
             this.tabPage49.Text = "Process Streps:";
             this.tabPage49.UseVisualStyleBackColor = true;
@@ -3944,7 +3967,7 @@
             this.label131.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label131.Location = new System.Drawing.Point(79, 5);
             this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(205, 15);
+            this.label131.Size = new System.Drawing.Size(272, 20);
             this.label131.TabIndex = 0;
             this.label131.Text = "Receiving a Complete Work Package";
             // 
@@ -3963,7 +3986,7 @@
             this.label110.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label110.Location = new System.Drawing.Point(111, 5);
             this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(121, 15);
+            this.label110.Size = new System.Drawing.Size(159, 20);
             this.label110.TabIndex = 0;
             this.label110.Text = "Reporting Highlights";
             // 
@@ -3982,7 +4005,7 @@
             this.label132.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label132.Location = new System.Drawing.Point(109, 5);
             this.label132.Name = "label132";
-            this.label132.Size = new System.Drawing.Size(142, 15);
+            this.label132.Size = new System.Drawing.Size(188, 20);
             this.label132.TabIndex = 0;
             this.label132.Text = "Escalating Project Issues";
             // 
@@ -4001,7 +4024,7 @@
             this.label111.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label111.Location = new System.Drawing.Point(107, 5);
             this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(132, 15);
+            this.label111.Size = new System.Drawing.Size(175, 20);
             this.label111.TabIndex = 0;
             this.label111.Text = "Reviewing Stage Status";
             // 
@@ -4020,7 +4043,7 @@
             this.label133.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label133.Location = new System.Drawing.Point(104, 5);
             this.label133.Name = "label133";
-            this.label133.Size = new System.Drawing.Size(143, 15);
+            this.label133.Size = new System.Drawing.Size(190, 20);
             this.label133.TabIndex = 0;
             this.label133.Text = "Taking Corrective Action";
             // 
@@ -4039,7 +4062,7 @@
             this.label112.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label112.Location = new System.Drawing.Point(100, 8);
             this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(144, 15);
+            this.label112.Size = new System.Drawing.Size(190, 20);
             this.label112.TabIndex = 0;
             this.label112.Text = "Examining Project Issues";
             // 
@@ -4058,7 +4081,7 @@
             this.label113.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label113.Location = new System.Drawing.Point(100, 5);
             this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(139, 15);
+            this.label113.Size = new System.Drawing.Size(185, 20);
             this.label113.TabIndex = 0;
             this.label113.Text = "Capturing Project Issues";
             // 
@@ -4077,7 +4100,7 @@
             this.label114.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label114.Location = new System.Drawing.Point(112, 5);
             this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(113, 15);
+            this.label114.Size = new System.Drawing.Size(145, 20);
             this.label114.TabIndex = 0;
             this.label114.Text = "Assessing Progress";
             // 
@@ -4096,7 +4119,7 @@
             this.label115.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label115.Location = new System.Drawing.Point(91, 4);
             this.label115.Name = "label115";
-            this.label115.Size = new System.Drawing.Size(161, 15);
+            this.label115.Size = new System.Drawing.Size(214, 20);
             this.label115.TabIndex = 0;
             this.label115.Text = "Authorizing a Work Package";
             // 
@@ -4106,7 +4129,7 @@
             this.label116.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label116.Location = new System.Drawing.Point(6, 13);
             this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(143, 19);
+            this.label116.Size = new System.Drawing.Size(176, 23);
             this.label116.TabIndex = 10;
             this.label116.Text = "Controlling a Stage:";
             // 
@@ -4126,9 +4149,9 @@
             // 
             this.tabPage50.Controls.Add(this.label117);
             this.tabPage50.Controls.Add(this.pictureBox97);
-            this.tabPage50.Location = new System.Drawing.Point(4, 21);
+            this.tabPage50.Location = new System.Drawing.Point(4, 25);
             this.tabPage50.Name = "tabPage50";
-            this.tabPage50.Size = new System.Drawing.Size(919, 481);
+            this.tabPage50.Size = new System.Drawing.Size(919, 477);
             this.tabPage50.TabIndex = 2;
             this.tabPage50.Text = "Required Information";
             this.tabPage50.UseVisualStyleBackColor = true;
@@ -4139,7 +4162,7 @@
             this.label117.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label117.Location = new System.Drawing.Point(18, 13);
             this.label117.Name = "label117";
-            this.label117.Size = new System.Drawing.Size(215, 19);
+            this.label117.Size = new System.Drawing.Size(265, 23);
             this.label117.TabIndex = 3;
             this.label117.Text = "Closing a Project Information:";
             // 
@@ -4160,9 +4183,9 @@
             this.tabPage51.Controls.Add(this.panel106);
             this.tabPage51.Controls.Add(this.panel107);
             this.tabPage51.Controls.Add(this.pictureBox98);
-            this.tabPage51.Location = new System.Drawing.Point(4, 21);
+            this.tabPage51.Location = new System.Drawing.Point(4, 25);
             this.tabPage51.Name = "tabPage51";
-            this.tabPage51.Size = new System.Drawing.Size(919, 481);
+            this.tabPage51.Size = new System.Drawing.Size(919, 477);
             this.tabPage51.TabIndex = 3;
             this.tabPage51.Text = "Inputs and Outputs Matrix";
             this.tabPage51.UseVisualStyleBackColor = true;
@@ -4182,7 +4205,7 @@
             this.label118.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label118.Location = new System.Drawing.Point(3, 5);
             this.label118.Name = "label118";
-            this.label118.Size = new System.Drawing.Size(216, 17);
+            this.label118.Size = new System.Drawing.Size(279, 22);
             this.label118.TabIndex = 0;
             this.label118.Text = "Closing a Project Inputs: Outputs:\r\n";
             // 
@@ -4201,7 +4224,7 @@
             this.label119.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label119.Location = new System.Drawing.Point(3, 5);
             this.label119.Name = "label119";
-            this.label119.Size = new System.Drawing.Size(159, 17);
+            this.label119.Size = new System.Drawing.Size(205, 22);
             this.label119.TabIndex = 0;
             this.label119.Text = "Closing a Project Inputs:";
             // 
@@ -4227,9 +4250,9 @@
             this.tabPage52.Controls.Add(this.groupBox39);
             this.tabPage52.Controls.Add(this.groupBox40);
             this.tabPage52.Controls.Add(this.groupBox41);
-            this.tabPage52.Location = new System.Drawing.Point(4, 21);
+            this.tabPage52.Location = new System.Drawing.Point(4, 25);
             this.tabPage52.Name = "tabPage52";
-            this.tabPage52.Size = new System.Drawing.Size(919, 481);
+            this.tabPage52.Size = new System.Drawing.Size(919, 477);
             this.tabPage52.TabIndex = 4;
             this.tabPage52.Text = "Templates, Tools and Techniques";
             this.tabPage52.UseVisualStyleBackColor = true;
@@ -4268,7 +4291,7 @@
             "Stage Plan.doc"});
             this.cbbTemplates13.Location = new System.Drawing.Point(7, 33);
             this.cbbTemplates13.Name = "cbbTemplates13";
-            this.cbbTemplates13.Size = new System.Drawing.Size(163, 20);
+            this.cbbTemplates13.Size = new System.Drawing.Size(163, 24);
             this.cbbTemplates13.TabIndex = 30;
             this.cbbTemplates13.Text = "Please select a document...";
             // 
@@ -4278,7 +4301,7 @@
             this.label120.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label120.Location = new System.Drawing.Point(5, 19);
             this.label120.Name = "label120";
-            this.label120.Size = new System.Drawing.Size(53, 12);
+            this.label120.Size = new System.Drawing.Size(71, 16);
             this.label120.TabIndex = 31;
             this.label120.Text = "Templates";
             // 
@@ -4324,7 +4347,7 @@
             "Quality Registers.xls"});
             this.cbbTemplates10.Location = new System.Drawing.Point(7, 33);
             this.cbbTemplates10.Name = "cbbTemplates10";
-            this.cbbTemplates10.Size = new System.Drawing.Size(163, 20);
+            this.cbbTemplates10.Size = new System.Drawing.Size(163, 24);
             this.cbbTemplates10.TabIndex = 30;
             this.cbbTemplates10.Text = "Please select a document...";
             // 
@@ -4334,7 +4357,7 @@
             this.label121.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label121.Location = new System.Drawing.Point(5, 19);
             this.label121.Name = "label121";
-            this.label121.Size = new System.Drawing.Size(53, 12);
+            this.label121.Size = new System.Drawing.Size(71, 16);
             this.label121.TabIndex = 31;
             this.label121.Text = "Templates";
             // 
@@ -4376,7 +4399,7 @@
             "Quality Registers.xls"});
             this.cbbTemplates12.Location = new System.Drawing.Point(7, 33);
             this.cbbTemplates12.Name = "cbbTemplates12";
-            this.cbbTemplates12.Size = new System.Drawing.Size(163, 20);
+            this.cbbTemplates12.Size = new System.Drawing.Size(163, 24);
             this.cbbTemplates12.TabIndex = 24;
             this.cbbTemplates12.Text = "Please select a document...";
             // 
@@ -4386,7 +4409,7 @@
             this.label134.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label134.Location = new System.Drawing.Point(5, 19);
             this.label134.Name = "label134";
-            this.label134.Size = new System.Drawing.Size(53, 12);
+            this.label134.Size = new System.Drawing.Size(71, 16);
             this.label134.TabIndex = 25;
             this.label134.Text = "Templates";
             // 
@@ -4434,7 +4457,7 @@
             "Quality Registers.xls"});
             this.cbbTemplates9.Location = new System.Drawing.Point(7, 33);
             this.cbbTemplates9.Name = "cbbTemplates9";
-            this.cbbTemplates9.Size = new System.Drawing.Size(163, 20);
+            this.cbbTemplates9.Size = new System.Drawing.Size(163, 24);
             this.cbbTemplates9.TabIndex = 30;
             this.cbbTemplates9.Text = "Please select a document...";
             // 
@@ -4444,7 +4467,7 @@
             this.label135.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label135.Location = new System.Drawing.Point(5, 19);
             this.label135.Name = "label135";
-            this.label135.Size = new System.Drawing.Size(53, 12);
+            this.label135.Size = new System.Drawing.Size(71, 16);
             this.label135.TabIndex = 31;
             this.label135.Text = "Templates";
             // 
@@ -4490,7 +4513,7 @@
             "Stage Plan.doc"});
             this.cbbTemplates11.Location = new System.Drawing.Point(7, 33);
             this.cbbTemplates11.Name = "cbbTemplates11";
-            this.cbbTemplates11.Size = new System.Drawing.Size(163, 20);
+            this.cbbTemplates11.Size = new System.Drawing.Size(163, 24);
             this.cbbTemplates11.TabIndex = 18;
             this.cbbTemplates11.Text = "Please select a document...";
             // 
@@ -4500,7 +4523,7 @@
             this.label136.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label136.Location = new System.Drawing.Point(5, 19);
             this.label136.Name = "label136";
-            this.label136.Size = new System.Drawing.Size(53, 12);
+            this.label136.Size = new System.Drawing.Size(71, 16);
             this.label136.TabIndex = 19;
             this.label136.Text = "Templates";
             // 
@@ -4542,7 +4565,7 @@
             "Quality Registers.xls"});
             this.cbbTemplates8.Location = new System.Drawing.Point(7, 33);
             this.cbbTemplates8.Name = "cbbTemplates8";
-            this.cbbTemplates8.Size = new System.Drawing.Size(163, 20);
+            this.cbbTemplates8.Size = new System.Drawing.Size(163, 24);
             this.cbbTemplates8.TabIndex = 24;
             this.cbbTemplates8.Text = "Please select a document...";
             // 
@@ -4552,7 +4575,7 @@
             this.label137.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label137.Location = new System.Drawing.Point(5, 19);
             this.label137.Name = "label137";
-            this.label137.Size = new System.Drawing.Size(53, 12);
+            this.label137.Size = new System.Drawing.Size(71, 16);
             this.label137.TabIndex = 25;
             this.label137.Text = "Templates";
             // 
@@ -4596,7 +4619,7 @@
             "Quality Registers.xls"});
             this.cbbTemplates7.Location = new System.Drawing.Point(7, 33);
             this.cbbTemplates7.Name = "cbbTemplates7";
-            this.cbbTemplates7.Size = new System.Drawing.Size(163, 20);
+            this.cbbTemplates7.Size = new System.Drawing.Size(163, 24);
             this.cbbTemplates7.TabIndex = 18;
             this.cbbTemplates7.Text = "Please select a document...";
             // 
@@ -4606,7 +4629,7 @@
             this.label138.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label138.Location = new System.Drawing.Point(5, 19);
             this.label138.Name = "label138";
-            this.label138.Size = new System.Drawing.Size(53, 12);
+            this.label138.Size = new System.Drawing.Size(71, 16);
             this.label138.TabIndex = 19;
             this.label138.Text = "Templates";
             // 
@@ -4650,7 +4673,7 @@
             "Stage Plan.doc"});
             this.cbbTemplates6.Location = new System.Drawing.Point(6, 31);
             this.cbbTemplates6.Name = "cbbTemplates6";
-            this.cbbTemplates6.Size = new System.Drawing.Size(163, 20);
+            this.cbbTemplates6.Size = new System.Drawing.Size(163, 24);
             this.cbbTemplates6.TabIndex = 12;
             this.cbbTemplates6.Text = "Please select a document...";
             // 
@@ -4660,7 +4683,7 @@
             this.label139.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label139.Location = new System.Drawing.Point(4, 18);
             this.label139.Name = "label139";
-            this.label139.Size = new System.Drawing.Size(53, 12);
+            this.label139.Size = new System.Drawing.Size(71, 16);
             this.label139.TabIndex = 13;
             this.label139.Text = "Templates";
             // 
@@ -4668,9 +4691,9 @@
             // 
             this.tabPage53.Controls.Add(this.label129);
             this.tabPage53.Controls.Add(this.pictureBox99);
-            this.tabPage53.Location = new System.Drawing.Point(4, 21);
+            this.tabPage53.Location = new System.Drawing.Point(4, 25);
             this.tabPage53.Name = "tabPage53";
-            this.tabPage53.Size = new System.Drawing.Size(919, 481);
+            this.tabPage53.Size = new System.Drawing.Size(919, 477);
             this.tabPage53.TabIndex = 5;
             this.tabPage53.Text = "Roles and Responsibilities ";
             this.tabPage53.UseVisualStyleBackColor = true;
@@ -4681,7 +4704,7 @@
             this.label129.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label129.Location = new System.Drawing.Point(3, 5);
             this.label129.Name = "label129";
-            this.label129.Size = new System.Drawing.Size(325, 19);
+            this.label129.Size = new System.Drawing.Size(403, 23);
             this.label129.TabIndex = 6;
             this.label129.Text = "Closing a Products Roles and Responsibilities:";
             // 
@@ -4701,9 +4724,9 @@
             // 
             this.tabPage54.Controls.Add(this.txtChecklist2);
             this.tabPage54.Controls.Add(this.label130);
-            this.tabPage54.Location = new System.Drawing.Point(4, 21);
+            this.tabPage54.Location = new System.Drawing.Point(4, 25);
             this.tabPage54.Name = "tabPage54";
-            this.tabPage54.Size = new System.Drawing.Size(919, 481);
+            this.tabPage54.Size = new System.Drawing.Size(919, 477);
             this.tabPage54.TabIndex = 6;
             this.tabPage54.Text = "Checklist";
             this.tabPage54.UseVisualStyleBackColor = true;
@@ -4722,7 +4745,7 @@
             this.label130.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label130.Location = new System.Drawing.Point(3, 5);
             this.label130.Name = "label130";
-            this.label130.Size = new System.Drawing.Size(206, 19);
+            this.label130.Size = new System.Drawing.Size(255, 23);
             this.label130.TabIndex = 8;
             this.label130.Text = "Closing a Products Checklist:";
             // 
@@ -4730,9 +4753,9 @@
             // 
             this.tbpManagingProductDelivery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbpManagingProductDelivery.Controls.Add(this.flowLayoutPanel10);
-            this.tbpManagingProductDelivery.Location = new System.Drawing.Point(4, 21);
+            this.tbpManagingProductDelivery.Location = new System.Drawing.Point(4, 25);
             this.tbpManagingProductDelivery.Name = "tbpManagingProductDelivery";
-            this.tbpManagingProductDelivery.Size = new System.Drawing.Size(958, 521);
+            this.tbpManagingProductDelivery.Size = new System.Drawing.Size(958, 517);
             this.tbpManagingProductDelivery.TabIndex = 5;
             this.tbpManagingProductDelivery.Text = "Managing Product Delivery";
             // 
@@ -4767,10 +4790,10 @@
             this.tabPage34.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tabPage34.Controls.Add(this.pictureBox100);
             this.tabPage34.Controls.Add(this.pictureBox101);
-            this.tabPage34.Location = new System.Drawing.Point(4, 21);
+            this.tabPage34.Location = new System.Drawing.Point(4, 25);
             this.tabPage34.Name = "tabPage34";
             this.tabPage34.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage34.Size = new System.Drawing.Size(911, 521);
+            this.tabPage34.Size = new System.Drawing.Size(911, 517);
             this.tabPage34.TabIndex = 0;
             this.tabPage34.Text = "Process Overview";
             // 
@@ -4804,10 +4827,10 @@
             this.tabPage35.Controls.Add(this.pictureBox102);
             this.tabPage35.Controls.Add(this.label125);
             this.tabPage35.Controls.Add(this.pictureBox103);
-            this.tabPage35.Location = new System.Drawing.Point(4, 21);
+            this.tabPage35.Location = new System.Drawing.Point(4, 25);
             this.tabPage35.Name = "tabPage35";
             this.tabPage35.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage35.Size = new System.Drawing.Size(911, 521);
+            this.tabPage35.Size = new System.Drawing.Size(911, 517);
             this.tabPage35.TabIndex = 1;
             this.tabPage35.Text = "Process Streps";
             this.tabPage35.UseVisualStyleBackColor = true;
@@ -4838,7 +4861,7 @@
             this.label122.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label122.Location = new System.Drawing.Point(91, 8);
             this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(154, 15);
+            this.label122.Size = new System.Drawing.Size(203, 20);
             this.label122.TabIndex = 0;
             this.label122.Text = "Delivering a Work Package";
             // 
@@ -4857,7 +4880,7 @@
             this.label123.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label123.Location = new System.Drawing.Point(96, 8);
             this.label123.Name = "label123";
-            this.label123.Size = new System.Drawing.Size(149, 15);
+            this.label123.Size = new System.Drawing.Size(199, 20);
             this.label123.TabIndex = 0;
             this.label123.Text = "Executing a Work Package";
             // 
@@ -4876,7 +4899,7 @@
             this.label124.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label124.Location = new System.Drawing.Point(96, 8);
             this.label124.Name = "label124";
-            this.label124.Size = new System.Drawing.Size(150, 15);
+            this.label124.Size = new System.Drawing.Size(200, 20);
             this.label124.TabIndex = 0;
             this.label124.Text = "Accepting a Work Package";
             // 
@@ -4898,7 +4921,7 @@
             this.label125.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label125.Location = new System.Drawing.Point(6, 6);
             this.label125.Name = "label125";
-            this.label125.Size = new System.Drawing.Size(300, 19);
+            this.label125.Size = new System.Drawing.Size(369, 23);
             this.label125.TabIndex = 5;
             this.label125.Text = "Managing Product Delivery Process Steps:";
             // 
@@ -4918,9 +4941,9 @@
             // 
             this.tabPage36.Controls.Add(this.label126);
             this.tabPage36.Controls.Add(this.pictureBox104);
-            this.tabPage36.Location = new System.Drawing.Point(4, 21);
+            this.tabPage36.Location = new System.Drawing.Point(4, 25);
             this.tabPage36.Name = "tabPage36";
-            this.tabPage36.Size = new System.Drawing.Size(911, 521);
+            this.tabPage36.Size = new System.Drawing.Size(911, 517);
             this.tabPage36.TabIndex = 2;
             this.tabPage36.Text = "Required Information";
             this.tabPage36.UseVisualStyleBackColor = true;
@@ -4931,7 +4954,7 @@
             this.label126.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label126.Location = new System.Drawing.Point(18, 13);
             this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(318, 19);
+            this.label126.Size = new System.Drawing.Size(391, 23);
             this.label126.TabIndex = 3;
             this.label126.Text = "Managing Product Delivery: Project Mandate";
             // 
@@ -4952,9 +4975,9 @@
             this.tabPage37.Controls.Add(this.panel112);
             this.tabPage37.Controls.Add(this.panel118);
             this.tabPage37.Controls.Add(this.pictureBox105);
-            this.tabPage37.Location = new System.Drawing.Point(4, 21);
+            this.tabPage37.Location = new System.Drawing.Point(4, 25);
             this.tabPage37.Name = "tabPage37";
-            this.tabPage37.Size = new System.Drawing.Size(911, 521);
+            this.tabPage37.Size = new System.Drawing.Size(911, 517);
             this.tabPage37.TabIndex = 3;
             this.tabPage37.Text = "Inputs and Outputs Matrix";
             this.tabPage37.UseVisualStyleBackColor = true;
@@ -4988,7 +5011,7 @@
             this.label127.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label127.Location = new System.Drawing.Point(-3, 8);
             this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(231, 15);
+            this.label127.Size = new System.Drawing.Size(309, 20);
             this.label127.TabIndex = 0;
             this.label127.Text = "SU 2 Project Management Team Structure";
             // 
@@ -5007,7 +5030,7 @@
             this.label128.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label128.Location = new System.Drawing.Point(42, 8);
             this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(151, 15);
+            this.label128.Size = new System.Drawing.Size(197, 20);
             this.label128.TabIndex = 0;
             this.label128.Text = "SU 2 Draft Job Description";
             // 
@@ -5026,7 +5049,7 @@
             this.label140.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label140.Location = new System.Drawing.Point(51, 8);
             this.label140.Name = "label140";
-            this.label140.Size = new System.Drawing.Size(122, 15);
+            this.label140.Size = new System.Drawing.Size(164, 20);
             this.label140.TabIndex = 0;
             this.label140.Text = "SU 1 Project Mandate";
             // 
@@ -5045,7 +5068,7 @@
             this.label141.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label141.Location = new System.Drawing.Point(8, 8);
             this.label141.Name = "label141";
-            this.label141.Size = new System.Drawing.Size(212, 15);
+            this.label141.Size = new System.Drawing.Size(280, 20);
             this.label141.TabIndex = 0;
             this.label141.Text = "SU 1 Appointments Executive and PM";
             // 
@@ -5064,7 +5087,7 @@
             this.label142.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label142.Location = new System.Drawing.Point(32, 7);
             this.label142.Name = "label142";
-            this.label142.Size = new System.Drawing.Size(161, 15);
+            this.label142.Size = new System.Drawing.Size(211, 20);
             this.label142.TabIndex = 0;
             this.label142.Text = "SU 1 Agreed Job Description";
             // 
@@ -5074,7 +5097,7 @@
             this.label143.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label143.Location = new System.Drawing.Point(-2, 4);
             this.label143.Name = "label143";
-            this.label143.Size = new System.Drawing.Size(252, 19);
+            this.label143.Size = new System.Drawing.Size(311, 23);
             this.label143.TabIndex = 0;
             this.label143.Text = "Managing Product Delivery Output:\r\n";
             // 
@@ -5105,7 +5128,7 @@
             this.label144.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label144.Location = new System.Drawing.Point(51, 8);
             this.label144.Name = "label144";
-            this.label144.Size = new System.Drawing.Size(122, 15);
+            this.label144.Size = new System.Drawing.Size(164, 20);
             this.label144.TabIndex = 0;
             this.label144.Text = "SU 2 Project Mandate";
             // 
@@ -5124,7 +5147,7 @@
             this.label145.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label145.Location = new System.Drawing.Point(32, 8);
             this.label145.Name = "label145";
-            this.label145.Size = new System.Drawing.Size(161, 15);
+            this.label145.Size = new System.Drawing.Size(211, 20);
             this.label145.TabIndex = 0;
             this.label145.Text = "SU 2 Agreed Job Description";
             // 
@@ -5143,7 +5166,7 @@
             this.label146.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label146.Location = new System.Drawing.Point(51, 8);
             this.label146.Name = "label146";
-            this.label146.Size = new System.Drawing.Size(122, 15);
+            this.label146.Size = new System.Drawing.Size(164, 20);
             this.label146.TabIndex = 0;
             this.label146.Text = "SU 1 Project Mandate";
             // 
@@ -5153,7 +5176,7 @@
             this.label147.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label147.Location = new System.Drawing.Point(1, 5);
             this.label147.Name = "label147";
-            this.label147.Size = new System.Drawing.Size(249, 19);
+            this.label147.Size = new System.Drawing.Size(306, 23);
             this.label147.TabIndex = 0;
             this.label147.Text = "Managing Product Delivery Inputs:";
             // 
@@ -5174,9 +5197,9 @@
             this.tabPage38.Controls.Add(this.button7);
             this.tabPage38.Controls.Add(this.button8);
             this.tabPage38.Controls.Add(this.button9);
-            this.tabPage38.Location = new System.Drawing.Point(4, 21);
+            this.tabPage38.Location = new System.Drawing.Point(4, 25);
             this.tabPage38.Name = "tabPage38";
-            this.tabPage38.Size = new System.Drawing.Size(911, 521);
+            this.tabPage38.Size = new System.Drawing.Size(911, 517);
             this.tabPage38.TabIndex = 4;
             this.tabPage38.Text = "Templates, Tools and Techniques";
             this.tabPage38.UseVisualStyleBackColor = true;
@@ -5215,9 +5238,9 @@
             // 
             this.tabPage39.Controls.Add(this.txtRolesAndResponsabilities3);
             this.tabPage39.Controls.Add(this.label148);
-            this.tabPage39.Location = new System.Drawing.Point(4, 21);
+            this.tabPage39.Location = new System.Drawing.Point(4, 25);
             this.tabPage39.Name = "tabPage39";
-            this.tabPage39.Size = new System.Drawing.Size(911, 521);
+            this.tabPage39.Size = new System.Drawing.Size(911, 517);
             this.tabPage39.TabIndex = 5;
             this.tabPage39.Text = "Roles and Responsibilities ";
             this.tabPage39.UseVisualStyleBackColor = true;
@@ -5236,7 +5259,7 @@
             this.label148.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label148.Location = new System.Drawing.Point(6, 5);
             this.label148.Name = "label148";
-            this.label148.Size = new System.Drawing.Size(389, 19);
+            this.label148.Size = new System.Drawing.Size(481, 23);
             this.label148.TabIndex = 10;
             this.label148.Text = "Managing Product Delivery Roles and Responsabilities:";
             // 
@@ -5244,9 +5267,9 @@
             // 
             this.tabPage40.Controls.Add(this.txtChecklist3);
             this.tabPage40.Controls.Add(this.label149);
-            this.tabPage40.Location = new System.Drawing.Point(4, 21);
+            this.tabPage40.Location = new System.Drawing.Point(4, 25);
             this.tabPage40.Name = "tabPage40";
-            this.tabPage40.Size = new System.Drawing.Size(911, 521);
+            this.tabPage40.Size = new System.Drawing.Size(911, 517);
             this.tabPage40.TabIndex = 6;
             this.tabPage40.Text = "Checklist";
             this.tabPage40.UseVisualStyleBackColor = true;
@@ -5265,7 +5288,7 @@
             this.label149.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label149.Location = new System.Drawing.Point(3, 5);
             this.label149.Name = "label149";
-            this.label149.Size = new System.Drawing.Size(266, 19);
+            this.label149.Size = new System.Drawing.Size(329, 23);
             this.label149.TabIndex = 8;
             this.label149.Text = "Managing Product Delivery Checklist:";
             // 
@@ -5273,9 +5296,9 @@
             // 
             this.tbpPlanningAProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbpPlanningAProject.Controls.Add(this.flowLayoutPanel11);
-            this.tbpPlanningAProject.Location = new System.Drawing.Point(4, 21);
+            this.tbpPlanningAProject.Location = new System.Drawing.Point(4, 25);
             this.tbpPlanningAProject.Name = "tbpPlanningAProject";
-            this.tbpPlanningAProject.Size = new System.Drawing.Size(958, 521);
+            this.tbpPlanningAProject.Size = new System.Drawing.Size(958, 517);
             this.tbpPlanningAProject.TabIndex = 7;
             this.tbpPlanningAProject.Text = "Planning a Project";
             // 
@@ -5307,10 +5330,10 @@
             this.tabPage10.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tabPage10.Controls.Add(this.pictureBox111);
             this.tabPage10.Controls.Add(this.pictureBox112);
-            this.tabPage10.Location = new System.Drawing.Point(4, 21);
+            this.tabPage10.Location = new System.Drawing.Point(4, 25);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(919, 481);
+            this.tabPage10.Size = new System.Drawing.Size(919, 477);
             this.tabPage10.TabIndex = 0;
             this.tabPage10.Text = "Process Overview";
             // 
@@ -5343,10 +5366,10 @@
             this.tabPage11.Controls.Add(this.pictureBox113);
             this.tabPage11.Controls.Add(this.label157);
             this.tabPage11.Controls.Add(this.pictureBox114);
-            this.tabPage11.Location = new System.Drawing.Point(4, 21);
+            this.tabPage11.Location = new System.Drawing.Point(4, 25);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(919, 481);
+            this.tabPage11.Size = new System.Drawing.Size(919, 477);
             this.tabPage11.TabIndex = 1;
             this.tabPage11.Text = "Process Streps";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -5369,7 +5392,7 @@
             this.label157.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label157.Location = new System.Drawing.Point(18, 13);
             this.label157.Name = "label157";
-            this.label157.Size = new System.Drawing.Size(237, 19);
+            this.label157.Size = new System.Drawing.Size(291, 23);
             this.label157.TabIndex = 2;
             this.label157.Text = "Planning a Project Process Steps:";
             // 
@@ -5390,9 +5413,9 @@
             this.tabPage12.Controls.Add(this.pictureBox115);
             this.tabPage12.Controls.Add(this.label158);
             this.tabPage12.Controls.Add(this.pictureBox116);
-            this.tabPage12.Location = new System.Drawing.Point(4, 21);
+            this.tabPage12.Location = new System.Drawing.Point(4, 25);
             this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Size = new System.Drawing.Size(919, 481);
+            this.tabPage12.Size = new System.Drawing.Size(919, 477);
             this.tabPage12.TabIndex = 2;
             this.tabPage12.Text = "Required Information";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -5415,7 +5438,7 @@
             this.label158.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label158.Location = new System.Drawing.Point(18, 13);
             this.label158.Name = "label158";
-            this.label158.Size = new System.Drawing.Size(293, 19);
+            this.label158.Size = new System.Drawing.Size(360, 23);
             this.label158.TabIndex = 3;
             this.label158.Text = "Planning a Project Required Information:";
             // 
@@ -5436,9 +5459,9 @@
             this.tabPage55.Controls.Add(this.panel124);
             this.tabPage55.Controls.Add(this.panel125);
             this.tabPage55.Controls.Add(this.pictureBox117);
-            this.tabPage55.Location = new System.Drawing.Point(4, 21);
+            this.tabPage55.Location = new System.Drawing.Point(4, 25);
             this.tabPage55.Name = "tabPage55";
-            this.tabPage55.Size = new System.Drawing.Size(919, 481);
+            this.tabPage55.Size = new System.Drawing.Size(919, 477);
             this.tabPage55.TabIndex = 3;
             this.tabPage55.Text = "Inputs and Outputs Matrix";
             this.tabPage55.UseVisualStyleBackColor = true;
@@ -5458,7 +5481,7 @@
             this.label159.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label159.Location = new System.Drawing.Point(3, 5);
             this.label159.Name = "label159";
-            this.label159.Size = new System.Drawing.Size(196, 19);
+            this.label159.Size = new System.Drawing.Size(242, 23);
             this.label159.TabIndex = 0;
             this.label159.Text = "Planning a Project Outputs:";
             // 
@@ -5477,7 +5500,7 @@
             this.label160.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label160.Location = new System.Drawing.Point(3, 5);
             this.label160.Name = "label160";
-            this.label160.Size = new System.Drawing.Size(186, 19);
+            this.label160.Size = new System.Drawing.Size(228, 23);
             this.label160.TabIndex = 0;
             this.label160.Text = "Planning a Project Inputs:";
             // 
@@ -5496,9 +5519,9 @@
             // tabPage56
             // 
             this.tabPage56.Controls.Add(this.groupBox27);
-            this.tabPage56.Location = new System.Drawing.Point(4, 21);
+            this.tabPage56.Location = new System.Drawing.Point(4, 25);
             this.tabPage56.Name = "tabPage56";
-            this.tabPage56.Size = new System.Drawing.Size(919, 481);
+            this.tabPage56.Size = new System.Drawing.Size(919, 477);
             this.tabPage56.TabIndex = 4;
             this.tabPage56.Text = "Templates, Tools and Techniques";
             this.tabPage56.UseVisualStyleBackColor = true;
@@ -5532,7 +5555,7 @@
             "Phase Review Form"});
             this.cbbToolsAndTechniques.Location = new System.Drawing.Point(6, 125);
             this.cbbToolsAndTechniques.Name = "cbbToolsAndTechniques";
-            this.cbbToolsAndTechniques.Size = new System.Drawing.Size(163, 20);
+            this.cbbToolsAndTechniques.Size = new System.Drawing.Size(163, 24);
             this.cbbToolsAndTechniques.TabIndex = 17;
             this.cbbToolsAndTechniques.Text = "Please select a Tool/Technique...";
             // 
@@ -5570,7 +5593,7 @@
             "Procurement Plan"});
             this.cbbPlans.Location = new System.Drawing.Point(6, 31);
             this.cbbPlans.Name = "cbbPlans";
-            this.cbbPlans.Size = new System.Drawing.Size(163, 20);
+            this.cbbPlans.Size = new System.Drawing.Size(163, 24);
             this.cbbPlans.TabIndex = 12;
             this.cbbPlans.Text = "Please select a plan...";
             // 
@@ -5580,7 +5603,7 @@
             this.label161.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label161.Location = new System.Drawing.Point(4, 18);
             this.label161.Name = "label161";
-            this.label161.Size = new System.Drawing.Size(30, 12);
+            this.label161.Size = new System.Drawing.Size(41, 16);
             this.label161.TabIndex = 13;
             this.label161.Text = "Plans";
             // 
@@ -5590,7 +5613,7 @@
             this.label162.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label162.Location = new System.Drawing.Point(4, 111);
             this.label162.Name = "label162";
-            this.label162.Size = new System.Drawing.Size(105, 12);
+            this.label162.Size = new System.Drawing.Size(137, 16);
             this.label162.TabIndex = 14;
             this.label162.Text = "Tools and Techniques";
             // 
@@ -5598,9 +5621,9 @@
             // 
             this.tabPage57.Controls.Add(this.label163);
             this.tabPage57.Controls.Add(this.pictureBox118);
-            this.tabPage57.Location = new System.Drawing.Point(4, 21);
+            this.tabPage57.Location = new System.Drawing.Point(4, 25);
             this.tabPage57.Name = "tabPage57";
-            this.tabPage57.Size = new System.Drawing.Size(919, 481);
+            this.tabPage57.Size = new System.Drawing.Size(919, 477);
             this.tabPage57.TabIndex = 5;
             this.tabPage57.Text = "Roles and Responsibilities ";
             this.tabPage57.UseVisualStyleBackColor = true;
@@ -5611,7 +5634,7 @@
             this.label163.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label163.Location = new System.Drawing.Point(3, 5);
             this.label163.Name = "label163";
-            this.label163.Size = new System.Drawing.Size(322, 19);
+            this.label163.Size = new System.Drawing.Size(399, 23);
             this.label163.TabIndex = 6;
             this.label163.Text = "Planning a Project Roles and Responsibilities:";
             // 
@@ -5631,9 +5654,9 @@
             // 
             this.tabPage58.Controls.Add(this.txtChecklist);
             this.tabPage58.Controls.Add(this.label164);
-            this.tabPage58.Location = new System.Drawing.Point(4, 21);
+            this.tabPage58.Location = new System.Drawing.Point(4, 25);
             this.tabPage58.Name = "tabPage58";
-            this.tabPage58.Size = new System.Drawing.Size(919, 481);
+            this.tabPage58.Size = new System.Drawing.Size(919, 477);
             this.tabPage58.TabIndex = 6;
             this.tabPage58.Text = "Checklist";
             this.tabPage58.UseVisualStyleBackColor = true;
@@ -5652,13 +5675,13 @@
             this.label164.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label164.Location = new System.Drawing.Point(3, 5);
             this.label164.Name = "label164";
-            this.label164.Size = new System.Drawing.Size(245, 19);
+            this.label164.Size = new System.Drawing.Size(302, 23);
             this.label164.TabIndex = 8;
             this.label164.Text = "Planning a Project Roles Checklist:";
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(582, 559);
+            this.btnClose.Location = new System.Drawing.Point(587, 580);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(194, 27);
             this.btnClose.TabIndex = 6;
@@ -5668,7 +5691,7 @@
             // 
             // btnBackToPLSM
             // 
-            this.btnBackToPLSM.Location = new System.Drawing.Point(782, 559);
+            this.btnBackToPLSM.Location = new System.Drawing.Point(787, 580);
             this.btnBackToPLSM.Name = "btnBackToPLSM";
             this.btnBackToPLSM.Size = new System.Drawing.Size(194, 27);
             this.btnBackToPLSM.TabIndex = 7;
@@ -5681,7 +5704,7 @@
             this.lblType.AutoSize = true;
             this.lblType.Location = new System.Drawing.Point(988, 5);
             this.lblType.Name = "lblType";
-            this.lblType.Size = new System.Drawing.Size(7, 12);
+            this.lblType.Size = new System.Drawing.Size(11, 16);
             this.lblType.TabIndex = 8;
             this.lblType.Text = ".";
             this.lblType.Visible = false;
@@ -5693,36 +5716,12 @@
             this.pnlHideTabPages.Size = new System.Drawing.Size(1006, 27);
             this.pnlHideTabPages.TabIndex = 12;
             // 
-            // pictureBox84
-            // 
-            this.pictureBox84.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox84.BackgroundImage")));
-            this.pictureBox84.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox84.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox84.Image")));
-            this.pictureBox84.Location = new System.Drawing.Point(18, 13);
-            this.pictureBox84.Name = "pictureBox84";
-            this.pictureBox84.Size = new System.Drawing.Size(489, 267);
-            this.pictureBox84.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox84.TabIndex = 2;
-            this.pictureBox84.TabStop = false;
-            // 
-            // pictureBox70
-            // 
-            this.pictureBox70.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox70.BackgroundImage")));
-            this.pictureBox70.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox70.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox70.Image")));
-            this.pictureBox70.Location = new System.Drawing.Point(18, 13);
-            this.pictureBox70.Name = "pictureBox70";
-            this.pictureBox70.Size = new System.Drawing.Size(489, 267);
-            this.pictureBox70.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox70.TabIndex = 2;
-            this.pictureBox70.TabStop = false;
-            // 
             // PLSM_ProcessGroupingGovernance_Interfaces
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(1148, 593);
+            this.ClientSize = new System.Drawing.Size(1126, 702);
             this.Controls.Add(this.pnlHideTabPages);
             this.Controls.Add(this.lblType);
             this.Controls.Add(this.btnBackToPLSM);
@@ -5760,6 +5759,7 @@
             this.flowLayoutPanel6.ResumeLayout(false);
             this.tabControl4.ResumeLayout(false);
             this.tabPage20.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox69)).EndInit();
             this.tabPage21.ResumeLayout(false);
             this.tabPage21.PerformLayout();
@@ -5826,6 +5826,7 @@
             this.flowLayoutPanel8.ResumeLayout(false);
             this.tabControl6.ResumeLayout(false);
             this.tabPage27.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).EndInit();
             this.tabPage28.ResumeLayout(false);
             this.tabPage28.PerformLayout();
@@ -6059,8 +6060,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox118)).EndInit();
             this.tabPage58.ResumeLayout(false);
             this.tabPage58.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
