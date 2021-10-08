@@ -230,5 +230,64 @@ namespace ProjectManagementToolkit
             RiskRegisterForm RiskRegister = new RiskRegisterForm();
             RiskRegister.Show();
         }
+
+        private void btnChangeManagementTemplate_Click(object sender, EventArgs e)
+        {
+            ChangeManagementProcessDocumentForm ChangeForm = new ChangeManagementProcessDocumentForm();
+            ChangeForm.Show();
+        }
+
+        private void btnChangeManagementRegister_Click(object sender, EventArgs e)
+        {
+            ChangeRegister ChangeRegister = new ChangeRegister();
+            ChangeRegister.Show();
+        }
+
+        private void btnCostAndExpenseManagementManagementTemplate_Click(object sender, EventArgs e)
+        {
+            CostManagementProcessDocumentForm CostForm = new CostManagementProcessDocumentForm();
+            CostForm.Show();
+        }
+
+        private void btnCostAndExpenseManagementRegister_Click(object sender, EventArgs e)
+        {
+            //Add Form show of Cost and Expense Register Form
+        }
+
+        private void btnCaSManagementTemplate_Click(object sender, EventArgs e)
+        {
+            CommunicationsManagementProcessDocumentForm CommunicationForm = new CommunicationsManagementProcessDocumentForm'();
+            CommunicationForm.Show();
+        }
+
+        private void btnCaSManagementRegister_Click(object sender, EventArgs e)
+        {
+            CommunicationsRegister ChangeRegister = new CommunicationsRegister();
+            ChangeRegister.Show();
+        }
+
+        private void btnIssueManagementTemplate_Click(object sender, EventArgs e)
+        {
+            IssueManagementProcessDocumentForm IssueForm = new IssueManagementProcessDocumentForm(); 
+            IssueForm.Show();
+        }
+
+        private void btnIssueManagementRegister_Click(object sender, EventArgs e)
+        {
+            IssueRegisterForm IssueRegister = new IssueRegisterForm();
+            IssueRegister.Show();
+        }
+
+        private void btnAcceptanceManagementRegister_Click(object sender, EventArgs e)
+        {
+            AcceptanceRegister AcceptanceForm = new AcceptanceRegister();
+            AcceptanceForm.Show();
+        }
+
+        private void btnAcceptanceManagementTemplate_Click(object sender, EventArgs e)
+        {
+            AcceptanceManagementProcessDocumentForm AcceptanceForm = new AcceptanceManagementProcessDocumentForm();
+            AcceptanceForm.Show();
+        }
     }
 }
