@@ -86,7 +86,7 @@
             this.Implementation_Status,
             this.Implementation_Date});
             this.dgvChangeRegister.EnableHeadersVisualStyles = false;
-            this.dgvChangeRegister.Location = new System.Drawing.Point(0, 209);
+            this.dgvChangeRegister.Location = new System.Drawing.Point(20, 194);
             this.dgvChangeRegister.Name = "dgvChangeRegister";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
@@ -96,74 +96,88 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvChangeRegister.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvChangeRegister.RowHeadersWidth = 51;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvChangeRegister.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvChangeRegister.Size = new System.Drawing.Size(1252, 341);
+            this.dgvChangeRegister.Size = new System.Drawing.Size(1329, 341);
             this.dgvChangeRegister.TabIndex = 27;
             // 
             // ID
             // 
             this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 6;
             this.ID.Name = "ID";
             // 
             // Date_Raised
             // 
             this.Date_Raised.HeaderText = "Date Raised";
+            this.Date_Raised.MinimumWidth = 6;
             this.Date_Raised.Name = "Date_Raised";
             // 
             // Raised_By
             // 
             this.Raised_By.HeaderText = "Raised By";
+            this.Raised_By.MinimumWidth = 6;
             this.Raised_By.Name = "Raised_By";
             // 
             // Recieved_By
             // 
             this.Recieved_By.HeaderText = "Recieved By";
+            this.Recieved_By.MinimumWidth = 6;
             this.Recieved_By.Name = "Recieved_By";
             // 
             // Description_of_change
             // 
             this.Description_of_change.HeaderText = "Description of change";
+            this.Description_of_change.MinimumWidth = 6;
             this.Description_of_change.Name = "Description_of_change";
             // 
             // Description_of_impact
             // 
             this.Description_of_impact.HeaderText = "Description of impact";
+            this.Description_of_impact.MinimumWidth = 6;
             this.Description_of_impact.Name = "Description_of_impact";
             // 
             // Impact_Rating
             // 
             this.Impact_Rating.HeaderText = "Impact Rating";
+            this.Impact_Rating.MinimumWidth = 6;
             this.Impact_Rating.Name = "Impact_Rating";
             // 
             // Change_Approver
             // 
             this.Change_Approver.HeaderText = "Change Approver";
+            this.Change_Approver.MinimumWidth = 6;
             this.Change_Approver.Name = "Change_Approver";
             // 
             // Approval_Status
             // 
             this.Approval_Status.HeaderText = "Approval Status";
+            this.Approval_Status.MinimumWidth = 6;
             this.Approval_Status.Name = "Approval_Status";
             // 
             // Approval_date
             // 
             this.Approval_date.HeaderText = "Approval date";
+            this.Approval_date.MinimumWidth = 6;
             this.Approval_date.Name = "Approval_date";
             // 
             // Implementation_Resource
             // 
             this.Implementation_Resource.HeaderText = "Implementation Resource";
+            this.Implementation_Resource.MinimumWidth = 6;
             this.Implementation_Resource.Name = "Implementation_Resource";
             // 
             // Implementation_Status
             // 
             this.Implementation_Status.HeaderText = "Implementation Status";
+            this.Implementation_Status.MinimumWidth = 6;
             this.Implementation_Status.Name = "Implementation_Status";
             // 
             // Implementation_Date
             // 
             this.Implementation_Date.HeaderText = "Implementation Date";
+            this.Implementation_Date.MinimumWidth = 6;
             this.Implementation_Date.Name = "Implementation_Date";
             // 
             // label4
@@ -172,24 +186,24 @@
             this.label4.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(11, 27);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(290, 41);
+            this.label4.Size = new System.Drawing.Size(370, 51);
             this.label4.TabIndex = 25;
             this.label4.Text = "Change Register";
             // 
             // Project_Manager_tbx
             // 
-            this.Project_Manager_tbx.Location = new System.Drawing.Point(150, 143);
+            this.Project_Manager_tbx.Location = new System.Drawing.Point(170, 147);
             this.Project_Manager_tbx.Name = "Project_Manager_tbx";
-            this.Project_Manager_tbx.Size = new System.Drawing.Size(237, 20);
+            this.Project_Manager_tbx.Size = new System.Drawing.Size(237, 23);
             this.Project_Manager_tbx.TabIndex = 22;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(14, 145);
+            this.label2.Location = new System.Drawing.Point(15, 143);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 20);
+            this.label2.Size = new System.Drawing.Size(161, 25);
             this.label2.TabIndex = 21;
             this.label2.Text = "Project Manager:";
             // 
@@ -197,11 +211,11 @@
             // 
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSave.Location = new System.Drawing.Point(509, 96);
+            this.btnSave.Location = new System.Drawing.Point(433, 100);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 27);
+            this.btnSave.Size = new System.Drawing.Size(119, 70);
             this.btnSave.TabIndex = 20;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -209,18 +223,18 @@
             // 
             // Project_Name_tbx
             // 
-            this.Project_Name_tbx.Location = new System.Drawing.Point(150, 99);
+            this.Project_Name_tbx.Location = new System.Drawing.Point(170, 104);
             this.Project_Name_tbx.Name = "Project_Name_tbx";
-            this.Project_Name_tbx.Size = new System.Drawing.Size(237, 20);
+            this.Project_Name_tbx.Size = new System.Drawing.Size(237, 23);
             this.Project_Name_tbx.TabIndex = 19;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(35, 100);
+            this.label1.Location = new System.Drawing.Point(15, 100);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 20);
+            this.label1.Size = new System.Drawing.Size(135, 25);
             this.label1.TabIndex = 18;
             this.label1.Text = "Project Name:";
             // 
@@ -228,11 +242,11 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(173)))), ((int)(((byte)(252)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.button1.Location = new System.Drawing.Point(617, 96);
+            this.button1.Location = new System.Drawing.Point(576, 100);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 27);
+            this.button1.Size = new System.Drawing.Size(129, 70);
             this.button1.TabIndex = 28;
             this.button1.Text = "Export to Excel";
             this.button1.UseVisualStyleBackColor = false;
@@ -240,10 +254,10 @@
             // 
             // ChangeRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(1249, 547);
+            this.ClientSize = new System.Drawing.Size(1361, 547);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvChangeRegister);
             this.Controls.Add(this.label4);
