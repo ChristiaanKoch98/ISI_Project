@@ -256,7 +256,7 @@ namespace ProjectManagementToolkit
 
         private void btnCaSManagementTemplate_Click(object sender, EventArgs e)
         {
-            CommunicationsManagementProcessDocumentForm CommunicationForm = new CommunicationsManagementProcessDocumentForm'();
+            CommunicationsManagementProcessDocumentForm CommunicationForm = new CommunicationsManagementProcessDocumentForm();
             CommunicationForm.Show();
         }
 
