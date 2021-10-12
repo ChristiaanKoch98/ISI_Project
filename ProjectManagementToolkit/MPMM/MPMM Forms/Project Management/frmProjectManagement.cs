@@ -221,7 +221,7 @@ namespace ProjectManagementToolkit
 
         private void btnRiskManagementTemplate_Click(object sender, EventArgs e)
         {
-            RiskFormDocumentForm RiskForm = new RiskFormDocumentForm();
+            RiskManagementProcessDocumentForm RiskForm = new RiskManagementProcessDocumentForm();
             RiskForm.Show();
         }
 
