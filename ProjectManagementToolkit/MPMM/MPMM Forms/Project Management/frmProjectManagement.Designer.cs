@@ -1712,6 +1712,7 @@
             this.btnProcurementManagementRegister.TabIndex = 41;
             this.btnProcurementManagementRegister.Text = "Register";
             this.btnProcurementManagementRegister.UseVisualStyleBackColor = false;
+            this.btnProcurementManagementRegister.Click += new System.EventHandler(this.btnProcurementManagementRegister_Click);
             // 
             // btnProcurementManagementTemplate
             // 
@@ -1723,6 +1724,7 @@
             this.btnProcurementManagementTemplate.TabIndex = 39;
             this.btnProcurementManagementTemplate.Text = "Template";
             this.btnProcurementManagementTemplate.UseVisualStyleBackColor = false;
+            this.btnProcurementManagementTemplate.Click += new System.EventHandler(this.btnProcurementManagementTemplate_Click);
             // 
             // pictureBox26
             // 
@@ -1850,6 +1852,7 @@
             this.btnTimeManagementRegister.TabIndex = 41;
             this.btnTimeManagementRegister.Text = "Register";
             this.btnTimeManagementRegister.UseVisualStyleBackColor = false;
+            this.btnTimeManagementRegister.Click += new System.EventHandler(this.btnTimeManagementRegister_Click);
             // 
             // btnTimeManagementTemplate
             // 
@@ -1861,6 +1864,7 @@
             this.btnTimeManagementTemplate.TabIndex = 39;
             this.btnTimeManagementTemplate.Text = "Template";
             this.btnTimeManagementTemplate.UseVisualStyleBackColor = false;
+            this.btnTimeManagementTemplate.Click += new System.EventHandler(this.btnTimeManagementTemplate_Click);
             // 
             // pictureBox32
             // 
@@ -2129,6 +2133,7 @@
             this.btnQualityManagementRegister.TabIndex = 41;
             this.btnQualityManagementRegister.Text = "Register";
             this.btnQualityManagementRegister.UseVisualStyleBackColor = false;
+            this.btnQualityManagementRegister.Click += new System.EventHandler(this.btnQualityManagementRegister_Click);
             // 
             // btnQualityManagementTemplate
             // 
@@ -2140,6 +2145,7 @@
             this.btnQualityManagementTemplate.TabIndex = 39;
             this.btnQualityManagementTemplate.Text = "Template";
             this.btnQualityManagementTemplate.UseVisualStyleBackColor = false;
+            this.btnQualityManagementTemplate.Click += new System.EventHandler(this.btnQualityManagementTemplate_Click);
             // 
             // pictureBox23
             // 

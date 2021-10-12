@@ -251,7 +251,8 @@ namespace ProjectManagementToolkit
 
         private void btnCostAndExpenseManagementRegister_Click(object sender, EventArgs e)
         {
-            //Add Form show of Cost and Expense Register Form
+            ExpenseRegister ExpenseRegister = new ExpenseRegister();
+            ExpenseRegister.Show();
         }
 
         private void btnCaSManagementTemplate_Click(object sender, EventArgs e)
@@ -288,6 +289,42 @@ namespace ProjectManagementToolkit
         {
             AcceptanceManagementProcessDocumentForm AcceptanceForm = new AcceptanceManagementProcessDocumentForm();
             AcceptanceForm.Show();
+        }
+
+        private void btnProcurementManagementTemplate_Click(object sender, EventArgs e)
+        {
+            ProcurementManagementProcess ProcureForm = new ProcurementManagementProcess();
+            ProcureForm.Show();
+        }
+
+        private void btnProcurementManagementRegister_Click(object sender, EventArgs e)
+        {
+            ProcurementRegister ProcureRegister = new ProcurementRegister();
+            ProcureRegister.Show();
+        }
+
+        private void btnTimeManagementTemplate_Click(object sender, EventArgs e)
+        {
+            TimeMangementProcessDocumentForm TimeForm = new TimeMangementProcessDocumentForm();
+            TimeForm.Show();
+        }
+
+        private void btnTimeManagementRegister_Click(object sender, EventArgs e)
+        {
+            TimesheetRegister TimeRegister = new TimesheetRegister();
+            TimeRegister.Show();
+        }
+
+        private void btnQualityManagementTemplate_Click(object sender, EventArgs e)
+        {
+            QualityManagementProcessDocumentForm QualityForm = new QualityManagementProcessDocumentForm();
+            QualityForm.Show();
+        }
+
+        private void btnQualityManagementRegister_Click(object sender, EventArgs e)
+        {
+            QualityRegister QualRegister = new QualityRegister();
+            QualRegister.Show();
         }
     }
 }
