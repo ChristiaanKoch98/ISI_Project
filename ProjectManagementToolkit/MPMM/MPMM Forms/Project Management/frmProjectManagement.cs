@@ -349,6 +349,87 @@ namespace ProjectManagementToolkit
         {
             this.Hide();
             frmWarnings Warn = new frmWarnings();
+            Warn.tbcWarning.SelectTab("tbpCRA");
+            Warn.Show();
+        }
+
+        private void btnDRA_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmWarnings Warn = new frmWarnings();
+            Warn.tbcWarning.SelectTab("tbpDRA");
+            Warn.Show();
+        }
+
+        private void btnBackableProject_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmWarnings Warn = new frmWarnings();
+            Warn.tbcWarning.SelectTab("tbpBackable");
+            Warn.Show();
+        }
+
+        private void btnERA_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmWarnings Warn = new frmWarnings();
+            Warn.tbcWarning.SelectTab("tbpERA");
+            Warn.Show();
+        }
+
+        private void btnAuthorizedProject_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmWarnings Warn = new frmWarnings();
+            Warn.tbcWarning.SelectTab("tbpAuthorized");
+            Warn.Show();
+        }
+
+        private void btnFinancialClosure_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmWarnings Warn = new frmWarnings();
+            Warn.tbcWarning.SelectTab("tbpFinacial");
+            Warn.Show();
+        }
+
+        private void btnExecutionAgreement_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmWarnings Warn = new frmWarnings();
+            Warn.tbcWarning.SelectTab("tbpExecution");
+            Warn.Show();
+        }
+
+        private void btnHandOverDocument1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmWarnings Warn = new frmWarnings();
+            Warn.tbcWarning.SelectTab("tbpHandOver");
+            Warn.Show();
+        }
+
+        private void btnClosureContracts_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmWarnings Warn = new frmWarnings();
+            Warn.tbcWarning.SelectTab("tbpClosure");
+            Warn.Show();
+        }
+
+        private void btnFRA_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmWarnings Warn = new frmWarnings();
+            Warn.tbcWarning.SelectTab("tbpFRA");
+            Warn.Show();
+        }
+
+        private void btnHandOverDocument2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmWarnings Warn = new frmWarnings();
+            Warn.tbcWarning.SelectTab("tbpHandOver");
             Warn.Show();
         }
     }

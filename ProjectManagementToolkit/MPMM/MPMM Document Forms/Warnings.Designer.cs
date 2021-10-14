@@ -167,8 +167,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         }
 
         #endregion
-
-        private System.Windows.Forms.TabControl tbcWarning;
         private System.Windows.Forms.TabPage tbpCRA;
         private System.Windows.Forms.TabPage tbpDRA;
         private System.Windows.Forms.TabPage tbpBackable;
@@ -179,5 +177,6 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         private System.Windows.Forms.TabPage tbpHandOver;
         private System.Windows.Forms.TabPage tbpClosure;
         private System.Windows.Forms.TabPage tbpFRA;
+        public System.Windows.Forms.TabControl tbcWarning;
     }
 }

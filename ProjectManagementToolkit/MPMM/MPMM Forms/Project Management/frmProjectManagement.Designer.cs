@@ -3263,6 +3263,7 @@
             this.btnFRA.TabIndex = 65;
             this.btnFRA.Text = "FRA";
             this.btnFRA.UseVisualStyleBackColor = true;
+            this.btnFRA.Click += new System.EventHandler(this.btnFRA_Click);
             // 
             // pictureBox36
             // 
@@ -3300,6 +3301,7 @@
             this.btnClosureContracts.TabIndex = 67;
             this.btnClosureContracts.Text = "Closure Contracts";
             this.btnClosureContracts.UseVisualStyleBackColor = true;
+            this.btnClosureContracts.Click += new System.EventHandler(this.btnClosureContracts_Click);
             // 
             // pictureBox37
             // 
@@ -3324,6 +3326,7 @@
             this.btnHandOverDocument2.TabIndex = 65;
             this.btnHandOverDocument2.Text = "Hand Over Document";
             this.btnHandOverDocument2.UseVisualStyleBackColor = true;
+            this.btnHandOverDocument2.Click += new System.EventHandler(this.btnHandOverDocument2_Click);
             // 
             // pictureBox38
             // 
@@ -3362,6 +3365,7 @@
             this.btnHandOverDocument1.TabIndex = 67;
             this.btnHandOverDocument1.Text = "Hand Over Document";
             this.btnHandOverDocument1.UseVisualStyleBackColor = true;
+            this.btnHandOverDocument1.Click += new System.EventHandler(this.btnHandOverDocument1_Click);
             // 
             // pictureBox39
             // 
@@ -3386,6 +3390,7 @@
             this.btnExecutionAgreement.TabIndex = 65;
             this.btnExecutionAgreement.Text = "Execution Agreement";
             this.btnExecutionAgreement.UseVisualStyleBackColor = true;
+            this.btnExecutionAgreement.Click += new System.EventHandler(this.btnExecutionAgreement_Click);
             // 
             // pictureBox40
             // 
@@ -3423,6 +3428,7 @@
             this.btnFinancialClosure.TabIndex = 67;
             this.btnFinancialClosure.Text = "Financial Closure";
             this.btnFinancialClosure.UseVisualStyleBackColor = true;
+            this.btnFinancialClosure.Click += new System.EventHandler(this.btnFinancialClosure_Click);
             // 
             // pictureBox41
             // 
@@ -3446,6 +3452,7 @@
             this.btnAuthorizedProject.TabIndex = 65;
             this.btnAuthorizedProject.Text = "Authorized Project";
             this.btnAuthorizedProject.UseVisualStyleBackColor = true;
+            this.btnAuthorizedProject.Click += new System.EventHandler(this.btnAuthorizedProject_Click);
             // 
             // pictureBox42
             // 
@@ -3483,6 +3490,7 @@
             this.btnERA.TabIndex = 67;
             this.btnERA.Text = "ERA";
             this.btnERA.UseVisualStyleBackColor = true;
+            this.btnERA.Click += new System.EventHandler(this.btnERA_Click);
             // 
             // pictureBox43
             // 
@@ -3506,6 +3514,7 @@
             this.btnBackableProject.TabIndex = 65;
             this.btnBackableProject.Text = "Backable Project";
             this.btnBackableProject.UseVisualStyleBackColor = true;
+            this.btnBackableProject.Click += new System.EventHandler(this.btnBackableProject_Click);
             // 
             // pictureBox44
             // 
@@ -3543,6 +3552,7 @@
             this.btnDRA.TabIndex = 67;
             this.btnDRA.Text = "DRA";
             this.btnDRA.UseVisualStyleBackColor = true;
+            this.btnDRA.Click += new System.EventHandler(this.btnDRA_Click);
             // 
             // pictureBox45
             // 
