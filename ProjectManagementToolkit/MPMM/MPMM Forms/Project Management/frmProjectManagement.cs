@@ -221,110 +221,135 @@ namespace ProjectManagementToolkit
 
         private void btnRiskManagementTemplate_Click(object sender, EventArgs e)
         {
+            this.Hide();
             RiskManagementProcessDocumentForm RiskForm = new RiskManagementProcessDocumentForm();
             RiskForm.Show();
         }
 
         private void btnRiskManagementRegister_Click(object sender, EventArgs e)
         {
+            this.Hide();
             RiskRegisterForm RiskRegister = new RiskRegisterForm();
             RiskRegister.Show();
         }
 
         private void btnChangeManagementTemplate_Click(object sender, EventArgs e)
         {
+            this.Hide();
             ChangeManagementProcessDocumentForm ChangeForm = new ChangeManagementProcessDocumentForm();
             ChangeForm.Show();
         }
 
         private void btnChangeManagementRegister_Click(object sender, EventArgs e)
         {
+            this.Hide();
             ChangeRegister ChangeRegister = new ChangeRegister();
             ChangeRegister.Show();
         }
 
         private void btnCostAndExpenseManagementManagementTemplate_Click(object sender, EventArgs e)
         {
+            this.Hide();
             CostManagementProcessDocumentForm CostForm = new CostManagementProcessDocumentForm();
             CostForm.Show();
         }
 
         private void btnCostAndExpenseManagementRegister_Click(object sender, EventArgs e)
         {
+            this.Hide();
             ExpenseRegister ExpenseRegister = new ExpenseRegister();
             ExpenseRegister.Show();
         }
 
         private void btnCaSManagementTemplate_Click(object sender, EventArgs e)
         {
+            this.Hide();
             CommunicationsManagementProcessDocumentForm CommunicationForm = new CommunicationsManagementProcessDocumentForm();
             CommunicationForm.Show();
         }
 
         private void btnCaSManagementRegister_Click(object sender, EventArgs e)
         {
+            this.Hide();
             CommunicationsRegister ChangeRegister = new CommunicationsRegister();
             ChangeRegister.Show();
         }
 
         private void btnIssueManagementTemplate_Click(object sender, EventArgs e)
         {
+            this.Hide();
             IssueManagementProcessDocumentForm IssueForm = new IssueManagementProcessDocumentForm(); 
             IssueForm.Show();
         }
 
         private void btnIssueManagementRegister_Click(object sender, EventArgs e)
         {
+            this.Hide();
             IssueRegisterForm IssueRegister = new IssueRegisterForm();
             IssueRegister.Show();
         }
 
         private void btnAcceptanceManagementRegister_Click(object sender, EventArgs e)
         {
+            this.Hide();
             AcceptanceRegister AcceptanceForm = new AcceptanceRegister();
             AcceptanceForm.Show();
         }
 
         private void btnAcceptanceManagementTemplate_Click(object sender, EventArgs e)
         {
+            this.Hide();
             AcceptanceManagementProcessDocumentForm AcceptanceForm = new AcceptanceManagementProcessDocumentForm();
             AcceptanceForm.Show();
         }
 
         private void btnProcurementManagementTemplate_Click(object sender, EventArgs e)
         {
+            this.Hide();
             ProcurementManagementProcess ProcureForm = new ProcurementManagementProcess();
             ProcureForm.Show();
         }
 
         private void btnProcurementManagementRegister_Click(object sender, EventArgs e)
         {
+            this.Hide();
             ProcurementRegister ProcureRegister = new ProcurementRegister();
             ProcureRegister.Show();
         }
 
         private void btnTimeManagementTemplate_Click(object sender, EventArgs e)
         {
+            this.Hide();
             TimeMangementProcessDocumentForm TimeForm = new TimeMangementProcessDocumentForm();
             TimeForm.Show();
         }
 
         private void btnTimeManagementRegister_Click(object sender, EventArgs e)
         {
+            this.Hide();
             TimesheetRegister TimeRegister = new TimesheetRegister();
             TimeRegister.Show();
         }
 
         private void btnQualityManagementTemplate_Click(object sender, EventArgs e)
         {
+            this.Hide();
             QualityManagementProcessDocumentForm QualityForm = new QualityManagementProcessDocumentForm();
             QualityForm.Show();
         }
 
         private void btnQualityManagementRegister_Click(object sender, EventArgs e)
         {
+            this.Hide();
             QualityRegister QualRegister = new QualityRegister();
             QualRegister.Show();
+        }
+
+        private void btnCRA_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmWarnings Warn = new frmWarnings();
+            Warn.Show();
         }
     }
 }
