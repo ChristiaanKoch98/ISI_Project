@@ -429,7 +429,7 @@ namespace ProjectManagementToolkit
         {
             this.Hide();
             frmWarnings Warn = new frmWarnings();
-            Warn.tbcWarning.SelectTab("tbpHandOver");
+            Warn.tbcWarning.SelectTab("tbpHandOver2");
             Warn.Show();
         }
     }

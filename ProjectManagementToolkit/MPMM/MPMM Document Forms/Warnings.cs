@@ -16,5 +16,12 @@ namespace ProjectManagementToolkit.MPMM.MPMM_Document_Forms
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmProjectManagement projectForm = new frmProjectManagement();
+            projectForm.Show();
+        }
     }
 }

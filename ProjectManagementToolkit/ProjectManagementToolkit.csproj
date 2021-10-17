@@ -414,6 +414,12 @@
     <Compile Include="MPMM\MPMM Document Forms\TimesheetRegister.Designer.cs">
       <DependentUpon>TimesheetRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\Warnings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPMM\MPMM Document Forms\Warnings.Designer.cs">
+      <DependentUpon>Warnings.cs</DependentUpon>
+    </Compile>
     <Compile Include="MPMM\MPMM Document Models\AcceptanceFormModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\AcceptanceManagementProcessModel.cs" />
     <Compile Include="MPMM\MPMM Document Models\AcceptancePlanModel.cs" />
@@ -1420,6 +1426,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Document Forms\TimesheetRegister.resx">
       <DependentUpon>TimesheetRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPMM\MPMM Document Forms\Warnings.resx">
+      <DependentUpon>Warnings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MPMM\MPMM Forms\Academic and Training\Academic_and_Training.resx">
       <DependentUpon>Academic_and_Training.cs</DependentUpon>
