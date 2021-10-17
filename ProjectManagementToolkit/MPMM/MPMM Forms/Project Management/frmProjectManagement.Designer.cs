@@ -690,7 +690,7 @@
             this.tbp_Project_Management.Controls.Add(this.tbp_EndOfProcedures);
             this.tbp_Project_Management.Controls.Add(this.tbp_Policies_and_Procedures);
             this.tbp_Project_Management.Location = new System.Drawing.Point(15, 14);
-            this.tbp_Project_Management.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_Project_Management.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_Project_Management.Name = "tbp_Project_Management";
             this.tbp_Project_Management.SelectedIndex = 0;
             this.tbp_Project_Management.Size = new System.Drawing.Size(1354, 812);
@@ -701,9 +701,9 @@
             this.tbp_Report_Center.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbp_Report_Center.Controls.Add(this.panel1);
             this.tbp_Report_Center.Location = new System.Drawing.Point(4, 25);
-            this.tbp_Report_Center.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_Report_Center.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_Report_Center.Name = "tbp_Report_Center";
-            this.tbp_Report_Center.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_Report_Center.Padding = new System.Windows.Forms.Padding(4);
             this.tbp_Report_Center.Size = new System.Drawing.Size(1346, 783);
             this.tbp_Report_Center.TabIndex = 0;
             this.tbp_Report_Center.Text = "Report Center";
@@ -721,7 +721,7 @@
             this.panel1.Controls.Add(this.btnReportCenterOpenInNewTab);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(28, 30);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1039, 506);
             this.panel1.TabIndex = 12;
@@ -730,7 +730,7 @@
             // 
             this.dataGridReportCenter.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridReportCenter.Location = new System.Drawing.Point(24, 118);
-            this.dataGridReportCenter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridReportCenter.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridReportCenter.Name = "dataGridReportCenter";
             this.dataGridReportCenter.RowHeadersWidth = 51;
             this.dataGridReportCenter.Size = new System.Drawing.Size(784, 362);
@@ -743,7 +743,7 @@
             this.panel2.Controls.Add(this.lblSelectingReport);
             this.panel2.Controls.Add(this.lblReportCenterDate);
             this.panel2.Location = new System.Drawing.Point(24, 60);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(784, 64);
             this.panel2.TabIndex = 0;
@@ -812,7 +812,7 @@
             // 
             this.btnReportCenterOpenInNewTab.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportCenterOpenInNewTab.Location = new System.Drawing.Point(22, 25);
-            this.btnReportCenterOpenInNewTab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReportCenterOpenInNewTab.Margin = new System.Windows.Forms.Padding(4);
             this.btnReportCenterOpenInNewTab.Name = "btnReportCenterOpenInNewTab";
             this.btnReportCenterOpenInNewTab.Size = new System.Drawing.Size(214, 26);
             this.btnReportCenterOpenInNewTab.TabIndex = 17;
@@ -859,9 +859,9 @@
             this.tbp_Processes.Controls.Add(this.pictureBox4);
             this.tbp_Processes.Controls.Add(this.pictureBox3);
             this.tbp_Processes.Location = new System.Drawing.Point(4, 25);
-            this.tbp_Processes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_Processes.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_Processes.Name = "tbp_Processes";
-            this.tbp_Processes.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_Processes.Padding = new System.Windows.Forms.Padding(4);
             this.tbp_Processes.Size = new System.Drawing.Size(1346, 783);
             this.tbp_Processes.TabIndex = 1;
             this.tbp_Processes.Text = "Processes";
@@ -869,7 +869,7 @@
             // btnExceptionManagement
             // 
             this.btnExceptionManagement.Location = new System.Drawing.Point(1009, 110);
-            this.btnExceptionManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExceptionManagement.Margin = new System.Windows.Forms.Padding(4);
             this.btnExceptionManagement.Name = "btnExceptionManagement";
             this.btnExceptionManagement.Size = new System.Drawing.Size(154, 29);
             this.btnExceptionManagement.TabIndex = 33;
@@ -880,7 +880,7 @@
             // btnTimeAllocation
             // 
             this.btnTimeAllocation.Location = new System.Drawing.Point(858, 110);
-            this.btnTimeAllocation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTimeAllocation.Margin = new System.Windows.Forms.Padding(4);
             this.btnTimeAllocation.Name = "btnTimeAllocation";
             this.btnTimeAllocation.Size = new System.Drawing.Size(144, 29);
             this.btnTimeAllocation.TabIndex = 32;
@@ -891,7 +891,7 @@
             // btnProcurementManagement
             // 
             this.btnProcurementManagement.Location = new System.Drawing.Point(645, 110);
-            this.btnProcurementManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProcurementManagement.Margin = new System.Windows.Forms.Padding(4);
             this.btnProcurementManagement.Name = "btnProcurementManagement";
             this.btnProcurementManagement.Size = new System.Drawing.Size(205, 29);
             this.btnProcurementManagement.TabIndex = 31;
@@ -902,7 +902,7 @@
             // btnAcceptanceManagement
             // 
             this.btnAcceptanceManagement.Location = new System.Drawing.Point(432, 110);
-            this.btnAcceptanceManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAcceptanceManagement.Margin = new System.Windows.Forms.Padding(4);
             this.btnAcceptanceManagement.Name = "btnAcceptanceManagement";
             this.btnAcceptanceManagement.Size = new System.Drawing.Size(205, 29);
             this.btnAcceptanceManagement.TabIndex = 30;
@@ -913,7 +913,7 @@
             // btnQualityManagement
             // 
             this.btnQualityManagement.Location = new System.Drawing.Point(220, 110);
-            this.btnQualityManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnQualityManagement.Margin = new System.Windows.Forms.Padding(4);
             this.btnQualityManagement.Name = "btnQualityManagement";
             this.btnQualityManagement.Size = new System.Drawing.Size(205, 29);
             this.btnQualityManagement.TabIndex = 24;
@@ -924,7 +924,7 @@
             // btnBackToPLCMFrontEND
             // 
             this.btnBackToPLCMFrontEND.Location = new System.Drawing.Point(992, 741);
-            this.btnBackToPLCMFrontEND.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBackToPLCMFrontEND.Margin = new System.Windows.Forms.Padding(4);
             this.btnBackToPLCMFrontEND.Name = "btnBackToPLCMFrontEND";
             this.btnBackToPLCMFrontEND.Size = new System.Drawing.Size(170, 35);
             this.btnBackToPLCMFrontEND.TabIndex = 2;
@@ -935,7 +935,7 @@
             // btnIssueManagement
             // 
             this.btnIssueManagement.Location = new System.Drawing.Point(8, 110);
-            this.btnIssueManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIssueManagement.Margin = new System.Windows.Forms.Padding(4);
             this.btnIssueManagement.Name = "btnIssueManagement";
             this.btnIssueManagement.Size = new System.Drawing.Size(205, 29);
             this.btnIssueManagement.TabIndex = 28;
@@ -946,7 +946,7 @@
             // pnlHideTabControl
             // 
             this.pnlHideTabControl.Location = new System.Drawing.Point(1211, 114);
-            this.pnlHideTabControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlHideTabControl.Margin = new System.Windows.Forms.Padding(4);
             this.pnlHideTabControl.Name = "pnlHideTabControl";
             this.pnlHideTabControl.Size = new System.Drawing.Size(1185, 25);
             this.pnlHideTabControl.TabIndex = 37;
@@ -965,7 +965,7 @@
             this.tbcProcesses.Controls.Add(this.tbp_RiskManangement);
             this.tbcProcesses.Controls.Add(this.tbp_QualityManagement);
             this.tbcProcesses.Location = new System.Drawing.Point(8, 134);
-            this.tbcProcesses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbcProcesses.Margin = new System.Windows.Forms.Padding(4);
             this.tbcProcesses.Name = "tbcProcesses";
             this.tbcProcesses.SelectedIndex = 0;
             this.tbcProcesses.Size = new System.Drawing.Size(1155, 600);
@@ -975,9 +975,9 @@
             // 
             this.tbp_GovernanceProcess.Controls.Add(this.flowLayoutPanel1);
             this.tbp_GovernanceProcess.Location = new System.Drawing.Point(4, 25);
-            this.tbp_GovernanceProcess.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_GovernanceProcess.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_GovernanceProcess.Name = "tbp_GovernanceProcess";
-            this.tbp_GovernanceProcess.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_GovernanceProcess.Padding = new System.Windows.Forms.Padding(4);
             this.tbp_GovernanceProcess.Size = new System.Drawing.Size(1147, 571);
             this.tbp_GovernanceProcess.TabIndex = 0;
             this.tbp_GovernanceProcess.Text = "GovernanceProcess";
@@ -988,7 +988,7 @@
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Controls.Add(this.pictureBox8);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1145, 569);
             this.flowLayoutPanel1.TabIndex = 0;
@@ -1001,7 +1001,7 @@
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.InitialImage")));
             this.pictureBox8.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(1197, 565);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1013,7 +1013,7 @@
             this.tbp_CostAndExpenseManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbp_CostAndExpenseManagement.Controls.Add(this.panel6);
             this.tbp_CostAndExpenseManagement.Location = new System.Drawing.Point(4, 25);
-            this.tbp_CostAndExpenseManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_CostAndExpenseManagement.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_CostAndExpenseManagement.Name = "tbp_CostAndExpenseManagement";
             this.tbp_CostAndExpenseManagement.Size = new System.Drawing.Size(1147, 571);
             this.tbp_CostAndExpenseManagement.TabIndex = 2;
@@ -1027,7 +1027,7 @@
             this.panel6.Controls.Add(this.txtCostAndExpenseManagementActivities);
             this.panel6.Controls.Add(this.txtCostAndExpenseManagementAim);
             this.panel6.Location = new System.Drawing.Point(0, 4);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1168, 575);
             this.panel6.TabIndex = 42;
@@ -1040,7 +1040,7 @@
             this.panel7.Controls.Add(this.btnCostAndExpenseManagementManagementTemplate);
             this.panel7.Controls.Add(this.pictureBox11);
             this.panel7.Location = new System.Drawing.Point(400, 2);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(742, 65);
             this.panel7.TabIndex = 46;
@@ -1050,7 +1050,7 @@
             this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.Location = new System.Drawing.Point(180, 16);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(40, 29);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1061,7 +1061,7 @@
             // 
             this.btnCostAndExpenseManagementRegister.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnCostAndExpenseManagementRegister.Location = new System.Drawing.Point(220, 16);
-            this.btnCostAndExpenseManagementRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCostAndExpenseManagementRegister.Margin = new System.Windows.Forms.Padding(4);
             this.btnCostAndExpenseManagementRegister.Name = "btnCostAndExpenseManagementRegister";
             this.btnCostAndExpenseManagementRegister.Size = new System.Drawing.Size(94, 29);
             this.btnCostAndExpenseManagementRegister.TabIndex = 41;
@@ -1073,7 +1073,7 @@
             // 
             this.btnCostAndExpenseManagementManagementTemplate.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnCostAndExpenseManagementManagementTemplate.Location = new System.Drawing.Point(58, 16);
-            this.btnCostAndExpenseManagementManagementTemplate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCostAndExpenseManagementManagementTemplate.Margin = new System.Windows.Forms.Padding(4);
             this.btnCostAndExpenseManagementManagementTemplate.Name = "btnCostAndExpenseManagementManagementTemplate";
             this.btnCostAndExpenseManagementManagementTemplate.Size = new System.Drawing.Size(94, 29);
             this.btnCostAndExpenseManagementManagementTemplate.TabIndex = 39;
@@ -1086,7 +1086,7 @@
             this.pictureBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
             this.pictureBox11.Location = new System.Drawing.Point(18, 16);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(40, 29);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1100,7 +1100,7 @@
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
             this.pictureBox12.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox12.InitialImage")));
             this.pictureBox12.Location = new System.Drawing.Point(4, 0);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(392, 561);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1110,7 +1110,7 @@
             // txtCostAndExpenseManagementRole
             // 
             this.txtCostAndExpenseManagementRole.Location = new System.Drawing.Point(400, 262);
-            this.txtCostAndExpenseManagementRole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCostAndExpenseManagementRole.Margin = new System.Windows.Forms.Padding(4);
             this.txtCostAndExpenseManagementRole.Multiline = true;
             this.txtCostAndExpenseManagementRole.Name = "txtCostAndExpenseManagementRole";
             this.txtCostAndExpenseManagementRole.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1120,7 +1120,7 @@
             // txtCostAndExpenseManagementActivities
             // 
             this.txtCostAndExpenseManagementActivities.Location = new System.Drawing.Point(769, 72);
-            this.txtCostAndExpenseManagementActivities.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCostAndExpenseManagementActivities.Margin = new System.Windows.Forms.Padding(4);
             this.txtCostAndExpenseManagementActivities.Multiline = true;
             this.txtCostAndExpenseManagementActivities.Name = "txtCostAndExpenseManagementActivities";
             this.txtCostAndExpenseManagementActivities.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1130,7 +1130,7 @@
             // txtCostAndExpenseManagementAim
             // 
             this.txtCostAndExpenseManagementAim.Location = new System.Drawing.Point(400, 72);
-            this.txtCostAndExpenseManagementAim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCostAndExpenseManagementAim.Margin = new System.Windows.Forms.Padding(4);
             this.txtCostAndExpenseManagementAim.Multiline = true;
             this.txtCostAndExpenseManagementAim.Name = "txtCostAndExpenseManagementAim";
             this.txtCostAndExpenseManagementAim.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1142,7 +1142,7 @@
             this.tbp_ChangeManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbp_ChangeManagement.Controls.Add(this.panel8);
             this.tbp_ChangeManagement.Location = new System.Drawing.Point(4, 25);
-            this.tbp_ChangeManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_ChangeManagement.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_ChangeManagement.Name = "tbp_ChangeManagement";
             this.tbp_ChangeManagement.Size = new System.Drawing.Size(1147, 571);
             this.tbp_ChangeManagement.TabIndex = 3;
@@ -1156,7 +1156,7 @@
             this.panel8.Controls.Add(this.txtChangeManagementActivities);
             this.panel8.Controls.Add(this.txtChangeManagementAim);
             this.panel8.Location = new System.Drawing.Point(-5, 1);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1208, 575);
             this.panel8.TabIndex = 43;
@@ -1169,7 +1169,7 @@
             this.panel9.Controls.Add(this.btnChangeManagementTemplate);
             this.panel9.Controls.Add(this.pictureBox14);
             this.panel9.Location = new System.Drawing.Point(400, 2);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(746, 65);
             this.panel9.TabIndex = 46;
@@ -1179,7 +1179,7 @@
             this.pictureBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
             this.pictureBox13.Location = new System.Drawing.Point(180, 16);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(40, 29);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1190,7 +1190,7 @@
             // 
             this.btnChangeManagementRegister.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnChangeManagementRegister.Location = new System.Drawing.Point(220, 16);
-            this.btnChangeManagementRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChangeManagementRegister.Margin = new System.Windows.Forms.Padding(4);
             this.btnChangeManagementRegister.Name = "btnChangeManagementRegister";
             this.btnChangeManagementRegister.Size = new System.Drawing.Size(94, 29);
             this.btnChangeManagementRegister.TabIndex = 41;
@@ -1202,7 +1202,7 @@
             // 
             this.btnChangeManagementTemplate.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnChangeManagementTemplate.Location = new System.Drawing.Point(58, 16);
-            this.btnChangeManagementTemplate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChangeManagementTemplate.Margin = new System.Windows.Forms.Padding(4);
             this.btnChangeManagementTemplate.Name = "btnChangeManagementTemplate";
             this.btnChangeManagementTemplate.Size = new System.Drawing.Size(94, 29);
             this.btnChangeManagementTemplate.TabIndex = 39;
@@ -1215,7 +1215,7 @@
             this.pictureBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
             this.pictureBox14.Location = new System.Drawing.Point(18, 16);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(40, 29);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1229,7 +1229,7 @@
             this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
             this.pictureBox15.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox15.InitialImage")));
             this.pictureBox15.Location = new System.Drawing.Point(4, 0);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(392, 561);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1239,7 +1239,7 @@
             // txtChangeManagementRole
             // 
             this.txtChangeManagementRole.Location = new System.Drawing.Point(400, 262);
-            this.txtChangeManagementRole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtChangeManagementRole.Margin = new System.Windows.Forms.Padding(4);
             this.txtChangeManagementRole.Multiline = true;
             this.txtChangeManagementRole.Name = "txtChangeManagementRole";
             this.txtChangeManagementRole.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1249,7 +1249,7 @@
             // txtChangeManagementActivities
             // 
             this.txtChangeManagementActivities.Location = new System.Drawing.Point(769, 72);
-            this.txtChangeManagementActivities.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtChangeManagementActivities.Margin = new System.Windows.Forms.Padding(4);
             this.txtChangeManagementActivities.Multiline = true;
             this.txtChangeManagementActivities.Name = "txtChangeManagementActivities";
             this.txtChangeManagementActivities.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1259,7 +1259,7 @@
             // txtChangeManagementAim
             // 
             this.txtChangeManagementAim.Location = new System.Drawing.Point(400, 72);
-            this.txtChangeManagementAim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtChangeManagementAim.Margin = new System.Windows.Forms.Padding(4);
             this.txtChangeManagementAim.Multiline = true;
             this.txtChangeManagementAim.Name = "txtChangeManagementAim";
             this.txtChangeManagementAim.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1271,7 +1271,7 @@
             this.tbp_CommunicationAndStakeholderManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbp_CommunicationAndStakeholderManagement.Controls.Add(this.panel10);
             this.tbp_CommunicationAndStakeholderManagement.Location = new System.Drawing.Point(4, 25);
-            this.tbp_CommunicationAndStakeholderManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_CommunicationAndStakeholderManagement.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_CommunicationAndStakeholderManagement.Name = "tbp_CommunicationAndStakeholderManagement";
             this.tbp_CommunicationAndStakeholderManagement.Size = new System.Drawing.Size(1147, 571);
             this.tbp_CommunicationAndStakeholderManagement.TabIndex = 4;
@@ -1285,7 +1285,7 @@
             this.panel10.Controls.Add(this.txtCaSManagementActivities);
             this.panel10.Controls.Add(this.txtCaSManagementAim);
             this.panel10.Location = new System.Drawing.Point(-4, 2);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1208, 575);
             this.panel10.TabIndex = 44;
@@ -1298,7 +1298,7 @@
             this.panel11.Controls.Add(this.btnCaSManagementTemplate);
             this.panel11.Controls.Add(this.pictureBox17);
             this.panel11.Location = new System.Drawing.Point(400, 2);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(746, 65);
             this.panel11.TabIndex = 46;
@@ -1308,7 +1308,7 @@
             this.pictureBox16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
             this.pictureBox16.Location = new System.Drawing.Point(180, 16);
-            this.pictureBox16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox16.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(40, 29);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1319,7 +1319,7 @@
             // 
             this.btnCaSManagementRegister.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnCaSManagementRegister.Location = new System.Drawing.Point(220, 16);
-            this.btnCaSManagementRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCaSManagementRegister.Margin = new System.Windows.Forms.Padding(4);
             this.btnCaSManagementRegister.Name = "btnCaSManagementRegister";
             this.btnCaSManagementRegister.Size = new System.Drawing.Size(94, 29);
             this.btnCaSManagementRegister.TabIndex = 41;
@@ -1331,7 +1331,7 @@
             // 
             this.btnCaSManagementTemplate.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnCaSManagementTemplate.Location = new System.Drawing.Point(58, 16);
-            this.btnCaSManagementTemplate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCaSManagementTemplate.Margin = new System.Windows.Forms.Padding(4);
             this.btnCaSManagementTemplate.Name = "btnCaSManagementTemplate";
             this.btnCaSManagementTemplate.Size = new System.Drawing.Size(94, 29);
             this.btnCaSManagementTemplate.TabIndex = 39;
@@ -1344,7 +1344,7 @@
             this.pictureBox17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
             this.pictureBox17.Location = new System.Drawing.Point(18, 16);
-            this.pictureBox17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox17.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(40, 29);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1358,7 +1358,7 @@
             this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
             this.pictureBox18.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox18.InitialImage")));
             this.pictureBox18.Location = new System.Drawing.Point(4, 0);
-            this.pictureBox18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox18.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(392, 561);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1368,7 +1368,7 @@
             // txtCaSManagementRole
             // 
             this.txtCaSManagementRole.Location = new System.Drawing.Point(400, 262);
-            this.txtCaSManagementRole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCaSManagementRole.Margin = new System.Windows.Forms.Padding(4);
             this.txtCaSManagementRole.Multiline = true;
             this.txtCaSManagementRole.Name = "txtCaSManagementRole";
             this.txtCaSManagementRole.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1378,7 +1378,7 @@
             // txtCaSManagementActivities
             // 
             this.txtCaSManagementActivities.Location = new System.Drawing.Point(769, 72);
-            this.txtCaSManagementActivities.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCaSManagementActivities.Margin = new System.Windows.Forms.Padding(4);
             this.txtCaSManagementActivities.Multiline = true;
             this.txtCaSManagementActivities.Name = "txtCaSManagementActivities";
             this.txtCaSManagementActivities.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1388,7 +1388,7 @@
             // txtCaSManagementAim
             // 
             this.txtCaSManagementAim.Location = new System.Drawing.Point(400, 72);
-            this.txtCaSManagementAim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCaSManagementAim.Margin = new System.Windows.Forms.Padding(4);
             this.txtCaSManagementAim.Multiline = true;
             this.txtCaSManagementAim.Name = "txtCaSManagementAim";
             this.txtCaSManagementAim.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1400,7 +1400,7 @@
             this.tbp_IssueManangement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbp_IssueManangement.Controls.Add(this.panel12);
             this.tbp_IssueManangement.Location = new System.Drawing.Point(4, 25);
-            this.tbp_IssueManangement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_IssueManangement.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_IssueManangement.Name = "tbp_IssueManangement";
             this.tbp_IssueManangement.Size = new System.Drawing.Size(1147, 571);
             this.tbp_IssueManangement.TabIndex = 5;
@@ -1414,7 +1414,7 @@
             this.panel12.Controls.Add(this.txtIssueManagementActivities);
             this.panel12.Controls.Add(this.txtIssueManagementAim);
             this.panel12.Location = new System.Drawing.Point(-2, 2);
-            this.panel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(1208, 575);
             this.panel12.TabIndex = 45;
@@ -1427,7 +1427,7 @@
             this.panel13.Controls.Add(this.btnIssueManagementTemplate);
             this.panel13.Controls.Add(this.pictureBox20);
             this.panel13.Location = new System.Drawing.Point(400, 2);
-            this.panel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel13.Margin = new System.Windows.Forms.Padding(4);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(745, 65);
             this.panel13.TabIndex = 46;
@@ -1437,7 +1437,7 @@
             this.pictureBox19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
             this.pictureBox19.Location = new System.Drawing.Point(180, 16);
-            this.pictureBox19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox19.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(40, 29);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1448,7 +1448,7 @@
             // 
             this.btnIssueManagementRegister.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnIssueManagementRegister.Location = new System.Drawing.Point(220, 16);
-            this.btnIssueManagementRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIssueManagementRegister.Margin = new System.Windows.Forms.Padding(4);
             this.btnIssueManagementRegister.Name = "btnIssueManagementRegister";
             this.btnIssueManagementRegister.Size = new System.Drawing.Size(94, 29);
             this.btnIssueManagementRegister.TabIndex = 41;
@@ -1460,7 +1460,7 @@
             // 
             this.btnIssueManagementTemplate.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnIssueManagementTemplate.Location = new System.Drawing.Point(58, 16);
-            this.btnIssueManagementTemplate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIssueManagementTemplate.Margin = new System.Windows.Forms.Padding(4);
             this.btnIssueManagementTemplate.Name = "btnIssueManagementTemplate";
             this.btnIssueManagementTemplate.Size = new System.Drawing.Size(94, 29);
             this.btnIssueManagementTemplate.TabIndex = 39;
@@ -1473,7 +1473,7 @@
             this.pictureBox20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
             this.pictureBox20.Location = new System.Drawing.Point(18, 16);
-            this.pictureBox20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox20.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(40, 29);
             this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1487,7 +1487,7 @@
             this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
             this.pictureBox21.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox21.InitialImage")));
             this.pictureBox21.Location = new System.Drawing.Point(4, 0);
-            this.pictureBox21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox21.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(392, 561);
             this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1497,7 +1497,7 @@
             // txtIssueManagementRole
             // 
             this.txtIssueManagementRole.Location = new System.Drawing.Point(400, 262);
-            this.txtIssueManagementRole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIssueManagementRole.Margin = new System.Windows.Forms.Padding(4);
             this.txtIssueManagementRole.Multiline = true;
             this.txtIssueManagementRole.Name = "txtIssueManagementRole";
             this.txtIssueManagementRole.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1507,7 +1507,7 @@
             // txtIssueManagementActivities
             // 
             this.txtIssueManagementActivities.Location = new System.Drawing.Point(769, 72);
-            this.txtIssueManagementActivities.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIssueManagementActivities.Margin = new System.Windows.Forms.Padding(4);
             this.txtIssueManagementActivities.Multiline = true;
             this.txtIssueManagementActivities.Name = "txtIssueManagementActivities";
             this.txtIssueManagementActivities.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1517,7 +1517,7 @@
             // txtIssueManagementAim
             // 
             this.txtIssueManagementAim.Location = new System.Drawing.Point(400, 72);
-            this.txtIssueManagementAim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIssueManagementAim.Margin = new System.Windows.Forms.Padding(4);
             this.txtIssueManagementAim.Multiline = true;
             this.txtIssueManagementAim.Name = "txtIssueManagementAim";
             this.txtIssueManagementAim.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1529,7 +1529,7 @@
             this.tbp_AcceptanceManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbp_AcceptanceManagement.Controls.Add(this.panel18);
             this.tbp_AcceptanceManagement.Location = new System.Drawing.Point(4, 25);
-            this.tbp_AcceptanceManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_AcceptanceManagement.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_AcceptanceManagement.Name = "tbp_AcceptanceManagement";
             this.tbp_AcceptanceManagement.Size = new System.Drawing.Size(1147, 571);
             this.tbp_AcceptanceManagement.TabIndex = 7;
@@ -1543,7 +1543,7 @@
             this.panel18.Controls.Add(this.txtAcceptanceManagementAvtivities);
             this.panel18.Controls.Add(this.txtAcceptanceManagementAim);
             this.panel18.Location = new System.Drawing.Point(-2, 2);
-            this.panel18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel18.Margin = new System.Windows.Forms.Padding(4);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(1208, 575);
             this.panel18.TabIndex = 47;
@@ -1556,7 +1556,7 @@
             this.panel19.Controls.Add(this.btnAcceptanceManagementTemplate);
             this.panel19.Controls.Add(this.pictureBox29);
             this.panel19.Location = new System.Drawing.Point(400, 2);
-            this.panel19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel19.Margin = new System.Windows.Forms.Padding(4);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(744, 65);
             this.panel19.TabIndex = 46;
@@ -1566,7 +1566,7 @@
             this.pictureBox28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox28.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox28.Image")));
             this.pictureBox28.Location = new System.Drawing.Point(180, 16);
-            this.pictureBox28.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox28.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.Size = new System.Drawing.Size(40, 29);
             this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1577,7 +1577,7 @@
             // 
             this.btnAcceptanceManagementRegister.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnAcceptanceManagementRegister.Location = new System.Drawing.Point(220, 16);
-            this.btnAcceptanceManagementRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAcceptanceManagementRegister.Margin = new System.Windows.Forms.Padding(4);
             this.btnAcceptanceManagementRegister.Name = "btnAcceptanceManagementRegister";
             this.btnAcceptanceManagementRegister.Size = new System.Drawing.Size(94, 29);
             this.btnAcceptanceManagementRegister.TabIndex = 41;
@@ -1589,7 +1589,7 @@
             // 
             this.btnAcceptanceManagementTemplate.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnAcceptanceManagementTemplate.Location = new System.Drawing.Point(58, 16);
-            this.btnAcceptanceManagementTemplate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAcceptanceManagementTemplate.Margin = new System.Windows.Forms.Padding(4);
             this.btnAcceptanceManagementTemplate.Name = "btnAcceptanceManagementTemplate";
             this.btnAcceptanceManagementTemplate.Size = new System.Drawing.Size(94, 29);
             this.btnAcceptanceManagementTemplate.TabIndex = 39;
@@ -1602,7 +1602,7 @@
             this.pictureBox29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox29.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox29.Image")));
             this.pictureBox29.Location = new System.Drawing.Point(18, 16);
-            this.pictureBox29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox29.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox29.Name = "pictureBox29";
             this.pictureBox29.Size = new System.Drawing.Size(40, 29);
             this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1616,7 +1616,7 @@
             this.pictureBox30.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox30.Image")));
             this.pictureBox30.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox30.InitialImage")));
             this.pictureBox30.Location = new System.Drawing.Point(4, 0);
-            this.pictureBox30.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox30.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox30.Name = "pictureBox30";
             this.pictureBox30.Size = new System.Drawing.Size(392, 561);
             this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1626,7 +1626,7 @@
             // txtAcceptanceManagementRole
             // 
             this.txtAcceptanceManagementRole.Location = new System.Drawing.Point(400, 262);
-            this.txtAcceptanceManagementRole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAcceptanceManagementRole.Margin = new System.Windows.Forms.Padding(4);
             this.txtAcceptanceManagementRole.Multiline = true;
             this.txtAcceptanceManagementRole.Name = "txtAcceptanceManagementRole";
             this.txtAcceptanceManagementRole.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1636,7 +1636,7 @@
             // txtAcceptanceManagementAvtivities
             // 
             this.txtAcceptanceManagementAvtivities.Location = new System.Drawing.Point(769, 72);
-            this.txtAcceptanceManagementAvtivities.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAcceptanceManagementAvtivities.Margin = new System.Windows.Forms.Padding(4);
             this.txtAcceptanceManagementAvtivities.Multiline = true;
             this.txtAcceptanceManagementAvtivities.Name = "txtAcceptanceManagementAvtivities";
             this.txtAcceptanceManagementAvtivities.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1646,7 +1646,7 @@
             // txtAcceptanceManagementAim
             // 
             this.txtAcceptanceManagementAim.Location = new System.Drawing.Point(400, 72);
-            this.txtAcceptanceManagementAim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAcceptanceManagementAim.Margin = new System.Windows.Forms.Padding(4);
             this.txtAcceptanceManagementAim.Multiline = true;
             this.txtAcceptanceManagementAim.Name = "txtAcceptanceManagementAim";
             this.txtAcceptanceManagementAim.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1658,7 +1658,7 @@
             this.tbp_ProcurementManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbp_ProcurementManagement.Controls.Add(this.panel16);
             this.tbp_ProcurementManagement.Location = new System.Drawing.Point(4, 25);
-            this.tbp_ProcurementManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_ProcurementManagement.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_ProcurementManagement.Name = "tbp_ProcurementManagement";
             this.tbp_ProcurementManagement.Size = new System.Drawing.Size(1147, 571);
             this.tbp_ProcurementManagement.TabIndex = 8;
@@ -1672,7 +1672,7 @@
             this.panel16.Controls.Add(this.txtProcurementManagementActivities);
             this.panel16.Controls.Add(this.txtProcurementManagementAim);
             this.panel16.Location = new System.Drawing.Point(-2, 1);
-            this.panel16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel16.Margin = new System.Windows.Forms.Padding(4);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(1208, 575);
             this.panel16.TabIndex = 47;
@@ -1685,7 +1685,7 @@
             this.panel17.Controls.Add(this.btnProcurementManagementTemplate);
             this.panel17.Controls.Add(this.pictureBox26);
             this.panel17.Location = new System.Drawing.Point(400, 2);
-            this.panel17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel17.Margin = new System.Windows.Forms.Padding(4);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(744, 65);
             this.panel17.TabIndex = 46;
@@ -1695,7 +1695,7 @@
             this.pictureBox25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox25.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox25.Image")));
             this.pictureBox25.Location = new System.Drawing.Point(180, 16);
-            this.pictureBox25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox25.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox25.Name = "pictureBox25";
             this.pictureBox25.Size = new System.Drawing.Size(40, 29);
             this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1706,7 +1706,7 @@
             // 
             this.btnProcurementManagementRegister.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnProcurementManagementRegister.Location = new System.Drawing.Point(220, 16);
-            this.btnProcurementManagementRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProcurementManagementRegister.Margin = new System.Windows.Forms.Padding(4);
             this.btnProcurementManagementRegister.Name = "btnProcurementManagementRegister";
             this.btnProcurementManagementRegister.Size = new System.Drawing.Size(94, 29);
             this.btnProcurementManagementRegister.TabIndex = 41;
@@ -1718,7 +1718,7 @@
             // 
             this.btnProcurementManagementTemplate.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnProcurementManagementTemplate.Location = new System.Drawing.Point(58, 16);
-            this.btnProcurementManagementTemplate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProcurementManagementTemplate.Margin = new System.Windows.Forms.Padding(4);
             this.btnProcurementManagementTemplate.Name = "btnProcurementManagementTemplate";
             this.btnProcurementManagementTemplate.Size = new System.Drawing.Size(94, 29);
             this.btnProcurementManagementTemplate.TabIndex = 39;
@@ -1731,7 +1731,7 @@
             this.pictureBox26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox26.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox26.Image")));
             this.pictureBox26.Location = new System.Drawing.Point(18, 16);
-            this.pictureBox26.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox26.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(40, 29);
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1745,7 +1745,7 @@
             this.pictureBox27.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox27.Image")));
             this.pictureBox27.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox27.InitialImage")));
             this.pictureBox27.Location = new System.Drawing.Point(4, 0);
-            this.pictureBox27.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox27.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox27.Name = "pictureBox27";
             this.pictureBox27.Size = new System.Drawing.Size(392, 561);
             this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1755,7 +1755,7 @@
             // txtProcurementManagementRole
             // 
             this.txtProcurementManagementRole.Location = new System.Drawing.Point(400, 262);
-            this.txtProcurementManagementRole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProcurementManagementRole.Margin = new System.Windows.Forms.Padding(4);
             this.txtProcurementManagementRole.Multiline = true;
             this.txtProcurementManagementRole.Name = "txtProcurementManagementRole";
             this.txtProcurementManagementRole.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1765,7 +1765,7 @@
             // txtProcurementManagementActivities
             // 
             this.txtProcurementManagementActivities.Location = new System.Drawing.Point(769, 72);
-            this.txtProcurementManagementActivities.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProcurementManagementActivities.Margin = new System.Windows.Forms.Padding(4);
             this.txtProcurementManagementActivities.Multiline = true;
             this.txtProcurementManagementActivities.Name = "txtProcurementManagementActivities";
             this.txtProcurementManagementActivities.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1775,7 +1775,7 @@
             // txtProcurementManagementAim
             // 
             this.txtProcurementManagementAim.Location = new System.Drawing.Point(400, 72);
-            this.txtProcurementManagementAim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProcurementManagementAim.Margin = new System.Windows.Forms.Padding(4);
             this.txtProcurementManagementAim.Multiline = true;
             this.txtProcurementManagementAim.Name = "txtProcurementManagementAim";
             this.txtProcurementManagementAim.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1787,7 +1787,7 @@
             this.tbp_TimeAllocation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbp_TimeAllocation.Controls.Add(this.panel20);
             this.tbp_TimeAllocation.Location = new System.Drawing.Point(4, 25);
-            this.tbp_TimeAllocation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_TimeAllocation.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_TimeAllocation.Name = "tbp_TimeAllocation";
             this.tbp_TimeAllocation.Size = new System.Drawing.Size(1147, 571);
             this.tbp_TimeAllocation.TabIndex = 9;
@@ -1802,7 +1802,7 @@
             this.panel20.Controls.Add(this.txtTimeManagementActivities);
             this.panel20.Controls.Add(this.txtTimeManagementAim);
             this.panel20.Location = new System.Drawing.Point(-2, 2);
-            this.panel20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel20.Margin = new System.Windows.Forms.Padding(4);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(1208, 575);
             this.panel20.TabIndex = 48;
@@ -1810,7 +1810,7 @@
             // txtTimeManagementProjectPlan
             // 
             this.txtTimeManagementProjectPlan.Location = new System.Drawing.Point(769, 414);
-            this.txtTimeManagementProjectPlan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTimeManagementProjectPlan.Margin = new System.Windows.Forms.Padding(4);
             this.txtTimeManagementProjectPlan.Multiline = true;
             this.txtTimeManagementProjectPlan.Name = "txtTimeManagementProjectPlan";
             this.txtTimeManagementProjectPlan.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1825,7 +1825,7 @@
             this.panel21.Controls.Add(this.btnTimeManagementTemplate);
             this.panel21.Controls.Add(this.pictureBox32);
             this.panel21.Location = new System.Drawing.Point(400, 2);
-            this.panel21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel21.Margin = new System.Windows.Forms.Padding(4);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(744, 65);
             this.panel21.TabIndex = 46;
@@ -1835,7 +1835,7 @@
             this.pictureBox31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox31.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox31.Image")));
             this.pictureBox31.Location = new System.Drawing.Point(180, 16);
-            this.pictureBox31.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox31.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox31.Name = "pictureBox31";
             this.pictureBox31.Size = new System.Drawing.Size(40, 29);
             this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1846,7 +1846,7 @@
             // 
             this.btnTimeManagementRegister.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnTimeManagementRegister.Location = new System.Drawing.Point(220, 16);
-            this.btnTimeManagementRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTimeManagementRegister.Margin = new System.Windows.Forms.Padding(4);
             this.btnTimeManagementRegister.Name = "btnTimeManagementRegister";
             this.btnTimeManagementRegister.Size = new System.Drawing.Size(94, 29);
             this.btnTimeManagementRegister.TabIndex = 41;
@@ -1858,7 +1858,7 @@
             // 
             this.btnTimeManagementTemplate.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnTimeManagementTemplate.Location = new System.Drawing.Point(58, 16);
-            this.btnTimeManagementTemplate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTimeManagementTemplate.Margin = new System.Windows.Forms.Padding(4);
             this.btnTimeManagementTemplate.Name = "btnTimeManagementTemplate";
             this.btnTimeManagementTemplate.Size = new System.Drawing.Size(94, 29);
             this.btnTimeManagementTemplate.TabIndex = 39;
@@ -1871,7 +1871,7 @@
             this.pictureBox32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox32.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox32.Image")));
             this.pictureBox32.Location = new System.Drawing.Point(18, 16);
-            this.pictureBox32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox32.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox32.Name = "pictureBox32";
             this.pictureBox32.Size = new System.Drawing.Size(40, 29);
             this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1885,7 +1885,7 @@
             this.pictureBox33.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox33.Image")));
             this.pictureBox33.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox33.InitialImage")));
             this.pictureBox33.Location = new System.Drawing.Point(4, 0);
-            this.pictureBox33.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox33.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox33.Name = "pictureBox33";
             this.pictureBox33.Size = new System.Drawing.Size(392, 561);
             this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1895,7 +1895,7 @@
             // txtTimeManagementRole
             // 
             this.txtTimeManagementRole.Location = new System.Drawing.Point(400, 262);
-            this.txtTimeManagementRole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTimeManagementRole.Margin = new System.Windows.Forms.Padding(4);
             this.txtTimeManagementRole.Multiline = true;
             this.txtTimeManagementRole.Name = "txtTimeManagementRole";
             this.txtTimeManagementRole.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1905,7 +1905,7 @@
             // txtTimeManagementActivities
             // 
             this.txtTimeManagementActivities.Location = new System.Drawing.Point(769, 72);
-            this.txtTimeManagementActivities.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTimeManagementActivities.Margin = new System.Windows.Forms.Padding(4);
             this.txtTimeManagementActivities.Multiline = true;
             this.txtTimeManagementActivities.Name = "txtTimeManagementActivities";
             this.txtTimeManagementActivities.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1915,7 +1915,7 @@
             // txtTimeManagementAim
             // 
             this.txtTimeManagementAim.Location = new System.Drawing.Point(400, 72);
-            this.txtTimeManagementAim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTimeManagementAim.Margin = new System.Windows.Forms.Padding(4);
             this.txtTimeManagementAim.Multiline = true;
             this.txtTimeManagementAim.Name = "txtTimeManagementAim";
             this.txtTimeManagementAim.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1927,7 +1927,7 @@
             this.tbp_ExceptionManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbp_ExceptionManagement.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.tbp_ExceptionManagement.Location = new System.Drawing.Point(4, 25);
-            this.tbp_ExceptionManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_ExceptionManagement.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_ExceptionManagement.Name = "tbp_ExceptionManagement";
             this.tbp_ExceptionManagement.Size = new System.Drawing.Size(1147, 571);
             this.tbp_ExceptionManagement.TabIndex = 10;
@@ -1938,9 +1938,9 @@
             this.tbp_RiskManangement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbp_RiskManangement.Controls.Add(this.panel5);
             this.tbp_RiskManangement.Location = new System.Drawing.Point(4, 25);
-            this.tbp_RiskManangement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_RiskManangement.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_RiskManangement.Name = "tbp_RiskManangement";
-            this.tbp_RiskManangement.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_RiskManangement.Padding = new System.Windows.Forms.Padding(4);
             this.tbp_RiskManangement.Size = new System.Drawing.Size(1147, 571);
             this.tbp_RiskManangement.TabIndex = 1;
             this.tbp_RiskManangement.Text = "RiskManangement";
@@ -1954,7 +1954,7 @@
             this.panel5.Controls.Add(this.txtRiskManangementActivities);
             this.panel5.Controls.Add(this.txtRiskManangementAim);
             this.panel5.Location = new System.Drawing.Point(-1, 4);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1208, 575);
             this.panel5.TabIndex = 41;
@@ -1967,7 +1967,7 @@
             this.panel4.Controls.Add(this.btnRiskManagementTemplate);
             this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Location = new System.Drawing.Point(400, 2);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(744, 65);
             this.panel4.TabIndex = 46;
@@ -1977,7 +1977,7 @@
             this.pictureBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
             this.pictureBox10.Location = new System.Drawing.Point(180, 16);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(40, 29);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1988,7 +1988,7 @@
             // 
             this.btnRiskManagementRegister.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnRiskManagementRegister.Location = new System.Drawing.Point(220, 16);
-            this.btnRiskManagementRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRiskManagementRegister.Margin = new System.Windows.Forms.Padding(4);
             this.btnRiskManagementRegister.Name = "btnRiskManagementRegister";
             this.btnRiskManagementRegister.Size = new System.Drawing.Size(94, 29);
             this.btnRiskManagementRegister.TabIndex = 41;
@@ -2000,7 +2000,7 @@
             // 
             this.btnRiskManagementTemplate.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnRiskManagementTemplate.Location = new System.Drawing.Point(58, 16);
-            this.btnRiskManagementTemplate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRiskManagementTemplate.Margin = new System.Windows.Forms.Padding(4);
             this.btnRiskManagementTemplate.Name = "btnRiskManagementTemplate";
             this.btnRiskManagementTemplate.Size = new System.Drawing.Size(94, 29);
             this.btnRiskManagementTemplate.TabIndex = 39;
@@ -2013,7 +2013,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(18, 16);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 29);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2023,7 +2023,7 @@
             // txtRiskManagementUpdateProjectPlan
             // 
             this.txtRiskManagementUpdateProjectPlan.Location = new System.Drawing.Point(769, 414);
-            this.txtRiskManagementUpdateProjectPlan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRiskManagementUpdateProjectPlan.Margin = new System.Windows.Forms.Padding(4);
             this.txtRiskManagementUpdateProjectPlan.Multiline = true;
             this.txtRiskManagementUpdateProjectPlan.Name = "txtRiskManagementUpdateProjectPlan";
             this.txtRiskManagementUpdateProjectPlan.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -2037,7 +2037,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(4, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(392, 561);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2047,7 +2047,7 @@
             // btnRiskManagementRoles
             // 
             this.btnRiskManagementRoles.Location = new System.Drawing.Point(400, 262);
-            this.btnRiskManagementRoles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRiskManagementRoles.Margin = new System.Windows.Forms.Padding(4);
             this.btnRiskManagementRoles.Multiline = true;
             this.btnRiskManagementRoles.Name = "btnRiskManagementRoles";
             this.btnRiskManagementRoles.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -2057,7 +2057,7 @@
             // txtRiskManangementActivities
             // 
             this.txtRiskManangementActivities.Location = new System.Drawing.Point(769, 72);
-            this.txtRiskManangementActivities.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRiskManangementActivities.Margin = new System.Windows.Forms.Padding(4);
             this.txtRiskManangementActivities.Multiline = true;
             this.txtRiskManangementActivities.Name = "txtRiskManangementActivities";
             this.txtRiskManangementActivities.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -2067,7 +2067,7 @@
             // txtRiskManangementAim
             // 
             this.txtRiskManangementAim.Location = new System.Drawing.Point(401, 72);
-            this.txtRiskManangementAim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRiskManangementAim.Margin = new System.Windows.Forms.Padding(4);
             this.txtRiskManangementAim.Multiline = true;
             this.txtRiskManangementAim.Name = "txtRiskManangementAim";
             this.txtRiskManangementAim.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -2079,7 +2079,7 @@
             this.tbp_QualityManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbp_QualityManagement.Controls.Add(this.panel14);
             this.tbp_QualityManagement.Location = new System.Drawing.Point(4, 25);
-            this.tbp_QualityManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_QualityManagement.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_QualityManagement.Name = "tbp_QualityManagement";
             this.tbp_QualityManagement.Size = new System.Drawing.Size(1147, 571);
             this.tbp_QualityManagement.TabIndex = 6;
@@ -2093,7 +2093,7 @@
             this.panel14.Controls.Add(this.txtQualityManagementActivities);
             this.panel14.Controls.Add(this.txtQualityManagementAim);
             this.panel14.Location = new System.Drawing.Point(-2, 2);
-            this.panel14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel14.Margin = new System.Windows.Forms.Padding(4);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(1208, 575);
             this.panel14.TabIndex = 46;
@@ -2106,7 +2106,7 @@
             this.panel15.Controls.Add(this.btnQualityManagementTemplate);
             this.panel15.Controls.Add(this.pictureBox23);
             this.panel15.Location = new System.Drawing.Point(400, 2);
-            this.panel15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel15.Margin = new System.Windows.Forms.Padding(4);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(744, 65);
             this.panel15.TabIndex = 46;
@@ -2116,7 +2116,7 @@
             this.pictureBox22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
             this.pictureBox22.Location = new System.Drawing.Point(180, 16);
-            this.pictureBox22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox22.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(40, 29);
             this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2127,7 +2127,7 @@
             // 
             this.btnQualityManagementRegister.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnQualityManagementRegister.Location = new System.Drawing.Point(220, 16);
-            this.btnQualityManagementRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnQualityManagementRegister.Margin = new System.Windows.Forms.Padding(4);
             this.btnQualityManagementRegister.Name = "btnQualityManagementRegister";
             this.btnQualityManagementRegister.Size = new System.Drawing.Size(94, 29);
             this.btnQualityManagementRegister.TabIndex = 41;
@@ -2139,7 +2139,7 @@
             // 
             this.btnQualityManagementTemplate.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnQualityManagementTemplate.Location = new System.Drawing.Point(58, 16);
-            this.btnQualityManagementTemplate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnQualityManagementTemplate.Margin = new System.Windows.Forms.Padding(4);
             this.btnQualityManagementTemplate.Name = "btnQualityManagementTemplate";
             this.btnQualityManagementTemplate.Size = new System.Drawing.Size(94, 29);
             this.btnQualityManagementTemplate.TabIndex = 39;
@@ -2152,7 +2152,7 @@
             this.pictureBox23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
             this.pictureBox23.Location = new System.Drawing.Point(18, 16);
-            this.pictureBox23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox23.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(40, 29);
             this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2166,7 +2166,7 @@
             this.pictureBox24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox24.Image")));
             this.pictureBox24.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox24.InitialImage")));
             this.pictureBox24.Location = new System.Drawing.Point(4, 0);
-            this.pictureBox24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox24.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(392, 561);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2176,7 +2176,7 @@
             // txtQualityManagementRole
             // 
             this.txtQualityManagementRole.Location = new System.Drawing.Point(400, 262);
-            this.txtQualityManagementRole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtQualityManagementRole.Margin = new System.Windows.Forms.Padding(4);
             this.txtQualityManagementRole.Multiline = true;
             this.txtQualityManagementRole.Name = "txtQualityManagementRole";
             this.txtQualityManagementRole.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -2186,7 +2186,7 @@
             // txtQualityManagementActivities
             // 
             this.txtQualityManagementActivities.Location = new System.Drawing.Point(769, 72);
-            this.txtQualityManagementActivities.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtQualityManagementActivities.Margin = new System.Windows.Forms.Padding(4);
             this.txtQualityManagementActivities.Multiline = true;
             this.txtQualityManagementActivities.Name = "txtQualityManagementActivities";
             this.txtQualityManagementActivities.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -2196,7 +2196,7 @@
             // txtQualityManagementAim
             // 
             this.txtQualityManagementAim.Location = new System.Drawing.Point(400, 72);
-            this.txtQualityManagementAim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtQualityManagementAim.Margin = new System.Windows.Forms.Padding(4);
             this.txtQualityManagementAim.Multiline = true;
             this.txtQualityManagementAim.Name = "txtQualityManagementAim";
             this.txtQualityManagementAim.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -2206,7 +2206,7 @@
             // btnRiskManagement
             // 
             this.btnRiskManagement.Location = new System.Drawing.Point(220, 74);
-            this.btnRiskManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRiskManagement.Margin = new System.Windows.Forms.Padding(4);
             this.btnRiskManagement.Name = "btnRiskManagement";
             this.btnRiskManagement.Size = new System.Drawing.Size(205, 29);
             this.btnRiskManagement.TabIndex = 29;
@@ -2229,7 +2229,7 @@
             // btnCostAndExpenseManagement
             // 
             this.btnCostAndExpenseManagement.Location = new System.Drawing.Point(432, 74);
-            this.btnCostAndExpenseManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCostAndExpenseManagement.Margin = new System.Windows.Forms.Padding(4);
             this.btnCostAndExpenseManagement.Name = "btnCostAndExpenseManagement";
             this.btnCostAndExpenseManagement.Size = new System.Drawing.Size(205, 29);
             this.btnCostAndExpenseManagement.TabIndex = 27;
@@ -2240,7 +2240,7 @@
             // btnChnageManagement
             // 
             this.btnChnageManagement.Location = new System.Drawing.Point(645, 74);
-            this.btnChnageManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChnageManagement.Margin = new System.Windows.Forms.Padding(4);
             this.btnChnageManagement.Name = "btnChnageManagement";
             this.btnChnageManagement.Size = new System.Drawing.Size(205, 29);
             this.btnChnageManagement.TabIndex = 26;
@@ -2251,7 +2251,7 @@
             // btnCommunicationAndStakeholderManagement
             // 
             this.btnCommunicationAndStakeholderManagement.Location = new System.Drawing.Point(858, 74);
-            this.btnCommunicationAndStakeholderManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCommunicationAndStakeholderManagement.Margin = new System.Windows.Forms.Padding(4);
             this.btnCommunicationAndStakeholderManagement.Name = "btnCommunicationAndStakeholderManagement";
             this.btnCommunicationAndStakeholderManagement.Size = new System.Drawing.Size(305, 29);
             this.btnCommunicationAndStakeholderManagement.TabIndex = 25;
@@ -2262,7 +2262,7 @@
             // btnGovernanceProcess
             // 
             this.btnGovernanceProcess.Location = new System.Drawing.Point(8, 74);
-            this.btnGovernanceProcess.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGovernanceProcess.Margin = new System.Windows.Forms.Padding(4);
             this.btnGovernanceProcess.Name = "btnGovernanceProcess";
             this.btnGovernanceProcess.Size = new System.Drawing.Size(205, 29);
             this.btnGovernanceProcess.TabIndex = 23;
@@ -2276,7 +2276,7 @@
             this.btnObjectives.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnObjectives.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnObjectives.Location = new System.Drawing.Point(786, 18);
-            this.btnObjectives.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnObjectives.Margin = new System.Windows.Forms.Padding(4);
             this.btnObjectives.Name = "btnObjectives";
             this.btnObjectives.Size = new System.Drawing.Size(94, 29);
             this.btnObjectives.TabIndex = 22;
@@ -2288,7 +2288,7 @@
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(748, 18);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(40, 29);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2301,7 +2301,7 @@
             this.btnLeadRole.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLeadRole.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnLeadRole.Location = new System.Drawing.Point(925, 18);
-            this.btnLeadRole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLeadRole.Margin = new System.Windows.Forms.Padding(4);
             this.btnLeadRole.Name = "btnLeadRole";
             this.btnLeadRole.Size = new System.Drawing.Size(94, 29);
             this.btnLeadRole.TabIndex = 20;
@@ -2313,7 +2313,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(885, 18);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(40, 29);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2326,7 +2326,7 @@
             this.btnPARICS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPARICS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPARICS.Location = new System.Drawing.Point(1061, 18);
-            this.btnPARICS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPARICS.Margin = new System.Windows.Forms.Padding(4);
             this.btnPARICS.Name = "btnPARICS";
             this.btnPARICS.Size = new System.Drawing.Size(94, 29);
             this.btnPARICS.TabIndex = 18;
@@ -2338,7 +2338,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(1024, 18);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(40, 29);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2351,7 +2351,7 @@
             this.btnAccountable.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAccountable.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAccountable.Location = new System.Drawing.Point(650, 18);
-            this.btnAccountable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAccountable.Margin = new System.Windows.Forms.Padding(4);
             this.btnAccountable.Name = "btnAccountable";
             this.btnAccountable.Size = new System.Drawing.Size(94, 29);
             this.btnAccountable.TabIndex = 16;
@@ -2363,7 +2363,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(615, 18);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(38, 29);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2375,7 +2375,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox3.Location = new System.Drawing.Point(8, 9);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(1154, 43);
             this.pictureBox3.TabIndex = 14;
@@ -2385,7 +2385,7 @@
             // 
             this.tbp_Projects.Controls.Add(this.dataGridProjects);
             this.tbp_Projects.Location = new System.Drawing.Point(4, 25);
-            this.tbp_Projects.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_Projects.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_Projects.Name = "tbp_Projects";
             this.tbp_Projects.Size = new System.Drawing.Size(1346, 783);
             this.tbp_Projects.TabIndex = 2;
@@ -2396,7 +2396,7 @@
             // 
             this.dataGridProjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridProjects.Location = new System.Drawing.Point(4, 4);
-            this.dataGridProjects.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridProjects.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridProjects.Name = "dataGridProjects";
             this.dataGridProjects.RowHeadersWidth = 51;
             this.dataGridProjects.Size = new System.Drawing.Size(1134, 558);
@@ -2406,7 +2406,7 @@
             // 
             this.tbp_PGMO.Controls.Add(this.flowLayoutPanel3);
             this.tbp_PGMO.Location = new System.Drawing.Point(4, 25);
-            this.tbp_PGMO.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_PGMO.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_PGMO.Name = "tbp_PGMO";
             this.tbp_PGMO.Size = new System.Drawing.Size(1346, 783);
             this.tbp_PGMO.TabIndex = 3;
@@ -2420,7 +2420,7 @@
             this.flowLayoutPanel3.AutoScrollMinSize = new System.Drawing.Size(2, 2);
             this.flowLayoutPanel3.Controls.Add(this.pictureBox67);
             this.flowLayoutPanel3.Location = new System.Drawing.Point(-2, 0);
-            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(1196, 612);
             this.flowLayoutPanel3.TabIndex = 2;
@@ -2429,7 +2429,7 @@
             // 
             this.pictureBox67.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox67.Image")));
             this.pictureBox67.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox67.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox67.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox67.Name = "pictureBox67";
             this.pictureBox67.Size = new System.Drawing.Size(1479, 595);
             this.pictureBox67.TabIndex = 0;
@@ -2439,7 +2439,7 @@
             // 
             this.tbp_Execution_Methodology.Controls.Add(this.flowLayoutPanel4);
             this.tbp_Execution_Methodology.Location = new System.Drawing.Point(4, 25);
-            this.tbp_Execution_Methodology.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_Execution_Methodology.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_Execution_Methodology.Name = "tbp_Execution_Methodology";
             this.tbp_Execution_Methodology.Size = new System.Drawing.Size(1346, 783);
             this.tbp_Execution_Methodology.TabIndex = 4;
@@ -2453,7 +2453,7 @@
             this.flowLayoutPanel4.AutoScrollMinSize = new System.Drawing.Size(2, 2);
             this.flowLayoutPanel4.Controls.Add(this.pictureBox68);
             this.flowLayoutPanel4.Location = new System.Drawing.Point(-5, 0);
-            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
             this.flowLayoutPanel4.Size = new System.Drawing.Size(1199, 591);
             this.flowLayoutPanel4.TabIndex = 3;
@@ -2462,7 +2462,7 @@
             // 
             this.pictureBox68.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox68.Image")));
             this.pictureBox68.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox68.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox68.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox68.Name = "pictureBox68";
             this.pictureBox68.Size = new System.Drawing.Size(1444, 579);
             this.pictureBox68.TabIndex = 1;
@@ -2473,7 +2473,7 @@
             this.tbp_PLSMs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbp_PLSMs.Controls.Add(this.flowLayoutPanel2);
             this.tbp_PLSMs.Location = new System.Drawing.Point(4, 25);
-            this.tbp_PLSMs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_PLSMs.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_PLSMs.Name = "tbp_PLSMs";
             this.tbp_PLSMs.Size = new System.Drawing.Size(1346, 783);
             this.tbp_PLSMs.TabIndex = 5;
@@ -2486,7 +2486,7 @@
             this.flowLayoutPanel2.AutoScrollMinSize = new System.Drawing.Size(2, 2);
             this.flowLayoutPanel2.Controls.Add(this.tbcPLSMsSubProcesses);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(1340, 786);
             this.flowLayoutPanel2.TabIndex = 1;
@@ -2499,7 +2499,7 @@
             this.tbcPLSMsSubProcesses.Controls.Add(this.tbpCommunityProject);
             this.tbcPLSMsSubProcesses.Controls.Add(this.tbpProcessGroupingGovernance);
             this.tbcPLSMsSubProcesses.Location = new System.Drawing.Point(4, 4);
-            this.tbcPLSMsSubProcesses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbcPLSMsSubProcesses.Margin = new System.Windows.Forms.Padding(4);
             this.tbcPLSMsSubProcesses.Name = "tbcPLSMsSubProcesses";
             this.tbcPLSMsSubProcesses.SelectedIndex = 0;
             this.tbcPLSMsSubProcesses.Size = new System.Drawing.Size(1322, 738);
@@ -2534,9 +2534,9 @@
             this.tbpReferencePLSM.Controls.Add(this.panel62);
             this.tbpReferencePLSM.Controls.Add(this.panel63);
             this.tbpReferencePLSM.Location = new System.Drawing.Point(4, 25);
-            this.tbpReferencePLSM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpReferencePLSM.Margin = new System.Windows.Forms.Padding(4);
             this.tbpReferencePLSM.Name = "tbpReferencePLSM";
-            this.tbpReferencePLSM.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpReferencePLSM.Padding = new System.Windows.Forms.Padding(4);
             this.tbpReferencePLSM.Size = new System.Drawing.Size(1314, 709);
             this.tbpReferencePLSM.TabIndex = 0;
             this.tbpReferencePLSM.Text = "Reference PLSM";
@@ -2552,7 +2552,7 @@
             this.panel25.Controls.Add(this.pnlCloseOut);
             this.panel25.Controls.Add(this.btnWorkPakagesCloseOut);
             this.panel25.Location = new System.Drawing.Point(1109, 148);
-            this.panel25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel25.Margin = new System.Windows.Forms.Padding(4);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(209, 135);
             this.panel25.TabIndex = 75;
@@ -2560,7 +2560,7 @@
             // btnWorkStreamsEvaluate
             // 
             this.btnWorkStreamsEvaluate.Location = new System.Drawing.Point(106, 55);
-            this.btnWorkStreamsEvaluate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkStreamsEvaluate.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkStreamsEvaluate.Name = "btnWorkStreamsEvaluate";
             this.btnWorkStreamsEvaluate.Size = new System.Drawing.Size(94, 42);
             this.btnWorkStreamsEvaluate.TabIndex = 4;
@@ -2570,7 +2570,7 @@
             // btnWorkPakagesEvaluate
             // 
             this.btnWorkPakagesEvaluate.Location = new System.Drawing.Point(106, 8);
-            this.btnWorkPakagesEvaluate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkPakagesEvaluate.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkPakagesEvaluate.Name = "btnWorkPakagesEvaluate";
             this.btnWorkPakagesEvaluate.Size = new System.Drawing.Size(94, 42);
             this.btnWorkPakagesEvaluate.TabIndex = 3;
@@ -2581,7 +2581,7 @@
             // 
             this.pnlEvaluate.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlEvaluate.Location = new System.Drawing.Point(109, 102);
-            this.pnlEvaluate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlEvaluate.Margin = new System.Windows.Forms.Padding(4);
             this.pnlEvaluate.Name = "pnlEvaluate";
             this.pnlEvaluate.Size = new System.Drawing.Size(90, 24);
             this.pnlEvaluate.TabIndex = 1;
@@ -2589,7 +2589,7 @@
             // btnWorkStreamsCloseOut
             // 
             this.btnWorkStreamsCloseOut.Location = new System.Drawing.Point(9, 55);
-            this.btnWorkStreamsCloseOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkStreamsCloseOut.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkStreamsCloseOut.Name = "btnWorkStreamsCloseOut";
             this.btnWorkStreamsCloseOut.Size = new System.Drawing.Size(94, 42);
             this.btnWorkStreamsCloseOut.TabIndex = 2;
@@ -2600,7 +2600,7 @@
             // 
             this.pnlCloseOut.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlCloseOut.Location = new System.Drawing.Point(10, 102);
-            this.pnlCloseOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlCloseOut.Margin = new System.Windows.Forms.Padding(4);
             this.pnlCloseOut.Name = "pnlCloseOut";
             this.pnlCloseOut.Size = new System.Drawing.Size(90, 24);
             this.pnlCloseOut.TabIndex = 0;
@@ -2608,7 +2608,7 @@
             // btnWorkPakagesCloseOut
             // 
             this.btnWorkPakagesCloseOut.Location = new System.Drawing.Point(9, 8);
-            this.btnWorkPakagesCloseOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkPakagesCloseOut.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkPakagesCloseOut.Name = "btnWorkPakagesCloseOut";
             this.btnWorkPakagesCloseOut.Size = new System.Drawing.Size(94, 42);
             this.btnWorkPakagesCloseOut.TabIndex = 0;
@@ -2626,7 +2626,7 @@
             this.panel26.Controls.Add(this.pnlImplementation);
             this.panel26.Controls.Add(this.btnWorkPakagesImplementation);
             this.panel26.Location = new System.Drawing.Point(891, 148);
-            this.panel26.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel26.Margin = new System.Windows.Forms.Padding(4);
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(209, 135);
             this.panel26.TabIndex = 74;
@@ -2634,7 +2634,7 @@
             // btnWorkStreamsTransfer
             // 
             this.btnWorkStreamsTransfer.Location = new System.Drawing.Point(106, 55);
-            this.btnWorkStreamsTransfer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkStreamsTransfer.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkStreamsTransfer.Name = "btnWorkStreamsTransfer";
             this.btnWorkStreamsTransfer.Size = new System.Drawing.Size(94, 42);
             this.btnWorkStreamsTransfer.TabIndex = 4;
@@ -2644,7 +2644,7 @@
             // btnWorkPakagesTransfer
             // 
             this.btnWorkPakagesTransfer.Location = new System.Drawing.Point(106, 8);
-            this.btnWorkPakagesTransfer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkPakagesTransfer.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkPakagesTransfer.Name = "btnWorkPakagesTransfer";
             this.btnWorkPakagesTransfer.Size = new System.Drawing.Size(94, 42);
             this.btnWorkPakagesTransfer.TabIndex = 3;
@@ -2655,7 +2655,7 @@
             // 
             this.pnlTransfer.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlTransfer.Location = new System.Drawing.Point(109, 102);
-            this.pnlTransfer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlTransfer.Margin = new System.Windows.Forms.Padding(4);
             this.pnlTransfer.Name = "pnlTransfer";
             this.pnlTransfer.Size = new System.Drawing.Size(90, 24);
             this.pnlTransfer.TabIndex = 1;
@@ -2663,7 +2663,7 @@
             // btnWorkStreamsImplementation
             // 
             this.btnWorkStreamsImplementation.Location = new System.Drawing.Point(9, 55);
-            this.btnWorkStreamsImplementation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkStreamsImplementation.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkStreamsImplementation.Name = "btnWorkStreamsImplementation";
             this.btnWorkStreamsImplementation.Size = new System.Drawing.Size(94, 42);
             this.btnWorkStreamsImplementation.TabIndex = 2;
@@ -2674,7 +2674,7 @@
             // 
             this.pnlImplementation.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlImplementation.Location = new System.Drawing.Point(10, 102);
-            this.pnlImplementation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlImplementation.Margin = new System.Windows.Forms.Padding(4);
             this.pnlImplementation.Name = "pnlImplementation";
             this.pnlImplementation.Size = new System.Drawing.Size(90, 24);
             this.pnlImplementation.TabIndex = 0;
@@ -2682,7 +2682,7 @@
             // btnWorkPakagesImplementation
             // 
             this.btnWorkPakagesImplementation.Location = new System.Drawing.Point(9, 8);
-            this.btnWorkPakagesImplementation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkPakagesImplementation.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkPakagesImplementation.Name = "btnWorkPakagesImplementation";
             this.btnWorkPakagesImplementation.Size = new System.Drawing.Size(94, 42);
             this.btnWorkPakagesImplementation.TabIndex = 0;
@@ -2700,7 +2700,7 @@
             this.panel27.Controls.Add(this.pnlFeasibility);
             this.panel27.Controls.Add(this.btnWorkPakagesFeasibility);
             this.panel27.Location = new System.Drawing.Point(342, 150);
-            this.panel27.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel27.Margin = new System.Windows.Forms.Padding(4);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(209, 135);
             this.panel27.TabIndex = 6;
@@ -2708,7 +2708,7 @@
             // btnWorkStreamsBusinessPlan
             // 
             this.btnWorkStreamsBusinessPlan.Location = new System.Drawing.Point(106, 55);
-            this.btnWorkStreamsBusinessPlan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkStreamsBusinessPlan.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkStreamsBusinessPlan.Name = "btnWorkStreamsBusinessPlan";
             this.btnWorkStreamsBusinessPlan.Size = new System.Drawing.Size(94, 42);
             this.btnWorkStreamsBusinessPlan.TabIndex = 4;
@@ -2718,7 +2718,7 @@
             // btnWorkPakagesBusinessPlan
             // 
             this.btnWorkPakagesBusinessPlan.Location = new System.Drawing.Point(106, 8);
-            this.btnWorkPakagesBusinessPlan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkPakagesBusinessPlan.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkPakagesBusinessPlan.Name = "btnWorkPakagesBusinessPlan";
             this.btnWorkPakagesBusinessPlan.Size = new System.Drawing.Size(94, 42);
             this.btnWorkPakagesBusinessPlan.TabIndex = 3;
@@ -2729,7 +2729,7 @@
             // 
             this.pnlBusinessPlan.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlBusinessPlan.Location = new System.Drawing.Point(109, 102);
-            this.pnlBusinessPlan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlBusinessPlan.Margin = new System.Windows.Forms.Padding(4);
             this.pnlBusinessPlan.Name = "pnlBusinessPlan";
             this.pnlBusinessPlan.Size = new System.Drawing.Size(90, 24);
             this.pnlBusinessPlan.TabIndex = 1;
@@ -2737,7 +2737,7 @@
             // btnWorkStreamsFeasibility
             // 
             this.btnWorkStreamsFeasibility.Location = new System.Drawing.Point(9, 55);
-            this.btnWorkStreamsFeasibility.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkStreamsFeasibility.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkStreamsFeasibility.Name = "btnWorkStreamsFeasibility";
             this.btnWorkStreamsFeasibility.Size = new System.Drawing.Size(94, 42);
             this.btnWorkStreamsFeasibility.TabIndex = 2;
@@ -2748,7 +2748,7 @@
             // 
             this.pnlFeasibility.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlFeasibility.Location = new System.Drawing.Point(10, 102);
-            this.pnlFeasibility.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlFeasibility.Margin = new System.Windows.Forms.Padding(4);
             this.pnlFeasibility.Name = "pnlFeasibility";
             this.pnlFeasibility.Size = new System.Drawing.Size(90, 24);
             this.pnlFeasibility.TabIndex = 0;
@@ -2756,7 +2756,7 @@
             // btnWorkPakagesFeasibility
             // 
             this.btnWorkPakagesFeasibility.Location = new System.Drawing.Point(9, 8);
-            this.btnWorkPakagesFeasibility.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkPakagesFeasibility.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkPakagesFeasibility.Name = "btnWorkPakagesFeasibility";
             this.btnWorkPakagesFeasibility.Size = new System.Drawing.Size(94, 42);
             this.btnWorkPakagesFeasibility.TabIndex = 0;
@@ -2769,7 +2769,7 @@
             this.panel58.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel58.Controls.Add(this.panel61);
             this.panel58.Location = new System.Drawing.Point(8, 579);
-            this.panel58.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel58.Margin = new System.Windows.Forms.Padding(4);
             this.panel58.Name = "panel58";
             this.panel58.Size = new System.Drawing.Size(109, 40);
             this.panel58.TabIndex = 11;
@@ -2780,7 +2780,7 @@
             this.panel61.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel61.BackgroundImage")));
             this.panel61.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel61.Location = new System.Drawing.Point(4, 626);
-            this.panel61.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel61.Margin = new System.Windows.Forms.Padding(4);
             this.panel61.Name = "panel61";
             this.panel61.Size = new System.Drawing.Size(98, 55);
             this.panel61.TabIndex = 7;
@@ -2792,7 +2792,7 @@
             this.panel39.Controls.Add(this.panel40);
             this.panel39.Controls.Add(this.panel56);
             this.panel39.Location = new System.Drawing.Point(8, 628);
-            this.panel39.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel39.Margin = new System.Windows.Forms.Padding(4);
             this.panel39.Name = "panel39";
             this.panel39.Size = new System.Drawing.Size(109, 69);
             this.panel39.TabIndex = 10;
@@ -2803,7 +2803,7 @@
             this.panel40.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel40.BackgroundImage")));
             this.panel40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel40.Location = new System.Drawing.Point(4, 626);
-            this.panel40.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel40.Margin = new System.Windows.Forms.Padding(4);
             this.panel40.Name = "panel40";
             this.panel40.Size = new System.Drawing.Size(98, 55);
             this.panel40.TabIndex = 7;
@@ -2814,7 +2814,7 @@
             this.panel56.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel56.BackgroundImage")));
             this.panel56.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel56.Location = new System.Drawing.Point(5, 6);
-            this.panel56.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel56.Margin = new System.Windows.Forms.Padding(4);
             this.panel56.Name = "panel56";
             this.panel56.Size = new System.Drawing.Size(98, 55);
             this.panel56.TabIndex = 6;
@@ -2826,7 +2826,7 @@
             this.panel36.Controls.Add(this.panel37);
             this.panel36.Controls.Add(this.panel38);
             this.panel36.Location = new System.Drawing.Point(8, 496);
-            this.panel36.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel36.Margin = new System.Windows.Forms.Padding(4);
             this.panel36.Name = "panel36";
             this.panel36.Size = new System.Drawing.Size(109, 74);
             this.panel36.TabIndex = 73;
@@ -2837,7 +2837,7 @@
             this.panel37.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel37.BackgroundImage")));
             this.panel37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel37.Location = new System.Drawing.Point(4, 626);
-            this.panel37.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel37.Margin = new System.Windows.Forms.Padding(4);
             this.panel37.Name = "panel37";
             this.panel37.Size = new System.Drawing.Size(98, 55);
             this.panel37.TabIndex = 7;
@@ -2849,7 +2849,7 @@
             this.panel38.Controls.Add(this.label33);
             this.panel38.Controls.Add(this.label34);
             this.panel38.Location = new System.Drawing.Point(5, 6);
-            this.panel38.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel38.Margin = new System.Windows.Forms.Padding(4);
             this.panel38.Name = "panel38";
             this.panel38.Size = new System.Drawing.Size(98, 60);
             this.panel38.TabIndex = 6;
@@ -2894,7 +2894,7 @@
             this.panel54.Controls.Add(this.panel55);
             this.panel54.Controls.Add(this.panel59);
             this.panel54.Location = new System.Drawing.Point(8, 291);
-            this.panel54.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel54.Margin = new System.Windows.Forms.Padding(4);
             this.panel54.Name = "panel54";
             this.panel54.Size = new System.Drawing.Size(109, 196);
             this.panel54.TabIndex = 9;
@@ -2905,7 +2905,7 @@
             this.panel55.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel55.BackgroundImage")));
             this.panel55.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel55.Location = new System.Drawing.Point(4, 626);
-            this.panel55.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel55.Margin = new System.Windows.Forms.Padding(4);
             this.panel55.Name = "panel55";
             this.panel55.Size = new System.Drawing.Size(98, 55);
             this.panel55.TabIndex = 7;
@@ -2917,7 +2917,7 @@
             this.panel59.Controls.Add(this.label36);
             this.panel59.Controls.Add(this.label37);
             this.panel59.Location = new System.Drawing.Point(4, 12);
-            this.panel59.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel59.Margin = new System.Windows.Forms.Padding(4);
             this.panel59.Name = "panel59";
             this.panel59.Size = new System.Drawing.Size(98, 170);
             this.panel59.TabIndex = 6;
@@ -2963,7 +2963,7 @@
             this.panel52.Controls.Add(this.panel57);
             this.panel52.Controls.Add(this.panel60);
             this.panel52.Location = new System.Drawing.Point(8, 150);
-            this.panel52.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel52.Margin = new System.Windows.Forms.Padding(4);
             this.panel52.Name = "panel52";
             this.panel52.Size = new System.Drawing.Size(109, 133);
             this.panel52.TabIndex = 8;
@@ -2974,7 +2974,7 @@
             this.panel53.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel53.BackgroundImage")));
             this.panel53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel53.Location = new System.Drawing.Point(4, 626);
-            this.panel53.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel53.Margin = new System.Windows.Forms.Padding(4);
             this.panel53.Name = "panel53";
             this.panel53.Size = new System.Drawing.Size(98, 55);
             this.panel53.TabIndex = 7;
@@ -2985,7 +2985,7 @@
             this.panel57.Controls.Add(this.label38);
             this.panel57.Controls.Add(this.label39);
             this.panel57.Location = new System.Drawing.Point(4, 5);
-            this.panel57.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel57.Margin = new System.Windows.Forms.Padding(4);
             this.panel57.Name = "panel57";
             this.panel57.Size = new System.Drawing.Size(98, 90);
             this.panel57.TabIndex = 5;
@@ -3016,7 +3016,7 @@
             // 
             this.panel60.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel60.Location = new System.Drawing.Point(4, 100);
-            this.panel60.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel60.Margin = new System.Windows.Forms.Padding(4);
             this.panel60.Name = "panel60";
             this.panel60.Size = new System.Drawing.Size(98, 24);
             this.panel60.TabIndex = 5;
@@ -3033,7 +3033,7 @@
             this.panel42.Controls.Add(this.button5);
             this.panel42.Controls.Add(this.btnCloseOut2);
             this.panel42.Location = new System.Drawing.Point(1109, 6);
-            this.panel42.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel42.Margin = new System.Windows.Forms.Padding(4);
             this.panel42.Name = "panel42";
             this.panel42.Size = new System.Drawing.Size(209, 135);
             this.panel42.TabIndex = 71;
@@ -3042,7 +3042,7 @@
             // 
             this.pnlObjectiveEvaluate.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlObjectiveEvaluate.Location = new System.Drawing.Point(108, 102);
-            this.pnlObjectiveEvaluate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlObjectiveEvaluate.Margin = new System.Windows.Forms.Padding(4);
             this.pnlObjectiveEvaluate.Name = "pnlObjectiveEvaluate";
             this.pnlObjectiveEvaluate.Size = new System.Drawing.Size(90, 24);
             this.pnlObjectiveEvaluate.TabIndex = 4;
@@ -3051,7 +3051,7 @@
             // 
             this.pnlObjectiveCloseOut.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlObjectiveCloseOut.Location = new System.Drawing.Point(9, 102);
-            this.pnlObjectiveCloseOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlObjectiveCloseOut.Margin = new System.Windows.Forms.Padding(4);
             this.pnlObjectiveCloseOut.Name = "pnlObjectiveCloseOut";
             this.pnlObjectiveCloseOut.Size = new System.Drawing.Size(92, 24);
             this.pnlObjectiveCloseOut.TabIndex = 3;
@@ -3061,7 +3061,7 @@
             this.btnPARICSOverview.Enabled = false;
             this.btnPARICSOverview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPARICSOverview.Location = new System.Drawing.Point(9, 70);
-            this.btnPARICSOverview.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPARICSOverview.Margin = new System.Windows.Forms.Padding(4);
             this.btnPARICSOverview.Name = "btnPARICSOverview";
             this.btnPARICSOverview.Size = new System.Drawing.Size(191, 29);
             this.btnPARICSOverview.TabIndex = 2;
@@ -3084,7 +3084,7 @@
             this.button5.Enabled = false;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Location = new System.Drawing.Point(106, 25);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(94, 42);
             this.button5.TabIndex = 1;
@@ -3096,7 +3096,7 @@
             this.btnCloseOut2.Enabled = false;
             this.btnCloseOut2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCloseOut2.Location = new System.Drawing.Point(9, 25);
-            this.btnCloseOut2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCloseOut2.Margin = new System.Windows.Forms.Padding(4);
             this.btnCloseOut2.Name = "btnCloseOut2";
             this.btnCloseOut2.Size = new System.Drawing.Size(94, 42);
             this.btnCloseOut2.TabIndex = 0;
@@ -3114,7 +3114,7 @@
             this.panel28.Controls.Add(this.btnTransfer2);
             this.panel28.Controls.Add(this.btnImplementation2);
             this.panel28.Location = new System.Drawing.Point(891, 6);
-            this.panel28.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel28.Margin = new System.Windows.Forms.Padding(4);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(209, 135);
             this.panel28.TabIndex = 70;
@@ -3134,7 +3134,7 @@
             // 
             this.pnlObjectiveTransfer.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlObjectiveTransfer.Location = new System.Drawing.Point(109, 102);
-            this.pnlObjectiveTransfer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlObjectiveTransfer.Margin = new System.Windows.Forms.Padding(4);
             this.pnlObjectiveTransfer.Name = "pnlObjectiveTransfer";
             this.pnlObjectiveTransfer.Size = new System.Drawing.Size(90, 24);
             this.pnlObjectiveTransfer.TabIndex = 4;
@@ -3143,7 +3143,7 @@
             // 
             this.pnlObjectiveImplementatio0n.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlObjectiveImplementatio0n.Location = new System.Drawing.Point(10, 102);
-            this.pnlObjectiveImplementatio0n.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlObjectiveImplementatio0n.Margin = new System.Windows.Forms.Padding(4);
             this.pnlObjectiveImplementatio0n.Name = "pnlObjectiveImplementatio0n";
             this.pnlObjectiveImplementatio0n.Size = new System.Drawing.Size(92, 24);
             this.pnlObjectiveImplementatio0n.TabIndex = 3;
@@ -3153,7 +3153,7 @@
             this.btnTransfer2.Enabled = false;
             this.btnTransfer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTransfer2.Location = new System.Drawing.Point(106, 25);
-            this.btnTransfer2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTransfer2.Margin = new System.Windows.Forms.Padding(4);
             this.btnTransfer2.Name = "btnTransfer2";
             this.btnTransfer2.Size = new System.Drawing.Size(94, 74);
             this.btnTransfer2.TabIndex = 1;
@@ -3166,7 +3166,7 @@
             this.btnImplementation2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImplementation2.Font = new System.Drawing.Font("Cambria", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImplementation2.Location = new System.Drawing.Point(9, 25);
-            this.btnImplementation2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnImplementation2.Margin = new System.Windows.Forms.Padding(4);
             this.btnImplementation2.Name = "btnImplementation2";
             this.btnImplementation2.Size = new System.Drawing.Size(94, 74);
             this.btnImplementation2.TabIndex = 0;
@@ -3184,7 +3184,7 @@
             this.panel29.Controls.Add(this.btnBusinessPlan2);
             this.panel29.Controls.Add(this.btnFeasibility2);
             this.panel29.Location = new System.Drawing.Point(342, 6);
-            this.panel29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel29.Margin = new System.Windows.Forms.Padding(4);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(209, 135);
             this.panel29.TabIndex = 69;
@@ -3193,7 +3193,7 @@
             // 
             this.pnlObjectivesBusinessPlan.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlObjectivesBusinessPlan.Location = new System.Drawing.Point(109, 102);
-            this.pnlObjectivesBusinessPlan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlObjectivesBusinessPlan.Margin = new System.Windows.Forms.Padding(4);
             this.pnlObjectivesBusinessPlan.Name = "pnlObjectivesBusinessPlan";
             this.pnlObjectivesBusinessPlan.Size = new System.Drawing.Size(90, 24);
             this.pnlObjectivesBusinessPlan.TabIndex = 4;
@@ -3202,7 +3202,7 @@
             // 
             this.pnlObjectivesFeasibility.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlObjectivesFeasibility.Location = new System.Drawing.Point(10, 102);
-            this.pnlObjectivesFeasibility.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlObjectivesFeasibility.Margin = new System.Windows.Forms.Padding(4);
             this.pnlObjectivesFeasibility.Name = "pnlObjectivesFeasibility";
             this.pnlObjectivesFeasibility.Size = new System.Drawing.Size(92, 24);
             this.pnlObjectivesFeasibility.TabIndex = 3;
@@ -3223,7 +3223,7 @@
             this.btnBusinessPlan2.Enabled = false;
             this.btnBusinessPlan2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBusinessPlan2.Location = new System.Drawing.Point(106, 25);
-            this.btnBusinessPlan2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBusinessPlan2.Margin = new System.Windows.Forms.Padding(4);
             this.btnBusinessPlan2.Name = "btnBusinessPlan2";
             this.btnBusinessPlan2.Size = new System.Drawing.Size(94, 74);
             this.btnBusinessPlan2.TabIndex = 1;
@@ -3235,7 +3235,7 @@
             this.btnFeasibility2.Enabled = false;
             this.btnFeasibility2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFeasibility2.Location = new System.Drawing.Point(9, 25);
-            this.btnFeasibility2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFeasibility2.Margin = new System.Windows.Forms.Padding(4);
             this.btnFeasibility2.Name = "btnFeasibility2";
             this.btnFeasibility2.Size = new System.Drawing.Size(94, 74);
             this.btnFeasibility2.TabIndex = 0;
@@ -3249,7 +3249,7 @@
             this.panel31.Controls.Add(this.btnFRA);
             this.panel31.Controls.Add(this.pictureBox36);
             this.panel31.Location = new System.Drawing.Point(1124, 628);
-            this.panel31.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel31.Margin = new System.Windows.Forms.Padding(4);
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(194, 69);
             this.panel31.TabIndex = 68;
@@ -3257,7 +3257,7 @@
             // btnFRA
             // 
             this.btnFRA.Location = new System.Drawing.Point(6, 20);
-            this.btnFRA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFRA.Margin = new System.Windows.Forms.Padding(4);
             this.btnFRA.Name = "btnFRA";
             this.btnFRA.Size = new System.Drawing.Size(136, 28);
             this.btnFRA.TabIndex = 65;
@@ -3271,7 +3271,7 @@
             this.pictureBox36.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox36.BackgroundImage")));
             this.pictureBox36.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox36.Image")));
             this.pictureBox36.Location = new System.Drawing.Point(144, 21);
-            this.pictureBox36.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox36.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox36.Name = "pictureBox36";
             this.pictureBox36.Size = new System.Drawing.Size(35, 26);
             this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3287,7 +3287,7 @@
             this.panel30.Controls.Add(this.btnHandOverDocument2);
             this.panel30.Controls.Add(this.pictureBox38);
             this.panel30.Location = new System.Drawing.Point(925, 628);
-            this.panel30.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel30.Margin = new System.Windows.Forms.Padding(4);
             this.panel30.Name = "panel30";
             this.panel30.Size = new System.Drawing.Size(190, 69);
             this.panel30.TabIndex = 68;
@@ -3295,7 +3295,7 @@
             // btnClosureContracts
             // 
             this.btnClosureContracts.Location = new System.Drawing.Point(6, 34);
-            this.btnClosureContracts.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClosureContracts.Margin = new System.Windows.Forms.Padding(4);
             this.btnClosureContracts.Name = "btnClosureContracts";
             this.btnClosureContracts.Size = new System.Drawing.Size(136, 28);
             this.btnClosureContracts.TabIndex = 67;
@@ -3309,7 +3309,7 @@
             this.pictureBox37.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox37.BackgroundImage")));
             this.pictureBox37.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox37.Image")));
             this.pictureBox37.Location = new System.Drawing.Point(144, 35);
-            this.pictureBox37.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox37.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox37.Name = "pictureBox37";
             this.pictureBox37.Size = new System.Drawing.Size(35, 26);
             this.pictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3320,7 +3320,7 @@
             // 
             this.btnHandOverDocument2.Font = new System.Drawing.Font("Cambria", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHandOverDocument2.Location = new System.Drawing.Point(6, 5);
-            this.btnHandOverDocument2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHandOverDocument2.Margin = new System.Windows.Forms.Padding(4);
             this.btnHandOverDocument2.Name = "btnHandOverDocument2";
             this.btnHandOverDocument2.Size = new System.Drawing.Size(136, 28);
             this.btnHandOverDocument2.TabIndex = 65;
@@ -3334,7 +3334,7 @@
             this.pictureBox38.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox38.BackgroundImage")));
             this.pictureBox38.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox38.Image")));
             this.pictureBox38.Location = new System.Drawing.Point(144, 6);
-            this.pictureBox38.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox38.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox38.Name = "pictureBox38";
             this.pictureBox38.Size = new System.Drawing.Size(35, 26);
             this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3350,7 +3350,7 @@
             this.panel32.Controls.Add(this.btnExecutionAgreement);
             this.panel32.Controls.Add(this.pictureBox40);
             this.panel32.Location = new System.Drawing.Point(726, 628);
-            this.panel32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel32.Margin = new System.Windows.Forms.Padding(4);
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(190, 69);
             this.panel32.TabIndex = 68;
@@ -3359,7 +3359,7 @@
             // 
             this.btnHandOverDocument1.Font = new System.Drawing.Font("Cambria", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHandOverDocument1.Location = new System.Drawing.Point(6, 34);
-            this.btnHandOverDocument1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHandOverDocument1.Margin = new System.Windows.Forms.Padding(4);
             this.btnHandOverDocument1.Name = "btnHandOverDocument1";
             this.btnHandOverDocument1.Size = new System.Drawing.Size(136, 28);
             this.btnHandOverDocument1.TabIndex = 67;
@@ -3373,7 +3373,7 @@
             this.pictureBox39.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox39.BackgroundImage")));
             this.pictureBox39.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox39.Image")));
             this.pictureBox39.Location = new System.Drawing.Point(144, 35);
-            this.pictureBox39.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox39.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox39.Name = "pictureBox39";
             this.pictureBox39.Size = new System.Drawing.Size(35, 26);
             this.pictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3384,7 +3384,7 @@
             // 
             this.btnExecutionAgreement.Font = new System.Drawing.Font("Cambria", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExecutionAgreement.Location = new System.Drawing.Point(6, 5);
-            this.btnExecutionAgreement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExecutionAgreement.Margin = new System.Windows.Forms.Padding(4);
             this.btnExecutionAgreement.Name = "btnExecutionAgreement";
             this.btnExecutionAgreement.Size = new System.Drawing.Size(136, 28);
             this.btnExecutionAgreement.TabIndex = 65;
@@ -3398,7 +3398,7 @@
             this.pictureBox40.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox40.BackgroundImage")));
             this.pictureBox40.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox40.Image")));
             this.pictureBox40.Location = new System.Drawing.Point(144, 6);
-            this.pictureBox40.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox40.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox40.Name = "pictureBox40";
             this.pictureBox40.Size = new System.Drawing.Size(35, 26);
             this.pictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3414,7 +3414,7 @@
             this.panel33.Controls.Add(this.btnAuthorizedProject);
             this.panel33.Controls.Add(this.pictureBox42);
             this.panel33.Location = new System.Drawing.Point(528, 628);
-            this.panel33.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel33.Margin = new System.Windows.Forms.Padding(4);
             this.panel33.Name = "panel33";
             this.panel33.Size = new System.Drawing.Size(190, 69);
             this.panel33.TabIndex = 68;
@@ -3422,7 +3422,7 @@
             // btnFinancialClosure
             // 
             this.btnFinancialClosure.Location = new System.Drawing.Point(6, 34);
-            this.btnFinancialClosure.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFinancialClosure.Margin = new System.Windows.Forms.Padding(4);
             this.btnFinancialClosure.Name = "btnFinancialClosure";
             this.btnFinancialClosure.Size = new System.Drawing.Size(136, 28);
             this.btnFinancialClosure.TabIndex = 67;
@@ -3436,7 +3436,7 @@
             this.pictureBox41.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox41.BackgroundImage")));
             this.pictureBox41.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox41.Image")));
             this.pictureBox41.Location = new System.Drawing.Point(144, 35);
-            this.pictureBox41.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox41.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox41.Name = "pictureBox41";
             this.pictureBox41.Size = new System.Drawing.Size(35, 26);
             this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3446,7 +3446,7 @@
             // btnAuthorizedProject
             // 
             this.btnAuthorizedProject.Location = new System.Drawing.Point(6, 5);
-            this.btnAuthorizedProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAuthorizedProject.Margin = new System.Windows.Forms.Padding(4);
             this.btnAuthorizedProject.Name = "btnAuthorizedProject";
             this.btnAuthorizedProject.Size = new System.Drawing.Size(136, 28);
             this.btnAuthorizedProject.TabIndex = 65;
@@ -3460,7 +3460,7 @@
             this.pictureBox42.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox42.BackgroundImage")));
             this.pictureBox42.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox42.Image")));
             this.pictureBox42.Location = new System.Drawing.Point(144, 6);
-            this.pictureBox42.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox42.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox42.Name = "pictureBox42";
             this.pictureBox42.Size = new System.Drawing.Size(35, 26);
             this.pictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3476,7 +3476,7 @@
             this.panel34.Controls.Add(this.btnBackableProject);
             this.panel34.Controls.Add(this.pictureBox44);
             this.panel34.Location = new System.Drawing.Point(329, 628);
-            this.panel34.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel34.Margin = new System.Windows.Forms.Padding(4);
             this.panel34.Name = "panel34";
             this.panel34.Size = new System.Drawing.Size(190, 69);
             this.panel34.TabIndex = 68;
@@ -3484,7 +3484,7 @@
             // btnERA
             // 
             this.btnERA.Location = new System.Drawing.Point(6, 34);
-            this.btnERA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnERA.Margin = new System.Windows.Forms.Padding(4);
             this.btnERA.Name = "btnERA";
             this.btnERA.Size = new System.Drawing.Size(136, 28);
             this.btnERA.TabIndex = 67;
@@ -3498,7 +3498,7 @@
             this.pictureBox43.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox43.BackgroundImage")));
             this.pictureBox43.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox43.Image")));
             this.pictureBox43.Location = new System.Drawing.Point(144, 35);
-            this.pictureBox43.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox43.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox43.Name = "pictureBox43";
             this.pictureBox43.Size = new System.Drawing.Size(35, 26);
             this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3508,7 +3508,7 @@
             // btnBackableProject
             // 
             this.btnBackableProject.Location = new System.Drawing.Point(6, 5);
-            this.btnBackableProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBackableProject.Margin = new System.Windows.Forms.Padding(4);
             this.btnBackableProject.Name = "btnBackableProject";
             this.btnBackableProject.Size = new System.Drawing.Size(136, 28);
             this.btnBackableProject.TabIndex = 65;
@@ -3522,7 +3522,7 @@
             this.pictureBox44.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox44.BackgroundImage")));
             this.pictureBox44.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox44.Image")));
             this.pictureBox44.Location = new System.Drawing.Point(144, 6);
-            this.pictureBox44.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox44.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox44.Name = "pictureBox44";
             this.pictureBox44.Size = new System.Drawing.Size(35, 26);
             this.pictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3538,7 +3538,7 @@
             this.panel35.Controls.Add(this.btnCRA);
             this.panel35.Controls.Add(this.pictureBox46);
             this.panel35.Location = new System.Drawing.Point(125, 628);
-            this.panel35.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel35.Margin = new System.Windows.Forms.Padding(4);
             this.panel35.Name = "panel35";
             this.panel35.Size = new System.Drawing.Size(195, 69);
             this.panel35.TabIndex = 66;
@@ -3546,7 +3546,7 @@
             // btnDRA
             // 
             this.btnDRA.Location = new System.Drawing.Point(6, 34);
-            this.btnDRA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDRA.Margin = new System.Windows.Forms.Padding(4);
             this.btnDRA.Name = "btnDRA";
             this.btnDRA.Size = new System.Drawing.Size(142, 28);
             this.btnDRA.TabIndex = 67;
@@ -3560,7 +3560,7 @@
             this.pictureBox45.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox45.BackgroundImage")));
             this.pictureBox45.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox45.Image")));
             this.pictureBox45.Location = new System.Drawing.Point(150, 35);
-            this.pictureBox45.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox45.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox45.Name = "pictureBox45";
             this.pictureBox45.Size = new System.Drawing.Size(35, 26);
             this.pictureBox45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3570,7 +3570,7 @@
             // btnCRA
             // 
             this.btnCRA.Location = new System.Drawing.Point(6, 5);
-            this.btnCRA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCRA.Margin = new System.Windows.Forms.Padding(4);
             this.btnCRA.Name = "btnCRA";
             this.btnCRA.Size = new System.Drawing.Size(142, 28);
             this.btnCRA.TabIndex = 65;
@@ -3584,7 +3584,7 @@
             this.pictureBox46.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox46.BackgroundImage")));
             this.pictureBox46.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox46.Image")));
             this.pictureBox46.Location = new System.Drawing.Point(150, 6);
-            this.pictureBox46.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox46.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox46.Name = "pictureBox46";
             this.pictureBox46.Size = new System.Drawing.Size(35, 26);
             this.pictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3605,7 +3605,7 @@
             this.panel41.Controls.Add(this.pnlContractConcluding);
             this.panel41.Controls.Add(this.pnlProjectExecutionPlanning);
             this.panel41.Location = new System.Drawing.Point(558, 148);
-            this.panel41.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel41.Margin = new System.Windows.Forms.Padding(4);
             this.panel41.Name = "panel41";
             this.panel41.Size = new System.Drawing.Size(324, 135);
             this.panel41.TabIndex = 8;
@@ -3613,7 +3613,7 @@
             // btnWorkStreamsContractConcluding
             // 
             this.btnWorkStreamsContractConcluding.Location = new System.Drawing.Point(112, 55);
-            this.btnWorkStreamsContractConcluding.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkStreamsContractConcluding.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkStreamsContractConcluding.Name = "btnWorkStreamsContractConcluding";
             this.btnWorkStreamsContractConcluding.Size = new System.Drawing.Size(98, 42);
             this.btnWorkStreamsContractConcluding.TabIndex = 10;
@@ -3623,7 +3623,7 @@
             // btnWorkPakagesContractConcluding
             // 
             this.btnWorkPakagesContractConcluding.Location = new System.Drawing.Point(112, 8);
-            this.btnWorkPakagesContractConcluding.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkPakagesContractConcluding.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkPakagesContractConcluding.Name = "btnWorkPakagesContractConcluding";
             this.btnWorkPakagesContractConcluding.Size = new System.Drawing.Size(98, 42);
             this.btnWorkPakagesContractConcluding.TabIndex = 9;
@@ -3633,7 +3633,7 @@
             // btnWorkStreamsProjectExecutionPlanning
             // 
             this.btnWorkStreamsProjectExecutionPlanning.Location = new System.Drawing.Point(9, 55);
-            this.btnWorkStreamsProjectExecutionPlanning.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkStreamsProjectExecutionPlanning.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkStreamsProjectExecutionPlanning.Name = "btnWorkStreamsProjectExecutionPlanning";
             this.btnWorkStreamsProjectExecutionPlanning.Size = new System.Drawing.Size(98, 42);
             this.btnWorkStreamsProjectExecutionPlanning.TabIndex = 8;
@@ -3643,7 +3643,7 @@
             // btnWorkPakagesProjectExecutionPlanning
             // 
             this.btnWorkPakagesProjectExecutionPlanning.Location = new System.Drawing.Point(9, 8);
-            this.btnWorkPakagesProjectExecutionPlanning.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkPakagesProjectExecutionPlanning.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkPakagesProjectExecutionPlanning.Name = "btnWorkPakagesProjectExecutionPlanning";
             this.btnWorkPakagesProjectExecutionPlanning.Size = new System.Drawing.Size(98, 42);
             this.btnWorkPakagesProjectExecutionPlanning.TabIndex = 7;
@@ -3653,7 +3653,7 @@
             // btnWorkStreamsDetailedDesign
             // 
             this.btnWorkStreamsDetailedDesign.Location = new System.Drawing.Point(215, 55);
-            this.btnWorkStreamsDetailedDesign.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkStreamsDetailedDesign.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkStreamsDetailedDesign.Name = "btnWorkStreamsDetailedDesign";
             this.btnWorkStreamsDetailedDesign.Size = new System.Drawing.Size(99, 42);
             this.btnWorkStreamsDetailedDesign.TabIndex = 6;
@@ -3663,7 +3663,7 @@
             // btnWorkPakagesDetailedDesign
             // 
             this.btnWorkPakagesDetailedDesign.Location = new System.Drawing.Point(216, 8);
-            this.btnWorkPakagesDetailedDesign.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkPakagesDetailedDesign.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkPakagesDetailedDesign.Name = "btnWorkPakagesDetailedDesign";
             this.btnWorkPakagesDetailedDesign.Size = new System.Drawing.Size(99, 42);
             this.btnWorkPakagesDetailedDesign.TabIndex = 5;
@@ -3674,7 +3674,7 @@
             // 
             this.pnlDetailedDesign.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlDetailedDesign.Location = new System.Drawing.Point(216, 102);
-            this.pnlDetailedDesign.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlDetailedDesign.Margin = new System.Windows.Forms.Padding(4);
             this.pnlDetailedDesign.Name = "pnlDetailedDesign";
             this.pnlDetailedDesign.Size = new System.Drawing.Size(96, 24);
             this.pnlDetailedDesign.TabIndex = 4;
@@ -3683,7 +3683,7 @@
             // 
             this.pnlContractConcluding.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlContractConcluding.Location = new System.Drawing.Point(114, 102);
-            this.pnlContractConcluding.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlContractConcluding.Margin = new System.Windows.Forms.Padding(4);
             this.pnlContractConcluding.Name = "pnlContractConcluding";
             this.pnlContractConcluding.Size = new System.Drawing.Size(95, 24);
             this.pnlContractConcluding.TabIndex = 1;
@@ -3692,7 +3692,7 @@
             // 
             this.pnlProjectExecutionPlanning.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlProjectExecutionPlanning.Location = new System.Drawing.Point(10, 102);
-            this.pnlProjectExecutionPlanning.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlProjectExecutionPlanning.Margin = new System.Windows.Forms.Padding(4);
             this.pnlProjectExecutionPlanning.Name = "pnlProjectExecutionPlanning";
             this.pnlProjectExecutionPlanning.Size = new System.Drawing.Size(95, 24);
             this.pnlProjectExecutionPlanning.TabIndex = 0;
@@ -3708,7 +3708,7 @@
             this.panel43.Controls.Add(this.pnlOpportunityScreening);
             this.panel43.Controls.Add(this.btnWorkPakagesOpportunityScreening);
             this.panel43.Location = new System.Drawing.Point(125, 150);
-            this.panel43.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel43.Margin = new System.Windows.Forms.Padding(4);
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(209, 135);
             this.panel43.TabIndex = 5;
@@ -3716,7 +3716,7 @@
             // btnWorkStreamsPrefeasibility
             // 
             this.btnWorkStreamsPrefeasibility.Location = new System.Drawing.Point(106, 55);
-            this.btnWorkStreamsPrefeasibility.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkStreamsPrefeasibility.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkStreamsPrefeasibility.Name = "btnWorkStreamsPrefeasibility";
             this.btnWorkStreamsPrefeasibility.Size = new System.Drawing.Size(94, 42);
             this.btnWorkStreamsPrefeasibility.TabIndex = 4;
@@ -3726,7 +3726,7 @@
             // btnWorkPakagesPrefeasibility
             // 
             this.btnWorkPakagesPrefeasibility.Location = new System.Drawing.Point(106, 8);
-            this.btnWorkPakagesPrefeasibility.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkPakagesPrefeasibility.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkPakagesPrefeasibility.Name = "btnWorkPakagesPrefeasibility";
             this.btnWorkPakagesPrefeasibility.Size = new System.Drawing.Size(94, 42);
             this.btnWorkPakagesPrefeasibility.TabIndex = 3;
@@ -3737,7 +3737,7 @@
             // 
             this.pnlPrefeasibility.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlPrefeasibility.Location = new System.Drawing.Point(109, 102);
-            this.pnlPrefeasibility.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlPrefeasibility.Margin = new System.Windows.Forms.Padding(4);
             this.pnlPrefeasibility.Name = "pnlPrefeasibility";
             this.pnlPrefeasibility.Size = new System.Drawing.Size(90, 24);
             this.pnlPrefeasibility.TabIndex = 1;
@@ -3745,7 +3745,7 @@
             // btnWorkStreamsOpportunityScreening
             // 
             this.btnWorkStreamsOpportunityScreening.Location = new System.Drawing.Point(9, 55);
-            this.btnWorkStreamsOpportunityScreening.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkStreamsOpportunityScreening.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkStreamsOpportunityScreening.Name = "btnWorkStreamsOpportunityScreening";
             this.btnWorkStreamsOpportunityScreening.Size = new System.Drawing.Size(94, 42);
             this.btnWorkStreamsOpportunityScreening.TabIndex = 2;
@@ -3756,7 +3756,7 @@
             // 
             this.pnlOpportunityScreening.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlOpportunityScreening.Location = new System.Drawing.Point(10, 102);
-            this.pnlOpportunityScreening.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlOpportunityScreening.Margin = new System.Windows.Forms.Padding(4);
             this.pnlOpportunityScreening.Name = "pnlOpportunityScreening";
             this.pnlOpportunityScreening.Size = new System.Drawing.Size(90, 24);
             this.pnlOpportunityScreening.TabIndex = 0;
@@ -3764,7 +3764,7 @@
             // btnWorkPakagesOpportunityScreening
             // 
             this.btnWorkPakagesOpportunityScreening.Location = new System.Drawing.Point(9, 8);
-            this.btnWorkPakagesOpportunityScreening.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWorkPakagesOpportunityScreening.Margin = new System.Windows.Forms.Padding(4);
             this.btnWorkPakagesOpportunityScreening.Name = "btnWorkPakagesOpportunityScreening";
             this.btnWorkPakagesOpportunityScreening.Size = new System.Drawing.Size(94, 42);
             this.btnWorkPakagesOpportunityScreening.TabIndex = 0;
@@ -3780,7 +3780,7 @@
             this.panel44.Controls.Add(this.panel47);
             this.panel44.Controls.Add(this.panel48);
             this.panel44.Location = new System.Drawing.Point(8, 8);
-            this.panel44.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel44.Margin = new System.Windows.Forms.Padding(4);
             this.panel44.Name = "panel44";
             this.panel44.Size = new System.Drawing.Size(109, 134);
             this.panel44.TabIndex = 6;
@@ -3790,7 +3790,7 @@
             this.panel45.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel45.Controls.Add(this.label43);
             this.panel45.Location = new System.Drawing.Point(4, 101);
-            this.panel45.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel45.Margin = new System.Windows.Forms.Padding(4);
             this.panel45.Name = "panel45";
             this.panel45.Size = new System.Drawing.Size(98, 24);
             this.panel45.TabIndex = 4;
@@ -3810,7 +3810,7 @@
             // 
             this.panel46.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel46.Location = new System.Drawing.Point(4, 69);
-            this.panel46.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel46.Margin = new System.Windows.Forms.Padding(4);
             this.panel46.Name = "panel46";
             this.panel46.Size = new System.Drawing.Size(98, 29);
             this.panel46.TabIndex = 3;
@@ -3820,7 +3820,7 @@
             this.panel47.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel47.Controls.Add(this.Stage);
             this.panel47.Location = new System.Drawing.Point(4, 24);
-            this.panel47.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel47.Margin = new System.Windows.Forms.Padding(4);
             this.panel47.Name = "panel47";
             this.panel47.Size = new System.Drawing.Size(98, 42);
             this.panel47.TabIndex = 2;
@@ -3841,7 +3841,7 @@
             this.panel48.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel48.Controls.Add(this.label44);
             this.panel48.Location = new System.Drawing.Point(4, 2);
-            this.panel48.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel48.Margin = new System.Windows.Forms.Padding(4);
             this.panel48.Name = "panel48";
             this.panel48.Size = new System.Drawing.Size(98, 19);
             this.panel48.TabIndex = 1;
@@ -3870,7 +3870,7 @@
             this.panel49.Controls.Add(this.btnContractConcluding);
             this.panel49.Controls.Add(this.btnProjectExecutiomPlanning2);
             this.panel49.Location = new System.Drawing.Point(559, 6);
-            this.panel49.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel49.Margin = new System.Windows.Forms.Padding(4);
             this.panel49.Name = "panel49";
             this.panel49.Size = new System.Drawing.Size(323, 134);
             this.panel49.TabIndex = 6;
@@ -3879,7 +3879,7 @@
             // 
             this.pnlObjectiveDetailedDesign.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlObjectiveDetailedDesign.Location = new System.Drawing.Point(214, 102);
-            this.pnlObjectiveDetailedDesign.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlObjectiveDetailedDesign.Margin = new System.Windows.Forms.Padding(4);
             this.pnlObjectiveDetailedDesign.Name = "pnlObjectiveDetailedDesign";
             this.pnlObjectiveDetailedDesign.Size = new System.Drawing.Size(99, 24);
             this.pnlObjectiveDetailedDesign.TabIndex = 10;
@@ -3888,7 +3888,7 @@
             // 
             this.pnlObjectiveContractConcluding.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlObjectiveContractConcluding.Location = new System.Drawing.Point(111, 102);
-            this.pnlObjectiveContractConcluding.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlObjectiveContractConcluding.Margin = new System.Windows.Forms.Padding(4);
             this.pnlObjectiveContractConcluding.Name = "pnlObjectiveContractConcluding";
             this.pnlObjectiveContractConcluding.Size = new System.Drawing.Size(98, 24);
             this.pnlObjectiveContractConcluding.TabIndex = 9;
@@ -3897,7 +3897,7 @@
             // 
             this.ProjectExecutionPlanning.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ProjectExecutionPlanning.Location = new System.Drawing.Point(9, 102);
-            this.ProjectExecutionPlanning.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ProjectExecutionPlanning.Margin = new System.Windows.Forms.Padding(4);
             this.ProjectExecutionPlanning.Name = "ProjectExecutionPlanning";
             this.ProjectExecutionPlanning.Size = new System.Drawing.Size(98, 24);
             this.ProjectExecutionPlanning.TabIndex = 8;
@@ -3907,7 +3907,7 @@
             this.btnPARICSWorkPackages.Enabled = false;
             this.btnPARICSWorkPackages.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPARICSWorkPackages.Location = new System.Drawing.Point(8, 70);
-            this.btnPARICSWorkPackages.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPARICSWorkPackages.Margin = new System.Windows.Forms.Padding(4);
             this.btnPARICSWorkPackages.Name = "btnPARICSWorkPackages";
             this.btnPARICSWorkPackages.Size = new System.Drawing.Size(306, 29);
             this.btnPARICSWorkPackages.TabIndex = 7;
@@ -3930,7 +3930,7 @@
             this.btnDetailedDesign2.Enabled = false;
             this.btnDetailedDesign2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDetailedDesign2.Location = new System.Drawing.Point(215, 25);
-            this.btnDetailedDesign2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDetailedDesign2.Margin = new System.Windows.Forms.Padding(4);
             this.btnDetailedDesign2.Name = "btnDetailedDesign2";
             this.btnDetailedDesign2.Size = new System.Drawing.Size(99, 42);
             this.btnDetailedDesign2.TabIndex = 5;
@@ -3942,7 +3942,7 @@
             this.btnContractConcluding.Enabled = false;
             this.btnContractConcluding.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnContractConcluding.Location = new System.Drawing.Point(112, 25);
-            this.btnContractConcluding.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnContractConcluding.Margin = new System.Windows.Forms.Padding(4);
             this.btnContractConcluding.Name = "btnContractConcluding";
             this.btnContractConcluding.Size = new System.Drawing.Size(98, 42);
             this.btnContractConcluding.TabIndex = 4;
@@ -3955,7 +3955,7 @@
             this.btnProjectExecutiomPlanning2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProjectExecutiomPlanning2.Font = new System.Drawing.Font("Cambria", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProjectExecutiomPlanning2.Location = new System.Drawing.Point(8, 25);
-            this.btnProjectExecutiomPlanning2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProjectExecutiomPlanning2.Margin = new System.Windows.Forms.Padding(4);
             this.btnProjectExecutiomPlanning2.Name = "btnProjectExecutiomPlanning2";
             this.btnProjectExecutiomPlanning2.Size = new System.Drawing.Size(100, 42);
             this.btnProjectExecutiomPlanning2.TabIndex = 3;
@@ -3974,7 +3974,7 @@
             this.panel50.Controls.Add(this.btnPrefeasibility2);
             this.panel50.Controls.Add(this.btnOpportunityScreening);
             this.panel50.Location = new System.Drawing.Point(125, 6);
-            this.panel50.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel50.Margin = new System.Windows.Forms.Padding(4);
             this.panel50.Name = "panel50";
             this.panel50.Size = new System.Drawing.Size(209, 135);
             this.panel50.TabIndex = 4;
@@ -3983,7 +3983,7 @@
             // 
             this.pnlObjectivePrefeasibility.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlObjectivePrefeasibility.Location = new System.Drawing.Point(109, 102);
-            this.pnlObjectivePrefeasibility.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlObjectivePrefeasibility.Margin = new System.Windows.Forms.Padding(4);
             this.pnlObjectivePrefeasibility.Name = "pnlObjectivePrefeasibility";
             this.pnlObjectivePrefeasibility.Size = new System.Drawing.Size(90, 24);
             this.pnlObjectivePrefeasibility.TabIndex = 1;
@@ -3992,7 +3992,7 @@
             // 
             this.pnlObjectiveOpportunityScreening.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlObjectiveOpportunityScreening.Location = new System.Drawing.Point(10, 102);
-            this.pnlObjectiveOpportunityScreening.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlObjectiveOpportunityScreening.Margin = new System.Windows.Forms.Padding(4);
             this.pnlObjectiveOpportunityScreening.Name = "pnlObjectiveOpportunityScreening";
             this.pnlObjectiveOpportunityScreening.Size = new System.Drawing.Size(92, 24);
             this.pnlObjectiveOpportunityScreening.TabIndex = 0;
@@ -4003,7 +4003,7 @@
             this.btnPARICSStream.Enabled = false;
             this.btnPARICSStream.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPARICSStream.Location = new System.Drawing.Point(9, 70);
-            this.btnPARICSStream.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPARICSStream.Margin = new System.Windows.Forms.Padding(4);
             this.btnPARICSStream.Name = "btnPARICSStream";
             this.btnPARICSStream.Size = new System.Drawing.Size(191, 29);
             this.btnPARICSStream.TabIndex = 2;
@@ -4027,7 +4027,7 @@
             this.btnPrefeasibility2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrefeasibility2.Font = new System.Drawing.Font("Cambria", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrefeasibility2.Location = new System.Drawing.Point(106, 25);
-            this.btnPrefeasibility2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPrefeasibility2.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrefeasibility2.Name = "btnPrefeasibility2";
             this.btnPrefeasibility2.Size = new System.Drawing.Size(94, 42);
             this.btnPrefeasibility2.TabIndex = 1;
@@ -4039,7 +4039,7 @@
             this.btnOpportunityScreening.Enabled = false;
             this.btnOpportunityScreening.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpportunityScreening.Location = new System.Drawing.Point(9, 25);
-            this.btnOpportunityScreening.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOpportunityScreening.Margin = new System.Windows.Forms.Padding(4);
             this.btnOpportunityScreening.Name = "btnOpportunityScreening";
             this.btnOpportunityScreening.Size = new System.Drawing.Size(94, 42);
             this.btnOpportunityScreening.TabIndex = 0;
@@ -4057,7 +4057,7 @@
             this.panel51.Controls.Add(this.btnStageGateRequirements);
             this.panel51.Controls.Add(this.btnTemplates);
             this.panel51.Location = new System.Drawing.Point(125, 579);
-            this.panel51.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel51.Margin = new System.Windows.Forms.Padding(4);
             this.panel51.Name = "panel51";
             this.panel51.Size = new System.Drawing.Size(1193, 40);
             this.panel51.TabIndex = 3;
@@ -4065,7 +4065,7 @@
             // btnKnowledgeAndResources
             // 
             this.btnKnowledgeAndResources.Location = new System.Drawing.Point(995, 4);
-            this.btnKnowledgeAndResources.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKnowledgeAndResources.Margin = new System.Windows.Forms.Padding(4);
             this.btnKnowledgeAndResources.Name = "btnKnowledgeAndResources";
             this.btnKnowledgeAndResources.Size = new System.Drawing.Size(191, 29);
             this.btnKnowledgeAndResources.TabIndex = 8;
@@ -4075,7 +4075,7 @@
             // btnToolsAndTechniques
             // 
             this.btnToolsAndTechniques.Location = new System.Drawing.Point(798, 5);
-            this.btnToolsAndTechniques.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnToolsAndTechniques.Margin = new System.Windows.Forms.Padding(4);
             this.btnToolsAndTechniques.Name = "btnToolsAndTechniques";
             this.btnToolsAndTechniques.Size = new System.Drawing.Size(191, 29);
             this.btnToolsAndTechniques.TabIndex = 7;
@@ -4085,7 +4085,7 @@
             // btnRoleDescription
             // 
             this.btnRoleDescription.Location = new System.Drawing.Point(599, 5);
-            this.btnRoleDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRoleDescription.Margin = new System.Windows.Forms.Padding(4);
             this.btnRoleDescription.Name = "btnRoleDescription";
             this.btnRoleDescription.Size = new System.Drawing.Size(191, 29);
             this.btnRoleDescription.TabIndex = 6;
@@ -4095,7 +4095,7 @@
             // btnProcessFlowOverview
             // 
             this.btnProcessFlowOverview.Location = new System.Drawing.Point(201, 5);
-            this.btnProcessFlowOverview.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProcessFlowOverview.Margin = new System.Windows.Forms.Padding(4);
             this.btnProcessFlowOverview.Name = "btnProcessFlowOverview";
             this.btnProcessFlowOverview.Size = new System.Drawing.Size(191, 29);
             this.btnProcessFlowOverview.TabIndex = 5;
@@ -4105,7 +4105,7 @@
             // btnStageGateRequirements
             // 
             this.btnStageGateRequirements.Location = new System.Drawing.Point(400, 5);
-            this.btnStageGateRequirements.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStageGateRequirements.Margin = new System.Windows.Forms.Padding(4);
             this.btnStageGateRequirements.Name = "btnStageGateRequirements";
             this.btnStageGateRequirements.Size = new System.Drawing.Size(191, 29);
             this.btnStageGateRequirements.TabIndex = 4;
@@ -4115,7 +4115,7 @@
             // btnTemplates
             // 
             this.btnTemplates.Location = new System.Drawing.Point(4, 5);
-            this.btnTemplates.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTemplates.Margin = new System.Windows.Forms.Padding(4);
             this.btnTemplates.Name = "btnTemplates";
             this.btnTemplates.Size = new System.Drawing.Size(191, 29);
             this.btnTemplates.TabIndex = 3;
@@ -4147,7 +4147,7 @@
             this.panel62.Controls.Add(this.btnRisk);
             this.panel62.Controls.Add(this.pictureBox56);
             this.panel62.Location = new System.Drawing.Point(125, 495);
-            this.panel62.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel62.Margin = new System.Windows.Forms.Padding(4);
             this.panel62.Name = "panel62";
             this.panel62.Size = new System.Drawing.Size(1193, 75);
             this.panel62.TabIndex = 2;
@@ -4155,7 +4155,7 @@
             // btnStakeholders
             // 
             this.btnStakeholders.Location = new System.Drawing.Point(971, 39);
-            this.btnStakeholders.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStakeholders.Margin = new System.Windows.Forms.Padding(4);
             this.btnStakeholders.Name = "btnStakeholders";
             this.btnStakeholders.Size = new System.Drawing.Size(182, 26);
             this.btnStakeholders.TabIndex = 70;
@@ -4169,7 +4169,7 @@
             this.pictureBox47.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox47.BackgroundImage")));
             this.pictureBox47.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox47.Image")));
             this.pictureBox47.Location = new System.Drawing.Point(932, 39);
-            this.pictureBox47.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox47.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox47.Name = "pictureBox47";
             this.pictureBox47.Size = new System.Drawing.Size(40, 26);
             this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -4179,7 +4179,7 @@
             // btnQuality
             // 
             this.btnQuality.Location = new System.Drawing.Point(742, 39);
-            this.btnQuality.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnQuality.Margin = new System.Windows.Forms.Padding(4);
             this.btnQuality.Name = "btnQuality";
             this.btnQuality.Size = new System.Drawing.Size(182, 26);
             this.btnQuality.TabIndex = 68;
@@ -4193,7 +4193,7 @@
             this.pictureBox48.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox48.BackgroundImage")));
             this.pictureBox48.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox48.Image")));
             this.pictureBox48.Location = new System.Drawing.Point(704, 39);
-            this.pictureBox48.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox48.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox48.Name = "pictureBox48";
             this.pictureBox48.Size = new System.Drawing.Size(40, 26);
             this.pictureBox48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -4203,7 +4203,7 @@
             // btnComms
             // 
             this.btnComms.Location = new System.Drawing.Point(514, 39);
-            this.btnComms.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnComms.Margin = new System.Windows.Forms.Padding(4);
             this.btnComms.Name = "btnComms";
             this.btnComms.Size = new System.Drawing.Size(182, 26);
             this.btnComms.TabIndex = 66;
@@ -4217,7 +4217,7 @@
             this.pictureBox49.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox49.BackgroundImage")));
             this.pictureBox49.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox49.Image")));
             this.pictureBox49.Location = new System.Drawing.Point(475, 39);
-            this.pictureBox49.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox49.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox49.Name = "pictureBox49";
             this.pictureBox49.Size = new System.Drawing.Size(40, 26);
             this.pictureBox49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -4227,7 +4227,7 @@
             // btnCost
             // 
             this.btnCost.Location = new System.Drawing.Point(285, 39);
-            this.btnCost.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCost.Margin = new System.Windows.Forms.Padding(4);
             this.btnCost.Name = "btnCost";
             this.btnCost.Size = new System.Drawing.Size(182, 26);
             this.btnCost.TabIndex = 64;
@@ -4241,7 +4241,7 @@
             this.pictureBox50.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox50.BackgroundImage")));
             this.pictureBox50.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox50.Image")));
             this.pictureBox50.Location = new System.Drawing.Point(246, 39);
-            this.pictureBox50.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox50.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox50.Name = "pictureBox50";
             this.pictureBox50.Size = new System.Drawing.Size(40, 26);
             this.pictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -4251,7 +4251,7 @@
             // btnIssues
             // 
             this.btnIssues.Location = new System.Drawing.Point(56, 39);
-            this.btnIssues.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIssues.Margin = new System.Windows.Forms.Padding(4);
             this.btnIssues.Name = "btnIssues";
             this.btnIssues.Size = new System.Drawing.Size(182, 26);
             this.btnIssues.TabIndex = 62;
@@ -4265,7 +4265,7 @@
             this.pictureBox51.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox51.BackgroundImage")));
             this.pictureBox51.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox51.Image")));
             this.pictureBox51.Location = new System.Drawing.Point(18, 39);
-            this.pictureBox51.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox51.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox51.Name = "pictureBox51";
             this.pictureBox51.Size = new System.Drawing.Size(40, 26);
             this.pictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -4275,7 +4275,7 @@
             // btnProcurement
             // 
             this.btnProcurement.Location = new System.Drawing.Point(971, 8);
-            this.btnProcurement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProcurement.Margin = new System.Windows.Forms.Padding(4);
             this.btnProcurement.Name = "btnProcurement";
             this.btnProcurement.Size = new System.Drawing.Size(182, 26);
             this.btnProcurement.TabIndex = 60;
@@ -4289,7 +4289,7 @@
             this.pictureBox52.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox52.BackgroundImage")));
             this.pictureBox52.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox52.Image")));
             this.pictureBox52.Location = new System.Drawing.Point(932, 8);
-            this.pictureBox52.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox52.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox52.Name = "pictureBox52";
             this.pictureBox52.Size = new System.Drawing.Size(40, 26);
             this.pictureBox52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -4299,7 +4299,7 @@
             // btnChanges
             // 
             this.btnChanges.Location = new System.Drawing.Point(742, 8);
-            this.btnChanges.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChanges.Margin = new System.Windows.Forms.Padding(4);
             this.btnChanges.Name = "btnChanges";
             this.btnChanges.Size = new System.Drawing.Size(182, 26);
             this.btnChanges.TabIndex = 58;
@@ -4313,7 +4313,7 @@
             this.pictureBox53.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox53.BackgroundImage")));
             this.pictureBox53.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox53.Image")));
             this.pictureBox53.Location = new System.Drawing.Point(704, 8);
-            this.pictureBox53.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox53.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox53.Name = "pictureBox53";
             this.pictureBox53.Size = new System.Drawing.Size(40, 26);
             this.pictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -4323,7 +4323,7 @@
             // btnTimeAllocation2
             // 
             this.btnTimeAllocation2.Location = new System.Drawing.Point(514, 8);
-            this.btnTimeAllocation2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTimeAllocation2.Margin = new System.Windows.Forms.Padding(4);
             this.btnTimeAllocation2.Name = "btnTimeAllocation2";
             this.btnTimeAllocation2.Size = new System.Drawing.Size(182, 26);
             this.btnTimeAllocation2.TabIndex = 56;
@@ -4337,7 +4337,7 @@
             this.pictureBox54.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox54.BackgroundImage")));
             this.pictureBox54.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox54.Image")));
             this.pictureBox54.Location = new System.Drawing.Point(475, 8);
-            this.pictureBox54.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox54.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox54.Name = "pictureBox54";
             this.pictureBox54.Size = new System.Drawing.Size(40, 26);
             this.pictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -4347,7 +4347,7 @@
             // btnAcceptance
             // 
             this.btnAcceptance.Location = new System.Drawing.Point(285, 8);
-            this.btnAcceptance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAcceptance.Margin = new System.Windows.Forms.Padding(4);
             this.btnAcceptance.Name = "btnAcceptance";
             this.btnAcceptance.Size = new System.Drawing.Size(182, 26);
             this.btnAcceptance.TabIndex = 54;
@@ -4361,7 +4361,7 @@
             this.pictureBox55.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox55.BackgroundImage")));
             this.pictureBox55.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox55.Image")));
             this.pictureBox55.Location = new System.Drawing.Point(246, 8);
-            this.pictureBox55.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox55.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox55.Name = "pictureBox55";
             this.pictureBox55.Size = new System.Drawing.Size(40, 26);
             this.pictureBox55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -4371,7 +4371,7 @@
             // btnRisk
             // 
             this.btnRisk.Location = new System.Drawing.Point(56, 8);
-            this.btnRisk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRisk.Margin = new System.Windows.Forms.Padding(4);
             this.btnRisk.Name = "btnRisk";
             this.btnRisk.Size = new System.Drawing.Size(182, 26);
             this.btnRisk.TabIndex = 52;
@@ -4385,7 +4385,7 @@
             this.pictureBox56.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox56.BackgroundImage")));
             this.pictureBox56.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox56.Image")));
             this.pictureBox56.Location = new System.Drawing.Point(18, 8);
-            this.pictureBox56.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox56.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox56.Name = "pictureBox56";
             this.pictureBox56.Size = new System.Drawing.Size(40, 26);
             this.pictureBox56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -4417,7 +4417,7 @@
             this.panel63.Controls.Add(this.btnDirectingAProject);
             this.panel63.Controls.Add(this.pictureBox66);
             this.panel63.Location = new System.Drawing.Point(125, 290);
-            this.panel63.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel63.Margin = new System.Windows.Forms.Padding(4);
             this.panel63.Name = "panel63";
             this.panel63.Size = new System.Drawing.Size(1193, 198);
             this.panel63.TabIndex = 1;
@@ -4425,7 +4425,7 @@
             // btnControllingAStage
             // 
             this.btnControllingAStage.Location = new System.Drawing.Point(179, 151);
-            this.btnControllingAStage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnControllingAStage.Margin = new System.Windows.Forms.Padding(4);
             this.btnControllingAStage.Name = "btnControllingAStage";
             this.btnControllingAStage.Size = new System.Drawing.Size(706, 26);
             this.btnControllingAStage.TabIndex = 62;
@@ -4439,7 +4439,7 @@
             this.pictureBox57.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox57.BackgroundImage")));
             this.pictureBox57.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox57.Image")));
             this.pictureBox57.Location = new System.Drawing.Point(140, 151);
-            this.pictureBox57.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox57.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox57.Name = "pictureBox57";
             this.pictureBox57.Size = new System.Drawing.Size(40, 26);
             this.pictureBox57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -4449,7 +4449,7 @@
             // btnPlanningAProject
             // 
             this.btnPlanningAProject.Location = new System.Drawing.Point(136, 69);
-            this.btnPlanningAProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPlanningAProject.Margin = new System.Windows.Forms.Padding(4);
             this.btnPlanningAProject.Name = "btnPlanningAProject";
             this.btnPlanningAProject.Size = new System.Drawing.Size(704, 26);
             this.btnPlanningAProject.TabIndex = 60;
@@ -4463,7 +4463,7 @@
             this.pictureBox58.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox58.BackgroundImage")));
             this.pictureBox58.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox58.Image")));
             this.pictureBox58.Location = new System.Drawing.Point(98, 69);
-            this.pictureBox58.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox58.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox58.Name = "pictureBox58";
             this.pictureBox58.Size = new System.Drawing.Size(40, 26);
             this.pictureBox58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -4473,7 +4473,7 @@
             // btnClosingAProject
             // 
             this.btnClosingAProject.Location = new System.Drawing.Point(931, 69);
-            this.btnClosingAProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClosingAProject.Margin = new System.Windows.Forms.Padding(4);
             this.btnClosingAProject.Name = "btnClosingAProject";
             this.btnClosingAProject.Size = new System.Drawing.Size(245, 26);
             this.btnClosingAProject.TabIndex = 58;
@@ -4487,7 +4487,7 @@
             this.pictureBox59.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox59.BackgroundImage")));
             this.pictureBox59.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox59.Image")));
             this.pictureBox59.Location = new System.Drawing.Point(892, 69);
-            this.pictureBox59.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox59.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox59.Name = "pictureBox59";
             this.pictureBox59.Size = new System.Drawing.Size(40, 26);
             this.pictureBox59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -4497,7 +4497,7 @@
             // btnManagingStageBoundaries
             // 
             this.btnManagingStageBoundaries.Location = new System.Drawing.Point(179, 124);
-            this.btnManagingStageBoundaries.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnManagingStageBoundaries.Margin = new System.Windows.Forms.Padding(4);
             this.btnManagingStageBoundaries.Name = "btnManagingStageBoundaries";
             this.btnManagingStageBoundaries.Size = new System.Drawing.Size(706, 26);
             this.btnManagingStageBoundaries.TabIndex = 56;
@@ -4511,7 +4511,7 @@
             this.pictureBox60.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox60.BackgroundImage")));
             this.pictureBox60.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox60.Image")));
             this.pictureBox60.Location = new System.Drawing.Point(140, 124);
-            this.pictureBox60.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox60.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox60.Name = "pictureBox60";
             this.pictureBox60.Size = new System.Drawing.Size(40, 26);
             this.pictureBox60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -4521,7 +4521,7 @@
             // btnInitiatingAProject
             // 
             this.btnInitiatingAProject.Location = new System.Drawing.Point(430, 96);
-            this.btnInitiatingAProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInitiatingAProject.Margin = new System.Windows.Forms.Padding(4);
             this.btnInitiatingAProject.Name = "btnInitiatingAProject";
             this.btnInitiatingAProject.Size = new System.Drawing.Size(205, 26);
             this.btnInitiatingAProject.TabIndex = 54;
@@ -4535,7 +4535,7 @@
             this.pictureBox61.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox61.BackgroundImage")));
             this.pictureBox61.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox61.Image")));
             this.pictureBox61.Location = new System.Drawing.Point(391, 96);
-            this.pictureBox61.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox61.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox61.Name = "pictureBox61";
             this.pictureBox61.Size = new System.Drawing.Size(40, 26);
             this.pictureBox61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -4545,7 +4545,7 @@
             // btnManagingProductDelivery
             // 
             this.btnManagingProductDelivery.Location = new System.Drawing.Point(680, 96);
-            this.btnManagingProductDelivery.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnManagingProductDelivery.Margin = new System.Windows.Forms.Padding(4);
             this.btnManagingProductDelivery.Name = "btnManagingProductDelivery";
             this.btnManagingProductDelivery.Size = new System.Drawing.Size(205, 26);
             this.btnManagingProductDelivery.TabIndex = 52;
@@ -4559,7 +4559,7 @@
             this.pictureBox62.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox62.BackgroundImage")));
             this.pictureBox62.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox62.Image")));
             this.pictureBox62.Location = new System.Drawing.Point(641, 96);
-            this.pictureBox62.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox62.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox62.Name = "pictureBox62";
             this.pictureBox62.Size = new System.Drawing.Size(40, 26);
             this.pictureBox62.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -4569,7 +4569,7 @@
             // btnStartingUpAProject
             // 
             this.btnStartingUpAProject.Location = new System.Drawing.Point(179, 96);
-            this.btnStartingUpAProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStartingUpAProject.Margin = new System.Windows.Forms.Padding(4);
             this.btnStartingUpAProject.Name = "btnStartingUpAProject";
             this.btnStartingUpAProject.Size = new System.Drawing.Size(205, 26);
             this.btnStartingUpAProject.TabIndex = 50;
@@ -4583,7 +4583,7 @@
             this.pictureBox63.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox63.BackgroundImage")));
             this.pictureBox63.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox63.Image")));
             this.pictureBox63.Location = new System.Drawing.Point(140, 96);
-            this.pictureBox63.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox63.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox63.Name = "pictureBox63";
             this.pictureBox63.Size = new System.Drawing.Size(40, 26);
             this.pictureBox63.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -4593,7 +4593,7 @@
             // btnPortfolioManagementAndExecution
             // 
             this.btnPortfolioManagementAndExecution.Location = new System.Drawing.Point(511, 41);
-            this.btnPortfolioManagementAndExecution.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPortfolioManagementAndExecution.Margin = new System.Windows.Forms.Padding(4);
             this.btnPortfolioManagementAndExecution.Name = "btnPortfolioManagementAndExecution";
             this.btnPortfolioManagementAndExecution.Size = new System.Drawing.Size(374, 26);
             this.btnPortfolioManagementAndExecution.TabIndex = 46;
@@ -4606,7 +4606,7 @@
             this.pictureBox64.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox64.BackgroundImage")));
             this.pictureBox64.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox64.Image")));
             this.pictureBox64.Location = new System.Drawing.Point(472, 41);
-            this.pictureBox64.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox64.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox64.Name = "pictureBox64";
             this.pictureBox64.Size = new System.Drawing.Size(40, 26);
             this.pictureBox64.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -4616,7 +4616,7 @@
             // btnCorporateProgramManagement
             // 
             this.btnCorporateProgramManagement.Location = new System.Drawing.Point(95, 41);
-            this.btnCorporateProgramManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCorporateProgramManagement.Margin = new System.Windows.Forms.Padding(4);
             this.btnCorporateProgramManagement.Name = "btnCorporateProgramManagement";
             this.btnCorporateProgramManagement.Size = new System.Drawing.Size(370, 26);
             this.btnCorporateProgramManagement.TabIndex = 44;
@@ -4628,7 +4628,7 @@
             this.pictureBox65.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox65.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox65.Image")));
             this.pictureBox65.Location = new System.Drawing.Point(56, 41);
-            this.pictureBox65.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox65.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox65.Name = "pictureBox65";
             this.pictureBox65.Size = new System.Drawing.Size(40, 26);
             this.pictureBox65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -4638,7 +4638,7 @@
             // btnDirectingAProject
             // 
             this.btnDirectingAProject.Location = new System.Drawing.Point(56, 14);
-            this.btnDirectingAProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDirectingAProject.Margin = new System.Windows.Forms.Padding(4);
             this.btnDirectingAProject.Name = "btnDirectingAProject";
             this.btnDirectingAProject.Size = new System.Drawing.Size(829, 26);
             this.btnDirectingAProject.TabIndex = 40;
@@ -4651,7 +4651,7 @@
             this.pictureBox66.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox66.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox66.Image")));
             this.pictureBox66.Location = new System.Drawing.Point(18, 14);
-            this.pictureBox66.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox66.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox66.Name = "pictureBox66";
             this.pictureBox66.Size = new System.Drawing.Size(40, 26);
             this.pictureBox66.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -4662,9 +4662,9 @@
             // 
             this.tbpOwnerPLSM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbpOwnerPLSM.Location = new System.Drawing.Point(4, 25);
-            this.tbpOwnerPLSM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpOwnerPLSM.Margin = new System.Windows.Forms.Padding(4);
             this.tbpOwnerPLSM.Name = "tbpOwnerPLSM";
-            this.tbpOwnerPLSM.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpOwnerPLSM.Padding = new System.Windows.Forms.Padding(4);
             this.tbpOwnerPLSM.Size = new System.Drawing.Size(1314, 709);
             this.tbpOwnerPLSM.TabIndex = 1;
             this.tbpOwnerPLSM.Text = "Owner PLSM";
@@ -4673,7 +4673,7 @@
             // 
             this.tbpConstructorPLSM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbpConstructorPLSM.Location = new System.Drawing.Point(4, 25);
-            this.tbpConstructorPLSM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpConstructorPLSM.Margin = new System.Windows.Forms.Padding(4);
             this.tbpConstructorPLSM.Name = "tbpConstructorPLSM";
             this.tbpConstructorPLSM.Size = new System.Drawing.Size(1314, 709);
             this.tbpConstructorPLSM.TabIndex = 2;
@@ -4683,7 +4683,7 @@
             // 
             this.tbpCommunityProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.tbpCommunityProject.Location = new System.Drawing.Point(4, 25);
-            this.tbpCommunityProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpCommunityProject.Margin = new System.Windows.Forms.Padding(4);
             this.tbpCommunityProject.Name = "tbpCommunityProject";
             this.tbpCommunityProject.Size = new System.Drawing.Size(1314, 709);
             this.tbpCommunityProject.TabIndex = 3;
@@ -4692,9 +4692,9 @@
             // tbpProcessGroupingGovernance
             // 
             this.tbpProcessGroupingGovernance.Location = new System.Drawing.Point(4, 25);
-            this.tbpProcessGroupingGovernance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpProcessGroupingGovernance.Margin = new System.Windows.Forms.Padding(4);
             this.tbpProcessGroupingGovernance.Name = "tbpProcessGroupingGovernance";
-            this.tbpProcessGroupingGovernance.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpProcessGroupingGovernance.Padding = new System.Windows.Forms.Padding(4);
             this.tbpProcessGroupingGovernance.Size = new System.Drawing.Size(1314, 709);
             this.tbpProcessGroupingGovernance.TabIndex = 4;
             this.tbpProcessGroupingGovernance.Text = "(ReferencePLSM-Interfaces)";
@@ -4708,7 +4708,7 @@
             this.tbp_Documentation.Controls.Add(this.groupBox1);
             this.tbp_Documentation.Controls.Add(this.panel24);
             this.tbp_Documentation.Location = new System.Drawing.Point(4, 25);
-            this.tbp_Documentation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_Documentation.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_Documentation.Name = "tbp_Documentation";
             this.tbp_Documentation.Size = new System.Drawing.Size(1346, 783);
             this.tbp_Documentation.TabIndex = 6;
@@ -4717,7 +4717,7 @@
             // btnDocumentBack
             // 
             this.btnDocumentBack.Location = new System.Drawing.Point(990, 676);
-            this.btnDocumentBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDocumentBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnDocumentBack.Name = "btnDocumentBack";
             this.btnDocumentBack.Size = new System.Drawing.Size(170, 35);
             this.btnDocumentBack.TabIndex = 24;
@@ -4729,9 +4729,9 @@
             this.groupBox2.Controls.Add(this.tabControl2);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox2.Location = new System.Drawing.Point(596, 66);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(564, 602);
             this.groupBox2.TabIndex = 24;
             this.groupBox2.TabStop = false;
@@ -4751,7 +4751,7 @@
             this.tabControl2.Controls.Add(this.tbpRegisters);
             this.tabControl2.Controls.Add(this.tbpProcessOverviews);
             this.tabControl2.Location = new System.Drawing.Point(5, 26);
-            this.tabControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl2.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl2.Multiline = true;
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
@@ -4767,9 +4767,9 @@
             this.tbpGovernanceTemplates.Controls.Add(this.label23);
             this.tbpGovernanceTemplates.Controls.Add(this.cbbGovernanceTemplates);
             this.tbpGovernanceTemplates.Location = new System.Drawing.Point(4, 82);
-            this.tbpGovernanceTemplates.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpGovernanceTemplates.Margin = new System.Windows.Forms.Padding(4);
             this.tbpGovernanceTemplates.Name = "tbpGovernanceTemplates";
-            this.tbpGovernanceTemplates.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpGovernanceTemplates.Padding = new System.Windows.Forms.Padding(4);
             this.tbpGovernanceTemplates.Size = new System.Drawing.Size(546, 483);
             this.tbpGovernanceTemplates.TabIndex = 0;
             this.tbpGovernanceTemplates.Text = "Governance Templates:";
@@ -4793,7 +4793,7 @@
             "Stage Control",
             "Boundary Management"});
             this.cbbGovernanceTemplatesOptions.Location = new System.Drawing.Point(10, 155);
-            this.cbbGovernanceTemplatesOptions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbGovernanceTemplatesOptions.Margin = new System.Windows.Forms.Padding(4);
             this.cbbGovernanceTemplatesOptions.Name = "cbbGovernanceTemplatesOptions";
             this.cbbGovernanceTemplatesOptions.Size = new System.Drawing.Size(524, 24);
             this.cbbGovernanceTemplatesOptions.TabIndex = 39;
@@ -4803,7 +4803,7 @@
             // 
             this.btnGovernanceTemplatesOption.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnGovernanceTemplatesOption.Location = new System.Drawing.Point(10, 188);
-            this.btnGovernanceTemplatesOption.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGovernanceTemplatesOption.Margin = new System.Windows.Forms.Padding(4);
             this.btnGovernanceTemplatesOption.Name = "btnGovernanceTemplatesOption";
             this.btnGovernanceTemplatesOption.Size = new System.Drawing.Size(525, 28);
             this.btnGovernanceTemplatesOption.TabIndex = 38;
@@ -4825,7 +4825,7 @@
             // 
             this.btnGovernanceTemplatesOpenTemplate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnGovernanceTemplatesOpenTemplate.Location = new System.Drawing.Point(6, 59);
-            this.btnGovernanceTemplatesOpenTemplate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGovernanceTemplatesOpenTemplate.Margin = new System.Windows.Forms.Padding(4);
             this.btnGovernanceTemplatesOpenTemplate.Name = "btnGovernanceTemplatesOpenTemplate";
             this.btnGovernanceTemplatesOpenTemplate.Size = new System.Drawing.Size(525, 28);
             this.btnGovernanceTemplatesOpenTemplate.TabIndex = 36;
@@ -4886,7 +4886,7 @@
             "Timebox Plan.doc",
             "Timebox Review Record.doc"});
             this.cbbGovernanceTemplates.Location = new System.Drawing.Point(6, 26);
-            this.cbbGovernanceTemplates.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbGovernanceTemplates.Margin = new System.Windows.Forms.Padding(4);
             this.cbbGovernanceTemplates.Name = "cbbGovernanceTemplates";
             this.cbbGovernanceTemplates.Size = new System.Drawing.Size(524, 24);
             this.cbbGovernanceTemplates.TabIndex = 34;
@@ -4899,11 +4899,11 @@
             this.tbpDirectingAProject.Controls.Add(this.btnDirectingAProjectOpenOption);
             this.tbpDirectingAProject.Controls.Add(this.label25);
             this.tbpDirectingAProject.Controls.Add(this.label26);
-            this.tbpDirectingAProject.Location = new System.Drawing.Point(4, 109);
-            this.tbpDirectingAProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpDirectingAProject.Location = new System.Drawing.Point(4, 82);
+            this.tbpDirectingAProject.Margin = new System.Windows.Forms.Padding(4);
             this.tbpDirectingAProject.Name = "tbpDirectingAProject";
-            this.tbpDirectingAProject.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tbpDirectingAProject.Size = new System.Drawing.Size(546, 456);
+            this.tbpDirectingAProject.Padding = new System.Windows.Forms.Padding(4);
+            this.tbpDirectingAProject.Size = new System.Drawing.Size(546, 483);
             this.tbpDirectingAProject.TabIndex = 1;
             this.tbpDirectingAProject.Text = "Directing a Project";
             this.tbpDirectingAProject.UseVisualStyleBackColor = true;
@@ -4932,7 +4932,7 @@
             "Project Brief",
             "Request to Initiate a Project"});
             this.cbbDirectingAProjectOption.Location = new System.Drawing.Point(14, 155);
-            this.cbbDirectingAProjectOption.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbDirectingAProjectOption.Margin = new System.Windows.Forms.Padding(4);
             this.cbbDirectingAProjectOption.Name = "cbbDirectingAProjectOption";
             this.cbbDirectingAProjectOption.Size = new System.Drawing.Size(524, 24);
             this.cbbDirectingAProjectOption.TabIndex = 45;
@@ -4942,7 +4942,7 @@
             // 
             this.btnDirectingAProjectOpenOption.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDirectingAProjectOpenOption.Location = new System.Drawing.Point(14, 188);
-            this.btnDirectingAProjectOpenOption.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDirectingAProjectOpenOption.Margin = new System.Windows.Forms.Padding(4);
             this.btnDirectingAProjectOpenOption.Name = "btnDirectingAProjectOpenOption";
             this.btnDirectingAProjectOpenOption.Size = new System.Drawing.Size(525, 28);
             this.btnDirectingAProjectOpenOption.TabIndex = 44;
@@ -4973,50 +4973,50 @@
             // 
             // tbpProjectStartUp
             // 
-            this.tbpProjectStartUp.Location = new System.Drawing.Point(4, 109);
-            this.tbpProjectStartUp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpProjectStartUp.Location = new System.Drawing.Point(4, 82);
+            this.tbpProjectStartUp.Margin = new System.Windows.Forms.Padding(4);
             this.tbpProjectStartUp.Name = "tbpProjectStartUp";
-            this.tbpProjectStartUp.Size = new System.Drawing.Size(546, 456);
+            this.tbpProjectStartUp.Size = new System.Drawing.Size(546, 483);
             this.tbpProjectStartUp.TabIndex = 2;
             this.tbpProjectStartUp.Text = "Project Start Up";
             this.tbpProjectStartUp.UseVisualStyleBackColor = true;
             // 
             // tbpInitiatingAProject
             // 
-            this.tbpInitiatingAProject.Location = new System.Drawing.Point(4, 109);
-            this.tbpInitiatingAProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpInitiatingAProject.Location = new System.Drawing.Point(4, 82);
+            this.tbpInitiatingAProject.Margin = new System.Windows.Forms.Padding(4);
             this.tbpInitiatingAProject.Name = "tbpInitiatingAProject";
-            this.tbpInitiatingAProject.Size = new System.Drawing.Size(546, 456);
+            this.tbpInitiatingAProject.Size = new System.Drawing.Size(546, 483);
             this.tbpInitiatingAProject.TabIndex = 3;
             this.tbpInitiatingAProject.Text = "Initiating a Project";
             this.tbpInitiatingAProject.UseVisualStyleBackColor = true;
             // 
             // tbpManagingStageBoundaries
             // 
-            this.tbpManagingStageBoundaries.Location = new System.Drawing.Point(4, 109);
-            this.tbpManagingStageBoundaries.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpManagingStageBoundaries.Location = new System.Drawing.Point(4, 82);
+            this.tbpManagingStageBoundaries.Margin = new System.Windows.Forms.Padding(4);
             this.tbpManagingStageBoundaries.Name = "tbpManagingStageBoundaries";
-            this.tbpManagingStageBoundaries.Size = new System.Drawing.Size(546, 456);
+            this.tbpManagingStageBoundaries.Size = new System.Drawing.Size(546, 483);
             this.tbpManagingStageBoundaries.TabIndex = 4;
             this.tbpManagingStageBoundaries.Text = "Managing Stage Boundaries";
             this.tbpManagingStageBoundaries.UseVisualStyleBackColor = true;
             // 
             // tbpControllingAStage
             // 
-            this.tbpControllingAStage.Location = new System.Drawing.Point(4, 109);
-            this.tbpControllingAStage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpControllingAStage.Location = new System.Drawing.Point(4, 82);
+            this.tbpControllingAStage.Margin = new System.Windows.Forms.Padding(4);
             this.tbpControllingAStage.Name = "tbpControllingAStage";
-            this.tbpControllingAStage.Size = new System.Drawing.Size(546, 456);
+            this.tbpControllingAStage.Size = new System.Drawing.Size(546, 483);
             this.tbpControllingAStage.TabIndex = 5;
             this.tbpControllingAStage.Text = "Controlling a Stage";
             this.tbpControllingAStage.UseVisualStyleBackColor = true;
             // 
             // tbpClosingAProject
             // 
-            this.tbpClosingAProject.Location = new System.Drawing.Point(4, 109);
-            this.tbpClosingAProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpClosingAProject.Location = new System.Drawing.Point(4, 82);
+            this.tbpClosingAProject.Margin = new System.Windows.Forms.Padding(4);
             this.tbpClosingAProject.Name = "tbpClosingAProject";
-            this.tbpClosingAProject.Size = new System.Drawing.Size(546, 456);
+            this.tbpClosingAProject.Size = new System.Drawing.Size(546, 483);
             this.tbpClosingAProject.TabIndex = 6;
             this.tbpClosingAProject.Text = "Closing a Project";
             this.tbpClosingAProject.UseVisualStyleBackColor = true;
@@ -5029,10 +5029,10 @@
             this.tbpManagementProcessTemplates.Controls.Add(this.btnManagementProcessTemplatesOpenForm);
             this.tbpManagementProcessTemplates.Controls.Add(this.label28);
             this.tbpManagementProcessTemplates.Controls.Add(this.cbbMaanagementProcessTemplatesForm);
-            this.tbpManagementProcessTemplates.Location = new System.Drawing.Point(4, 109);
-            this.tbpManagementProcessTemplates.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpManagementProcessTemplates.Location = new System.Drawing.Point(4, 82);
+            this.tbpManagementProcessTemplates.Margin = new System.Windows.Forms.Padding(4);
             this.tbpManagementProcessTemplates.Name = "tbpManagementProcessTemplates";
-            this.tbpManagementProcessTemplates.Size = new System.Drawing.Size(546, 456);
+            this.tbpManagementProcessTemplates.Size = new System.Drawing.Size(546, 483);
             this.tbpManagementProcessTemplates.TabIndex = 7;
             this.tbpManagementProcessTemplates.Text = "Management Process Templates";
             this.tbpManagementProcessTemplates.UseVisualStyleBackColor = true;
@@ -5053,7 +5053,7 @@
             "Time Allocation",
             "Procurement"});
             this.cbbManagementProcessTemplatesOption.Location = new System.Drawing.Point(10, 155);
-            this.cbbManagementProcessTemplatesOption.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbManagementProcessTemplatesOption.Margin = new System.Windows.Forms.Padding(4);
             this.cbbManagementProcessTemplatesOption.Name = "cbbManagementProcessTemplatesOption";
             this.cbbManagementProcessTemplatesOption.Size = new System.Drawing.Size(524, 24);
             this.cbbManagementProcessTemplatesOption.TabIndex = 24;
@@ -5063,7 +5063,7 @@
             // 
             this.btnManagementProcessTemplatesOpenOption.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnManagementProcessTemplatesOpenOption.Location = new System.Drawing.Point(10, 188);
-            this.btnManagementProcessTemplatesOpenOption.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnManagementProcessTemplatesOpenOption.Margin = new System.Windows.Forms.Padding(4);
             this.btnManagementProcessTemplatesOpenOption.Name = "btnManagementProcessTemplatesOpenOption";
             this.btnManagementProcessTemplatesOpenOption.Size = new System.Drawing.Size(525, 28);
             this.btnManagementProcessTemplatesOpenOption.TabIndex = 23;
@@ -5085,7 +5085,7 @@
             // 
             this.btnManagementProcessTemplatesOpenForm.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnManagementProcessTemplatesOpenForm.Location = new System.Drawing.Point(10, 59);
-            this.btnManagementProcessTemplatesOpenForm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnManagementProcessTemplatesOpenForm.Margin = new System.Windows.Forms.Padding(4);
             this.btnManagementProcessTemplatesOpenForm.Name = "btnManagementProcessTemplatesOpenForm";
             this.btnManagementProcessTemplatesOpenForm.Size = new System.Drawing.Size(525, 28);
             this.btnManagementProcessTemplatesOpenForm.TabIndex = 21;
@@ -5119,7 +5119,7 @@
             "Procurement Form",
             "Tender Input Form"});
             this.cbbMaanagementProcessTemplatesForm.Location = new System.Drawing.Point(10, 26);
-            this.cbbMaanagementProcessTemplatesForm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbMaanagementProcessTemplatesForm.Margin = new System.Windows.Forms.Padding(4);
             this.cbbMaanagementProcessTemplatesForm.Name = "cbbMaanagementProcessTemplatesForm";
             this.cbbMaanagementProcessTemplatesForm.Size = new System.Drawing.Size(524, 24);
             this.cbbMaanagementProcessTemplatesForm.TabIndex = 19;
@@ -5133,10 +5133,10 @@
             this.tbpRegisters.Controls.Add(this.btnRegisterOpen);
             this.tbpRegisters.Controls.Add(this.label30);
             this.tbpRegisters.Controls.Add(this.cbbRegisters);
-            this.tbpRegisters.Location = new System.Drawing.Point(4, 109);
-            this.tbpRegisters.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpRegisters.Location = new System.Drawing.Point(4, 82);
+            this.tbpRegisters.Margin = new System.Windows.Forms.Padding(4);
             this.tbpRegisters.Name = "tbpRegisters";
-            this.tbpRegisters.Size = new System.Drawing.Size(546, 456);
+            this.tbpRegisters.Size = new System.Drawing.Size(546, 483);
             this.tbpRegisters.TabIndex = 8;
             this.tbpRegisters.Text = "Registers";
             this.tbpRegisters.UseVisualStyleBackColor = true;
@@ -5156,7 +5156,7 @@
             "Risk",
             "Time Allocation"});
             this.comboBox3.Location = new System.Drawing.Point(11, 155);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(524, 24);
             this.comboBox3.TabIndex = 30;
@@ -5166,7 +5166,7 @@
             // 
             this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button4.Location = new System.Drawing.Point(11, 188);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(525, 28);
             this.button4.TabIndex = 29;
@@ -5188,7 +5188,7 @@
             // 
             this.btnRegisterOpen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRegisterOpen.Location = new System.Drawing.Point(11, 59);
-            this.btnRegisterOpen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegisterOpen.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegisterOpen.Name = "btnRegisterOpen";
             this.btnRegisterOpen.Size = new System.Drawing.Size(525, 28);
             this.btnRegisterOpen.TabIndex = 27;
@@ -5222,7 +5222,7 @@
             "Tender Register",
             "Time Sheet Register"});
             this.cbbRegisters.Location = new System.Drawing.Point(11, 26);
-            this.cbbRegisters.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbRegisters.Margin = new System.Windows.Forms.Padding(4);
             this.cbbRegisters.Name = "cbbRegisters";
             this.cbbRegisters.Size = new System.Drawing.Size(524, 24);
             this.cbbRegisters.TabIndex = 25;
@@ -5233,10 +5233,10 @@
             this.tbpProcessOverviews.Controls.Add(this.btnProcessOverviewsOpen);
             this.tbpProcessOverviews.Controls.Add(this.label31);
             this.tbpProcessOverviews.Controls.Add(this.cbbProcessOverviews);
-            this.tbpProcessOverviews.Location = new System.Drawing.Point(4, 109);
-            this.tbpProcessOverviews.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpProcessOverviews.Location = new System.Drawing.Point(4, 82);
+            this.tbpProcessOverviews.Margin = new System.Windows.Forms.Padding(4);
             this.tbpProcessOverviews.Name = "tbpProcessOverviews";
-            this.tbpProcessOverviews.Size = new System.Drawing.Size(546, 456);
+            this.tbpProcessOverviews.Size = new System.Drawing.Size(546, 483);
             this.tbpProcessOverviews.TabIndex = 9;
             this.tbpProcessOverviews.Text = "Process Overviews";
             this.tbpProcessOverviews.UseVisualStyleBackColor = true;
@@ -5245,7 +5245,7 @@
             // 
             this.btnProcessOverviewsOpen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnProcessOverviewsOpen.Location = new System.Drawing.Point(12, 59);
-            this.btnProcessOverviewsOpen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProcessOverviewsOpen.Margin = new System.Windows.Forms.Padding(4);
             this.btnProcessOverviewsOpen.Name = "btnProcessOverviewsOpen";
             this.btnProcessOverviewsOpen.Size = new System.Drawing.Size(525, 28);
             this.btnProcessOverviewsOpen.TabIndex = 30;
@@ -5279,7 +5279,7 @@
             "Procurement Management Process",
             "Tender Management Process"});
             this.cbbProcessOverviews.Location = new System.Drawing.Point(12, 26);
-            this.cbbProcessOverviews.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbProcessOverviews.Margin = new System.Windows.Forms.Padding(4);
             this.cbbProcessOverviews.Name = "cbbProcessOverviews";
             this.cbbProcessOverviews.Size = new System.Drawing.Size(524, 24);
             this.cbbProcessOverviews.TabIndex = 28;
@@ -5290,9 +5290,9 @@
             this.groupBox1.Controls.Add(this.tabControl3);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox1.Location = new System.Drawing.Point(15, 66);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(565, 602);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
@@ -5316,7 +5316,7 @@
             this.tabControl3.Controls.Add(this.tbpCloseOut);
             this.tabControl3.Controls.Add(this.tbpEvaluate);
             this.tabControl3.Location = new System.Drawing.Point(5, 26);
-            this.tabControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl3.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl3.Multiline = true;
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
@@ -5332,9 +5332,9 @@
             this.tbpListOfDocuments.Controls.Add(this.label7);
             this.tbpListOfDocuments.Controls.Add(this.cbbListOfDocuments);
             this.tbpListOfDocuments.Location = new System.Drawing.Point(4, 82);
-            this.tbpListOfDocuments.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpListOfDocuments.Margin = new System.Windows.Forms.Padding(4);
             this.tbpListOfDocuments.Name = "tbpListOfDocuments";
-            this.tbpListOfDocuments.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpListOfDocuments.Padding = new System.Windows.Forms.Padding(4);
             this.tbpListOfDocuments.Size = new System.Drawing.Size(547, 483);
             this.tbpListOfDocuments.TabIndex = 6;
             this.tbpListOfDocuments.Text = "List of Documents";
@@ -5366,7 +5366,7 @@
             "Tender register",
             "URS"});
             this.cbbListOfDocumentsOptions.Location = new System.Drawing.Point(10, 152);
-            this.cbbListOfDocumentsOptions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbListOfDocumentsOptions.Margin = new System.Windows.Forms.Padding(4);
             this.cbbListOfDocumentsOptions.Name = "cbbListOfDocumentsOptions";
             this.cbbListOfDocumentsOptions.Size = new System.Drawing.Size(526, 24);
             this.cbbListOfDocumentsOptions.TabIndex = 5;
@@ -5376,7 +5376,7 @@
             // 
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Location = new System.Drawing.Point(10, 185);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(528, 28);
             this.button1.TabIndex = 4;
@@ -5387,7 +5387,7 @@
             // 
             this.btnListOfDocumentsOpenDocument.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnListOfDocumentsOpenDocument.Location = new System.Drawing.Point(10, 59);
-            this.btnListOfDocumentsOpenDocument.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnListOfDocumentsOpenDocument.Margin = new System.Windows.Forms.Padding(4);
             this.btnListOfDocumentsOpenDocument.Name = "btnListOfDocumentsOpenDocument";
             this.btnListOfDocumentsOpenDocument.Size = new System.Drawing.Size(528, 28);
             this.btnListOfDocumentsOpenDocument.TabIndex = 3;
@@ -5437,7 +5437,7 @@
             "Stage Plan Template.doc",
             "Timesheet Form.doc"});
             this.cbbListOfDocuments.Location = new System.Drawing.Point(10, 26);
-            this.cbbListOfDocuments.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbListOfDocuments.Margin = new System.Windows.Forms.Padding(4);
             this.cbbListOfDocuments.Name = "cbbListOfDocuments";
             this.cbbListOfDocuments.Size = new System.Drawing.Size(526, 24);
             this.cbbListOfDocuments.TabIndex = 0;
@@ -5451,11 +5451,11 @@
             this.tbpOpportunityScreening.Controls.Add(this.label9);
             this.tbpOpportunityScreening.Controls.Add(this.label10);
             this.tbpOpportunityScreening.Controls.Add(this.comboBox2);
-            this.tbpOpportunityScreening.Location = new System.Drawing.Point(4, 109);
-            this.tbpOpportunityScreening.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpOpportunityScreening.Location = new System.Drawing.Point(4, 82);
+            this.tbpOpportunityScreening.Margin = new System.Windows.Forms.Padding(4);
             this.tbpOpportunityScreening.Name = "tbpOpportunityScreening";
-            this.tbpOpportunityScreening.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tbpOpportunityScreening.Size = new System.Drawing.Size(547, 456);
+            this.tbpOpportunityScreening.Padding = new System.Windows.Forms.Padding(4);
+            this.tbpOpportunityScreening.Size = new System.Drawing.Size(547, 483);
             this.tbpOpportunityScreening.TabIndex = 7;
             this.tbpOpportunityScreening.Text = "Opportunity Screening";
             this.tbpOpportunityScreening.UseVisualStyleBackColor = true;
@@ -5486,7 +5486,7 @@
             "Tender register",
             "URS"});
             this.comboBox1.Location = new System.Drawing.Point(10, 152);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(526, 24);
             this.comboBox1.TabIndex = 11;
@@ -5496,7 +5496,7 @@
             // 
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Location = new System.Drawing.Point(4, 185);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(534, 28);
             this.button2.TabIndex = 10;
@@ -5507,7 +5507,7 @@
             // 
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button3.Location = new System.Drawing.Point(10, 59);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(528, 28);
             this.button3.TabIndex = 9;
@@ -5557,7 +5557,7 @@
             "Stage Plan Template.doc",
             "Timesheet Form.doc"});
             this.comboBox2.Location = new System.Drawing.Point(10, 26);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(526, 24);
             this.comboBox2.TabIndex = 6;
@@ -5568,10 +5568,10 @@
             this.tbpPrefeasibility.Controls.Add(this.btnPrefeasibility);
             this.tbpPrefeasibility.Controls.Add(this.label11);
             this.tbpPrefeasibility.Controls.Add(this.cbbPrefeasibility);
-            this.tbpPrefeasibility.Location = new System.Drawing.Point(4, 109);
-            this.tbpPrefeasibility.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpPrefeasibility.Location = new System.Drawing.Point(4, 82);
+            this.tbpPrefeasibility.Margin = new System.Windows.Forms.Padding(4);
             this.tbpPrefeasibility.Name = "tbpPrefeasibility";
-            this.tbpPrefeasibility.Size = new System.Drawing.Size(547, 456);
+            this.tbpPrefeasibility.Size = new System.Drawing.Size(547, 483);
             this.tbpPrefeasibility.TabIndex = 8;
             this.tbpPrefeasibility.Text = "Prefeasibility";
             this.tbpPrefeasibility.UseVisualStyleBackColor = true;
@@ -5580,7 +5580,7 @@
             // 
             this.btnPrefeasibility.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPrefeasibility.Location = new System.Drawing.Point(10, 59);
-            this.btnPrefeasibility.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPrefeasibility.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrefeasibility.Name = "btnPrefeasibility";
             this.btnPrefeasibility.Size = new System.Drawing.Size(525, 28);
             this.btnPrefeasibility.TabIndex = 6;
@@ -5625,7 +5625,7 @@
             "Project Product Description.doc",
             "Stage Plan Template.doc"});
             this.cbbPrefeasibility.Location = new System.Drawing.Point(10, 26);
-            this.cbbPrefeasibility.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbPrefeasibility.Margin = new System.Windows.Forms.Padding(4);
             this.cbbPrefeasibility.Name = "cbbPrefeasibility";
             this.cbbPrefeasibility.Size = new System.Drawing.Size(524, 24);
             this.cbbPrefeasibility.TabIndex = 4;
@@ -5636,10 +5636,10 @@
             this.tbpFeasibility.Controls.Add(this.btnFeasibility);
             this.tbpFeasibility.Controls.Add(this.label12);
             this.tbpFeasibility.Controls.Add(this.cbbFeasibility);
-            this.tbpFeasibility.Location = new System.Drawing.Point(4, 109);
-            this.tbpFeasibility.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpFeasibility.Location = new System.Drawing.Point(4, 82);
+            this.tbpFeasibility.Margin = new System.Windows.Forms.Padding(4);
             this.tbpFeasibility.Name = "tbpFeasibility";
-            this.tbpFeasibility.Size = new System.Drawing.Size(547, 456);
+            this.tbpFeasibility.Size = new System.Drawing.Size(547, 483);
             this.tbpFeasibility.TabIndex = 9;
             this.tbpFeasibility.Text = "Feasibility";
             this.tbpFeasibility.UseVisualStyleBackColor = true;
@@ -5648,7 +5648,7 @@
             // 
             this.btnFeasibility.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnFeasibility.Location = new System.Drawing.Point(10, 59);
-            this.btnFeasibility.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFeasibility.Margin = new System.Windows.Forms.Padding(4);
             this.btnFeasibility.Name = "btnFeasibility";
             this.btnFeasibility.Size = new System.Drawing.Size(525, 28);
             this.btnFeasibility.TabIndex = 9;
@@ -5694,7 +5694,7 @@
             "Stage Plan Template.doc",
             "Timesheets Form.doc"});
             this.cbbFeasibility.Location = new System.Drawing.Point(10, 26);
-            this.cbbFeasibility.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbFeasibility.Margin = new System.Windows.Forms.Padding(4);
             this.cbbFeasibility.Name = "cbbFeasibility";
             this.cbbFeasibility.Size = new System.Drawing.Size(524, 24);
             this.cbbFeasibility.TabIndex = 7;
@@ -5705,10 +5705,10 @@
             this.tbpBusinessPlan.Controls.Add(this.btnBusinessPlan);
             this.tbpBusinessPlan.Controls.Add(this.label13);
             this.tbpBusinessPlan.Controls.Add(this.cbbBusinessPlan);
-            this.tbpBusinessPlan.Location = new System.Drawing.Point(4, 109);
-            this.tbpBusinessPlan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpBusinessPlan.Location = new System.Drawing.Point(4, 82);
+            this.tbpBusinessPlan.Margin = new System.Windows.Forms.Padding(4);
             this.tbpBusinessPlan.Name = "tbpBusinessPlan";
-            this.tbpBusinessPlan.Size = new System.Drawing.Size(547, 456);
+            this.tbpBusinessPlan.Size = new System.Drawing.Size(547, 483);
             this.tbpBusinessPlan.TabIndex = 10;
             this.tbpBusinessPlan.Text = "Business Plan";
             this.tbpBusinessPlan.UseVisualStyleBackColor = true;
@@ -5717,7 +5717,7 @@
             // 
             this.btnBusinessPlan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnBusinessPlan.Location = new System.Drawing.Point(10, 59);
-            this.btnBusinessPlan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBusinessPlan.Margin = new System.Windows.Forms.Padding(4);
             this.btnBusinessPlan.Name = "btnBusinessPlan";
             this.btnBusinessPlan.Size = new System.Drawing.Size(525, 28);
             this.btnBusinessPlan.TabIndex = 12;
@@ -5764,7 +5764,7 @@
             "Stage Plan Template.doc",
             "Timesheets Form.doc"});
             this.cbbBusinessPlan.Location = new System.Drawing.Point(10, 26);
-            this.cbbBusinessPlan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbBusinessPlan.Margin = new System.Windows.Forms.Padding(4);
             this.cbbBusinessPlan.Name = "cbbBusinessPlan";
             this.cbbBusinessPlan.Size = new System.Drawing.Size(524, 24);
             this.cbbBusinessPlan.TabIndex = 10;
@@ -5778,10 +5778,10 @@
             this.tbpProjectExecutionPlanning.Controls.Add(this.btnProjectExecutionPlanning);
             this.tbpProjectExecutionPlanning.Controls.Add(this.label14);
             this.tbpProjectExecutionPlanning.Controls.Add(this.cbbProjectExecutionManagement);
-            this.tbpProjectExecutionPlanning.Location = new System.Drawing.Point(4, 109);
-            this.tbpProjectExecutionPlanning.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpProjectExecutionPlanning.Location = new System.Drawing.Point(4, 82);
+            this.tbpProjectExecutionPlanning.Margin = new System.Windows.Forms.Padding(4);
             this.tbpProjectExecutionPlanning.Name = "tbpProjectExecutionPlanning";
-            this.tbpProjectExecutionPlanning.Size = new System.Drawing.Size(547, 456);
+            this.tbpProjectExecutionPlanning.Size = new System.Drawing.Size(547, 483);
             this.tbpProjectExecutionPlanning.TabIndex = 11;
             this.tbpProjectExecutionPlanning.Text = "Project Execution Planning";
             this.tbpProjectExecutionPlanning.UseVisualStyleBackColor = true;
@@ -5800,7 +5800,7 @@
             "Resource Plan.doc",
             "Risk Plan.doc"});
             this.cbbPlan.Location = new System.Drawing.Point(10, 155);
-            this.cbbPlan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbPlan.Margin = new System.Windows.Forms.Padding(4);
             this.cbbPlan.Name = "cbbPlan";
             this.cbbPlan.Size = new System.Drawing.Size(524, 24);
             this.cbbPlan.TabIndex = 18;
@@ -5810,7 +5810,7 @@
             // 
             this.btnPlan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPlan.Location = new System.Drawing.Point(10, 188);
-            this.btnPlan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPlan.Margin = new System.Windows.Forms.Padding(4);
             this.btnPlan.Name = "btnPlan";
             this.btnPlan.Size = new System.Drawing.Size(525, 28);
             this.btnPlan.TabIndex = 17;
@@ -5832,7 +5832,7 @@
             // 
             this.btnProjectExecutionPlanning.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnProjectExecutionPlanning.Location = new System.Drawing.Point(10, 59);
-            this.btnProjectExecutionPlanning.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProjectExecutionPlanning.Margin = new System.Windows.Forms.Padding(4);
             this.btnProjectExecutionPlanning.Name = "btnProjectExecutionPlanning";
             this.btnProjectExecutionPlanning.Size = new System.Drawing.Size(525, 28);
             this.btnProjectExecutionPlanning.TabIndex = 15;
@@ -5885,7 +5885,7 @@
             "Stage Plan Template.doc",
             "Timesheets Form.doc"});
             this.cbbProjectExecutionManagement.Location = new System.Drawing.Point(10, 26);
-            this.cbbProjectExecutionManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbProjectExecutionManagement.Margin = new System.Windows.Forms.Padding(4);
             this.cbbProjectExecutionManagement.Name = "cbbProjectExecutionManagement";
             this.cbbProjectExecutionManagement.Size = new System.Drawing.Size(524, 24);
             this.cbbProjectExecutionManagement.TabIndex = 13;
@@ -5896,10 +5896,10 @@
             this.tbpContractConclusion.Controls.Add(this.btnContractConclusion);
             this.tbpContractConclusion.Controls.Add(this.label16);
             this.tbpContractConclusion.Controls.Add(this.cbbContractConclusion);
-            this.tbpContractConclusion.Location = new System.Drawing.Point(4, 109);
-            this.tbpContractConclusion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpContractConclusion.Location = new System.Drawing.Point(4, 82);
+            this.tbpContractConclusion.Margin = new System.Windows.Forms.Padding(4);
             this.tbpContractConclusion.Name = "tbpContractConclusion";
-            this.tbpContractConclusion.Size = new System.Drawing.Size(547, 456);
+            this.tbpContractConclusion.Size = new System.Drawing.Size(547, 483);
             this.tbpContractConclusion.TabIndex = 12;
             this.tbpContractConclusion.Text = "Contract Conclusion";
             this.tbpContractConclusion.UseVisualStyleBackColor = true;
@@ -5908,7 +5908,7 @@
             // 
             this.btnContractConclusion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnContractConclusion.Location = new System.Drawing.Point(10, 59);
-            this.btnContractConclusion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnContractConclusion.Margin = new System.Windows.Forms.Padding(4);
             this.btnContractConclusion.Name = "btnContractConclusion";
             this.btnContractConclusion.Size = new System.Drawing.Size(525, 28);
             this.btnContractConclusion.TabIndex = 18;
@@ -5958,7 +5958,7 @@
             "Stage Plan Template.doc",
             "Timesheets Form.doc"});
             this.cbbContractConclusion.Location = new System.Drawing.Point(10, 26);
-            this.cbbContractConclusion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbContractConclusion.Margin = new System.Windows.Forms.Padding(4);
             this.cbbContractConclusion.Name = "cbbContractConclusion";
             this.cbbContractConclusion.Size = new System.Drawing.Size(524, 24);
             this.cbbContractConclusion.TabIndex = 16;
@@ -5969,10 +5969,10 @@
             this.tbpDetailedDesign.Controls.Add(this.btnDetailedDesign);
             this.tbpDetailedDesign.Controls.Add(this.label17);
             this.tbpDetailedDesign.Controls.Add(this.cbbDetailedDesign);
-            this.tbpDetailedDesign.Location = new System.Drawing.Point(4, 109);
-            this.tbpDetailedDesign.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpDetailedDesign.Location = new System.Drawing.Point(4, 82);
+            this.tbpDetailedDesign.Margin = new System.Windows.Forms.Padding(4);
             this.tbpDetailedDesign.Name = "tbpDetailedDesign";
-            this.tbpDetailedDesign.Size = new System.Drawing.Size(547, 456);
+            this.tbpDetailedDesign.Size = new System.Drawing.Size(547, 483);
             this.tbpDetailedDesign.TabIndex = 13;
             this.tbpDetailedDesign.Text = "Detailed Design";
             this.tbpDetailedDesign.UseVisualStyleBackColor = true;
@@ -5981,7 +5981,7 @@
             // 
             this.btnDetailedDesign.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDetailedDesign.Location = new System.Drawing.Point(10, 59);
-            this.btnDetailedDesign.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDetailedDesign.Margin = new System.Windows.Forms.Padding(4);
             this.btnDetailedDesign.Name = "btnDetailedDesign";
             this.btnDetailedDesign.Size = new System.Drawing.Size(525, 28);
             this.btnDetailedDesign.TabIndex = 21;
@@ -6031,7 +6031,7 @@
             "Stage Plan Template.doc",
             "Timesheets Form.doc"});
             this.cbbDetailedDesign.Location = new System.Drawing.Point(10, 26);
-            this.cbbDetailedDesign.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbDetailedDesign.Margin = new System.Windows.Forms.Padding(4);
             this.cbbDetailedDesign.Name = "cbbDetailedDesign";
             this.cbbDetailedDesign.Size = new System.Drawing.Size(524, 24);
             this.cbbDetailedDesign.TabIndex = 19;
@@ -6042,10 +6042,10 @@
             this.tbpBuildAndTest.Controls.Add(this.btnBuildAndDesign);
             this.tbpBuildAndTest.Controls.Add(this.label18);
             this.tbpBuildAndTest.Controls.Add(this.cbbBuildAndDesign);
-            this.tbpBuildAndTest.Location = new System.Drawing.Point(4, 109);
-            this.tbpBuildAndTest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpBuildAndTest.Location = new System.Drawing.Point(4, 82);
+            this.tbpBuildAndTest.Margin = new System.Windows.Forms.Padding(4);
             this.tbpBuildAndTest.Name = "tbpBuildAndTest";
-            this.tbpBuildAndTest.Size = new System.Drawing.Size(547, 456);
+            this.tbpBuildAndTest.Size = new System.Drawing.Size(547, 483);
             this.tbpBuildAndTest.TabIndex = 14;
             this.tbpBuildAndTest.Text = "Build and Test";
             this.tbpBuildAndTest.UseVisualStyleBackColor = true;
@@ -6054,7 +6054,7 @@
             // 
             this.btnBuildAndDesign.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnBuildAndDesign.Location = new System.Drawing.Point(10, 59);
-            this.btnBuildAndDesign.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuildAndDesign.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuildAndDesign.Name = "btnBuildAndDesign";
             this.btnBuildAndDesign.Size = new System.Drawing.Size(525, 28);
             this.btnBuildAndDesign.TabIndex = 24;
@@ -6104,7 +6104,7 @@
             "Stage Plan Template.doc",
             "Timesheets Form.doc"});
             this.cbbBuildAndDesign.Location = new System.Drawing.Point(10, 26);
-            this.cbbBuildAndDesign.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbBuildAndDesign.Margin = new System.Windows.Forms.Padding(4);
             this.cbbBuildAndDesign.Name = "cbbBuildAndDesign";
             this.cbbBuildAndDesign.Size = new System.Drawing.Size(524, 24);
             this.cbbBuildAndDesign.TabIndex = 22;
@@ -6115,10 +6115,10 @@
             this.tbpImplementation.Controls.Add(this.btnImplementation);
             this.tbpImplementation.Controls.Add(this.label19);
             this.tbpImplementation.Controls.Add(this.cbbImplementation);
-            this.tbpImplementation.Location = new System.Drawing.Point(4, 109);
-            this.tbpImplementation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpImplementation.Location = new System.Drawing.Point(4, 82);
+            this.tbpImplementation.Margin = new System.Windows.Forms.Padding(4);
             this.tbpImplementation.Name = "tbpImplementation";
-            this.tbpImplementation.Size = new System.Drawing.Size(547, 456);
+            this.tbpImplementation.Size = new System.Drawing.Size(547, 483);
             this.tbpImplementation.TabIndex = 15;
             this.tbpImplementation.Text = "Implementation";
             this.tbpImplementation.UseVisualStyleBackColor = true;
@@ -6127,7 +6127,7 @@
             // 
             this.btnImplementation.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnImplementation.Location = new System.Drawing.Point(10, 59);
-            this.btnImplementation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnImplementation.Margin = new System.Windows.Forms.Padding(4);
             this.btnImplementation.Name = "btnImplementation";
             this.btnImplementation.Size = new System.Drawing.Size(525, 28);
             this.btnImplementation.TabIndex = 27;
@@ -6177,7 +6177,7 @@
             "Stage Plan Template.doc",
             "Timesheets Form.doc"});
             this.cbbImplementation.Location = new System.Drawing.Point(10, 26);
-            this.cbbImplementation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbImplementation.Margin = new System.Windows.Forms.Padding(4);
             this.cbbImplementation.Name = "cbbImplementation";
             this.cbbImplementation.Size = new System.Drawing.Size(524, 24);
             this.cbbImplementation.TabIndex = 25;
@@ -6188,10 +6188,10 @@
             this.tbpTransfer.Controls.Add(this.btnTransfer);
             this.tbpTransfer.Controls.Add(this.label20);
             this.tbpTransfer.Controls.Add(this.cbbTransfer);
-            this.tbpTransfer.Location = new System.Drawing.Point(4, 109);
-            this.tbpTransfer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpTransfer.Location = new System.Drawing.Point(4, 82);
+            this.tbpTransfer.Margin = new System.Windows.Forms.Padding(4);
             this.tbpTransfer.Name = "tbpTransfer";
-            this.tbpTransfer.Size = new System.Drawing.Size(547, 456);
+            this.tbpTransfer.Size = new System.Drawing.Size(547, 483);
             this.tbpTransfer.TabIndex = 16;
             this.tbpTransfer.Text = "Transfer";
             this.tbpTransfer.UseVisualStyleBackColor = true;
@@ -6200,7 +6200,7 @@
             // 
             this.btnTransfer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnTransfer.Location = new System.Drawing.Point(10, 59);
-            this.btnTransfer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTransfer.Margin = new System.Windows.Forms.Padding(4);
             this.btnTransfer.Name = "btnTransfer";
             this.btnTransfer.Size = new System.Drawing.Size(525, 28);
             this.btnTransfer.TabIndex = 30;
@@ -6250,7 +6250,7 @@
             "Stage Plan Template.doc",
             "Timesheets Form.doc"});
             this.cbbTransfer.Location = new System.Drawing.Point(10, 26);
-            this.cbbTransfer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbTransfer.Margin = new System.Windows.Forms.Padding(4);
             this.cbbTransfer.Name = "cbbTransfer";
             this.cbbTransfer.Size = new System.Drawing.Size(524, 24);
             this.cbbTransfer.TabIndex = 28;
@@ -6264,10 +6264,10 @@
             this.tbpCloseOut.Controls.Add(this.btnCloseOut);
             this.tbpCloseOut.Controls.Add(this.label21);
             this.tbpCloseOut.Controls.Add(this.cbbCloseOut);
-            this.tbpCloseOut.Location = new System.Drawing.Point(4, 109);
-            this.tbpCloseOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpCloseOut.Location = new System.Drawing.Point(4, 82);
+            this.tbpCloseOut.Margin = new System.Windows.Forms.Padding(4);
             this.tbpCloseOut.Name = "tbpCloseOut";
-            this.tbpCloseOut.Size = new System.Drawing.Size(547, 456);
+            this.tbpCloseOut.Size = new System.Drawing.Size(547, 483);
             this.tbpCloseOut.TabIndex = 17;
             this.tbpCloseOut.Text = "Close Out";
             this.tbpCloseOut.UseVisualStyleBackColor = true;
@@ -6276,7 +6276,7 @@
             // 
             this.btnPostImplementationReview.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPostImplementationReview.Location = new System.Drawing.Point(10, 168);
-            this.btnPostImplementationReview.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPostImplementationReview.Margin = new System.Windows.Forms.Padding(4);
             this.btnPostImplementationReview.Name = "btnPostImplementationReview";
             this.btnPostImplementationReview.Size = new System.Drawing.Size(525, 36);
             this.btnPostImplementationReview.TabIndex = 36;
@@ -6287,7 +6287,7 @@
             // 
             this.btnPhaseReviewForm.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPhaseReviewForm.Location = new System.Drawing.Point(10, 211);
-            this.btnPhaseReviewForm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPhaseReviewForm.Margin = new System.Windows.Forms.Padding(4);
             this.btnPhaseReviewForm.Name = "btnPhaseReviewForm";
             this.btnPhaseReviewForm.Size = new System.Drawing.Size(525, 36);
             this.btnPhaseReviewForm.TabIndex = 35;
@@ -6298,7 +6298,7 @@
             // 
             this.btnProjectClosureReport.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnProjectClosureReport.Location = new System.Drawing.Point(10, 124);
-            this.btnProjectClosureReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProjectClosureReport.Margin = new System.Windows.Forms.Padding(4);
             this.btnProjectClosureReport.Name = "btnProjectClosureReport";
             this.btnProjectClosureReport.Size = new System.Drawing.Size(525, 36);
             this.btnProjectClosureReport.TabIndex = 34;
@@ -6309,7 +6309,7 @@
             // 
             this.btnCloseOut.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCloseOut.Location = new System.Drawing.Point(10, 59);
-            this.btnCloseOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCloseOut.Margin = new System.Windows.Forms.Padding(4);
             this.btnCloseOut.Name = "btnCloseOut";
             this.btnCloseOut.Size = new System.Drawing.Size(525, 28);
             this.btnCloseOut.TabIndex = 33;
@@ -6359,7 +6359,7 @@
             "Stage Plan Template.doc",
             "Timesheets Form.doc"});
             this.cbbCloseOut.Location = new System.Drawing.Point(10, 26);
-            this.cbbCloseOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbCloseOut.Margin = new System.Windows.Forms.Padding(4);
             this.cbbCloseOut.Name = "cbbCloseOut";
             this.cbbCloseOut.Size = new System.Drawing.Size(524, 24);
             this.cbbCloseOut.TabIndex = 31;
@@ -6370,10 +6370,10 @@
             this.tbpEvaluate.Controls.Add(this.btnEvaluate);
             this.tbpEvaluate.Controls.Add(this.label22);
             this.tbpEvaluate.Controls.Add(this.cbbEvaluate);
-            this.tbpEvaluate.Location = new System.Drawing.Point(4, 109);
-            this.tbpEvaluate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpEvaluate.Location = new System.Drawing.Point(4, 82);
+            this.tbpEvaluate.Margin = new System.Windows.Forms.Padding(4);
             this.tbpEvaluate.Name = "tbpEvaluate";
-            this.tbpEvaluate.Size = new System.Drawing.Size(547, 456);
+            this.tbpEvaluate.Size = new System.Drawing.Size(547, 483);
             this.tbpEvaluate.TabIndex = 18;
             this.tbpEvaluate.Text = "Evaluate";
             this.tbpEvaluate.UseVisualStyleBackColor = true;
@@ -6382,7 +6382,7 @@
             // 
             this.btnEvaluate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnEvaluate.Location = new System.Drawing.Point(10, 59);
-            this.btnEvaluate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEvaluate.Margin = new System.Windows.Forms.Padding(4);
             this.btnEvaluate.Name = "btnEvaluate";
             this.btnEvaluate.Size = new System.Drawing.Size(525, 28);
             this.btnEvaluate.TabIndex = 36;
@@ -6424,7 +6424,7 @@
             "Stage Plan Template.doc",
             "Timesheets Form.doc"});
             this.cbbEvaluate.Location = new System.Drawing.Point(10, 26);
-            this.cbbEvaluate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbEvaluate.Margin = new System.Windows.Forms.Padding(4);
             this.cbbEvaluate.Name = "cbbEvaluate";
             this.cbbEvaluate.Size = new System.Drawing.Size(524, 24);
             this.cbbEvaluate.TabIndex = 34;
@@ -6436,7 +6436,7 @@
             this.panel24.Controls.Add(this.label6);
             this.panel24.Controls.Add(this.label5);
             this.panel24.Location = new System.Drawing.Point(15, 15);
-            this.panel24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel24.Margin = new System.Windows.Forms.Padding(4);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(1145, 44);
             this.panel24.TabIndex = 16;
@@ -6471,7 +6471,7 @@
             this.tbp_RolesAndJobDescription.Controls.Add(this.dataGridView1);
             this.tbp_RolesAndJobDescription.Controls.Add(this.panel22);
             this.tbp_RolesAndJobDescription.Location = new System.Drawing.Point(4, 25);
-            this.tbp_RolesAndJobDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_RolesAndJobDescription.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_RolesAndJobDescription.Name = "tbp_RolesAndJobDescription";
             this.tbp_RolesAndJobDescription.Size = new System.Drawing.Size(1346, 783);
             this.tbp_RolesAndJobDescription.TabIndex = 7;
@@ -6481,7 +6481,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(24, 84);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1039, 362);
@@ -6493,7 +6493,7 @@
             this.panel22.Controls.Add(this.pictureBox34);
             this.panel22.Controls.Add(this.label4);
             this.panel22.Location = new System.Drawing.Point(24, 26);
-            this.panel22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel22.Margin = new System.Windows.Forms.Padding(4);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(1039, 64);
             this.panel22.TabIndex = 14;
@@ -6503,7 +6503,7 @@
             this.pictureBox34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox34.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox34.Image")));
             this.pictureBox34.Location = new System.Drawing.Point(18, 12);
-            this.pictureBox34.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox34.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox34.Name = "pictureBox34";
             this.pictureBox34.Size = new System.Drawing.Size(40, 29);
             this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -6528,7 +6528,7 @@
             this.tbp_EndOfProcedures.Controls.Add(this.tabControl1);
             this.tbp_EndOfProcedures.Controls.Add(this.panel23);
             this.tbp_EndOfProcedures.Location = new System.Drawing.Point(4, 25);
-            this.tbp_EndOfProcedures.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_EndOfProcedures.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_EndOfProcedures.Name = "tbp_EndOfProcedures";
             this.tbp_EndOfProcedures.Size = new System.Drawing.Size(1346, 783);
             this.tbp_EndOfProcedures.TabIndex = 8;
@@ -6543,7 +6543,7 @@
             this.tabControl1.Controls.Add(this.tbpEOPHalfYear);
             this.tabControl1.Controls.Add(this.tbpEOPYear);
             this.tabControl1.Location = new System.Drawing.Point(21, 98);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1044, 436);
@@ -6552,9 +6552,9 @@
             // tbpEnOfProcedures
             // 
             this.tbpEnOfProcedures.Location = new System.Drawing.Point(4, 25);
-            this.tbpEnOfProcedures.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpEnOfProcedures.Margin = new System.Windows.Forms.Padding(4);
             this.tbpEnOfProcedures.Name = "tbpEnOfProcedures";
-            this.tbpEnOfProcedures.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpEnOfProcedures.Padding = new System.Windows.Forms.Padding(4);
             this.tbpEnOfProcedures.Size = new System.Drawing.Size(1036, 407);
             this.tbpEnOfProcedures.TabIndex = 0;
             this.tbpEnOfProcedures.Text = "End Of Procedures";
@@ -6563,9 +6563,9 @@
             // tbpEOPWeek
             // 
             this.tbpEOPWeek.Location = new System.Drawing.Point(4, 25);
-            this.tbpEOPWeek.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpEOPWeek.Margin = new System.Windows.Forms.Padding(4);
             this.tbpEOPWeek.Name = "tbpEOPWeek";
-            this.tbpEOPWeek.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpEOPWeek.Padding = new System.Windows.Forms.Padding(4);
             this.tbpEOPWeek.Size = new System.Drawing.Size(1036, 407);
             this.tbpEOPWeek.TabIndex = 1;
             this.tbpEOPWeek.Text = "EOP Week";
@@ -6574,7 +6574,7 @@
             // tbpEOPMonth
             // 
             this.tbpEOPMonth.Location = new System.Drawing.Point(4, 25);
-            this.tbpEOPMonth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpEOPMonth.Margin = new System.Windows.Forms.Padding(4);
             this.tbpEOPMonth.Name = "tbpEOPMonth";
             this.tbpEOPMonth.Size = new System.Drawing.Size(1036, 407);
             this.tbpEOPMonth.TabIndex = 2;
@@ -6584,7 +6584,7 @@
             // tbpEOPQuarter
             // 
             this.tbpEOPQuarter.Location = new System.Drawing.Point(4, 25);
-            this.tbpEOPQuarter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpEOPQuarter.Margin = new System.Windows.Forms.Padding(4);
             this.tbpEOPQuarter.Name = "tbpEOPQuarter";
             this.tbpEOPQuarter.Size = new System.Drawing.Size(1036, 407);
             this.tbpEOPQuarter.TabIndex = 3;
@@ -6594,7 +6594,7 @@
             // tbpEOPHalfYear
             // 
             this.tbpEOPHalfYear.Location = new System.Drawing.Point(4, 25);
-            this.tbpEOPHalfYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpEOPHalfYear.Margin = new System.Windows.Forms.Padding(4);
             this.tbpEOPHalfYear.Name = "tbpEOPHalfYear";
             this.tbpEOPHalfYear.Size = new System.Drawing.Size(1036, 407);
             this.tbpEOPHalfYear.TabIndex = 4;
@@ -6604,7 +6604,7 @@
             // tbpEOPYear
             // 
             this.tbpEOPYear.Location = new System.Drawing.Point(4, 25);
-            this.tbpEOPYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpEOPYear.Margin = new System.Windows.Forms.Padding(4);
             this.tbpEOPYear.Name = "tbpEOPYear";
             this.tbpEOPYear.Size = new System.Drawing.Size(1036, 407);
             this.tbpEOPYear.TabIndex = 5;
@@ -6617,7 +6617,7 @@
             this.panel23.Controls.Add(this.pictureBox35);
             this.panel23.Controls.Add(this.label3);
             this.panel23.Location = new System.Drawing.Point(21, 21);
-            this.panel23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel23.Margin = new System.Windows.Forms.Padding(4);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(1044, 64);
             this.panel23.TabIndex = 15;
@@ -6627,7 +6627,7 @@
             this.pictureBox35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox35.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox35.Image")));
             this.pictureBox35.Location = new System.Drawing.Point(18, 12);
-            this.pictureBox35.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox35.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox35.Name = "pictureBox35";
             this.pictureBox35.Size = new System.Drawing.Size(40, 29);
             this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -6649,7 +6649,7 @@
             // tbp_Policies_and_Procedures
             // 
             this.tbp_Policies_and_Procedures.Location = new System.Drawing.Point(4, 25);
-            this.tbp_Policies_and_Procedures.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbp_Policies_and_Procedures.Margin = new System.Windows.Forms.Padding(4);
             this.tbp_Policies_and_Procedures.Name = "tbp_Policies_and_Procedures";
             this.tbp_Policies_and_Procedures.Size = new System.Drawing.Size(1346, 783);
             this.tbp_Policies_and_Procedures.TabIndex = 9;
@@ -6684,7 +6684,7 @@
             this.Controls.Add(this.lblType);
             this.Controls.Add(this.tbp_Project_Management);
             this.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmProjectManagement";
             this.Text = "Project Management";
             this.Activated += new System.EventHandler(this.frmProjectManagement_Activated);
@@ -6916,8 +6916,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TabControl tbp_Project_Management;
         private System.Windows.Forms.TabPage tbp_Report_Center;
         private System.Windows.Forms.TabPage tbp_Processes;
         private System.Windows.Forms.TabPage tbp_Projects;
@@ -7385,6 +7383,7 @@
         private System.Windows.Forms.TabPage tbpProcessGroupingGovernance;
         private System.Windows.Forms.Panel pnlHideTabControl;
         private System.Windows.Forms.Label lblType;
+        public System.Windows.Forms.TabControl tbp_Project_Management;
     }
 }
 

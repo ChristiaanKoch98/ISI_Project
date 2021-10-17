@@ -347,7 +347,6 @@ namespace ProjectManagementToolkit
 
         private void btnCRA_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmWarnings Warn = new frmWarnings();
             Warn.tbcWarning.SelectTab("tbpCRA");
             Warn.Show();
@@ -355,7 +354,6 @@ namespace ProjectManagementToolkit
 
         private void btnDRA_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmWarnings Warn = new frmWarnings();
             Warn.tbcWarning.SelectTab("tbpDRA");
             Warn.Show();
@@ -363,7 +361,6 @@ namespace ProjectManagementToolkit
 
         private void btnBackableProject_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmWarnings Warn = new frmWarnings();
             Warn.tbcWarning.SelectTab("tbpBackable");
             Warn.Show();
@@ -371,7 +368,6 @@ namespace ProjectManagementToolkit
 
         private void btnERA_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmWarnings Warn = new frmWarnings();
             Warn.tbcWarning.SelectTab("tbpERA");
             Warn.Show();
@@ -379,7 +375,6 @@ namespace ProjectManagementToolkit
 
         private void btnAuthorizedProject_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmWarnings Warn = new frmWarnings();
             Warn.tbcWarning.SelectTab("tbpAuthorized");
             Warn.Show();
@@ -387,7 +382,6 @@ namespace ProjectManagementToolkit
 
         private void btnFinancialClosure_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmWarnings Warn = new frmWarnings();
             Warn.tbcWarning.SelectTab("tbpFinacial");
             Warn.Show();
@@ -395,7 +389,6 @@ namespace ProjectManagementToolkit
 
         private void btnExecutionAgreement_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmWarnings Warn = new frmWarnings();
             Warn.tbcWarning.SelectTab("tbpExecution");
             Warn.Show();
@@ -403,7 +396,6 @@ namespace ProjectManagementToolkit
 
         private void btnHandOverDocument1_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmWarnings Warn = new frmWarnings();
             Warn.tbcWarning.SelectTab("tbpHandOver");
             Warn.Show();
@@ -411,7 +403,6 @@ namespace ProjectManagementToolkit
 
         private void btnClosureContracts_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmWarnings Warn = new frmWarnings();
             Warn.tbcWarning.SelectTab("tbpClosure");
             Warn.Show();
@@ -419,7 +410,6 @@ namespace ProjectManagementToolkit
 
         private void btnFRA_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmWarnings Warn = new frmWarnings();
             Warn.tbcWarning.SelectTab("tbpFRA");
             Warn.Show();
@@ -427,7 +417,6 @@ namespace ProjectManagementToolkit
 
         private void btnHandOverDocument2_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmWarnings Warn = new frmWarnings();
             Warn.tbcWarning.SelectTab("tbpHandOver2");
             Warn.Show();
