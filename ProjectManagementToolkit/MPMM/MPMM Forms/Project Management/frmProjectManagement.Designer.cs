@@ -4111,6 +4111,7 @@
             this.btnStageGateRequirements.TabIndex = 4;
             this.btnStageGateRequirements.Text = "Stage Gate Requirements";
             this.btnStageGateRequirements.UseVisualStyleBackColor = true;
+            this.btnStageGateRequirements.Click += new System.EventHandler(this.btnStageGateRequirements_Click);
             // 
             // btnTemplates
             // 

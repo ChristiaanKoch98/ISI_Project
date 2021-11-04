@@ -421,5 +421,12 @@ namespace ProjectManagementToolkit
             Warn.tbcWarning.SelectTab("tbpHandOver2");
             Warn.Show();
         }
+
+        private void btnStageGateRequirements_Click(object sender, EventArgs e)
+        {
+            frmWarnings Warn = new frmWarnings();
+            Warn.tbcWarning.SelectTab("tbpCRA");
+            Warn.Show();
+        }
     }
 }
